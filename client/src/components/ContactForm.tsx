@@ -5,11 +5,13 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { CheckCircle, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import { apiRequest } from "@/lib/queryClient";
 import { contactFormSchema, type ContactFormData } from "@shared/schema";
+
+const WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/rmiY5YW4pi7L07SbLlkl/webhook-trigger/727777a8-64dc-449a-bd40-b1821f";
 
 interface ContactFormProps {
   title?: string;
@@ -31,6 +33,8 @@ export default function ContactForm({
     handleSubmit,
     formState: { errors },
     reset,
+    setValue,
+    watch,
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
@@ -40,13 +44,27 @@ export default function ContactForm({
       address: "",
       message: "",
       source: source,
+      smsConsent: false,
     },
   });
+
+  const smsConsent = watch("smsConsent");
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
     try {
-      await apiRequest("POST", "/api/contact", { ...data, source });
+      const response = await fetch(WEBHOOK_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ...data, source }),
+      });
+      
+      if (!response.ok) {
+        throw new Error("Submission failed");
+      }
+      
       setIsSubmitted(true);
       reset();
       toast({
@@ -160,6 +178,26 @@ export default function ContactForm({
               rows={3}
               data-testid="input-message"
             />
+          </div>
+
+          <div className="flex items-start space-x-3 py-2">
+            <Checkbox
+              id="smsConsent"
+              checked={smsConsent}
+              onCheckedChange={(checked) => setValue("smsConsent", checked === true)}
+              data-testid="checkbox-sms-consent"
+            />
+            <div className="grid gap-1.5 leading-none">
+              <Label
+                htmlFor="smsConsent"
+                className="text-sm font-normal cursor-pointer"
+              >
+                I agree to receive SMS/text messages from The Property Father regarding my property inquiry. Message and data rates may apply. Reply STOP to opt out.
+              </Label>
+              {errors.smsConsent && (
+                <p className="text-sm text-destructive">{errors.smsConsent.message}</p>
+              )}
+            </div>
           </div>
 
           <Button
