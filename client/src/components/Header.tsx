@@ -44,11 +44,11 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-border shadow-sm">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 lg:px-8">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5" data-testid="link-home-logo">
             <img
-              className="h-24 w-auto"
+              className="h-16 lg:h-20 w-auto"
               src={logoImage}
               alt="The Property Father"
             />
