@@ -11,7 +11,7 @@ export default function Footer() {
             <img
               src={logoImage}
               alt="The Property Father"
-              className="h-32 w-auto"
+              className="h-16 lg:h-[150px] w-auto"
             />
             <p className="text-sm text-white/80">
               We buy houses for cash in Long Island, NY. Get a fair offer in 24 hours with no obligations or hidden fees.
