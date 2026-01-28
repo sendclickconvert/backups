@@ -1,0 +1,174 @@
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import ContactForm from "@/components/ContactForm";
+import Layout from "@/components/Layout";
+import { 
+  Building, 
+  CheckCircle, 
+  Phone,
+  ArrowRight,
+  Handshake,
+  Clock,
+  DollarSign
+} from "lucide-react";
+
+const benefits = [
+  {
+    icon: Clock,
+    title: "Quick Closings",
+    description: "We close fast, helping you avoid costly delays in your REO or short sale process."
+  },
+  {
+    icon: DollarSign,
+    title: "Cash Purchases",
+    description: "No financing contingencies. Our cash offers mean certainty of closing."
+  },
+  {
+    icon: Handshake,
+    title: "Reliable Partner",
+    description: "We've worked with major lenders and understand your timeline requirements."
+  }
+];
+
+const services = [
+  "REO property purchases",
+  "Short sale acquisitions",
+  "Non-performing loan property sales",
+  "Bank-owned property transactions",
+  "Distressed asset disposition",
+  "Bulk portfolio purchases"
+];
+
+export default function Lenders() {
+  return (
+    <Layout>
+      <section className="gradient-navy text-white py-16 lg:py-20">
+        <div className="mx-auto max-w-7xl px-4 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <Building className="h-5 w-5 text-gold" />
+                <span className="text-gold font-medium">Lender Partners</span>
+              </div>
+              <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+                Partner With Us on REO & Short Sales
+              </h1>
+              <p className="text-lg text-white/90 mb-8">
+                We help banks, credit unions, and mortgage servicers quickly dispose of distressed properties. Our cash offers and fast closings minimize your carrying costs.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Link href="/contact">
+                  <Button size="lg" className="bg-gold text-navy " data-testid="button-lender-partner">
+                    Become a Partner
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+                <a href="tel:5165486558">
+                  <Button size="lg" variant="outline" className="border-white text-white  bg-transparent">
+                    <Phone className="mr-2 h-5 w-5" />
+                    (516) 548-6558
+                  </Button>
+                </a>
+              </div>
+            </div>
+            <div>
+              <ContactForm 
+                title="Lender Partnership Inquiry"
+                description="Let's discuss how we can help with your REO properties."
+                source="lenders"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 lg:py-20">
+        <div className="mx-auto max-w-7xl px-4 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+              Why Lenders Partner With Us
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              We make disposing of distressed assets simple, fast, and reliable.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {benefits.map((benefit, index) => (
+              <Card key={index} className="text-center">
+                <CardContent className="pt-8">
+                  <div className="mx-auto w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-4">
+                    <benefit.icon className="h-7 w-7 text-accent" />
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2">{benefit.title}</h3>
+                  <p className="text-muted-foreground">{benefit.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 lg:py-20 bg-muted">
+        <div className="mx-auto max-w-7xl px-4 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+                Our Services for Lenders
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                We're experienced in working with financial institutions and understand the unique requirements of REO and short sale transactions.
+              </p>
+              <ul className="space-y-3">
+                {services.map((service, index) => (
+                  <li key={index} className="flex items-center gap-3">
+                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
+                    <span>{service}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-navy rounded-lg p-8 text-white">
+              <h3 className="text-2xl font-bold mb-4">Work With a Proven Partner</h3>
+              <p className="text-white/80 mb-4">
+                We have the capital, experience, and track record to handle your distressed properties efficiently.
+              </p>
+              <ul className="space-y-2 text-white/80">
+                <li>• Proof of funds available immediately</li>
+                <li>• No financing contingencies</li>
+                <li>• Close on your timeline</li>
+                <li>• Purchase properties in any condition</li>
+                <li>• Professional, reliable communication</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 lg:py-20 bg-navy text-white">
+        <div className="mx-auto max-w-7xl px-4 lg:px-8 text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+            Let's Work Together
+          </h2>
+          <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
+            Contact us to discuss how we can help with your REO portfolio and short sale properties.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href="tel:5165486558">
+              <Button size="lg" className="bg-gold text-navy ">
+                <Phone className="mr-2 h-5 w-5" />
+                (516) 548-6558
+              </Button>
+            </a>
+            <Link href="/contact">
+              <Button size="lg" variant="outline" className="border-white text-white  bg-transparent">
+                Contact Us
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
+}
