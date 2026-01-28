@@ -9,9 +9,8 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { CheckCircle, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { apiRequest } from "@/lib/queryClient";
 import { contactFormSchema, type ContactFormData } from "@shared/schema";
-
-const WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/rmiY5YW4pi7L07SbLlkl/webhook-trigger/727777a8-64dc-449a-bd40-b1821f";
 
 interface ContactFormProps {
   title?: string;
@@ -53,17 +52,7 @@ export default function ContactForm({
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
     try {
-      const response = await fetch(WEBHOOK_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ ...data, source }),
-      });
-      
-      if (!response.ok) {
-        throw new Error("Submission failed");
-      }
+      await apiRequest("POST", "/api/submit-lead", { ...data, source });
       
       setIsSubmitted(true);
       reset();

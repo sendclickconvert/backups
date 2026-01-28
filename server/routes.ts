@@ -3,11 +3,57 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { contactFormSchema } from "@shared/schema";
 
+const GHL_WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/rmiY5YW4pi7L07SbLlkl/webhook-trigger/727777a8-64dc-449a-bd40-b1821f";
+
 export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
   
+  app.post("/api/submit-lead", async (req, res) => {
+    try {
+      const validatedData = contactFormSchema.parse(req.body);
+      
+      // Forward to GHL webhook
+      const webhookResponse = await fetch(GHL_WEBHOOK_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(validatedData),
+      });
+      
+      if (!webhookResponse.ok) {
+        throw new Error(`Webhook returned ${webhookResponse.status}`);
+      }
+      
+      // Also store locally
+      const submission = await storage.createContactSubmission(validatedData);
+      
+      console.log("Lead submitted to GHL webhook:", {
+        id: submission.id,
+        name: submission.name,
+        email: submission.email,
+        phone: submission.phone,
+        address: submission.address,
+        source: submission.source,
+        submittedAt: submission.submittedAt,
+      });
+      
+      res.status(200).json({ 
+        success: true, 
+        message: "Lead submitted successfully",
+        id: submission.id 
+      });
+    } catch (error) {
+      console.error("Lead submission error:", error);
+      res.status(400).json({ 
+        success: false, 
+        message: "Failed to submit lead" 
+      });
+    }
+  });
+
   app.post("/api/contact", async (req, res) => {
     try {
       const validatedData = contactFormSchema.parse(req.body);
