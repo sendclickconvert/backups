@@ -90,6 +90,18 @@ export default function Footer() {
                 </div>
               </li>
             </ul>
+            <div className="mt-4 rounded-lg overflow-hidden h-[150px]">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.4!2d-73.0151!3d40.7654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e83e4f7b0d4b3d%3A0x1c2a3b4c5d6e7f8a!2s100%20Washington%20Ave%2C%20Patchogue%2C%20NY%2011772!5e0!3m2!1sen!2sus!4v1700000000000"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="The Property Father Location"
+              />
+            </div>
           </div>
         </div>
 
