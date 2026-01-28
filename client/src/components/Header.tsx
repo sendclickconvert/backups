@@ -114,17 +114,17 @@ export default function Header() {
           )}
         </div>
 
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-x-6">
           <a
             href="tel:5165486558"
-            className="flex items-center gap-2 text-sm font-semibold text-accent"
+            className="flex items-center gap-2 text-sm font-semibold text-accent whitespace-nowrap"
             data-testid="link-phone-header"
           >
-            <Phone className="h-4 w-4" />
+            <Phone className="h-4 w-4 flex-shrink-0" />
             (516) 548-6558
           </a>
           <Link href="/contact">
-            <Button className="bg-accent text-accent-foreground " data-testid="button-get-offer">
+            <Button className="bg-accent text-accent-foreground" data-testid="button-get-offer">
               Get Cash Offer
             </Button>
           </Link>
