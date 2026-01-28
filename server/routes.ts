@@ -3,7 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { contactFormSchema } from "@shared/schema";
 
-const GHL_WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/rmiY5YW4pi7L07SbLlkl/webhook-trigger/727777a8-64dc-449a-bd40-b1821f";
+const GHL_WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/rmiY5YW4pi7L07SbLIkI/webhook-trigger/727777a8-64dc-449a-bd40-b182fce6d29e";
 
 export async function registerRoutes(
   httpServer: Server,
