@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Phone, Mail, MapPin } from "lucide-react";
-import logoImage from "@assets/ThePropertFather_1769607853656.png";
+import logoImage from "@assets/The_Property_Father-03_1769608224972.png";
 
 export default function Footer() {
   return (
