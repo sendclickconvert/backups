@@ -66,12 +66,12 @@ export default function Header() {
           </Button>
         </div>
 
-        <div className="hidden lg:flex lg:gap-x-0">
+        <div className="hidden lg:flex lg:gap-x-0 lg:items-center">
           {navigation.map((item) =>
             item.children ? (
               <div
                 key={item.name}
-                className="relative"
+                className="relative group"
                 onMouseEnter={() => setOpenDropdown(item.name)}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
@@ -80,20 +80,22 @@ export default function Header() {
                   data-testid={`dropdown-${item.name.toLowerCase()}`}
                 >
                   {item.name}
-                  <ChevronDown className="h-4 w-4" />
+                  <ChevronDown className={`h-4 w-4 transition-transform ${openDropdown === item.name ? 'rotate-180' : ''}`} />
                 </button>
                 {openDropdown === item.name && (
-                  <div className="absolute left-0 top-full z-10 mt-1 w-48 origin-top-left rounded-md bg-white py-2 shadow-lg ring-1 ring-black/5">
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.name}
-                        href={child.href}
-                        className="block px-4 py-2 text-sm text-foreground hover:bg-muted transition-colors"
-                        data-testid={`link-${child.name.toLowerCase().replace(/\s+/g, '-')}`}
-                      >
-                        {child.name}
-                      </Link>
-                    ))}
+                  <div className="absolute left-0 top-full z-10 pt-2 w-48 origin-top-left">
+                    <div className="rounded-md bg-white py-2 shadow-lg ring-1 ring-black/5">
+                      {item.children.map((child) => (
+                        <Link
+                          key={child.name}
+                          href={child.href}
+                          className="block px-4 py-2 text-sm text-foreground hover:bg-muted transition-colors"
+                          data-testid={`link-${child.name.toLowerCase().replace(/\s+/g, '-')}`}
+                        >
+                          {child.name}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
