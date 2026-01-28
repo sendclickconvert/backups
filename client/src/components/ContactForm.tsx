@@ -37,7 +37,8 @@ export default function ContactForm({
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
-      name: "",
+      firstName: "",
+      lastName: "",
       email: "",
       phone: "",
       address: "",
@@ -100,18 +101,33 @@ export default function ContactForm({
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-          <div className="space-y-2">
-            <Label htmlFor="name">Full Name *</Label>
-            <Input
-              id="name"
-              placeholder="John Smith"
-              {...register("name")}
-              className={errors.name ? "border-destructive" : ""}
-              data-testid="input-name"
-            />
-            {errors.name && (
-              <p className="text-sm text-destructive">{errors.name.message}</p>
-            )}
+          <div className="grid grid-cols-2 gap-4">
+            <div className="space-y-2">
+              <Label htmlFor="firstName">First Name *</Label>
+              <Input
+                id="firstName"
+                placeholder="John"
+                {...register("firstName")}
+                className={errors.firstName ? "border-destructive" : ""}
+                data-testid="input-firstName"
+              />
+              {errors.firstName && (
+                <p className="text-sm text-destructive">{errors.firstName.message}</p>
+              )}
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="lastName">Last Name *</Label>
+              <Input
+                id="lastName"
+                placeholder="Smith"
+                {...register("lastName")}
+                className={errors.lastName ? "border-destructive" : ""}
+                data-testid="input-lastName"
+              />
+              {errors.lastName && (
+                <p className="text-sm text-destructive">{errors.lastName.message}</p>
+              )}
+            </div>
           </div>
 
           <div className="space-y-2">

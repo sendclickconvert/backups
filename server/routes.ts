@@ -32,7 +32,8 @@ export async function registerRoutes(
       
       console.log("Lead submitted to GHL webhook:", {
         id: submission.id,
-        name: submission.name,
+        firstName: submission.firstName,
+        lastName: submission.lastName,
         email: submission.email,
         phone: submission.phone,
         address: submission.address,
