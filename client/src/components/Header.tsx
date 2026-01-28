@@ -48,7 +48,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5" data-testid="link-home-logo">
             <img
-              className="h-14 w-auto"
+              className="h-24 w-auto"
               src={logoImage}
               alt="The Property Father"
             />
@@ -66,7 +66,7 @@ export default function Header() {
           </Button>
         </div>
 
-        <div className="hidden lg:flex lg:gap-x-1">
+        <div className="hidden lg:flex lg:gap-x-0">
           {navigation.map((item) =>
             item.children ? (
               <div
