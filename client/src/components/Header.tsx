@@ -48,7 +48,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5" data-testid="link-home-logo">
             <img
-              className="h-20 w-auto min-w-[200px]"
+              className="h-14 w-auto"
               src={logoImage}
               alt="The Property Father"
             />
