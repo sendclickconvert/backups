@@ -13,8 +13,8 @@ import {
   Phone,
   Star,
   ArrowRight,
-  TreePine,
-  Building,
+  MapPin,
+  MapPinned,
   Zap,
   Scale,
   AlertTriangle,
@@ -292,7 +292,7 @@ export default function Home() {
                 <Link href="/locations/suffolk-county">
                   <Card className="hover-elevate cursor-pointer">
                     <CardContent className="pt-6 flex items-center gap-4">
-                      <TreePine className="h-10 w-10 text-accent" />
+                      <MapPin className="h-10 w-10 text-accent" />
                       <div>
                         <h3 className="font-semibold">Suffolk County</h3>
                         <p className="text-sm text-muted-foreground">Eastern Long Island</p>
@@ -303,7 +303,7 @@ export default function Home() {
                 <Link href="/locations/nassau-county">
                   <Card className="hover-elevate cursor-pointer">
                     <CardContent className="pt-6 flex items-center gap-4">
-                      <Building className="h-10 w-10 text-accent" />
+                      <MapPinned className="h-10 w-10 text-accent" />
                       <div>
                         <h3 className="font-semibold">Nassau County</h3>
                         <p className="text-sm text-muted-foreground">Western Long Island</p>
