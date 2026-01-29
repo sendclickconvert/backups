@@ -144,8 +144,8 @@ export default function Home() {
                   ))}
                 </div>
                 <div className="text-sm">
-                  <p className="font-semibold">500+ Homes Purchased</p>
-                  <p className="text-white/80">Helping Long Island homeowners since 2015</p>
+                  <p className="font-semibold">Local Long Island Cash Buyers</p>
+                  <p className="text-white/80">Serving Suffolk & Nassau County homeowners</p>
                 </div>
               </div>
             </div>
