@@ -14,8 +14,13 @@ import {
   Star,
   ArrowRight,
   Building2,
-  Handshake,
-  Zap
+  Zap,
+  Scale,
+  AlertTriangle,
+  ScrollText,
+  Gift,
+  Wrench,
+  type LucideIcon
 } from "lucide-react";
 
 const benefits = [
@@ -64,12 +69,12 @@ const steps = [
   }
 ];
 
-const situations = [
-  { name: "Divorce", href: "/situations/divorce" },
-  { name: "Pre-Foreclosure", href: "/situations/pre-foreclosure" },
-  { name: "Probate", href: "/situations/probate" },
-  { name: "Inherited Property", href: "/situations/inherited-property" },
-  { name: "Sell As-Is", href: "/situations/sell-as-is" },
+const situations: { name: string; href: string; icon: LucideIcon }[] = [
+  { name: "Divorce", href: "/situations/divorce", icon: Scale },
+  { name: "Pre-Foreclosure", href: "/situations/pre-foreclosure", icon: AlertTriangle },
+  { name: "Probate", href: "/situations/probate", icon: ScrollText },
+  { name: "Inherited Property", href: "/situations/inherited-property", icon: Gift },
+  { name: "Sell As-Is", href: "/situations/sell-as-is", icon: Wrench },
 ];
 
 const testimonials = [
@@ -231,7 +236,7 @@ export default function Home() {
               <Link key={index} href={situation.href}>
                 <Card className="bg-white/10 border-0 hover:bg-white/20 transition-colors cursor-pointer h-full">
                   <CardContent className="pt-6 text-center">
-                    <Handshake className="h-8 w-8 text-gold mx-auto mb-3" />
+                    <situation.icon className="h-8 w-8 text-gold mx-auto mb-3" />
                     <h3 className="font-semibold text-white">{situation.name}</h3>
                   </CardContent>
                 </Card>
