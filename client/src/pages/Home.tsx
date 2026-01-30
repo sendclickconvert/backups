@@ -107,11 +107,18 @@ export default function Home() {
         description="Sell your Long Island house fast for cash. The Property Father buys houses in any condition in Suffolk and Nassau County. No fees, no repairs, close in 7 days."
         canonicalPath="/"
       />
-      <section className="relative bg-charcoal text-white overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-black/80 to-black/60" />
-        <div className="relative mx-auto max-w-7xl px-4 py-16 lg:py-24 lg:px-8">
+      <section className="relative text-white overflow-hidden min-h-[90vh] flex items-center">
+        {/* Hero Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80')" }}
+        />
+        {/* Cinematic Dark Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30" />
+        <div className="relative mx-auto max-w-7xl px-4 py-20 lg:py-32 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 text-center lg:text-left">
+            <div className="space-y-8 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 bg-gold/20 border border-gold/30 rounded-full px-4 py-2 text-sm">
                 <Star className="h-4 w-4 text-gold" />
                 <span className="text-gold">Trusted Cash Home Buyers in Long Island</span>
