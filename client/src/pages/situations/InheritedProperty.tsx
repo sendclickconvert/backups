@@ -43,7 +43,7 @@ const challenges = [
 export default function InheritedProperty() {
   return (
     <Layout>
-      <section className="gradient-navy text-white py-16 lg:py-20">
+      <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -128,7 +128,7 @@ export default function InheritedProperty() {
                 ))}
               </ul>
             </div>
-            <div className="bg-navy rounded-lg p-8 text-white">
+            <div className="bg-charcoal rounded-lg p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">We Handle Everything</h3>
               <p className="text-white/80 mb-4">
                 Dealing with an inherited property doesn't have to be stressful. We can:
@@ -145,7 +145,7 @@ export default function InheritedProperty() {
         </div>
       </section>
 
-      <section className="py-16 lg:py-20 bg-navy text-white">
+      <section className="py-16 lg:py-20 bg-charcoal text-white">
         <div className="mx-auto max-w-7xl px-4 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Turn Your Inherited Property Into Cash

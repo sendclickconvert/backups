@@ -88,7 +88,7 @@ export default function FAQ() {
       />
       <FAQSchema faqs={faqs} />
       
-      <section className="gradient-navy text-white py-16 lg:py-20">
+      <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <div className="flex items-center justify-center gap-2 mb-4">
@@ -135,7 +135,7 @@ export default function FAQ() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="tel:5165486558">
-              <Button size="lg" className="bg-navy text-white ">
+              <Button size="lg" className="bg-charcoal text-white ">
                 <Phone className="mr-2 h-5 w-5" />
                 (516) 548-6558
               </Button>
@@ -150,7 +150,7 @@ export default function FAQ() {
         </div>
       </section>
 
-      <section className="py-16 lg:py-20 bg-navy text-white">
+      <section className="py-16 lg:py-20 bg-charcoal text-white">
         <div className="mx-auto max-w-7xl px-4 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Ready to Get Your Cash Offer?

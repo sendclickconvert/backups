@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* LIGHT MODE - Navy #1a1a5e / Gold #D4AF37 */
+/* LIGHT MODE - White & Gold Luxury Real Estate */
 :root {
   --button-outline: rgba(0,0,0, .10);
   --badge-outline: rgba(0,0,0, .05);
@@ -13,44 +13,44 @@
   --elevate-2: rgba(0,0,0, .08);
 
   --background: 0 0% 100%;
-  --foreground: 240 59% 23%;
+  --foreground: 0 0% 15%;
 
-  --border: 240 20% 85%;
+  --border: 43 30% 85%;
 
   --card: 0 0% 100%;
-  --card-foreground: 240 59% 23%;
-  --card-border: 240 20% 85%;
+  --card-foreground: 0 0% 15%;
+  --card-border: 43 30% 85%;
 
-  --sidebar: 240 59% 23%;
-  --sidebar-foreground: 0 0% 100%;
-  --sidebar-border: 240 59% 18%;
-  --sidebar-primary: 43 69% 52%;
-  --sidebar-primary-foreground: 240 59% 15%;
-  --sidebar-accent: 240 59% 30%;
-  --sidebar-accent-foreground: 0 0% 100%;
-  --sidebar-ring: 43 69% 52%;
+  --sidebar: 0 0% 98%;
+  --sidebar-foreground: 0 0% 15%;
+  --sidebar-border: 43 30% 85%;
+  --sidebar-primary: 43 69% 42%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 43 30% 95%;
+  --sidebar-accent-foreground: 0 0% 15%;
+  --sidebar-ring: 43 69% 42%;
 
   --popover: 0 0% 100%;
-  --popover-foreground: 240 59% 23%;
-  --popover-border: 240 20% 85%;
+  --popover-foreground: 0 0% 15%;
+  --popover-border: 43 30% 85%;
 
-  --primary: 240 59% 23%;
+  --primary: 43 69% 42%;
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 43 69% 52%;
-  --secondary-foreground: 240 59% 15%;
+  --secondary: 0 0% 96%;
+  --secondary-foreground: 0 0% 15%;
 
-  --muted: 240 20% 96%;
-  --muted-foreground: 240 20% 45%;
+  --muted: 43 20% 97%;
+  --muted-foreground: 0 0% 40%;
 
-  --accent: 43 69% 52%;
-  --accent-foreground: 240 59% 15%;
+  --accent: 43 69% 42%;
+  --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
-  --input: 240 20% 85%;
-  --ring: 43 69% 52%;
+  --input: 43 20% 88%;
+  --ring: 43 69% 42%;
   --chart-1: 240 59% 23%;
   --chart-2: 43 69% 52%;
   --chart-3: 240 59% 35%;
@@ -103,50 +103,50 @@
   --elevate-1: rgba(255,255,255, .04);
   --elevate-2: rgba(255,255,255, .09);
 
-  --background: 240 59% 8%;
+  --background: 0 0% 8%;
   --foreground: 0 0% 95%;
 
-  --border: 240 30% 20%;
+  --border: 43 20% 20%;
 
-  --card: 240 59% 12%;
+  --card: 0 0% 12%;
   --card-foreground: 0 0% 95%;
-  --card-border: 240 30% 20%;
+  --card-border: 43 20% 20%;
 
-  --sidebar: 240 59% 10%;
+  --sidebar: 0 0% 10%;
   --sidebar-foreground: 0 0% 95%;
-  --sidebar-border: 240 59% 15%;
+  --sidebar-border: 43 20% 18%;
   --sidebar-primary: 43 69% 52%;
-  --sidebar-primary-foreground: 240 59% 10%;
-  --sidebar-accent: 240 59% 18%;
+  --sidebar-primary-foreground: 0 0% 10%;
+  --sidebar-accent: 0 0% 18%;
   --sidebar-accent-foreground: 0 0% 95%;
   --sidebar-ring: 43 69% 52%;
 
-  --popover: 240 59% 12%;
+  --popover: 0 0% 12%;
   --popover-foreground: 0 0% 95%;
-  --popover-border: 240 30% 20%;
+  --popover-border: 43 20% 20%;
 
   --primary: 43 69% 52%;
-  --primary-foreground: 240 59% 10%;
+  --primary-foreground: 0 0% 10%;
 
-  --secondary: 240 59% 23%;
+  --secondary: 0 0% 20%;
   --secondary-foreground: 0 0% 95%;
 
-  --muted: 240 30% 18%;
-  --muted-foreground: 240 20% 65%;
+  --muted: 0 0% 18%;
+  --muted-foreground: 0 0% 65%;
 
   --accent: 43 69% 52%;
-  --accent-foreground: 240 59% 10%;
+  --accent-foreground: 0 0% 10%;
 
   --destructive: 0 62% 50%;
   --destructive-foreground: 0 0% 100%;
 
-  --input: 240 30% 25%;
+  --input: 0 0% 25%;
   --ring: 43 69% 52%;
   --chart-1: 43 69% 52%;
-  --chart-2: 240 59% 45%;
+  --chart-2: 0 0% 45%;
   --chart-3: 43 69% 65%;
-  --chart-4: 240 59% 55%;
-  --chart-5: 240 20% 50%;
+  --chart-4: 0 0% 55%;
+  --chart-5: 0 0% 50%;
 
   --shadow-2xs: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   --shadow-xs: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
@@ -247,11 +247,11 @@
   }
   
   .bg-navy {
-    background-color: #1a1a5e;
+    background-color: #1a1a1a;
   }
   
   .text-navy {
-    color: #1a1a5e;
+    color: #1a1a1a;
   }
   
   .border-gold {
@@ -259,10 +259,18 @@
   }
 
   .gradient-navy {
-    background: linear-gradient(135deg, #1a1a5e 0%, #2d2d7a 100%);
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   }
 
   .gradient-gold {
     background: linear-gradient(135deg, #D4AF37 0%, #f0d47a 100%);
+  }
+
+  .bg-luxury {
+    background: linear-gradient(180deg, #ffffff 0%, #faf8f5 100%);
+  }
+
+  .bg-charcoal {
+    background-color: #1a1a1a;
   }
 }

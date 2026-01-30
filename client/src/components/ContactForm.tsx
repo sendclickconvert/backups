@@ -164,7 +164,7 @@ export default function ContactForm({
             <Label htmlFor="address">Property Address *</Label>
             <Input
               id="address"
-              placeholder="123 Main St, Patchogue, NY"
+              placeholder="123 Main St, Long Island, NY"
               {...register("address")}
               className={errors.address ? "border-destructive" : ""}
               data-testid="input-address"

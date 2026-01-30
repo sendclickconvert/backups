@@ -39,7 +39,7 @@ export default function SuffolkCounty() {
         description="Sell your Suffolk County house fast for cash. The Property Father buys houses in any condition in Babylon, Huntington, Islip, Smithtown and all Suffolk County towns."
         canonicalPath="/locations/suffolk-county"
       />
-      <section className="gradient-navy text-white py-16 lg:py-20">
+      <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -87,7 +87,7 @@ export default function SuffolkCounty() {
                 Your Suffolk County Cash Home Buying Experts
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                As local investors based in Patchogue, we understand the Suffolk County real estate market inside and out. We've helped hundreds of homeowners throughout the county sell their homes quickly and hassle-free.
+                As local investors based on Long Island, we understand the Suffolk County real estate market inside and out. We've helped hundreds of homeowners throughout the county sell their homes quickly and hassle-free.
               </p>
               <p className="text-lg text-muted-foreground mb-8">
                 Whether your home is in Huntington, Babylon, Smithtown, Brookhaven, or any other Suffolk County town, we're ready to make you a fair cash offer.
@@ -134,7 +134,7 @@ export default function SuffolkCounty() {
         </div>
       </section>
 
-      <section className="py-16 lg:py-20 bg-navy text-white">
+      <section className="py-16 lg:py-20 bg-charcoal text-white">
         <div className="mx-auto max-w-7xl px-4 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Ready to Sell Your Suffolk County Home?

@@ -16,34 +16,34 @@ import {
 const benefits = [
   {
     icon: Clock,
-    title: "Quick Closings",
-    description: "We close fast, helping you avoid costly delays in your REO or short sale process."
+    title: "Consistent Deal Flow",
+    description: "We have a steady pipeline of properties that need financing for rehab and resale."
   },
   {
     icon: DollarSign,
-    title: "Cash Purchases",
-    description: "No financing contingencies. Our cash offers mean certainty of closing."
+    title: "Secured Investments",
+    description: "All financing is backed by real property with strong equity positions."
   },
   {
     icon: Handshake,
     title: "Reliable Partner",
-    description: "We've worked with major lenders and understand your timeline requirements."
+    description: "We have a proven track record and maintain transparent communication throughout every deal."
   }
 ];
 
 const services = [
-  "REO property purchases",
-  "Short sale acquisitions",
-  "Non-performing loan property sales",
-  "Bank-owned property transactions",
-  "Distressed asset disposition",
-  "Bulk portfolio purchases"
+  "Fix and flip financing partnerships",
+  "Bridge loan opportunities",
+  "Property acquisition funding",
+  "Renovation project financing",
+  "Joint venture opportunities",
+  "Portfolio lending partnerships"
 ];
 
 export default function Lenders() {
   return (
     <Layout>
-      <section className="gradient-navy text-white py-16 lg:py-20">
+      <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -52,10 +52,10 @@ export default function Lenders() {
                 <span className="text-gold font-medium">Lender Partners</span>
               </div>
               <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-                Partner With Us on REO & Short Sales
+                Partner With Us on Property Financing
               </h1>
               <p className="text-lg text-white/90 mb-8">
-                We help banks, credit unions, and mortgage servicers quickly dispose of distressed properties. Our cash offers and fast closings minimize your carrying costs.
+                Partner with us to provide financing for properties on future deals. We work with banks, credit unions, and private lenders to create mutually beneficial opportunities.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/contact">
@@ -75,7 +75,7 @@ export default function Lenders() {
             <div>
               <ContactForm 
                 title="Lender Partnership Inquiry"
-                description="Let's discuss how we can help with your REO properties."
+                description="Let's discuss financing partnership opportunities."
                 source="lenders"
               />
             </div>
@@ -114,10 +114,10 @@ export default function Lenders() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                Our Services for Lenders
+                Partnership Opportunities
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                We're experienced in working with financial institutions and understand the unique requirements of REO and short sale transactions.
+                We're experienced in working with financial institutions and private lenders to create profitable financing arrangements.
               </p>
               <ul className="space-y-3">
                 {services.map((service, index) => (
@@ -128,7 +128,7 @@ export default function Lenders() {
                 ))}
               </ul>
             </div>
-            <div className="bg-navy rounded-lg p-8 text-white">
+            <div className="bg-charcoal rounded-lg p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">Work With a Proven Partner</h3>
               <p className="text-white/80 mb-4">
                 We have the capital, experience, and track record to handle your distressed properties efficiently.
@@ -145,13 +145,13 @@ export default function Lenders() {
         </div>
       </section>
 
-      <section className="py-16 lg:py-20 bg-navy text-white">
+      <section className="py-16 lg:py-20 bg-charcoal text-white">
         <div className="mx-auto max-w-7xl px-4 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Let's Work Together
           </h2>
           <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
-            Contact us to discuss how we can help with your REO portfolio and short sale properties.
+            Contact us to discuss financing partnership opportunities on our upcoming property deals.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="tel:5165486558">

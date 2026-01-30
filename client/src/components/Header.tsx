@@ -17,11 +17,11 @@ const navigation = [
   {
     name: "Situations",
     children: [
+      { name: "Sell As-Is", href: "/situations/sell-as-is" },
       { name: "Divorce", href: "/situations/divorce" },
       { name: "Pre-Foreclosure", href: "/situations/pre-foreclosure" },
       { name: "Probate", href: "/situations/probate" },
       { name: "Inherited Property", href: "/situations/inherited-property" },
-      { name: "Sell As-Is", href: "/situations/sell-as-is" },
     ],
   },
   {
@@ -48,7 +48,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5" data-testid="link-home-logo">
             <img
-              className="h-16 lg:h-[150px] w-auto"
+              className="h-20 lg:h-[180px] w-auto"
               src={logoImage}
               alt="The Property Father"
             />

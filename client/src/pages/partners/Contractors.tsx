@@ -49,7 +49,7 @@ const services = [
 export default function Contractors() {
   return (
     <Layout>
-      <section className="gradient-navy text-white py-16 lg:py-20">
+      <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -134,7 +134,7 @@ export default function Contractors() {
                 ))}
               </div>
             </div>
-            <div className="bg-navy rounded-lg p-8 text-white">
+            <div className="bg-charcoal rounded-lg p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">What We Look For</h3>
               <p className="text-white/80 mb-4">
                 We're building long-term relationships with contractors who share our values:
@@ -152,7 +152,7 @@ export default function Contractors() {
         </div>
       </section>
 
-      <section className="py-16 lg:py-20 bg-navy text-white">
+      <section className="py-16 lg:py-20 bg-charcoal text-white">
         <div className="mx-auto max-w-7xl px-4 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Ready to Partner With Us?

@@ -11,7 +11,7 @@ export default function Footer() {
             <img
               src={logoImage}
               alt="The Property Father"
-              className="h-16 lg:h-[150px] w-auto"
+              className="h-20 lg:h-[180px] w-auto"
             />
             <p className="text-sm text-white/80">
               We buy houses for cash in Long Island, NY. Get a fair offer in 24 hours with no obligations or hidden fees.
@@ -86,20 +86,20 @@ export default function Footer() {
               <li>
                 <div className="flex items-start gap-2 text-sm text-white/80">
                   <MapPin className="h-4 w-4 text-gold flex-shrink-0 mt-0.5" />
-                  <span>100 Washington Ave<br />Patchogue, NY 11772</span>
+                  <span>Long Island, NY</span>
                 </div>
               </li>
             </ul>
             <div className="mt-4 rounded-lg overflow-hidden h-[150px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.4!2d-73.0151!3d40.7654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e83e4f7b0d4b3d%3A0x1c2a3b4c5d6e7f8a!2s100%20Washington%20Ave%2C%20Patchogue%2C%20NY%2011772!5e0!3m2!1sen!2sus!4v1700000000000"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.0360686158!2d-73.97968099999999!3d40.6974034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e8429e4180af4f%3A0x72beb63b0a8e32b4!2sLong%20Island%2C%20NY!5e0!3m2!1sen!2sus!4v1700000000000"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="The Property Father Location"
+                title="The Property Father - Long Island, NY"
               />
             </div>
           </div>

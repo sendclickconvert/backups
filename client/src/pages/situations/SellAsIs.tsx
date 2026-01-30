@@ -47,7 +47,7 @@ const conditions = [
 export default function SellAsIs() {
   return (
     <Layout>
-      <section className="gradient-navy text-white py-16 lg:py-20">
+      <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -132,7 +132,7 @@ export default function SellAsIs() {
                 ))}
               </div>
             </div>
-            <div className="bg-navy rounded-lg p-8 text-white">
+            <div className="bg-charcoal rounded-lg p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">Save Time and Money</h3>
               <p className="text-white/80 mb-4">
                 The average homeowner spends $15,000-$30,000 on repairs and updates before listing their home. Then they wait 3-6 months for a buyer who might ask for even more repairs.
@@ -152,7 +152,7 @@ export default function SellAsIs() {
         </div>
       </section>
 
-      <section className="py-16 lg:py-20 bg-navy text-white">
+      <section className="py-16 lg:py-20 bg-charcoal text-white">
         <div className="mx-auto max-w-7xl px-4 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Get a Cash Offer on Your As-Is Property

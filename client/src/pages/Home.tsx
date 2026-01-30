@@ -71,11 +71,11 @@ const steps = [
 ];
 
 const situations: { name: string; href: string; icon: LucideIcon }[] = [
+  { name: "Sell As-Is", href: "/situations/sell-as-is", icon: Wrench },
   { name: "Divorce", href: "/situations/divorce", icon: Scale },
   { name: "Pre-Foreclosure", href: "/situations/pre-foreclosure", icon: AlertTriangle },
   { name: "Probate", href: "/situations/probate", icon: ScrollText },
   { name: "Inherited Property", href: "/situations/inherited-property", icon: Gift },
-  { name: "Sell As-Is", href: "/situations/sell-as-is", icon: Wrench },
 ];
 
 const testimonials = [
@@ -107,20 +107,20 @@ export default function Home() {
         description="Sell your Long Island house fast for cash. The Property Father buys houses in any condition in Suffolk and Nassau County. No fees, no repairs, close in 7 days."
         canonicalPath="/"
       />
-      <section className="relative gradient-navy text-white overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary opacity-90" />
-        <div className="relative mx-auto max-w-7xl px-4 py-20 lg:py-28 lg:px-8">
+      <section className="relative bg-charcoal text-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-black/80 to-black/60" />
+        <div className="relative mx-auto max-w-7xl px-4 py-16 lg:py-24 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 text-sm">
+            <div className="space-y-6 text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 bg-gold/20 border border-gold/30 rounded-full px-4 py-2 text-sm">
                 <Star className="h-4 w-4 text-gold" />
-                <span>Trusted Cash Home Buyers in Long Island</span>
+                <span className="text-gold">Trusted Cash Home Buyers in Long Island</span>
               </div>
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
-                Sell Your Long Island House <span className="text-gold">Fast For Cash</span>
+                Sell Your House <span className="text-gold">Fast For Cash</span>
               </h1>
               <p className="text-lg lg:text-xl text-white/90">
-                Get a fair cash offer in 24 hours. No repairs, no fees, no hassle. Close on your timeline and move forward with your life.
+                Get a fair cash offer in 24 hours. Close on your timeline and move forward with your life.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/contact">
@@ -200,7 +200,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
               <div key={index} className="relative text-center">
-                <div className="mx-auto w-16 h-16 bg-navy rounded-full flex items-center justify-center mb-4">
+                <div className="mx-auto w-16 h-16 bg-charcoal rounded-full flex items-center justify-center mb-4">
                   <span className="text-2xl font-bold text-gold">{step.number}</span>
                 </div>
                 <h3 className="font-semibold text-lg mb-2">{step.title}</h3>
@@ -213,7 +213,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-12">
             <Link href="/how-it-works">
-              <Button size="lg" className="bg-navy text-white " data-testid="button-learn-more">
+              <Button size="lg" className="bg-charcoal text-white " data-testid="button-learn-more">
                 Learn More About Our Process
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -222,7 +222,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 lg:py-20 bg-navy text-white">
+      <section className="py-16 lg:py-20 bg-charcoal text-white">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -313,7 +313,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="bg-navy rounded-lg p-8 text-white text-center">
+            <div className="bg-charcoal rounded-lg p-8 text-white text-center">
               <h3 className="text-2xl font-bold mb-4">Ready to Get Started?</h3>
               <p className="text-white/80 mb-6">
                 Call us now or fill out our form to get your free, no-obligation cash offer today.

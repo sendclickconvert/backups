@@ -120,7 +120,7 @@ export default function HowItWorks() {
         description="Learn our simple 5-step process for selling your house fast for cash. No agents, no fees, close in as few as 7 days. Contact The Property Father today."
         canonicalPath="/how-it-works"
       />
-      <section className="gradient-navy text-white py-16 lg:py-20">
+      <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
             How We Buy Your House
@@ -138,7 +138,7 @@ export default function HowItWorks() {
               <div key={index} className={`grid lg:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="w-16 h-16 bg-navy rounded-full flex items-center justify-center">
+                    <div className="w-16 h-16 bg-charcoal rounded-full flex items-center justify-center">
                       <span className="text-2xl font-bold text-gold">{step.number}</span>
                     </div>
                     <h2 className="text-2xl lg:text-3xl font-bold">{step.title}</h2>

@@ -47,7 +47,7 @@ export default function About() {
         description="Learn about The Property Father - local Long Island investors helping homeowners sell their houses quickly and hassle-free since 2015. 500+ homes purchased."
         canonicalPath="/about"
       />
-      <section className="gradient-navy text-white py-16 lg:py-20">
+      <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
@@ -78,7 +78,7 @@ export default function About() {
                   That's why we created a better way. We buy houses directly from homeowners for cash, close on your timeline, and handle all the complexity so you don't have to.
                 </p>
                 <p>
-                  Based right here in Patchogue, we know Long Island inside and out. We're not a national franchise or a faceless corporation - we're your neighbors, and we're here to help.
+                  Based right here on Long Island, we know this area inside and out. We're not a national franchise or a faceless corporation - we're your neighbors, and we're here to help.
                 </p>
               </div>
             </div>
@@ -130,7 +130,7 @@ export default function About() {
                 <CardContent className="p-8 flex flex-col items-center justify-center min-h-[300px]">
                   <Building2 className="h-24 w-24 text-accent mb-4" />
                   <p className="text-center text-muted-foreground">
-                    100 Washington Ave, Patchogue, NY 11772
+                    Long Island, NY
                   </p>
                 </CardContent>
               </Card>
@@ -174,7 +174,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-16 lg:py-20 bg-navy text-white">
+      <section className="py-16 lg:py-20 bg-charcoal text-white">
         <div className="mx-auto max-w-7xl px-4 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Ready to Work With Us?

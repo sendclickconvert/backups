@@ -41,7 +41,7 @@ export default function NassauCounty() {
         description="Sell your Nassau County house fast for cash. The Property Father buys houses in any condition in Hempstead, Long Beach, Glen Cove and all Nassau County towns."
         canonicalPath="/locations/nassau-county"
       />
-      <section className="gradient-navy text-white py-16 lg:py-20">
+      <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -136,7 +136,7 @@ export default function NassauCounty() {
         </div>
       </section>
 
-      <section className="py-16 lg:py-20 bg-navy text-white">
+      <section className="py-16 lg:py-20 bg-charcoal text-white">
         <div className="mx-auto max-w-7xl px-4 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Ready to Sell Your Nassau County Home?

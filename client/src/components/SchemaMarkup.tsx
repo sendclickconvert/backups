@@ -19,16 +19,14 @@ export function LocalBusinessSchema({
     email: "info@thepropertyfather.com",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "100 Washington Ave",
-      addressLocality: "Patchogue",
+      addressLocality: "Long Island",
       addressRegion: "NY",
-      postalCode: "11772",
       addressCountry: "US"
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: "40.7654",
-      longitude: "-73.0151"
+      latitude: "40.7891",
+      longitude: "-73.1350"
     },
     areaServed: [
       {

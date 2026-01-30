@@ -43,7 +43,7 @@ const reasons = [
 export default function Divorce() {
   return (
     <Layout>
-      <section className="gradient-navy text-white py-16 lg:py-20">
+      <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -128,7 +128,7 @@ export default function Divorce() {
                 ))}
               </ul>
             </div>
-            <div className="bg-navy rounded-lg p-8 text-white">
+            <div className="bg-charcoal rounded-lg p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">How We Help</h3>
               <p className="text-white/80 mb-6">
                 We work with divorce attorneys and can coordinate with both parties to ensure a smooth transaction. Our cash offers provide certainty and help you avoid lengthy negotiations over repairs or listing prices.
@@ -141,7 +141,7 @@ export default function Divorce() {
         </div>
       </section>
 
-      <section className="py-16 lg:py-20 bg-navy text-white">
+      <section className="py-16 lg:py-20 bg-charcoal text-white">
         <div className="mx-auto max-w-7xl px-4 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Ready to Move Forward?

@@ -42,7 +42,7 @@ const steps = [
 export default function PreForeclosure() {
   return (
     <Layout>
-      <section className="gradient-navy text-white py-16 lg:py-20">
+      <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -121,7 +121,7 @@ export default function PreForeclosure() {
               <ol className="space-y-4">
                 {steps.map((step, index) => (
                   <li key={index} className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-8 h-8 bg-navy rounded-full flex items-center justify-center">
+                    <div className="flex-shrink-0 w-8 h-8 bg-charcoal rounded-full flex items-center justify-center">
                       <span className="text-gold font-bold text-sm">{index + 1}</span>
                     </div>
                     <span className="mt-1">{step}</span>
@@ -146,7 +146,7 @@ export default function PreForeclosure() {
         </div>
       </section>
 
-      <section className="py-16 lg:py-20 bg-navy text-white">
+      <section className="py-16 lg:py-20 bg-charcoal text-white">
         <div className="mx-auto max-w-7xl px-4 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Don't Wait Until It's Too Late
