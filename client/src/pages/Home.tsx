@@ -114,8 +114,8 @@ export default function Home() {
           style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80')" }}
         />
         {/* Cinematic Dark Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/50" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/35 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/15" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 lg:py-32 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 text-center lg:text-left">
