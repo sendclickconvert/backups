@@ -106,6 +106,15 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/10">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-4">
+            <Link href="/terms" className="text-sm text-white/60 hover:text-gold transition-colors" data-testid="footer-link-terms">
+              Terms of Service
+            </Link>
+            <span className="hidden md:inline text-white/40">|</span>
+            <Link href="/privacy" className="text-sm text-white/60 hover:text-gold transition-colors" data-testid="footer-link-privacy">
+              Privacy Policy
+            </Link>
+          </div>
           <p className="text-center text-sm text-white/60">
             &copy; {new Date().getFullYear()} The Property Father. All rights reserved.
           </p>

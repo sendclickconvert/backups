@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "wouter";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@/components/ui/button";
@@ -197,7 +198,14 @@ export default function ContactForm({
                 htmlFor="smsConsent"
                 className="text-sm font-normal cursor-pointer"
               >
-                I agree to receive SMS/text messages from The Property Father regarding my property inquiry. Message and data rates may apply. Reply STOP to opt out.
+                I agree to receive SMS/text messages from The Property Father regarding my property inquiry. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out, HELP for help. View our{" "}
+                <Link href="/terms" className="text-accent underline hover:text-accent/80" data-testid="link-terms">
+                  Terms of Service
+                </Link>{" "}
+                and{" "}
+                <Link href="/privacy" className="text-accent underline hover:text-accent/80" data-testid="link-privacy">
+                  Privacy Policy
+                </Link>.
               </Label>
               {errors.smsConsent && (
                 <p className="text-sm text-destructive">{errors.smsConsent.message}</p>
