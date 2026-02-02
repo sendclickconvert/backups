@@ -204,17 +204,18 @@ export default function Home() {
               Selling your house for cash is simple. Here's our straightforward 4-step process.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="relative grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Connecting dotted lines - desktop only */}
+            <div className="hidden lg:block absolute top-8 left-[12.5%] right-[12.5%] -translate-y-1/2">
+              <div className="w-full border-t-2 border-dashed border-gold/40" />
+            </div>
             {steps.map((step, index) => (
-              <div key={index} className="relative text-center">
+              <div key={index} className="relative text-center z-10">
                 <div className="mx-auto w-16 h-16 bg-charcoal rounded-full flex items-center justify-center mb-4">
                   <span className="text-2xl font-bold text-gold">{step.number}</span>
                 </div>
                 <h3 className="font-semibold text-lg mb-2">{step.title}</h3>
                 <p className="text-muted-foreground text-sm">{step.description}</p>
-                {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-8 left-[60%] w-[80%] border-t-2 border-dashed border-border" />
-                )}
               </div>
             ))}
           </div>
