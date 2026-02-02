@@ -115,42 +115,42 @@ export default function Home() {
         />
                 <div className="relative mx-auto max-w-7xl px-4 py-20 lg:py-32 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8 text-center lg:text-left bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
+            <div className="space-y-6 text-center lg:text-left bg-white/95 backdrop-blur-md rounded-2xl p-6 lg:p-8 shadow-xl">
               <div className="inline-flex items-center gap-2 bg-gold/20 border border-gold/30 rounded-full px-4 py-2 text-sm">
                 <Star className="h-4 w-4 text-gold" />
                 <span className="text-gold font-medium">Trusted Cash Home Buyers in Long Island</span>
               </div>
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-charcoal">
+              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight text-charcoal">
                 Sell Your House <span className="text-gold">Fast For Cash</span>
               </h1>
-              <p className="text-lg lg:text-xl text-charcoal/80">
+              <p className="text-base lg:text-lg text-charcoal/80">
                 Get a fair cash offer in 24 hours. Close on your timeline and move forward with your life.
               </p>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3">
                 <Link href="/contact">
-                  <Button size="lg" className="bg-accent text-accent-foreground font-semibold" data-testid="button-hero-offer">
+                  <Button size="lg" className="w-full sm:w-auto bg-accent text-accent-foreground font-semibold" data-testid="button-hero-offer">
                     Get Your Free Cash Offer
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
                 <a href="tel:5165486558">
-                  <Button size="lg" variant="outline" className="border-charcoal/30 text-charcoal bg-charcoal/5" data-testid="button-hero-call">
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto border-charcoal/30 text-charcoal bg-white" data-testid="button-hero-call">
                     <Phone className="mr-2 h-5 w-5" />
                     (516) 548-6558
                   </Button>
                 </a>
               </div>
-              <div className="flex items-center gap-6 pt-4">
+              <div className="flex items-center justify-center lg:justify-start gap-4 pt-2">
                 <div className="flex -space-x-2">
                   {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="w-10 h-10 rounded-full bg-gold/30 border-2 border-gold flex items-center justify-center">
+                    <div key={i} className="w-9 h-9 rounded-full bg-gold/30 border-2 border-gold flex items-center justify-center">
                       <span className="text-xs font-bold text-charcoal">{i}</span>
                     </div>
                   ))}
                 </div>
                 <div className="text-sm">
                   <p className="font-semibold text-charcoal">Local Long Island Cash Buyers</p>
-                  <p className="text-charcoal/70">Serving Suffolk & Nassau County homeowners</p>
+                  <p className="text-charcoal/70">Serving Suffolk & Nassau County</p>
                 </div>
               </div>
             </div>
