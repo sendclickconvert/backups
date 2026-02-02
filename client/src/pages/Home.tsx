@@ -113,12 +113,9 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/images/hero-home.jpg')" }}
         />
-        {/* Subtle Dark Gradient Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 lg:py-32 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 text-center lg:text-left">
+            <div className="space-y-6 text-center lg:text-left bg-charcoal/85 backdrop-blur-sm rounded-2xl p-6 lg:p-8">
               <div className="inline-flex items-center gap-2 bg-gold/20 border border-gold/40 rounded-full px-4 py-2 text-sm backdrop-blur-sm">
                 <Star className="h-4 w-4 text-gold" />
                 <span className="text-gold font-medium">Trusted Cash Home Buyers in Long Island</span>
