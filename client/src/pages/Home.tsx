@@ -111,7 +111,7 @@ export default function Home() {
         {/* Hero Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80')" }}
+          style={{ backgroundImage: "url('/images/hero-home.jpg')" }}
         />
         {/* Cinematic Dark Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/35 to-black/20" />
