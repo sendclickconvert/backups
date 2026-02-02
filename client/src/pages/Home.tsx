@@ -115,8 +115,8 @@ export default function Home() {
         />
         <div className="relative mx-auto max-w-7xl px-4 py-20 lg:py-32 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 text-center lg:text-left bg-charcoal/85 backdrop-blur-sm rounded-2xl p-6 lg:p-8">
-              <div className="inline-flex items-center gap-2 bg-gold/20 border border-gold/40 rounded-full px-4 py-2 text-sm backdrop-blur-sm">
+            <div className="space-y-6 text-center lg:text-left bg-charcoal/90 rounded-2xl p-6 lg:p-8 shadow-2xl">
+              <div className="inline-flex items-center gap-2 bg-gold/20 border border-gold/40 rounded-full px-4 py-2 text-sm">
                 <Star className="h-4 w-4 text-gold" />
                 <span className="text-gold font-medium">Trusted Cash Home Buyers in Long Island</span>
               </div>
