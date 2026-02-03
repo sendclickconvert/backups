@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoImage from "@assets/THE_PROPERTY_FATHER-Logo_1770035229526.png";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -48,8 +47,8 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5" data-testid="link-home-logo">
             <img
-              className="h-10 lg:h-[55px] w-auto"
-              src={logoImage}
+              className="h-[45px] lg:h-[65px] w-auto"
+              src="/images/logo-horizontal.png"
               alt="The Property Father"
             />
           </Link>
@@ -140,8 +139,8 @@ export default function Header() {
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
                 <img
-                  className="h-16 w-auto min-w-[180px]"
-                  src={logoImage}
+                  className="h-[50px] w-auto"
+                  src="/images/logo-horizontal.png"
                   alt="The Property Father"
                 />
               </Link>

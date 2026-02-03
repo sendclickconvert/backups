@@ -1,6 +1,5 @@
 import { Link } from "wouter";
 import { Phone, Mail, MapPin } from "lucide-react";
-import logoImage from "@assets/THE_PROPERTY_FATHER-Logo_1770035229526.png";
 
 export default function Footer() {
   return (
@@ -9,12 +8,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <img
-              src={logoImage}
+              src="/images/logo-stacked.png"
               alt="The Property Father"
-              className="h-12 lg:h-[60px] w-auto"
+              className="w-[180px] lg:w-[200px] h-auto"
             />
+            <p className="text-gold font-semibold text-sm">
+              Long Island's Trusted Cash Home Buyers
+            </p>
             <p className="text-sm text-white/80">
-              We buy houses for cash in Long Island, NY. Get a fair offer in 24 hours with no obligations or hidden fees.
+              We buy houses for cash in any condition. Get a fair offer in 24 hours with no obligations or hidden fees.
             </p>
           </div>
 
