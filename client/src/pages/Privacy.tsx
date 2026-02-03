@@ -31,7 +31,6 @@ export default function Privacy() {
             <h2 className="text-2xl font-bold text-foreground mb-4">2. Company Information</h2>
             <ul className="text-muted-foreground mb-6 list-disc pl-6 space-y-2">
               <li><strong>Company:</strong> The Property Father LLC</li>
-              <li><strong>Address:</strong> 100 Washington Ave, Patchogue, NY 11772</li>
               <li><strong>Phone:</strong> (516) 548-6558</li>
               <li><strong>Email:</strong> info@thepropertyfather.com</li>
               <li><strong>Website:</strong> thepropertyfather.com</li>
@@ -141,7 +140,6 @@ export default function Privacy() {
             <ul className="text-muted-foreground mb-6 list-disc pl-6 space-y-2">
               <li><strong>Phone:</strong> (516) 548-6558</li>
               <li><strong>Email:</strong> info@thepropertyfather.com</li>
-              <li><strong>Address:</strong> 100 Washington Ave, Patchogue, NY 11772</li>
             </ul>
           </div>
         </div>
