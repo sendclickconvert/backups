@@ -7,11 +7,13 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <img
-              src="/images/logo-stacked.png"
-              alt="The Property Father"
-              className="w-[180px] lg:w-[200px] h-auto"
-            />
+            <div className="bg-white rounded-lg p-3 inline-block">
+              <img
+                src="/images/logo-stacked.png"
+                alt="The Property Father"
+                className="w-[160px] lg:w-[180px] h-auto"
+              />
+            </div>
             <p className="text-gold font-semibold text-sm">
               Long Island's Trusted Cash Home Buyers
             </p>
