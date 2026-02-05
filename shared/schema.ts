@@ -25,9 +25,7 @@ export const contactFormSchema = z.object({
   address: z.string().min(5, "Please enter the property address"),
   message: z.string().optional(),
   source: z.string().optional(),
-  smsConsent: z.boolean().refine(val => val === true, {
-    message: "You must agree to receive SMS messages"
-  }),
+  smsConsent: z.boolean().optional(),
 });
 
 export type ContactFormData = z.infer<typeof contactFormSchema>;
