@@ -9,9 +9,13 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="bg-white rounded-lg p-3 inline-block">
               <img
-                src="/images/logo-stacked.png"
+                src="/images/logo-stacked.webp"
                 alt="The Property Father"
                 className="w-[160px] lg:w-[180px] h-auto"
+                width={384}
+                height={216}
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <p className="text-gold font-semibold text-sm">

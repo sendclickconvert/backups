@@ -16,9 +16,13 @@ export default function BlogSidebar() {
       <div className="flex justify-center mb-6">
         <div className="bg-white rounded-lg p-3">
           <img
-            src="/images/logo-stacked.png"
+            src="/images/logo-stacked.webp"
             alt="The Property Father"
             className="w-[140px] h-auto"
+            width={384}
+            height={216}
+            loading="lazy"
+            decoding="async"
           />
         </div>
       </div>

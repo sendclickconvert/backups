@@ -48,8 +48,11 @@ export default function Header() {
           <Link href="/" className="-m-1.5 p-1.5" data-testid="link-home-logo">
             <img
               className="h-[45px] lg:h-[65px] w-auto"
-              src="/images/logo-horizontal.png"
+              src="/images/logo-horizontal.webp"
               alt="The Property Father"
+              width={390}
+              height={173}
+              decoding="async"
             />
           </Link>
         </div>
@@ -140,8 +143,11 @@ export default function Header() {
               <Link href="/" className="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
                 <img
                   className="h-[50px] w-auto"
-                  src="/images/logo-horizontal.png"
+                  src="/images/logo-horizontal.webp"
                   alt="The Property Father"
+                  width={390}
+                  height={173}
+                  decoding="async"
                 />
               </Link>
               <Button

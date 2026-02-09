@@ -109,10 +109,19 @@ export default function Home() {
       />
       <section className="relative text-white overflow-hidden min-h-[90vh] flex items-center">
         {/* Hero Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/hero-home.png')" }}
-        />
+        <picture className="absolute inset-0">
+          <source media="(max-width: 768px)" srcSet="/images/hero-mobile.webp" type="image/webp" />
+          <source srcSet="/images/hero-desktop.webp" type="image/webp" />
+          <img
+            src="/images/hero-home.png"
+            alt="Luxury home exterior"
+            className="absolute inset-0 w-full h-full object-cover"
+            fetchPriority="high"
+            width={1920}
+            height={1080}
+            decoding="sync"
+          />
+        </picture>
         <div className="relative mx-auto max-w-7xl px-4 py-20 lg:py-32 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 text-center lg:text-left bg-[#1a1a2e]/85 rounded-2xl p-6 lg:p-8 shadow-2xl border border-gold/30">
