@@ -125,11 +125,16 @@ export default function SuffolkCounty() {
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {towns.map((town, index) => (
-              <div key={index} className="bg-white rounded-md p-3 text-center text-sm font-medium">
-                {town}
-              </div>
-            ))}
+            {towns.map((town, index) => {
+              const slug = town.toLowerCase().replace(/\s+/g, "-");
+              return (
+                <Link key={index} href={`/locations/suffolk-county/${slug}`}>
+                  <div className="bg-white rounded-md p-3 text-center text-sm font-medium cursor-pointer hover-elevate" data-testid={`link-town-${slug}`}>
+                    {town}
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

@@ -29,6 +29,14 @@ The frontend follows a page-based structure under `client/src/pages/` with reusa
 - Nassau County parent page (`/locations/nassau-county`) links to all 45 town pages
 - All 45 URLs added to `client/public/sitemap.xml`
 
+### Suffolk County Town Pages (added 2026-02-11)
+- 36 individual town landing pages under `/locations/suffolk-county/[town-slug]`
+- Data-driven: all content in `client/src/data/suffolk-towns.ts`, rendered by single component `client/src/pages/locations/SuffolkTownPage.tsx`
+- Each page has: unique SEO metadata, Service schema markup (JSON-LD), body content with H2 sections, CTA with phone/form, internal links
+- Dynamic route in App.tsx: `/locations/suffolk-county/:town`
+- Suffolk County parent page (`/locations/suffolk-county`) links to all 36 town pages
+- All 36 URLs added to `client/public/sitemap.xml`
+
 ### Backend Architecture
 - **Framework**: Express 5 on Node.js
 - **Language**: TypeScript with ES modules
