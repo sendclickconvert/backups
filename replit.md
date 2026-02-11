@@ -19,7 +19,15 @@ Preferred communication style: Simple, everyday language.
 - **Forms**: React Hook Form with Zod validation
 - **Build Tool**: Vite with hot module replacement
 
-The frontend follows a page-based structure under `client/src/pages/` with reusable components in `client/src/components/`. Each page uses a shared Layout component that includes Header, Footer, and SEO metadata. The site includes multiple landing pages for different situations (divorce, foreclosure, probate, etc.) and locations (Suffolk County, Nassau County).
+The frontend follows a page-based structure under `client/src/pages/` with reusable components in `client/src/components/`. Each page uses a shared Layout component that includes Header, Footer, and SEO metadata. The site includes multiple landing pages for different situations (divorce, foreclosure, probate, etc.) and locations (Suffolk County, Nassau County, and 45 individual Nassau County town pages).
+
+### Nassau County Town Pages (added 2026-02-11)
+- 45 individual town landing pages under `/locations/nassau-county/[town-slug]`
+- Data-driven: all content in `client/src/data/nassau-towns.ts`, rendered by single component `client/src/pages/locations/NassauTownPage.tsx`
+- Each page has: unique SEO metadata, Service schema markup (JSON-LD), body content with H2 sections, CTA with phone/form, internal links
+- Dynamic route in App.tsx: `/locations/nassau-county/:town`
+- Nassau County parent page (`/locations/nassau-county`) links to all 45 town pages
+- All 45 URLs added to `client/public/sitemap.xml`
 
 ### Backend Architecture
 - **Framework**: Express 5 on Node.js

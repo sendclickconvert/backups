@@ -8,6 +8,7 @@ import Home from "@/pages/Home";
 import HowItWorks from "@/pages/HowItWorks";
 import SuffolkCounty from "@/pages/locations/SuffolkCounty";
 import NassauCounty from "@/pages/locations/NassauCounty";
+import NassauTownPage from "@/pages/locations/NassauTownPage";
 import Divorce from "@/pages/situations/Divorce";
 import PreForeclosure from "@/pages/situations/PreForeclosure";
 import Probate from "@/pages/situations/Probate";
@@ -29,6 +30,7 @@ function Router() {
       <Route path="/how-it-works" component={HowItWorks} />
       <Route path="/locations/suffolk-county" component={SuffolkCounty} />
       <Route path="/locations/nassau-county" component={NassauCounty} />
+      <Route path="/locations/nassau-county/:town" component={NassauTownPage} />
       <Route path="/situations/divorce" component={Divorce} />
       <Route path="/situations/pre-foreclosure" component={PreForeclosure} />
       <Route path="/situations/probate" component={Probate} />
