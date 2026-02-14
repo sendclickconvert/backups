@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "wouter";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@/components/ui/button";
@@ -46,10 +45,12 @@ export default function ContactForm({
       message: "",
       source: source,
       smsConsent: false,
+      smsConsentNonMarketing: false,
     },
   });
 
   const smsConsent = watch("smsConsent");
+  const smsConsentNonMarketing = watch("smsConsentNonMarketing");
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
@@ -198,20 +199,44 @@ export default function ContactForm({
                 htmlFor="smsConsent"
                 className="text-sm font-normal cursor-pointer"
               >
-                I agree to receive SMS/text messages from The Property Father regarding my property inquiry. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out, HELP for help. View our{" "}
-                <Link href="/terms" className="text-accent underline hover:text-accent/80" data-testid="link-terms">
-                  Terms of Service
-                </Link>{" "}
-                and{" "}
-                <Link href="/privacy" className="text-accent underline hover:text-accent/80" data-testid="link-privacy">
-                  Privacy Policy
-                </Link>.
+                I consent to receive marketing text messages from The Property Father at the phone number provided. Frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
               </Label>
               {errors.smsConsent && (
                 <p className="text-sm text-destructive">{errors.smsConsent.message}</p>
               )}
             </div>
           </div>
+
+          <div className="flex items-start space-x-3 py-2">
+            <Checkbox
+              id="smsConsentNonMarketing"
+              checked={smsConsentNonMarketing}
+              onCheckedChange={(checked) => setValue("smsConsentNonMarketing", checked === true)}
+              data-testid="checkbox-sms-consent-non-marketing"
+            />
+            <div className="grid gap-1.5 leading-none">
+              <Label
+                htmlFor="smsConsentNonMarketing"
+                className="text-sm font-normal cursor-pointer"
+              >
+                I consent to receive non-marketing text messages from The Property Father about my inquiry, including appointment confirmations and offer updates.
+              </Label>
+              {errors.smsConsentNonMarketing && (
+                <p className="text-sm text-destructive">{errors.smsConsentNonMarketing.message}</p>
+              )}
+            </div>
+          </div>
+
+          <p className="text-xs text-muted-foreground">
+            Your consent is not a condition of purchase. View our{" "}
+            <a href="/terms.html" className="text-accent underline hover:text-accent/80" data-testid="link-terms">
+              Terms of Service
+            </a>{" "}
+            and{" "}
+            <a href="/privacy.html" className="text-accent underline hover:text-accent/80" data-testid="link-privacy">
+              Privacy Policy
+            </a>.
+          </p>
 
           <Button
             type="submit"
@@ -229,9 +254,6 @@ export default function ContactForm({
             )}
           </Button>
 
-          <p className="text-xs text-center text-muted-foreground">
-            By submitting, you agree to receive calls and texts about your property.
-          </p>
         </form>
       </CardContent>
     </Card>

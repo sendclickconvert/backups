@@ -1,0 +1,29 @@
+Paste this into Replit:
+
+A2P Compliance Fix — 3 changes needed:
+
+Move terms.html and privacy.html into the /public folder so they are served as static files at /terms.html and /privacy.html. These should NOT go through the React router — they must be accessible as raw HTML without JavaScript.
+Edit index.html — paste this block directly AFTER <div id="root"></div>:
+
+html<!-- A2P Compliance: Static content for verification bots that don't execute JavaScript -->
+<noscript>
+  <div style="font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px;">
+    <h1>The Property Father | We Buy Houses for Cash on Long Island</h1>
+    <p>The Property Father LLC buys houses in any condition in Suffolk County and Nassau County, New York. No fees, no repairs, close in as few as 7 days.</p>
+    <p>Phone: (516) 548-6558 | Email: info@thepropertyfather.com</p>
+    <p>100 Washington Ave, Patchogue, NY 11772</p>
+
+    <h2>Get Your Free Cash Offer</h2>
+    <p>Fill out our form to receive a no-obligation cash offer on your Long Island property. We collect your name, phone number, email address, and property address to evaluate your home and contact you with an offer.</p>
+
+    <h3>SMS/Text Message Consent</h3>
+    <p>By submitting the form on this website and checking the SMS consent checkbox, you consent to receive marketing and non-marketing text messages from The Property Father LLC at the phone number provided. Message frequency may vary. Message and data rates may apply. Text HELP for assistance. Reply STOP to opt out at any time. Your consent to receive text messages is not a condition of purchase.</p>
+
+    <p><a href="/terms.html">Terms of Service</a> | <a href="/privacy.html">Privacy Policy</a></p>
+  </div>
+</noscript>
+
+Update all footer links in the React components: change /terms to /terms.html and /privacy to /privacy.html so they point to the static files instead of going through the React router.
+Confirm the contact form has a required SMS consent checkbox with this text: "I consent to receive marketing text messages from The Property Father at the phone number provided. Frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out." If it's missing, add it as a required checkbox above the submit button. Also add a non-marketing consent checkbox: "I consent to receive non-marketing text messages from The Property Father about my inquiry and updates. Message & data rates may apply."
+
+Do not change anything else on the site. Deploy when done.
