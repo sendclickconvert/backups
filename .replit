@@ -1,10 +1,10 @@
 run = "npm run dev"
 entrypoint = "src/pages/index.astro"
-modules = ["nodejs-20", "web"]
+modules = ["nodejs-20", "web", "python-3.11"]
 
 [nix]
 channel = "stable-25_05"
-packages = ["unzip", "zip", "gh"]
+packages = ["freetype", "gh", "lcms2", "libimagequant", "libjpeg", "libtiff", "libwebp", "libxcrypt", "openjpeg", "tcl", "tk", "unzip", "zip", "zlib"]
 
 [env]
 PATH = "/home/runner/${REPL_SLUG}/node_modules/.bin:${PATH}"
