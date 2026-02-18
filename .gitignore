@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.cache/
+attached_assets/
+*.zip
+.DS_Store
+.env
+.env.*

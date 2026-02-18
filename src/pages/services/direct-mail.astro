@@ -1,0 +1,169 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import CTASection from '../../components/CTASection.astro';
+import { BUSINESS } from '../../data/site';
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Direct Mail Campaigns',
+  provider: {
+    '@type': 'ProfessionalService',
+    name: BUSINESS.name,
+    url: BUSINESS.url,
+  },
+  serviceType: 'Direct Mail Marketing',
+  areaServed: {
+    '@type': 'Place',
+    name: 'Hudson Valley, New York',
+  },
+  description: 'Full-service direct mail campaigns including data targeting, graphic design, commercial printing, and USPS-compliant mailing for businesses, non-profits, and municipalities in the Hudson Valley.',
+};
+---
+
+<BaseLayout
+  title="Direct Mail Campaigns"
+  description="Full-service direct mail campaigns from Cornerstone Services — data targeting, graphic design, printing, and USPS-compliant mailing for Hudson Valley businesses."
+  schema={serviceSchema}
+>
+  <PageHero
+    title="Direct Mail Campaigns"
+    subtitle="Full-service direct mail — from data targeting through printing and postal delivery."
+    breadcrumbs={[
+      { label: 'Services', href: '/services/' },
+      { label: 'Direct Mail Campaigns' },
+    ]}
+  />
+
+  <section class="py-14 lg:py-20">
+    <div class="container-wide">
+      <div class="grid lg:grid-cols-3 gap-10 lg:gap-14">
+        <!-- Main content -->
+        <div class="lg:col-span-2">
+          <div class="section-divider mb-6"></div>
+          <h2 class="text-2xl font-display text-crst-primary mb-4">Your Complete Direct Mail Partner</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            A successful direct mail campaign requires more than just printing and postage. It starts with the right audience, a compelling design, quality printing, and proper postal preparation. Cornerstone Services handles every step under one roof — so you get a single point of contact and a seamless process from concept to mailbox.
+          </p>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            With over {BUSINESS.stats.years} years of direct mail experience and {BUSINESS.stats.piecesMailed} pieces mailed, we know what works. Whether you're a local business looking to attract new customers, a municipality sending citizen notifications, or a non-profit running a fundraising campaign, we'll help you reach the right people at the right time.
+          </p>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">What's Included</h3>
+          <div class="grid sm:grid-cols-2 gap-3">
+            {[
+              { title: 'Data Targeting', desc: 'Saturation lists, custom demographics, NCOA processing' },
+              { title: 'Mail Design', desc: 'USPS-compliant layouts optimized for response' },
+              { title: 'Commercial Printing', desc: 'Postcards, letters, self-mailers, newsletters' },
+              { title: 'Presort & Prep', desc: 'CASS/DPV verification, barcoding, presort discounts' },
+              { title: 'USPS Delivery', desc: 'Induction, tracking, delivery confirmation' },
+              { title: 'Campaign Analytics', desc: 'Delivery reports and response tracking' },
+            ].map((item) => (
+              <div class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg">
+                <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <div>
+                  <div class="font-heading font-semibold text-navy-800 text-sm">{item.title}</div>
+                  <div class="text-xs text-navy-600/60">{item.desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">How It Works</h3>
+          <div class="space-y-6">
+            {[
+              { step: '1', title: 'Consultation', desc: 'We discuss your goals, audience, budget, and timeline. We recommend the best mail piece format, data strategy, and postage class for your campaign.' },
+              { step: '2', title: 'Data & Design', desc: 'We build or refine your mailing list and design a mail piece that meets USPS automation requirements while maximizing visual impact and response rates.' },
+              { step: '3', title: 'Print & Prep', desc: 'Your mail piece is printed at commercial quality, addressed, barcoded, presorted, and prepared for the lowest applicable postage rate.' },
+              { step: '4', title: 'Mail & Track', desc: 'We induct your mailing into the USPS mail stream and provide delivery tracking. You know exactly when your mail is arriving.' },
+            ].map((item) => (
+              <div class="flex items-start gap-4">
+                <div class="shrink-0 w-9 h-9 rounded-full bg-crst-primary flex items-center justify-center text-white font-heading font-bold text-sm">
+                  {item.step}
+                </div>
+                <div>
+                  <h4 class="font-heading font-bold text-navy-800 mb-1">{item.title}</h4>
+                  <p class="text-sm text-navy-600/70 leading-relaxed">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">Who Uses Direct Mail?</h3>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            Direct mail remains one of the most effective marketing channels for local businesses and organizations. Our clients include:
+          </p>
+          <div class="flex flex-wrap gap-2">
+            {['Local Businesses', 'Restaurants', 'Real Estate', 'Healthcare Providers', 'Non-Profits', 'Municipalities', 'Political Campaigns', 'Fire Departments', 'Schools', 'Retail Stores'].map((tag) => (
+              <span class="inline-block px-3 py-1 text-xs font-heading font-medium bg-navy-50 text-navy-600 rounded-full border border-navy-100">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          <div class="sticky top-24 space-y-5">
+            <!-- CTA card -->
+            <div class="bg-crst-primary rounded-xl p-6 text-white">
+              <h3 class="font-display text-lg mb-2">Get a Free Estimate</h3>
+              <p class="text-white/60 text-sm leading-relaxed mb-4">
+                Tell us about your campaign and we'll provide a detailed quote — usually within one business day.
+              </p>
+              <a href="/estimate/" class="btn-accent w-full text-center text-sm">
+                Request Estimate
+              </a>
+              <div class="mt-4 pt-4 border-t border-white/10 text-center">
+                <a href={`tel:${BUSINESS.phoneClean}`} class="text-white/70 text-sm font-heading hover:text-white transition-colors">
+                  or call {BUSINESS.phone}
+                </a>
+              </div>
+            </div>
+
+            <!-- Related services -->
+            <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Related Services</h3>
+              <div class="space-y-2">
+                {[
+                  { label: 'Data Lists', href: '/services/data-lists/' },
+                  { label: 'Printing Services', href: '/services/printing/' },
+                  { label: 'Graphic Design', href: '/services/graphic-design/' },
+                  { label: 'EDDM', href: '/services/eddm/' },
+                  { label: 'Mailing Services', href: '/services/mailing/' },
+                ].map((link) => (
+                  <a href={link.href} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-white rounded-md transition-colors font-heading">
+                    {link.label}
+                    <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <!-- Quick stats -->
+            <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">By the Numbers</h3>
+              <div class="space-y-3">
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-navy-600">Pieces mailed</span>
+                  <span class="font-heading font-bold text-crst-primary">{BUSINESS.stats.piecesMailed}</span>
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-navy-600">On-time rate</span>
+                  <span class="font-heading font-bold text-crst-primary">{BUSINESS.stats.onTime}</span>
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-navy-600">Municipalities</span>
+                  <span class="font-heading font-bold text-crst-primary">{BUSINESS.stats.municipalities}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>

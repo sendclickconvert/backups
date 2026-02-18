@@ -1,0 +1,199 @@
+---
+// =============================================================================
+// BlogPostHead.astro — Complete <head> meta + schema for blog posts
+// Adapted for CRST live build. Uses AUTHORS record + BUSINESS from site.ts.
+// Outputs: OG tags, Twitter Cards, BlogPosting schema (with image, author.url,
+// author.sameAs, articleSection, wordCount, speakable, VideoObject),
+// FAQPage schema, BreadcrumbList schema
+// =============================================================================
+
+import { AUTHORS } from '../data/blog';
+import type { BlogPost, BlogAuthor } from '../data/blog';
+import { BUSINESS } from '../data/site';
+
+interface Props {
+  post: BlogPost;
+}
+
+const { post } = Astro.props;
+const author: BlogAuthor = AUTHORS[post.authorKey] || AUTHORS['sean-griffen'];
+const siteUrl = BUSINESS.url;
+const canonicalUrl = `${siteUrl}/blog/${post.slug}/`;
+
+// ─── IMAGE HANDLING ──────────────────────────────────────────────────────────
+// Google requires image for article rich results. Provide up to 3 aspect ratios.
+const hasImage = post.featuredImage?.src;
+const primaryImage = hasImage ? `${siteUrl}${post.featuredImage!.src}` : `${siteUrl}/crst-logo.png`;
+const image16x9 = post.featuredImage?.src16x9
+  ? `${siteUrl}${post.featuredImage.src16x9}`
+  : primaryImage;
+const image4x3 = post.featuredImage?.src4x3
+  ? `${siteUrl}${post.featuredImage.src4x3}`
+  : primaryImage;
+const image1x1 = post.featuredImage?.src1x1
+  ? `${siteUrl}${post.featuredImage.src1x1}`
+  : primaryImage;
+const ogImage = image16x9;
+
+// ─── READING TIME ────────────────────────────────────────────────────────────
+const wordCount = post.wordCount || 1500;
+const readingTime = Math.ceil(wordCount / 250);
+
+// ─── DATES ───────────────────────────────────────────────────────────────────
+const datePublished = post.date;
+const dateModified = post.lastUpdated || post.date;
+
+// ─── SCHEMA: BlogPosting ─────────────────────────────────────────────────────
+const blogPostingSchema: Record<string, any> = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.title,
+  description: post.excerpt,
+  image: hasImage ? [image16x9, image4x3, image1x1] : undefined,
+  datePublished: datePublished,
+  dateModified: dateModified,
+  wordCount: wordCount,
+  articleSection: post.category,
+  keywords: post.tags.join(', '),
+  author: {
+    '@type': 'Person',
+    name: author.name,
+    jobTitle: author.title,
+    url: author.url,
+    image: `${siteUrl}${author.image}`,
+    sameAs: author.sameAs,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: BUSINESS.name,
+    url: siteUrl,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${siteUrl}/crst-logo.png`,
+    },
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': canonicalUrl,
+  },
+};
+
+// Remove undefined image
+if (!hasImage) delete blogPostingSchema.image;
+
+// Add VideoObject if present
+if (post.video) {
+  const thumbUrl =
+    post.video.thumbnailUrl ||
+    `https://img.youtube.com/vi/${post.video.youtubeId}/maxresdefault.jpg`;
+  blogPostingSchema.video = {
+    '@type': 'VideoObject',
+    name: post.video.name,
+    description: post.video.description,
+    thumbnailUrl: thumbUrl,
+    uploadDate: post.video.uploadDate,
+    contentUrl: `https://www.youtube.com/watch?v=${post.video.youtubeId}`,
+    embedUrl: `https://www.youtube.com/embed/${post.video.youtubeId}`,
+    duration: post.video.duration,
+  };
+}
+
+// Add Speakable if enabled
+const speakableEnabled =
+  post.enableSpeakable !== false && (post.keyTakeaway || post.faqs);
+if (speakableEnabled) {
+  const selectors: string[] = [];
+  if (post.keyTakeaway) selectors.push('.key-takeaway');
+  if (post.faqs && post.faqs.length > 0) selectors.push('.faq-answer');
+  blogPostingSchema.speakable = {
+    '@type': 'SpeakableSpecification',
+    cssSelector: selectors,
+  };
+}
+
+// ─── SCHEMA: FAQPage ─────────────────────────────────────────────────────────
+const faqSchema =
+  post.faqs && post.faqs.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: post.faqs.map((faq) => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faq.answer,
+          },
+        })),
+      }
+    : null;
+
+// ─── SCHEMA: BreadcrumbList ──────────────────────────────────────────────────
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: `${siteUrl}/`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Blog',
+      item: `${siteUrl}/blog/`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: post.title,
+    },
+  ],
+};
+---
+
+<!-- ═══ STANDARD META ═══ -->
+<title>{post.title} | {BUSINESS.shortName} Blog</title>
+<meta name="description" content={post.excerpt} />
+<link rel="canonical" href={canonicalUrl} />
+
+<!-- ═══ OPEN GRAPH ═══ -->
+<meta property="og:title" content={post.title} />
+<meta property="og:description" content={post.excerpt} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content={BUSINESS.name} />
+<meta property="og:locale" content="en_US" />
+<meta property="article:author" content={author.name} />
+<meta property="article:published_time" content={datePublished} />
+<meta property="article:modified_time" content={dateModified} />
+<meta property="article:section" content={post.category} />
+{post.tags.map((tag) => (
+  <meta property="article:tag" content={tag} />
+))}
+
+<!-- ═══ TWITTER CARD ═══ -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={post.title} />
+<meta name="twitter:description" content={post.excerpt} />
+<meta name="twitter:image" content={ogImage} />
+
+<!-- ═══ SCHEMA: BlogPosting + VideoObject + Speakable ═══ -->
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify(blogPostingSchema)}
+/>
+
+<!-- ═══ SCHEMA: FAQPage ═══ -->
+{faqSchema && (
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+)}
+
+<!-- ═══ SCHEMA: BreadcrumbList ═══ -->
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify(breadcrumbSchema)}
+/>

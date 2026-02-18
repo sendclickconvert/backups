@@ -1,0 +1,149 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import CTASection from '../../components/CTASection.astro';
+import { BUSINESS } from '../../data/site';
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Mailing Services',
+  provider: {
+    '@type': 'ProfessionalService',
+    name: BUSINESS.name,
+    url: BUSINESS.url,
+  },
+  serviceType: 'Mailing Services',
+  areaServed: {
+    '@type': 'Place',
+    name: 'Hudson Valley, New York',
+  },
+  description: 'USPS-compliant mailing services including addressing, presorting, postal preparation, and mail delivery for businesses, non-profits, and municipalities in the Hudson Valley.',
+};
+---
+
+<BaseLayout
+  title="Mailing Services"
+  description="USPS-compliant mailing services — addressing, presorting, barcoding, and postal preparation from Cornerstone Services. Save on postage with presort discounts."
+  schema={serviceSchema}
+>
+  <PageHero
+    title="Mailing Services"
+    subtitle="USPS-compliant addressing, presorting, and postal preparation that saves you time and postage."
+    breadcrumbs={[
+      { label: 'Services', href: '/services/' },
+      { label: 'Mailing Services' },
+    ]}
+  />
+
+  <section class="py-14 lg:py-20">
+    <div class="container-wide">
+      <div class="grid lg:grid-cols-3 gap-10 lg:gap-14">
+        <div class="lg:col-span-2">
+          <div class="section-divider mb-6"></div>
+          <h2 class="text-2xl font-display text-crst-primary mb-4">The Last Mile Matters Most</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            You've invested in a great design and quality printing. The final step — getting it into the mail stream efficiently and affordably — is where Cornerstone Services excels. Our mailing department handles the technical, time-consuming work of addressing, presorting, barcoding, and delivering your mail to the USPS in a way that qualifies for the lowest possible postage rates.
+          </p>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            As an authorized USPS presort bureau, we process mailings to meet all automation and presort requirements. This means your organization benefits from commercial postage rates that are significantly lower than what you'd pay at the post office counter — often 30–50% less for Marketing Mail and 15–20% less for First-Class presort.
+          </p>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">What's Included</h3>
+          <div class="grid sm:grid-cols-2 gap-3">
+            {[
+              { title: 'Inkjet Addressing', desc: 'High-speed addressing directly onto mail pieces or labels' },
+              { title: 'CASS/DPV Verification', desc: 'Address standardization and deliverability validation against USPS databases' },
+              { title: 'Intelligent Mail Barcode', desc: 'Required IMb barcoding for automation rate qualification and tracking' },
+              { title: 'Presort Processing', desc: 'ZIP+4, carrier route, and walk-sequence sorting for maximum postage savings' },
+              { title: 'Tray/Sack Preparation', desc: 'Mail bundled, trayed, and labeled per USPS specifications' },
+              { title: 'Postal Documentation', desc: 'Completed postage statements, qualification reports, and electronic submission' },
+            ].map((item) => (
+              <div class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg">
+                <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <div>
+                  <div class="font-heading font-semibold text-navy-800 text-sm">{item.title}</div>
+                  <div class="text-xs text-navy-600/60">{item.desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">Postage Classes We Handle</h3>
+          <div class="space-y-4">
+            {[
+              { title: 'USPS Marketing Mail (Standard)', desc: 'The most common class for direct mail campaigns. Minimum 200 pieces or 50 lbs. Lowest rates available through presort and automation. Typical delivery in 3–10 business days.' },
+              { title: 'First-Class Presort', desc: 'Faster delivery (1–5 business days) with forwarding and return services. Presort discounts reduce the per-piece cost below single-piece rates. Ideal for invoices, statements, and time-sensitive communications.' },
+              { title: 'Non-Profit Marketing Mail', desc: 'Deeply discounted postage rates for qualified 501(c)(3) organizations. We help non-profits apply for and maintain their USPS non-profit mailing authorization. See our <a href="/services/non-profit-mailing/" class="text-crst-accent hover:text-crst-primary underline">non-profit mailing services</a> for details.' },
+              { title: 'Every Door Direct Mail (EDDM)', desc: 'No mailing list required — reach every address on selected postal routes. Starting at just $0.217/piece for postage. See our <a href="/services/eddm/" class="text-crst-accent hover:text-crst-primary underline">EDDM services</a> for details.' },
+            ].map((item) => (
+              <div class="p-4 bg-navy-50/30 rounded-lg border border-navy-100/50">
+                <h4 class="font-heading font-bold text-navy-800 mb-1">{item.title}</h4>
+                <p class="text-sm text-navy-600/70 leading-relaxed" set:html={item.desc} />
+              </div>
+            ))}
+          </div>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">Bring Your Own Pieces</h3>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            Already have your mail pieces printed? We offer mailing-only services. Deliver your printed pieces to our facility and we'll handle addressing, presorting, postage, and USPS induction. This is popular with organizations that have in-house print capabilities but need postal expertise and presort discounts.
+          </p>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">Mailing Permits</h3>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            USPS requires a mailing permit for presorted and bulk mailings. If your organization doesn't have one, we can mail under our permit or help you obtain your own. We also assist non-profits in applying for the USPS non-profit authorization that unlocks the lowest available postage rates. Visit our <a href="/resources/mailing-permits/" class="text-crst-accent hover:text-crst-primary underline">mailing permits guide</a> for more information.
+          </p>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          <div class="sticky top-24 space-y-5">
+            <div class="bg-crst-primary rounded-xl p-6 text-white">
+              <h3 class="font-display text-lg mb-2">Get a Mailing Quote</h3>
+              <p class="text-white/60 text-sm leading-relaxed mb-4">
+                Include your quantity, mail piece size, and target area. We'll quote postage and processing.
+              </p>
+              <a href="/estimate/" class="btn-accent w-full text-center text-sm">
+                Request Quote
+              </a>
+              <div class="mt-4 pt-4 border-t border-white/10 text-center">
+                <a href={`tel:${BUSINESS.phoneClean}`} class="text-white/70 text-sm font-heading hover:text-white transition-colors">
+                  or call {BUSINESS.phone}
+                </a>
+              </div>
+            </div>
+
+            <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Related Services</h3>
+              <div class="space-y-2">
+                {[
+                  { label: 'Direct Mail Campaigns', href: '/services/direct-mail/' },
+                  { label: 'Data Lists', href: '/services/data-lists/' },
+                  { label: 'Printing Services', href: '/services/printing/' },
+                  { label: 'EDDM', href: '/services/eddm/' },
+                  { label: 'Non-Profit Mailing', href: '/services/non-profit-mailing/' },
+                ].map((link) => (
+                  <a href={link.href} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-white rounded-md transition-colors font-heading">
+                    {link.label}
+                    <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Postage Savings</h3>
+              <div class="space-y-3 text-sm text-navy-600/70">
+                <p>Marketing Mail presort can save <strong class="text-navy-800">30–50%</strong> vs. single-piece rates.</p>
+                <p>Non-profit rates are the <strong class="text-navy-800">lowest USPS offers</strong> — as low as $0.128/piece.</p>
+                <p>EDDM postage starts at just <strong class="text-navy-800">$0.217/piece</strong> with no list needed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>

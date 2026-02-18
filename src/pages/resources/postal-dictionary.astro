@@ -1,0 +1,137 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import CTASection from '../../components/CTASection.astro';
+import { BUSINESS } from '../../data/site';
+
+const glossary = [
+  { term: 'AADC', definition: 'Automated Area Distribution Center. A USPS processing facility where mail is sorted for delivery to individual post offices within a geographic area. Mailers who presort to the AADC level receive postage discounts.' },
+  { term: 'Address Block', definition: 'The area on a mail piece where the recipient\'s delivery address is printed. USPS requires the address block to be positioned in a specific "read area" for automated processing.' },
+  { term: 'ACS', definition: 'Address Change Service. An automated system that provides address correction information for undeliverable-as-addressed (UAA) mail. Mailers receive electronic notifications instead of physical return mail.' },
+  { term: 'Automation Rate', definition: 'Discounted postage rate available to mailers who prepare mail to USPS automation standards — including readable barcodes, proper address formatting, and correct presort levels.' },
+  { term: 'Barcode Clear Zone', definition: 'The lower-right portion of the mail piece address side (4.5" from the right edge, 0.625" from the bottom) reserved exclusively for the Intelligent Mail barcode. No printing is allowed in this area.' },
+  { term: 'BRM', definition: 'Business Reply Mail. Pre-addressed, postage-prepaid mail pieces that allow recipients to respond without paying postage. The mailer pays postage plus a per-piece fee only on returned pieces.' },
+  { term: 'Bulk Mail', definition: 'Mail submitted in volume (minimum 200 pieces or 50 lbs for Marketing Mail) at commercial presort rates. Requires a mailing permit and proper presort preparation.' },
+  { term: 'Carrier Route', definition: 'A specific delivery route assigned to a postal carrier. Each carrier route covers a defined geographic area. Mailers who sort to the carrier route level receive the deepest presort discounts.' },
+  { term: 'CASS', definition: 'Coding Accuracy Support System. A USPS program that certifies address-matching software. Addresses processed through CASS-certified software are verified against the USPS address database for accuracy and deliverability.' },
+  { term: 'Commingling', definition: 'Combining mail from multiple mailers or jobs into a single presorted mailing to achieve deeper presort levels and lower per-piece postage rates.' },
+  { term: 'Copalletization', definition: 'Combining mail from different mailers on the same pallets to increase density and qualify for destination-entry postage discounts.' },
+  { term: 'Courtesy Reply Mail', definition: 'Pre-addressed return envelopes included in a mailing, but without prepaid postage. The recipient must apply their own stamp. Less expensive for the mailer than BRM.' },
+  { term: 'CRRT', definition: 'Carrier Route Presort. Mail that is sorted down to individual carrier routes. This is the deepest presort level for Marketing Mail and yields the lowest per-piece rate.' },
+  { term: 'DAL', definition: 'Delivery Address Line. The line of the address that contains the street address, PO Box, or rural route information — used by USPS for final delivery sorting.' },
+  { term: 'DMM', definition: 'Domestic Mail Manual. The official USPS publication containing all rules and standards for domestic mail preparation, classification, and postage. Available online at pe.usps.com.' },
+  { term: 'DPV', definition: 'Delivery Point Validation. A USPS database check that confirms whether a specific address (including apartment/suite number) is a valid, deliverable point on a carrier route.' },
+  { term: 'Drop Ship', definition: 'Delivering presorted mail directly to a USPS destination facility (SCF, NDC, or DDU) closer to the recipient, bypassing upstream processing and qualifying for destination-entry discounts.' },
+  { term: 'EDDM', definition: 'Every Door Direct Mail. A USPS program that lets mailers deliver to every address on selected carrier routes without purchasing a mailing list. Available in Retail (up to 5,000 pieces, at the Post Office) and BMEU (bulk, through permit) versions.' },
+  { term: 'eDoc', definition: 'Electronic Documentation. The electronic submission of mailing information (Mail.dat or Mail.xml format) required for Full-Service Intelligent Mail. Replaces paper postage statements.' },
+  { term: 'Flat', definition: 'A mail piece that exceeds letter dimensions (larger than 6.125" × 11.5" or thicker than 0.25") but fits within the flat size limits (max 12" × 15" × 0.75"). Catalogs and large envelopes are common flats.' },
+  { term: 'Full-Service IMb', definition: 'Full-Service Intelligent Mail. A program where mailers provide complete electronic mailing information in exchange for additional postage discounts and end-to-end tracking data.' },
+  { term: 'IMb', definition: 'Intelligent Mail Barcode. The 65-bar barcode printed on mail pieces that encodes routing information, mailer ID, and a unique serial number. Required for automation-rate postage and enables piece-level tracking.' },
+  { term: 'Indicia', definition: 'A printed marking on a mail piece that serves as proof of postage payment in lieu of stamps or meters. Common indicia include permit imprints, precanceled stamps, and EDDM indicia.' },
+  { term: 'Inkjet Addressing', definition: 'The process of printing recipient addresses directly onto mail pieces using high-speed industrial inkjet printers. Standard for bulk mail preparation.' },
+  { term: 'Letter', definition: 'A mail piece that meets USPS letter-size dimensions: between 3.5" × 5" (minimum) and 6.125" × 11.5" (maximum), no thicker than 0.25", and weighing up to 3.5 oz for First-Class.' },
+  { term: 'LACS', definition: 'Locatable Address Conversion System. A USPS system that converts rural-style addresses to city-style formats (e.g., "RR 2 Box 45" becomes "123 Main St") for improved delivery.' },
+  { term: 'Machinable', definition: 'A mail piece that meets all USPS requirements for automated processing — correct size, weight, flexibility, aspect ratio, and barcode readability. Non-machinable pieces incur surcharges.' },
+  { term: 'Mail.dat', definition: 'A standardized electronic file format used to submit mailing documentation to the USPS for Full-Service mailings. Contains header, detail, and container records for each mailing.' },
+  { term: 'Marketing Mail', definition: 'A USPS mail class (formerly Standard Mail / Bulk Rate) for advertising, promotional, and catalog mailings. Requires a minimum of 200 pieces or 50 lbs and a mailing permit. Lower rates than First-Class but no forwarding or return.' },
+  { term: 'Merge/Purge', definition: 'The process of combining multiple mailing lists, removing duplicate records, and suppressing unwanted addresses to create a clean, unduplicated mailing list.' },
+  { term: 'NCOA', definition: 'National Change of Address. A USPS database containing all permanent change-of-address orders filed in the last 48 months. Processing your list through NCOA updates moved addresses and is required before every bulk mailing.' },
+  { term: 'NDC', definition: 'Network Distribution Center. A major USPS hub facility that processes mail for a large geographic region. Dropping presorted mail at the NDC level qualifies for destination-entry discounts.' },
+  { term: 'Non-Machinable', definition: 'A mail piece that cannot be processed on USPS automated equipment due to size, shape, weight, or other characteristics. Non-machinable letters incur a $0.22 surcharge.' },
+  { term: 'PARS', definition: 'Presort Accuracy, Reliability, and Speed. The USPS verification process that checks whether a mailing meets presort and preparation standards before acceptance.' },
+  { term: 'Periodicals', definition: 'A USPS mail class for newspapers, magazines, and other publications mailed at regular intervals. Requires USPS approval of a Periodicals application and offers lower rates than Marketing Mail.' },
+  { term: 'Permit Imprint', definition: 'A printed postage marking (indicia) authorized by a USPS mailing permit. Shows the permit number, entry post office, and mail class. The most common form of bulk mail postage payment.' },
+  { term: 'Postage Statement (PS Form 3602)', definition: 'The form submitted to USPS with each presorted mailing that reports the number of pieces, weight, and postage due at each rate level. Required for postal acceptance.' },
+  { term: 'Postcard', definition: 'A single-sheet, unfolded mail piece between 3.5" × 5" and 6.125" × 11.5", made of card stock at least 0.007" thick. Qualifies for the lowest First-Class or Marketing Mail postage rates.' },
+  { term: 'Presort', definition: 'The process of sorting mail by ZIP code, carrier route, or delivery sequence before submitting to the USPS. Deeper presort levels earn greater postage discounts. Required for all bulk mail.' },
+  { term: 'PS Form 3624', definition: 'The USPS application form for non-profit mailing authorization. Organizations must demonstrate non-profit status to qualify for reduced non-profit postage rates.' },
+  { term: 'Saturation Mail', definition: 'Mail delivered to at least 90% (or 75% for enhanced carrier route) of addresses on a carrier route. Qualifies for the deepest Marketing Mail discounts. EDDM is a form of saturation mailing.' },
+  { term: 'SCF', definition: 'Sectional Center Facility. A USPS mail processing plant that serves a specific group of ZIP codes (sharing the first 3 digits). Dropping mail at the SCF level qualifies for destination-entry discounts.' },
+  { term: 'Self-Mailer', definition: 'A folded mail piece that is mailed without an envelope. Must be secured with tabs or wafer seals per USPS standards. Common formats include bi-fold, tri-fold, and booklet styles.' },
+  { term: 'Tabbing', definition: 'Applying adhesive tabs or wafer seals to self-mailers to keep them closed during postal processing. Tab placement, size, and quantity are specified in USPS DMM 201.3.' },
+  { term: 'UAA', definition: 'Undeliverable As Addressed. Mail that cannot be delivered to the address as printed. Causes include moved recipients (no forwarding), vacant addresses, and incorrect addresses.' },
+  { term: 'Union Bug', definition: 'A small printed label or mark on printed materials indicating the piece was produced at a union print shop. Required by many labor organizations, political campaigns, and government entities.' },
+  { term: 'Walk Sequence', definition: 'The order in which a letter carrier delivers mail on their route. Mail presorted in walk sequence (delivery point sequence) qualifies for the deepest automation discounts.' },
+  { term: 'Zone Chart', definition: 'A USPS chart showing the zone (distance) between the origin ZIP code and destination ZIP code. Zone affects postage for packages, Periodicals, and some drop-ship entries.' },
+];
+
+// Group by first letter
+const grouped: Record<string, typeof glossary> = {};
+glossary.forEach((item) => {
+  const letter = item.term[0].toUpperCase();
+  if (!grouped[letter]) grouped[letter] = [];
+  grouped[letter].push(item);
+});
+const letters = Object.keys(grouped).sort();
+---
+
+<BaseLayout
+  title="Postal Dictionary — USPS Terms & Mailing Glossary"
+  description="A comprehensive glossary of USPS terms, mailing industry acronyms, and direct mail jargon. From AADC to Zone Chart — understand the language of postal mail."
+>
+  <PageHero
+    title="Postal Dictionary"
+    subtitle="A glossary of USPS terms, acronyms, and mailing industry jargon — from AADC to Zone Chart."
+    breadcrumbs={[
+      { label: 'Resources', href: '/resources/' },
+      { label: 'Postal Dictionary' },
+    ]}
+  />
+
+  <section class="py-14 lg:py-20">
+    <div class="container-wide">
+      <div class="max-w-4xl mx-auto">
+        <div class="section-divider mb-6"></div>
+        <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-4">
+          USPS & Direct Mail Glossary
+        </h2>
+        <p class="text-navy-600/80 leading-relaxed mb-8">
+          The mailing industry has its own language — and the USPS has hundreds of specialized terms, acronyms, and standards. This glossary covers the terms you're most likely to encounter when planning a direct mail campaign. If you don't see a term listed here or need clarification, give us a call.
+        </p>
+
+        <!-- Letter Navigation -->
+        <div class="flex flex-wrap gap-2 mb-10 sticky top-20 bg-white py-3 z-10 border-b border-gray-100">
+          {letters.map((letter) => (
+            <a
+              href={`#letter-${letter}`}
+              class="w-8 h-8 flex items-center justify-center rounded text-sm font-heading font-bold text-navy-600 hover:bg-crst-primary hover:text-white transition-colors"
+            >
+              {letter}
+            </a>
+          ))}
+        </div>
+
+        <!-- Glossary -->
+        <div class="space-y-10">
+          {letters.map((letter) => (
+            <div id={`letter-${letter}`}>
+              <h3 class="text-2xl font-display font-bold text-crst-primary border-b-2 border-crst-primary/20 pb-2 mb-4">{letter}</h3>
+              <div class="space-y-4">
+                {grouped[letter].map((item) => (
+                  <div class="pl-4 border-l-2 border-gray-200">
+                    <dt class="font-heading font-bold text-navy-800">{item.term}</dt>
+                    <dd class="text-sm text-navy-600/80 leading-relaxed mt-1">{item.definition}</dd>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <!-- CTA -->
+        <div class="bg-crst-primary/5 rounded-xl p-8 text-center mt-12">
+          <h3 class="text-xl font-display font-bold text-crst-primary mb-3">Still Have Questions?</h3>
+          <p class="text-navy-600/80 text-sm mb-5 max-w-lg mx-auto">
+            Direct mail terminology can be confusing. That's what we're here for — call or email us and we'll explain anything in plain English.
+          </p>
+          <div class="flex flex-wrap justify-center gap-3">
+            <a href={`tel:${BUSINESS.phoneClean}`} class="btn-primary">Call {BUSINESS.phone}</a>
+            <a href="/contact/" class="btn-secondary">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>

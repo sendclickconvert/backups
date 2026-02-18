@@ -1,0 +1,162 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import CTASection from '../../components/CTASection.astro';
+import { BUSINESS } from '../../data/site';
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Commercial Printing Services',
+  provider: {
+    '@type': 'ProfessionalService',
+    name: BUSINESS.name,
+    url: BUSINESS.url,
+  },
+  serviceType: 'Commercial Printing',
+  areaServed: {
+    '@type': 'Place',
+    name: 'Hudson Valley, New York',
+  },
+  description: 'Commercial printing services including postcards, brochures, newsletters, letters, and large-format printing for direct mail and marketing campaigns in the Hudson Valley.',
+};
+---
+
+<BaseLayout
+  title="Printing Services"
+  description="Commercial printing for direct mail and marketing — postcards, brochures, newsletters, letters, and large-format printing from Cornerstone Services in New Paltz, NY."
+  schema={serviceSchema}
+>
+  <PageHero
+    title="Printing Services"
+    subtitle="Commercial-quality printing for direct mail, marketing materials, and business communications."
+    breadcrumbs={[
+      { label: 'Services', href: '/services/' },
+      { label: 'Printing Services' },
+    ]}
+  />
+
+  <section class="py-14 lg:py-20">
+    <div class="container-wide">
+      <div class="grid lg:grid-cols-3 gap-10 lg:gap-14">
+        <!-- Main content -->
+        <div class="lg:col-span-2">
+          <div class="section-divider mb-6"></div>
+          <h2 class="text-2xl font-display text-crst-primary mb-4">Print Quality That Represents Your Brand</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            The quality of your printed materials says something about your organization. Cornerstone Services delivers commercial-grade printing that makes a strong impression — whether it's a postcard campaign, a multi-page newsletter, or business stationery. We handle everything from short-run digital jobs to high-volume offset production.
+          </p>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            Because we're a full-service direct mail house, your print job flows seamlessly into mailing preparation. There's no shipping printed materials between vendors, no coordination headaches, and no wasted time. Your project moves from press to post office under one roof.
+          </p>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">What We Print</h3>
+          <div class="grid sm:grid-cols-2 gap-3">
+            {[
+              { title: 'Postcards', desc: '4×6, 6×9, 6×11, and jumbo formats on heavy cardstock with UV coating options' },
+              { title: 'Self-Mailers', desc: 'Bi-fold and tri-fold pieces that mail without an envelope — cost-effective and eye-catching' },
+              { title: 'Letters & Envelopes', desc: 'Personalized letters with variable data, matching envelopes, and reply inserts' },
+              { title: 'Newsletters', desc: 'Multi-page saddle-stitched or folded newsletters for municipalities, churches, and organizations' },
+              { title: 'Brochures & Flyers', desc: 'Full-color marketing collateral in various fold configurations' },
+              { title: 'Business Stationery', desc: 'Letterheads, envelopes, business cards, and notepads with consistent branding' },
+            ].map((item) => (
+              <div class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg">
+                <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <div>
+                  <div class="font-heading font-semibold text-navy-800 text-sm">{item.title}</div>
+                  <div class="text-xs text-navy-600/60">{item.desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">Variable Data Printing</h3>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            Variable data printing (VDP) lets you personalize each piece in a print run with unique text, images, or offers. A restaurant can address each postcard by name. A real estate agent can show different property listings based on neighborhood. A municipality can include account-specific information in utility mailings. Personalized mail gets higher response rates — and we make it simple.
+          </p>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">Our Print Process</h3>
+          <div class="space-y-6">
+            {[
+              { step: '1', title: 'File Review & Preflight', desc: 'We review your artwork files for resolution, color accuracy, bleed, and USPS compliance before anything goes to press. If you need design help, our graphic design team can create or refine your piece.' },
+              { step: '2', title: 'Proof Approval', desc: 'You receive a digital proof showing exactly how your piece will look. We do not print until you approve.' },
+              { step: '3', title: 'Production', desc: 'Your job runs on commercial digital or offset equipment matched to quantity and quality requirements. We use full CMYK color with options for UV coating, aqueous coating, or matte finish.' },
+              { step: '4', title: 'Mail Prep or Pickup', desc: 'Printed pieces flow directly into our mailing department for addressing, presorting, and postal induction — or we prepare them for pickup/delivery if you are not mailing.' },
+            ].map((item) => (
+              <div class="flex items-start gap-4">
+                <div class="shrink-0 w-9 h-9 rounded-full bg-crst-primary flex items-center justify-center text-white font-heading font-bold text-sm">
+                  {item.step}
+                </div>
+                <div>
+                  <h4 class="font-heading font-bold text-navy-800 mb-1">{item.title}</h4>
+                  <p class="text-sm text-navy-600/70 leading-relaxed">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">Print Specifications</h3>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            We accept print-ready files in PDF, AI, InDesign, and PSD formats. Files should be set to CMYK color mode at 300 DPI with 0.125" bleed on all sides. Don't have print-ready files? No problem — our design team can prepare your artwork. See our <a href="/services/graphic-design/" class="text-crst-accent hover:text-crst-primary underline">graphic design services</a> for details.
+          </p>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          <div class="sticky top-24 space-y-5">
+            <div class="bg-crst-primary rounded-xl p-6 text-white">
+              <h3 class="font-display text-lg mb-2">Get a Print Quote</h3>
+              <p class="text-white/60 text-sm leading-relaxed mb-4">
+                Tell us what you need printed — quantity, size, and paper — and we'll send a detailed quote.
+              </p>
+              <a href="/estimate/" class="btn-accent w-full text-center text-sm">
+                Request Quote
+              </a>
+              <div class="mt-4 pt-4 border-t border-white/10 text-center">
+                <a href={`tel:${BUSINESS.phoneClean}`} class="text-white/70 text-sm font-heading hover:text-white transition-colors">
+                  or call {BUSINESS.phone}
+                </a>
+              </div>
+            </div>
+
+            <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Related Services</h3>
+              <div class="space-y-2">
+                {[
+                  { label: 'Direct Mail Campaigns', href: '/services/direct-mail/' },
+                  { label: 'Graphic Design', href: '/services/graphic-design/' },
+                  { label: 'Mailing Services', href: '/services/mailing/' },
+                  { label: 'EDDM', href: '/services/eddm/' },
+                ].map((link) => (
+                  <a href={link.href} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-white rounded-md transition-colors font-heading">
+                    {link.label}
+                    <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Popular Formats</h3>
+              <div class="space-y-2 text-sm">
+                {[
+                  { format: '6×9 Postcard', use: 'Most popular for direct mail' },
+                  { format: '8.5×11 Self-Mailer', use: 'Newsletters & menus' },
+                  { format: '#10 Letter Package', use: 'Formal communications' },
+                  { format: '6×11 Jumbo Postcard', use: 'Maximum impact' },
+                ].map((item) => (
+                  <div class="flex justify-between items-baseline">
+                    <span class="font-heading font-semibold text-navy-800">{item.format}</span>
+                    <span class="text-xs text-navy-600/50">{item.use}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>

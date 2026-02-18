@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import { BUSINESS } from '../data/site';
+---
+
+<BaseLayout title="Terms & Conditions" description={`Terms and conditions for ${BUSINESS.name} direct mail, printing, and mailing services.`}>
+  <PageHero title="Terms & Conditions" breadcrumbs={[{ label: 'Terms & Conditions' }]} />
+
+  <section class="py-14 lg:py-20">
+    <div class="container-narrow prose prose-navy max-w-none">
+      <p class="text-sm text-navy-500 font-heading">Last updated: January 30, 2026</p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">General Terms</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        By engaging {BUSINESS.name} for services, you agree to these terms. We reserve the right to decline any project at our discretion. All estimates are valid for 30 days unless otherwise specified.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Pricing & Payment</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        Prices are based on specifications provided at the time of the estimate. Changes to quantity, specifications, or timeline may result in adjusted pricing. A deposit may be required for large or first-time orders. Invoices are due net 30 unless otherwise agreed. A 3% processing fee applies to credit card payments.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Postage</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        Postage rates are determined by the USPS and are subject to change. Postage costs are in addition to printing and processing fees unless a bundled price is quoted. We prepare mail to qualify for the lowest applicable postage rate based on mail class, size, and presort level.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Artwork & Proofs</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        Client-supplied artwork must be print-ready and meet our specifications. We are not responsible for errors in client-supplied content. Digital proofs are provided for approval before printing — once approved, we are not liable for content errors. Changes after proof approval may incur additional charges.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Mailing Lists</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        Client-supplied mailing lists must be in an acceptable electronic format. We perform CASS/DPV address verification and NCOA processing on all lists. We are not responsible for undeliverable mail resulting from inaccurate addresses provided by the client.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Delivery & Liability</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        Once mail is inducted into the USPS mail stream, delivery is the responsibility of the United States Postal Service. We are not liable for delays, loss, or damage once mail has been accepted by the USPS. We maintain a {BUSINESS.stats.onTime} on-time induction rate.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Contact</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed">
+        Questions about these terms? Contact us at <a href={`mailto:${BUSINESS.email}`} class="text-crst-accent hover:underline">{BUSINESS.email}</a> or call <a href={`tel:${BUSINESS.phoneClean}`} class="text-crst-accent hover:underline">{BUSINESS.phone}</a>.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

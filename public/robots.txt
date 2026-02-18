@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://crst.net/sitemap-index.xml
+
+# Disallow admin/internal paths
+Disallow: /thank-you

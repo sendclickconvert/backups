@@ -1,0 +1,153 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import CTASection from '../../components/CTASection.astro';
+import { BUSINESS } from '../../data/site';
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Graphic Design Services',
+  provider: {
+    '@type': 'ProfessionalService',
+    name: BUSINESS.name,
+    url: BUSINESS.url,
+  },
+  serviceType: 'Graphic Design',
+  areaServed: {
+    '@type': 'Place',
+    name: 'Hudson Valley, New York',
+  },
+  description: 'Professional graphic design services for direct mail, print marketing, and business communications — USPS-compliant layouts that drive response rates.',
+};
+---
+
+<BaseLayout
+  title="Graphic Design Services"
+  description="Professional graphic design for direct mail and marketing materials — USPS-compliant layouts, compelling visuals, and designs that drive response rates."
+  schema={serviceSchema}
+>
+  <PageHero
+    title="Graphic Design"
+    subtitle="Mail-ready design that catches attention, drives response, and meets USPS requirements."
+    breadcrumbs={[
+      { label: 'Services', href: '/services/' },
+      { label: 'Graphic Design' },
+    ]}
+  />
+
+  <section class="py-14 lg:py-20">
+    <div class="container-wide">
+      <div class="grid lg:grid-cols-3 gap-10 lg:gap-14">
+        <div class="lg:col-span-2">
+          <div class="section-divider mb-6"></div>
+          <h2 class="text-2xl font-display text-crst-primary mb-4">Design That Works in the Mailbox</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            Direct mail design is a specialty. It's not just about looking good — your mail piece needs to grab attention in a stack of mail, communicate your message in seconds, include a clear call to action, and meet strict USPS automation requirements for address placement, barcoding, and postal indicia. Our designers understand all of this because direct mail is what we do every day.
+          </p>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            Whether you need a simple postcard or a complex multi-page self-mailer, our in-house design team creates pieces that are print-ready, USPS-compliant, and optimized for response. We work with your brand guidelines, or we can develop a look and feel from scratch.
+          </p>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">What We Design</h3>
+          <div class="grid sm:grid-cols-2 gap-3">
+            {[
+              { title: 'Postcards', desc: 'High-impact designs for standard, oversized, and jumbo formats' },
+              { title: 'Self-Mailers', desc: 'Bi-fold and tri-fold pieces with proper tab placement and postal panels' },
+              { title: 'Letters & Inserts', desc: 'Professional letterhead, reply cards, donation forms, and envelope designs' },
+              { title: 'Newsletters', desc: 'Multi-page layouts for municipal, church, and organizational newsletters' },
+              { title: 'Menus & Flyers', desc: 'Restaurant menus, event flyers, and promotional materials' },
+              { title: 'Branding & Identity', desc: 'Logos, business cards, letterheads, and style guides for consistent branding' },
+            ].map((item) => (
+              <div class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg">
+                <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <div>
+                  <div class="font-heading font-semibold text-navy-800 text-sm">{item.title}</div>
+                  <div class="text-xs text-navy-600/60">{item.desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">Our Design Process</h3>
+          <div class="space-y-6">
+            {[
+              { step: '1', title: 'Creative Brief', desc: 'We start with your goals, audience, and brand. What do you want the recipient to do? Who are they? What does your brand look like? This shapes every design decision.' },
+              { step: '2', title: 'Concept & Layout', desc: 'Our designers create initial layout concepts based on your brief. We focus on visual hierarchy, readability, and clear calls to action — while ensuring all USPS requirements are built into the design from the start.' },
+              { step: '3', title: 'Revisions & Approval', desc: 'You review the design and provide feedback. We include two rounds of revisions in our standard design fee. Once approved, the files are prepared for print production.' },
+              { step: '4', title: 'Print-Ready Files', desc: 'Your approved design is output as print-ready files with proper bleed, color settings, and resolution — ready to move directly into our printing department.' },
+            ].map((item) => (
+              <div class="flex items-start gap-4">
+                <div class="shrink-0 w-9 h-9 rounded-full bg-crst-primary flex items-center justify-center text-white font-heading font-bold text-sm">
+                  {item.step}
+                </div>
+                <div>
+                  <h4 class="font-heading font-bold text-navy-800 mb-1">{item.title}</h4>
+                  <p class="text-sm text-navy-600/70 leading-relaxed">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">USPS Compliance Built In</h3>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            Every mail piece has specific USPS requirements for address block placement, barcode clear zones, return address location, and postal indicia. Non-compliant pieces can be rejected by the USPS or lose their automation rate qualification — costing you time and money. Our designers know these rules and build compliance into every layout from the start, so you never have to worry about it.
+          </p>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">USPS Design Templates</h3>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            Want to design your own mail piece? Download our free USPS-compliant design templates with pre-set address panels, barcode zones, and bleed guides. Available for all standard mail piece sizes in Adobe InDesign and PDF formats. Visit our <a href="/resources/usps-templates/" class="text-crst-accent hover:text-crst-primary underline">USPS templates page</a> to download.
+          </p>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          <div class="sticky top-24 space-y-5">
+            <div class="bg-crst-primary rounded-xl p-6 text-white">
+              <h3 class="font-display text-lg mb-2">Need Design Help?</h3>
+              <p class="text-white/60 text-sm leading-relaxed mb-4">
+                Send us your content and ideas — we'll create a design that works in the mailbox and represents your brand.
+              </p>
+              <a href="/estimate/" class="btn-accent w-full text-center text-sm">
+                Request Design Quote
+              </a>
+              <div class="mt-4 pt-4 border-t border-white/10 text-center">
+                <a href={`tel:${BUSINESS.phoneClean}`} class="text-white/70 text-sm font-heading hover:text-white transition-colors">
+                  or call {BUSINESS.phone}
+                </a>
+              </div>
+            </div>
+
+            <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Related Services</h3>
+              <div class="space-y-2">
+                {[
+                  { label: 'Direct Mail Campaigns', href: '/services/direct-mail/' },
+                  { label: 'Printing Services', href: '/services/printing/' },
+                  { label: 'Web Design', href: '/services/web-design/' },
+                  { label: 'EDDM', href: '/services/eddm/' },
+                ].map((link) => (
+                  <a href={link.href} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-white rounded-md transition-colors font-heading">
+                    {link.label}
+                    <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Design Tips</h3>
+              <div class="space-y-3 text-sm text-navy-600/70">
+                <p>Include <strong class="text-navy-800">one clear call to action</strong> — don't make the reader guess what to do next.</p>
+                <p>Use <strong class="text-navy-800">high-contrast colors</strong> for headlines and CTAs to grab attention.</p>
+                <p>Keep body text <strong class="text-navy-800">10pt or larger</strong> for readability.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>

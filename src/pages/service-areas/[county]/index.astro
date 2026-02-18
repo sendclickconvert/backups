@@ -1,0 +1,254 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PageHero from '../../../components/PageHero.astro';
+import CTASection from '../../../components/CTASection.astro';
+import { BUSINESS, SERVICES } from '../../../data/site';
+import { COUNTIES_DATA } from '../../../data/locations';
+import type { County } from '../../../data/locations';
+
+export function getStaticPaths() {
+  return COUNTIES_DATA.map((county) => ({
+    params: { county: county.slug },
+    props: { county },
+  }));
+}
+
+const { county } = Astro.props as { county: County };
+const anchorLocations = county.locations.filter(l => l.isAnchor);
+const cities = county.locations.filter(l => l.type === 'city');
+const towns = county.locations.filter(l => l.type === 'town');
+const villages = county.locations.filter(l => l.type === 'village');
+const hamlets = county.locations.filter(l => l.type === 'hamlet' || l.type === 'cdp');
+
+const title = `Direct Mail Services in ${county.name}, NY | ${BUSINESS.shortName}`;
+const description = `Professional direct mail, printing, and mailing services for businesses and organizations across ${county.name}, NY. Serving ${county.locations.length} communities from our ${BUSINESS.address.city} facility.`;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: BUSINESS.name,
+  url: `${BUSINESS.url}/service-areas/${county.slug}/`,
+  telephone: BUSINESS.phone,
+  areaServed: {
+    '@type': 'AdministrativeArea',
+    name: `${county.name}, New York`,
+  },
+  description: `${BUSINESS.name} provides direct mail, printing, and data services throughout ${county.name}, NY. Serving ${county.locations.length} communities.`,
+};
+---
+
+<BaseLayout title={title} description={description}>
+  <PageHero
+    title={`Direct Mail Services in ${county.name}`}
+    subtitle={`Serving ${county.locations.length} communities across ${county.name} from our ${BUSINESS.address.city} headquarters`}
+    breadcrumbs={[
+      { label: 'Service Areas', href: '/service-areas/' },
+      { label: county.name },
+    ]}
+  />
+
+  <!-- Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+  <!-- County Intro -->
+  <section class="py-14 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-14">
+        <div class="section-divider mb-6"></div>
+        <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-4">
+          Your Direct Mail Partner in {county.name}
+        </h2>
+        <p class="text-gray-700 leading-relaxed">
+          {county.intro}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-14">
+        <div class="text-center p-5 bg-crst-light rounded-lg">
+          <div class="text-3xl font-display font-bold text-crst-primary">{county.locations.length}</div>
+          <div class="text-sm text-gray-600 mt-1">Communities Served</div>
+        </div>
+        <div class="text-center p-5 bg-crst-light rounded-lg">
+          <div class="text-3xl font-display font-bold text-crst-primary">{county.population}</div>
+          <div class="text-sm text-gray-600 mt-1">Population</div>
+        </div>
+        <div class="text-center p-5 bg-crst-light rounded-lg">
+          <div class="text-3xl font-display font-bold text-crst-primary">{BUSINESS.stats.years}</div>
+          <div class="text-sm text-gray-600 mt-1">Years of Service</div>
+        </div>
+        <div class="text-center p-5 bg-crst-light rounded-lg">
+          <div class="text-3xl font-display font-bold text-crst-primary">{BUSINESS.stats.piecesMailed}</div>
+          <div class="text-sm text-gray-600 mt-1">Pieces Mailed</div>
+        </div>
+      </div>
+
+      <!-- Anchor Cities -->
+      {anchorLocations.length > 0 && (
+        <div class="mb-14">
+          <h3 class="text-2xl font-display font-bold text-crst-primary mb-8">
+            Major {county.name} Service Areas
+          </h3>
+          <div class="grid md:grid-cols-2 gap-8">
+            {anchorLocations.map((location) => (
+              <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-8 hover:shadow-md transition-shadow">
+                <h4 class="text-xl font-display font-bold text-crst-primary mb-3">
+                  <a href={`/service-areas/${county.slug}/${location.slug}/`} class="hover:text-crst-accent transition-colors">
+                    Direct Mail in {location.name}
+                  </a>
+                </h4>
+                <div class="flex flex-wrap items-center gap-3 text-sm text-gray-500 mb-4">
+                  <span>Pop. {location.population}</span>
+                  <span>•</span>
+                  <span>ZIP: {location.zip.join(', ')}</span>
+                </div>
+                <p class="text-gray-600 text-sm mb-6 line-clamp-3">{location.intro}</p>
+                <div class="mb-6">
+                  <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Key Organizations</div>
+                  <div class="flex flex-wrap gap-2">
+                    {location.notableOrgs.slice(0, 4).map((org) => (
+                      <span class="text-xs bg-crst-light text-crst-primary px-2 py-1 rounded">{org}</span>
+                    ))}
+                  </div>
+                </div>
+                <a href={`/service-areas/${county.slug}/${location.slug}/`} class="btn-primary text-sm inline-block">
+                  View {location.name} Services →
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- Cities -->
+      {cities.filter(c => !c.isAnchor).length > 0 && (
+        <div class="mb-10">
+          <h3 class="font-semibold text-gray-800 text-lg mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-crst-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            Cities
+          </h3>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {cities.filter(c => !c.isAnchor).map((location) => (
+              <a href={`/service-areas/${county.slug}/${location.slug}/`} class="card group block">
+                <div class="font-semibold text-gray-800 group-hover:text-crst-primary transition-colors mb-1">{location.name}</div>
+                <div class="flex items-center gap-3 text-xs text-gray-500 mb-2">
+                  <span>ZIP: {location.zip.join(', ')}</span>
+                  <span>Pop: {location.population}</span>
+                </div>
+                <p class="text-sm text-gray-500 leading-relaxed line-clamp-2">{location.intro}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- Towns -->
+      {towns.length > 0 && (
+        <div class="mb-10">
+          <h3 class="font-semibold text-gray-800 text-lg mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-crst-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            Towns
+          </h3>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+            {towns.map((location) => (
+              <a
+                href={`/service-areas/${county.slug}/${location.slug}/`}
+                class="flex items-center justify-between p-3.5 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 hover:border-crst-primary/30 transition-all group"
+              >
+                <div>
+                  <div class="font-semibold text-gray-800 text-sm group-hover:text-crst-primary transition-colors">{location.name}</div>
+                  <div class="text-xs text-gray-400">ZIP: {location.zip[0]} · Pop. {location.population}</div>
+                </div>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-crst-primary group-hover:translate-x-0.5 transition-all shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- Villages -->
+      {villages.length > 0 && (
+        <div class="mb-10">
+          <h3 class="font-semibold text-gray-800 text-lg mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-crst-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            Villages
+          </h3>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+            {villages.map((location) => (
+              <a
+                href={`/service-areas/${county.slug}/${location.slug}/`}
+                class="flex items-center justify-between p-3.5 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 hover:border-crst-primary/30 transition-all group"
+              >
+                <div>
+                  <div class="font-semibold text-gray-800 text-sm group-hover:text-crst-primary transition-colors">{location.name}</div>
+                  <div class="text-xs text-gray-400">ZIP: {location.zip[0]} · Pop. {location.population}</div>
+                </div>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-crst-primary group-hover:translate-x-0.5 transition-all shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <!-- Hamlets -->
+      {hamlets.length > 0 && (
+        <div class="mb-10">
+          <h3 class="font-semibold text-gray-800 text-lg mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-crst-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+            Hamlets &amp; CDPs
+          </h3>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+            {hamlets.map((location) => (
+              <a
+                href={`/service-areas/${county.slug}/${location.slug}/`}
+                class="flex items-center justify-between p-3.5 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 hover:border-crst-primary/30 transition-all group"
+              >
+                <div>
+                  <div class="font-semibold text-gray-800 text-sm group-hover:text-crst-primary transition-colors">{location.name}</div>
+                  <div class="text-xs text-gray-400">ZIP: {location.zip[0]} · Pop. {location.population}</div>
+                </div>
+                <svg class="w-4 h-4 text-gray-300 group-hover:text-crst-primary group-hover:translate-x-0.5 transition-all shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- Services Available -->
+  <section class="py-14 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-display font-bold text-crst-primary mb-10 text-center">
+        Services Available in {county.name}
+      </h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        {SERVICES.slice(0, 6).map((service) => (
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <h3 class="text-lg font-display font-bold text-crst-primary mb-2">{service.title}</h3>
+            <p class="text-gray-600 text-sm mb-4">{service.summary}</p>
+            <a href={`/services/${service.slug}/`} class="text-crst-accent text-sm font-semibold hover:underline">Learn More →</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Nearby Counties -->
+  <section class="py-14">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl font-display font-bold text-crst-primary mb-6">We Also Serve</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        {COUNTIES_DATA.filter(c => c.slug !== county.slug).map((otherCounty) => (
+          <a href={`/service-areas/${otherCounty.slug}/`} class="btn-secondary text-sm">
+            {otherCounty.name} →
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    headline={`Ready to Reach ${county.name} Customers?`}
+    text={`Get a free quote for your ${county.name} direct mail campaign. We'll help you target the right communities with the right message.`}
+  />
+</BaseLayout>

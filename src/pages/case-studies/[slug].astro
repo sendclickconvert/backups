@@ -1,0 +1,246 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import CTASection from '../../components/CTASection.astro';
+import { BUSINESS, SERVICES } from '../../data/site';
+import { CASE_STUDIES_FULL } from '../../data/case-studies';
+import type { CaseStudy } from '../../data/case-studies';
+
+export function getStaticPaths() {
+  return CASE_STUDIES_FULL.map((cs) => ({
+    params: { slug: cs.slug },
+    props: { caseStudy: cs },
+  }));
+}
+
+const { caseStudy } = Astro.props as { caseStudy: CaseStudy };
+
+// Get related case studies (different slug, prefer same industry)
+const relatedStudies = CASE_STUDIES_FULL
+  .filter(cs => cs.slug !== caseStudy.slug)
+  .sort((a, b) => {
+    const aMatch = a.industry === caseStudy.industry ? 1 : 0;
+    const bMatch = b.industry === caseStudy.industry ? 1 : 0;
+    return bMatch - aMatch;
+  })
+  .slice(0, 3);
+
+// Get related service pages
+const relatedServicePages = SERVICES.filter(s =>
+  caseStudy.relatedServices.includes(s.slug)
+);
+
+const title = `${caseStudy.title} | Case Study | ${BUSINESS.shortName}`;
+const description = `${caseStudy.client} — ${caseStudy.challenge.slice(0, 150)}... See how Cornerstone Services helped with ${caseStudy.servicesUsed.join(', ')}.`;
+
+// CaseStudy schema
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: caseStudy.title,
+  author: {
+    '@type': 'Organization',
+    name: BUSINESS.name,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: BUSINESS.name,
+    url: BUSINESS.url,
+  },
+  description: description,
+  about: {
+    '@type': 'Service',
+    name: 'Direct Mail Services',
+    provider: {
+      '@type': 'LocalBusiness',
+      name: BUSINESS.name,
+    },
+  },
+};
+---
+
+<BaseLayout title={title} description={description}>
+  <PageHero
+    title={caseStudy.title}
+    subtitle={`${caseStudy.client} · ${caseStudy.location} · ${caseStudy.industry}`}
+    breadcrumbs={[
+      { label: 'Case Studies', href: '/case-studies/' },
+      { label: caseStudy.client },
+    ]}
+  />
+
+  <!-- Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+  <section class="py-14 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-12">
+        <!-- Main Content -->
+        <div class="lg:col-span-2">
+          <!-- Case Study Image -->
+          {caseStudy.image && (
+            <div class="mb-10 rounded-xl overflow-hidden bg-gradient-to-br from-crst-primary/5 to-crst-accent/5">
+              <img
+                src={caseStudy.image}
+                alt={caseStudy.imageAlt || caseStudy.title}
+                class="w-full h-auto max-h-96 object-contain mx-auto p-4"
+                loading="eager"
+              />
+            </div>
+          )}
+
+          <!-- Key Metrics -->
+          {caseStudy.keyMetrics && caseStudy.keyMetrics.length > 0 && (
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+              {caseStudy.keyMetrics.map((metric) => (
+                <div class="bg-crst-light rounded-lg p-4 text-center">
+                  <div class="text-lg font-display font-bold text-crst-primary">{metric.value}</div>
+                  <div class="text-xs text-gray-500 mt-1">{metric.label}</div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          <!-- Challenge -->
+          <div class="mb-10">
+            <div class="section-divider mb-4"></div>
+            <h2 class="text-xl sm:text-2xl font-display text-crst-primary mb-4">
+              The Challenge
+            </h2>
+            <p class="text-gray-700 leading-relaxed">
+              {caseStudy.challenge}
+            </p>
+          </div>
+
+          <!-- Solution -->
+          <div class="mb-10">
+            <h2 class="text-xl sm:text-2xl font-display text-crst-primary mb-4">
+              Our Solution
+            </h2>
+            <p class="text-gray-700 leading-relaxed">
+              {caseStudy.solution}
+            </p>
+          </div>
+
+          <!-- Results -->
+          <div class="mb-10">
+            <h2 class="text-xl sm:text-2xl font-display text-crst-primary mb-4">
+              The Results
+            </h2>
+            <p class="text-gray-700 leading-relaxed">
+              {caseStudy.results}
+            </p>
+          </div>
+
+          <!-- Testimonial -->
+          {caseStudy.testimonialQuote && (
+            <div class="bg-crst-primary/5 border-l-4 border-crst-gold rounded-r-xl p-6 mb-10">
+              <p class="text-gray-700 italic leading-relaxed mb-3">"{caseStudy.testimonialQuote}"</p>
+              {caseStudy.testimonialAuthor && (
+                <p class="text-sm font-semibold text-crst-primary">— {caseStudy.testimonialAuthor}</p>
+              )}
+            </div>
+          )}
+
+          <!-- Services Used -->
+          <div class="mb-10">
+            <h3 class="text-lg font-display text-crst-primary mb-4">Services Used</h3>
+            <div class="flex flex-wrap gap-2">
+              {caseStudy.servicesUsed.map((service) => (
+                <span class="text-sm bg-crst-light text-crst-primary px-3 py-1.5 rounded-full font-medium">
+                  {service}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <!-- Related Service Pages -->
+          {relatedServicePages.length > 0 && (
+            <div class="mb-10">
+              <h3 class="text-lg font-display text-crst-primary mb-4">Learn More About These Services</h3>
+              <div class="grid sm:grid-cols-2 gap-4">
+                {relatedServicePages.map((service) => (
+                  <a
+                    href={`/services/${service.slug}/`}
+                    class="flex items-start gap-3 p-4 rounded-lg border border-gray-200 hover:border-crst-primary/30 hover:bg-gray-50 transition-all group"
+                  >
+                    <div class="w-2 h-2 rounded-full bg-crst-gold mt-2 shrink-0"></div>
+                    <div>
+                      <div class="font-semibold text-sm text-gray-800 group-hover:text-crst-primary transition-colors">
+                        {service.title}
+                      </div>
+                      <div class="text-xs text-gray-500 mt-1">{service.summary}</div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          <!-- Project Details -->
+          <div class="bg-crst-light rounded-xl p-6 mb-6 sticky top-24">
+            <h3 class="font-display font-bold text-crst-primary mb-4">Project Details</h3>
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between border-b border-crst-primary/10 pb-2">
+                <span class="text-gray-600">Client</span>
+                <span class="font-semibold text-gray-800 text-right">{caseStudy.client}</span>
+              </div>
+              <div class="flex justify-between border-b border-crst-primary/10 pb-2">
+                <span class="text-gray-600">Location</span>
+                <span class="font-semibold text-gray-800">{caseStudy.location}</span>
+              </div>
+              <div class="flex justify-between border-b border-crst-primary/10 pb-2">
+                <span class="text-gray-600">Industry</span>
+                <span class="font-semibold text-gray-800">{caseStudy.industry}</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-600">Services</span>
+                <span class="font-semibold text-gray-800 text-right">{caseStudy.servicesUsed.length} used</span>
+              </div>
+            </div>
+
+            <div class="mt-6 space-y-3">
+              <a href="/estimate/" class="btn-primary w-full text-center text-sm block">
+                Get a Free Estimate
+              </a>
+              <a href={`tel:${BUSINESS.phoneClean}`} class="btn-secondary w-full text-center text-sm block">
+                Call {BUSINESS.phone}
+              </a>
+            </div>
+          </div>
+
+          <!-- Related Case Studies -->
+          <div class="bg-white border border-gray-200 rounded-xl p-6">
+            <h3 class="font-display font-bold text-crst-primary mb-4">More Case Studies</h3>
+            <div class="space-y-4">
+              {relatedStudies.map((related) => (
+                <a
+                  href={`/case-studies/${related.slug}/`}
+                  class="block group"
+                >
+                  <div class="font-semibold text-sm text-gray-800 group-hover:text-crst-primary transition-colors mb-1">
+                    {related.title}
+                  </div>
+                  <div class="text-xs text-gray-500">
+                    {related.client} · {related.industry}
+                  </div>
+                </a>
+              ))}
+            </div>
+            <a href="/case-studies/" class="mt-4 text-sm text-crst-accent font-semibold hover:underline block">
+              View All Case Studies →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    headline={`Need Results Like ${caseStudy.client}?`}
+    text={`Tell us about your ${caseStudy.industry.toLowerCase()} project. We'll recommend the right direct mail strategy for your goals and budget.`}
+  />
+</BaseLayout>

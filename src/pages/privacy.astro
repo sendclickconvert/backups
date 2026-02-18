@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import { BUSINESS } from '../data/site';
+---
+
+<BaseLayout title="Privacy Policy" description={`Privacy policy for ${BUSINESS.name}. Learn how we collect, use, and protect your personal information.`}>
+  <PageHero title="Privacy Policy" breadcrumbs={[{ label: 'Privacy Policy' }]} />
+
+  <section class="py-14 lg:py-20">
+    <div class="container-narrow prose prose-navy max-w-none">
+      <p class="text-sm text-navy-500 font-heading">Last updated: January 30, 2026</p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Information We Collect</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        When you contact us through our website forms, request an estimate, or make a payment, we may collect your name, email address, phone number, company name, and project details. We also collect standard web analytics data (pages visited, time on site, browser type) through Google Analytics.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">How We Use Your Information</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        We use your information to respond to inquiries, prepare estimates, process orders, and communicate about your projects. We do not sell, rent, or share your personal information with third parties for marketing purposes.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Data Protection</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        We implement reasonable security measures to protect your personal information. Credit card payments are processed through Stripe's secure payment platform — we do not store credit card numbers on our servers.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Cookies & Analytics</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        Our website uses Google Analytics (GA4) to understand how visitors use our site. This service uses cookies to collect anonymous usage data. You can opt out of Google Analytics by installing the Google Analytics Opt-out Browser Add-on.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Mailing List Data</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        Client mailing list data provided to us for campaign purposes is treated as confidential. We do not use client mailing lists for any purpose other than the authorized campaign. Lists are retained only as long as needed for the project unless otherwise agreed.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Contact Us</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed">
+        If you have questions about this privacy policy, contact us at <a href={`mailto:${BUSINESS.email}`} class="text-crst-accent hover:underline">{BUSINESS.email}</a> or call <a href={`tel:${BUSINESS.phoneClean}`} class="text-crst-accent hover:underline">{BUSINESS.phone}</a>.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

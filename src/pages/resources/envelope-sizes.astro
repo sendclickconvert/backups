@@ -1,0 +1,208 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import CTASection from '../../components/CTASection.astro';
+import { BUSINESS } from '../../data/site';
+
+const mailClasses = [
+  {
+    name: 'Postcards',
+    icon: '📮',
+    description: 'The most cost-effective mail format. No envelope needed — your message is immediately visible.',
+    sizes: [
+      { label: 'Minimum', dimensions: '3.5" × 5"', notes: 'Smallest USPS-accepted postcard size' },
+      { label: 'Standard (4×6)', dimensions: '4.25" × 6"', notes: 'Most common — qualifies for letter-rate postage' },
+      { label: 'Jumbo (6×9)', dimensions: '6" × 9"', notes: 'Higher visibility; still qualifies as letter if ≤ 0.016" thick' },
+      { label: 'Jumbo (6×11)', dimensions: '6" × 11"', notes: 'Maximum postcard size before flat rate applies. Popular for EDDM.' },
+      { label: 'Maximum', dimensions: '6.125" × 11.5"', notes: 'Beyond this requires flat-size postage' },
+    ],
+    rules: [
+      'Minimum thickness: 0.007" (7pt cardstock)',
+      'Maximum thickness for letter rate: 0.016"',
+      'Must be rectangular — aspect ratio between 1.3:1 and 2.5:1',
+      'Postcards larger than 6.125" × 11.5" are classified as flats',
+    ],
+  },
+  {
+    name: 'Letters',
+    icon: '✉️',
+    description: 'Standard business mail in envelopes. Letters qualify for the lowest automated rates when properly formatted.',
+    sizes: [
+      { label: '#10 Envelope', dimensions: '4.125" × 9.5"', notes: 'Standard business envelope — most common for letters' },
+      { label: '#9 Envelope', dimensions: '3.875" × 8.875"', notes: 'Reply envelope that fits inside a #10' },
+      { label: '6×9 Envelope', dimensions: '6" × 9"', notes: 'Booklet style — fits 8.5×11 folded in half' },
+      { label: 'Minimum', dimensions: '3.5" × 5"', notes: 'Smallest USPS letter size' },
+      { label: 'Maximum', dimensions: '6.125" × 11.5"', notes: 'Beyond this = flat-size postage' },
+    ],
+    rules: [
+      'Must be at least 0.007" thick',
+      'Maximum thickness: 0.25" (1/4 inch)',
+      'Maximum weight for First-Class letter: 3.5 oz',
+      'Must be flexible (not rigid) unless ≤ 0.25" thick',
+      'Aspect ratio must be between 1.3:1 and 2.5:1',
+      'Address must be parallel to the longest dimension',
+    ],
+  },
+  {
+    name: 'Flats (Large Envelopes)',
+    icon: '📦',
+    description: 'Larger mail pieces like catalogs, magazines, and oversized envelopes. Higher postage but more real estate for your message.',
+    sizes: [
+      { label: '9×12 Envelope', dimensions: '9" × 12"', notes: 'Fits 8.5×11 unfolded — very common for flats' },
+      { label: '10×13 Envelope', dimensions: '10" × 13"', notes: 'Common catalog envelope with extra room' },
+      { label: 'Minimum', dimensions: '6.125" × 11.5" (or taller than 6.125")', notes: 'Anything exceeding letter dimensions' },
+      { label: 'Maximum', dimensions: '12" × 15"', notes: 'Largest flat before parcel pricing' },
+    ],
+    rules: [
+      'Maximum thickness: 0.75" (3/4 inch)',
+      'Must be rectangular and flexible',
+      'Cannot be more than 12" high × 15" long × 0.75" thick',
+      'Heavier postage than letters — plan accordingly',
+      'Non-machinable surcharge may apply for unusual shapes',
+    ],
+  },
+  {
+    name: 'Self-Mailers',
+    icon: '📄',
+    description: 'Folded pieces that mail without an envelope. Great for newsletters, menus, and promotional pieces.',
+    sizes: [
+      { label: 'Bi-fold (8.5×11)', dimensions: '5.5" × 8.5" (folded)', notes: 'Standard letter sheet folded in half' },
+      { label: 'Tri-fold (8.5×11)', dimensions: '3.67" × 8.5" (folded)', notes: 'Fits in standard letter trays' },
+      { label: 'Bi-fold (11×17)', dimensions: '8.5" × 11" (folded)', notes: 'Large format — counts as a flat' },
+      { label: 'Z-fold / Accordion', dimensions: 'Varies', notes: 'Multiple panels — check thickness limits' },
+    ],
+    rules: [
+      'Must be tabbed or sealed per USPS DMM 201.3 standards',
+      'Letter-size self-mailers: 1 tab minimum (2 recommended)',
+      'Flat-size self-mailers: 2 tabs minimum',
+      'Tabs must be at least 1" long and placed on the top edge',
+      'Address panel must be on the outside after folding',
+      'Open edge must be at the top (not the leading/trailing edge)',
+    ],
+  },
+];
+
+const surcharges = [
+  { condition: 'Non-machinable letter', surcharge: '$0.22', reason: 'Square, too rigid, poly-wrapped, or has clasps/buttons' },
+  { condition: 'Non-standard aspect ratio', surcharge: '$0.22', reason: 'Length ÷ width is not between 1.3 and 2.5' },
+  { condition: 'Barcode not readable', surcharge: 'Loss of automation discount', reason: 'Up to $0.10+ per piece vs. automation rate' },
+  { condition: 'Underweight postcard', surcharge: 'Rejected', reason: 'Below 0.007" thickness or smaller than 3.5×5' },
+  { condition: 'Oversize letter', surcharge: 'Flat-rate pricing', reason: 'Exceeds 6.125×11.5 or 0.25" thick — jumps to flat rate' },
+];
+---
+
+<BaseLayout
+  title="USPS Envelope & Mail Piece Sizes Guide"
+  description="Complete guide to USPS mail piece dimensions — postcards, letters, flats, and self-mailers. Avoid surcharges and ensure automation compatibility."
+>
+  <PageHero
+    title="Envelope & Mail Piece Sizes"
+    subtitle="USPS dimension requirements for postcards, letters, flats, and self-mailers — avoid surcharges and qualify for automation rates."
+    breadcrumbs={[
+      { label: 'Resources', href: '/resources/' },
+      { label: 'Envelope Sizes' },
+    ]}
+  />
+
+  <section class="py-14 lg:py-20">
+    <div class="container-wide">
+      <div class="max-w-4xl mx-auto">
+        <div class="section-divider mb-6"></div>
+        <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-4">
+          Why Mail Piece Size Matters
+        </h2>
+        <p class="text-navy-600/80 leading-relaxed mb-4">
+          The USPS classifies every mail piece by size, shape, and weight. This classification directly determines your postage rate. A postcard that's slightly too large becomes a "flat" — and your postage rate can double. A letter that's too square gets a non-machinable surcharge. Understanding these boundaries saves real money on every mailing.
+        </p>
+        <p class="text-navy-600/80 leading-relaxed mb-10">
+          At Cornerstone, we design and produce every mail piece to meet USPS automation specifications. That means maximum postage savings with zero risk of surcharges, returns, or delays.
+        </p>
+
+        <!-- Mail Classes -->
+        {mailClasses.map((mailClass) => (
+          <div class="mb-12">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-2xl">{mailClass.icon}</span>
+              <h3 class="text-xl font-display font-bold text-crst-primary">{mailClass.name}</h3>
+            </div>
+            <p class="text-navy-600/80 text-sm leading-relaxed mb-5">{mailClass.description}</p>
+
+            <div class="overflow-x-auto mb-5">
+              <table class="w-full text-sm">
+                <thead>
+                  <tr class="border-b-2 border-crst-primary/20">
+                    <th class="text-left py-2 pr-4 font-heading font-bold text-navy-800">Size</th>
+                    <th class="text-left py-2 pr-4 font-heading font-bold text-navy-800">Dimensions</th>
+                    <th class="text-left py-2 font-heading font-bold text-navy-800">Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {mailClass.sizes.map((size) => (
+                    <tr class="border-b border-gray-100">
+                      <td class="py-2.5 pr-4 font-semibold text-navy-800 whitespace-nowrap">{size.label}</td>
+                      <td class="py-2.5 pr-4 text-navy-600/80 font-mono text-xs whitespace-nowrap">{size.dimensions}</td>
+                      <td class="py-2.5 text-navy-600/70">{size.notes}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bg-navy-50 rounded-xl p-5">
+              <h4 class="font-heading font-bold text-navy-800 mb-3 text-sm">USPS Rules for {mailClass.name}</h4>
+              <div class="space-y-2">
+                {mailClass.rules.map((rule) => (
+                  <div class="flex items-start gap-2">
+                    <svg class="w-4 h-4 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class="text-sm text-navy-600/80">{rule}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+
+        <!-- Surcharges -->
+        <div class="mb-12">
+          <h3 class="text-xl font-display font-bold text-crst-primary mb-4">Common Surcharges & Penalties</h3>
+          <p class="text-navy-600/80 text-sm leading-relaxed mb-5">
+            Mail pieces that don't meet USPS standards get hit with surcharges — or rejected entirely. Here's what to watch for:
+          </p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="border-b-2 border-red-200">
+                  <th class="text-left py-2 pr-4 font-heading font-bold text-navy-800">Condition</th>
+                  <th class="text-left py-2 pr-4 font-heading font-bold text-navy-800">Surcharge</th>
+                  <th class="text-left py-2 font-heading font-bold text-navy-800">Why</th>
+                </tr>
+              </thead>
+              <tbody>
+                {surcharges.map((s) => (
+                  <tr class="border-b border-gray-100">
+                    <td class="py-2.5 pr-4 font-semibold text-navy-800">{s.condition}</td>
+                    <td class="py-2.5 pr-4 text-red-600 font-semibold whitespace-nowrap">{s.surcharge}</td>
+                    <td class="py-2.5 text-navy-600/70">{s.reason}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="bg-crst-primary/5 rounded-xl p-8 text-center">
+          <h3 class="text-xl font-display font-bold text-crst-primary mb-3">Not Sure About Your Mail Piece Size?</h3>
+          <p class="text-navy-600/80 text-sm mb-5 max-w-lg mx-auto">
+            Send us your design or dimensions and we'll confirm USPS compatibility, suggest the best format for your budget, and handle the production.
+          </p>
+          <a href="/estimate/" class="btn-primary inline-block">Get a Free Estimate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>

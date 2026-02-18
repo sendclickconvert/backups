@@ -1,0 +1,125 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import CTASection from '../../components/CTASection.astro';
+import { BUSINESS } from '../../data/site';
+import { CASE_STUDIES_FULL } from '../../data/case-studies';
+
+const industries = [...new Set(CASE_STUDIES_FULL.map(cs => cs.industry))];
+---
+
+<BaseLayout
+  title="Direct Mail Case Studies | Cornerstone Services"
+  description="Real direct mail success stories from Cornerstone Services — insurance, healthcare, political, non-profit, retail, and corporate campaigns across the Hudson Valley and beyond."
+>
+  <PageHero
+    title="Case Studies"
+    subtitle={`Real results from ${CASE_STUDIES_FULL.length} direct mail campaigns — local businesses, national organizations, and everything in between.`}
+    breadcrumbs={[
+      { label: 'Case Studies' },
+    ]}
+  />
+
+  <section class="py-14 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-14">
+        <div class="section-divider mb-6"></div>
+        <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-4">
+          {BUSINESS.stats.piecesMailed} Pieces Mailed. Here Are Some of Our Favorites.
+        </h2>
+        <p class="text-gray-700 leading-relaxed">
+          Every mailing has a story. From a Fortune 500 recruitment campaign in South Carolina to a neighborhood Chinese restaurant that needed menus reprinted in 48 hours, these case studies show the range of what Cornerstone delivers — and why clients come back.
+        </p>
+      </div>
+
+      <!-- Industry Filter Tags -->
+      <div class="flex flex-wrap gap-2 mb-10">
+        <span class="text-sm font-semibold text-gray-500 mr-2 self-center">Industries:</span>
+        {industries.map((industry) => {
+          const slug = industry.toLowerCase().replace(/[\s\/]+/g, '-');
+          return (
+            <a href={`#${slug}`} class="text-xs bg-crst-light text-crst-primary px-3 py-1.5 rounded-full font-medium hover:bg-crst-primary hover:text-white transition-colors cursor-pointer">
+              {industry}
+            </a>
+          );
+        })}
+      </div>
+
+      <!-- Case Study Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {CASE_STUDIES_FULL.map((cs) => {
+          const industrySlug = cs.industry.toLowerCase().replace(/[\s\/]+/g, '-');
+          return (
+          <a
+            id={industrySlug}
+            href={`/case-studies/${cs.slug}/`}
+            class="group bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all overflow-hidden"
+          >
+            <!-- Image area -->
+            <div class="h-48 bg-gradient-to-br from-crst-primary/10 to-crst-accent/10 flex items-center justify-center overflow-hidden">
+              {cs.image ? (
+                <img src={cs.image} alt={cs.imageAlt || cs.title} class="w-full h-full object-contain p-4" loading="lazy" />
+              ) : (
+                <div class="text-center">
+                  <div class="text-sm font-semibold text-crst-primary/60 uppercase tracking-wider">{cs.industry}</div>
+                  <div class="text-xs text-gray-400 mt-1">{cs.location}</div>
+                </div>
+              )}
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-display font-bold text-gray-800 group-hover:text-crst-primary transition-colors mb-2 line-clamp-2">
+                {cs.title}
+              </h3>
+              <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                <span>{cs.client}</span>
+                <span>·</span>
+                <span>{cs.location}</span>
+              </div>
+              <p class="text-sm text-gray-600 leading-relaxed mb-4 line-clamp-3">
+                {cs.challenge}
+              </p>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                {cs.servicesUsed.slice(0, 3).map((service) => (
+                  <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">{service}</span>
+                ))}
+              </div>
+              <span class="text-sm text-crst-accent font-semibold group-hover:underline">
+                Read Case Study →
+              </span>
+            </div>
+          </a>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-14 bg-crst-primary">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-3xl font-display font-bold text-white">{BUSINESS.stats.piecesMailed}</div>
+          <div class="text-sm text-white/70 mt-1">Pieces Mailed</div>
+        </div>
+        <div>
+          <div class="text-3xl font-display font-bold text-white">{BUSINESS.stats.years}</div>
+          <div class="text-sm text-white/70 mt-1">Years in Business</div>
+        </div>
+        <div>
+          <div class="text-3xl font-display font-bold text-white">{BUSINESS.stats.onTime}</div>
+          <div class="text-sm text-white/70 mt-1">On-Time Rate</div>
+        </div>
+        <div>
+          <div class="text-3xl font-display font-bold text-white">BBB A+</div>
+          <div class="text-sm text-white/70 mt-1">Rated Since 1998</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    headline="Have a Mailing Project in Mind?"
+    text="Every case study starts with a conversation. Tell us about your goals and we'll recommend the right approach — whether it's targeted data lists, EDDM saturation, or a multi-touch campaign."
+  />
+</BaseLayout>

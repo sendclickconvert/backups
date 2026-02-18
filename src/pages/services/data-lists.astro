@@ -1,0 +1,155 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import CTASection from '../../components/CTASection.astro';
+import { BUSINESS } from '../../data/site';
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Mailing List & Data Services',
+  provider: {
+    '@type': 'ProfessionalService',
+    name: BUSINESS.name,
+    url: BUSINESS.url,
+  },
+  serviceType: 'Mailing List Data Services',
+  areaServed: {
+    '@type': 'Place',
+    name: 'Hudson Valley, New York',
+  },
+  description: 'Targeted mailing lists, consumer and business databases, NCOA processing, CASS certification, and data hygiene services for direct mail campaigns in the Hudson Valley.',
+};
+---
+
+<BaseLayout
+  title="Data Lists & Mailing Lists"
+  description="Targeted mailing lists for direct mail campaigns — consumer, business, and saturation lists with NCOA processing and CASS certification from Cornerstone Services."
+  schema={serviceSchema}
+>
+  <PageHero
+    title="Data Lists & Mailing Lists"
+    subtitle="Reach the right audience with targeted, accurate, and USPS-compliant mailing lists."
+    breadcrumbs={[
+      { label: 'Services', href: '/services/' },
+      { label: 'Data Lists' },
+    ]}
+  />
+
+  <section class="py-14 lg:py-20">
+    <div class="container-wide">
+      <div class="grid lg:grid-cols-3 gap-10 lg:gap-14">
+        <!-- Main content -->
+        <div class="lg:col-span-2">
+          <div class="section-divider mb-6"></div>
+          <h2 class="text-2xl font-display text-crst-primary mb-4">The Foundation of Every Great Campaign</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            Your mailing list is the single most important factor in your direct mail campaign's success. A perfectly designed mail piece sent to the wrong audience is wasted money. Cornerstone Services provides high-quality, targeted mailing lists that put your message in front of the people most likely to respond.
+          </p>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            Whether you need a saturation list covering every household on a carrier route, a targeted consumer list filtered by demographics, or a business-to-business database, we source and process the data you need. Every list is run through NCOA (National Change of Address) and CASS (Coding Accuracy Support System) processing to ensure deliverability and qualify for USPS automation postage rates.
+          </p>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">List Types We Provide</h3>
+          <div class="grid sm:grid-cols-2 gap-3">
+            {[
+              { title: 'Saturation Lists', desc: 'Every deliverable address on selected carrier routes — ideal for EDDM and local campaigns' },
+              { title: 'Consumer Lists', desc: 'Filtered by age, income, homeownership, interests, purchase behavior, and more' },
+              { title: 'Business Lists', desc: 'Targeted by SIC/NAICS code, employee count, revenue, and geography' },
+              { title: 'New Mover Lists', desc: 'Recently relocated households — high-value prospects actively looking for local services' },
+              { title: 'Voter Files', desc: 'Registered voter data for political mailings and municipal notifications' },
+              { title: 'Custom Compiled Lists', desc: 'Specialty lists built to your exact specifications from multiple data sources' },
+            ].map((item) => (
+              <div class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg">
+                <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <div>
+                  <div class="font-heading font-semibold text-navy-800 text-sm">{item.title}</div>
+                  <div class="text-xs text-navy-600/60">{item.desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">Data Processing & Hygiene</h3>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            Raw data is only as good as its processing. We clean, verify, and prepare every list to maximize deliverability and minimize waste:
+          </p>
+          <div class="space-y-6">
+            {[
+              { step: '1', title: 'NCOA Processing', desc: 'We run every list through the USPS National Change of Address database to update addresses for anyone who has moved in the last 48 months. This is required by the USPS for presorted mailings.' },
+              { step: '2', title: 'CASS Certification', desc: 'Coding Accuracy Support System verification standardizes and validates every address against the USPS database. This ensures deliverability and qualifies your mailing for automation postage discounts.' },
+              { step: '3', title: 'Deduplication', desc: 'We identify and remove duplicate records so you are not paying to mail the same person twice. We can also merge/purge against your existing customer list to avoid mailing current clients.' },
+              { step: '4', title: 'Presort Optimization', desc: 'Once cleaned, your list is presorted by ZIP code to qualify for the lowest available postage rate — often saving 30–50% compared to First-Class single-piece rates.' },
+            ].map((item) => (
+              <div class="flex items-start gap-4">
+                <div class="shrink-0 w-9 h-9 rounded-full bg-crst-primary flex items-center justify-center text-white font-heading font-bold text-sm">
+                  {item.step}
+                </div>
+                <div>
+                  <h4 class="font-heading font-bold text-navy-800 mb-1">{item.title}</h4>
+                  <p class="text-sm text-navy-600/70 leading-relaxed">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">Already Have a List?</h3>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            If you already have a customer or prospect list, we can process it for direct mail. We accept data in Excel, CSV, or database formats. We'll clean, verify, NCOA-process, and presort your list so it's ready for mailing. We also offer merge/purge services to combine multiple lists while removing duplicates.
+          </p>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          <div class="sticky top-24 space-y-5">
+            <!-- CTA card -->
+            <div class="bg-crst-primary rounded-xl p-6 text-white">
+              <h3 class="font-display text-lg mb-2">Need a Mailing List?</h3>
+              <p class="text-white/60 text-sm leading-relaxed mb-4">
+                Tell us your target audience and geography. We'll provide a count and quote — usually within a few hours.
+              </p>
+              <a href="/estimate/" class="btn-accent w-full text-center text-sm">
+                Request a List Quote
+              </a>
+              <div class="mt-4 pt-4 border-t border-white/10 text-center">
+                <a href={`tel:${BUSINESS.phoneClean}`} class="text-white/70 text-sm font-heading hover:text-white transition-colors">
+                  or call {BUSINESS.phone}
+                </a>
+              </div>
+            </div>
+
+            <!-- Related services -->
+            <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Related Services</h3>
+              <div class="space-y-2">
+                {[
+                  { label: 'Direct Mail Campaigns', href: '/services/direct-mail/' },
+                  { label: 'EDDM', href: '/services/eddm/' },
+                  { label: 'Mailing Services', href: '/services/mailing/' },
+                  { label: 'Non-Profit Mailing', href: '/services/non-profit-mailing/' },
+                ].map((link) => (
+                  <a href={link.href} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-white rounded-md transition-colors font-heading">
+                    {link.label}
+                    <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <!-- Quick info -->
+            <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Good to Know</h3>
+              <div class="space-y-3 text-sm text-navy-600/70">
+                <p>NCOA processing is <strong class="text-navy-800">required by USPS</strong> for all presorted mailings.</p>
+                <p>Most list counts and quotes are returned <strong class="text-navy-800">within a few hours</strong>.</p>
+                <p>We can <strong class="text-navy-800">suppress your existing customers</strong> from purchased lists.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>

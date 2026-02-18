@@ -1,0 +1,195 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import CTASection from '../components/CTASection.astro';
+import { BUSINESS, SERVICES, CASE_STUDIES, COUNTIES } from '../data/site';
+---
+
+<BaseLayout title="Home">
+  <Hero />
+
+  <!-- Services Section -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="container-wide">
+      <div class="text-center mb-12">
+        <div class="section-divider mx-auto mb-4"></div>
+        <h2 class="text-3xl sm:text-4xl font-display text-crst-primary mb-3">
+          Full-Service Direct Mail
+        </h2>
+        <p class="text-navy-600/70 font-heading text-lg max-w-2xl mx-auto">
+          From data targeting to doorstep delivery — we handle every step of your mailing campaign under one roof.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {SERVICES.slice(0, 8).map((service) => (
+          <ServiceCard
+            title={service.title}
+            slug={service.slug}
+            summary={service.summary}
+            icon={service.icon}
+          />
+        ))}
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="/services/" class="btn-secondary text-sm">
+          View All Services
+          <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-16 lg:py-20 bg-navy-50/50 bg-grid">
+    <div class="container-wide">
+      <div class="text-center mb-12">
+        <div class="section-divider mx-auto mb-4"></div>
+        <h2 class="text-3xl sm:text-4xl font-display text-crst-primary mb-3">
+          How It Works
+        </h2>
+        <p class="text-navy-600/70 font-heading text-lg max-w-2xl mx-auto">
+          Four straightforward steps from concept to mailbox.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {[
+          { step: '01', title: 'Target', desc: 'We build or refine your mailing list using USPS carrier route data, demographics, or your own customer database.' },
+          { step: '02', title: 'Design', desc: 'Our designers create USPS-compliant mail pieces optimized for both visual impact and postal automation.' },
+          { step: '03', title: 'Print', desc: 'Commercial-quality printing on premium stock — postcards, letters, newsletters, brochures, and more.' },
+          { step: '04', title: 'Mail', desc: 'Presorted, barcoded, and delivered to the USPS with full tracking. You monitor results in real time.' },
+        ].map((item) => (
+          <div class="animate-on-scroll">
+            <div class="text-5xl font-display text-crst-gold/30 mb-2">{item.step}</div>
+            <h3 class="font-heading font-bold text-navy-800 text-lg mb-2">{item.title}</h3>
+            <p class="text-sm text-navy-600/70 leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies Teaser -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="container-wide">
+      <div class="text-center mb-12">
+        <div class="section-divider mx-auto mb-4"></div>
+        <h2 class="text-3xl sm:text-4xl font-display text-crst-primary mb-3">
+          Proven Results
+        </h2>
+        <p class="text-navy-600/70 font-heading text-lg max-w-2xl mx-auto">
+          Real campaigns. Real outcomes. See how we've helped businesses and organizations grow through direct mail.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {CASE_STUDIES.slice(0, 6).map((study) => (
+          <a href={`/case-studies/${study.slug}/`} class="card group block">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="inline-block px-2 py-0.5 text-xs font-heading font-medium bg-navy-50 text-navy-600 rounded">
+                {study.industry}
+              </span>
+            </div>
+            <h3 class="font-heading font-semibold text-navy-800 group-hover:text-crst-primary transition-colors mb-2">
+              {study.title}
+            </h3>
+            <p class="text-sm text-navy-600/60">
+              {study.client} — {study.location}
+            </p>
+            <span class="inline-flex items-center gap-1 mt-3 text-xs font-heading font-semibold text-crst-accent group-hover:text-crst-primary transition-colors">
+              Read case study
+              <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            </span>
+          </a>
+        ))}
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="/case-studies/" class="btn-secondary text-sm">
+          View All Case Studies
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="py-16 lg:py-20 bg-navy-50/50">
+    <div class="container-wide">
+      <div class="text-center mb-12">
+        <div class="section-divider mx-auto mb-4"></div>
+        <h2 class="text-3xl sm:text-4xl font-display text-crst-primary mb-3">
+          Serving the Hudson Valley
+        </h2>
+        <p class="text-navy-600/70 font-heading text-lg max-w-2xl mx-auto">
+          Based in New Paltz, we serve businesses and organizations across three counties and {BUSINESS.stats.municipalities} municipalities.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-3 gap-5">
+        {Object.values(COUNTIES).map((county) => (
+          <a href={`/service-areas/${county.slug}/`} class="card group text-center block">
+            <div class="w-14 h-14 rounded-full bg-crst-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-crst-primary transition-colors duration-300">
+              <svg class="w-6 h-6 text-crst-primary group-hover:text-white transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <h3 class="font-heading font-bold text-navy-800 text-lg mb-2 group-hover:text-crst-primary transition-colors">
+              {county.name}
+            </h3>
+            <p class="text-sm text-navy-600/60 leading-relaxed">
+              {county.description}
+            </p>
+          </a>
+        ))}
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="/service-areas/" class="btn-secondary text-sm">
+          View All Service Areas
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Our Clients Say -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="container-wide">
+      <div class="text-center mb-12">
+        <div class="section-divider mx-auto mb-4"></div>
+        <h2 class="text-3xl sm:text-4xl font-display text-crst-primary mb-3">
+          What Our Clients Say
+        </h2>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        {[
+          { text: 'Our agency uses Cornerstone for all our direct mail projects. They are super-responsive and meticulous in their work. Highly recommend.', name: 'Marlene McTigue', role: 'Marketing Agency Owner', image: '/images/testimonial-marlene.png' },
+          { text: "I'm always impressed with Sean and his team. They stay on top of the latest technology in mailing and data management. True professionals.", name: 'James Yaston', role: 'Business Owner', image: '/images/testimonial-james.png' },
+          { text: 'I needed postcards printed and mailed fast. Cornerstone was knowledgeable, friendly, reliable, and delivered on time. Will use again.', name: 'Sapna Moudgil-Shah', role: 'Small Business Owner', image: '/images/testimonial-sapna.png' },
+        ].map((testimonial) => (
+          <div class="bg-navy-50/60 rounded-xl p-6 border border-navy-100">
+            <div class="flex gap-0.5 mb-3">
+              {[...Array(5)].map(() => (
+                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              ))}
+            </div>
+            <svg class="w-8 h-8 text-crst-gold/40 mb-3" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            <p class="text-sm text-navy-700 leading-relaxed mb-4 italic">"{testimonial.text}"</p>
+            <div class="flex items-center gap-3">
+              <img src={testimonial.image} alt={testimonial.name} class="w-10 h-10 rounded-full object-cover" loading="lazy" />
+              <div>
+                <div class="font-heading font-semibold text-navy-800 text-sm">{testimonial.name}</div>
+                <div class="text-xs text-navy-500">{testimonial.role}</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>

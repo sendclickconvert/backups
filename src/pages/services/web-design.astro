@@ -1,0 +1,97 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import CTASection from '../../components/CTASection.astro';
+import { BUSINESS } from '../../data/site';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Web Design & Development Services',
+  provider: {
+    '@type': 'ProfessionalService',
+    name: BUSINESS.name,
+    url: BUSINESS.url,
+  },
+  serviceType: 'Web Design and Development',
+  areaServed: 'Hudson Valley, NY',
+  description: 'Professional website design, development, hosting, and SEO for small businesses and organizations in the Hudson Valley.',
+};
+---
+
+<BaseLayout
+  title="Web Design & Development"
+  description="Professional website design and development for Hudson Valley businesses. WordPress sites, hosting, SEO, and ongoing support from Cornerstone Services."
+  schema={schema}
+>
+  <PageHero
+    title="Web Design & Development"
+    subtitle="Professional websites that work alongside your direct mail campaigns."
+    breadcrumbs={[
+      { label: 'Services', href: '/services/' },
+      { label: 'Web Design' },
+    ]}
+  />
+
+  <section class="py-14 lg:py-20">
+    <div class="container-narrow">
+      <div class="section-divider mb-6"></div>
+      <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-4">Your Digital Front Door</h2>
+      <p class="text-navy-600/80 leading-relaxed mb-6">
+        When a direct mail piece lands in someone's mailbox, the first thing many recipients do is look up the sender online. If your website doesn't match the professionalism of your mail piece, you lose credibility — and customers. Cornerstone Services builds websites that complete the marketing loop, giving recipients a compelling place to land after they've seen your mailer.
+      </p>
+      <p class="text-navy-600/80 leading-relaxed mb-6">
+        We specialize in WordPress websites for small businesses, non-profits, and local organizations across the Hudson Valley. Every site we build is mobile-responsive, search-engine optimized, and designed to convert visitors into customers.
+      </p>
+
+      <!-- What's Included -->
+      <div class="section-divider mb-6 mt-14"></div>
+      <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-4">What's Included</h2>
+      <div class="grid sm:grid-cols-2 gap-4 mb-6">
+        {[
+          { title: 'Custom Design', desc: 'Unique layouts tailored to your brand — no cookie-cutter templates.' },
+          { title: 'Mobile-Responsive', desc: 'Every site adapts to phones, tablets, and desktop screens automatically.' },
+          { title: 'Search Engine Optimization', desc: 'On-page SEO, local schema markup, and Google Business integration.' },
+          { title: 'Hosting & Maintenance', desc: 'Reliable hosting, SSL certificates, backups, and ongoing updates.' },
+          { title: 'Contact Forms & CTAs', desc: 'Lead capture forms that feed directly into your CRM or email.' },
+          { title: 'Analytics & Tracking', desc: 'Google Analytics, conversion tracking, and monthly reporting.' },
+        ].map((item) => (
+          <div class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg border border-navy-100">
+            <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            <div>
+              <div class="font-heading font-semibold text-navy-800 text-sm">{item.title}</div>
+              <div class="text-xs text-navy-600/60">{item.desc}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Integration callout -->
+      <div class="bg-crst-primary rounded-xl p-6 lg:p-8 my-10">
+        <h3 class="font-display text-white text-xl mb-3">Direct Mail + Web = More Conversions</h3>
+        <p class="text-white/70 text-sm leading-relaxed mb-4">
+          We design your website and your mail pieces together so they share a consistent brand identity. When a prospect receives your postcard and visits your website, they see the same colors, messaging, and call-to-action — building trust and driving action.
+        </p>
+        <a href="/services/direct-mail/" class="inline-flex items-center gap-2 text-sm font-heading font-semibold text-crst-gold hover:text-white transition-colors">
+          Learn about our direct mail services
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+      </div>
+
+      <!-- Portfolio domains -->
+      <div class="section-divider mb-6 mt-14"></div>
+      <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-4">Our Web Portfolio</h2>
+      <p class="text-navy-600/80 leading-relaxed mb-6">
+        Cornerstone Services has designed and built websites for businesses across the Hudson Valley and beyond. Our sites range from simple informational pages for local service providers to multi-page sites with e-commerce, booking systems, and custom integrations.
+      </p>
+      <p class="text-navy-600/80 leading-relaxed">
+        In addition to crst.net, we manage domains including crstweb.com and donerightmail.com. Contact us to discuss your website project and see examples of our work.
+      </p>
+    </div>
+  </section>
+
+  <CTASection
+    headline="Need a Website That Converts?"
+    text="Get a free consultation on your web design project. We build sites that work hand-in-hand with your direct mail campaigns."
+  />
+</BaseLayout>

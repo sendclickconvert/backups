@@ -1,0 +1,102 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import { BUSINESS } from '../../data/site';
+---
+
+<BaseLayout
+  title="Make a Payment | Cornerstone Services"
+  description="Pay your Cornerstone Services invoice online. Secure credit card payments accepted with a 3% processing convenience fee."
+>
+  <PageHero
+    title="Make a Payment"
+    subtitle="Pay your Cornerstone Services invoice quickly and securely online."
+    breadcrumbs={[
+      { label: 'Resources', href: '/resources/' },
+      { label: 'Payments' },
+    ]}
+  />
+
+  <section class="py-14 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto">
+        <div class="section-divider mb-6"></div>
+        <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-6">
+          Online Invoice Payment
+        </h2>
+        <p class="text-navy-600/80 leading-relaxed mb-6">
+          Use the form below to pay your Cornerstone Services invoice by credit or debit card. Please have your invoice number ready. All major credit cards are accepted.
+        </p>
+
+        <div class="bg-crst-gold/10 border border-crst-gold/30 rounded-lg p-4 mb-8">
+          <div class="flex gap-3">
+            <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <div>
+              <p class="text-sm font-semibold text-gray-800">3% Convenience Fee</p>
+              <p class="text-sm text-gray-600">A 3% convenience fee is applied to all credit/debit card payments to cover processing costs. To avoid this fee, you may pay by check mailed to our office or by ACH bank transfer — contact us for ACH details.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stripe Payment Embed -->
+        <!-- TODO: Replace with Stripe Payment Link or Stripe Elements integration -->
+        <!-- Option 1: Stripe Payment Link (simplest — no code required) -->
+        <!-- <a href="https://buy.stripe.com/YOUR_PAYMENT_LINK" class="btn-primary w-full text-center block text-lg py-4">Pay Now via Stripe</a> -->
+
+        <!-- Option 2: Stripe hosted invoice link (if using Stripe Invoicing) -->
+        <!-- Stripe sends invoice emails with payment links directly -->
+
+        <!-- Placeholder payment form until Stripe is configured -->
+        <div class="bg-white border-2 border-dashed border-gray-300 rounded-xl p-8 text-center mb-8">
+          <svg class="w-12 h-12 text-gray-300 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+          </svg>
+          <h3 class="text-lg font-heading font-bold text-gray-600 mb-2">Stripe Payment Integration</h3>
+          <p class="text-sm text-gray-500 mb-4">
+            Payment processing will be enabled here once the Stripe Payment Link or Stripe Elements embed is configured.
+          </p>
+          <p class="text-xs text-gray-400">
+            Contact Sean to configure: Stripe Payment Link URL or Stripe publishable key for embedded checkout.
+          </p>
+        </div>
+
+        <h3 class="text-xl font-display text-crst-primary mb-4">Other Payment Methods</h3>
+        <div class="space-y-4 mb-10">
+          <div class="bg-navy-50 rounded-lg p-5">
+            <h4 class="font-heading font-bold text-navy-800 mb-2">Check (No Fee)</h4>
+            <p class="text-sm text-navy-600/80">
+              Mail checks payable to <strong>{BUSINESS.name}</strong> to:<br />
+              {BUSINESS.address.street}<br />
+              {BUSINESS.address.city}, {BUSINESS.address.state} {BUSINESS.address.zip}
+            </p>
+          </div>
+          <div class="bg-navy-50 rounded-lg p-5">
+            <h4 class="font-heading font-bold text-navy-800 mb-2">ACH Bank Transfer (No Fee)</h4>
+            <p class="text-sm text-navy-600/80">
+              Contact us at <a href={`tel:${BUSINESS.phoneClean}`} class="text-crst-accent hover:underline">{BUSINESS.phone}</a> or <a href={`mailto:${BUSINESS.email}`} class="text-crst-accent hover:underline">{BUSINESS.email}</a> for ACH transfer details.
+            </p>
+          </div>
+          <div class="bg-navy-50 rounded-lg p-5">
+            <h4 class="font-heading font-bold text-navy-800 mb-2">In Person</h4>
+            <p class="text-sm text-navy-600/80">
+              Visit our office at {BUSINESS.address.street}, {BUSINESS.address.city} during business hours (Monday–Friday, 8:30 AM – 5:00 PM). We accept cash, check, and card payments in person.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-crst-primary/5 border border-crst-primary/20 rounded-xl p-6">
+          <h4 class="font-heading font-bold text-crst-primary mb-2">Questions About Your Invoice?</h4>
+          <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+            If you have questions about a charge or need a copy of your invoice, contact us directly. We're happy to help.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href={`tel:${BUSINESS.phoneClean}`} class="btn-primary text-sm">Call {BUSINESS.phone}</a>
+            <a href={`mailto:${BUSINESS.email}`} class="btn-secondary text-sm">Email Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,166 @@
+---
+import { BUSINESS, GHL } from '../data/site';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  ogImage?: string;
+  schema?: object;
+  noIndex?: boolean;
+}
+
+const {
+  title,
+  description = `${BUSINESS.name} — Hudson Valley's trusted direct mail, printing, and data services company since 1998. Serving Ulster, Dutchess, and Orange Counties.`,
+  canonical,
+  ogImage = '/images/crst-og.jpg',
+  schema,
+  noIndex = false,
+} = Astro.props;
+
+const fullTitle = title === 'Home'
+  ? `${BUSINESS.name} | Direct Mail & Marketing | ${BUSINESS.address.city}, NY`
+  : `${title} | ${BUSINESS.shortName}`;
+
+const canonicalUrl = canonical || new URL(Astro.url.pathname, BUSINESS.url).href;
+
+// Default LocalBusiness schema
+const defaultSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: BUSINESS.name,
+  alternateName: BUSINESS.shortName,
+  image: `${BUSINESS.url}/images/crst-logo.png`,
+  url: BUSINESS.url,
+  telephone: BUSINESS.phone,
+  email: BUSINESS.email,
+  foundingDate: '1998',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: BUSINESS.address.street,
+    addressLocality: BUSINESS.address.city,
+    addressRegion: BUSINESS.address.state,
+    postalCode: BUSINESS.address.zip,
+    addressCountry: 'US',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 41.7476,
+    longitude: -74.0871,
+  },
+  areaServed: [
+    { '@type': 'County', name: 'Ulster County, New York' },
+    { '@type': 'County', name: 'Dutchess County, New York' },
+    { '@type': 'County', name: 'Orange County, New York' },
+  ],
+  serviceType: [
+    'Direct Mail Marketing',
+    'Commercial Printing',
+    'Data List Services',
+    'Graphic Design',
+    'Mailing Services',
+    'EDDM',
+  ],
+  priceRange: '$$',
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '08:30',
+    closes: '17:00',
+  },
+};
+
+const pageSchema = schema || defaultSchema;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content={Astro.generator} />
+
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalUrl} />
+
+  {noIndex && <meta name="robots" content="noindex, nofollow" />}
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:image" content={`${BUSINESS.url}${ogImage}`} />
+  <meta property="og:site_name" content={BUSINESS.name} />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={fullTitle} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={`${BUSINESS.url}${ogImage}`} />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/images/favicon-192.png" />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
+
+  <slot name="head" />
+
+  <!-- Google Analytics 4 -->
+  <script async src={`https://www.googletagmanager.com/gtag/js?id=${GHL.ga4Id}`}></script>
+  <script define:vars={{ ga4Id: GHL.ga4Id }}>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', ga4Id);
+  </script>
+
+  <!-- GHL Tracking Pixel -->
+  <script
+    src="https://links.crst.net/js/external-tracking.js"
+    data-tracking-id={GHL.trackingId}
+  ></script>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+  <Header />
+
+  <main class="flex-1">
+    <slot />
+  </main>
+
+  <Footer />
+
+  <!-- GHL Chat Widget -->
+  <script
+    src="https://widgets.leadconnectorhq.com/loader.js"
+    data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+    data-widget-id={GHL.chatWidgetId}
+  ></script>
+
+  <!-- Scroll animation observer -->
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+
+    document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
