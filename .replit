@@ -18,6 +18,7 @@ guessImports = true
 enabledForHosting = false
 
 [languages]
+
 [languages.javascript]
 pattern = "**/{*.js,*.jsx,*.ts,*.tsx,*.astro}"
 
@@ -37,7 +38,7 @@ localPort = 5000
 externalPort = 80
 
 [deployment]
-run = ["sh", "-c", "npm run build && npx serve dist -l 3000"]
+run = ["sh", "-c", "npm run build && npx serve dist -l 5000"]
 deploymentTarget = "static"
 publicDir = "dist"
 build = ["npm", "run", "build"]
