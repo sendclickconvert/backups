@@ -72,10 +72,6 @@ export const NAV_ITEMS = [
     href: '/case-studies/',
   },
   {
-    label: 'Blog',
-    href: '/blog/',
-  },
-  {
     label: 'About',
     href: '/about/',
   },

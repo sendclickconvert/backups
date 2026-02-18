@@ -303,7 +303,7 @@ const ulsterLocations: Location[] = [
     county: 'ulster',
     zip: ['12446'],
     population: '7,000',
-    intro: 'The Town of Rochester sits along the Rondout Creek corridor between New Paltz and Ellenville. Encompassing the hamlets of Accord and Kerhonkson, Rochester is home to a growing community of artists, homesteaders, and outdoor enthusiasts attracted by the Catskill Mountains and affordable rural living.',
+    intro: 'The Town of Rochester sits along the Rondout Creek corridor between New Paltz and Ellenville. Encompassing the hamlet of Accord, Rochester is home to a growing community of artists, homesteaders, and outdoor enthusiasts attracted by the Catskill Mountains and affordable rural living.',
     notableOrgs: ['Rochester Town Government', 'Accord Fire Department', 'Rondout Valley Central School District'],
     clientTypes: ['Vacation rentals and B&Bs', 'Local contractors', 'Community organizations', 'Small farms and agricultural businesses'],
     faqs: [
@@ -376,7 +376,7 @@ const ulsterLocations: Location[] = [
     county: 'ulster',
     zip: ['12446'],
     population: '1,800',
-    intro: 'Kerhonkson is a hamlet in the Town of Rochester, situated at the intersection of Routes 209 and 44/55. It serves as a gateway to Minnewaska State Park and the Shawangunk Ridge, attracting hikers, climbers, and nature lovers year-round.',
+    intro: 'Kerhonkson is a hamlet in the Town of Wawarsing, situated at the intersection of Routes 209 and 44/55. It serves as a gateway to Minnewaska State Park and the Shawangunk Ridge, attracting hikers, climbers, and nature lovers year-round.',
     notableOrgs: ['Minnewaska State Park Preserve', 'Kerhonkson-Accord Fire Department', 'Granite Hotel site'],
     clientTypes: ['Outdoor recreation outfitters', 'Vacation rentals', 'Local restaurants', 'Community organizations'],
     faqs: [
