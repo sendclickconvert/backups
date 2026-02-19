@@ -1,0 +1,44 @@
+---
+const { slug } = Astro.params;
+const path = `/${slug || ''}`;
+
+const blogPatterns = [
+  '/crst-daily/',
+  '/tag/',
+  '/category/',
+  '/crst-daily-post-tag/',
+  '/crst-daily-post-category/',
+  '/mailbox-monday/',
+  '/mailers-tip-tuesday/',
+  '/case-study-thursday/',
+  '/fun-fact-friday/',
+  '/mailbag-wednesday/',
+  '/blog/',
+  '/informed-delivery-review/',
+  '/complete-friendraising-guide/',
+];
+
+if (blogPatterns.some(p => path.startsWith(p))) {
+  return Astro.redirect('https://blog.crst.net/', 301);
+}
+if (path.startsWith('/case-study/') || path.startsWith('/case-study-category/') || path.startsWith('/direct-mail-case-studies/')) {
+  return Astro.redirect('/case-studies/', 301);
+}
+if (path.startsWith('/printing-partners/')) {
+  return Astro.redirect('/about/', 301);
+}
+if (path.startsWith('/direct-mail-services/')) {
+  return Astro.redirect('/services/', 301);
+}
+if (path.startsWith('/direct-mail-tools/')) {
+  return Astro.redirect('/resources/', 301);
+}
+if (path.startsWith('/wp-content/')) {
+  return Astro.redirect('/resources/', 301);
+}
+if (path.startsWith('/author/') || path.startsWith('/feed')) {
+  return Astro.redirect('/', 301);
+}
+
+return new Response(null, { status: 404 });
+---
