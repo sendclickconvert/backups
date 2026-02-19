@@ -94,7 +94,7 @@ export const SERVICES = [
     slug: 'data-lists',
     icon: 'database',
     summary: 'Targeted mailing lists, saturation data, and NCOA processing for accurate delivery.',
-    description: 'Custom mailing lists built from USPS carrier route data, consumer demographics, and business databases. Every list is NCOA-processed to ensure deliverability and reduce waste.',
+    description: 'From unique niche business data, to specialty masterlists custom built for optimal success, to distilled real property info. to target hard-to-reach homeowners, all lists undergo robust address verification and householding measures to make the most of your mailing initiatives.',
   },
   {
     title: 'Printing Services',
@@ -107,8 +107,8 @@ export const SERVICES = [
     title: 'Mailing Services',
     slug: 'mailing',
     icon: 'send',
-    summary: 'USPS-compliant presort, tabbing, addressing, and delivery tracking.',
-    description: 'Complete mail preparation including CASS/DPV address verification, presort processing for maximum postage discounts, tabbing, and USPS delivery tracking via Intelligent Mail barcode.',
+    summary: '100% USPS-compliant, full service automation presort addressing',
+    description: 'Complete mail preparation including inkjet or digital addressing, delivery point address verification and automation presort to maximize postage discounts, folding/auto-inserting, tabbing, and the full range of lettershop services',
   },
   {
     title: 'Graphic Design',
@@ -129,7 +129,7 @@ export const SERVICES = [
     slug: 'non-profit-mailing',
     icon: 'heart',
     summary: 'Discounted postage rates and PS Form 3624 guidance for qualifying organizations.',
-    description: 'Non-profit organizations qualify for significant postage discounts. We handle the PS Form 3624 application process and ongoing compliance to keep your mailing costs as low as possible.',
+    description: 'CRST assists 501(c)(3) organizations with all the paperwork to attain some of the lowest postage rates available via not-for-profit mailing privileges (free to apply!). Even some 501(c)(6) org\'s qualify for such privileges. No bulk mail permit necessary – we keep it simple and return the discounts.',
   },
   {
     title: 'Web Design',
@@ -143,7 +143,7 @@ export const SERVICES = [
     slug: 'union-printing',
     icon: 'shield',
     summary: 'Allied Printing Trades Council label on political and labor organization materials.',
-    description: 'Union bug printing for political campaigns, labor organizations, and government entities. Full commercial printing with the Allied Printing Trades Council union label.',
+    description: 'We often partner with qualified Union print shops so that the Union bug may be used for political campaigns and municipal purposes. Full commercial printing available, usually in hand with members of the Allied Printing Trades Council.',
   },
 ] as const;
 
