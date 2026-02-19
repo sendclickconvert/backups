@@ -31,7 +31,7 @@ externalPort = 80
 
 [deployment]
 run = ["sh", "-c", "npm run build && npx serve dist -l 5000"]
-deploymentTarget = "gce"
+deploymentTarget = "static"
 publicDir = "dist"
 build = ["npm", "run", "build"]
 
