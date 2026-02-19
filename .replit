@@ -4,7 +4,7 @@ modules = ["nodejs-20", "web", "python-3.11"]
 
 [nix]
 channel = "stable-25_05"
-packages = ["freetype", "gh", "lcms2", "libimagequant", "libjpeg", "libtiff", "libwebp", "libxcrypt", "openjpeg", "tcl", "tk", "unzip", "zip", "zlib"]
+packages = ["freetype", "gh", "lcms2", "libimagequant", "libjpeg", "libtiff", "libwebp", "libxcrypt", "openjpeg", "tcl", "tk", "unzip", "zip", "zlib", "ffmpeg"]
 
 [env]
 PATH = "/home/runner/${REPL_SLUG}/node_modules/.bin:${PATH}"
