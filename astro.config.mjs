@@ -52,7 +52,7 @@ export default defineConfig({
   integrations: [
     tailwind(),
     sitemap({
-      filter: (page) => !redirectPaths.some(r => page.includes(r)),
+      filter: (page) => !redirectPaths.some(r => page.includes(r)) && !page.includes('/thank-you'),
     }),
   ],
   redirects: {
