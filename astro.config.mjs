@@ -22,9 +22,25 @@ const redirectPaths = [
   '/chicken-shipping-101/',
   '/fun-fact-friday/',
   '/case-study-thursday/',
-  '/category/review/',
+  '/category/',
   '/new-home-page-2/',
   '/website-terms-and-conditions/',
+  // === ADDED FROM GSC EXPORT ===
+  '/contact-us/',
+  '/new-home/',
+  '/cart',
+  '/checkout',
+  '/products-list',
+  '/payments/',
+  '/paypal-payment/',
+  '/check-payment/',
+  '/printing-partners/',
+  '/tag/',
+  '/crst-daily-post-tag/',
+  '/crst-daily-post-category/',
+  '/mailbox-monday/',
+  '/wp-content/',
+  '/a-november-2024-post-election-assessment',
 ];
 
 export default defineConfig({
@@ -37,6 +53,7 @@ export default defineConfig({
     }),
   ],
   redirects: {
+    // === EXISTING (already in your config) ===
     '/direct-mail-new-paltz': '/service-areas/ulster-county/new-paltz/',
     '/direct-mail-kingston': '/service-areas/ulster-county/kingston/',
     '/direct-mail-poughkeepsie': '/service-areas/dutchess-county/poughkeepsie/',
@@ -74,5 +91,72 @@ export default defineConfig({
     '/category/review/': 'https://blog.crst.net/',
     '/new-home-page-2/': '/',
     '/website-terms-and-conditions/': '/terms/',
+
+    // ==========================================================
+    // NEW - Added from GSC indexed URL export Feb 19, 2026
+    // ==========================================================
+
+    // --- Core pages missing ---
+    '/contact-us/': '/contact/',
+    '/new-home/': '/',
+
+    // --- GHL e-commerce pages (indexed, no Replit equivalent) ---
+    '/cart': '/services/',
+    '/checkout': '/contact/',
+    '/products-list': '/services/',
+
+    // --- Payment pages ---
+    '/payments/': '/resources/payments/',
+    '/paypal-payment/': '/resources/payments/',
+    '/check-payment/': '/resources/payments/',
+
+    // --- Case studies indexed in GSC but missing from config ---
+    '/case-study/autism-awareness-newsletter-nonprofit/': '/case-studies/',
+    '/case-study/creative-eyeglasses/': '/case-studies/',
+    '/case-study/horse-academy/': '/case-studies/',
+    '/case-study/financial-investment-firm/': '/case-studies/',
+    '/case-study/coarc-revamped-data-strategy-for-unsolicited-arc-new-member-donor-appeal/': '/case-studies/',
+    '/case-study/new-subscribers-for-a-nys-regional-newspaper/': '/case-studies/',
+    '/case-study/evergreen-contracting-services/': '/case-studies/',
+    '/case-study/sourcing-sensitive-nyc-households-with-children-data/': '/case-studies/',
+    '/case-study/lions-club-community-appeal/': '/case-studies/',
+    '/case-study/classics-on-hudson/': '/case-studies/',
+    '/case-study/large-painting-contracting-firm-homeowner-via-eddm-cards/': '/case-studies/',
+    '/case-study/case-study-thursday-institute-for-family-health-september-26-2024/': '/case-studies/',
+    '/case-study/simple-handyman-carpenter-direct-mailpiece/': '/case-studies/',
+    '/direct-mail-case-studies/school-district-direct-mail-strategy/': '/case-studies/',
+    '/case-study-category/graphic-design/': '/case-studies/',
+    '/case-study-category/printing/': '/case-studies/',
+    '/case-study-category/direct-mail/page/2/': '/case-studies/',
+
+    // --- Printing partners (6 indexed, no Replit equivalent) ---
+    '/printing-partners/sherburne-news-press/': '/about/',
+    '/printing-partners/copy-hut-printing/': '/about/',
+    '/printing-partners/the-shipping-place-more/': '/about/',
+    '/printing-partners/p-p-quickcopy-center/': '/about/',
+    '/printing-partners/chatham-printing-copy-center/': '/about/',
+    '/printing-partners/pro-printers/': '/about/',
+
+    // --- WP-content PDFs (2 indexed) ---
+    '/wp-content/uploads/2023/10/4.25-x-11-EDDM-Flat-Card-Template.pdf': '/resources/usps-templates/',
+    '/wp-content/uploads/2023/11/11-Envelope-Template.pdf': '/resources/envelope-sizes/',
+
+    // --- Root-level blog post ---
+    '/a-november-2024-post-election-assessment-from-a-hudson-valley-political-consultant/': 'https://blog.crst.net/',
+
+    // --- WP taxonomy pages (indexed) ---
+    '/tag/mail-design/': 'https://blog.crst.net/',
+    '/tag/overview/': 'https://blog.crst.net/',
+    '/tag/shipping/': 'https://blog.crst.net/',
+    '/category/periodicals/': 'https://blog.crst.net/',
+    '/category/business-to-business/': 'https://blog.crst.net/',
+    '/category/how-to/': 'https://blog.crst.net/',
+    '/crst-daily-post-tag/fun-fact-friday/': 'https://blog.crst.net/',
+    '/crst-daily-post-tag/mailboxmonday/': 'https://blog.crst.net/',
+    '/crst-daily-post-tag/hudsonvalleyny/page/2/': 'https://blog.crst.net/',
+    '/crst-daily-post-tag/mailboxmonday/page/2/': 'https://blog.crst.net/',
+    '/crst-daily-post-category/mailbag-wednesday/page/2/': 'https://blog.crst.net/',
+    '/mailbox-monday/page/2/': 'https://blog.crst.net/',
+    '/mailbox-monday/page/4/': 'https://blog.crst.net/',
   },
 });
