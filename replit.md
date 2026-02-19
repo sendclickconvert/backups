@@ -4,6 +4,7 @@
 Full-service website for Cornerstone Services, Inc. — Hudson Valley's trusted direct mail, printing, and data services company since 1998. Built with Astro 4.16 + Tailwind CSS. BBB A+ rated, serving Ulster, Dutchess, and Orange Counties.
 
 ## Recent Changes
+- **2026-02-19**: Switched to hybrid output mode with @astrojs/node adapter. Added dynamic catch-all [...slug].astro for runtime 301 redirects (blog patterns, case studies, printing partners, WP content, etc.). Comprehensive GSC-based redirect mapping added to astro.config.mjs.
 - **2026-02-18**: Removed all blog content (blog moving to blog.crst.net subdomain). Deleted blog pages, data files, components. Updated legacy redirects to point to blog.crst.net. Removed Blog from navigation.
 - **2026-02-18**: Accuracy audit — fixed Kerhonkson town assignment (Wawarsing, not Rochester), updated Rochester intro.
 - **2026-02-15**: Added Sean Griffin's signature under photo on About page
@@ -14,9 +15,10 @@ Full-service website for Cornerstone Services, Inc. — Hudson Valley's trusted 
 ## Project Architecture
 
 ### Tech Stack
-- **Framework**: Astro 4.16 (static site generator)
+- **Framework**: Astro 4.16 (hybrid mode — static pages + dynamic catch-all)
+- **Adapter**: @astrojs/node v8.3.4 (standalone mode)
 - **Styling**: Tailwind CSS
-- **Deployment**: Replit static hosting
+- **Deployment**: Replit autoscale (Node server)
 - **Package Manager**: npm
 
 ### Key Directories
@@ -52,7 +54,9 @@ public/
 - Astro 4.16 requires @astrojs/sitemap v3.2.0
 - Dancing Script font loaded for Sean Griffin's signature on About page
 - Vite config has `allowedHosts: true` for Replit iframe compatibility
-- Legacy WordPress URLs handled via redirects in astro.config.mjs
+- Legacy WordPress URLs handled via redirects in astro.config.mjs + dynamic catch-all in [...slug].astro
+- Hybrid mode: all 134 pages prerendered as static HTML; [...slug].astro is server-rendered (prerender = false) for dynamic 301 redirects
+- Workflow runs `npm run build && HOST=0.0.0.0 PORT=5000 node dist/server/entry.mjs`
 
 ## User Preferences
 - Clean footer layout without map embed

@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
+import node from '@astrojs/node';
 
 const redirectPaths = [
   '/direct-mail-new-paltz',
@@ -45,6 +46,8 @@ const redirectPaths = [
 
 export default defineConfig({
   site: 'https://crst.net',
+  output: 'hybrid',
+  adapter: node({ mode: 'standalone' }),
   vite: { server: { allowedHosts: true } },
   integrations: [
     tailwind(),
