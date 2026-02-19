@@ -57,31 +57,19 @@ import { BUSINESS } from '../data/site';
         </div>
       </div>
 
-      <!-- Hero visual — stat cards -->
+      <!-- Hero video -->
       <div class="hidden lg:block">
-        <div class="relative">
-          <!-- Floating stat cards -->
-          <div class="grid grid-cols-2 gap-4">
-            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/10 animate-fade-up" style="animation-delay: 0.1s;">
-              <div class="text-3xl font-display text-crst-gold mb-2">{BUSINESS.stats.piecesMailed}</div>
-              <div class="text-sm text-white/60 font-heading">Pieces Mailed</div>
-            </div>
-            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/10 animate-fade-up" style="animation-delay: 0.2s;">
-              <div class="text-3xl font-display text-crst-gold mb-2">{BUSINESS.stats.years}</div>
-              <div class="text-sm text-white/60 font-heading">Years Experience</div>
-            </div>
-            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/10 animate-fade-up" style="animation-delay: 0.3s;">
-              <div class="text-3xl font-display text-crst-gold mb-2">{BUSINESS.stats.municipalities}</div>
-              <div class="text-sm text-white/60 font-heading">Municipalities Served</div>
-            </div>
-            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/10 animate-fade-up" style="animation-delay: 0.4s;">
-              <div class="text-3xl font-display text-crst-gold mb-2">{BUSINESS.stats.onTime}</div>
-              <div class="text-sm text-white/60 font-heading">On-Time Delivery</div>
-            </div>
-          </div>
-          
-          <!-- Accent line -->
-          <div class="absolute -bottom-3 left-8 right-8 h-0.5 bg-gradient-to-r from-transparent via-crst-gold/30 to-transparent"></div>
+        <div class="relative rounded-xl overflow-hidden shadow-2xl shadow-black/30 border border-white/10">
+          <video
+            class="w-full h-auto"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+          >
+            <source src="/videos/hero-video.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </div>
