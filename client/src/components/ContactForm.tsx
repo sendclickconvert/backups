@@ -203,7 +203,7 @@ export default function ContactForm({
                 htmlFor="smsConsent"
                 className="text-sm font-normal cursor-pointer"
               >
-                I consent to receive marketing text messages from The Property Father at the phone number provided. Frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
+                I consent to receive marketing text messages from The Property Father at the phone number provided. Message frequency is approximately 2-5 messages per inquiry, sent only in response to your property submission. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
               </Label>
             </div>
           </div>
