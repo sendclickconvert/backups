@@ -61,7 +61,7 @@ export const NAV_ITEMS = [
       { label: 'Mailing Permits Guide', href: '/resources/mailing-permits/' },
       { label: 'Postage Rates', href: '/resources/postage-rates/' },
       { label: 'Envelope Sizes', href: '/resources/envelope-sizes/' },
-      { label: 'USPS Templates', href: '/resources/usps-templates/' },
+      { label: 'USPS Templates', href: '/usps-direct-mailer-templates/' },
       { label: 'Postal Dictionary', href: '/resources/postal-dictionary/' },
       { label: 'Non-Profit Mailing Tool', href: '/resources/non-profit-mailing/' },
       { label: 'Mail Automation', href: '/resources/mail-automation/' },
