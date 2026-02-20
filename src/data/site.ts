@@ -72,6 +72,10 @@ export const NAV_ITEMS = [
     href: '/case-studies/',
   },
   {
+    label: 'Blog',
+    href: 'https://blog.crst.net',
+  },
+  {
     label: 'About',
     href: '/about/',
   },

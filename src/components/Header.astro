@@ -43,6 +43,8 @@ import { BUSINESS, NAV_ITEMS } from '../data/site';
           <div class="relative group">
             <a
               href={item.href}
+              target={item.href.startsWith('http') ? '_blank' : undefined}
+              rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
               class="flex items-center gap-1 px-3 py-2 text-sm font-heading font-medium text-navy-700 
                      rounded-md hover:text-crst-primary hover:bg-navy-50 transition-colors"
             >
@@ -107,6 +109,8 @@ import { BUSINESS, NAV_ITEMS } from '../data/site';
         <div>
           <a
             href={item.href}
+            target={item.href.startsWith('http') ? '_blank' : undefined}
+            rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
             class="block px-3 py-2.5 text-sm font-heading font-medium text-navy-700 
                    rounded-md hover:bg-navy-50 transition-colors"
           >
