@@ -26,6 +26,7 @@ export const contactFormSchema = z.object({
   message: z.string().optional(),
   source: z.string().optional(),
   smsConsent: z.boolean().optional(),
+  smsConsentNonMarketing: z.boolean().optional(),
 });
 
 export type ContactFormData = z.infer<typeof contactFormSchema>;

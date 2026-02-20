@@ -45,10 +45,12 @@ export default function ContactForm({
       message: "",
       source: source,
       smsConsent: false,
+      smsConsentNonMarketing: false,
     },
   });
 
   const smsConsent = watch("smsConsent");
+  const smsConsentNonMarketing = watch("smsConsentNonMarketing");
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
@@ -201,7 +203,24 @@ export default function ContactForm({
                 htmlFor="smsConsent"
                 className="text-sm font-normal cursor-pointer"
               >
-                By checking this box, I consent to receive text messages from The Property Father at the phone number provided, including cash offer updates, appointment confirmations, and follow-up communications. Frequency may vary. Message & data rates may apply. Text HELP for help, reply STOP to opt out. Consent is not a condition of purchase.
+                I consent to receive marketing text messages from The Property Father at the phone number provided. Frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
+              </Label>
+            </div>
+          </div>
+
+          <div className="flex items-start space-x-3 py-2">
+            <Checkbox
+              id="smsConsentNonMarketing"
+              checked={smsConsentNonMarketing}
+              onCheckedChange={(checked) => setValue("smsConsentNonMarketing", checked === true)}
+              data-testid="checkbox-sms-consent-non-marketing"
+            />
+            <div className="grid gap-1.5 leading-none">
+              <Label
+                htmlFor="smsConsentNonMarketing"
+                className="text-sm font-normal cursor-pointer"
+              >
+                I consent to receive non-marketing text messages from The Property Father about my order updates, appointment reminders, etc. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
               </Label>
             </div>
           </div>
