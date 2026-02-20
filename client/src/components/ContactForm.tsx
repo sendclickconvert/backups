@@ -185,6 +185,10 @@ export default function ContactForm({
             />
           </div>
 
+          <p className="text-sm text-muted-foreground" data-testid="text-sms-disclosure">
+            You will receive SMS messages related to your cash offer inquiry from The Property Father.
+          </p>
+
           <div className="flex items-start space-x-3 py-2">
             <Checkbox
               id="smsConsent"
@@ -199,9 +203,6 @@ export default function ContactForm({
               >
                 By checking this box, I consent to receive text messages from The Property Father at the phone number provided, including cash offer updates, appointment confirmations, and follow-up communications. Frequency may vary. Message & data rates may apply. Text HELP for help, reply STOP to opt out. Consent is not a condition of purchase.
               </Label>
-              {errors.smsConsent && (
-                <p className="text-sm text-destructive">{errors.smsConsent.message}</p>
-              )}
             </div>
           </div>
 
