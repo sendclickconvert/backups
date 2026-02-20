@@ -119,8 +119,6 @@ const exactRedirects: Record<string, string> = {
   '/venmo-payment/': '/contact/',
   '/product-details': '/services/',
   '/team': '/about/',
-  '/blog/': '/crst-daily/',
-  '/blog': '/crst-daily/',
 };
 
 const exact = exactRedirects[path] || exactRedirects[path + '/'] || exactRedirects[path.replace(/\/$/, '')];
@@ -139,7 +137,6 @@ const blogPatterns = [
   '/case-study-thursday/',
   '/fun-fact-friday/',
   '/mailbag-wednesday/',
-  '/blog/',
   '/informed-delivery-review/',
   '/complete-friendraising-guide/',
 ];
