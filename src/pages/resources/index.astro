@@ -25,9 +25,10 @@ const resources = [
   },
   {
     title: 'USPS Mail Templates',
-    slug: 'usps-templates',
+    slug: '/usps-direct-mailer-templates/',
     icon: '📄',
     summary: 'Free downloadable templates for postcards, letters, and self-mailers — pre-formatted to USPS automation specifications.',
+    external: true,
   },
   {
     title: 'Postal Dictionary',
@@ -93,7 +94,7 @@ const resources = [
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {resources.map((resource) => (
           <a
-            href={`/resources/${resource.slug}/`}
+            href={resource.external ? resource.slug : `/resources/${resource.slug}/`}
             class="card group block"
           >
             <span class="text-3xl mb-3 block">{resource.icon}</span>
