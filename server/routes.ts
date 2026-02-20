@@ -9,7 +9,15 @@ export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
-  
+
+  app.get("/privacy", (_req, res) => {
+    res.redirect(301, "/privacy.html");
+  });
+
+  app.get("/terms", (_req, res) => {
+    res.redirect(301, "/terms.html");
+  });
+
   app.post("/api/submit-lead", async (req, res) => {
     try {
       const validatedData = contactFormSchema.parse(req.body);

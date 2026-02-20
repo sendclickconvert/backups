@@ -53,12 +53,26 @@
         <p>100 Washington Ave, Patchogue, NY 11772</p>
 
         <h2>Get Your Free Cash Offer</h2>
-        <p>Fill out our form to receive a no-obligation cash offer on your Long Island property. We collect your name, phone number, email address, and property address to evaluate your home and contact you with an offer.</p>
+        <form action="#" method="post" style="border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
+          <p>Fill out the form below and we'll contact you within 24 hours with a fair cash offer.</p>
+          <label>First Name *<br><input type="text" name="firstName" required></label><br><br>
+          <label>Last Name *<br><input type="text" name="lastName" required></label><br><br>
+          <label>Email *<br><input type="email" name="email" required></label><br><br>
+          <label>Phone Number *<br><input type="tel" name="phone" required></label><br><br>
+          <label>Property Address *<br><input type="text" name="address" required></label><br><br>
+          <label>Additional Details (Optional)<br><textarea name="message" rows="3"></textarea></label><br><br>
 
-        <h3>SMS/Text Message Consent</h3>
-        <p>By submitting the form on this website and checking the SMS consent checkbox, you consent to receive marketing and non-marketing text messages from The Property Father LLC at the phone number provided. Message frequency may vary. Message and data rates may apply. Text HELP for assistance. Reply STOP to opt out at any time. Your consent to receive text messages is not a condition of purchase.</p>
+          <p>You will receive SMS messages related to your cash offer inquiry from The Property Father.</p>
 
-        <p><a href="/terms.html">Terms of Service</a> | <a href="/privacy.html">Privacy Policy</a></p>
+          <label>
+            <input type="checkbox" name="smsConsent">
+            By checking this box, I consent to receive text messages from The Property Father at the phone number provided, including cash offer updates, appointment confirmations, and follow-up communications. Frequency may vary. Message &amp; data rates may apply. Text HELP for help, reply STOP to opt out. Consent is not a condition of purchase.
+          </label><br><br>
+
+          <p>View our <a href="/terms.html">Terms of Service</a> and <a href="/privacy.html">Privacy Policy</a>.</p>
+
+          <button type="submit">Get My Cash Offer</button>
+        </form>
       </div>
     </noscript>
     <script type="module" src="/src/main.tsx"></script>
