@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>CRST Web Training: Conversations Tab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            navy: '#1A2B4A',
+            teal: '#00BFA6',
+            'teal-light': '#E6F7F5',
+            'bg-gray': '#F4F6F9',
+            'text-body': '#374151',
+            'text-muted': '#6B7280',
+            'complete-green': '#22C55E',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; margin: 0; background: #F4F6F9; color: #374151; }
+    video::-webkit-media-controls-panel { background: linear-gradient(transparent, rgba(0,0,0,.6)); }
+    .sidebar-scroll::-webkit-scrollbar { width: 6px; }
+    .sidebar-scroll::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 3px; }
+    .lesson-item { transition: all 0.15s ease; }
+    .lesson-item:hover { background: #f9fafb; }
+    .lesson-item.active { background: #E6F7F5; border-left: 3px solid #00BFA6; }
+    .lesson-item.completed .lesson-label { color: #6B7280; }
+    .lesson-item.upcoming .lesson-label { color: #6B7280; }
+    .video-container { background: #111827; border-radius: 12px; overflow: hidden; }
+    .btn-teal { background: #00BFA6; color: #fff; transition: background 0.2s; }
+    .btn-teal:hover { background: #00a893; }
+    .btn-outline { border: 2px solid #00BFA6; color: #00BFA6; transition: all 0.2s; }
+    .btn-outline:hover { background: #E6F7F5; }
+    @media (max-width: 768px) {
+      .layout-wrap { flex-direction: column; }
+      .sidebar-panel { position: relative; width: 100%; height: auto; max-height: none; }
+      .sidebar-panel.collapsed .lesson-list { display: none; }
+      .sidebar-panel.collapsed .progress-section { border-bottom: none; }
+      .mobile-toggle { display: flex !important; }
+      .main-content { margin-left: 0 !important; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-navy text-white shadow-lg" style="height:64px">
+  <div class="h-full flex items-center justify-between px-6 max-w-screen-2xl mx-auto">
+    <div class="flex items-center gap-3">
+      <img src="/images/crst-logo-white.png" alt="CRST" class="h-8" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <span class="font-bold text-xl tracking-tight hidden">CRST</span>
+    </div>
+    <h1 class="text-base md:text-lg font-semibold tracking-tight text-center">CRST Web Training: Conversations Tab</h1>
+    <span class="text-xs text-gray-400 hidden sm:block">Internal Client Training</span>
+  </div>
+</header>
+
+<div class="layout-wrap flex" style="padding-top:64px; min-height:100vh">
+
+  <aside class="sidebar-panel fixed top-[64px] left-0 bottom-0 w-[280px] bg-white shadow-md z-40 flex flex-col sidebar-scroll overflow-y-auto">
+    <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleSidebar()">
+      <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+      <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+
+    <div class="progress-section p-4 border-b">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+        <span id="progressLabel" class="text-xs font-medium text-text-muted">1 of 9 complete</span>
+      </div>
+      <div class="w-full bg-gray-200 rounded-full h-2">
+        <div id="progressBar" class="h-2 rounded-full transition-all duration-500" style="width:11.1%;background:#00BFA6"></div>
+      </div>
+    </div>
+
+    <nav class="lesson-list flex-1 py-2" id="lessonNav"></nav>
+  </aside>
+
+  <main class="main-content flex-1 ml-[280px] p-6 md:p-10">
+    <div class="max-w-4xl mx-auto">
+
+      <h2 id="lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+
+      <div class="video-container mb-8">
+        <video id="videoPlayer" controls playsinline class="w-full aspect-video bg-gray-900" preload="metadata">
+          <source id="videoSource" src="" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+        <div id="lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+      </div>
+
+      <div class="flex flex-wrap gap-3">
+        <button onclick="markComplete()" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+          Mark as Complete
+        </button>
+        <button onclick="nextLesson()" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">
+          Next Lesson →
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+</div>
+
+<footer class="bg-navy text-white mt-auto">
+  <div class="max-w-screen-2xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+    <span class="text-xs text-gray-400">© 2025 CRST | Cornerstone Services — New Paltz, NY</span>
+    <span class="text-xs text-gray-500">Internal Training Resource — Not for Public Distribution</span>
+  </div>
+</footer>
+
+<script>
+const lessons = [
+  {
+    id: 0,
+    title: "Welcome and Intro",
+    video: "/videos/welcome-intro.mp4",
+    completed: true,
+    description: `<p>Welcome to the CRST Web Conversations Tab training. In this module, you'll learn how to manage all your client communications from one central location. The Conversations Tab is your command center — covering inbound and outbound messages across SMS, email, Facebook, Instagram, and more. Let's get started.</p>`
+  },
+  {
+    id: 1,
+    title: "Inbox Panel",
+    video: "/videos/Inbox_Panel.mp4",
+    completed: false,
+    description: `<p>The Inbox Panel is the left-hand navigation inside the CRST Web Conversations Tab. Here you'll find quick-access filters to manage your message workload efficiently.</p>
+    <p class="font-semibold mt-4 mb-2">Key areas of the Inbox Panel:</p>
+    <ul class="list-disc pl-6 space-y-1">
+      <li><strong>My Inbox</strong> — Shows conversations assigned specifically to you</li>
+      <li><strong>All</strong> — Displays every open conversation across the account</li>
+      <li><strong>Assigned to Me</strong> — Filters to only conversations where you are the assigned user</li>
+      <li><strong>Followed by Me</strong> — Shows conversations you've chosen to follow for visibility</li>
+      <li><strong>Team Inbox</strong> — Shared inbox view for your team</li>
+      <li><strong>Internal Chat</strong> — Use this for communicating internally with your team without it going to the contact</li>
+    </ul>
+    <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Use the Inbox Panel filters to stay focused on your own workload without getting distracted by your full team's conversations. Start your day in "Assigned to Me" and work from there.</p>`
+  },
+  {
+    id: 2,
+    title: "Chat List Panel",
+    video: "/videos/chat-list-panel.mp4",
+    completed: false,
+    description: `<p>The Chat List Panel displays all active conversations based on your selected inbox filter. You can sort by newest, oldest, or unread. Each conversation card shows the contact name, channel icon, last message preview, and timestamp.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
+  },
+  {
+    id: 3,
+    title: "Filtering Your Inbox",
+    video: "/videos/filtering-your-inbox.mp4",
+    completed: false,
+    description: `<p>Learn how to use CRST Web's built-in conversation filters to narrow your inbox by channel type (SMS, Email, Facebook, etc.), assigned user, status (open, closed, unread), and date range. Filtering is essential for high-volume accounts.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
+  },
+  {
+    id: 4,
+    title: "Message History Panel",
+    video: "/videos/message-history-panel.mp4",
+    completed: false,
+    description: `<p>The Message History Panel is the center column showing the full thread of all messages exchanged with a contact across all channels in chronological order.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
+  },
+  {
+    id: 5,
+    title: "Sending Messages",
+    video: "/videos/sending-messages.mp4",
+    completed: false,
+    description: `<p>Learn how to compose and send messages directly from the CRST Web Conversations Tab. Covers SMS, email, internal notes, attachments, and using snippets for fast replies.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
+  },
+  {
+    id: 6,
+    title: "Individual Convo Filters and Actions",
+    video: "/videos/individual-convo-filters.mp4",
+    completed: false,
+    description: `<p>Each conversation has its own set of actions — assign to a team member, change status, add tags, set a reminder, and more. This lesson walks through every action available at the individual conversation level inside CRST Web.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
+  },
+  {
+    id: 7,
+    title: "Right Hand Panel",
+    video: "/videos/right-hand-panel.mp4",
+    completed: false,
+    description: `<p>The Right Hand Panel gives you a full snapshot of the contact record while you're in a conversation — no need to leave the chat. View contact info, pipeline stage, recent activity, appointments, tasks, and notes all in one place.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
+  },
+  {
+    id: 8,
+    title: "Bonus: Shortcuts!",
+    video: "/videos/bonus-shortcuts.mp4",
+    completed: false,
+    description: `<p>Speed up your workflow with CRST Web keyboard shortcuts and power-user tips inside the Conversations Tab.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
+  }
+];
+
+let currentLesson = 1;
+
+function renderSidebar() {
+  const nav = document.getElementById('lessonNav');
+  nav.innerHTML = lessons.map((l, i) => {
+    let stateClass = 'upcoming';
+    let icon = `<span class="w-5 h-5 rounded-full border-2 border-gray-300 flex-shrink-0 inline-block"></span>`;
+    if (l.completed) {
+      stateClass = 'completed';
+      icon = `<svg class="w-5 h-5 flex-shrink-0 text-complete-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>`;
+    }
+    if (i === currentLesson) {
+      stateClass = 'active';
+      icon = `<svg class="w-5 h-5 flex-shrink-0 text-teal" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>`;
+    }
+    return `<button class="lesson-item ${stateClass} w-full text-left px-4 py-3 flex items-center gap-3 cursor-pointer" onclick="switchLesson(${i})">
+      ${icon}
+      <span class="lesson-label text-sm ${i === currentLesson ? 'font-semibold text-teal' : ''}">${i + 1}. ${l.title}</span>
+    </button>`;
+  }).join('');
+
+  const completedCount = lessons.filter(l => l.completed).length;
+  document.getElementById('progressLabel').textContent = `${completedCount} of ${lessons.length} complete`;
+  document.getElementById('progressBar').style.width = `${(completedCount / lessons.length) * 100}%`;
+}
+
+function switchLesson(index) {
+  const video = document.getElementById('videoPlayer');
+  video.pause();
+
+  currentLesson = index;
+  const lesson = lessons[index];
+
+  document.getElementById('lessonTitle').textContent = lesson.title;
+  const source = document.getElementById('videoSource');
+  source.src = lesson.video;
+  video.load();
+
+  document.getElementById('lessonDescription').innerHTML = lesson.description;
+  renderSidebar();
+
+  if (window.innerWidth < 769) {
+    document.querySelector('.sidebar-panel').classList.add('collapsed');
+  }
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function markComplete() {
+  lessons[currentLesson].completed = true;
+  if (currentLesson < lessons.length - 1) {
+    switchLesson(currentLesson + 1);
+  } else {
+    renderSidebar();
+    showCongrats();
+  }
+}
+
+function nextLesson() {
+  if (currentLesson < lessons.length - 1) {
+    switchLesson(currentLesson + 1);
+  }
+}
+
+function toggleSidebar() {
+  const sidebar = document.querySelector('.sidebar-panel');
+  sidebar.classList.toggle('collapsed');
+  const chevron = sidebar.querySelector('.chevron-icon');
+  if (sidebar.classList.contains('collapsed')) {
+    chevron.style.transform = 'rotate(-90deg)';
+  } else {
+    chevron.style.transform = 'rotate(0deg)';
+  }
+}
+
+function showCongrats() {
+  const allDone = lessons.every(l => l.completed);
+  if (allDone) {
+    document.getElementById('lessonDescription').innerHTML += `
+      <div class="mt-6 bg-green-50 border border-green-200 rounded-xl p-6 text-center">
+        <p class="text-2xl mb-2">🎉</p>
+        <p class="text-lg font-semibold text-green-800">Congratulations!</p>
+        <p class="text-green-700 text-sm mt-1">You've completed all 9 lessons in the Conversations Tab training module.</p>
+      </div>`;
+  }
+}
+
+renderSidebar();
+switchLesson(1);
+</script>
+
+</body>
+</html>

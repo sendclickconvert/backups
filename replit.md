@@ -4,6 +4,8 @@
 Full-service website for Cornerstone Services, Inc. — Hudson Valley's trusted direct mail, printing, and data services company since 1998. Built with Astro 4.16 + Tailwind CSS. BBB A+ rated, serving Ulster, Dutchess, and Orange Counties.
 
 ## Recent Changes
+- **2026-02-21**: Built standalone training page at /training/conversations-tab/ — 9-lesson CRST Web Conversations Tab module with video players, lesson switcher, progress tracking. Self-contained HTML (Tailwind CDN, vanilla JS). noindex/nofollow. Videos served from /videos/ directory.
+- **2026-02-21**: Updated meta titles/descriptions for postage-rates and direct-mail pages. Added /non-profit-mailing-application redirect.
 - **2026-02-19**: Switched to hybrid output mode with @astrojs/node adapter. Added dynamic catch-all [...slug].astro for runtime 301 redirects (blog patterns, case studies, printing partners, WP content, etc.). Comprehensive GSC-based redirect mapping added to astro.config.mjs.
 - **2026-02-18**: Removed all blog content (blog moving to blog.crst.net subdomain). Deleted blog pages, data files, components. Updated legacy redirects to point to blog.crst.net. Removed Blog from navigation.
 - **2026-02-18**: Accuracy audit — fixed Kerhonkson town assignment (Wawarsing, not Rochester), updated Rochester intro.
@@ -35,6 +37,9 @@ src/
 ├── styles/            # global.css (Tailwind + Google Fonts)
 └── types/             # TypeScript type definitions
 public/
+├── training/          # Internal training pages (noindex)
+│   └── conversations-tab/  # CRST Web Conversations Tab training (9 lessons)
+├── videos/            # Training video files (MP4)
 ├── images/
 │   ├── wp/            # WordPress media library (867 files, year-based subdirs)
 │   └── sean-griffen.jpg # Author photo
