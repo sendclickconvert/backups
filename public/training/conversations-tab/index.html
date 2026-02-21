@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>CRST Web Training: Conversations Tab</title>
+  <title>CRST Web Training</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -43,13 +43,24 @@
     .btn-teal:hover { background: #00a893; }
     .btn-outline { border: 2px solid #00BFA6; color: #00BFA6; transition: all 0.2s; }
     .btn-outline:hover { background: #E6F7F5; }
+    .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .accordion-content.open { max-height: 8000px; }
+    .accordion-chevron { transition: transform 0.3s ease; }
+    .accordion-chevron.open { transform: rotate(180deg); }
+    .accordion-article h3 { color: #1A2B4A; font-size: 1.1rem; font-weight: 700; margin: 1.25rem 0 0.5rem; }
+    .accordion-article h3:first-child { margin-top: 0; }
+    .accordion-article p { margin: 0.5rem 0; line-height: 1.7; }
+    .accordion-article ul { list-style: disc; padding-left: 1.5rem; margin: 0.5rem 0; }
+    .accordion-article ul li { margin: 0.25rem 0; line-height: 1.6; }
+    .accordion-article strong { color: #1A2B4A; }
+    .module-section { min-height: auto; }
     @media (max-width: 768px) {
-      .layout-wrap { flex-direction: column; }
-      .sidebar-panel { position: relative; width: 100%; height: auto; max-height: none; }
-      .sidebar-panel.collapsed .lesson-list { display: none; }
-      .sidebar-panel.collapsed .progress-section { border-bottom: none; }
+      .module-layout { flex-direction: column !important; }
+      .module-sidebar { width: 100% !important; position: relative !important; }
+      .module-sidebar.collapsed .lesson-list { display: none; }
+      .module-sidebar.collapsed .progress-section { border-bottom: none; }
       .mobile-toggle { display: flex !important; }
-      .main-content { margin-left: 0 !important; }
+      .module-main { margin-left: 0 !important; }
     }
   </style>
 </head>
@@ -61,64 +72,120 @@
       <img src="/images/crst-logo-white.png" alt="CRST" class="h-8" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
       <span class="font-bold text-xl tracking-tight hidden">CRST</span>
     </div>
-    <h1 class="text-base md:text-lg font-semibold tracking-tight text-center">CRST Web Training: Conversations Tab</h1>
+    <h1 class="text-base md:text-lg font-semibold tracking-tight text-center">CRST Web Training</h1>
     <span class="text-xs text-gray-400 hidden sm:block">Internal Client Training</span>
   </div>
 </header>
 
-<div class="layout-wrap flex" style="padding-top:64px; min-height:100vh">
+<div style="padding-top:64px">
 
-  <aside class="sidebar-panel fixed top-[64px] left-0 bottom-0 w-[280px] bg-white shadow-md z-40 flex flex-col sidebar-scroll overflow-y-auto">
-    <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleSidebar()">
-      <span class="font-semibold text-navy text-sm">Lesson Menu</span>
-      <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-    </div>
-
-    <div class="progress-section p-4 border-b">
-      <div class="flex items-center justify-between mb-2">
-        <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
-        <span id="progressLabel" class="text-xs font-medium text-text-muted">1 of 9 complete</span>
-      </div>
-      <div class="w-full bg-gray-200 rounded-full h-2">
-        <div id="progressBar" class="h-2 rounded-full transition-all duration-500" style="width:11.1%;background:#00BFA6"></div>
+  <!-- ===================== MODULE 1: CONVERSATIONS TAB ===================== -->
+  <section class="module-section" id="module1">
+    <div class="bg-navy text-white px-6 py-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 1</span>
+        <h2 class="text-lg font-semibold">Conversations Tab</h2>
       </div>
     </div>
-
-    <nav class="lesson-list flex-1 py-2" id="lessonNav"></nav>
-  </aside>
-
-  <main class="main-content flex-1 ml-[280px] p-6 md:p-10">
-    <div class="max-w-4xl mx-auto">
-
-      <h2 id="lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
-
-      <div class="video-container mb-8">
-        <video id="videoPlayer" controls playsinline class="w-full aspect-video bg-gray-900" preload="metadata">
-          <source id="videoSource" src="" type="video/mp4">
-          Your browser does not support the video element.
-        </video>
-      </div>
-
-      <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
-        <div id="lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
-      </div>
-
-      <div class="flex flex-wrap gap-3">
-        <button onclick="markComplete()" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-          Mark as Complete
-        </button>
-        <button onclick="nextLesson()" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">
-          Next Lesson →
-        </button>
-      </div>
-
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:500px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m1')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m1-progressLabel" class="text-xs font-medium text-text-muted">0 of 8 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m1-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m1-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m1-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="video-container mb-8">
+            <video id="m1-videoPlayer" controls playsinline class="w-full aspect-video bg-gray-900" preload="metadata">
+              <source id="m1-videoSource" src="" type="video/mp4">
+              Your browser does not support the video element.
+            </video>
+          </div>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m1-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m1-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m1')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              Mark as Complete
+            </button>
+            <button onclick="nextLesson('m1')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">
+              Next Lesson →
+            </button>
+          </div>
+        </div>
+      </main>
     </div>
-  </main>
+  </section>
+
+  <!-- ===================== MODULE 2: PIPELINES & OPPORTUNITIES ===================== -->
+  <section class="module-section" id="module2">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 2</span>
+        <h2 class="text-lg font-semibold">Pipelines &amp; Opportunities</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m2')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m2-progressLabel" class="text-xs font-medium text-text-muted">0 of 1 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m2-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m2-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m2-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="video-container mb-8">
+            <video id="m2-videoPlayer" controls playsinline class="w-full aspect-video bg-gray-900" preload="metadata">
+              <source id="m2-videoSource" src="" type="video/mp4">
+              Your browser does not support the video element.
+            </video>
+          </div>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m2-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m2-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m2')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              Mark as Complete
+            </button>
+            <button onclick="nextLesson('m2')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">
+              Next Lesson →
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
 
 </div>
 
-<footer class="bg-navy text-white mt-auto">
+<footer class="bg-navy text-white mt-8">
   <div class="max-w-screen-2xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
     <span class="text-xs text-gray-400">© 2025 CRST | Cornerstone Services — New Paltz, NY</span>
     <span class="text-xs text-gray-500">Internal Training Resource — Not for Public Distribution</span>
@@ -126,141 +193,322 @@
 </footer>
 
 <script>
-const lessons = [
-  {
-    id: 0,
-    title: "Inbox Panel",
-    video: "/videos/Inbox_Panel.mp4",
-    completed: false,
-    description: `<p>The Inbox Panel is the left-hand navigation inside the CRST Web Conversations Tab. Here you'll find quick-access filters to manage your message workload efficiently.</p>
-    <p class="font-semibold mt-4 mb-2">Key areas of the Inbox Panel:</p>
-    <ul class="list-disc pl-6 space-y-1">
-      <li><strong>My Inbox</strong> — Shows conversations assigned specifically to you</li>
-      <li><strong>All</strong> — Displays every open conversation across the account</li>
-      <li><strong>Assigned to Me</strong> — Filters to only conversations where you are the assigned user</li>
-      <li><strong>Followed by Me</strong> — Shows conversations you've chosen to follow for visibility</li>
-      <li><strong>Team Inbox</strong> — Shared inbox view for your team</li>
-      <li><strong>Internal Chat</strong> — Use this for communicating internally with your team without it going to the contact</li>
-    </ul>
-    <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Use the Inbox Panel filters to stay focused on your own workload without getting distracted by your full team's conversations. Start your day in "Assigned to Me" and work from there.</p>`
+const modules = {
+  m1: {
+    currentLesson: 0,
+    lessons: [
+      {
+        title: "Inbox Panel",
+        video: "/videos/Inbox_Panel.mp4",
+        completed: false,
+        description: `<p>The Inbox Panel is the left-hand navigation inside the CRST Web Conversations Tab. Here you'll find quick-access filters to manage your message workload efficiently.</p>
+        <p class="font-semibold mt-4 mb-2">Key areas of the Inbox Panel:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>My Inbox</strong> — Shows conversations assigned specifically to you</li>
+          <li><strong>All</strong> — Displays every open conversation across the account</li>
+          <li><strong>Assigned to Me</strong> — Filters to only conversations where you are the assigned user</li>
+          <li><strong>Followed by Me</strong> — Shows conversations you've chosen to follow for visibility</li>
+          <li><strong>Team Inbox</strong> — Shared inbox view for your team</li>
+          <li><strong>Internal Chat</strong> — Use this for communicating internally with your team without it going to the contact</li>
+        </ul>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Use the Inbox Panel filters to stay focused on your own workload without getting distracted by your full team's conversations. Start your day in "Assigned to Me" and work from there.</p>`,
+        accordions: []
+      },
+      {
+        title: "Chat List Panel",
+        video: "/videos/chat-list-panel.mp4",
+        completed: false,
+        description: `<p>The Chat List Panel displays all active conversations based on your selected inbox filter. You can sort by newest, oldest, or unread. Each conversation card shows the contact name, channel icon, last message preview, and timestamp.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: []
+      },
+      {
+        title: "Filtering Your Inbox",
+        video: "/videos/filtering-your-inbox.mp4",
+        completed: false,
+        description: `<p>Learn how to use CRST Web's built-in conversation filters to narrow your inbox by channel type (SMS, Email, Facebook, etc.), assigned user, status (open, closed, unread), and date range. Filtering is essential for high-volume accounts.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: []
+      },
+      {
+        title: "Message History Panel",
+        video: "/videos/message-history-panel.mp4",
+        completed: false,
+        description: `<p>The Message History Panel is the center column showing the full thread of all messages exchanged with a contact across all channels in chronological order.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: []
+      },
+      {
+        title: "Sending Messages",
+        video: "/videos/sending-messages.mp4",
+        completed: false,
+        description: `<p>Learn how to compose and send messages directly from the CRST Web Conversations Tab. Covers SMS, email, internal notes, attachments, and using snippets for fast replies.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: []
+      },
+      {
+        title: "Individual Convo Filters and Actions",
+        video: "/videos/individual-convo-filters.mp4",
+        completed: false,
+        description: `<p>Each conversation has its own set of actions — assign to a team member, change status, add tags, set a reminder, and more. This lesson walks through every action available at the individual conversation level inside CRST Web.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: []
+      },
+      {
+        title: "Right Hand Panel",
+        video: "/videos/right-hand-panel.mp4",
+        completed: false,
+        description: `<p>The Right Hand Panel gives you a full snapshot of the contact record while you're in a conversation — no need to leave the chat. View contact info, pipeline stage, recent activity, appointments, tasks, and notes all in one place.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: []
+      },
+      {
+        title: "Bonus: Shortcuts!",
+        video: "/videos/bonus-shortcuts.mp4",
+        completed: false,
+        description: `<p>Speed up your workflow with CRST Web keyboard shortcuts and power-user tips inside the Conversations Tab.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: []
+      }
+    ]
   },
-  {
-    id: 1,
-    title: "Chat List Panel",
-    video: "/videos/chat-list-panel.mp4",
-    completed: false,
-    description: `<p>The Chat List Panel displays all active conversations based on your selected inbox filter. You can sort by newest, oldest, or unread. Each conversation card shows the contact name, channel icon, last message preview, and timestamp.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
-  },
-  {
-    id: 2,
-    title: "Filtering Your Inbox",
-    video: "/videos/filtering-your-inbox.mp4",
-    completed: false,
-    description: `<p>Learn how to use CRST Web's built-in conversation filters to narrow your inbox by channel type (SMS, Email, Facebook, etc.), assigned user, status (open, closed, unread), and date range. Filtering is essential for high-volume accounts.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
-  },
-  {
-    id: 3,
-    title: "Message History Panel",
-    video: "/videos/message-history-panel.mp4",
-    completed: false,
-    description: `<p>The Message History Panel is the center column showing the full thread of all messages exchanged with a contact across all channels in chronological order.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
-  },
-  {
-    id: 4,
-    title: "Sending Messages",
-    video: "/videos/sending-messages.mp4",
-    completed: false,
-    description: `<p>Learn how to compose and send messages directly from the CRST Web Conversations Tab. Covers SMS, email, internal notes, attachments, and using snippets for fast replies.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
-  },
-  {
-    id: 5,
-    title: "Individual Convo Filters and Actions",
-    video: "/videos/individual-convo-filters.mp4",
-    completed: false,
-    description: `<p>Each conversation has its own set of actions — assign to a team member, change status, add tags, set a reminder, and more. This lesson walks through every action available at the individual conversation level inside CRST Web.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
-  },
-  {
-    id: 6,
-    title: "Right Hand Panel",
-    video: "/videos/right-hand-panel.mp4",
-    completed: false,
-    description: `<p>The Right Hand Panel gives you a full snapshot of the contact record while you're in a conversation — no need to leave the chat. View contact info, pipeline stage, recent activity, appointments, tasks, and notes all in one place.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
-  },
-  {
-    id: 7,
-    title: "Bonus: Shortcuts!",
-    video: "/videos/bonus-shortcuts.mp4",
-    completed: false,
-    description: `<p>Speed up your workflow with CRST Web keyboard shortcuts and power-user tips inside the Conversations Tab.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
+  m2: {
+    currentLesson: 0,
+    lessons: [
+      {
+        title: "Lead Automation Through a Pipeline",
+        video: "/videos/Lead_Automation_Pipeline.mp4",
+        completed: false,
+        description: `<p>In this lesson you'll learn how leads automatically move through your CRST Web pipeline based on triggers and actions. Understanding how automation connects to your pipeline stages is the foundation of a hands-free follow-up system. Watch the video above to see it in action.</p>`,
+        accordions: [
+          {
+            title: "Understanding Pipelines",
+            content: `<p>CRST Web pipelines let you visually manage opportunities as they move through different stages of your sales or service workflow. Pipelines are easy to navigate, fast to manage, and safe to edit — while keeping all your existing functionality intact.</p>
+
+<h3>Overview</h3>
+<p>Pipelines are visual workflow tools that show the progress of leads, deals, or customers from start to finish. Each opportunity moves through defined stages, helping your team understand what actions are needed and where items may be getting stuck.</p>
+<p>You can access Pipelines from: <strong>CRST Web Dashboard → Opportunities → Pipelines</strong></p>
+
+<h3>Pipelines List View</h3>
+<p>This view displays all pipelines in your account, along with the number of stages in each pipeline and the last updated timestamp.</p>
+
+<h3>Why Pipelines Matter</h3>
+<p>Pipelines help you:</p>
+<ul>
+  <li><strong>Improve visibility</strong> — Instantly see where every opportunity stands in your process</li>
+  <li><strong>Maintain consistency</strong> — Standardize how leads or clients move through your workflow</li>
+  <li><strong>Increase efficiency</strong> — Automate follow-ups, reminders, and task assignments based on stage changes</li>
+  <li><strong>Track performance</strong> — Monitor conversion rates, identify bottlenecks, and measure overall pipeline health</li>
+</ul>
+
+<h3>Pipeline Stages</h3>
+<p>A pipeline is made up of stages, with each stage representing a step in your sales or customer journey. Opportunities move from left to right as they progress through the pipeline. Stages should be clearly defined and action-oriented so users know exactly when an opportunity should move forward.</p>
+
+<h3>Editing a Pipeline and Its Stages</h3>
+<p>From the pipeline editor you can rename stages, reorder them, control reporting visibility, add new stages, or delete existing ones.</p>
+
+<h3>Deleting a Pipeline Stage</h3>
+<p>When deleting a pipeline stage, you can move all existing opportunities to another stage instead of losing them.</p>
+<p>How it works:</p>
+<ul>
+  <li>Navigate to Opportunities → Pipelines</li>
+  <li>Open the pipeline you want to edit</li>
+  <li>Click the delete icon next to the stage</li>
+  <li>Select a destination stage to move existing opportunities</li>
+  <li>Confirm the deletion</li>
+</ul>
+<p>All opportunities from the deleted stage are automatically transferred to the selected stage.</p>
+
+<h3>Example Pipeline Stages</h3>
+<p><strong>Sales Pipeline:</strong></p>
+<ul>
+  <li>Lead Capture – New inquiries from forms, calls, or chats</li>
+  <li>Qualification – Budget, need, and fit are confirmed</li>
+  <li>Appointment Scheduled – Discovery calls or demos are booked</li>
+  <li>Proposal / Negotiation – Offers are shared and discussed</li>
+  <li>Closing – Opportunity marked as Won or Lost</li>
+</ul>
+<p><strong>Service Business Pipeline:</strong></p>
+<ul>
+  <li>New Inquiry</li>
+  <li>Discovery Call Booked</li>
+  <li>Service or Package Selected</li>
+  <li>Payment Collected</li>
+  <li>Onboarding</li>
+</ul>
+
+<h3>Best Practices</h3>
+<p><strong>Keep It Simple</strong> — Limit pipelines to only the stages that matter most. Too many stages can slow down your workflow and reduce clarity.</p>
+<p><strong>Automate Smartly</strong> — Use pipeline-based automation to reduce manual work: send follow-ups when opportunities stay in a stage too long, assign tasks when deals reach key stages.</p>
+<p><strong>Review Regularly</strong> — On a weekly or monthly basis: remove outdated opportunities, update stage definitions as your process evolves, review conversion data and performance trends.</p>
+<p><strong>Data-Driven Optimization</strong> — Use pipeline reporting to answer: Where do opportunities drop off most often? Which stage takes the longest to complete? What is the win rate at each stage?</p>
+
+<h3>Common Use Cases</h3>
+<ul>
+  <li><strong>Real Estate:</strong> New Lead → Property Tour → Offer → Contract Signed → Closed</li>
+  <li><strong>Coaching:</strong> Inquiry → Discovery Call → Program Selected → Payment → Onboarding</li>
+  <li><strong>Agency Client Management:</strong> Lead → Strategy Call → Proposal → Agreement → Onboarded</li>
+</ul>
+
+<h3>FAQs</h3>
+<p><strong>Q: Do I lose opportunities when I delete a pipeline stage?</strong><br>A: No. When deleting a stage, you can choose another stage to move all existing opportunities to.</p>
+<p><strong>Q: Did any pipeline functionality change?</strong><br>A: No core functionality changed. Updates focus on UI improvements and safer stage management.</p>
+<p><strong>Q: Do existing automations still work?</strong><br>A: Yes. All existing pipeline-based automations and triggers continue to function normally.</p>`
+          },
+          {
+            title: "Understanding Opportunities",
+            content: `<p>Opportunities in CRST Web represent potential sales or deals at various stages of the sales pipeline. They capture leads or prospects showing interest in your products or services, ready to be converted into paying customers.</p>
+
+<h3>What Are Opportunities?</h3>
+<p>Opportunities are records that represent a potential sale or deal at any point in your pipeline — from a brand new lead to a signed contract. Each opportunity stores the prospect's contact information, deal value, and historical notes, ensuring everyone on your team has context and can take action quickly.</p>
+<p><em>Note: In CRST Web, a contact becomes an opportunity when there is a prospect of a sale or deal associated with that contact and it is added to a sales pipeline.</em></p>
+
+<h3>Key Benefits of Opportunities</h3>
+<ul>
+  <li><strong>Centralized Tracking</strong> — All notes, tasks, and communications live on the opportunity card, eliminating data silos</li>
+  <li><strong>Stage-Based Forecasting</strong> — Predict revenue by looking at how many deals sit in each stage and their expected values</li>
+  <li><strong>Automation Triggers</strong> — Fire workflows when an opportunity is created, moves stages, or changes status — saving hours of manual work</li>
+  <li><strong>Team Collaboration</strong> — Assign owners, tag teammates, and track activity history without endless email threads</li>
+  <li><strong>Performance Reporting</strong> — Use CRST Web dashboards and reports to see win rates and bottlenecks across your team</li>
+</ul>
+
+<h3>Pipeline Integration</h3>
+<p>Opportunities are managed within pipelines which are made up of a series of consecutive stages. Customizable pipelines align with your unique sales process and business goals.</p>
+
+<h3>Stage Progression</h3>
+<p>Opportunities advance through pipeline stages, signifying their position in the sales cycle. Stages typically include Prospecting, Qualification, Proposal, and Negotiation.</p>
+
+<h3>Opportunity Status</h3>
+<p>Every opportunity has one of four statuses:</p>
+<ul>
+  <li><strong>Open</strong> — Actively being pursued, still in progress, not yet won, lost, or abandoned</li>
+  <li><strong>Won</strong> — Successfully converted into a sale or deal, revenue has been generated</li>
+  <li><strong>Lost</strong> — Deal concluded unsuccessfully, lead chose not to move forward or went with a competitor</li>
+  <li><strong>Abandoned</strong> — Opportunity has been neglected with no further action or follow-up planned</li>
+</ul>
+
+<h3>Data Management</h3>
+<p>CRST Web tracks opportunity source, contact details, opportunity value, and notes within each record. You can also streamline communication and task assignment under linked contacts, enhancing workflow efficiency and timely engagement.</p>`
+          },
+          {
+            title: "Understanding The Create New Opportunity Toggle",
+            content: `<p>The Create New Opportunity Toggle controls whether CRST Web automatically creates a new opportunity record when a lead enters your pipeline through a form, workflow, or other trigger.</p>
+
+<h3>What it does:</h3>
+<p><strong>When the toggle is ON</strong> — CRST Web will create a brand new opportunity every time the trigger fires, even if a contact already exists in the pipeline. This is useful when a single contact may have multiple separate deals at the same time.</p>
+<p><strong>When the toggle is OFF</strong> — CRST Web will update the existing opportunity instead of creating a new one. This prevents duplicate records for the same contact in the same pipeline.</p>
+
+<h3>When to use each setting:</h3>
+<p><strong>Use ON when:</strong> A contact can realistically have multiple active deals simultaneously (e.g., a real estate client interested in multiple properties).</p>
+<p><strong>Use OFF when:</strong> You only want one active opportunity per contact per pipeline at any given time, which is the most common setup for service businesses.</p>
+
+<p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> For most CRST Web clients managing leads through a single service pipeline, keep this toggle OFF to avoid cluttering your pipeline with duplicate opportunities for the same contact.</p>`
+          }
+        ]
+      }
+    ]
   }
-];
+};
 
-let currentLesson = 0;
-
-function renderSidebar() {
-  const nav = document.getElementById('lessonNav');
-  nav.innerHTML = lessons.map((l, i) => {
+function renderSidebar(moduleId) {
+  const mod = modules[moduleId];
+  const nav = document.getElementById(`${moduleId}-lessonNav`);
+  nav.innerHTML = mod.lessons.map((l, i) => {
     let stateClass = 'upcoming';
     let icon = `<span class="w-5 h-5 rounded-full border-2 border-gray-300 flex-shrink-0 inline-block"></span>`;
     if (l.completed) {
       stateClass = 'completed';
       icon = `<svg class="w-5 h-5 flex-shrink-0 text-complete-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>`;
     }
-    if (i === currentLesson) {
+    if (i === mod.currentLesson) {
       stateClass = 'active';
       icon = `<svg class="w-5 h-5 flex-shrink-0 text-teal" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>`;
     }
-    return `<button class="lesson-item ${stateClass} w-full text-left px-4 py-3 flex items-center gap-3 cursor-pointer" onclick="switchLesson(${i})">
+    return `<button class="lesson-item ${stateClass} w-full text-left px-4 py-3 flex items-center gap-3 cursor-pointer" onclick="switchLesson('${moduleId}', ${i})">
       ${icon}
-      <span class="lesson-label text-sm ${i === currentLesson ? 'font-semibold text-teal' : ''}">${i + 1}. ${l.title}</span>
+      <span class="lesson-label text-sm ${i === mod.currentLesson ? 'font-semibold text-teal' : ''}">${i + 1}. ${l.title}</span>
     </button>`;
   }).join('');
 
-  const completedCount = lessons.filter(l => l.completed).length;
-  document.getElementById('progressLabel').textContent = `${completedCount} of ${lessons.length} complete`;
-  document.getElementById('progressBar').style.width = `${(completedCount / lessons.length) * 100}%`;
+  const completedCount = mod.lessons.filter(l => l.completed).length;
+  document.getElementById(`${moduleId}-progressLabel`).textContent = `${completedCount} of ${mod.lessons.length} complete`;
+  document.getElementById(`${moduleId}-progressBar`).style.width = `${(completedCount / mod.lessons.length) * 100}%`;
 }
 
-function switchLesson(index) {
-  const video = document.getElementById('videoPlayer');
+function renderAccordions(moduleId, lesson) {
+  const container = document.getElementById(`${moduleId}-accordion`);
+  if (!lesson.accordions || lesson.accordions.length === 0) {
+    container.innerHTML = '';
+    return;
+  }
+  container.innerHTML = `
+    <div class="mb-2">
+      <h3 class="text-sm font-semibold text-navy uppercase tracking-wide mb-3 flex items-center gap-2">
+        <span>📄</span> Reference Guides
+      </h3>
+      ${lesson.accordions.map((a, i) => `
+        <div class="bg-white rounded-xl shadow-sm mb-3 border-l-4 border-teal overflow-hidden">
+          <button onclick="toggleAccordion('${moduleId}', ${i})" class="w-full text-left px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition">
+            <span class="font-semibold text-navy text-sm">${a.title}</span>
+            <svg class="w-5 h-5 text-gray-400 accordion-chevron" id="${moduleId}-chevron-${i}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="accordion-content" id="${moduleId}-acc-${i}">
+            <div class="px-6 pb-6 accordion-article text-sm text-text-body">
+              ${a.content}
+            </div>
+          </div>
+        </div>
+      `).join('')}
+    </div>`;
+}
+
+function toggleAccordion(moduleId, index) {
+  const content = document.getElementById(`${moduleId}-acc-${index}`);
+  const chevron = document.getElementById(`${moduleId}-chevron-${index}`);
+  content.classList.toggle('open');
+  chevron.classList.toggle('open');
+}
+
+function switchLesson(moduleId, index) {
+  const mod = modules[moduleId];
+  const video = document.getElementById(`${moduleId}-videoPlayer`);
   video.pause();
 
-  currentLesson = index;
-  const lesson = lessons[index];
+  mod.currentLesson = index;
+  const lesson = mod.lessons[index];
 
-  document.getElementById('lessonTitle').textContent = lesson.title;
-  const source = document.getElementById('videoSource');
+  document.getElementById(`${moduleId}-lessonTitle`).textContent = lesson.title;
+  const source = document.getElementById(`${moduleId}-videoSource`);
   source.src = lesson.video;
   video.load();
 
-  document.getElementById('lessonDescription').innerHTML = lesson.description;
-  renderSidebar();
+  document.getElementById(`${moduleId}-lessonDescription`).innerHTML = lesson.description;
+  renderAccordions(moduleId, lesson);
+  renderSidebar(moduleId);
 
   if (window.innerWidth < 769) {
-    document.querySelector('.sidebar-panel').classList.add('collapsed');
+    const sidebar = document.querySelector(`#${moduleId === 'm1' ? 'module1' : 'module2'} .module-sidebar`);
+    sidebar.classList.add('collapsed');
   }
 
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  const moduleEl = document.getElementById(moduleId === 'm1' ? 'module1' : 'module2');
+  moduleEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-function markComplete() {
-  lessons[currentLesson].completed = true;
-  if (currentLesson < lessons.length - 1) {
-    switchLesson(currentLesson + 1);
+function markComplete(moduleId) {
+  const mod = modules[moduleId];
+  mod.lessons[mod.currentLesson].completed = true;
+  if (mod.currentLesson < mod.lessons.length - 1) {
+    switchLesson(moduleId, mod.currentLesson + 1);
   } else {
-    renderSidebar();
-    showCongrats();
+    renderSidebar(moduleId);
+    showCongrats(moduleId);
   }
 }
 
-function nextLesson() {
-  if (currentLesson < lessons.length - 1) {
-    switchLesson(currentLesson + 1);
+function nextLesson(moduleId) {
+  const mod = modules[moduleId];
+  if (mod.currentLesson < mod.lessons.length - 1) {
+    switchLesson(moduleId, mod.currentLesson + 1);
   }
 }
 
-function toggleSidebar() {
-  const sidebar = document.querySelector('.sidebar-panel');
+function toggleModuleSidebar(moduleId) {
+  const moduleEl = document.getElementById(moduleId === 'm1' ? 'module1' : 'module2');
+  const sidebar = moduleEl.querySelector('.module-sidebar');
   sidebar.classList.toggle('collapsed');
   const chevron = sidebar.querySelector('.chevron-icon');
   if (sidebar.classList.contains('collapsed')) {
@@ -270,20 +518,25 @@ function toggleSidebar() {
   }
 }
 
-function showCongrats() {
-  const allDone = lessons.every(l => l.completed);
+function showCongrats(moduleId) {
+  const mod = modules[moduleId];
+  const allDone = mod.lessons.every(l => l.completed);
   if (allDone) {
-    document.getElementById('lessonDescription').innerHTML += `
+    const label = moduleId === 'm1' ? 'Conversations Tab' : 'Pipelines & Opportunities';
+    const count = mod.lessons.length;
+    document.getElementById(`${moduleId}-lessonDescription`).innerHTML += `
       <div class="mt-6 bg-green-50 border border-green-200 rounded-xl p-6 text-center">
         <p class="text-2xl mb-2">🎉</p>
         <p class="text-lg font-semibold text-green-800">Congratulations!</p>
-        <p class="text-green-700 text-sm mt-1">You've completed all 8 lessons in the Conversations Tab training module.</p>
+        <p class="text-green-700 text-sm mt-1">You've completed all ${count} lesson${count > 1 ? 's' : ''} in the ${label} training module.</p>
       </div>`;
   }
 }
 
-renderSidebar();
-switchLesson(0);
+renderSidebar('m1');
+switchLesson('m1', 0);
+renderSidebar('m2');
+switchLesson('m2', 0);
 </script>
 
 </body>
