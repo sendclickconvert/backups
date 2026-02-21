@@ -129,13 +129,6 @@
 const lessons = [
   {
     id: 0,
-    title: "Welcome and Intro",
-    video: "/videos/welcome-intro.mp4",
-    completed: true,
-    description: `<p>Welcome to the CRST Web Conversations Tab training. In this module, you'll learn how to manage all your client communications from one central location. The Conversations Tab is your command center — covering inbound and outbound messages across SMS, email, Facebook, Instagram, and more. Let's get started.</p>`
-  },
-  {
-    id: 1,
     title: "Inbox Panel",
     video: "/videos/Inbox_Panel.mp4",
     completed: false,
@@ -152,49 +145,49 @@ const lessons = [
     <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Use the Inbox Panel filters to stay focused on your own workload without getting distracted by your full team's conversations. Start your day in "Assigned to Me" and work from there.</p>`
   },
   {
-    id: 2,
+    id: 1,
     title: "Chat List Panel",
     video: "/videos/chat-list-panel.mp4",
     completed: false,
     description: `<p>The Chat List Panel displays all active conversations based on your selected inbox filter. You can sort by newest, oldest, or unread. Each conversation card shows the contact name, channel icon, last message preview, and timestamp.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
   },
   {
-    id: 3,
+    id: 2,
     title: "Filtering Your Inbox",
     video: "/videos/filtering-your-inbox.mp4",
     completed: false,
     description: `<p>Learn how to use CRST Web's built-in conversation filters to narrow your inbox by channel type (SMS, Email, Facebook, etc.), assigned user, status (open, closed, unread), and date range. Filtering is essential for high-volume accounts.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
   },
   {
-    id: 4,
+    id: 3,
     title: "Message History Panel",
     video: "/videos/message-history-panel.mp4",
     completed: false,
     description: `<p>The Message History Panel is the center column showing the full thread of all messages exchanged with a contact across all channels in chronological order.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
   },
   {
-    id: 5,
+    id: 4,
     title: "Sending Messages",
     video: "/videos/sending-messages.mp4",
     completed: false,
     description: `<p>Learn how to compose and send messages directly from the CRST Web Conversations Tab. Covers SMS, email, internal notes, attachments, and using snippets for fast replies.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
   },
   {
-    id: 6,
+    id: 5,
     title: "Individual Convo Filters and Actions",
     video: "/videos/individual-convo-filters.mp4",
     completed: false,
     description: `<p>Each conversation has its own set of actions — assign to a team member, change status, add tags, set a reminder, and more. This lesson walks through every action available at the individual conversation level inside CRST Web.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
   },
   {
-    id: 7,
+    id: 6,
     title: "Right Hand Panel",
     video: "/videos/right-hand-panel.mp4",
     completed: false,
     description: `<p>The Right Hand Panel gives you a full snapshot of the contact record while you're in a conversation — no need to leave the chat. View contact info, pipeline stage, recent activity, appointments, tasks, and notes all in one place.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`
   },
   {
-    id: 8,
+    id: 7,
     title: "Bonus: Shortcuts!",
     video: "/videos/bonus-shortcuts.mp4",
     completed: false,
@@ -202,7 +195,7 @@ const lessons = [
   }
 ];
 
-let currentLesson = 1;
+let currentLesson = 0;
 
 function renderSidebar() {
   const nav = document.getElementById('lessonNav');
@@ -284,13 +277,13 @@ function showCongrats() {
       <div class="mt-6 bg-green-50 border border-green-200 rounded-xl p-6 text-center">
         <p class="text-2xl mb-2">🎉</p>
         <p class="text-lg font-semibold text-green-800">Congratulations!</p>
-        <p class="text-green-700 text-sm mt-1">You've completed all 9 lessons in the Conversations Tab training module.</p>
+        <p class="text-green-700 text-sm mt-1">You've completed all 8 lessons in the Conversations Tab training module.</p>
       </div>`;
   }
 }
 
 renderSidebar();
-switchLesson(1);
+switchLesson(0);
 </script>
 
 </body>
