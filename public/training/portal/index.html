@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>CRST Web Training Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            navy: '#1A2B4A',
+            teal: '#00BFA6',
+            'teal-light': '#E6F7F5',
+            'bg-gray': '#F4F6F9',
+            'text-body': '#374151',
+            'text-muted': '#6B7280',
+            'complete-green': '#22C55E',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; margin: 0; background: #F4F6F9; color: #374151; }
+    video::-webkit-media-controls-panel { background: linear-gradient(transparent, rgba(0,0,0,.6)); }
+    .sidebar-scroll::-webkit-scrollbar { width: 6px; }
+    .sidebar-scroll::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 3px; }
+    .lesson-item { transition: all 0.15s ease; }
+    .lesson-item:hover { background: #f9fafb; }
+    .lesson-item.active { background: #E6F7F5; border-left: 3px solid #00BFA6; }
+    .lesson-item.completed .lesson-label { color: #6B7280; }
+    .lesson-item.upcoming .lesson-label { color: #6B7280; }
+    .video-container { background: #111827; border-radius: 12px; overflow: hidden; }
+    .btn-teal { background: #00BFA6; color: #fff; transition: background 0.2s; }
+    .btn-teal:hover { background: #00a893; }
+    .btn-outline { border: 2px solid #00BFA6; color: #00BFA6; transition: all 0.2s; }
+    .btn-outline:hover { background: #E6F7F5; }
+    .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .accordion-content.open { max-height: 8000px; }
+    .accordion-chevron { transition: transform 0.3s ease; }
+    .accordion-chevron.open { transform: rotate(180deg); }
+    .accordion-article h3 { color: #1A2B4A; font-size: 1.1rem; font-weight: 700; margin: 1.25rem 0 0.5rem; }
+    .accordion-article h3:first-child { margin-top: 0; }
+    .accordion-article p { margin: 0.5rem 0; line-height: 1.7; }
+    .accordion-article ul { list-style: disc; padding-left: 1.5rem; margin: 0.5rem 0; }
+    .accordion-article ul li { margin: 0.25rem 0; line-height: 1.6; }
+    .accordion-article strong { color: #1A2B4A; }
+    .module-section { min-height: auto; }
+    @media (max-width: 768px) {
+      .module-layout { flex-direction: column !important; }
+      .module-sidebar { width: 100% !important; position: relative !important; }
+      .module-sidebar.collapsed .lesson-list { display: none; }
+      .module-sidebar.collapsed .progress-section { border-bottom: none; }
+      .mobile-toggle { display: flex !important; }
+      .module-main { margin-left: 0 !important; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-navy text-white shadow-lg" style="height:64px">
+  <div class="h-full flex items-center justify-between px-6 max-w-screen-2xl mx-auto">
+    <div class="flex items-center gap-3">
+      <img src="/images/crst-logo-white.png" alt="CRST" class="h-8" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <span class="font-bold text-xl tracking-tight hidden">CRST</span>
+    </div>
+    <h1 class="text-base md:text-lg font-semibold tracking-tight text-center">CRST Web Training</h1>
+    <span class="text-xs text-gray-400 hidden sm:block">Internal Client Training</span>
+  </div>
+</header>
+
+<div style="padding-top:64px">
+
+  <!-- ===================== MODULE 1: CONVERSATIONS TAB ===================== -->
+  <section class="module-section" id="module1">
+    <div class="bg-navy text-white px-6 py-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 1</span>
+        <h2 class="text-lg font-semibold">Conversations Tab</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:500px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m1')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m1-progressLabel" class="text-xs font-medium text-text-muted">0 of 8 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m1-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m1-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m1-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="video-container mb-8">
+            <video id="m1-videoPlayer" controls playsinline class="w-full aspect-video bg-gray-900" preload="metadata">
+              <source id="m1-videoSource" src="" type="video/mp4">
+              Your browser does not support the video element.
+            </video>
+          </div>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m1-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m1-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m1')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              Mark as Complete
+            </button>
+            <button onclick="nextLesson('m1')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">
+              Next Lesson →
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ===================== MODULE 2: PIPELINES & OPPORTUNITIES ===================== -->
+  <section class="module-section" id="module2">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 2</span>
+        <h2 class="text-lg font-semibold">Pipelines &amp; Opportunities</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m2')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m2-progressLabel" class="text-xs font-medium text-text-muted">0 of 10 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m2-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m2-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m2-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="video-container mb-8" id="m2-videoContainer">
+            <div id="m2-youtubePlayer" class="w-full aspect-video"></div>
+          </div>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m2-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m2-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m2')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              Mark as Complete
+            </button>
+            <button onclick="nextLesson('m2')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">
+              Next Lesson →
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ===================== MODULE 3: WORKFLOWS & AUTOMATIONS ===================== -->
+  <section class="module-section" id="module3">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 3</span>
+        <h2 class="text-lg font-semibold">Workflows &amp; Automations</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m3')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m3-progressLabel" class="text-xs font-medium text-text-muted">0 of 7 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m3-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m3-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m3-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="video-container mb-8" id="m3-videoContainer"><div id="m3-youtubePlayer" class="w-full aspect-video"></div></div>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m3-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m3-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m3')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Mark as Complete</button>
+            <button onclick="nextLesson('m3')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">Next Lesson →</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ===================== MODULE 4: CALENDARS & APPOINTMENTS ===================== -->
+  <section class="module-section" id="module4">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 4</span>
+        <h2 class="text-lg font-semibold">Calendars &amp; Appointments</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m4')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m4-progressLabel" class="text-xs font-medium text-text-muted">0 of 7 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m4-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m4-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m4-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="video-container mb-8" id="m4-videoContainer"><div id="m4-youtubePlayer" class="w-full aspect-video"></div></div>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m4-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m4-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m4')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Mark as Complete</button>
+            <button onclick="nextLesson('m4')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">Next Lesson →</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ===================== MODULE 5: CONTACTS & CRM ===================== -->
+  <section class="module-section" id="module5">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 5</span>
+        <h2 class="text-lg font-semibold">Contacts &amp; CRM</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m5')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m5-progressLabel" class="text-xs font-medium text-text-muted">0 of 5 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m5-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m5-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m5-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="video-container mb-8" id="m5-videoContainer"><div id="m5-youtubePlayer" class="w-full aspect-video"></div></div>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m5-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m5-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m5')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Mark as Complete</button>
+            <button onclick="nextLesson('m5')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">Next Lesson →</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ===================== MODULE 6: SITES, FUNNELS & FORMS ===================== -->
+  <section class="module-section" id="module6">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 6</span>
+        <h2 class="text-lg font-semibold">Sites, Funnels &amp; Forms</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m6')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m6-progressLabel" class="text-xs font-medium text-text-muted">0 of 5 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m6-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m6-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m6-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="video-container mb-8" id="m6-videoContainer"><div id="m6-youtubePlayer" class="w-full aspect-video"></div></div>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m6-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m6-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m6')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Mark as Complete</button>
+            <button onclick="nextLesson('m6')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">Next Lesson →</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ===================== MODULE 7: PAYMENTS & INVOICING ===================== -->
+  <section class="module-section" id="module7">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 7</span>
+        <h2 class="text-lg font-semibold">Payments &amp; Invoicing</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m7')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m7-progressLabel" class="text-xs font-medium text-text-muted">0 of 5 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m7-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m7-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m7-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="video-container mb-8" id="m7-videoContainer"><div id="m7-youtubePlayer" class="w-full aspect-video"></div></div>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m7-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m7-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m7')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Mark as Complete</button>
+            <button onclick="nextLesson('m7')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">Next Lesson →</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ===================== MODULE 8: DASHBOARDS & REPORTING ===================== -->
+  <section class="module-section" id="module8">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 8</span>
+        <h2 class="text-lg font-semibold">Dashboards &amp; Reporting</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m8')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m8-progressLabel" class="text-xs font-medium text-text-muted">0 of 4 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m8-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m8-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m8-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="video-container mb-8" id="m8-videoContainer"><div id="m8-youtubePlayer" class="w-full aspect-video"></div></div>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m8-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m8-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m8')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Mark as Complete</button>
+            <button onclick="nextLesson('m8')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">Next Lesson →</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ===================== MODULE 9: REPUTATION MANAGEMENT & REVIEWS ===================== -->
+  <section class="module-section" id="module9">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 9</span>
+        <h2 class="text-lg font-semibold">Reputation Management &amp; Reviews</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m9')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m9-progressLabel" class="text-xs font-medium text-text-muted">0 of 3 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m9-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m9-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m9-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="video-container mb-8" id="m9-videoContainer"><div id="m9-youtubePlayer" class="w-full aspect-video"></div></div>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m9-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m9-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m9')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Mark as Complete</button>
+            <button onclick="nextLesson('m9')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">Next Lesson →</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ===================== MODULE 10: SETTINGS & CONFIGURATION ===================== -->
+  <section class="module-section" id="module10">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 10</span>
+        <h2 class="text-lg font-semibold">Settings &amp; Configuration</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m10')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m10-progressLabel" class="text-xs font-medium text-text-muted">0 of 5 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m10-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m10-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m10-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="video-container mb-8" id="m10-videoContainer"><div id="m10-youtubePlayer" class="w-full aspect-video"></div></div>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m10-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m10-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m10')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Mark as Complete</button>
+            <button onclick="nextLesson('m10')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">Next Lesson →</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+</div>
+
+<footer class="bg-navy text-white mt-8">
+  <div class="max-w-screen-2xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+    <span class="text-xs text-gray-400">© 2025 CRST | Cornerstone Services — New Paltz, NY</span>
+    <span class="text-xs text-gray-500">Internal Training Resource — Not for Public Distribution</span>
+  </div>
+</footer>
+
+<script>
+const modules = {
+  m1: {
+    currentLesson: 0,
+    lessons: [
+      { title: "Inbox Panel", video: "/videos/Inbox_Panel.mp4", completed: false,
+        description: `<p>The Inbox Panel is the left-hand navigation inside the CRST Web Conversations Tab. Here you'll find quick-access filters to manage your message workload efficiently.</p>
+        <p class="font-semibold mt-4 mb-2">Key areas of the Inbox Panel:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>My Inbox</strong> — Shows conversations assigned specifically to you</li>
+          <li><strong>All</strong> — Displays every open conversation across the account</li>
+          <li><strong>Assigned to Me</strong> — Filters to only conversations where you are the assigned user</li>
+          <li><strong>Followed by Me</strong> — Shows conversations you've chosen to follow for visibility</li>
+          <li><strong>Team Inbox</strong> — Shared inbox view for your team</li>
+          <li><strong>Internal Chat</strong> — Use this for communicating internally with your team without it going to the contact</li>
+        </ul>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Use the Inbox Panel filters to stay focused on your own workload without getting distracted by your full team's conversations. Start your day in "Assigned to Me" and work from there.</p>`,
+        accordions: [] },
+      { title: "Chat List Panel", video: "/videos/chat-list-panel.mp4", completed: false,
+        description: `<p>The Chat List Panel displays all active conversations based on your selected inbox filter. You can sort by newest, oldest, or unread. Each conversation card shows the contact name, channel icon, last message preview, and timestamp.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: [] },
+      { title: "Filtering Your Inbox", video: "/videos/filtering-your-inbox.mp4", completed: false,
+        description: `<p>Learn how to use CRST Web's built-in conversation filters to narrow your inbox by channel type (SMS, Email, Facebook, etc.), assigned user, status (open, closed, unread), and date range. Filtering is essential for high-volume accounts.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: [] },
+      { title: "Message History Panel", video: "/videos/message-history-panel.mp4", completed: false,
+        description: `<p>The Message History Panel is the center column showing the full thread of all messages exchanged with a contact across all channels in chronological order.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: [] },
+      { title: "Sending Messages", video: "/videos/sending-messages.mp4", completed: false,
+        description: `<p>Learn how to compose and send messages directly from the CRST Web Conversations Tab. Covers SMS, email, internal notes, attachments, and using snippets for fast replies.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: [] },
+      { title: "Individual Convo Filters and Actions", video: "/videos/individual-convo-filters.mp4", completed: false,
+        description: `<p>Each conversation has its own set of actions — assign to a team member, change status, add tags, set a reminder, and more. This lesson walks through every action available at the individual conversation level inside CRST Web.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: [] },
+      { title: "Right Hand Panel", video: "/videos/right-hand-panel.mp4", completed: false,
+        description: `<p>The Right Hand Panel gives you a full snapshot of the contact record while you're in a conversation — no need to leave the chat. View contact info, pipeline stage, recent activity, appointments, tasks, and notes all in one place.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: [] },
+      { title: "Bonus: Shortcuts!", video: "/videos/bonus-shortcuts.mp4", completed: false,
+        description: `<p>Speed up your workflow with CRST Web keyboard shortcuts and power-user tips inside the Conversations Tab.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: [] }
+    ]
+  },
+  m2: {
+    currentLesson: 0,
+    lessons: [
+      { title: "Lead Automation Through a Pipeline", video: null, youtube: "AzNBQ6Ko4zE", completed: false,
+        description: `<p>In this lesson you'll learn how leads automatically move through your CRST Web pipeline based on triggers and actions. Understanding how automation connects to your pipeline stages is the foundation of a hands-free follow-up system. Watch the video above to see it in action.</p>`,
+        accordions: [
+          { title: "Understanding Pipelines",
+            content: `<p>CRST Web pipelines let you visually manage opportunities as they move through different stages of your sales or service workflow.</p>
+<h3>Overview</h3>
+<p>Pipelines are visual workflow tools that show the progress of leads, deals, or customers from start to finish. Each opportunity moves through defined stages, helping your team understand what actions are needed and where items may be getting stuck.</p>
+<p>Access Pipelines from: <strong>CRST Web Dashboard → Opportunities → Pipelines</strong></p>
+<h3>Why Pipelines Matter</h3>
+<ul>
+  <li><strong>Improve visibility</strong> — Instantly see where every opportunity stands</li>
+  <li><strong>Maintain consistency</strong> — Standardize how leads move through your workflow</li>
+  <li><strong>Increase efficiency</strong> — Automate follow-ups, reminders, and task assignments based on stage changes</li>
+  <li><strong>Track performance</strong> — Monitor conversion rates, identify bottlenecks, and measure pipeline health</li>
+</ul>
+<h3>Pipeline Stages</h3>
+<p>Stages represent steps in your sales or customer journey. Opportunities move left to right. Stages should be clearly defined and action-oriented.</p>
+<h3>Deleting a Pipeline Stage</h3>
+<p>When deleting a stage, you can move all existing opportunities to another stage instead of losing them.</p>
+<h3>Example Stages</h3>
+<p><strong>Sales:</strong> Lead Capture → Qualification → Appointment Scheduled → Proposal → Closing</p>
+<p><strong>Service:</strong> New Inquiry → Discovery Call → Service Selected → Payment → Onboarding</p>
+<h3>Best Practices</h3>
+<p><strong>Keep It Simple</strong> — 5–7 stages max. <strong>Automate Smartly</strong> — Send follow-ups when deals stall. <strong>Review Regularly</strong> — Clean up opportunities monthly.</p>` },
+          { title: "Understanding Opportunities",
+            content: `<p>Opportunities represent potential sales or deals at various stages of the pipeline. Each stores the prospect's contact info, deal value, and notes.</p>
+<h3>Key Benefits</h3>
+<ul>
+  <li><strong>Centralized Tracking</strong> — Notes, tasks, and communications on one card</li>
+  <li><strong>Stage-Based Forecasting</strong> — Predict revenue by stage</li>
+  <li><strong>Automation Triggers</strong> — Fire workflows on opportunity events</li>
+  <li><strong>Team Collaboration</strong> — Assign owners, track activity</li>
+  <li><strong>Performance Reporting</strong> — Win rates and bottlenecks at a glance</li>
+</ul>
+<h3>Opportunity Status</h3>
+<ul>
+  <li><strong>Open</strong> — Actively being pursued</li>
+  <li><strong>Won</strong> — Successfully converted</li>
+  <li><strong>Lost</strong> — Deal concluded unsuccessfully</li>
+  <li><strong>Abandoned</strong> — No further action planned</li>
+</ul>` },
+          { title: "Understanding The Create New Opportunity Toggle",
+            content: `<p>This toggle controls whether CRST Web automatically creates a new opportunity or updates an existing one when a trigger fires.</p>
+<p><strong>Toggle ON:</strong> Creates a new opportunity every time (good when contacts have multiple deals simultaneously).</p>
+<p><strong>Toggle OFF:</strong> Updates the existing opportunity (prevents duplicates — most common for service businesses).</p>
+<p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> For most CRST Web clients, keep this toggle OFF to avoid duplicate opportunities.</p>` }
+        ] },
+      { title: "Creating Pipelines Step-by-Step", video: null, youtube: null, completed: false,
+        description: `<p>This lesson walks through creating a new pipeline from scratch — naming it, adding stages, setting stage order, configuring colors, and saving. Follow along in your CRST Web account.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Map out stages on paper first. Keep pipelines to 5–7 stages max with distinct colors for each.</p>`,
+        accordions: [{ title: "Step-by-Step: Creating a New Pipeline",
+          content: `<h3>Creating a Pipeline</h3>
+<ul><li>Navigate to <strong>Opportunities → Pipelines</strong></li><li>Click <strong>Create New Pipeline</strong></li><li>Enter a unique pipeline name</li><li>Add stages — each represents a step in your process</li><li>Set stage order using drag handles</li><li>Configure dashboard visibility</li><li>Click <strong>Save</strong></li></ul>
+<h3>Editing a Pipeline</h3>
+<ul><li>Rename stages — existing opportunities stay in the renamed stage</li><li>Reorder stages via drag and drop</li><li>Add new stages at the end, then reorder</li><li>Delete stages — move existing opportunities to another stage first</li></ul>
+<p>Pipeline names must be unique. CRST Web automatically adds Won and Lost stages to every pipeline.</p>` }] },
+      { title: "Creating & Managing Opportunities", video: null, youtube: null, completed: false,
+        description: `<p>Create opportunities manually and through workflows. Fill out the opportunity form, assign to a pipeline/stage, attach to a contact, set value, and add custom fields. Also covers editing, reassigning, and adding notes.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Use "[Client Name] — [Service Type]" naming convention. Add notes every time you take action.</p>`,
+        accordions: [{ title: "Step-by-Step: Creating an Opportunity",
+          content: `<h3>Manual Creation</h3>
+<ul><li>Navigate to Opportunities → Click <strong>+ Add Opportunity</strong></li><li>Select a Primary Contact</li><li>Add Opportunity Name, Pipeline, Stage, Value, Owner</li><li>Click <strong>Create</strong></li></ul>
+<h3>Editing</h3>
+<p>Click any opportunity card to update value, owner, status, notes, or stage.</p>
+<h3>FAQs</h3>
+<p><strong>Q: Can I move an opportunity to a different pipeline?</strong><br>A: Not directly — create a new one in the target pipeline.</p>
+<p><strong>Q: What if I delete a linked contact?</strong><br>A: The opportunity remains but the contact link breaks.</p>` }] },
+      { title: "Importing Opportunities", video: null, youtube: null, completed: false,
+        description: `<p>Bulk import opportunities from a CSV or spreadsheet directly into a pipeline. This lesson covers file format requirements, field mapping, and what to watch out for.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Test with 5–10 rows first. Opportunity imports are NOT reversible.</p>`,
+        accordions: [{ title: "Bulk Import Guide",
+          content: `<h3>Steps</h3>
+<ul><li>Opportunities → Import → Select Opportunities → Upload CSV → Map fields → Start Import</li></ul>
+<h3>Required Fields</h3>
+<ul><li>Contact ID</li><li>Opportunity Name</li><li>Pipeline ID or Name</li></ul>
+<p><strong>Warning:</strong> Imports cannot be undone. Always test with a small batch first.</p>` }] },
+      { title: "Using Custom Fields for Opportunities", video: null, youtube: null, completed: false,
+        description: `<p>Track data that doesn't fit default fields — project deadlines, service categories, lead sources. Covers creating fields, choosing types, and organizing into groups.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Use dropdowns instead of text fields to keep data clean and filterable.</p>`,
+        accordions: [{ title: "Custom Fields Reference",
+          content: `<h3>Field Types</h3>
+<ul><li>Single Line Text, Multi Line Text, Number</li><li>Dropdown (recommended), Multi Select</li><li>Date Picker, Checkbox, File Upload</li></ul>
+<p>Custom field data can be used in workflows, filters, reports, and email/SMS merge fields.</p>` }] },
+      { title: "Filtering & Searching Opportunities", video: null, youtube: null, completed: false,
+        description: `<p>Find deals fast with filters for stage, status, assigned user, date, value, tags, and custom fields. Covers Board View vs. List View and saving filter presets.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Create a saved filter for "My Open Opportunities" — your daily starting point.</p>`,
+        accordions: [{ title: "Search & Filter Reference",
+          content: `<h3>Board View vs. List View</h3>
+<p><strong>Board (Kanban)</strong> — Visual cards by stage. Great for drag-and-drop management.</p>
+<p><strong>List</strong> — Table format with sortable columns. Best for bulk actions and exports.</p>
+<h3>Useful Filter Presets</h3>
+<ul><li>"My Open Deals" — Status: Open + Assigned: You</li><li>"Stale Opportunities" — Last Updated: 30+ days ago</li><li>"High Value" — Value over $5,000 + Open</li></ul>` }] },
+      { title: "Automating Opportunities with Workflows", video: null, youtube: null, completed: false,
+        description: `<p>Trigger workflows on opportunity events — created, stage-changed, won, lost. Also use workflow actions to auto-create opportunities, move stages, or update values.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Most common CRST automation: estimate form → auto-create opportunity → assign team member. Always test with a test contact first.</p>`,
+        accordions: [{ title: "Opportunity Workflow Triggers & Actions",
+          content: `<h3>Triggers</h3>
+<ul><li>Opportunity Created</li><li>Stage Changed</li><li>Status Changed</li><li>Value Changed</li><li>Assigned User Changed</li></ul>
+<h3>Actions</h3>
+<ul><li>Create/Update Opportunity</li><li>Move to Stage</li><li>Update Status</li></ul>
+<h3>Multiple Opportunities Toggle</h3>
+<p>Enable "Allow Multiple Opportunities" if one contact can have multiple active deals in the same pipeline.</p>` }] },
+      { title: "Bulk Actions for Opportunities", video: null, youtube: null, completed: false,
+        description: `<p>Update many opportunities at once — stage changes, owner reassignment, status updates, deletion. Covers selecting, available actions, and safety best practices.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Always filter first, review, THEN apply. Never bulk-edit from an unfiltered view.</p>`,
+        accordions: [{ title: "Bulk Actions Reference",
+          content: `<h3>Available Actions</h3>
+<ul><li>Change Stage</li><li>Change Status</li><li>Reassign Owner</li><li>Delete (cannot be undone)</li><li>Update Custom Fields</li></ul>
+<p>Navigate to Opportunities → List View → Select → Bulk Action Toolbar.</p>` }] },
+      { title: "Pipeline Reporting & Dashboards", video: null, youtube: null, completed: false,
+        description: `<p>Read pipeline reports — total value, conversion rates, average time in stage, win/loss ratios. Add pipeline widgets to your dashboard for at-a-glance metrics.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Check weekly — look for deals stuck in the same stage too long. Conversion drops between stages signal process problems.</p>`,
+        accordions: [{ title: "Dashboard & Reporting Reference",
+          content: `<h3>Pipeline Widgets</h3>
+<ul><li>Pipeline Value — Total open opportunity value</li><li>Conversion Rate — Stage-to-stage progression</li><li>Funnel — Visual stage distribution</li><li>Pie Chart — Proportional breakdown</li><li>Won vs. Lost — Outcome comparison</li></ul>
+<h3>Key Metrics</h3>
+<ul><li>Average Deal Size</li><li>Average Time in Stage</li><li>Win Rate</li><li>Sales Cycle Length</li></ul>` }] }
+    ]
+  },
+  m3: {
+    currentLesson: 0,
+    lessons: [
+      { title: "Introduction to Workflows", video: null, youtube: null, completed: false,
+        description: `<p>Workflows are the automation engine of CRST Web. They let you build "if this, then that" sequences that fire automatically based on triggers — form submissions, tag changes, appointment bookings, pipeline stage moves, and more. This lesson introduces how workflows work, the builder interface, and the difference between triggers and actions.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Think of workflows as your digital employee. They handle the repetitive follow-up so your team can focus on closing deals.</p>`,
+        accordions: [{ title: "Workflows Overview",
+          content: `<h3>What is a Workflow?</h3>
+<p>A workflow is an automated sequence of actions triggered by a specific event. When the trigger fires, CRST Web executes each action in order — sending emails, SMS, updating records, creating tasks, and more.</p>
+<h3>Key Concepts</h3>
+<ul><li><strong>Trigger</strong> — The event that starts the workflow (form submitted, tag added, stage changed, etc.)</li>
+<li><strong>Action</strong> — What happens after the trigger fires (send email, send SMS, wait, create opportunity, etc.)</li>
+<li><strong>Conditions/Filters</strong> — Rules that control which contacts flow through (if/else branching)</li>
+<li><strong>Wait Steps</strong> — Delays between actions (wait 5 minutes, wait until Monday, etc.)</li></ul>
+<h3>Draft vs. Published</h3>
+<p>Workflows start in Draft mode. They only run on live contacts when you toggle to Published. Always test before publishing.</p>` }] },
+      { title: "Building Your First Workflow", video: null, youtube: null, completed: false,
+        description: `<p>Step-by-step walkthrough of creating a workflow from scratch — choosing a trigger, adding actions, setting wait steps, adding conditions, and publishing. We'll build a simple lead follow-up sequence as an example.</p>`,
+        accordions: [{ title: "Step-by-Step: Creating a Workflow",
+          content: `<h3>Steps</h3>
+<ul><li>Go to <strong>Automation → Workflows</strong></li><li>Click <strong>+ Create Workflow</strong></li><li>Choose <strong>Start from Scratch</strong> or use a template</li><li>Add a <strong>Trigger</strong> (e.g., Form Submitted)</li><li>Add <strong>Actions</strong> below the trigger (Send Email, Wait, Send SMS, etc.)</li><li>Use <strong>If/Else</strong> branches for conditional logic</li><li>Test with a test contact</li><li>Toggle from Draft to <strong>Published</strong></li></ul>` }] },
+      { title: "Workflow Triggers Explained", video: null, youtube: null, completed: false,
+        description: `<p>Deep dive into every available trigger — CRM triggers (contact created, tag added), appointment triggers, opportunity triggers, form/survey triggers, payment triggers, and more. Know which trigger to use for which scenario.</p>`,
+        accordions: [{ title: "Trigger Categories",
+          content: `<h3>CRM Triggers</h3>
+<ul><li>Contact Created, Contact Changed, Contact Tag Added/Removed, Contact DND</li></ul>
+<h3>Appointment Triggers</h3>
+<ul><li>Appointment Booked, Status Changed, Cancelled, No-Show</li></ul>
+<h3>Opportunity Triggers</h3>
+<ul><li>Opportunity Created, Stage Changed, Status Changed, Value Changed</li></ul>
+<h3>Form & Survey Triggers</h3>
+<ul><li>Form Submitted, Survey Submitted, Chat Widget Message</li></ul>
+<h3>Payment Triggers</h3>
+<ul><li>Invoice Paid, Subscription Created/Failed</li></ul>` }] },
+      { title: "Workflow Actions Explained", video: null, youtube: null, completed: false,
+        description: `<p>Every action you can use in a workflow — communication actions (email, SMS, voicemail drops), CRM actions (add tag, update field, create opportunity), internal actions (assign user, create task, send notification), and logic actions (if/else, wait, go to).</p>`,
+        accordions: [{ title: "Action Categories",
+          content: `<h3>Communication</h3>
+<ul><li>Send Email, Send SMS, Send Voicemail Drop, Send to Messenger</li></ul>
+<h3>CRM</h3>
+<ul><li>Add/Remove Tag, Update Contact Field, Create/Update Opportunity, Add to Workflow, Remove from Workflow</li></ul>
+<h3>Internal</h3>
+<ul><li>Assign User, Create Task, Send Internal Notification, Add Note</li></ul>
+<h3>Logic</h3>
+<ul><li>If/Else Branch, Wait (time delay), Wait Until (date/condition), Go To, Math Operations</li></ul>` }] },
+      { title: "If/Else Conditions & Branching", video: null, youtube: null, completed: false,
+        description: `<p>Build smart workflows that adapt based on contact data, behavior, or timing. This lesson covers if/else branching, multiple conditions, nested logic, and common patterns.</p>`,
+        accordions: [] },
+      { title: "Workflow Notes & Organization", video: null, youtube: null, completed: false,
+        description: `<p>Keep your workflows clean and documented using workflow notes, action notes, and sticky notes. Essential for team collaboration and troubleshooting.</p>`,
+        accordions: [] },
+      { title: "Testing & Troubleshooting Workflows", video: null, youtube: null, completed: false,
+        description: `<p>How to test workflows with test contacts, read the workflow execution log, troubleshoot common issues, and debug stuck contacts.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Never publish a workflow without testing it first. Use a test contact with your own email and phone number to verify every step fires correctly.</p>`,
+        accordions: [] }
+    ]
+  },
+  m4: {
+    currentLesson: 0,
+    lessons: [
+      { title: "Calendar Types in CRST Web", video: null, youtube: null, completed: false,
+        description: `<p>CRST Web offers multiple calendar types — Round Robin, Class Booking, Collective, and Personal calendars. This lesson explains each type, when to use them, and how they differ.</p>`,
+        accordions: [{ title: "Calendar Types Reference",
+          content: `<h3>Types</h3>
+<ul><li><strong>Round Robin</strong> — Distributes bookings among team members</li><li><strong>Class/Group</strong> — Multiple people book the same time slot</li><li><strong>Collective</strong> — Requires all selected team members to be available</li><li><strong>Personal</strong> — One-on-one booking with a specific person</li><li><strong>Service Calendar</strong> — For service-based businesses with categories and durations</li></ul>` }] },
+      { title: "Creating & Configuring a Calendar", video: null, youtube: null, completed: false,
+        description: `<p>Build a booking calendar from scratch — set availability, buffer times, minimum scheduling notice, custom fields, confirmation messages, and redirect URLs.</p>`,
+        accordions: [] },
+      { title: "Calendar Availability Settings", video: null, youtube: null, completed: false,
+        description: `<p>Configure when you're available for bookings — office hours, specific days, blocked times, and how availability syncs with linked calendars (Google, Outlook, iCloud).</p>`,
+        accordions: [] },
+      { title: "Linking External Calendars", video: null, youtube: null, completed: false,
+        description: `<p>Connect Google Calendar, Outlook, or iCloud to sync availability and prevent double-bookings. Covers two-way sync, conflict calendars, and troubleshooting integration disconnections.</p>`,
+        accordions: [{ title: "Calendar Integration Guide",
+          content: `<h3>Supported Integrations</h3>
+<ul><li>Google Calendar (two-way sync)</li><li>Outlook/Office 365</li><li>iCloud Calendar</li></ul>
+<h3>Conflict Calendars</h3>
+<p>Conflict calendars block time slots that are already booked on your external calendar, preventing double-bookings even when appointments are made outside CRST Web.</p>` }] },
+      { title: "Appointment Notifications (Email, SMS, WhatsApp)", video: null, youtube: null, completed: false,
+        description: `<p>Set up confirmation emails, SMS reminders, and follow-up messages for appointments. Customize timing, content, and which channels to use.</p>`,
+        accordions: [] },
+      { title: "Embedding Calendars & Booking Widgets", video: null, youtube: null, completed: false,
+        description: `<p>Embed your CRST Web calendar on websites, funnels, and landing pages using HTML embed code. Covers styling, custom parameters, and pre-filling form fields.</p>`,
+        accordions: [] },
+      { title: "Managing Appointments & No-Shows", video: null, youtube: null, completed: false,
+        description: `<p>View, reschedule, cancel, and manage appointments. Set up automated no-show follow-ups and appointment status tracking.</p>`,
+        accordions: [] }
+    ]
+  },
+  m5: {
+    currentLesson: 0,
+    lessons: [
+      { title: "CRM Overview & Contact Records", video: null, youtube: null, completed: false,
+        description: `<p>Tour of the CRST Web CRM — how contact records work, what data is stored, how contacts relate to opportunities, conversations, and appointments. The contact record is the central hub of everything in CRST Web.</p>`,
+        accordions: [{ title: "Contact Record Anatomy",
+          content: `<h3>Key Sections</h3>
+<ul><li><strong>Contact Info</strong> — Name, email, phone, address, tags, source</li><li><strong>Activity Timeline</strong> — Every interaction logged chronologically</li><li><strong>Opportunities</strong> — Linked deals and pipeline status</li><li><strong>Appointments</strong> — Past and upcoming bookings</li><li><strong>Tasks</strong> — Assigned to-do items</li><li><strong>Notes</strong> — Internal team notes</li><li><strong>Conversations</strong> — Full message history across all channels</li></ul>` }] },
+      { title: "Adding & Importing Contacts", video: null, youtube: null, completed: false,
+        description: `<p>Add contacts manually, import from CSV, or let them flow in through forms, workflows, and integrations. Covers required fields, duplicate handling, and bulk import best practices.</p>`,
+        accordions: [] },
+      { title: "Tags, Custom Fields & Smart Lists", video: null, youtube: null, completed: false,
+        description: `<p>Organize your CRM with tags for segmentation, custom fields for extra data, and Smart Lists for dynamic filtered views that update automatically.</p>`,
+        accordions: [] },
+      { title: "Tasks & Notes Across the CRM", video: null, youtube: null, completed: false,
+        description: `<p>Create, assign, and manage tasks tied to contacts or opportunities. Add internal notes that your whole team can see. Covers task due dates, reminders, and completion tracking.</p>`,
+        accordions: [] },
+      { title: "Bulk Actions for Contacts", video: null, youtube: null, completed: false,
+        description: `<p>Select multiple contacts and apply bulk actions — add/remove tags, update fields, add to workflows, delete, export, and more.</p>`,
+        accordions: [] }
+    ]
+  },
+  m6: {
+    currentLesson: 0,
+    lessons: [
+      { title: "Funnels & Websites Overview", video: null, youtube: null, completed: false,
+        description: `<p>CRST Web includes a full website and funnel builder. This lesson introduces the builder interface, the difference between funnels and websites, and when to use each.</p>`,
+        accordions: [{ title: "Funnels vs. Websites",
+          content: `<h3>Funnels</h3>
+<p>Multi-step pages designed for a specific conversion goal — lead capture, appointment booking, product purchase. Each step has one clear action.</p>
+<h3>Websites</h3>
+<p>Traditional multi-page websites with navigation, blog, and multiple sections. Better for overall web presence.</p>
+<p>Both use the same drag-and-drop builder with identical elements and design capabilities.</p>` }] },
+      { title: "Building Forms", video: null, youtube: null, completed: false,
+        description: `<p>Create lead capture forms with custom fields, conditional logic, file uploads, and auto-responders. Forms are the primary way new contacts enter your CRST Web CRM.</p>`,
+        accordions: [] },
+      { title: "Building Surveys", video: null, youtube: null, completed: false,
+        description: `<p>Surveys go beyond forms — multi-step question flows with scoring, conditional branching, and custom thank-you pages. Great for qualification and intake.</p>`,
+        accordions: [] },
+      { title: "Chat Widget Setup", video: null, youtube: null, completed: false,
+        description: `<p>Add a live chat widget to any website. Configure business hours, auto-responses, agent assignment, and styling. Chat messages flow into the Conversations Tab.</p>`,
+        accordions: [] },
+      { title: "Domain & DNS Setup", video: null, youtube: null, completed: false,
+        description: `<p>Connect your custom domain to CRST Web funnels, websites, and client portals. Covers DNS records, SSL certificates, and subdomain configuration.</p>`,
+        accordions: [] }
+    ]
+  },
+  m7: {
+    currentLesson: 0,
+    lessons: [
+      { title: "Payment Setup & Stripe Integration", video: null, youtube: null, completed: false,
+        description: `<p>Connect Stripe to your CRST Web account to accept payments. Covers Stripe integration setup, payment methods (credit card, Apple Pay, Google Pay), and account configuration.</p>`,
+        accordions: [{ title: "Stripe Setup Guide",
+          content: `<h3>Connecting Stripe</h3>
+<ul><li>Go to <strong>Settings → Payments → Integrations</strong></li><li>Click <strong>Connect Stripe</strong></li><li>Log into your Stripe account and authorize</li><li>Stripe is now connected to your CRST Web account</li></ul>
+<p>Once connected, you can accept payments through order forms, invoices, payment links, and subscriptions.</p>` }] },
+      { title: "Creating & Managing Invoices", video: null, youtube: null, completed: false,
+        description: `<p>Create one-time and recurring invoices, send via email or SMS, track payment status, and set up automatic payment reminders.</p>`,
+        accordions: [] },
+      { title: "Payment Links & Text-to-Pay", video: null, youtube: null, completed: false,
+        description: `<p>Generate shareable payment links for quick transactions. Send Text-to-Pay links via SMS so clients can pay from their phone in seconds.</p>`,
+        accordions: [] },
+      { title: "Products, Coupons & Taxes", video: null, youtube: null, completed: false,
+        description: `<p>Set up your product catalog, create discount coupons, and configure tax settings for invoices and order forms.</p>`,
+        accordions: [] },
+      { title: "Subscriptions & Recurring Payments", video: null, youtube: null, completed: false,
+        description: `<p>Set up recurring billing, manage active subscriptions, handle failed payment retries, and track subscription revenue.</p>`,
+        accordions: [] }
+    ]
+  },
+  m8: {
+    currentLesson: 0,
+    lessons: [
+      { title: "Dashboard Overview & Navigation", video: null, youtube: null, completed: false,
+        description: `<p>Tour of the CRST Web dashboard — default widgets, how data flows in, and what you can see at a glance. The dashboard is your daily command center.</p>`,
+        accordions: [] },
+      { title: "Creating Custom Dashboards", video: null, youtube: null, completed: false,
+        description: `<p>Build custom dashboards tailored to your role — add widgets, configure data sources, set date ranges, and share dashboards with team members.</p>`,
+        accordions: [{ title: "Widget Types",
+          content: `<h3>Available Widgets</h3>
+<ul><li>Pipeline Value, Conversion Rate, Stage Distribution</li><li>Appointment Stats — booked, completed, no-shows</li><li>Lead Source Breakdown</li><li>Revenue & Payment Tracking</li><li>Task Completion Rates</li><li>Conversation Response Times</li><li>Google Ads & Facebook Ads Performance</li></ul>` }] },
+      { title: "Tracking & Attribution", video: null, youtube: null, completed: false,
+        description: `<p>Understand where your leads come from. Covers UTM tracking, source attribution, Google/Facebook ad reporting, and how to read attribution data.</p>`,
+        accordions: [] },
+      { title: "Custom Reports & Scheduling", video: null, youtube: null, completed: false,
+        description: `<p>Build custom reports, save report templates, and schedule automated email reports to stakeholders on a daily, weekly, or monthly basis.</p>`,
+        accordions: [] }
+    ]
+  },
+  m9: {
+    currentLesson: 0,
+    lessons: [
+      { title: "Review Requests Overview", video: null, youtube: null, completed: false,
+        description: `<p>CRST Web can automatically request Google reviews from your customers via email and SMS. This lesson covers setup, customization, and timing best practices.</p>`,
+        accordions: [{ title: "Review Request Setup",
+          content: `<h3>How It Works</h3>
+<p>CRST Web sends a review request message (SMS or email) with a direct link to your Google Business Profile review page. You can trigger these manually, through workflows, or automatically after key events like invoice payment or appointment completion.</p>
+<h3>Customization</h3>
+<ul><li>Customize the message text and sender</li><li>Set timing delays (e.g., send 1 hour after appointment)</li><li>Add your Google review link</li><li>Use workflows for automated sequences</li></ul>` }] },
+      { title: "Google Business Profile Integration", video: null, youtube: null, completed: false,
+        description: `<p>Connect your Google Business Profile to CRST Web. Monitor reviews, respond directly from the platform, and track your reputation score over time.</p>`,
+        accordions: [] },
+      { title: "Automating Review Requests in Workflows", video: null, youtube: null, completed: false,
+        description: `<p>Build workflows that automatically request reviews at the perfect moment — after a project completes, after an invoice is paid, or when an opportunity is marked as Won.</p>`,
+        accordions: [] }
+    ]
+  },
+  m10: {
+    currentLesson: 0,
+    lessons: [
+      { title: "Business Profile & Account Settings", video: null, youtube: null, completed: false,
+        description: `<p>Configure your CRST Web account — business name, address, phone, timezone, logo, and branding. These settings appear across emails, invoices, and client-facing pages.</p>`,
+        accordions: [] },
+      { title: "User Roles & Permissions", video: null, youtube: null, completed: false,
+        description: `<p>Add team members, set roles (Admin vs. User), and configure permission scopes — who can see what, who can edit what, and who can access which features.</p>`,
+        accordions: [{ title: "Roles & Permissions Reference",
+          content: `<h3>Admin vs. User</h3>
+<p><strong>Admin</strong> — Full access to all settings, billing, users, and data.</p>
+<p><strong>User</strong> — Access controlled by permission scopes. Can be restricted to specific features, pipelines, calendars, or contacts.</p>
+<h3>Permission Scopes</h3>
+<ul><li>Contacts (view, edit, delete, export)</li><li>Opportunities (view, edit, delete)</li><li>Conversations (view, send)</li><li>Workflows (view, create, publish)</li><li>Calendars (view, create, manage)</li><li>Reporting (view dashboards)</li><li>Settings (manage account)</li></ul>` }] },
+      { title: "Phone Numbers & Call Tracking", video: null, youtube: null, completed: false,
+        description: `<p>Set up phone numbers for SMS, call tracking, and voicemail. Configure forwarding numbers, inbound call routing, timeout settings, and call recording.</p>`,
+        accordions: [] },
+      { title: "Email & Domain Configuration", video: null, youtube: null, completed: false,
+        description: `<p>Set up your sending domain for email, configure DKIM/SPF/DMARC records, and manage email signatures for team members.</p>`,
+        accordions: [] },
+      { title: "Integrations Overview", video: null, youtube: null, completed: false,
+        description: `<p>Connect external tools — Google, Facebook, Stripe, Zapier, Quickbooks, Shopify, and more. This lesson covers what's available and how each integration works.</p>`,
+        accordions: [] }
+    ]
+  }
+};
+
+function getModuleEl(moduleId) {
+  const num = moduleId.replace('m', '');
+  return document.getElementById('module' + num);
+}
+
+function renderSidebar(moduleId) {
+  const mod = modules[moduleId];
+  const nav = document.getElementById(`${moduleId}-lessonNav`);
+  nav.innerHTML = mod.lessons.map((l, i) => {
+    let stateClass = 'upcoming';
+    let icon = `<span class="w-5 h-5 rounded-full border-2 border-gray-300 flex-shrink-0 inline-block"></span>`;
+    if (l.completed) {
+      stateClass = 'completed';
+      icon = `<svg class="w-5 h-5 flex-shrink-0 text-complete-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>`;
+    }
+    if (i === mod.currentLesson) {
+      stateClass = 'active';
+      icon = `<svg class="w-5 h-5 flex-shrink-0 text-teal" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>`;
+    }
+    return `<button class="lesson-item ${stateClass} w-full text-left px-4 py-3 flex items-center gap-3 cursor-pointer" onclick="switchLesson('${moduleId}', ${i})">
+      ${icon}
+      <span class="lesson-label text-sm ${i === mod.currentLesson ? 'font-semibold text-teal' : ''}">${i + 1}. ${l.title}</span>
+    </button>`;
+  }).join('');
+  const completedCount = mod.lessons.filter(l => l.completed).length;
+  document.getElementById(`${moduleId}-progressLabel`).textContent = `${completedCount} of ${mod.lessons.length} complete`;
+  document.getElementById(`${moduleId}-progressBar`).style.width = `${(completedCount / mod.lessons.length) * 100}%`;
+}
+
+function renderAccordions(moduleId, lesson) {
+  const container = document.getElementById(`${moduleId}-accordion`);
+  if (!lesson.accordions || lesson.accordions.length === 0) { container.innerHTML = ''; return; }
+  container.innerHTML = `
+    <div class="mb-2">
+      <h3 class="text-sm font-semibold text-navy uppercase tracking-wide mb-3 flex items-center gap-2">
+        <span>📄</span> Reference Guides
+      </h3>
+      ${lesson.accordions.map((a, i) => `
+        <div class="bg-white rounded-xl shadow-sm mb-3 border-l-4 border-teal overflow-hidden">
+          <button onclick="toggleAccordion('${moduleId}', ${i})" class="w-full text-left px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition">
+            <span class="font-semibold text-navy text-sm">${a.title}</span>
+            <svg class="w-5 h-5 text-gray-400 accordion-chevron" id="${moduleId}-chevron-${i}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="accordion-content" id="${moduleId}-acc-${i}">
+            <div class="px-6 pb-6 accordion-article text-sm text-text-body">${a.content}</div>
+          </div>
+        </div>
+      `).join('')}
+    </div>`;
+}
+
+function toggleAccordion(moduleId, index) {
+  document.getElementById(`${moduleId}-acc-${index}`).classList.toggle('open');
+  document.getElementById(`${moduleId}-chevron-${index}`).classList.toggle('open');
+}
+
+function switchLesson(moduleId, index) {
+  const mod = modules[moduleId];
+  const video = document.getElementById(`${moduleId}-videoPlayer`);
+  if (video) video.pause();
+
+  mod.currentLesson = index;
+  const lesson = mod.lessons[index];
+  document.getElementById(`${moduleId}-lessonTitle`).textContent = lesson.title;
+
+  const ytContainer = document.getElementById(`${moduleId}-youtubePlayer`);
+  if (ytContainer) {
+    if (lesson.youtube) {
+      ytContainer.innerHTML = `<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/${lesson.youtube}?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    } else {
+      ytContainer.innerHTML = `<div class="w-full aspect-video bg-gray-900 rounded-lg flex items-center justify-center"><div class="text-center"><div class="text-4xl mb-2 opacity-30">🎬</div><p class="text-gray-500 text-sm font-medium">Video Coming Soon</p><p class="text-gray-600 text-xs mt-1">${lesson.title}</p></div></div>`;
+    }
+  } else if (video) {
+    const source = document.getElementById(`${moduleId}-videoSource`);
+    source.src = lesson.video;
+    video.load();
+  }
+
+  document.getElementById(`${moduleId}-lessonDescription`).innerHTML = lesson.description;
+  renderAccordions(moduleId, lesson);
+  renderSidebar(moduleId);
+
+  if (window.innerWidth < 769) {
+    const moduleEl = getModuleEl(moduleId);
+    const sidebar = moduleEl.querySelector('.module-sidebar');
+    if (sidebar) sidebar.classList.add('collapsed');
+  }
+
+  getModuleEl(moduleId).scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function markComplete(moduleId) {
+  const mod = modules[moduleId];
+  mod.lessons[mod.currentLesson].completed = true;
+  if (mod.currentLesson < mod.lessons.length - 1) {
+    switchLesson(moduleId, mod.currentLesson + 1);
+  } else {
+    renderSidebar(moduleId);
+    showCongrats(moduleId);
+  }
+}
+
+function nextLesson(moduleId) {
+  const mod = modules[moduleId];
+  if (mod.currentLesson < mod.lessons.length - 1) switchLesson(moduleId, mod.currentLesson + 1);
+}
+
+function toggleModuleSidebar(moduleId) {
+  const moduleEl = getModuleEl(moduleId);
+  const sidebar = moduleEl.querySelector('.module-sidebar');
+  sidebar.classList.toggle('collapsed');
+  const chevron = sidebar.querySelector('.chevron-icon');
+  chevron.style.transform = sidebar.classList.contains('collapsed') ? 'rotate(-90deg)' : 'rotate(0deg)';
+}
+
+function showCongrats(moduleId) {
+  const mod = modules[moduleId];
+  if (mod.lessons.every(l => l.completed)) {
+    const names = {m1:'Conversations Tab',m2:'Pipelines & Opportunities',m3:'Workflows & Automations',m4:'Calendars & Appointments',m5:'Contacts & CRM',m6:'Sites, Funnels & Forms',m7:'Payments & Invoicing',m8:'Dashboards & Reporting',m9:'Reputation Management & Reviews',m10:'Settings & Configuration'};
+    document.getElementById(`${moduleId}-lessonDescription`).innerHTML += `
+      <div class="mt-6 bg-green-50 border border-green-200 rounded-xl p-6 text-center">
+        <p class="text-2xl mb-2">🎉</p>
+        <p class="text-lg font-semibold text-green-800">Congratulations!</p>
+        <p class="text-green-700 text-sm mt-1">You've completed all ${mod.lessons.length} lesson${mod.lessons.length > 1 ? 's' : ''} in the ${names[moduleId]} training module.</p>
+      </div>`;
+  }
+}
+
+Object.keys(modules).forEach(id => { renderSidebar(id); switchLesson(id, 0); });
+</script>
+
+</body>
+</html>
