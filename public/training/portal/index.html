@@ -1210,23 +1210,41 @@ function renderSidebar(moduleId) {
 function renderAccordions(moduleId, lesson) {
   const container = document.getElementById(`${moduleId}-accordion`);
   if (!lesson.accordions || lesson.accordions.length === 0) { container.innerHTML = ''; return; }
-  container.innerHTML = `
-    <div class="mb-2">
-      <h3 class="text-sm font-semibold text-navy uppercase tracking-wide mb-3 flex items-center gap-2">
-        <span>&#128196;</span> Reference Guides
-      </h3>
-      ${lesson.accordions.map((a, i) => `
-        <div class="bg-white rounded-xl shadow-sm mb-3 border-l-4 border-teal overflow-hidden">
-          <button onclick="toggleAccordion('${moduleId}', ${i})" class="w-full text-left px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition">
-            <span class="font-semibold text-navy text-sm">${a.title}</span>
-            <svg class="w-5 h-5 text-gray-400 accordion-chevron" id="${moduleId}-chevron-${i}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </button>
-          <div class="accordion-content" id="${moduleId}-acc-${i}">
-            <div class="px-6 pb-6 accordion-article text-sm text-text-body">${a.content}</div>
+
+  if (moduleId === 'm1') {
+    container.innerHTML = `
+      <div class="mb-2">
+        <h3 class="text-sm font-semibold text-navy uppercase tracking-wide mb-3 flex items-center gap-2">
+          <span>&#128196;</span> Reference Guides
+        </h3>
+        ${lesson.accordions.map((a, i) => `
+          <div class="bg-white rounded-xl shadow-sm mb-3 border-l-4 border-teal overflow-hidden">
+            <button onclick="toggleAccordion('${moduleId}', ${i})" class="w-full text-left px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition">
+              <span class="font-semibold text-navy text-sm">${a.title}</span>
+              <svg class="w-5 h-5 text-gray-400 accordion-chevron" id="${moduleId}-chevron-${i}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="accordion-content" id="${moduleId}-acc-${i}">
+              <div class="px-6 pb-6 accordion-article text-sm text-text-body">${a.content}</div>
+            </div>
           </div>
-        </div>
-      `).join('')}
-    </div>`;
+        `).join('')}
+      </div>`;
+  } else {
+    container.innerHTML = `
+      <div class="mb-2">
+        <h3 class="text-sm font-semibold text-navy uppercase tracking-wide mb-3 flex items-center gap-2">
+          <span>&#128196;</span> Reference Guides
+        </h3>
+        ${lesson.accordions.map(a => `
+          <div class="bg-white rounded-xl shadow-sm mb-4 border-l-4 border-teal overflow-hidden">
+            <div class="px-6 py-4">
+              <h3 class="font-semibold text-navy text-base mb-3">${a.title}</h3>
+              <div class="accordion-article text-sm text-text-body">${a.content}</div>
+            </div>
+          </div>
+        `).join('')}
+      </div>`;
+  }
 }
 
 function toggleAccordion(moduleId, index) {
