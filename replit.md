@@ -4,8 +4,8 @@
 Full-service website for Cornerstone Services, Inc. — Hudson Valley's trusted direct mail, printing, and data services company since 1998. Built with Astro 4.16 + Tailwind CSS. BBB A+ rated, serving Ulster, Dutchess, and Orange Counties.
 
 ## Recent Changes
-- **2026-02-21**: Added Module 2 (Pipelines & Opportunities) to training page — 1 lesson with video + 3 knowledge base accordion articles (Understanding Pipelines, Understanding Opportunities, Create New Opportunity Toggle). Restructured page to support multiple independent modules.
-- **2026-02-21**: Built standalone training page at /training/conversations-tab/ — 8-lesson CRST Web Conversations Tab module with video players, lesson switcher, progress tracking. Self-contained HTML (Tailwind CDN, vanilla JS). noindex/nofollow. Videos served from /videos/ directory.
+- **2026-02-21**: Expanded training page to full 10-module platform: M1 Conversations(8 lessons, MP4 video), M2 Pipelines(10 lessons, 1 YouTube + placeholders), M3 Workflows(7), M4 Calendars(7), M5 CRM(5), M6 Sites/Forms(5), M7 Payments(5), M8 Dashboards(4), M9 Reviews(3), M10 Settings(5). Total: 59 lessons. All white-labeled as "CRST Web". YouTube embed support + "Video Coming Soon" placeholder for lessons without videos.
+- **2026-02-21**: Built standalone training page at /training/conversations-tab/ — Self-contained HTML (Tailwind CDN, vanilla JS). noindex/nofollow. Videos served from /videos/ directory. Each module has independent sidebar, progress tracking, lesson switcher, accordion reference guides.
 - **2026-02-21**: Updated meta titles/descriptions for postage-rates and direct-mail pages. Added /non-profit-mailing-application redirect.
 - **2026-02-19**: Switched to hybrid output mode with @astrojs/node adapter. Added dynamic catch-all [...slug].astro for runtime 301 redirects (blog patterns, case studies, printing partners, WP content, etc.). Comprehensive GSC-based redirect mapping added to astro.config.mjs.
 - **2026-02-18**: Removed all blog content (blog moving to blog.crst.net subdomain). Deleted blog pages, data files, components. Updated legacy redirects to point to blog.crst.net. Removed Blog from navigation.
