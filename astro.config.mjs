@@ -147,6 +147,12 @@ export default defineConfig({
     '/resources/usps-templates/': '/usps-direct-mailer-templates/',
     '/wp-content/uploads/2023/11/11-Envelope-Template.pdf': '/resources/envelope-sizes/',
 
+    // --- Former WordPress resource pages ---
+    '/direct-mail-tools/address-change/': '/resources/mail-forwarding/',
+    '/ancillary-service-endorsements/': '/resources/mail-forwarding/',
+    '/periodicals-complete-overview/': '/services/mailing/',
+    '/understanding-periodicals/': '/services/mailing/',
+
     // --- Root-level blog post ---
     '/a-november-2024-post-election-assessment-from-a-hudson-valley-political-consultant/': 'https://blog.crst.net/',
 
