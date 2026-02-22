@@ -7,6 +7,7 @@ Full-service website for Cornerstone Services, Inc. — Hudson Valley's trusted 
 - **2026-02-21**: Renamed training page from /training/conversations-tab/ to /training/portal/. Updated title to "CRST Web Training Portal". Added 301 redirect from old URL (both in astro.config.mjs and static HTML redirect).
 - **2026-02-21**: Expanded training page to full 10-module platform: M1 Conversations(8 lessons, MP4 video), M2 Pipelines(10 lessons, 1 YouTube + placeholders), M3 Workflows(7), M4 Calendars(7), M5 CRM(5), M6 Sites/Forms(5), M7 Payments(5), M8 Dashboards(4), M9 Reviews(3), M10 Settings(5). Total: 59 lessons. All white-labeled as "CRST Web". YouTube embed support + "Video Coming Soon" placeholder for lessons without videos.
 - **2026-02-21**: Built standalone training page at /training/portal/ — Self-contained HTML (Tailwind CDN, vanilla JS). noindex/nofollow. Videos served from /videos/ directory. Each module has independent sidebar, progress tracking, lesson switcher, accordion reference guides.
+- **2026-02-22**: Created 3 new resource pages: ancillary-service-endorsements (5 endorsement types, comparison table), periodicals (eligibility, rates, requester pubs, nonprofit rates, vs Marketing Mail), understanding-periodicals (processing, zone pricing, ad/editorial split, markup rules, publisher tips). Added to resources index. Updated redirects from temp destinations to real pages. Added /resources/cornerstone-mailing-permits/ → /resources/mailing-permits/ redirect.
 - **2026-02-22**: GSC-driven SEO fixes: Updated meta titles/descriptions for mailing-permits, postage-rates (→2026), mail-forwarding (address change keywords), envelope-sizes, postal-dictionary. Fixed double "| CRST" title suffix. Added 301 redirects for /direct-mail-tools/address-change/, /ancillary-service-endorsements/, /periodicals-complete-overview/, /understanding-periodicals/ to relevant resource/service pages.
 - **2026-02-21**: Updated meta titles/descriptions for postage-rates and direct-mail pages. Added /non-profit-mailing-application redirect.
 - **2026-02-19**: Switched to hybrid output mode with @astrojs/node adapter. Added dynamic catch-all [...slug].astro for runtime 301 redirects (blog patterns, case studies, printing partners, WP content, etc.). Comprehensive GSC-based redirect mapping added to astro.config.mjs.
@@ -67,10 +68,7 @@ public/
 - Workflow runs `npm run build && HOST=0.0.0.0 PORT=5000 node dist/server/entry.mjs`
 
 ## Content Queue (Pages to Build)
-- **/resources/ancillary-service-endorsements/** — USPS ancillary service endorsements (Address Service Requested, Return Service Requested, etc.). GSC: 1,406 impressions. Currently temp-redirected to /resources/mail-forwarding/. Assign to Leizl via Prompt Engine.
-- **/resources/periodicals-overview/** — Comprehensive periodicals mailing class guide. GSC demand from /periodicals-complete-overview/ (currently temp-redirected to /services/mailing/). Assign to Leizl via Prompt Engine.
-- **/resources/understanding-periodicals/** — Introductory periodicals guide. GSC demand from /understanding-periodicals/ (currently temp-redirected to /services/mailing/). Assign to Leizl via Prompt Engine.
-- When pages are built: update redirects in astro.config.mjs + [...slug].astro to point to the new pages instead of the current temp destinations.
+- Content queue is currently empty. All previously queued pages have been built.
 
 ## User Preferences
 - Clean footer layout without map embed

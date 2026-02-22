@@ -1,0 +1,220 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import CTASection from '../../components/CTASection.astro';
+import { BUSINESS } from '../../data/site';
+---
+
+<BaseLayout
+  title="Understanding Periodicals: Processing, Zone Pricing, Markup & Tips for Publishers"
+  description="A detailed breakdown of how USPS Periodicals are processed, zone-based pricing, markup rules, advertising vs. editorial splits, and practical tips for publishers managing periodical mailings."
+>
+  <PageHero
+    title="Understanding Periodicals Mailing"
+    subtitle="How periodicals are processed, priced, and prepared — practical knowledge for publishers."
+    breadcrumbs={[
+      { label: 'Resources', href: '/resources/' },
+      { label: 'Understanding Periodicals' },
+    ]}
+  />
+
+  <section class="py-14 lg:py-20">
+    <div class="container-wide">
+      <div class="max-w-3xl mx-auto">
+        <div class="section-divider mb-6"></div>
+        <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-6">
+          How Periodicals Are Processed
+        </h2>
+        <p class="text-navy-600/80 leading-relaxed mb-4">
+          Periodicals mail follows a specific processing path through the USPS that differs from other mail classes. Understanding this path helps publishers prepare their mailings correctly and avoid costly delays or postage adjustments.
+        </p>
+
+        <div class="space-y-4 mb-10">
+          <div class="bg-white border border-gray-200 rounded-xl p-6">
+            <h3 class="font-heading font-bold text-navy-800 mb-2">Entry at the BMEU</h3>
+            <p class="text-sm text-navy-600/80 leading-relaxed">
+              Periodicals are entered at a Business Mail Entry Unit (BMEU) — the same facility used for Marketing Mail and other presorted mailings. At the BMEU, the mailing is verified against the documentation (PS Form 3541, the Postage Statement) submitted by the mailer. The USPS checks piece counts, weight samples, and sortation accuracy.
+            </p>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-xl p-6">
+            <h3 class="font-heading font-bold text-navy-800 mb-2">Sortation Requirements</h3>
+            <p class="text-sm text-navy-600/80 leading-relaxed">
+              Periodicals must be presorted to qualify for discounted rates. The USPS requires sorting to progressively finer levels — from Mixed ADC (the coarsest level) down to carrier-route (the finest). The finer your sort, the lower your per-piece rate. Automation-compatible pieces (with Intelligent Mail barcodes) qualify for additional discounts.
+            </p>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-xl p-6">
+            <h3 class="font-heading font-bold text-navy-800 mb-2">Delivery Standards</h3>
+            <p class="text-sm text-navy-600/80 leading-relaxed">
+              The USPS targets delivery of Periodicals within 2–9 days depending on distance. Local mailings (within the same SCF area) are typically delivered in 2–3 days. Cross-country mailings may take 7–9 days. Unlike First-Class Mail, there is no service guarantee for Periodicals delivery speed.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-display text-crst-primary mb-6">Zone-Based Pricing Explained</h2>
+
+        <p class="text-navy-600/80 leading-relaxed mb-4">
+          One of the most complex aspects of Periodicals postage is zone-based pricing. Unlike most other mail classes where you pay a flat rate per piece, Periodicals postage includes a per-pound component that varies by zone — meaning how far the mail is traveling.
+        </p>
+
+        <div class="bg-navy-50 rounded-xl p-6 sm:p-8 mb-4">
+          <h3 class="font-heading font-bold text-navy-800 mb-4">How Zone Pricing Works</h3>
+          <div class="space-y-3">
+            <div class="flex items-start gap-3">
+              <span class="bg-crst-primary text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-0.5">1</span>
+              <p class="text-sm text-navy-600/80">The USPS divides the country into zones (1–9) based on distance from the entry point of the mailing</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="bg-crst-primary text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-0.5">2</span>
+              <p class="text-sm text-navy-600/80">Zone 1 is the closest (local) and Zone 9 is the farthest (cross-country)</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="bg-crst-primary text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-0.5">3</span>
+              <p class="text-sm text-navy-600/80">The advertising portion of your publication's weight is charged at the zone rate — higher zones cost more</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="bg-crst-primary text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-0.5">4</span>
+              <p class="text-sm text-navy-600/80">The editorial portion is charged at a flat (non-zoned) pound rate — the same regardless of distance</p>
+            </div>
+          </div>
+        </div>
+        <p class="text-navy-600/80 leading-relaxed mb-8 text-sm">
+          This means that publications with a high advertising ratio and a national audience will pay significantly more in zone charges than publications with mostly editorial content distributed locally. This is an important factor when evaluating whether Periodicals is the right mail class for your publication.
+        </p>
+
+        <h2 class="text-2xl font-display text-crst-primary mb-6">The Advertising/Editorial Split</h2>
+
+        <p class="text-navy-600/80 leading-relaxed mb-4">
+          Every Periodicals mailing requires you to calculate the percentage of your publication that is advertising versus editorial content. This split directly affects your postage cost because advertising pounds are charged at the higher zone rate, while editorial pounds are charged at the flat rate.
+        </p>
+
+        <div class="space-y-4 mb-10">
+          <div class="bg-navy-50 rounded-xl p-6">
+            <h3 class="font-heading font-bold text-navy-800 mb-2">What Counts as Advertising?</h3>
+            <p class="text-navy-600/80 text-sm leading-relaxed">
+              Any content that promotes the sale of a product or service, lists prices, or includes a call to action to purchase. This includes paid display ads, classified ads, house ads for the publisher's own products, and advertorial content that promotes a specific business.
+            </p>
+          </div>
+
+          <div class="bg-navy-50 rounded-xl p-6">
+            <h3 class="font-heading font-bold text-navy-800 mb-2">What Counts as Editorial?</h3>
+            <p class="text-navy-600/80 text-sm leading-relaxed">
+              News articles, opinion columns, letters to the editor, comics, puzzles, poetry, fiction, event listings (if not paid), and similar content that serves the reader rather than promoting a business.
+            </p>
+          </div>
+
+          <div class="bg-navy-50 rounded-xl p-6">
+            <h3 class="font-heading font-bold text-navy-800 mb-2">How to Calculate the Split</h3>
+            <p class="text-navy-600/80 text-sm leading-relaxed">
+              Measure the total column inches (or square inches) of advertising and editorial content in the issue. Divide advertising inches by total inches to get the advertising percentage. This percentage is applied to the weight of each copy to determine how many pounds are billed at the advertising rate versus the editorial rate.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-display text-crst-primary mb-6">Markup Rules & Preparation</h2>
+
+        <p class="text-navy-600/80 leading-relaxed mb-4">
+          "Markup" in the Periodicals context refers to how pieces are labeled, sorted, and bundled for USPS acceptance. Proper markup is essential — incorrect preparation can result in your mailing being rejected or assessed additional postage.
+        </p>
+
+        <div class="space-y-4 mb-10">
+          <div class="bg-white border border-gray-200 rounded-xl p-6">
+            <h3 class="font-heading font-bold text-navy-800 mb-2">Addressing Requirements</h3>
+            <ul class="text-sm text-navy-600/80 space-y-1.5">
+              <li class="flex items-start gap-2"><span class="text-crst-gold">•</span> Each piece must have an Intelligent Mail barcode (IMb) for automation rates</li>
+              <li class="flex items-start gap-2"><span class="text-crst-gold">•</span> Addresses must be CASS-certified and NCOA-processed within 95 days of mailing</li>
+              <li class="flex items-start gap-2"><span class="text-crst-gold">•</span> The publication title, issue date, and frequency must appear on the front cover</li>
+              <li class="flex items-start gap-2"><span class="text-crst-gold">•</span> The known office of publication address must be printed inside each issue</li>
+            </ul>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-xl p-6">
+            <h3 class="font-heading font-bold text-navy-800 mb-2">Bundling & Container Requirements</h3>
+            <ul class="text-sm text-navy-600/80 space-y-1.5">
+              <li class="flex items-start gap-2"><span class="text-crst-gold">•</span> Pieces must be sorted into bundles (trays or sacks) by ZIP code, SCF, ADC, or carrier route</li>
+              <li class="flex items-start gap-2"><span class="text-crst-gold">•</span> Each bundle must meet minimum piece counts to qualify for that sortation level</li>
+              <li class="flex items-start gap-2"><span class="text-crst-gold">•</span> Bundles are placed into USPS sacks or trays with colored tags indicating the sortation level</li>
+              <li class="flex items-start gap-2"><span class="text-crst-gold">•</span> Palletized mailings can qualify for additional drop-ship discounts</li>
+            </ul>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-xl p-6">
+            <h3 class="font-heading font-bold text-navy-800 mb-2">Postage Statements</h3>
+            <ul class="text-sm text-navy-600/80 space-y-1.5">
+              <li class="flex items-start gap-2"><span class="text-crst-gold">•</span> PS Form 3541 (Postage Statement) must accompany every Periodicals mailing</li>
+              <li class="flex items-start gap-2"><span class="text-crst-gold">•</span> The statement reports piece counts, weights, sortation levels, and the ad/editorial split</li>
+              <li class="flex items-start gap-2"><span class="text-crst-gold">•</span> Electronic submission through PostalOne! is available and preferred for regular mailers</li>
+              <li class="flex items-start gap-2"><span class="text-crst-gold">•</span> Inaccurate statements can result in postage adjustments, penalties, or loss of mailing privileges</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-display text-crst-primary mb-6">Practical Tips for Publishers</h2>
+
+        <div class="space-y-4 mb-10">
+          <div class="flex items-start gap-3 bg-white border border-gray-200 rounded-lg p-4">
+            <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <div>
+              <h4 class="font-heading font-bold text-navy-800 text-sm mb-1">Keep Your Ad Percentage Below 75%</h4>
+              <p class="text-sm text-navy-600/80">If advertising exceeds 75% of your publication, the USPS may reclassify it as Marketing Mail — which means higher postage and potential loss of your Periodicals authorization.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 bg-white border border-gray-200 rounded-lg p-4">
+            <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <div>
+              <h4 class="font-heading font-bold text-navy-800 text-sm mb-1">Clean Your Subscriber List Regularly</h4>
+              <p class="text-sm text-navy-600/80">Run NCOA processing before every mailing. USPS requires it within 95 days, but doing it fresh for each issue minimizes wasted copies and keeps you compliant.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 bg-white border border-gray-200 rounded-lg p-4">
+            <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <div>
+              <h4 class="font-heading font-bold text-navy-800 text-sm mb-1">Consider Drop-Shipping for National Distribution</h4>
+              <p class="text-sm text-navy-600/80">If your publication mails nationally, transporting copies to regional USPS facilities (drop-shipping) can significantly reduce zone charges on advertising pounds.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 bg-white border border-gray-200 rounded-lg p-4">
+            <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <div>
+              <h4 class="font-heading font-bold text-navy-800 text-sm mb-1">Use Automation-Compatible Formats</h4>
+              <p class="text-sm text-navy-600/80">Ensure your publication is formatted for automated processing — correct barcode placement, readable addresses, and compliant dimensions. Automation rates are significantly lower than non-automation rates.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 bg-white border border-gray-200 rounded-lg p-4">
+            <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <div>
+              <h4 class="font-heading font-bold text-navy-800 text-sm mb-1">Track Your Mailing Calendar</h4>
+              <p class="text-sm text-navy-600/80">Missing your stated publication frequency can jeopardize your Periodicals authorization. If you need to change your frequency, file an amended application before the change takes effect.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 bg-white border border-gray-200 rounded-lg p-4">
+            <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+            <div>
+              <h4 class="font-heading font-bold text-navy-800 text-sm mb-1">File PS Form 3526 on Time</h4>
+              <p class="text-sm text-navy-600/80">The annual Statement of Ownership must be filed by the October 1 deadline and published in your publication. Failure to file can result in loss of Periodicals privileges.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-crst-primary/5 border border-crst-primary/20 rounded-xl p-6 sm:p-8">
+          <h3 class="text-xl font-display font-bold text-crst-primary mb-3">Cornerstone Handles Periodicals Mailings</h3>
+          <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+            From PS Form 3541 preparation to sorting, bundling, and BMEU entry — we manage the entire Periodicals mailing process. We'll calculate your ad/editorial split, prepare your postage statement, process your list through NCOA, and deliver your mailing to the USPS ready to go.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="/resources/periodicals/" class="btn-secondary text-sm">Periodicals Eligibility Guide</a>
+            <a href="/contact/" class="btn-primary text-sm">Contact Us About Periodicals</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>

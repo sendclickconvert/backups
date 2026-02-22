@@ -148,10 +148,11 @@ export default defineConfig({
     '/wp-content/uploads/2023/11/11-Envelope-Template.pdf': '/resources/envelope-sizes/',
 
     // --- Former WordPress resource pages ---
+    '/resources/cornerstone-mailing-permits/': '/resources/mailing-permits/',
     '/direct-mail-tools/address-change/': '/resources/mail-forwarding/',
-    '/ancillary-service-endorsements/': '/resources/mail-forwarding/',
-    '/periodicals-complete-overview/': '/services/mailing/',
-    '/understanding-periodicals/': '/services/mailing/',
+    '/ancillary-service-endorsements/': '/resources/ancillary-service-endorsements/',
+    '/periodicals-complete-overview/': '/resources/periodicals/',
+    '/understanding-periodicals/': '/resources/understanding-periodicals/',
 
     // --- Root-level blog post ---
     '/a-november-2024-post-election-assessment-from-a-hudson-valley-political-consultant/': 'https://blog.crst.net/',
