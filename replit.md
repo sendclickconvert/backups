@@ -66,6 +66,12 @@ public/
 - Hybrid mode: all 134 pages prerendered as static HTML; [...slug].astro is server-rendered (prerender = false) for dynamic 301 redirects
 - Workflow runs `npm run build && HOST=0.0.0.0 PORT=5000 node dist/server/entry.mjs`
 
+## Content Queue (Pages to Build)
+- **/resources/ancillary-service-endorsements/** — USPS ancillary service endorsements (Address Service Requested, Return Service Requested, etc.). GSC: 1,406 impressions. Currently temp-redirected to /resources/mail-forwarding/. Assign to Leizl via Prompt Engine.
+- **/resources/periodicals-overview/** — Comprehensive periodicals mailing class guide. GSC demand from /periodicals-complete-overview/ (currently temp-redirected to /services/mailing/). Assign to Leizl via Prompt Engine.
+- **/resources/understanding-periodicals/** — Introductory periodicals guide. GSC demand from /understanding-periodicals/ (currently temp-redirected to /services/mailing/). Assign to Leizl via Prompt Engine.
+- When pages are built: update redirects in astro.config.mjs + [...slug].astro to point to the new pages instead of the current temp destinations.
+
 ## User Preferences
 - Clean footer layout without map embed
 - Shopping cart icon in header for order page access
