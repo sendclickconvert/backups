@@ -18,7 +18,7 @@ const exactRedirects: Record<string, string> = {
   '/resources/usps-templates': '/usps-direct-mailer-templates/',
   '/resources/usps-templates/': '/usps-direct-mailer-templates/',
   '/direct-mail-tools/cornerstone-mailing-permits/': '/resources/mailing-permits/',
-  '/direct-mail-tools/address-change/': '/resources/mail-forwarding/',
+  '/resources/mail-forwarding/': '/direct-mail-tools/address-change/',
   '/permits-page/': '/resources/mailing-permits/',
   '/non-profit-mailing-application': '/resources/non-profit-mailing/',
   '/non-profit-mailing-application/': '/resources/non-profit-mailing/',
@@ -161,7 +161,7 @@ if (path.startsWith('/printing-partners/')) {
 if (path.startsWith('/direct-mail-services/')) {
   return Astro.redirect('/services/', 301);
 }
-if (path.startsWith('/direct-mail-tools/') && path !== '/direct-mail-tools/envelope-sizes/' && path !== '/direct-mail-tools/postal-dictionary/') {
+if (path.startsWith('/direct-mail-tools/') && path !== '/direct-mail-tools/envelope-sizes/' && path !== '/direct-mail-tools/postal-dictionary/' && path !== '/direct-mail-tools/address-change/') {
   return Astro.redirect('/resources/', 301);
 }
 if (path.startsWith('/wp-content/')) {

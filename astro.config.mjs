@@ -151,7 +151,7 @@ export default defineConfig({
 
     // --- Former WordPress resource pages ---
     '/resources/cornerstone-mailing-permits/': '/resources/mailing-permits/',
-    '/direct-mail-tools/address-change/': '/resources/mail-forwarding/',
+    '/resources/mail-forwarding/': '/direct-mail-tools/address-change/',
     '/ancillary-service-endorsements/': '/resources/ancillary-service-endorsements/',
     '/periodicals-complete-overview/': '/resources/periodicals/',
     '/understanding-periodicals/': '/resources/understanding-periodicals/',
