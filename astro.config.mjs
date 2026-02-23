@@ -146,7 +146,7 @@ export default defineConfig({
     // --- WP-content PDFs (2 indexed) ---
     '/wp-content/uploads/2023/10/4.25-x-11-EDDM-Flat-Card-Template.pdf': '/usps-direct-mailer-templates/',
     '/resources/usps-templates/': '/usps-direct-mailer-templates/',
-    '/wp-content/uploads/2023/11/11-Envelope-Template.pdf': '/resources/envelope-sizes/',
+    '/wp-content/uploads/2023/11/11-Envelope-Template.pdf': '/direct-mail-tools/envelope-sizes/',
 
     // --- Former WordPress resource pages ---
     '/resources/cornerstone-mailing-permits/': '/resources/mailing-permits/',
