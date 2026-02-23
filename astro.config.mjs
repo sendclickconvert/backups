@@ -72,8 +72,9 @@ export default defineConfig({
     '/order-online-direct-mail/': '/contact/',
     '/resources/envelope-sizes/': '/direct-mail-tools/envelope-sizes/',
     '/resources/postal-dictionary/': '/direct-mail-tools/postal-dictionary/',
-    '/direct-mail-tools/cornerstone-mailing-permits/': '/resources/mailing-permits/',
-    '/permits-page/': '/resources/mailing-permits/',
+    '/resources/mailing-permits': '/direct-mail-tools/cornerstone-mailing-permits/',
+    '/resources/mailing-permits/': '/direct-mail-tools/cornerstone-mailing-permits/',
+    '/permits-page/': '/direct-mail-tools/cornerstone-mailing-permits/',
     '/resources/non-profit-mailing': '/non-profit-mailing-application/',
     '/resources/non-profit-mailing/': '/non-profit-mailing-application/',
     '/how-to-get-a-refund-on-postage': '/how-to-get-a-refund-on-postage-a-guide-to-post-office-application-to-refund-postage/',
@@ -154,7 +155,7 @@ export default defineConfig({
     '/wp-content/uploads/2023/11/11-Envelope-Template.pdf': '/direct-mail-tools/envelope-sizes/',
 
     // --- Former WordPress resource pages ---
-    '/resources/cornerstone-mailing-permits/': '/resources/mailing-permits/',
+    '/resources/cornerstone-mailing-permits/': '/direct-mail-tools/cornerstone-mailing-permits/',
     '/resources/mail-forwarding/': '/direct-mail-tools/address-change/',
     '/ancillary-service-endorsements/': '/resources/ancillary-service-endorsements/',
     '/periodicals-complete-overview/': '/resources/periodicals/',

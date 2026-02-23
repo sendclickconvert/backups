@@ -4,20 +4,18 @@ import PageHero from '../../components/PageHero.astro';
 import CTASection from '../../components/CTASection.astro';
 import { BUSINESS } from '../../data/site';
 ---
-
 <BaseLayout
-  title="Mailing Permits Explained: Bulk Mail, Nonprofit & EDDM Permits"
-  description="Learn which USPS mailing permit you need — bulk mail, nonprofit, or EDDM. Cornerstone walks you through permit types, costs, and how to get started."
+  title="USPS Mailing Permit: Cost, Setup & How It Works | Cornerstone Services"
+  description="Get a USPS bulk mail permit or mail under ours — no permit needed to start. Learn permit costs (~$550/yr), indicia rules, and EDDM options for Hudson Valley businesses."
 >
   <PageHero
     title="USPS Mailing Permits Guide"
     subtitle="Everything you need to know about mailing permits for business mail, EDDM, and non-profit postage."
     breadcrumbs={[
-      { label: 'Resources', href: '/resources/' },
+      { label: 'Direct Mail Tools', href: '/direct-mail-tools/' },
       { label: 'Mailing Permits' },
     ]}
   />
-
   <section class="py-14 lg:py-20">
     <div class="container-wide">
       <div class="max-w-3xl mx-auto">
@@ -26,11 +24,9 @@ import { BUSINESS } from '../../data/site';
           What Is a USPS Mailing Permit?
         </h2>
         <p class="text-navy-600/80 leading-relaxed mb-6">
-          A USPS mailing permit authorizes you to send bulk mail at discounted commercial rates. Instead of affixing individual stamps, permit holders use a printed indicia (a marking on the mailpiece) or a meter strip as proof of postage payment. This is the foundation of cost-effective direct mail for businesses, non-profits, and political organizations.
+          A USPS mailing permit authorizes you to send bulk mail at discounted commercial rates. Instead of affixing individual stamps, permit holders use a printed indicia (a marking on the mailpiece) or a meter strip as proof of postage payment. This is the foundation of cost-effective <a href="/direct-mail-marketing/" class="text-crst-primary underline hover:text-crst-gold">direct mail marketing</a> for businesses, non-profits, and political organizations.
         </p>
-
         <h3 class="text-xl font-display text-crst-primary mb-4">Types of Mailing Permits</h3>
-
         <div class="space-y-6 mb-10">
           <div class="bg-navy-50 rounded-xl p-6">
             <h4 class="font-heading font-bold text-navy-800 mb-2">Presort / Bulk Mail Permit (Permit Imprint)</h4>
@@ -41,17 +37,15 @@ import { BUSINESS } from '../../data/site';
               <strong>Annual fee:</strong> Approximately $275 (Mailing Fee) + $275 (Annual Presort Fee) = $550/year. Fees may change — check with USPS or contact us for current pricing.
             </p>
           </div>
-
           <div class="bg-navy-50 rounded-xl p-6">
             <h4 class="font-heading font-bold text-navy-800 mb-2">EDDM Retail (No Permit Required)</h4>
             <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
-              Every Door Direct Mail — Retail (EDDM Retail) requires no mailing permit. You pay postage at the post office or online through the USPS Business Mail Entry tool. This makes EDDM the easiest entry point for businesses new to direct mail.
+              <a href="/direct-mail-tools/eddm-guide/" class="text-crst-primary underline hover:text-crst-gold">Every Door Direct Mail</a> — Retail (EDDM Retail) requires no mailing permit. You pay postage at the post office or online through the USPS Business Mail Entry tool. This makes EDDM the easiest entry point for businesses new to direct mail.
             </p>
             <p class="text-navy-600/80 text-sm leading-relaxed">
               <strong>Postage rate:</strong> Flat rate per piece (currently $0.247 per piece for flats). No annual fees, no permit required. Maximum 5,000 pieces per day per ZIP code.
             </p>
           </div>
-
           <div class="bg-navy-50 rounded-xl p-6">
             <h4 class="font-heading font-bold text-navy-800 mb-2">EDDM with Bulk Mail Entry (BMEU)</h4>
             <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
@@ -61,28 +55,24 @@ import { BUSINESS } from '../../data/site';
               <strong>Requires:</strong> Active mailing permit. Cornerstone can mail under our permit on your behalf — you don't need your own.
             </p>
           </div>
-
           <div class="bg-navy-50 rounded-xl p-6">
             <h4 class="font-heading font-bold text-navy-800 mb-2">Non-Profit Mailing Permit</h4>
             <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
               Qualifying 501(c)(3) organizations can apply for dramatically reduced postage rates — often 40–60% less than commercial rates. Requires USPS authorization through PS Form 3624.
             </p>
             <p class="text-navy-600/80 text-sm leading-relaxed">
-              <strong>See our full guide:</strong> <a href="/resources/non-profit-mailing/" class="text-crst-accent hover:text-crst-primary underline">Non-Profit Mailing Guide</a>
+              <strong>See our full guide:</strong> <a href="/non-profit-mailing-application/" class="text-crst-primary underline hover:text-crst-gold">Non-Profit Mailing Guide</a>
             </p>
           </div>
         </div>
-
         <h3 class="text-xl font-display text-crst-primary mb-4">What Is an Indicia?</h3>
         <p class="text-navy-600/80 leading-relaxed mb-6">
-          An indicia is the printed marking on a mailpiece that serves as proof of postage. It replaces individual stamps and appears in the upper-right corner of the mailpiece. The indicia includes the permit number, post office of mailing, class of mail, and postage payment method. Cornerstone prints the correct indicia on every piece we produce — formatted to USPS specifications for automated processing.
+          An <a href="/direct-mail-tools/postal-dictionary/" class="text-crst-primary underline hover:text-crst-gold">indicia</a> is the printed marking on a mailpiece that serves as proof of postage. It replaces individual stamps and appears in the upper-right corner of the mailpiece. The indicia includes the permit number, post office of mailing, class of mail, and postage payment method. Cornerstone prints the correct indicia on every piece we produce — formatted to USPS specifications for <a href="/direct-mail-tools/postage-rates/" class="text-crst-primary underline hover:text-crst-gold">automated postage processing</a>.
         </p>
-
         <h3 class="text-xl font-display text-crst-primary mb-4">Do You Need Your Own Permit?</h3>
         <p class="text-navy-600/80 leading-relaxed mb-6">
           Not necessarily. Cornerstone can mail under our permit on your behalf — this is common for businesses that mail occasionally or are just starting with direct mail. You only need your own permit if you want to maintain your own postage account directly with the USPS, or if you're a non-profit seeking discounted postage rates (the non-profit authorization must be tied to your own permit).
         </p>
-
         <h3 class="text-xl font-display text-crst-primary mb-4">How to Get a Mailing Permit</h3>
         <p class="text-navy-600/80 leading-relaxed mb-4">
           If you decide you need your own permit, the process involves completing USPS PS Form 3615 (Mailing Permit Application) at your local post office, paying the annual mailing fee and any applicable additional fees, and depositing an initial postage balance into your permit account.
@@ -90,7 +80,6 @@ import { BUSINESS } from '../../data/site';
         <p class="text-navy-600/80 leading-relaxed mb-8">
           Cornerstone can guide you through the application process or simply handle your mailings under our permit — whichever makes more sense for your volume and budget.
         </p>
-
         <div class="bg-crst-primary/5 border border-crst-primary/20 rounded-xl p-6">
           <h4 class="font-heading font-bold text-crst-primary mb-2">Need Help With Permits?</h4>
           <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
@@ -101,6 +90,5 @@ import { BUSINESS } from '../../data/site';
       </div>
     </div>
   </section>
-
   <CTASection />
 </BaseLayout>
