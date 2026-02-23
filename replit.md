@@ -4,6 +4,7 @@
 Full-service website for Cornerstone Services, Inc. — Hudson Valley's trusted direct mail, printing, and data services company since 1998. Built with Astro 4.16 + Tailwind CSS. BBB A+ rated, serving Ulster, Dutchess, and Orange Counties.
 
 ## Recent Changes
+- **2026-02-23**: Major SEO batch — migrated 4 resource pages from /resources/ to /direct-mail-tools/ with full redirect chains: postage-rates (32K impressions), cornerstone-mailing-permits (8K, meta rewrite), postal-dictionary (30K), address-change (25K), envelope-sizes (54K). Created 2 new pages: /non-profit-mailing-application/ (moved from /resources/non-profit-mailing/, 9K impressions) and /how-to-get-a-refund-on-postage-a-guide-to-post-office-application-to-refund-postage/ (new page, 8.9K impressions, PS Form 3533 guide with sidebar layout). Added internal links across all 8 pages for SEO equity flow. Updated catch-all exceptions in [...slug].astro for all /direct-mail-tools/ static pages. Total: 8 pages optimized this session.
 - **2026-02-21**: Renamed training page from /training/conversations-tab/ to /training/portal/. Updated title to "CRST Web Training Portal". Added 301 redirect from old URL (both in astro.config.mjs and static HTML redirect).
 - **2026-02-21**: Expanded training page to full 10-module platform: M1 Conversations(8 lessons, MP4 video), M2 Pipelines(10 lessons, 1 YouTube + placeholders), M3 Workflows(7), M4 Calendars(7), M5 CRM(5), M6 Sites/Forms(5), M7 Payments(5), M8 Dashboards(4), M9 Reviews(3), M10 Settings(5). Total: 59 lessons. All white-labeled as "CRST Web". YouTube embed support + "Video Coming Soon" placeholder for lessons without videos.
 - **2026-02-21**: Built standalone training page at /training/portal/ — Self-contained HTML (Tailwind CDN, vanilla JS). noindex/nofollow. Videos served from /videos/ directory. Each module has independent sidebar, progress tracking, lesson switcher, accordion reference guides.
@@ -69,7 +70,13 @@ public/
 - Workflow runs `npm run build && HOST=0.0.0.0 PORT=5000 node dist/server/entry.mjs`
 
 ## Content Queue (Pages to Build)
-- Content queue is currently empty. All previously queued pages have been built.
+- /direct-mail-marketing/ — Position 48 with 15K impressions. Receiving inbound links from 6+ pages. Needs content audit next session (likely thin/misaligned with search intent). Not a link problem — page authority building via new internal links.
+
+## SEO Migration Tracking
+Pages moved from /resources/ to /direct-mail-tools/:
+- envelope-sizes, postal-dictionary, address-change, cornerstone-mailing-permits, postage-rates
+- Each has: catch-all exception in [...slug].astro, 301 redirects in both astro.config.mjs and [...slug].astro
+- Catch-all line in [...slug].astro must list all /direct-mail-tools/ static pages as exceptions
 
 ## User Preferences
 - Clean footer layout without map embed
