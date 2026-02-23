@@ -67,7 +67,6 @@ export default defineConfig({
     '/direct-mail-services/mail-design/': '/services/graphic-design/',
     '/direct-mail-services/printing-services/': '/services/printing/',
     '/direct-mail-services/crst-web-design-and-development/': '/services/web-design/',
-    '/direct-mail-marketing/': '/services/direct-mail/',
     '/direct-mail-company/': '/',
     '/order-online-direct-mail/': '/contact/',
     '/resources/envelope-sizes/': '/direct-mail-tools/envelope-sizes/',

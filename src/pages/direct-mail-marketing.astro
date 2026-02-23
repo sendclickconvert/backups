@@ -1,0 +1,203 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import CTASection from '../components/CTASection.astro';
+import { BUSINESS } from '../data/site';
+
+const mailTypes = [
+  {
+    name: 'Postcards',
+    desc: 'The most cost-effective format. No envelope, no opening required — your message is visible the moment it lands. Best for promotions, announcements, and EDDM campaigns.',
+    href: '/usps-direct-mailer-templates/',
+  },
+  {
+    name: 'Letters & Envelopes',
+    desc: 'Ideal for personalized communications, fundraising appeals, and financial mailings. First-Class letters include forwarding and return service.',
+    href: '/direct-mail-tools/envelope-sizes/',
+  },
+  {
+    name: 'Self-Mailers & Brochures',
+    desc: 'Folded pieces that mail without an envelope. Good for newsletters, menus, and multi-panel promotional pieces at letter-rate postage.',
+    href: '/usps-direct-mailer-templates/',
+  },
+  {
+    name: 'EDDM (Every Door Direct Mail)',
+    desc: 'Deliver to every address on selected carrier routes — no mailing list needed. The lowest per-piece rate available for local saturation campaigns.',
+    href: '/direct-mail-tools/eddm-guide/',
+  },
+  {
+    name: 'Catalogs & Flats',
+    desc: 'Larger pieces that command attention. Higher postage than letters but more real estate for product-heavy content or detailed service offerings.',
+    href: '/direct-mail-tools/envelope-sizes/',
+  },
+];
+
+const steps = [
+  { step: '1', title: 'Define Your Audience', desc: 'Choose between a targeted mailing list (specific demographics, geographic area, or customer type) or EDDM for blanket neighborhood coverage.' },
+  { step: '2', title: 'Design Your Mail Piece', desc: 'Create artwork sized to USPS specifications. Cornerstone provides free templates for every standard format to ensure your design qualifies for automation rates.' },
+  { step: '3', title: 'Clean & Process Your List', desc: 'Every list we handle goes through NCOA, CASS, and DPV processing to update moved addresses and remove undeliverables before printing.' },
+  { step: '4', title: 'Print & Presort', desc: 'We print, address, and presort your mailing to the deepest qualifying level — carrier route, 5-digit, AADC — to maximize your postage discount.' },
+  { step: '5', title: 'Permit & Drop', desc: 'We submit the postage statement and enter your mail at the USPS facility. You don\'t need your own permit — we can mail under ours.' },
+];
+
+const faqs = [
+  {
+    q: 'What is direct mail marketing?',
+    a: 'Direct mail marketing is a form of advertising where physical mail pieces — postcards, letters, brochures, or catalogs — are sent directly to a targeted list of recipients. Unlike digital advertising, direct mail lands in the recipient\'s hands with no algorithm, no inbox filter, and no competition on the page. Response rates for direct mail consistently outperform email for most B2C categories.',
+  },
+  {
+    q: 'How much does a direct mail campaign cost?',
+    a: 'Total cost depends on format, quantity, and postage class. A typical postcard campaign (design, print, and postage) runs between $0.50 and $1.00 per piece at volume. EDDM campaigns can come in lower. Nonprofit organizations qualify for reduced postage rates that can cut the postage portion nearly in half.',
+  },
+  {
+    q: 'What is direct mail advertising?',
+    a: 'Direct mail advertising refers specifically to promotional mail pieces — coupons, special offers, product announcements, and sale promotions — sent to a targeted audience. It\'s distinct from transactional mail (invoices, statements) and is typically sent under USPS Marketing Mail rates.',
+  },
+  {
+    q: 'How effective is direct mail compared to email marketing?',
+    a: 'Direct mail typically achieves higher response rates than email for most consumer categories. The USPS Household Diary Study consistently shows that physical mail receives more engagement time than digital ads. The tradeoff is cost — direct mail costs more per piece than email — but the higher response rate often produces a comparable or better ROI for local and regional campaigns.',
+  },
+  {
+    q: 'Do I need a mailing permit for a direct mail campaign?',
+    a: 'Not necessarily. For EDDM Retail campaigns under 5,000 pieces, no permit is required. For larger or targeted mailings, Cornerstone can mail under our permit on your behalf — you don\'t need to set up your own account to get started.',
+  },
+];
+---
+
+<BaseLayout
+  title="Direct Mail Marketing in New York | Cornerstone Services"
+  description="Direct mail marketing services for Hudson Valley and New York businesses. Postcards, EDDM, letters, and brochures — designed, printed, and mailed from New Paltz, NY."
+  canonical="https://crst.net/direct-mail-marketing/"
+>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(f => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  })} />
+
+  <PageHero
+    title="Direct Mail Marketing"
+    subtitle="Design, print, and mail campaigns that reach the right people — from local EDDM drops to targeted regional mailings across New York."
+    breadcrumbs={[
+      { label: 'Services', href: '/services/' },
+      { label: 'Direct Mail Marketing' },
+    ]}
+  />
+
+  <section class="py-14 lg:py-20">
+    <div class="container-wide">
+      <div class="max-w-4xl mx-auto">
+        <div class="section-divider mb-6"></div>
+
+        <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-4">
+          What Is Direct Mail Marketing?
+        </h2>
+        <p class="text-navy-600/80 leading-relaxed mb-4">
+          Direct mail marketing is advertising delivered physically — postcards, letters, brochures, and catalogs sent directly to a recipient's mailbox. Unlike digital ads, direct mail can't be blocked, filtered, or scrolled past. It arrives in the recipient's hands on its own, competes with nothing else on the page, and stays in the home until someone picks it up.
+        </p>
+        <p class="text-navy-600/80 leading-relaxed mb-10">
+          For local and regional businesses, direct mail remains one of the most cost-effective ways to reach a defined audience. USPS data consistently shows that physical mail generates higher response rates than email for most consumer categories — and for businesses targeting specific neighborhoods, EDDM delivers blanket coverage at the lowest per-piece <a href="/direct-mail-tools/postage-rates/" class="text-crst-primary underline hover:text-crst-gold">postage rate</a> available.
+        </p>
+
+        <h2 class="text-2xl font-display text-crst-primary mb-4">Types of Direct Mail</h2>
+        <p class="text-navy-600/80 text-sm leading-relaxed mb-6">
+          The right format depends on your goal, audience, and budget. Each mail piece type has different size requirements, <a href="/direct-mail-tools/postage-rates/" class="text-crst-primary underline hover:text-crst-gold">postage rates</a>, and production considerations.
+        </p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+          {mailTypes.map(type => (
+            <a href={type.href} class="block p-5 bg-white border border-gray-200 rounded-xl hover:border-crst-primary/40 hover:shadow-sm transition-all">
+              <h3 class="font-heading font-bold text-navy-800 mb-2 text-sm">{type.name}</h3>
+              <p class="text-xs text-navy-600/70 leading-relaxed">{type.desc}</p>
+            </a>
+          ))}
+        </div>
+
+        <h2 class="text-2xl font-display text-crst-primary mb-4">How a Direct Mail Campaign Works</h2>
+        <p class="text-navy-600/80 text-sm leading-relaxed mb-6">
+          A full-service campaign with Cornerstone covers every step from list to delivery. Here's the process:
+        </p>
+        <div class="space-y-3 mb-12">
+          {steps.map(item => (
+            <div class="flex gap-4 p-4 border border-gray-200 rounded-lg">
+              <div class="w-8 h-8 rounded-full bg-crst-primary text-white flex items-center justify-center text-sm font-bold shrink-0">{item.step}</div>
+              <div>
+                <div class="font-heading font-bold text-navy-800 text-sm">{item.title}</div>
+                <div class="text-sm text-navy-600/80 mt-1">{item.desc}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div class="bg-navy-50 rounded-xl p-6 sm:p-8 mb-12">
+          <h2 class="text-2xl font-display text-crst-primary mb-4">Direct Mail Marketing in the Hudson Valley & New York</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            Cornerstone Services has been producing direct mail campaigns for businesses across Ulster, Dutchess, and Orange counties since 1998. We're based in New Paltz, NY — which means we're familiar with local carrier routes, post office entry points, and the businesses and neighborhoods your mail is reaching.
+          </p>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            We work with local retailers, restaurants, healthcare providers, nonprofits, and regional brands running campaigns across the Hudson Valley and broader New York market. Whether you're targeting a single ZIP code or running a multi-county saturation campaign, we handle the full production and mailing in-house.
+          </p>
+          <p class="text-navy-600/80 leading-relaxed">
+            Nonprofits in the region can qualify for significantly reduced postage rates through the <a href="/non-profit-mailing-application/" class="text-crst-primary underline hover:text-crst-gold">USPS nonprofit mailing program</a> — often saving 40–60% compared to commercial rates.
+          </p>
+        </div>
+
+        <div class="bg-crst-primary/5 rounded-xl p-6 sm:p-8 mb-12">
+          <h3 class="text-lg font-display font-bold text-crst-primary mb-3">Free Direct Mail Tools</h3>
+          <p class="text-navy-600/80 text-sm leading-relaxed mb-5">
+            Before you start your campaign, use these resources to plan your format, budget, and specs:
+          </p>
+          <div class="grid sm:grid-cols-2 gap-3">
+            {[
+              { label: 'Current Postage Rates', href: '/direct-mail-tools/postage-rates/' },
+              { label: 'USPS Mail Piece Size Chart', href: '/direct-mail-tools/envelope-sizes/' },
+              { label: 'Free USPS Templates', href: '/usps-direct-mailer-templates/' },
+              { label: 'Mailing Permits Guide', href: '/direct-mail-tools/cornerstone-mailing-permits/' },
+              { label: 'Postal Dictionary', href: '/direct-mail-tools/postal-dictionary/' },
+              { label: 'Non-Profit Mailing Guide', href: '/non-profit-mailing-application/' },
+            ].map(tool => (
+              <a href={tool.href} class="flex items-center gap-2 text-sm font-heading font-medium text-navy-700 px-4 py-2.5 bg-white rounded-lg border border-gray-200 hover:border-crst-primary/40 hover:text-crst-primary transition-colors">
+                <svg class="w-4 h-4 text-crst-gold shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                {tool.label}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-display text-crst-primary mb-6">Frequently Asked Questions</h2>
+        <div class="space-y-3 mb-12">
+          {faqs.map((faq, i) => (
+            <details class="group bg-white border border-gray-200 rounded-lg" open={i === 0}>
+              <summary class="flex items-center justify-between p-5 cursor-pointer hover:bg-gray-50 transition-colors rounded-lg">
+                <h3 class="font-semibold text-gray-800 text-sm pr-4">{faq.q}</h3>
+                <svg class="w-5 h-5 text-gray-400 shrink-0 group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div class="px-5 pb-5 text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+                {faq.a}
+              </div>
+            </details>
+          ))}
+        </div>
+
+        <div class="bg-crst-primary/5 border border-crst-primary/20 rounded-xl p-8 text-center">
+          <h3 class="text-xl font-display font-bold text-crst-primary mb-3">Ready to Start a Campaign?</h3>
+          <p class="text-navy-600/80 text-sm mb-5 max-w-lg mx-auto">
+            Tell us your goal, your area, and your budget — we'll recommend the right format, estimate your postage, and handle everything from design to delivery.
+          </p>
+          <div class="flex flex-wrap justify-center gap-3">
+            <a href="/estimate/" class="btn-primary">Get a Free Estimate</a>
+            <a href={`tel:${BUSINESS.phoneClean}`} class="btn-secondary">Call {BUSINESS.phone}</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>

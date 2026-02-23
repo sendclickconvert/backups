@@ -70,7 +70,10 @@ public/
 - Workflow runs `npm run build && HOST=0.0.0.0 PORT=5000 node dist/server/entry.mjs`
 
 ## Content Queue (Pages to Build)
-- /direct-mail-marketing/ — Position 48 with 15K impressions. Receiving inbound links from 6+ pages. Needs content audit next session (likely thin/misaligned with search intent). Not a link problem — page authority building via new internal links.
+- Content queue is currently empty. All previously queued pages have been built.
+
+## Completed Pages Log
+- /direct-mail-marketing/ — Created 2026-02-23. Position 48→new page targeting "what is direct mail marketing" (pos 12), "direct mail new york" (pos 6.5), "direct mail advertising" (pos 13). FAQPage schema, 5-step campaign process, Hudson Valley local section, tools grid linking all 6 /direct-mail-tools/ pages. Removed old redirects to /services/direct-mail/.
 
 ## SEO Migration Tracking
 Pages moved from /resources/ to /direct-mail-tools/:
