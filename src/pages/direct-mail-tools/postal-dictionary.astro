@@ -68,12 +68,13 @@ const letters = Object.keys(grouped).sort();
 <BaseLayout
   title="Postal Dictionary: BMEU, PRSRT STD, ECRWSS & 100+ USPS Terms Explained"
   description="Plain-English definitions for USPS mailing terms. Look up BMEU, PRSRT STD, ECRWSS, AADC, NMR, and every other postal abbreviation used in direct mail."
+  canonical="https://crst.net/direct-mail-tools/postal-dictionary/"
 >
   <PageHero
     title="Postal Dictionary"
     subtitle="A glossary of USPS terms, acronyms, and mailing industry jargon — from AADC to Zone Chart."
     breadcrumbs={[
-      { label: 'Resources', href: '/resources/' },
+      { label: 'Direct Mail Tools', href: '/direct-mail-tools/' },
       { label: 'Postal Dictionary' },
     ]}
   />
@@ -85,8 +86,11 @@ const letters = Object.keys(grouped).sort();
         <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-4">
           USPS & Direct Mail Glossary
         </h2>
+        <p class="text-navy-600/80 leading-relaxed mb-4">
+          The mailing industry has its own language — and the USPS has hundreds of specialized terms, acronyms, and standards. This glossary covers the terms you're most likely to encounter when planning a <a href="/direct-mail-marketing/" class="text-crst-primary underline hover:text-crst-gold">direct mail campaign</a>. If you don't see a term listed here or need clarification, give us a call.
+        </p>
         <p class="text-navy-600/80 leading-relaxed mb-8">
-          The mailing industry has its own language — and the USPS has hundreds of specialized terms, acronyms, and standards. This glossary covers the terms you're most likely to encounter when planning a direct mail campaign. If you don't see a term listed here or need clarification, give us a call.
+          Many of these terms directly affect what you pay per piece. Understanding the difference between automation rates, presort levels, and mail classifications can significantly reduce your <a href="/direct-mail-tools/postage-rates/" class="text-crst-primary underline hover:text-crst-gold">postage costs</a> on every campaign.
         </p>
 
         <!-- Letter Navigation -->
@@ -121,8 +125,11 @@ const letters = Object.keys(grouped).sort();
         <!-- CTA -->
         <div class="bg-crst-primary/5 rounded-xl p-8 text-center mt-12">
           <h3 class="text-xl font-display font-bold text-crst-primary mb-3">Still Have Questions?</h3>
-          <p class="text-navy-600/80 text-sm mb-5 max-w-lg mx-auto">
+          <p class="text-navy-600/80 text-sm mb-4 max-w-lg mx-auto">
             Direct mail terminology can be confusing. That's what we're here for — call or email us and we'll explain anything in plain English.
+          </p>
+          <p class="text-navy-600/80 text-sm mb-5 max-w-lg mx-auto">
+            If you're ready to mail, we can help you set up a <a href="/direct-mail-tools/cornerstone-mailing-permits/" class="text-crst-primary underline hover:text-crst-gold">bulk mailing permit</a>, qualify for <a href="/non-profit-mailing-application/" class="text-crst-primary underline hover:text-crst-gold">nonprofit postage rates</a>, and handle the entire presort and production process.
           </p>
           <div class="flex flex-wrap justify-center gap-3">
             <a href={`tel:${BUSINESS.phoneClean}`} class="btn-primary">Call {BUSINESS.phone}</a>

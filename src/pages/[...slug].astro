@@ -80,6 +80,7 @@ const exactRedirects: Record<string, string> = {
   '/wp-content/uploads/2023/10/4.25-x-11-EDDM-Flat-Card-Template.pdf': '/usps-direct-mailer-templates/',
   '/wp-content/uploads/2023/11/11-Envelope-Template.pdf': '/direct-mail-tools/envelope-sizes/',
   '/resources/envelope-sizes/': '/direct-mail-tools/envelope-sizes/',
+  '/resources/postal-dictionary/': '/direct-mail-tools/postal-dictionary/',
   '/ancillary-service-endorsements/': '/resources/ancillary-service-endorsements/',
   '/periodicals-complete-overview/': '/resources/periodicals/',
   '/understanding-periodicals/': '/resources/understanding-periodicals/',
@@ -160,7 +161,7 @@ if (path.startsWith('/printing-partners/')) {
 if (path.startsWith('/direct-mail-services/')) {
   return Astro.redirect('/services/', 301);
 }
-if (path.startsWith('/direct-mail-tools/') && path !== '/direct-mail-tools/envelope-sizes/') {
+if (path.startsWith('/direct-mail-tools/') && path !== '/direct-mail-tools/envelope-sizes/' && path !== '/direct-mail-tools/postal-dictionary/') {
   return Astro.redirect('/resources/', 301);
 }
 if (path.startsWith('/wp-content/')) {

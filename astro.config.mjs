@@ -70,6 +70,7 @@ export default defineConfig({
     '/direct-mail-company/': '/',
     '/order-online-direct-mail/': '/contact/',
     '/resources/envelope-sizes/': '/direct-mail-tools/envelope-sizes/',
+    '/resources/postal-dictionary/': '/direct-mail-tools/postal-dictionary/',
     '/direct-mail-tools/cornerstone-mailing-permits/': '/resources/mailing-permits/',
     '/permits-page/': '/resources/mailing-permits/',
     '/non-profit-mailing-application': '/resources/non-profit-mailing/',
