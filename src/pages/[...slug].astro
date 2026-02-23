@@ -19,6 +19,8 @@ const exactRedirects: Record<string, string> = {
   '/resources/usps-templates/': '/usps-direct-mailer-templates/',
   '/resources/mailing-permits': '/direct-mail-tools/cornerstone-mailing-permits/',
   '/resources/mailing-permits/': '/direct-mail-tools/cornerstone-mailing-permits/',
+  '/resources/postage-rates': '/direct-mail-tools/postage-rates/',
+  '/resources/postage-rates/': '/direct-mail-tools/postage-rates/',
   '/resources/mail-forwarding/': '/direct-mail-tools/address-change/',
   '/permits-page/': '/direct-mail-tools/cornerstone-mailing-permits/',
   '/resources/non-profit-mailing': '/non-profit-mailing-application/',
@@ -164,7 +166,7 @@ if (path.startsWith('/printing-partners/')) {
 if (path.startsWith('/direct-mail-services/')) {
   return Astro.redirect('/services/', 301);
 }
-if (path.startsWith('/direct-mail-tools/') && path !== '/direct-mail-tools/envelope-sizes/' && path !== '/direct-mail-tools/postal-dictionary/' && path !== '/direct-mail-tools/address-change/' && path !== '/direct-mail-tools/cornerstone-mailing-permits/') {
+if (path.startsWith('/direct-mail-tools/') && path !== '/direct-mail-tools/envelope-sizes/' && path !== '/direct-mail-tools/postal-dictionary/' && path !== '/direct-mail-tools/address-change/' && path !== '/direct-mail-tools/cornerstone-mailing-permits/' && path !== '/direct-mail-tools/postage-rates/') {
   return Astro.redirect('/resources/', 301);
 }
 if (path.startsWith('/wp-content/')) {

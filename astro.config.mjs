@@ -75,6 +75,8 @@ export default defineConfig({
     '/resources/mailing-permits': '/direct-mail-tools/cornerstone-mailing-permits/',
     '/resources/mailing-permits/': '/direct-mail-tools/cornerstone-mailing-permits/',
     '/permits-page/': '/direct-mail-tools/cornerstone-mailing-permits/',
+    '/resources/postage-rates': '/direct-mail-tools/postage-rates/',
+    '/resources/postage-rates/': '/direct-mail-tools/postage-rates/',
     '/resources/non-profit-mailing': '/non-profit-mailing-application/',
     '/resources/non-profit-mailing/': '/non-profit-mailing-application/',
     '/how-to-get-a-refund-on-postage': '/how-to-get-a-refund-on-postage-a-guide-to-post-office-application-to-refund-postage/',
