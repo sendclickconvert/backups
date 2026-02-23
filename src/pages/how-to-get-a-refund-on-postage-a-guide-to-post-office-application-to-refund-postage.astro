@@ -1,0 +1,296 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import CTASection from '../components/CTASection.astro';
+import { BUSINESS } from '../data/site';
+
+const otherTools = [
+  { label: 'Mailing Permits', href: '/direct-mail-tools/cornerstone-mailing-permits/' },
+  { label: 'Postage Rates', href: '/direct-mail-tools/postage-rates/' },
+  { label: 'Envelope Sizes', href: '/direct-mail-tools/envelope-sizes/' },
+  { label: 'Postal Dictionary', href: '/direct-mail-tools/postal-dictionary/' },
+  { label: 'Mail Forwarding', href: '/direct-mail-tools/address-change/' },
+  { label: 'USPS Templates', href: '/usps-direct-mailer-templates/' },
+  { label: 'Non-Profit Mailing', href: '/non-profit-mailing-application/' },
+  { label: 'EDDM Guide', href: '/direct-mail-tools/eddm-guide/' },
+];
+
+const eligibleSituations = [
+  {
+    title: 'Unused Meter Strips or Meter Impressions',
+    desc: 'Postage meter impressions that were printed but never affixed to a mail piece, or meter strips that were never used, are refundable. The strips must be submitted in full, uncut, and undamaged.',
+  },
+  {
+    title: 'Permit Imprint Advance Deposit Overpayment',
+    desc: 'If you deposited more into your permit imprint account than was used and you wish to close or reduce the account, the remaining balance is refundable via PS Form 3533.',
+  },
+  {
+    title: 'Postage Affixed in Error',
+    desc: 'Mail pieces that were stamped or metered but never entered into the postal system may qualify for a refund if returned to the Post Office promptly and in usable condition.',
+  },
+  {
+    title: 'Duplicate Postage Payment',
+    desc: 'If postage was paid twice on the same mailing — for example, a permit imprint mailing where stamps were also applied — the duplicate payment is refundable.',
+  },
+  {
+    title: 'Click-N-Ship Label Not Used',
+    desc: 'USPS Click-N-Ship labels that were purchased online but never scanned into the system can be refunded through your USPS.com account within 30 days of purchase.',
+  },
+  {
+    title: 'Postage on Returned Undeliverable Mail',
+    desc: 'In limited circumstances, mailers who receive bulk mail back as undeliverable-as-addressed (UAA) may apply for a refund on the return postage charged.',
+  },
+];
+
+const ineligibleSituations = [
+  'Postage on mail pieces already entered into the postal system',
+  'Stamps that have been used, damaged, or separated from the backing',
+  'Metered postage where the date has passed',
+  'Postage paid on First-Class or Priority Mail that was delivered',
+  'PO Box rental fees after the rental period has begun',
+  'Money orders (these use a separate refund process)',
+];
+
+const formSections = [
+  {
+    label: 'Section 1 — Mailer Information',
+    desc: 'Your name, business name, mailing address, and phone number. If filing on behalf of an organization, include your title and authorization.',
+  },
+  {
+    label: 'Section 2 — Type of Refund',
+    desc: 'Check the appropriate box: unused meter strips, permit account balance, stamps, or other. Each type has slightly different documentation requirements.',
+  },
+  {
+    label: 'Section 3 — Amount Requested',
+    desc: 'Enter the exact dollar amount you are requesting. For meter strips, attach the physical strips. For permit accounts, attach your account statement.',
+  },
+  {
+    label: 'Section 4 — Supporting Documentation',
+    desc: 'Attach all required evidence: original meter strips, account statements, receipts, or original mail pieces as applicable to your claim type.',
+  },
+  {
+    label: 'Section 5 — Certification',
+    desc: 'Sign and date the form. Unsigned forms will be rejected. If filing by mail, include a copy of your ID for larger refund amounts.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'How long does it take to get a USPS postage refund?',
+    a: 'Processing times vary by Post Office and refund type. Simple meter strip refunds are often processed same-day at the counter. Permit account balance refunds typically take 2–4 weeks and are issued by check from USPS Headquarters.',
+  },
+  {
+    q: 'Can I submit PS Form 3533 by mail?',
+    a: 'Yes. You can mail the completed form with supporting documentation to your local Post Office or USPS Business Mail Entry Unit (BMEU). However, in-person submission is recommended for faster processing and to avoid documentation errors.',
+  },
+  {
+    q: 'Is there a deadline to file for a postage refund?',
+    a: 'USPS generally requires refund requests to be filed within 30 days of the original postage purchase. Some exceptions exist for permit account closures, but the sooner you file the better — older claims are more likely to be denied.',
+  },
+  {
+    q: 'Can I get a refund on stamps?',
+    a: 'Unused, undamaged stamps in mint condition can be exchanged at your local Post Office for other stamps of equal value, or refunded via PS Form 3533. Damaged, soiled, or separated stamps are generally not refundable.',
+  },
+  {
+    q: 'What happens if my refund is denied?',
+    a: 'USPS will send a written notice explaining the reason for denial. You have the right to appeal the decision through the Consumer Advocate office. Cornerstone can help document bulk mail refund claims if you believe a denial was in error.',
+  },
+];
+---
+
+<BaseLayout
+  title="PS Form 3533: How to Get a USPS Postage Refund | Cornerstone Services"
+  description="Complete guide to PS Form 3533 — the USPS Application for Refund of Fees. Learn what qualifies for a postage refund, how to complete the form, and where to submit it."
+  canonical="https://crst.net/how-to-get-a-refund-on-postage-a-guide-to-post-office-application-to-refund-postage/"
+>
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(f => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  })} />
+
+  <PageHero
+    title="How to Get a USPS Postage Refund"
+    subtitle="A complete guide to PS Form 3533 — what qualifies, how to fill it out, and how to submit your refund claim."
+    breadcrumbs={[
+      { label: 'Direct Mail Tools', href: '/direct-mail-tools/' },
+      { label: 'Postage Refund Guide' },
+    ]}
+  />
+
+  <section class="py-14 lg:py-20">
+    <div class="container-wide">
+      <div class="grid lg:grid-cols-[280px_1fr] gap-10 items-start">
+
+        <!-- Sidebar -->
+        <aside class="hidden lg:flex flex-col gap-6 sticky top-6">
+          <a href="/direct-mail-tools/" class="inline-flex items-center gap-2 text-sm font-heading font-semibold text-crst-primary border-2 border-crst-primary rounded-lg px-4 py-2.5 hover:bg-crst-primary hover:text-white transition-colors text-center justify-center">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+            View All Resources
+          </a>
+          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+            <h3 class="font-heading font-bold text-crst-primary text-sm uppercase tracking-wider mb-1">Need Help With a Mailing?</h3>
+            <div class="w-10 h-0.5 bg-crst-gold mb-3"></div>
+            <p class="text-sm text-navy-600/70 mb-4">We handle presort, permits, and postage for bulk mailers across the Hudson Valley.</p>
+            <div class="space-y-3">
+              <a href="/estimate/" class="block w-full text-center text-sm font-heading font-semibold text-white bg-crst-primary rounded-lg px-4 py-2.5 hover:bg-navy-700 transition-colors">
+                Get Free Estimate
+              </a>
+              <a href={`tel:${BUSINESS.phoneClean}`} class="block w-full text-center text-sm font-heading font-semibold text-crst-primary border border-crst-primary/30 rounded-lg px-4 py-2.5 hover:bg-crst-primary/5 transition-colors">
+                Call {BUSINESS.phone}
+              </a>
+            </div>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+            <h3 class="font-heading font-bold text-crst-primary text-sm uppercase tracking-wider mb-3">Related Resources</h3>
+            <nav class="flex flex-col gap-2">
+              {otherTools.map(tool => (
+                <a href={tool.href} class="text-sm font-heading font-medium text-navy-700 px-3 py-2 bg-gray-50 rounded-md border-l-3 border-crst-gold hover:bg-crst-primary hover:text-white hover:border-crst-gold transition-colors">
+                  {tool.label}
+                </a>
+              ))}
+            </nav>
+          </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+          <div class="bg-white border border-gray-200 rounded-xl p-6 sm:p-8 shadow-sm">
+
+            <div class="section-divider mb-6"></div>
+            <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-4">
+              What Is PS Form 3533?
+            </h2>
+            <p class="text-navy-600/80 leading-relaxed mb-4">
+              PS Form 3533 — officially titled <em>Application for Refund of Fees, Products, and Withdrawal of Customer Accounts</em> — is the USPS form used to request a refund on unused or overpaid postage. Whether you over-deposited into a <a href="/direct-mail-tools/cornerstone-mailing-permits/" class="text-crst-primary underline hover:text-crst-gold">bulk mailing permit account</a>, printed meter strips that were never used, or purchased Click-N-Ship labels you don't need, PS Form 3533 is how you get that money back.
+            </p>
+            <p class="text-navy-600/80 leading-relaxed mb-8">
+              The form is free, available at any Post Office or from the USPS website, and is typically processed at your local Business Mail Entry Unit (BMEU) or Post Office window. For bulk mailers, understanding when and how to use it is part of managing your <a href="/direct-mail-tools/postage-rates/" class="text-crst-primary underline hover:text-crst-gold">postage costs</a> effectively.
+            </p>
+
+            <!-- Eligible Situations -->
+            <h2 class="text-xl font-display font-bold text-crst-primary mb-4">What Qualifies for a Postage Refund?</h2>
+            <p class="text-navy-600/80 text-sm leading-relaxed mb-5">
+              Not all postage situations are refundable. USPS has specific rules about what qualifies. Here are the most common eligible situations:
+            </p>
+            <div class="space-y-3 mb-8">
+              {eligibleSituations.map((item) => (
+                <div class="flex gap-4 p-4 border border-gray-200 rounded-lg bg-gray-50/60">
+                  <svg class="w-5 h-5 text-green-600 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <div>
+                    <div class="font-heading font-bold text-navy-800 text-sm">{item.title}</div>
+                    <div class="text-sm text-navy-600/80 mt-1">{item.desc}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <!-- Ineligible Situations -->
+            <h2 class="text-xl font-display font-bold text-crst-primary mb-4">What Does Not Qualify</h2>
+            <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+              USPS will deny refund requests in these situations:
+            </p>
+            <div class="space-y-2 mb-10">
+              {ineligibleSituations.map((item) => (
+                <div class="flex gap-3 items-start p-3 border border-red-100 rounded-lg bg-red-50/40">
+                  <svg class="w-4 h-4 text-red-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  <span class="text-sm text-navy-600/80">{item}</span>
+                </div>
+              ))}
+            </div>
+
+            <!-- How to Complete the Form -->
+            <h2 class="text-xl font-display font-bold text-crst-primary mb-4">How to Complete PS Form 3533</h2>
+            <p class="text-navy-600/80 text-sm leading-relaxed mb-5">
+              The form is straightforward but errors or missing documentation are the most common reason claims are delayed or denied. Work through each section carefully:
+            </p>
+            <div class="space-y-3 mb-8">
+              {formSections.map((section, i) => (
+                <div class="flex gap-4 p-4 border border-gray-200 rounded-lg">
+                  <div class="w-7 h-7 rounded-full bg-crst-primary text-white flex items-center justify-center text-xs font-bold shrink-0">{i + 1}</div>
+                  <div>
+                    <div class="font-heading font-bold text-navy-800 text-sm">{section.label}</div>
+                    <div class="text-sm text-navy-600/80 mt-1">{section.desc}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <!-- Where to Submit -->
+            <div class="bg-navy-50 rounded-xl p-6 mb-8">
+              <h3 class="font-heading font-bold text-navy-800 mb-3">Where to Submit PS Form 3533</h3>
+              <div class="space-y-3 text-sm text-navy-600/80 leading-relaxed">
+                <p><strong class="text-navy-800">In person:</strong> Submit at your local Post Office window or USPS Business Mail Entry Unit (BMEU). In-person submission is recommended — staff can review your documentation on the spot and flag issues before you leave.</p>
+                <p><strong class="text-navy-800">By mail:</strong> Mail the completed form with supporting documentation to your servicing Post Office. Allow extra processing time and consider sending via Certified Mail so you have proof of submission.</p>
+                <p><strong class="text-navy-800">For permit account refunds:</strong> These are typically processed through the BMEU where your permit is held. The BMEU will verify your account balance before approving the refund, which is then issued by check from USPS Headquarters. See our guide to <a href="/direct-mail-tools/cornerstone-mailing-permits/" class="text-crst-primary underline hover:text-crst-gold">mailing permits</a> for more on how permit accounts work.</p>
+              </div>
+            </div>
+
+            <!-- Pro tip for bulk mailers -->
+            <div class="bg-crst-gold/10 border border-crst-gold/30 rounded-xl p-6 mb-8">
+              <h4 class="font-heading font-bold text-crst-primary mb-2">For Bulk Mailers</h4>
+              <p class="text-navy-600/80 text-sm leading-relaxed">
+                If you mail under a bulk permit and regularly run <a href="/direct-mail-marketing/" class="text-crst-primary underline hover:text-crst-gold">direct mail campaigns</a>, it's worth auditing your permit account balance at the end of each calendar year. Unused deposits can accumulate — especially if you've reduced mailing volume — and are fully refundable via PS Form 3533. Cornerstone manages permit accounts for our clients and can identify overpayments as part of our annual mailing review. Unfamiliar with permit terminology? Our <a href="/direct-mail-tools/postal-dictionary/" class="text-crst-primary underline hover:text-crst-gold">postal dictionary</a> covers permit imprints, BMEU, and related terms.
+              </p>
+            </div>
+
+            <!-- FAQ -->
+            <h2 class="text-xl font-display font-bold text-crst-primary mb-6">Frequently Asked Questions</h2>
+            <div class="space-y-3 mb-8">
+              {faqs.map((faq, i) => (
+                <details class="group bg-white border border-gray-200 rounded-lg" open={i === 0}>
+                  <summary class="flex items-center justify-between p-5 cursor-pointer hover:bg-gray-50 transition-colors rounded-lg">
+                    <h4 class="font-semibold text-gray-800 text-sm pr-4">{faq.q}</h4>
+                    <svg class="w-5 h-5 text-gray-400 shrink-0 group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div class="px-5 pb-5 text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+                    {faq.a}
+                  </div>
+                </details>
+              ))}
+            </div>
+
+            <!-- CTA -->
+            <div class="bg-crst-primary/5 border border-crst-primary/20 rounded-xl p-6 text-center">
+              <h4 class="font-heading font-bold text-crst-primary mb-2">Questions About Your Postage Account?</h4>
+              <p class="text-navy-600/80 text-sm leading-relaxed mb-4 max-w-lg mx-auto">
+                We help bulk mailers manage permit accounts, audit postage spend, and file refund claims when overpayments occur. Call us or get a free estimate.
+              </p>
+              <div class="flex flex-wrap justify-center gap-3">
+                <a href={`tel:${BUSINESS.phoneClean}`} class="btn-primary text-sm">Call {BUSINESS.phone}</a>
+                <a href="/estimate/" class="btn-secondary text-sm">Get a Free Estimate</a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Mobile sidebar -->
+          <div class="lg:hidden mt-8 bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+            <h3 class="font-heading font-bold text-crst-primary text-sm uppercase tracking-wider mb-3">Related Resources</h3>
+            <div class="grid grid-cols-2 gap-2">
+              {otherTools.map(tool => (
+                <a href={tool.href} class="text-sm font-heading font-medium text-navy-700 px-3 py-2 bg-gray-50 rounded-md border-l-3 border-crst-gold hover:bg-crst-primary hover:text-white transition-colors">
+                  {tool.label}
+                </a>
+              ))}
+            </div>
+          </div>
+
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>
