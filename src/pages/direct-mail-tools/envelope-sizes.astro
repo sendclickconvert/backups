@@ -96,6 +96,69 @@ const surcharges = [
   description="Every USPS mail piece size in one place — #10 envelopes, 6×9, A2, postcards, flats, and self-mailers. Includes exact dimensions, weight limits, surcharge thresholds, and automation rules. Updated 2025."
   canonical="https://crst.net/direct-mail-tools/envelope-sizes/"
 >
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What size is a #10 envelope?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A #10 envelope measures 4.125 inches × 9.5 inches. It is the standard business envelope used for letters, invoices, and direct mail. It qualifies for USPS First-Class letter-rate postage when properly addressed and within weight limits (under 3.5 oz)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the maximum postcard size for USPS letter-rate postage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The maximum postcard size that qualifies for USPS letter-rate postage is 6.125 inches × 11.5 inches with a maximum thickness of 0.016 inches. Anything larger is classified as a flat and carries a higher postage rate. The 6×11 postcard (popular for EDDM campaigns) is the largest commonly used size that stays within letter-rate pricing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between a letter and a flat in USPS mail?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A USPS letter is a mail piece between 3.5×5 inches and 6.125×11.5 inches, no more than 0.25 inches thick and 3.5 oz. A flat (large envelope) exceeds those dimensions — typically 9×12 or 10×13 envelopes — and carries higher postage rates. The practical cost difference can be significant at scale: flats cost roughly double letter-rate postage per piece."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What causes a non-machinable surcharge on a letter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "USPS adds a $0.22 non-machinable surcharge to letters that are square, too rigid, poly-wrapped, have clasps or buttons, or fall outside the 1.3:1 to 2.5:1 aspect ratio requirement. The most common mistake we see is square invitation-style envelopes — they look professional but automatically trigger the surcharge on every piece."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What size envelopes qualify for bulk mail automation rates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To qualify for USPS bulk mail automation discounts, letters must be between 3.5×5 inches and 6.125×11.5 inches, no more than 0.25 inches thick, flexible, and rectangular with an aspect ratio between 1.3:1 and 2.5:1. The address must be machine-readable with a valid barcode. Meeting these specs can reduce postage by $0.10 or more per piece compared to non-automation rates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the minimum size for a USPS postcard?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The USPS minimum postcard size is 3.5 inches × 5 inches with a minimum thickness of 0.007 inches (7pt cardstock). Pieces smaller than this are not accepted for mailing. The most commonly mailed postcard size is 4.25×6 inches (standard 4×6), which qualifies for letter-rate postage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the USPS size requirements for self-mailers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "USPS self-mailers must be tabbed or sealed per DMM 201.3 standards. Letter-size self-mailers require at least 1 tab (2 recommended), flat-size self-mailers require 2 tabs minimum. Tabs must be at least 1 inch long placed on the top edge. The address panel must face outward and the open edge must be at the top after folding. Common sizes include bi-fold 8.5×11 (folds to 5.5×8.5) and tri-fold 8.5×11 (folds to 3.67×8.5)."
+        }
+      }
+    ]
+  })} />
+
   <PageHero
     title="Envelope & Mail Piece Sizes"
     subtitle="USPS dimension requirements for postcards, letters, flats, and self-mailers — avoid surcharges and qualify for automation rates."
