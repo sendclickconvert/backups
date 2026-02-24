@@ -70,9 +70,72 @@ const letters = Object.keys(grouped).sort();
   description="Plain-English definitions for USPS mailing terms. Look up BMEU, PRSRT STD, ECRWSS, AADC, NMR, and every other postal abbreviation used in direct mail."
   canonical="https://crst.net/direct-mail-tools/postal-dictionary/"
 >
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does PRSRT STD mean on mail?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PRSRT STD stands for Presort Standard, which is the indicia (postage marking) printed on Marketing Mail pieces. It indicates the mail was sorted to USPS presort requirements before submission and qualifies for bulk postage discounts. You'll see this in the upper right corner of bulk advertising mail in place of a stamp."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is BMEU in USPS mailing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "BMEU stands for Business Mail Entry Unit — a dedicated USPS facility where businesses and mail service providers drop off presorted bulk mailings. EDDM BMEU is the version of Every Door Direct Mail processed through a BMEU, which offers a slightly lower rate ($0.242/piece vs $0.247 for Retail) and no daily volume limit, but requires a mailing permit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does ECRWSS mean on mail?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ECRWSS stands for Every Carrier Route, Walk Sequence, Saturation — a specific presort level used for EDDM and saturation mailings. Mail marked ECRWSS is sorted to walk sequence (the exact order a carrier delivers) on every carrier route in the selected area, qualifying for the deepest automation discounts available for saturation mail."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is an Intelligent Mail Barcode (IMb)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Intelligent Mail Barcode (IMb) is a 65-bar barcode printed in the lower right of every automated mail piece. It encodes the mailer ID, serial number, routing ZIP code, and delivery point. Required for automation-rate postage discounts, the IMb also enables piece-level tracking through the USPS postal system."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is NCOA and why is it required for bulk mail?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NCOA (National Change of Address) is a USPS database containing all permanent address changes filed in the last 48 months. Processing your mailing list through NCOA is required before every bulk mailing to update moved addresses and reduce undeliverable mail. Undeliverable mail wastes postage and can result in USPS penalties. Cornerstone processes every list through NCOA before production."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between presort and automation rates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Presort rates are discounts earned by sorting mail by ZIP code before submission — the more deeply sorted, the lower the rate. Automation rates are an additional discount layer earned when mail also meets USPS machine-processing standards: readable Intelligent Mail barcode, correct address format, and proper mail piece dimensions. Automation rates are lower than presort-only rates. Most professional direct mail campaigns qualify for automation rates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does UAA mean in direct mail?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "UAA stands for Undeliverable As Addressed — mail that cannot reach the recipient because the address is invalid, the person has moved without filing a forwarding order, or the address is vacant. High UAA rates waste postage and indicate a list that needs cleaning. Marketing Mail does not get forwarded or returned by default, so UAA pieces are simply discarded by USPS. Running NCOA and CASS certification before mailing significantly reduces UAA."
+        }
+      }
+    ]
+  })} />
+
   <PageHero
     title="Postal Dictionary"
-    subtitle="A glossary of USPS terms, acronyms, and mailing industry jargon — from AADC to Zone Chart."
+    subtitle="Plain-English definitions for BMEU, PRSRT STD, ECRWSS, IMb, NCOA, and every USPS term you'll encounter in direct mail — from AADC to Zone Chart."
     breadcrumbs={[
       { label: 'Direct Mail Tools', href: '/direct-mail-tools/' },
       { label: 'Postal Dictionary' },
@@ -92,6 +155,17 @@ const letters = Object.keys(grouped).sort();
         <p class="text-navy-600/80 leading-relaxed mb-8">
           Many of these terms directly affect what you pay per piece. Understanding the difference between automation rates, presort levels, and mail classifications can significantly reduce your <a href="/direct-mail-tools/postage-rates/" class="text-crst-primary underline hover:text-crst-gold">postage costs</a> on every campaign.
         </p>
+
+        <div class="flex items-start gap-4 bg-navy-50 rounded-xl p-5 mb-10 border border-navy-100">
+          <div class="shrink-0 w-12 h-12 rounded-full bg-crst-primary/10 flex items-center justify-center">
+            <svg class="w-6 h-6 text-crst-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+          </div>
+          <div>
+            <p class="text-sm font-heading font-semibold text-navy-800">Compiled by Sean Griffen, Owner — Cornerstone Services, Inc.</p>
+            <p class="text-xs text-navy-500 mt-1">Sean has worked with USPS bulk mail systems since 1998. Every term in this glossary is one we encounter in production — presort levels, barcode requirements, permit types, and rate classifications we apply to real campaigns every week.</p>
+            <p class="text-xs text-navy-400 mt-1">Last reviewed: January 2026 · Source: <a href="https://pe.usps.com/text/dmm300/dmm300_landing.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-crst-primary">USPS Domestic Mail Manual (DMM)</a></p>
+          </div>
+        </div>
 
         <!-- Letter Navigation -->
         <div class="flex flex-wrap gap-2 mb-10 sticky top-20 bg-white py-3 z-10 border-b border-gray-100">
