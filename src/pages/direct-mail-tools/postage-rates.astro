@@ -7,11 +7,74 @@ import { BUSINESS } from '../../data/site';
 
 <BaseLayout
   title="2026 USPS Postage Rates: First Class, EDDM, Bulk Mail & Nonprofit"
-  description="Current USPS postage rates for every mail class — First Class, Marketing Mail, EDDM, Nonprofit, and Periodicals. Updated for 2026 rate changes."
+  description="2026 USPS postage rates for every mail class — Marketing Mail from $0.276/pc, EDDM from $0.242/pc, First-Class from $0.485/pc, and Non-Profit from $0.154/pc. Updated for 2026 rate changes."
 >
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the 2026 USPS postage rate for a standard letter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The 2026 USPS First-Class rate for a single 1 oz letter is $0.73. For bulk presort First-Class mailings of 500+ pieces, the rate drops to $0.485 per piece. For Marketing Mail (bulk advertising), automation rates start at $0.308 per letter with an Intelligent Mail barcode. USPS rates typically change in January and July each year."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does EDDM postage cost in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EDDM (Every Door Direct Mail) postage in 2026 costs $0.247 per piece for EDDM Retail (no permit required, limit 5,000 pieces per day per ZIP) and $0.242 per piece for EDDM BMEU (Business Mail Entry Unit), which requires a permit but has no daily volume limit. EDDM is one of the most cost-effective options for local businesses targeting every address in a neighborhood."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the cheapest way to mail postcards in bulk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cheapest bulk postcard rate is EDDM at $0.242–$0.247 per piece, which requires no mailing list. If you need to target a specific list, Marketing Mail automation rate for postcards is $0.276 per piece with a minimum of 200 pieces. For comparison, a single First-Class postcard costs $0.56. The right choice depends on whether you need targeted addressing or blanket neighborhood coverage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the USPS Non-Profit postage rates for 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Qualifying 501(c)(3) organizations can mail at $0.154 per piece for automation letters and $0.243 per piece for flats — roughly 50% less than standard commercial Marketing Mail rates. Non-profit mailing authorization requires submitting USPS PS Form 3624. Once approved, the authorization is permanent and applies to all future mailings. Cornerstone helps non-profits apply and manage their mailing permit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Marketing Mail and First-Class Mail?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Marketing Mail (formerly Standard Mail) is designed for advertising and bulk mailings — it costs less ($0.276–$0.357 per piece) but delivers in 3–10 business days and does not include forwarding or return service. First-Class Mail costs more ($0.485–$0.73 per piece) but delivers in 1–3 days and includes address forwarding and return to sender. First-Class is best for invoices, statements, and time-sensitive mail. Marketing Mail is best for advertising campaigns, coupons, and newsletters."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the minimum quantity for bulk mail postage rates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "USPS Marketing Mail (bulk mail) requires a minimum of 200 pieces or 50 lbs per mailing, whichever comes first. First-Class presort discounts require a minimum of 500 pieces. EDDM Retail has a minimum of 200 pieces per mailing per ZIP code. To access bulk rates, you also need a valid USPS mailing permit, which Cornerstone can provide on your behalf."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does a mailing permit cost from USPS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A USPS bulk mail permit (Permit Imprint) has an annual fee of $250 for a permit imprint account. There is also a one-time application fee. Many direct mail companies, including Cornerstone Services, mail under their own permit on behalf of clients — meaning clients can access bulk rates without obtaining their own permit. This is typically the most cost-effective approach for businesses that mail periodically rather than continuously."
+        }
+      }
+    ]
+  })} />
+
   <PageHero
     title="Current USPS Postage Rates"
-    subtitle="Compare rates across mail classes to find the most cost-effective option for your campaign."
+    subtitle="2026 rates for Marketing Mail, EDDM, First-Class, and Non-Profit mail — with automation discounts, minimum quantities, and permit requirements explained."
     breadcrumbs={[
       { label: 'Direct Mail Tools', href: '/direct-mail-tools/' },
       { label: 'Postage Rates' },
@@ -28,6 +91,17 @@ import { BUSINESS } from '../../data/site';
 
         <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-10 text-sm text-amber-800">
           <strong>Note:</strong> Rates shown are approximate and subject to change. Actual rates depend on mail piece size, weight, presort level, and entry point. Contact us for an exact quote for your specific campaign.
+        </div>
+
+        <div class="flex items-start gap-4 bg-navy-50 rounded-xl p-5 mb-10 border border-navy-100">
+          <div class="shrink-0 w-12 h-12 rounded-full bg-crst-primary/10 flex items-center justify-center">
+            <svg class="w-6 h-6 text-crst-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+          </div>
+          <div>
+            <p class="text-sm font-heading font-semibold text-navy-800">Compiled by Sean Griffen, Owner — Cornerstone Services, Inc.</p>
+            <p class="text-xs text-navy-500 mt-1">Sean has processed bulk mail campaigns for Hudson Valley businesses since 1998. The rates on this page are applied to every campaign Cornerstone produces. We update this guide every time USPS announces a rate change.</p>
+            <p class="text-xs text-navy-400 mt-1">Last reviewed: January 2026 · Source: <a href="https://pe.usps.com/text/dmm300/dmm300_landing.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-crst-primary">USPS Domestic Mail Manual</a> & <a href="https://www.usps.com/business/prices.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-crst-primary">USPS Business Prices</a></p>
+          </div>
         </div>
 
         <!-- Marketing Mail -->
