@@ -1,0 +1,136 @@
+{
+  "url": "https://crst.net/usps-direct-mailer-templates/",
+  "total_entities": 24,
+  "entities_by_type": {
+    "CONSUMER_GOOD": [
+      {
+        "name": "USPS Direct Mail Templates",
+        "importance": "HIGH",
+        "mentions": 4
+      },
+      {
+        "name": "Postcards",
+        "importance": "HIGH",
+        "mentions": 3
+      },
+      {
+        "name": "Envelopes",
+        "importance": "HIGH",
+        "mentions": 12
+      },
+      {
+        "name": "Brochures",
+        "importance": "HIGH",
+        "mentions": 6
+      },
+      {
+        "name": "Door Hangers",
+        "importance": "MEDIUM",
+        "mentions": 2
+      },
+      {
+        "name": "Flat Cards",
+        "importance": "MEDIUM",
+        "mentions": 1
+      },
+      {
+        "name": "Courtesy Reply Envelope",
+        "importance": "MEDIUM",
+        "mentions": 4
+      },
+      {
+        "name": "Window Envelope",
+        "importance": "LOW",
+        "mentions": 1
+      }
+    ],
+    "CONCEPT": [
+      {
+        "name": "Direct Mail Campaigns",
+        "importance": "HIGH",
+        "mentions": 2
+      },
+      {
+        "name": "USPS Automation Specifications",
+        "importance": "HIGH",
+        "mentions": 2
+      },
+      {
+        "name": "Barcode Clear Zones",
+        "importance": "MEDIUM",
+        "mentions": 1
+      },
+      {
+        "name": "Address Block Positioning",
+        "importance": "MEDIUM",
+        "mentions": 1
+      },
+      {
+        "name": "Bleed Areas",
+        "importance": "MEDIUM",
+        "mentions": 1
+      },
+      {
+        "name": "Letter Automation Rates",
+        "importance": "MEDIUM",
+        "mentions": 2
+      },
+      {
+        "name": "Nonprofit Postage Rates",
+        "importance": "MEDIUM",
+        "mentions": 1
+      },
+      {
+        "name": "EDDM",
+        "importance": "MEDIUM",
+        "mentions": 2
+      },
+      {
+        "name": "Mail Automation",
+        "importance": "MEDIUM",
+        "mentions": 1
+      },
+      {
+        "name": "Postage Rates",
+        "importance": "MEDIUM",
+        "mentions": 2
+      },
+      {
+        "name": "Mailing Permits",
+        "importance": "LOW",
+        "mentions": 1
+      },
+      {
+        "name": "Mail Forwarding",
+        "importance": "LOW",
+        "mentions": 1
+      },
+      {
+        "name": "Non-Profit Mailing",
+        "importance": "LOW",
+        "mentions": 1
+      },
+      {
+        "name": "Print-Ready Templates",
+        "importance": "MEDIUM",
+        "mentions": 1
+      }
+    ],
+    "ORGANIZATION": [
+      {
+        "name": "USPS",
+        "importance": "HIGH",
+        "mentions": 5
+      },
+      {
+        "name": "CRST",
+        "importance": "HIGH",
+        "mentions": 2
+      }
+    ],
+    "LOCATION": [],
+    "PERSON": [],
+    "EVENT": [],
+    "OTHER": []
+  }
+}
