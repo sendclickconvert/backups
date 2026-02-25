@@ -52,6 +52,24 @@ import { BUSINESS } from '../../data/site';
           </div>
         </div>
 
+        <h2 class="text-2xl font-display text-crst-primary mb-6">In-County vs. Outside-County Periodicals</h2>
+        <p class="text-navy-600/80 leading-relaxed mb-4">
+          One of the most important eligibility and pricing distinctions in Periodicals mailing is whether each subscriber lives <em>within</em> or <em>outside</em> the county of your known office of publication. USPS prices these two groups differently:
+        </p>
+        <div class="grid sm:grid-cols-2 gap-4 mb-8">
+          <div class="bg-green-50 border border-green-200 rounded-xl p-5">
+            <h3 class="font-heading font-bold text-green-900 mb-2">In-County</h3>
+            <p class="text-sm text-green-800 leading-relaxed">Subscribers in the same county as your publication's known office of publication qualify for the In-County price — the lowest Periodicals rate tier. Local newspapers and community publications often have a majority of In-County subscribers, making this rate extremely cost-effective.</p>
+          </div>
+          <div class="bg-navy-50 border border-navy-200 rounded-xl p-5">
+            <h3 class="font-heading font-bold text-navy-800 mb-2">Outside-County</h3>
+            <p class="text-sm text-navy-600/80 leading-relaxed">Subscribers outside your county are charged at the higher Outside-County rate, which includes zone-based pricing on the advertising portion of the publication's weight. The farther the subscriber, the higher the per-pound zone charge.</p>
+          </div>
+        </div>
+        <p class="text-navy-600/80 leading-relaxed mb-10 text-sm">
+          Your PS Form 3541 postage statement must separate In-County and Outside-County piece counts and weights. Cornerstone calculates both automatically when processing your subscriber list.
+        </p>
+
         <h2 class="text-2xl font-display text-crst-primary mb-6">Zone-Based Pricing Explained</h2>
 
         <p class="text-navy-600/80 leading-relaxed mb-4">
@@ -201,6 +219,48 @@ import { BUSINESS } from '../../data/site';
             </div>
           </div>
         </div>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
+          <h3 class="font-heading font-bold text-amber-900 mb-2">Nonprofit Publications</h3>
+          <p class="text-sm text-amber-800 leading-relaxed">
+            Qualifying nonprofit organizations that publish Periodicals can access the Nonprofit Publications rate — a lower rate tier available to eligible 501(c)(3) publishers. To qualify, the publication must be an authorized Periodicals publication and the publisher must hold USPS nonprofit mailing authorization. This is a separate authorization from standard Periodicals status and requires documentation of the organization's nonprofit purpose. Cornerstone has assisted Hudson Valley nonprofit publishers with both their Periodicals authorization and their nonprofit authorization applications.
+          </p>
+        </div>
+
+        <h3 class="text-xl font-display text-crst-primary mb-4">Applying for Periodicals Authorization</h3>
+        <p class="text-navy-600/80 leading-relaxed mb-5">
+          Periodicals authorization is not automatic — your publication must apply and be approved before mailing at Periodicals rates. The application process requires demonstrating that your publication meets USPS eligibility criteria for the mail class.
+        </p>
+        <div class="space-y-3 mb-8">
+          {[
+            { step: '1', title: 'Confirm Eligibility', desc: 'Your publication must be a legitimate periodical with a legitimate list of subscribers or requesters, issued at regular intervals, with a known office of publication. See our Periodicals eligibility guide for full criteria.' },
+            { step: '2', title: 'Complete PS Form 3500', desc: 'PS Form 3500 (Application for Periodicals Authorization) is filed with your local Postmaster or USPS Business Mail Entry Unit. Include circulation data, editorial sample, and frequency documentation.' },
+            { step: '3', title: 'USPS Review', desc: 'USPS reviews your application and may request additional information. Approval can take several weeks. Once approved, your publication receives a unique entry office and permit number.' },
+            { step: '4', title: 'File Annually: PS Form 3526', desc: 'The Statement of Ownership must be filed annually by October 1 and published in your October or earlier issue. Failure to file can result in suspension of Periodicals privileges.' },
+          ].map(item => (
+            <div class="flex gap-4 p-4 border border-gray-200 rounded-lg">
+              <div class="w-8 h-8 rounded-full bg-crst-primary text-white flex items-center justify-center text-sm font-bold shrink-0">{item.step}</div>
+              <div>
+                <div class="font-heading font-bold text-gray-800 text-sm">{item.title}</div>
+                <div class="text-sm text-gray-600 mt-1">{item.desc}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div class="flex items-center gap-3 bg-navy-50 rounded-xl p-4 mb-8">
+          <div class="w-10 h-10 rounded-full bg-crst-primary flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+          </div>
+          <div>
+            <div class="font-heading font-bold text-navy-800 text-sm">Sean Griffen</div>
+            <div class="text-xs text-navy-600/70">Owner, Cornerstone Services · Hudson Valley direct mail since 1998 · Reviewed February 2026</div>
+          </div>
+        </div>
+
+        <p class="text-xs text-gray-400 leading-relaxed mb-8">
+          Processing, pricing, and preparation information sourced from <a href="https://pe.usps.com/text/dmm300/207.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-600">USPS Domestic Mail Manual Section 207 — Periodicals</a>, available on <a href="https://pe.usps.com" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-600">Postal Explorer</a>. Requirements subject to change.
+        </p>
 
         <div class="bg-crst-primary/5 border border-crst-primary/20 rounded-xl p-6 sm:p-8">
           <h3 class="text-xl font-display font-bold text-crst-primary mb-3">Cornerstone Handles Periodicals Mailings</h3>
