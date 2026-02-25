@@ -1,0 +1,6185 @@
+[
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "forestry product",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-25 07:05:31 +00:00",
+        "competition": 0.15000000596046448,
+        "competition_level": "LOW",
+        "cpc": 1.2899999618530273,
+        "search_volume": 2900,
+        "low_top_of_page_bid": 0.4000000059604645,
+        "high_top_of_page_bid": 3.5299999713897705,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 1900
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 2400
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 2900
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 2400
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 2400
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 2400
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 2400
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 2900
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 3600
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 4400
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 3600
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 4400
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -21,
+          "quarterly": -34,
+          "yearly": -47
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": "forestry products",
+        "synonym_clustering_algorithm": "text_processing",
+        "keyword_difficulty": 25,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=forestry%20product&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "people_also_ask",
+          "local_pack",
+          "images",
+          "video",
+          "related_searches"
+        ],
+        "se_results_count": 917000000,
+        "last_updated_time": "2026-01-28 07:09:17 +00:00",
+        "previous_updated_time": "2025-11-10 02:08:19 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 2354.5,
+        "dofollow": 2003.800048828125,
+        "referring_pages": 2197.39990234375,
+        "referring_domains": 200.8000030517578,
+        "referring_main_domains": 182,
+        "rank": 148.6999969482422,
+        "main_domain_rank": 487.70001220703125,
+        "last_updated_time": "2026-01-28 07:09:18 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "commercial",
+        "foreign_intent": [
+          "navigational"
+        ],
+        "last_updated_time": "2023-03-05 17:40:18 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 84,
+        "rank_absolute": 102,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[10]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & Forestry ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "ENVIRONMENTAL FOREST PRODUCTS. We specialize in low-impact forestry management and timber harvesting. We also purchase standing timber and provide landclearing\u00a0... Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "FOREST PRODUCTS"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 6.090000152587891,
+        "estimated_paid_traffic_cost": 7.856100082397461,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": 108,
+          "is_new": false,
+          "is_up": true,
+          "is_down": false
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=forestry%20product&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "people_also_ask",
+        "local_pack",
+        "images",
+        "video",
+        "related_searches"
+      ],
+      "se_results_count": 917000000,
+      "keyword_difficulty": 25,
+      "is_lost": false,
+      "last_updated_time": "2026-01-28 07:09:17 +00:00",
+      "previous_updated_time": "2025-11-10 02:08:19 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "e forestry",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-27 01:54:54 +00:00",
+        "competition": 0.029999999329447746,
+        "competition_level": "LOW",
+        "cpc": 0.3700000047683716,
+        "search_volume": 1000,
+        "low_top_of_page_bid": 0.3499999940395355,
+        "high_top_of_page_bid": 1.159999966621399,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 2400
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 2400
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 1300
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 1000
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 880
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 720
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 880
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 400,
+          "quarterly": 515,
+          "yearly": 85
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": "e forest",
+        "synonym_clustering_algorithm": "keyword_metrics",
+        "keyword_difficulty": 34,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=e%20forestry&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "ai_overview",
+          "organic",
+          "people_also_ask",
+          "related_searches"
+        ],
+        "se_results_count": 101000000,
+        "last_updated_time": "2026-01-21 19:17:26 +00:00",
+        "previous_updated_time": "2025-12-06 10:59:45 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 688.5999755859375,
+        "dofollow": 483.29998779296875,
+        "referring_pages": 520.0999755859375,
+        "referring_domains": 166.10000610351562,
+        "referring_main_domains": 149.89999389648438,
+        "rank": 170.89999389648438,
+        "main_domain_rank": 344.8999938964844,
+        "last_updated_time": "2026-01-21 19:17:29 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "navigational",
+        "foreign_intent": [
+          "informational"
+        ],
+        "last_updated_time": "2023-03-07 06:39:28 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 4,
+        "rank_absolute": 6,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[2]/div[1]/div[2]/div[1]/div[1]/div[10]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & Forestry ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "We specialize in low-impact forestry management and timber harvesting. We also purchase standing timber and provide landclearing services. Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "We specialize in low-impact forestry management and timber harvesting"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 65.9000015258789,
+        "estimated_paid_traffic_cost": 24.382999420166016,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": 10,
+          "is_new": false,
+          "is_up": true,
+          "is_down": false
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=e%20forestry&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "ai_overview",
+        "organic",
+        "people_also_ask",
+        "related_searches"
+      ],
+      "se_results_count": 101000000,
+      "keyword_difficulty": 34,
+      "is_lost": false,
+      "last_updated_time": "2026-01-21 19:17:26 +00:00",
+      "previous_updated_time": "2025-12-06 10:59:45 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "supreme forest products",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-22 05:50:14 +00:00",
+        "competition": 0.019999999552965164,
+        "competition_level": "LOW",
+        "cpc": 0.20999999344348907,
+        "search_volume": 720,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 880
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 720
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 880
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 1000
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 1300
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 1000
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 320
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -33,
+          "quarterly": -56,
+          "yearly": -33
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": "text_processing",
+        "keyword_difficulty": 3,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=supreme%20forest%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "local_pack",
+          "organic",
+          "related_searches",
+          "images"
+        ],
+        "se_results_count": 42600000,
+        "last_updated_time": "2026-01-22 00:42:09 +00:00",
+        "previous_updated_time": "2025-12-06 13:32:06 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 100.19999694824219,
+        "dofollow": 68.9000015258789,
+        "referring_pages": 88,
+        "referring_domains": 23.799999237060547,
+        "referring_main_domains": 21,
+        "rank": 62.400001525878906,
+        "main_domain_rank": 583.2000122070312,
+        "last_updated_time": "2026-01-22 00:42:11 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "commercial",
+        "foreign_intent": [
+          "navigational"
+        ],
+        "last_updated_time": "2023-03-06 20:06:16 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 92,
+        "rank_absolute": 105,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & Forestry ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "Need timber harvesting done efficiently? Environmental Forest Products will work with you to protect your woodlot and tree regrowth.",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "timber",
+          "Forest Products"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 1.5120000839233398,
+        "estimated_paid_traffic_cost": 0.31751999258995056,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": 82,
+          "is_new": false,
+          "is_up": false,
+          "is_down": true
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=supreme%20forest%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "local_pack",
+        "organic",
+        "related_searches",
+        "images"
+      ],
+      "se_results_count": 42600000,
+      "keyword_difficulty": 3,
+      "is_lost": false,
+      "last_updated_time": "2026-01-22 00:42:09 +00:00",
+      "previous_updated_time": "2025-12-06 13:32:06 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "eastex forest products",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-02-02 13:49:52 +00:00",
+        "competition": 0.029999999329447746,
+        "competition_level": "LOW",
+        "cpc": 7.5,
+        "search_volume": 590,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 590
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 23,
+          "yearly": 23
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": null,
+        "keyword_difficulty": 0,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=eastex%20forest%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "people_also_ask",
+          "images",
+          "related_searches",
+          "google_reviews",
+          "knowledge_graph"
+        ],
+        "se_results_count": 45500,
+        "last_updated_time": "2025-12-27 23:53:41 +00:00",
+        "previous_updated_time": "2025-11-11 23:08:34 +00:00"
+      },
+      "avg_backlinks_info": null,
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "transactional",
+        "foreign_intent": [
+          "navigational"
+        ],
+        "last_updated_time": "2023-03-07 07:01:50 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 86,
+        "rank_absolute": 96,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[7]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": true,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "We specialize in low-impact forestry management and timber harvesting. We also purchase standing timber and provide landclearing services. Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "forestry"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 1.2389999628067017,
+        "estimated_paid_traffic_cost": 9.292499542236328,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": null,
+          "is_new": true,
+          "is_up": false,
+          "is_down": false
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=eastex%20forest%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "people_also_ask",
+        "images",
+        "related_searches",
+        "google_reviews",
+        "knowledge_graph"
+      ],
+      "se_results_count": 45500,
+      "keyword_difficulty": 0,
+      "is_lost": false,
+      "last_updated_time": "2025-12-27 23:53:41 +00:00",
+      "previous_updated_time": "2025-11-11 23:08:34 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "forest environmental",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-28 04:36:55 +00:00",
+        "competition": 0,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 390,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10002,
+          10028,
+          10227,
+          11008,
+          12359
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 260
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -33,
+          "quarterly": -46,
+          "yearly": 53
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": "environment forest",
+        "synonym_clustering_algorithm": "text_processing",
+        "keyword_difficulty": 39,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=forest%20environmental&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "perspectives",
+          "people_also_ask",
+          "video",
+          "related_searches",
+          "images"
+        ],
+        "se_results_count": 716000000,
+        "last_updated_time": "2025-12-28 15:02:42 +00:00",
+        "previous_updated_time": "2025-11-13 01:17:44 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 21531.19921875,
+        "dofollow": 18495.400390625,
+        "referring_pages": 19951.400390625,
+        "referring_domains": 1135.4000244140625,
+        "referring_main_domains": 1024,
+        "rank": 240.6999969482422,
+        "main_domain_rank": 419.29998779296875,
+        "last_updated_time": "2025-12-28 15:02:45 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "navigational",
+        "foreign_intent": [
+          "informational"
+        ],
+        "last_updated_time": "2023-03-05 17:38:48 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 71,
+        "rank_absolute": 81,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & Forestry ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "ENVIRONMENTAL FOREST PRODUCTS. We specialize in low-impact forestry management and timber harvesting. We also purchase standing timber and provide landclearing\u00a0... Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "ENVIRONMENTAL FOREST",
+          "forestry"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 0.8190000057220459,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": null,
+          "is_new": true,
+          "is_up": false,
+          "is_down": false
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=forest%20environmental&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "perspectives",
+        "people_also_ask",
+        "video",
+        "related_searches",
+        "images"
+      ],
+      "se_results_count": 716000000,
+      "keyword_difficulty": 39,
+      "is_lost": false,
+      "last_updated_time": "2025-12-28 15:02:42 +00:00",
+      "previous_updated_time": "2025-11-13 01:17:44 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "forestry environmental",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-27 10:48:54 +00:00",
+        "competition": 0,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 390,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10002,
+          10004,
+          10028,
+          10227,
+          11008,
+          11083,
+          12359,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 260
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -33,
+          "quarterly": -46,
+          "yearly": 53
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": "text_processing",
+        "keyword_difficulty": 16,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=forestry%20environmental&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "people_also_ask",
+          "video",
+          "perspectives",
+          "related_searches",
+          "google_reviews",
+          "knowledge_graph"
+        ],
+        "se_results_count": 822000000,
+        "last_updated_time": "2025-12-28 15:03:50 +00:00",
+        "previous_updated_time": "2025-11-13 01:15:49 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 1752.5999755859375,
+        "dofollow": 1647.800048828125,
+        "referring_pages": 1650.4000244140625,
+        "referring_domains": 45.900001525878906,
+        "referring_main_domains": 38.900001525878906,
+        "rank": 125.5,
+        "main_domain_rank": 531,
+        "last_updated_time": "2025-12-28 15:03:55 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "navigational",
+        "foreign_intent": [
+          "commercial"
+        ],
+        "last_updated_time": "2023-03-05 17:40:15 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 51,
+        "rank_absolute": 59,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & Forestry ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "We specialize in low-impact forestry management and timber harvesting. We also purchase standing timber and provide landclearing services. Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "forestry"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 0.8190000057220459,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": null,
+          "is_new": true,
+          "is_up": false,
+          "is_down": false
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=forestry%20environmental&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "people_also_ask",
+        "video",
+        "perspectives",
+        "related_searches",
+        "google_reviews",
+        "knowledge_graph"
+      ],
+      "se_results_count": 822000000,
+      "keyword_difficulty": 16,
+      "is_lost": false,
+      "last_updated_time": "2025-12-28 15:03:50 +00:00",
+      "previous_updated_time": "2025-11-13 01:15:49 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "arbortech forest products",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-25 10:41:36 +00:00",
+        "competition": 0.019999999552965164,
+        "competition_level": "LOW",
+        "cpc": 0.8999999761581421,
+        "search_volume": 320,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 210
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 24,
+          "quarterly": -33,
+          "yearly": 24
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": null,
+        "keyword_difficulty": 0,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=arbortech%20forest%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "images",
+          "people_also_ask",
+          "related_searches",
+          "google_reviews",
+          "knowledge_graph",
+          "popular_products"
+        ],
+        "se_results_count": 13800,
+        "last_updated_time": "2025-12-29 10:04:30 +00:00",
+        "previous_updated_time": "2025-10-30 12:55:03 +00:00"
+      },
+      "avg_backlinks_info": null,
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "transactional",
+        "foreign_intent": [
+          "navigational"
+        ],
+        "last_updated_time": "2023-03-02 21:18:58 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 91,
+        "rank_absolute": 108,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & Forestry ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "We specialize in low-impact forestry management and timber harvesting. We also purchase standing timber and provide landclearing services. Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "forestry",
+          "timber"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 0.671999990940094,
+        "estimated_paid_traffic_cost": 0.6047999858856201,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": null,
+          "is_new": true,
+          "is_up": false,
+          "is_down": false
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=arbortech%20forest%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "images",
+        "people_also_ask",
+        "related_searches",
+        "google_reviews",
+        "knowledge_graph",
+        "popular_products"
+      ],
+      "se_results_count": 13800,
+      "keyword_difficulty": 0,
+      "is_lost": false,
+      "last_updated_time": "2025-12-29 10:04:30 +00:00",
+      "previous_updated_time": "2025-10-30 12:55:03 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "environment forest",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-22 08:55:11 +00:00",
+        "competition": 0,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 320,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10002,
+          10004,
+          10028,
+          10227,
+          11008,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 590
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 480
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 320
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 390
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 320
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 23,
+          "quarterly": 51,
+          "yearly": 84
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": "text_processing",
+        "keyword_difficulty": 57,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=environment%20forest&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "ai_overview",
+          "images",
+          "people_also_ask",
+          "video",
+          "organic",
+          "perspectives",
+          "related_searches"
+        ],
+        "se_results_count": 465000000,
+        "last_updated_time": "2025-12-29 06:10:28 +00:00",
+        "previous_updated_time": "2025-11-06 03:31:36 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 47571.1015625,
+        "dofollow": 33549.30078125,
+        "referring_pages": 34312.1015625,
+        "referring_domains": 1199.0999755859375,
+        "referring_main_domains": 1050,
+        "rank": 299.8999938964844,
+        "main_domain_rank": 609.2999877929688,
+        "last_updated_time": "2025-12-29 06:10:30 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "navigational",
+        "foreign_intent": [
+          "informational"
+        ],
+        "last_updated_time": "2023-03-02 09:06:32 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 16,
+        "rank_absolute": 22,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & Forestry ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "We specialize in low-impact forestry management and timber harvesting. We also purchase standing timber and provide landclearing services. Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "We specialize in low-impact forestry management and timber harvesting"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 1.375999927520752,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": null,
+          "is_new": true,
+          "is_up": false,
+          "is_down": false
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=environment%20forest&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "ai_overview",
+        "images",
+        "people_also_ask",
+        "video",
+        "organic",
+        "perspectives",
+        "related_searches"
+      ],
+      "se_results_count": 465000000,
+      "keyword_difficulty": 57,
+      "is_lost": false,
+      "last_updated_time": "2025-12-29 06:10:28 +00:00",
+      "previous_updated_time": "2025-11-06 03:31:36 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "elder forest products",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-23 18:03:26 +00:00",
+        "competition": 0.019999999552965164,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 170,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 260
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 110
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 27,
+          "quarterly": -33,
+          "yearly": 27
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": "elders forest products",
+        "synonym_clustering_algorithm": "text_processing",
+        "keyword_difficulty": 0,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=elder%20forest%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "people_also_ask",
+          "related_searches",
+          "knowledge_graph",
+          "google_reviews",
+          "third_party_reviews",
+          "images"
+        ],
+        "se_results_count": 12300000,
+        "last_updated_time": "2026-02-01 07:50:28 +00:00",
+        "previous_updated_time": "2025-12-16 17:26:32 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 13.300000190734863,
+        "dofollow": 7.599999904632568,
+        "referring_pages": 13,
+        "referring_domains": 11.199999809265137,
+        "referring_main_domains": 10.800000190734863,
+        "rank": 20,
+        "main_domain_rank": 513.0999755859375,
+        "last_updated_time": "2026-02-01 07:50:29 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "commercial",
+        "foreign_intent": [
+          "navigational"
+        ],
+        "last_updated_time": "2023-03-02 07:33:26 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 84,
+        "rank_absolute": 101,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & Forestry ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "Need timber harvesting done efficiently? Environmental Forest Products will work with you to protect your woodlot and tree regrowth.",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "Forest Products"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 0.3569999933242798,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": null,
+          "is_new": true,
+          "is_up": false,
+          "is_down": false
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=elder%20forest%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "people_also_ask",
+        "related_searches",
+        "knowledge_graph",
+        "google_reviews",
+        "third_party_reviews",
+        "images"
+      ],
+      "se_results_count": 12300000,
+      "keyword_difficulty": 0,
+      "is_lost": false,
+      "last_updated_time": "2026-02-01 07:50:28 +00:00",
+      "previous_updated_time": "2025-12-16 17:26:32 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "archer forest products",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-28 18:55:15 +00:00",
+        "competition": 0.009999999776482582,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 140,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 210
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 90
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -57,
+          "quarterly": -36,
+          "yearly": 0
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": null,
+        "keyword_difficulty": 0,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=archer%20forest%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "people_also_ask",
+          "related_searches",
+          "knowledge_graph",
+          "google_reviews",
+          "images"
+        ],
+        "se_results_count": 8330000,
+        "last_updated_time": "2026-01-01 15:11:17 +00:00",
+        "previous_updated_time": "2025-11-15 17:16:06 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 2.299999952316284,
+        "dofollow": 1.899999976158142,
+        "referring_pages": 2.299999952316284,
+        "referring_domains": 1.600000023841858,
+        "referring_main_domains": 1.5,
+        "rank": 27.899999618530273,
+        "main_domain_rank": 492.6000061035156,
+        "last_updated_time": "2026-01-01 15:11:22 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "commercial",
+        "foreign_intent": [
+          "navigational"
+        ],
+        "last_updated_time": "2023-03-02 21:24:01 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 50,
+        "rank_absolute": 57,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & Forestry ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "We specialize in low-impact forestry management and timber harvesting. We also purchase standing timber and provide landclearing services. Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "forestry",
+          "timber"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 0.2939999997615814,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": 32,
+          "is_new": false,
+          "is_up": false,
+          "is_down": true
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=archer%20forest%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "people_also_ask",
+        "related_searches",
+        "knowledge_graph",
+        "google_reviews",
+        "images"
+      ],
+      "se_results_count": 8330000,
+      "keyword_difficulty": 0,
+      "is_lost": false,
+      "last_updated_time": "2026-01-01 15:11:17 +00:00",
+      "previous_updated_time": "2025-11-15 17:16:06 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "benefits of logging",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-25 15:12:53 +00:00",
+        "competition": 0,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 90,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 90
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -29,
+          "quarterly": -44,
+          "yearly": 25
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": "benefits log in",
+        "synonym_clustering_algorithm": "text_processing",
+        "keyword_difficulty": 0,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=benefits%20of%20logging&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "ai_overview",
+          "organic",
+          "people_also_ask",
+          "video",
+          "discussions_and_forums",
+          "related_searches",
+          "images"
+        ],
+        "se_results_count": 369000000,
+        "last_updated_time": "2026-02-19 10:46:28 +00:00",
+        "previous_updated_time": "2026-01-03 10:40:36 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 18.899999618530273,
+        "dofollow": 16.600000381469727,
+        "referring_pages": 17.600000381469727,
+        "referring_domains": 8.5,
+        "referring_main_domains": 7.699999809265137,
+        "rank": 30.399999618530273,
+        "main_domain_rank": 442.70001220703125,
+        "last_updated_time": "2026-02-19 10:46:29 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "informational",
+        "foreign_intent": null,
+        "last_updated_time": "2023-03-02 11:02:20 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 67,
+        "rank_absolute": 81,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Benefits of Sustainable Wood Logging",
+        "url": "https://eforestproducts.com/sustainable-wood-logging/",
+        "breadcrumb": "https://eforestproducts.com \u203a sustainable-wood-logging",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "Wood logging creates more space and creates favorable conditions for young plants to grow and thrive under direct sunlight. Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "logging"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/sustainable-wood-logging/",
+        "etv": 0.1889999955892563,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": null,
+          "is_new": true,
+          "is_up": false,
+          "is_down": false
+        },
+        "backlinks_info": null,
+        "rank_info": {
+          "page_rank": 0,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=benefits%20of%20logging&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "ai_overview",
+        "organic",
+        "people_also_ask",
+        "video",
+        "discussions_and_forums",
+        "related_searches",
+        "images"
+      ],
+      "se_results_count": 369000000,
+      "keyword_difficulty": 0,
+      "is_lost": false,
+      "last_updated_time": "2026-02-19 10:46:28 +00:00",
+      "previous_updated_time": "2026-01-03 10:40:36 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "ecotrust forests",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-02-02 19:26:09 +00:00",
+        "competition": 0.009999999776482582,
+        "competition_level": "LOW",
+        "cpc": 21.09000015258789,
+        "search_volume": 90,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 70
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -20,
+          "quarterly": -43,
+          "yearly": -43
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": null,
+        "keyword_difficulty": 5,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=ecotrust%20forests&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "related_searches"
+        ],
+        "se_results_count": 38800,
+        "last_updated_time": "2026-02-03 10:20:52 +00:00",
+        "previous_updated_time": "2025-12-20 16:19:03 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 463.3999938964844,
+        "dofollow": 426.70001220703125,
+        "referring_pages": 438,
+        "referring_domains": 87.80000305175781,
+        "referring_main_domains": 79.30000305175781,
+        "rank": 94.80000305175781,
+        "main_domain_rank": 363.3999938964844,
+        "last_updated_time": "2026-02-03 10:20:53 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "navigational",
+        "foreign_intent": [
+          "informational"
+        ],
+        "last_updated_time": "2023-03-07 07:26:26 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 65,
+        "rank_absolute": 71,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & Forestry ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "We specialize in low-impact forestry management and timber harvesting. We also purchase standing timber and provide landclearing services. Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "forestry"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 0.1889999955892563,
+        "estimated_paid_traffic_cost": 3.9860100746154785,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": null,
+          "is_new": true,
+          "is_up": false,
+          "is_down": false
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=ecotrust%20forests&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "related_searches"
+      ],
+      "se_results_count": 38800,
+      "keyword_difficulty": 5,
+      "is_lost": false,
+      "last_updated_time": "2026-02-03 10:20:52 +00:00",
+      "previous_updated_time": "2025-12-20 16:19:03 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "environmental wood supply",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-02-01 06:21:56 +00:00",
+        "competition": 0.009999999776482582,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 90,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          10282,
+          12425,
+          13797
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 90
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 33,
+          "quarterly": -20,
+          "yearly": -64
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": null,
+        "keyword_difficulty": 0,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=environmental%20wood%20supply&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "people_also_ask",
+          "related_searches",
+          "knowledge_graph",
+          "google_reviews"
+        ],
+        "se_results_count": 117000000,
+        "last_updated_time": "2026-02-03 10:19:26 +00:00",
+        "previous_updated_time": "2025-12-20 16:01:33 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 0.800000011920929,
+        "dofollow": 0.699999988079071,
+        "referring_pages": 0.800000011920929,
+        "referring_domains": 0.699999988079071,
+        "referring_main_domains": 0.6000000238418579,
+        "rank": 20.700000762939453,
+        "main_domain_rank": 563.4000244140625,
+        "last_updated_time": "2026-02-03 10:19:26 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "navigational",
+        "foreign_intent": [
+          "commercial"
+        ],
+        "last_updated_time": "2023-03-02 09:07:50 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 50,
+        "rank_absolute": 56,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & Forestry ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "TIMBER HARVESTING. Wood is a valued renewable resource. We take great pride and care in maximizing client profitability while managing and sustaining forests\u00a0... Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "Wood"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 0.1889999955892563,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": null,
+          "is_new": true,
+          "is_up": false,
+          "is_down": false
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=environmental%20wood%20supply&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "people_also_ask",
+        "related_searches",
+        "knowledge_graph",
+        "google_reviews"
+      ],
+      "se_results_count": 117000000,
+      "keyword_difficulty": 0,
+      "is_lost": false,
+      "last_updated_time": "2026-02-03 10:19:26 +00:00",
+      "previous_updated_time": "2025-12-20 16:01:33 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "logging advantages",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-27 01:10:48 +00:00",
+        "competition": 0,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 90,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 90
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -29,
+          "quarterly": -44,
+          "yearly": 25
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": "advantage log in",
+        "synonym_clustering_algorithm": "text_processing",
+        "keyword_difficulty": 0,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=logging%20advantages&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "ai_overview",
+          "organic",
+          "people_also_ask",
+          "video",
+          "related_searches",
+          "images"
+        ],
+        "se_results_count": 427000000,
+        "last_updated_time": "2026-02-18 22:43:38 +00:00",
+        "previous_updated_time": "2026-01-03 01:24:40 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 0.8999999761581421,
+        "dofollow": 0.5,
+        "referring_pages": 0.8999999761581421,
+        "referring_domains": 0.699999988079071,
+        "referring_main_domains": 0.699999988079071,
+        "rank": 7.199999809265137,
+        "main_domain_rank": 302.29998779296875,
+        "last_updated_time": "2026-02-18 22:43:52 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "informational",
+        "foreign_intent": null,
+        "last_updated_time": "2023-06-09 14:53:36 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 25,
+        "rank_absolute": 30,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Benefits of Sustainable Wood Logging",
+        "url": "https://eforestproducts.com/sustainable-wood-logging/",
+        "breadcrumb": "https://eforestproducts.com \u203a sustainable-wood-logging",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "Wood logging creates more space and creates favorable conditions for young plants to grow and thrive under direct sunlight. Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "Wood logging creates more space"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/sustainable-wood-logging/",
+        "etv": 0.1889999955892563,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": 39,
+          "is_new": false,
+          "is_up": true,
+          "is_down": false
+        },
+        "backlinks_info": null,
+        "rank_info": {
+          "page_rank": 0,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=logging%20advantages&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "ai_overview",
+        "organic",
+        "people_also_ask",
+        "video",
+        "related_searches",
+        "images"
+      ],
+      "se_results_count": 427000000,
+      "keyword_difficulty": 0,
+      "is_lost": false,
+      "last_updated_time": "2026-02-18 22:43:38 +00:00",
+      "previous_updated_time": "2026-01-03 01:24:40 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "logging benefits",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-02-02 00:47:50 +00:00",
+        "competition": 0,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 90,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 170
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 90
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -29,
+          "quarterly": -44,
+          "yearly": 25
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": "benefits log in",
+        "synonym_clustering_algorithm": "text_processing",
+        "keyword_difficulty": 0,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=logging%20benefits&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "ai_overview",
+          "organic",
+          "people_also_ask",
+          "video",
+          "discussions_and_forums",
+          "related_searches",
+          "images"
+        ],
+        "se_results_count": 1730000000,
+        "last_updated_time": "2026-02-18 22:44:00 +00:00",
+        "previous_updated_time": "2026-01-03 01:23:25 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 376.29998779296875,
+        "dofollow": 259,
+        "referring_pages": 293.5,
+        "referring_domains": 65.5999984741211,
+        "referring_main_domains": 57.099998474121094,
+        "rank": 53.900001525878906,
+        "main_domain_rank": 522,
+        "last_updated_time": "2026-02-18 22:44:04 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "informational",
+        "foreign_intent": null,
+        "last_updated_time": "2023-03-05 12:46:55 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 40,
+        "rank_absolute": 48,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Benefits of Sustainable Wood Logging",
+        "url": "https://eforestproducts.com/sustainable-wood-logging/",
+        "breadcrumb": "https://eforestproducts.com \u203a sustainable-wood-logging",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "Interested in learning how to manage sustainable logging on your woodlot? You may be surprised to learn that cutting down trees in forests has positive\u00a0...",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "logging"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/sustainable-wood-logging/",
+        "etv": 0.1889999955892563,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": 55,
+          "is_new": false,
+          "is_up": true,
+          "is_down": false
+        },
+        "backlinks_info": null,
+        "rank_info": {
+          "page_rank": 0,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=logging%20benefits&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "ai_overview",
+        "organic",
+        "people_also_ask",
+        "video",
+        "discussions_and_forums",
+        "related_searches",
+        "images"
+      ],
+      "se_results_count": 1730000000,
+      "keyword_difficulty": 0,
+      "is_lost": false,
+      "last_updated_time": "2026-02-18 22:44:00 +00:00",
+      "previous_updated_time": "2026-01-03 01:23:25 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "480a forestry program",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-26 11:23:08 +00:00",
+        "competition": 0.05000000074505806,
+        "competition_level": "LOW",
+        "cpc": 12.079999923706055,
+        "search_volume": 70,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 90
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -44,
+          "quarterly": -44,
+          "yearly": -55
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": "text_processing",
+        "keyword_difficulty": 0,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=480a%20forestry%20program&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "people_also_ask",
+          "related_searches"
+        ],
+        "se_results_count": 67200,
+        "last_updated_time": "2026-01-03 12:32:41 +00:00",
+        "previous_updated_time": "2025-11-22 23:24:17 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 2.5999999046325684,
+        "dofollow": 2.5,
+        "referring_pages": 2.5,
+        "referring_domains": 2.0999999046325684,
+        "referring_main_domains": 2,
+        "rank": 15.199999809265137,
+        "main_domain_rank": 511,
+        "last_updated_time": "2026-01-03 12:32:41 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "transactional",
+        "foreign_intent": null,
+        "last_updated_time": "2023-03-04 05:17:51 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 31,
+        "rank_absolute": 35,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "nys 480-a forest tax law",
+        "url": "https://eforestproducts.com/nys-tax-breaks/",
+        "breadcrumb": "https://eforestproducts.com \u203a nys-tax-breaks",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "In order to qualify for NY State tax breaks via 480-a Forest Tax Law, you need a forest management plan completed by a qualified forester.",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "480-a Forest",
+          "forest"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/nys-tax-breaks/",
+        "etv": 0.1469999998807907,
+        "estimated_paid_traffic_cost": 1.7757599353790283,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": 38,
+          "is_new": false,
+          "is_up": true,
+          "is_down": false
+        },
+        "backlinks_info": null,
+        "rank_info": {
+          "page_rank": 0,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=480a%20forestry%20program&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "people_also_ask",
+        "related_searches"
+      ],
+      "se_results_count": 67200,
+      "keyword_difficulty": 0,
+      "is_lost": false,
+      "last_updated_time": "2026-01-03 12:32:41 +00:00",
+      "previous_updated_time": "2025-11-22 23:24:17 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "environmental protection products",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-02-01 02:00:48 +00:00",
+        "competition": 0.10000000149011612,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 70,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10002,
+          10028,
+          10227,
+          11008,
+          11077
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 140
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 480
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": -98
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": null,
+        "keyword_difficulty": 45,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=environmental%20protection%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "people_also_ask",
+          "related_searches",
+          "images"
+        ],
+        "se_results_count": 976000000,
+        "last_updated_time": "2026-02-04 05:17:10 +00:00",
+        "previous_updated_time": "2025-12-19 23:21:36 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 4958.7998046875,
+        "dofollow": 3613.199951171875,
+        "referring_pages": 3903.5,
+        "referring_domains": 1623.5999755859375,
+        "referring_main_domains": 1508.0999755859375,
+        "rank": 267,
+        "main_domain_rank": 405.3999938964844,
+        "last_updated_time": "2026-02-04 05:17:10 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "navigational",
+        "foreign_intent": [
+          "transactional",
+          "commercial"
+        ],
+        "last_updated_time": "2023-03-02 09:07:30 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 59,
+        "rank_absolute": 65,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[9]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & Forestry ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "Need timber harvesting done efficiently? Environmental Forest Products will work with you to protect your woodlot and tree regrowth.",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "Environmental",
+          "Products",
+          "protect"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 0.1469999998807907,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": null,
+          "is_new": true,
+          "is_up": false,
+          "is_down": false
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=environmental%20protection%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "people_also_ask",
+        "related_searches",
+        "images"
+      ],
+      "se_results_count": 976000000,
+      "keyword_difficulty": 45,
+      "is_lost": false,
+      "last_updated_time": "2026-02-04 05:17:10 +00:00",
+      "previous_updated_time": "2025-12-19 23:21:36 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "logging pros",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-31 00:56:54 +00:00",
+        "competition": 0.029999999329447746,
+        "competition_level": "LOW",
+        "cpc": 16.610000610351562,
+        "search_volume": 70,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 70
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": -22,
+          "yearly": -97
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": "text_processing",
+        "keyword_difficulty": 0,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=logging%20pros&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "ai_overview",
+          "organic",
+          "people_also_ask",
+          "video",
+          "related_searches",
+          "images"
+        ],
+        "se_results_count": 2420000000,
+        "last_updated_time": "2026-02-04 01:42:36 +00:00",
+        "previous_updated_time": "2025-10-10 21:07:43 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 0.10000000149011612,
+        "dofollow": 0.10000000149011612,
+        "referring_pages": 0.10000000149011612,
+        "referring_domains": 0.10000000149011612,
+        "referring_main_domains": 0.10000000149011612,
+        "rank": 1.399999976158142,
+        "main_domain_rank": 263.8999938964844,
+        "last_updated_time": "2026-02-04 01:42:39 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "navigational",
+        "foreign_intent": [
+          "commercial"
+        ],
+        "last_updated_time": "2023-09-04 14:20:31 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 38,
+        "rank_absolute": 45,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[10]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Benefits of Sustainable Wood Logging",
+        "url": "https://eforestproducts.com/sustainable-wood-logging/",
+        "breadcrumb": "https://eforestproducts.com \u203a sustainable-wood-logging",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "Wood logging creates more space and creates favorable conditions for young plants to grow and thrive under direct sunlight. Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "Wood logging creates more space"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/sustainable-wood-logging/",
+        "etv": 0.1469999998807907,
+        "estimated_paid_traffic_cost": 2.4416699409484863,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": 61,
+          "is_new": false,
+          "is_up": true,
+          "is_down": false
+        },
+        "backlinks_info": null,
+        "rank_info": {
+          "page_rank": 0,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=logging%20pros&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "ai_overview",
+        "organic",
+        "people_also_ask",
+        "video",
+        "related_searches",
+        "images"
+      ],
+      "se_results_count": 2420000000,
+      "keyword_difficulty": 0,
+      "is_lost": false,
+      "last_updated_time": "2026-02-04 01:42:36 +00:00",
+      "previous_updated_time": "2025-10-10 21:07:43 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "sustainable forest products",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-25 11:45:25 +00:00",
+        "competition": 0,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 70,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 70
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -67,
+          "quarterly": -40,
+          "yearly": 0
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": null,
+        "keyword_difficulty": 21,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=sustainable%20forest%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "ai_overview",
+          "people_also_ask",
+          "perspectives",
+          "video",
+          "related_searches",
+          "images"
+        ],
+        "se_results_count": 135000000,
+        "last_updated_time": "2026-02-03 19:40:14 +00:00",
+        "previous_updated_time": "2025-12-21 03:27:16 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 2356.10009765625,
+        "dofollow": 1971,
+        "referring_pages": 2179.5,
+        "referring_domains": 239.89999389648438,
+        "referring_main_domains": 219.5,
+        "rank": 164.89999389648438,
+        "main_domain_rank": 359.1000061035156,
+        "last_updated_time": "2026-02-03 19:40:15 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "commercial",
+        "foreign_intent": [
+          "transactional"
+        ],
+        "last_updated_time": "2023-03-06 21:33:41 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 41,
+        "rank_absolute": 51,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & Forestry ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "Need timber harvesting done efficiently? Environmental Forest Products will work with you to protect your woodlot and tree regrowth.",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "Forest Products"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 0.1469999998807907,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": 108,
+          "is_new": false,
+          "is_up": true,
+          "is_down": false
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=sustainable%20forest%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "ai_overview",
+        "people_also_ask",
+        "perspectives",
+        "video",
+        "related_searches",
+        "images"
+      ],
+      "se_results_count": 135000000,
+      "keyword_difficulty": 21,
+      "is_lost": false,
+      "last_updated_time": "2026-02-03 19:40:14 +00:00",
+      "previous_updated_time": "2025-12-21 03:27:16 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "sustainable forestry products",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-28 19:22:09 +00:00",
+        "competition": 0,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 70,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 90
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 70
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -67,
+          "quarterly": -40,
+          "yearly": 0
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": null,
+        "keyword_difficulty": 19,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=sustainable%20forestry%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "ai_overview",
+          "organic",
+          "people_also_ask",
+          "video",
+          "related_searches",
+          "images"
+        ],
+        "se_results_count": 119000000,
+        "last_updated_time": "2026-02-19 20:33:02 +00:00",
+        "previous_updated_time": "2026-01-03 20:18:59 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 6963.5,
+        "dofollow": 4364.89990234375,
+        "referring_pages": 4615.2001953125,
+        "referring_domains": 236.3000030517578,
+        "referring_main_domains": 216.10000610351562,
+        "rank": 155.1999969482422,
+        "main_domain_rank": 373.70001220703125,
+        "last_updated_time": "2026-02-19 20:33:02 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "transactional",
+        "foreign_intent": null,
+        "last_updated_time": "2023-03-06 21:33:42 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 73,
+        "rank_absolute": 86,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[7]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & Forestry ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "Need timber harvesting done efficiently? Environmental Forest Products will work with you to protect your woodlot and tree regrowth.",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "timber",
+          "Forest Products"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 0.1469999998807907,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": 105,
+          "is_new": false,
+          "is_up": true,
+          "is_down": false
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=sustainable%20forestry%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "ai_overview",
+        "organic",
+        "people_also_ask",
+        "video",
+        "related_searches",
+        "images"
+      ],
+      "se_results_count": 119000000,
+      "keyword_difficulty": 19,
+      "is_lost": false,
+      "last_updated_time": "2026-02-19 20:33:02 +00:00",
+      "previous_updated_time": "2026-01-03 20:18:59 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "480a",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-30 22:19:24 +00:00",
+        "competition": 0.029999999329447746,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 50,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10001,
+          10010,
+          10015,
+          10027,
+          10082,
+          10113,
+          10211,
+          10429,
+          11890,
+          12977
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 50
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 40,
+          "quarterly": 40,
+          "yearly": 40
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": "480-a",
+        "synonym_clustering_algorithm": "text_processing",
+        "keyword_difficulty": 0,
+        "detected_language": "de",
+        "is_another_language": true
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=480a&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "people_also_ask",
+          "related_searches",
+          "images"
+        ],
+        "se_results_count": 5130000,
+        "last_updated_time": "2026-01-07 13:25:37 +00:00",
+        "previous_updated_time": "2025-11-25 00:53:05 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 2.0999999046325684,
+        "dofollow": 2.0999999046325684,
+        "referring_pages": 2.0999999046325684,
+        "referring_domains": 1.7000000476837158,
+        "referring_main_domains": 1.600000023841858,
+        "rank": 13,
+        "main_domain_rank": 434.8999938964844,
+        "last_updated_time": "2026-01-07 13:25:44 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "transactional",
+        "foreign_intent": null,
+        "last_updated_time": "2023-03-04 05:17:51 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 55,
+        "rank_absolute": 61,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "nys 480-a forest tax law",
+        "url": "https://eforestproducts.com/nys-tax-breaks/",
+        "breadcrumb": "https://eforestproducts.com \u203a nys-tax-breaks",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "In order to qualify for NY State tax breaks via 480-a Forest Tax Law, you need a forest management plan completed by a qualified forester.",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "480-a"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/nys-tax-breaks/",
+        "etv": 0.10499999672174454,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": null,
+          "is_new": true,
+          "is_up": false,
+          "is_down": false
+        },
+        "backlinks_info": null,
+        "rank_info": {
+          "page_rank": 0,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=480a&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "people_also_ask",
+        "related_searches",
+        "images"
+      ],
+      "se_results_count": 5130000,
+      "keyword_difficulty": 0,
+      "is_lost": false,
+      "last_updated_time": "2026-01-07 13:25:37 +00:00",
+      "previous_updated_time": "2025-11-25 00:53:05 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "barnett forest products",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-02-02 15:09:03 +00:00",
+        "competition": 0.029999999329447746,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 50,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 70
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": -20,
+          "yearly": 0
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": null,
+        "keyword_difficulty": 0,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=barnett%20forest%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "images",
+          "people_also_ask",
+          "related_searches",
+          "third_party_reviews",
+          "google_reviews",
+          "knowledge_graph"
+        ],
+        "se_results_count": 4190000,
+        "last_updated_time": "2026-01-18 22:44:35 +00:00",
+        "previous_updated_time": "2025-11-24 21:48:44 +00:00"
+      },
+      "avg_backlinks_info": null,
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "navigational",
+        "foreign_intent": [
+          "commercial"
+        ],
+        "last_updated_time": "2023-03-07 06:23:33 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 81,
+        "rank_absolute": 91,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & Forestry ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "We specialize in low-impact forestry management and timber harvesting. We also purchase standing timber and provide landclearing services. Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "forestry",
+          "timber"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 0.10499999672174454,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": 68,
+          "is_new": false,
+          "is_up": false,
+          "is_down": true
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=barnett%20forest%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "images",
+        "people_also_ask",
+        "related_searches",
+        "third_party_reviews",
+        "google_reviews",
+        "knowledge_graph"
+      ],
+      "se_results_count": 4190000,
+      "keyword_difficulty": 0,
+      "is_lost": false,
+      "last_updated_time": "2026-01-18 22:44:35 +00:00",
+      "previous_updated_time": "2025-11-24 21:48:44 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "480 a",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-25 07:20:35 +00:00",
+        "competition": 0,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 40,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10012,
+          10095,
+          11831
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -20,
+          "quarterly": 33,
+          "yearly": 33
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": "480-a",
+        "synonym_clustering_algorithm": "text_processing",
+        "keyword_difficulty": 0,
+        "detected_language": "de",
+        "is_another_language": true
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=480%20a&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "people_also_ask",
+          "related_searches",
+          "images"
+        ],
+        "se_results_count": 1590000000,
+        "last_updated_time": "2026-02-06 10:39:01 +00:00",
+        "previous_updated_time": "2025-12-22 21:19:57 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 2.4000000953674316,
+        "dofollow": 2.4000000953674316,
+        "referring_pages": 2.4000000953674316,
+        "referring_domains": 1.899999976158142,
+        "referring_main_domains": 1.7000000476837158,
+        "rank": 15.600000381469727,
+        "main_domain_rank": 433.8999938964844,
+        "last_updated_time": "2026-02-06 10:39:02 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "commercial",
+        "foreign_intent": null,
+        "last_updated_time": "2025-12-16 21:34:53 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 20,
+        "rank_absolute": 22,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[10]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "nys 480-a forest tax law",
+        "url": "https://eforestproducts.com/nys-tax-breaks/",
+        "breadcrumb": "https://eforestproducts.com \u203a nys-tax-breaks",
+        "website_name": "Environmental Forest Products",
+        "is_image": true,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "In order to qualify for NY State tax breaks via 480-a Forest Tax Law, you need a forest management plan completed by a qualified forester.",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "480-a"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/nys-tax-breaks/",
+        "etv": 0.09600000083446503,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": 26,
+          "is_new": false,
+          "is_up": true,
+          "is_down": false
+        },
+        "backlinks_info": null,
+        "rank_info": {
+          "page_rank": 0,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=480%20a&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "people_also_ask",
+        "related_searches",
+        "images"
+      ],
+      "se_results_count": 1590000000,
+      "keyword_difficulty": 0,
+      "is_lost": false,
+      "last_updated_time": "2026-02-06 10:39:01 +00:00",
+      "previous_updated_time": "2025-12-22 21:19:57 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "480-a",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-25 21:42:44 +00:00",
+        "competition": 0,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 40,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10018,
+          10163,
+          10869
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -20,
+          "quarterly": 33,
+          "yearly": 33
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": "480",
+        "synonym_clustering_algorithm": "text_processing",
+        "keyword_difficulty": 0,
+        "detected_language": "eo",
+        "is_another_language": true
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=480-a&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "people_also_ask",
+          "related_searches",
+          "images"
+        ],
+        "se_results_count": 1460000000,
+        "last_updated_time": "2026-01-10 12:26:26 +00:00",
+        "previous_updated_time": "2025-11-16 11:17:33 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 3.9000000953674316,
+        "dofollow": 3.799999952316284,
+        "referring_pages": 3.799999952316284,
+        "referring_domains": 3.0999999046325684,
+        "referring_main_domains": 2.799999952316284,
+        "rank": 24.399999618530273,
+        "main_domain_rank": 474.6000061035156,
+        "last_updated_time": "2026-01-10 12:26:57 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "transactional",
+        "foreign_intent": [
+          "commercial"
+        ],
+        "last_updated_time": "2025-11-12 07:02:15 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 55,
+        "rank_absolute": 62,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "nys 480-a forest tax law",
+        "url": "https://eforestproducts.com/nys-tax-breaks/",
+        "breadcrumb": "https://eforestproducts.com \u203a nys-tax-breaks",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "In order to qualify for NY State tax breaks via 480-a Forest Tax Law, you need a forest management plan completed by a qualified forester.",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "480",
+          "a"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/nys-tax-breaks/",
+        "etv": 0.08399999886751175,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": 53,
+          "is_new": false,
+          "is_up": false,
+          "is_down": true
+        },
+        "backlinks_info": null,
+        "rank_info": {
+          "page_rank": 0,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=480-a&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "people_also_ask",
+        "related_searches",
+        "images"
+      ],
+      "se_results_count": 1460000000,
+      "keyword_difficulty": 0,
+      "is_lost": false,
+      "last_updated_time": "2026-01-10 12:26:26 +00:00",
+      "previous_updated_time": "2025-11-16 11:17:33 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "doyle forest products",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-28 16:51:51 +00:00",
+        "competition": 0,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 40,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -20,
+          "quarterly": -20,
+          "yearly": 100
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": null,
+        "keyword_difficulty": 0,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=doyle%20forest%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "people_also_ask",
+          "related_searches",
+          "google_reviews",
+          "knowledge_graph",
+          "images"
+        ],
+        "se_results_count": 5470000,
+        "last_updated_time": "2026-02-06 02:19:59 +00:00",
+        "previous_updated_time": "2025-12-22 15:03:33 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 0.699999988079071,
+        "dofollow": 0.4000000059604645,
+        "referring_pages": 0.699999988079071,
+        "referring_domains": 0.6000000238418579,
+        "referring_main_domains": 0.6000000238418579,
+        "rank": 6.800000190734863,
+        "main_domain_rank": 531.5,
+        "last_updated_time": "2026-02-06 02:20:00 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "navigational",
+        "foreign_intent": [
+          "commercial"
+        ],
+        "last_updated_time": "2023-03-07 06:56:16 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 82,
+        "rank_absolute": 92,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & Forestry ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "We specialize in low-impact forestry management and timber harvesting. We also purchase standing timber and provide landclearing services. Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "forestry",
+          "timber"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 0.08399999886751175,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": 87,
+          "is_new": false,
+          "is_up": false,
+          "is_down": true
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=doyle%20forest%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "people_also_ask",
+        "related_searches",
+        "google_reviews",
+        "knowledge_graph",
+        "images"
+      ],
+      "se_results_count": 5470000,
+      "keyword_difficulty": 0,
+      "is_lost": false,
+      "last_updated_time": "2026-02-06 02:19:59 +00:00",
+      "previous_updated_time": "2025-12-22 15:03:33 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "empire state forest products association",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-31 14:03:01 +00:00",
+        "competition": 0,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 40,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 50
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 100,
+          "quarterly": 33,
+          "yearly": 300
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": null,
+        "keyword_difficulty": 23,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=empire%20state%20forest%20products%20association&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "related_searches",
+          "google_reviews",
+          "knowledge_graph",
+          "images"
+        ],
+        "se_results_count": 7930000,
+        "last_updated_time": "2026-02-06 01:42:40 +00:00",
+        "previous_updated_time": "2025-12-24 08:26:24 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 1840.5999755859375,
+        "dofollow": 613.9000244140625,
+        "referring_pages": 614.9000244140625,
+        "referring_domains": 2.4000000953674316,
+        "referring_main_domains": 2.299999952316284,
+        "rank": 145.39999389648438,
+        "main_domain_rank": 619.5999755859375,
+        "last_updated_time": "2026-02-06 01:42:49 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "navigational",
+        "foreign_intent": [
+          "commercial"
+        ],
+        "last_updated_time": "2023-03-02 08:28:09 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 37,
+        "rank_absolute": 40,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[10]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & Forestry ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "We specialize in low-impact forestry management and timber harvesting. We also purchase standing timber and provide landclearing services. Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "We specialize in low-impact forestry management and timber harvesting"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 0.08399999886751175,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": 65,
+          "is_new": false,
+          "is_up": true,
+          "is_down": false
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=empire%20state%20forest%20products%20association&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "related_searches",
+        "google_reviews",
+        "knowledge_graph",
+        "images"
+      ],
+      "se_results_count": 7930000,
+      "keyword_difficulty": 23,
+      "is_lost": false,
+      "last_updated_time": "2026-02-06 01:42:40 +00:00",
+      "previous_updated_time": "2025-12-24 08:26:24 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "komatsu forestry equipment",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-31 04:04:21 +00:00",
+        "competition": 0.029999999329447746,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 40,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          10282,
+          11275
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 0,
+          "yearly": 67
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": null,
+        "keyword_difficulty": 32,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=komatsu%20forestry%20equipment&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "images",
+          "video",
+          "related_searches"
+        ],
+        "se_results_count": 1520000,
+        "last_updated_time": "2026-01-19 00:55:31 +00:00",
+        "previous_updated_time": "2025-11-26 05:04:14 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 292,
+        "dofollow": 258.79998779296875,
+        "referring_pages": 278.20001220703125,
+        "referring_domains": 25.600000381469727,
+        "referring_main_domains": 23.5,
+        "rank": 195,
+        "main_domain_rank": 494.3999938964844,
+        "last_updated_time": "2026-01-19 00:58:39 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "transactional",
+        "foreign_intent": null,
+        "last_updated_time": "2023-03-04 04:02:50 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 65,
+        "rank_absolute": 73,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[10]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "New Forestry Equipment",
+        "url": "https://eforestproducts.com/new-komatsu-equipment/",
+        "breadcrumb": "https://eforestproducts.com \u203a new-komatsu-equipment",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "We took delivery of a Komatsu XT445L-5 with a 500 Southstar Processor head which makes forest, timber and clearing faster, cleaner and easier. Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "Komatsu",
+          "forest",
+          "timber"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/new-komatsu-equipment/",
+        "etv": 0.08399999886751175,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": 73,
+          "is_new": false,
+          "is_up": false,
+          "is_down": false
+        },
+        "backlinks_info": null,
+        "rank_info": {
+          "page_rank": 0,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=komatsu%20forestry%20equipment&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "images",
+        "video",
+        "related_searches"
+      ],
+      "se_results_count": 1520000,
+      "keyword_difficulty": 32,
+      "is_lost": false,
+      "last_updated_time": "2026-01-19 00:55:31 +00:00",
+      "previous_updated_time": "2025-11-26 05:04:14 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "is logging good for the environment",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-30 23:59:11 +00:00",
+        "competition": 0.019999999552965164,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 30,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10002,
+          10004,
+          10028,
+          11077,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 110
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 70
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 20
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 0,
+          "quarterly": 100,
+          "yearly": 100
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": "text_processing",
+        "keyword_difficulty": 7,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=is%20logging%20good%20for%20the%20environment&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "ai_overview",
+          "organic",
+          "people_also_ask",
+          "discussions_and_forums",
+          "related_searches"
+        ],
+        "se_results_count": 302000000,
+        "last_updated_time": "2026-02-07 05:16:57 +00:00",
+        "previous_updated_time": "2025-12-23 13:42:50 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 12.5,
+        "dofollow": 10.699999809265137,
+        "referring_pages": 11.699999809265137,
+        "referring_domains": 9.100000381469727,
+        "referring_main_domains": 9,
+        "rank": 63.5,
+        "main_domain_rank": 432.79998779296875,
+        "last_updated_time": "2026-02-07 05:16:57 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "informational",
+        "foreign_intent": null,
+        "last_updated_time": "2023-03-03 15:52:52 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 64,
+        "rank_absolute": 73,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Benefits of Sustainable Wood Logging",
+        "url": "https://eforestproducts.com/sustainable-wood-logging/",
+        "breadcrumb": "https://eforestproducts.com \u203a sustainable-wood-logging",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "The process of harvesting, processing, and manufacturing wood products actually has the least environmental impact compared to other raw materials. Ironically,\u00a0... Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "environmental"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/sustainable-wood-logging/",
+        "etv": 0.06300000101327896,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": null,
+          "is_new": true,
+          "is_up": false,
+          "is_down": false
+        },
+        "backlinks_info": null,
+        "rank_info": {
+          "page_rank": 0,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=is%20logging%20good%20for%20the%20environment&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "ai_overview",
+        "organic",
+        "people_also_ask",
+        "discussions_and_forums",
+        "related_searches"
+      ],
+      "se_results_count": 302000000,
+      "keyword_difficulty": 7,
+      "is_lost": false,
+      "last_updated_time": "2026-02-07 05:16:57 +00:00",
+      "previous_updated_time": "2025-12-23 13:42:50 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "lathrop forest products",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-26 11:27:51 +00:00",
+        "competition": 0.009999999776482582,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 30,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          11083,
+          12366,
+          13460
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 10
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 100,
+          "quarterly": 0,
+          "yearly": 100
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": null,
+        "keyword_difficulty": 0,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=lathrop%20forest%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "related_searches",
+          "google_reviews",
+          "knowledge_graph",
+          "images"
+        ],
+        "se_results_count": 110000,
+        "last_updated_time": "2026-01-26 20:25:36 +00:00",
+        "previous_updated_time": "2025-11-03 20:32:38 +00:00"
+      },
+      "avg_backlinks_info": null,
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "commercial",
+        "foreign_intent": [
+          "navigational"
+        ],
+        "last_updated_time": "2023-03-03 13:13:28 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 94,
+        "rank_absolute": 107,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[8]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": true,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "We specialize in low-impact forestry management and timber harvesting. We also purchase standing timber and provide landclearing services. Read more",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "forestry",
+          "timber"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 0.06300000101327896,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": null,
+          "is_new": true,
+          "is_up": false,
+          "is_down": false
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=lathrop%20forest%20products&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "related_searches",
+        "google_reviews",
+        "knowledge_graph",
+        "images"
+      ],
+      "se_results_count": 110000,
+      "keyword_difficulty": 0,
+      "is_lost": false,
+      "last_updated_time": "2026-01-26 20:25:36 +00:00",
+      "previous_updated_time": "2025-11-03 20:32:38 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "supreme forest products southington ct",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-27 00:11:40 +00:00",
+        "competition": 0.009999999776482582,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 30,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          10282,
+          12425,
+          13797
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 50
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 40
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": 100,
+          "quarterly": 0,
+          "yearly": -33
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": null,
+        "keyword_difficulty": 0,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=supreme%20forest%20products%20southington%20ct&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "organic",
+          "images",
+          "related_searches",
+          "knowledge_graph",
+          "google_reviews"
+        ],
+        "se_results_count": 11800,
+        "last_updated_time": "2026-01-10 21:11:38 +00:00",
+        "previous_updated_time": "2025-11-27 17:48:24 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 1.100000023841858,
+        "dofollow": 0.800000011920929,
+        "referring_pages": 1,
+        "referring_domains": 0.4000000059604645,
+        "referring_main_domains": 0.4000000059604645,
+        "rank": 12.899999618530273,
+        "main_domain_rank": 798.4000244140625,
+        "last_updated_time": "2026-01-10 21:13:16 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "commercial",
+        "foreign_intent": [
+          "navigational"
+        ],
+        "last_updated_time": "2023-03-06 20:06:16 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 41,
+        "rank_absolute": 46,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "Environmental Forest Products: Timber Harvesting & Forestry ...",
+        "url": "https://eforestproducts.com/",
+        "breadcrumb": "https://eforestproducts.com",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "Need timber harvesting done efficiently? Environmental Forest Products will work with you to protect your woodlot and tree regrowth.",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "timber",
+          "Forest Products"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/",
+        "etv": 0.06300000101327896,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": null,
+          "is_new": true,
+          "is_up": false,
+          "is_down": false
+        },
+        "backlinks_info": {
+          "referring_domains": 39,
+          "referring_main_domains": 38,
+          "referring_pages": 44,
+          "dofollow": 23,
+          "backlinks": 45,
+          "time_update": "2026-02-03 02:15:36 +00:00"
+        },
+        "rank_info": {
+          "page_rank": 6,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=supreme%20forest%20products%20southington%20ct&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "organic",
+        "images",
+        "related_searches",
+        "knowledge_graph",
+        "google_reviews"
+      ],
+      "se_results_count": 11800,
+      "keyword_difficulty": 0,
+      "is_lost": false,
+      "last_updated_time": "2026-01-10 21:11:38 +00:00",
+      "previous_updated_time": "2025-11-27 17:48:24 +00:00"
+    }
+  },
+  {
+    "se_type": "google",
+    "keyword_data": {
+      "se_type": "google",
+      "keyword": "komatsu processor",
+      "location_code": 2840,
+      "language_code": "en",
+      "keyword_info": {
+        "se_type": "google",
+        "last_updated_time": "2026-01-24 23:46:20 +00:00",
+        "competition": 0.009999999776482582,
+        "competition_level": "LOW",
+        "cpc": null,
+        "search_volume": 20,
+        "low_top_of_page_bid": null,
+        "high_top_of_page_bid": null,
+        "categories": [
+          10004,
+          10282,
+          11275
+        ],
+        "monthly_searches": [
+          {
+            "year": 2025,
+            "month": 12,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 11,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 10,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 9,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 8,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 7,
+            "search_volume": 10
+          },
+          {
+            "year": 2025,
+            "month": 6,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 5,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 4,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 3,
+            "search_volume": 30
+          },
+          {
+            "year": 2025,
+            "month": 2,
+            "search_volume": 20
+          },
+          {
+            "year": 2025,
+            "month": 1,
+            "search_volume": 30
+          }
+        ],
+        "search_volume_trend": {
+          "monthly": -50,
+          "quarterly": 0,
+          "yearly": -75
+        }
+      },
+      "keyword_info_normalized_with_bing": null,
+      "keyword_info_normalized_with_clickstream": null,
+      "clickstream_keyword_info": null,
+      "keyword_properties": {
+        "se_type": "google",
+        "core_keyword": null,
+        "synonym_clustering_algorithm": null,
+        "keyword_difficulty": 1,
+        "detected_language": "en",
+        "is_another_language": false
+      },
+      "serp_info": {
+        "se_type": "google",
+        "check_url": "https://www.google.com/search?q=komatsu%20processor&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+        "serp_item_types": [
+          "video",
+          "organic",
+          "images",
+          "people_also_ask",
+          "related_searches"
+        ],
+        "se_results_count": 434000,
+        "last_updated_time": "2025-12-10 00:18:08 +00:00",
+        "previous_updated_time": "2025-10-19 08:23:09 +00:00"
+      },
+      "avg_backlinks_info": {
+        "se_type": "google",
+        "backlinks": 185.39999389648438,
+        "dofollow": 147.89999389648438,
+        "referring_pages": 172.1999969482422,
+        "referring_domains": 23.799999237060547,
+        "referring_main_domains": 21.700000762939453,
+        "rank": 75.19999694824219,
+        "main_domain_rank": 378.6000061035156,
+        "last_updated_time": "2025-12-10 00:18:09 +00:00"
+      },
+      "search_intent_info": {
+        "se_type": "google",
+        "main_intent": "transactional",
+        "foreign_intent": [
+          "commercial"
+        ],
+        "last_updated_time": "2023-03-04 04:02:55 +00:00"
+      }
+    },
+    "ranked_serp_element": {
+      "se_type": "google",
+      "serp_item": {
+        "se_type": "google",
+        "type": "organic",
+        "rank_group": 61,
+        "rank_absolute": 70,
+        "position": "left",
+        "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]",
+        "domain": "eforestproducts.com",
+        "title": "New Forestry Equipment",
+        "url": "https://eforestproducts.com/new-komatsu-equipment/",
+        "breadcrumb": "https://eforestproducts.com \u203a new-komatsu-equipment",
+        "website_name": "Environmental Forest Products",
+        "is_image": false,
+        "is_video": false,
+        "is_featured_snippet": false,
+        "is_malicious": false,
+        "description": "We took delivery of a Komatsu XT445L-5 with a 500 Southstar Processor head which makes forest, timber and clearing faster, cleaner and easier.",
+        "pre_snippet": null,
+        "extended_snippet": null,
+        "amp_version": false,
+        "rating": null,
+        "highlighted": [
+          "Komatsu",
+          "Processor"
+        ],
+        "links": null,
+        "about_this_result": null,
+        "main_domain": "eforestproducts.com",
+        "relative_url": "/new-komatsu-equipment/",
+        "etv": 0.041999999433755875,
+        "estimated_paid_traffic_cost": null,
+        "clickstream_etv": null,
+        "rank_changes": {
+          "previous_rank_absolute": null,
+          "is_new": true,
+          "is_up": false,
+          "is_down": false
+        },
+        "backlinks_info": null,
+        "rank_info": {
+          "page_rank": 0,
+          "main_domain_rank": 0
+        }
+      },
+      "check_url": "https://www.google.com/search?q=komatsu%20processor&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+      "serp_item_types": [
+        "video",
+        "organic",
+        "images",
+        "people_also_ask",
+        "related_searches"
+      ],
+      "se_results_count": 434000,
+      "keyword_difficulty": 1,
+      "is_lost": false,
+      "last_updated_time": "2025-12-10 00:18:08 +00:00",
+      "previous_updated_time": "2025-10-19 08:23:09 +00:00"
+    }
+  }
+]

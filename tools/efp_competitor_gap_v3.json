@@ -1,0 +1,1713 @@
+[
+  {
+    "competitor": "hudsonvalleyforestry.com",
+    "total": 0,
+    "items": []
+  },
+  {
+    "competitor": "joshuatreeforestry.com",
+    "total": 1,
+    "items": [
+      {
+        "se_type": "google",
+        "keyword_data": {
+          "se_type": "google",
+          "keyword": "480a forestry program",
+          "location_code": 2840,
+          "language_code": "en",
+          "keyword_info": {
+            "se_type": "google",
+            "last_updated_time": "2026-01-26 11:23:08 +00:00",
+            "competition": 0.05000000074505806,
+            "competition_level": "LOW",
+            "cpc": 12.079999923706055,
+            "search_volume": 70,
+            "low_top_of_page_bid": null,
+            "high_top_of_page_bid": null,
+            "categories": [
+              10004,
+              11083,
+              12366,
+              13460
+            ],
+            "monthly_searches": [
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 6,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 5,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 4,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 3,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 2,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 1,
+                "search_volume": 90
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -44,
+              "quarterly": -44,
+              "yearly": -55
+            }
+          },
+          "keyword_info_normalized_with_bing": null,
+          "keyword_info_normalized_with_clickstream": null,
+          "clickstream_keyword_info": null,
+          "keyword_properties": {
+            "se_type": "google",
+            "core_keyword": null,
+            "synonym_clustering_algorithm": "text_processing",
+            "keyword_difficulty": 0,
+            "detected_language": "en",
+            "is_another_language": false
+          },
+          "serp_info": null,
+          "avg_backlinks_info": {
+            "se_type": "google",
+            "backlinks": 2.5999999046325684,
+            "dofollow": 2.5,
+            "referring_pages": 2.5,
+            "referring_domains": 2.0999999046325684,
+            "referring_main_domains": 2,
+            "rank": 15.199999809265137,
+            "main_domain_rank": 511,
+            "last_updated_time": "2026-01-03 12:32:41 +00:00"
+          },
+          "search_intent_info": {
+            "se_type": "google",
+            "main_intent": "transactional",
+            "foreign_intent": null,
+            "last_updated_time": "2023-03-04 05:17:51 +00:00"
+          }
+        },
+        "first_domain_serp_element": {
+          "se_type": "google",
+          "type": "organic",
+          "rank_group": 58,
+          "rank_absolute": 64,
+          "position": "left",
+          "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[8]/div[1]/div[1]",
+          "domain": "joshuatreeforestry.com",
+          "title": "Forest Management Plans - Joshua Tree Forestry",
+          "url": "https://joshuatreeforestry.com/forest-management-plans",
+          "breadcrumb": "https://joshuatreeforestry.com \u203a forest-management-plans",
+          "website_name": "joshuatreeforestry.com",
+          "is_image": false,
+          "is_video": false,
+          "is_featured_snippet": false,
+          "is_malicious": false,
+          "description": "Schedule of events/projects to take place on the property to achieve landowner goals. Illustration. NYS Forest Tax Law (480-a). The forest tax law is offered\u00a0... Read more",
+          "pre_snippet": null,
+          "extended_snippet": null,
+          "amp_version": false,
+          "rating": null,
+          "highlighted": [
+            "Schedule",
+            "Forest",
+            "480-a",
+            "forest"
+          ],
+          "links": null,
+          "about_this_result": null,
+          "main_domain": "joshuatreeforestry.com",
+          "relative_url": "/forest-management-plans",
+          "etv": 0.1469999998807907,
+          "estimated_paid_traffic_cost": 1.7757599353790283,
+          "clickstream_etv": null,
+          "rank_changes": {
+            "previous_rank_absolute": 65,
+            "is_new": false,
+            "is_up": true,
+            "is_down": false
+          },
+          "backlinks_info": null,
+          "rank_info": {
+            "page_rank": 0,
+            "main_domain_rank": 0
+          }
+        },
+        "second_domain_serp_element": {
+          "se_type": "google",
+          "type": "organic",
+          "rank_group": 31,
+          "rank_absolute": 35,
+          "position": "left",
+          "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+          "domain": "eforestproducts.com",
+          "title": "nys 480-a forest tax law",
+          "url": "https://eforestproducts.com/nys-tax-breaks/",
+          "breadcrumb": "https://eforestproducts.com \u203a nys-tax-breaks",
+          "website_name": "Environmental Forest Products",
+          "is_image": false,
+          "is_video": false,
+          "is_featured_snippet": false,
+          "is_malicious": false,
+          "description": "In order to qualify for NY State tax breaks via 480-a Forest Tax Law, you need a forest management plan completed by a qualified forester.",
+          "pre_snippet": null,
+          "extended_snippet": null,
+          "amp_version": false,
+          "rating": null,
+          "highlighted": [
+            "480-a Forest",
+            "forest"
+          ],
+          "links": null,
+          "about_this_result": null,
+          "main_domain": "eforestproducts.com",
+          "relative_url": "/nys-tax-breaks/",
+          "etv": 0.1469999998807907,
+          "estimated_paid_traffic_cost": 1.7757599353790283,
+          "clickstream_etv": null,
+          "rank_changes": {
+            "previous_rank_absolute": 38,
+            "is_new": false,
+            "is_up": true,
+            "is_down": false
+          },
+          "backlinks_info": null,
+          "rank_info": {
+            "page_rank": 0,
+            "main_domain_rank": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "competitor": "futureforestinc.com",
+    "total": 7,
+    "items": [
+      {
+        "se_type": "google",
+        "keyword_data": {
+          "se_type": "google",
+          "keyword": "logging benefits",
+          "location_code": 2840,
+          "language_code": "en",
+          "keyword_info": {
+            "se_type": "google",
+            "last_updated_time": "2026-02-02 00:47:50 +00:00",
+            "competition": 0,
+            "competition_level": "LOW",
+            "cpc": null,
+            "search_volume": 90,
+            "low_top_of_page_bid": null,
+            "high_top_of_page_bid": null,
+            "categories": [
+              10004,
+              11083,
+              12366,
+              13460
+            ],
+            "monthly_searches": [
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 10
+              },
+              {
+                "year": 2025,
+                "month": 6,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 5,
+                "search_volume": 140
+              },
+              {
+                "year": 2025,
+                "month": 4,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 3,
+                "search_volume": 140
+              },
+              {
+                "year": 2025,
+                "month": 2,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 1,
+                "search_volume": 90
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -29,
+              "quarterly": -44,
+              "yearly": 25
+            }
+          },
+          "keyword_info_normalized_with_bing": null,
+          "keyword_info_normalized_with_clickstream": null,
+          "clickstream_keyword_info": null,
+          "keyword_properties": {
+            "se_type": "google",
+            "core_keyword": "benefits log in",
+            "synonym_clustering_algorithm": "text_processing",
+            "keyword_difficulty": 0,
+            "detected_language": "en",
+            "is_another_language": false
+          },
+          "serp_info": null,
+          "avg_backlinks_info": {
+            "se_type": "google",
+            "backlinks": 376.29998779296875,
+            "dofollow": 259,
+            "referring_pages": 293.5,
+            "referring_domains": 65.5999984741211,
+            "referring_main_domains": 57.099998474121094,
+            "rank": 53.900001525878906,
+            "main_domain_rank": 522,
+            "last_updated_time": "2026-02-18 22:44:04 +00:00"
+          },
+          "search_intent_info": {
+            "se_type": "google",
+            "main_intent": "informational",
+            "foreign_intent": null,
+            "last_updated_time": "2023-03-05 12:46:55 +00:00"
+          }
+        },
+        "first_domain_serp_element": {
+          "se_type": "google",
+          "type": "organic",
+          "rank_group": 32,
+          "rank_absolute": 39,
+          "position": "left",
+          "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]",
+          "domain": "www.futureforestinc.com",
+          "title": "Six Benefits of Logging Forests",
+          "url": "https://www.futureforestinc.com/six-benefits-of-logging-forests/",
+          "breadcrumb": "https://www.futureforestinc.com \u203a six-benefits-of-loggi...",
+          "website_name": "Future Forest Consulting",
+          "is_image": false,
+          "is_video": false,
+          "is_featured_snippet": false,
+          "is_malicious": false,
+          "description": "Six Benefits of Logging Forests \u00b7 Improves health \u2013 \u00b7 Minimizes competition among the trees \u2013 \u00b7 Provides necessary materials \u2013 \u00b7 Safety \u2013 \u00b7 Allows more ground\u00a0... Read more",
+          "pre_snippet": null,
+          "extended_snippet": null,
+          "amp_version": false,
+          "rating": null,
+          "highlighted": [
+            "Improves health"
+          ],
+          "links": null,
+          "about_this_result": null,
+          "main_domain": "futureforestinc.com",
+          "relative_url": "/six-benefits-of-logging-forests/",
+          "etv": 0.1889999955892563,
+          "estimated_paid_traffic_cost": null,
+          "clickstream_etv": null,
+          "rank_changes": {
+            "previous_rank_absolute": 4,
+            "is_new": false,
+            "is_up": false,
+            "is_down": true
+          },
+          "backlinks_info": {
+            "referring_domains": 6,
+            "referring_main_domains": 6,
+            "referring_pages": 8,
+            "dofollow": 4,
+            "backlinks": 8,
+            "time_update": "2026-02-03 12:16:42 +00:00"
+          },
+          "rank_info": {
+            "page_rank": 58,
+            "main_domain_rank": 176
+          }
+        },
+        "second_domain_serp_element": {
+          "se_type": "google",
+          "type": "organic",
+          "rank_group": 40,
+          "rank_absolute": 48,
+          "position": "left",
+          "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]",
+          "domain": "eforestproducts.com",
+          "title": "Benefits of Sustainable Wood Logging",
+          "url": "https://eforestproducts.com/sustainable-wood-logging/",
+          "breadcrumb": "https://eforestproducts.com \u203a sustainable-wood-logging",
+          "website_name": "Environmental Forest Products",
+          "is_image": false,
+          "is_video": false,
+          "is_featured_snippet": false,
+          "is_malicious": false,
+          "description": "Interested in learning how to manage sustainable logging on your woodlot? You may be surprised to learn that cutting down trees in forests has positive\u00a0...",
+          "pre_snippet": null,
+          "extended_snippet": null,
+          "amp_version": false,
+          "rating": null,
+          "highlighted": [
+            "logging"
+          ],
+          "links": null,
+          "about_this_result": null,
+          "main_domain": "eforestproducts.com",
+          "relative_url": "/sustainable-wood-logging/",
+          "etv": 0.1889999955892563,
+          "estimated_paid_traffic_cost": null,
+          "clickstream_etv": null,
+          "rank_changes": {
+            "previous_rank_absolute": 55,
+            "is_new": false,
+            "is_up": true,
+            "is_down": false
+          },
+          "backlinks_info": null,
+          "rank_info": {
+            "page_rank": 0,
+            "main_domain_rank": 0
+          }
+        }
+      },
+      {
+        "se_type": "google",
+        "keyword_data": {
+          "se_type": "google",
+          "keyword": "benefits of logging",
+          "location_code": 2840,
+          "language_code": "en",
+          "keyword_info": {
+            "se_type": "google",
+            "last_updated_time": "2026-01-25 15:12:53 +00:00",
+            "competition": 0,
+            "competition_level": "LOW",
+            "cpc": null,
+            "search_volume": 90,
+            "low_top_of_page_bid": null,
+            "high_top_of_page_bid": null,
+            "categories": [
+              10004,
+              11083,
+              12366,
+              13460
+            ],
+            "monthly_searches": [
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 10
+              },
+              {
+                "year": 2025,
+                "month": 6,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 5,
+                "search_volume": 140
+              },
+              {
+                "year": 2025,
+                "month": 4,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 3,
+                "search_volume": 140
+              },
+              {
+                "year": 2025,
+                "month": 2,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 1,
+                "search_volume": 90
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -29,
+              "quarterly": -44,
+              "yearly": 25
+            }
+          },
+          "keyword_info_normalized_with_bing": null,
+          "keyword_info_normalized_with_clickstream": null,
+          "clickstream_keyword_info": null,
+          "keyword_properties": {
+            "se_type": "google",
+            "core_keyword": "benefits log in",
+            "synonym_clustering_algorithm": "text_processing",
+            "keyword_difficulty": 0,
+            "detected_language": "en",
+            "is_another_language": false
+          },
+          "serp_info": null,
+          "avg_backlinks_info": {
+            "se_type": "google",
+            "backlinks": 18.899999618530273,
+            "dofollow": 16.600000381469727,
+            "referring_pages": 17.600000381469727,
+            "referring_domains": 8.5,
+            "referring_main_domains": 7.699999809265137,
+            "rank": 30.399999618530273,
+            "main_domain_rank": 442.70001220703125,
+            "last_updated_time": "2026-02-19 10:46:29 +00:00"
+          },
+          "search_intent_info": {
+            "se_type": "google",
+            "main_intent": "informational",
+            "foreign_intent": null,
+            "last_updated_time": "2023-03-02 11:02:20 +00:00"
+          }
+        },
+        "first_domain_serp_element": {
+          "se_type": "google",
+          "type": "organic",
+          "rank_group": 1,
+          "rank_absolute": 2,
+          "position": "left",
+          "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]",
+          "domain": "www.futureforestinc.com",
+          "title": "Six Benefits of Logging Forests",
+          "url": "https://www.futureforestinc.com/six-benefits-of-logging-forests/",
+          "breadcrumb": "https://www.futureforestinc.com \u203a six-benefits-of-loggi...",
+          "website_name": "Future Forest Consulting",
+          "is_image": false,
+          "is_video": false,
+          "is_featured_snippet": false,
+          "is_malicious": false,
+          "description": "Six Benefits of Logging Forests \u00b7 Improves health \u2013 \u00b7 Minimizes competition among the trees \u2013 \u00b7 Provides necessary materials \u2013 \u00b7 Safety \u2013 \u00b7 Allows more ground\u00a0... Read more",
+          "pre_snippet": null,
+          "extended_snippet": null,
+          "amp_version": false,
+          "rating": null,
+          "highlighted": [
+            "Improves health"
+          ],
+          "links": null,
+          "about_this_result": null,
+          "main_domain": "futureforestinc.com",
+          "relative_url": "/six-benefits-of-logging-forests/",
+          "etv": 27.360000610351562,
+          "estimated_paid_traffic_cost": null,
+          "clickstream_etv": null,
+          "rank_changes": {
+            "previous_rank_absolute": 3,
+            "is_new": false,
+            "is_up": true,
+            "is_down": false
+          },
+          "backlinks_info": {
+            "referring_domains": 6,
+            "referring_main_domains": 6,
+            "referring_pages": 8,
+            "dofollow": 4,
+            "backlinks": 8,
+            "time_update": "2026-02-03 12:16:42 +00:00"
+          },
+          "rank_info": {
+            "page_rank": 58,
+            "main_domain_rank": 176
+          }
+        },
+        "second_domain_serp_element": {
+          "se_type": "google",
+          "type": "organic",
+          "rank_group": 67,
+          "rank_absolute": 81,
+          "position": "left",
+          "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]",
+          "domain": "eforestproducts.com",
+          "title": "Benefits of Sustainable Wood Logging",
+          "url": "https://eforestproducts.com/sustainable-wood-logging/",
+          "breadcrumb": "https://eforestproducts.com \u203a sustainable-wood-logging",
+          "website_name": "Environmental Forest Products",
+          "is_image": false,
+          "is_video": false,
+          "is_featured_snippet": false,
+          "is_malicious": false,
+          "description": "Wood logging creates more space and creates favorable conditions for young plants to grow and thrive under direct sunlight. Read more",
+          "pre_snippet": null,
+          "extended_snippet": null,
+          "amp_version": false,
+          "rating": null,
+          "highlighted": [
+            "logging"
+          ],
+          "links": null,
+          "about_this_result": null,
+          "main_domain": "eforestproducts.com",
+          "relative_url": "/sustainable-wood-logging/",
+          "etv": 0.1889999955892563,
+          "estimated_paid_traffic_cost": null,
+          "clickstream_etv": null,
+          "rank_changes": {
+            "previous_rank_absolute": null,
+            "is_new": true,
+            "is_up": false,
+            "is_down": false
+          },
+          "backlinks_info": null,
+          "rank_info": {
+            "page_rank": 0,
+            "main_domain_rank": 0
+          }
+        }
+      },
+      {
+        "se_type": "google",
+        "keyword_data": {
+          "se_type": "google",
+          "keyword": "logging advantages",
+          "location_code": 2840,
+          "language_code": "en",
+          "keyword_info": {
+            "se_type": "google",
+            "last_updated_time": "2026-01-27 01:10:48 +00:00",
+            "competition": 0,
+            "competition_level": "LOW",
+            "cpc": null,
+            "search_volume": 90,
+            "low_top_of_page_bid": null,
+            "high_top_of_page_bid": null,
+            "categories": [
+              10004,
+              11083,
+              12366,
+              13460
+            ],
+            "monthly_searches": [
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 10
+              },
+              {
+                "year": 2025,
+                "month": 6,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 5,
+                "search_volume": 140
+              },
+              {
+                "year": 2025,
+                "month": 4,
+                "search_volume": 170
+              },
+              {
+                "year": 2025,
+                "month": 3,
+                "search_volume": 140
+              },
+              {
+                "year": 2025,
+                "month": 2,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 1,
+                "search_volume": 90
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -29,
+              "quarterly": -44,
+              "yearly": 25
+            }
+          },
+          "keyword_info_normalized_with_bing": null,
+          "keyword_info_normalized_with_clickstream": null,
+          "clickstream_keyword_info": null,
+          "keyword_properties": {
+            "se_type": "google",
+            "core_keyword": "advantage log in",
+            "synonym_clustering_algorithm": "text_processing",
+            "keyword_difficulty": 0,
+            "detected_language": "en",
+            "is_another_language": false
+          },
+          "serp_info": null,
+          "avg_backlinks_info": {
+            "se_type": "google",
+            "backlinks": 0.8999999761581421,
+            "dofollow": 0.5,
+            "referring_pages": 0.8999999761581421,
+            "referring_domains": 0.699999988079071,
+            "referring_main_domains": 0.699999988079071,
+            "rank": 7.199999809265137,
+            "main_domain_rank": 302.29998779296875,
+            "last_updated_time": "2026-02-18 22:43:52 +00:00"
+          },
+          "search_intent_info": {
+            "se_type": "google",
+            "main_intent": "informational",
+            "foreign_intent": null,
+            "last_updated_time": "2023-06-09 14:53:36 +00:00"
+          }
+        },
+        "first_domain_serp_element": {
+          "se_type": "google",
+          "type": "organic",
+          "rank_group": 8,
+          "rank_absolute": 10,
+          "position": "left",
+          "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[2]/div[1]/div[2]/div[1]/div[1]/div[18]/div[1]/div[1]",
+          "domain": "www.futureforestinc.com",
+          "title": "Six Benefits of Logging Forests",
+          "url": "https://www.futureforestinc.com/six-benefits-of-logging-forests/",
+          "breadcrumb": "https://www.futureforestinc.com \u203a six-benefits-of-loggi...",
+          "website_name": "Future Forest Consulting",
+          "is_image": false,
+          "is_video": false,
+          "is_featured_snippet": false,
+          "is_malicious": false,
+          "description": "Six Benefits of Logging Forests \u00b7 Improves health \u2013 \u00b7 Minimizes competition among the trees \u2013 \u00b7 Provides necessary materials \u2013 \u00b7 Safety \u2013 \u00b7 Allows more ground\u00a0... Read more",
+          "pre_snippet": null,
+          "extended_snippet": null,
+          "amp_version": false,
+          "rating": null,
+          "highlighted": [
+            "Improves health"
+          ],
+          "links": null,
+          "about_this_result": null,
+          "main_domain": "futureforestinc.com",
+          "relative_url": "/six-benefits-of-logging-forests/",
+          "etv": 1.7730000019073486,
+          "estimated_paid_traffic_cost": null,
+          "clickstream_etv": null,
+          "rank_changes": {
+            "previous_rank_absolute": 4,
+            "is_new": false,
+            "is_up": false,
+            "is_down": true
+          },
+          "backlinks_info": {
+            "referring_domains": 6,
+            "referring_main_domains": 6,
+            "referring_pages": 8,
+            "dofollow": 4,
+            "backlinks": 8,
+            "time_update": "2026-02-03 12:16:42 +00:00"
+          },
+          "rank_info": {
+            "page_rank": 58,
+            "main_domain_rank": 176
+          }
+        },
+        "second_domain_serp_element": {
+          "se_type": "google",
+          "type": "organic",
+          "rank_group": 25,
+          "rank_absolute": 30,
+          "position": "left",
+          "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]",
+          "domain": "eforestproducts.com",
+          "title": "Benefits of Sustainable Wood Logging",
+          "url": "https://eforestproducts.com/sustainable-wood-logging/",
+          "breadcrumb": "https://eforestproducts.com \u203a sustainable-wood-logging",
+          "website_name": "Environmental Forest Products",
+          "is_image": false,
+          "is_video": false,
+          "is_featured_snippet": false,
+          "is_malicious": false,
+          "description": "Wood logging creates more space and creates favorable conditions for young plants to grow and thrive under direct sunlight. Read more",
+          "pre_snippet": null,
+          "extended_snippet": null,
+          "amp_version": false,
+          "rating": null,
+          "highlighted": [
+            "Wood logging creates more space"
+          ],
+          "links": null,
+          "about_this_result": null,
+          "main_domain": "eforestproducts.com",
+          "relative_url": "/sustainable-wood-logging/",
+          "etv": 0.1889999955892563,
+          "estimated_paid_traffic_cost": null,
+          "clickstream_etv": null,
+          "rank_changes": {
+            "previous_rank_absolute": 39,
+            "is_new": false,
+            "is_up": true,
+            "is_down": false
+          },
+          "backlinks_info": null,
+          "rank_info": {
+            "page_rank": 0,
+            "main_domain_rank": 0
+          }
+        }
+      },
+      {
+        "se_type": "google",
+        "keyword_data": {
+          "se_type": "google",
+          "keyword": "480a forestry program",
+          "location_code": 2840,
+          "language_code": "en",
+          "keyword_info": {
+            "se_type": "google",
+            "last_updated_time": "2026-01-26 11:23:08 +00:00",
+            "competition": 0.05000000074505806,
+            "competition_level": "LOW",
+            "cpc": 12.079999923706055,
+            "search_volume": 70,
+            "low_top_of_page_bid": null,
+            "high_top_of_page_bid": null,
+            "categories": [
+              10004,
+              11083,
+              12366,
+              13460
+            ],
+            "monthly_searches": [
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 110
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 90
+              },
+              {
+                "year": 2025,
+                "month": 6,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 5,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 4,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 3,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 2,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 1,
+                "search_volume": 90
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -44,
+              "quarterly": -44,
+              "yearly": -55
+            }
+          },
+          "keyword_info_normalized_with_bing": null,
+          "keyword_info_normalized_with_clickstream": null,
+          "clickstream_keyword_info": null,
+          "keyword_properties": {
+            "se_type": "google",
+            "core_keyword": null,
+            "synonym_clustering_algorithm": "text_processing",
+            "keyword_difficulty": 0,
+            "detected_language": "en",
+            "is_another_language": false
+          },
+          "serp_info": null,
+          "avg_backlinks_info": {
+            "se_type": "google",
+            "backlinks": 2.5999999046325684,
+            "dofollow": 2.5,
+            "referring_pages": 2.5,
+            "referring_domains": 2.0999999046325684,
+            "referring_main_domains": 2,
+            "rank": 15.199999809265137,
+            "main_domain_rank": 511,
+            "last_updated_time": "2026-01-03 12:32:41 +00:00"
+          },
+          "search_intent_info": {
+            "se_type": "google",
+            "main_intent": "transactional",
+            "foreign_intent": null,
+            "last_updated_time": "2023-03-04 05:17:51 +00:00"
+          }
+        },
+        "first_domain_serp_element": {
+          "se_type": "google",
+          "type": "organic",
+          "rank_group": 7,
+          "rank_absolute": 8,
+          "position": "left",
+          "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[13]/div[1]/div[1]",
+          "domain": "www.futureforestinc.com",
+          "title": "Management Plans & 480a Tax Law",
+          "url": "https://www.futureforestinc.com/management-plans-480a-tax-law/",
+          "breadcrumb": "https://www.futureforestinc.com \u203a management-plans-4...",
+          "website_name": "Future Forest Consulting",
+          "is_image": false,
+          "is_video": false,
+          "is_featured_snippet": false,
+          "is_malicious": false,
+          "description": "The 480a Plan is a tax savings plan for forestland owners that are managed by the DEC. The tax savings is on school taxes as well as property tax. Savings in\u00a0... Read more",
+          "pre_snippet": null,
+          "extended_snippet": null,
+          "amp_version": false,
+          "rating": null,
+          "highlighted": [
+            "a tax savings plan for forestland owners"
+          ],
+          "links": null,
+          "about_this_result": null,
+          "main_domain": "futureforestinc.com",
+          "relative_url": "/management-plans-480a-tax-law/",
+          "etv": 1.7920000553131104,
+          "estimated_paid_traffic_cost": 21.64735984802246,
+          "clickstream_etv": null,
+          "rank_changes": {
+            "previous_rank_absolute": 5,
+            "is_new": false,
+            "is_up": false,
+            "is_down": true
+          },
+          "backlinks_info": null,
+          "rank_info": {
+            "page_rank": 0,
+            "main_domain_rank": 177
+          }
+        },
+        "second_domain_serp_element": {
+          "se_type": "google",
+          "type": "organic",
+          "rank_group": 31,
+          "rank_absolute": 35,
+          "position": "left",
+          "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+          "domain": "eforestproducts.com",
+          "title": "nys 480-a forest tax law",
+          "url": "https://eforestproducts.com/nys-tax-breaks/",
+          "breadcrumb": "https://eforestproducts.com \u203a nys-tax-breaks",
+          "website_name": "Environmental Forest Products",
+          "is_image": false,
+          "is_video": false,
+          "is_featured_snippet": false,
+          "is_malicious": false,
+          "description": "In order to qualify for NY State tax breaks via 480-a Forest Tax Law, you need a forest management plan completed by a qualified forester.",
+          "pre_snippet": null,
+          "extended_snippet": null,
+          "amp_version": false,
+          "rating": null,
+          "highlighted": [
+            "480-a Forest",
+            "forest"
+          ],
+          "links": null,
+          "about_this_result": null,
+          "main_domain": "eforestproducts.com",
+          "relative_url": "/nys-tax-breaks/",
+          "etv": 0.1469999998807907,
+          "estimated_paid_traffic_cost": 1.7757599353790283,
+          "clickstream_etv": null,
+          "rank_changes": {
+            "previous_rank_absolute": 38,
+            "is_new": false,
+            "is_up": true,
+            "is_down": false
+          },
+          "backlinks_info": null,
+          "rank_info": {
+            "page_rank": 0,
+            "main_domain_rank": 0
+          }
+        }
+      },
+      {
+        "se_type": "google",
+        "keyword_data": {
+          "se_type": "google",
+          "keyword": "480a",
+          "location_code": 2840,
+          "language_code": "en",
+          "keyword_info": {
+            "se_type": "google",
+            "last_updated_time": "2026-01-30 22:19:24 +00:00",
+            "competition": 0.029999999329447746,
+            "competition_level": "LOW",
+            "cpc": null,
+            "search_volume": 50,
+            "low_top_of_page_bid": null,
+            "high_top_of_page_bid": null,
+            "categories": [
+              10001,
+              10010,
+              10015,
+              10027,
+              10082,
+              10113,
+              10211,
+              10429,
+              11890,
+              12977
+            ],
+            "monthly_searches": [
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 6,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 5,
+                "search_volume": 70
+              },
+              {
+                "year": 2025,
+                "month": 4,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 3,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 2,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 1,
+                "search_volume": 50
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": 40,
+              "quarterly": 40,
+              "yearly": 40
+            }
+          },
+          "keyword_info_normalized_with_bing": null,
+          "keyword_info_normalized_with_clickstream": null,
+          "clickstream_keyword_info": null,
+          "keyword_properties": {
+            "se_type": "google",
+            "core_keyword": "480-a",
+            "synonym_clustering_algorithm": "text_processing",
+            "keyword_difficulty": 0,
+            "detected_language": "de",
+            "is_another_language": true
+          },
+          "serp_info": null,
+          "avg_backlinks_info": {
+            "se_type": "google",
+            "backlinks": 2.0999999046325684,
+            "dofollow": 2.0999999046325684,
+            "referring_pages": 2.0999999046325684,
+            "referring_domains": 1.7000000476837158,
+            "referring_main_domains": 1.600000023841858,
+            "rank": 13,
+            "main_domain_rank": 434.8999938964844,
+            "last_updated_time": "2026-01-07 13:25:44 +00:00"
+          },
+          "search_intent_info": {
+            "se_type": "google",
+            "main_intent": "transactional",
+            "foreign_intent": null,
+            "last_updated_time": "2023-03-04 05:17:51 +00:00"
+          }
+        },
+        "first_domain_serp_element": {
+          "se_type": "google",
+          "type": "organic",
+          "rank_group": 10,
+          "rank_absolute": 11,
+          "position": "left",
+          "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[19]/div[1]/div[1]",
+          "domain": "www.futureforestinc.com",
+          "title": "Management Plans & 480a Tax Law",
+          "url": "https://www.futureforestinc.com/management-plans-480a-tax-law/",
+          "breadcrumb": "https://www.futureforestinc.com \u203a management-plans-4...",
+          "website_name": "Future Forest Consulting",
+          "is_image": true,
+          "is_video": false,
+          "is_featured_snippet": false,
+          "is_malicious": false,
+          "description": "The 480-a Real Property Tax Law is designed to give landowners compensation for managing their parcel in a sustainable manner for timber, wildlife, aesthetics,\u00a0... Read more",
+          "pre_snippet": null,
+          "extended_snippet": null,
+          "amp_version": false,
+          "rating": null,
+          "highlighted": [
+            "designed to give landowners compensation"
+          ],
+          "links": null,
+          "about_this_result": null,
+          "main_domain": "futureforestinc.com",
+          "relative_url": "/management-plans-480a-tax-law/",
+          "etv": 0.5649999976158142,
+          "estimated_paid_traffic_cost": null,
+          "clickstream_etv": null,
+          "rank_changes": {
+            "previous_rank_absolute": 10,
+            "is_new": false,
+            "is_up": false,
+            "is_down": true
+          },
+          "backlinks_info": null,
+          "rank_info": {
+            "page_rank": 0,
+            "main_domain_rank": 177
+          }
+        },
+        "second_domain_serp_element": {
+          "se_type": "google",
+          "type": "organic",
+          "rank_group": 55,
+          "rank_absolute": 61,
+          "position": "left",
+          "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]",
+          "domain": "eforestproducts.com",
+          "title": "nys 480-a forest tax law",
+          "url": "https://eforestproducts.com/nys-tax-breaks/",
+          "breadcrumb": "https://eforestproducts.com \u203a nys-tax-breaks",
+          "website_name": "Environmental Forest Products",
+          "is_image": false,
+          "is_video": false,
+          "is_featured_snippet": false,
+          "is_malicious": false,
+          "description": "In order to qualify for NY State tax breaks via 480-a Forest Tax Law, you need a forest management plan completed by a qualified forester.",
+          "pre_snippet": null,
+          "extended_snippet": null,
+          "amp_version": false,
+          "rating": null,
+          "highlighted": [
+            "480-a"
+          ],
+          "links": null,
+          "about_this_result": null,
+          "main_domain": "eforestproducts.com",
+          "relative_url": "/nys-tax-breaks/",
+          "etv": 0.10499999672174454,
+          "estimated_paid_traffic_cost": null,
+          "clickstream_etv": null,
+          "rank_changes": {
+            "previous_rank_absolute": null,
+            "is_new": true,
+            "is_up": false,
+            "is_down": false
+          },
+          "backlinks_info": null,
+          "rank_info": {
+            "page_rank": 0,
+            "main_domain_rank": 0
+          }
+        }
+      },
+      {
+        "se_type": "google",
+        "keyword_data": {
+          "se_type": "google",
+          "keyword": "480 a",
+          "location_code": 2840,
+          "language_code": "en",
+          "keyword_info": {
+            "se_type": "google",
+            "last_updated_time": "2026-01-25 07:20:35 +00:00",
+            "competition": 0,
+            "competition_level": "LOW",
+            "cpc": null,
+            "search_volume": 40,
+            "low_top_of_page_bid": null,
+            "high_top_of_page_bid": null,
+            "categories": [
+              10012,
+              10095,
+              11831
+            ],
+            "monthly_searches": [
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 6,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 5,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 4,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 3,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 2,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 1,
+                "search_volume": 30
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -20,
+              "quarterly": 33,
+              "yearly": 33
+            }
+          },
+          "keyword_info_normalized_with_bing": null,
+          "keyword_info_normalized_with_clickstream": null,
+          "clickstream_keyword_info": null,
+          "keyword_properties": {
+            "se_type": "google",
+            "core_keyword": "480-a",
+            "synonym_clustering_algorithm": "text_processing",
+            "keyword_difficulty": 0,
+            "detected_language": "de",
+            "is_another_language": true
+          },
+          "serp_info": null,
+          "avg_backlinks_info": {
+            "se_type": "google",
+            "backlinks": 2.4000000953674316,
+            "dofollow": 2.4000000953674316,
+            "referring_pages": 2.4000000953674316,
+            "referring_domains": 1.899999976158142,
+            "referring_main_domains": 1.7000000476837158,
+            "rank": 15.600000381469727,
+            "main_domain_rank": 433.8999938964844,
+            "last_updated_time": "2026-02-06 10:39:02 +00:00"
+          },
+          "search_intent_info": {
+            "se_type": "google",
+            "main_intent": "commercial",
+            "foreign_intent": null,
+            "last_updated_time": "2025-12-16 21:34:53 +00:00"
+          }
+        },
+        "first_domain_serp_element": {
+          "se_type": "google",
+          "type": "organic",
+          "rank_group": 14,
+          "rank_absolute": 16,
+          "position": "left",
+          "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]",
+          "domain": "www.futureforestinc.com",
+          "title": "Management Plans & 480a Tax Law",
+          "url": "https://www.futureforestinc.com/management-plans-480a-tax-law/",
+          "breadcrumb": "https://www.futureforestinc.com \u203a management-plans-4...",
+          "website_name": "Future Forest Consulting",
+          "is_image": false,
+          "is_video": false,
+          "is_featured_snippet": false,
+          "is_malicious": false,
+          "description": "The 480-a Real Property Tax Law is designed to give landowners compensation for managing their parcel in a sustainable manner for timber, wildlife, aesthetics,\u00a0... Read more",
+          "pre_snippet": null,
+          "extended_snippet": null,
+          "amp_version": false,
+          "rating": null,
+          "highlighted": [
+            "designed to give landowners compensation"
+          ],
+          "links": null,
+          "about_this_result": null,
+          "main_domain": "futureforestinc.com",
+          "relative_url": "/management-plans-480a-tax-law/",
+          "etv": 0.2240000069141388,
+          "estimated_paid_traffic_cost": null,
+          "clickstream_etv": null,
+          "rank_changes": {
+            "previous_rank_absolute": 13,
+            "is_new": false,
+            "is_up": false,
+            "is_down": true
+          },
+          "backlinks_info": null,
+          "rank_info": {
+            "page_rank": 0,
+            "main_domain_rank": 176
+          }
+        },
+        "second_domain_serp_element": {
+          "se_type": "google",
+          "type": "organic",
+          "rank_group": 20,
+          "rank_absolute": 22,
+          "position": "left",
+          "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[10]/div[1]/div[1]",
+          "domain": "eforestproducts.com",
+          "title": "nys 480-a forest tax law",
+          "url": "https://eforestproducts.com/nys-tax-breaks/",
+          "breadcrumb": "https://eforestproducts.com \u203a nys-tax-breaks",
+          "website_name": "Environmental Forest Products",
+          "is_image": true,
+          "is_video": false,
+          "is_featured_snippet": false,
+          "is_malicious": false,
+          "description": "In order to qualify for NY State tax breaks via 480-a Forest Tax Law, you need a forest management plan completed by a qualified forester.",
+          "pre_snippet": null,
+          "extended_snippet": null,
+          "amp_version": false,
+          "rating": null,
+          "highlighted": [
+            "480-a"
+          ],
+          "links": null,
+          "about_this_result": null,
+          "main_domain": "eforestproducts.com",
+          "relative_url": "/nys-tax-breaks/",
+          "etv": 0.09600000083446503,
+          "estimated_paid_traffic_cost": null,
+          "clickstream_etv": null,
+          "rank_changes": {
+            "previous_rank_absolute": 26,
+            "is_new": false,
+            "is_up": true,
+            "is_down": false
+          },
+          "backlinks_info": null,
+          "rank_info": {
+            "page_rank": 0,
+            "main_domain_rank": 0
+          }
+        }
+      },
+      {
+        "se_type": "google",
+        "keyword_data": {
+          "se_type": "google",
+          "keyword": "480-a",
+          "location_code": 2840,
+          "language_code": "en",
+          "keyword_info": {
+            "se_type": "google",
+            "last_updated_time": "2026-01-25 21:42:44 +00:00",
+            "competition": 0,
+            "competition_level": "LOW",
+            "cpc": null,
+            "search_volume": 40,
+            "low_top_of_page_bid": null,
+            "high_top_of_page_bid": null,
+            "categories": [
+              10018,
+              10163,
+              10869
+            ],
+            "monthly_searches": [
+              {
+                "year": 2025,
+                "month": 12,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 11,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 10,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 9,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 8,
+                "search_volume": 50
+              },
+              {
+                "year": 2025,
+                "month": 7,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 6,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 5,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 4,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 3,
+                "search_volume": 40
+              },
+              {
+                "year": 2025,
+                "month": 2,
+                "search_volume": 30
+              },
+              {
+                "year": 2025,
+                "month": 1,
+                "search_volume": 30
+              }
+            ],
+            "search_volume_trend": {
+              "monthly": -20,
+              "quarterly": 33,
+              "yearly": 33
+            }
+          },
+          "keyword_info_normalized_with_bing": null,
+          "keyword_info_normalized_with_clickstream": null,
+          "clickstream_keyword_info": null,
+          "keyword_properties": {
+            "se_type": "google",
+            "core_keyword": "480",
+            "synonym_clustering_algorithm": "text_processing",
+            "keyword_difficulty": 0,
+            "detected_language": "eo",
+            "is_another_language": true
+          },
+          "serp_info": null,
+          "avg_backlinks_info": {
+            "se_type": "google",
+            "backlinks": 3.9000000953674316,
+            "dofollow": 3.799999952316284,
+            "referring_pages": 3.799999952316284,
+            "referring_domains": 3.0999999046325684,
+            "referring_main_domains": 2.799999952316284,
+            "rank": 24.399999618530273,
+            "main_domain_rank": 474.6000061035156,
+            "last_updated_time": "2026-01-10 12:26:57 +00:00"
+          },
+          "search_intent_info": {
+            "se_type": "google",
+            "main_intent": "transactional",
+            "foreign_intent": [
+              "commercial"
+            ],
+            "last_updated_time": "2025-11-12 07:02:15 +00:00"
+          }
+        },
+        "first_domain_serp_element": {
+          "se_type": "google",
+          "type": "organic",
+          "rank_group": 14,
+          "rank_absolute": 16,
+          "position": "left",
+          "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]",
+          "domain": "www.futureforestinc.com",
+          "title": "Management Plans & 480a Tax Law",
+          "url": "https://www.futureforestinc.com/management-plans-480a-tax-law/",
+          "breadcrumb": "https://www.futureforestinc.com \u203a management-plans-4...",
+          "website_name": "Future Forest Consulting",
+          "is_image": false,
+          "is_video": false,
+          "is_featured_snippet": false,
+          "is_malicious": false,
+          "description": "The 480-a Real Property Tax Law is designed to give landowners compensation for managing their parcel in a sustainable manner for timber, wildlife, aesthetics,\u00a0... Read more",
+          "pre_snippet": null,
+          "extended_snippet": null,
+          "amp_version": false,
+          "rating": null,
+          "highlighted": [
+            "designed to give landowners compensation"
+          ],
+          "links": null,
+          "about_this_result": null,
+          "main_domain": "futureforestinc.com",
+          "relative_url": "/management-plans-480a-tax-law/",
+          "etv": 0.2240000069141388,
+          "estimated_paid_traffic_cost": null,
+          "clickstream_etv": null,
+          "rank_changes": {
+            "previous_rank_absolute": 13,
+            "is_new": false,
+            "is_up": false,
+            "is_down": true
+          },
+          "backlinks_info": null,
+          "rank_info": {
+            "page_rank": 0,
+            "main_domain_rank": 177
+          }
+        },
+        "second_domain_serp_element": {
+          "se_type": "google",
+          "type": "organic",
+          "rank_group": 55,
+          "rank_absolute": 62,
+          "position": "left",
+          "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]",
+          "domain": "eforestproducts.com",
+          "title": "nys 480-a forest tax law",
+          "url": "https://eforestproducts.com/nys-tax-breaks/",
+          "breadcrumb": "https://eforestproducts.com \u203a nys-tax-breaks",
+          "website_name": "Environmental Forest Products",
+          "is_image": false,
+          "is_video": false,
+          "is_featured_snippet": false,
+          "is_malicious": false,
+          "description": "In order to qualify for NY State tax breaks via 480-a Forest Tax Law, you need a forest management plan completed by a qualified forester.",
+          "pre_snippet": null,
+          "extended_snippet": null,
+          "amp_version": false,
+          "rating": null,
+          "highlighted": [
+            "480",
+            "a"
+          ],
+          "links": null,
+          "about_this_result": null,
+          "main_domain": "eforestproducts.com",
+          "relative_url": "/nys-tax-breaks/",
+          "etv": 0.08399999886751175,
+          "estimated_paid_traffic_cost": null,
+          "clickstream_etv": null,
+          "rank_changes": {
+            "previous_rank_absolute": 53,
+            "is_new": false,
+            "is_up": false,
+            "is_down": true
+          },
+          "backlinks_info": null,
+          "rank_info": {
+            "page_rank": 0,
+            "main_domain_rank": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "competitor": "hinzloggingandlandclearing.com",
+    "total": 0,
+    "items": []
+  }
+]
