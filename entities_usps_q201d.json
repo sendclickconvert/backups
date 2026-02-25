@@ -1,0 +1,191 @@
+{
+  "url": "https://pe.usps.com/text/qsg300/Q201d.htm",
+  "total_entities": 30,
+  "entities_by_type": {
+    "CONSUMER_GOOD": [
+      {
+        "name": "Quick Service Guide",
+        "type": "CONSUMER_GOOD",
+        "importance": "HIGH",
+        "mentions": 8
+      },
+      {
+        "name": "Intelligent Mail barcode",
+        "type": "CONSUMER_GOOD",
+        "importance": "HIGH",
+        "mentions": 4
+      },
+      {
+        "name": "thermometers",
+        "type": "CONSUMER_GOOD",
+        "importance": "LOW",
+        "mentions": 1
+      },
+      {
+        "name": "barometers",
+        "type": "CONSUMER_GOOD",
+        "importance": "LOW",
+        "mentions": 1
+      },
+      {
+        "name": "blood pressure monitors",
+        "type": "CONSUMER_GOOD",
+        "importance": "LOW",
+        "mentions": 1
+      }
+    ],
+    "CONCEPT": [
+      {
+        "name": "automation flats",
+        "type": "CONCEPT",
+        "importance": "HIGH",
+        "mentions": 6
+      },
+      {
+        "name": "polywrap",
+        "type": "CONCEPT",
+        "importance": "HIGH",
+        "mentions": 8
+      },
+      {
+        "name": "delivery address",
+        "type": "CONCEPT",
+        "importance": "HIGH",
+        "mentions": 6
+      },
+      {
+        "name": "barcode placement",
+        "type": "CONCEPT",
+        "importance": "HIGH",
+        "mentions": 5
+      },
+      {
+        "name": "address placement",
+        "type": "CONCEPT",
+        "importance": "HIGH",
+        "mentions": 3
+      },
+      {
+        "name": "automated processing",
+        "type": "CONCEPT",
+        "importance": "HIGH",
+        "mentions": 1
+      },
+      {
+        "name": "physical standards",
+        "type": "CONCEPT",
+        "importance": "HIGH",
+        "mentions": 2
+      },
+      {
+        "name": "flexibility and deflection",
+        "type": "CONCEPT",
+        "importance": "MEDIUM",
+        "mentions": 4
+      },
+      {
+        "name": "uniform thickness",
+        "type": "CONCEPT",
+        "importance": "MEDIUM",
+        "mentions": 2
+      },
+      {
+        "name": "carrier route prices",
+        "type": "CONCEPT",
+        "importance": "MEDIUM",
+        "mentions": 1
+      },
+      {
+        "name": "presorted",
+        "type": "CONCEPT",
+        "importance": "MEDIUM",
+        "mentions": 1
+      },
+      {
+        "name": "delivery point routing codes",
+        "type": "CONCEPT",
+        "importance": "MEDIUM",
+        "mentions": 1
+      },
+      {
+        "name": "metallic mercury",
+        "type": "CONCEPT",
+        "importance": "LOW",
+        "mentions": 2
+      },
+      {
+        "name": "sans-serif font",
+        "type": "CONCEPT",
+        "importance": "LOW",
+        "mentions": 1
+      },
+      {
+        "name": "reflectance standards",
+        "type": "CONCEPT",
+        "importance": "LOW",
+        "mentions": 1
+      }
+    ],
+    "ORGANIZATION": [
+      {
+        "name": "USPS",
+        "type": "ORGANIZATION",
+        "importance": "HIGH",
+        "mentions": 5
+      },
+      {
+        "name": "Postal Explorer",
+        "type": "ORGANIZATION",
+        "importance": "MEDIUM",
+        "mentions": 2
+      }
+    ],
+    "LOCATION": [],
+    "PERSON": [],
+    "EVENT": [],
+    "OTHER": [
+      {
+        "name": "First-Class Mail",
+        "type": "OTHER",
+        "importance": "HIGH",
+        "mentions": 5
+      },
+      {
+        "name": "USPS Marketing Mail",
+        "type": "OTHER",
+        "importance": "HIGH",
+        "mentions": 5
+      },
+      {
+        "name": "Bound Printed Matter",
+        "type": "OTHER",
+        "importance": "HIGH",
+        "mentions": 5
+      },
+      {
+        "name": "Periodicals",
+        "type": "OTHER",
+        "importance": "HIGH",
+        "mentions": 7
+      },
+      {
+        "name": "Media Mail",
+        "type": "OTHER",
+        "importance": "LOW",
+        "mentions": 1
+      },
+      {
+        "name": "Library Mail",
+        "type": "OTHER",
+        "importance": "LOW",
+        "mentions": 1
+      },
+      {
+        "name": "postalpro.usps.com",
+        "type": "OTHER",
+        "importance": "LOW",
+        "mentions": 1
+      }
+    ]
+  }
+}

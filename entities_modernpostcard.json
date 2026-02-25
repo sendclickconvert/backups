@@ -1,0 +1,196 @@
+{
+  "url": "https://www.modernpostcard.com/templates",
+  "total_entities": 30,
+  "entities_by_type": {
+    "CONSUMER_GOOD": [
+      {
+        "name": "Adobe InDesign",
+        "type": "CONSUMER_GOOD",
+        "importance": "HIGH",
+        "mentions": 95
+      },
+      {
+        "name": "Adobe Photoshop",
+        "type": "CONSUMER_GOOD",
+        "importance": "HIGH",
+        "mentions": 45
+      },
+      {
+        "name": "Adobe Illustrator",
+        "type": "CONSUMER_GOOD",
+        "importance": "HIGH",
+        "mentions": 45
+      },
+      {
+        "name": "Postcards",
+        "type": "CONSUMER_GOOD",
+        "importance": "HIGH",
+        "mentions": 8
+      },
+      {
+        "name": "Business Cards",
+        "type": "CONSUMER_GOOD",
+        "importance": "HIGH",
+        "mentions": 6
+      },
+      {
+        "name": "Booklets",
+        "type": "CONSUMER_GOOD",
+        "importance": "HIGH",
+        "mentions": 14
+      },
+      {
+        "name": "Rack Card",
+        "type": "CONSUMER_GOOD",
+        "importance": "MEDIUM",
+        "mentions": 1
+      },
+      {
+        "name": "Trifold Brochure",
+        "type": "CONSUMER_GOOD",
+        "importance": "MEDIUM",
+        "mentions": 1
+      },
+      {
+        "name": "Presentation Folders",
+        "type": "CONSUMER_GOOD",
+        "importance": "MEDIUM",
+        "mentions": 4
+      },
+      {
+        "name": "Newsletters",
+        "type": "CONSUMER_GOOD",
+        "importance": "MEDIUM",
+        "mentions": 3
+      },
+      {
+        "name": "Calendars",
+        "type": "CONSUMER_GOOD",
+        "importance": "MEDIUM",
+        "mentions": 20
+      },
+      {
+        "name": "Posters",
+        "type": "CONSUMER_GOOD",
+        "importance": "MEDIUM",
+        "mentions": 1
+      },
+      {
+        "name": "Bookmark",
+        "type": "CONSUMER_GOOD",
+        "importance": "MEDIUM",
+        "mentions": 2
+      },
+      {
+        "name": "Table Tents",
+        "type": "CONSUMER_GOOD",
+        "importance": "MEDIUM",
+        "mentions": 1
+      },
+      {
+        "name": "Door Hanger",
+        "type": "CONSUMER_GOOD",
+        "importance": "MEDIUM",
+        "mentions": 1
+      },
+      {
+        "name": "Greeting Card",
+        "type": "CONSUMER_GOOD",
+        "importance": "MEDIUM",
+        "mentions": 1
+      },
+      {
+        "name": "Product Envelopes",
+        "type": "CONSUMER_GOOD",
+        "importance": "MEDIUM",
+        "mentions": 5
+      },
+      {
+        "name": "Bill Holder",
+        "type": "CONSUMER_GOOD",
+        "importance": "LOW",
+        "mentions": 1
+      },
+      {
+        "name": "Catalog Sheet",
+        "type": "CONSUMER_GOOD",
+        "importance": "LOW",
+        "mentions": 1
+      },
+      {
+        "name": "Color Kit",
+        "type": "CONSUMER_GOOD",
+        "importance": "LOW",
+        "mentions": 1
+      }
+    ],
+    "CONCEPT": [
+      {
+        "name": "Color Management",
+        "type": "CONCEPT",
+        "importance": "MEDIUM",
+        "mentions": 2
+      },
+      {
+        "name": "CMYK",
+        "type": "CONCEPT",
+        "importance": "MEDIUM",
+        "mentions": 1
+      },
+      {
+        "name": "RGB",
+        "type": "CONCEPT",
+        "importance": "MEDIUM",
+        "mentions": 1
+      },
+      {
+        "name": "Pantone",
+        "type": "CONCEPT",
+        "importance": "MEDIUM",
+        "mentions": 2
+      },
+      {
+        "name": "PDF",
+        "type": "CONCEPT",
+        "importance": "HIGH",
+        "mentions": 95
+      },
+      {
+        "name": "Direct Mailer Templates",
+        "type": "CONCEPT",
+        "importance": "HIGH",
+        "mentions": 2
+      },
+      {
+        "name": "Press-Ready Files",
+        "type": "CONCEPT",
+        "importance": "MEDIUM",
+        "mentions": 1
+      },
+      {
+        "name": "File Prep",
+        "type": "CONCEPT",
+        "importance": "MEDIUM",
+        "mentions": 1
+      }
+    ],
+    "ORGANIZATION": [
+      {
+        "name": "Modern Postcard",
+        "type": "ORGANIZATION",
+        "importance": "HIGH",
+        "mentions": 4
+      },
+      {
+        "name": "Trustpilot",
+        "type": "ORGANIZATION",
+        "importance": "LOW",
+        "mentions": 1
+      }
+    ],
+    "LOCATION": [],
+    "PERSON": [],
+    "EVENT": [],
+    "OTHER": []
+  }
+}
