@@ -74,12 +74,12 @@ const sections: { title: string; icon: string; templates: TemplateItem[]; intro?
 ];
 ---
 <BaseLayout
-  title="USPS Direct Mail Templates — Free Downloadable Files"
-  description="USPS Direct Mail Templates — We Got You Covered With Our USPS-Compliant Postcards, Envelopes, Flyer/Brochure Templates in Hudson Valley, NY"
+  title="Free USPS Direct Mail Templates — PDF, Illustrator & InDesign Files"
+  description="Download free USPS-compliant direct mail templates in press-ready PDF format — postcards, EDDM flats, envelopes, and brochures. Built to USPS automation specs with bleed, barcode zones, and address block positioning."
 >
   <PageHero
     title="USPS® Direct Mail Templates"
-    subtitle="We got you covered with our USPS®-compliant postcards, envelopes, and flyer/brochure templates."
+    subtitle="Press-ready PDF templates for postcards, EDDM flats, envelopes, and brochures — pre-built to USPS automation specs with bleed areas, barcode clear zones, and address block positioning."
     breadcrumbs={[
       { label: 'Direct Mail Tools', href: '/direct-mail-tools/' },
       { label: 'USPS Templates' },
@@ -125,9 +125,27 @@ const sections: { title: string; icon: string; templates: TemplateItem[]; intro?
             <p class="text-sm text-navy-600/70 mb-4">
               Download print-ready templates pre-formatted to <a href="/direct-mail-tools/postal-dictionary/" class="text-crst-primary underline hover:text-crst-gold">USPS automation specifications</a>. Each template includes proper barcode clear zones, address block positioning, and bleed areas.
             </p>
-            <p class="text-sm text-navy-600/70 mb-8">
+            <p class="text-sm text-navy-600/70 mb-6">
               These templates are used by businesses of all sizes running <a href="/direct-mail-marketing/" class="text-crst-primary underline hover:text-crst-gold">direct mail campaigns</a> — from local retailers to nonprofits qualifying for <a href="/non-profit-mailing-application/" class="text-crst-primary underline hover:text-crst-gold">reduced nonprofit postage rates</a>. If you're not sure which size fits your budget, check our <a href="/direct-mail-tools/mailing-letter-rates/" class="text-crst-primary underline hover:text-crst-gold">letter automation rates guide</a> before you design.
             </p>
+
+            <div class="bg-navy-50 border border-navy-100 rounded-xl p-5 mb-6">
+              <h3 class="text-sm font-heading font-bold text-navy-800 mb-2">What's included in every template</h3>
+              <p class="text-sm text-navy-600/80 leading-relaxed">
+                Every template is built to USPS automation specifications and exported in press-ready PDF format with CMYK color mode, proper bleed areas, and designated zones for <a href="/direct-mail-tools/postal-dictionary/" class="text-crst-primary underline hover:text-crst-gold">barcode placement</a> and address block positioning. Files are compatible with Adobe Illustrator, InDesign, and Photoshop. Postcard and flat templates are sized to meet USPS aspect ratio requirements, keeping your piece machinable and avoiding the <a href="/direct-mail-tools/envelope-sizes/" class="text-crst-primary underline hover:text-crst-gold">nonmachinable surcharge</a>.
+              </p>
+            </div>
+
+            <div class="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 mb-6">
+              <div class="shrink-0 w-10 h-10 rounded-full bg-crst-primary/10 flex items-center justify-center">
+                <svg class="w-5 h-5 text-crst-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+              </div>
+              <div>
+                <p class="text-sm font-heading font-semibold text-navy-800">Maintained by Sean Griffen, Owner — Cornerstone Services, Inc.</p>
+                <p class="text-xs text-navy-500 mt-1">Sean has produced USPS-compliant direct mail for Hudson Valley businesses since 1998. These templates reflect the exact specifications Cornerstone applies to every print job — First-Class letters, Marketing Mail postcards, and EDDM flats processed through the USPS Business Mail Entry Unit (BMEU) in New Paltz, NY.</p>
+              </div>
+            </div>
+
             {sections.map((section, sIdx) => (
               <div class={sIdx > 0 ? 'mt-8 pt-8 border-t border-gray-200' : ''}>
                 <div class="flex items-center gap-3 mb-4">
