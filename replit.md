@@ -61,7 +61,9 @@ The frontend follows a page-based structure under `client/src/pages/` with reusa
   - "Helpful Resources" section linking to blog posts
   - Legal disclaimer
 - **TownData Interface Extended**: New optional fields: `faqs`, `neighborhoods`, `zipCodes`, `schoolDistrict`, `lirr`, `medianPrice`, `medianPriceSource`
+- **All 81 Towns Fully Populated (updated 2026-02-26)**: Every town entry now has 3 FAQs, neighborhoods list, ZIP codes, school district, LIRR station (where applicable), median price range with Redfin/Homes.com citation. No thin pages remain.
 - **Blog Internal Links**: Verified blog URLs linked throughout (selling situations, process, comparisons, trust, locations)
+- **Situation Links Fixed**: "Selling with Liens" and "Relocating" links on county pages now point to live blog URLs (blog.thepropertyfather.com) instead of href="#". External links render as `<a>` tags, internal links use wouter `<Link>`.
 - **E-E-A-T Audit Tool**: Python script at `tools/eeat_extractor.py`
 
 ### Backend Architecture

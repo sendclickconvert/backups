@@ -182,6 +182,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/code-violations","/situations/inherited-property","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Bethpage home?",
+        answer: "We can close in as few as 7 days. Most Bethpage transactions complete within 14-21 days. We pay cash so there are no mortgage contingencies or bank appraisals. The only timing factors are title clearance and attorney scheduling, as required under NY Judiciary Law § 484."
+      },
+      {
+        question: "Does the Grumman plume affect my ability to sell?",
+        answer: "The Grumman groundwater contamination plume has affected buyer confidence in certain sections of Bethpage, creating additional disclosure requirements under NY Property Condition Disclosure Law § 462. We already understand the plume boundaries and buy properties in affected areas without requiring environmental remediation from the seller."
+      },
+      {
+        question: "What are homes selling for in Bethpage?",
+        answer: "Per Redfin/Homes.com data, median home values in Bethpage range from $550,000 to $625,000 depending on proximity to the contamination zone and property condition. Our cash offers are based on comparable sales specific to your section of Bethpage."
+      }
+    ],
+    neighborhoods: ["Bethpage State Park area", "Cherry Avenue", "Stewart Avenue", "Central Avenue", "Powell Avenue", "Burkhardt Avenue", "Broadway corridor", "Hicksville Road area"],
+    zipCodes: ["11714"],
+    schoolDistrict: "Bethpage Union Free School District",
+    lirr: "Bethpage (Oyster Bay Branch)",
+    medianPrice: "$550,000-$625,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "carle-place",
@@ -220,6 +240,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/estate-sale","/situations/tax-liens","/how-it-works"],
+    faqs: [
+      {
+        question: "How quickly can you close on a Carle Place home?",
+        answer: "We typically close Carle Place transactions in 10-21 days. Because we pay cash, there are no mortgage contingencies or appraisal delays. The timeline depends on title clearance and attorney scheduling under NY Judiciary Law § 484."
+      },
+      {
+        question: "Are Carle Place homes hard to sell if they need work?",
+        answer: "Yes. Carle Place's small inventory means buyers here are typically young families looking for turnkey homes. Properties needing major updates — new roofs, basement remediation, kitchen renovations — compete poorly against the few renovated listings available at any given time. A cash sale avoids this problem entirely."
+      },
+      {
+        question: "What's the typical home price in Carle Place?",
+        answer: "Per Redfin/Homes.com data, median home values in Carle Place range from $575,000 to $650,000. The small school district and convenient location near Roosevelt Field keep demand strong for move-in ready homes, but unrenovated properties sell for considerably less."
+      }
+    ],
+    neighborhoods: ["Cherry Lane area", "Rushmore Avenue", "Westbury Avenue area", "Old Country Road corridor", "Carle Place village center"],
+    zipCodes: ["11514"],
+    schoolDistrict: "Carle Place Union Free School District",
+    lirr: "Carle Place (Oyster Bay Branch)",
+    medianPrice: "$575,000-$650,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "east-meadow",
@@ -258,6 +298,25 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/inherited-property","/situations/behind-on-taxes","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on an East Meadow home?",
+        answer: "Most East Meadow transactions close within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals to wait for. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+      },
+      {
+        question: "Do many East Meadow homes have basement water issues?",
+        answer: "Yes. East Meadow's flat topography and aging drainage infrastructure mean basement water intrusion is common, especially in homes built in the 1950s-1960s. We buy properties with water damage, mold, and foundation issues as-is — no remediation required before closing."
+      },
+      {
+        question: "What are homes worth in East Meadow?",
+        answer: "Per Redfin/Homes.com data, median home values in East Meadow range from $525,000 to $600,000 depending on condition and proximity to Eisenhower Park. Our offers are based on comparable sales in your specific neighborhood, not broad averages."
+      }
+    ],
+    neighborhoods: ["Eisenhower Park area", "Prospect Avenue", "Newbridge Avenue", "Front Street area", "Hempstead Turnpike corridor", "Veterans Memorial area", "Barnum Woods"],
+    zipCodes: ["11554"],
+    schoolDistrict: "East Meadow Union Free School District",
+    medianPrice: "$525,000-$600,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "east-rockaway",
@@ -296,6 +355,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/storm-damage","/situations/flood-zone","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on an East Rockaway home?",
+        answer: "We can close in as few as 7 days. Most East Rockaway transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the exact timeline."
+      },
+      {
+        question: "Do you buy flood zone properties in East Rockaway?",
+        answer: "Yes. Many East Rockaway homes sit in FEMA-designated flood zones with annual insurance premiums of $3,000 to $8,000 or more. We buy flood zone properties as-is regardless of flood history, elevation certificate status, or repetitive loss designation. Per NY Real Property Law § 462, sellers must disclose known flood history."
+      },
+      {
+        question: "What are East Rockaway homes selling for?",
+        answer: "Per Redfin/Homes.com data, median home values in East Rockaway range from $475,000 to $550,000. Flood zone location and insurance costs significantly impact values. Our offers reflect current comparable sales specific to your block and flood zone status."
+      }
+    ],
+    neighborhoods: ["Atlantic Avenue downtown", "Rhame Avenue waterfront", "Mill River area", "Centre Avenue", "LIRR station area", "Hewlett Bay area"],
+    zipCodes: ["11518"],
+    schoolDistrict: "East Rockaway Union Free School District",
+    lirr: "East Rockaway (Long Beach Branch)",
+    medianPrice: "$475,000-$550,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "elmont",
@@ -334,6 +413,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/code-violations","/situations/foreclosure","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on an Elmont home?",
+        answer: "Most Elmont transactions close within 14-21 days. We pay cash, eliminating mortgage contingencies and bank appraisals. The timeline depends on title clearance and attorney scheduling as required under NY Judiciary Law § 484."
+      },
+      {
+        question: "Has the UBS Arena development affected Elmont home values?",
+        answer: "Yes. The UBS Arena and Belmont Park redevelopment have created a split market in Elmont. Renovated homes near the development command higher prices, while unrenovated properties further away compete poorly. We buy in all sections of Elmont regardless of proximity to the arena."
+      },
+      {
+        question: "What are homes selling for in Elmont?",
+        answer: "Per Redfin/Homes.com data, median home values in Elmont range from $500,000 to $575,000. Properties near UBS Arena trend higher while homes needing significant work sell for less. Our offers are based on comparable sales in your specific section."
+      }
+    ],
+    neighborhoods: ["Belmont Park area", "Elmont Road corridor", "Hempstead Turnpike area", "Elmont Memorial Library area", "Southern State Parkway area", "Linden Boulevard corridor"],
+    zipCodes: ["11003"],
+    schoolDistrict: "Elmont Union Free School District / Sewanhaka Central High School District",
+    lirr: "Elmont-UBS Arena (Hempstead Branch)",
+    medianPrice: "$500,000-$575,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "farmingdale",
@@ -372,6 +471,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/rental-property","/situations/relocation","/how-it-works"],
+    faqs: [
+      {
+        question: "How quickly can you close on a Farmingdale home?",
+        answer: "We typically close Farmingdale transactions within 14-21 days. Cash purchases mean no mortgage contingencies, no bank appraisals, and no financing delays. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only variables."
+      },
+      {
+        question: "Do you buy former rental properties in Farmingdale?",
+        answer: "Yes. Farmingdale's proximity to Farmingdale State College means many properties have been used as rentals for years. These homes often show significant wear. We buy former rentals as-is, including properties with tenant damage, deferred maintenance, and code issues."
+      },
+      {
+        question: "What's the median home price in Farmingdale?",
+        answer: "Per Redfin/Homes.com data, median home values in Farmingdale range from $500,000 to $575,000. Renovated homes near the revitalized downtown command premiums, while dated properties on side streets sell for considerably less."
+      }
+    ],
+    neighborhoods: ["Farmingdale Village downtown", "Main Street area", "Conklin Street", "Secatogue Avenue", "Republic Airport area", "Broadhollow Road corridor", "LIRR station area"],
+    zipCodes: ["11735"],
+    schoolDistrict: "Farmingdale Union Free School District",
+    lirr: "Farmingdale (Ronkonkoma Branch)",
+    medianPrice: "$500,000-$575,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "floral-park",
@@ -410,6 +529,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/inherited-property","/situations/downsizing","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Floral Park home?",
+        answer: "We can close in as few as 7 days, though most Floral Park transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and appraisal delays. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
+      },
+      {
+        question: "Does Floral Park's border with Queens affect home sales?",
+        answer: "Yes. Floral Park straddles the Nassau-Queens border, which creates a unique cross-border ZIP code situation (11001/11002). Some buyers are confused about jurisdictional differences in taxes and services. We understand these nuances and buy properties on both sides of the border within Nassau County."
+      },
+      {
+        question: "What are homes selling for in Floral Park?",
+        answer: "Per Redfin/Homes.com data, median home values in Floral Park range from $625,000 to $725,000. The Floral Park-Bellerose school district and tree-lined streets command strong prices for renovated homes, but unrenovated properties sell at a significant discount."
+      }
+    ],
+    neighborhoods: ["Tulip Avenue downtown", "Magnolia Avenue", "Carnation Avenue", "Floral Park-Bellerose section", "Jericho Turnpike area", "Hillside Avenue area", "LIRR station area"],
+    zipCodes: ["11001", "11002"],
+    schoolDistrict: "Floral Park-Bellerose Union Free School District",
+    lirr: "Floral Park (Hempstead Branch)",
+    medianPrice: "$625,000-$725,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "franklin-square",
@@ -448,6 +587,25 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/foreclosure","/situations/oil-tank","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Franklin Square home?",
+        answer: "Most Franklin Square transactions close within 14-21 days. We pay cash — no mortgage contingencies, no bank appraisals, no financing delays. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the exact timeline."
+      },
+      {
+        question: "Do Franklin Square homes have oil tank issues?",
+        answer: "Yes. Many post-war homes in Franklin Square were originally heated by oil, and underground storage tanks are common. Tank removal and soil remediation can cost $10,000 to $30,000. We buy properties with known or suspected oil tank issues as-is — no remediation required before closing."
+      },
+      {
+        question: "What are homes selling for in Franklin Square?",
+        answer: "Per Redfin/Homes.com data, median home values in Franklin Square range from $500,000 to $575,000. As an entry-level Nassau County market, buyers here tend to use FHA/VA financing with strict appraisal requirements that unrenovated homes often can't meet."
+      }
+    ],
+    neighborhoods: ["Rath Park area", "Hempstead Turnpike corridor", "Franklin Avenue", "New Hyde Park Road area", "Lincoln Road", "Pacific Street", "Washington Street"],
+    zipCodes: ["11010"],
+    schoolDistrict: "Franklin Square Union Free School District",
+    medianPrice: "$500,000-$575,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "freeport",
@@ -486,6 +644,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/flood-zone","/situations/inherited-property","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Freeport home?",
+        answer: "We can close in as few as 7 days, though most Freeport transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the exact timeline."
+      },
+      {
+        question: "Do you buy flood zone properties in Freeport?",
+        answer: "Yes. Significant portions of Freeport sit in FEMA flood zones, particularly near Freeport Creek, Baldwin Bay, and the canal neighborhoods. We buy flood zone properties as-is regardless of flood history or insurance costs. Annual flood premiums in Freeport can reach $4,000 to $10,000, which scares off most traditional buyers."
+      },
+      {
+        question: "What are homes selling for in Freeport?",
+        answer: "Per Redfin/Homes.com data, median home values in Freeport range from $475,000 to $575,000. Waterfront proximity and flood zone designation significantly impact values. Our cash offers reflect current comparable sales specific to your section of Freeport."
+      }
+    ],
+    neighborhoods: ["Nautical Mile waterfront", "Freeport Creek area", "North Main Street", "Sunrise Highway corridor", "Freeport High School area", "Woodcleft Canal", "Guy Lombardo Avenue"],
+    zipCodes: ["11520"],
+    schoolDistrict: "Freeport Union Free School District",
+    lirr: "Freeport (Babylon Branch)",
+    medianPrice: "$475,000-$575,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "garden-city",
@@ -524,6 +702,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/divorce","/situations/estate-sale","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Garden City home?",
+        answer: "We can close in as few as 7 days, though most Garden City transactions complete within 14-21 days. Our cash purchases are handled privately — no MLS listing, no open houses. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+      },
+      {
+        question: "Can you handle high-value Garden City properties?",
+        answer: "Yes. Garden City is one of Nassau County's most prestigious addresses with property values well above the county median. We have the capital and experience to purchase high-value properties directly. Our offers reflect Garden City's significant land value and location premium, even for unrenovated homes."
+      },
+      {
+        question: "What are homes selling for in Garden City?",
+        answer: "Per Redfin/Homes.com data, median home values in Garden City range from $850,000 to $1,200,000 depending on section and proximity to the village center. The Estates section commands the highest premiums. Our offers are based on comparable sales in your specific neighborhood."
+      }
+    ],
+    neighborhoods: ["The Estates section", "Garden City Village center", "Cathedral area", "Stewart Manor border", "Adelphi University area", "Seventh Street area", "LIRR station area"],
+    zipCodes: ["11530"],
+    schoolDistrict: "Garden City Union Free School District",
+    lirr: "Garden City (Hempstead Branch)",
+    medianPrice: "$850,000-$1,200,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "glen-cove",
@@ -562,6 +760,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/multi-family","/situations/inherited-property","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Glen Cove home?",
+        answer: "We can close in as few as 7 days. Most Glen Cove transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
+      },
+      {
+        question: "Do you buy multi-family properties in Glen Cove?",
+        answer: "Yes. Glen Cove has a significant number of multi-family properties, particularly in the downtown area. We buy two-family and multi-family properties as-is, including those with problem tenants, deferred maintenance, or code violations. NY Real Property Law § 240 governs landlord obligations we handle post-closing."
+      },
+      {
+        question: "What are homes selling for in Glen Cove?",
+        answer: "Per Redfin/Homes.com data, median home values in Glen Cove range from $525,000 to $650,000. There's a wide range depending on whether the property is a hillside estate or a downtown ranch. Waterfront-adjacent properties near Garvies Point command premiums."
+      }
+    ],
+    neighborhoods: ["Hempstead Harbor waterfront", "Garvies Point area", "Glen Street corridor", "Brewster Street", "Glen Cove High School area", "Landing area", "Orchard Beach"],
+    zipCodes: ["11542"],
+    schoolDistrict: "Glen Cove City School District",
+    lirr: "Glen Cove (Oyster Bay Branch)",
+    medianPrice: "$525,000-$650,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "great-neck",
@@ -601,6 +819,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/divorce","/situations/estate-sale","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Great Neck home?",
+        answer: "We can close in as few as 7 days, though most Great Neck transactions complete within 14-21 days. Our process is completely private — no MLS listing, no open houses. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the timeline."
+      },
+      {
+        question: "Do you buy high-value estate homes in Great Neck?",
+        answer: "Yes. The Great Neck peninsula includes some of Nassau County's most valuable residential properties, particularly in Kings Point and Great Neck Estates. We have the capital to purchase high-value homes directly and understand the significant land value these properties carry, even in unrenovated condition."
+      },
+      {
+        question: "What are homes selling for in Great Neck?",
+        answer: "Per Redfin/Homes.com data, median home values in the Great Neck area range from $900,000 to $1,500,000 depending on the specific village and property type. Kings Point and waterfront properties command the highest premiums. Our offers are based on comparable sales in your specific community."
+      }
+    ],
+    neighborhoods: ["Kings Point", "Great Neck Estates", "Great Neck Plaza", "Saddle Rock", "Russell Gardens", "University Gardens", "Thomaston", "Great Neck village center"],
+    zipCodes: ["11020", "11021", "11023", "11024"],
+    schoolDistrict: "Great Neck Union Free School District",
+    lirr: "Great Neck (Port Washington Branch)",
+    medianPrice: "$900,000-$1,500,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "hempstead",
@@ -752,6 +990,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/flood-zone","/situations/inherited-property","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on an Inwood home?",
+        answer: "We can close in as few as 7 days. Most Inwood transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+      },
+      {
+        question: "Do you buy flood zone properties near Jamaica Bay in Inwood?",
+        answer: "Yes. Inwood sits at low elevation along Jamaica Bay with many properties in FEMA flood zones. We buy flood zone properties as-is regardless of repetitive loss history or elevated insurance premiums ($5,000-$10,000+ annually). Per NY Real Property Law § 462, sellers must disclose known flood history, but we handle all post-closing compliance."
+      },
+      {
+        question: "What are homes selling for in Inwood?",
+        answer: "Per Redfin/Homes.com data, median home values in Inwood range from $400,000 to $500,000. Flood zone location, proximity to JFK Airport, and property condition significantly impact values. Our offers reflect current comparable sales specific to your block."
+      }
+    ],
+    neighborhoods: ["Bayview Avenue waterfront", "Wanser Avenue", "Doughty Boulevard", "Lawrence Avenue area", "Inwood Country Club area", "Jamaica Bay shoreline"],
+    zipCodes: ["11096"],
+    schoolDistrict: "Lawrence Union Free School District",
+    lirr: "Inwood (Far Rockaway Branch)",
+    medianPrice: "$400,000-$500,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "island-park",
@@ -790,6 +1048,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/flood-zone","/situations/storm-damage","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on an Island Park home?",
+        answer: "We can close in as few as 7 days. Most Island Park transactions complete within 14-21 days. Because we pay cash, there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
+      },
+      {
+        question: "Do you buy non-elevated homes in Island Park?",
+        answer: "Yes. Many Island Park homes were never elevated after Hurricane Sandy and now face flood insurance premiums exceeding $10,000 per year under FEMA's Risk Rating 2.0. We buy non-elevated properties as-is regardless of flood history or insurance costs. Per NY Real Property Law § 462, sellers must disclose known flood history, but we handle all post-closing compliance."
+      },
+      {
+        question: "What are homes selling for in Island Park?",
+        answer: "Per Redfin/Homes.com data, median home values in Island Park range from $425,000 to $550,000. Values vary significantly based on elevation status, flood insurance costs, and whether the home was fully rebuilt after Sandy. Our offers reflect current comparable sales specific to your block."
+      }
+    ],
+    neighborhoods: ["Island Park village center", "Long Beach Road corridor", "Waterfront blocks", "Bridge area", "Barnum Island adjacent"],
+    zipCodes: ["11558"],
+    schoolDistrict: "Island Park Union Free School District",
+    lirr: "Island Park (Long Beach Branch)",
+    medianPrice: "$425,000-$550,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "jericho",
@@ -828,6 +1106,25 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/estate-sale","/situations/divorce","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Jericho home?",
+        answer: "We can close in as few as 7 days, though most Jericho transactions complete within 14-21 days. Our process is completely private — no MLS listing, no open houses. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the timeline."
+      },
+      {
+        question: "Do Jericho homes need major renovations to sell traditionally?",
+        answer: "In most cases, yes. The Jericho school district premium means buyers paying $800,000+ expect updated kitchens, modern bathrooms, and efficient systems. Homes that fall short can sit for months. Renovation costs of $75,000-$150,000 are common to meet Jericho buyer standards. We buy as-is and eliminate that risk entirely."
+      },
+      {
+        question: "What are homes selling for in Jericho?",
+        answer: "Per Redfin/Homes.com data, median home values in Jericho range from $750,000 to $950,000. The top-rated Jericho UFSD drives significant demand and land value. Our cash offers reflect Jericho's school district premium even for unrenovated properties."
+      }
+    ],
+    neighborhoods: ["Jericho Turnpike area", "Route 106/107 corridor", "Birchwood Park", "West Birchwood", "Jericho village center", "Syosset-Woodbury border area"],
+    zipCodes: ["11753"],
+    schoolDistrict: "Jericho Union Free School District",
+    medianPrice: "$750,000-$950,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "lawrence",
@@ -867,6 +1164,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/estate-sale","/situations/flood-zone","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Lawrence home?",
+        answer: "We can close in as few as 7 days. Most Lawrence transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
+      },
+      {
+        question: "Do you buy waterfront properties in the Five Towns area?",
+        answer: "Yes. Lawrence includes some of the Five Towns' most impressive waterfront properties along with lower-lying areas near Jamaica Bay in FEMA flood zones. We buy waterfront properties as-is regardless of bulkhead condition, flood history, or insurance costs. Per NY Real Property Law § 462, sellers must disclose known flood history."
+      },
+      {
+        question: "What are homes selling for in Lawrence?",
+        answer: "Per Redfin/Homes.com data, median home values in Lawrence range from $500,000 to $800,000, with significant variation between modest mid-century homes and the grand waterfront estates near Lawrence Country Club. Our offers reflect comparable sales specific to your section of Lawrence."
+      }
+    ],
+    neighborhoods: ["Lawrence Country Club area", "Rock Hall area", "Central Avenue corridor", "Rockaway Turnpike", "Broadway corridor", "Five Towns waterfront"],
+    zipCodes: ["11559"],
+    schoolDistrict: "Lawrence Union Free School District",
+    lirr: "Lawrence (Far Rockaway Branch)",
+    medianPrice: "$500,000-$800,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "levittown",
@@ -1019,6 +1336,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/estate-sale","/situations/relocation","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Lynbrook home?",
+        answer: "We can close in as few as 7 days. Most Lynbrook transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals to wait for. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+      },
+      {
+        question: "Is it hard to sell an unrenovated home in Lynbrook?",
+        answer: "Yes. Lynbrook's desirable village market means renovated homes sell quickly with multiple offers, making unrenovated properties uncompetitive. Bringing a dated Lynbrook home to market standard costs $50,000-$80,000 or more. We buy as-is and eliminate that renovation risk entirely."
+      },
+      {
+        question: "What are homes selling for in Lynbrook?",
+        answer: "Per Redfin/Homes.com data, median home values in Lynbrook range from $575,000 to $700,000. The walkable downtown, strong school district, and LIRR commute keep demand high for renovated homes. Our cash offers are based on comparable sales in your specific section of Lynbrook."
+      }
+    ],
+    neighborhoods: ["Lynbrook village center", "Atlantic Avenue corridor", "Merrick Road area", "Sunrise Highway area", "Broadway area", "LIRR station neighborhood"],
+    zipCodes: ["11563"],
+    schoolDistrict: "Lynbrook Union Free School District",
+    lirr: "Lynbrook (Babylon Branch)",
+    medianPrice: "$575,000-$700,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "malverne",
@@ -1057,6 +1394,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/downsizing","/situations/inherited-property","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Malverne home?",
+        answer: "We can close in as few as 7 days. Most Malverne transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
+      },
+      {
+        question: "Do older Malverne homes have knob-and-tube wiring issues?",
+        answer: "Some of Malverne's oldest homes still have knob-and-tube wiring, which most buyers and their lenders consider a deal-breaker requiring full electrical rewiring ($10,000-$20,000+). We buy homes with outdated electrical systems as-is — no rewiring needed before closing."
+      },
+      {
+        question: "What are homes selling for in Malverne?",
+        answer: "Per Redfin/Homes.com data, median home values in Malverne range from $475,000 to $575,000. Malverne offers relative affordability compared to neighboring Lynbrook and Rockville Centre, but unrenovated properties sell for considerably less than updated homes. Our offers reflect current as-is comparable sales."
+      }
+    ],
+    neighborhoods: ["Malverne village center", "Hempstead Avenue corridor", "Ocean Avenue area", "Norwood Avenue", "LIRR station area", "Malverne Park"],
+    zipCodes: ["11565"],
+    schoolDistrict: "Malverne Union Free School District",
+    lirr: "Malverne (West Hempstead Branch)",
+    medianPrice: "$475,000-$575,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "manhasset",
@@ -1095,6 +1452,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/divorce","/situations/estate-sale","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Manhasset home?",
+        answer: "We can close in as few as 7 days, though most Manhasset transactions complete within 14-21 days. Our process is completely private — no MLS listing, no open houses, no yard signs. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the timeline."
+      },
+      {
+        question: "Do you buy high-value homes in Manhasset?",
+        answer: "Yes. Manhasset includes some of Nassau County's most valuable residential properties, particularly in the Shelter Rock and Plandome neighborhoods. We have the capital to purchase high-value homes directly and understand the significant land value and school district premium these properties carry, even in unrenovated condition."
+      },
+      {
+        question: "What are homes selling for in Manhasset?",
+        answer: "Per Redfin/Homes.com data, median home values in Manhasset range from $1,100,000 to $1,800,000. The top-rated Manhasset school district and North Shore location drive exceptional land values. Our cash offers account for Manhasset's location premium even for properties needing significant renovation."
+      }
+    ],
+    neighborhoods: ["Shelter Rock Road area", "Plandome", "Manhasset Bay waterfront", "Northern Boulevard corridor", "Americana Manhasset area", "Munsey Park", "Strathmore"],
+    zipCodes: ["11030"],
+    schoolDistrict: "Manhasset Union Free School District",
+    lirr: "Manhasset (Port Washington Branch)",
+    medianPrice: "$1,100,000-$1,800,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "massapequa",
@@ -1133,6 +1510,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/inherited-property","/situations/fixer-upper","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Massapequa home?",
+        answer: "We can close in as few as 7 days. Most Massapequa transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+      },
+      {
+        question: "Do you buy homes with old cesspools or pool removal issues in Massapequa?",
+        answer: "Yes. Many Massapequa homes still have cesspools that need conversion to sewer, and outdated in-ground pools can cost $15,000+ to remove. We buy properties as-is regardless of cesspool status or pool condition. You don't need to address these issues before selling to us."
+      },
+      {
+        question: "What are homes selling for in the Massapequas?",
+        answer: "Per Redfin/Homes.com data, median home values across Massapequa, Massapequa Park, and North Massapequa range from $575,000 to $725,000. Waterfront properties along South Oyster Bay command premiums, while unrenovated inland homes trade at the lower end. Our offers reflect comparable sales in your specific section."
+      }
+    ],
+    neighborhoods: ["Massapequa village", "Massapequa Park", "North Massapequa", "South Oyster Bay waterfront", "Sunrise Highway corridor", "Broadway area", "Massapequa Preserve area", "Marjorie Post Park area"],
+    zipCodes: ["11758", "11762"],
+    schoolDistrict: "Massapequa Union Free School District",
+    lirr: "Massapequa / Massapequa Park (Babylon Branch)",
+    medianPrice: "$575,000-$725,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "merrick",
@@ -1171,6 +1568,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/flood-zone","/situations/inherited-property","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Merrick home?",
+        answer: "We can close in as few as 7 days. Most Merrick transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
+      },
+      {
+        question: "Do you buy canal-front properties with bulkhead issues in Merrick?",
+        answer: "Yes. Failing bulkheads along Merrick's canal system can cost $30,000-$80,000 to replace, making these properties very difficult to sell traditionally. We buy canal-front properties as-is regardless of bulkhead condition, flood zone designation, or dock deterioration. Per NY Real Property Law § 462, sellers must disclose known conditions."
+      },
+      {
+        question: "What are homes selling for in Merrick?",
+        answer: "Per Redfin/Homes.com data, median home values in Merrick range from $575,000 to $750,000. Waterfront canal properties command premiums when in good condition but trade at discounts when bulkheads or flood issues are present. Our offers reflect current comparable sales specific to your section of Merrick."
+      }
+    ],
+    neighborhoods: ["Merrick Bay waterfront", "Canal streets", "Merrick Avenue corridor", "Sunrise Highway area", "Hewlett Avenue area", "Merrick village center", "Camp Avenue area"],
+    zipCodes: ["11566"],
+    schoolDistrict: "Bellmore-Merrick Central High School District / Merrick Union Free School District",
+    lirr: "Merrick (Babylon Branch)",
+    medianPrice: "$575,000-$750,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "mineola",
@@ -1209,6 +1626,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/multi-family","/situations/rental-property","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Mineola home?",
+        answer: "We can close in as few as 7 days. Most Mineola transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+      },
+      {
+        question: "Do you buy two-family homes in Mineola?",
+        answer: "Yes. Mineola has a significant number of two-family and mixed-use properties, particularly near the village center and hospital. We buy multi-family properties as-is, including those with code violations, unpermitted configurations, or tenant-related wear. NY Real Property Law § 240 governs landlord obligations we handle post-closing."
+      },
+      {
+        question: "What are homes selling for in Mineola?",
+        answer: "Per Redfin/Homes.com data, median home values in Mineola range from $550,000 to $675,000. The LIRR junction and walkability drive demand for renovated homes near the station. Two-family properties and homes near the hospital or courthouse may trade differently based on adjacency factors."
+      }
+    ],
+    neighborhoods: ["Mineola LIRR station area", "Old Country Road corridor", "Jericho Turnpike area", "Willis Avenue", "Marcellus Road", "Mineola village center", "Hospital district"],
+    zipCodes: ["11501"],
+    schoolDistrict: "Mineola Union Free School District",
+    lirr: "Mineola (Oyster Bay Branch)",
+    medianPrice: "$550,000-$675,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "new-hyde-park",
@@ -1247,6 +1684,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/inherited-property","/situations/downsizing","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a New Hyde Park home?",
+        answer: "We can close in as few as 7 days. Most New Hyde Park transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+      },
+      {
+        question: "Are compact lot sizes an issue when selling in New Hyde Park?",
+        answer: "Compact lots limit expansion potential, which means dated 1,000-square-foot Cape Cods can't easily be enlarged to meet modern buyer expectations. This reduces the traditional buyer pool significantly. We buy homes on any lot size as-is — no need to worry about how the layout competes against renovated listings."
+      },
+      {
+        question: "What are homes selling for in New Hyde Park?",
+        answer: "Per Redfin/Homes.com data, median home values in New Hyde Park range from $600,000 to $725,000. The Nassau-Queens border location and LIRR access keep demand steady for move-in ready homes. Our cash offers reflect comparable as-is sales in your specific section of New Hyde Park."
+      }
+    ],
+    neighborhoods: ["New Hyde Park village center", "Clinch Avenue", "Covert Avenue", "South Tyson Avenue", "Hillside Avenue corridor", "Jericho Turnpike area", "Garden City Park"],
+    zipCodes: ["11040"],
+    schoolDistrict: "New Hyde Park-Garden City Park Union Free School District",
+    lirr: "New Hyde Park (Oyster Bay Branch)",
+    medianPrice: "$600,000-$725,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "oceanside",
@@ -1286,6 +1743,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/flood-zone","/situations/behind-on-taxes","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on an Oceanside home?",
+        answer: "We can close in as few as 7 days. Most Oceanside transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals to delay the process. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
+      },
+      {
+        question: "Do you buy flood zone properties in Oceanside?",
+        answer: "Yes. Oceanside's southern sections near the water sit in FEMA flood zones with elevated insurance premiums. We buy canal-front and flood zone properties as-is, regardless of elevation status, bulkhead condition, or flood insurance costs. Per NY Real Property Law § 462, sellers must disclose known flood history."
+      },
+      {
+        question: "What are homes selling for in Oceanside?",
+        answer: "Per Redfin/Homes.com data, median home values in Oceanside range from $525,000 to $650,000. Waterfront canal properties can command premiums when in good condition, while inland homes with deferred maintenance trade at the lower end. Our offers are based on comparable sales in your specific section."
+      }
+    ],
+    neighborhoods: ["Oceanside waterfront", "Canal streets", "Long Beach Road corridor", "Waukena Avenue area", "Lawson Boulevard", "Sunrise Highway area", "Oceanside village center"],
+    zipCodes: ["11572"],
+    schoolDistrict: "Oceanside Union Free School District",
+    lirr: "Oceanside (Long Beach Branch)",
+    medianPrice: "$525,000-$650,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "old-bethpage",
@@ -1324,6 +1801,25 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/large-lot","/situations/inherited-property","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on an Old Bethpage home?",
+        answer: "We can close in as few as 7 days. Most Old Bethpage transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
+      },
+      {
+        question: "Do Old Bethpage homes have septic system issues?",
+        answer: "Yes. Some Old Bethpage properties still rely on septic systems rather than municipal sewer, and aging septic systems can cost $15,000-$30,000 to replace. We buy homes with failing or outdated septic systems as-is — no certification or replacement needed before closing."
+      },
+      {
+        question: "What are homes selling for in Old Bethpage?",
+        answer: "Per Redfin/Homes.com data, median home values in Old Bethpage range from $600,000 to $750,000. The larger lot sizes, semi-rural character, and strong Plainview-Old Bethpage school district support values, but unrenovated properties with deferred maintenance trade at the lower end."
+      }
+    ],
+    neighborhoods: ["Old Bethpage Village Restoration area", "Round Swamp Road", "Haypath Road", "Old Bethpage Road", "Plainview-Old Bethpage Central SD area"],
+    zipCodes: ["11804"],
+    schoolDistrict: "Plainview-Old Bethpage Central School District",
+    medianPrice: "$600,000-$750,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "oyster-bay",
@@ -1362,6 +1858,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/historic-property","/situations/estate-sale","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on an Oyster Bay home?",
+        answer: "We can close in as few as 7 days. Most Oyster Bay transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+      },
+      {
+        question: "Do you buy historic properties in Oyster Bay?",
+        answer: "Yes. Oyster Bay has homes dating to the 1800s that may have historic preservation considerations. We buy historic properties as-is, including those needing specialized renovation to comply with preservation guidelines. Per NY Real Property Law § 462, sellers must disclose known property conditions."
+      },
+      {
+        question: "What are homes selling for in Oyster Bay?",
+        answer: "Per Redfin/Homes.com data, median home values in Oyster Bay range from $700,000 to $950,000. The historic village character, waterfront harbor access, and Oyster Bay-East Norwich school district drive demand. Historic and waterfront properties at the higher end require significant maintenance investment."
+      }
+    ],
+    neighborhoods: ["Oyster Bay village center", "Oyster Bay Harbor waterfront", "East Main Street area", "Berry Hill Road", "South Street", "Audrey Avenue", "Sagamore Hill area"],
+    zipCodes: ["11771"],
+    schoolDistrict: "Oyster Bay-East Norwich Central School District",
+    lirr: "Oyster Bay (Oyster Bay Branch)",
+    medianPrice: "$700,000-$950,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "plainview",
@@ -1400,6 +1916,25 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/inherited-property","/situations/fixer-upper","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Plainview home?",
+        answer: "We can close in as few as 7 days. Most Plainview transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+      },
+      {
+        question: "Do many Plainview homes still have cesspools and oil heat?",
+        answer: "Yes. Many Plainview homes built in the 1950s-1960s still have original cesspools, oil-fired heating systems, and outdated electrical panels. Replacing all three simultaneously can cost $30,000-$50,000+. We buy homes with all original systems as-is — no upgrades needed before closing."
+      },
+      {
+        question: "What are homes selling for in Plainview?",
+        answer: "Per Redfin/Homes.com data, median home values in Plainview range from $575,000 to $700,000. The strong Plainview-Old Bethpage school district and central Nassau location support values, but unrenovated properties with original systems trade at significant discounts to renovated homes."
+      }
+    ],
+    neighborhoods: ["Old Country Road area", "Woodbury Road corridor", "Manetto Hill Road area", "Plainview-Old Bethpage library area", "Central Park Road", "Washington Avenue"],
+    zipCodes: ["11803"],
+    schoolDistrict: "Plainview-Old Bethpage Central School District",
+    medianPrice: "$575,000-$700,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "port-washington",
@@ -1438,6 +1973,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/estate-sale","/situations/waterfront","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Port Washington home?",
+        answer: "We can close in as few as 7 days. Most Port Washington transactions complete within 14-21 days. Our process is completely private — no MLS listing, no open houses, no yard signs. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the exact timeline."
+      },
+      {
+        question: "Do you buy waterfront properties in Port Washington?",
+        answer: "Yes. We buy waterfront properties throughout Port Washington, including those with bulkhead, dock, or erosion challenges along Manhasset Bay. We also purchase homes in Manorhaven and Sands Point. Per NY Real Property Law § 462, sellers must disclose known waterfront conditions."
+      },
+      {
+        question: "What are homes selling for in Port Washington?",
+        answer: "Per Redfin/Homes.com data, median home values in Port Washington range from $900,000 to $1,500,000. The range is enormous — from modest Manorhaven homes to grand Sands Point estates. The top-rated Port Washington school district and waterfront location drive exceptional values across all price tiers."
+      }
+    ],
+    neighborhoods: ["Sands Point", "Manorhaven", "Port Washington village", "Main Street downtown", "Shore Road", "Port Washington Boulevard", "Cow Neck peninsula", "Beacon Hill"],
+    zipCodes: ["11050"],
+    schoolDistrict: "Port Washington Union Free School District",
+    lirr: "Port Washington (Port Washington Branch)",
+    medianPrice: "$900,000-$1,500,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "rockville-centre",
@@ -1476,6 +2031,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/estate-sale","/situations/divorce","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Rockville Centre home?",
+        answer: "We can close in as few as 7 days. Most Rockville Centre transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+      },
+      {
+        question: "Do older Rockville Centre homes have foundation or water issues?",
+        answer: "Yes. Properties closer to the Mill River are particularly susceptible to water intrusion and foundation problems. Rockville Centre's older housing stock — Tudors, colonials, and Victorians — can have significant structural issues that deter traditional buyers. We buy homes with foundation, water, and structural issues as-is."
+      },
+      {
+        question: "What are homes selling for in Rockville Centre?",
+        answer: "Per Redfin/Homes.com data, median home values in Rockville Centre range from $625,000 to $825,000. The vibrant village downtown, walkability, strong school district, and LIRR commute drive premium pricing for renovated homes. Our offers reflect comparable as-is sales in your specific section of RVC."
+      }
+    ],
+    neighborhoods: ["Rockville Centre village center", "Sunrise Highway corridor", "Merrick Road area", "Lakeview Avenue", "LIRR station neighborhood", "Mill River area", "Maple Avenue"],
+    zipCodes: ["11570"],
+    schoolDistrict: "Rockville Centre Union Free School District",
+    lirr: "Rockville Centre (Babylon Branch)",
+    medianPrice: "$625,000-$825,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "roosevelt",
@@ -1514,6 +2089,25 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/foreclosure","/situations/tax-liens","/situations/code-violations","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Roosevelt home?",
+        answer: "We can close in as few as 7 days. Most Roosevelt transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. We also handle liens and title complications as part of the closing process under NY Judiciary Law § 484."
+      },
+      {
+        question: "Can you buy a home in pre-foreclosure in Roosevelt?",
+        answer: "Yes. Roosevelt has higher foreclosure activity than many Nassau County communities. We regularly purchase pre-foreclosure properties, helping homeowners preserve equity before the bank takes the property. Under NY Real Property Actions & Proceedings Law § 1304, homeowners have specific rights during foreclosure that a cash sale can help protect."
+      },
+      {
+        question: "What are homes selling for in Roosevelt?",
+        answer: "Per Redfin/Homes.com data, median home values in Roosevelt range from $375,000 to $475,000, making it one of Nassau County's most affordable communities. FHA buyers dominate this price range but face strict property condition requirements. Our cash offers bypass those financing restrictions entirely."
+      }
+    ],
+    neighborhoods: ["Nassau Road corridor", "Brookside Avenue", "Debevoise Avenue", "Roosevelt Park area", "Centennial Avenue", "Washington Place", "Babylon Turnpike area"],
+    zipCodes: ["11575"],
+    schoolDistrict: "Roosevelt Union Free School District",
+    medianPrice: "$375,000-$475,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "roslyn",
@@ -1552,6 +2146,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/historic-property","/situations/estate-sale","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Roslyn home?",
+        answer: "We can close in as few as 7 days. Most Roslyn-area transactions complete within 14-21 days. Our process is completely private — no MLS listing, no open houses, no public record until closing. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the exact timeline."
+      },
+      {
+        question: "Do you buy historic homes in Roslyn Village?",
+        answer: "Yes. The Village of Roslyn has homes dating to the colonial era that require specialized and expensive renovation. We buy historic properties as-is, including those where updating to modern livability while preserving historic elements would cost significantly more than standard post-war home renovations."
+      },
+      {
+        question: "What are homes selling for in the Roslyn area?",
+        answer: "Per Redfin/Homes.com data, median home values across the Roslyn communities range from $800,000 to $1,400,000. Roslyn Harbor estates command the highest prices, while Roslyn Heights mid-century homes offer lower entry points. The top-rated Roslyn school district is a major value driver across all communities."
+      }
+    ],
+    neighborhoods: ["Village of Roslyn", "Roslyn Heights", "Roslyn Estates", "Roslyn Harbor", "East Hills", "Roslyn Country Club area", "Roslyn Creek valley"],
+    zipCodes: ["11576", "11577"],
+    schoolDistrict: "Roslyn Union Free School District",
+    lirr: "Roslyn (Oyster Bay Branch)",
+    medianPrice: "$800,000-$1,400,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "seaford",
@@ -1590,6 +2204,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/flood-zone","/situations/inherited-property","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Seaford home?",
+        answer: "We can close in as few as 7 days. Most Seaford transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+      },
+      {
+        question: "Do you buy canal-front properties with flood zone issues in Seaford?",
+        answer: "Yes. Seaford's southern canal streets sit in FEMA flood zones with elevated insurance costs and bulkhead maintenance requirements. We buy canal-front and flood zone properties as-is, regardless of bulkhead condition, flood insurance premiums, or prior storm damage. Per NY Real Property Law § 462, sellers must disclose known flood history."
+      },
+      {
+        question: "What are homes selling for in Seaford?",
+        answer: "Per Redfin/Homes.com data, median home values in Seaford range from $500,000 to $625,000. Canal-front properties in good condition command premiums, while inland homes with deferred maintenance trade at the lower end. Our cash offers are based on comparable sales in your specific section of Seaford."
+      }
+    ],
+    neighborhoods: ["Seaford canal streets", "Seamans Creek waterfront", "Merrick Road area", "Washington Avenue", "Seamans Neck Road", "Seaford village center", "Wantagh State Parkway area"],
+    zipCodes: ["11783"],
+    schoolDistrict: "Seaford Union Free School District",
+    lirr: "Seaford (Babylon Branch)",
+    medianPrice: "$500,000-$625,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "syosset",
@@ -1628,6 +2262,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/divorce","/situations/estate-sale","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Syosset home?",
+        answer: "We can close in as few as 7 days. Most Syosset transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+      },
+      {
+        question: "Do older Syosset homes have environmental issues?",
+        answer: "Some mid-century Syosset homes have underground oil tanks, asbestos insulation, or lead paint — conditions that complicate traditional sales and trigger disclosure requirements under NY Property Condition Disclosure Law § 462. We buy properties with environmental issues as-is, without requiring remediation before closing."
+      },
+      {
+        question: "What are homes selling for in Syosset?",
+        answer: "Per Redfin/Homes.com data, median home values in Syosset range from $750,000 to $1,000,000. The highly-ranked Syosset school district drives premium pricing for move-in ready homes, while unrenovated properties trade at the lower end of the range."
+      }
+    ],
+    neighborhoods: ["Syosset LIRR station area", "Cold Spring Road", "Split Rock Road", "Jericho Turnpike corridor", "Berry Hill area", "Woodbury Road area", "South Oyster Bay Road corridor"],
+    zipCodes: ["11791"],
+    schoolDistrict: "Syosset Central School District",
+    lirr: "Syosset (Oyster Bay Branch)",
+    medianPrice: "$750,000-$1,000,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "uniondale",
@@ -1666,6 +2320,25 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/foreclosure","/situations/code-violations","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Uniondale home?",
+        answer: "We can close in as few as 7 days. Most Uniondale transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+      },
+      {
+        question: "Can you buy a Uniondale home with code violations?",
+        answer: "Yes. Uniondale is one of the most active areas for Town of Hempstead building department code violations. We buy properties with open violations, unpermitted work, and structural issues as-is. We handle violation resolution as part of our closing process — you don't need to fix anything before selling."
+      },
+      {
+        question: "What are homes selling for in Uniondale?",
+        answer: "Per Redfin/Homes.com data, median home values in Uniondale range from $425,000 to $525,000. Uniondale remains one of Nassau County's more affordable markets, but FHA/VA condition requirements limit the buyer pool for homes needing significant work."
+      }
+    ],
+    neighborhoods: ["Uniondale Avenue area", "Front Street", "Hempstead Turnpike corridor", "Jerusalem Avenue corridor", "Nassau Coliseum area", "Hofstra University vicinity"],
+    zipCodes: ["11553"],
+    schoolDistrict: "Uniondale Union Free School District",
+    medianPrice: "$425,000-$525,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "valley-stream",
@@ -1704,6 +2377,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/multi-family","/situations/inherited-property","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Valley Stream home?",
+        answer: "We can close in as few as 7 days. Most Valley Stream transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+      },
+      {
+        question: "Do you buy two-family homes in Valley Stream?",
+        answer: "Yes. Valley Stream has a significant number of two-family and converted properties, including those with unpermitted configurations. We buy multi-family properties as-is, including those with code issues. NY Real Property Law § 240 governs landlord obligations that we handle post-closing."
+      },
+      {
+        question: "What are homes selling for in Valley Stream?",
+        answer: "Per Redfin/Homes.com data, median home values in Valley Stream range from $525,000 to $650,000. The Queens border location and LIRR access drive strong demand. Two-family properties and homes in the southern flood-prone sections near Hook Creek may trade differently."
+      }
+    ],
+    neighborhoods: ["Valley Stream village", "North Valley Stream", "South Valley Stream", "Gibson", "Green Acres Mall area", "Sunrise Highway corridor", "Rockaway Avenue area", "Hook Creek area"],
+    zipCodes: ["11580", "11581", "11582"],
+    schoolDistrict: "Valley Stream Union Free School District / Valley Stream Central High School District",
+    lirr: "Valley Stream (Babylon Branch)",
+    medianPrice: "$525,000-$650,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "wantagh",
@@ -1742,6 +2435,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/inherited-property","/situations/downsizing","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Wantagh home?",
+        answer: "We can close in as few as 7 days. Most Wantagh transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+      },
+      {
+        question: "Do Wantagh homes have cesspool issues?",
+        answer: "Yes. Many Wantagh homes still rely on cesspools rather than municipal sewer connections. Aging cesspools can cost $10,000-$20,000 to replace, and Nassau County's push for sewer conversion adds another layer of cost. We buy homes with failing or outdated cesspools as-is — no replacement or conversion required before closing."
+      },
+      {
+        question: "What are homes selling for in Wantagh?",
+        answer: "Per Redfin/Homes.com data, median home values in Wantagh range from $550,000 to $675,000. The well-regarded school district and Jones Beach proximity support steady demand for move-in ready homes. Our cash offers reflect comparable as-is sales in your specific section of Wantagh."
+      }
+    ],
+    neighborhoods: ["Wantagh LIRR station area", "Wantagh Avenue corridor", "Jerusalem Avenue area", "Beltagh Avenue", "Jones Beach access area", "Hempstead Turnpike area", "Merrick Road corridor"],
+    zipCodes: ["11793"],
+    schoolDistrict: "Wantagh Union Free School District",
+    lirr: "Wantagh (Babylon Branch)",
+    medianPrice: "$550,000-$675,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "westbury",
@@ -1780,6 +2493,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/multi-family","/situations/inherited-property","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Westbury home?",
+        answer: "We can close in as few as 7 days. Most Westbury transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+      },
+      {
+        question: "Do you buy homes in the New Cassel section of Westbury?",
+        answer: "Yes. New Cassel has an older housing stock with significant deferred maintenance in many properties. We buy homes in every section of Westbury including New Cassel, the village center, and areas near the LIRR station — all as-is with no repairs required. Per NY Property Condition Disclosure Law § 462, sellers must disclose known conditions."
+      },
+      {
+        question: "What are homes selling for in Westbury?",
+        answer: "Per Redfin/Homes.com data, median home values in Westbury range from $475,000 to $625,000. Pricing varies significantly between sections — northern areas near Old Westbury command premiums while New Cassel offers more affordable entry points. Our offers reflect comparable sales in your specific section."
+      }
+    ],
+    neighborhoods: ["Westbury village center", "New Cassel", "Post Avenue corridor", "Prospect Avenue", "Westbury LIRR station area", "Meadowbrook Parkway area", "Old Westbury border"],
+    zipCodes: ["11590"],
+    schoolDistrict: "Westbury Union Free School District / East Williston Union Free School District",
+    lirr: "Westbury (Oyster Bay Branch)",
+    medianPrice: "$475,000-$625,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "williston-park",
@@ -1818,6 +2551,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/downsizing","/situations/estate-sale","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Williston Park home?",
+        answer: "We can close in as few as 7 days. Most Williston Park transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+      },
+      {
+        question: "Are compact lots an issue when selling in Williston Park?",
+        answer: "Williston Park's compact lots limit expansion potential, which means dated Cape Cods can't easily be enlarged to meet modern buyer expectations. This reduces the traditional buyer pool for unrenovated homes. We buy properties on any lot size as-is — the footprint and layout are not obstacles for us."
+      },
+      {
+        question: "What are homes selling for in Williston Park?",
+        answer: "Per Redfin/Homes.com data, median home values in Williston Park range from $600,000 to $725,000. The Herricks school district, walkable village character, and LIRR access keep demand strong for move-in ready homes. Unrenovated properties trade at the lower end of the range."
+      }
+    ],
+    neighborhoods: ["Williston Park village center", "Hillside Avenue area", "Willis Avenue", "Center Street", "Williston Park LIRR station area", "Herricks school district area"],
+    zipCodes: ["11596"],
+    schoolDistrict: "Herricks Union Free School District",
+    lirr: "Williston Park (Oyster Bay Branch)",
+    medianPrice: "$600,000-$725,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "woodmere",
@@ -1856,6 +2609,26 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/inherited-property","/situations/flood-zone","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Woodmere home?",
+        answer: "We can close in as few as 7 days. Most Woodmere transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+      },
+      {
+        question: "Do you buy flood zone properties in the Five Towns?",
+        answer: "Yes. Parts of Woodmere and the broader Five Towns area sit in FEMA flood zones with elevated insurance premiums. We buy flood zone properties as-is, regardless of elevation status or prior storm damage. Per NY Real Property Law § 462, sellers must disclose known flood history."
+      },
+      {
+        question: "What are homes selling for in Woodmere?",
+        answer: "Per Redfin/Homes.com data, median home values in Woodmere range from $550,000 to $750,000. The Five Towns location and Hewlett-Woodmere school district support values, with northern sections near Cedarhurst commanding premiums. Our offers reflect comparable sales in your specific section."
+      }
+    ],
+    neighborhoods: ["Woodmere LIRR station area", "Broadway corridor", "Peninsula Boulevard area", "Brower Avenue", "Woodmere Country Club area", "Five Towns commercial district", "Cedarhurst border"],
+    zipCodes: ["11598"],
+    schoolDistrict: "Hewlett-Woodmere Union Free School District",
+    lirr: "Woodmere (Far Rockaway Branch)",
+    medianPrice: "$550,000-$750,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
 ];
 

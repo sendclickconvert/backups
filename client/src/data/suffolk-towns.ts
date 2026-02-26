@@ -174,6 +174,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/estate-sale", "/situations/inherited-property", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on an East Hampton home?",
+        answer: "We can close in as few as 14 days on most East Hampton properties. Hamptons transactions sometimes require additional title work due to historic deed chains, but we handle that process and cover the cost. Under New York Judiciary Law § 484, an attorney handles the closing."
+      },
+      {
+        question: "Do you buy homes in flood zones in East Hampton?",
+        answer: "Yes. Many properties in Springs, Montauk, and along the ocean and bay are in FEMA flood zones with annual insurance premiums exceeding $5,000-$10,000. We buy flood zone properties as-is and factor these costs into our fair offer."
+      },
+      {
+        question: "What are home prices like in East Hampton?",
+        answer: "Per Redfin/Homes.com data, median home prices in East Hampton range widely — from $600,000-$900,000 in Springs and North Fork-adjacent areas to $1.5M-$3M+ in East Hampton Village and the ocean-adjacent neighborhoods. We buy at every price point."
+      }
+    ],
+    neighborhoods: ["East Hampton Village", "Springs", "Montauk", "Amagansett", "Wainscott", "Northwest Woods", "Napeague", "Lazy Point"],
+    zipCodes: ["11937"],
+    schoolDistrict: "East Hampton Union Free School District",
+    lirr: "East Hampton (Montauk Branch)",
+    medianPrice: "$600,000-$3,000,000+",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "huntington",
@@ -268,6 +288,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/flood-zone", "/situations/rental-property", "/how-it-works"],
+    faqs: [
+      {
+        question: "How quickly can you close on an Islip home?",
+        answer: "We can close in as few as 7-14 days on most Town of Islip properties. Because we pay cash, there are no mortgage contingencies or bank appraisals to delay the process. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy homes near MacArthur Airport in Islip?",
+        answer: "Yes. Properties under the flight path near Long Island MacArthur Airport often face reduced buyer interest due to noise. We buy these homes at fair prices that account for the location — no lowball offers."
+      },
+      {
+        question: "What are home prices in the Town of Islip?",
+        answer: "Per Redfin/Homes.com data, median home prices across the Town of Islip range from $350,000-$450,000 in Central Islip and Brentwood to $500,000-$700,000 in Bay Shore waterfront, East Islip, and Brightwaters."
+      }
+    ],
+    neighborhoods: ["Islip Hamlet", "East Islip", "West Islip", "Brightwaters", "Bay Shore", "Brentwood", "Central Islip", "Islip Terrace", "Oakdale", "Great River"],
+    zipCodes: ["11751"],
+    schoolDistrict: "Islip Union Free School District",
+    lirr: "Islip (Montauk Branch)",
+    medianPrice: "$350,000-$700,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "riverhead",
@@ -306,6 +346,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/large-lot", "/situations/estate-sale", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Riverhead home?",
+        answer: "We can close in as few as 10-14 days on most Riverhead properties. Rural properties with well water and septic may require additional title review, but we handle that process. Under New York Judiciary Law § 484, an attorney handles the closing — we cover that cost."
+      },
+      {
+        question: "Do you buy properties with well and septic issues in Riverhead?",
+        answer: "Yes. Many Riverhead properties rely on private wells and septic systems. Failed septic systems can cost $15,000-$30,000+ to replace, and contaminated wells add further expense. We buy as-is and handle remediation after closing."
+      },
+      {
+        question: "What are home prices in Riverhead?",
+        answer: "Per Redfin/Homes.com data, median home prices in Riverhead range from $375,000-$525,000, with waterfront and North Fork-adjacent properties at the higher end. Agricultural properties vary widely based on acreage and zoning."
+      }
+    ],
+    neighborhoods: ["Riverhead Downtown", "Aquebogue", "Jamesport", "Calverton", "Wading River", "Northville", "Baiting Hollow", "Laurel"],
+    zipCodes: ["11901"],
+    schoolDistrict: "Riverhead Central School District",
+    lirr: "Riverhead (Ronkonkoma Branch - limited service)",
+    medianPrice: "$375,000-$525,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "shelter-island",
@@ -344,6 +404,25 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/seasonal-property", "/situations/inherited-property", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Shelter Island home?",
+        answer: "We can close in as few as 14-21 days on Shelter Island properties. The ferry-only access doesn't slow our process — we handle all logistics. Under New York Judiciary Law § 484, an attorney handles the closing, and we cover that cost."
+      },
+      {
+        question: "Do you buy seasonal cottages on Shelter Island?",
+        answer: "Yes. Many Shelter Island homes were built as seasonal cottages and lack insulation, modern heating, or year-round plumbing. Converting these to year-round use can cost $75,000-$150,000+. We buy seasonal properties as-is in any condition."
+      },
+      {
+        question: "What are home prices on Shelter Island?",
+        answer: "Per Redfin/Homes.com data, median home prices on Shelter Island range from $700,000-$1,200,000. The island's limited inventory and ferry-only access create unique market dynamics that keep prices elevated even for properties needing work."
+      }
+    ],
+    neighborhoods: ["Shelter Island Heights", "Dering Harbor", "Ram Island", "Mashomack Preserve area", "West Neck", "South Ferry Hills", "Center"],
+    zipCodes: ["11964"],
+    schoolDistrict: "Shelter Island Union Free School District",
+    medianPrice: "$700,000-$1,200,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "smithtown",
@@ -382,6 +461,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/inherited-property", "/situations/fixer-upper", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Smithtown home?",
+        answer: "We can close in as few as 7-14 days on most Smithtown properties. Cash purchases eliminate mortgage contingencies and bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy homes with oil heat in Smithtown?",
+        answer: "Yes. Many Smithtown homes from the 1960s-1970s still run on oil heat. Conversion to natural gas typically costs $8,000-$15,000 and deters traditional buyers. We buy oil-heated homes as-is — no conversion required before closing."
+      },
+      {
+        question: "What are home prices in Smithtown?",
+        answer: "Per Redfin/Homes.com data, median home prices in the Town of Smithtown range from $475,000-$650,000 in the inland communities like Nesconset and Hauppauge to $700,000-$1,000,000+ in the village, St. James, and waterfront areas along the Sound."
+      }
+    ],
+    neighborhoods: ["Smithtown Village", "Kings Park", "St. James", "Nesconset", "Commack", "Hauppauge", "San Remo", "Head of the Harbor", "Fort Salonga"],
+    zipCodes: ["11787"],
+    schoolDistrict: "Smithtown Central School District",
+    lirr: "Smithtown (Port Jefferson Branch)",
+    medianPrice: "$475,000-$1,000,000+",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "southampton",
@@ -420,6 +519,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/estate-sale", "/situations/seasonal-property", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Southampton home?",
+        answer: "We can close in as few as 14-21 days on most Southampton properties. Hamptons transactions can involve complex title histories, but we handle that process. Under New York Judiciary Law § 484, an attorney handles the closing — we cover that cost."
+      },
+      {
+        question: "Do you buy homes in flood zones in Southampton?",
+        answer: "Yes. Many properties in Hampton Bays, Quogue, and along the ocean and bay sit in FEMA flood zones with elevated insurance costs. Coastal erosion and storm damage are ongoing concerns. We buy flood zone properties as-is."
+      },
+      {
+        question: "What are home prices in Southampton?",
+        answer: "Per Redfin/Homes.com data, median home prices in the Town of Southampton range widely — from $450,000-$650,000 in Hampton Bays and Flanders to $1.5M-$4M+ in Southampton Village, Bridgehampton, and Water Mill."
+      }
+    ],
+    neighborhoods: ["Southampton Village", "Hampton Bays", "Bridgehampton", "Water Mill", "North Sea", "Flanders", "Riverside", "Quogue", "Shinnecock Hills", "Tuckahoe"],
+    zipCodes: ["11968"],
+    schoolDistrict: "Southampton Union Free School District",
+    lirr: "Southampton (Montauk Branch)",
+    medianPrice: "$450,000-$4,000,000+",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "southold",
@@ -458,6 +577,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/historic-property", "/situations/waterfront", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Southold or North Fork home?",
+        answer: "We can close in as few as 14-21 days on most North Fork properties. Historic farmhouses and waterfront properties may require additional title research, but we handle the entire process. Under New York Judiciary Law § 484, an attorney handles the closing."
+      },
+      {
+        question: "Do you buy historic farmhouses on the North Fork?",
+        answer: "Yes. Many Southold properties date to the 1800s with stone foundations, aging structural systems, and agricultural-zoned land. Renovation costs on the North Fork are elevated due to limited contractor availability. We buy historic properties as-is."
+      },
+      {
+        question: "What are home prices in Southold?",
+        answer: "Per Redfin/Homes.com data, median home prices in the Town of Southold range from $500,000-$750,000 in the inland hamlets to $900,000-$1.5M+ for waterfront properties in Greenport, Cutchogue, and Orient."
+      }
+    ],
+    neighborhoods: ["Southold Village", "Greenport", "Cutchogue", "Mattituck", "Peconic", "Orient", "East Marion", "Laurel", "New Suffolk"],
+    zipCodes: ["11971"],
+    schoolDistrict: "Southold Union Free School District",
+    lirr: "Southold (Ronkonkoma Branch - limited service)",
+    medianPrice: "$500,000-$1,500,000+",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "patchogue",
@@ -552,6 +691,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/multi-family", "/situations/flood-zone", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Bay Shore home?",
+        answer: "We can close in as few as 7-14 days on most Bay Shore properties. Multi-family properties or those with title complications may take slightly longer, but we handle all issues. Under New York Judiciary Law § 484, an attorney handles the closing — we cover that cost."
+      },
+      {
+        question: "Do you buy multi-family properties in Bay Shore?",
+        answer: "Yes. Bay Shore has a significant inventory of multi-family homes, many with code issues, problematic tenants, or deferred maintenance. We buy 2-4 unit properties as-is, even with tenants in place. We handle tenant transitions after closing."
+      },
+      {
+        question: "What are home prices in Bay Shore?",
+        answer: "Per Redfin/Homes.com data, median home prices in Bay Shore range from $375,000-$500,000 for single-family homes, with waterfront properties along South Clinton Avenue and the Great South Bay commanding $600,000-$900,000+."
+      }
+    ],
+    neighborhoods: ["Bay Shore Downtown", "South Clinton Avenue", "Brightwaters border", "LIRR Station area", "North Bay Shore", "Fire Island Ferry area", "Montauk Highway corridor"],
+    zipCodes: ["11706"],
+    schoolDistrict: "Bay Shore Union Free School District",
+    lirr: "Bay Shore (Montauk Branch)",
+    medianPrice: "$375,000-$900,000+",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "brentwood",
@@ -590,6 +749,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/foreclosure", "/situations/code-violations", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Brentwood home?",
+        answer: "We can close in as few as 7-10 days on most Brentwood properties. Properties with liens, code violations, or title issues may require additional resolution time, but we handle everything. Under New York Judiciary Law § 484, an attorney handles the closing."
+      },
+      {
+        question: "Do you buy homes with code violations in Brentwood?",
+        answer: "Yes. Brentwood has active code enforcement, and many properties have open violations for unpermitted work, illegal conversions, or maintenance issues. We buy properties with open violations as-is and handle resolution after closing."
+      },
+      {
+        question: "What are home prices in Brentwood?",
+        answer: "Per Redfin/Homes.com data, median home prices in Brentwood range from $350,000-$475,000. Brentwood remains one of the more affordable communities in Suffolk County, though prices have risen significantly in recent years."
+      }
+    ],
+    neighborhoods: ["Brentwood Central", "North Brentwood", "South Brentwood", "Brentwood Road corridor", "Suffolk Avenue area", "Washington Avenue area", "Wicks Road area"],
+    zipCodes: ["11717"],
+    schoolDistrict: "Brentwood Union Free School District",
+    lirr: "Brentwood (Ronkonkoma Branch)",
+    medianPrice: "$350,000-$475,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "central-islip",
@@ -629,6 +808,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/foreclosure", "/situations/code-violations", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Central Islip home?",
+        answer: "We can close in as few as 7-10 days on most Central Islip properties. Properties in pre-foreclosure or with liens require title resolution, but we handle that process. Under New York Judiciary Law § 484, an attorney handles the closing — we cover that cost."
+      },
+      {
+        question: "Do you buy homes in pre-foreclosure in Central Islip?",
+        answer: "Yes. Central Islip has a higher rate of foreclosure filings than many Suffolk communities. Under NY Real Property Actions & Proceedings Law § 1303, homeowners receive foreclosure notices. If you've received a notice, contact us — selling for cash can stop the process and protect your equity."
+      },
+      {
+        question: "What are home prices in Central Islip?",
+        answer: "Per Redfin/Homes.com data, median home prices in Central Islip range from $325,000-$425,000. Central Islip remains one of the most affordable entry points for homeownership in Suffolk County."
+      }
+    ],
+    neighborhoods: ["Central Islip Downtown", "Suffolk Avenue corridor", "Carleton Avenue area", "Courts Complex area", "Wheeler Road area", "Lowell Avenue area"],
+    zipCodes: ["11722"],
+    schoolDistrict: "Central Islip Union Free School District",
+    lirr: "Central Islip (Ronkonkoma Branch)",
+    medianPrice: "$325,000-$425,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "commack",
@@ -667,6 +866,25 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/inherited-property", "/situations/fixer-upper", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Commack home?",
+        answer: "We can close in as few as 10-14 days on most Commack properties. Because we pay cash, there are no mortgage contingencies or bank appraisals to delay the process. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Are there common issues with 1960s-70s homes in Commack?",
+        answer: "Yes. Many Commack homes from that era have original oil heating systems, aging cesspools, single-pane windows, and outdated electrical panels. These issues can cost $50,000-$100,000+ to address collectively. We buy homes with all of these issues as-is — no repairs needed."
+      },
+      {
+        question: "What are home prices in Commack?",
+        answer: "Per Redfin/Homes.com data, median home prices in Commack range from $525,000-$675,000. The strong Commack school district drives demand, but dated properties sell at a significant discount to renovated comparables."
+      }
+    ],
+    neighborhoods: ["Commack Corners", "North Commack", "East Commack", "Commack Road area", "Jericho Turnpike corridor", "Veterans Memorial Highway area", "Townline Road area"],
+    zipCodes: ["11725"],
+    schoolDistrict: "Commack Union Free School District",
+    medianPrice: "$525,000-$675,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "coram",
@@ -705,6 +923,25 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/fixer-upper", "/situations/rental-property", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Coram home?",
+        answer: "We can close in as few as 7-14 days on most Coram properties. Cash purchases eliminate mortgage contingencies and bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy homes with septic or well issues in Coram?",
+        answer: "Yes. Many Coram properties rely on private wells and septic systems. Failing septic systems can cost $15,000-$30,000 to replace, and well contamination requires expensive remediation. We buy these properties as-is and handle all repairs after closing."
+      },
+      {
+        question: "What are home prices in Coram?",
+        answer: "Per Redfin/Homes.com data, median home prices in Coram range from $375,000-$475,000. Coram remains one of the more affordable communities in central Suffolk County, though homes needing significant work sell below these figures."
+      }
+    ],
+    neighborhoods: ["Coram Center", "Middle Country Road area", "Route 112 corridor", "Gordon Heights", "North Coram", "South Coram", "Coram Plaza area"],
+    zipCodes: ["11727"],
+    schoolDistrict: "Longwood Central School District / Middle Country Central School District",
+    medianPrice: "$375,000-$475,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "deer-park",
@@ -743,6 +980,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/behind-on-taxes", "/situations/inherited-property", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Deer Park home?",
+        answer: "We can close in as few as 7-14 days on most Deer Park properties. Because we pay cash, there are no mortgage contingencies or bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy homes with oil heat in Deer Park?",
+        answer: "Yes. Many 1950s-60s Deer Park homes still have oil heating systems that buyers increasingly avoid due to efficiency and environmental concerns. Oil-to-gas conversion costs $8,000-$15,000. We buy homes with oil heat as-is — no conversion required."
+      },
+      {
+        question: "What are home prices in Deer Park?",
+        answer: "Per Redfin/Homes.com data, median home prices in Deer Park range from $425,000-$550,000. Homes in updated condition near quieter residential streets command the higher end, while properties near commercial corridors or needing work sell lower."
+      }
+    ],
+    neighborhoods: ["Deer Park Center", "North Deer Park", "South Deer Park", "Deer Park Avenue corridor", "Commack Road area", "Grand Boulevard area", "Bay Shore Road area"],
+    zipCodes: ["11729"],
+    schoolDistrict: "Deer Park Union Free School District",
+    lirr: "Deer Park (Ronkonkoma Branch)",
+    medianPrice: "$425,000-$550,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "east-northport",
@@ -781,6 +1038,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/inherited-property", "/situations/relocation", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on an East Northport home?",
+        answer: "We can close in as few as 10-14 days on most East Northport properties. Cash purchases mean no mortgage contingencies or bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy split-level homes in East Northport?",
+        answer: "Yes. East Northport has many 1960s-70s split-levels with layouts that today's buyers find awkward. Renovating a split-level to open-concept can cost $75,000+. We buy split-levels in any condition — no renovation needed before selling."
+      },
+      {
+        question: "What are home prices in East Northport?",
+        answer: "Per Redfin/Homes.com data, median home prices in East Northport range from $550,000-$700,000. The Northport-East Northport school district premium drives demand, but dated homes sell at a significant discount to updated comparables."
+      }
+    ],
+    neighborhoods: ["East Northport Center", "Elwood", "Larkfield Road area", "Clay Pitts Road area", "Bellerose Avenue area", "Pulaski Road area", "Dickinson Avenue area"],
+    zipCodes: ["11731"],
+    schoolDistrict: "Northport-East Northport Union Free School District",
+    lirr: "East Northport (Port Jefferson Branch)",
+    medianPrice: "$550,000-$700,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "farmingville",
@@ -819,6 +1096,25 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/fixer-upper", "/situations/rental-property", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Farmingville home?",
+        answer: "We can close in as few as 7-14 days on most Farmingville properties. Cash purchases eliminate mortgage contingencies and bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy homes with septic issues in Farmingville?",
+        answer: "Yes. Much of Farmingville is outside public sewer districts, so septic system failures are common. Replacement costs range from $15,000-$30,000+. We buy homes with failing septic systems as-is — no repairs or upgrades needed before closing."
+      },
+      {
+        question: "What are home prices in Farmingville?",
+        answer: "Per Redfin/Homes.com data, median home prices in Farmingville range from $425,000-$525,000. Farmingville offers practical, affordable housing by Suffolk County standards, but homes needing major work sell well below median."
+      }
+    ],
+    neighborhoods: ["Farmingville Center", "Horseblock Road area", "Granny Road area", "Waverly Avenue area", "North Ocean Avenue area", "Blue Point Road area"],
+    zipCodes: ["11738"],
+    schoolDistrict: "Sachem Central School District",
+    medianPrice: "$425,000-$525,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "hauppauge",
@@ -857,6 +1153,25 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/downsizing", "/situations/inherited-property", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Hauppauge home?",
+        answer: "We can close in as few as 10-14 days on most Hauppauge properties. Cash purchases mean no mortgage contingencies or bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy homes near the Hauppauge Industrial Park?",
+        answer: "Yes. Properties near the industrial park's edges often face reduced buyer interest due to commercial traffic and proximity to business campuses. We buy these homes at fair prices that account for the location — no lowball offers."
+      },
+      {
+        question: "What are home prices in Hauppauge?",
+        answer: "Per Redfin/Homes.com data, median home prices in Hauppauge range from $500,000-$650,000. The Hauppauge school district and central location support solid values, but dated homes sell below renovated comparables."
+      }
+    ],
+    neighborhoods: ["Hauppauge Center", "Motor Parkway area", "Townline Road area", "Wheeler Road area", "Industrial Park area", "Northern State corridor", "Veterans Memorial Highway area"],
+    zipCodes: ["11788"],
+    schoolDistrict: "Hauppauge Union Free School District",
+    medianPrice: "$500,000-$650,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "holbrook",
@@ -895,6 +1210,25 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/inherited-property", "/situations/behind-on-taxes", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Holbrook home?",
+        answer: "We can close in as few as 7-14 days on most Holbrook properties. Cash purchases eliminate mortgage contingencies and bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy homes near the LIE or highways in Holbrook?",
+        answer: "Yes. Properties backing up to the Long Island Expressway or along busier through-streets face noise issues that reduce buyer interest. We buy these homes at fair prices that reflect the location — honest numbers, no lowball offers."
+      },
+      {
+        question: "What are home prices in Holbrook?",
+        answer: "Per Redfin/Homes.com data, median home prices in Holbrook range from $400,000-$500,000. Holbrook offers affordable suburban housing in central Suffolk, but properties needing major system updates sell below these figures."
+      }
+    ],
+    neighborhoods: ["Holbrook Center", "Union Avenue area", "Grundy Avenue area", "Sunrise Highway corridor", "Veterans Memorial Highway area", "Patchogue-Holbrook Road area"],
+    zipCodes: ["11741"],
+    schoolDistrict: "Sachem Central School District",
+    medianPrice: "$400,000-$500,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "lake-grove",
@@ -933,6 +1267,25 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/fixer-upper", "/situations/rental-property", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Lake Grove home?",
+        answer: "We can close in as few as 10-14 days on most Lake Grove properties. Cash purchases eliminate mortgage contingencies and bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy homes near the Route 347 commercial corridor?",
+        answer: "Yes. Properties near Smith Haven Mall and the Route 347 corridor often face reduced residential appeal due to traffic and commercial activity. We buy these homes at fair prices that account for the location and surrounding development."
+      },
+      {
+        question: "What are home prices in Lake Grove?",
+        answer: "Per Redfin/Homes.com data, median home prices in Lake Grove range from $450,000-$575,000. Lake Grove's central location and village amenities support stable values, though properties near commercial areas may sell below median."
+      }
+    ],
+    neighborhoods: ["Lake Grove Village Center", "Hawkins Avenue area", "Moriches Road area", "Smith Haven area", "Nesconset Highway corridor", "Route 347 corridor"],
+    zipCodes: ["11755"],
+    schoolDistrict: "Sachem Central School District",
+    medianPrice: "$450,000-$575,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "lindenhurst",
@@ -971,6 +1324,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/flood-zone", "/situations/inherited-property", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Lindenhurst home?",
+        answer: "We can close in as few as 7-14 days on most Lindenhurst properties. Canal-front homes may require additional title work, but we handle all of that. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy canal-front homes with bulkhead issues in Lindenhurst?",
+        answer: "Yes. Lindenhurst's canal system provides boating access but bulkhead replacement costs $30,000-$80,000+. Combined with FEMA flood zone insurance premiums, these properties are difficult to sell traditionally. We buy canal-front homes as-is."
+      },
+      {
+        question: "What are home prices in Lindenhurst?",
+        answer: "Per Redfin/Homes.com data, median home prices in Lindenhurst range from $425,000-$550,000. Canal-front properties with updated bulkheads command premiums, while inland homes and those needing work sell at the lower end of the range."
+      }
+    ],
+    neighborhoods: ["Lindenhurst Village Center", "Wellwood Avenue area", "South Lindenhurst canals", "North Lindenhurst", "Sunrise Highway corridor", "Montauk Highway area", "Venetian Shores"],
+    zipCodes: ["11757"],
+    schoolDistrict: "Lindenhurst Union Free School District",
+    lirr: "Lindenhurst (Babylon Branch)",
+    medianPrice: "$425,000-$550,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "medford",
@@ -1009,6 +1382,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/fixer-upper", "/situations/behind-on-taxes", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Medford home?",
+        answer: "We can close in as few as 7-14 days on most Medford properties. Cash purchases eliminate mortgage contingencies and bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy homes with septic or well problems in Medford?",
+        answer: "Yes. Large portions of Medford rely on private wells and septic systems. A failing septic can cost $15,000-$30,000 to replace, and well contamination requires expensive testing and remediation. We buy these properties as-is and handle all issues after closing."
+      },
+      {
+        question: "What are home prices in Medford?",
+        answer: "Per Redfin/Homes.com data, median home prices in Medford range from $375,000-$475,000. Medford offers affordable housing in central Suffolk, but properties with septic issues or near commercial corridors sell below these figures."
+      }
+    ],
+    neighborhoods: ["Medford Center", "Route 112 corridor", "Horseblock Road area", "Oregon Avenue area", "Blue Point Road area", "North Medford", "South Medford"],
+    zipCodes: ["11763"],
+    schoolDistrict: "Patchogue-Medford Union Free School District",
+    lirr: "Medford (Ronkonkoma Branch - limited service)",
+    medianPrice: "$375,000-$475,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "middle-island",
@@ -1047,6 +1440,25 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/large-lot", "/situations/inherited-property", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Middle Island home?",
+        answer: "We can close in as few as 10-14 days on most Middle Island properties. Cash purchases eliminate mortgage contingencies and bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy homes with septic issues in Middle Island?",
+        answer: "Yes. Middle Island's pine barrens soil creates unique drainage and septic challenges. Many properties rely on aging cesspools or septic systems that cost $15,000-$30,000+ to replace. We buy homes with septic problems as-is — no repairs needed before closing."
+      },
+      {
+        question: "What are home prices in Middle Island?",
+        answer: "Per Redfin/Homes.com data, median home prices in Middle Island range from $375,000-$475,000. Middle Island offers affordable housing on larger lots in eastern Suffolk, but homes needing major work or with septic issues sell below these figures."
+      }
+    ],
+    neighborhoods: ["Middle Island Center", "Artist Lake", "Middle Country Road area", "Cathedral Pines area", "Yaphank Avenue area", "Longwood Road area"],
+    zipCodes: ["11953"],
+    schoolDistrict: "Longwood Central School District",
+    medianPrice: "$375,000-$475,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "miller-place",
@@ -1085,6 +1497,25 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/inherited-property", "/situations/large-lot", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Miller Place home?",
+        answer: "We can close in as few as 10-14 days on most Miller Place properties. Cash purchases eliminate mortgage contingencies and bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy older homes near the Sound in Miller Place?",
+        answer: "Yes. Miller Place has pre-war and early 20th century homes near the Long Island Sound with unique challenges — old foundations, outdated wiring, plaster walls, and exposure to coastal weather. We buy these homes as-is regardless of condition or age."
+      },
+      {
+        question: "What are home prices in Miller Place?",
+        answer: "Per Redfin/Homes.com data, median home prices in Miller Place range from $475,000-$600,000. The Miller Place school district premium supports strong values, but dated homes with deferred maintenance sell well below updated comparables."
+      }
+    ],
+    neighborhoods: ["Miller Place Center", "Miller Place Road area", "Route 25A corridor", "North Country Road area", "Mount Sinai-Coram Road area", "Sylvan Avenue area"],
+    zipCodes: ["11764"],
+    schoolDistrict: "Miller Place Union Free School District",
+    medianPrice: "$475,000-$600,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "mount-sinai",
@@ -1123,6 +1554,25 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/waterfront", "/situations/inherited-property", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Mount Sinai home?",
+        answer: "We can close in as few as 10-14 days on most Mount Sinai properties. Cash purchases eliminate mortgage contingencies and bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy waterfront homes with erosion issues in Mount Sinai?",
+        answer: "Yes. Mount Sinai Harbor and the North Shore bluffs create erosion and bulkhead challenges for waterfront properties. These issues can cost $50,000+ to remediate and scare off traditional buyers. We buy waterfront homes as-is regardless of erosion or environmental concerns."
+      },
+      {
+        question: "What are home prices in Mount Sinai?",
+        answer: "Per Redfin/Homes.com data, median home prices in Mount Sinai range from $475,000-$625,000. Harbor-front properties command higher prices, while inland homes from the 1970s-80s with deferred maintenance sell below the median."
+      }
+    ],
+    neighborhoods: ["Mount Sinai Harbor", "Cedar Beach area", "Route 25A corridor", "Mount Sinai-Coram Road area", "Crystal Brook Hollow", "Canal Road area"],
+    zipCodes: ["11766"],
+    schoolDistrict: "Mount Sinai Union Free School District",
+    medianPrice: "$475,000-$625,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "north-babylon",
@@ -1161,6 +1611,25 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/behind-on-taxes", "/situations/inherited-property", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a North Babylon home?",
+        answer: "We can close in as few as 7-14 days on most North Babylon properties. Cash purchases eliminate mortgage contingencies and bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy homes with underground oil tanks in North Babylon?",
+        answer: "Yes. Many 1950s-60s North Babylon homes have underground oil tanks that need decommissioning or removal — a process that can cost $3,000-$15,000+ depending on soil contamination. We buy homes with oil tank issues as-is under NY Navigation Law § 176."
+      },
+      {
+        question: "What are home prices in North Babylon?",
+        answer: "Per Redfin/Homes.com data, median home prices in North Babylon range from $400,000-$500,000. North Babylon offers affordable western Suffolk housing, but homes needing multiple major system updates sell well below these figures."
+      }
+    ],
+    neighborhoods: ["North Babylon Center", "Deer Park Avenue corridor", "Straight Path area", "Phelps Lane area", "Arnold Avenue area", "Woods Road area", "Belmont Avenue area"],
+    zipCodes: ["11703"],
+    schoolDistrict: "North Babylon Union Free School District",
+    medianPrice: "$400,000-$500,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "port-jefferson",
@@ -1199,6 +1668,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/historic-property", "/situations/estate-sale", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Port Jefferson home?",
+        answer: "We can close in as few as 14-21 days on most Port Jefferson properties. Historic homes may require additional title research due to older deed chains, but we handle that process and cover the cost. Under New York Judiciary Law § 484, an attorney handles the closing."
+      },
+      {
+        question: "Do you buy historic homes with structural issues in Port Jefferson?",
+        answer: "Yes. Port Jefferson's 100+ year-old Victorians and Colonials often have foundation, structural, and system issues that cost significantly more to repair than standard post-war homes. We buy historic properties in any condition — no renovation or stabilization needed before closing."
+      },
+      {
+        question: "What are home prices in Port Jefferson?",
+        answer: "Per Redfin/Homes.com data, median home prices in Port Jefferson range from $475,000-$650,000. Harbor-front and historic village properties command premiums, while homes needing significant renovation sell below median values."
+      }
+    ],
+    neighborhoods: ["Port Jefferson Village", "Harbor area", "Main Street area", "Thompson Street area", "Route 25A corridor", "Belle Terre area", "Port Jefferson Station"],
+    zipCodes: ["11777"],
+    schoolDistrict: "Port Jefferson Union Free School District",
+    lirr: "Port Jefferson (Port Jefferson Branch)",
+    medianPrice: "$475,000-$650,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "ronkonkoma",
@@ -1237,6 +1726,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/inherited-property", "/situations/fixer-upper", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Ronkonkoma home?",
+        answer: "We can close in as few as 7-14 days on most Ronkonkoma properties. Cash purchases eliminate mortgage contingencies and bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy homes near Lake Ronkonkoma?",
+        answer: "Yes. Lakefront and lake-adjacent properties in Ronkonkoma often have aging infrastructure and seasonal algae concerns that reduce buyer interest. We buy homes near the lake in any condition — no remediation or updating needed before closing."
+      },
+      {
+        question: "What are home prices in Ronkonkoma?",
+        answer: "Per Redfin/Homes.com data, median home prices in Ronkonkoma range from $400,000-$525,000. The new transit-oriented development near the LIRR station has boosted certain areas, but dated homes throughout the hamlet sell below these figures."
+      }
+    ],
+    neighborhoods: ["Ronkonkoma Center", "Lake Ronkonkoma", "Portion Road area", "Ronkonkoma Avenue area", "LIRR Station area", "Hawkins Avenue area", "Johnson Avenue area"],
+    zipCodes: ["11779"],
+    schoolDistrict: "Connetquot Central School District / Sachem Central School District",
+    lirr: "Ronkonkoma (Ronkonkoma Branch)",
+    medianPrice: "$400,000-$525,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "sayville",
@@ -1275,6 +1784,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/historic-property", "/situations/flood-zone", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Sayville home?",
+        answer: "We can close in as few as 10-14 days on most Sayville properties. Cash purchases eliminate mortgage contingencies and bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy flood zone properties south of Montauk Highway in Sayville?",
+        answer: "Yes. The waterfront sections of Sayville south of Montauk Highway sit in FEMA flood zones with annual insurance premiums that can exceed $5,000-$8,000. We buy flood zone properties as-is and factor insurance costs into our fair cash offer."
+      },
+      {
+        question: "What are home prices in Sayville?",
+        answer: "Per Redfin/Homes.com data, median home prices in Sayville range from $475,000-$625,000. The walkable downtown, ferry access, and strong school district drive demand, but historic homes needing renovation and flood zone properties sell below median."
+      }
+    ],
+    neighborhoods: ["Sayville Center", "Main Street area", "Montauk Highway corridor", "Bayport", "West Sayville", "Oakdale border", "Cherry Avenue area", "Greene Avenue area"],
+    zipCodes: ["11782"],
+    schoolDistrict: "Sayville Union Free School District",
+    lirr: "Sayville (Montauk Branch)",
+    medianPrice: "$475,000-$625,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "selden",
@@ -1313,6 +1842,25 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/fixer-upper", "/situations/inherited-property", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Selden home?",
+        answer: "We can close in as few as 7-14 days on most Selden properties. Cash purchases eliminate mortgage contingencies and bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy homes near Suffolk County Community College in Selden?",
+        answer: "Yes. Properties near the Ammerman Campus sometimes face unique market dynamics — investor interest competes with owner-occupant buyers. We buy homes in any condition near the campus and throughout Selden, providing fair offers regardless of proximity to the college."
+      },
+      {
+        question: "What are home prices in Selden?",
+        answer: "Per Redfin/Homes.com data, median home prices in Selden range from $375,000-$475,000. Selden offers some of the most accessible homeownership in Suffolk County, but homes with major system failures or code violations sell significantly below these figures."
+      }
+    ],
+    neighborhoods: ["Selden Center", "Middle Country Road area", "Boyle Road area", "College Road area", "Mooney Pond Road area", "Blue Point Road area", "Magnolia Drive area"],
+    zipCodes: ["11784"],
+    schoolDistrict: "Middle Country Central School District",
+    medianPrice: "$375,000-$475,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "shirley",
@@ -1351,6 +1899,25 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/flood-zone", "/situations/unpermitted-work", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Shirley home?",
+        answer: "We can close in as few as 7-14 days on most Shirley properties. Cash purchases eliminate mortgage contingencies and bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy former summer cottages in Shirley?",
+        answer: "Yes. Many Shirley homes were originally built as summer cottages with foundations and insulation inadequate for year-round use. Some have unpermitted conversions or additions. We buy these properties as-is — no code compliance or upgrades needed before closing."
+      },
+      {
+        question: "What are home prices in Shirley?",
+        answer: "Per Redfin/Homes.com data, median home prices in Shirley range from $325,000-$425,000. Shirley offers some of Suffolk County's most affordable housing, but flood zone properties and former cottages with structural issues sell well below these figures."
+      }
+    ],
+    neighborhoods: ["Shirley Center", "William Floyd Parkway area", "Montauk Highway corridor", "Smith Point area", "Mastic-Shirley border", "Floyd Harbor", "Parkwood area"],
+    zipCodes: ["11967"],
+    schoolDistrict: "William Floyd Union Free School District",
+    medianPrice: "$325,000-$425,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "stony-brook",
@@ -1389,6 +1956,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/estate-sale", "/situations/rental-property", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Stony Brook home?",
+        answer: "We can close in as few as 10-14 days on most Stony Brook properties. Cash purchases eliminate mortgage contingencies and bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy former student rental properties in Stony Brook?",
+        answer: "Yes. Properties near Stony Brook University that served as student rentals often show significant wear and deferred maintenance. Transitioning these homes back to the owner-occupant market requires substantial renovation. We buy former rental properties as-is."
+      },
+      {
+        question: "What are home prices in Stony Brook?",
+        answer: "Per Redfin/Homes.com data, median home prices in Stony Brook range from $550,000-$750,000. The Three Village school district drives premium pricing, but dated homes with original systems and former student rentals sell well below updated comparables."
+      }
+    ],
+    neighborhoods: ["Stony Brook Village", "University area", "Route 25A corridor", "Nicolls Road area", "Old Field", "Setauket border", "Harbor Road area", "Stony Brook Grist Mill area"],
+    zipCodes: ["11790"],
+    schoolDistrict: "Three Village Central School District",
+    lirr: "Stony Brook (Port Jefferson Branch)",
+    medianPrice: "$550,000-$750,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "west-babylon",
@@ -1427,6 +2014,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/behind-on-taxes", "/situations/inherited-property", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a West Babylon home?",
+        answer: "We can close in as few as 7-14 days on most West Babylon properties. Cash purchases eliminate mortgage contingencies and bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy homes along busy corridors in West Babylon?",
+        answer: "Yes. Properties along Sunrise Highway, Route 109, and other commercial corridors face reduced residential appeal due to traffic and noise. We buy these homes at fair prices that account for the location — no lowball offers, just honest numbers."
+      },
+      {
+        question: "What are home prices in West Babylon?",
+        answer: "Per Redfin/Homes.com data, median home prices in West Babylon range from $400,000-$500,000. West Babylon offers practical, affordable housing in western Suffolk, but homes needing comprehensive system updates sell below these figures."
+      }
+    ],
+    neighborhoods: ["West Babylon Center", "Sunrise Highway corridor", "Little East Neck Road area", "Straight Path area", "Route 109 area", "Great East Neck Road area", "Bergen Avenue area"],
+    zipCodes: ["11704"],
+    schoolDistrict: "West Babylon Union Free School District",
+    lirr: "West Babylon (Babylon Branch)",
+    medianPrice: "$400,000-$500,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
   {
     slug: "west-islip",
@@ -1465,6 +2072,26 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/flood-zone", "/situations/downsizing", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a West Islip home?",
+        answer: "We can close in as few as 10-14 days on most West Islip properties. Cash purchases eliminate mortgage contingencies and bank appraisals. Under New York Judiciary Law § 484, an attorney handles the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy waterfront homes with bulkhead issues in West Islip?",
+        answer: "Yes. Waterfront properties along the Great South Bay in West Islip often have failing bulkheads that cost $50,000-$100,000+ to replace. Combined with flood insurance burdens, these costs make traditional sales difficult. We buy waterfront homes as-is."
+      },
+      {
+        question: "What are home prices in West Islip?",
+        answer: "Per Redfin/Homes.com data, median home prices in West Islip range from $500,000-$650,000. The West Islip school district and bay access drive demand, but dated inland homes and flood zone waterfront properties sell below updated comparables."
+      }
+    ],
+    neighborhoods: ["West Islip Center", "Montauk Highway corridor", "Higbie Lane area", "Union Boulevard area", "Udall Road area", "Bay Shore border", "Babylon border", "Great South Bay waterfront"],
+    zipCodes: ["11795"],
+    schoolDistrict: "West Islip Union Free School District",
+    lirr: "West Islip (Babylon Branch)",
+    medianPrice: "$500,000-$650,000",
+    medianPriceSource: "Redfin/Homes.com data",
   },
 ];
 
