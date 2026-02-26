@@ -1,0 +1,669 @@
+[
+  {
+    "url": "/",
+    "title": "Cornerstone Services, Inc. | Direct Mail &amp; Marketing | New Paltz, NY",
+    "meta_desc": "Cornerstone Services, Inc. \u2014 Hudson Valley's trusted direct mail, printing, and data services company since 1998. Servin",
+    "word_count": 907,
+    "h1": [
+      "Direct Mail That  Delivers Results"
+    ],
+    "h2_count": 6,
+    "h2s": [
+      "Full-Service Direct Mail",
+      "How It Works",
+      "Proven Results",
+      "Serving the Hudson Valley",
+      "What Our Clients Say",
+      "Ready to Start Your Next Mailing?"
+    ],
+    "schema_types": [
+      "ProfessionalService"
+    ],
+    "has_aggregate_rating": true,
+    "has_faq_schema": false,
+    "has_geo": true,
+    "has_breadcrumb": false,
+    "has_person": false,
+    "tel_links": 5,
+    "estimate_links": 8,
+    "cta_count": 13,
+    "has_phone_visible": true,
+    "has_address": true,
+    "has_map": false,
+    "has_author": false,
+    "has_founded": true,
+    "has_bbb": true,
+    "faq_accordions": 0,
+    "has_local_refs": true,
+    "has_source_citations": false,
+    "label": "Homepage"
+  },
+  {
+    "url": "/services/direct-mail/",
+    "title": "Direct Mail Marketing Services \u2014 Hudson Valley, NY | CRST",
+    "meta_desc": "Full-service direct mail marketing for businesses in Ulster, Dutchess and Orange County. Postcards, EDDM, data lists, de",
+    "word_count": 646,
+    "h1": [
+      "Direct Mail Campaigns"
+    ],
+    "h2_count": 2,
+    "h2s": [
+      "Your Complete Direct Mail Partner",
+      "Ready to Start Your Next Mailing?"
+    ],
+    "schema_types": [
+      "Service"
+    ],
+    "has_aggregate_rating": true,
+    "has_faq_schema": false,
+    "has_geo": false,
+    "has_breadcrumb": false,
+    "has_person": false,
+    "tel_links": 6,
+    "estimate_links": 9,
+    "cta_count": 15,
+    "has_phone_visible": true,
+    "has_address": true,
+    "has_map": false,
+    "has_author": true,
+    "has_founded": true,
+    "has_bbb": false,
+    "faq_accordions": 0,
+    "has_local_refs": true,
+    "has_source_citations": false,
+    "label": "Direct Mail"
+  },
+  {
+    "url": "/services/data-lists/",
+    "title": "Data Lists &amp; Mailing Lists | CRST",
+    "meta_desc": "Targeted mailing lists for direct mail campaigns \u2014 consumer, business, and saturation lists with NCOA processing and CAS",
+    "word_count": 782,
+    "h1": [
+      "Data Lists &amp; Mailing Lists"
+    ],
+    "h2_count": 2,
+    "h2s": [
+      "The Foundation of Every Great Campaign",
+      "Ready to Start Your Next Mailing?"
+    ],
+    "schema_types": [
+      "Service"
+    ],
+    "has_aggregate_rating": true,
+    "has_faq_schema": false,
+    "has_geo": false,
+    "has_breadcrumb": false,
+    "has_person": false,
+    "tel_links": 6,
+    "estimate_links": 9,
+    "cta_count": 15,
+    "has_phone_visible": true,
+    "has_address": true,
+    "has_map": false,
+    "has_author": true,
+    "has_founded": true,
+    "has_bbb": false,
+    "faq_accordions": 0,
+    "has_local_refs": true,
+    "has_source_citations": false,
+    "label": "Data Lists"
+  },
+  {
+    "url": "/services/printing/",
+    "title": "Printing Services | CRST",
+    "meta_desc": "Commercial printing for direct mail and marketing \u2014 postcards, brochures, newsletters, letters, and large-format printin",
+    "word_count": 769,
+    "h1": [
+      "Printing Services"
+    ],
+    "h2_count": 2,
+    "h2s": [
+      "Print Quality That Represents Your Brand",
+      "Ready to Start Your Next Mailing?"
+    ],
+    "schema_types": [
+      "Service"
+    ],
+    "has_aggregate_rating": true,
+    "has_faq_schema": false,
+    "has_geo": false,
+    "has_breadcrumb": false,
+    "has_person": false,
+    "tel_links": 6,
+    "estimate_links": 9,
+    "cta_count": 15,
+    "has_phone_visible": true,
+    "has_address": true,
+    "has_map": false,
+    "has_author": true,
+    "has_founded": true,
+    "has_bbb": false,
+    "faq_accordions": 0,
+    "has_local_refs": true,
+    "has_source_citations": false,
+    "label": "Printing"
+  },
+  {
+    "url": "/services/mailing/",
+    "title": "Mailing Services | CRST",
+    "meta_desc": "USPS-compliant mailing services \u2014 addressing, presorting, barcoding, and postal preparation from Cornerstone Services. S",
+    "word_count": 775,
+    "h1": [
+      "Mailing Services"
+    ],
+    "h2_count": 2,
+    "h2s": [
+      "The Last Mile Matters Most",
+      "Ready to Start Your Next Mailing?"
+    ],
+    "schema_types": [
+      "Service"
+    ],
+    "has_aggregate_rating": true,
+    "has_faq_schema": false,
+    "has_geo": false,
+    "has_breadcrumb": false,
+    "has_person": false,
+    "tel_links": 6,
+    "estimate_links": 9,
+    "cta_count": 15,
+    "has_phone_visible": true,
+    "has_address": true,
+    "has_map": false,
+    "has_author": true,
+    "has_founded": true,
+    "has_bbb": false,
+    "faq_accordions": 0,
+    "has_local_refs": true,
+    "has_source_citations": false,
+    "label": "Mailing"
+  },
+  {
+    "url": "/services/graphic-design/",
+    "title": "Graphic Design Services | CRST",
+    "meta_desc": "Professional graphic design for direct mail and marketing materials \u2014 USPS-compliant layouts, compelling visuals, and de",
+    "word_count": 802,
+    "h1": [
+      "Graphic Design"
+    ],
+    "h2_count": 2,
+    "h2s": [
+      "Design That Works in the Mailbox",
+      "Ready to Start Your Next Mailing?"
+    ],
+    "schema_types": [
+      "Service"
+    ],
+    "has_aggregate_rating": true,
+    "has_faq_schema": false,
+    "has_geo": false,
+    "has_breadcrumb": false,
+    "has_person": false,
+    "tel_links": 6,
+    "estimate_links": 9,
+    "cta_count": 15,
+    "has_phone_visible": true,
+    "has_address": true,
+    "has_map": false,
+    "has_author": true,
+    "has_founded": true,
+    "has_bbb": false,
+    "faq_accordions": 0,
+    "has_local_refs": true,
+    "has_source_citations": false,
+    "label": "Graphic Design"
+  },
+  {
+    "url": "/services/eddm/",
+    "title": "Every Door Direct Mail (EDDM) | CRST",
+    "meta_desc": "EDDM direct mail \u2014 reach every household on selected postal routes without buying a mailing list. Design, print, and mai",
+    "word_count": 740,
+    "h1": [
+      "Every Door Direct Mail"
+    ],
+    "h2_count": 2,
+    "h2s": [
+      "Blanket Your Neighborhood",
+      "Ready to Start Your Next Mailing?"
+    ],
+    "schema_types": [
+      "Service"
+    ],
+    "has_aggregate_rating": true,
+    "has_faq_schema": false,
+    "has_geo": false,
+    "has_breadcrumb": false,
+    "has_person": false,
+    "tel_links": 6,
+    "estimate_links": 10,
+    "cta_count": 16,
+    "has_phone_visible": true,
+    "has_address": true,
+    "has_map": false,
+    "has_author": true,
+    "has_founded": true,
+    "has_bbb": false,
+    "faq_accordions": 0,
+    "has_local_refs": true,
+    "has_source_citations": false,
+    "label": "EDDM"
+  },
+  {
+    "url": "/services/non-profit-mailing/",
+    "title": "Non-Profit Mailing Services | CRST",
+    "meta_desc": "Save on postage with non-profit mailing rates. Cornerstone Services handles PS Form 3624 applications, permit setup, and",
+    "word_count": 810,
+    "h1": [
+      "Non-Profit Mailing Services"
+    ],
+    "h2_count": 6,
+    "h2s": [
+      "Mail More, Spend Less",
+      "PS Form 3624 Application",
+      "Who Qualifies?",
+      "How We Help",
+      "Non-Profit Mailing FAQ",
+      "Ready to Save on Your Non-Profit Mailings?"
+    ],
+    "schema_types": [
+      "Service",
+      "FAQPage"
+    ],
+    "has_aggregate_rating": true,
+    "has_faq_schema": true,
+    "has_geo": false,
+    "has_breadcrumb": false,
+    "has_person": false,
+    "tel_links": 5,
+    "estimate_links": 8,
+    "cta_count": 13,
+    "has_phone_visible": true,
+    "has_address": true,
+    "has_map": false,
+    "has_author": true,
+    "has_founded": true,
+    "has_bbb": false,
+    "faq_accordions": 8,
+    "has_local_refs": true,
+    "has_source_citations": false,
+    "label": "Non-Profit Mailing"
+  },
+  {
+    "url": "/services/union-printing/",
+    "title": "Union Printing | CRST",
+    "meta_desc": "Union label printing for political campaigns, labor organizations, and government entities in the Hudson Valley. Allied ",
+    "word_count": 567,
+    "h1": [
+      "Union Printing Services"
+    ],
+    "h2_count": 4,
+    "h2s": [
+      "Print with the Union Label",
+      "Union-Printed Materials",
+      "Political Campaign Printing & Mailing",
+      "Need Union-Printed Materials?"
+    ],
+    "schema_types": [
+      "Service"
+    ],
+    "has_aggregate_rating": true,
+    "has_faq_schema": false,
+    "has_geo": false,
+    "has_breadcrumb": false,
+    "has_person": false,
+    "tel_links": 5,
+    "estimate_links": 8,
+    "cta_count": 13,
+    "has_phone_visible": true,
+    "has_address": true,
+    "has_map": false,
+    "has_author": true,
+    "has_founded": true,
+    "has_bbb": false,
+    "faq_accordions": 0,
+    "has_local_refs": true,
+    "has_source_citations": false,
+    "label": "Union Printing"
+  },
+  {
+    "url": "/services/web-design/",
+    "title": "Web Design &amp; Development | CRST",
+    "meta_desc": "Professional website design and development for Hudson Valley businesses. WordPress sites, hosting, SEO, and ongoing sup",
+    "word_count": 582,
+    "h1": [
+      "Web Design &amp; Development"
+    ],
+    "h2_count": 4,
+    "h2s": [
+      "Your Digital Front Door",
+      "What's Included",
+      "Our Web Portfolio",
+      "Need a Website That Converts?"
+    ],
+    "schema_types": [
+      "Service"
+    ],
+    "has_aggregate_rating": true,
+    "has_faq_schema": false,
+    "has_geo": false,
+    "has_breadcrumb": false,
+    "has_person": false,
+    "tel_links": 5,
+    "estimate_links": 8,
+    "cta_count": 13,
+    "has_phone_visible": true,
+    "has_address": true,
+    "has_map": false,
+    "has_author": true,
+    "has_founded": true,
+    "has_bbb": false,
+    "faq_accordions": 0,
+    "has_local_refs": true,
+    "has_source_citations": false,
+    "label": "Web Design"
+  },
+  {
+    "url": "/service-areas/ulster-county/",
+    "title": "Direct Mail Services in Ulster County, NY | CRST",
+    "meta_desc": "Professional direct mail, printing, and mailing services for businesses and organizations across Ulster County, NY. Serv",
+    "word_count": 966,
+    "h1": [
+      "Direct Mail Services in Ulster County"
+    ],
+    "h2_count": 4,
+    "h2s": [
+      "Your Direct Mail Partner in Ulster County",
+      "Services Available in Ulster County",
+      "We Also Serve",
+      "Ready to Reach Ulster County Customers?"
+    ],
+    "schema_types": [
+      "ProfessionalService",
+      "LocalBusiness"
+    ],
+    "has_aggregate_rating": true,
+    "has_faq_schema": false,
+    "has_geo": true,
+    "has_breadcrumb": false,
+    "has_person": false,
+    "tel_links": 5,
+    "estimate_links": 8,
+    "cta_count": 13,
+    "has_phone_visible": true,
+    "has_address": true,
+    "has_map": true,
+    "has_author": true,
+    "has_founded": true,
+    "has_bbb": false,
+    "faq_accordions": 0,
+    "has_local_refs": true,
+    "has_source_citations": false,
+    "label": "Ulster County Hub"
+  },
+  {
+    "url": "/service-areas/dutchess-county/",
+    "title": "Direct Mail Services in Dutchess County, NY | CRST",
+    "meta_desc": "Professional direct mail, printing, and mailing services for businesses and organizations across Dutchess County, NY. Se",
+    "word_count": 836,
+    "h1": [
+      "Direct Mail Services in Dutchess County"
+    ],
+    "h2_count": 4,
+    "h2s": [
+      "Your Direct Mail Partner in Dutchess County",
+      "Services Available in Dutchess County",
+      "We Also Serve",
+      "Ready to Reach Dutchess County Customers?"
+    ],
+    "schema_types": [
+      "ProfessionalService",
+      "LocalBusiness"
+    ],
+    "has_aggregate_rating": true,
+    "has_faq_schema": false,
+    "has_geo": true,
+    "has_breadcrumb": false,
+    "has_person": false,
+    "tel_links": 5,
+    "estimate_links": 8,
+    "cta_count": 13,
+    "has_phone_visible": true,
+    "has_address": true,
+    "has_map": true,
+    "has_author": true,
+    "has_founded": true,
+    "has_bbb": false,
+    "faq_accordions": 0,
+    "has_local_refs": true,
+    "has_source_citations": false,
+    "label": "Dutchess County Hub"
+  },
+  {
+    "url": "/service-areas/orange-county/",
+    "title": "Direct Mail Services in Orange County, NY | CRST",
+    "meta_desc": "Professional direct mail, printing, and mailing services for businesses and organizations across Orange County, NY. Serv",
+    "word_count": 901,
+    "h1": [
+      "Direct Mail Services in Orange County"
+    ],
+    "h2_count": 4,
+    "h2s": [
+      "Your Direct Mail Partner in Orange County",
+      "Services Available in Orange County",
+      "We Also Serve",
+      "Ready to Reach Orange County Customers?"
+    ],
+    "schema_types": [
+      "ProfessionalService",
+      "LocalBusiness"
+    ],
+    "has_aggregate_rating": true,
+    "has_faq_schema": false,
+    "has_geo": true,
+    "has_breadcrumb": false,
+    "has_person": false,
+    "tel_links": 5,
+    "estimate_links": 8,
+    "cta_count": 13,
+    "has_phone_visible": true,
+    "has_address": true,
+    "has_map": true,
+    "has_author": true,
+    "has_founded": true,
+    "has_bbb": false,
+    "faq_accordions": 0,
+    "has_local_refs": true,
+    "has_source_citations": false,
+    "label": "Orange County Hub"
+  },
+  {
+    "url": "/service-areas/ulster-county/new-paltz/",
+    "title": "Direct Mail Services in New Paltz, Ulster County | CRST",
+    "meta_desc": "Professional direct mail, printing, and mailing services in New Paltz, NY. ZIP 12561 \u2014 EDDM, data lists, commercial prin",
+    "word_count": 781,
+    "h1": [
+      "Direct Mail Services in New Paltz"
+    ],
+    "h2_count": 3,
+    "h2s": [
+      "Direct Mail & Printing for New Paltz Businesses",
+      "Why New Paltz Businesses Choose Cornerstone",
+      "Start Your New Paltz Direct Mail Campaign"
+    ],
+    "schema_types": [
+      "ProfessionalService",
+      "Service",
+      "FAQPage"
+    ],
+    "has_aggregate_rating": true,
+    "has_faq_schema": true,
+    "has_geo": true,
+    "has_breadcrumb": false,
+    "has_person": false,
+    "tel_links": 6,
+    "estimate_links": 9,
+    "cta_count": 15,
+    "has_phone_visible": true,
+    "has_address": true,
+    "has_map": true,
+    "has_author": true,
+    "has_founded": true,
+    "has_bbb": true,
+    "faq_accordions": 8,
+    "has_local_refs": true,
+    "has_source_citations": false,
+    "label": "New Paltz"
+  },
+  {
+    "url": "/service-areas/ulster-county/kingston/",
+    "title": "Direct Mail Services in Kingston, Ulster County | CRST",
+    "meta_desc": "Professional direct mail, printing, and mailing services in Kingston, NY. ZIP 12401, 12402 \u2014 EDDM, data lists, commercia",
+    "word_count": 719,
+    "h1": [
+      "Direct Mail Services in Kingston"
+    ],
+    "h2_count": 3,
+    "h2s": [
+      "Direct Mail & Printing for Kingston Businesses",
+      "Why Kingston Businesses Choose Cornerstone",
+      "Start Your Kingston Direct Mail Campaign"
+    ],
+    "schema_types": [
+      "ProfessionalService",
+      "Service",
+      "FAQPage"
+    ],
+    "has_aggregate_rating": true,
+    "has_faq_schema": true,
+    "has_geo": true,
+    "has_breadcrumb": false,
+    "has_person": false,
+    "tel_links": 6,
+    "estimate_links": 9,
+    "cta_count": 15,
+    "has_phone_visible": true,
+    "has_address": true,
+    "has_map": true,
+    "has_author": true,
+    "has_founded": true,
+    "has_bbb": true,
+    "faq_accordions": 6,
+    "has_local_refs": true,
+    "has_source_citations": false,
+    "label": "Kingston"
+  },
+  {
+    "url": "/service-areas/dutchess-county/poughkeepsie/",
+    "title": "Direct Mail Services in Poughkeepsie, Dutchess County | CRST",
+    "meta_desc": "Professional direct mail, printing, and mailing services in Poughkeepsie, NY. ZIP 12601, 12602, 12603, 12604 \u2014 EDDM, dat",
+    "word_count": 741,
+    "h1": [
+      "Direct Mail Services in Poughkeepsie"
+    ],
+    "h2_count": 3,
+    "h2s": [
+      "Direct Mail & Printing for Poughkeepsie Businesses",
+      "Why Poughkeepsie Businesses Choose Cornerstone",
+      "Start Your Poughkeepsie Direct Mail Campaign"
+    ],
+    "schema_types": [
+      "ProfessionalService",
+      "Service",
+      "FAQPage"
+    ],
+    "has_aggregate_rating": true,
+    "has_faq_schema": true,
+    "has_geo": true,
+    "has_breadcrumb": false,
+    "has_person": false,
+    "tel_links": 6,
+    "estimate_links": 9,
+    "cta_count": 15,
+    "has_phone_visible": true,
+    "has_address": true,
+    "has_map": true,
+    "has_author": true,
+    "has_founded": true,
+    "has_bbb": true,
+    "faq_accordions": 8,
+    "has_local_refs": true,
+    "has_source_citations": false,
+    "label": "Poughkeepsie"
+  },
+  {
+    "url": "/service-areas/orange-county/newburgh/",
+    "title": "Direct Mail Services in Newburgh, Orange County | CRST",
+    "meta_desc": "Professional direct mail, printing, and mailing services in Newburgh, NY. ZIP 12550, 12551 \u2014 EDDM, data lists, commercia",
+    "word_count": 710,
+    "h1": [
+      "Direct Mail Services in Newburgh"
+    ],
+    "h2_count": 3,
+    "h2s": [
+      "Direct Mail & Printing for Newburgh Businesses",
+      "Why Newburgh Businesses Choose Cornerstone",
+      "Start Your Newburgh Direct Mail Campaign"
+    ],
+    "schema_types": [
+      "ProfessionalService",
+      "Service",
+      "FAQPage"
+    ],
+    "has_aggregate_rating": true,
+    "has_faq_schema": true,
+    "has_geo": true,
+    "has_breadcrumb": false,
+    "has_person": false,
+    "tel_links": 6,
+    "estimate_links": 9,
+    "cta_count": 15,
+    "has_phone_visible": true,
+    "has_address": true,
+    "has_map": true,
+    "has_author": true,
+    "has_founded": true,
+    "has_bbb": true,
+    "faq_accordions": 6,
+    "has_local_refs": true,
+    "has_source_citations": false,
+    "label": "Newburgh"
+  },
+  {
+    "url": "/service-areas/ulster-county/woodstock/",
+    "title": "Direct Mail Services in Woodstock, Ulster County | CRST",
+    "meta_desc": "Professional direct mail, printing, and mailing services in Woodstock, NY. ZIP 12498 \u2014 EDDM, data lists, commercial prin",
+    "word_count": 718,
+    "h1": [
+      "Direct Mail Services in Woodstock"
+    ],
+    "h2_count": 3,
+    "h2s": [
+      "Direct Mail & Printing for Woodstock Businesses",
+      "Why Woodstock Businesses Choose Cornerstone",
+      "Start Your Woodstock Direct Mail Campaign"
+    ],
+    "schema_types": [
+      "ProfessionalService",
+      "Service",
+      "FAQPage"
+    ],
+    "has_aggregate_rating": true,
+    "has_faq_schema": true,
+    "has_geo": true,
+    "has_breadcrumb": false,
+    "has_person": false,
+    "tel_links": 6,
+    "estimate_links": 9,
+    "cta_count": 15,
+    "has_phone_visible": true,
+    "has_address": true,
+    "has_map": true,
+    "has_author": true,
+    "has_founded": true,
+    "has_bbb": true,
+    "faq_accordions": 6,
+    "has_local_refs": true,
+    "has_source_citations": false,
+    "label": "Woodstock"
+  }
+]

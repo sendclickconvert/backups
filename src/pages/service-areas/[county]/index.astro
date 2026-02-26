@@ -2,6 +2,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import PageHero from '../../../components/PageHero.astro';
 import CTASection from '../../../components/CTASection.astro';
+import AuthorByline from '../../../components/AuthorByline.astro';
 import { BUSINESS, SERVICES } from '../../../data/site';
 import { COUNTIES_DATA } from '../../../data/locations';
 import type { County } from '../../../data/locations';
@@ -20,7 +21,7 @@ const towns = county.locations.filter(l => l.type === 'town');
 const villages = county.locations.filter(l => l.type === 'village');
 const hamlets = county.locations.filter(l => l.type === 'hamlet' || l.type === 'cdp');
 
-const title = `Direct Mail Services in ${county.name}, NY | ${BUSINESS.shortName}`;
+const title = `Direct Mail Services in ${county.name}, NY`;
 const description = `Professional direct mail, printing, and mailing services for businesses and organizations across ${county.name}, NY. Serving ${county.locations.length} communities from our ${BUSINESS.address.city} facility.`;
 
 const schema = {
@@ -252,6 +253,9 @@ const schema = {
           </div>
         </div>
       )}
+      <div class="mt-8">
+        <AuthorByline compact />
+      </div>
     </div>
   </section>
 
