@@ -34,9 +34,9 @@ localPort = 5000
 externalPort = 80
 
 [deployment]
-run = ["node", "dist/server/entry.mjs"]
+run = ["bash", "-c", "HOST=0.0.0.0 PORT=${PORT:-5000} node dist/server/entry.mjs"]
 deploymentTarget = "autoscale"
-publicDir = "dist"
+publicDir = "dist/client"
 build = ["npm", "run", "build"]
 
 [agent]
