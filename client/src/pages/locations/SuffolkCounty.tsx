@@ -61,6 +61,8 @@ const towns = [
   { name: "Stony Brook", desc: "University town with North Shore charm and historic village" },
   { name: "West Babylon", desc: "South Shore community with diverse housing and Sunrise Mall area" },
   { name: "West Islip", desc: "South Shore hamlet with waterfront access and strong schools" },
+  { name: "Amityville", desc: "Historic South Shore village with waterfront charm and canal-front properties" },
+  { name: "Wyandanch", desc: "Revitalizing Babylon hamlet with Wyandanch Rising redevelopment and affordable housing" },
 ];
 
 const faqs = [

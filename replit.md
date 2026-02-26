@@ -29,13 +29,14 @@ The frontend follows a page-based structure under `client/src/pages/` with reusa
 - Nassau County parent page (`/locations/nassau-county`) links to all 45 town pages
 - All 45 URLs added to `client/public/sitemap.xml`
 
-### Suffolk County Town Pages (added 2026-02-11)
-- 36 individual town landing pages under `/locations/suffolk-county/[town-slug]`
+### Suffolk County Town Pages (added 2026-02-11, updated 2026-02-26)
+- 38 individual town landing pages under `/locations/suffolk-county/[town-slug]`
 - Data-driven: all content in `client/src/data/suffolk-towns.ts`, rendered by single component `client/src/pages/locations/SuffolkTownPage.tsx`
 - Each page has: unique SEO metadata, Service schema markup (JSON-LD), body content with H2 sections, CTA with phone/form, internal links
 - Dynamic route in App.tsx: `/locations/suffolk-county/:town`
-- Suffolk County parent page (`/locations/suffolk-county`) links to all 36 town pages
-- All 36 URLs added to `client/public/sitemap.xml`
+- Suffolk County parent page (`/locations/suffolk-county`) links to all 38 town pages
+- All 38 URLs added to `client/public/sitemap.xml`
+- **Added 2026-02-26**: Amityville (village in Town of Babylon, ZIP 11701) and Wyandanch (CDP in Town of Babylon, ZIP 11798)
 
 ### E-E-A-T & Schema Enhancements (updated 2026-02-26)
 - **AggregateRating**: Added to LocalBusiness schema in `SchemaMarkup.tsx` (5.0 rating, 3 reviews)
@@ -61,7 +62,7 @@ The frontend follows a page-based structure under `client/src/pages/` with reusa
   - "Helpful Resources" section linking to blog posts
   - Legal disclaimer
 - **TownData Interface Extended**: New optional fields: `faqs`, `neighborhoods`, `zipCodes`, `schoolDistrict`, `lirr`, `medianPrice`, `medianPriceSource`
-- **All 81 Towns Fully Populated (updated 2026-02-26)**: Every town entry now has 3 FAQs, neighborhoods list, ZIP codes, school district, LIRR station (where applicable), median price range with Redfin/Homes.com citation. No thin pages remain.
+- **All 83 Towns Fully Populated (updated 2026-02-26)**: Every town entry now has 3 FAQs, neighborhoods list, ZIP codes, school district, LIRR station (where applicable), median price range with Redfin/Homes.com citation. No thin pages remain. Total: 45 Nassau + 38 Suffolk = 83 town pages.
 - **Blog Internal Links**: Verified blog URLs linked throughout (selling situations, process, comparisons, trust, locations)
 - **Situation Links Fixed**: "Selling with Liens" and "Relocating" links on county pages now point to live blog URLs (blog.thepropertyfather.com) instead of href="#". External links render as `<a>` tags, internal links use wouter `<Link>`.
 - **E-E-A-T Audit Tool**: Python script at `tools/eeat_extractor.py`

@@ -2093,6 +2093,124 @@ export const suffolkTowns: TownData[] = [
     medianPrice: "$500,000-$650,000",
     medianPriceSource: "Redfin/Homes.com data",
   },
+  {
+    slug: "amityville",
+    townName: "Amityville",
+    titleTag: "We Buy Houses for Cash in Amityville, NY | The Property Father",
+    metaDescription: "Sell your Amityville home fast for cash — any condition, no repairs, no agents. The Property Father buys houses in Amityville Village and surrounding areas. Call (516) 548-6558.",
+    h1: "We Buy Houses for Cash in Amityville, NY",
+    sections: [
+      {
+        heading: "",
+        paragraphs: [
+          "Amityville is a historic South Shore village in the Town of Babylon, known for its waterfront location along the Great South Bay, its charming downtown along Broadway, and — yes — its association with a certain house on Ocean Avenue. But beyond the pop culture footnote, Amityville is a real community of working families, long-time homeowners, and properties that range from waterfront estates to modest Cape Cods and bungalows built in the early-to-mid 20th century.",
+          "The Property Father buys houses for cash in any condition throughout Amityville Village and the surrounding unincorporated areas. Whether your home is on a canal, near the LIRR station, or tucked into the residential streets off Merrick Road, we make fair cash offers and close on your timeline.",
+        ],
+      },
+      {
+        heading: "Why Amityville Homeowners Choose a Cash Sale",
+        paragraphs: [
+          "Amityville's housing stock is aging. Many homes were built in the 1920s through 1950s, and while the village has seen pockets of renovation, plenty of properties still have original plumbing, knob-and-tube wiring, oil heat systems, and foundations that show seven or eight decades of settlement. The waterfront and canal-front homes add another layer of complexity — bulkhead repairs can cost $30,000 to $80,000, flood insurance requirements in FEMA zones make traditional financing difficult, and post-Sandy damage lingers in some properties.",
+          "For homeowners who can't afford to bring a property up to modern buyer expectations, a cash sale eliminates the need for repairs, inspections, and the financing contingencies that kill deals on older homes.",
+        ],
+      },
+      {
+        heading: "Situations We Handle in Amityville",
+        paragraphs: [
+          "We work with Amityville homeowners navigating inherited properties where the family home has been passed down but no one can afford the upkeep or taxes, divorce situations where the marital home needs to be sold quickly for an equitable split, canal-front and waterfront homes with bulkhead damage or flood zone complications, properties with oil tank issues — underground tanks are common in this era of construction, and homeowners facing foreclosure who need to sell before the bank takes action.",
+          "Amityville is also a village with its own building department and code enforcement. Properties with open permits or violations can be difficult to sell traditionally, but we buy them as-is.",
+        ],
+      },
+      {
+        heading: "Our Cash Offer Process",
+        paragraphs: [
+          "Call us at (516) 548-6558 or fill out the form on this page. We'll schedule a walkthrough of your Amityville property — usually within 48 hours — and present a fair cash offer based on comparable sales in your specific section of the village. No agent commissions, no closing costs on your end, no repair requirements.",
+          "We buy homes throughout Amityville — from the waterfront properties along the Great South Bay and the canal neighborhoods to the residential streets near Amityville Memorial High School, the downtown Broadway corridor, and the areas along County Line Road near the Massapequa border.",
+          "Call The Property Father at (516) 548-6558 for your no-obligation cash offer on your Amityville home.",
+        ],
+      },
+    ],
+    relatedLinks: ["/situations/inherited-property", "/situations/foreclosure", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on an Amityville home?",
+        answer: "We can close in as few as 7 days. Most Amityville transactions complete within 14-21 days. Because we pay cash, there are no mortgage contingencies or bank appraisals to wait for. The only timing factors are title clearance and attorney scheduling — required under NY Judiciary Law § 484.",
+      },
+      {
+        question: "Do you buy waterfront and canal-front homes in Amityville?",
+        answer: "Yes. Many Amityville properties sit on canals or along the Great South Bay in FEMA flood zones. We buy waterfront homes as-is, regardless of bulkhead condition, flood insurance costs, or prior storm damage. We're familiar with the post-Sandy landscape in South Shore communities.",
+      },
+      {
+        question: "What are homes selling for in Amityville?",
+        answer: "Per Redfin/Homes.com data, median home values in Amityville range from $425,000 to $575,000, with significant variation based on proximity to the water and property condition. Canal-front and waterfront properties trade at a premium when in good condition, while inland homes with deferred maintenance sell at the lower end.",
+      },
+    ],
+    neighborhoods: ["Amityville Village", "Broadway downtown", "Great South Bay waterfront", "Canal neighborhoods", "County Line Road area", "Merrick Road corridor", "Ketcham Avenue area", "Park Avenue area", "LIRR station area"],
+    zipCodes: ["11701"],
+    schoolDistrict: "Amityville Union Free School District",
+    lirr: "Amityville (Babylon Branch)",
+    medianPrice: "$425,000-$575,000",
+    medianPriceSource: "Redfin/Homes.com data",
+  },
+  {
+    slug: "wyandanch",
+    townName: "Wyandanch",
+    titleTag: "We Buy Houses for Cash in Wyandanch, NY | The Property Father",
+    metaDescription: "Sell your Wyandanch home fast for cash — any condition. No repairs, no agents, no fees. The Property Father buys houses throughout Wyandanch. Call (516) 548-6558.",
+    h1: "We Buy Houses for Cash in Wyandanch, NY",
+    sections: [
+      {
+        heading: "",
+        paragraphs: [
+          "Wyandanch is a census-designated place in the Town of Babylon, situated in central Suffolk County between Deer Park and Wheatley Heights. The community has a rich history and a housing stock that reflects decades of development — primarily modest single-family homes, many built in the 1950s and 1960s, alongside some multi-family properties and newer construction from the Wyandanch Rising revitalization initiative near the LIRR station.",
+          "The Property Father buys houses for cash in any condition throughout Wyandanch. Whether your home is near the newly redeveloped station area or in the established residential neighborhoods, we make fair offers and close on your schedule.",
+        ],
+      },
+      {
+        heading: "Wyandanch's Real Estate Landscape",
+        paragraphs: [
+          "Wyandanch has historically been one of the more affordable communities in Suffolk County, which has made it attractive to first-time buyers but also means homeowners here face unique challenges when selling. Property values are lower than surrounding communities like Deer Park and Wheatley Heights, which means the gap between what a home is worth and what it costs to renovate it for market can be razor-thin.",
+          "Many homes in Wyandanch have deferred maintenance — aging roofs, outdated electrical systems, original plumbing, and cosmetic issues that traditional buyers and their lenders won't overlook. FHA and conventional loans require properties to meet minimum habitability standards, and when a home doesn't pass the appraisal, the deal falls through. That cycle of listing, getting offers, and losing them to inspection or appraisal issues is exhausting.",
+        ],
+      },
+      {
+        heading: "Situations We Help Wyandanch Homeowners With",
+        paragraphs: [
+          "We regularly work with Wyandanch homeowners dealing with inherited properties where the family doesn't have the resources to renovate before selling, homes with code violations from the Town of Babylon building department, properties with tax arrears or liens that need to be resolved at closing, homeowners in pre-foreclosure who need to sell before the bank completes the process, and long-time residents who are relocating or downsizing and want a simple transaction without the uncertainty of the open market.",
+          "Because Wyandanch is a CDP (census-designated place) and not an incorporated village, property matters are handled through the Town of Babylon. We're experienced with Babylon's processes and requirements.",
+        ],
+      },
+      {
+        heading: "How Our Cash Sale Process Works",
+        paragraphs: [
+          "Contact us at (516) 548-6558 or submit the form on this page. We'll visit your Wyandanch property, assess it in its current condition, and present a cash offer — typically within 24 hours of the walkthrough. No agent commissions, no closing costs, no repairs needed. You pick the closing date.",
+          "We buy homes throughout Wyandanch — from the neighborhoods near the LIRR station and the Wyandanch Rising development to the residential streets along Straight Path, Long Island Avenue, and the areas near Wyandanch Memorial High School.",
+          "Call The Property Father at (516) 548-6558 for your no-obligation cash offer.",
+        ],
+      },
+    ],
+    relatedLinks: ["/situations/foreclosure", "/situations/inherited-property", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Wyandanch home?",
+        answer: "We can close in as few as 7 days. Most Wyandanch transactions complete within 14-21 days. We pay cash — no mortgage contingencies, no bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors.",
+      },
+      {
+        question: "Is Wyandanch a village or a hamlet?",
+        answer: "Wyandanch is a census-designated place (CDP) within the Town of Babylon — it's not an incorporated village. This means building permits, code enforcement, and property matters are handled through Babylon Town. We're familiar with Babylon's processes and buy properties here regardless of permit or code status.",
+      },
+      {
+        question: "What are homes selling for in Wyandanch?",
+        answer: "Per Redfin/Homes.com data, median home values in Wyandanch range from $325,000 to $425,000. The Wyandanch Rising redevelopment near the LIRR station has brought new construction and interest to the area, but older homes with deferred maintenance trade at the lower end of the range.",
+      },
+    ],
+    neighborhoods: ["Wyandanch Rising area", "Straight Path corridor", "Long Island Avenue area", "Wyandanch Memorial High School area", "LIRR station area", "Grand Boulevard", "Commonwealth Drive area", "Patton Avenue area"],
+    zipCodes: ["11798"],
+    schoolDistrict: "Wyandanch Union Free School District",
+    lirr: "Wyandanch (Ronkonkoma Branch)",
+    medianPrice: "$325,000-$425,000",
+    medianPriceSource: "Redfin/Homes.com data",
+  },
 ];
 
 export function getTownBySlug(slug: string): TownData | undefined {
@@ -2136,4 +2254,6 @@ export const suffolkTownCoordinates: Record<string, { lat: number; lng: number }
   "Stony Brook": { lat: 40.9226, lng: -73.1410 },
   "West Babylon": { lat: 40.7179, lng: -73.3554 },
   "West Islip": { lat: 40.7065, lng: -73.2907 },
+  "Amityville": { lat: 40.6790, lng: -73.4171 },
+  "Wyandanch": { lat: 40.7540, lng: -73.3590 },
 };
