@@ -13,6 +13,8 @@ export interface Location {
   notableOrgs: string[];
   clientTypes: string[];
   faqs: { q: string; a: string }[];
+  lat: number;
+  lng: number;
 }
 
 export interface County {
@@ -23,6 +25,8 @@ export interface County {
   population: string;
   description: string;
   intro: string;
+  lat: number;
+  lng: number;
   locations: Location[];
 }
 
@@ -48,6 +52,8 @@ const ulsterLocations: Location[] = [
       { q: 'What types of New Paltz businesses use your services?', a: 'We work with restaurants, retail shops, real estate agents, tourism operators, nonprofits, and professional services throughout New Paltz and the surrounding area.' },
       { q: 'Do you offer same-day service for local New Paltz clients?', a: 'For existing clients with print-ready files, we can often accommodate rush turnarounds. Contact us to discuss your timeline.' },
     ],
+    lat: 41.7465,
+    lng: -74.0845,
   },
   {
     name: 'Kingston',
@@ -65,6 +71,8 @@ const ulsterLocations: Location[] = [
       { q: 'Can you help Kingston businesses with EDDM campaigns?', a: 'Absolutely. EDDM is ideal for Kingston\'s dense residential neighborhoods. We can help you select specific carrier routes in Uptown, Midtown, Downtown, and the Rondout.' },
       { q: 'Do you work with Ulster County government offices?', a: 'Yes. We handle mailings for municipal agencies, school districts, and government entities throughout Ulster County, including Kingston-based offices.' },
     ],
+    lat: 41.9288,
+    lng: -74.0024,
   },
   {
     name: 'Saugerties',
@@ -81,6 +89,8 @@ const ulsterLocations: Location[] = [
       { q: 'What direct mail formats work best for Saugerties businesses?', a: 'Postcards and EDDM pieces perform well for Saugerties restaurants, shops, and service businesses. We can also produce newsletters and self-mailers for organizations like the chamber of commerce.' },
       { q: 'Do you deliver finished mail to the Saugerties Post Office?', a: 'We process and deliver presorted mail directly to USPS facilities, ensuring your Saugerties-bound mail enters the postal stream efficiently.' },
     ],
+    lat: 42.0776,
+    lng: -73.9529,
   },
   {
     name: 'Woodstock',
@@ -97,6 +107,8 @@ const ulsterLocations: Location[] = [
       { q: 'What\'s the best way to promote Woodstock events via mail?', a: 'Oversized postcards mailed to targeted demographics within a 30-mile radius work well for Woodstock events. We can also target seasonal visitors and second-home owners.' },
       { q: 'Do you work with Woodstock arts nonprofits?', a: 'Yes. We provide discounted non-profit mailing rates and help arts organizations with their annual appeals, event promotions, and membership campaigns.' },
     ],
+    lat: 42.0411,
+    lng: -74.1182,
   },
   {
     name: 'Rosendale',
@@ -113,6 +125,8 @@ const ulsterLocations: Location[] = [
       { q: 'Can you do small-run mailings for Rosendale community events?', a: 'Yes. We handle mailings of all sizes, from a few hundred pieces for local events to thousands for regional campaigns.' },
       { q: 'Do you offer EDDM for Rosendale businesses?', a: 'EDDM is a great fit for Rosendale\'s compact geography. You can reach every household on specific carrier routes without purchasing a mailing list.' },
     ],
+    lat: 41.844,
+    lng: -74.0821,
   },
   {
     name: 'Highland',
@@ -129,6 +143,8 @@ const ulsterLocations: Location[] = [
       { q: 'What types of Highland businesses use direct mail?', a: 'Healthcare offices, restaurants, auto dealers, and retail shops along Route 9W are among our Highland-area clients.' },
       { q: 'Do you serve the Town of Lloyd area?', a: 'Highland is within the Town of Lloyd. We serve all addresses in the Lloyd/Highland area including rural routes.' },
     ],
+    lat: 41.7213,
+    lng: -73.9608,
   },
   {
     name: 'Ellenville',
@@ -145,6 +161,8 @@ const ulsterLocations: Location[] = [
       { q: 'Is direct mail effective in rural areas like Ellenville?', a: 'Very effective. In rural communities where residents may not be heavily online, physical mail often gets more attention than digital ads.' },
       { q: 'Do you work with Ellenville Regional Hospital?', a: 'We serve healthcare providers throughout the Hudson Valley. Contact us to discuss your specific mailing needs.' },
     ],
+    lat: 41.6975,
+    lng: -74.3454,
   },
   {
     name: 'Marlboro',
@@ -160,6 +178,8 @@ const ulsterLocations: Location[] = [
       { q: 'Can you help Marlboro wineries with direct mail marketing?', a: 'Yes. We help wineries and agricultural businesses create targeted mailings to attract visitors, promote events, and build customer loyalty.' },
       { q: 'What ZIP code covers Marlboro?', a: 'Marlboro uses ZIP code 12542. We can target all carrier routes within this ZIP or expand to surrounding areas.' },
     ],
+    lat: 41.6055,
+    lng: -73.9717,
   },
   {
     name: 'Gardiner',
@@ -175,6 +195,8 @@ const ulsterLocations: Location[] = [
       { q: 'Can you target tourists and second-home owners in Gardiner?', a: 'Yes. We can build mailing lists that include seasonal residents and second-home owners in the Gardiner ZIP code area.' },
       { q: 'What services do Gardiner businesses typically use?', a: 'Postcards and EDDM are popular for Gardiner hospitality businesses looking to promote seasonal events, restaurant openings, and outdoor activities.' },
     ],
+    lat: 41.6798,
+    lng: -74.1504,
   },
   {
     name: 'Plattekill',
@@ -190,6 +212,8 @@ const ulsterLocations: Location[] = [
       { q: 'Which ZIP codes cover Plattekill?', a: 'Plattekill is served by ZIP codes 12568 (Modena) and 12589 (Wallkill). We can target either or both in your mailing campaign.' },
       { q: 'Can you reach all of Plattekill\'s rural addresses?', a: 'Yes. Our data includes all USPS carrier routes and deliverable addresses throughout the Town of Plattekill.' },
     ],
+    lat: 41.6184,
+    lng: -74.0631,
   },
   {
     name: 'Esopus',
@@ -205,6 +229,8 @@ const ulsterLocations: Location[] = [
       { q: 'Can you target Port Ewen separately from the rest of Esopus?', a: 'Yes. Port Ewen has its own carrier routes that we can target independently for your mailings.' },
       { q: 'Do you handle mailings for Esopus fire departments?', a: 'We work with fire departments and EMS organizations throughout Ulster County on fundraiser mailings, membership drives, and community notifications.' },
     ],
+    lat: 41.8278,
+    lng: -73.965,
   },
   {
     name: 'Marbletown',
@@ -220,6 +246,8 @@ const ulsterLocations: Location[] = [
       { q: 'Can you target Stone Ridge and High Falls separately?', a: 'Yes. We can isolate carrier routes for each hamlet within Marbletown to target your ideal audience.' },
       { q: 'What direct mail services work for Marbletown\'s small businesses?', a: 'EDDM postcards are cost-effective for reaching every household in specific Marbletown neighborhoods without purchasing a mailing list.' },
     ],
+    lat: 41.8834,
+    lng: -74.1132,
   },
   {
     name: 'Olive',
@@ -235,6 +263,8 @@ const ulsterLocations: Location[] = [
       { q: 'Can you reach seasonal residents in Olive?', a: 'Yes. We can build mailing lists that include seasonal and second-home addresses in the Olive ZIP code areas.' },
       { q: 'Is EDDM available for the Olive area?', a: 'Yes. EDDM covers all deliverable addresses on selected carrier routes, including rural mountain routes in the Olive area.' },
     ],
+    lat: 41.95,
+    lng: -74.25,
   },
   {
     name: 'Hurley',
@@ -250,6 +280,8 @@ const ulsterLocations: Location[] = [
       { q: 'Can you handle mailings for Hurley Heritage Society events?', a: 'Yes. We work with heritage societies and cultural organizations on event invitations, fundraiser appeals, and membership mailings.' },
       { q: 'What ZIP code covers Hurley?', a: 'Hurley uses ZIP code 12443. We can target all carrier routes within this ZIP for your campaign.' },
     ],
+    lat: 41.9102,
+    lng: -74.0622,
   },
   {
     name: 'Ulster',
@@ -265,6 +297,8 @@ const ulsterLocations: Location[] = [
       { q: 'Can you target the Route 9W commercial corridor in Ulster?', a: 'Yes. We can target specific carrier routes along the 9W corridor and surrounding residential areas to drive foot traffic to your business.' },
       { q: 'Is EDDM effective for Ulster Town Center businesses?', a: 'Very effective. EDDM lets you blanket nearby residential areas with promotions, coupons, and grand opening announcements without needing a mailing list.' },
     ],
+    lat: 41.9606,
+    lng: -74.0108,
   },
   {
     name: 'Shawangunk',
@@ -280,6 +314,8 @@ const ulsterLocations: Location[] = [
       { q: 'Which ZIP code serves the Shawangunk area?', a: 'The primary ZIP code for Shawangunk is 12589 (Wallkill). We can target all carrier routes within this area.' },
       { q: 'Can you help Shawangunk fire departments with fundraiser mailings?', a: 'Yes. We specialize in fire department and EMS fundraiser mailings, including donation request letters and annual appeal campaigns.' },
     ],
+    lat: 41.6164,
+    lng: -74.2331,
   },
   {
     name: 'Wawarsing',
@@ -295,6 +331,8 @@ const ulsterLocations: Location[] = [
       { q: 'Can you target specific hamlets within Wawarsing?', a: 'Yes. Wawarsing has multiple ZIP codes, and we can target specific areas like Kerhonkson (12446), Napanoch (12458), or the broader Ellenville area (12428).' },
       { q: 'What ZIP codes are in Wawarsing?', a: 'Wawarsing is covered by ZIP codes 12428 (Ellenville), 12458 (Napanoch), and portions of 12446 (Kerhonkson).' },
     ],
+    lat: 41.759,
+    lng: -74.3574,
   },
   {
     name: 'Rochester',
@@ -310,6 +348,8 @@ const ulsterLocations: Location[] = [
       { q: 'Can you serve the Accord and Kerhonkson areas?', a: 'Yes. Both Accord and Kerhonkson fall within our standard service area. We target carrier routes within the 12446 ZIP code.' },
       { q: 'Is direct mail effective for vacation rental businesses in Rochester?', a: 'Yes. Targeted mailings to metro-area ZIP codes can drive bookings for vacation rentals, B&Bs, and Airbnb properties in the Catskills region.' },
     ],
+    lat: 41.8036,
+    lng: -74.2633,
   },
   {
     name: 'Denning',
@@ -324,6 +364,8 @@ const ulsterLocations: Location[] = [
     faqs: [
       { q: 'Can you mail to remote Denning addresses?', a: 'Yes. Our data includes all USPS-deliverable addresses in the Denning area, including rural routes.' },
     ],
+    lat: 41.9509,
+    lng: -74.489,
   },
   {
     name: 'Hardenburgh',
@@ -338,6 +380,8 @@ const ulsterLocations: Location[] = [
     faqs: [
       { q: 'Do you serve addresses this far into the Catskills?', a: 'Yes. We can mail to any USPS-deliverable address in Ulster County, including remote Catskill Mountain locations.' },
     ],
+    lat: 42.0009,
+    lng: -74.6652,
   },
   {
     name: 'Shandaken',
@@ -353,6 +397,8 @@ const ulsterLocations: Location[] = [
       { q: 'Can you help promote Phoenicia businesses to tourists?', a: 'Yes. We create targeted mailings to metro-area ZIP codes to drive tourism traffic to Phoenicia restaurants, shops, and outdoor attractions.' },
       { q: 'What about reaching Belleayre-area seasonal visitors?', a: 'We can target ski season and summer visitors through demographic-targeted mailing lists that reach likely outdoor recreation enthusiasts.' },
     ],
+    lat: 42.1201,
+    lng: -74.3954,
   },
   {
     name: 'Lloyd',
@@ -368,6 +414,8 @@ const ulsterLocations: Location[] = [
       { q: 'Is Lloyd the same as Highland?', a: 'Highland is a hamlet within the Town of Lloyd. Our mailing services cover the entire Town of Lloyd, including Highland and surrounding areas.' },
       { q: 'Can you target both sides of the Mid-Hudson Bridge?', a: 'Yes. We can create campaigns that target both Lloyd/Highland in Ulster County and Poughkeepsie in Dutchess County for maximum reach.' },
     ],
+    lat: 41.7362,
+    lng: -74.0054,
   },
   {
     name: 'Wawarsing (Kerhonkson)',
@@ -382,6 +430,8 @@ const ulsterLocations: Location[] = [
     faqs: [
       { q: 'What ZIP code covers Kerhonkson?', a: 'Kerhonkson uses ZIP code 12446. We can target all carrier routes in this area for your mailing campaign.' },
     ],
+    lat: 41.7692,
+    lng: -74.3008,
   },
   {
     name: 'Phoenicia',
@@ -396,6 +446,8 @@ const ulsterLocations: Location[] = [
     faqs: [
       { q: 'Can you help Phoenicia businesses market to NYC-area visitors?', a: 'Yes. We build targeted mailing lists reaching likely Catskills visitors in NYC, Westchester, and northern NJ ZIP codes.' },
     ],
+    lat: 42.0775,
+    lng: -74.3052,
   },
   {
     name: 'Stone Ridge',
@@ -410,6 +462,8 @@ const ulsterLocations: Location[] = [
     faqs: [
       { q: 'What\'s the best way to reach Stone Ridge residents?', a: 'EDDM postcards targeting carrier routes in the 12484 ZIP code let you reach every household in Stone Ridge affordably.' },
     ],
+    lat: 41.8448,
+    lng: -74.1544,
   },
   {
     name: 'High Falls',
@@ -424,6 +478,8 @@ const ulsterLocations: Location[] = [
     faqs: [
       { q: 'Can you target visitors to High Falls, not just residents?', a: 'Yes. We create mailing lists targeting demographics in surrounding ZIP codes who are likely to visit High Falls restaurants and attractions.' },
     ],
+    lat: 41.8253,
+    lng: -74.1221,
   },
   {
     name: 'Wallkill',
@@ -438,6 +494,8 @@ const ulsterLocations: Location[] = [
     faqs: [
       { q: 'What ZIP code covers Wallkill in Ulster County?', a: 'Wallkill, Ulster County uses ZIP code 12589. Note: there\'s a separate Wallkill in Orange County (Town of Wallkill) — we can target either or both.' },
     ],
+    lat: 41.6092,
+    lng: -74.1648,
   },
   {
     name: 'Port Ewen',
@@ -452,6 +510,8 @@ const ulsterLocations: Location[] = [
     faqs: [
       { q: 'Can you target Port Ewen\'s 12466 ZIP code?', a: 'Yes. We can isolate the 12466 ZIP code and its carrier routes to target Port Ewen households specifically.' },
     ],
+    lat: 41.9018,
+    lng: -73.9762,
   },
   {
     name: 'Clintondale',
@@ -466,6 +526,8 @@ const ulsterLocations: Location[] = [
     faqs: [
       { q: 'Does Cornerstone serve Clintondale?', a: 'Yes. Clintondale is within our standard service area. We can target the 12515 ZIP code for your mailing needs.' },
     ],
+    lat: 41.6921,
+    lng: -74.0436,
   },
   {
     name: 'Napanoch',
@@ -480,6 +542,8 @@ const ulsterLocations: Location[] = [
     faqs: [
       { q: 'Can you target Napanoch households specifically?', a: 'Yes. Napanoch has its own ZIP code (12458), making it easy to target this area precisely in your mailing campaign.' },
     ],
+    lat: 41.7528,
+    lng: -74.3703,
   },
   {
     name: 'Shokan',
@@ -494,6 +558,8 @@ const ulsterLocations: Location[] = [
     faqs: [
       { q: 'What area does the Shokan ZIP code cover?', a: 'ZIP code 12481 covers the Shokan hamlet area. We can target this and surrounding ZIP codes for broader Catskill-area campaigns.' },
     ],
+    lat: 41.9813,
+    lng: -74.2064,
   },
   {
     name: 'West Hurley',
@@ -508,6 +574,8 @@ const ulsterLocations: Location[] = [
     faqs: [
       { q: 'Is West Hurley a separate community from Hurley?', a: 'West Hurley is a distinct hamlet with its own ZIP code (12491). We can target it separately or include it with the broader Hurley/Kingston area.' },
     ],
+    lat: 42.0094,
+    lng: -74.1153,
   },
   {
     name: 'Lake Katrine',
@@ -522,6 +590,8 @@ const ulsterLocations: Location[] = [
     faqs: [
       { q: 'Can you target the Lake Katrine commercial area?', a: 'Yes. We can target carrier routes along the Route 9W corridor and surrounding residential neighborhoods in the 12449 ZIP code.' },
     ],
+    lat: 41.9888,
+    lng: -73.9905,
   },
   {
     name: 'Tillson',
@@ -536,6 +606,8 @@ const ulsterLocations: Location[] = [
     faqs: [
       { q: 'How far is Tillson from your facility?', a: 'Tillson is approximately 5-10 minutes from our New Paltz facility, making it one of our closest service areas.' },
     ],
+    lat: 41.8358,
+    lng: -74.064,
   },
   {
     name: 'Cottekill',
@@ -550,6 +622,8 @@ const ulsterLocations: Location[] = [
     faqs: [
       { q: 'Is Cottekill in your immediate service area?', a: 'Yes — Cottekill is one of our closest communities, just minutes from our facility on South Ohioville Road.' },
     ],
+    lat: 41.8534,
+    lng: -74.1061,
   },
   {
     name: 'Connelly',
@@ -564,6 +638,8 @@ const ulsterLocations: Location[] = [
     faqs: [
       { q: 'Can you target Connelly specifically?', a: 'Yes. Connelly has its own ZIP code (12417) and carrier routes, allowing precise targeting for your mailings.' },
     ],
+    lat: 41.9101,
+    lng: -73.9912,
   },
 ];
 
@@ -589,6 +665,8 @@ const dutchessLocations: Location[] = [
       { q: 'Do you work with colleges in Poughkeepsie?', a: 'Yes. We serve educational institutions throughout the Hudson Valley, including mailings for admissions, alumni relations, fundraising, and event promotions.' },
       { q: 'Can you handle large-volume mailings for Dutchess County organizations?', a: 'Absolutely. We\'ve mailed over 2.3 million pieces and regularly handle high-volume campaigns for government agencies, healthcare providers, and educational institutions.' },
     ],
+    lat: 41.7066,
+    lng: -73.9284,
   },
   {
     name: 'Beacon',
@@ -605,6 +683,8 @@ const dutchessLocations: Location[] = [
       { q: 'What direct mail works for Beacon restaurants?', a: 'EDDM postcards targeting nearby carrier routes are very effective for Beacon restaurants. We can also create targeted lists of foodie demographics in the surrounding area.' },
       { q: 'Do you serve the Beacon waterfront area?', a: 'Yes. We target all carrier routes within the Beacon 12508 ZIP code, including the waterfront, Main Street, and residential neighborhoods.' },
     ],
+    lat: 41.5048,
+    lng: -73.9695,
   },
   {
     name: 'Fishkill',
@@ -620,6 +700,8 @@ const dutchessLocations: Location[] = [
       { q: 'Can you target the Fishkill business corridor?', a: 'Yes. We can create B2B mailing lists targeting businesses along the Route 9/I-84 corridor, or consumer lists for surrounding residential areas.' },
       { q: 'What\'s the difference between Fishkill and East Fishkill?', a: 'Fishkill (Town) and East Fishkill are separate municipalities. We serve both and can target either independently.' },
     ],
+    lat: 41.5356,
+    lng: -73.8987,
   },
   {
     name: 'East Fishkill',
@@ -635,6 +717,8 @@ const dutchessLocations: Location[] = [
       { q: 'Which ZIP codes cover East Fishkill?', a: 'East Fishkill is primarily served by 12533 (Hopewell Junction) and 12590 (Wappingers Falls area). We can target either or both.' },
       { q: 'Can you reach new homeowners in East Fishkill developments?', a: 'Yes. We offer new mover mailing lists that identify recently moved households in the East Fishkill area.' },
     ],
+    lat: 41.5533,
+    lng: -73.7956,
   },
   {
     name: 'Wappingers Falls',
@@ -649,6 +733,8 @@ const dutchessLocations: Location[] = [
     faqs: [
       { q: 'Can you target the Village of Wappingers Falls separately?', a: 'Yes. Wappingers Falls has specific carrier routes within the 12590 ZIP code that we can target independently from the broader Wappinger area.' },
     ],
+    lat: 41.5971,
+    lng: -73.917,
   },
   {
     name: 'Hyde Park',
@@ -664,6 +750,8 @@ const dutchessLocations: Location[] = [
       { q: 'Can you help Hyde Park tourism businesses with direct mail?', a: 'Yes. We create targeted mailings to visitor demographics in NYC, Westchester, Connecticut, and northern NJ to drive tourism traffic.' },
       { q: 'Do you work with CIA-related food businesses?', a: 'We serve restaurants, food producers, and hospitality businesses throughout the Hyde Park area, including those connected to the CIA community.' },
     ],
+    lat: 41.7842,
+    lng: -73.9374,
   },
   {
     name: 'Rhinebeck',
@@ -679,6 +767,8 @@ const dutchessLocations: Location[] = [
       { q: 'Can you produce high-end mail pieces for Rhinebeck businesses?', a: 'Yes. We offer premium paper stocks, custom finishes, and sophisticated design work that matches Rhinebeck\'s upscale market expectations.' },
       { q: 'What works for promoting Dutchess County Fairground events?', a: 'Oversized postcards mailed to targeted demographics within a 50-mile radius are very effective for major fairground events like the Rhinebeck Craft Fair.' },
     ],
+    lat: 41.9268,
+    lng: -73.9128,
   },
   {
     name: 'Red Hook',
@@ -694,6 +784,8 @@ const dutchessLocations: Location[] = [
       { q: 'Can you target Bard College students and faculty?', a: 'Yes. We can build mailing lists targeting the 12504 (Annandale) and 12571 (Red Hook) ZIP code areas to reach the Bard community.' },
       { q: 'Do you work with Red Hook farms and agricultural businesses?', a: 'Yes. We help farms, orchards, and CSAs with seasonal mailings to promote farm stands, U-pick events, and CSA subscriptions.' },
     ],
+    lat: 41.9951,
+    lng: -73.8755,
   },
   {
     name: 'Millbrook',
@@ -708,6 +800,8 @@ const dutchessLocations: Location[] = [
     faqs: [
       { q: 'Can you target high-income demographics in Millbrook?', a: 'Yes. We build mailing lists based on income, home value, and other demographic criteria to target Millbrook\'s affluent market precisely.' },
     ],
+    lat: 41.7875,
+    lng: -73.6906,
   },
   {
     name: 'Pawling',
@@ -722,6 +816,8 @@ const dutchessLocations: Location[] = [
     faqs: [
       { q: 'Do you serve Pawling even though it\'s in southeastern Dutchess?', a: 'Yes. We serve all of Dutchess County. Your mailing is processed at our facility and delivered directly to USPS for distribution to Pawling addresses.' },
     ],
+    lat: 41.5618,
+    lng: -73.6026,
   },
   {
     name: 'Dover',
@@ -736,6 +832,8 @@ const dutchessLocations: Location[] = [
     faqs: [
       { q: 'Which ZIP codes cover Dover?', a: 'Dover is served by ZIP codes 12522 (Dover Plains) and 12594 (Wingdale). We can target either or both.' },
     ],
+    lat: 41.6894,
+    lng: -73.5808,
   },
   {
     name: 'LaGrange',
@@ -750,6 +848,8 @@ const dutchessLocations: Location[] = [
     faqs: [
       { q: 'Can you target new homeowners in LaGrange?', a: 'Yes. Our new mover lists identify recently purchased homes in LaGrange, which are ideal targets for home service businesses.' },
     ],
+    lat: 41.6731,
+    lng: -73.8067,
   },
   {
     name: 'Pleasant Valley',
@@ -764,6 +864,8 @@ const dutchessLocations: Location[] = [
     faqs: [
       { q: 'What\'s the primary ZIP code for Pleasant Valley?', a: 'Pleasant Valley\'s primary ZIP code is 12569. We can target all carrier routes within this area.' },
     ],
+    lat: 41.7584,
+    lng: -73.802,
   },
   {
     name: 'Wappinger',
@@ -778,6 +880,8 @@ const dutchessLocations: Location[] = [
     faqs: [
       { q: 'Can you target the Town of Wappinger and Village of Wappingers Falls separately?', a: 'Yes. We can isolate carrier routes for the village versus the broader town area.' },
     ],
+    lat: 41.5861,
+    lng: -73.9169,
   },
   {
     name: 'Milan',
@@ -792,6 +896,8 @@ const dutchessLocations: Location[] = [
     faqs: [
       { q: 'Can you reach rural addresses in Milan?', a: 'Yes. Our data includes all USPS-deliverable addresses in the Milan area, including rural routes.' },
     ],
+    lat: 41.9534,
+    lng: -73.7921,
   },
   {
     name: 'Pine Plains',
@@ -806,6 +912,8 @@ const dutchessLocations: Location[] = [
     faqs: [
       { q: 'Can you target both full-time and seasonal Pine Plains residents?', a: 'Yes. We can build lists that include all deliverable addresses in the Pine Plains ZIP code, capturing both year-round and seasonal residents.' },
     ],
+    lat: 41.9797,
+    lng: -73.6563,
   },
   {
     name: 'Rhinecliff',
@@ -820,6 +928,8 @@ const dutchessLocations: Location[] = [
     faqs: [
       { q: 'Can you include Rhinecliff in a broader Rhinebeck-area mailing?', a: 'Yes. Rhinecliff\'s 12574 ZIP code can be included alongside Rhinebeck\'s 12572 for a comprehensive area campaign.' },
     ],
+    lat: 41.9245,
+    lng: -73.943,
   },
   {
     name: 'Tivoli',
@@ -834,6 +944,8 @@ const dutchessLocations: Location[] = [
     faqs: [
       { q: 'Can you combine Tivoli with Red Hook and Rhinebeck in one mailing?', a: 'Yes. We can create campaigns that cover multiple northern Dutchess communities for broader reach.' },
     ],
+    lat: 42.0585,
+    lng: -73.9089,
   },
   {
     name: 'Clinton',
@@ -848,6 +960,8 @@ const dutchessLocations: Location[] = [
     faqs: [
       { q: 'What ZIP code covers Clinton?', a: 'Clinton is primarily served by ZIP code 12514 (Clinton Corners). We can target all carrier routes in this area.' },
     ],
+    lat: 41.85,
+    lng: -73.8167,
   },
   {
     name: 'Stanford',
@@ -862,6 +976,8 @@ const dutchessLocations: Location[] = [
     faqs: [
       { q: 'Can you target the Stanfordville area?', a: 'Yes. We can target ZIP code 12581 (Stanfordville) to reach Stanford-area households and businesses.' },
     ],
+    lat: 41.8839,
+    lng: -73.7033,
   },
   {
     name: 'Amenia',
@@ -876,6 +992,8 @@ const dutchessLocations: Location[] = [
     faqs: [
       { q: 'Can you reach both Amenia residents and Connecticut visitors?', a: 'Yes. We can create campaigns targeting Amenia ZIP codes alongside Litchfield County CT ZIP codes for cross-border reach.' },
     ],
+    lat: 41.8495,
+    lng: -73.5573,
   },
   {
     name: 'North East',
@@ -890,6 +1008,8 @@ const dutchessLocations: Location[] = [
     faqs: [
       { q: 'Can you target the Millerton village area?', a: 'Yes. Millerton/North East uses ZIP code 12546. We can target all carrier routes within this area.' },
     ],
+    lat: 41.9168,
+    lng: -73.5662,
   },
   {
     name: 'Union Vale',
@@ -904,6 +1024,8 @@ const dutchessLocations: Location[] = [
     faqs: [
       { q: 'What ZIP code covers Union Vale?', a: 'Union Vale is primarily served by ZIP code 12540 (Lagrangeville). We can target carrier routes specific to the Union Vale area.' },
     ],
+    lat: 41.6981,
+    lng: -73.6992,
   },
   {
     name: 'Washington',
@@ -918,6 +1040,8 @@ const dutchessLocations: Location[] = [
     faqs: [
       { q: 'Is Washington the same as Millbrook?', a: 'Millbrook is a village within the Town of Washington. We can target the village specifically or the broader town area.' },
     ],
+    lat: 41.7867,
+    lng: -73.6814,
   },
   {
     name: 'Hopewell Junction',
@@ -932,6 +1056,8 @@ const dutchessLocations: Location[] = [
     faqs: [
       { q: 'Can you target new housing developments in Hopewell Junction?', a: 'Yes. We offer new construction and new mover lists that identify recently built homes and new residents in the Hopewell Junction area.' },
     ],
+    lat: 41.5811,
+    lng: -73.8107,
   },
 ];
 
@@ -956,6 +1082,8 @@ const orangeLocations: Location[] = [
       { q: 'Can you handle multilingual mailings for Newburgh\'s diverse community?', a: 'Yes. We can produce bilingual and multilingual mail pieces to reach Newburgh\'s diverse population, including Spanish-language materials.' },
       { q: 'Do you work with Newburgh city government?', a: 'We serve municipal agencies and government organizations throughout the Hudson Valley, handling official notifications, public notices, and community outreach mailings.' },
     ],
+    lat: 41.5001,
+    lng: -74.0098,
   },
   {
     name: 'Middletown',
@@ -971,6 +1099,8 @@ const orangeLocations: Location[] = [
       { q: 'Can you target the greater Middletown area beyond city limits?', a: 'Yes. We can build campaigns that target Middletown itself plus surrounding towns like Wallkill, Crawford, and Wawayanda for maximum regional reach.' },
       { q: 'Do you work with Garnet Health and other Middletown healthcare providers?', a: 'We serve healthcare organizations throughout the Hudson Valley with patient communications, community health outreach, and referral marketing campaigns.' },
     ],
+    lat: 41.4501,
+    lng: -74.4165,
   },
   {
     name: 'Goshen',
@@ -986,6 +1116,8 @@ const orangeLocations: Location[] = [
       { q: 'Do you work with Orange County government offices in Goshen?', a: 'Yes. We handle mailings for government agencies and municipal organizations throughout Orange County.' },
       { q: 'Can you target Goshen village separately from the surrounding town?', a: 'Yes. We can isolate Goshen village carrier routes from the broader 10924 ZIP code area.' },
     ],
+    lat: 41.4021,
+    lng: -74.3242,
   },
   {
     name: 'Monroe',
@@ -1001,6 +1133,8 @@ const orangeLocations: Location[] = [
       { q: 'Can you target specific areas within the Town of Monroe?', a: 'Yes. Monroe has multiple carrier routes that we can target independently, allowing you to focus on specific neighborhoods or the entire town.' },
       { q: 'What direct mail formats work for Monroe businesses?', a: 'EDDM oversized postcards and targeted direct mail letters both perform well in Monroe\'s dense residential neighborhoods.' },
     ],
+    lat: 41.3305,
+    lng: -74.1866,
   },
   {
     name: 'Warwick',
@@ -1016,6 +1150,8 @@ const orangeLocations: Location[] = [
       { q: 'Can you help promote Warwick Applefest and similar events?', a: 'Yes. We create targeted event mailings that reach likely visitors in surrounding counties and the NYC metro area.' },
       { q: 'Do you work with Warwick Valley wineries?', a: 'Yes. We help wineries and agricultural businesses with seasonal promotions, event invitations, and customer retention mailings.' },
     ],
+    lat: 41.2565,
+    lng: -74.3599,
   },
   {
     name: 'Cornwall',
@@ -1030,6 +1166,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'Can you help Storm King-area businesses market to NYC visitors?', a: 'Yes. We target NYC and Westchester demographics likely to visit Storm King and the Cornwall area for day trips and weekend getaways.' },
     ],
+    lat: 41.4344,
+    lng: -74.0358,
   },
   {
     name: 'New Windsor',
@@ -1045,6 +1183,8 @@ const orangeLocations: Location[] = [
       { q: 'Can you target the Stewart Airport corridor?', a: 'Yes. We can target carrier routes along the Route 17K/I-87 corridor in New Windsor for maximum commercial visibility.' },
       { q: 'Is EDDM effective for New Windsor retail?', a: 'Very effective. New Windsor\'s dense residential areas are ideal for EDDM campaigns promoting retail, dining, and service businesses.' },
     ],
+    lat: 41.4768,
+    lng: -74.0238,
   },
   {
     name: 'Wallkill (Orange)',
@@ -1059,6 +1199,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'Is this the same Wallkill as in Ulster County?', a: 'No. The Town of Wallkill in Orange County is a separate municipality from the hamlet of Wallkill in Ulster County. We serve both.' },
     ],
+    lat: 41.4637,
+    lng: -74.3724,
   },
   {
     name: 'Chester',
@@ -1073,6 +1215,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'Can you include Sugar Loaf in a Chester-area mailing?', a: 'Yes. Sugar Loaf is within the Chester ZIP code area. We can target all carrier routes covering Chester and Sugar Loaf together.' },
     ],
+    lat: 41.3625,
+    lng: -74.2715,
   },
   {
     name: 'Montgomery',
@@ -1087,6 +1231,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'Can you target Montgomery and Walden separately?', a: 'Yes. Montgomery (12549) and Walden (12586) have separate ZIP codes, allowing precise targeting for each community.' },
     ],
+    lat: 41.5276,
+    lng: -74.2368,
   },
   {
     name: 'Blooming Grove',
@@ -1101,6 +1247,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'What ZIP codes cover Blooming Grove?', a: 'Blooming Grove is primarily covered by ZIP codes 10914 (Blooming Grove) and 10992 (Washingtonville). We can target either or both.' },
     ],
+    lat: 41.4093,
+    lng: -74.1951,
   },
   {
     name: 'Woodbury',
@@ -1115,6 +1263,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'Can you target tourists visiting Woodbury Common?', a: 'Direct mail is best for reaching local residents and regional audiences. For Woodbury Common tourists, we recommend targeting residential ZIP codes in the NYC metro area to drive planned visits.' },
     ],
+    lat: 41.3645,
+    lng: -74.106,
   },
   {
     name: 'Highlands',
@@ -1129,6 +1279,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'Can you target military families near West Point?', a: 'Yes. We can target carrier routes in the Highland Falls and Fort Montgomery areas to reach military families and civilian residents near West Point.' },
     ],
+    lat: 41.36,
+    lng: -74.0083,
   },
   {
     name: 'Tuxedo',
@@ -1143,6 +1295,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'Can you target Tuxedo Park specifically?', a: 'Yes. We can target specific carrier routes within the 10987 ZIP code to focus on Tuxedo Park and surrounding areas.' },
     ],
+    lat: 41.1934,
+    lng: -74.1843,
   },
   {
     name: 'Port Jervis',
@@ -1157,6 +1311,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'Can you target the tri-state Port Jervis area?', a: 'Yes. We can build mailing lists covering Port Jervis NY, Matamoras PA, and Montague NJ for complete tri-state coverage.' },
     ],
+    lat: 41.3751,
+    lng: -74.6927,
   },
   {
     name: 'Crawford',
@@ -1171,6 +1327,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'What ZIP code covers Crawford?', a: 'Crawford is primarily served by ZIP code 12549 (Montgomery). We can target carrier routes specific to the Crawford area.' },
     ],
+    lat: 41.6,
+    lng: -74.3,
   },
   {
     name: 'Hamptonburgh',
@@ -1185,6 +1343,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'Can you serve the Hamptonburgh area?', a: 'Yes. We serve all of Orange County, including rural communities like Hamptonburgh.' },
     ],
+    lat: 41.4351,
+    lng: -74.2602,
   },
   {
     name: 'Wawayanda',
@@ -1199,6 +1359,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'Can you target new developments in Wawayanda?', a: 'Yes. Our new mover lists identify recently moved households, ideal for reaching new residents in Wawayanda\'s growing neighborhoods.' },
     ],
+    lat: 41.3933,
+    lng: -74.4567,
   },
   {
     name: 'Greenville',
@@ -1213,6 +1375,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'Does Cornerstone serve as far as Greenville?', a: 'Yes. We serve all of Orange County. Your mail is processed at our facility and delivered directly to USPS for distribution.' },
     ],
+    lat: 41.33,
+    lng: -74.37,
   },
   {
     name: 'Minisink',
@@ -1227,6 +1391,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'Can you reach addresses near the NJ border in Minisink?', a: 'Yes. We mail to all USPS-deliverable addresses in the Minisink area, right up to the state line.' },
     ],
+    lat: 41.3333,
+    lng: -74.4667,
   },
   {
     name: 'Mount Hope',
@@ -1241,6 +1407,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'What ZIP code serves Mount Hope?', a: 'Mount Hope is primarily served by the 10940 ZIP code (Middletown). We can target carrier routes specific to the Mount Hope area.' },
     ],
+    lat: 41.4667,
+    lng: -74.45,
   },
   {
     name: 'Deerpark',
@@ -1255,6 +1423,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'Which ZIP codes cover Deerpark?', a: 'Deerpark is served by ZIP codes 12771 (Port Jervis) and 12780 (Sparrow Bush). We can target either or both.' },
     ],
+    lat: 41.4167,
+    lng: -74.6833,
   },
   {
     name: 'Washingtonville',
@@ -1269,6 +1439,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'Can you help promote events at Brotherhood Winery?', a: 'Yes. We create targeted mailings to wine-enthusiast demographics in the metro area to drive event attendance and winery visits.' },
     ],
+    lat: 41.4279,
+    lng: -74.1659,
   },
   {
     name: 'Florida',
@@ -1283,6 +1455,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'Can you include Florida in a broader Warwick Valley mailing?', a: 'Yes. We can combine Florida, Warwick, and surrounding communities in a single comprehensive campaign.' },
     ],
+    lat: 41.3333,
+    lng: -74.35,
   },
   {
     name: 'Walden',
@@ -1297,6 +1471,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'Can you target the Village of Walden specifically?', a: 'Yes. Walden has its own ZIP code (12586), making it easy to target this community precisely in your mailing campaign.' },
     ],
+    lat: 41.5576,
+    lng: -74.1876,
   },
   {
     name: 'Highland Falls',
@@ -1311,6 +1487,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'Can you target military families in Highland Falls?', a: 'Yes. We can target all carrier routes in the 10928 ZIP code, reaching both military families and civilian residents near West Point.' },
     ],
+    lat: 41.3694,
+    lng: -73.9663,
   },
   {
     name: 'Maybrook',
@@ -1325,6 +1503,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'What ZIP code covers Maybrook?', a: 'Maybrook uses ZIP code 12543. We can target all carrier routes in this area.' },
     ],
+    lat: 41.4401,
+    lng: -74.2163,
   },
   {
     name: 'Harriman',
@@ -1339,6 +1519,8 @@ const orangeLocations: Location[] = [
     faqs: [
       { q: 'Can you target the Harriman/Woodbury Common area?', a: 'Yes. We can target ZIP code 10926 and surrounding areas to reach residents and businesses in the Harriman corridor.' },
     ],
+    lat: 41.3101,
+    lng: -74.1465,
   },
 ];
 
@@ -1353,6 +1535,8 @@ export const COUNTIES_DATA: County[] = [
     countyKey: 'ulster',
     seat: 'Kingston',
     population: '181,000',
+    lat: 41.8886,
+    lng: -74.1257,
     description: 'Home base for Cornerstone Services. We serve every town, village, and hamlet across Ulster County.',
     intro: 'Ulster County is home to Cornerstone Services, and we\'ve been serving businesses and organizations here since 1998. From the Hudson River to the Catskill Mountains, Ulster County encompasses thriving communities like Kingston, Saugerties, Woodstock, and New Paltz — our hometown. With over 25 years of experience mailing to every ZIP code and carrier route in the county, no one knows Ulster County\'s postal landscape better than we do. Whether you\'re a Kingston restaurant targeting nearby neighborhoods, a Woodstock gallery promoting an exhibition, or a fire department running an annual fundraiser, we have the data, equipment, and expertise to get your message delivered.',
     locations: ulsterLocations,
@@ -1363,6 +1547,8 @@ export const COUNTIES_DATA: County[] = [
     countyKey: 'dutchess',
     seat: 'Poughkeepsie',
     population: '295,000',
+    lat: 41.7650,
+    lng: -73.7949,
     description: 'From Beacon to Millerton, we provide full direct mail services throughout Dutchess County.',
     intro: 'Dutchess County stretches from the Hudson River to the Connecticut border, encompassing vibrant communities like Poughkeepsie, Beacon, Rhinebeck, and Millbrook. Just 20 minutes from our New Paltz facility across the Mid-Hudson Bridge, Dutchess County is one of our most active service areas. We work with colleges, healthcare systems, government agencies, and businesses of every size throughout the county. Whether you\'re targeting the diverse neighborhoods of Poughkeepsie, the arts community in Beacon, or the affluent market in Millbrook, our carrier route data covers every deliverable address in Dutchess County.',
     locations: dutchessLocations,
@@ -1373,6 +1559,8 @@ export const COUNTIES_DATA: County[] = [
     countyKey: 'orange',
     seat: 'Goshen',
     population: '401,000',
+    lat: 41.4012,
+    lng: -74.3118,
     description: 'Serving businesses and organizations across Orange County from Newburgh to Port Jervis.',
     intro: 'Orange County is the most populated county in our service area, with over 400,000 residents across communities ranging from the diverse City of Newburgh to the charming Village of Warwick. Located about 30 minutes south of our New Paltz facility, Orange County offers tremendous opportunities for businesses looking to reach large audiences through direct mail. We serve municipal agencies, healthcare organizations, retailers, restaurants, and nonprofits throughout the county — from the Woodbury Common corridor to the Port Jervis tri-state area. Our data covers every carrier route and deliverable address across all of Orange County\'s towns, villages, and cities.',
     locations: orangeLocations,

@@ -27,6 +27,12 @@ export const BUSINESS = {
     municipalities: '47',
     onTime: '98%',
   },
+  rating: {
+    ratingValue: '5.0',
+    reviewCount: '0',
+    bestRating: '5',
+    worstRating: '1',
+  },
 } as const;
 
 export const NAV_ITEMS = [
