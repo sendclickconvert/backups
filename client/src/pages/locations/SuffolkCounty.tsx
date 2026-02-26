@@ -92,8 +92,8 @@ const situations = [
   { label: "Inherited Property", href: "/situations/inherited-property", blogHref: "https://blog.thepropertyfather.com/sell-inherited-house-new-york/" },
   { label: "Probate Sales", href: "/situations/probate", blogHref: "https://blog.thepropertyfather.com/probate-sales-suffolk-county/" },
   { label: "Selling As-Is", href: "/situations/as-is", blogHref: "https://blog.thepropertyfather.com/sell-house-as-is-long-island/" },
-  { label: "Selling with Liens", href: "#", blogHref: "https://blog.thepropertyfather.com/sell-house-with-liens-long-island/" },
-  { label: "Relocating", href: "#", blogHref: "https://blog.thepropertyfather.com/relocating-sell-long-island-house/" },
+  { label: "Selling with Liens", href: "https://blog.thepropertyfather.com/sell-house-with-liens-long-island/", blogHref: "https://blog.thepropertyfather.com/sell-house-with-liens-long-island/" },
+  { label: "Relocating", href: "https://blog.thepropertyfather.com/relocating-sell-long-island-house/", blogHref: "https://blog.thepropertyfather.com/relocating-sell-long-island-house/" },
 ];
 
 export default function SuffolkCounty() {
