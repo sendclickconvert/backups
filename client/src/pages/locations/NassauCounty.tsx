@@ -308,21 +308,31 @@ export default function NassauCounty() {
               Every homeowner's situation is different. Here are the most common scenarios where Nassau County homeowners choose a cash sale:
             </p>
             <div className="grid md:grid-cols-2 gap-4 mb-8">
-              {situations.map((situation, idx) => (
-                <Card key={idx} className="border-0 shadow-sm">
-                  <CardContent className="p-5">
-                    <Link href={situation.href}>
-                      <span className="font-bold text-lg hover:text-gold cursor-pointer flex items-center gap-2" data-testid={`link-situation-${idx}`}>
-                        <ArrowRight className="h-4 w-4 text-gold" />
-                        {situation.label}
-                      </span>
-                    </Link>
-                    <a href={situation.blogHref} target="_blank" rel="noopener noreferrer" className="text-sm text-gold underline mt-1 inline-block">
-                      Read our guide
-                    </a>
-                  </CardContent>
-                </Card>
-              ))}
+              {situations.map((situation, idx) => {
+                const isExternal = situation.href.startsWith("http");
+                return (
+                  <Card key={idx} className="border-0 shadow-sm">
+                    <CardContent className="p-5">
+                      {isExternal ? (
+                        <a href={situation.href} target="_blank" rel="noopener noreferrer" className="font-bold text-lg hover:text-gold cursor-pointer flex items-center gap-2" data-testid={`link-situation-${idx}`}>
+                          <ArrowRight className="h-4 w-4 text-gold" />
+                          {situation.label}
+                        </a>
+                      ) : (
+                        <Link href={situation.href}>
+                          <span className="font-bold text-lg hover:text-gold cursor-pointer flex items-center gap-2" data-testid={`link-situation-${idx}`}>
+                            <ArrowRight className="h-4 w-4 text-gold" />
+                            {situation.label}
+                          </span>
+                        </Link>
+                      )}
+                      <a href={situation.blogHref} target="_blank" rel="noopener noreferrer" className="text-sm text-gold underline mt-1 inline-block">
+                        Read our guide
+                      </a>
+                    </CardContent>
+                  </Card>
+                );
+              })}
             </div>
             <p className="text-lg text-muted-foreground leading-relaxed">
               No matter your situation, we approach every conversation with empathy and honesty. These are real people in real situations, not transactions. If we're not the right solution for you, we'll tell you. Learn more about <a href="https://blog.thepropertyfather.com/are-we-buy-houses-companies-legit/" className="text-gold underline" target="_blank" rel="noopener noreferrer">how to verify we're legitimate</a> and <a href="https://blog.thepropertyfather.com/questions-to-ask-cash-buyer/" className="text-gold underline" target="_blank" rel="noopener noreferrer">questions to ask any cash buyer</a>.
