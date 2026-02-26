@@ -52,12 +52,13 @@
       "Ready to Start Your Next Mailing?"
     ],
     "schema_types": [
-      "Service"
+      "Service",
+      "BreadcrumbList"
     ],
     "has_aggregate_rating": true,
     "has_faq_schema": false,
     "has_geo": false,
-    "has_breadcrumb": false,
+    "has_breadcrumb": true,
     "has_person": false,
     "tel_links": 6,
     "estimate_links": 9,
@@ -87,12 +88,13 @@
       "Ready to Start Your Next Mailing?"
     ],
     "schema_types": [
-      "Service"
+      "Service",
+      "BreadcrumbList"
     ],
     "has_aggregate_rating": true,
     "has_faq_schema": false,
     "has_geo": false,
-    "has_breadcrumb": false,
+    "has_breadcrumb": true,
     "has_person": false,
     "tel_links": 6,
     "estimate_links": 9,
@@ -122,12 +124,13 @@
       "Ready to Start Your Next Mailing?"
     ],
     "schema_types": [
-      "Service"
+      "Service",
+      "BreadcrumbList"
     ],
     "has_aggregate_rating": true,
     "has_faq_schema": false,
     "has_geo": false,
-    "has_breadcrumb": false,
+    "has_breadcrumb": true,
     "has_person": false,
     "tel_links": 6,
     "estimate_links": 9,
@@ -157,12 +160,13 @@
       "Ready to Start Your Next Mailing?"
     ],
     "schema_types": [
-      "Service"
+      "Service",
+      "BreadcrumbList"
     ],
     "has_aggregate_rating": true,
     "has_faq_schema": false,
     "has_geo": false,
-    "has_breadcrumb": false,
+    "has_breadcrumb": true,
     "has_person": false,
     "tel_links": 6,
     "estimate_links": 9,
@@ -192,12 +196,13 @@
       "Ready to Start Your Next Mailing?"
     ],
     "schema_types": [
-      "Service"
+      "Service",
+      "BreadcrumbList"
     ],
     "has_aggregate_rating": true,
     "has_faq_schema": false,
     "has_geo": false,
-    "has_breadcrumb": false,
+    "has_breadcrumb": true,
     "has_person": false,
     "tel_links": 6,
     "estimate_links": 9,
@@ -227,12 +232,13 @@
       "Ready to Start Your Next Mailing?"
     ],
     "schema_types": [
-      "Service"
+      "Service",
+      "BreadcrumbList"
     ],
     "has_aggregate_rating": true,
     "has_faq_schema": false,
     "has_geo": false,
-    "has_breadcrumb": false,
+    "has_breadcrumb": true,
     "has_person": false,
     "tel_links": 6,
     "estimate_links": 10,
@@ -267,12 +273,13 @@
     ],
     "schema_types": [
       "Service",
+      "BreadcrumbList",
       "FAQPage"
     ],
     "has_aggregate_rating": true,
     "has_faq_schema": true,
     "has_geo": false,
-    "has_breadcrumb": false,
+    "has_breadcrumb": true,
     "has_person": false,
     "tel_links": 5,
     "estimate_links": 8,
@@ -304,12 +311,13 @@
       "Need Union-Printed Materials?"
     ],
     "schema_types": [
-      "Service"
+      "Service",
+      "BreadcrumbList"
     ],
     "has_aggregate_rating": true,
     "has_faq_schema": false,
     "has_geo": false,
-    "has_breadcrumb": false,
+    "has_breadcrumb": true,
     "has_person": false,
     "tel_links": 5,
     "estimate_links": 8,
@@ -341,12 +349,13 @@
       "Need a Website That Converts?"
     ],
     "schema_types": [
-      "Service"
+      "Service",
+      "BreadcrumbList"
     ],
     "has_aggregate_rating": true,
     "has_faq_schema": false,
     "has_geo": false,
-    "has_breadcrumb": false,
+    "has_breadcrumb": true,
     "has_person": false,
     "tel_links": 5,
     "estimate_links": 8,
@@ -379,12 +388,13 @@
     ],
     "schema_types": [
       "ProfessionalService",
+      "BreadcrumbList",
       "LocalBusiness"
     ],
     "has_aggregate_rating": true,
     "has_faq_schema": false,
     "has_geo": true,
-    "has_breadcrumb": false,
+    "has_breadcrumb": true,
     "has_person": false,
     "tel_links": 5,
     "estimate_links": 8,
@@ -417,12 +427,13 @@
     ],
     "schema_types": [
       "ProfessionalService",
+      "BreadcrumbList",
       "LocalBusiness"
     ],
     "has_aggregate_rating": true,
     "has_faq_schema": false,
     "has_geo": true,
-    "has_breadcrumb": false,
+    "has_breadcrumb": true,
     "has_person": false,
     "tel_links": 5,
     "estimate_links": 8,
@@ -455,12 +466,13 @@
     ],
     "schema_types": [
       "ProfessionalService",
+      "BreadcrumbList",
       "LocalBusiness"
     ],
     "has_aggregate_rating": true,
     "has_faq_schema": false,
     "has_geo": true,
-    "has_breadcrumb": false,
+    "has_breadcrumb": true,
     "has_person": false,
     "tel_links": 5,
     "estimate_links": 8,
@@ -492,13 +504,14 @@
     ],
     "schema_types": [
       "ProfessionalService",
+      "BreadcrumbList",
       "Service",
       "FAQPage"
     ],
     "has_aggregate_rating": true,
     "has_faq_schema": true,
     "has_geo": true,
-    "has_breadcrumb": false,
+    "has_breadcrumb": true,
     "has_person": false,
     "tel_links": 6,
     "estimate_links": 9,
@@ -530,13 +543,14 @@
     ],
     "schema_types": [
       "ProfessionalService",
+      "BreadcrumbList",
       "Service",
       "FAQPage"
     ],
     "has_aggregate_rating": true,
     "has_faq_schema": true,
     "has_geo": true,
-    "has_breadcrumb": false,
+    "has_breadcrumb": true,
     "has_person": false,
     "tel_links": 6,
     "estimate_links": 9,
@@ -568,13 +582,14 @@
     ],
     "schema_types": [
       "ProfessionalService",
+      "BreadcrumbList",
       "Service",
       "FAQPage"
     ],
     "has_aggregate_rating": true,
     "has_faq_schema": true,
     "has_geo": true,
-    "has_breadcrumb": false,
+    "has_breadcrumb": true,
     "has_person": false,
     "tel_links": 6,
     "estimate_links": 9,
@@ -606,13 +621,14 @@
     ],
     "schema_types": [
       "ProfessionalService",
+      "BreadcrumbList",
       "Service",
       "FAQPage"
     ],
     "has_aggregate_rating": true,
     "has_faq_schema": true,
     "has_geo": true,
-    "has_breadcrumb": false,
+    "has_breadcrumb": true,
     "has_person": false,
     "tel_links": 6,
     "estimate_links": 9,
@@ -644,13 +660,14 @@
     ],
     "schema_types": [
       "ProfessionalService",
+      "BreadcrumbList",
       "Service",
       "FAQPage"
     ],
     "has_aggregate_rating": true,
     "has_faq_schema": true,
     "has_geo": true,
-    "has_breadcrumb": false,
+    "has_breadcrumb": true,
     "has_person": false,
     "tel_links": 6,
     "estimate_links": 9,

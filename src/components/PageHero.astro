@@ -1,4 +1,6 @@
 ---
+import { BUSINESS } from '../data/site';
+
 export interface Props {
   title: string;
   subtitle?: string;
@@ -6,7 +8,23 @@ export interface Props {
 }
 
 const { title, subtitle, breadcrumbs } = Astro.props;
+
+const breadcrumbSchema = breadcrumbs ? {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: BUSINESS.url },
+    ...breadcrumbs.map((crumb, i) => ({
+      '@type': 'ListItem' as const,
+      position: i + 2,
+      name: crumb.label,
+      ...(crumb.href ? { item: `${BUSINESS.url}${crumb.href}` } : {}),
+    })),
+  ],
+} : null;
 ---
+
+{breadcrumbSchema && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />}
 
 <section class="relative bg-crst-primary overflow-hidden">
   <div class="absolute inset-0">
