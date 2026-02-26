@@ -3,17 +3,35 @@ import { Button } from "@/components/ui/button";
 import ContactForm from "@/components/ContactForm";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
-import { BreadcrumbSchema } from "@/components/SchemaMarkup";
+import { BreadcrumbSchema, FAQSchema } from "@/components/SchemaMarkup";
 import AuthorByline from "@/components/AuthorByline";
 import { getTownBySlug, suffolkTownCoordinates } from "@/data/suffolk-towns";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import {
   MapPin,
   Phone,
   ArrowRight,
   ArrowLeft,
   ChevronRight,
+  ExternalLink,
 } from "lucide-react";
 import { useEffect } from "react";
+
+const blogLinks = [
+  { label: "How We Buy Houses", href: "https://blog.thepropertyfather.com/how-do-we-buy-houses-companies-work/" },
+  { label: "Cash Buyer vs. Realtor", href: "https://blog.thepropertyfather.com/cash-buyer-vs-realtor/" },
+  { label: "Why Cash Offers Are Lower", href: "https://blog.thepropertyfather.com/why-cash-offers-are-lower/" },
+  { label: "Are Cash Buyers Legit?", href: "https://blog.thepropertyfather.com/are-we-buy-houses-companies-legit/" },
+  { label: "Selling During Divorce", href: "https://blog.thepropertyfather.com/sell-house-during-divorce-long-island/" },
+  { label: "Facing Foreclosure", href: "https://blog.thepropertyfather.com/facing-foreclosure-long-island/" },
+  { label: "Selling an Inherited House", href: "https://blog.thepropertyfather.com/sell-inherited-house-new-york/" },
+  { label: "Sell As-Is on Long Island", href: "https://blog.thepropertyfather.com/sell-house-as-is-long-island/" },
+];
 
 function TownSchemaMarkup({ townName, metaDescription }: { townName: string; metaDescription: string }) {
   const coords = suffolkTownCoordinates[townName];
@@ -25,7 +43,14 @@ function TownSchemaMarkup({ townName, metaDescription }: { townName: string; met
       "@type": "LocalBusiness",
       "name": "The Property Father",
       "telephone": "(516) 548-6558",
-      "url": "https://thepropertyfather.com"
+      "url": "https://thepropertyfather.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "100 Washington Ave",
+        "addressLocality": "Patchogue",
+        "addressRegion": "NY",
+        "postalCode": "11772"
+      }
     },
     "areaServed": {
       "@type": "City",
@@ -83,6 +108,7 @@ export default function SuffolkTownPage() {
         { label: "Suffolk County", href: "/locations/suffolk-county" },
         { label: town.townName }
       ]} />
+      {town.faqs && town.faqs.length > 0 && <FAQSchema faqs={town.faqs} />}
 
       <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
@@ -169,7 +195,73 @@ export default function SuffolkTownPage() {
               </div>
             ))}
 
+            {town.neighborhoods && town.neighborhoods.length > 0 && (
+              <div className="mb-12">
+                <h2 className="text-2xl lg:text-3xl font-bold mb-4" data-testid="text-neighborhoods-heading">
+                  Villages and Neighborhoods in {town.townName} We Serve
+                </h2>
+                {town.zipCodes && town.zipCodes.length > 0 && (
+                  <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
+                    ZIP codes served: {town.zipCodes.join(", ")}
+                  </p>
+                )}
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                  {town.neighborhoods.map((n, i) => (
+                    <div key={i} className="bg-muted rounded-md px-3 py-2 text-sm text-muted-foreground">
+                      {n}
+                    </div>
+                  ))}
+                </div>
+                {town.schoolDistrict && (
+                  <p className="text-sm text-muted-foreground mt-4">
+                    School District: {town.schoolDistrict}
+                  </p>
+                )}
+                {town.lirr && (
+                  <p className="text-sm text-muted-foreground mt-1">
+                    LIRR Station: {town.lirr}
+                  </p>
+                )}
+              </div>
+            )}
+
+            {town.faqs && town.faqs.length > 0 && (
+              <div className="mb-12">
+                <h2 className="text-2xl lg:text-3xl font-bold mb-6" data-testid="text-faq-heading">
+                  Frequently Asked Questions
+                </h2>
+                <Accordion type="single" collapsible className="w-full">
+                  {town.faqs.map((faq, index) => (
+                    <AccordionItem key={index} value={`faq-${index}`}>
+                      <AccordionTrigger className="text-left" data-testid={`faq-trigger-${index}`}>
+                        {faq.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground leading-relaxed" data-testid={`faq-content-${index}`}>
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
+            )}
+
+            <div className="mb-12 p-6 bg-muted rounded-lg">
+              <h3 className="font-bold mb-3 text-sm uppercase tracking-wide text-muted-foreground">Helpful Resources</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                {blogLinks.map((link, i) => (
+                  <a key={i} href={link.href} target="_blank" rel="noopener noreferrer" className="text-sm text-gold hover:underline flex items-center gap-1" data-testid={`link-blog-${i}`}>
+                    <ExternalLink className="h-3 w-3" />
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            </div>
+
             <AuthorByline className="mt-8 mb-12" />
+
+            <p className="text-xs text-muted-foreground italic">
+              This content is for informational purposes only and does not constitute legal or financial advice. Consult with a licensed attorney and/or financial advisor before making real estate decisions.
+            </p>
           </div>
         </div>
       </section>

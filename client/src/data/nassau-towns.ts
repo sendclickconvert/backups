@@ -3,6 +3,11 @@ export interface TownSection {
   paragraphs: string[];
 }
 
+export interface TownFAQ {
+  question: string;
+  answer: string;
+}
+
 export interface TownData {
   slug: string;
   townName: string;
@@ -11,6 +16,13 @@ export interface TownData {
   h1: string;
   sections: TownSection[];
   relatedLinks: string[];
+  faqs?: TownFAQ[];
+  neighborhoods?: string[];
+  zipCodes?: string[];
+  schoolDistrict?: string;
+  lirr?: string;
+  medianPrice?: string;
+  medianPriceSource?: string;
 }
 
 export const nassauTowns: TownData[] = [
@@ -51,6 +63,30 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/inherited-property","/situations/foreclosure","/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Baldwin home?",
+        answer: "We can close in as few as 7 days. Most Baldwin transactions close within 14-21 days. Because we pay cash, there are no mortgage contingencies or bank appraisals to wait for. The only variable is title clearance and attorney scheduling — required under NY Judiciary Law § 484."
+      },
+      {
+        question: "Do you buy houses in flood zones near Baldwin Harbor?",
+        answer: "Yes. Many Baldwin properties near Milburn Creek and Baldwin Harbor sit in FEMA flood zones. We buy flood zone properties as-is, regardless of flood insurance costs or prior storm damage. We're familiar with the post-Sandy landscape in this area."
+      },
+      {
+        question: "What's the median home price in Baldwin?",
+        answer: "Based on Redfin data (Q4 2024), median home values in Baldwin have ranged from $500,000 to $575,000 depending on proximity to the water and property condition. Our cash offers are based on comparable sales in your specific section of Baldwin, not countywide averages."
+      },
+      {
+        question: "Do I need to clean out the house before selling?",
+        answer: "No. We buy houses as-is, including all contents. If you need to leave furniture, personal items, or even debris behind, that's fine. We handle the cleanout after closing at no cost to you."
+      }
+    ],
+    neighborhoods: ["Baldwin Harbor", "Baldwin Park area", "Grand Avenue corridor", "Sunrise Highway area", "Merrick Road corridor", "Seaman Avenue", "Milburn Creek waterfront"],
+    zipCodes: ["11510"],
+    schoolDistrict: "Baldwin Union Free School District",
+    lirr: "Baldwin (Babylon Branch)",
+    medianPrice: "$500,000-$575,000",
+    medianPriceSource: "Redfin data, Q4 2024",
   },
   {
     slug: "bellmore",
@@ -89,6 +125,24 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/downsizing","/situations/divorce","/how-it-works"],
+    faqs: [
+      {
+        question: "How much are property taxes in Bellmore?",
+        answer: "Nassau County property taxes in Bellmore regularly exceed $12,000 to $15,000 per year, based on Nassau County Department of Assessment data. Every month you hold a property means another month of taxes, insurance, and maintenance costs."
+      },
+      {
+        question: "Do you buy houses that need major repairs in Bellmore?",
+        answer: "Yes. We regularly purchase homes with outdated electrical panels, old oil tanks, cracked foundations, and deferred maintenance. We buy as-is — no repairs needed before closing."
+      },
+      {
+        question: "How long does it take to sell to you vs. listing with an agent?",
+        answer: "Listing on the MLS in Bellmore typically takes 45-90 days to close after accepting an offer, plus time for inspections, appraisals, and mortgage approval. We close in 7-21 days with no contingencies. Post-NAR settlement (August 2024), agent commissions are negotiable but still typically 5-6% of the sale price."
+      }
+    ],
+    neighborhoods: ["North Bellmore", "South Bellmore", "Bellmore Village", "Newbridge Road corridor", "Centre Avenue", "Bedford Avenue downtown"],
+    zipCodes: ["11710"],
+    schoolDistrict: "Bellmore-Merrick Central High School District",
+    lirr: "Bellmore (Babylon Branch)",
   },
   {
     slug: "bethpage",
@@ -586,6 +640,24 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/foreclosure","/situations/code-violations","/situations/tax-liens","/how-it-works"],
+    faqs: [
+      {
+        question: "Do you buy houses with code violations in Hempstead?",
+        answer: "Yes. Hempstead has active code enforcement, and we regularly buy properties with open building department violations. We handle the remediation process after closing — you don't need to resolve violations before selling to us."
+      },
+      {
+        question: "Can you buy my Hempstead home if it has a tax lien?",
+        answer: "Yes. We work with title companies experienced in resolving tax liens. The lien amount is typically paid from the sale proceeds at closing, so you don't need to come up with the money upfront."
+      },
+      {
+        question: "How is selling for cash different from a foreclosure auction?",
+        answer: "In a foreclosure, the bank forces the sale and you have no control over timing or price. By selling to us before foreclosure is finalized, you maintain control, protect your credit, and often walk away with more money. New York foreclosure is a judicial process that takes an average of 445 days from first missed payment (per NY DFS data), so you likely have more time than you think."
+      }
+    ],
+    neighborhoods: ["Hempstead Village", "West Hempstead", "East Hempstead", "Fulton Avenue corridor", "Front Street area", "Peninsula Boulevard", "Hofstra University area"],
+    zipCodes: ["11550", "11549"],
+    schoolDistrict: "Hempstead Union Free School District",
+    lirr: "Hempstead (Hempstead Branch)",
   },
   {
     slug: "hicksville",
@@ -624,6 +696,24 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/inherited-property","/situations/fixer-upper","/how-it-works"],
+    faqs: [
+      {
+        question: "What's the typical home price in Hicksville?",
+        answer: "Based on Redfin data (Q4 2024), median home values in Hicksville range from $575,000 to $650,000 depending on location and condition. Renovated homes near the LIRR station command premiums, while original properties sell for considerably less."
+      },
+      {
+        question: "Do you buy homes with unpermitted work in Hicksville?",
+        answer: "Yes. Unpermitted additions, converted garages, and enclosed porches are common in Hicksville. We buy as-is and handle any permit or legalization issues after closing."
+      },
+      {
+        question: "How is your offer different from investor mailers?",
+        answer: "Many Hicksville homeowners receive mailers from wholesalers — middlemen who put your home under contract and then sell that contract to another buyer for a fee. We're direct buyers. We close with our own funds, we don't assign contracts, and we're transparent about how we calculate our price."
+      }
+    ],
+    neighborhoods: ["Hicksville Station area", "Broadway corridor", "Old Country Road", "Division Avenue", "Newbridge Road", "Mid-Island area"],
+    zipCodes: ["11801", "11802"],
+    schoolDistrict: "Hicksville Union Free School District",
+    lirr: "Hicksville (Oyster Bay, Ronkonkoma, and Montauk Branches)",
   },
   {
     slug: "inwood",
@@ -816,6 +906,24 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/unpermitted-work","/situations/inherited-property","/how-it-works"],
+    faqs: [
+      {
+        question: "How much is a Levittown home worth?",
+        answer: "Based on Redfin data (Q4 2024), Levittown home values range from $475,000 to $575,000, with significant variation based on whether the home has been expanded and renovated. Original, unmodified Levitt Cape Cods trade at the lower end of that range."
+      },
+      {
+        question: "Do you buy Levittown homes with unpermitted dormers or additions?",
+        answer: "Yes. Unpermitted work is extremely common in Levittown, where homeowners expanded over decades without pulling permits. We buy as-is and handle legalization issues after closing. You don't need to resolve permits before selling."
+      },
+      {
+        question: "What if my basement has water problems?",
+        answer: "Basement water intrusion is widespread in Levittown due to the area's flat terrain and high water table. We buy homes with active water issues, prior flood damage, and mold concerns. No repairs needed."
+      }
+    ],
+    neighborhoods: ["North Levittown", "South Levittown", "Hempstead Turnpike area", "Wantagh Avenue area", "Levittown Parkway", "Island Trees section"],
+    zipCodes: ["11756"],
+    schoolDistrict: "Levittown Union Free School District / Island Trees School District",
+    lirr: "Nearest: Wantagh or Hicksville",
   },
   {
     slug: "long-beach",
@@ -855,6 +963,24 @@ export const nassauTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/flood-zone","/situations/storm-damage","/how-it-works"],
+    faqs: [
+      {
+        question: "Do you buy flood zone properties in Long Beach?",
+        answer: "Yes. We specialize in barrier island properties and understand elevation certificates, FEMA zones, repetitive loss history, and flood insurance dynamics. We buy flood zone homes as-is regardless of elevation status."
+      },
+      {
+        question: "How much does flood insurance cost in Long Beach?",
+        answer: "Under FEMA's Risk Rating 2.0, flood insurance in Long Beach varies dramatically — from $3,000 to $15,000+ per year depending on elevation, construction type, and distance from the water. These costs often make properties unsellable through traditional channels."
+      },
+      {
+        question: "Can you buy my Long Beach condo?",
+        answer: "We primarily purchase single-family homes and multi-family properties. For condos and co-ops in Long Beach, the situation depends on the building's bylaws and any outstanding special assessments. Contact us to discuss your specific unit."
+      }
+    ],
+    neighborhoods: ["West End", "East End", "Park Avenue district", "Boardwalk area", "Bay side", "Ocean side", "Point Lookout adjacent"],
+    zipCodes: ["11561"],
+    schoolDistrict: "Long Beach City School District",
+    lirr: "Long Beach (Long Beach Branch)",
   },
   {
     slug: "lynbrook",

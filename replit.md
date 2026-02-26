@@ -37,14 +37,32 @@ The frontend follows a page-based structure under `client/src/pages/` with reusa
 - Suffolk County parent page (`/locations/suffolk-county`) links to all 36 town pages
 - All 36 URLs added to `client/public/sitemap.xml`
 
-### E-E-A-T & Schema Enhancements (added 2026-02-26)
+### E-E-A-T & Schema Enhancements (updated 2026-02-26)
 - **AggregateRating**: Added to LocalBusiness schema in `SchemaMarkup.tsx` (5.0 rating, 3 reviews)
-- **BreadcrumbList Schema**: New `BreadcrumbSchema` component in `SchemaMarkup.tsx`, added to all pages except Home
+- **BreadcrumbList Schema**: `BreadcrumbSchema` component in `SchemaMarkup.tsx`, added to all pages except Home
 - **Visual Breadcrumbs**: Clickable breadcrumb navigation on all inner pages (Home > Section > Page)
-- **Google Maps Embed**: iframe maps on all town pages (z=13) and county pages (z=11) with coordinates from data files
-- **GeoCoordinates**: Added to Service schema on town pages via `nassauTownCoordinates` / `suffolkTownCoordinates` in data files
-- **Author Byline**: `AuthorByline.tsx` component displayed on town pages and situation pages
-- **E-E-A-T Audit Tool**: Python script at `tools/eeat_extractor.py` for crawling and auditing E-E-A-T signals across all pages
+- **Google Maps Embed**: iframe maps on all town pages (z=13) and county pages (z=11)
+- **GeoCoordinates**: Added to Service schema on town pages via `nassauTownCoordinates` / `suffolkTownCoordinates`
+- **Author Byline**: `AuthorByline.tsx` — "Written by Steven Santiago, CEO" displayed on town pages, county pages, and situation pages
+- **FAQSchema**: FAQPage structured data on both county pages and town pages (where FAQ data exists)
+- **County Pages (E-E-A-T Optimized)**: Both NassauCounty.tsx and SuffolkCounty.tsx rewritten with:
+  - Why Homeowners Choose Cash Buyers (market data, local challenges)
+  - How Cash Buying Process Works (6-step process, NY legal citations: § 462, § 240, § 484)
+  - What Cash Buyers Pay (ARV formula, side-by-side comparison with traditional sale)
+  - Situations section with internal links to blog posts at blog.thepropertyfather.com
+  - Towns list with brief descriptions
+  - Market Data section (median price, DOM, tax rate with sources)
+  - FAQ accordion with 5 county-specific Q&As + FAQPage schema
+  - Legal disclaimer footer
+- **Town Page Templates Enhanced**: Both NassauTownPage.tsx and SuffolkTownPage.tsx now support:
+  - Optional FAQ accordion with FAQPage schema (from `town.faqs`)
+  - Optional neighborhoods/villages section (from `town.neighborhoods`)
+  - ZIP codes, school district, LIRR station display
+  - "Helpful Resources" section linking to blog posts
+  - Legal disclaimer
+- **TownData Interface Extended**: New optional fields: `faqs`, `neighborhoods`, `zipCodes`, `schoolDistrict`, `lirr`, `medianPrice`, `medianPriceSource`
+- **Blog Internal Links**: Verified blog URLs linked throughout (selling situations, process, comparisons, trust, locations)
+- **E-E-A-T Audit Tool**: Python script at `tools/eeat_extractor.py`
 
 ### Backend Architecture
 - **Framework**: Express 5 on Node.js

@@ -1,0 +1,198 @@
+# THE PROPERTY FATHER — LOCATION PAGE WRITING PROMPT
+# E-E-A-T Optimized | Rank #1 | Accuracy First
+# Use for: Service Area Pages, County Pages, Town Pages, Village Pages
+
+---
+
+## WHO YOU ARE WRITING FOR
+
+**Business:** The Property Father  
+**Owner:** Steven Santiago, CEO — licensed real estate investor, Long Island NY  
+**Service:** Cash home buyer — buys houses directly from homeowners, any condition, any situation  
+**Service Area:** Suffolk County and Nassau County, Long Island, New York  
+**Phone:** (516) 548-6558  
+**Website:** thepropertyfather.com  
+**Address:** 100 Washington Ave, Patchogue, NY 11772  
+
+---
+
+## E-E-A-T REQUIREMENTS — NON-NEGOTIABLE
+
+Every page must demonstrate all four pillars:
+
+### EXPERIENCE
+- Reference specific neighborhoods, landmarks, streets, or ZIP codes in the target location
+- Mention real local market data (median home price, days on market, tax rates)
+- Reference specific situations common to that area (waterfront properties, older housing stock, railroad towns, etc.)
+- Use phrases that signal boots-on-the-ground knowledge: "We've bought homes on [street type]", "Homeowners in [town] often deal with..."
+
+### EXPERTISE  
+- Cite real data sources: Redfin, Zillow, Homes.com, ATTOM Data, NY Department of Finance, Nassau/Suffolk County tax records
+- Reference specific New York real estate laws by name and section where relevant:
+  - NY Real Property Law § 462 (Property Condition Disclosure)
+  - NY Real Property Law § 240 (contracts must be in writing)
+  - NY Judiciary Law § 484 (only attorneys may draft contracts)
+  - Nassau/Suffolk County transfer tax rates
+  - NY capital gains rules for inherited property
+  - NY foreclosure timeline (judicial process, avg 445 days per NY DFS)
+- Explain the cash sale process accurately — never overstate or invent facts
+
+### AUTHORITATIVENESS
+- Written from Steven Santiago's perspective or The Property Father's institutional knowledge
+- Link internally to relevant service pages and blog articles (verified live URLs only — see list below)
+- Reference local authorities: town assessor offices, county clerk, LIPA, National Grid, school districts
+- Mention the NAR commission settlement (August 17, 2024) when discussing agent commissions
+
+### TRUSTWORTHINESS
+- Never make claims that can't be verified (no fake testimonials, no invented stats)
+- Always caveat estimates: "based on [source] data through [date]"
+- Include accurate disclaimers where needed (not legal/financial advice)
+- Be transparent about how cash offers are calculated (ARV - repairs - holding costs - margin)
+- Acknowledge when the traditional sale route might be better for the seller
+
+---
+
+## PAGE STRUCTURE & WORD COUNTS
+
+### COUNTY-LEVEL PAGE (Suffolk County, Nassau County)
+**Target word count: 2,000–2,500 words**
+
+1. **H1** — We Buy Houses [County] NY | Cash Home Buyers | The Property Father
+2. **Intro** (150–200 words) — Hook with a real local market stat, establish who this is for
+3. **H2: Why [County] Homeowners Choose Cash Buyers** (200–250 words) — local market conditions, property tax burden, specific situations
+4. **H2: How Our Cash Home Buying Process Works in [County]** (200–250 words) — 6-step process, NY-specific legal notes (attorney at closing, contract law)
+5. **H2: What Cash Buyers Pay in [County]** (200–250 words) — ARV formula, realistic offer range, comparison to net proceeds after traditional sale costs
+6. **H2: Situations We Help [County] Homeowners With** (200–250 words) — divorce, foreclosure, probate, inherited, as-is, relocation — with internal links
+7. **H2: Towns and Villages We Serve in [County]** (150–200 words) — list with brief descriptions, link to individual town pages
+8. **H2: [County] Real Estate Market Data** (150–200 words) — current median prices, DOM, tax rates with sources and dates
+9. **H2: Frequently Asked Questions** (200–250 words) — 4–5 Q&As specific to that county
+10. **CTA Section** — Get your free cash offer
+
+### TOWN-LEVEL PAGE (Huntington, Babylon, Patchogue, etc.)
+**Target word count: 1,500–2,000 words**
+
+1. **H1** — We Buy Houses [Town] NY | Cash Home Buyers | The Property Father
+2. **Intro** (150–200 words) — Specific to that town, real market stat, who this is for
+3. **H2: The [Town] Housing Market in [Year]** (150–200 words) — median price, DOM, housing stock age, neighborhoods, cite source + date
+4. **H2: Why [Town] Homeowners Sell to Cash Buyers** (150–200 words) — common local situations (older homes, high taxes, specific neighborhoods)
+5. **H2: Our Cash Offer Process for [Town] Homes** (150–200 words) — 6 steps, NY attorney requirement, timeline
+6. **H2: What You Actually Net — [Town] Example** (150–200 words) — run realistic numbers using that town's actual median price
+7. **H2: Situations We Help [Town] Homeowners With** (100–150 words) — with internal links
+8. **H2: Villages and Neighborhoods in [Town] We Serve** (100–150 words) — list specific hamlets, villages, ZIP codes
+9. **H2: Frequently Asked Questions** (150–200 words) — 3–4 Q&As specific to that town
+10. **CTA Section**
+
+### VILLAGE-LEVEL PAGE (Amityville, Babylon Village, etc.)
+**Target word count: 1,000–1,500 words**
+
+1. **H1** — We Buy Houses [Village], NY | Cash Home Buyers
+2. **Intro** (100–150 words) — Hyper-local, mention a nearby landmark or street
+3. **H2: [Village] Housing Market Overview** (150–200 words) — real data, cite source
+4. **H2: How Cash Sales Work in [Village]** (150–200 words) — process + NY legal notes
+5. **H2: Real Numbers for [Village] Sellers** (150–200 words) — run the math on that village's median price
+6. **H2: Common Situations in [Village]** (100–150 words) — internal links
+7. **H2: FAQs** (150–200 words)
+8. **CTA**
+
+---
+
+## ACCURACY RULES
+
+1. **Never invent data.** If you don't have a specific median price, say "median home values in [town] have ranged from $X to $Y based on [source] data through [date]"
+2. **Always cite the source and approximate date** of any market stat: "Per Redfin data (Q4 2025)..." or "According to Nassau County tax records..."
+3. **Use real ZIP codes** for every town and village
+4. **Use real school district names** — they affect property values and buyer decisions
+5. **Reference real local landmarks** — train stations (LIRR lines), waterfronts, main commercial districts
+6. **Property tax figures** must reference actual county/town tax rates — Suffolk avg ~2.2%, Nassau avg ~2.1% of assessed value (verify current rate)
+7. **Legal citations** must use correct statute numbers — do not paraphrase law inaccurately
+8. **Commission rates** — reference post-NAR settlement (August 2024): commissions are now fully negotiable, no longer standardized at 6%
+9. **NY foreclosure** — judicial process, NY DFS data shows avg ~445 days from first missed payment to sale
+10. **Cash offer range** — be honest: typically 70–85% of ARV depending on condition and location
+
+---
+
+## INTERNAL LINKS TO USE (VERIFIED LIVE)
+
+Link naturally to these pages within every location article:
+
+**Root Site:**
+- How It Works: https://thepropertyfather.com/how-it-works
+- Get Cash Offer: https://thepropertyfather.com/contact
+
+**Blog — Selling Situations:**
+- Divorce: https://blog.thepropertyfather.com/sell-house-during-divorce-long-island/
+- Foreclosure: https://blog.thepropertyfather.com/facing-foreclosure-long-island/
+- Inherited Property: https://blog.thepropertyfather.com/sell-inherited-house-new-york/
+- Probate: https://blog.thepropertyfather.com/probate-sales-suffolk-county/
+- Sell As-Is: https://blog.thepropertyfather.com/sell-house-as-is-long-island/
+- Sell with Liens: https://blog.thepropertyfather.com/sell-house-with-liens-long-island/
+- Relocating: https://blog.thepropertyfather.com/relocating-sell-long-island-house/
+
+**Blog — Process:**
+- How We Buy Houses: https://blog.thepropertyfather.com/how-do-we-buy-houses-companies-work/
+- Cash Buyer Requirements: https://blog.thepropertyfather.com/selling-house-to-cash-buyer-requirements/
+- What Happens After Cash Offer: https://blog.thepropertyfather.com/selling-house-to-cash-buyer-requirements/
+- How Fast Can You Sell: https://blog.thepropertyfather.com/how-fast-can-you-sell-a-house-for-cash/
+
+**Blog — Comparisons:**
+- Cash Buyer vs Realtor: https://blog.thepropertyfather.com/cash-buyer-vs-realtor/
+- Why Cash Offers Are Lower: https://blog.thepropertyfather.com/why-cash-offers-are-lower/
+- Cash Buyer vs Wholesaler: https://blog.thepropertyfather.com/cash-buyer-vs-wholesaler-difference/
+
+**Blog — Trust:**
+- Are Cash Buyers Legit: https://blog.thepropertyfather.com/are-we-buy-houses-companies-legit/
+- Questions to Ask Cash Buyer: https://blog.thepropertyfather.com/questions-to-ask-cash-buyer/
+- Avoid Scams: https://blog.thepropertyfather.com/cash-home-buyer-scams-to-avoid/
+
+**Blog — Locations:**
+- Sell House Fast Long Island (Pillar): https://blog.thepropertyfather.com/sell-house-fast-long-island/
+- Suffolk County: https://blog.thepropertyfather.com/selling-your-suffolk-county-home/
+- Nassau County: https://blog.thepropertyfather.com/we-buy-houses-nassau-county/
+- Huntington: https://blog.thepropertyfather.com/cash-home-buyers-huntington-ny/
+- Babylon: https://blog.thepropertyfather.com/selling-a-house-in-babylon/
+- Patchogue: https://blog.thepropertyfather.com/sell-house-fast-patchogue/
+- LI Real Estate Trends: https://blog.thepropertyfather.com/long-island-real-estate-trends/
+
+---
+
+## TONE & VOICE
+
+- **Authoritative but approachable** — Steve Santiago knows this market, speaks plainly
+- **Empathetic** — these are homeowners in stressful situations, not transactions
+- **Direct** — no fluff, no filler, no keyword stuffing
+- **Honest** — acknowledge trade-offs, never oversell
+- **Local** — feels written by someone who has driven those streets, not an AI scraping Zillow
+- **No jargon without explanation** — if you say ARV, explain it
+
+---
+
+## WHAT NOT TO DO
+
+- ❌ Do NOT repeat the same sentence structure across multiple sections
+- ❌ Do NOT use vague filler like "we are committed to excellence" or "we pride ourselves"
+- ❌ Do NOT invent testimonials, reviews, or specific closed deals
+- ❌ Do NOT use unverified stats without a source
+- ❌ Do NOT stuff keywords — use them naturally where they fit
+- ❌ Do NOT write generic content that could apply to any town — every page must feel unique to that location
+- ❌ Do NOT copy content from other pages — Google will filter duplicate location pages
+
+---
+
+## HOW TO USE THIS PROMPT
+
+1. Paste this full prompt into your AI writing tool
+2. Then add at the bottom:
+
+```
+NOW WRITE: [Page Type] page for [Location Name], [County], New York
+ZIP codes served: [list]
+Key neighborhoods/hamlets: [list]
+Nearby LIRR station (if applicable): [station name + line]
+School district: [name]
+Notable local context: [waterfront / older housing stock / high taxes / etc.]
+Current median home price: [price] per [source] ([date])
+```
+
+3. Review all data citations before publishing
+4. Verify all internal links are live before publishing
+5. Add location-specific photos (not stock photos)

@@ -3,6 +3,11 @@ export interface TownSection {
   paragraphs: string[];
 }
 
+export interface TownFAQ {
+  question: string;
+  answer: string;
+}
+
 export interface TownData {
   slug: string;
   townName: string;
@@ -11,6 +16,13 @@ export interface TownData {
   h1: string;
   sections: TownSection[];
   relatedLinks: string[];
+  faqs?: TownFAQ[];
+  neighborhoods?: string[];
+  zipCodes?: string[];
+  schoolDistrict?: string;
+  lirr?: string;
+  medianPrice?: string;
+  medianPriceSource?: string;
 }
 
 export const suffolkTowns: TownData[] = [
@@ -51,6 +63,24 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/inherited-property", "/situations/divorce", "/how-it-works"],
+    faqs: [
+      {
+        question: "How fast can you close on a Babylon home?",
+        answer: "We can close in as few as 7 days. Most Babylon transactions close within 14-21 days. Because we pay cash, there are no mortgage contingencies or bank appraisals. Under New York law (Judiciary Law § 484), an attorney must handle the closing — we coordinate and cover that cost."
+      },
+      {
+        question: "Do you buy homes near the LIRR tracks in Babylon?",
+        answer: "Yes. Properties near the Babylon LIRR station and tracks often face reduced buyer interest due to noise and vibration. We buy these homes at fair prices that account for the location — no lowball offers, just honest numbers."
+      },
+      {
+        question: "What's the median home price in Babylon?",
+        answer: "Based on Redfin data (Q4 2024), median home values in the Village of Babylon range from $425,000 to $525,000. The broader Town of Babylon has more variation depending on the specific hamlet."
+      }
+    ],
+    neighborhoods: ["Babylon Village", "West Babylon", "North Babylon", "Lindenhurst", "Copiague", "Amityville", "Wyandanch", "Deer Park", "Main Street area", "Montauk Highway corridor"],
+    zipCodes: ["11702", "11704"],
+    schoolDistrict: "Babylon Union Free School District",
+    lirr: "Babylon (Babylon Branch - terminal station)",
   },
   {
     slug: "brookhaven",
@@ -89,6 +119,23 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/code-violations", "/situations/large-lot", "/how-it-works"],
+    faqs: [
+      {
+        question: "Do you buy houses with septic problems in Brookhaven?",
+        answer: "Yes. Septic system failures are one of the most common issues we encounter in the Town of Brookhaven, particularly in communities not connected to public sewer. Replacement costs of $15,000-$30,000+ make traditional sales difficult. We buy as-is."
+      },
+      {
+        question: "Do you buy homes with open code violations?",
+        answer: "Yes. The Town of Brookhaven building department has active code enforcement. We regularly purchase properties with open violations, unpermitted work, and other compliance issues. We handle resolution after closing."
+      },
+      {
+        question: "How large is the Town of Brookhaven?",
+        answer: "Brookhaven is the largest town in New York State by area, stretching from the North Shore to the South Shore and encompassing communities from Port Jefferson to Mastic. We buy homes in every hamlet within the town."
+      }
+    ],
+    neighborhoods: ["Port Jefferson", "Stony Brook", "Setauket", "Coram", "Selden", "Middle Island", "Shirley", "Mastic", "Mastic Beach", "Moriches", "Ridge", "Yaphank", "Medford", "Patchogue", "Bellport", "Blue Point", "Sayville", "Bayport"],
+    zipCodes: ["11720", "11733", "11790", "11727", "11784", "11953", "11967", "11950", "11949", "11940"],
+    schoolDistrict: "Multiple school districts across hamlets",
   },
   {
     slug: "east-hampton",
@@ -165,6 +212,24 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/estate-sale", "/situations/waterfront", "/how-it-works"],
+    faqs: [
+      {
+        question: "What's the median home price in Huntington?",
+        answer: "The Town of Huntington has wide variation. Based on Redfin data (Q4 2024), median prices range from roughly $450,000-$550,000 in Huntington Station to $800,000-$1.2M+ in Huntington Village and the waterfront areas of Cold Spring Harbor, Centerport, and Lloyd Neck."
+      },
+      {
+        question: "Do you buy waterfront properties in Huntington?",
+        answer: "Yes. We buy waterfront homes along Huntington Bay, Cold Spring Harbor, Centerport Harbor, and the Northport area — including properties with bulkhead issues, flood zone complications, and erosion concerns."
+      },
+      {
+        question: "How does the cash offer process work?",
+        answer: "Contact us at (516) 548-6558 or through our form. We visit your property within 48 hours, present a cash offer within 24 hours of the walkthrough, and close on your schedule — as fast as 7 days. No commissions, no closing costs, no repairs. All contracts follow NY Real Property Law requirements."
+      }
+    ],
+    neighborhoods: ["Huntington Village", "Huntington Station", "Cold Spring Harbor", "Melville", "South Huntington", "Centerport", "Greenlawn", "Halesite", "Lloyd Neck", "Dix Hills"],
+    zipCodes: ["11743", "11746", "11724", "11747", "11740", "11721", "11731"],
+    schoolDistrict: "Huntington UFSD / Cold Spring Harbor CSD / South Huntington UFSD",
+    lirr: "Huntington (Port Jefferson Branch), Cold Spring Harbor",
   },
   {
     slug: "islip",
@@ -431,6 +496,24 @@ export const suffolkTowns: TownData[] = [
       },
     ],
     relatedLinks: ["/situations/rental-property", "/situations/inherited-property", "/how-it-works"],
+    faqs: [
+      {
+        question: "How much are homes worth in Patchogue?",
+        answer: "Based on Redfin data (Q4 2024), median home prices in Patchogue Village range from $400,000 to $500,000, with renovated homes near the downtown core commanding premiums. The surrounding hamlet areas are somewhat lower."
+      },
+      {
+        question: "Is The Property Father based in Patchogue?",
+        answer: "Yes. Our office is at 100 Washington Ave, Patchogue, NY 11772. This is our home market — we know every street, every neighborhood, and the local market conditions better than anyone."
+      },
+      {
+        question: "Do you buy homes in flood zones near the Great South Bay?",
+        answer: "Yes. Properties near the Patchogue River and Great South Bay sit in FEMA flood zones with elevated insurance costs. We buy flood zone properties as-is and factor insurance costs into our fair offer."
+      }
+    ],
+    neighborhoods: ["Patchogue Village", "North Patchogue", "South Patchogue", "Main Street area", "Sunrise Highway corridor", "Patchogue River waterfront", "Great South Bay area"],
+    zipCodes: ["11772"],
+    schoolDistrict: "Patchogue-Medford School District",
+    lirr: "Patchogue (Montauk Branch)",
   },
   {
     slug: "bay-shore",
