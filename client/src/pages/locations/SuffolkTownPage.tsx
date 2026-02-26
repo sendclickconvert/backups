@@ -3,16 +3,20 @@ import { Button } from "@/components/ui/button";
 import ContactForm from "@/components/ContactForm";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
-import { getTownBySlug } from "@/data/suffolk-towns";
+import { BreadcrumbSchema } from "@/components/SchemaMarkup";
+import AuthorByline from "@/components/AuthorByline";
+import { getTownBySlug, suffolkTownCoordinates } from "@/data/suffolk-towns";
 import {
   MapPin,
   Phone,
   ArrowRight,
   ArrowLeft,
+  ChevronRight,
 } from "lucide-react";
 import { useEffect } from "react";
 
 function TownSchemaMarkup({ townName, metaDescription }: { townName: string; metaDescription: string }) {
+  const coords = suffolkTownCoordinates[townName];
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -29,7 +33,14 @@ function TownSchemaMarkup({ townName, metaDescription }: { townName: string; met
       "containedInPlace": {
         "@type": "AdministrativeArea",
         "name": "Suffolk County, NY"
-      }
+      },
+      ...(coords ? {
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": coords.lat.toString(),
+          "longitude": coords.lng.toString()
+        }
+      } : {})
     },
     "description": metaDescription
   };
@@ -58,6 +69,7 @@ export default function SuffolkTownPage() {
 
   const introSection = town.sections.find(s => s.heading === "");
   const contentSections = town.sections.filter(s => s.heading !== "");
+  const coords = suffolkTownCoordinates[town.townName];
 
   return (
     <Layout>
@@ -67,9 +79,24 @@ export default function SuffolkTownPage() {
         canonicalPath={`/locations/suffolk-county/${town.slug}`}
       />
       <TownSchemaMarkup townName={town.townName} metaDescription={town.metaDescription} />
+      <BreadcrumbSchema items={[
+        { label: "Suffolk County", href: "/locations/suffolk-county" },
+        { label: town.townName }
+      ]} />
 
       <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
+          <nav className="flex items-center gap-1 text-sm text-white/60 mb-6" aria-label="Breadcrumb" data-testid="nav-breadcrumb">
+            <Link href="/">
+              <span className="hover:text-gold cursor-pointer">Home</span>
+            </Link>
+            <ChevronRight className="h-3 w-3" />
+            <Link href="/locations/suffolk-county">
+              <span className="hover:text-gold cursor-pointer">Suffolk County</span>
+            </Link>
+            <ChevronRight className="h-3 w-3" />
+            <span className="text-gold">{town.townName}</span>
+          </nav>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <Link href="/locations/suffolk-county">
@@ -141,9 +168,33 @@ export default function SuffolkTownPage() {
                 ))}
               </div>
             ))}
+
+            <AuthorByline className="mt-8 mb-12" />
           </div>
         </div>
       </section>
+
+      {coords && (
+        <section className="py-12 bg-muted">
+          <div className="mx-auto max-w-7xl px-4 lg:px-8">
+            <h2 className="text-2xl font-bold mb-6 text-center" data-testid="text-map-heading">
+              We Buy Houses in {town.townName}, NY
+            </h2>
+            <div className="rounded-lg overflow-hidden shadow-md" data-testid="map-embed">
+              <iframe
+                src={`https://www.google.com/maps?q=${coords.lat},${coords.lng}&z=13&output=embed`}
+                width="100%"
+                height="350"
+                style={{ border: 0 }}
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                title={`Map of ${town.townName}, NY`}
+              />
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="py-16 lg:py-20 bg-charcoal text-white">
         <div className="mx-auto max-w-7xl px-4 lg:px-8 text-center">

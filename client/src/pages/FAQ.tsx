@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
-import { FAQSchema } from "@/components/SchemaMarkup";
+import { FAQSchema, BreadcrumbSchema } from "@/components/SchemaMarkup";
 import {
   Accordion,
   AccordionContent,
@@ -12,7 +12,8 @@ import {
 import { 
   Phone,
   ArrowRight,
-  HelpCircle
+  HelpCircle,
+  ChevronRight
 } from "lucide-react";
 
 const faqs = [
@@ -87,10 +88,18 @@ export default function FAQ() {
         canonicalPath="/faq"
       />
       <FAQSchema faqs={faqs} />
+      <BreadcrumbSchema items={[{ label: "FAQ" }]} />
       
       <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
+            <nav className="flex items-center justify-center gap-1 text-sm text-white/60 mb-6" aria-label="Breadcrumb" data-testid="nav-breadcrumb">
+              <Link href="/">
+                <span className="hover:text-gold cursor-pointer">Home</span>
+              </Link>
+              <ChevronRight className="h-3 w-3" />
+              <span className="text-gold">FAQ</span>
+            </nav>
             <div className="flex items-center justify-center gap-2 mb-4">
               <HelpCircle className="h-6 w-6 text-gold" />
             </div>

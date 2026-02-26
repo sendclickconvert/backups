@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import ContactForm from "@/components/ContactForm";
 import Layout from "@/components/Layout";
+import { BreadcrumbSchema } from "@/components/SchemaMarkup";
+import AuthorByline from "@/components/AuthorByline";
 import { 
   AlertTriangle, 
   CheckCircle, 
@@ -10,7 +12,8 @@ import {
   ArrowRight,
   Shield,
   Clock,
-  DollarSign
+  DollarSign,
+  ChevronRight
 } from "lucide-react";
 
 const benefits = [
@@ -42,8 +45,16 @@ const steps = [
 export default function PreForeclosure() {
   return (
     <Layout>
+      <BreadcrumbSchema items={[{ label: "Pre-Foreclosure" }]} />
       <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
+          <nav className="flex items-center gap-1 text-sm text-white/60 mb-6" aria-label="Breadcrumb" data-testid="nav-breadcrumb">
+            <Link href="/">
+              <span className="hover:text-gold cursor-pointer">Home</span>
+            </Link>
+            <ChevronRight className="h-3 w-3" />
+            <span className="text-gold">Pre-Foreclosure</span>
+          </nav>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center gap-2 mb-4">

@@ -1,13 +1,16 @@
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import ContactForm from "@/components/ContactForm";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
+import { BreadcrumbSchema } from "@/components/SchemaMarkup";
 import { 
   Phone, 
   Mail, 
   MapPin,
-  Clock
+  Clock,
+  ChevronRight
 } from "lucide-react";
 
 const contactInfo = [
@@ -49,9 +52,17 @@ export default function Contact() {
         description="Contact The Property Father for a free cash offer on your Long Island home. Call (516) 548-6558 or fill out our form. We respond within 24 hours."
         canonicalPath="/contact"
       />
+      <BreadcrumbSchema items={[{ label: "Contact" }]} />
       <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
+            <nav className="flex items-center justify-center gap-1 text-sm text-white/60 mb-6" aria-label="Breadcrumb" data-testid="nav-breadcrumb">
+              <Link href="/">
+                <span className="hover:text-gold cursor-pointer">Home</span>
+              </Link>
+              <ChevronRight className="h-3 w-3" />
+              <span className="text-gold">Contact</span>
+            </nav>
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
               Contact Us
             </h1>

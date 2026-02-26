@@ -4,12 +4,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import ContactForm from "@/components/ContactForm";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
+import { BreadcrumbSchema } from "@/components/SchemaMarkup";
 import { 
   MapPin, 
   CheckCircle, 
   Phone,
   ArrowRight,
-  Building2
+  Building2,
+  ChevronRight
 } from "lucide-react";
 
 const towns = [
@@ -39,8 +41,16 @@ export default function SuffolkCounty() {
         description="Sell your Suffolk County house fast for cash. The Property Father buys houses in any condition in Babylon, Huntington, Islip, Smithtown and all Suffolk County towns."
         canonicalPath="/locations/suffolk-county"
       />
+      <BreadcrumbSchema items={[{ label: "Suffolk County" }]} />
       <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
+          <nav className="flex items-center gap-1 text-sm text-white/60 mb-6" aria-label="Breadcrumb" data-testid="nav-breadcrumb">
+            <Link href="/">
+              <span className="hover:text-gold cursor-pointer">Home</span>
+            </Link>
+            <ChevronRight className="h-3 w-3" />
+            <span className="text-gold">Suffolk County</span>
+          </nav>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center gap-2 mb-4">
@@ -135,6 +145,26 @@ export default function SuffolkCounty() {
                 </Link>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-muted">
+        <div className="mx-auto max-w-7xl px-4 lg:px-8">
+          <h2 className="text-2xl font-bold mb-6 text-center" data-testid="text-map-heading">
+            We Buy Houses Throughout Suffolk County, NY
+          </h2>
+          <div className="rounded-lg overflow-hidden shadow-md" data-testid="map-embed">
+            <iframe
+              src="https://www.google.com/maps?q=40.8000,-73.1200&z=11&output=embed"
+              width="100%"
+              height="350"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Map of Suffolk County, NY"
+            />
           </div>
         </div>
       </section>

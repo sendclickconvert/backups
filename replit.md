@@ -37,6 +37,15 @@ The frontend follows a page-based structure under `client/src/pages/` with reusa
 - Suffolk County parent page (`/locations/suffolk-county`) links to all 36 town pages
 - All 36 URLs added to `client/public/sitemap.xml`
 
+### E-E-A-T & Schema Enhancements (added 2026-02-26)
+- **AggregateRating**: Added to LocalBusiness schema in `SchemaMarkup.tsx` (5.0 rating, 3 reviews)
+- **BreadcrumbList Schema**: New `BreadcrumbSchema` component in `SchemaMarkup.tsx`, added to all pages except Home
+- **Visual Breadcrumbs**: Clickable breadcrumb navigation on all inner pages (Home > Section > Page)
+- **Google Maps Embed**: iframe maps on all town pages (z=13) and county pages (z=11) with coordinates from data files
+- **GeoCoordinates**: Added to Service schema on town pages via `nassauTownCoordinates` / `suffolkTownCoordinates` in data files
+- **Author Byline**: `AuthorByline.tsx` component displayed on town pages and situation pages
+- **E-E-A-T Audit Tool**: Python script at `tools/eeat_extractor.py` for crawling and auditing E-E-A-T signals across all pages
+
 ### Backend Architecture
 - **Framework**: Express 5 on Node.js
 - **Language**: TypeScript with ES modules

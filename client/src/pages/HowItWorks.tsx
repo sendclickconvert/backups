@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import ContactForm from "@/components/ContactForm";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
+import { BreadcrumbSchema } from "@/components/SchemaMarkup";
 import { 
   Phone, 
   ClipboardCheck, 
@@ -13,7 +14,8 @@ import {
   CheckCircle,
   ArrowRight,
   Clock,
-  Shield
+  Shield,
+  ChevronRight
 } from "lucide-react";
 
 const steps = [
@@ -120,8 +122,16 @@ export default function HowItWorks() {
         description="Learn our simple 5-step process for selling your house fast for cash. No agents, no fees, close in as few as 7 days. Contact The Property Father today."
         canonicalPath="/how-it-works"
       />
+      <BreadcrumbSchema items={[{ label: "How It Works" }]} />
       <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8 text-center">
+          <nav className="flex items-center justify-center gap-1 text-sm text-white/60 mb-6" aria-label="Breadcrumb" data-testid="nav-breadcrumb">
+            <Link href="/">
+              <span className="hover:text-gold cursor-pointer">Home</span>
+            </Link>
+            <ChevronRight className="h-3 w-3" />
+            <span className="text-gold">How It Works</span>
+          </nav>
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
             How We Buy Your House
           </h1>
