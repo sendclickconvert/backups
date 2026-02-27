@@ -1059,6 +1059,40 @@ const dutchessLocations: Location[] = [
     lat: 41.5811,
     lng: -73.8107,
   },
+  {
+    name: 'Millerton',
+    slug: 'millerton',
+    type: 'village',
+    county: 'dutchess',
+    zip: ['12546'],
+    population: '950',
+    intro: 'Millerton is the main village in the Town of North East, nestled in northeastern Dutchess County near the Connecticut border. Known for its walkable Main Street lined with independent shops, galleries, and Oblong Books — one of the Hudson Valley\'s most beloved bookstores — Millerton blends small-town character with a growing second-home community from New York City. Local businesses, antique dealers, restaurants, and farm stands rely on direct mail, EDDM, commercial printing, graphic design, and targeted mailing lists to reach both year-round residents and weekend visitors. Whether you\'re promoting a farm-to-table dinner, a gallery opening, or a real estate listing, Cornerstone Services delivers campaigns that connect with Millerton\'s unique audience. We also serve nearby communities like Amenia, Pine Plains, and the broader North East area from our New Paltz facility just across the Hudson Valley.',
+    notableOrgs: ['Oblong Books & Music', 'The Moviehouse', 'Harlem Valley Rail Trail', 'NorthEast-Millerton Library', 'Millerton Farmers Market'],
+    clientTypes: ['Retail and specialty shops', 'Restaurants and cafes', 'Real estate professionals', 'Art galleries and antique dealers', 'Farm and agricultural businesses'],
+    faqs: [
+      { q: 'Can you target the Millerton area specifically?', a: 'Yes. Millerton and North East share ZIP code 12546. We can target all carrier routes within this area for precise direct mail delivery.' },
+      { q: 'Do you serve second-home owners in the Millerton area?', a: 'We can build mailing lists that include both primary and secondary residences, reaching the full Millerton market including weekend homeowners.' },
+    ],
+    lat: 41.9532,
+    lng: -73.5084,
+  },
+  {
+    name: 'Staatsburg',
+    slug: 'staatsburg',
+    type: 'hamlet',
+    county: 'dutchess',
+    zip: ['12580'],
+    population: '800',
+    intro: 'Staatsburg is a historic hamlet within the Town of Hyde Park, situated along the Hudson River between Rhinebeck and the heart of Hyde Park. Best known for the Staatsburgh State Historic Site — the stunning Beaux-Arts Mills Mansion overlooking the river — Staatsburg combines old-world elegance with a quiet, residential character. Local businesses along Route 9, from contractors to small service providers, use direct mail, EDDM, commercial printing, graphic design, and mailing lists to connect with homeowners in this scenic corridor. Cornerstone Services helps Staatsburg businesses reach residents throughout the hamlet and surrounding areas including Hyde Park, Rhinebeck, and Red Hook. Our carrier route data covers every deliverable address in the Staatsburg ZIP code, making it easy to build targeted campaigns for this Hudson Valley community.',
+    notableOrgs: ['Staatsburgh State Historic Site (Mills Mansion)', 'Staatsburg Library', 'Margaret Lewis Norrie State Park', 'Hyde Park Central School District'],
+    clientTypes: ['Home service contractors', 'Real estate professionals', 'Tourism and hospitality', 'Local retail and services'],
+    faqs: [
+      { q: 'What ZIP code covers Staatsburg?', a: 'Staatsburg uses ZIP code 12580. We can target all carrier routes within this code to reach every household in the hamlet.' },
+      { q: 'Can you help a business in Staatsburg reach the broader Hyde Park area?', a: 'Absolutely. We can combine the Staatsburg 12580 ZIP with Hyde Park\'s 12538 and neighboring codes for a broader campaign reach.' },
+    ],
+    lat: 41.8456,
+    lng: -73.9275,
+  },
 ];
 
 // ============================================================
@@ -1521,6 +1555,23 @@ const orangeLocations: Location[] = [
     ],
     lat: 41.3101,
     lng: -74.1465,
+  },
+  {
+    name: 'Pine Bush',
+    slug: 'pine-bush',
+    type: 'hamlet',
+    county: 'orange',
+    zip: ['12566'],
+    population: '1,800',
+    intro: 'Pine Bush is a hamlet in the Town of Crawford, located in central Orange County and proudly known as the "UFO Capital of the East" — a genuine local identity marker celebrated with an annual festival. Beyond its quirky claim to fame, Pine Bush is a growing agricultural and residential community surrounded by farms, orchards, and small businesses that serve families and commuters traveling to Middletown and Newburgh. Local businesses — from farm stands and diners to contractors and retail shops — rely on direct mail, EDDM, commercial printing, graphic design, and targeted mailing lists to reach households spread across the area\'s rural landscape. Cornerstone Services helps Pine Bush businesses connect with customers throughout the hamlet and neighboring communities like Montgomery, Walden, and Wallkill. Our carrier route data covers every address in the Pine Bush ZIP code for precise, cost-effective campaigns.',
+    notableOrgs: ['Pine Bush Central School District', 'Pine Bush UFO & Paranormal Museum', 'Pine Bush Area Library', 'Town of Crawford'],
+    clientTypes: ['Agricultural and farm businesses', 'Home service contractors', 'Restaurants and diners', 'Retail shops', 'Community organizations'],
+    faqs: [
+      { q: 'What ZIP code covers Pine Bush?', a: 'Pine Bush uses ZIP code 12566. We can target all carrier routes within this code to reach every household in the hamlet and surrounding area.' },
+      { q: 'Can you help Pine Bush businesses reach nearby towns?', a: 'Yes. We can combine Pine Bush 12566 with Montgomery, Walden, and Middletown ZIP codes for a broader Orange County campaign.' },
+    ],
+    lat: 41.6098,
+    lng: -74.2993,
   },
 ];
 

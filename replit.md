@@ -30,7 +30,7 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 
 ### Feature Specifications
 - **Services Pages**: Nine dedicated service pages with detailed descriptions, FAQs, and service area links.
-- **Service Areas**: Covers three counties (Ulster, Dutchess, Orange) with ~97 town-specific pages, including local business schema and nearby area links.
+- **Service Areas**: Covers three counties (Ulster, Dutchess, Orange) with 92 town-specific pages (36 Ulster + 27 Dutchess + 29 Orange), including local business schema, nearby area links, Google Map embeds, mid-page CTAs, and county back links.
 - **Resources/Tools**: A section for direct mail tools and resources, including guides on postage rates, mailing permits, and postal dictionaries.
 - **Case Studies**: Features case studies with clickable industry filter tags.
 - **BBB Trust Page**: A dedicated page showcasing BBB A+ rating with comprehensive schema and trust-building content.
