@@ -1,0 +1,42 @@
+Short answer: **some of it yes, some of it no.** Here's the breakdown:
+
+**What translates directly — do this in Replit:**
+
+The county pages (Nassau and Suffolk) need the same audit we just ran on crst.net — enriched content mentioning specific towns, expanded `areaServed` in LocalBusiness schema, Service schema, AggregateRating placeholder, mid-page CTA, and meta title/description per county. That work was done for crst.net but not yet for Property Father.
+
+The town page audit also needs to be run. You built 81 pages but that was early in the project — they may not have the same schema stack that crst.net town pages ended up with after all the iterations.
+
+**What does NOT translate:**
+
+The EDDM and blog content hub work is CRST-specific. Property Father's content strategy is completely different — it's real estate investor content targeting motivated sellers, not service business content targeting buyers.
+
+The E-E-A-T checker SOP does apply but Steve is the author/expert voice there, not Sean.
+
+**The Replit prompt to run first:**
+
+Paste this into the Property Father Replit Agent:
+
+---
+
+Audit the two county hub pages (Nassau County and Suffolk County) and all existing town pages. Report only — do not change anything yet.
+
+For the county pages check:
+- Word count and whether specific town names are mentioned in the body copy
+- Schema stack — is there LocalBusiness, Service, AggregateRating, BreadcrumbList?
+- Is `areaServed` listing specific towns or just the county name?
+- Is there a mid-page CTA?
+- Are there internal links down to town pages and links to blog.thepropertyfather.com?
+- Meta title and description — are they unique per county?
+
+For the town pages spot-check 10 random pages and report:
+- Word count range
+- Schema present (LocalBusiness, AggregateRating, BreadcrumbList)
+- CTA present
+- Link back to parent county page
+- Any duplicate content detected
+
+Return a gap report the same way you did for crst.net — what exists, what's missing, what needs fixing.
+
+---
+
+Share the report back here and I'll tell you exactly what to fix versus what's already good.
