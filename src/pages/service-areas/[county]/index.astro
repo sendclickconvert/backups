@@ -24,21 +24,33 @@ const hamlets = county.locations.filter(l => l.type === 'hamlet' || l.type === '
 const title = `Direct Mail Services in ${county.name}, NY`;
 const description = `Professional direct mail, printing, and mailing services for businesses and organizations across ${county.name}, NY. Serving ${county.locations.length} communities from our ${BUSINESS.address.city} facility.`;
 
-const schema = {
+const countySchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: BUSINESS.name,
-  url: `${BUSINESS.url}/service-areas/${county.slug}/`,
-  telephone: BUSINESS.phone,
+  name: `Cornerstone Services, Inc. — ${county.name}`,
+  url: `https://crst.net/service-areas/${county.slug}/`,
+  provider: { '@id': 'https://crst.net/#organization' },
   areaServed: {
-    '@type': 'AdministrativeArea',
+    '@type': 'County',
     name: `${county.name}, New York`,
   },
-  description: `${BUSINESS.name} provides direct mail, printing, and data services throughout ${county.name}, NY. Serving ${county.locations.length} communities.`,
+  telephone: '(845) 255-5722',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '31 South Ohioville Road',
+    addressLocality: 'New Paltz',
+    addressRegion: 'NY',
+    postalCode: '12561',
+    addressCountry: 'US',
+  },
 };
 ---
 
 <BaseLayout title={title} description={description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(countySchema)} />
+  </Fragment>
+
   <PageHero
     title={`Direct Mail Services in ${county.name}`}
     subtitle={`Serving ${county.locations.length} communities across ${county.name} from our ${BUSINESS.address.city} headquarters`}
@@ -47,9 +59,6 @@ const schema = {
       { label: county.name },
     ]}
   />
-
-  <!-- Schema -->
-  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
 
   <!-- County Intro -->
   <section class="py-14 lg:py-20">

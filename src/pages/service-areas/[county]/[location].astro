@@ -47,34 +47,27 @@ const faqSchema = location.faqs.length > 0 ? {
   })),
 } : null;
 
-// Service schema
-const serviceSchema = {
+const townSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: `Direct Mail Services in ${location.name}`,
-  provider: {
-    '@type': 'LocalBusiness',
-    name: BUSINESS.name,
-    telephone: BUSINESS.phone,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: BUSINESS.address.street,
-      addressLocality: BUSINESS.address.city,
-      addressRegion: BUSINESS.address.state,
-      postalCode: BUSINESS.address.zip,
-    },
-  },
+  '@type': 'LocalBusiness',
+  name: `Cornerstone Services — Direct Mail ${location.name} NY`,
+  url: `https://crst.net/service-areas/${county.slug}/${location.slug}/`,
   areaServed: {
-    '@type': 'Place',
-    name: `${location.name}, ${county.name}, New York`,
+    '@type': 'City',
+    name: `${location.name}, New York`,
   },
-  description: `Full-service direct mail, printing, and mailing services for businesses and organizations in ${location.name}, NY.`,
+  provider: { '@id': 'https://crst.net/#organization' },
 };
 
 const typeLabel = location.type.charAt(0).toUpperCase() + location.type.slice(1);
 ---
 
 <BaseLayout title={title} description={description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(townSchema)} />
+    {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  </Fragment>
+
   <PageHero
     title={`Direct Mail Services in ${location.name}`}
     subtitle={`${typeLabel} in ${county.name} · ZIP ${location.zip.join(', ')} · Population ${location.population}`}
@@ -85,9 +78,6 @@ const typeLabel = location.type.charAt(0).toUpperCase() + location.type.slice(1)
     ]}
   />
 
-  <!-- Schema -->
-  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
-  {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 
   <!-- Location Intro -->
   <section class="py-14 lg:py-20">
