@@ -1,7 +1,7 @@
 import { Link } from "wouter";
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import ContactForm from "@/components/ContactForm";
 import Layout from "@/components/Layout";
 import { BreadcrumbSchema } from "@/components/SchemaMarkup";
 import { 
@@ -49,6 +49,16 @@ const services = [
 ];
 
 export default function Contractors() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://links.crst.net/js/form_embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <Layout>
       <BreadcrumbSchema items={[{ label: "Contractors" }]} />
@@ -89,10 +99,23 @@ export default function Contractors() {
               </div>
             </div>
             <div>
-              <ContactForm 
-                title="Contractor Partnership Inquiry"
-                description="Tell us about your services and experience."
-                source="contractors"
+              <iframe
+                src="https://links.crst.net/widget/form/5D1lMGlzNbhWfwSnCAeK"
+                style={{width: "100%", height: "4632px", border: "none", borderRadius: "3px"}}
+                id="inline-5D1lMGlzNbhWfwSnCAeK"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Vendor Partner Application"
+                data-height="4632"
+                data-layout-iframe-id="inline-5D1lMGlzNbhWfwSnCAeK"
+                data-form-id="5D1lMGlzNbhWfwSnCAeK"
+                title="Vendor Partner Application"
+                data-testid="iframe-vendor-partner-form"
               />
             </div>
           </div>
