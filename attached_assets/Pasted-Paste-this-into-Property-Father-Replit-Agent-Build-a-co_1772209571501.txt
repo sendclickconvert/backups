@@ -1,0 +1,51 @@
+Paste this into Property Father Replit Agent:
+
+Build a complete third tier of village and hamlet pages beneath the existing Nassau and Suffolk county town pages. Maximum local coverage — every incorporated village, unincorporated hamlet, and census-designated place that has real residential real estate activity.
+Do not build anything yet. First output the complete target list, then wait for confirmation.
+Step 1 — Generate the full village/hamlet target list
+For each of the 83 existing town pages, identify all villages, hamlets, and CDPs that fall within that town's boundaries. Use this structure:
+Nassau County villages and hamlets to map (examples to guide the pattern):
+
+Hempstead town → Hempstead village, Baldwin, Freeport village, Oceanside, Lynbrook village, East Rockaway village, Rockville Centre village, Valley Stream village, Malverne village, Island Park village, Inwood, Lawrence village, Woodmere, Hewlett, Woodsburgh, Cedarhurst village
+North Hempstead town → Great Neck village, Great Neck Plaza, Port Washington, Manhasset, Roslyn village, Roslyn Heights, New Hyde Park village, Williston Park village, Floral Park village, East Williston village, Old Westbury village, Thomaston village, Sands Point village, Kings Point village
+Oyster Bay town → Hicksville, Plainview, Bethpage, Massapequa, Massapequa Park village, Syosset, Jericho, Old Bethpage, Farmingdale village, Oyster Bay village, Bayville village, Locust Valley, Glen Head, Sea Cliff village, East Norwich
+
+Suffolk County villages and hamlets to map (examples):
+
+Babylon town → Babylon village, West Babylon, North Babylon, Lindenhurst village, Amityville village, Copiague, Deer Park, Brightwaters village
+Islip town → Bay Shore, East Islip, Islip village, Islip Terrace, Bohemia, Central Islip, Hauppauge, Oakdale, West Islip, East Islip, Bayport, Blue Point, Great River, Sayville
+Huntington town → Huntington village, Northport village, Cold Spring Harbor, Dix Hills, East Northport, Greenlawn, Centerport, Lloyd Harbor village, Amityville (part)
+Brookhaven town → Patchogue village, Medford, Holbrook, Selden, Farmingville, Coram, Stony Brook, Port Jefferson village, Port Jefferson Station, Bellport village, Moriches, East Moriches, Ridge, Shirley, Mastic, Mastic Beach, Yaphank, Middle Island
+Smithtown town → Smithtown, Kings Park, Hauppauge, Nesconset, Commack, St. James, Head of the Harbor village
+Southampton town → Southampton village, Hampton Bays, Westhampton Beach village, East Quogue, Quogue village, Flanders, Riverhead (border)
+East Hampton town → East Hampton village, Montauk, Amagansett, Springs, Wainscott
+Riverhead town → Riverhead, Calverton, Wading River, Aquebogue
+Shelter Island town → Shelter Island, Shelter Island Heights
+
+URL structure:
+
+/locations/nassau-county/[town]/[village-slug]
+/locations/suffolk-county/[town]/[village-slug]
+
+Page requirements (same standard as town pages):
+
+500–650 words unique content per page
+Clearly establishes this is a sub-area of the parent town
+References parent town, neighboring villages, and county naturally
+Mentions all service keywords: we buy houses, cash offer, as-is, fast closing, no repairs
+LocalBusiness schema with areaServed set to village/hamlet name + parent town + county
+AggregateRating matching site config values
+Service schema with provider block
+BreadcrumbList: Home → Long Island → County → Town → Village
+FAQPage schema with 3 FAQs unique to village context (property types, neighborhoods, local market)
+Mid-page CTA: "Ready to Get a Cash Offer in [Village]?" + button → /get-offer
+Back link to parent town page
+Add all new pages to sitemap
+
+Content angle for village pages:
+Each village page should open with what makes that specific village distinct as a real estate market — price range relative to surrounding areas, housing stock type (Capes, colonials, split-levels, co-ops, condos), any notable characteristics. Do not invent median prices — use ranges with "per Redfin/Zillow estimates" citation.
+Parent town page updates:
+After building all village pages, add a "Villages & Neighborhoods We Serve" grid section to each parent town page linking down to its village pages. Mirror the same grid style used on county pages linking to town pages.
+Sitemap:
+Add all new village pages to sitemap.xml with priority 0.6 and changefreq monthly.
+Output the complete target list first — organized by county → town → villages. Show the total count. Wait for confirmation before building anything.
