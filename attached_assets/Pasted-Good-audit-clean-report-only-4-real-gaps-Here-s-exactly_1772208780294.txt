@@ -1,0 +1,51 @@
+Good audit — clean report, only 4 real gaps. Here's exactly what to fix and what to leave alone.
+Leave alone:
+
+County page content — 1,600 words, all towns mentioned, solid
+Meta titles/descriptions — already unique
+Blog links and situation links — already fixed
+CTAs — already well-placed
+Town data (FAQs, neighborhoods, ZIP, school, LIRR) — all 83 pages complete
+
+The 4 gaps to fix — paste this into Property Father Replit Agent:
+
+Fix the following 4 schema and content gaps identified in the audit. Do not change anything else.
+Fix 1 — Add Service schema to both county pages
+Nassau County and Suffolk County pages are missing Service schema. Add it to both county pages matching the same pattern used on town pages, with these specifics:
+Nassau County:
+
+serviceType: "We Buy Houses for Cash"
+areaServed: Nassau County, NY
+provider: The Property Father, telephone (516) 548-6558
+
+Suffolk County:
+
+serviceType: "We Buy Houses for Cash"
+areaServed: Suffolk County, NY
+provider: The Property Father, telephone (516) 548-6558
+
+Fix 2 — Expand areaServed on county LocalBusiness schemas
+The global LocalBusiness schema on each county page lists only the county name. Expand areaServed to include all towns for each county.
+Nassau County towns to add:
+Baldwin, Bellmore, Bethpage, Carle Place, East Meadow, East Rockaway, Elmont, Farmingdale, Floral Park, Franklin Square, Freeport, Garden City, Glen Cove, Great Neck, Hempstead, Hicksville, Inwood, Island Park, Jericho, Lawrence, Levittown, Long Beach, Lynbrook, Malverne, Manhasset, Massapequa, Merrick, Mineola, New Hyde Park, Oceanside, Old Bethpage, Oyster Bay, Plainview, Port Washington, Rockville Centre, Roosevelt, Roslyn, Seaford, Syosset, Uniondale, Valley Stream, Wantagh, Westbury, Williston Park, Woodmere
+Suffolk County towns to add:
+Amityville, Babylon, Bay Shore, Bayport, Bellport, Blue Point, Bohemia, Brentwood, Brightwaters, Central Islip, Comsewogue, Copiague, Deer Park, Dix Hills, East Hampton, East Islip, East Northport, Farmingville, Hauppauge, Holbrook, Huntington, Islandia, Islip, Kings Park, Lake Grove, Lindenhurst, Medford, Melville, Moriches, North Babylon, Northport, Oakdale, Patchogue, Port Jefferson, Ronkonkoma, Selden, Shirley, Smithtown, Stony Brook, West Babylon, West Islip, Wyandanch
+Fix 3 — Add AggregateRating to town-page Service schema
+The global LocalBusiness in Layout.tsx has AggregateRating but the town-page-specific LocalBusiness nested inside the Service schema does not. Add AggregateRating to the nested LocalBusiness on all town pages using the same values from the global schema (ratingValue and reviewCount from site config).
+Fix 4 — Diversify the boilerplate FAQ answer
+The answer "close in as few as 7 days" appears in nearly identical form across 38 Nassau town pages. Google may flag this as thin duplicate content. Update the FAQ answers across all Nassau town pages so the closing timeline phrasing varies naturally. Use these variations rotating across towns:
+
+"We can close in as little as 7 days on your schedule"
+"Most closings happen within 7–14 days — you pick the date"
+"We work on your timeline, with closings as fast as 7 days"
+"You choose your closing date — we can move as quickly as 7 days"
+"Close in 7 days or take the time you need — we're flexible"
+
+Distribute these across the 38 pages so no single phrasing appears more than 8 times.
+After all 4 fixes confirm:
+
+Both county pages render Service schema in page source
+areaServed on county pages lists individual town names
+A spot-check of 3 random town pages shows AggregateRating in the Service schema provider block
+Nassau town FAQ answers show varied phrasing
+Build succeeds with no errors

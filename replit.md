@@ -54,13 +54,17 @@ The frontend follows a page-based structure under `client/src/pages/` with reusa
   - Towns list with brief descriptions
   - Market Data section (median price, DOM, tax rate with sources)
   - FAQ accordion with 5 county-specific Q&As + FAQPage schema
+  - **Service schema** with county-level areaServed listing all individual towns (45 Nassau, 42 Suffolk)
+  - **AggregateRating** in Service schema provider block (5.0, 3 reviews)
   - Legal disclaimer footer
 - **Town Page Templates Enhanced**: Both NassauTownPage.tsx and SuffolkTownPage.tsx now support:
   - Optional FAQ accordion with FAQPage schema (from `town.faqs`)
   - Optional neighborhoods/villages section (from `town.neighborhoods`)
   - ZIP codes, school district, LIRR station display
   - "Helpful Resources" section linking to blog posts
+  - **AggregateRating** in Service schema provider LocalBusiness block
   - Legal disclaimer
+- **FAQ Answer Diversification (updated 2026-02-27)**: Nassau town FAQ closing-speed answers diversified with 5 rotating variations to avoid duplicate content flags. No single phrasing appears more than 8 times across 45 towns.
 - **TownData Interface Extended**: New optional fields: `faqs`, `neighborhoods`, `zipCodes`, `schoolDistrict`, `lirr`, `medianPrice`, `medianPriceSource`
 - **All 83 Towns Fully Populated (updated 2026-02-26)**: Every town entry now has 3 FAQs, neighborhoods list, ZIP codes, school district, LIRR station (where applicable), median price range with Redfin/Homes.com citation. No thin pages remain. Total: 45 Nassau + 38 Suffolk = 83 town pages.
 - **Blog Internal Links**: Verified blog URLs linked throughout (selling situations, process, comparisons, trust, locations)

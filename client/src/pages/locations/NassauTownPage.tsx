@@ -50,6 +50,13 @@ function TownSchemaMarkup({ townName, metaDescription }: { townName: string; met
         "addressLocality": "Patchogue",
         "addressRegion": "NY",
         "postalCode": "11772"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "3",
+        "bestRating": "5",
+        "worstRating": "1"
       }
     },
     "areaServed": {

@@ -108,6 +108,24 @@ export default function SuffolkCounty() {
       />
       <BreadcrumbSchema items={[{ label: "Suffolk County" }]} />
       <FAQSchema faqs={faqs} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "We Buy Houses for Cash in Suffolk County, NY",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "The Property Father",
+          "telephone": "(516) 548-6558",
+          "url": "https://thepropertyfather.com",
+          "address": { "@type": "PostalAddress", "streetAddress": "100 Washington Ave", "addressLocality": "Patchogue", "addressRegion": "NY", "postalCode": "11772" },
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "3", "bestRating": "5", "worstRating": "1" }
+        },
+        "areaServed": [
+          { "@type": "County", "name": "Suffolk County, NY" },
+          ...["Amityville","Babylon","Bay Shore","Bayport","Bellport","Blue Point","Bohemia","Brentwood","Brightwaters","Central Islip","Comsewogue","Copiague","Deer Park","Dix Hills","East Hampton","East Islip","East Northport","Farmingville","Hauppauge","Holbrook","Huntington","Islandia","Islip","Kings Park","Lake Grove","Lindenhurst","Medford","Melville","Moriches","North Babylon","Northport","Oakdale","Patchogue","Port Jefferson","Ronkonkoma","Selden","Shirley","Smithtown","Stony Brook","West Babylon","West Islip","Wyandanch"].map(t => ({ "@type": "City", "name": t + ", NY" }))
+        ],
+        "description": "The Property Father buys houses for cash in any condition throughout Suffolk County, NY. No agents, no fees, no repairs. Close in as few as 7 days."
+      }) }} />
 
       <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">

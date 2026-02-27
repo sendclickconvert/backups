@@ -66,7 +66,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Baldwin home?",
-        answer: "We can close in as few as 7 days. Most Baldwin transactions close within 14-21 days. Because we pay cash, there are no mortgage contingencies or bank appraisals to wait for. The only variable is title clearance and attorney scheduling — required under NY Judiciary Law § 484."
+        answer: "We can close in as little as 7 days on your schedule. Most Baldwin transactions close within 14-21 days. Because we pay cash, there are no mortgage contingencies or bank appraisals to wait for. The only variable is title clearance and attorney scheduling — required under NY Judiciary Law § 484."
       },
       {
         question: "Do you buy houses in flood zones near Baldwin Harbor?",
@@ -185,7 +185,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Bethpage home?",
-        answer: "We can close in as few as 7 days. Most Bethpage transactions complete within 14-21 days. We pay cash so there are no mortgage contingencies or bank appraisals. The only timing factors are title clearance and attorney scheduling, as required under NY Judiciary Law § 484."
+        answer: "We can close in as little as 7 days on your schedule. Most Bethpage transactions complete within 14-21 days. We pay cash so there are no mortgage contingencies or bank appraisals. The only timing factors are title clearance and attorney scheduling, as required under NY Judiciary Law § 484."
       },
       {
         question: "Does the Grumman plume affect my ability to sell?",
@@ -358,7 +358,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on an East Rockaway home?",
-        answer: "We can close in as few as 7 days. Most East Rockaway transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the exact timeline."
+        answer: "We can close in as little as 7 days on your schedule. Most East Rockaway transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the exact timeline."
       },
       {
         question: "Do you buy flood zone properties in East Rockaway?",
@@ -532,7 +532,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Floral Park home?",
-        answer: "We can close in as few as 7 days, though most Floral Park transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and appraisal delays. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
+        answer: "We can close in as little as 7 days on your schedule. Most Floral Park transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and appraisal delays. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
       },
       {
         question: "Does Floral Park's border with Queens affect home sales?",
@@ -647,7 +647,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Freeport home?",
-        answer: "We can close in as few as 7 days, though most Freeport transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the exact timeline."
+        answer: "Most closings happen within 7–14 days — you pick the date. Most Freeport transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the exact timeline."
       },
       {
         question: "Do you buy flood zone properties in Freeport?",
@@ -705,7 +705,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Garden City home?",
-        answer: "We can close in as few as 7 days, though most Garden City transactions complete within 14-21 days. Our cash purchases are handled privately — no MLS listing, no open houses. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+        answer: "Most closings happen within 7–14 days — you pick the date. Most Garden City transactions complete within 14-21 days. Our cash purchases are handled privately — no MLS listing, no open houses. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
       },
       {
         question: "Can you handle high-value Garden City properties?",
@@ -763,7 +763,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Glen Cove home?",
-        answer: "We can close in as few as 7 days. Most Glen Cove transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
+        answer: "Most closings happen within 7–14 days — you pick the date. Most Glen Cove transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
       },
       {
         question: "Do you buy multi-family properties in Glen Cove?",
@@ -822,7 +822,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Great Neck home?",
-        answer: "We can close in as few as 7 days, though most Great Neck transactions complete within 14-21 days. Our process is completely private — no MLS listing, no open houses. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the timeline."
+        answer: "Most closings happen within 7–14 days — you pick the date. Most Great Neck transactions complete within 14-21 days. Our process is completely private — no MLS listing, no open houses. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the timeline."
       },
       {
         question: "Do you buy high-value estate homes in Great Neck?",
@@ -993,7 +993,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on an Inwood home?",
-        answer: "We can close in as few as 7 days. Most Inwood transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+        answer: "Most closings happen within 7–14 days — you pick the date. Most Inwood transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
       },
       {
         question: "Do you buy flood zone properties near Jamaica Bay in Inwood?",
@@ -1051,7 +1051,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on an Island Park home?",
-        answer: "We can close in as few as 7 days. Most Island Park transactions complete within 14-21 days. Because we pay cash, there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
+        answer: "Most closings happen within 7–14 days — you pick the date. Most Island Park transactions complete within 14-21 days. Because we pay cash, there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
       },
       {
         question: "Do you buy non-elevated homes in Island Park?",
@@ -1109,7 +1109,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Jericho home?",
-        answer: "We can close in as few as 7 days, though most Jericho transactions complete within 14-21 days. Our process is completely private — no MLS listing, no open houses. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the timeline."
+        answer: "We work on your timeline, with closings as fast as 7 days. Most Jericho transactions complete within 14-21 days. Our process is completely private — no MLS listing, no open houses. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the timeline."
       },
       {
         question: "Do Jericho homes need major renovations to sell traditionally?",
@@ -1167,7 +1167,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Lawrence home?",
-        answer: "We can close in as few as 7 days. Most Lawrence transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
+        answer: "We work on your timeline, with closings as fast as 7 days. Most Lawrence transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
       },
       {
         question: "Do you buy waterfront properties in the Five Towns area?",
@@ -1339,7 +1339,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Lynbrook home?",
-        answer: "We can close in as few as 7 days. Most Lynbrook transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals to wait for. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+        answer: "We work on your timeline, with closings as fast as 7 days. Most Lynbrook transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals to wait for. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
       },
       {
         question: "Is it hard to sell an unrenovated home in Lynbrook?",
@@ -1397,7 +1397,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Malverne home?",
-        answer: "We can close in as few as 7 days. Most Malverne transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
+        answer: "We work on your timeline, with closings as fast as 7 days. Most Malverne transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
       },
       {
         question: "Do older Malverne homes have knob-and-tube wiring issues?",
@@ -1455,7 +1455,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Manhasset home?",
-        answer: "We can close in as few as 7 days, though most Manhasset transactions complete within 14-21 days. Our process is completely private — no MLS listing, no open houses, no yard signs. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the timeline."
+        answer: "We work on your timeline, with closings as fast as 7 days. Most Manhasset transactions complete within 14-21 days. Our process is completely private — no MLS listing, no open houses, no yard signs. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the timeline."
       },
       {
         question: "Do you buy high-value homes in Manhasset?",
@@ -1513,7 +1513,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Massapequa home?",
-        answer: "We can close in as few as 7 days. Most Massapequa transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+        answer: "We work on your timeline, with closings as fast as 7 days. Most Massapequa transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
       },
       {
         question: "Do you buy homes with old cesspools or pool removal issues in Massapequa?",
@@ -1571,7 +1571,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Merrick home?",
-        answer: "We can close in as few as 7 days. Most Merrick transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
+        answer: "We work on your timeline, with closings as fast as 7 days. Most Merrick transactions complete within 14-21 days. Cash purchases eliminate mortgage contingencies and bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
       },
       {
         question: "Do you buy canal-front properties with bulkhead issues in Merrick?",
@@ -1629,7 +1629,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Mineola home?",
-        answer: "We can close in as few as 7 days. Most Mineola transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+        answer: "You choose your closing date — we can move as quickly as 7 days. Most Mineola transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
       },
       {
         question: "Do you buy two-family homes in Mineola?",
@@ -1687,7 +1687,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a New Hyde Park home?",
-        answer: "We can close in as few as 7 days. Most New Hyde Park transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+        answer: "You choose your closing date — we can move as quickly as 7 days. Most New Hyde Park transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
       },
       {
         question: "Are compact lot sizes an issue when selling in New Hyde Park?",
@@ -1746,7 +1746,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on an Oceanside home?",
-        answer: "We can close in as few as 7 days. Most Oceanside transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals to delay the process. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
+        answer: "You choose your closing date — we can move as quickly as 7 days. Most Oceanside transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals to delay the process. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
       },
       {
         question: "Do you buy flood zone properties in Oceanside?",
@@ -1804,7 +1804,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on an Old Bethpage home?",
-        answer: "We can close in as few as 7 days. Most Old Bethpage transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
+        answer: "You choose your closing date — we can move as quickly as 7 days. Most Old Bethpage transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing factors."
       },
       {
         question: "Do Old Bethpage homes have septic system issues?",
@@ -1861,7 +1861,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on an Oyster Bay home?",
-        answer: "We can close in as few as 7 days. Most Oyster Bay transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+        answer: "You choose your closing date — we can move as quickly as 7 days. Most Oyster Bay transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
       },
       {
         question: "Do you buy historic properties in Oyster Bay?",
@@ -1919,7 +1919,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Plainview home?",
-        answer: "We can close in as few as 7 days. Most Plainview transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+        answer: "You choose your closing date — we can move as quickly as 7 days. Most Plainview transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
       },
       {
         question: "Do many Plainview homes still have cesspools and oil heat?",
@@ -1976,7 +1976,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Port Washington home?",
-        answer: "We can close in as few as 7 days. Most Port Washington transactions complete within 14-21 days. Our process is completely private — no MLS listing, no open houses, no yard signs. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the exact timeline."
+        answer: "You choose your closing date — we can move as quickly as 7 days. Most Port Washington transactions complete within 14-21 days. Our process is completely private — no MLS listing, no open houses, no yard signs. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the exact timeline."
       },
       {
         question: "Do you buy waterfront properties in Port Washington?",
@@ -2034,7 +2034,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Rockville Centre home?",
-        answer: "We can close in as few as 7 days. Most Rockville Centre transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+        answer: "You choose your closing date — we can move as quickly as 7 days. Most Rockville Centre transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
       },
       {
         question: "Do older Rockville Centre homes have foundation or water issues?",
@@ -2092,7 +2092,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Roosevelt home?",
-        answer: "We can close in as few as 7 days. Most Roosevelt transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. We also handle liens and title complications as part of the closing process under NY Judiciary Law § 484."
+        answer: "We work on your timeline, with closings as fast as 7 days. Most Roosevelt transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. We also handle liens and title complications as part of the closing process under NY Judiciary Law § 484."
       },
       {
         question: "Can you buy a home in pre-foreclosure in Roosevelt?",
@@ -2149,7 +2149,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Roslyn home?",
-        answer: "We can close in as few as 7 days. Most Roslyn-area transactions complete within 14-21 days. Our process is completely private — no MLS listing, no open houses, no public record until closing. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the exact timeline."
+        answer: "Close in 7 days or take the time you need — we're flexible. Most Roslyn-area transactions complete within 14-21 days. Our process is completely private — no MLS listing, no open houses, no public record until closing. Title clearance and attorney scheduling under NY Judiciary Law § 484 determine the exact timeline."
       },
       {
         question: "Do you buy historic homes in Roslyn Village?",
@@ -2207,7 +2207,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Seaford home?",
-        answer: "We can close in as few as 7 days. Most Seaford transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+        answer: "Close in 7 days or take the time you need — we're flexible. Most Seaford transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
       },
       {
         question: "Do you buy canal-front properties with flood zone issues in Seaford?",
@@ -2265,7 +2265,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Syosset home?",
-        answer: "We can close in as few as 7 days. Most Syosset transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+        answer: "Close in 7 days or take the time you need — we're flexible. Most Syosset transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
       },
       {
         question: "Do older Syosset homes have environmental issues?",
@@ -2323,7 +2323,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Uniondale home?",
-        answer: "We can close in as few as 7 days. Most Uniondale transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+        answer: "Close in 7 days or take the time you need — we're flexible. Most Uniondale transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
       },
       {
         question: "Can you buy a Uniondale home with code violations?",
@@ -2380,7 +2380,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Valley Stream home?",
-        answer: "We can close in as few as 7 days. Most Valley Stream transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+        answer: "Close in 7 days or take the time you need — we're flexible. Most Valley Stream transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
       },
       {
         question: "Do you buy two-family homes in Valley Stream?",
@@ -2438,7 +2438,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Wantagh home?",
-        answer: "We can close in as few as 7 days. Most Wantagh transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+        answer: "Close in 7 days or take the time you need — we're flexible. Most Wantagh transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
       },
       {
         question: "Do Wantagh homes have cesspool issues?",
@@ -2496,7 +2496,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Westbury home?",
-        answer: "We can close in as few as 7 days. Most Westbury transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+        answer: "Close in 7 days or take the time you need — we're flexible. Most Westbury transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
       },
       {
         question: "Do you buy homes in the New Cassel section of Westbury?",
@@ -2554,7 +2554,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Williston Park home?",
-        answer: "We can close in as few as 7 days. Most Williston Park transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+        answer: "Close in 7 days or take the time you need — we're flexible. Most Williston Park transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
       },
       {
         question: "Are compact lots an issue when selling in Williston Park?",
@@ -2612,7 +2612,7 @@ export const nassauTowns: TownData[] = [
     faqs: [
       {
         question: "How fast can you close on a Woodmere home?",
-        answer: "We can close in as few as 7 days. Most Woodmere transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
+        answer: "We can close in as little as 7 days on your schedule. Most Woodmere transactions complete within 14-21 days. We pay cash, so there are no mortgage contingencies or bank appraisals. Title clearance and attorney scheduling under NY Judiciary Law § 484 are the only timing variables."
       },
       {
         question: "Do you buy flood zone properties in the Five Towns?",

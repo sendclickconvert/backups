@@ -116,6 +116,24 @@ export default function NassauCounty() {
       />
       <BreadcrumbSchema items={[{ label: "Nassau County" }]} />
       <FAQSchema faqs={faqs} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "We Buy Houses for Cash in Nassau County, NY",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "The Property Father",
+          "telephone": "(516) 548-6558",
+          "url": "https://thepropertyfather.com",
+          "address": { "@type": "PostalAddress", "streetAddress": "100 Washington Ave", "addressLocality": "Patchogue", "addressRegion": "NY", "postalCode": "11772" },
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "3", "bestRating": "5", "worstRating": "1" }
+        },
+        "areaServed": [
+          { "@type": "County", "name": "Nassau County, NY" },
+          ...["Baldwin","Bellmore","Bethpage","Carle Place","East Meadow","East Rockaway","Elmont","Farmingdale","Floral Park","Franklin Square","Freeport","Garden City","Glen Cove","Great Neck","Hempstead","Hicksville","Inwood","Island Park","Jericho","Lawrence","Levittown","Long Beach","Lynbrook","Malverne","Manhasset","Massapequa","Merrick","Mineola","New Hyde Park","Oceanside","Old Bethpage","Oyster Bay","Plainview","Port Washington","Rockville Centre","Roosevelt","Roslyn","Seaford","Syosset","Uniondale","Valley Stream","Wantagh","Westbury","Williston Park","Woodmere"].map(t => ({ "@type": "City", "name": t + ", NY" }))
+        ],
+        "description": "The Property Father buys houses for cash in any condition throughout Nassau County, NY. No agents, no fees, no repairs. Close in as few as 7 days."
+      }) }} />
 
       <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
