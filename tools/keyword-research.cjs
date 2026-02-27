@@ -179,7 +179,7 @@ async function main() {
       const items = task?.result?.[0]?.items || [];
       const intentMap = {};
       items.forEach(item => {
-        intentMap[item.keyword.toLowerCase()] = item.keyword_intent?.main_intent || 'NO DATA';
+        intentMap[item.keyword.toLowerCase()] = item.keyword_intent?.label || item.keyword_intent?.main_intent || 'NO DATA';
       });
       allResults.forEach(r => {
         r.intent = intentMap[r.keyword.toLowerCase()] || 'NO DATA';

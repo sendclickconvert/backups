@@ -1,51 +1,51 @@
 Group,Hub #,Keyword,Monthly Volume,Keyword Difficulty,CPC,Competition,Intent
-Tier 1 Service,1,direct mail ROI,140,4,18.89,LOW,NO DATA
-Tier 1 Service,2,direct mail response rates,170,18,32.12,LOW,NO DATA
-Tier 1 Service,3,direct mail vs email marketing,90,8,NO DATA,LOW,NO DATA
-Tier 1 Service,4,how much does direct mail cost,140,5,12.04,MEDIUM,NO DATA
-Tier 1 Service,5,targeted mailing lists,320,8,52.75,MEDIUM,NO DATA
-Tier 1 Service,6,digital vs offset printing,170,4,2.04,LOW,NO DATA
-Tier 1 Service,7,bulk printing services,590,6,8.98,HIGH,NO DATA
-Tier 1 Service,8,eco friendly printing,210,24,5.3,MEDIUM,NO DATA
-Tier 1 Service,9,brochure printing services,1300,0,17.7,LOW,NO DATA
-Tier 1 Service,10,flyer printing services,1900,0,13.61,MEDIUM,NO DATA
-Tier 1 Service,11,business card printing services,18100,6,9.84,LOW,NO DATA
-Tier 1 Service,12,large format printing,5400,7,6.57,HIGH,NO DATA
-Tier 1 Service,13,banner printing services,480,9,13.92,HIGH,NO DATA
-Tier 1 Service,14,variable data printing,880,2,10.04,LOW,NO DATA
-Tier 1 Service,15,direct mail design services,50,40,NO DATA,LOW,NO DATA
-Tier 2 Industry,16,direct mail for restaurants,50,0,NO DATA,HIGH,NO DATA
-Tier 2 Industry,17,direct mail for real estate agents,90,0,37.14,MEDIUM,NO DATA
-Tier 2 Industry,18,direct mail for nonprofits,170,22,25.13,LOW,NO DATA
-Tier 2 Industry,19,political campaign direct mail printing,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-Tier 2 Industry,20,credit union direct mail marketing,20,NO DATA,NO DATA,HIGH,NO DATA
-Tier 2 Industry,21,home services direct mail,20,NO DATA,NO DATA,MEDIUM,NO DATA
-Tier 2 Industry,22,HVAC direct mail marketing,30,0,NO DATA,LOW,NO DATA
-Tier 2 Industry,23,roofing direct mail marketing,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-Tier 2 Industry,24,healthcare direct mail marketing,110,0,NO DATA,LOW,NO DATA
-Tier 2 Industry,25,medical practice direct mail,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-Tier 2 Industry,26,retail direct mail marketing,10,NO DATA,NO DATA,HIGH,NO DATA
-Tier 2 Industry,27,printing for contractors,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-Tier 2 Industry,28,construction company printing,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-Tier 2 Industry,29,printing for schools,70,0,1.9,HIGH,NO DATA
-Tier 2 Industry,30,church printing services,20,12,5.4,MEDIUM,NO DATA
-Tier 3 Local,31,direct mail services Hudson Valley NY,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-Tier 3 Local,32,printing services New Paltz NY,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-Tier 3 Local,33,direct mail marketing Poughkeepsie NY,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-Tier 3 Local,34,printing services Kingston NY,10,NO DATA,NO DATA,LOW,NO DATA
-Tier 3 Local,35,mailing services Ulster County NY,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-Tier 3 Local,36,EDDM Hudson Valley NY,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-Tier 3 Local,37,local marketing Dutchess County NY,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-Tier 3 Local,38,direct mail services Dutchess County,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-Tier 3 Local,39,printing services Hudson Valley,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-Tier 3 Local,40,marketing services New Paltz NY,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-EDDM Spokes,41,EDDM vs targeted mail,10,NO DATA,56.16,MEDIUM,NO DATA
-EDDM Spokes,42,EDDM for restaurants,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-EDDM Spokes,43,EDDM for real estate,NO DATA,5,NO DATA,NO DATA,NO DATA
-EDDM Spokes,44,EDDM design tips,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-EDDM Spokes,45,how to set up EDDM,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-EDDM Spokes,46,EDDM route selection,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-EDDM Spokes,47,EDDM marketing strategy,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-EDDM Spokes,48,EDDM success stories,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-EDDM Spokes,49,EDDM vs digital advertising,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
-EDDM Spokes,50,every door direct mail for small business,NO DATA,NO DATA,NO DATA,NO DATA,NO DATA
+Tier 1 Service,1,direct mail ROI,140,4,18.89,LOW,informational
+Tier 1 Service,2,direct mail response rates,170,18,32.12,LOW,informational
+Tier 1 Service,3,direct mail vs email marketing,90,8,NO DATA,LOW,informational
+Tier 1 Service,4,how much does direct mail cost,140,5,12.04,MEDIUM,commercial
+Tier 1 Service,5,targeted mailing lists,320,8,52.75,MEDIUM,informational
+Tier 1 Service,6,digital vs offset printing,170,4,2.04,LOW,transactional
+Tier 1 Service,7,bulk printing services,590,6,8.98,HIGH,navigational
+Tier 1 Service,8,eco friendly printing,210,24,5.3,MEDIUM,transactional
+Tier 1 Service,9,brochure printing services,1300,0,17.7,LOW,commercial
+Tier 1 Service,10,flyer printing services,1900,0,13.61,MEDIUM,navigational
+Tier 1 Service,11,business card printing services,18100,6,9.84,LOW,commercial
+Tier 1 Service,12,large format printing,5400,7,6.57,HIGH,transactional
+Tier 1 Service,13,banner printing services,480,9,13.92,HIGH,navigational
+Tier 1 Service,14,variable data printing,880,2,10.04,LOW,commercial
+Tier 1 Service,15,direct mail design services,50,40,NO DATA,LOW,navigational
+Tier 2 Industry,16,direct mail for restaurants,50,0,NO DATA,HIGH,informational
+Tier 2 Industry,17,direct mail for real estate agents,90,0,37.14,MEDIUM,commercial
+Tier 2 Industry,18,direct mail for nonprofits,170,22,25.13,LOW,commercial
+Tier 2 Industry,19,political campaign direct mail printing,NO DATA,NO DATA,NO DATA,NO DATA,transactional
+Tier 2 Industry,20,credit union direct mail marketing,20,NO DATA,NO DATA,HIGH,navigational
+Tier 2 Industry,21,home services direct mail,20,NO DATA,NO DATA,MEDIUM,navigational
+Tier 2 Industry,22,HVAC direct mail marketing,30,0,NO DATA,LOW,commercial
+Tier 2 Industry,23,roofing direct mail marketing,NO DATA,NO DATA,NO DATA,NO DATA,commercial
+Tier 2 Industry,24,healthcare direct mail marketing,110,0,NO DATA,LOW,navigational
+Tier 2 Industry,25,medical practice direct mail,NO DATA,NO DATA,NO DATA,NO DATA,navigational
+Tier 2 Industry,26,retail direct mail marketing,10,NO DATA,NO DATA,HIGH,transactional
+Tier 2 Industry,27,printing for contractors,NO DATA,NO DATA,NO DATA,NO DATA,navigational
+Tier 2 Industry,28,construction company printing,NO DATA,NO DATA,NO DATA,NO DATA,navigational
+Tier 2 Industry,29,printing for schools,70,0,1.9,HIGH,commercial
+Tier 2 Industry,30,church printing services,20,12,5.4,MEDIUM,navigational
+Tier 3 Local,31,direct mail services Hudson Valley NY,NO DATA,NO DATA,NO DATA,NO DATA,navigational
+Tier 3 Local,32,printing services New Paltz NY,NO DATA,NO DATA,NO DATA,NO DATA,navigational
+Tier 3 Local,33,direct mail marketing Poughkeepsie NY,NO DATA,NO DATA,NO DATA,NO DATA,commercial
+Tier 3 Local,34,printing services Kingston NY,10,NO DATA,NO DATA,LOW,navigational
+Tier 3 Local,35,mailing services Ulster County NY,NO DATA,NO DATA,NO DATA,NO DATA,navigational
+Tier 3 Local,36,EDDM Hudson Valley NY,NO DATA,NO DATA,NO DATA,NO DATA,commercial
+Tier 3 Local,37,local marketing Dutchess County NY,NO DATA,NO DATA,NO DATA,NO DATA,navigational
+Tier 3 Local,38,direct mail services Dutchess County,NO DATA,NO DATA,NO DATA,NO DATA,navigational
+Tier 3 Local,39,printing services Hudson Valley,NO DATA,NO DATA,NO DATA,NO DATA,navigational
+Tier 3 Local,40,marketing services New Paltz NY,NO DATA,NO DATA,NO DATA,NO DATA,navigational
+EDDM Spokes,41,EDDM vs targeted mail,10,NO DATA,56.16,MEDIUM,informational
+EDDM Spokes,42,EDDM for restaurants,NO DATA,NO DATA,NO DATA,NO DATA,commercial
+EDDM Spokes,43,EDDM for real estate,NO DATA,5,NO DATA,NO DATA,commercial
+EDDM Spokes,44,EDDM design tips,NO DATA,NO DATA,NO DATA,NO DATA,transactional
+EDDM Spokes,45,how to set up EDDM,NO DATA,NO DATA,NO DATA,NO DATA,informational
+EDDM Spokes,46,EDDM route selection,NO DATA,NO DATA,NO DATA,NO DATA,informational
+EDDM Spokes,47,EDDM marketing strategy,NO DATA,NO DATA,NO DATA,NO DATA,commercial
+EDDM Spokes,48,EDDM success stories,NO DATA,NO DATA,NO DATA,NO DATA,transactional
+EDDM Spokes,49,EDDM vs digital advertising,NO DATA,NO DATA,NO DATA,NO DATA,transactional
+EDDM Spokes,50,every door direct mail for small business,NO DATA,NO DATA,NO DATA,NO DATA,transactional
