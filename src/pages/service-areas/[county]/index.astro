@@ -35,13 +35,6 @@ const schema = {
     name: `${county.name}, New York`,
   },
   description: `${BUSINESS.name} provides direct mail, printing, and data services throughout ${county.name}, NY. Serving ${county.locations.length} communities.`,
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: BUSINESS.rating.ratingValue,
-    reviewCount: BUSINESS.rating.reviewCount,
-    bestRating: BUSINESS.rating.bestRating,
-    worstRating: BUSINESS.rating.worstRating,
-  },
 };
 ---
 

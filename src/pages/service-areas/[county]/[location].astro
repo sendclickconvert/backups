@@ -63,13 +63,6 @@ const serviceSchema = {
       addressRegion: BUSINESS.address.state,
       postalCode: BUSINESS.address.zip,
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: BUSINESS.rating.ratingValue,
-      reviewCount: BUSINESS.rating.reviewCount,
-      bestRating: BUSINESS.rating.bestRating,
-      worstRating: BUSINESS.rating.worstRating,
-    },
   },
   areaServed: {
     '@type': 'Place',
