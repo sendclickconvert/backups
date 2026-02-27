@@ -1,0 +1,134 @@
+Paste this into Property Father Replit Agent:
+
+---
+
+**Build 170 new village/hamlet/CDP pages as the third tier of the location architecture. All decisions have been made — do not ask questions, build everything.**
+
+**DECISIONS ALREADY MADE:**
+- Create `/locations/nassau-county/north-hempstead` as a new parent page (same structure as Nassau and Suffolk county pages)
+- Duplicate geography: one page per place using the most common parent — Cold Spring Harbor → Huntington, Blue Point → Brookhaven, Wading River → Riverhead
+- Small Gold Coast villages (Cove Neck, Centre Island, Hewlett Neck, Matinecock) — include all
+- Fishers Island — include, note CT ZIP but legally Southold NY jurisdiction
+
+---
+
+**URL STRUCTURE**
+`/locations/[county]/[town]/[village-slug]`
+
+Examples:
+- `/locations/nassau-county/hempstead/atlantic-beach`
+- `/locations/nassau-county/north-hempstead/kings-point`
+- `/locations/suffolk-county/huntington/northport`
+
+---
+
+**PAGE REQUIREMENTS — match existing town page standard exactly**
+
+Every page needs:
+- 500–650 words unique content
+- Opening paragraph: what makes this specific village/hamlet distinct as a real estate market — housing stock type, price range relative to surrounding area, any notable characteristics
+- Body copy: references parent town, neighboring villages, and county naturally
+- All service keywords woven in: we buy houses for cash, cash offer, as-is condition, fast closing, no repairs needed, no agent fees
+- Do not invent median prices — use ranges with "per Redfin/Zillow estimates" attribution
+- 3 FAQs unique to this village's real estate context (property types, market, local considerations)
+- Mid-page CTA: "Ready to Get a Cash Offer in [Village]?" / subhead: "No repairs. No agents. Close on your schedule." / Button: Get My Cash Offer → /get-offer
+- Back link to parent town page
+- Breadcrumb: Home → Long Island → [County] → [Town] → [Village]
+
+Schema stack on every page:
+- LocalBusiness (from global Layout.tsx — already present)
+- Service schema with `serviceType: "We Buy Houses for Cash"`, `areaServed` set to village name + parent town + county, provider block with AggregateRating matching site config
+- FAQPage schema matching the 3 visible FAQs
+- BreadcrumbList matching visible breadcrumb
+- GeoCoordinates for the village (use real coordinates)
+
+---
+
+**COMPLETE BUILD LIST**
+
+**NASSAU COUNTY — 68 pages (67 villages + 1 new parent page)**
+
+First build the North Hempstead parent page:
+- URL: `/locations/nassau-county/north-hempstead`
+- Same structure as Nassau County and Suffolk County parent pages
+- ~1,200 words, links to all 28 village pages beneath it plus the 10 existing standalone pages
+- Meta: "We Buy Houses for Cash in North Hempstead NY | The Property Father"
+- Towns within North Hempstead to reference: Great Neck, Port Washington, Manhasset, Roslyn, New Hyde Park, Williston Park, Floral Park, Carle Place, Westbury, Old Westbury
+
+Then build all village pages:
+
+**Town of Hempstead (18 pages):**
+Atlantic Beach (11509), Cedarhurst (11516), Hewlett (11557), Lakeview (11552), Lido Beach (11561), North Bellmore (11710), North Merrick (11566), North Valley Stream (11580), Point Lookout (11569), South Hempstead (11550), West Hempstead (11552), Woodsburgh (11598), Barnum Island (11558), Harbor Isle (11558), Hewlett Bay Park (11557), Hewlett Harbor (11557), Hewlett Neck (11557), East Atlantic Beach (11509)
+
+**Town of North Hempstead (28 pages):**
+Albertson (11507), East Hills (11576), East Williston (11596), Flower Hill (11030), Great Neck Estates (11021), Great Neck Plaza (11021), Greenvale (11548), Herricks (11040), Kings Point (11024), Lake Success (11042), Munsey Park (11030), North Hills (11576), Old Westbury (11568), Plandome (11030), Plandome Heights (11030), Plandome Manor (11030), Port Washington North (11050), Roslyn Estates (11576), Roslyn Harbor (11576), Roslyn Heights (11577), Russell Gardens (11021), Saddle Rock (11023), Sands Point (11050), Searingtown (11507), Thomaston (11021), University Gardens (11020), Manorhaven (11050), Baxter Estates (11050)
+
+**Town of Oyster Bay (21 pages):**
+Bayville (11709), Brookville (11545), Centre Island (11771), Cold Spring Harbor (11724) — note: spans Huntington border, Cove Neck (11771), East Norwich (11732), Glen Head (11545), Glenwood Landing (11547), Laurel Hollow (11791), Locust Valley (11560), Massapequa Park (11762), Matinecock (11560), Mill Neck (11765), Muttontown (11791), Old Brookville (11545), Sea Cliff (11579), South Farmingdale (11735), Upper Brookville (11771), Woodbury (11797), Oyster Bay Cove (11771), Plainedge (11756)
+
+---
+
+**SUFFOLK COUNTY — 102 pages**
+
+**Town of Babylon (6 pages):**
+Copiague (11726), Brightwaters (11718), North Amityville (11701), North Lindenhurst (11757), Gilgo Beach (11702), West Gilgo Beach (11702)
+
+**Town of Brookhaven (26 pages):**
+Bellport (11713), Blue Point (11715), Brookhaven hamlet (11719), Centereach (11720), Center Moriches (11934), East Moriches (11940), East Patchogue (11772), East Setauket (11733), Holtsville (11742), Mastic (11950), Mastic Beach (11951), Moriches (11955), North Patchogue (11772), Old Field (11733), Port Jefferson Station (11776), Ridge (11961), Rocky Point (11778), Setauket-East Setauket (11733), Shoreham (11786), Sound Beach (11789), South Setauket (11720), Terryville (11776), Yaphank (11980), Wading River (11792) — note: spans Riverhead border, Manorville (11949), Gordon Heights (11763)
+
+**Town of East Hampton (5 pages):**
+Amagansett (11930), East Hampton Village (11937), Montauk (11954), Springs (11937), Wainscott (11975)
+
+**Town of Huntington (13 pages):**
+Centerport (11721), Dix Hills (11746), Greenlawn (11740), Halesite (11743), Huntington Bay (11743), Huntington Station (11746), Lloyd Harbor (11743), Melville (11747), Northport (11768), Elwood (11731), Fort Salonga (11768), West Hills (11746), Cold Spring Harbor (11724) — primary parent is Huntington
+
+**Town of Islip (12 pages):**
+Bayport (11705), Bohemia (11716), East Islip (11730), Great River (11739), Islandia (11749), Islip Terrace (11752), Oakdale (11769), West Sayville (11796), East Brentwood (11717), North Bay Shore (11706), North Great River (11722), Blue Point (11715) — primary parent is Brookhaven, skip this one to avoid duplicate URL
+
+**Town of Riverhead (5 pages):**
+Aquebogue (11931), Calverton (11933), Jamesport (11947), Laurel (11948), Wading River (11792) — primary parent is Riverhead
+
+**Town of Shelter Island (1 page):**
+Shelter Island Heights (11964)
+
+**Town of Smithtown (6 pages):**
+Head of the Harbor (11780), Kings Park (11754), Nesconset (11767), St. James (11780), Village of the Branch (11787), San Remo (11787)
+
+**Town of Southampton (20 pages):**
+Bridgehampton (11932), East Quogue (11942), Eastport (11941), Flanders (11901), Hampton Bays (11946), North Haven (11963), North Sea (11968), Noyack (11963), Quogue (11959), Remsenburg (11960), Riverside (11901), Sag Harbor (11963), Sagaponack (11962), Shinnecock Hills (11968), Southampton Village (11968), Speonk (11972), Tuckahoe (11901), Water Mill (11976), Westhampton (11977), Westhampton Beach (11978)
+
+**Town of Southold (8 pages):**
+Cutchogue (11935), East Marion (11939), Fishers Island (06390) — note CT ZIP but legally NY jurisdiction under Town of Southold, Greenport (11944), Mattituck (11952), New Suffolk (11956), Orient (11957), Peconic (11958)
+
+---
+
+**PARENT PAGE UPDATES**
+
+After building all village pages, update every parent town page to add a "Villages & Neighborhoods We Serve" grid section at the bottom, linking to all village pages beneath it. Mirror the exact grid style used on county pages. This applies to all town pages that have new village pages beneath them.
+
+Also update the North Hempstead parent page grid to link to all 28 new village pages plus the 10 existing standalone pages that fall within North Hempstead.
+
+---
+
+**SITEMAP**
+Add all new pages to sitemap.xml with priority 0.6 and changefreq monthly.
+
+---
+
+**BUILD APPROACH**
+This is a large build — use parallel subagents where possible to speed up content generation. Build in this order:
+1. North Hempstead parent page first
+2. Nassau County villages (68 pages)
+3. Suffolk County villages (102 pages)
+4. Parent town page grid updates last
+
+After completing each county report back with a count of pages built and any errors before continuing.
+
+---
+
+When the full build is complete report:
+- Total pages built
+- Any pages skipped and why
+- Any build errors
+- Confirmation that sitemap is updated
+- Confirmation that parent town grids are updated

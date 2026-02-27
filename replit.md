@@ -71,6 +71,22 @@ The frontend follows a page-based structure under `client/src/pages/` with reusa
 - **Situation Links Fixed**: "Selling with Liens" and "Relocating" links on county pages now point to live blog URLs (blog.thepropertyfather.com) instead of href="#". External links render as `<a>` tags, internal links use wouter `<Link>`.
 - **E-E-A-T Audit Tool**: Python script at `tools/eeat_extractor.py`
 
+### Village/Hamlet/CDP Pages — Third Tier (added 2026-02-27)
+- **168 individual village/hamlet/CDP landing pages** (67 Nassau + 101 Suffolk)
+- **Nassau villages**: 18 Hempstead + 28 North Hempstead + 21 Oyster Bay = 67
+- **Suffolk villages**: 6 Babylon + 26 Brookhaven + 5 East Hampton + 13 Huntington + 11 Islip + 5 Riverhead + 1 Shelter Island + 6 Smithtown + 20 Southampton + 8 Southold = 101
+- **URLs**: `/locations/nassau-county/:town/:village` and `/locations/suffolk-county/:town/:village`
+- **Data architecture**: Modular sub-files in `client/src/data/villages/` (13 files), aggregated via `nassau-villages.ts` and `suffolk-villages.ts`
+- **VillageData interface**: slug, villageName, parentTownSlug, parentTownName, titleTag, metaDescription, h1, sections, faqs, zipCodes, schoolDistrict, lirr, medianPrice, medianPriceSource, coordinates, relatedLinks
+- **Components**: `NassauVillagePage.tsx` and `SuffolkVillagePage.tsx`
+- **Content standard**: 500-650 words per page, 3 FAQs, NY legal citations (§ 484, § 462, § 240), Service keywords
+- **Schema per page**: Service (with AggregateRating), FAQPage, BreadcrumbList, GeoCoordinates
+- **Google Maps embed**: z=14 for village-level precision
+- **Breadcrumb**: Home → Nassau/Suffolk County → Town → Village
+- **North Hempstead parent page**: `/locations/nassau-county/north-hempstead` — standalone page listing 28 village sub-pages
+- **Parent town pages**: NassauTownPage.tsx and SuffolkTownPage.tsx now show "Villages & Neighborhoods" grid linking to village sub-pages when villages exist
+- **Sitemap**: All 169 new URLs (168 villages + 1 North Hempstead parent) added to `client/public/sitemap.xml` (269 total URLs)
+
 ### Backend Architecture
 - **Framework**: Express 5 on Node.js
 - **Language**: TypeScript with ES modules

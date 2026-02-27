@@ -10,6 +10,9 @@ import SuffolkCounty from "@/pages/locations/SuffolkCounty";
 import NassauCounty from "@/pages/locations/NassauCounty";
 import NassauTownPage from "@/pages/locations/NassauTownPage";
 import SuffolkTownPage from "@/pages/locations/SuffolkTownPage";
+import NassauVillagePage from "@/pages/locations/NassauVillagePage";
+import SuffolkVillagePage from "@/pages/locations/SuffolkVillagePage";
+import NorthHempstead from "@/pages/locations/NorthHempstead";
 import Divorce from "@/pages/situations/Divorce";
 import PreForeclosure from "@/pages/situations/PreForeclosure";
 import Probate from "@/pages/situations/Probate";
@@ -30,8 +33,11 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/how-it-works" component={HowItWorks} />
       <Route path="/locations/suffolk-county" component={SuffolkCounty} />
+      <Route path="/locations/suffolk-county/:town/:village" component={SuffolkVillagePage} />
       <Route path="/locations/suffolk-county/:town" component={SuffolkTownPage} />
       <Route path="/locations/nassau-county" component={NassauCounty} />
+      <Route path="/locations/nassau-county/north-hempstead" component={NorthHempstead} />
+      <Route path="/locations/nassau-county/:town/:village" component={NassauVillagePage} />
       <Route path="/locations/nassau-county/:town" component={NassauTownPage} />
       <Route path="/situations/divorce" component={Divorce} />
       <Route path="/situations/pre-foreclosure" component={PreForeclosure} />

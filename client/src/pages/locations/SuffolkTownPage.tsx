@@ -6,6 +6,7 @@ import SEO from "@/components/SEO";
 import { BreadcrumbSchema, FAQSchema } from "@/components/SchemaMarkup";
 import AuthorByline from "@/components/AuthorByline";
 import { getTownBySlug, suffolkTownCoordinates } from "@/data/suffolk-towns";
+import { getSuffolkVillagesForTown } from "@/data/suffolk-villages";
 import {
   Accordion,
   AccordionContent,
@@ -272,6 +273,30 @@ export default function SuffolkTownPage() {
           </div>
         </div>
       </section>
+
+      {(() => {
+        const villages = getSuffolkVillagesForTown(town.slug);
+        return villages.length > 0 ? (
+          <section className="py-12 bg-white">
+            <div className="mx-auto max-w-7xl px-4 lg:px-8">
+              <h2 className="text-2xl lg:text-3xl font-bold mb-2 text-center" data-testid="text-villages-heading">
+                Villages & Neighborhoods in {town.townName}
+              </h2>
+              <p className="text-center text-muted-foreground mb-8">We buy houses for cash throughout {town.townName}, including these communities:</p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                {villages.map(v => (
+                  <Link key={v.slug} href={`/locations/suffolk-county/${town.slug}/${v.slug}`}>
+                    <div className="p-4 rounded-lg border border-border hover:border-gold hover:shadow-md transition-all cursor-pointer text-center" data-testid={`link-village-${v.slug}`}>
+                      <span className="font-semibold text-sm">{v.villageName}</span>
+                      <p className="text-xs text-muted-foreground mt-1">{v.medianPrice}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        ) : null;
+      })()}
 
       {coords && (
         <section className="py-12 bg-muted">
