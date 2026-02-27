@@ -60,6 +60,93 @@ const townSchema = {
 };
 
 const typeLabel = location.type.charAt(0).toUpperCase() + location.type.slice(1);
+
+const neighborMap: Record<string, string[]> = {
+  'New Paltz': ['Highland', 'Gardiner', 'Wallkill', 'Rosendale'],
+  'Kingston': ['Hurley', 'Saugerties', 'Connelly', 'Port Ewen'],
+  'Saugerties': ['Kingston', 'Woodstock', 'West Hurley', 'Cottekill'],
+  'Woodstock': ['Saugerties', 'West Hurley', 'Phoenicia', 'Hurley'],
+  'Hurley': ['Kingston', 'Woodstock', 'Stone Ridge', 'Marbletown'],
+  'Highland': ['New Paltz', 'Lloyd', 'Milton', 'Marlboro'],
+  'Ellenville': ['Wawarsing', 'Napanoch', 'Wawarsing (Kerhonkson)', 'Accord'],
+  'Stone Ridge': ['Marbletown', 'High Falls', 'Rosendale', 'Hurley'],
+  'High Falls': ['Stone Ridge', 'Rosendale', 'Accord', 'Wawarsing (Kerhonkson)'],
+  'Phoenicia': ['Woodstock', 'Shandaken', 'West Hurley', 'Shokan'],
+  'Shokan': ['Phoenicia', 'Olive', 'West Hurley', 'Woodstock'],
+  'Marlboro': ['Highland', 'Milton', 'Wallkill', 'Lloyd'],
+  'Rosendale': ['New Paltz', 'Stone Ridge', 'High Falls', 'Tillson'],
+  'Tillson': ['Rosendale', 'New Paltz', 'Highland', 'Wallkill'],
+  'Port Ewen': ['Kingston', 'Connelly', 'Esopus', 'Highland'],
+  'Connelly': ['Kingston', 'Port Ewen', 'Esopus', 'Highland'],
+  'Esopus': ['Port Ewen', 'Connelly', 'Highland', 'Lloyd'],
+  'Lloyd': ['Highland', 'Marlboro', 'Esopus', 'New Paltz'],
+  'Olive': ['Shokan', 'Shandaken', 'West Hurley', 'Woodstock'],
+  'Shandaken': ['Phoenicia', 'Olive', 'Shokan', 'Woodstock'],
+  'West Hurley': ['Woodstock', 'Saugerties', 'Hurley', 'Shokan'],
+  'Marbletown': ['Stone Ridge', 'Hurley', 'High Falls', 'Rosendale'],
+  'Hardenburgh': ['Shandaken', 'Olive', 'Denning', 'Woodstock'],
+  'Denning': ['Hardenburgh', 'Shandaken', 'Ellenville', 'Wawarsing'],
+  'Wawarsing': ['Ellenville', 'Napanoch', 'Wawarsing (Kerhonkson)', 'Denning'],
+  'Napanoch': ['Ellenville', 'Wawarsing', 'Wawarsing (Kerhonkson)', 'Accord'],
+  'Wawarsing (Kerhonkson)': ['Napanoch', 'Wawarsing', 'Accord', 'Stone Ridge'],
+  'Cottekill': ['Rosendale', 'Stone Ridge', 'High Falls', 'Saugerties'],
+  'Wallkill': ['New Paltz', 'Marlboro', 'Tillson', 'Gardiner'],
+  'Gardiner': ['New Paltz', 'Wallkill', 'Highland', 'Rosendale'],
+  'Poughkeepsie': ['Wappingers Falls', 'LaGrange', 'Hyde Park', 'Fishkill'],
+  'Wappingers Falls': ['Poughkeepsie', 'Fishkill', 'East Fishkill', 'Hopewell Junction'],
+  'Fishkill': ['Wappingers Falls', 'East Fishkill', 'Beacon', 'Hopewell Junction'],
+  'Beacon': ['Fishkill', 'Wappingers Falls', 'East Fishkill', 'Hopewell Junction'],
+  'East Fishkill': ['Fishkill', 'Hopewell Junction', 'Wappingers Falls', 'Beacon'],
+  'Hopewell Junction': ['East Fishkill', 'Wappingers Falls', 'LaGrange', 'Fishkill'],
+  'LaGrange': ['Poughkeepsie', 'Hopewell Junction', 'Stanford', 'Pleasant Valley'],
+  'Pleasant Valley': ['LaGrange', 'Stanford', 'Rhinebeck', 'Milan'],
+  'Rhinebeck': ['Pleasant Valley', 'Red Hook', 'Milan', 'Stanford'],
+  'Red Hook': ['Rhinebeck', 'Tivoli', 'Rhinecliff', 'Milan'],
+  'Tivoli': ['Red Hook', 'Rhinecliff', 'Rhinebeck', 'Milan'],
+  'Rhinecliff': ['Red Hook', 'Tivoli', 'Rhinebeck', 'Kingston'],
+  'Milan': ['Rhinebeck', 'Red Hook', 'Pleasant Valley', 'Stanford'],
+  'Stanford': ['LaGrange', 'Pleasant Valley', 'Millbrook', 'Milan'],
+  'Millbrook': ['Stanford', 'Amenia', 'Dover', 'Washington'],
+  'Amenia': ['Millbrook', 'Dover', 'Pine Plains', 'Washington'],
+  'Dover': ['Amenia', 'Millbrook', 'Pawling', 'Washington'],
+  'Pawling': ['Dover', 'Amenia', 'East Fishkill', 'Wappinger'],
+  'Wappinger': ['Wappingers Falls', 'Fishkill', 'Pawling', 'East Fishkill'],
+  'Pine Plains': ['Amenia', 'Millbrook', 'Milan', 'Stanford'],
+  'Washington': ['Millbrook', 'Stanford', 'Amenia', 'Dover'],
+  'Clinton': ['LaGrange', 'Pleasant Valley', 'Stanford', 'Rhinebeck'],
+  'Union Vale': ['Dover', 'Pawling', 'East Fishkill', 'LaGrange'],
+  'Newburgh': ['New Windsor', 'Montgomery', 'Wallkill (Orange)', 'Cornwall'],
+  'New Windsor': ['Newburgh', 'Cornwall', 'Highlands', 'Mountainville'],
+  'Cornwall': ['New Windsor', 'Newburgh', 'Highland Falls', 'Tuxedo'],
+  'Highland Falls': ['Cornwall', 'Highlands', 'Tuxedo', 'Monroe'],
+  'Highlands': ['Highland Falls', 'New Windsor', 'Cornwall', 'Tuxedo'],
+  'Wallkill (Orange)': ['Middletown', 'Montgomery', 'Goshen', 'Crawford'],
+  'Middletown': ['Wallkill (Orange)', 'Montgomery', 'Goshen', 'Wawayanda'],
+  'Goshen': ['Middletown', 'Montgomery', 'Chester', 'Minisink'],
+  'Montgomery': ['Newburgh', 'Middletown', 'Goshen', 'Wallkill (Orange)'],
+  'Chester': ['Goshen', 'Monroe', 'Blooming Grove', 'Minisink'],
+  'Monroe': ['Chester', 'Highland Falls', 'Tuxedo', 'Blooming Grove'],
+  'Tuxedo': ['Monroe', 'Highland Falls', 'Cornwall', 'Chester'],
+  'Blooming Grove': ['Chester', 'Monroe', 'Washingtonville', 'Crawford'],
+  'Crawford': ['Wallkill (Orange)', 'Montgomery', 'Blooming Grove', 'Washingtonville'],
+  'Washingtonville': ['Blooming Grove', 'Crawford', 'Montgomery', 'Chester'],
+  'Port Jervis': ['Deerpark', 'Minisink', 'Wawayanda', 'Greenville'],
+  'Deerpark': ['Port Jervis', 'Minisink', 'Wawayanda', 'Greenville'],
+  'Minisink': ['Goshen', 'Chester', 'Deerpark', 'Port Jervis'],
+  'Wawayanda': ['Middletown', 'Minisink', 'Deerpark', 'Goshen'],
+  'Greenville': ['Port Jervis', 'Deerpark', 'Hamptonburgh', 'Florida'],
+  'Hamptonburgh': ['Goshen', 'Chester', 'Greenville', 'Florida'],
+  'Florida': ['Hamptonburgh', 'Goshen', 'Greenville', 'Wallkill (Orange)'],
+  'Harriman': ['Monroe', 'Chester', 'Tuxedo', 'Blooming Grove'],
+  'Walden': ['Montgomery', 'Wallkill (Orange)', 'Crawford', 'Goshen'],
+  'Mount Hope': ['Wallkill (Orange)', 'Middletown', 'Wawayanda', 'Goshen'],
+};
+
+const neighborNames = neighborMap[location.name] || [];
+const allCountyLocations = county.locations;
+const nearbyAreas = neighborNames
+  .map(name => allCountyLocations.find(l => l.name === name))
+  .filter((l): l is Location => l !== undefined);
 ---
 
 <BaseLayout title={title} description={description}>
@@ -78,6 +165,12 @@ const typeLabel = location.type.charAt(0).toUpperCase() + location.type.slice(1)
     ]}
   />
 
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+    <a href={`/service-areas/${county.slug}/`} class="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-crst-primary transition-colors">
+      <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+      Back to {county.name}
+    </a>
+  </div>
 
   <!-- Location Intro -->
   <section class="py-14 lg:py-20">
@@ -300,6 +393,28 @@ const typeLabel = location.type.charAt(0).toUpperCase() + location.type.slice(1)
       </div>
     </div>
   </section>
+
+  {nearbyAreas.length > 0 && (
+    <section class="py-14 bg-navy-50/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-display font-bold text-crst-primary mb-8 text-center">Nearby Areas We Serve</h2>
+        <div class="grid sm:grid-cols-2 gap-3 max-w-2xl mx-auto">
+          {nearbyAreas.map((area) => (
+            <a
+              href={`/service-areas/${county.slug}/${area.slug}/`}
+              class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-200 hover:border-crst-primary/30 hover:shadow-sm transition-all group"
+            >
+              <svg class="w-5 h-5 text-crst-primary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              <span class="font-heading font-semibold text-gray-800 group-hover:text-crst-primary transition-colors">Direct Mail in {area.name}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 
   <CTASection
     headline={`Start Your ${location.name} Direct Mail Campaign`}
