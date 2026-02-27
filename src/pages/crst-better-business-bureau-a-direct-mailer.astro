@@ -192,9 +192,9 @@ const webPageSchema = {
   title="BBB A+ Accredited Direct Mail Company | Cornerstone Services"
   description="Cornerstone Services is a BBB A+ accredited direct mail company serving Hudson Valley since 1998. Trusted by nonprofits, contractors, and local businesses across Ulster, Dutchess, and Orange counties."
   canonical="https://crst.net/crst-better-business-bureau-a-direct-mailer/"
-  schema={organizationSchema}
 >
   <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
