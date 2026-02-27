@@ -23,7 +23,7 @@ const {
 } = Astro.props;
 
 const fullTitle = title === 'Home'
-  ? `${BUSINESS.name} | Direct Mail & Marketing | ${BUSINESS.address.city}, NY`
+  ? `${BUSINESS.name} | Direct Mail & Printing | ${BUSINESS.address.city}, NY`
   : `${title} | ${BUSINESS.shortName}`;
 
 const canonicalUrl = canonical || new URL(Astro.url.pathname, BUSINESS.url).href;
