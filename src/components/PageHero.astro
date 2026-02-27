@@ -9,9 +9,12 @@ export interface Props {
 
 const { title, subtitle, breadcrumbs } = Astro.props;
 
+const pageUrl = `${BUSINESS.url}${Astro.url.pathname}`;
+
 const breadcrumbSchema = breadcrumbs ? {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  '@id': `${pageUrl}#breadcrumb`,
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: BUSINESS.url },
     ...breadcrumbs.map((crumb, i) => ({
