@@ -71,54 +71,56 @@ export default function Contractors() {
             <ChevronRight className="h-3 w-3" />
             <span className="text-gold">Contractors</span>
           </nav>
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Hammer className="h-5 w-5 text-gold" />
-                <span className="text-gold font-medium">Contractor Partners</span>
-              </div>
-              <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-                Join Our Contractor Network
-              </h1>
-              <p className="text-lg text-white/90 mb-8">
-                We're always looking for reliable contractors to work on our renovation projects. Get consistent work, prompt payment, and a long-term partnership.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Link href="/contact">
-                  <Button size="lg" className="bg-gold text-navy " data-testid="button-contractor-partner">
-                    Become a Partner
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
-                </Link>
-                <a href="tel:5165486558">
-                  <Button size="lg" variant="outline" className="border-white text-white  bg-transparent">
-                    <Phone className="mr-2 h-5 w-5" />
-                    (516) 548-6558
-                  </Button>
-                </a>
-              </div>
+          <div className="text-center max-w-3xl mx-auto">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <Hammer className="h-5 w-5 text-gold" />
+              <span className="text-gold font-medium">Contractor Partners</span>
             </div>
-            <div>
-              <iframe
-                src="https://links.crst.net/widget/form/5D1lMGlzNbhWfwSnCAeK"
-                style={{width: "100%", height: "4632px", border: "none", borderRadius: "3px"}}
-                id="inline-5D1lMGlzNbhWfwSnCAeK"
-                data-layout="{'id':'INLINE'}"
-                data-trigger-type="alwaysShow"
-                data-trigger-value=""
-                data-activation-type="alwaysActivated"
-                data-activation-value=""
-                data-deactivation-type="neverDeactivate"
-                data-deactivation-value=""
-                data-form-name="Vendor Partner Application"
-                data-height="4632"
-                data-layout-iframe-id="inline-5D1lMGlzNbhWfwSnCAeK"
-                data-form-id="5D1lMGlzNbhWfwSnCAeK"
-                title="Vendor Partner Application"
-                data-testid="iframe-vendor-partner-form"
-              />
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+              Join Our Contractor Network
+            </h1>
+            <p className="text-lg text-white/90 mb-8">
+              We're always looking for reliable contractors to work on our renovation projects. Get consistent work, prompt payment, and a long-term partnership.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/contact">
+                <Button size="lg" className="bg-gold text-navy" data-testid="button-contractor-partner">
+                  Become a Partner
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <a href="tel:5165486558">
+                <Button size="lg" variant="outline" className="border-white text-white bg-transparent">
+                  <Phone className="mr-2 h-5 w-5" />
+                  (516) 548-6558
+                </Button>
+              </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-white">
+        <div className="mx-auto max-w-3xl px-4 lg:px-8">
+          <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8">Vendor Partner Application</h2>
+          <iframe
+            src="https://links.crst.net/widget/form/5D1lMGlzNbhWfwSnCAeK"
+            style={{width: "100%", height: "4632px", border: "none", borderRadius: "3px"}}
+            id="inline-5D1lMGlzNbhWfwSnCAeK"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Vendor Partner Application"
+            data-height="4632"
+            data-layout-iframe-id="inline-5D1lMGlzNbhWfwSnCAeK"
+            data-form-id="5D1lMGlzNbhWfwSnCAeK"
+            title="Vendor Partner Application"
+            data-testid="iframe-vendor-partner-form"
+          />
         </div>
       </section>
 
