@@ -6,12 +6,6 @@ import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import { BreadcrumbSchema, FAQSchema } from "@/components/SchemaMarkup";
 import AuthorByline from "@/components/AuthorByline";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { 
   Heart, 
   CheckCircle, 
@@ -269,18 +263,14 @@ export default function Divorce() {
       <section className="py-16 lg:py-20 bg-white">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">
           <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Frequently Asked Questions</h2>
-          <Accordion type="single" collapsible className="w-full" data-testid="accordion-divorce-faq">
+          <div className="space-y-6" data-testid="faq-list-divorce">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`faq-${index}`}>
-                <AccordionTrigger className="text-left text-lg font-medium" data-testid={`accordion-trigger-faq-${index}`}>
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-base" data-testid={`accordion-content-faq-${index}`}>
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
+              <div key={index} className="border-b border-border pb-6" data-testid={`faq-item-${index}`}>
+                <h3 className="text-lg font-semibold text-foreground mb-2" data-testid={`faq-question-${index}`}>{faq.question}</h3>
+                <p className="text-muted-foreground text-base" data-testid={`faq-answer-${index}`}>{faq.answer}</p>
+              </div>
             ))}
-          </Accordion>
+          </div>
         </div>
       </section>
 

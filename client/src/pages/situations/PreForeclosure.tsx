@@ -1,12 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import ContactForm from "@/components/ContactForm";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
@@ -388,24 +382,14 @@ export default function PreForeclosure() {
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-8 text-center">
             Frequently Asked Questions
           </h2>
-          <Accordion type="single" collapsible className="w-full" data-testid="accordion-faq">
+          <div className="space-y-6" data-testid="faq-list-preforeclosure">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`faq-${index}`} data-testid={`accordion-item-${index}`}>
-                <AccordionTrigger
-                  className="text-left text-base font-medium"
-                  data-testid={`accordion-trigger-${index}`}
-                >
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent
-                  className="text-muted-foreground"
-                  data-testid={`accordion-content-${index}`}
-                >
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
+              <div key={index} className="border-b border-border pb-6" data-testid={`faq-item-${index}`}>
+                <h3 className="text-lg font-semibold text-foreground mb-2" data-testid={`faq-question-${index}`}>{faq.question}</h3>
+                <p className="text-muted-foreground text-base" data-testid={`faq-answer-${index}`}>{faq.answer}</p>
+              </div>
             ))}
-          </Accordion>
+          </div>
         </div>
       </section>
 

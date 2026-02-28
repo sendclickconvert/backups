@@ -1,12 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import ContactForm from "@/components/ContactForm";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
@@ -296,18 +290,14 @@ export default function Probate() {
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-8">
             Frequently Asked Questions About Probate Sales
           </h2>
-          <Accordion type="single" collapsible className="w-full">
+          <div className="space-y-6" data-testid="faq-list-probate">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`faq-${index}`} data-testid={`accordion-faq-${index}`}>
-                <AccordionTrigger className="text-left text-lg" data-testid={`button-faq-${index}`}>
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-base" data-testid={`text-faq-answer-${index}`}>
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
+              <div key={index} className="border-b border-border pb-6" data-testid={`faq-item-${index}`}>
+                <h3 className="text-lg font-semibold text-foreground mb-2" data-testid={`faq-question-${index}`}>{faq.question}</h3>
+                <p className="text-muted-foreground text-base" data-testid={`faq-answer-${index}`}>{faq.answer}</p>
+              </div>
             ))}
-          </Accordion>
+          </div>
         </div>
       </section>
 

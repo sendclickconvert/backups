@@ -7,12 +7,6 @@ import SEO from "@/components/SEO";
 import { BreadcrumbSchema, FAQSchema } from "@/components/SchemaMarkup";
 import AuthorByline from "@/components/AuthorByline";
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import {
   Home,
   CheckCircle,
   Phone,
@@ -407,24 +401,14 @@ export default function InheritedProperty() {
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-8">
             Frequently Asked Questions About Selling Inherited Property
           </h2>
-          <Accordion type="single" collapsible className="max-w-3xl">
+          <div className="space-y-6 max-w-3xl" data-testid="faq-list-inherited">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`faq-${index}`}>
-                <AccordionTrigger
-                  className="text-left text-base font-medium"
-                  data-testid={`accordion-trigger-faq-${index}`}
-                >
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent
-                  className="text-muted-foreground"
-                  data-testid={`accordion-content-faq-${index}`}
-                >
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
+              <div key={index} className="border-b border-border pb-6" data-testid={`faq-item-${index}`}>
+                <h3 className="text-lg font-semibold text-foreground mb-2" data-testid={`faq-question-${index}`}>{faq.question}</h3>
+                <p className="text-muted-foreground text-base" data-testid={`faq-answer-${index}`}>{faq.answer}</p>
+              </div>
             ))}
-          </Accordion>
+          </div>
         </div>
       </section>
 
