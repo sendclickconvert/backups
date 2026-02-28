@@ -1,0 +1,48 @@
+The agent has correctly diagnosed it and is on the right path. Server-side HTML injection is exactly the right fix for a React SPA — it's the standard approach when you can't switch to SSR or static generation.
+
+Let me give you the prompt to make sure it builds the middleware completely and correctly:
+
+---
+
+**PASTE THIS into Replit now to guide the implementation:**
+
+```
+Build the server-side meta injection middleware with these exact requirements:
+
+1. Create a pageMetadata map that covers EVERY route on the site with 
+   unique title, meta description, canonical URL, and noscript HTML content.
+
+Include these routes at minimum:
+/ | /how-it-works | /about | /contact | /faq | /partners/realtors | 
+/partners/lenders | /partners/contractors | /situations/divorce | 
+/situations/pre-foreclosure | /situations/probate | 
+/situations/inherited-property | /situations/sell-as-is | 
+/locations/suffolk-county | /locations/nassau-county
+
+2. The noscript content for each situation page must include:
+   - A unique H1 matching the page topic
+   - At least 3-4 paragraphs of real body text about that situation
+   - 3-4 FAQ questions and answers in plain HTML
+   - Links to /locations/suffolk-county and /locations/nassau-county
+   - A link to the contact page
+
+3. The middleware must:
+   - Run BEFORE the static file handler
+   - Match the incoming URL path
+   - Replace the placeholder <title> tag with the page-specific title
+   - Replace the placeholder <meta name="description"> with page-specific description
+   - Replace the canonical href with the page's own URL (NEVER the homepage)
+   - Replace the <noscript> block content with the page-specific HTML
+   - Fall back to homepage defaults for any unmatched routes
+
+4. Apply the same middleware to BOTH vite.ts (dev) and static.ts (production)
+
+5. After implementing, show me the raw HTML response for 
+   /situations/divorce and /situations/pre-foreclosure by 
+   logging what would be served — confirm canonical, title, 
+   and noscript content are all unique before deploying.
+```
+
+---
+
+Once the agent confirms the output looks correct in the logs, deploy it and we can go straight to GSC to request indexing on the situation pages. This middleware fix also solves the problem for all 83 town pages and 168 village pages that are sitting in "Discovered - not indexed" — same root cause, same fix.

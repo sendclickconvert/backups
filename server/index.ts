@@ -2,6 +2,7 @@ import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { serveStatic } from "./static";
 import { createServer } from "http";
+import { injectSEO } from "./seo";
 
 const app = express();
 const httpServer = createServer(app);
@@ -73,6 +74,26 @@ app.use((req, res, next) => {
     }
 
     return res.status(status).json({ message });
+  });
+
+  // SEO middleware: intercept HTML responses to inject per-page
+  // title, meta description, canonical URL, and noscript content.
+  // This runs before vite/static so Googlebot sees correct metadata
+  // even without executing JavaScript.
+  app.use((req, res, next) => {
+    if (req.path.startsWith("/api") || req.path.startsWith("/vite-hmr") || req.path.includes(".")) {
+      return next();
+    }
+    const originalEnd = res.end.bind(res);
+    res.end = function(chunk?: any, ...args: any[]) {
+      if (chunk && res.getHeader("content-type")?.toString().includes("text/html")) {
+        const html = typeof chunk === "string" ? chunk : chunk.toString("utf-8");
+        const injected = injectSEO(html, req.originalUrl);
+        return originalEnd(injected, ...args);
+      }
+      return originalEnd(chunk, ...args);
+    } as any;
+    next();
   });
 
   // importantly only setup vite in development and after
