@@ -92,6 +92,25 @@ export default function Probate() {
       />
       <BreadcrumbSchema items={[{ label: "Probate" }]} />
       <FAQSchema faqs={faqs} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Sell a Probate Property on Long Island",
+        "serviceType": "We Buy Houses for Cash",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "The Property Father",
+          "telephone": "(516) 548-6558",
+          "url": "https://thepropertyfather.com",
+          "address": { "@type": "PostalAddress", "streetAddress": "100 Washington Ave", "addressLocality": "Patchogue", "addressRegion": "NY", "postalCode": "11772" },
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "3", "bestRating": "5", "worstRating": "1" }
+        },
+        "areaServed": [
+          { "@type": "County", "name": "Nassau County, NY" },
+          { "@type": "County", "name": "Suffolk County, NY" }
+        ],
+        "description": "Inherited a house going through probate in Suffolk or Nassau County? We buy probate properties for cash, work with estate attorneys, and close on your timeline."
+      }) }} />
 
       <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">

@@ -79,6 +79,25 @@ export default function Divorce() {
       />
       <BreadcrumbSchema items={[{ label: "Divorce" }]} />
       <FAQSchema faqs={faqs} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Sell Your House During Divorce on Long Island",
+        "serviceType": "We Buy Houses for Cash",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "The Property Father",
+          "telephone": "(516) 548-6558",
+          "url": "https://thepropertyfather.com",
+          "address": { "@type": "PostalAddress", "streetAddress": "100 Washington Ave", "addressLocality": "Patchogue", "addressRegion": "NY", "postalCode": "11772" },
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "3", "bestRating": "5", "worstRating": "1" }
+        },
+        "areaServed": [
+          { "@type": "County", "name": "Nassau County, NY" },
+          { "@type": "County", "name": "Suffolk County, NY" }
+        ],
+        "description": "Going through a divorce on Long Island? We buy houses fast for cash so you can split the proceeds and move on. No repairs, no agents, close in 7 days."
+      }) }} />
 
       <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">

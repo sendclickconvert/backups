@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
+import { BreadcrumbSchema } from "@/components/SchemaMarkup";
 
 export default function Privacy() {
   return (
@@ -9,6 +10,7 @@ export default function Privacy() {
         description="Privacy Policy for The Property Father LLC, a cash home buying service in Long Island, NY."
         canonicalPath="/privacy"
       />
+      <BreadcrumbSchema items={[{ label: "Privacy Policy" }]} />
       <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <h1 className="text-4xl lg:text-5xl font-bold text-center">

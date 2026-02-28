@@ -81,6 +81,25 @@ export default function SellAsIs() {
       />
       <BreadcrumbSchema items={[{ label: "Sell As-Is" }]} />
       <FAQSchema faqs={faqs} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Sell Your House As-Is on Long Island",
+        "serviceType": "We Buy Houses for Cash",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "The Property Father",
+          "telephone": "(516) 548-6558",
+          "url": "https://thepropertyfather.com",
+          "address": { "@type": "PostalAddress", "streetAddress": "100 Washington Ave", "addressLocality": "Patchogue", "addressRegion": "NY", "postalCode": "11772" },
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "3", "bestRating": "5", "worstRating": "1" }
+        },
+        "areaServed": [
+          { "@type": "County", "name": "Nassau County, NY" },
+          { "@type": "County", "name": "Suffolk County, NY" }
+        ],
+        "description": "Want to sell your Long Island house without making repairs? The Property Father buys houses as-is in any condition in Suffolk and Nassau County. Get a cash offer in 24 hours."
+      }) }} />
 
       <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">

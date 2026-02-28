@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { BreadcrumbSchema } from "@/components/SchemaMarkup";
 import { 
   Hammer, 
@@ -61,6 +62,11 @@ export default function Contractors() {
 
   return (
     <Layout>
+      <SEO
+        title="Partner With Us - Contractors"
+        description="Contractors on Long Island — join The Property Father's preferred vendor list. Get consistent renovation work, prompt payment, and long-term partnership opportunities."
+        canonicalPath="/partners/contractors"
+      />
       <BreadcrumbSchema items={[{ label: "Contractors" }]} />
       <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import ContactForm from "@/components/ContactForm";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { BreadcrumbSchema } from "@/components/SchemaMarkup";
 import { 
   Home, 
@@ -45,6 +46,11 @@ const situations = [
 export default function Realtors() {
   return (
     <Layout>
+      <SEO
+        title="Partner With Us - Realtors"
+        description="Real estate agents on Long Island — partner with The Property Father to help clients who need fast cash sales. Earn referral fees, serve more clients, and close deals that don't fit the traditional market."
+        canonicalPath="/partners/realtors"
+      />
       <BreadcrumbSchema items={[{ label: "Realtors" }]} />
       <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">

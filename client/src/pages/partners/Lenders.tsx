@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import ContactForm from "@/components/ContactForm";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { BreadcrumbSchema } from "@/components/SchemaMarkup";
 import { 
   Building, 
@@ -45,6 +46,11 @@ const services = [
 export default function Lenders() {
   return (
     <Layout>
+      <SEO
+        title="Partner With Us - Lenders"
+        description="Private lenders and hard money lenders — partner with The Property Father for consistent deal flow on Long Island. Secured investments backed by real property with strong equity positions."
+        canonicalPath="/partners/lenders"
+      />
       <BreadcrumbSchema items={[{ label: "Lenders" }]} />
       <section className="bg-charcoal text-white py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
