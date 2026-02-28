@@ -1,0 +1,73 @@
+Good — the agent added schema and made FAQ content visible. But those fixes are inside the React JavaScript, which Googlebot still can't read. The two root causes I found are still unresolved:
+
+1. **Wrong canonical on every situation page** — all pointing to homepage
+2. **Noscript fallback** — identical generic content on every page, which is what Googlebot actually reads
+
+Here are the prompts to fix both. Paste them into Replit one at a time:
+
+---
+
+**PROMPT 1 — Find where canonical and noscript live:**
+
+```
+Show me the SEO component file and the Layout component file. 
+I need to see how canonical URLs and noscript fallback content 
+are currently being set across pages.
+```
+
+---
+
+**PROMPT 2 — Fix canonical tags (paste after seeing the structure):**
+
+```
+The situation pages all have canonical tags pointing to the homepage 
+instead of their own URLs. Fix the canonical tag on each situation page 
+so it points to its own URL:
+
+- situations/divorce → canonical: https://thepropertyfather.com/situations/divorce
+- situations/pre-foreclosure → canonical: https://thepropertyfather.com/situations/pre-foreclosure
+- situations/probate → canonical: https://thepropertyfather.com/situations/probate
+- situations/inherited-property → canonical: https://thepropertyfather.com/situations/inherited-property
+- situations/sell-as-is → canonical: https://thepropertyfather.com/situations/sell-as-is
+
+Also confirm the homepage canonical is https://thepropertyfather.com 
+and that each partner page and location page has its own correct canonical.
+```
+
+---
+
+**PROMPT 3 — Fix the noscript fallback (most critical for indexing):**
+
+```
+Googlebot cannot execute JavaScript and reads the <noscript> tag instead. 
+Currently every page has the same generic noscript content, making them 
+all look like duplicates of the homepage to Google.
+
+For each of the 5 situation pages, update the noscript block to include:
+- The page-specific H1
+- 3-4 paragraphs of the actual page content in plain HTML
+- The FAQ questions and answers in plain HTML
+- Internal links to /locations/suffolk-county and /locations/nassau-county
+
+The noscript content should be meaningful, unique text — not just the 
+business name and form. This is what Google indexes.
+
+Also update the <title> and <meta name="description"> tags in the 
+<head> of each situation page to be unique to that page, not the 
+generic homepage title and description.
+```
+
+---
+
+**PROMPT 4 — Verify the fixes:**
+
+```
+After making all changes, show me the full <head> section and the 
+<noscript> block for the divorce page and the pre-foreclosure page 
+so I can confirm the canonical, title, meta description, and noscript 
+content are all unique and correct before deploying.
+```
+
+---
+
+Once Replit confirms those look right, deploy and then go back to GSC and manually request indexing on all 5 situation pages. The canonical fix alone should unblock them within a few crawl cycles.
