@@ -71,6 +71,12 @@ The frontend follows a page-based structure under `client/src/pages/` with reusa
 - **Situation Links Fixed**: "Selling with Liens" and "Relocating" links on county pages now point to live blog URLs (blog.thepropertyfather.com) instead of href="#". External links render as `<a>` tags, internal links use wouter `<Link>`.
 - **E-E-A-T Audit Tool**: Python script at `tools/eeat_extractor.py`
 
+### Situation Pages (updated 2026-02-28)
+- 5 situation landing pages fully rewritten with unique, in-depth content (800+ words each)
+- **Pages**: Divorce, Pre-Foreclosure, Probate, Inherited Property, Sell As-Is
+- **Each page includes**: SEO component (unique title/description/canonical), BreadcrumbSchema, FAQSchema (4 Q&As each), AuthorByline, ContactForm in hero, FAQ accordion, Related Resources with blog links, internal links to Nassau/Suffolk county pages, legal disclaimer, bottom CTA
+- **Files**: `client/src/pages/situations/Divorce.tsx`, `PreForeclosure.tsx`, `Probate.tsx`, `InheritedProperty.tsx`, `SellAsIs.tsx`
+
 ### Village/Hamlet/CDP Pages — Third Tier (added 2026-02-27)
 - **168 individual village/hamlet/CDP landing pages** (67 Nassau + 101 Suffolk)
 - **Nassau villages**: 18 Hempstead + 28 North Hempstead + 21 Oyster Bay = 67

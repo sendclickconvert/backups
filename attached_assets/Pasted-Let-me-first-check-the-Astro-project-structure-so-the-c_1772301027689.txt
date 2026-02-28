@@ -1,0 +1,171 @@
+Let me first check the Astro project structure so the commands are accurate.Good — I have enough context. The site is Astro + Tailwind on Replit. Here are the exact prompts to paste into the Replit Agent, one at a time:
+
+---
+
+**PROMPT 1 — Show me the file structure first:**
+
+```
+Show me the contents of the src/pages/situations/ directory. 
+List all files and show the full code of the divorce page.
+```
+
+---
+
+**PROMPT 2 — Fix all 5 situation pages (paste this after you see the structure):**
+
+```
+Fix all 5 situation pages in src/pages/situations/. Each page 
+currently has the wrong canonical tag (pointing to homepage) and 
+no unique content. For each page, you need to:
+
+1. Set the canonical URL to the page's own URL
+2. Set a unique title and meta description
+3. Add a full content section (minimum 800 words) between the 
+   hero/form area
+
+Here are the specs for each page:
+
+--- DIVORCE PAGE: src/pages/situations/divorce.astro ---
+Title: Sell Your House During Divorce on Long Island | The Property Father
+Meta description: Going through a divorce on Long Island? We buy houses fast for cash so you can split the proceeds and move on. No repairs, no agents, close in 7 days. Call (516) 548-6558.
+Canonical: https://thepropertyfather.com/situations/divorce
+H1: Selling Your Long Island Home During Divorce
+Intro: Divorce is one of the most stressful situations a homeowner can face. When the marital home is involved, the process gets even more complicated — especially on Long Island where property values are high and the traditional selling process can take months. The Property Father helps divorcing couples sell quickly for cash so both parties can move forward.
+
+Add these H2 sections with 2-3 paragraphs each:
+- How Selling for Cash Simplifies a Divorce Settlement
+- New York Divorce Law and Your Home (mention that NY is an equitable distribution state, courts divide marital property fairly but not always 50/50, selling to a cash buyer means you control the timeline instead of waiting on a realtor and a buyer's mortgage approval)
+- What Happens to the House in a Divorce in New York? (explain options: one spouse buys out the other, sell on market and split, or sell to a cash buyer for speed)
+- Why Long Island Homeowners Choose a Cash Buyer During Divorce (no repairs needed, fast closing, no showings, proceeds split cleanly at closing)
+- How The Property Father Works (3 steps: submit property info, get cash offer in 24 hours, close in as few as 7 days)
+
+Add an FAQ section with these questions and thorough answers:
+Q: Can I sell my house before the divorce is finalized in New York?
+A: Yes, but both spouses typically need to agree to the sale and sign the deed. A cash sale with a flexible closing date makes this easier to coordinate.
+
+Q: Do I need a lawyer to sell my house during a divorce?
+A: While not legally required for the sale itself, most divorcing couples work with a real estate attorney to ensure the proceeds are properly allocated per the divorce agreement.
+
+Q: How quickly can we close if we're under a court deadline?
+A: The Property Father can close in as few as 7 days. We work with your attorneys and your timeline.
+
+Q: Will my soon-to-be ex have to be present at closing?
+A: In most cases, yes — both parties on the deed need to sign. We coordinate with both sides to make this as simple as possible.
+
+--- PRE-FORECLOSURE PAGE: src/pages/situations/pre-foreclosure.astro ---
+Title: Facing Pre-Foreclosure on Long Island? Sell Fast for Cash | The Property Father
+Meta description: Behind on mortgage payments in Suffolk or Nassau County? The Property Father buys houses in pre-foreclosure fast. Stop the process, protect your credit, close in 7 days. Call (516) 548-6558.
+Canonical: https://thepropertyfather.com/situations/pre-foreclosure
+H1: Facing Pre-Foreclosure on Long Island? Here Are Your Options
+Intro: Falling behind on mortgage payments is terrifying — but pre-foreclosure is not the end of the road. New York's foreclosure process moves slowly, which means Long Island homeowners in distress often have more time to act than they realize. The Property Father helps homeowners facing pre-foreclosure sell fast for cash, pay off the mortgage, and walk away with their dignity and their credit score intact.
+
+Add these H2 sections with 2-3 paragraphs each:
+- What Is Pre-Foreclosure? (explain the difference: pre-foreclosure is when you've received a notice of default or lis pendens but the bank hasn't taken the property yet — you still own it and can sell it)
+- New York's Foreclosure Timeline (NY is a judicial foreclosure state — the bank must file a lawsuit, and the process typically takes 18-36 months from first missed payment to auction; this gives homeowners significant time to act)
+- How Selling in Pre-Foreclosure Works (selling to a cash buyer means the proceeds pay off the mortgage balance at closing, any remaining equity goes to you, and the foreclosure process stops)
+- The Effect on Your Credit (a foreclosure stays on your credit for 7 years; selling before the foreclosure is complete typically reports as a standard sale or short sale, far less damaging)
+- Why Cash Buyers Are the Fastest Solution in Pre-Foreclosure (no bank approval needed, no contingencies, we close fast before the auction date)
+
+Add an FAQ section with these questions:
+Q: Can I sell my house if I've already received a lis pendens in New York?
+A: Yes. A lis pendens is a public notice that a lawsuit has been filed — it does not transfer ownership. You can still sell the property as long as you own it. The proceeds from the sale pay off the mortgage and any lis pendens is removed at closing.
+
+Q: What if I owe more than the house is worth?
+A: If you're underwater on the mortgage, we can discuss a short sale where the bank agrees to accept less than the full balance owed. This requires bank approval but is still far better than foreclosure on your credit report.
+
+Q: How quickly do you need to move?
+A: We can close in as few as 7 days. If you have a foreclosure auction date, tell us immediately and we'll prioritize your timeline.
+
+Q: Do I need to be current on payments to sell?
+A: No. We buy houses from homeowners in all stages of the pre-foreclosure process — whether you're 30 days behind or received a foreclosure filing.
+
+--- PROBATE PAGE: src/pages/situations/probate.astro ---
+Title: Selling a Probate Property on Long Island | The Property Father
+Meta description: Inherited a house going through probate in Suffolk or Nassau County? We buy probate properties for cash, work with estate attorneys, and close on your timeline. Call (516) 548-6558.
+Canonical: https://thepropertyfather.com/situations/probate
+H1: Selling a Probate Property on Long Island: What You Need to Know
+Intro: When a loved one passes away and leaves behind a house, the property typically goes through probate before it can be sold. On Long Island, where property values are high and family dynamics can be complicated, navigating a probate sale without the right support is overwhelming. The Property Father works with estate attorneys and executors to simplify the process and close on your timeline.
+
+Add these H2 sections with 2-3 paragraphs each:
+- What Is Probate in New York? (explain that probate is the legal process of validating a will and distributing assets; in NY, the Surrogate's Court oversees this process; it typically takes 6-12 months but can be longer for contested estates)
+- Can You Sell a House During Probate in New York? (yes, but the executor must be appointed by the court first; once appointed, the executor has authority to sell real property to pay debts or distribute proceeds to heirs)
+- Probate Sale Timeline on Long Island (typical timeline: death occurs → file for probate in Surrogate's Court → executor appointed → property can be listed/sold → proceeds distributed to heirs)
+- Why Cash Buyers Work Well for Probate Sales (no repair contingencies, executors don't want to manage renovations on inherited property, fast closing means estate can be settled sooner, flexible closing dates work around court schedules)
+- Working With Estate Attorneys (we work directly with your estate attorney and coordinate the closing with the Surrogate's Court requirements)
+
+FAQ:
+Q: Do all heirs have to agree to sell the house in probate?
+A: If there's a valid will naming an executor, that person has legal authority to sell. If there's no will (intestate), all heirs typically need to consent or the court can authorize the sale.
+
+Q: How long does it take to sell a probate property in New York?
+A: Once the executor is appointed, we can close in as few as 7-14 days depending on court scheduling. Total timeline from death to closing is typically 6-12 months, mostly waiting on court appointment.
+
+Q: Does the house need to be cleaned out before selling?
+A: No. We buy probate properties in as-is condition, contents and all. We handle the cleanout after closing.
+
+Q: What if the property has deferred maintenance or code violations?
+A: We buy as-is regardless of condition. Property condition does not affect our ability to close.
+
+--- INHERITED PROPERTY PAGE: src/pages/situations/inherited-property.astro ---
+Title: Sell an Inherited House on Long Island | The Property Father
+Meta description: Inherited a house in Suffolk or Nassau County that you don't want to keep? We buy inherited properties for cash, as-is, fast. No repairs, no estate sales. Call (516) 548-6558.
+Canonical: https://thepropertyfather.com/situations/inherited-property
+H1: Inherited a House on Long Island? Here's the Simplest Way to Sell It
+Intro: Inheriting a house can feel like a gift and a burden at the same time. On Long Island, inherited properties often come with deferred maintenance, complicated family agreements, and carrying costs — property taxes, insurance, utilities — that start adding up immediately. The Property Father helps heirs sell inherited houses quickly for cash, without the stress of repairs, showings, or a lengthy market listing.
+
+Add these H2 sections with 2-3 paragraphs each:
+- Your Options When You Inherit a House (keep and move in, rent it out, sell traditionally with a realtor, or sell for cash — explain pros and cons of each briefly)
+- The Real Cost of Holding an Inherited Property (Long Island property taxes average among the highest in the nation; add insurance, utilities, and any needed repairs and the monthly carrying cost can exceed $3,000-4,000 for a typical home)
+- Step-Up in Basis: The Tax Advantage of Inherited Property (inherited properties receive a step-up in cost basis to fair market value at date of death, meaning most heirs owe little or no capital gains tax when they sell quickly — always consult a tax advisor for your specific situation)
+- Selling As-Is vs. Making Repairs (many inherited properties haven't been updated in decades; a cash buyer buys as-is, saving heirs the cost and hassle of renovation before sale)
+- How We Handle Inherited Properties at The Property Father (we work with executors, attorneys, and multiple heirs; we're familiar with the Long Island inherited property process and can coordinate with all parties)
+
+FAQ:
+Q: Can I sell an inherited house before probate is complete?
+A: In most cases, no — the estate needs to go through probate and the executor needs to be authorized to sell. However, if the property passed via a trust or joint tenancy with right of survivorship, it may transfer outside of probate.
+
+Q: What if my siblings and I all inherited the property together?
+A: All owners on the deed need to agree to sell and sign at closing. We work with multiple heirs regularly and can coordinate the process.
+
+Q: Do I need to clean out the house before selling?
+A: No. We buy inherited properties with all contents, as-is. You take what you want, leave the rest.
+
+Q: How is the sale price determined?
+A: We evaluate the property based on current condition, location, and comparable sales in the area. We provide a fair cash offer within 24 hours of submitting your property details.
+
+--- SELL AS-IS PAGE: src/pages/situations/sell-as-is.astro ---
+Title: Sell Your House As-Is on Long Island | No Repairs Needed | The Property Father
+Meta description: Want to sell your Long Island house without making repairs? The Property Father buys houses as-is in any condition in Suffolk and Nassau County. Get a cash offer in 24 hours. Call (516) 548-6558.
+Canonical: https://thepropertyfather.com/situations/sell-as-is
+H1: Selling Your Long Island House As-Is: No Repairs, No Hassle
+Intro: Not every homeowner has the time, money, or energy to prep a house for the traditional real estate market. Whether your property needs cosmetic updates, major repairs, or has been neglected for years, The Property Father buys Long Island houses as-is for cash — no repairs required, no staging, no open houses.
+
+Add these H2 sections with 2-3 paragraphs each:
+- What Does Selling As-Is Actually Mean? (legally means you're selling the property in its current condition without making repairs; buyer accepts the property as it stands; differs from traditional sales where buyers often request repairs after inspection)
+- What Conditions Do We Buy? (list: outdated kitchens and bathrooms, roof issues, foundation problems, water damage or mold, fire damage, code violations, hoarder situations, tenant-occupied properties, inherited properties that need updating)
+- The Math Behind As-Is vs. Repaired Sales (walk through example: house worth $500K updated, needs $80K in repairs; traditional sale nets $500K minus $80K repairs, 6% commission, closing costs = roughly $385-390K; cash as-is offer might be $400-415K with zero repair costs and no commissions)
+- Why Long Island Homeowners Choose As-Is Sales (no contractor headaches, no carrying costs during renovation, no uncertainty about what inspectors will find, sell on your timeline)
+- What Happens After You Accept a Cash Offer (title search, clear title, close at a local title company or attorney's office, typically 7-21 days from accepted offer)
+
+FAQ:
+Q: Will you still buy my house if it has major structural issues?
+A: Yes. We buy houses with foundation issues, roof damage, fire damage, and other significant structural problems. We factor the repair costs into our offer.
+
+Q: Do I need to disclose known issues when selling as-is in New York?
+A: New York law requires sellers to disclose known material defects via a Property Condition Disclosure Statement, even in as-is sales. Alternatively, sellers can pay a $500 credit to the buyer in lieu of disclosure. Your attorney can advise on the right approach.
+
+Q: Can I sell as-is if I have tenants in the property?
+A: Yes. We buy tenant-occupied properties and handle the transition ourselves after closing.
+
+Q: How is the as-is cash offer calculated?
+A: We look at the after-repair value (what the house would sell for fully updated), subtract estimated repair costs and our profit margin, and present a fair cash offer. We walk you through the numbers so you understand how we got there.
+
+After adding the content for all 5 pages, also:
+- Make sure each page links internally to the Suffolk County and Nassau County location pages
+- Add a "Related Resources" section at the bottom of each page linking to the relevant blog post on blog.thepropertyfather.com
+- Confirm every page has its own unique canonical, title, and meta description
+```
+
+---
+
+That's everything the agent needs. Paste Prompt 1 first so you can confirm the file paths exist before running Prompt 2. If the agent shows a different file structure (like `.mdx` files or a different folder name), let me know and I'll adjust Prompt 2 before you run it.
