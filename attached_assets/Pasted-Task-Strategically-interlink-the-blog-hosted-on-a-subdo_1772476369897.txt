@@ -1,0 +1,75 @@
+Task: Strategically interlink the blog (hosted on a subdomain, e.g. blog.thepropertyfather.com) from the root site pages WITHOUT adding any nav link or button labeled "Blog" or "Articles" or anything that signals a blog section.
+
+The goal is to pass authority from the root domain to the blog naturally through contextual body links and footer links — exactly how Google's knowledge graph expects related content to flow.
+
+---
+
+RULES:
+- DO NOT add any "Blog" or "Resources" or "Articles" link to the main navigation
+- DO NOT create a blog index or listing page on the root site
+- All links to blog posts must be contextually relevant — anchor text should describe the topic, not say "read our blog" or "click here"
+- Links must appear natural, as if the page content is referencing a resource the reader would genuinely want
+
+---
+
+WHERE TO ADD LINKS:
+
+1. FOOTER (global, appears on every page)
+   Add a "Resources" or "Helpful Articles" section in the footer with 5-6 contextual links to the highest-value blog posts. Use descriptive anchor text like:
+   - "How cash home sales work in New York"
+   - "Selling your house during divorce on Long Island"
+   - "What to expect after accepting a cash offer"
+   - "Cash buyer vs. realtor: which is right for you?"
+   - "Are 'We Buy Houses' companies legitimate?"
+   - "How to sell an inherited house in NY"
+   
+   These should link to actual blog post URLs on the blog subdomain.
+
+2. HOMEPAGE (thepropertyfather.com)
+   - In the "How It Works" section or below it, add 2-3 inline contextual links. Example: In a sentence about the process, link "learn how we calculate our cash offers" to the relevant blog post.
+   - Near the FAQ section (if present), link specific questions to their corresponding deep-dive blog articles using anchor text that matches the question topic.
+
+3. SITUATION PAGES — add 1-2 contextual body links per page:
+   - /situations/divorce → link to "Selling Your Long Island Home During Divorce: A Complete Guide"
+   - /situations/pre-foreclosure → link to "Facing Foreclosure on Long Island? Here Are Your Options"
+   - /situations/probate → link to "Probate Sales in Suffolk County: Timeline and Process Explained"
+   - /situations/inherited-property → link to "How to Sell an Inherited House in NY"
+   - /situations/sell-as-is → link to "Selling As-Is: What It Really Means for Long Island Homeowners"
+
+4. LOCATION PAGES — add 1-2 contextual body links per page:
+   - /locations/suffolk-county → link to "Selling Your Suffolk County Home for Cash: What to Expect"
+   - /locations/nassau-county → link to "Nassau County Housing Market 2026: Is Now a Good Time to Sell?"
+
+5. HOW IT WORKS PAGE (/how-it-works)
+   - Add 2-3 inline links within the process explanation text, linking to process/education cluster posts like:
+     - "What Happens After You Accept a Cash Offer"
+     - "Closing with a Cash Buyer: Timeline and What to Bring"
+     - "Do You Need a Lawyer When Selling to a Cash Buyer in NY?"
+
+---
+
+LINK FORMAT:
+- All blog links point to: blog.thepropertyfather.com/[post-slug]
+  (or whatever the actual blog subdomain URL structure is — confirm from existing setup)
+- Open in same tab (not _blank) to keep link equity flowing
+- No "nofollow" attributes — these are first-party links
+
+---
+
+ANCHOR TEXT GUIDELINES:
+- Use natural, descriptive phrases (3-7 words)
+- Vary the anchor text — do not repeat the same phrase across multiple pages
+- Never use generic anchors like "click here," "read more," or "blog post"
+- Match the anchor text to the primary keyword of the target article when possible
+
+---
+
+IMPLEMENTATION NOTES:
+- This is an Astro/Tailwind site — update the relevant .astro component files
+- Footer links should be in the Footer.astro component (or equivalent)
+- Body links should be added inline within each page's content section
+- If situation or location pages are generated from a data file or template, update the template to include the relevant blog link for that page type
+- Do not change any existing navigation structure
+
+After implementation, output a simple list of every link added, in this format:
+[Source Page] → [Anchor Text] → [Target URL]
