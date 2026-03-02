@@ -80,7 +80,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="https://blog.thepropertyfather.com/why-cash-offers-are-lower/" className="text-sm text-white/80 hover:text-gold transition-colors" data-testid="footer-link-blog-cash-offer">
-                  What to expect after accepting a cash offer
+                  Why cash offers come in lower than market value
                 </a>
               </li>
               <li>

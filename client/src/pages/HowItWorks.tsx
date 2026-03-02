@@ -54,7 +54,7 @@ const steps = [
       "No hidden fees or charges",
       "Take your time to decide"
     ],
-    blogLink: { text: "what happens after you accept a cash offer", url: "https://blog.thepropertyfather.com/why-cash-offers-are-lower/" }
+    blogLink: { text: "why cash offers come in lower than retail price", url: "https://blog.thepropertyfather.com/why-cash-offers-are-lower/" }
   },
   {
     icon: Calendar,
