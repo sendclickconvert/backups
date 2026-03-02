@@ -21,7 +21,7 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 ### Technical Implementations
 - **Dynamic Content**: Uses data files (`site.ts`, `case-studies.ts`, `locations.ts`) to manage content dynamically.
 - **Location-Based Content**: Features dedicated pages for services and service areas, including county and town-specific content with geocoded coordinates.
-- **SEO Optimization**: Implements JSON-LD schema (LocalBusiness, Service, AggregateRating, FAQPage, Organization, Person, Review, WebPage, BreadcrumbList) for enhanced search engine visibility. E-E-A-T (Expertise, Authoritativeness, Trustworthiness) principles are applied through author bylines and detailed content.
+- **SEO Optimization**: Implements JSON-LD schema (LocalBusiness, Service, FAQPage, Organization, Person, Review, WebPage, BreadcrumbList) for enhanced search engine visibility. AggregateRating is ONLY on the BBB page (reviewCount: 3 with real reviews + author fields) — removed sitewide elsewhere because reviewCount: 0 is invalid per Google's structured data requirements. E-E-A-T (Expertise, Authoritativeness, Trustworthiness) principles are applied through author bylines and detailed content.
 - **Redirects**: Comprehensive 301 redirects are handled via `astro.config.mjs` and a dynamic catch-all `[...slug].astro` for legacy WordPress URLs and content migrations.
 - **Hybrid Rendering**: Prerenders most pages as static HTML while server-rendering dynamic content and redirects for flexibility.
 - **Internal Linking**: Strategically placed internal links across service pages, county hubs, and town pages to improve site navigation and SEO equity.

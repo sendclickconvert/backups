@@ -64,13 +64,6 @@ const countySchema = {
     { '@type': 'County', name: `${county.name}, New York` },
     ...townAreaServed,
   ],
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: BUSINESS.rating.ratingValue,
-    reviewCount: BUSINESS.rating.reviewCount,
-    bestRating: BUSINESS.rating.bestRating,
-    worstRating: BUSINESS.rating.worstRating,
-  },
   telephone: BUSINESS.phone,
   address: {
     '@type': 'PostalAddress',
