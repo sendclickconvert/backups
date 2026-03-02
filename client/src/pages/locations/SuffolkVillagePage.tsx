@@ -204,6 +204,9 @@ export default function SuffolkVillagePage() {
                     {p}
                   </p>
                 ))}
+                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                  For a detailed walkthrough of the process, see our guide to <a href="https://blog.thepropertyfather.com/sell-house-suffolk-county-cash/" className="text-accent underline">selling your Suffolk County home for cash</a>.
+                </p>
               </div>
             )}
 

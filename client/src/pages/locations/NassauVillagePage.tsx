@@ -204,6 +204,9 @@ export default function NassauVillagePage() {
                     {p}
                   </p>
                 ))}
+                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                  To understand how the broader market affects your home's value, read our <a href="https://blog.thepropertyfather.com/nassau-county-housing-market-2026/" className="text-accent underline">Nassau County housing market outlook for 2026</a>.
+                </p>
               </div>
             )}
 

@@ -187,6 +187,9 @@ export default function SuffolkTownPage() {
                     {p}
                   </p>
                 ))}
+                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                  If you're considering your options, our guide to <a href="https://blog.thepropertyfather.com/sell-house-suffolk-county-cash/" className="text-accent underline">selling your Suffolk County house for cash</a> walks through the entire process.
+                </p>
               </div>
             )}
 
@@ -202,6 +205,13 @@ export default function SuffolkTownPage() {
                 ))}
               </div>
             ))}
+
+            <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
+              For the latest data on pricing and demand, see our <a href="https://blog.thepropertyfather.com/long-island-real-estate-trends-sellers/" className="text-accent underline">Long Island real estate trends for sellers</a>.
+              {town.slug === "huntington" && <> You can also read our <a href="https://blog.thepropertyfather.com/we-buy-houses-huntington-ny/" className="text-accent underline">complete guide to selling your Huntington home for cash</a>.</>}
+              {town.slug === "babylon" && <> You can also read about <a href="https://blog.thepropertyfather.com/selling-house-babylon-cash-offer/" className="text-accent underline">getting a cash offer for your Babylon home</a>.</>}
+              {town.slug === "patchogue" && <> You can also read our <a href="https://blog.thepropertyfather.com/patchogue-homeowners-cash-buyers/" className="text-accent underline">guide for Patchogue homeowners considering cash buyers</a>.</>}
+            </p>
 
             {town.neighborhoods && town.neighborhoods.length > 0 && (
               <div className="mb-12">

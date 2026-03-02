@@ -187,6 +187,9 @@ export default function NassauTownPage() {
                     {p}
                   </p>
                 ))}
+                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                  For an in-depth look at where the local market is heading, see our <a href="https://blog.thepropertyfather.com/nassau-county-housing-market-2026/" className="text-accent underline">Nassau County housing market analysis for 2026</a>.
+                </p>
               </div>
             )}
 
@@ -202,6 +205,10 @@ export default function NassauTownPage() {
                 ))}
               </div>
             ))}
+
+            <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
+              Understanding <a href="https://blog.thepropertyfather.com/long-island-real-estate-trends-sellers/" className="text-accent underline">Long Island real estate trends for sellers</a> can help you decide whether now is the right time to explore a cash offer for your {town.townName} home.
+            </p>
 
             {town.neighborhoods && town.neighborhoods.length > 0 && (
               <div className="mb-12">
