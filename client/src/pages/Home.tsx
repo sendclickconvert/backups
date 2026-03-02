@@ -225,7 +225,10 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="text-center mt-12">
+          <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto">
+            Want to understand the numbers? See <a href="https://blog.thepropertyfather.com/why-cash-offers-are-lower/" className="text-accent underline" data-testid="link-how-offers-calculated">how we calculate our cash offers</a> and <a href="https://blog.thepropertyfather.com/how-do-we-buy-houses-companies-work/" className="text-accent underline" data-testid="link-closing-with-cash-buyer">what closing looks like with a cash buyer</a>.
+          </p>
+          <div className="text-center mt-8">
             <Link href="/how-it-works">
               <Button size="lg" className="bg-charcoal text-white " data-testid="button-learn-more">
                 Learn More About Our Process

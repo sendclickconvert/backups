@@ -53,7 +53,8 @@ const steps = [
       "No obligation to accept",
       "No hidden fees or charges",
       "Take your time to decide"
-    ]
+    ],
+    blogLink: { text: "what happens after you accept a cash offer", url: "https://blog.thepropertyfather.com/why-cash-offers-are-lower/" }
   },
   {
     icon: Calendar,
@@ -65,7 +66,8 @@ const steps = [
       "Close as fast as 7 days",
       "Or take up to 60 days",
       "You're in complete control"
-    ]
+    ],
+    blogLink: { text: "do you need a lawyer when selling to a cash buyer in NY", url: "https://blog.thepropertyfather.com/questions-to-ask-cash-buyer/" }
   },
   {
     icon: Banknote,
@@ -77,7 +79,8 @@ const steps = [
       "We pay all closing costs",
       "No commissions or fees",
       "Walk away stress-free"
-    ]
+    ],
+    blogLink: { text: "selling as-is explained for Long Island homeowners", url: "https://blog.thepropertyfather.com/sell-house-as-is-long-island/" }
   }
 ];
 
@@ -162,6 +165,11 @@ export default function HowItWorks() {
                       </li>
                     ))}
                   </ul>
+                  {step.blogLink && (
+                    <p className="mt-4 text-sm text-muted-foreground">
+                      Learn more: <a href={step.blogLink.url} className="text-accent underline">{step.blogLink.text}</a>
+                    </p>
+                  )}
                 </div>
                 <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                   <Card className="bg-muted border-0">

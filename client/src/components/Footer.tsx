@@ -66,6 +66,39 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
+            <h3 className="text-lg font-semibold mb-4 mt-6 text-gold">Helpful Articles</h3>
+            <ul className="space-y-2">
+              <li>
+                <a href="https://blog.thepropertyfather.com/how-do-we-buy-houses-companies-work/" className="text-sm text-white/80 hover:text-gold transition-colors" data-testid="footer-link-blog-cash-sales">
+                  How cash home sales work in New York
+                </a>
+              </li>
+              <li>
+                <a href="https://blog.thepropertyfather.com/sell-house-during-divorce-long-island/" className="text-sm text-white/80 hover:text-gold transition-colors" data-testid="footer-link-blog-divorce">
+                  Selling your home during divorce on Long Island
+                </a>
+              </li>
+              <li>
+                <a href="https://blog.thepropertyfather.com/why-cash-offers-are-lower/" className="text-sm text-white/80 hover:text-gold transition-colors" data-testid="footer-link-blog-cash-offer">
+                  What to expect after accepting a cash offer
+                </a>
+              </li>
+              <li>
+                <a href="https://blog.thepropertyfather.com/cash-buyer-vs-realtor/" className="text-sm text-white/80 hover:text-gold transition-colors" data-testid="footer-link-blog-buyer-vs-realtor">
+                  Cash buyer vs. realtor: which is right for you?
+                </a>
+              </li>
+              <li>
+                <a href="https://blog.thepropertyfather.com/are-we-buy-houses-companies-legit/" className="text-sm text-white/80 hover:text-gold transition-colors" data-testid="footer-link-blog-legit">
+                  Are "We Buy Houses" companies legitimate?
+                </a>
+              </li>
+              <li>
+                <a href="https://blog.thepropertyfather.com/sell-inherited-house-new-york/" className="text-sm text-white/80 hover:text-gold transition-colors" data-testid="footer-link-blog-inherited">
+                  How to sell an inherited house in New York
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div>

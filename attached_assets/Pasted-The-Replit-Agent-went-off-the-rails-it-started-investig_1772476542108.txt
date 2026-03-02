@@ -1,0 +1,68 @@
+The Replit Agent went off the rails — it started investigating the existing structure (good), found the village pages were already complete, and then conflated that task with your blog interlinking request and declared "everything is done." It didn't actually add a single blog link.
+
+Here's a more targeted prompt that keeps it focused:
+
+---
+
+**CORRECTIVE REPLIT PROMPT:**
+
+```
+Ignore any previous task context. This is a focused, specific task only.
+
+Do NOT touch village pages, sitemap, routes, or any existing structure.
+
+TASK: Add blog interlinking to 4 specific areas only.
+
+The blog lives at: blog.thepropertyfather.com
+
+---
+
+1. FOOTER (Footer.astro or equivalent)
+Add a "Helpful Articles" column/section with these 6 links:
+- "How cash home sales work in New York" → blog.thepropertyfather.com/how-cash-home-sales-work
+- "Selling your home during divorce on Long Island" → blog.thepropertyfather.com/selling-home-during-divorce-long-island
+- "What to expect after accepting a cash offer" → blog.thepropertyfather.com/what-to-expect-after-accepting-cash-offer
+- "Cash buyer vs. realtor: which is right for you?" → blog.thepropertyfather.com/cash-buyer-vs-realtor
+- "Are 'We Buy Houses' companies legitimate?" → blog.thepropertyfather.com/are-we-buy-houses-companies-legitimate
+- "How to sell an inherited house in New York" → blog.thepropertyfather.com/how-to-sell-inherited-house-new-york
+
+---
+
+2. HOMEPAGE (index.astro or pages/index.astro)
+Find the "How It Works" section. Within the body text of the steps, add these inline links naturally:
+- In the step about making an offer → link phrase "how we calculate our cash offers" → blog.thepropertyfather.com/how-cash-buyers-calculate-offers
+- In the step about closing → link phrase "what closing looks like with a cash buyer" → blog.thepropertyfather.com/closing-with-cash-buyer-timeline
+
+---
+
+3. HOW IT WORKS PAGE (how-it-works.astro or similar)
+Within the process explanation body text, add 3 inline contextual links:
+- Link "what happens after you accept" → blog.thepropertyfather.com/what-to-expect-after-accepting-cash-offer
+- Link "do you need a lawyer in New York" → blog.thepropertyfather.com/do-you-need-lawyer-selling-to-cash-buyer-ny
+- Link "selling as-is explained" → blog.thepropertyfather.com/selling-as-is-what-it-means-long-island-homeowners
+
+---
+
+4. SITUATION PAGES — add ONE inline body link each (not in a sidebar or resources box — in the paragraph text):
+- situations/divorce.astro → link "a complete guide to selling during divorce" → blog.thepropertyfather.com/selling-home-during-divorce-long-island
+- situations/pre-foreclosure.astro → link "your foreclosure options on Long Island" → blog.thepropertyfather.com/facing-foreclosure-long-island-options
+- situations/probate.astro → link "probate sale timeline in Suffolk County" → blog.thepropertyfather.com/probate-sales-suffolk-county-timeline
+- situations/inherited-property.astro → link "how to sell an inherited house in NY" → blog.thepropertyfather.com/how-to-sell-inherited-house-new-york
+- situations/sell-as-is.astro → link "what selling as-is really means" → blog.thepropertyfather.com/selling-as-is-what-it-means-long-island-homeowners
+
+---
+
+RULES:
+- Same tab links only (no target="_blank")
+- No nofollow attributes
+- Do NOT add "Blog" anywhere in the nav
+- Do NOT create any new pages or routes
+- Do NOT modify sitemap, village pages, or any other files
+
+When done, output a list:
+[File modified] → [Anchor text used] → [URL linked]
+```
+
+---
+
+The slug URLs I've used are placeholders — before running this, swap them out for the actual slugs from your WordPress blog so the links don't 404. Pull the real URLs from your GHL WordPress dashboard first, then paste them in.

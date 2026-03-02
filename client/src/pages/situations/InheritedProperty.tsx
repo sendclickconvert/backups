@@ -103,7 +103,7 @@ export default function InheritedProperty() {
                 className="text-lg text-white/90 mb-8"
                 data-testid="text-hero-intro"
               >
-                Inheriting a house can feel like a gift and a burden at the same time. On Long Island, inherited properties often come with deferred maintenance, complicated family agreements, and carrying costs — property taxes, insurance, utilities — that start adding up immediately. The Property Father helps heirs sell inherited houses quickly for cash, without the stress of repairs, showings, or a lengthy market listing.
+                Inheriting a house can feel like a gift and a burden at the same time. On Long Island, inherited properties often come with deferred maintenance, complicated family agreements, and carrying costs — property taxes, insurance, utilities — that start adding up immediately. If you're wondering where to start, read our guide on <a href="https://blog.thepropertyfather.com/sell-inherited-house-new-york/" className="text-gold underline">how to sell an inherited house in NY</a>. The Property Father helps heirs sell inherited houses quickly for cash, without the stress of repairs, showings, or a lengthy market listing.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/contact">

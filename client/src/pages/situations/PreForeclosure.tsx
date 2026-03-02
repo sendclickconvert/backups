@@ -127,7 +127,7 @@ export default function PreForeclosure() {
                 pre-foreclosure is not the end of the road. New York's
                 foreclosure process moves slowly, which means Long Island
                 homeowners in distress often have more time to act than they
-                realize. The Property Father helps homeowners facing
+                realize. We've written about <a href="https://blog.thepropertyfather.com/facing-foreclosure-long-island/" className="text-gold underline">your foreclosure options on Long Island</a> in detail. The Property Father helps homeowners facing
                 pre-foreclosure sell fast for cash, pay off the mortgage, and
                 walk away with their dignity and their credit score intact.
               </p>
