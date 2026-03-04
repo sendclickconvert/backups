@@ -34,7 +34,7 @@ const defaultSchema = {
   '@type': 'ProfessionalService',
   name: BUSINESS.name,
   alternateName: BUSINESS.shortName,
-  image: `${BUSINESS.url}/images/crst-logo.png`,
+  image: `${BUSINESS.url}/images/crst-logo.webp`,
   url: BUSINESS.url,
   telephone: BUSINESS.phone,
   email: BUSINESS.email,
@@ -145,12 +145,16 @@ const pageSchema = schema || defaultSchema;
 
   <Footer />
 
-  <!-- GHL Chat Widget -->
-  <script
-    src="https://widgets.leadconnectorhq.com/loader.js"
-    data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-    data-widget-id={GHL.chatWidgetId}
-  ></script>
+  <!-- GHL Chat Widget (deferred 3s for performance) -->
+  <script define:vars={{ chatWidgetId: GHL.chatWidgetId }}>
+    setTimeout(function() {
+      var s = document.createElement('script');
+      s.src = 'https://widgets.leadconnectorhq.com/loader.js';
+      s.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
+      s.setAttribute('data-widget-id', chatWidgetId);
+      document.body.appendChild(s);
+    }, 3000);
+  </script>
 
   <!-- Scroll animation observer -->
   <script>

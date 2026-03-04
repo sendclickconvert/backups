@@ -26,6 +26,7 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 - **Hybrid Rendering**: Prerenders most pages as static HTML while server-rendering dynamic content and redirects for flexibility.
 - **Internal Linking**: Strategically placed internal links across service pages, county hubs, and town pages to improve site navigation and SEO equity.
 - **Call Tracking**: Integrates GHL call tracking scripts (`number_pool.js`, `user_session.js`) for phone number attribution.
+- **Performance Optimizations**: Hero video conditionally loaded only on desktop (768px+) via JS to avoid 4.1MB download on mobile; logo served as WebP (12KB vs 180KB PNG); GHL chat widget deferred 3 seconds via setTimeout to avoid blocking initial page render.
 - **Training Portal**: Includes a standalone, `noindex`/`nofollow` training portal (`/training/portal/`) with multi-module video lessons.
 
 ### Feature Specifications
