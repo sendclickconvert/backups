@@ -57,6 +57,18 @@ const townSchema = {
     name: `${location.name}, New York`,
   },
   provider: { '@id': 'https://crst.net/#organization' },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: location.lat,
+    longitude: location.lng,
+  },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: BUSINESS.rating.ratingValue,
+    reviewCount: BUSINESS.rating.reviewCount,
+    bestRating: BUSINESS.rating.bestRating,
+    worstRating: BUSINESS.rating.worstRating,
+  },
 };
 
 const typeLabel = location.type.charAt(0).toUpperCase() + location.type.slice(1);
