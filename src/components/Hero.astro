@@ -60,16 +60,15 @@ import { BUSINESS } from '../data/site';
       <!-- Hero video (desktop: local mp4) / (mobile: click-to-play Vimeo) -->
       <div>
         <div class="relative rounded-xl overflow-hidden shadow-2xl shadow-black/30 border border-white/10" id="hero-media">
-          <div class="block md:hidden" id="hero-mobile-poster" style="padding:75% 0 0 0;position:relative;cursor:pointer;background:#1a2744;">
+          <div class="block md:hidden" id="hero-mobile-poster" style="padding:75% 0 0 0;position:relative;cursor:pointer;background:#000;">
             <img
-              src="/images/crst-logo.webp"
+              src="https://i.vimeocdn.com/video/2129378406-f17d573e25d7a90240d1e513947dadcb4a41148b721a2661ad9f5016ec192a71-d_640x360"
               alt="Play video — Cornerstone Services"
-              style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);max-width:60%;height:auto;"
-              width="480"
-              height="80"
+              style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;"
+              loading="eager"
             />
-            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);margin-top:50px;">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.2)"/><polygon points="26,20 26,44 46,32" fill="white"/></svg>
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.25);">
+              <svg width="72" height="72" viewBox="0 0 72 72" fill="none"><circle cx="36" cy="36" r="36" fill="rgba(0,0,0,0.55)"/><polygon points="29,22 29,50 54,36" fill="white"/></svg>
             </div>
           </div>
         </div>
