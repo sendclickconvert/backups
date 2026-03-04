@@ -121,11 +121,11 @@ const pageSchema = schema || defaultSchema;
 
   <slot name="head" />
 
-  <!-- Vimeo Player API (for mobile hero embed) -->
-  <script is:inline src="https://player.vimeo.com/api/player.js"></script>
+  <!-- Vimeo Player API (deferred for performance) -->
+  <script is:inline src="https://player.vimeo.com/api/player.js" defer></script>
 
   <!-- Google Analytics 4 -->
-  <script async src={`https://www.googletagmanager.com/gtag/js?id=${GHL.ga4Id}`}></script>
+  <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GHL.ga4Id}`}></script>
   <script define:vars={{ ga4Id: GHL.ga4Id }}>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -133,8 +133,10 @@ const pageSchema = schema || defaultSchema;
     gtag('config', ga4Id);
   </script>
 
-  <!-- GHL Tracking Pixel -->
+  <!-- GHL Tracking Pixel (deferred for performance) -->
   <script
+    is:inline
+    defer
     src="https://links.crst.net/js/external-tracking.js"
     data-tracking-id={GHL.trackingId}
   ></script>
