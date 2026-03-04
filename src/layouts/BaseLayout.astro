@@ -121,6 +121,9 @@ const pageSchema = schema || defaultSchema;
 
   <slot name="head" />
 
+  <!-- Vimeo Player API (for mobile hero embed) -->
+  <script is:inline src="https://player.vimeo.com/api/player.js"></script>
+
   <!-- Google Analytics 4 -->
   <script async src={`https://www.googletagmanager.com/gtag/js?id=${GHL.ga4Id}`}></script>
   <script define:vars={{ ga4Id: GHL.ga4Id }}>
