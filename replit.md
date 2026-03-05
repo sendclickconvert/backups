@@ -39,7 +39,7 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 - **BBB Trust Page**: A dedicated page showcasing BBB A+ rating with comprehensive schema (reviewCount: 3 with real reviews) and trust-building content.
 - **Author Byline**: Reusable component for author information on key content pages.
 - **Redirect Chain Audit Tool**: `redirect-chain-check-v2.cjs` + `redirect-map.csv` in project root. Run `node redirect-chain-check-v2.cjs` to produce `redirect-chain-report.csv`. BASE_DOMAIN set to `crst.net`.
-- **Sitemap**: 134 URLs in sitemap-0.xml, filtered to exclude /thank-you and /training pages.
+- **Sitemap**: Unified single system — `@astrojs/sitemap` is the only generator (removed duplicate `src/pages/sitemap.xml.ts` and stale `public/sitemap-*.xml` files). 143 URLs in sitemap-0.xml, filtered to exclude /thank-you and /training pages. `robots.txt` has single sitemap reference: `Sitemap: https://crst.net/sitemap-index.xml`. `/sitemap.xml` intentionally 404s.
 
 ### Key Phone Numbers
 - **Display phone**: `(845) 255-5722` (BUSINESS.phone)
