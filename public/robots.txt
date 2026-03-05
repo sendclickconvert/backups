@@ -1,7 +1,3 @@
 User-agent: *
 Allow: /
-
-# Disallow admin/internal paths
-Disallow: /thank-you
-
 Sitemap: https://crst.net/sitemap-index.xml
