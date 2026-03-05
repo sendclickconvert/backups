@@ -1,30 +1,9 @@
 ---
-export const prerender = false;
-
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import ServiceCard from '../components/ServiceCard.astro';
 import CTASection from '../components/CTASection.astro';
 import { BUSINESS, SERVICES, CASE_STUDIES, COUNTIES } from '../data/site';
-
-const fallbackPosts = [
-  { title: 'Postcard Printing ROI for Local Business', link: 'https://blog.crst.net/postcard-printing-roi-for-local-business/', excerpt: 'How local businesses measure and maximize return on investment from postcard campaigns.' },
-  { title: 'How Much Does Postcard Printing Cost?', link: 'https://blog.crst.net/how-much-does-postcard-printing-cost/', excerpt: 'A practical breakdown of postcard printing costs by size, quantity, and finish — so you can budget your next campaign.' },
-  { title: 'Best Postcard Size for Direct Mail', link: 'https://blog.crst.net/best-postcard-size-for-direct-mail/', excerpt: 'Choosing the right postcard size affects postage, response rates, and design options. Here\'s how to pick the best format.' },
-];
-
-let blogPosts = fallbackPosts;
-try {
-  const res = await fetch('https://blog.crst.net/wp-json/wp/v2/posts?per_page=3&_fields=title,link,excerpt');
-  if (res.ok) {
-    const data = await res.json();
-    blogPosts = data.map((p: any) => ({
-      title: p.title.rendered.replace(/&#8217;/g, "'").replace(/&#8211;/g, '–').replace(/&#8212;/g, '—').replace(/&#038;/g, '&').replace(/&amp;/g, '&'),
-      link: p.link,
-      excerpt: p.excerpt.rendered.replace(/<[^>]+>/g, '').trim().slice(0, 160),
-    }));
-  }
-} catch {}
 ---
 
 <BaseLayout
@@ -220,17 +199,50 @@ try {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-10">
         <div class="section-divider mx-auto mb-6"></div>
-        <h2 class="text-2xl sm:text-3xl font-display text-crst-primary">From the Blog</h2>
-        <p class="text-gray-600 mt-2">Insights and guides for smarter direct mail campaigns.</p>
+        <div class="flex items-center justify-center gap-4">
+          <h2 class="text-2xl sm:text-3xl font-display text-crst-primary">Latest Articles</h2>
+        </div>
+        <p class="text-gray-600 mt-2">Insights and guides for smarter direct mail campaigns. <a href="https://blog.crst.net/" class="text-crst-accent hover:text-crst-primary underline text-sm">View all &rarr;</a></p>
       </div>
-      <div class="grid md:grid-cols-3 gap-6">
-        {blogPosts.map((post) => (
-          <a href={post.link} class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow group" target="_blank" rel="noopener">
-            <h3 class="text-lg font-display font-bold text-crst-primary group-hover:text-crst-accent transition-colors mb-2">{post.title}</h3>
-            <p class="text-gray-600 text-sm">{post.excerpt}</p>
-          </a>
-        ))}
+      <div id="latest-posts" class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 animate-pulse">
+          <div class="h-5 w-3/4 bg-gray-200 rounded mb-3"></div>
+          <div class="h-3 w-1/3 bg-gray-200 rounded"></div>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 animate-pulse">
+          <div class="h-5 w-3/4 bg-gray-200 rounded mb-3"></div>
+          <div class="h-3 w-1/3 bg-gray-200 rounded"></div>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 animate-pulse">
+          <div class="h-5 w-3/4 bg-gray-200 rounded mb-3"></div>
+          <div class="h-3 w-1/3 bg-gray-200 rounded"></div>
+        </div>
       </div>
+      <script is:inline>
+        (async function () {
+          var root = document.getElementById('latest-posts');
+          if (!root) return;
+          try {
+            var res = await fetch('/api/latest-posts.json');
+            var data = await res.json();
+            if (!data || !data.ok || !Array.isArray(data.posts) || data.posts.length === 0) {
+              root.innerHTML = '<div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-sm text-gray-600">No recent posts found. <a class="text-crst-accent hover:underline" href="https://blog.crst.net/">Visit the blog</a>.</div>';
+              return;
+            }
+            root.innerHTML = data.posts.slice(0, 3).map(function (p) {
+              var date = p.date ? new Date(p.date).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' }) : '';
+              var title = (p.title || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+              var url = (p.url || '').replace(/"/g, '&quot;');
+              return '<a href="' + url + '" class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow group" target="_blank" rel="noopener">' +
+                '<h3 class="text-lg font-display font-bold text-crst-primary group-hover:text-crst-accent transition-colors mb-2">' + title + '</h3>' +
+                '<div class="text-xs text-gray-500">' + date + '</div>' +
+                '</a>';
+            }).join('');
+          } catch (e) {
+            root.innerHTML = '<div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-sm text-gray-600">Unable to load posts right now. <a class="text-crst-accent hover:underline" href="https://blog.crst.net/">Visit the blog</a>.</div>';
+          }
+        })();
+      </script>
     </div>
   </section>
 
