@@ -48,6 +48,7 @@ const redirectPaths = [
 export default defineConfig({
   site: 'https://crst.net',
   output: 'hybrid',
+  trailingSlash: 'never',
   adapter: node({ mode: 'standalone' }),
   vite: { server: { allowedHosts: true } },
   integrations: [
