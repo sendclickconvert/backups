@@ -32,8 +32,8 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 
 ### Feature Specifications
 - **Services Pages**: Nine dedicated service pages with detailed descriptions, FAQs, service area links, and 3+ CTAs per page (hero sidebar + mid-page CTA band + bottom CTASection).
-- **Service Areas**: Covers three counties (Ulster, Dutchess, Orange) with 93 town-specific pages (37 Ulster + 27 Dutchess + 29 Orange), including local business schema with AggregateRating, nearby area links, Google Map iframes, mid-page CTAs, and county back links.
-- **County Hub Pages**: 3 county index pages with Google Map embeds (zoom 11), AggregateRating schema, anchor city highlights, full town listing with links, and mid-page CTAs.
+- **Service Areas**: Covers three counties (Ulster, Dutchess, Orange) with 93 town-specific pages (37 Ulster + 27 Dutchess + 29 Orange), including local business schema (NO AggregateRating), nearby area links, Google Map iframes, mid-page CTAs, and county back links.
+- **County Hub Pages**: 3 county index pages with Google Map embeds (zoom 11), anchor city highlights, full town listing with links, and mid-page CTAs.
 - **Resources/Tools**: A section for direct mail tools and resources, including guides on postage rates, mailing permits, postal dictionaries, envelope sizes, address change/forwarding, USPS templates, EDDM guide, mail automation, ancillary service endorsements, periodicals, and a payments page.
 - **Case Studies**: 11 case studies with clickable industry filter tags.
 - **BBB Trust Page**: A dedicated page showcasing BBB A+ rating with comprehensive schema (reviewCount: 3 with real reviews) and trust-building content.
@@ -46,8 +46,11 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 - **Tracking/dial phone**: `(845) 393-6770` (BUSINESS.trackingPhone / phoneClean: `8453936770`) — GHL call tracking number, intentionally different from display
 
 ### Schema Configuration
-- **AggregateRating**: Present on ALL pages via BaseLayout defaultSchema (`ratingValue: '5.0'`, `ratingCount: '1'`). Additionally nested in Service schema provider blocks (9 service pages), county hub LocalBusiness schemas (3 pages), and town LocalBusiness schemas (~93 pages). BBB page has separate AggregateRating with `reviewCount: '3'` and real review data.
-- **BUSINESS.rating** in `site.ts`: `ratingValue: '5.0'`, `reviewCount: '0'`, `bestRating: '5'`, `worstRating: '1'` — used as data source for AggregateRating across all schemas (ratingCount set to '1' in schema output)
+- **AggregateRating**: ONLY on the BBB page (`crst-better-business-bureau-a-direct-mailer.astro`) with `reviewCount: '3'` and real review data. Removed from BaseLayout, all 9 service pages, county hubs, and town pages because `reviewCount: 0` is invalid per Google's structured data requirements.
+- **BUSINESS.rating** in `site.ts`: `ratingValue: '5.0'`, `reviewCount: '0'`, `bestRating: '5'`, `worstRating: '1'` — data definition retained but NOT rendered in any schema except BBB page.
+
+### Blog Integration
+- **Latest Articles**: Homepage displays 3 latest blog posts via client-side fetch from `/api/latest-posts.json` (server-rendered endpoint with 10-min in-memory cache, 5-second AbortController timeout). Posts sourced from `blog.crst.net/wp-json/wp/v2/posts`. Homepage remains prerendered/static. Skeleton loading placeholders with graceful fallback if API is unavailable.
 
 ## External Dependencies
 - **Google Fonts**: For typography.
@@ -76,6 +79,7 @@ src/
 │   ├── case-studies/ (index + [slug] for 11 studies)
 │   ├── resources/  (6 resource pages + index)
 │   ├── direct-mail-tools/ (5 tool pages)
+│   ├── api/            (latest-posts.json.ts — server-rendered blog endpoint)
 │   └── [...slug].astro (catch-all redirect handler)
 public/
 ├── images/         (brand assets + wp/ migrated WordPress images)
