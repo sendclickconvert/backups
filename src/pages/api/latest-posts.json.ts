@@ -18,13 +18,14 @@ function stripHtml(input: string) {
 
 export async function GET() {
   const now = Date.now();
+  const cacheHeaders = {
+    'Content-Type': 'application/json; charset=utf-8',
+    'Cache-Control': 'public, max-age=0, s-maxage=600, stale-while-revalidate=60',
+    'Surrogate-Control': 'max-age=600, stale-while-revalidate=60',
+  };
+
   if (cache && now - cache.ts < TTL_MS) {
-    return new Response(JSON.stringify(cache.data), {
-      headers: {
-        'Content-Type': 'application/json; charset=utf-8',
-        'Cache-Control': 'public, max-age=600',
-      },
-    });
+    return new Response(JSON.stringify(cache.data), { headers: cacheHeaders });
   }
 
   const wpUrl =
@@ -62,12 +63,7 @@ export async function GET() {
     const payload = { ok: true, posts };
     cache = { ts: now, data: payload };
 
-    return new Response(JSON.stringify(payload), {
-      headers: {
-        'Content-Type': 'application/json; charset=utf-8',
-        'Cache-Control': 'public, max-age=600',
-      },
-    });
+    return new Response(JSON.stringify(payload), { headers: cacheHeaders });
   } catch (e: any) {
     const payload = { ok: false, error: 'FETCH_FAILED', posts: [] as any[] };
     cache = { ts: now, data: payload };
