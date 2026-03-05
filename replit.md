@@ -20,27 +20,68 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 
 ### Technical Implementations
 - **Dynamic Content**: Uses data files (`site.ts`, `case-studies.ts`, `locations.ts`) to manage content dynamically.
-- **Location-Based Content**: Features dedicated pages for services and service areas, including county and town-specific content with geocoded coordinates.
-- **SEO Optimization**: Implements JSON-LD schema (LocalBusiness, Service, FAQPage, Organization, Person, Review, WebPage, BreadcrumbList) for enhanced search engine visibility. AggregateRating is ONLY on the BBB page (reviewCount: 3 with real reviews + author fields) — removed sitewide elsewhere because reviewCount: 0 is invalid per Google's structured data requirements. E-E-A-T (Expertise, Authoritativeness, Trustworthiness) principles are applied through author bylines and detailed content.
-- **Redirects**: Comprehensive 301 redirects are handled via `astro.config.mjs` and a dynamic catch-all `[...slug].astro` for legacy WordPress URLs and content migrations.
-- **Hybrid Rendering**: Prerenders most pages as static HTML while server-rendering dynamic content and redirects for flexibility.
+- **Location-Based Content**: Features dedicated pages for services and service areas, including county and town-specific content with geocoded coordinates (lat/lng on all 93+ locations).
+- **SEO Optimization**: Implements JSON-LD schema (LocalBusiness/ProfessionalService, Service, FAQPage, Organization, Person, Review, WebPage, BreadcrumbList) for enhanced search engine visibility. AggregateRating is sitewide via BaseLayout default schema + embedded in service page, county page, and town page schemas. BBB page has `reviewCount: '3'` with real reviews + author fields; all other pages use `reviewCount: '0'` from BUSINESS.rating in site.ts. E-E-A-T (Expertise, Authoritativeness, Trustworthiness) principles are applied through author bylines and detailed content.
+- **Redirects**: Comprehensive 301 redirects handled via dual system: `astro.config.mjs` (99 config-level redirects) + dynamic catch-all `[...slug].astro` (130+ exact redirects + 8 pattern-based wildcard rules). All redirect targets verified to resolve to live 200 pages. Redirect chain audit tool (`redirect-chain-check-v2.cjs`) installed in project root.
+- **Trailing Slash**: `trailingSlash: 'never'` enforced in astro.config.mjs; all sitemap URLs generated without trailing slashes.
+- **Hybrid Rendering**: Prerenders most pages as static HTML while server-rendering dynamic content and redirects via catch-all.
 - **Internal Linking**: Strategically placed internal links across service pages, county hubs, and town pages to improve site navigation and SEO equity.
-- **Call Tracking**: Integrates GHL call tracking scripts (`number_pool.js`, `user_session.js`) for phone number attribution.
-- **Performance Optimizations**: Hero video conditionally loaded only on desktop (768px+) via JS to avoid 4.1MB download on mobile; logo served as WebP (12KB vs 180KB PNG); GHL chat widget deferred 3 seconds via setTimeout to avoid blocking initial page render.
-- **Training Portal**: Includes a standalone, `noindex`/`nofollow` training portal (`/training/portal/`) with multi-module video lessons.
+- **Call Tracking**: Integrates GHL call tracking scripts (`number_pool.js`, `user_session.js`) for phone number attribution. GA4 ID: `G-HRBG2H3FE7`.
+- **Performance Optimizations**: Hero video conditionally loaded only on desktop (768px+) via JS matchMedia to avoid 4.1MB download on mobile; mobile shows Vimeo thumbnail poster (vimeocdn.com 640x360) with dark overlay + play button SVG; logo served as WebP (16KB vs 180KB PNG); GHL chat widget deferred 3 seconds via setTimeout to avoid blocking initial page render.
+- **Training Portal**: Standalone `noindex`/`nofollow` training portal (`/training/portal/`) with multi-module video lessons (9 training videos in public/videos/).
 
 ### Feature Specifications
-- **Services Pages**: Nine dedicated service pages with detailed descriptions, FAQs, and service area links.
-- **Service Areas**: Covers three counties (Ulster, Dutchess, Orange) with 92 town-specific pages (36 Ulster + 27 Dutchess + 29 Orange), including local business schema, nearby area links, Google Map embeds, mid-page CTAs, and county back links.
-- **Resources/Tools**: A section for direct mail tools and resources, including guides on postage rates, mailing permits, and postal dictionaries.
-- **Case Studies**: Features case studies with clickable industry filter tags.
-- **BBB Trust Page**: A dedicated page showcasing BBB A+ rating with comprehensive schema and trust-building content.
+- **Services Pages**: Nine dedicated service pages with detailed descriptions, FAQs, service area links, and 3+ CTAs per page (hero sidebar + mid-page CTA band + bottom CTASection).
+- **Service Areas**: Covers three counties (Ulster, Dutchess, Orange) with 93 town-specific pages (37 Ulster + 27 Dutchess + 29 Orange), including local business schema with AggregateRating, nearby area links, Google Map iframes, mid-page CTAs, and county back links.
+- **County Hub Pages**: 3 county index pages with Google Map embeds (zoom 11), AggregateRating schema, anchor city highlights, full town listing with links, and mid-page CTAs.
+- **Resources/Tools**: A section for direct mail tools and resources, including guides on postage rates, mailing permits, postal dictionaries, envelope sizes, address change/forwarding, USPS templates, EDDM guide, mail automation, ancillary service endorsements, periodicals, and a payments page.
+- **Case Studies**: 11 case studies with clickable industry filter tags.
+- **BBB Trust Page**: A dedicated page showcasing BBB A+ rating with comprehensive schema (reviewCount: 3 with real reviews) and trust-building content.
 - **Author Byline**: Reusable component for author information on key content pages.
+- **Redirect Chain Audit Tool**: `redirect-chain-check-v2.cjs` + `redirect-map.csv` in project root. Run `node redirect-chain-check-v2.cjs` to produce `redirect-chain-report.csv`. BASE_DOMAIN set to `crst.net`.
+- **Sitemap**: 134 URLs in sitemap-0.xml, filtered to exclude /thank-you and /training pages.
+
+### Key Phone Numbers
+- **Display phone**: `(845) 255-5722` (BUSINESS.phone)
+- **Tracking/dial phone**: `(845) 393-6770` (BUSINESS.trackingPhone / phoneClean: `8453936770`) — GHL call tracking number, intentionally different from display
+
+### Schema Configuration
+- **BUSINESS.rating** in `site.ts`: `ratingValue: '4.9'`, `reviewCount: '0'`, `bestRating: '5'`, `worstRating: '1'`
+- Update `reviewCount` when real reviews are collected
+- BBB page overrides with `reviewCount: '3'` and real review data
 
 ## External Dependencies
 - **Google Fonts**: For typography.
-- **GoHighLevel (GHL)**: For call tracking and attribution.
+- **GoHighLevel (GHL)**: For call tracking, attribution, and chat widget.
 - **USPS (United States Postal Service)**: Referenced for direct mail regulations (DMM citations), forms (PS Form 3500, PS Form 3533), and services like Informed Delivery.
 - **WordPress**: Historical content migration and redirect management from a previous WordPress site.
 - **BBB (Better Business Bureau)**: Integration of BBB A+ rating and credentials.
 - **YouTube**: For embedding training videos in the internal portal.
+- **Vimeo**: CDN used for mobile hero poster thumbnail.
+- **Stripe**: STRIPE_SECRET_KEY in Replit secrets (for future payment integration).
+- **DataForSEO**: DATAFORSEO_LOGIN/PASSWORD in Replit secrets (for keyword research).
+
+## File Structure
+```
+src/
+├── components/     (8 components: Header, Footer, Hero, PageHero, CTASection, ServiceCard, AuthorByline, EstimateForm)
+├── data/           (site.ts, locations.ts, case-studies.ts, media-manifest.json)
+├── layouts/        (BaseLayout.astro — global schema, meta, scripts)
+├── pages/
+│   ├── services/   (9 service pages + index)
+│   ├── service-areas/
+│   │   ├── index.astro
+│   │   └── [county]/
+│   │       ├── index.astro (3 county hubs)
+│   │       └── [location].astro (93 town pages)
+│   ├── case-studies/ (index + [slug] for 11 studies)
+│   ├── resources/  (6 resource pages + index)
+│   ├── direct-mail-tools/ (5 tool pages)
+│   └── [...slug].astro (catch-all redirect handler)
+public/
+├── images/         (brand assets + wp/ migrated WordPress images)
+├── videos/         (hero-video.mp4 + 9 training videos)
+├── training/       (standalone HTML training portal)
+├── sitemap-*.xml   (134 URLs)
+└── robots.txt
+```
