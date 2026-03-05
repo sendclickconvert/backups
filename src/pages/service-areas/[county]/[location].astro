@@ -62,13 +62,6 @@ const townSchema = {
     latitude: location.lat,
     longitude: location.lng,
   },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: BUSINESS.rating.ratingValue,
-    reviewCount: BUSINESS.rating.reviewCount,
-    bestRating: BUSINESS.rating.bestRating,
-    worstRating: BUSINESS.rating.worstRating,
-  },
 };
 
 const typeLabel = location.type.charAt(0).toUpperCase() + location.type.slice(1);

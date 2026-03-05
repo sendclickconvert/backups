@@ -21,7 +21,7 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 ### Technical Implementations
 - **Dynamic Content**: Uses data files (`site.ts`, `case-studies.ts`, `locations.ts`) to manage content dynamically.
 - **Location-Based Content**: Features dedicated pages for services and service areas, including county and town-specific content with geocoded coordinates (lat/lng on all 93+ locations).
-- **SEO Optimization**: Implements JSON-LD schema (LocalBusiness/ProfessionalService, Service, FAQPage, Organization, Person, Review, WebPage, BreadcrumbList) for enhanced search engine visibility. AggregateRating is sitewide via BaseLayout default schema + embedded in service page, county page, and town page schemas. BBB page has `reviewCount: '3'` with real reviews + author fields; all other pages use `reviewCount: '0'` from BUSINESS.rating in site.ts. E-E-A-T (Expertise, Authoritativeness, Trustworthiness) principles are applied through author bylines and detailed content.
+- **SEO Optimization**: Implements JSON-LD schema (LocalBusiness/ProfessionalService, Service, FAQPage, Organization, Person, Review, WebPage, BreadcrumbList) for enhanced search engine visibility. AggregateRating is ONLY on the BBB page (reviewCount: 3 with real reviews + author fields) — removed sitewide elsewhere because reviewCount: 0 is invalid per Google's structured data requirements. E-E-A-T (Expertise, Authoritativeness, Trustworthiness) principles are applied through author bylines and detailed content.
 - **Redirects**: Comprehensive 301 redirects handled via dual system: `astro.config.mjs` (99 config-level redirects) + dynamic catch-all `[...slug].astro` (130+ exact redirects + 8 pattern-based wildcard rules). All redirect targets verified to resolve to live 200 pages. Redirect chain audit tool (`redirect-chain-check-v2.cjs`) installed in project root.
 - **Trailing Slash**: `trailingSlash: 'never'` enforced in astro.config.mjs; all sitemap URLs generated without trailing slashes.
 - **Hybrid Rendering**: Prerenders most pages as static HTML while server-rendering dynamic content and redirects via catch-all.
@@ -46,9 +46,9 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 - **Tracking/dial phone**: `(845) 393-6770` (BUSINESS.trackingPhone / phoneClean: `8453936770`) — GHL call tracking number, intentionally different from display
 
 ### Schema Configuration
-- **BUSINESS.rating** in `site.ts`: `ratingValue: '4.9'`, `reviewCount: '0'`, `bestRating: '5'`, `worstRating: '1'`
-- Update `reviewCount` when real reviews are collected
-- BBB page overrides with `reviewCount: '3'` and real review data
+- **AggregateRating**: Only on BBB page (`crst-better-business-bureau-a-direct-mailer.astro`) with `reviewCount: '3'` and real review data
+- **BUSINESS.rating** in `site.ts`: `ratingValue: '4.9'`, `reviewCount: '0'` — retained in data file for future use but NOT rendered in any schema except BBB
+- All other pages (BaseLayout, services, county, town) have NO aggregateRating in their JSON-LD
 
 ## External Dependencies
 - **Google Fonts**: For typography.
