@@ -31,9 +31,13 @@ export async function GET() {
     'https://blog.crst.net/wp-json/wp/v2/posts?per_page=6&_fields=link,date,title';
 
   try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 5000);
     const res = await fetch(wpUrl, {
       headers: { 'User-Agent': 'crst.net latest-posts fetch' },
+      signal: controller.signal,
     });
+    clearTimeout(timeout);
 
     if (!res.ok) {
       const payload = { ok: false, error: `WP_HTTP_${res.status}`, posts: [] as any[] };
