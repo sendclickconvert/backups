@@ -5,4 +5,3 @@ Allow: /
 Disallow: /thank-you
 
 Sitemap: https://crst.net/sitemap-index.xml
-Sitemap: https://crst.net/sitemap.xml
