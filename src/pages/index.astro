@@ -1,9 +1,30 @@
 ---
+export const prerender = false;
+
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import ServiceCard from '../components/ServiceCard.astro';
 import CTASection from '../components/CTASection.astro';
 import { BUSINESS, SERVICES, CASE_STUDIES, COUNTIES } from '../data/site';
+
+const fallbackPosts = [
+  { title: 'Postcard Printing ROI for Local Business', link: 'https://blog.crst.net/postcard-printing-roi-for-local-business/', excerpt: 'How local businesses measure and maximize return on investment from postcard campaigns.' },
+  { title: 'How Much Does Postcard Printing Cost?', link: 'https://blog.crst.net/how-much-does-postcard-printing-cost/', excerpt: 'A practical breakdown of postcard printing costs by size, quantity, and finish — so you can budget your next campaign.' },
+  { title: 'Best Postcard Size for Direct Mail', link: 'https://blog.crst.net/best-postcard-size-for-direct-mail/', excerpt: 'Choosing the right postcard size affects postage, response rates, and design options. Here\'s how to pick the best format.' },
+];
+
+let blogPosts = fallbackPosts;
+try {
+  const res = await fetch('https://blog.crst.net/wp-json/wp/v2/posts?per_page=3&_fields=title,link,excerpt');
+  if (res.ok) {
+    const data = await res.json();
+    blogPosts = data.map((p: any) => ({
+      title: p.title.rendered.replace(/&#8217;/g, "'").replace(/&#8211;/g, '–').replace(/&#8212;/g, '—').replace(/&#038;/g, '&').replace(/&amp;/g, '&'),
+      link: p.link,
+      excerpt: p.excerpt.rendered.replace(/<[^>]+>/g, '').trim().slice(0, 160),
+    }));
+  }
+} catch {}
 ---
 
 <BaseLayout
@@ -203,18 +224,12 @@ import { BUSINESS, SERVICES, CASE_STUDIES, COUNTIES } from '../data/site';
         <p class="text-gray-600 mt-2">Insights and guides for smarter direct mail campaigns.</p>
       </div>
       <div class="grid md:grid-cols-3 gap-6">
-        <a href="https://blog.crst.net/postcard-printing-roi-for-local-business/" class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow group">
-          <h3 class="text-lg font-display font-bold text-crst-primary group-hover:text-crst-accent transition-colors mb-2">Postcard Printing ROI for Local Business</h3>
-          <p class="text-gray-600 text-sm">How local businesses measure and maximize return on investment from postcard campaigns.</p>
-        </a>
-        <a href="https://blog.crst.net/how-much-does-postcard-printing-cost/" class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow group">
-          <h3 class="text-lg font-display font-bold text-crst-primary group-hover:text-crst-accent transition-colors mb-2">How Much Does Postcard Printing Cost?</h3>
-          <p class="text-gray-600 text-sm">A practical breakdown of postcard printing costs by size, quantity, and finish — so you can budget your next campaign.</p>
-        </a>
-        <a href="https://blog.crst.net/best-postcard-size-for-direct-mail/" class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow group">
-          <h3 class="text-lg font-display font-bold text-crst-primary group-hover:text-crst-accent transition-colors mb-2">Best Postcard Size for Direct Mail</h3>
-          <p class="text-gray-600 text-sm">Choosing the right postcard size affects postage, response rates, and design options. Here's how to pick the best format.</p>
-        </a>
+        {blogPosts.map((post) => (
+          <a href={post.link} class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow group" target="_blank" rel="noopener">
+            <h3 class="text-lg font-display font-bold text-crst-primary group-hover:text-crst-accent transition-colors mb-2">{post.title}</h3>
+            <p class="text-gray-600 text-sm">{post.excerpt}</p>
+          </a>
+        ))}
       </div>
     </div>
   </section>
