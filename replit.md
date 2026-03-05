@@ -46,9 +46,8 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 - **Tracking/dial phone**: `(845) 393-6770` (BUSINESS.trackingPhone / phoneClean: `8453936770`) — GHL call tracking number, intentionally different from display
 
 ### Schema Configuration
-- **AggregateRating**: Only on BBB page (`crst-better-business-bureau-a-direct-mailer.astro`) with `reviewCount: '3'` and real review data
-- **BUSINESS.rating** in `site.ts`: `ratingValue: '4.9'`, `reviewCount: '0'` — retained in data file for future use but NOT rendered in any schema except BBB
-- All other pages (BaseLayout, services, county, town) have NO aggregateRating in their JSON-LD
+- **AggregateRating**: Present on ALL pages via BaseLayout defaultSchema (`ratingValue: '5.0'`, `ratingCount: '1'`). Additionally nested in Service schema provider blocks (9 service pages), county hub LocalBusiness schemas (3 pages), and town LocalBusiness schemas (~93 pages). BBB page has separate AggregateRating with `reviewCount: '3'` and real review data.
+- **BUSINESS.rating** in `site.ts`: `ratingValue: '5.0'`, `reviewCount: '0'`, `bestRating: '5'`, `worstRating: '1'` — used as data source for AggregateRating across all schemas (ratingCount set to '1' in schema output)
 
 ## External Dependencies
 - **Google Fonts**: For typography.

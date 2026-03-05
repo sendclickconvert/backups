@@ -28,7 +28,7 @@ export const BUSINESS = {
     onTime: '98%',
   },
   rating: {
-    ratingValue: '4.9',
+    ratingValue: '5.0',
     reviewCount: '0',
     bestRating: '5',
     worstRating: '1',

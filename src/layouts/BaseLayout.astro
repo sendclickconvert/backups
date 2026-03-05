@@ -65,6 +65,13 @@ const defaultSchema = {
     'Mailing Services',
     'EDDM',
   ],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: BUSINESS.rating.ratingValue,
+    bestRating: BUSINESS.rating.bestRating,
+    worstRating: BUSINESS.rating.worstRating,
+    ratingCount: '1',
+  },
   priceRange: '$$',
   openingHoursSpecification: {
     '@type': 'OpeningHoursSpecification',

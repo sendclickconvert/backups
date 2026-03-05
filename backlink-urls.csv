@@ -1,0 +1,7 @@
+old_url,expected_destination
+https://crst.net/,https://crst.net/
+http://crst.net/,https://crst.net/
+https://crst.net/direct-mail-services/printing-services/,https://crst.net/services/printing
+https://crst.net/direct-mail-services/mail-design/,https://crst.net/services/graphic-design
+https://crst.net/direct-mail-services/data-lists/,https://crst.net/services/data-lists
+https://crst.net/direct-mail-services/post-office-mailing/,https://crst.net/services/mailing

@@ -78,6 +78,13 @@ const countySchema = {
     latitude: county.lat,
     longitude: county.lng,
   },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: BUSINESS.rating.ratingValue,
+    bestRating: BUSINESS.rating.bestRating,
+    worstRating: BUSINESS.rating.worstRating,
+    ratingCount: '1',
+  },
 };
 
 const serviceSchema = {
