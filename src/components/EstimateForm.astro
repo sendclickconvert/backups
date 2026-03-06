@@ -87,16 +87,6 @@ import { GHL } from '../data/site';
     ></textarea>
   </div>
 
-  <!-- Attribution (hidden) -->
-  <input type="hidden" name="utm_source" id="utm_source" />
-  <input type="hidden" name="utm_medium" id="utm_medium" />
-  <input type="hidden" name="utm_campaign" id="utm_campaign" />
-  <input type="hidden" name="utm_term" id="utm_term" />
-  <input type="hidden" name="utm_content" id="utm_content" />
-  <input type="hidden" name="referrer" id="referrer" />
-  <input type="hidden" name="landing_page" id="landing_page" />
-  <input type="hidden" name="page_url" id="page_url" />
-
   <!-- Honeypot -->
   <div class="hidden" aria-hidden="true">
     <input type="text" name="website" tabindex="-1" autocomplete="off" />
@@ -131,70 +121,19 @@ import { GHL } from '../data/site';
   const successMsg = document.getElementById('form-success');
   const errorMsg = document.getElementById('form-error');
 
-  function ssGet(key) { try { return sessionStorage.getItem(key); } catch(e) { return null; } }
-  function ssSet(key, val) { try { sessionStorage.setItem(key, val); } catch(e) {} }
-
-  function populateAttribution() {
-    const params = new URLSearchParams(window.location.search);
-    const utmFields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
-    utmFields.forEach(function(field) {
-      var el = document.getElementById(field);
-      if (el) {
-        var stored = ssGet(field);
-        var param = params.get(field);
-        if (param) {
-          el.value = param;
-          ssSet(field, param);
-        } else if (stored) {
-          el.value = stored;
-        }
-      }
-    });
-
-    var refEl = document.getElementById('referrer');
-    if (refEl) {
-      var storedRef = ssGet('crst_referrer');
-      if (storedRef) {
-        refEl.value = storedRef;
-      } else if (document.referrer && !document.referrer.includes(window.location.hostname)) {
-        refEl.value = document.referrer;
-        ssSet('crst_referrer', document.referrer);
-      }
-    }
-
-    var landingEl = document.getElementById('landing_page');
-    if (landingEl) {
-      var storedLanding = ssGet('crst_landing_page');
-      if (storedLanding) {
-        landingEl.value = storedLanding;
-      } else {
-        var lp = window.location.origin + window.location.pathname;
-        landingEl.value = lp;
-        ssSet('crst_landing_page', lp);
-      }
-    }
-
-    var pageEl = document.getElementById('page_url');
-    if (pageEl) {
-      pageEl.value = window.location.href;
-    }
-  }
-
-  populateAttribution();
-
   form?.addEventListener('submit', async (e) => {
     e.preventDefault();
 
+    // Honeypot check
     const honeypot = form.querySelector('input[name="website"]');
     if (honeypot && honeypot.value) return;
 
+    // Disable button, show spinner
     submitBtn.disabled = true;
     submitText.textContent = 'Sending...';
     spinner.classList.remove('hidden');
     successMsg.classList.add('hidden');
     errorMsg.classList.add('hidden');
-
-    populateAttribution();
 
     const formData = new FormData(form);
     const payload = {
@@ -205,14 +144,6 @@ import { GHL } from '../data/site';
       company: formData.get('company') || '',
       message: formData.get('message'),
       source: 'website',
-      utm_source: formData.get('utm_source') || '',
-      utm_medium: formData.get('utm_medium') || '',
-      utm_campaign: formData.get('utm_campaign') || '',
-      utm_term: formData.get('utm_term') || '',
-      utm_content: formData.get('utm_content') || '',
-      referrer: formData.get('referrer') || '',
-      landing_page: formData.get('landing_page') || '',
-      page_url: formData.get('page_url') || '',
     };
 
     try {
@@ -225,6 +156,8 @@ import { GHL } from '../data/site';
       if (response.ok) {
         successMsg.classList.remove('hidden');
         form.reset();
+        // Optional: redirect to thank-you page
+        // window.location.href = '/thank-you/';
       } else {
         throw new Error('Webhook failed');
       }

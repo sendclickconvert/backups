@@ -27,7 +27,6 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 - **Hybrid Rendering**: Prerenders most pages as static HTML while server-rendering dynamic content and redirects via catch-all.
 - **Internal Linking**: Strategically placed internal links across service pages, county hubs, town pages, and resource/tool pages to improve site navigation and SEO equity. Resource pages (USPS templates, envelope sizes, postage rates, EDDM guide, mail automation, periodicals, etc.) link contextually to relevant service pages for authority flow.
 - **Call Tracking**: Integrates GHL call tracking scripts (`number_pool.js`, `user_session.js`) for phone number attribution. GA4 ID: `G-HRBG2H3FE7`.
-- **Form Attribution Tracking**: EstimateForm includes hidden fields (utm_source, utm_medium, utm_campaign, utm_term, utm_content, referrer, landing_page, page_url) populated from URL params and sessionStorage. All attribution data sent in webhook payload to GHL for source attribution instead of "Direct".
 - **Performance Optimizations**: Hero video conditionally loaded only on desktop (768px+) via JS matchMedia to avoid 4.1MB download on mobile; mobile shows Vimeo thumbnail poster (vimeocdn.com 640x360) with dark overlay + play button SVG; logo served as WebP (16KB vs 180KB PNG); GHL chat widget deferred 3 seconds via setTimeout to avoid blocking initial page render.
 - **Training Portal**: Standalone `noindex`/`nofollow` training portal (`/training/portal/`) with multi-module video lessons (9 training videos in public/videos/).
 
