@@ -43,14 +43,14 @@ const defaultNoscript = noscriptShell(
 
 const seoData: Record<string, PageSEO> = {
   "/": {
-    title: "The Property Father | We Buy Houses for Cash in Long Island, NY",
-    description: "Sell your Long Island house fast for cash. The Property Father buys houses in any condition in Suffolk and Nassau County. No fees, no repairs, close in 7 days. Call (516) 548-6558.",
+    title: "Sell Your House Fast for Cash on Long Island, NY | The Property Father",
+    description: "Need to sell your Long Island house fast? The Property Father pays cash for homes in any condition across Suffolk and Nassau County. No repairs, no fees, close in as few as 7 days. Call (516) 548-6558.",
     canonical: "https://thepropertyfather.com",
     noscriptContent: defaultNoscript
   },
   "/about": {
-    title: "About The Property Father | Cash Home Buyers on Long Island",
-    description: "Learn about The Property Father, a trusted cash home buying company serving Suffolk and Nassau County on Long Island, NY. Founded by Steven Santiago.",
+    title: "About The Property Father | Local Cash Home Buyers on Long Island",
+    description: "The Property Father is a Long Island cash home buying company founded by Steven Santiago. 500+ homes purchased across Suffolk and Nassau County since 2015. No fees, no repairs needed.",
     canonical: "https://thepropertyfather.com/about",
     noscriptContent: noscriptShell(
       "About The Property Father",
@@ -67,8 +67,8 @@ const seoData: Record<string, PageSEO> = {
     )
   },
   "/how-it-works": {
-    title: "How It Works | Sell Your House for Cash in 3 Steps | The Property Father",
-    description: "Selling your Long Island house for cash is simple: submit your property info, get a fair cash offer in 24 hours, and close in as few as 7 days. No repairs, no fees.",
+    title: "How to Sell Your House for Cash on Long Island | The Property Father",
+    description: "See how selling your Long Island house for cash works in 5 simple steps. Get a fair offer in 24 hours, close in as few as 7 days, pay zero fees or commissions.",
     canonical: "https://thepropertyfather.com/how-it-works",
     noscriptContent: noscriptShell(
       "How It Works — Sell Your House for Cash in 3 Simple Steps",
@@ -85,8 +85,8 @@ const seoData: Record<string, PageSEO> = {
     )
   },
   "/contact": {
-    title: "Contact Us | Get a Cash Offer | The Property Father",
-    description: "Contact The Property Father for a free, no-obligation cash offer on your Long Island home. Call (516) 548-6558 or fill out our form for a response within 24 hours.",
+    title: "Get a Free Cash Offer for Your Long Island Home | The Property Father",
+    description: "Ready to sell? Get a free, no-obligation cash offer on your Long Island home in 24 hours. Call (516) 548-6558 or submit our form. We serve all of Suffolk and Nassau County.",
     canonical: "https://thepropertyfather.com/contact",
     noscriptContent: noscriptShell(
       "Contact The Property Father",
@@ -103,8 +103,8 @@ const seoData: Record<string, PageSEO> = {
     )
   },
   "/faq": {
-    title: "Frequently Asked Questions | The Property Father",
-    description: "Common questions about selling your Long Island house for cash. Learn about our process, timeline, pricing, and what to expect when working with The Property Father.",
+    title: "Selling Your House for Cash FAQ | Long Island | The Property Father",
+    description: "Answers to common questions about selling your Long Island house for cash — how offers work, closing timeline, fees, repairs, and what to expect from The Property Father.",
     canonical: "https://thepropertyfather.com/faq",
     noscriptContent: noscriptShell(
       "Frequently Asked Questions — Selling Your House for Cash",

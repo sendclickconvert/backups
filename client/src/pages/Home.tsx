@@ -103,8 +103,8 @@ export default function Home() {
   return (
     <Layout>
       <SEO 
-        title="We Buy Houses for Cash in Long Island, NY"
-        description="Sell your Long Island house fast for cash. The Property Father buys houses in any condition in Suffolk and Nassau County. No fees, no repairs, close in 7 days."
+        title="Sell Your House Fast for Cash on Long Island, NY | The Property Father"
+        description="Need to sell your Long Island house fast? The Property Father pays cash for homes in any condition across Suffolk and Nassau County. No repairs, no fees, close in as few as 7 days. Call (516) 548-6558."
         canonicalPath="/"
       />
       <section className="relative text-white overflow-hidden min-h-[90vh] flex items-center">

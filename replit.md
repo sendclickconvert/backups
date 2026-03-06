@@ -71,6 +71,20 @@ The frontend follows a page-based structure under `client/src/pages/` with reusa
 - **Situation Links Fixed**: "Selling with Liens" and "Relocating" links on county pages now point to live blog URLs (blog.thepropertyfather.com) instead of href="#". External links render as `<a>` tags, internal links use wouter `<Link>`.
 - **E-E-A-T Audit Tool**: Python script at `tools/eeat_extractor.py`
 
+### SEO Optimization Pass (updated 2026-03-06)
+- **Title/Meta Improvements**: Updated titles and meta descriptions on 5 core pages to better match motivated seller intent:
+  - Homepage: "Sell Your House Fast for Cash on Long Island, NY | The Property Father"
+  - How It Works: "How to Sell Your House for Cash on Long Island | The Property Father"
+  - About: "About The Property Father | Local Cash Home Buyers on Long Island"
+  - FAQ: "Selling Your House for Cash FAQ | Long Island | The Property Father"
+  - Contact: "Get a Free Cash Offer for Your Long Island Home | The Property Father"
+- **Server-side SEO synced**: All title/meta updates reflected in `server/seo.ts` for Googlebot/SSR
+- **Broken Situation Links Fixed**: County pages had `/situations/foreclosure` (→ `/situations/pre-foreclosure`) and `/situations/as-is` (→ `/situations/sell-as-is`) — both corrected on NassauCounty.tsx and SuffolkCounty.tsx
+- **Town Pages → Situation Links (83 pages)**: New "Common Situations" section on NassauTownPage.tsx and SuffolkTownPage.tsx linking to all 5 situation pages + /contact. Renders on every town page.
+- **Village Pages → Situation Links (168 pages)**: New "Selling in [Village]?" section on NassauVillagePage.tsx and SuffolkVillagePage.tsx linking to all 5 situation pages + /contact. Renders on every village page.
+- **About Page Internal Links**: "Our Story" section now links to /situations/divorce, /situations/inherited-property, /situations/pre-foreclosure, /situations/sell-as-is, /how-it-works, /locations/suffolk-county, /locations/nassau-county
+- **FAQ Page Internal Links**: New "Learn More About Selling Your House" section below accordion with links to all 5 situation pages, /how-it-works, and county pages
+
 ### Situation Pages (updated 2026-02-28)
 - 5 situation landing pages fully rewritten with unique, in-depth content (800+ words each)
 - **Pages**: Divorce, Pre-Foreclosure, Probate, Inherited Property, Sell As-Is

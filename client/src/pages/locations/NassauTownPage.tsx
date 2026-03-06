@@ -260,6 +260,53 @@ export default function NassauTownPage() {
               </div>
             )}
 
+            <div className="mb-12">
+              <h2 className="text-2xl lg:text-3xl font-bold mb-4" data-testid="text-situations-heading">
+                Common Situations We Help {town.townName} Homeowners With
+              </h2>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                No matter what you're going through, we've helped homeowners in {town.townName} and across Nassau County navigate these situations:
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <Link href="/situations/sell-as-is">
+                  <span className="flex items-center gap-2 p-3 rounded-lg border border-border hover:border-gold hover:shadow-sm transition-all cursor-pointer" data-testid="link-situation-sell-as-is">
+                    <ArrowRight className="h-4 w-4 text-gold flex-shrink-0" />
+                    <span className="text-sm font-medium">Sell your house as-is — no repairs needed</span>
+                  </span>
+                </Link>
+                <Link href="/situations/inherited-property">
+                  <span className="flex items-center gap-2 p-3 rounded-lg border border-border hover:border-gold hover:shadow-sm transition-all cursor-pointer" data-testid="link-situation-inherited">
+                    <ArrowRight className="h-4 w-4 text-gold flex-shrink-0" />
+                    <span className="text-sm font-medium">Selling an inherited property</span>
+                  </span>
+                </Link>
+                <Link href="/situations/probate">
+                  <span className="flex items-center gap-2 p-3 rounded-lg border border-border hover:border-gold hover:shadow-sm transition-all cursor-pointer" data-testid="link-situation-probate">
+                    <ArrowRight className="h-4 w-4 text-gold flex-shrink-0" />
+                    <span className="text-sm font-medium">Probate property sales</span>
+                  </span>
+                </Link>
+                <Link href="/situations/divorce">
+                  <span className="flex items-center gap-2 p-3 rounded-lg border border-border hover:border-gold hover:shadow-sm transition-all cursor-pointer" data-testid="link-situation-divorce">
+                    <ArrowRight className="h-4 w-4 text-gold flex-shrink-0" />
+                    <span className="text-sm font-medium">Selling during a divorce</span>
+                  </span>
+                </Link>
+                <Link href="/situations/pre-foreclosure">
+                  <span className="flex items-center gap-2 p-3 rounded-lg border border-border hover:border-gold hover:shadow-sm transition-all cursor-pointer" data-testid="link-situation-pre-foreclosure">
+                    <ArrowRight className="h-4 w-4 text-gold flex-shrink-0" />
+                    <span className="text-sm font-medium">Facing pre-foreclosure</span>
+                  </span>
+                </Link>
+                <Link href="/contact">
+                  <span className="flex items-center gap-2 p-3 rounded-lg border border-gold bg-gold/5 hover:bg-gold/10 hover:shadow-sm transition-all cursor-pointer" data-testid="link-situation-get-offer">
+                    <ArrowRight className="h-4 w-4 text-gold flex-shrink-0" />
+                    <span className="text-sm font-bold text-gold">Get your free cash offer</span>
+                  </span>
+                </Link>
+              </div>
+            </div>
+
             <div className="mb-12 p-6 bg-muted rounded-lg">
               <h3 className="font-bold mb-3 text-sm uppercase tracking-wide text-muted-foreground">Helpful Resources</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">

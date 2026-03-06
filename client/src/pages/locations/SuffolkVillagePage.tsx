@@ -269,6 +269,50 @@ export default function SuffolkVillagePage() {
               </div>
             )}
 
+            <div className="mb-12">
+              <h2 className="text-xl font-bold mb-4" data-testid="text-situations-heading">
+                Selling in {village.villageName}? We Can Help With These Situations
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                <Link href="/situations/sell-as-is">
+                  <span className="flex items-center gap-2 p-2 rounded border border-border hover:border-gold transition-all cursor-pointer" data-testid="link-situation-sell-as-is">
+                    <ArrowRight className="h-3 w-3 text-gold flex-shrink-0" />
+                    <span className="text-sm">Sell as-is — no repairs</span>
+                  </span>
+                </Link>
+                <Link href="/situations/inherited-property">
+                  <span className="flex items-center gap-2 p-2 rounded border border-border hover:border-gold transition-all cursor-pointer" data-testid="link-situation-inherited">
+                    <ArrowRight className="h-3 w-3 text-gold flex-shrink-0" />
+                    <span className="text-sm">Inherited property</span>
+                  </span>
+                </Link>
+                <Link href="/situations/probate">
+                  <span className="flex items-center gap-2 p-2 rounded border border-border hover:border-gold transition-all cursor-pointer" data-testid="link-situation-probate">
+                    <ArrowRight className="h-3 w-3 text-gold flex-shrink-0" />
+                    <span className="text-sm">Probate sales</span>
+                  </span>
+                </Link>
+                <Link href="/situations/divorce">
+                  <span className="flex items-center gap-2 p-2 rounded border border-border hover:border-gold transition-all cursor-pointer" data-testid="link-situation-divorce">
+                    <ArrowRight className="h-3 w-3 text-gold flex-shrink-0" />
+                    <span className="text-sm">Selling during divorce</span>
+                  </span>
+                </Link>
+                <Link href="/situations/pre-foreclosure">
+                  <span className="flex items-center gap-2 p-2 rounded border border-border hover:border-gold transition-all cursor-pointer" data-testid="link-situation-pre-foreclosure">
+                    <ArrowRight className="h-3 w-3 text-gold flex-shrink-0" />
+                    <span className="text-sm">Pre-foreclosure help</span>
+                  </span>
+                </Link>
+                <Link href="/contact">
+                  <span className="flex items-center gap-2 p-2 rounded border border-gold bg-gold/5 hover:bg-gold/10 transition-all cursor-pointer" data-testid="link-situation-get-offer">
+                    <ArrowRight className="h-3 w-3 text-gold flex-shrink-0" />
+                    <span className="text-sm font-bold text-gold">Get your cash offer</span>
+                  </span>
+                </Link>
+              </div>
+            </div>
+
             <div className="mb-12 p-6 bg-muted rounded-lg">
               <h3 className="font-bold mb-3 text-sm uppercase tracking-wide text-muted-foreground">Helpful Resources</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">

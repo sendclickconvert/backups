@@ -45,8 +45,8 @@ export default function About() {
   return (
     <Layout>
       <SEO 
-        title="About Us - Local Long Island Cash Home Buyers"
-        description="Learn about The Property Father - local Long Island investors helping homeowners sell their houses quickly and hassle-free since 2015. 500+ homes purchased."
+        title="About The Property Father | Local Cash Home Buyers on Long Island"
+        description="The Property Father is a Long Island cash home buying company founded by Steven Santiago. 500+ homes purchased across Suffolk and Nassau County since 2015. No fees, no repairs needed."
         canonicalPath="/about"
       />
       <BreadcrumbSchema items={[{ label: "About" }]} />
@@ -82,13 +82,13 @@ export default function About() {
                   The Property Father was founded with a simple mission: to help Long Island homeowners who need to sell quickly but don't want to deal with the traditional real estate process.
                 </p>
                 <p>
-                  We've seen firsthand how stressful selling a home can be, especially when you're dealing with life changes like divorce, inheritance, job relocation, or financial difficulties. Traditional real estate can take months, requires costly repairs, and comes with uncertainty about whether your deal will even close.
+                  We've seen firsthand how stressful selling a home can be, especially when you're dealing with life changes like <Link href="/situations/divorce"><span className="text-accent underline cursor-pointer">divorce</span></Link>, <Link href="/situations/inherited-property"><span className="text-accent underline cursor-pointer">inheritance</span></Link>, job relocation, or <Link href="/situations/pre-foreclosure"><span className="text-accent underline cursor-pointer">financial difficulties</span></Link>. Traditional real estate can take months, requires costly repairs, and comes with uncertainty about whether your deal will even close.
                 </p>
                 <p>
-                  That's why we created a better way. We buy houses directly from homeowners for cash, close on your timeline, and handle all the complexity so you don't have to.
+                  That's why we created a better way. We <Link href="/situations/sell-as-is"><span className="text-accent underline cursor-pointer">buy houses as-is</span></Link> directly from homeowners for cash, close on your timeline, and handle all the complexity so you don't have to. See <Link href="/how-it-works"><span className="text-accent underline cursor-pointer">how our process works</span></Link>.
                 </p>
                 <p>
-                  Based right here on Long Island, we know this area inside and out. We're not a national franchise or a faceless corporation - we're your neighbors, and we're here to help.
+                  Based right here on Long Island, we know this area inside and out. We serve all of <Link href="/locations/suffolk-county"><span className="text-accent underline cursor-pointer">Suffolk County</span></Link> and <Link href="/locations/nassau-county"><span className="text-accent underline cursor-pointer">Nassau County</span></Link>. We're not a national franchise or a faceless corporation — we're your neighbors, and we're here to help.
                 </p>
               </div>
             </div>

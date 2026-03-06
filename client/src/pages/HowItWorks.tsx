@@ -121,8 +121,8 @@ export default function HowItWorks() {
   return (
     <Layout>
       <SEO 
-        title="How It Works - Sell Your House Fast"
-        description="Learn our simple 5-step process for selling your house fast for cash. No agents, no fees, close in as few as 7 days. Contact The Property Father today."
+        title="How to Sell Your House for Cash on Long Island | The Property Father"
+        description="See how selling your Long Island house for cash works in 5 simple steps. Get a fair offer in 24 hours, close in as few as 7 days, pay zero fees or commissions."
         canonicalPath="/how-it-works"
       />
       <BreadcrumbSchema items={[{ label: "How It Works" }]} />

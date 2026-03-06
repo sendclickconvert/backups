@@ -83,8 +83,8 @@ export default function FAQ() {
   return (
     <Layout>
       <SEO 
-        title="FAQ - Frequently Asked Questions"
-        description="Get answers to common questions about selling your house for cash to The Property Father. Learn about our process, timeline, fees, and more."
+        title="Selling Your House for Cash FAQ | Long Island | The Property Father"
+        description="Answers to common questions about selling your Long Island house for cash — how offers work, closing timeline, fees, repairs, and what to expect from The Property Father."
         canonicalPath="/faq"
       />
       <FAQSchema faqs={faqs} />
@@ -131,6 +131,57 @@ export default function FAQ() {
               </AccordionItem>
             ))}
           </Accordion>
+        </div>
+      </section>
+
+      <section className="py-12 lg:py-16">
+        <div className="mx-auto max-w-3xl px-4 lg:px-8">
+          <h2 className="text-2xl font-bold mb-6" data-testid="text-related-pages">
+            Learn More About Selling Your House
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <Link href="/situations/sell-as-is">
+              <span className="flex items-center gap-2 p-3 rounded-lg border border-border hover:border-gold transition-all cursor-pointer" data-testid="link-faq-sell-as-is">
+                <ArrowRight className="h-4 w-4 text-gold flex-shrink-0" />
+                <span className="text-sm">Sell your house as-is</span>
+              </span>
+            </Link>
+            <Link href="/situations/inherited-property">
+              <span className="flex items-center gap-2 p-3 rounded-lg border border-border hover:border-gold transition-all cursor-pointer" data-testid="link-faq-inherited">
+                <ArrowRight className="h-4 w-4 text-gold flex-shrink-0" />
+                <span className="text-sm">Selling an inherited house</span>
+              </span>
+            </Link>
+            <Link href="/situations/pre-foreclosure">
+              <span className="flex items-center gap-2 p-3 rounded-lg border border-border hover:border-gold transition-all cursor-pointer" data-testid="link-faq-foreclosure">
+                <ArrowRight className="h-4 w-4 text-gold flex-shrink-0" />
+                <span className="text-sm">Facing pre-foreclosure</span>
+              </span>
+            </Link>
+            <Link href="/situations/probate">
+              <span className="flex items-center gap-2 p-3 rounded-lg border border-border hover:border-gold transition-all cursor-pointer" data-testid="link-faq-probate">
+                <ArrowRight className="h-4 w-4 text-gold flex-shrink-0" />
+                <span className="text-sm">Probate property sales</span>
+              </span>
+            </Link>
+            <Link href="/situations/divorce">
+              <span className="flex items-center gap-2 p-3 rounded-lg border border-border hover:border-gold transition-all cursor-pointer" data-testid="link-faq-divorce">
+                <ArrowRight className="h-4 w-4 text-gold flex-shrink-0" />
+                <span className="text-sm">Selling during divorce</span>
+              </span>
+            </Link>
+            <Link href="/how-it-works">
+              <span className="flex items-center gap-2 p-3 rounded-lg border border-border hover:border-gold transition-all cursor-pointer" data-testid="link-faq-how-it-works">
+                <ArrowRight className="h-4 w-4 text-gold flex-shrink-0" />
+                <span className="text-sm">How our cash buying process works</span>
+              </span>
+            </Link>
+          </div>
+          <div className="mt-4 flex gap-4 text-sm text-muted-foreground">
+            <span>Service areas:</span>
+            <Link href="/locations/suffolk-county"><span className="text-accent underline cursor-pointer">Suffolk County</span></Link>
+            <Link href="/locations/nassau-county"><span className="text-accent underline cursor-pointer">Nassau County</span></Link>
+          </div>
         </div>
       </section>
 

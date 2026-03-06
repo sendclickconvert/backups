@@ -48,8 +48,8 @@ export default function Contact() {
   return (
     <Layout>
       <SEO 
-        title="Contact Us - Get Your Cash Offer"
-        description="Contact The Property Father for a free cash offer on your Long Island home. Call (516) 548-6558 or fill out our form. We respond within 24 hours."
+        title="Get a Free Cash Offer for Your Long Island Home | The Property Father"
+        description="Ready to sell? Get a free, no-obligation cash offer on your Long Island home in 24 hours. Call (516) 548-6558 or submit our form. We serve all of Suffolk and Nassau County."
         canonicalPath="/contact"
       />
       <BreadcrumbSchema items={[{ label: "Contact" }]} />
