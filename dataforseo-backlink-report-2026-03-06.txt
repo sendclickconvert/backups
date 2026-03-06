@@ -1,0 +1,354 @@
+=== DataForSEO Backlink Audit for crst.net ===
+Date: 2026-03-06
+
+### 1. TOP REFERRING DOMAINS
+Found 182 total referring domains
+
+Domain | Rank | Backlinks | Dofollow | First Seen
+---|---|---|---|---
+westhurleyfire.org | 285 | 1012 | N/A | 2022-06-29
+canapeinsurance.com | 224 | 170 | N/A | 2025-08-01
+crstweb.com | 194 | 64 | N/A | 2025-12-20
+donerightmail.com | 167 | 83 | N/A | 2023-08-13
+benkiger.com | 162 | 47 | N/A | 2025-05-09
+chmcnally.com | 159 | 30 | N/A | 2025-05-09
+dlflowtech.com | 158 | 44 | N/A | 2023-06-24
+lohv.org | 156 | 32 | N/A | 2025-10-28
+timberdesignbuild.com | 147 | 50 | N/A | 2023-08-27
+estocktonmartin.com | 135 | 16 | N/A | 2025-09-05
+bashwingerinsurance.com | 135 | 12 | N/A | 2024-12-26
+politicalmailing.us | 131 | 12 | N/A | 2024-01-28
+sisfoperch.edu.pe | 124 | 60 | N/A | 2026-01-08
+nuglass.net | 120 | 21 | N/A | 2020-09-28
+greenheatinc.com | 119 | 35 | N/A | 2024-10-19
+assurances.gov.gh | 103 | 40 | N/A | 2025-04-27
+eforestproducts.com | 85 | 15 | N/A | 2026-01-19
+categoryhierarchies.com | 83 | 203 | N/A | 2024-11-05
+donorjet.com | 79 | 2 | N/A | 2024-10-11
+montgomeryambulance.org | 66 | 7 | N/A | 2024-03-29
+knowledge.ca | 65 | 14 | N/A | 2025-05-08
+scarlett.pe | 65 | 14 | N/A | 2025-03-23
+pullmancarservice.com | 56 | 7 | N/A | 2025-07-31
+pawlingchamber.org | 56 | 4 | N/A | 2024-04-19
+blendnewyork.com | 51 | 1 | N/A | 2024-11-15
+yabaleftonline.ng | 42 | 8 | N/A | 2025-05-21
+bethnalgreenventures.com | 42 | 8 | N/A | 2025-03-12
+kernix.com | 42 | 8 | N/A | 2025-03-01
+explorewatkinsglen.com | 42 | 33 | N/A | 2025-02-03
+concejomunicipaldechinu.gov.co | 40 | 53 | N/A | 2025-06-08
+growthzoneapp.com | 37 | 36 | N/A | 2025-03-07
+evergreencontractingservices.com | 29 | 4 | N/A | 2020-07-15
+windowssearch-exp.com | 28 | 25 | N/A | 2025-04-21
+esad.edu.br | 28 | 28 | N/A | 2022-11-24
+exparte.com | 7 | 1 | N/A | 2025-11-20
+wtoregister.com | 7 | 1 | N/A | 2025-03-06
+pineislandny.com | 3 | 5 | N/A | 2026-01-30
+michelinalogue.blogspot.com | 2 | 7 | N/A | 2024-12-20
+rankvanceseo.info | 0 | 1 | N/A | 2026-03-05
+alljobs.info | 0 | 1 | N/A | 2026-03-05
+daniweb.com | 0 | 1 | N/A | 2026-02-25
+tunca.org | 0 | 1 | N/A | 2026-02-24
+wallpapers.pro | 0 | 1 | N/A | 2026-02-21
+musweb.org | 0 | 1 | N/A | 2026-02-15
+apeopledirectory.com | 0 | 1 | N/A | 2026-02-10
+booksreadr.org | 0 | 1 | N/A | 2026-02-04
+ecainc.org | 0 | 7 | N/A | 2026-01-31
+way2check.cv | 0 | 1 | N/A | 2026-01-28
+globalecommerce.org | 0 | 1 | N/A | 2026-01-26
+postgradoune.edu.pe | 0 | 1 | N/A | 2026-01-20
+aulaperu.edu.pe | 0 | 1 | N/A | 2026-01-19
+simplewebdirectory.com | 0 | 1 | N/A | 2026-01-17
+websiterace.com | 0 | 1 | N/A | 2026-01-09
+marquitacrocker.blogspot.com | 0 | 1 | N/A | 2026-01-06
+backlinksolutions.info | 0 | 1 | N/A | 2026-01-04
+getwebsiteworth.com | 0 | 2 | N/A | 2025-12-24
+pawlingchamberofcommerce.com | 0 | 2 | N/A | 2025-12-20
+backlink-agency.pro | 0 | 1 | N/A | 2025-12-18
+led-light-news.blogspot.com | 0 | 6 | N/A | 2025-12-08
+vuink.com | 0 | 14 | N/A | 2025-12-04
+orangeny.com | 0 | 7 | N/A | 2025-11-27
+xpressionengine.blogspot.com | 0 | 1 | N/A | 2025-11-21
+verlagreathouse.blogspot.com | 0 | 2 | N/A | 2025-11-17
+mikedunnepaintings.blogspot.com | 0 | 1 | N/A | 2025-11-07
+ketogenicsideeffects.blogspot.com | 0 | 1 | N/A | 2025-11-06
+whosmailingwhat.com | 0 | 1 | N/A | 2025-11-04
+tsenkhersh2.blogspot.com | 0 | 1 | N/A | 2025-10-29
+hvdma.org | 0 | 1 | N/A | 2025-10-22
+ospraieros.blogspot.com | 0 | 1 | N/A | 2025-10-22
+brasilnapratica.com.br | 0 | 1 | N/A | 2025-10-11
+avposgradounap.edu.pe | 0 | 1 | N/A | 2025-10-03
+1stcallglasscare.com | 0 | 1 | N/A | 2025-09-28
+nckl.gov.kh | 0 | 1 | N/A | 2025-09-25
+epictures.homes | 0 | 2 | N/A | 2025-09-12
+ginojaeger.blogspot.com | 0 | 1 | N/A | 2025-09-10
+australianwebdirectory.pro | 0 | 1 | N/A | 2025-08-03
+innovaton.cl | 0 | 1 | N/A | 2025-07-05
+dengue.gov.bd | 0 | 1 | N/A | 2025-07-04
+rosyruth.blogspot.com | 0 | 6 | N/A | 2025-07-04
+browseallexpireddomains.us | 0 | 1 | N/A | 2025-06-29
+what-happens-next.xyz | 0 | 1 | N/A | 2025-06-23
+liz-norton.blogspot.com | 0 | 1 | N/A | 2025-06-13
+growjo.com | 0 | 4 | N/A | 2025-06-12
+fashioment.com | 0 | 6 | N/A | 2025-06-06
+australianwebdirectory.shop | 0 | 1 | N/A | 2025-05-31
+agmermer.pro | 0 | 1 | N/A | 2025-05-16
+getcrazehlike-angelic.blogspot.com | 0 | 1 | N/A | 2025-05-03
+visitdelhiny.com | 0 | 1 | N/A | 2025-05-01
+moviesrock.nl | 0 | 1 | N/A | 2025-04-25
+chartviewdata.web.app | 0 | 1 | N/A | 2025-04-25
+athens-escorts.info | 0 | 1 | N/A | 2025-04-21
+generivers.blogspot.com | 0 | 1 | N/A | 2025-04-20
+skyhook.com | 0 | 1 | N/A | 2025-04-20
+blog-5304251.blogspot.com | 0 | 1 | N/A | 2025-04-12
+altchart.web.app | 0 | 1 | N/A | 2025-04-07
+dr70-links.co.uk | 0 | 1 | N/A | 2025-04-07
+thebestbacklinksavailable.click | 0 | 1 | N/A | 2025-04-06
+great-choice-for-pbn-domains.co.uk | 0 | 1 | N/A | 2025-03-31
+you-found-the-hidden-link.xyz | 0 | 1 | N/A | 2025-03-30
+newest-expired-domains-here.click | 0 | 1 | N/A | 2025-03-30
+
+### 2. ANCHOR TEXT DISTRIBUTION
+Anchor | Backlinks | Referring Domains | Category
+---|---|---|---
+Cornerstone Services, Inc | 1495 | 15 | branded
+null | 471 | 115 | other
+crst.net | 295 | 52 | branded
+http://www.crst.net | 165 | 4 | branded
+Cornerstone Services, Inc. | 133 | 9 | branded
+Visit Website | 90 | 8 | other
+direct mail advertising | 26 | 2 | keyword
+Cornerstone Services Inc. | 11 | 2 | branded
+Informed Delivery by USPS - What is it? How does it work ... | 10 | 1 | other
+Website | 7 | 4 | generic
+CRST | 6 | 1 | branded
+Cornerstone Services | 6 | 4 | branded
+Visit Site | 5 | 1 | other
+https://crst.net/ | 5 | 1 | branded
+CRST Cornerstone | 5 | 1 | branded
+Cornerstone | 4 | 2 | branded
+web professionals | 4 | 1 | other
+http://crst.net | 3 | 2 | branded
+Direct Mail Marketing website | 3 | 1 | keyword
+Visit our Website | 3 | 2 | other
+Print | 2 | 1 | keyword
+VISIT WEBSITE | 2 | 1 | other
+Save Now | 2 | 1 | other
+Shiela CRST | 2 | 1 | branded
+Visit CRST.net | 2 | 1 | branded
+Details | 2 | 2 | other
+www.crst.net | 2 | 2 | branded
+website | 2 | 2 | generic
+our trusted partner | 2 | 1 | other
+contact page | 2 | 1 | other
+crst | 2 | 2 | branded
+blog.crst.net | 1 | 1 | branded
+Saturation mailing NY | 1 | 1 | keyword
+Mail | 1 | 1 | keyword
+Design | 1 | 1 | other
+Data | 1 | 1 | other
+Cornerstone Services Inc.'s | 1 | 1 | branded
+CRST DIRECT MAIL | 1 | 1 | branded
+Visit Cornerstone Services Inc. play_circle_filled_white | 1 | 1 | branded
+“https://crst.net/terms-and-conditions/ | 1 | 1 | branded
+Cornerstone Services, Inc. (CRST) | 1 | 1 | branded
+CRST Better Business Bureau A+ Rating | 1 | 1 | branded
+Niche Insurance & General Insurance Direct Mail Marketing - Cornerstone  Services, I… | 1 | 1 | branded
+crst.netVisit Official Website | 1 | 1 | branded
+visit crst.net for latest info | 1 | 1 | branded
+https://crst.net – You need to Skyrocket your Ahrefs DR, Moz DA, and Majestic TF with real PBN, Guest posts, and premium backlinks—competitors trust us, why not you? Pay after work! Visit SeoBoost.agency now! | 1 | 1 | branded
+https://crst.net/informed-delivery-review/ | 1 | 1 | branded
+https://crst.net – Increase your site’s backlinks and skyrocket your DA, DR, and TF with our expert SEO services—authentic dofollow backlinks, guest posts, and PBN links delivered by our team. Visit BuySeoLink.com to choose a plan, enjoy our pay-after-work model, and access 24/7 support! | 1 | 1 | branded
+https://www.crst.net | 1 | 1 | branded
+professionally designed | 1 | 1 | other
+Thanks crst.net! Expect smooth sailing—iTxoft.com masters digital complexities. | 1 | 1 | branded
+https://www.CRST.NET | 1 | 1 | branded
+Informed Delivery by USPS: 2018 Review | Cornerstone Services, Inc. | 1 | 1 | branded
+How to Complete the Non-Profit Mailing Application | 1 | 1 | keyword
+Cornerstone Services builds websites | 1 | 1 | branded
+Crst.net | 1 | 1 | branded
+Cornerstone’s website design services | 1 | 1 | branded
+BMEU | 1 | 1 | other
+National Organic Growers Association - Cornerstone Services, Inc. | 1 | 1 | branded
+web marketing strategy | 1 | 1 | other
+crst.net/ | 1 | 1 | branded
+View Project | 1 | 1 | other
+S. Griffin | 1 | 1 | other
+
+Category | Count | Percentage
+---|---|---
+Branded | 2158 | 77.0%
+Keyword | 34 | 1.2%
+Generic | 9 | 0.3%
+URL | 0 | 0.0%
+Other | 600 | 21.4%
+
+### 3. TOP PAGES BY BACKLINKS
+API error: "POST Data Is Invalid."
+
+### 4. BACKLINK SUMMARY
+Total backlinks: undefined
+Referring domains: 239
+Referring main domains: 225
+Rank: 310
+Dofollow: N/A
+Nofollow: N/A
+Referring IPs: 131
+Referring subnets: 117
+
+### 5. COMPETITOR LINK GAP
+Top 5 competitors for "direct mail services":
+  1. www.usps.com
+  2. www.dirmailtn.com
+  3. www.modernpostcard.com
+  4. www.sendoso.com
+  5. www.officedepot.com
+
+Running intersection analysis...
+Intersection API error: "Invalid Field: 'order_by'."
+
+=== AUDIT COMPLETE ===
+### 3. TOP PAGES BY BACKLINKS (fixed)
+Page | Backlinks | Referring Domains | Sample Anchors
+---|---|---|---
+https://crst.net/ | 193 | 13 | Cornerstone Services Inc.'s; Website; Cornerstone Services, Inc
+http://crst.net/ | 3 | 2 | Cornerstone Services, Inc.; our trusted partner
+https://crst.net/direct-mail-services/printing-services/ | 1 | 1 | Print
+https://crst.net/direct-mail-services/mail-design/ | 1 | 1 | Design
+https://crst.net/direct-mail-services/data-lists/ | 1 | 1 | Data
+https://crst.net/direct-mail-services/post-office-mailing/ | 1 | 1 | Mail
+
+### 5. COMPETITOR LINK GAP (fixed)
+Error: "Ok."
+### Referring domains for www.dirmailtn.com
+Total referring domains: 3
+Domain | Rank | Backlinks
+---|---|---
+knoxcountylibrary.org | 0 | 1
+teknovation.biz | 0 | 1
+imaginationlibrary.com | 0 | 1
+
+### Referring domains for www.modernpostcard.com
+Total referring domains: 631
+Domain | Rank | Backlinks
+---|---|---
+globalsmallbusinessblog.com | 225 | 12379
+chaque4.blogspot.com | 195 | 9024
+wonderfulmachine.com | 121 | 57
+rubbertrampartist.com | 110 | 108
+nancy-rubin.com | 92 | 8
+outlookappins.com | 79 | 4
+leadgrowdevelop.com | 74 | 6
+letterology.com | 74 | 1360
+tdpelmedia.com | 72 | 6
+sbeinc.com | 71 | 12
+distrilist.eu | 68 | 4
+isabeljewelry.com | 68 | 8
+aphotoeditor.com | 68 | 26
+unfiction.com | 65 | 32
+getemail.io | 63 | 4
+deliveredconference.com | 63 | 8
+saleshive.com | 52 | 4
+handprinters.blogspot.com | 52 | 341
+bizcommunity.com | 52 | 3
+bitsandboxes.net | 51 | 1
+thetechgues.com | 51 | 1
+mitmunk.com | 51 | 1
+infobiosphere.com | 51 | 1
+techbigis.com | 51 | 1
+vidmateoldversion.in | 51 | 1
+napc.pro | 51 | 1
+datanfact.com | 51 | 1
+onlinedemand.net | 51 | 1
+geonewsflare.com | 51 | 1
+feedgadgets.com | 51 | 2
+
+CRST has 200 referring domains
+
+### BACKLINK SUMMARY
+{
+  "target": "crst.net",
+  "first_seen": "2019-01-19 18:57:38 +00:00",
+  "lost_date": null,
+  "rank": 310,
+  "backlinks": 2801,
+  "backlinks_spam_score": 8,
+  "crawled_pages": 807,
+  "info": {
+    "server": "LiteSpeed",
+    "cms": "wordpress",
+    "platform_type": [
+      "cms",
+      "blogs",
+      "organization"
+    ],
+    "ip_address": "195.234.95.156",
+    "country": "US",
+    "is_ip": false,
+    "target_spam_score": 0
+  },
+  "internal_links_count": 23089,
+  "external_links_count": 6742,
+  "broken_backlinks": 0,
+  "broken_pages": 63,
+  "referring_domains": 239,
+  "referring_domains_nofollow": 43,
+  "referring_main_domains": 225,
+  "referring_main_domains_nofollow": 43,
+  "referring_ips": 131,
+  "referring_subnets": 117,
+  "referring_pages": 2709,
+  "referring_pages_nofollow": 308,
+  "referring_links_tld": {
+    "org": 1131,
+    "com": 1122,
+    "blogspot.com": 143,
+    "edu.pe": 63,
+    "gov.co": 54,
+    "gov.gh": 40,
+    "edu.br": 28,
+    "net": 23,
+    "ca": 15,
+    "pe": 14
+  },
+  "referring_links_types": {
+    "anchor": 2312,
+    "image": 397
+  },
+  "referring_links_attributes": {
+    "noopener": 1591,
+    "nofollow": 308,
+    "external": 59,
+    "noreferrer": 16,
+    "ugc": 4
+  },
+  "referring_links_platform_types": {
+    "unknown": 1344,
+    "blogs": 1180,
+    "cms": 809,
+    "organization": 356,
+    "ecommerce": 49,
+    "news": 10
+  },
+  "referring_links_semantic_locations": {
+    "footer": 1585,
+    "": 508,
+    "article": 373,
+    "section": 202,
+    "main": 28,
+    "aside": 9,
+    "details": 3,
+    "header": 1
+  },
+  "referring_links_countries": {
+    "": 2256,
+    "US": 150,
+    "PE": 77,
+    "WW": 60,
+    "CO": 56,
+    "GH": 40,
+    "BR": 29,
+    "CA": 15,
+    "NG": 8,
+    "RU": 3
+  }
+}
