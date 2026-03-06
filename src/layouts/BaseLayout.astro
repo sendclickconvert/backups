@@ -66,6 +66,13 @@ const defaultSchema = {
     'EDDM',
   ],
   priceRange: '$$',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: BUSINESS.rating.ratingValue,
+    reviewCount: BUSINESS.rating.reviewCount,
+    bestRating: BUSINESS.rating.bestRating,
+    worstRating: BUSINESS.rating.worstRating,
+  },
   openingHoursSpecification: {
     '@type': 'OpeningHoursSpecification',
     dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
