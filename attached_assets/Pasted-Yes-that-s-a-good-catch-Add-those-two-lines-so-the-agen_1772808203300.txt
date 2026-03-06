@@ -1,0 +1,172 @@
+Yes — that’s a good catch. Add those two lines so the agent doesn’t waste time looking for WordPress blog files inside the Replit project.
+
+Here’s the **final master prompt** with those added:
+
+```text
+MAX MODE SEO EXECUTION TASK FOR THEPROPERTYFATHER.COM
+
+Act as a senior technical SEO engineer, site strategist, and content optimizer for The Property Father project.
+
+GOAL:
+Apply the same type of practical SEO improvements we just completed for CRST, but for The Property Father.
+
+PRIMARY OBJECTIVES:
+1. Strengthen the pages most likely to generate leads
+2. Improve title tags and meta descriptions for pages already getting impressions
+3. Improve internal linking from blog articles to the main money pages
+4. Strengthen the relationship between situation pages, location pages, and conversion pages
+5. Preserve the current site architecture and branding
+6. Do not break URLs
+
+IMPORTANT CONTEXT:
+- Main market is Long Island, especially Suffolk County and Nassau County
+- Primary base is Patchogue, NY
+- Site includes situation pages such as:
+  - divorce
+  - pre-foreclosure
+  - probate
+  - inherited property
+  - sell as-is
+- Site also includes county, town, and village location pages
+- Site is built in Astro + Tailwind, deployed on Replit Reserved VM
+- Blog at blog.thepropertyfather.com runs on WordPress (hosted via GHL)
+- Pins and content distribution point to blog articles
+- Blog articles should push authority and visitors into the main site situation/service pages
+- Lead form is “Get a Cash Offer”
+- The goal is not a broad redesign — it is practical SEO tightening and authority flow improvement
+
+PHASE 1 — SITE INVENTORY
+1. Crawl the main site and identify:
+   - homepage
+   - situation/service pages
+   - location pages
+   - contact / cash offer pages
+2. Review the live blog structure externally and identify:
+   - authority articles
+   - problem-solution posts
+   - articles relevant to motivated sellers
+3. Create a categorized inventory:
+   - MONEY PAGES
+   - LOCATION PAGES
+   - BLOG AUTHORITY PAGES
+   - CORE CONVERSION PAGES
+
+PHASE 2 — PRIORITY PAGE IDENTIFICATION
+Identify the highest-priority money pages, especially pages related to:
+- sell house fast
+- sell house as-is
+- inherited house
+- probate
+- divorce
+- pre-foreclosure
+- cash offer
+- any Long Island / Suffolk / Nassau variants
+
+Prioritize pages most likely to drive leads.
+
+PHASE 3 — TITLE TAG + META DESCRIPTION IMPROVEMENTS
+For the top-priority money pages and best blog support pages:
+1. Review current title tags and meta descriptions
+2. Rewrite them to better match motivated seller intent
+3. Keep the copy natural, useful, and click-focused
+4. Preserve local intent where relevant
+
+Output:
+- page URL
+- old title if found
+- new title
+- new meta description
+- reason for change
+
+PHASE 4 — ON-PAGE CONTENT IMPROVEMENTS
+For each top-priority money page:
+1. Improve the intro so the page clearly matches search intent
+2. Improve H1/H2 structure where needed
+3. Strengthen clarity around the seller problem and solution
+4. Add trust-building content where appropriate
+5. Improve the call-to-action placement if needed
+6. Preserve design/layout unless a change is needed
+
+Focus on pages related to:
+- selling as-is
+- inherited house
+- probate
+- pre-foreclosure
+- divorce sale
+- fast cash offer
+
+PHASE 5 — INTERNAL LINKING
+This is a major focus.
+
+1. Identify blog articles that should internally link to money pages
+2. Add natural contextual links from blog articles to the best matching situation/service pages
+3. Add links from situation pages to relevant location pages
+4. Add links from location pages back to the best matching situation/service pages
+5. Add links toward the main “Get a Cash Offer” conversion path
+6. Avoid over-linking and repetitive anchor text
+
+Examples:
+- inherited property article → inherited house page
+- probate article → probate service page
+- foreclosure article → pre-foreclosure page
+- local article → corresponding Suffolk/Nassau location page
+
+Output:
+- source page
+- destination page
+- anchor text
+- reason added
+
+PHASE 6 — BLOG + MAIN SITE ENTITY / AUTHORITY FLOW
+Review whether the blog and main site are tightly connected.
+1. Confirm blog articles link into the main site money pages
+2. Confirm main site links back to the blog/resource content where helpful
+3. Strengthen this connection where needed so the blog does not feel orphaned
+4. Preserve existing schema and entity consistency if already present
+
+PHASE 7 — LOCAL SEO CONNECTIONS
+Review county, town, and village pages and improve:
+1. internal links to relevant situation/service pages
+2. local relevance in titles/meta where appropriate
+3. consistency of conversion paths
+4. relationship between Long Island / Suffolk / Nassau pages and the main service pages
+
+Do not mass rewrite all location pages unnecessarily.
+Focus on the highest-impact improvements and internal linking.
+
+PHASE 8 — IMPLEMENTATION
+After analysis:
+1. Implement the approved title/meta changes directly in the project
+2. Implement the approved internal links directly in the project
+3. Implement the approved on-page improvements directly in the project
+4. Preserve styling and layout
+5. Do not change URLs
+6. Do not introduce filler or spammy SEO language
+
+PHASE 9 — QA + REPORTING
+When complete, output:
+
+SECTION A — TOP PRIORITY MONEY PAGES
+SECTION B — TITLE + META CHANGES
+SECTION C — ON-PAGE CONTENT CHANGES
+SECTION D — INTERNAL LINKS ADDED
+SECTION E — FILES CHANGED
+SECTION F — 30-DAY GSC TRACKING CHECKLIST
+
+For the tracking checklist include:
+- page URL
+- target keyword theme
+- what changed
+- what to monitor over the next 30 days
+
+IMPORTANT RULES:
+- Focus on practical SEO wins, not theory
+- Strengthen what already exists
+- Use the current site structure
+- Do not create duplicate pages unless clearly necessary
+- Prioritize money pages over blog pages
+- Use the blog to support rankings and lead generation
+- Think like an SEO operator trying to improve rankings and leads over the next 30–90 days
+
+Begin with the site inventory and then proceed through implementation.
+```
