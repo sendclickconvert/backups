@@ -14,13 +14,6 @@ const schema = {
     '@id': 'https://crst.net/#organization',
     name: BUSINESS.name,
     telephone: BUSINESS.phone,
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: BUSINESS.rating.ratingValue,
-      reviewCount: BUSINESS.rating.reviewCount,
-      bestRating: BUSINESS.rating.bestRating,
-      worstRating: BUSINESS.rating.worstRating,
-    },
   },
   areaServed: [
     { '@type': 'County', name: 'Ulster County, New York' },

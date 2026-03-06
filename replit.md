@@ -21,7 +21,7 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 ### Technical Implementations
 - **Dynamic Content**: Uses data files (`site.ts`, `case-studies.ts`, `locations.ts`) to manage content dynamically.
 - **Location-Based Content**: Features dedicated pages for services and service areas, including county and town-specific content with geocoded coordinates (lat/lng on all 93+ locations).
-- **SEO Optimization**: Implements JSON-LD schema (LocalBusiness/ProfessionalService, Service, FAQPage, Organization, Person, Review, WebPage, BreadcrumbList) for enhanced search engine visibility. AggregateRating is now rendered sitewide — in BaseLayout defaultSchema (ProfessionalService), all 9 service page schemas (in provider block), county hub schemas (LocalBusiness), and town page schemas (LocalBusiness). BBB page retains its own reviewCount: 3 with real reviews. E-E-A-T (Expertise, Authoritativeness, Trustworthiness) principles are applied through author bylines and detailed content.
+- **SEO Optimization**: Implements JSON-LD schema (LocalBusiness/ProfessionalService, Service, FAQPage, Organization, Person, Review, WebPage, BreadcrumbList) for enhanced search engine visibility. AggregateRating is ONLY on the BBB page (`crst-better-business-bureau-a-direct-mailer.astro`) with reviewCount: 3 and real review data — removed sitewide elsewhere because reviewCount: 0 is invalid per Google's structured data requirements. E-E-A-T (Expertise, Authoritativeness, Trustworthiness) principles are applied through author bylines and detailed content.
 - **Redirects**: Comprehensive 301 redirects handled via dual system: `astro.config.mjs` (99 config-level redirects) + dynamic catch-all `[...slug].astro` (130+ exact redirects + 8 pattern-based wildcard rules). All redirect targets verified to resolve to live 200 pages. Redirect chain audit tool (`redirect-chain-check-v2.cjs`) installed in project root.
 - **Trailing Slash**: `trailingSlash: 'never'` enforced in astro.config.mjs; all sitemap URLs generated without trailing slashes.
 - **Hybrid Rendering**: Prerenders most pages as static HTML while server-rendering dynamic content and redirects via catch-all.
@@ -32,7 +32,7 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 
 ### Feature Specifications
 - **Services Pages**: Nine dedicated service pages with detailed descriptions, FAQs, service area links, and 3+ CTAs per page (hero sidebar + mid-page CTA band + bottom CTASection).
-- **Service Areas**: Covers three counties (Ulster, Dutchess, Orange) with 93 town-specific pages (37 Ulster + 27 Dutchess + 29 Orange), including local business schema (with AggregateRating), nearby area links, Google Map iframes, mid-page CTAs, and county back links.
+- **Service Areas**: Covers three counties (Ulster, Dutchess, Orange) with 93 town-specific pages (37 Ulster + 27 Dutchess + 29 Orange), including local business schema (no AggregateRating), nearby area links, Google Map iframes, mid-page CTAs, and county back links.
 - **County Hub Pages**: 3 county index pages with Google Map embeds (zoom 11), anchor city highlights, full town listing with links, and mid-page CTAs.
 - **Resources/Tools**: A section for direct mail tools and resources, including guides on postage rates, mailing permits, postal dictionaries, envelope sizes, address change/forwarding, USPS templates, EDDM guide, mail automation, ancillary service endorsements, periodicals, and a payments page.
 - **Case Studies**: 11 case studies with clickable industry filter tags.
@@ -46,8 +46,8 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 - **Tracking/dial phone**: `(845) 393-6770` (BUSINESS.trackingPhone / phoneClean: `8453936770`) — GHL call tracking number, intentionally different from display
 
 ### Schema Configuration
-- **AggregateRating**: Rendered sitewide using `BUSINESS.rating` data — in BaseLayout (ProfessionalService), all 9 service pages (in provider LocalBusiness), 3 county hubs (LocalBusiness), and 93 town pages (LocalBusiness). BBB page has its own separate AggregateRating with `reviewCount: '3'` and real review data.
-- **BUSINESS.rating** in `site.ts`: `ratingValue: '5.0'`, `reviewCount: '0'`, `bestRating: '5'`, `worstRating: '1'` — rendered in schema across all pages.
+- **AggregateRating**: ONLY on the BBB page (`crst-better-business-bureau-a-direct-mailer.astro`) with `reviewCount: '3'` and real review data. NOT on any other page — not BaseLayout, not service pages, not county/town pages. `reviewCount: 0` is invalid per Google's structured data requirements.
+- **BUSINESS.rating** in `site.ts`: `ratingValue: '5.0'`, `reviewCount: '0'`, `bestRating: '5'`, `worstRating: '1'` — data definition retained but NOT rendered in any schema except BBB page.
 
 ### SEO Optimization (March 2026)
 - **Title Tags**: CTR-optimized titles on all service pages, tool pages, and resource pages with keyword-rich, natural language
