@@ -1,0 +1,72 @@
+This is good. It found and fixed the right things.
+
+The biggest wins are:
+
+* fixed the two broken county links
+* improved weak/generic titles on core pages
+* added internal links from About and FAQ
+* added situation-page links across town and village templates
+* synced `server/seo.ts`
+
+That said, I would do **one quick sanity check before calling it done**:
+
+### Check the scale of those sitewide links
+
+It says the situation pages are now linked from **251+ pages**. That can be great, but only if the links are placed naturally and not as a repetitive block that appears identical on every page.
+
+What you want to confirm:
+
+* the section feels useful to a real visitor
+* anchors vary a little naturally
+* it doesn’t look spammy or boilerplate-heavy
+* the contact link isn’t overdone on every location page
+
+### What I’d tell Replit next
+
+Paste this:
+
+```text
+Good work. Before we finalize, do one QA pass focused on internal linking quality.
+
+Tasks:
+1. Review the new situation-links sections added to:
+   - NassauTownPage.tsx
+   - SuffolkTownPage.tsx
+   - NassauVillagePage.tsx
+   - SuffolkVillagePage.tsx
+
+2. Confirm the links feel natural and helpful to users, not spammy or overly repetitive.
+
+3. If all 5 situation pages + contact are linked in the exact same way on every location page, improve the presentation slightly so it reads like a helpful “common situations we help with” block rather than an SEO link dump.
+
+4. Keep all links, but make sure:
+   - anchor text is natural
+   - formatting is clean
+   - section heading is user-friendly
+   - contact CTA is clear but not excessive
+
+5. Verify there are no duplicate or awkward links now appearing too close together on county, town, or village pages.
+
+6. Run a quick build/compile check and report:
+   - whether the link sections are good as-is
+   - any refinements made
+   - files changed
+```
+
+### My overall read
+
+For Property Father, this is the same kind of win you got on CRST:
+
+* better titles
+* better internal link flow
+* better emphasis on money pages
+
+The **largest SEO gain** here is probably the town/village pages now feeding authority into the situation pages. That was the major gap.
+
+After this QA pass, the next step is just:
+
+1. let it settle
+2. watch GSC for 2–4 weeks
+3. then decide whether to do another pass based on impressions/CTR
+
+If you want, paste me the QA response next and I’ll tell you whether to leave it or tighten anything else.
