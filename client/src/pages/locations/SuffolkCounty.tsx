@@ -102,7 +102,7 @@ export default function SuffolkCounty() {
   return (
     <Layout>
       <SEO 
-        title="We Buy Houses Suffolk County NY | Cash Home Buyers | The Property Father"
+        title="Sell Your House Fast in Suffolk County, NY | The Property Father"
         description="Sell your Suffolk County house fast for cash. The Property Father buys homes in any condition — Babylon, Huntington, Islip, Smithtown, Brookhaven, and all Suffolk towns. No agents, no fees. Call (516) 548-6558."
         canonicalPath="/locations/suffolk-county"
       />

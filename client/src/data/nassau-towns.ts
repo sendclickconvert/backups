@@ -29,9 +29,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "baldwin",
     townName: "Baldwin",
-    titleTag: "We Buy Houses for Cash in Baldwin, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Baldwin, NY | The Property Father",
     metaDescription: "Sell your Baldwin home fast for cash. No repairs, no agents, no fees. The Property Father buys houses in any condition throughout Baldwin, NY. Call (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Baldwin, NY",
+    h1: "Sell Your House Fast for Cash in Baldwin, NY",
     sections: [
       {
         heading: "",
@@ -91,9 +91,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "bellmore",
     townName: "Bellmore",
-    titleTag: "We Buy Houses for Cash in Bellmore, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Bellmore, NY | The Property Father",
     metaDescription: "Need to sell your Bellmore house fast? The Property Father pays cash for homes in any condition. No agents, no repairs, no waiting. Call (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Bellmore, NY",
+    h1: "Sell Your House Fast for Cash in Bellmore, NY",
     sections: [
       {
         heading: "",
@@ -147,9 +147,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "bethpage",
     townName: "Bethpage",
-    titleTag: "We Buy Houses for Cash in Bethpage, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Bethpage, NY | The Property Father",
     metaDescription: "Selling a house in Bethpage, NY? The Property Father buys homes for cash in any condition. No repairs, no agents, no hassle. Call (516) 548-6558 today.",
-    h1: "We Buy Houses for Cash in Bethpage, NY",
+    h1: "Sell Your House Fast for Cash in Bethpage, NY",
     sections: [
       {
         heading: "",
@@ -206,9 +206,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "carle-place",
     townName: "Carle Place",
-    titleTag: "We Buy Houses for Cash in Carle Place, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Carle Place, NY | The Property Father",
     metaDescription: "Need to sell a house in Carle Place, NY? We pay cash, close fast, and buy homes in any condition. No fees, no agents. Call (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Carle Place, NY",
+    h1: "Sell Your House Fast for Cash in Carle Place, NY",
     sections: [
       {
         heading: "",
@@ -264,9 +264,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "east-meadow",
     townName: "East Meadow",
-    titleTag: "We Buy Houses for Cash in East Meadow, NY | The Property Father",
+    titleTag: "Sell Your House Fast in East Meadow, NY | The Property Father",
     metaDescription: "Sell your East Meadow home fast for cash. Any condition, no repairs, no agents. The Property Father makes fair cash offers. Call (516) 548-6558.",
-    h1: "We Buy Houses for Cash in East Meadow, NY",
+    h1: "Sell Your House Fast for Cash in East Meadow, NY",
     sections: [
       {
         heading: "",
@@ -321,9 +321,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "east-rockaway",
     townName: "East Rockaway",
-    titleTag: "We Buy Houses for Cash in East Rockaway, NY | The Property Father",
+    titleTag: "Sell Your House Fast in East Rockaway, NY | The Property Father",
     metaDescription: "Sell your East Rockaway home fast — even with storm damage or flood zone issues. Cash offer, no repairs needed. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in East Rockaway, NY",
+    h1: "Sell Your House Fast for Cash in East Rockaway, NY",
     sections: [
       {
         heading: "",
@@ -379,9 +379,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "elmont",
     townName: "Elmont",
-    titleTag: "We Buy Houses for Cash in Elmont, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Elmont, NY | The Property Father",
     metaDescription: "Selling a home in Elmont, NY? We buy houses for cash in any condition — no agents, no repairs, no delays. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Elmont, NY",
+    h1: "Sell Your House Fast for Cash in Elmont, NY",
     sections: [
       {
         heading: "",
@@ -437,9 +437,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "farmingdale",
     townName: "Farmingdale",
-    titleTag: "We Buy Houses for Cash in Farmingdale, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Farmingdale, NY | The Property Father",
     metaDescription: "Need to sell your Farmingdale home fast? Cash offer, any condition, no repairs. The Property Father buys houses in Farmingdale, NY. Call (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Farmingdale, NY",
+    h1: "Sell Your House Fast for Cash in Farmingdale, NY",
     sections: [
       {
         heading: "",
@@ -495,9 +495,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "floral-park",
     townName: "Floral Park",
-    titleTag: "We Buy Houses for Cash in Floral Park, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Floral Park, NY | The Property Father",
     metaDescription: "Sell your Floral Park home fast for cash. No agents, no repairs, no fees. The Property Father buys houses in any condition. Call (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Floral Park, NY",
+    h1: "Sell Your House Fast for Cash in Floral Park, NY",
     sections: [
       {
         heading: "",
@@ -553,9 +553,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "franklin-square",
     townName: "Franklin Square",
-    titleTag: "We Buy Houses for Cash in Franklin Square, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Franklin Square, NY | The Property Father",
     metaDescription: "Sell your Franklin Square home fast for cash — any condition, no repairs, no agents. Call The Property Father at (516) 548-6558 for a free cash offer.",
-    h1: "We Buy Houses for Cash in Franklin Square, NY",
+    h1: "Sell Your House Fast for Cash in Franklin Square, NY",
     sections: [
       {
         heading: "",
@@ -610,9 +610,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "freeport",
     townName: "Freeport",
-    titleTag: "We Buy Houses for Cash in Freeport, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Freeport, NY | The Property Father",
     metaDescription: "Sell your Freeport home fast for cash. Storm damage, old house, inherited property — we buy it all. No repairs, no fees. Call (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Freeport, NY",
+    h1: "Sell Your House Fast for Cash in Freeport, NY",
     sections: [
       {
         heading: "",
@@ -668,9 +668,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "garden-city",
     townName: "Garden City",
-    titleTag: "We Buy Houses for Cash in Garden City, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Garden City, NY | The Property Father",
     metaDescription: "Need to sell a Garden City home discreetly and fast? We buy houses for cash — any condition, no public listing. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Garden City, NY",
+    h1: "Sell Your House Fast for Cash in Garden City, NY",
     sections: [
       {
         heading: "",
@@ -726,9 +726,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "glen-cove",
     townName: "Glen Cove",
-    titleTag: "We Buy Houses for Cash in Glen Cove, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Glen Cove, NY | The Property Father",
     metaDescription: "Sell your Glen Cove home fast for cash — waterfront, fixer-upper, or inherited property. No repairs, no agents. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Glen Cove, NY",
+    h1: "Sell Your House Fast for Cash in Glen Cove, NY",
     sections: [
       {
         heading: "",
@@ -784,9 +784,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "great-neck",
     townName: "Great Neck",
-    titleTag: "We Buy Houses for Cash in Great Neck, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Great Neck, NY | The Property Father",
     metaDescription: "Sell your Great Neck home privately for cash. No listing, no repairs, no agents. Fair offers on any condition. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Great Neck, NY",
+    h1: "Sell Your House Fast for Cash in Great Neck, NY",
     sections: [
       {
         heading: "",
@@ -843,9 +843,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "hempstead",
     townName: "Hempstead",
-    titleTag: "We Buy Houses for Cash in Hempstead, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Hempstead, NY | The Property Father",
     metaDescription: "Sell your Hempstead home fast for cash — any condition, foreclosure, inherited, code violations. No repairs needed. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Hempstead, NY",
+    h1: "Sell Your House Fast for Cash in Hempstead, NY",
     sections: [
       {
         heading: "",
@@ -900,9 +900,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "hicksville",
     townName: "Hicksville",
-    titleTag: "We Buy Houses for Cash in Hicksville, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Hicksville, NY | The Property Father",
     metaDescription: "Need to sell your Hicksville home fast? We buy houses in any condition for cash. No agents, no repairs, no fees. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Hicksville, NY",
+    h1: "Sell Your House Fast for Cash in Hicksville, NY",
     sections: [
       {
         heading: "",
@@ -956,9 +956,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "inwood",
     townName: "Inwood",
-    titleTag: "We Buy Houses for Cash in Inwood, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Inwood, NY | The Property Father",
     metaDescription: "Sell your Inwood home fast for cash. Any condition — flood zone, inherited, needs repairs. No agents, no fees. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Inwood, NY",
+    h1: "Sell Your House Fast for Cash in Inwood, NY",
     sections: [
       {
         heading: "",
@@ -1014,9 +1014,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "island-park",
     townName: "Island Park",
-    titleTag: "We Buy Houses for Cash in Island Park, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Island Park, NY | The Property Father",
     metaDescription: "Sell your Island Park home fast — flood damage, elevated home, or any condition. Cash offer, no repairs. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Island Park, NY",
+    h1: "Sell Your House Fast for Cash in Island Park, NY",
     sections: [
       {
         heading: "",
@@ -1072,9 +1072,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "jericho",
     townName: "Jericho",
-    titleTag: "We Buy Houses for Cash in Jericho, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Jericho, NY | The Property Father",
     metaDescription: "Sell your Jericho home fast and privately for cash. Any condition, no listing required. Fair offers. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Jericho, NY",
+    h1: "Sell Your House Fast for Cash in Jericho, NY",
     sections: [
       {
         heading: "",
@@ -1129,9 +1129,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "lawrence",
     townName: "Lawrence",
-    titleTag: "We Buy Houses for Cash in Lawrence, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Lawrence, NY | The Property Father",
     metaDescription: "Sell your Lawrence home fast for cash — Five Towns area, any condition, no repairs. Call The Property Father at (516) 548-6558 for a no-obligation offer.",
-    h1: "We Buy Houses for Cash in Lawrence, NY",
+    h1: "Sell Your House Fast for Cash in Lawrence, NY",
     sections: [
       {
         heading: "",
@@ -1188,9 +1188,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "levittown",
     townName: "Levittown",
-    titleTag: "We Buy Houses for Cash in Levittown, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Levittown, NY | The Property Father",
     metaDescription: "Sell your Levittown home for cash — any condition, original or expanded. No agents, no repairs. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Levittown, NY",
+    h1: "Sell Your House Fast for Cash in Levittown, NY",
     sections: [
       {
         heading: "",
@@ -1245,9 +1245,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "long-beach",
     townName: "Long Beach",
-    titleTag: "We Buy Houses for Cash in Long Beach, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Long Beach, NY | The Property Father",
     metaDescription: "Sell your Long Beach home fast — flood zone, storm damage, any condition. Cash offers, no repairs needed. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Long Beach, NY",
+    h1: "Sell Your House Fast for Cash in Long Beach, NY",
     sections: [
       {
         heading: "",
@@ -1302,9 +1302,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "lynbrook",
     townName: "Lynbrook",
-    titleTag: "We Buy Houses for Cash in Lynbrook, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Lynbrook, NY | The Property Father",
     metaDescription: "Sell your Lynbrook home fast for cash — any condition, no repairs, no agents, no fees. Call The Property Father at (516) 548-6558 for a fair offer.",
-    h1: "We Buy Houses for Cash in Lynbrook, NY",
+    h1: "Sell Your House Fast for Cash in Lynbrook, NY",
     sections: [
       {
         heading: "",
@@ -1360,9 +1360,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "malverne",
     townName: "Malverne",
-    titleTag: "We Buy Houses for Cash in Malverne, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Malverne, NY | The Property Father",
     metaDescription: "Need to sell your Malverne home fast? We buy houses for cash, any condition. No repairs, no agents. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Malverne, NY",
+    h1: "Sell Your House Fast for Cash in Malverne, NY",
     sections: [
       {
         heading: "",
@@ -1418,9 +1418,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "manhasset",
     townName: "Manhasset",
-    titleTag: "We Buy Houses for Cash in Manhasset, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Manhasset, NY | The Property Father",
     metaDescription: "Sell your Manhasset home discreetly for cash. No public listing, no repairs, no agents. Fair offers on any condition. Call (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Manhasset, NY",
+    h1: "Sell Your House Fast for Cash in Manhasset, NY",
     sections: [
       {
         heading: "",
@@ -1476,9 +1476,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "massapequa",
     townName: "Massapequa",
-    titleTag: "We Buy Houses for Cash in Massapequa, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Massapequa, NY | The Property Father",
     metaDescription: "Sell your Massapequa home fast for cash — any condition, no repairs, no agents. Fair offers from The Property Father. Call (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Massapequa, NY",
+    h1: "Sell Your House Fast for Cash in Massapequa, NY",
     sections: [
       {
         heading: "",
@@ -1534,9 +1534,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "merrick",
     townName: "Merrick",
-    titleTag: "We Buy Houses for Cash in Merrick, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Merrick, NY | The Property Father",
     metaDescription: "Sell your Merrick home fast for cash — waterfront, fixer-upper, inherited, any condition. No agents, no fees. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Merrick, NY",
+    h1: "Sell Your House Fast for Cash in Merrick, NY",
     sections: [
       {
         heading: "",
@@ -1592,9 +1592,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "mineola",
     townName: "Mineola",
-    titleTag: "We Buy Houses for Cash in Mineola, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Mineola, NY | The Property Father",
     metaDescription: "Need to sell your Mineola home fast? Cash offer, any condition, no repairs, no agents. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Mineola, NY",
+    h1: "Sell Your House Fast for Cash in Mineola, NY",
     sections: [
       {
         heading: "",
@@ -1650,9 +1650,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "new-hyde-park",
     townName: "New Hyde Park",
-    titleTag: "We Buy Houses for Cash in New Hyde Park, NY | The Property Father",
+    titleTag: "Sell Your House Fast in New Hyde Park, NY | The Property Father",
     metaDescription: "Sell your New Hyde Park home fast for cash. Any condition — no agents, no repairs, no fees. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in New Hyde Park, NY",
+    h1: "Sell Your House Fast for Cash in New Hyde Park, NY",
     sections: [
       {
         heading: "",
@@ -1708,9 +1708,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "oceanside",
     townName: "Oceanside",
-    titleTag: "We Buy Houses for Cash in Oceanside, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Oceanside, NY | The Property Father",
     metaDescription: "Sell your Oceanside home fast for cash — flood zone, fixer-upper, inherited, any condition. No repairs. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Oceanside, NY",
+    h1: "Sell Your House Fast for Cash in Oceanside, NY",
     sections: [
       {
         heading: "",
@@ -1767,9 +1767,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "old-bethpage",
     townName: "Old Bethpage",
-    titleTag: "We Buy Houses for Cash in Old Bethpage, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Old Bethpage, NY | The Property Father",
     metaDescription: "Sell your Old Bethpage home fast for cash — any condition, no repairs, no agents. Fair cash offers. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Old Bethpage, NY",
+    h1: "Sell Your House Fast for Cash in Old Bethpage, NY",
     sections: [
       {
         heading: "",
@@ -1824,9 +1824,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "oyster-bay",
     townName: "Oyster Bay",
-    titleTag: "We Buy Houses for Cash in Oyster Bay, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Oyster Bay, NY | The Property Father",
     metaDescription: "Sell your Oyster Bay home for cash — historic property, waterfront, any condition. No agents, no repairs. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Oyster Bay, NY",
+    h1: "Sell Your House Fast for Cash in Oyster Bay, NY",
     sections: [
       {
         heading: "",
@@ -1882,9 +1882,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "plainview",
     townName: "Plainview",
-    titleTag: "We Buy Houses for Cash in Plainview, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Plainview, NY | The Property Father",
     metaDescription: "Sell your Plainview home fast for cash. Any condition, no repairs, no agents. The Property Father makes fair cash offers. Call (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Plainview, NY",
+    h1: "Sell Your House Fast for Cash in Plainview, NY",
     sections: [
       {
         heading: "",
@@ -1939,9 +1939,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "port-washington",
     townName: "Port Washington",
-    titleTag: "We Buy Houses for Cash in Port Washington, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Port Washington, NY | The Property Father",
     metaDescription: "Sell your Port Washington home privately for cash. Waterfront, fixer-upper, estate sale — any condition. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Port Washington, NY",
+    h1: "Sell Your House Fast for Cash in Port Washington, NY",
     sections: [
       {
         heading: "",
@@ -1997,9 +1997,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "rockville-centre",
     townName: "Rockville Centre",
-    titleTag: "We Buy Houses for Cash in Rockville Centre, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Rockville Centre, NY | The Property Father",
     metaDescription: "Sell your Rockville Centre home fast for cash. Any condition, no repairs, no agents. Fair offers. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Rockville Centre, NY",
+    h1: "Sell Your House Fast for Cash in Rockville Centre, NY",
     sections: [
       {
         heading: "",
@@ -2055,9 +2055,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "roosevelt",
     townName: "Roosevelt",
-    titleTag: "We Buy Houses for Cash in Roosevelt, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Roosevelt, NY | The Property Father",
     metaDescription: "Sell your Roosevelt home fast for cash — foreclosure, tax liens, any condition. No repairs, no agents. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Roosevelt, NY",
+    h1: "Sell Your House Fast for Cash in Roosevelt, NY",
     sections: [
       {
         heading: "",
@@ -2112,9 +2112,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "roslyn",
     townName: "Roslyn",
-    titleTag: "We Buy Houses for Cash in Roslyn, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Roslyn, NY | The Property Father",
     metaDescription: "Sell your Roslyn home privately for cash. Historic village, any condition, no public listing. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Roslyn, NY",
+    h1: "Sell Your House Fast for Cash in Roslyn, NY",
     sections: [
       {
         heading: "",
@@ -2170,9 +2170,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "seaford",
     townName: "Seaford",
-    titleTag: "We Buy Houses for Cash in Seaford, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Seaford, NY | The Property Father",
     metaDescription: "Sell your Seaford home fast for cash. Waterfront, fixer-upper, any condition — no repairs, no agents. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Seaford, NY",
+    h1: "Sell Your House Fast for Cash in Seaford, NY",
     sections: [
       {
         heading: "",
@@ -2228,9 +2228,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "syosset",
     townName: "Syosset",
-    titleTag: "We Buy Houses for Cash in Syosset, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Syosset, NY | The Property Father",
     metaDescription: "Sell your Syosset home privately for cash — any condition, no listing, no repairs. Fair offers. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Syosset, NY",
+    h1: "Sell Your House Fast for Cash in Syosset, NY",
     sections: [
       {
         heading: "",
@@ -2286,9 +2286,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "uniondale",
     townName: "Uniondale",
-    titleTag: "We Buy Houses for Cash in Uniondale, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Uniondale, NY | The Property Father",
     metaDescription: "Sell your Uniondale home fast for cash — any condition, foreclosure, inherited, fixer-upper. No repairs. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Uniondale, NY",
+    h1: "Sell Your House Fast for Cash in Uniondale, NY",
     sections: [
       {
         heading: "",
@@ -2343,9 +2343,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "valley-stream",
     townName: "Valley Stream",
-    titleTag: "We Buy Houses for Cash in Valley Stream, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Valley Stream, NY | The Property Father",
     metaDescription: "Sell your Valley Stream home fast for cash. Any condition — no agents, no repairs, no fees. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Valley Stream, NY",
+    h1: "Sell Your House Fast for Cash in Valley Stream, NY",
     sections: [
       {
         heading: "",
@@ -2401,9 +2401,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "wantagh",
     townName: "Wantagh",
-    titleTag: "We Buy Houses for Cash in Wantagh, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Wantagh, NY | The Property Father",
     metaDescription: "Sell your Wantagh home fast for cash — any condition, no repairs, no agents. Fair cash offers. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Wantagh, NY",
+    h1: "Sell Your House Fast for Cash in Wantagh, NY",
     sections: [
       {
         heading: "",
@@ -2459,9 +2459,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "westbury",
     townName: "Westbury",
-    titleTag: "We Buy Houses for Cash in Westbury, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Westbury, NY | The Property Father",
     metaDescription: "Sell your Westbury home fast for cash — any condition, no repairs, no agents, no fees. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Westbury, NY",
+    h1: "Sell Your House Fast for Cash in Westbury, NY",
     sections: [
       {
         heading: "",
@@ -2517,9 +2517,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "williston-park",
     townName: "Williston Park",
-    titleTag: "We Buy Houses for Cash in Williston Park, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Williston Park, NY | The Property Father",
     metaDescription: "Sell your Williston Park home fast for cash. Small village, any condition, no agents, no repairs. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Williston Park, NY",
+    h1: "Sell Your House Fast for Cash in Williston Park, NY",
     sections: [
       {
         heading: "",
@@ -2575,9 +2575,9 @@ export const nassauTowns: TownData[] = [
   {
     slug: "woodmere",
     townName: "Woodmere",
-    titleTag: "We Buy Houses for Cash in Woodmere, NY | The Property Father",
+    titleTag: "Sell Your House Fast in Woodmere, NY | The Property Father",
     metaDescription: "Sell your Woodmere home fast for cash — Five Towns, any condition, no repairs. Fair offers. Call The Property Father at (516) 548-6558.",
-    h1: "We Buy Houses for Cash in Woodmere, NY",
+    h1: "Sell Your House Fast for Cash in Woodmere, NY",
     sections: [
       {
         heading: "",

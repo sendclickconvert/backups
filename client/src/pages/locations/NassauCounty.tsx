@@ -110,7 +110,7 @@ export default function NassauCounty() {
   return (
     <Layout>
       <SEO 
-        title="We Buy Houses Nassau County NY | Cash Home Buyers | The Property Father"
+        title="Sell Your House Fast in Nassau County, NY | The Property Father"
         description="Sell your Nassau County house fast for cash. The Property Father buys homes in any condition — Hempstead, Long Beach, Glen Cove, and all 45 Nassau towns. No agents, no fees. Call (516) 548-6558."
         canonicalPath="/locations/nassau-county"
       />

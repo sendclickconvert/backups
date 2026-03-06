@@ -281,8 +281,8 @@ const seoData: Record<string, PageSEO> = {
   },
 
   "/locations/nassau-county": {
-    title: "We Buy Houses for Cash in Nassau County, NY | The Property Father",
-    description: "Sell your Nassau County house fast for cash. The Property Father buys homes in any condition across all Nassau County towns. No fees, no repairs, close in 7 days.",
+    title: "Sell Your House Fast in Nassau County, NY | The Property Father",
+    description: "Sell your Nassau County house fast for cash. The Property Father buys homes in any condition — Hempstead, Long Beach, Glen Cove, and all 45 Nassau towns. No agents, no fees. Call (516) 548-6558.",
     canonical: "https://thepropertyfather.com/locations/nassau-county",
     noscriptContent: noscriptShell(
       "We Buy Houses for Cash in Nassau County, NY",
@@ -299,8 +299,8 @@ const seoData: Record<string, PageSEO> = {
     )
   },
   "/locations/suffolk-county": {
-    title: "We Buy Houses for Cash in Suffolk County, NY | The Property Father",
-    description: "Sell your Suffolk County house fast for cash. The Property Father buys homes in any condition across all Suffolk County towns. No fees, no repairs, close in 7 days.",
+    title: "Sell Your House Fast in Suffolk County, NY | The Property Father",
+    description: "Sell your Suffolk County house fast for cash. The Property Father buys homes in any condition — Babylon, Huntington, Islip, Smithtown, Brookhaven, and all Suffolk towns. No agents, no fees. Call (516) 548-6558.",
     canonical: "https://thepropertyfather.com/locations/suffolk-county",
     noscriptContent: noscriptShell(
       "We Buy Houses for Cash in Suffolk County, NY",
@@ -331,11 +331,11 @@ export function generateDynamicSEO(urlPath: string): PageSEO | null {
     const slug = nassauTownMatch[1];
     const townName = slug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
     return {
-      title: `We Buy Houses for Cash in ${townName}, Nassau County | The Property Father`,
+      title: `Sell Your House Fast in ${townName}, NY | The Property Father`,
       description: `Sell your ${townName} house fast for cash. The Property Father buys homes in any condition in ${townName}, Nassau County, NY. No fees, no repairs, close in 7 days.`,
       canonical: `https://thepropertyfather.com${cleanPath}`,
       noscriptContent: noscriptShell(
-        `We Buy Houses for Cash in ${townName}, Nassau County, NY`,
+        `Sell Your House Fast for Cash in ${townName}, Nassau County, NY`,
         [
           `The Property Father buys houses for cash in ${townName}, Nassau County, New York. We make fair cash offers on homes in any condition — no repairs, no agent fees, no closing costs.`,
           `Whether you're facing foreclosure, going through a divorce, dealing with a probate or inherited property, or just need to sell fast, we can help homeowners in ${townName} close in as few as 7 days.`
@@ -354,11 +354,11 @@ export function generateDynamicSEO(urlPath: string): PageSEO | null {
     const slug = suffolkTownMatch[1];
     const townName = slug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
     return {
-      title: `We Buy Houses for Cash in ${townName}, Suffolk County | The Property Father`,
+      title: `Sell Your House Fast in ${townName}, NY | The Property Father`,
       description: `Sell your ${townName} house fast for cash. The Property Father buys homes in any condition in ${townName}, Suffolk County, NY. No fees, no repairs, close in 7 days.`,
       canonical: `https://thepropertyfather.com${cleanPath}`,
       noscriptContent: noscriptShell(
-        `We Buy Houses for Cash in ${townName}, Suffolk County, NY`,
+        `Sell Your House Fast for Cash in ${townName}, Suffolk County, NY`,
         [
           `The Property Father buys houses for cash in ${townName}, Suffolk County, New York. We make fair cash offers on homes in any condition — no repairs, no agent fees, no closing costs.`,
           `Whether you're facing foreclosure, going through a divorce, dealing with a probate or inherited property, or just need to sell fast, we can help homeowners in ${townName} close in as few as 7 days.`
@@ -379,11 +379,11 @@ export function generateDynamicSEO(urlPath: string): PageSEO | null {
     const villageName = villageSlug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
     const townName = townSlug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
     return {
-      title: `We Buy Houses for Cash in ${villageName}, ${townName} | The Property Father`,
+      title: `Sell Your House Fast in ${villageName}, NY | Cash Offer | The Property Father`,
       description: `Sell your ${villageName} house fast for cash. The Property Father buys homes in any condition in ${villageName}, Town of ${townName}, Nassau County, NY.`,
       canonical: `https://thepropertyfather.com${cleanPath}`,
       noscriptContent: noscriptShell(
-        `We Buy Houses for Cash in ${villageName}, Nassau County, NY`,
+        `Sell Your House Fast for Cash in ${villageName}, Nassau County, NY`,
         [
           `The Property Father buys houses for cash in ${villageName}, located in the Town of ${townName}, Nassau County, New York. We make fair cash offers on homes in any condition.`,
           `No repairs needed, no agent fees. We can close in as few as 7 days.`
@@ -405,11 +405,11 @@ export function generateDynamicSEO(urlPath: string): PageSEO | null {
     const villageName = villageSlug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
     const townName = townSlug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
     return {
-      title: `We Buy Houses for Cash in ${villageName}, ${townName} | The Property Father`,
+      title: `Sell Your House Fast in ${villageName}, NY | Cash Offer | The Property Father`,
       description: `Sell your ${villageName} house fast for cash. The Property Father buys homes in any condition in ${villageName}, Town of ${townName}, Suffolk County, NY.`,
       canonical: `https://thepropertyfather.com${cleanPath}`,
       noscriptContent: noscriptShell(
-        `We Buy Houses for Cash in ${villageName}, Suffolk County, NY`,
+        `Sell Your House Fast for Cash in ${villageName}, Suffolk County, NY`,
         [
           `The Property Father buys houses for cash in ${villageName}, located in the Town of ${townName}, Suffolk County, New York. We make fair cash offers on homes in any condition.`,
           `No repairs needed, no agent fees. We can close in as few as 7 days.`

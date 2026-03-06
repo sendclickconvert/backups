@@ -79,6 +79,10 @@ The frontend follows a page-based structure under `client/src/pages/` with reusa
   - FAQ: "Selling Your House for Cash FAQ | Long Island | The Property Father"
   - Contact: "Get a Free Cash Offer for Your Long Island Home | The Property Father"
 - **Server-side SEO synced**: All title/meta updates reflected in `server/seo.ts` for Googlebot/SSR
+- **Town Title Upgrade (83 pages)**: Changed from "We Buy Houses for Cash in {Town}, NY" → "Sell Your House Fast in {Town}, NY | The Property Father" (seller-intent)
+- **Town H1 Upgrade (83 pages)**: Changed from "We Buy Houses for Cash in {Town}, NY" → "Sell Your House Fast for Cash in {Town}, NY"
+- **County Title Upgrade (2 pages)**: Changed from "We Buy Houses Nassau/Suffolk County NY" → "Sell Your House Fast in Nassau/Suffolk County, NY | The Property Father"
+- **Server SEO Synced for Towns/Villages**: Dynamic patterns in `server/seo.ts` updated to match client-side seller-intent titles for all town (83) and village (168) pages
 - **Broken Situation Links Fixed**: County pages had `/situations/foreclosure` (→ `/situations/pre-foreclosure`) and `/situations/as-is` (→ `/situations/sell-as-is`) — both corrected on NassauCounty.tsx and SuffolkCounty.tsx
 - **Town Pages → Situation Links (83 pages)**: New "Common Situations" section on NassauTownPage.tsx and SuffolkTownPage.tsx linking to all 5 situation pages + /contact. Renders on every town page.
 - **Village Pages → Situation Links (168 pages)**: New "Selling in [Village]?" section on NassauVillagePage.tsx and SuffolkVillagePage.tsx linking to all 5 situation pages + /contact. Renders on every village page.
