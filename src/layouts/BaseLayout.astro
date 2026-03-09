@@ -123,6 +123,20 @@ const pageSchema = schema || defaultSchema;
     gtag('config', ga4Id);
   </script>
 
+  <!-- GA4 Call-Click Tracking -->
+  <script is:inline>
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest('a[href^="tel:"]');
+      if (!link || typeof gtag !== 'function') return;
+
+      gtag('event', 'phone_call_click', {
+        phone_number: link.getAttribute('href').replace('tel:', ''),
+        link_url: link.href,
+        page_location: window.location.href
+      });
+    });
+  </script>
+
   <!-- GHL Tracking Pixel (loaded after page load) -->
   <script define:vars={{ trackingId: GHL.trackingId }}>
     window.addEventListener('load', function() {
