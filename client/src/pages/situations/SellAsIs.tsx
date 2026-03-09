@@ -169,7 +169,7 @@ export default function SellAsIs() {
       </section>
 
       <section className="py-16 lg:py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 lg:px-8 prose prose-lg max-w-none">
+        <div className="mx-auto max-w-4xl px-4 lg:px-8">
           <h2 className="text-3xl font-bold text-foreground mb-4" data-testid="heading-what-does-as-is-mean">What Does Selling As-Is Actually Mean?</h2>
           <p className="text-muted-foreground mb-4">
             Selling a house as-is means you are offering the property in its current condition, without making any repairs, improvements, or cosmetic updates before the sale. For a deeper look at <a href="https://blog.thepropertyfather.com/sell-house-as-is-long-island/" className="text-accent underline">what selling as-is really means for Long Island homeowners</a>, we've broken down the process step by step. The buyer agrees to purchase the home exactly as it stands on the day of the transaction. There are no repair credits, no fix-up requests, and no renegotiations after a home inspection.
@@ -221,7 +221,7 @@ export default function SellAsIs() {
       </section>
 
       <section className="py-16 lg:py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 lg:px-8 prose prose-lg max-w-none">
+        <div className="mx-auto max-w-4xl px-4 lg:px-8">
           <h2 className="text-3xl font-bold text-foreground mb-4" data-testid="heading-math-behind">The Math Behind As-Is vs. Repaired Sales</h2>
           <p className="text-muted-foreground mb-4">
             Many homeowners assume they will always net more money by fixing up a property and listing it on the open market. In some cases that is true, but the math is not as straightforward as most people think. Let us walk through a real-world example that is common on Long Island.

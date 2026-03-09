@@ -167,7 +167,7 @@ export default function Divorce() {
       </section>
 
       <section className="py-16 lg:py-20 bg-white">
-        <div className="mx-auto max-w-4xl px-4 lg:px-8 prose prose-lg max-w-none">
+        <div className="mx-auto max-w-4xl px-4 lg:px-8">
           <h2 className="text-3xl font-bold text-foreground mb-4">How Selling for Cash Simplifies a Divorce Settlement</h2>
           <p className="text-muted-foreground mb-4">
             Selling a home during a divorce adds an extra layer of complexity to an already difficult process. When a couple decides to list their home the traditional way, they must agree on a listing price, choose a real estate agent, coordinate showings, negotiate with buyers, and wait months for a closing. During a divorce, every one of these steps becomes an opportunity for disagreement and delay.

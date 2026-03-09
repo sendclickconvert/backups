@@ -197,7 +197,7 @@ export default function PreForeclosure() {
 
       <section className="py-16 lg:py-20 bg-muted" data-testid="section-content">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">
-          <article className="prose prose-lg max-w-none">
+          <article>
             <h2
               className="text-3xl font-bold text-foreground mb-4"
               data-testid="text-h2-what-is"
