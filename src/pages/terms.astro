@@ -8,7 +8,8 @@ import { BUSINESS } from '../data/site';
   <PageHero title="Terms & Conditions" breadcrumbs={[{ label: 'Terms & Conditions' }]} />
 
   <section class="py-14 lg:py-20">
-    <div class="container-narrow prose prose-navy max-w-none">
+    <div class="container-narrow">
+      <div class="prose prose-navy max-w-none bg-white rounded-2xl shadow-sm border border-navy-100 p-8 sm:p-10 lg:p-12">
       <p class="text-sm text-navy-500 font-heading">Last updated: March 10, 2026</p>
 
       <p class="text-navy-600/80 text-sm leading-relaxed mb-6">
@@ -247,6 +248,7 @@ import { BUSINESS } from '../data/site';
       <p class="text-navy-600/80 text-sm leading-relaxed">
         Questions about these terms? Contact us at <a href={`mailto:${BUSINESS.email}`} class="text-crst-accent hover:underline">{BUSINESS.email}</a> or call <a href={`tel:${BUSINESS.phoneClean}`} class="text-crst-accent hover:underline">{BUSINESS.phone}</a>.
       </p>
+      </div>
     </div>
   </section>
 </BaseLayout>
