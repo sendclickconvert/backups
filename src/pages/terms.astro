@@ -4,21 +4,211 @@ import PageHero from '../components/PageHero.astro';
 import { BUSINESS } from '../data/site';
 ---
 
-<BaseLayout title="Terms & Conditions" description={`Terms and conditions for ${BUSINESS.name} direct mail, printing, and mailing services.`}>
+<BaseLayout title="Terms & Conditions" description={`Terms and conditions for ${BUSINESS.name} direct mail, printing, mailing, graphic design, and related business services.`}>
   <PageHero title="Terms & Conditions" breadcrumbs={[{ label: 'Terms & Conditions' }]} />
 
   <section class="py-14 lg:py-20">
     <div class="container-narrow prose prose-navy max-w-none">
-      <p class="text-sm text-navy-500 font-heading">Last updated: January 30, 2026</p>
+      <p class="text-sm text-navy-500 font-heading">Last updated: March 10, 2026</p>
 
-      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">General Terms</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-6">
+        {BUSINESS.name} ("Cornerstone," "CRST," "we," "us," "our" or "Company") provides clients with services including graphic design, direct mail, website creation, web development, software, SEO/blog support, website hosting, programming, printing, and other related business and communication solutions.
+      </p>
       <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
-        By engaging {BUSINESS.name} for services, you agree to these terms. We reserve the right to decline any project at our discretion. All estimates are valid for 30 days unless otherwise specified.
+        We commit to handling projects with professionalism, efficiency, and clarity. To ensure transparency, we outline our responsibilities, your responsibilities as the client, and the role of third-party vendors. The following Terms and Conditions define our working relationship regarding current and future projects.
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        If you have questions about these Terms and Conditions or internal requirements that may conflict with them, notify us in writing before engaging in new or recurring work. Unless you provide a written request and receive our written acknowledgment, you unconditionally agree to these Terms and Conditions when you engage Cornerstone for services.
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        Below, you will find important details regarding our expectations, the services we provide, communication protocols, third-party vendor requirements, and more. Please read these sections carefully. For any questions, contact the CRST Customer Services desk at <a href="mailto:info@crst.net" class="text-crst-accent hover:underline">info@crst.net</a>.
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-6">
+        Since Cornerstone presents your mailings following United States Postal Service (USPS&reg;) DMM (Domestic Mail Manual) and IMM (International Mail Manual) regulations, it is essential to recognize that our services depend on USPS&reg; operations and other factors. Our work also involves creative services, graphic design, list data, data processing, programming, and pre-printed materials. To fully understand our service limitations, please review the following Terms and Conditions.
       </p>
 
-      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Pricing & Payment</h2>
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Project Management and Customer Service Support</h2>
       <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
-        Prices are based on specifications provided at the time of the estimate. Changes to quantity, specifications, or timeline may result in adjusted pricing. A deposit may be required for large or first-time orders. Invoices are due net 30 unless otherwise agreed. A 3% processing fee applies to credit card payments.
+        CRST follows a Project Management model where the Project Management desk (<a href="mailto:production@crst.net" class="text-crst-accent hover:underline">production@crst.net</a>) oversees all projects. A dedicated Project Manager handles your project and collaborates with other Cornerstone team members, such as the Data Manager, Graphic Designer, and Social Media Manager. Meanwhile, our Customer Service desk (<a href="mailto:info@crst.net" class="text-crst-accent hover:underline">info@crst.net</a>) manages project setup and follow-up tasks, including estimating, billing, gathering contact information, verifying or requesting project assets, quality assurance, and post-production data quality reports.
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        When you communicate with us, please note that we may take up to one (1) business day to respond from either Customer Service or Project Management. Email remains the preferred communication method, ensuring clarity and documentation. Any final instructions regarding your project or job execution must be submitted in writing.
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        In return, we request that you respond to our outreach promptly and directly. If a delay occurs, our communication will follow CRST's "2-2-2" protocol and policy:
+      </p>
+      <ul class="list-disc pl-6 text-navy-600/80 text-sm leading-relaxed mb-4 space-y-1">
+        <li>We will send two (2) emails.</li>
+        <li>We will make two (2) phone calls.</li>
+        <li>If we receive no response within two (2) weeks, we may internally resolve outstanding matters without further consultation.</li>
+      </ul>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        This structured approach ensures efficiency while keeping your project on track. Let us know if you have any questions or require further clarification.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Data Receipt &amp; Data Formats</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        You must send all data files and job-related instructions electronically in a "processable" file format to the CRST Project Management Desk at <a href="mailto:production@crst.net" class="text-crst-accent hover:underline">production@crst.net</a>. A processable file format consists of one electronic data file where the name, address, and email information follow a uniform structure with partitioned indices between data fields. The file must include properly structured data. Acceptable formats include .dat, .txt, .csv, .tab, .dbf, .xls, and .xlsx.
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        If you provide verbal direction due to urgency or convenience, CRST will try to confirm these instructions via return email. However, this confirmation serves only as a courtesy. Your verbal instructions cannot replace written project instructions. Ultimately, you bear full responsibility for providing accurate project guidance in writing.
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        These Terms and Conditions remain valid even if conflicting, unclear, or incomplete instructions arise. You remain fully responsible for the content and clarity of your written instructions. CRST does not accept responsibility for guidance from other staff members or interested parties. You alone hold full responsibility for direction and approvals, regardless of whether they come from internal team members or external collaborators.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Confidentiality and Non-Disclosure</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        Your electronic mailing data is safe with us and we will not use it for any purpose other than that for which you have requested of us. If you supply a mailing list to Cornerstone, we will uphold absolute privacy and industry-standard care regarding its use and archival.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Data Quality Reports</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        For submitted customer files with no third-party restrictions, Cornerstone provides a Data Quality Report that includes:
+      </p>
+      <ul class="list-disc pl-6 text-navy-600/80 text-sm leading-relaxed mb-3 space-y-1">
+        <li>Non-CASS ("Invalid Address") Certificate or Report</li>
+        <li>DPV (Delivery-Point Validation) Details</li>
+        <li>Listing of Repaired Addresses</li>
+        <li>Listing of Undeliverable Records</li>
+        <li>Duplicate Name/Address Removal</li>
+        <li>NCOA/Move Update Report</li>
+      </ul>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        Cornerstone removes duplicate names only when both the name and address match exactly. We do not scan for duplicate names alone. Since no universal standard exists for name/address repair, our data quality efforts follow industry best practices and available project time.
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        Cornerstone does not provide Data Quality Reports for list rentals or Board of Election data files. You can expect reports within 30 days of payment and project completion.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Non-Profit Mailings</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        If your organization previously mailed at USPS&reg; Non-Profit mailing rates, you likely qualify for not-for-profit mailing privileges or permission to use these rates. For new clients, a CRST Customer Service or Project Management team member contacts the national USPS&reg; help desk to confirm your CRID (Customer Registration Identification) number and verify your NPA (Non-Profit Authorization) number. CRST conducts this verification at no charge.
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        Your USPS&reg; NPA number is a unique 6-digit or 7-digit code that the U.S. Postal Service&reg; assigns to qualified non-profit organizations. This code grants privileges to mail at Marketing Mail Nonprofit postage rates. However, an NPA must pair with a bulk mail permit (such as Permit# 473 in Newburgh, NY). Additionally, your mailpiece must meet specific design requirements.
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        CRST regularly verifies an organization's non-profit status with the Postal Service. Prior approval for non-profit rates does not guarantee future eligibility. Similarly, IRS 501(c)(3) recognition does not automatically qualify an organization for USPS&reg; non-profit mailing rates. Before granting permission for discounted non-profit mailings, CRST requires 1&ndash;3 business days to verify your NPA status and update contact details. These details include your contact name, website, email, and mailing address.
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        If you have never mailed at non-profit rates and do not recall your initial NPA approval, CRST can assist with the application process to issue, reissue, or recover your NPA. You must complete an "Application to Mail at Nonprofit USPS&reg; Marketing Mail Prices" (PS Form 3624). To help with this process, we provide step-by-step instructions in our guide, "<a href="/non-profit-mailing-application" class="text-crst-accent hover:underline">How To Complete The Non-Profit Mailing Application</a>." Please note that Cornerstone lacks authorization to submit this application for you. The U.S. Postal Service&reg; directly grants NPA approval and non-profit mailing privileges to your organization.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Mailpiece/Graphic Design</h2>
+      <h3 class="text-lg font-display text-navy-700 mt-5 mb-2">Client or Third-Party Provided Designs</h3>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        Before you print at Cornerstone or an approved CRST Print Partner, the CRST Project Management team reviews your proposed design(s) to ensure:
+      </p>
+      <ul class="list-disc pl-6 text-navy-600/80 text-sm leading-relaxed mb-4 space-y-1">
+        <li>Compliance with USPS&reg; physical mailing standards, including USPS&reg; Postal Explorer's DMM 300, Section 200 &mdash; Commercial Letters, Cards, Flats, and Parcels.</li>
+        <li>Adherence to Cornerstone's internal mailpiece setup SOP requirements, including ensuring:
+          <ul class="list-disc pl-6 mt-1 space-y-1">
+            <li>The correct postal permit is in place.</li>
+            <li>Crop marks for bleeds are properly positioned.</li>
+            <li>Design alignment with other mailing materials or your organization's branding.</li>
+            <li>Appropriate font selection for readability.</li>
+            <li>QR code functionality meets technical standards.</li>
+            <li>Mail-merge field placement correctly matches submitted data.</li>
+          </ul>
+        </li>
+      </ul>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        We aim to prevent design issues that may affect your postal discounts or functionality while ensuring a high-quality visual presentation.
+      </p>
+
+      <h3 class="text-lg font-display text-navy-700 mt-5 mb-2">Cornerstone Created Designs</h3>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        If Cornerstone designs your mailpiece, we handle all compliance requirements automatically. We take full responsibility for ensuring the design meets USPS&reg; mailing standards and adheres to professional design guidelines.
+      </p>
+
+      <h3 class="text-lg font-display text-navy-700 mt-5 mb-2">Accepted Design Formats</h3>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        We exclusively use Adobe InDesign, the industry-standard graphic design software for pre-press production in the United States. We do not accept other file formats, including:
+      </p>
+      <ul class="list-disc pl-6 text-navy-600/80 text-sm leading-relaxed mb-3 space-y-1">
+        <li>MS Publisher</li>
+        <li>MS Word</li>
+        <li>MS PowerPoint</li>
+        <li>CorelDraw</li>
+        <li>Quark</li>
+        <li>Canva</li>
+      </ul>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        If you submit a .pdf for review without an Adobe InDesign (.indd) file, we will use the PDF as a reference only. Once you approve the final design for printing, mailing, or web development, you will receive a minimum-resolution PDF. However, Cornerstone will retain the original InDesign (.indd) file and will not share it.
+      </p>
+
+      <h3 class="text-lg font-display text-navy-700 mt-5 mb-2">Additional Design Considerations</h3>
+      <ul class="list-disc pl-6 text-navy-600/80 text-sm leading-relaxed mb-4 space-y-2">
+        <li><strong>Union Printing:</strong> After final client approval, Union-printed materials will display the Union bug as required by Union printing regulations. Due to these regulations, CRST cannot store images in-house for future use. Each Union-printed piece will include the appropriate Union bug.</li>
+        <li><strong>EDDM&reg; (Every Door Direct Mail) Saturation Mail:</strong> CRST-designed mailpieces will feature the tagline "Designed and printed by www.CRST.net" in a font size of 10 points or smaller. This tagline will be discreetly placed and may not appear in your review before ordering.</li>
+        <li><strong>Third-Party Images:</strong> If no-cost images are unavailable, CRST may purchase third-party images for your design. These images, classified as rented, are typically for one-time use and will incur additional costs, which we pass through at cost.</li>
+      </ul>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Stamps/Stamped Mail</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        CRST uses pre-canceled stamps (or postal permit indicia) for mail presentment and delivery, except for single-piece international letter rates or flat-rate mail applications.
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        To qualify for pre-canceled stamps, you or your organization must provide at least 500 verified, CASS-certified U.S. domestic addresses. We no longer hand-stamp domestic mail using commemorative stamps, Forever Stamps, or other single-piece rate stamp items.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Permit Use</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        CRST no longer presents mail under permits other than its own permit. Additionally, mailings are not presented anywhere other than a standard BMEU entry point in Newburgh, NY.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Turn-around Times</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        Aside from printing timeframe requirements, the formal mailing turnaround timeframe begins once we receive your full advance payment for all services and postage. This timeframe ends when we enter your mail at the USPS&reg; Mid-Hudson facility in Newburgh, NY. If you have not pre-paid for services, we cannot guarantee any fulfillment turnaround timeframes.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Political Mail</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        Properly designed USPS&reg; political mail may receive expedited handling compared to standard Marketing (commercial bulk mail) services. The USPS&reg; often upgrades eligible bulk mail to First-Class mail services at no extra cost. However, USPS&reg; enforces strict guidelines for political mailpiece designs and First-Class upgrade eligibility.
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        To qualify, submitted designs for public office positions must include: (a) the candidate name(s) and/or political party name(s), (b) the publicly listed electoral position(s), and (c) the publicly cited election date(s).
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        If you have questions, submit your draft artwork to our Project Management desk at <a href="mailto:production@crst.net" class="text-crst-accent hover:underline">production@crst.net</a> well in advance. If unsure whether your mailpiece design qualifies, send it to us early. This allows us to seek formal USPS&reg; guidance if necessary. Our team ensures that all political mailpiece designs we create comply with USPS&reg; regulations.
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        Please note that USPS&reg; regulations frequently change. A Postal Service BMEU (Business Mail Entry Unit) clerk may also interpret these rules differently than expected. In some cases, USPS&reg; may remove political tagging and downgrade the mail to standard commercial bulk mail, which is beyond our control.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Payment Terms</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        Cornerstone has always operated under the "On Receipt" payment arrangement, and this policy remains in effect. Payment for all services &mdash; including data rental, postage, web services, print materials, and other deliverables &mdash; must be completed before the final delivery.
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        For certain projects, such as websites or large-scale tasks exceeding $2,500, we may require a 50% deposit before starting work. All funds must clear Cornerstone's account before we proceed with design, data processing, or mailing presentments on your behalf.
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        We encourage you to submit payment via check, made payable to "Cornerstone Services, Inc.", and sent to the address listed on your invoice. Alternatively, you may pay online through Stripe, PayPal, or Venmo. Please note that a 3% ACH pass-through charge applies to online payments. Unfortunately, we do not accept credit card payments over the phone.
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        If a payment issue arises &mdash; such as a bounced check or a stopped payment &mdash; you must resolve it promptly. If non-payment extends beyond 30 days, you agree to cover any reasonable legal or collection costs. These costs may include fees incurred while recovering payment for services rendered or materials provided.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Residual Materials</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        It is our policy to request clear guidance from you regarding the handling of any residual materials before fulfillment services begin. Cornerstone does not warehouse residual materials unless prior written arrangements exist. We may also store materials if your project is part of a larger, ongoing, and scheduled plan.
+      </p>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        If we complete a mailing project and lack advance instructions on handling residual materials, a CRST Customer Service representative will attempt to contact you. Our outreach will include:
+      </p>
+      <ul class="list-disc pl-6 text-navy-600/80 text-sm leading-relaxed mb-3 space-y-1">
+        <li>Two (2) electronic (email) communications.</li>
+        <li>Two (2) phone calls &mdash; a total of four (4) attempts.</li>
+      </ul>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        If we do not receive clear and specific instructions within two (2) weeks, CRST will add your post-mailing materials to our commercial recycling program. These materials will go through monthly, offsite paper recycling. Please note that CRST does not store, archive, or return materials unless you have a documented schedule for continued use.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Mailing Lists</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        Client-supplied mailing lists must be in an acceptable electronic format. We perform CASS/DPV address verification and NCOA processing on all lists. We are not responsible for undeliverable mail resulting from inaccurate addresses provided by the client. Client mailing list data is treated as confidential and is not used for any purpose other than the authorized campaign.
       </p>
 
       <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Postage</h2>
@@ -26,19 +216,31 @@ import { BUSINESS } from '../data/site';
         Postage rates are determined by the USPS and are subject to change. Postage costs are in addition to printing and processing fees unless a bundled price is quoted. We prepare mail to qualify for the lowest applicable postage rate based on mail class, size, and presort level.
       </p>
 
-      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Artwork & Proofs</h2>
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Artwork &amp; Proofs</h2>
       <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
-        Client-supplied artwork must be print-ready and meet our specifications. We are not responsible for errors in client-supplied content. Digital proofs are provided for approval before printing — once approved, we are not liable for content errors. Changes after proof approval may incur additional charges.
+        Client-supplied artwork must be print-ready and meet our specifications. We are not responsible for errors in client-supplied content. Digital proofs are provided for approval before printing &mdash; once approved, we are not liable for content errors. Changes after proof approval may incur additional charges.
       </p>
 
-      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Mailing Lists</h2>
-      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
-        Client-supplied mailing lists must be in an acceptable electronic format. We perform CASS/DPV address verification and NCOA processing on all lists. We are not responsible for undeliverable mail resulting from inaccurate addresses provided by the client.
-      </p>
-
-      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Delivery & Liability</h2>
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Delivery &amp; Liability</h2>
       <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
         Once mail is inducted into the USPS mail stream, delivery is the responsibility of the United States Postal Service. We are not liable for delays, loss, or damage once mail has been accepted by the USPS. We maintain a {BUSINESS.stats.onTime} on-time induction rate.
+      </p>
+
+      <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">SMS/Text Messaging Terms</h2>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-3">
+        By opting in to receive text messages from {BUSINESS.name}, you agree to the following:
+      </p>
+      <ul class="list-disc pl-6 text-navy-600/80 text-sm leading-relaxed mb-3 space-y-1">
+        <li>You consent to receive SMS/MMS messages related to your service inquiries, project updates, appointment reminders, and other service-related communications.</li>
+        <li>Message and data rates may apply. Message frequency varies.</li>
+        <li>You may opt out at any time by replying STOP to any message. After opting out, you will receive a confirmation message and no further texts will be sent.</li>
+        <li>Reply HELP to any message for assistance.</li>
+        <li>Consent to receive text messages is not a condition of purchasing any goods or services.</li>
+        <li>We do not sell, rent, loan, trade, lease, or otherwise transfer for profit any phone numbers or personal information collected through our SMS program to any third party.</li>
+        <li>Carriers are not liable for delayed or undelivered messages.</li>
+      </ul>
+      <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+        For questions about our SMS program, contact us at <a href={`mailto:${BUSINESS.email}`} class="text-crst-accent hover:underline">{BUSINESS.email}</a> or <a href={`tel:${BUSINESS.phoneClean}`} class="text-crst-accent hover:underline">{BUSINESS.phone}</a>. This SMS policy is compliant with CTIA guidelines, TCPA regulations, and A2P 10DLC messaging requirements.
       </p>
 
       <h2 class="text-xl font-display text-crst-primary mt-8 mb-3">Contact</h2>
