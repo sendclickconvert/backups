@@ -28,49 +28,20 @@ const fullTitle = title === 'Home'
 
 const canonicalUrl = canonical || new URL(Astro.url.pathname, BUSINESS.url).href;
 
-// Default LocalBusiness schema
 const defaultSchema = {
   '@context': 'https://schema.org',
-  '@type': 'ProfessionalService',
-  name: BUSINESS.name,
-  alternateName: BUSINESS.shortName,
-  image: `${BUSINESS.url}/images/crst-logo.webp`,
-  url: BUSINESS.url,
-  telephone: BUSINESS.phone,
-  email: BUSINESS.email,
-  foundingDate: '1998',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: BUSINESS.address.street,
-    addressLocality: BUSINESS.address.city,
-    addressRegion: BUSINESS.address.state,
-    postalCode: BUSINESS.address.zip,
-    addressCountry: 'US',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 41.7476,
-    longitude: -74.0871,
-  },
-  areaServed: [
-    { '@type': 'County', name: 'Ulster County, New York' },
-    { '@type': 'County', name: 'Dutchess County, New York' },
-    { '@type': 'County', name: 'Orange County, New York' },
-  ],
-  serviceType: [
-    'Direct Mail Marketing',
-    'Commercial Printing',
-    'Data List Services',
-    'Graphic Design',
-    'Mailing Services',
-    'EDDM',
-  ],
-  priceRange: '$$',
-  openingHoursSpecification: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-    opens: '09:00',
-    closes: '17:00',
+  '@type': 'WebPage',
+  name: fullTitle,
+  description: description,
+  url: canonicalUrl,
+  publisher: {
+    '@type': 'Organization',
+    name: BUSINESS.name,
+    url: BUSINESS.url,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${BUSINESS.url}/images/crst-logo.webp`,
+    },
   },
 };
 

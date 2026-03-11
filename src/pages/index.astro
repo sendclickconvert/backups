@@ -4,11 +4,46 @@ import Hero from '../components/Hero.astro';
 import ServiceCard from '../components/ServiceCard.astro';
 import CTASection from '../components/CTASection.astro';
 import { BUSINESS, SERVICES, CASE_STUDIES, COUNTIES } from '../data/site';
+
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  '@id': 'https://crst.net/#localbusiness',
+  name: 'Cornerstone Services, Inc.',
+  url: 'https://crst.net/',
+  telephone: '+1-845-255-5722',
+  email: 'info@crst.net',
+  image: 'https://crst.net/images/crst-og.jpg',
+  description: 'Cornerstone Services, Inc. provides direct mail, printing, mailing, graphic design, data list, and EDDM services from New Paltz, New York.',
+  foundingDate: '1998',
+  priceRange: '$$',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '31 South Ohioville Road',
+    addressLocality: 'New Paltz',
+    addressRegion: 'NY',
+    postalCode: '12561',
+    addressCountry: 'US',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: '41.7476',
+    longitude: '-74.0869',
+  },
+  areaServed: [
+    { '@type': 'AdministrativeArea', name: 'Ulster County' },
+    { '@type': 'AdministrativeArea', name: 'Dutchess County' },
+    { '@type': 'AdministrativeArea', name: 'Orange County' },
+  ],
+  openingHours: 'Mo-Fr 09:00-17:00',
+  sameAs: [],
+};
 ---
 
 <BaseLayout
   title="Home"
   description="Cornerstone Services, Inc. is a BBB A+ accredited direct mail and printing company in New Paltz, NY serving Ulster, Dutchess, and Orange counties since 1998."
+  schema={localBusinessSchema}
 >
   <Hero />
 

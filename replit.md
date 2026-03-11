@@ -46,6 +46,9 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 - **Tracking/dial phone**: `(845) 393-6770` (BUSINESS.trackingPhone / phoneClean: `8453936770`) — GHL call tracking number, intentionally different from display
 
 ### Schema Configuration
+- **Homepage LocalBusiness**: `index.astro` passes a dedicated `LocalBusiness` JSON-LD schema via the `schema` prop to BaseLayout. This is the ONLY page with `@type: LocalBusiness` as its primary schema. Includes `@id: https://crst.net/#localbusiness`, address, geo, areaServed (AdministrativeArea), openingHours, foundingDate, priceRange. Image: `crst-og.jpg`.
+- **Default Schema**: `BaseLayout.astro` renders a `WebPage` schema (with `Organization` publisher) as the default for all pages that don't pass their own `schema` prop. This replaced the previous sitewide `ProfessionalService` to avoid competing LocalBusiness signals.
+- **Service/Location Pages**: Inject their own page-specific schemas (Service, LocalBusiness for locations, FAQPage, BreadcrumbList) via `<Fragment slot="head">` — these render IN ADDITION to the default WebPage schema.
 - **AggregateRating**: ONLY on the BBB page (`crst-better-business-bureau-a-direct-mailer.astro`) with `reviewCount: '3'` and real review data. NOT on any other page — not BaseLayout, not service pages, not county/town pages. `reviewCount: 0` is invalid per Google's structured data requirements.
 - **BUSINESS.rating** in `site.ts`: `ratingValue: '5.0'`, `reviewCount: '0'`, `bestRating: '5'`, `worstRating: '1'` — data definition retained but NOT rendered in any schema except BBB page.
 
