@@ -1,12 +1,12 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import PageHero from '../components/PageHero.astro';
-import CTASection from '../components/CTASection.astro';
-import { BUSINESS } from '../data/site';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import CTASection from '../../components/CTASection.astro';
+import { BUSINESS } from '../../data/site';
 
 const title = `How to Respond to a Negative Yelp Review | ${BUSINESS.shortName}`;
 const description = 'Data-backed guide for small business owners on responding to negative Yelp reviews. Includes response frameworks, Yelp algorithm rules, review impact statistics, and a proactive reputation strategy.';
-const canonical = `${BUSINESS.url}/how-to-respond-to-a-negative-yelp-review-a-true-story`;
+const canonical = `${BUSINESS.url}/resources/how-to-respond-to-a-negative-yelp-review-a-true-story`;
 
 const faqs = [
   {
@@ -90,6 +90,7 @@ const faqSchema = {
     title="How to Respond to a Negative Yelp Review"
     subtitle="Response frameworks, Yelp algorithm rules, and the real revenue impact of your online reputation"
     breadcrumbs={[
+      { label: 'Resources', href: '/resources' },
       { label: 'How to Respond to a Negative Yelp Review' }
     ]}
   />
