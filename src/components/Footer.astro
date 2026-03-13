@@ -42,7 +42,7 @@ const currentYear = new Date().getFullYear();
           <ul class="space-y-2">
             {SERVICES.map((service) => (
               <li>
-                <a href={`/services/${service.slug}/`} class="text-sm hover:text-white transition-colors">
+                <a href={`/services/${service.slug}`} class="text-sm hover:text-white transition-colors">
                   {service.title}
                 </a>
               </li>
@@ -56,7 +56,7 @@ const currentYear = new Date().getFullYear();
           <ul class="space-y-2">
             {Object.values(COUNTIES).map((county) => (
               <li>
-                <a href={`/service-areas/${county.slug}/`} class="text-sm hover:text-white transition-colors">
+                <a href={`/service-areas/${county.slug}`} class="text-sm hover:text-white transition-colors">
                   {county.name}
                 </a>
               </li>
@@ -64,10 +64,10 @@ const currentYear = new Date().getFullYear();
           </ul>
           <h3 class="text-white font-heading font-semibold text-sm uppercase tracking-wider mb-4 mt-6">Company</h3>
           <ul class="space-y-2">
-            <li><a href="/about/" class="text-sm hover:text-white transition-colors">About Us</a></li>
-            <li><a href="/case-studies/" class="text-sm hover:text-white transition-colors">Case Studies</a></li>
-            <li><a href="/contact/" class="text-sm hover:text-white transition-colors">Contact</a></li>
-            <li><a href="/faq/" class="text-sm hover:text-white transition-colors">FAQ</a></li>
+            <li><a href="/about" class="text-sm hover:text-white transition-colors">About Us</a></li>
+            <li><a href="/case-studies" class="text-sm hover:text-white transition-colors">Case Studies</a></li>
+            <li><a href="/contact" class="text-sm hover:text-white transition-colors">Contact</a></li>
+            <li><a href="/faq" class="text-sm hover:text-white transition-colors">FAQ</a></li>
             <li><a href="https://blog.crst.net/" class="text-sm hover:text-white transition-colors">Blog</a></li>
           </ul>
         </div>
@@ -76,16 +76,16 @@ const currentYear = new Date().getFullYear();
         <div>
           <h3 class="text-white font-heading font-semibold text-sm uppercase tracking-wider mb-4">Resources</h3>
           <ul class="space-y-2 mb-6">
-            <li><a href="/resources/mailing-permits/" class="text-sm hover:text-white transition-colors">Mailing Permits Guide</a></li>
-            <li><a href="/resources/postage-rates/" class="text-sm hover:text-white transition-colors">Postage Rates</a></li>
-            <li><a href="/usps-direct-mailer-templates/" class="text-sm hover:text-white transition-colors">USPS Templates</a></li>
-            <li><a href="/resources/non-profit-mailing/" class="text-sm hover:text-white transition-colors">Non-Profit Mailing Tool</a></li>
-            <li><a href="/resources/postal-dictionary/" class="text-sm hover:text-white transition-colors">Postal Dictionary</a></li>
+            <li><a href="/direct-mail-tools/cornerstone-mailing-permits" class="text-sm hover:text-white transition-colors">Mailing Permits Guide</a></li>
+            <li><a href="/direct-mail-tools/postage-rates" class="text-sm hover:text-white transition-colors">Postage Rates</a></li>
+            <li><a href="/usps-direct-mailer-templates" class="text-sm hover:text-white transition-colors">USPS Templates</a></li>
+            <li><a href="/non-profit-mailing-application" class="text-sm hover:text-white transition-colors">Non-Profit Mailing Tool</a></li>
+            <li><a href="/direct-mail-tools/postal-dictionary" class="text-sm hover:text-white transition-colors">Postal Dictionary</a></li>
           </ul>
           <div class="bg-white/5 rounded-lg p-4 border border-white/10">
             <p class="text-white font-heading font-semibold text-sm mb-2">Ready to get started?</p>
             <p class="text-xs text-white/50 mb-3">Get a free estimate for your next mailing project.</p>
-            <a href="/estimate/" class="btn-accent w-full text-center text-xs py-2">
+            <a href="/estimate" class="btn-accent w-full text-center text-xs py-2">
               Get Free Estimate
             </a>
           </div>
@@ -98,11 +98,11 @@ const currentYear = new Date().getFullYear();
       <div class="container-wide flex flex-col sm:flex-row items-center justify-between py-5 gap-3 text-xs text-white/40">
         <p>&copy; {currentYear} {BUSINESS.name}. All rights reserved.</p>
         <div class="flex items-center gap-4">
-          <a href="/privacy/" class="hover:text-white/70 transition-colors">Privacy Policy</a>
+          <a href="/privacy" class="hover:text-white/70 transition-colors">Privacy Policy</a>
           <span class="text-white/20">|</span>
-          <a href="/terms/" class="hover:text-white/70 transition-colors">Terms & Conditions</a>
+          <a href="/terms" class="hover:text-white/70 transition-colors">Terms & Conditions</a>
           <span class="text-white/20">|</span>
-          <a href="/resources/payments/" class="hover:text-white/70 transition-colors">Pay Online</a>
+          <a href="/resources/payments" class="hover:text-white/70 transition-colors">Pay Online</a>
         </div>
       </div>
     </div>

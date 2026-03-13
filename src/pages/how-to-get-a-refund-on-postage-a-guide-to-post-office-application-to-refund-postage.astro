@@ -5,14 +5,14 @@ import CTASection from '../components/CTASection.astro';
 import { BUSINESS } from '../data/site';
 
 const otherTools = [
-  { label: 'Mailing Permits', href: '/direct-mail-tools/cornerstone-mailing-permits/' },
-  { label: 'Postage Rates', href: '/direct-mail-tools/postage-rates/' },
-  { label: 'Envelope Sizes', href: '/direct-mail-tools/envelope-sizes/' },
-  { label: 'Postal Dictionary', href: '/direct-mail-tools/postal-dictionary/' },
-  { label: 'Mail Forwarding', href: '/direct-mail-tools/address-change/' },
-  { label: 'USPS Templates', href: '/usps-direct-mailer-templates/' },
-  { label: 'Non-Profit Mailing', href: '/non-profit-mailing-application/' },
-  { label: 'EDDM Guide', href: '/direct-mail-tools/eddm-guide/' },
+  { label: 'Mailing Permits', href: '/direct-mail-tools/cornerstone-mailing-permits' },
+  { label: 'Postage Rates', href: '/direct-mail-tools/postage-rates' },
+  { label: 'Envelope Sizes', href: '/direct-mail-tools/envelope-sizes' },
+  { label: 'Postal Dictionary', href: '/direct-mail-tools/postal-dictionary' },
+  { label: 'Mail Forwarding', href: '/direct-mail-tools/address-change' },
+  { label: 'USPS Templates', href: '/usps-direct-mailer-templates' },
+  { label: 'Non-Profit Mailing', href: '/non-profit-mailing-application' },
+  { label: 'EDDM Guide', href: '/direct-mail-tools/eddm-guide' },
 ];
 
 const eligibleSituations = [
@@ -118,7 +118,7 @@ const faqs = [
     title="How to Get a USPS Postage Refund"
     subtitle="A complete guide to PS Form 3533 — what qualifies, how to fill it out, and how to submit your refund claim."
     breadcrumbs={[
-      { label: 'Direct Mail Tools', href: '/direct-mail-tools/' },
+      { label: 'Direct Mail Tools', href: '/direct-mail-tools' },
       { label: 'Postage Refund Guide' },
     ]}
   />
@@ -129,7 +129,7 @@ const faqs = [
 
         <!-- Sidebar -->
         <aside class="hidden lg:flex flex-col gap-6 sticky top-6">
-          <a href="/direct-mail-tools/" class="inline-flex items-center gap-2 text-sm font-heading font-semibold text-crst-primary border-2 border-crst-primary rounded-lg px-4 py-2.5 hover:bg-crst-primary hover:text-white transition-colors text-center justify-center">
+          <a href="/direct-mail-tools" class="inline-flex items-center gap-2 text-sm font-heading font-semibold text-crst-primary border-2 border-crst-primary rounded-lg px-4 py-2.5 hover:bg-crst-primary hover:text-white transition-colors text-center justify-center">
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
             View All Resources
           </a>
@@ -138,7 +138,7 @@ const faqs = [
             <div class="w-10 h-0.5 bg-crst-gold mb-3"></div>
             <p class="text-sm text-navy-600/70 mb-4">We handle presort, permits, and postage for bulk mailers across the Hudson Valley.</p>
             <div class="space-y-3">
-              <a href="/estimate/" class="block w-full text-center text-sm font-heading font-semibold text-white bg-crst-primary rounded-lg px-4 py-2.5 hover:bg-navy-700 transition-colors">
+              <a href="/estimate" class="block w-full text-center text-sm font-heading font-semibold text-white bg-crst-primary rounded-lg px-4 py-2.5 hover:bg-navy-700 transition-colors">
                 Get Free Estimate
               </a>
               <a href={`tel:${BUSINESS.phoneClean}`} class="block w-full text-center text-sm font-heading font-semibold text-crst-primary border border-crst-primary/30 rounded-lg px-4 py-2.5 hover:bg-crst-primary/5 transition-colors">
@@ -167,10 +167,10 @@ const faqs = [
               What Is PS Form 3533?
             </h2>
             <p class="text-navy-600/80 leading-relaxed mb-4">
-              PS Form 3533 — officially titled <em>Application for Refund of Fees, Products, and Withdrawal of Customer Accounts</em> — is the USPS form used to request a refund on unused or overpaid postage. Whether you over-deposited into a <a href="/direct-mail-tools/cornerstone-mailing-permits/" class="text-crst-primary underline hover:text-crst-gold">bulk mailing permit account</a>, printed meter strips that were never used, or purchased Click-N-Ship labels you don't need, PS Form 3533 is how you get that money back.
+              PS Form 3533 — officially titled <em>Application for Refund of Fees, Products, and Withdrawal of Customer Accounts</em> — is the USPS form used to request a refund on unused or overpaid postage. Whether you over-deposited into a <a href="/direct-mail-tools/cornerstone-mailing-permits" class="text-crst-primary underline hover:text-crst-gold">bulk mailing permit account</a>, printed meter strips that were never used, or purchased Click-N-Ship labels you don't need, PS Form 3533 is how you get that money back.
             </p>
             <p class="text-navy-600/80 leading-relaxed mb-8">
-              The form is free, available at any Post Office or from the USPS website, and is typically processed at your local Business Mail Entry Unit (BMEU) or Post Office window. For bulk mailers, understanding when and how to use it is part of managing your <a href="/direct-mail-tools/postage-rates/" class="text-crst-primary underline hover:text-crst-gold">postage costs</a> effectively.
+              The form is free, available at any Post Office or from the USPS website, and is typically processed at your local Business Mail Entry Unit (BMEU) or Post Office window. For bulk mailers, understanding when and how to use it is part of managing your <a href="/direct-mail-tools/postage-rates" class="text-crst-primary underline hover:text-crst-gold">postage costs</a> effectively.
             </p>
 
             <!-- Eligible Situations -->
@@ -231,7 +231,7 @@ const faqs = [
               <div class="space-y-3 text-sm text-navy-600/80 leading-relaxed">
                 <p><strong class="text-navy-800">In person:</strong> Submit at your local Post Office window or USPS Business Mail Entry Unit (BMEU). In-person submission is recommended — staff can review your documentation on the spot and flag issues before you leave.</p>
                 <p><strong class="text-navy-800">By mail:</strong> Mail the completed form with supporting documentation to your servicing Post Office. Allow extra processing time and consider sending via Certified Mail so you have proof of submission.</p>
-                <p><strong class="text-navy-800">For permit account refunds:</strong> These are typically processed through the BMEU where your permit is held. The BMEU will verify your account balance before approving the refund, which is then issued by check from USPS Headquarters. See our guide to <a href="/direct-mail-tools/cornerstone-mailing-permits/" class="text-crst-primary underline hover:text-crst-gold">mailing permits</a> for more on how permit accounts work.</p>
+                <p><strong class="text-navy-800">For permit account refunds:</strong> These are typically processed through the BMEU where your permit is held. The BMEU will verify your account balance before approving the refund, which is then issued by check from USPS Headquarters. See our guide to <a href="/direct-mail-tools/cornerstone-mailing-permits" class="text-crst-primary underline hover:text-crst-gold">mailing permits</a> for more on how permit accounts work.</p>
               </div>
             </div>
 
@@ -239,7 +239,7 @@ const faqs = [
             <div class="bg-crst-gold/10 border border-crst-gold/30 rounded-xl p-6 mb-8">
               <h4 class="font-heading font-bold text-crst-primary mb-2">For Bulk Mailers</h4>
               <p class="text-navy-600/80 text-sm leading-relaxed">
-                If you mail under a bulk permit and regularly run <a href="/direct-mail-marketing/" class="text-crst-primary underline hover:text-crst-gold">direct mail campaigns</a>, it's worth auditing your permit account balance at the end of each calendar year. Unused deposits can accumulate — especially if you've reduced mailing volume — and are fully refundable via PS Form 3533. Cornerstone manages permit accounts for our clients and can identify overpayments as part of our annual mailing review. Unfamiliar with permit terminology? Our <a href="/direct-mail-tools/postal-dictionary/" class="text-crst-primary underline hover:text-crst-gold">postal dictionary</a> covers permit imprints, BMEU, and related terms.
+                If you mail under a bulk permit and regularly run <a href="/direct-mail-marketing" class="text-crst-primary underline hover:text-crst-gold">direct mail campaigns</a>, it's worth auditing your permit account balance at the end of each calendar year. Unused deposits can accumulate — especially if you've reduced mailing volume — and are fully refundable via PS Form 3533. Cornerstone manages permit accounts for our clients and can identify overpayments as part of our annual mailing review. Unfamiliar with permit terminology? Our <a href="/direct-mail-tools/postal-dictionary" class="text-crst-primary underline hover:text-crst-gold">postal dictionary</a> covers permit imprints, BMEU, and related terms.
               </p>
             </div>
 
@@ -288,7 +288,7 @@ const faqs = [
               </p>
               <div class="flex flex-wrap justify-center gap-3">
                 <a href={`tel:${BUSINESS.phoneClean}`} class="btn-primary text-sm">Call {BUSINESS.phone}</a>
-                <a href="/estimate/" class="btn-secondary text-sm">Get a Free Estimate</a>
+                <a href="/estimate" class="btn-secondary text-sm">Get a Free Estimate</a>
               </div>
             </div>
 

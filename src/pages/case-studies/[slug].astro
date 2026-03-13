@@ -64,7 +64,7 @@ const schema = {
     title={caseStudy.title}
     subtitle={`${caseStudy.client} · ${caseStudy.location} · ${caseStudy.industry}`}
     breadcrumbs={[
-      { label: 'Case Studies', href: '/case-studies/' },
+      { label: 'Case Studies', href: '/case-studies' },
       { label: caseStudy.client },
     ]}
   />
@@ -161,7 +161,7 @@ const schema = {
               <div class="grid sm:grid-cols-2 gap-4">
                 {relatedServicePages.map((service) => (
                   <a
-                    href={`/services/${service.slug}/`}
+                    href={`/services/${service.slug}`}
                     class="flex items-start gap-3 p-4 rounded-lg border border-gray-200 hover:border-crst-primary/30 hover:bg-gray-50 transition-all group"
                   >
                     <div class="w-2 h-2 rounded-full bg-crst-gold mt-2 shrink-0"></div>
@@ -203,7 +203,7 @@ const schema = {
             </div>
 
             <div class="mt-6 space-y-3">
-              <a href="/estimate/" class="btn-primary w-full text-center text-sm block">
+              <a href="/estimate" class="btn-primary w-full text-center text-sm block">
                 Get a Free Estimate
               </a>
               <a href={`tel:${BUSINESS.phoneClean}`} class="btn-secondary w-full text-center text-sm block">
@@ -218,7 +218,7 @@ const schema = {
             <div class="space-y-4">
               {relatedStudies.map((related) => (
                 <a
-                  href={`/case-studies/${related.slug}/`}
+                  href={`/case-studies/${related.slug}`}
                   class="block group"
                 >
                   <div class="font-semibold text-sm text-gray-800 group-hover:text-crst-primary transition-colors mb-1">
@@ -230,7 +230,7 @@ const schema = {
                 </a>
               ))}
             </div>
-            <a href="/case-studies/" class="mt-4 text-sm text-crst-accent font-semibold hover:underline block">
+            <a href="/case-studies" class="mt-4 text-sm text-crst-accent font-semibold hover:underline block">
               View All Case Studies →
             </a>
           </div>

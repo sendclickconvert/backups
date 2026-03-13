@@ -19,7 +19,7 @@ import { BUSINESS, COUNTIES } from '../../data/site';
     <div class="container-wide">
       <div class="grid sm:grid-cols-3 gap-6">
         {Object.values(COUNTIES).map((county) => (
-          <a href={`/service-areas/${county.slug}/`} class="card group block text-center">
+          <a href={`/service-areas/${county.slug}`} class="card group block text-center">
             <div class="w-16 h-16 rounded-full bg-crst-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-crst-primary transition-colors duration-300">
               <svg class="w-7 h-7 text-crst-primary group-hover:text-white transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
@@ -51,7 +51,7 @@ import { BUSINESS, COUNTIES } from '../../data/site';
               Our four anchor cities — New Paltz, Kingston, Poughkeepsie, and Newburgh — give us deep coverage across the region. Each city page includes the towns, villages, and hamlets we serve within that area.
             </p>
             <p class="text-navy-600/80 font-heading leading-relaxed">
-              We also handle national and international mailing projects. If you're outside the Hudson Valley, <a href="/contact/" class="text-crst-accent hover:underline font-semibold">contact us</a> — we can help.
+              We also handle national and international mailing projects. If you're outside the Hudson Valley, <a href="/contact" class="text-crst-accent hover:underline font-semibold">contact us</a> — we can help.
             </p>
           </div>
           <div class="rounded-xl overflow-hidden border border-navy-200 aspect-[4/3]">

@@ -7,40 +7,42 @@ import { BUSINESS } from '../../data/site';
 const resources = [
   {
     title: 'Mailing Permits',
-    slug: 'mailing-permits',
+    slug: '/direct-mail-tools/cornerstone-mailing-permits',
     icon: '📋',
     summary: 'Understanding USPS permit types, indicia, EDDM requirements, and presort authorization for business mail.',
+    external: true,
   },
   {
     title: 'Postage Rates',
-    slug: 'postage-rates',
+    slug: '/direct-mail-tools/postage-rates',
     icon: '💰',
     summary: 'Current USPS postage rates for First-Class, Marketing Mail, Non-Profit, and EDDM — updated with the latest rate changes.',
+    external: true,
   },
   {
     title: 'Envelope & Mail Piece Sizes',
-    slug: '/direct-mail-tools/envelope-sizes/',
+    slug: '/direct-mail-tools/envelope-sizes',
     icon: '📐',
     summary: 'USPS size requirements for postcards, letters, and flats. Avoid surcharges by understanding minimum and maximum dimensions.',
     external: true,
   },
   {
     title: 'USPS Mail Templates',
-    slug: '/usps-direct-mailer-templates/',
+    slug: '/usps-direct-mailer-templates',
     icon: '📄',
     summary: 'Free downloadable templates for postcards, letters, and self-mailers — pre-formatted to USPS automation specifications.',
     external: true,
   },
   {
     title: 'Postal Dictionary',
-    slug: '/direct-mail-tools/postal-dictionary/',
+    slug: '/direct-mail-tools/postal-dictionary',
     icon: '📖',
     summary: 'A glossary of USPS terms, acronyms, and mailing industry jargon — from AADC to Zone Chart.',
     external: true,
   },
   {
     title: 'Mail Forwarding Guide',
-    slug: '/direct-mail-tools/address-change/',
+    slug: '/direct-mail-tools/address-change',
     icon: '📬',
     summary: 'How USPS mail forwarding works, NCOA processing, and what it means for your mailing list accuracy.',
     external: true,
@@ -53,9 +55,10 @@ const resources = [
   },
   {
     title: 'Non-Profit Mailing Guide',
-    slug: 'non-profit-mailing',
+    slug: '/non-profit-mailing-application',
     icon: '🏛️',
     summary: 'How to apply for non-profit mailing rates, PS Form 3624 requirements, eligibility rules, and rate savings.',
+    external: true,
   },
   {
     title: 'Online Payments',
@@ -115,7 +118,7 @@ const resources = [
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {resources.map((resource) => (
           <a
-            href={resource.external ? resource.slug : `/resources/${resource.slug}/`}
+            href={resource.external ? resource.slug : `/resources/${resource.slug}`}
             class="card group block"
           >
             <span class="text-3xl mb-3 block">{resource.icon}</span>
