@@ -1,0 +1,104 @@
+SEO AUDIT: ajielectricalsolutionsinc.com
+Date: 2026-03-13 13:41
+Pages crawled: 69
+Critical issues: 0
+Warnings: 73
+
+CRITICAL ISSUES:
+
+WARNINGS:
+  1. Slow (658.0s): https://ajielectricalsolutionsinc.com/blog
+  2. Slow (6003.0s): https://ajielectricalsolutionsinc.com/
+  3. Slow (1048.0s): https://ajielectricalsolutionsinc.com/blog-a-complete-guide-to-understanding
+  4. Slow (638.0s): https://ajielectricalsolutionsinc.com/blog-adapting-to-change-electrical-solutions
+  5. Slow (644.0s): https://ajielectricalsolutionsinc.com/blog-balancing-aesthetics-and-efficiency-designing
+  6. Slow (654.0s): https://ajielectricalsolutionsinc.com/blog-beyond-the-basics-advanced-electrical
+  7. Slow (660.0s): https://ajielectricalsolutionsinc.com/blog-choosing-the-right-electrical-contractors
+  8. Slow (667.0s): https://ajielectricalsolutionsinc.com/blog-custom-electrical-solutions-for-unique
+  9. Slow (671.0s): https://ajielectricalsolutionsinc.com/blog-customizing-commercial-spaces-tailored-electrical
+  10. Slow (653.0s): https://ajielectricalsolutionsinc.com/blog-cutting-edge-electrical-design-for-energy-efficient
+  11. Slow (669.0s): https://ajielectricalsolutionsinc.com/blog-elevating-your-homes-power-system
+  12. Missing meta desc: https://ajielectricalsolutionsinc.com/blog-emergency-electrical-services-quick-solutions
+  13. Slow (673.0s): https://ajielectricalsolutionsinc.com/blog-emergency-electrical-services-quick-solutions
+  14. Slow (689.0s): https://ajielectricalsolutionsinc.com/blog-empowering-your-workspace-the-latest
+  15. Slow (648.0s): https://ajielectricalsolutionsinc.com/blog-enhancing-home-resale-value-with
+  16. Slow (701.0s): https://ajielectricalsolutionsinc.com/blog-enhancing-security-and-efficiency-advanced
+  17. Slow (733.0s): https://ajielectricalsolutionsinc.com/blog-ensuring-electrical-safety-the-importance
+  18. Slow (671.0s): https://ajielectricalsolutionsinc.com/blog-ensuring-electrical-safety-what-every
+  19. Slow (670.0s): https://ajielectricalsolutionsinc.com/blog-exploring-the-latest-trends-in
+  20. Slow (664.0s): https://ajielectricalsolutionsinc.com/blog-exploring-the-role-of-electrician
+  21. Slow (640.0s): https://ajielectricalsolutionsinc.com/blog-from-blueprint-to-bright-lights
+  22. Slow (657.0s): https://ajielectricalsolutionsinc.com/blog-future-proof-your-business-integrating-scalable
+  23. Slow (667.0s): https://ajielectricalsolutionsinc.com/blog-harnessing-advanced-circuitry-future-ready-residential
+  24. Slow (649.0s): https://ajielectricalsolutionsinc.com/blog-harnessing-innovation-the-future-of
+  25. Slow (654.0s): https://ajielectricalsolutionsinc.com/blog-harnessing-iot-for-intelligent-electrical
+  26. Slow (647.0s): https://ajielectricalsolutionsinc.com/blog-harnessing-the-power-of-cutting-edge
+  27. Slow (663.0s): https://ajielectricalsolutionsinc.com/blog-how-aji-electrical-solutions-is
+  28. Slow (659.0s): https://ajielectricalsolutionsinc.com/blog-how-to-safeguard-your-business
+  29. Slow (696.0s): https://ajielectricalsolutionsinc.com/blog-illuminating-the-future-the-role
+  30. Slow (665.0s): https://ajielectricalsolutionsinc.com/blog-innovative-electrical-retrofits-transforming-heritage
+  31. Slow (666.0s): https://ajielectricalsolutionsinc.com/blog-innovative-lighting-solutions-to-transform
+  32. Slow (686.0s): https://ajielectricalsolutionsinc.com/blog-integrating-electric-vehicle-charging-stations
+  33. Slow (675.0s): https://ajielectricalsolutionsinc.com/blog-maximizing-energy-efficiency-tips-from
+  34. Slow (703.0s): https://ajielectricalsolutionsinc.com/blog-maximizing-workspace-productivity-with-strategic
+  35. Slow (704.0s): https://ajielectricalsolutionsinc.com/blog-navigating-electrical-upgrades-a-guide
+  36. Slow (683.0s): https://ajielectricalsolutionsinc.com/blog-optimizing-retail-spaces-dynamic-electrical
+  37. Slow (658.0s): https://ajielectricalsolutionsinc.com/blog-pioneering-renewable-energy-aji-electrical
+  38. Slow (693.0s): https://ajielectricalsolutionsinc.com/blog-power-up-your-business-strategies
+  39. Slow (666.0s): https://ajielectricalsolutionsinc.com/blog-revamping-your-outdoor-spaces-creative
+  40. Slow (664.0s): https://ajielectricalsolutionsinc.com/blog-revitalizing-your-home-expert-electrical
+  41. Slow (676.0s): https://ajielectricalsolutionsinc.com/blog-smart-wiring-optimizing-electrical-layouts
+  42. Slow (682.0s): https://ajielectricalsolutionsinc.com/blog-strategies-for-cost-effective-electrical-upgrades
+  43. Slow (668.0s): https://ajielectricalsolutionsinc.com/blog-the-benefits-of-professional-electrical
+  44. Slow (661.0s): https://ajielectricalsolutionsinc.com/blog-the-essential-guide-to-seasonal
+  45. Slow (659.0s): https://ajielectricalsolutionsinc.com/blog-the-future-of-smart-homes
+  46. Slow (677.0s): https://ajielectricalsolutionsinc.com/blog-the-importance-of-regular-electrical
+  47. Slow (646.0s): https://ajielectricalsolutionsinc.com/blog-the-importance-of-regular-electrical-1
+  48. Slow (653.0s): https://ajielectricalsolutionsinc.com/blog-the-rise-of-sustainable-electrical
+  49. Slow (657.0s): https://ajielectricalsolutionsinc.com/blog-the-role-of-ai-in
+  50. Slow (988.0s): https://ajielectricalsolutionsinc.com/blog-the-role-of-electricians-in
+  51. Slow (692.0s): https://ajielectricalsolutionsinc.com/blog-the-smart-business-leveraging-iot
+  52. Slow (657.0s): https://ajielectricalsolutionsinc.com/blog-top-safety-tips-for-home
+  53. Slow (665.0s): https://ajielectricalsolutionsinc.com/blog-top-tips-for-energy-efficiency
+  54. Slow (665.0s): https://ajielectricalsolutionsinc.com/blog-understanding-electrical-load-management-for
+  55. Slow (656.0s): https://ajielectricalsolutionsinc.com/blog-understanding-the-benefits-of-smart
+  56. Slow (681.0s): https://ajielectricalsolutionsinc.com/blog-unlocking-the-potential-of-solar
+  57. Slow (689.0s): https://ajielectricalsolutionsinc.com/blog-why-choose-aji-electrical-solutions
+  58. Slow (734.0s): https://ajielectricalsolutionsinc.com/gallery-All
+  59. Slow (664.0s): https://ajielectricalsolutionsinc.com/gallery-Electrical-Repairs
+  60. Slow (670.0s): https://ajielectricalsolutionsinc.com/gallery-Lighting-Installs
+  61. Slow (842.0s): https://ajielectricalsolutionsinc.com/reviews
+  62. Slow (759.0s): https://ajielectricalsolutionsinc.com/service-circuit-breaker-installation-and-repair
+  63. Slow (766.0s): https://ajielectricalsolutionsinc.com/service-commercial-electrical-services
+  64. Slow (760.0s): https://ajielectricalsolutionsinc.com/service-electrical-panel-upgrades
+  65. Slow (787.0s): https://ajielectricalsolutionsinc.com/service-electrical-repairs
+  66. Missing meta desc: https://ajielectricalsolutionsinc.com/service-ev-charger-installation
+  67. Slow (760.0s): https://ajielectricalsolutionsinc.com/service-ev-charger-installation
+  68. Slow (818.0s): https://ajielectricalsolutionsinc.com/service-generator-installation
+  69. Slow (737.0s): https://ajielectricalsolutionsinc.com/service-lighting-installation-and-repairs
+  70. Slow (732.0s): https://ajielectricalsolutionsinc.com/service-outlet-and-switch-installation
+  71. Slow (821.0s): https://ajielectricalsolutionsinc.com/service-residential-electrical-services
+  72. Dup title: "?"
+  73. Dup description: "?"
+
+CRAWL CHECKS:
+  canonical: 69
+  is_https: 69
+  low_content_rate: 69
+  no_image_title: 69
+  seo_friendly_url_characters_check: 69
+  seo_friendly_url_dynamic_check: 69
+  seo_friendly_url_relative_length_check: 69
+  no_content_encoding: 69
+  has_html_doctype: 69
+  has_render_blocking_resources: 69
+  seo_friendly_url: 18
+  seo_friendly_url_keywords_check: 18
+  large_page_size: 10
+  frame: 9
+  no_image_alt: 9
+  deprecated_html_tags: 9
+  no_description: 2
+  title_too_long: 1
+  high_loading_time: 1
+  low_readability_rate: 1
