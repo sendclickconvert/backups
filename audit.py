@@ -87,217 +87,6 @@ def section_header(title):
     log(sep)
 
 
-def run_on_page():
-    section_header("1. ON-PAGE CRAWL")
-
-    log("  Submitting crawl task...")
-    resp = api_call("POST", "/v3/on_page/task_post", [{
-        "target": TARGET,
-        "max_crawl_pages": 150,
-        "load_resources": True,
-        "enable_javascript": True,
-        "enable_browser_rendering": True,
-    }])
-    all_raw["on_page_task_post"] = resp
-    if not resp or not resp.get("tasks"):
-        log("  FAILED to submit crawl task.")
-        add_issue("CRITICAL", "On-Page", "Could not submit crawl task")
-        return {}
-
-    task_id = resp["tasks"][0].get("id")
-    if not task_id:
-        log("  No task_id returned.")
-        add_issue("CRITICAL", "On-Page", "No task_id from crawl submission")
-        return {}
-
-    log(f"  Task ID: {task_id}")
-    log("  Waiting for crawl to finish...")
-
-    for attempt in range(60):
-        time.sleep(15)
-        summary_resp = api_call("GET", f"/v3/on_page/summary/{task_id}")
-        if not summary_resp or not summary_resp.get("tasks"):
-            log(f"  Poll {attempt+1}: no response yet...")
-            continue
-        task = summary_resp["tasks"][0]
-        result = task.get("result", [{}])
-        if result:
-            result = result[0] if isinstance(result, list) else result
-        crawl_status = result.get("crawl_status", {}) if isinstance(result, dict) else {}
-        status = crawl_status.get("status", "unknown") if isinstance(crawl_status, dict) else "unknown"
-        pages_crawled = crawl_status.get("pages_crawled", 0) if isinstance(crawl_status, dict) else 0
-        log(f"  Poll {attempt+1}: status={status}, pages_crawled={pages_crawled}")
-        if status == "finished":
-            all_raw["on_page_summary"] = summary_resp
-            break
-    else:
-        log("  Crawl timed out after 15 minutes.")
-        add_issue("CRITICAL", "On-Page", "Crawl timed out")
-        return {}
-
-    summary = {}
-    if summary_resp and summary_resp.get("tasks"):
-        res = summary_resp["tasks"][0].get("result", [{}])
-        if isinstance(res, list) and res:
-            summary = res[0]
-
-    crawl_info = summary.get("crawl_progress", {})
-    page_metrics = summary.get("page_metrics", {})
-    log(f"\n  --- Crawl Summary ---")
-    log(f"  Pages crawled: {crawl_info.get('pages_crawled', 'N/A')}")
-    log(f"  Pages with issues: {page_metrics.get('checks', {})}")
-
-    checks = page_metrics.get("checks", {})
-    if isinstance(checks, dict):
-        for check_name, count in checks.items():
-            if count and count > 0:
-                log(f"    {check_name}: {count}")
-
-    time.sleep(DELAY)
-
-    log("\n  Fetching all pages...")
-    pages_resp = api_call("POST", "/v3/on_page/pages", [{
-        "id": task_id,
-        "limit": 150,
-        "order_by": ["meta.internal_links_count,desc"],
-    }])
-    all_raw["on_page_pages"] = pages_resp
-    time.sleep(DELAY)
-
-    pages = []
-    if pages_resp and pages_resp.get("tasks"):
-        for t in pages_resp["tasks"]:
-            for r in (t.get("result") or []):
-                pages.extend(r.get("items") or [])
-
-    log(f"  Total pages retrieved: {len(pages)}")
-
-    for p in pages:
-        url = p.get("url", "?")
-        status_code = p.get("status_code", 0)
-        meta = p.get("meta", {}) or {}
-        title = meta.get("title", "")
-        description = meta.get("description", "")
-        h1_tags = meta.get("htags", {}).get("h1") if meta.get("htags") else None
-        content_info = meta.get("content", {}) or {}
-        word_count = content_info.get("plain_text_word_count", 0) or 0
-        page_timing = p.get("page_timing", {}) or {}
-        load_time = page_timing.get("duration_time", 0) or 0
-        internal_links = p.get("internal_links_count", 0) or 0
-        external_links = p.get("external_links_count", 0) or 0
-        images_without_alt = p.get("images_without_alt_count") or 0
-
-        if status_code == 404:
-            add_issue("CRITICAL", "On-Page", f"404 error: {url}")
-        if status_code >= 500:
-            add_issue("CRITICAL", "On-Page", f"Server error {status_code}: {url}")
-        if not title:
-            add_issue("CRITICAL", "On-Page", f"Missing title tag: {url}")
-        if not description:
-            add_issue("WARNING", "On-Page", f"Missing meta description: {url}")
-        if not h1_tags:
-            add_issue("WARNING", "On-Page", f"Missing H1: {url}")
-        elif isinstance(h1_tags, list) and len(h1_tags) > 1:
-            add_issue("WARNING", "On-Page", f"Multiple H1 tags ({len(h1_tags)}): {url}")
-        if word_count < 200 and status_code == 200:
-            add_issue("WARNING", "On-Page", f"Thin content ({word_count} words): {url}")
-        if load_time > 3:
-            add_issue("WARNING", "On-Page", f"Slow load ({load_time:.1f}s): {url}")
-        if images_without_alt > 0:
-            add_issue("WARNING", "On-Page", f"{images_without_alt} images without alt text: {url}")
-
-        log(f"  {status_code} | {url}")
-        log(f"       Title: {(title or 'MISSING')[:80]}")
-        log(f"       Desc: {(description or 'MISSING')[:80]}")
-        log(f"       H1: {h1_tags if h1_tags else 'MISSING'}")
-        log(f"       Words: {word_count} | Load: {load_time:.1f}s | Int links: {internal_links} | Ext links: {external_links}")
-        if images_without_alt:
-            log(f"       Images without alt: {images_without_alt}")
-
-    log("\n  Fetching duplicate tags...")
-    for tag_type in ["duplicate_title", "duplicate_description"]:
-        dup_resp = api_call("POST", "/v3/on_page/duplicate_tags", [{
-            "id": task_id,
-            "type": tag_type,
-            "limit": 50,
-        }])
-        all_raw[f"on_page_{tag_type}"] = dup_resp
-        time.sleep(DELAY)
-
-        if dup_resp and dup_resp.get("tasks"):
-            for t in dup_resp["tasks"]:
-                for r in (t.get("result") or []):
-                    items = r.get("items") or []
-                    if items:
-                        log(f"\n  {tag_type}: {len(items)} groups found")
-                        for item in items:
-                            tag_val = item.get("title") or item.get("description") or "N/A"
-                            pages_list = item.get("pages") or []
-                            log(f"    \"{tag_val[:60]}\" — on {len(pages_list)} pages")
-                            for pg in pages_list[:5]:
-                                log(f"      - {pg.get('url', '?')}")
-                            add_issue("WARNING", "On-Page", f"Duplicate {tag_type.replace('duplicate_', '')}: \"{tag_val[:50]}\" on {len(pages_list)} pages")
-
-    log("\n  Fetching links report...")
-    links_resp = api_call("POST", "/v3/on_page/links", [{
-        "id": task_id,
-        "limit": 150,
-        "filters": ["status_code", "=", 404],
-    }])
-    all_raw["on_page_broken_links"] = links_resp
-    time.sleep(DELAY)
-
-    if links_resp and links_resp.get("tasks"):
-        for t in links_resp["tasks"]:
-            for r in (t.get("result") or []):
-                items = r.get("items") or []
-                if items:
-                    log(f"  Broken links (404): {len(items)}")
-                    for item in items[:20]:
-                        log(f"    {item.get('url', '?')} → from {item.get('page_from', '?')}")
-                        add_issue("CRITICAL", "On-Page", f"Broken link: {item.get('url', '?')}")
-
-    log("\n  Fetching redirect chains...")
-    redir_resp = api_call("POST", "/v3/on_page/links", [{
-        "id": task_id,
-        "limit": 100,
-        "filters": ["is_redirect", "=", True],
-    }])
-    all_raw["on_page_redirects"] = redir_resp
-    time.sleep(DELAY)
-
-    if redir_resp and redir_resp.get("tasks"):
-        for t in redir_resp["tasks"]:
-            for r in (t.get("result") or []):
-                items = r.get("items") or []
-                if items:
-                    log(f"  Redirect chains: {len(items)}")
-                    for item in items[:15]:
-                        log(f"    {item.get('url', '?')} ({item.get('status_code', '?')})")
-                        add_issue("WARNING", "On-Page", f"Redirect chain: {item.get('url', '?')}")
-
-    log("\n  Fetching non-indexable pages...")
-    noindex_resp = api_call("POST", "/v3/on_page/non_indexable", [{
-        "id": task_id,
-        "limit": 50,
-    }])
-    all_raw["on_page_non_indexable"] = noindex_resp
-    time.sleep(DELAY)
-
-    if noindex_resp and noindex_resp.get("tasks"):
-        for t in noindex_resp["tasks"]:
-            for r in (t.get("result") or []):
-                items = r.get("items") or []
-                if items:
-                    log(f"  Non-indexable pages: {len(items)}")
-                    for item in items:
-                        reason = item.get("reason", "unknown")
-                        url = item.get("url", "?")
-                        log(f"    {url} — {reason}")
-
-    return {"pages_crawled": len(pages), "summary": summary}
-
-
 def run_keyword_rankings():
     section_header("2. KEYWORD RANKINGS")
 
@@ -706,18 +495,235 @@ def run_citations():
     return all_citations
 
 
+def submit_crawl():
+    section_header("1. ON-PAGE CRAWL — Submitting")
+
+    log("  Submitting crawl task...")
+    resp = api_call("POST", "/v3/on_page/task_post", [{
+        "target": TARGET,
+        "max_crawl_pages": 150,
+        "load_resources": True,
+        "enable_javascript": True,
+        "enable_browser_rendering": True,
+    }])
+    all_raw["on_page_task_post"] = resp
+    if not resp or not resp.get("tasks"):
+        log("  FAILED to submit crawl task.")
+        add_issue("CRITICAL", "On-Page", "Could not submit crawl task")
+        return None
+
+    task_id = resp["tasks"][0].get("id")
+    log(f"  Task ID: {task_id}")
+    log("  Crawl submitted — running other sections while it finishes...\n")
+    return task_id
+
+
+def collect_crawl(task_id):
+    section_header("1. ON-PAGE CRAWL — Results")
+
+    if not task_id:
+        log("  No task_id — skipping crawl results.")
+        return {"pages_crawled": 0}
+
+    log(f"  Polling crawl task {task_id}...")
+    summary_resp = None
+    for attempt in range(40):
+        time.sleep(15)
+        summary_resp = api_call("GET", f"/v3/on_page/summary/{task_id}")
+        if not summary_resp or not summary_resp.get("tasks"):
+            log(f"  Poll {attempt+1}: no response...")
+            continue
+        task = summary_resp["tasks"][0]
+        result = task.get("result", [{}])
+        if result:
+            result = result[0] if isinstance(result, list) else result
+        crawl_status = result.get("crawl_status", {}) if isinstance(result, dict) else {}
+        status = crawl_status.get("status", "unknown") if isinstance(crawl_status, dict) else "unknown"
+        pages_crawled = crawl_status.get("pages_crawled", 0) if isinstance(crawl_status, dict) else 0
+        log(f"  Poll {attempt+1}: status={status}, pages={pages_crawled}")
+        sys.stdout.flush()
+        if status == "finished":
+            all_raw["on_page_summary"] = summary_resp
+            break
+    else:
+        log("  Crawl timed out after 10 minutes.")
+        add_issue("CRITICAL", "On-Page", "Crawl timed out")
+        return {"pages_crawled": 0}
+
+    summary = {}
+    if summary_resp and summary_resp.get("tasks"):
+        res = summary_resp["tasks"][0].get("result", [{}])
+        if isinstance(res, list) and res:
+            summary = res[0]
+
+    page_metrics = summary.get("page_metrics", {})
+    log(f"\n  --- Crawl Summary ---")
+    checks = page_metrics.get("checks", {})
+    if isinstance(checks, dict):
+        for check_name, count in checks.items():
+            if count and count > 0:
+                log(f"    {check_name}: {count}")
+
+    time.sleep(DELAY)
+
+    log("\n  Fetching all pages...")
+    pages_resp = api_call("POST", "/v3/on_page/pages", [{
+        "id": task_id,
+        "limit": 150,
+        "order_by": ["meta.internal_links_count,desc"],
+    }])
+    all_raw["on_page_pages"] = pages_resp
+    time.sleep(DELAY)
+
+    pages = []
+    if pages_resp and pages_resp.get("tasks"):
+        for t in pages_resp["tasks"]:
+            for r in (t.get("result") or []):
+                pages.extend(r.get("items") or [])
+
+    log(f"  Total pages retrieved: {len(pages)}")
+
+    for p in pages:
+        url = p.get("url", "?")
+        status_code = p.get("status_code", 0)
+        meta = p.get("meta", {}) or {}
+        title = meta.get("title", "")
+        description = meta.get("description", "")
+        h1_tags = meta.get("htags", {}).get("h1") if meta.get("htags") else None
+        content_info = meta.get("content", {}) or {}
+        word_count = content_info.get("plain_text_word_count", 0) or 0
+        page_timing = p.get("page_timing", {}) or {}
+        load_time = page_timing.get("duration_time", 0) or 0
+        internal_links = p.get("internal_links_count", 0) or 0
+        external_links = p.get("external_links_count", 0) or 0
+        images_without_alt = p.get("images_without_alt_count") or 0
+
+        if status_code == 404:
+            add_issue("CRITICAL", "On-Page", f"404 error: {url}")
+        if status_code >= 500:
+            add_issue("CRITICAL", "On-Page", f"Server error {status_code}: {url}")
+        if not title:
+            add_issue("CRITICAL", "On-Page", f"Missing title tag: {url}")
+        if not description:
+            add_issue("WARNING", "On-Page", f"Missing meta description: {url}")
+        if not h1_tags:
+            add_issue("WARNING", "On-Page", f"Missing H1: {url}")
+        elif isinstance(h1_tags, list) and len(h1_tags) > 1:
+            add_issue("WARNING", "On-Page", f"Multiple H1 tags ({len(h1_tags)}): {url}")
+        if word_count < 200 and status_code == 200:
+            add_issue("WARNING", "On-Page", f"Thin content ({word_count} words): {url}")
+        if load_time > 3:
+            add_issue("WARNING", "On-Page", f"Slow load ({load_time:.1f}s): {url}")
+        if images_without_alt > 0:
+            add_issue("WARNING", "On-Page", f"{images_without_alt} images without alt text: {url}")
+
+        log(f"  {status_code} | {url}")
+        log(f"       Title: {(title or 'MISSING')[:80]}")
+        log(f"       Desc: {(description or 'MISSING')[:80]}")
+        log(f"       H1: {h1_tags if h1_tags else 'MISSING'}")
+        log(f"       Words: {word_count} | Load: {load_time:.1f}s | Int links: {internal_links} | Ext links: {external_links}")
+        if images_without_alt:
+            log(f"       Images without alt: {images_without_alt}")
+
+    log("\n  Fetching duplicate tags...")
+    for tag_type in ["duplicate_title", "duplicate_description"]:
+        dup_resp = api_call("POST", "/v3/on_page/duplicate_tags", [{
+            "id": task_id,
+            "type": tag_type,
+            "limit": 50,
+        }])
+        all_raw[f"on_page_{tag_type}"] = dup_resp
+        time.sleep(DELAY)
+
+        if dup_resp and dup_resp.get("tasks"):
+            for t in dup_resp["tasks"]:
+                for r in (t.get("result") or []):
+                    items = r.get("items") or []
+                    if items:
+                        log(f"\n  {tag_type}: {len(items)} groups found")
+                        for item in items:
+                            tag_val = item.get("title") or item.get("description") or "N/A"
+                            pages_list = item.get("pages") or []
+                            log(f"    \"{tag_val[:60]}\" — on {len(pages_list)} pages")
+                            for pg in pages_list[:5]:
+                                log(f"      - {pg.get('url', '?')}")
+                            add_issue("WARNING", "On-Page", f"Duplicate {tag_type.replace('duplicate_', '')}: \"{tag_val[:50]}\" on {len(pages_list)} pages")
+
+    log("\n  Fetching broken links...")
+    links_resp = api_call("POST", "/v3/on_page/links", [{
+        "id": task_id,
+        "limit": 150,
+        "filters": ["status_code", "=", 404],
+    }])
+    all_raw["on_page_broken_links"] = links_resp
+    time.sleep(DELAY)
+
+    if links_resp and links_resp.get("tasks"):
+        for t in links_resp["tasks"]:
+            for r in (t.get("result") or []):
+                items = r.get("items") or []
+                if items:
+                    log(f"  Broken links (404): {len(items)}")
+                    for item in items[:20]:
+                        log(f"    {item.get('url', '?')} → from {item.get('page_from', '?')}")
+                        add_issue("CRITICAL", "On-Page", f"Broken link: {item.get('url', '?')}")
+
+    log("\n  Fetching redirect chains...")
+    redir_resp = api_call("POST", "/v3/on_page/links", [{
+        "id": task_id,
+        "limit": 100,
+        "filters": ["is_redirect", "=", True],
+    }])
+    all_raw["on_page_redirects"] = redir_resp
+    time.sleep(DELAY)
+
+    if redir_resp and redir_resp.get("tasks"):
+        for t in redir_resp["tasks"]:
+            for r in (t.get("result") or []):
+                items = r.get("items") or []
+                if items:
+                    log(f"  Redirect chains: {len(items)}")
+                    for item in items[:15]:
+                        log(f"    {item.get('url', '?')} ({item.get('status_code', '?')})")
+                        add_issue("WARNING", "On-Page", f"Redirect chain: {item.get('url', '?')}")
+
+    log("\n  Fetching non-indexable pages...")
+    noindex_resp = api_call("POST", "/v3/on_page/non_indexable", [{
+        "id": task_id,
+        "limit": 50,
+    }])
+    all_raw["on_page_non_indexable"] = noindex_resp
+    time.sleep(DELAY)
+
+    if noindex_resp and noindex_resp.get("tasks"):
+        for t in noindex_resp["tasks"]:
+            for r in (t.get("result") or []):
+                items = r.get("items") or []
+                if items:
+                    log(f"  Non-indexable pages: {len(items)}")
+                    for item in items:
+                        reason = item.get("reason", "unknown")
+                        url = item.get("url", "?")
+                        log(f"    {url} — {reason}")
+
+    return {"pages_crawled": len(pages), "summary": summary}
+
+
 def main():
     start = datetime.now()
     log(f"SEO AUDIT: {TARGET}")
     log(f"Date: {start.strftime('%Y-%m-%d %H:%M:%S')}")
     log(f"{'=' * 70}")
 
-    crawl_data = run_on_page()
+    crawl_task_id = submit_crawl()
+
     serp_results, competitor_domains = run_keyword_rankings()
     bl_data = run_backlinks()
     comp_data = run_competitors(competitor_domains, serp_results)
     gbp_data = run_gbp()
     citation_data = run_citations()
+
+    crawl_data = collect_crawl(crawl_task_id)
 
     section_header("ISSUE SUMMARY")
 

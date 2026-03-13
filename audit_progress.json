@@ -1,0 +1,47 @@
+{
+  "raw": {
+    "crawl_submit": {
+      "version": "0.1.20260311",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.0709 sec.",
+      "cost": 0.6375,
+      "tasks_count": 1,
+      "tasks_error": 0,
+      "tasks": [
+        {
+          "id": "03131532-1173-0216-0000-2d8d583fba58",
+          "status_code": 20100,
+          "status_message": "Task Created.",
+          "time": "0.0094 sec.",
+          "cost": 0.6375,
+          "result_count": 0,
+          "path": [
+            "v3",
+            "on_page",
+            "task_post"
+          ],
+          "data": {
+            "api": "on_page",
+            "function": "task_post",
+            "target": "ajielectricalsolutionsinc.com",
+            "max_crawl_pages": 150,
+            "load_resources": true,
+            "enable_javascript": true,
+            "enable_browser_rendering": true
+          },
+          "result": null
+        }
+      ]
+    }
+  },
+  "issues": {
+    "CRITICAL": [],
+    "WARNING": [],
+    "OPPORTUNITY": []
+  },
+  "completed": [
+    "crawl_submitted"
+  ],
+  "crawl_task_id": "03131532-1173-0216-0000-2d8d583fba58"
+}
