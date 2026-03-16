@@ -204,9 +204,9 @@ const localBusinessSchema = {
       </div>
       <div class="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {[
-          { text: 'Our agency uses Cornerstone for all our direct mail projects. They are super-responsive and meticulous in their work. Highly recommend.', name: 'Marlene McTigue', role: 'Marketing Agency Owner', image: '/images/testimonial-marlene.png' },
-          { text: "I'm always impressed with Sean and his team. They stay on top of the latest technology in mailing and data management. True professionals.", name: 'James Yaston', role: 'Business Owner', image: '/images/testimonial-james.png' },
-          { text: 'I needed postcards printed and mailed fast. Cornerstone was knowledgeable, friendly, reliable, and delivered on time. Will use again.', name: 'Sapna Moudgil-Shah', role: 'Small Business Owner', image: '/images/testimonial-sapna.png' },
+          { text: 'Our agency uses Cornerstone for all our direct mail projects. They are super-responsive and meticulous in their work. Highly recommend.', name: 'Marlene McTigue', role: 'Marketing Agency Owner', image: '/images/testimonial-marlene.png', title: 'Marlene McTigue — Marketing Agency Owner' },
+          { text: "I'm always impressed with Sean and his team. They stay on top of the latest technology in mailing and data management. True professionals.", name: 'James Yaston', role: 'Business Owner', image: '/images/testimonial-james.png', title: 'James Yaston — Business Owner' },
+          { text: 'I needed postcards printed and mailed fast. Cornerstone was knowledgeable, friendly, reliable, and delivered on time. Will use again.', name: 'Sapna Moudgil-Shah', role: 'Small Business Owner', image: '/images/testimonial-sapna.png', title: 'Sapna Moudgil-Shah — Small Business Owner' },
         ].map((testimonial) => (
           <div class="bg-navy-50/60 rounded-xl p-6 border border-navy-100">
             <div class="flex gap-0.5 mb-3">
@@ -217,7 +217,7 @@ const localBusinessSchema = {
             <svg class="w-8 h-8 text-crst-gold/40 mb-3" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
             <p class="text-sm text-navy-700 leading-relaxed mb-4 italic">"{testimonial.text}"</p>
             <div class="flex items-center gap-3">
-              <img src={testimonial.image} alt={testimonial.name} class="w-10 h-10 rounded-full object-cover" loading="lazy" />
+              <img src={testimonial.image} alt={testimonial.name} title={testimonial.title} class="w-10 h-10 rounded-full object-cover" loading="lazy" />
               <div>
                 <div class="font-heading font-semibold text-navy-800 text-sm">{testimonial.name}</div>
                 <div class="text-xs text-navy-500">{testimonial.role}</div>
