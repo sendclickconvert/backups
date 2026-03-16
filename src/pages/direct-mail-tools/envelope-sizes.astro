@@ -4,6 +4,27 @@ import PageHero from '../../components/PageHero.astro';
 import CTASection from '../../components/CTASection.astro';
 import { BUSINESS } from '../../data/site';
 
+const envelopes = [
+  { name: '#6¼', inches: '3½ × 6', mm: '89 × 152', aka: '—', mailClass: 'Letter', use: 'Reply envelopes, RSVPs' },
+  { name: '#6¾', inches: '3⅝ × 6½', mm: '92 × 165', aka: '—', mailClass: 'Letter', use: 'Personal correspondence' },
+  { name: 'Monarch', inches: '3⅞ × 7½', mm: '98 × 191', aka: '#7¾', mailClass: 'Letter', use: 'Executive stationery' },
+  { name: '#9', inches: '3⅞ × 8⅞', mm: '98 × 225', aka: '—', mailClass: 'Letter', use: 'Return envelopes for #10' },
+  { name: '#10', inches: '4⅛ × 9½', mm: '105 × 241', aka: 'Standard business', mailClass: 'Letter', use: 'Business letters, invoices, statements', highlight: true },
+  { name: '#11', inches: '4½ × 10⅜', mm: '114 × 264', aka: '—', mailClass: 'Letter', use: 'Legal documents' },
+  { name: '#12', inches: '4¾ × 11', mm: '121 × 279', aka: '—', mailClass: 'Letter / Flat', use: 'Catalogs, reports' },
+  { name: '#14', inches: '5 × 11½', mm: '127 × 292', aka: '—', mailClass: 'Flat', use: 'Long documents' },
+  { name: 'A2', inches: '4⅜ × 5¾', mm: '111 × 146', aka: '—', mailClass: 'Letter', use: 'Note cards, RSVPs' },
+  { name: 'A6', inches: '4¾ × 6½', mm: '121 × 165', aka: '—', mailClass: 'Letter', use: 'Invitations, greeting cards' },
+  { name: 'A7', inches: '5¼ × 7¼', mm: '133 × 184', aka: '—', mailClass: 'Letter', use: '5×7 invitations, photos' },
+  { name: 'A8', inches: '5½ × 8⅛', mm: '140 × 206', aka: '—', mailClass: 'Letter', use: 'Large cards, announcements' },
+  { name: 'A9', inches: '5¾ × 8¾', mm: '146 × 222', aka: '—', mailClass: 'Letter', use: 'Large invitations' },
+  { name: 'A10', inches: '6 × 9½', mm: '152 × 241', aka: '—', mailClass: 'Letter', use: 'Large greeting cards' },
+  { name: '6×9', inches: '6 × 9', mm: '152 × 229', aka: 'Booklet', mailClass: 'Letter / Flat', use: 'Booklets, catalogs, direct mail' },
+  { name: '9×12', inches: '9 × 12', mm: '229 × 305', aka: 'Catalog', mailClass: 'Flat', use: 'Magazines, catalogs, documents' },
+  { name: '10×13', inches: '10 × 13', mm: '254 × 330', aka: 'Catalog', mailClass: 'Flat', use: 'Large catalogs, manuscripts' },
+  { name: '12×15½', inches: '12 × 15½', mm: '305 × 394', aka: '—', mailClass: 'Flat / Parcel', use: 'Oversized catalogs, posters' },
+];
+
 const mailClasses = [
   {
     name: 'Postcards',
@@ -89,79 +110,71 @@ const surcharges = [
   { condition: 'Underweight postcard', surcharge: 'Rejected', reason: 'Below 0.007" thickness or smaller than 3.5×5' },
   { condition: 'Oversize letter', surcharge: 'Flat-rate pricing', reason: 'Exceeds 6.125×11.5 or 0.25" thick — jumps to flat rate' },
 ];
+
+const faqs = [
+  {
+    q: "What size is a #10 envelope?",
+    a: "A #10 envelope measures 4⅛ × 9½ inches (105 × 241 mm). It is the standard business envelope used for letters, invoices, and direct mail. It qualifies for USPS First-Class letter-rate postage when properly addressed and within weight limits (under 3.5 oz)."
+  },
+  {
+    q: "What is the largest envelope I can send at USPS letter rate?",
+    a: "The maximum size for USPS letter rate is 6⅛ × 11½ inches, with a maximum thickness of ¼ inch. Envelopes exceeding these dimensions are classified as flats or parcels and cost more to mail."
+  },
+  {
+    q: "What envelope size is best for direct mail campaigns?",
+    a: "For direct mail letters, the #10 envelope is the most common choice. For oversized direct mail that stands out in the mailbox, 6×9 or 9×12 envelopes qualify as flats but offer more visual impact. Cornerstone can advise on the best format for your campaign goals and budget."
+  },
+  {
+    q: "What's the difference between a booklet envelope and a catalog envelope?",
+    a: "A booklet envelope (like 6×9) opens on the long side and is used for booklets, brochures, and thick mailings. A catalog envelope (like 9×12 or 10×13) opens on the short side and is used for magazines, catalogs, and flat documents. Both are classified as USPS flats."
+  },
+  {
+    q: "What is the maximum postcard size for USPS letter-rate postage?",
+    a: "The maximum postcard size that qualifies for USPS letter-rate postage is 6⅛ × 11½ inches with a maximum thickness of 0.016 inches. Anything larger is classified as a flat and carries a higher postage rate. The 6×11 postcard (popular for EDDM campaigns) is the largest commonly used size that stays within letter-rate pricing."
+  },
+  {
+    q: "What is the difference between a letter and a flat in USPS mail?",
+    a: "A USPS letter is a mail piece between 3½ × 5 inches and 6⅛ × 11½ inches, no more than ¼ inch thick and 3.5 oz. A flat (large envelope) exceeds those dimensions — typically 9×12 or 10×13 envelopes — and carries higher postage rates. The practical cost difference can be significant at scale: flats cost roughly double letter-rate postage per piece."
+  },
+  {
+    q: "What causes a non-machinable surcharge on a letter?",
+    a: "USPS adds a $0.22 non-machinable surcharge to letters that are square, too rigid, poly-wrapped, have clasps or buttons, or fall outside the 1.3:1 to 2.5:1 aspect ratio requirement. The most common mistake we see is square invitation-style envelopes — they look professional but automatically trigger the surcharge on every piece."
+  },
+  {
+    q: "What size envelopes qualify for bulk mail automation rates?",
+    a: "To qualify for USPS bulk mail automation discounts, letters must be between 3½ × 5 inches and 6⅛ × 11½ inches, no more than ¼ inch thick, flexible, and rectangular with an aspect ratio between 1.3:1 and 2.5:1. The address must be machine-readable with a valid barcode. Meeting these specs can reduce postage by $0.10 or more per piece compared to non-automation rates."
+  },
+  {
+    q: "What is the minimum size for a USPS postcard?",
+    a: "The USPS minimum postcard size is 3½ × 5 inches with a minimum thickness of 0.007 inches (7pt cardstock). Pieces smaller than this are not accepted for mailing. The most commonly mailed postcard size is 4¼ × 6 inches (standard 4×6), which qualifies for letter-rate postage."
+  },
+  {
+    q: "What are the USPS size requirements for self-mailers?",
+    a: "USPS self-mailers must be tabbed or sealed per DMM 201.3 standards. Letter-size self-mailers require at least 1 tab (2 recommended), flat-size self-mailers require 2 tabs minimum. Tabs must be at least 1 inch long placed on the top edge. The address panel must face outward and the open edge must be at the top after folding. Common sizes include bi-fold 8.5×11 (folds to 5.5×8.5) and tri-fold 8.5×11 (folds to 3.67×8.5)."
+  },
+];
 ---
 
 <BaseLayout
-  title="USPS Envelope Sizes & Mail Piece Dimensions: Complete Guide (#10, 6x9, Postcards, Flats)"
-  description="Complete USPS envelope and mail piece size chart — #10, 6x9, A2, postcards, flats, and self-mailers with exact dimensions, weight limits, aspect ratios, and surcharge thresholds. Avoid non-machinable fees."
+  title="Standard Envelope Sizes Chart: Every Size in Inches & mm (#10, 6×9, 9×12, A7)"
+  description="Complete envelope size chart with dimensions in inches and millimeters — #10, #9, 6×9, 9×12, A2–A10, and more. Includes USPS mail class, common uses, and size limits for letter vs. flat rate postage."
   canonical="https://crst.net/direct-mail-tools/envelope-sizes"
 >
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqs.map(faq => ({
         "@type": "Question",
-        "name": "What size is a #10 envelope?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A #10 envelope measures 4.125 inches × 9.5 inches. It is the standard business envelope used for letters, invoices, and direct mail. It qualifies for USPS First-Class letter-rate postage when properly addressed and within weight limits (under 3.5 oz)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the maximum postcard size for USPS letter-rate postage?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The maximum postcard size that qualifies for USPS letter-rate postage is 6.125 inches × 11.5 inches with a maximum thickness of 0.016 inches. Anything larger is classified as a flat and carries a higher postage rate. The 6×11 postcard (popular for EDDM campaigns) is the largest commonly used size that stays within letter-rate pricing."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the difference between a letter and a flat in USPS mail?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A USPS letter is a mail piece between 3.5×5 inches and 6.125×11.5 inches, no more than 0.25 inches thick and 3.5 oz. A flat (large envelope) exceeds those dimensions — typically 9×12 or 10×13 envelopes — and carries higher postage rates. The practical cost difference can be significant at scale: flats cost roughly double letter-rate postage per piece."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What causes a non-machinable surcharge on a letter?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "USPS adds a $0.22 non-machinable surcharge to letters that are square, too rigid, poly-wrapped, have clasps or buttons, or fall outside the 1.3:1 to 2.5:1 aspect ratio requirement. The most common mistake we see is square invitation-style envelopes — they look professional but automatically trigger the surcharge on every piece."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What size envelopes qualify for bulk mail automation rates?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "To qualify for USPS bulk mail automation discounts, letters must be between 3.5×5 inches and 6.125×11.5 inches, no more than 0.25 inches thick, flexible, and rectangular with an aspect ratio between 1.3:1 and 2.5:1. The address must be machine-readable with a valid barcode. Meeting these specs can reduce postage by $0.10 or more per piece compared to non-automation rates."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the minimum size for a USPS postcard?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The USPS minimum postcard size is 3.5 inches × 5 inches with a minimum thickness of 0.007 inches (7pt cardstock). Pieces smaller than this are not accepted for mailing. The most commonly mailed postcard size is 4.25×6 inches (standard 4×6), which qualifies for letter-rate postage."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What are the USPS size requirements for self-mailers?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "USPS self-mailers must be tabbed or sealed per DMM 201.3 standards. Letter-size self-mailers require at least 1 tab (2 recommended), flat-size self-mailers require 2 tabs minimum. Tabs must be at least 1 inch long placed on the top edge. The address panel must face outward and the open edge must be at the top after folding. Common sizes include bi-fold 8.5×11 (folds to 5.5×8.5) and tri-fold 8.5×11 (folds to 3.67×8.5)."
-        }
-      }
-    ]
-  })} />
+        "name": faq.q,
+        "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+      }))
+    })} />
+  </Fragment>
 
   <PageHero
     title="Envelope & Mail Piece Sizes"
-    subtitle="Exact USPS dimensions for every mail format — postcards, #10 envelopes, 6×9, flats, and self-mailers. Avoid surcharges, qualify for automation rates, and mail with confidence."
+    subtitle="Standard envelope sizes for business mail, direct mail campaigns, and USPS mailing — with dimensions in inches and millimeters, postal class, and common uses for each size."
     breadcrumbs={[
       { label: 'Direct Mail Tools', href: '/direct-mail-tools' },
       { label: 'Envelope Sizes' },
@@ -171,6 +184,85 @@ const surcharges = [
   <section class="py-14 lg:py-20">
     <div class="container-wide">
       <div class="max-w-4xl mx-auto">
+
+        <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-6">
+          Standard Envelope Sizes (Inches & Millimeters)
+        </h2>
+
+        <div class="overflow-x-auto mb-10 border border-gray-200 rounded-xl">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-crst-primary text-white">
+                <th class="text-left py-3 px-4 font-heading font-bold">Envelope</th>
+                <th class="text-left py-3 px-4 font-heading font-bold">Size (inches)</th>
+                <th class="text-left py-3 px-4 font-heading font-bold">Size (mm)</th>
+                <th class="text-left py-3 px-4 font-heading font-bold hidden sm:table-cell">Also Known As</th>
+                <th class="text-left py-3 px-4 font-heading font-bold">USPS Mail Class</th>
+                <th class="text-left py-3 px-4 font-heading font-bold hidden md:table-cell">Common Use</th>
+              </tr>
+            </thead>
+            <tbody>
+              {envelopes.map((env, i) => (
+                <tr class:list={[
+                  env.highlight ? 'bg-amber-50 font-semibold border-l-4 border-l-crst-gold' : (i % 2 === 0 ? 'bg-white' : 'bg-gray-50'),
+                  'border-b border-gray-100'
+                ]}>
+                  <td class="py-2.5 px-4 text-navy-800 whitespace-nowrap">{env.name}</td>
+                  <td class="py-2.5 px-4 text-navy-600/80 font-mono text-xs whitespace-nowrap">{env.inches}</td>
+                  <td class="py-2.5 px-4 text-navy-600/80 font-mono text-xs whitespace-nowrap">{env.mm}</td>
+                  <td class="py-2.5 px-4 text-navy-600/70 hidden sm:table-cell">{env.aka}</td>
+                  <td class="py-2.5 px-4 text-navy-600/80 whitespace-nowrap">{env.mailClass}</td>
+                  <td class="py-2.5 px-4 text-navy-600/70 hidden md:table-cell">{env.use}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <div class="bg-crst-primary/5 border-l-4 border-crst-primary rounded-r-xl p-6 mb-10">
+          <h3 class="text-lg font-display font-bold text-crst-primary mb-2">The #10 Envelope</h3>
+          <p class="text-navy-600/80 leading-relaxed">
+            The #10 envelope measures <strong>4⅛ × 9½ inches</strong> (105 × 241 mm). It's the standard business envelope used for letters, invoices, statements, and most commercial mail in the United States. It fits a standard 8½ × 11 letter folded in thirds and qualifies for USPS letter-rate <a href="/direct-mail-tools/postage-rates" class="text-crst-primary underline hover:text-crst-gold">postage</a>.
+          </p>
+        </div>
+
+        <div class="section-divider mb-6"></div>
+        <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-4">
+          USPS Size Requirements: Letter vs. Flat
+        </h2>
+        <p class="text-navy-600/80 leading-relaxed mb-6">
+          Envelopes that exceed letter dimensions get classified as flats or parcels, which cost significantly more to mail. Choosing the right envelope size directly affects your <a href="/direct-mail-tools/postage-rates" class="text-crst-primary underline hover:text-crst-gold">postage costs</a>.
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-6 mb-10">
+          <div class="bg-white border border-gray-200 rounded-xl p-6">
+            <h3 class="font-heading font-bold text-navy-800 mb-3 flex items-center gap-2">
+              <span class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-700 text-sm">✉</span>
+              USPS Letter Size
+            </h3>
+            <ul class="text-sm text-navy-600/80 space-y-2">
+              <li><strong>Minimum:</strong> 3½ × 5 inches</li>
+              <li><strong>Maximum:</strong> 6⅛ × 11½ inches</li>
+              <li><strong>Max thickness:</strong> ¼ inch</li>
+              <li><strong>Aspect ratio:</strong> Length ÷ height between 1.3 and 2.5</li>
+              <li><strong>Max weight:</strong> 3.5 oz (First-Class)</li>
+            </ul>
+          </div>
+          <div class="bg-white border border-gray-200 rounded-xl p-6">
+            <h3 class="font-heading font-bold text-navy-800 mb-3 flex items-center gap-2">
+              <span class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 text-sm">📦</span>
+              USPS Flat Size
+            </h3>
+            <ul class="text-sm text-navy-600/80 space-y-2">
+              <li><strong>Minimum:</strong> Exceeds letter dimensions (6⅛ × 11½ in.)</li>
+              <li><strong>Maximum:</strong> 12 × 15 inches</li>
+              <li><strong>Max thickness:</strong> ¾ inch</li>
+              <li><strong>Shape:</strong> Must be rectangular and flexible</li>
+              <li><strong>Cost:</strong> Roughly double letter-rate postage</li>
+            </ul>
+          </div>
+        </div>
+
         <div class="section-divider mb-6"></div>
         <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-4">
           Why Mail Piece Size Matters
@@ -265,13 +357,25 @@ const surcharges = [
           </div>
         </div>
 
-        <div class="bg-crst-primary/5 rounded-xl p-8 text-center">
+        <div class="bg-crst-primary/5 rounded-xl p-8 text-center mb-12">
           <h3 class="text-xl font-display font-bold text-crst-primary mb-3">Not Sure About Your Mail Piece Size?</h3>
           <p class="text-navy-600/80 text-sm mb-5 max-w-lg mx-auto">
             Send us your design or dimensions and we'll confirm USPS compatibility, suggest the best format for your budget, and handle the production. If you're mailing under a nonprofit or bulk permit, see how our <a href="/direct-mail-tools/cornerstone-mailing-permits" class="text-crst-primary underline hover:text-crst-gold">mailing permit services</a> can reduce your per-piece cost further.
           </p>
           <a href="/estimate" class="btn-primary inline-block">Get a Free Estimate</a>
         </div>
+
+        <div class="section-divider mb-6"></div>
+        <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-6">Frequently Asked Questions</h2>
+        <div class="space-y-6 mb-10">
+          {faqs.map((faq) => (
+            <div class="bg-white border border-gray-200 rounded-lg p-5">
+              <h3 class="font-semibold text-gray-800 text-sm mb-3">{faq.q}</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">{faq.a}</p>
+            </div>
+          ))}
+        </div>
+
       </div>
     </div>
   </section>
