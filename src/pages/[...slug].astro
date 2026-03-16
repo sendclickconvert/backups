@@ -23,7 +23,8 @@ const exactRedirects: Record<string, string> = {
   '/order-online/': '/contact/',
   '/grow-your-business-with-eddm/': '/services/eddm/',
   '/crst-web-design-and-development/': '/services/web-design/',
-  '/lessons-from-marketing-failure-case-study-in-tree-service-marketing/': 'https://blog.crst.net/',
+  '/lessons-from-marketing-failure-case-study-in-tree-service-marketing/': '/resources/lessons-from-marketing-failure',
+  '/crst-daily/lessons-from-marketing-failure/': '/resources/lessons-from-marketing-failure',
   '/b2b-data-review/': 'https://blog.crst.net/',
   '/cold-calling-using-direct-mail/': 'https://blog.crst.net/',
   '/independent-insurance-agency-a-no-bs-2024-web-direct-mail-approach/': 'https://blog.crst.net/',
@@ -134,6 +135,8 @@ const exactRedirects: Record<string, string> = {
   '/periodicals-complete-overview/': '/resources/periodicals/',
   '/understanding-periodicals/': '/resources/understanding-periodicals/',
   '/guide-for-self-mailer-tabbing-regulations/': '/resources/',
+  '/complete-friendraising-guide/': '/resources/complete-friendraising-guide',
+  '/complete-friendraising-guide': '/resources/complete-friendraising-guide',
   '/a-november-2024-post-election-assessment-from-a-hudson-valley-political-consultant/': 'https://blog.crst.net/',
   '/tag/mail-design/': 'https://blog.crst.net/',
   '/tag/overview/': 'https://blog.crst.net/',
@@ -154,35 +157,51 @@ const exactRedirects: Record<string, string> = {
   '/direct-mail-tools/envelope': '/direct-mail-tools/envelope-sizes/',
   '/direct-mail-tools/address': '/direct-mail-tools/address-change/',
   '/direct-mail-tools/mailing-letter': '/resources/',
-  '/non-profit-database-change-request/': '/contact/',
+  '/non-profit-database-change-request/': '/resources/non-profit-database-change-request',
+  '/non-profit-database-change-request': '/resources/non-profit-database-change-request',
   '/how-to-respond-to-a-negative-yelp-review-a-true-story': '/resources/how-to-respond-to-a-negative-yelp-review-a-true-story',
   '/how-to-respond-to-a-negative-yelp-review-a-true-story/': '/resources/how-to-respond-to-a-negative-yelp-review-a-true-story',
   '/team': '/about/',
+  '/increase-data-quality': '410',
+  '/increase-data-quality/': '410',
 };
+
+const gone410Html = `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Page Removed</title></head><body style="font-family:system-ui,sans-serif;max-width:600px;margin:80px auto;text-align:center;color:#333"><h1>This page has been removed</h1><p>The content you're looking for is no longer available.</p><p><a href="/" style="color:#1e3a5f">Return to the homepage</a></p></body></html>`;
 
 const exact = exactRedirects[path] || exactRedirects[path + '/'] || exactRedirects[path.replace(/\/$/, '')];
 if (exact) {
+  if (exact === '410') {
+    return new Response(gone410Html, { status: 410, headers: { 'Content-Type': 'text/html' } });
+  }
   return Astro.redirect(exact, 301);
+}
+
+const gone410Patterns = [
+  '/category/',
+  '/tag/',
+  '/case-study-category/',
+  '/crst-daily-post-category/',
+  '/mailbox-monday/page/',
+];
+
+if (gone410Patterns.some(p => path.startsWith(p))) {
+  return new Response(gone410Html, { status: 410, headers: { 'Content-Type': 'text/html' } });
 }
 
 const blogPatterns = [
   '/crst-daily/',
-  '/tag/',
-  '/category/',
   '/crst-daily-post-tag/',
-  '/crst-daily-post-category/',
   '/mailbox-monday/',
   '/mailers-tip-tuesday/',
   '/case-study-thursday/',
   '/fun-fact-friday/',
   '/mailbag-wednesday/',
-  '/complete-friendraising-guide/',
 ];
 
 if (blogPatterns.some(p => path.startsWith(p))) {
   return Astro.redirect('https://blog.crst.net/', 301);
 }
-if (path === '/case-study' || path.startsWith('/case-study/') || path.startsWith('/case-study-category/') || path.startsWith('/direct-mail-case-studies/')) {
+if (path === '/case-study' || path.startsWith('/case-study/') || path.startsWith('/direct-mail-case-studies/')) {
   return Astro.redirect('/case-studies', 301);
 }
 if (path.startsWith('/printing-partners/')) {
