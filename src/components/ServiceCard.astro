@@ -21,7 +21,7 @@ const icons: Record<string, string> = {
 };
 ---
 
-<a href={`/services/${slug}`} class="card group block">
+<a href={`/services/${slug}`} title={title} class="card group block">
   <div class="flex items-start gap-4">
     <div class="shrink-0 w-11 h-11 rounded-lg bg-navy-50 flex items-center justify-center group-hover:bg-crst-primary transition-colors duration-300">
       <svg class="w-5 h-5 text-crst-primary group-hover:text-white transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" set:html={icons[icon] || icons.mail} />
