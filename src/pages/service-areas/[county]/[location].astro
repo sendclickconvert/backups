@@ -7,6 +7,7 @@ import EstimateForm from '../../../components/EstimateForm.astro';
 import { BUSINESS, SERVICES } from '../../../data/site';
 import { COUNTIES_DATA, getAllLocations } from '../../../data/locations';
 import type { Location, County } from '../../../data/locations';
+import { townUniqueContent } from '../../../data/town-unique-content';
 
 export function getStaticPaths() {
   const paths: { params: { county: string; location: string }; props: { location: Location; county: County } }[] = [];
@@ -25,19 +26,60 @@ export function getStaticPaths() {
 
 const { location, county } = Astro.props as { location: Location; county: County };
 
-// Get nearby locations (same county, different location)
+const uniqueContent = townUniqueContent[location.slug];
+
 const nearbyLocations = county.locations
   .filter(l => l.slug !== location.slug)
   .slice(0, 8);
 
-const title = `Direct Mail Services in ${location.name}, ${county.name}`;
-const description = `Professional direct mail, printing, and mailing services in ${location.name}, NY. ZIP ${location.zip.join(', ')} — EDDM, data lists, commercial printing. Free estimates from ${BUSINESS.name}.`;
+const title = uniqueContent?.metaTitle || `Direct Mail Services in ${location.name}, ${county.name}`;
+const description = uniqueContent?.metaDescription || `Professional direct mail, printing, and mailing services in ${location.name}, NY. ZIP ${location.zip.join(', ')} — EDDM, data lists, commercial printing. Free estimates from ${BUSINESS.name}.`;
+const h1Text = uniqueContent?.h1 || `Direct Mail Services in ${location.name}`;
 
-// FAQPage schema
-const faqSchema = location.faqs.length > 0 ? {
+const serviceSlugToLabel: Record<string, string> = {
+  '/services/direct-mail': 'direct mail',
+  '/services/eddm': 'EDDM',
+  '/services/postcards': 'postcard and commercial printing',
+  '/services/printing': 'commercial printing',
+  '/services/brochures': 'brochure and print design',
+  '/services/large-format': 'large format printing',
+  '/services/mailing-lists': 'targeted mailing lists',
+  '/services/data-lists': 'data lists',
+  '/services/mailing': 'mailing services',
+  '/services/graphic-design': 'graphic design',
+  '/services/non-profit-mailing': 'non-profit mailing',
+};
+
+const serviceSlugToHref: Record<string, string> = {
+  '/services/direct-mail': '/services/direct-mail',
+  '/services/eddm': '/services/eddm',
+  '/services/postcards': '/services/printing',
+  '/services/printing': '/services/printing',
+  '/services/brochures': '/services/graphic-design',
+  '/services/large-format': '/services/printing',
+  '/services/mailing-lists': '/services/data-lists',
+  '/services/data-lists': '/services/data-lists',
+  '/services/mailing': '/services/mailing',
+  '/services/graphic-design': '/services/graphic-design',
+  '/services/non-profit-mailing': '/services/non-profit-mailing',
+};
+
+const relatedServiceLinks = uniqueContent?.relevantServices
+  ? [...new Map(
+      uniqueContent.relevantServices
+        .filter(s => serviceSlugToHref[s])
+        .map(s => [serviceSlugToHref[s], { href: serviceSlugToHref[s], label: serviceSlugToLabel[s] }])
+    ).values()]
+  : [];
+
+const allFaqs = uniqueContent?.uniqueFAQs
+  ? [...uniqueContent.uniqueFAQs.map(f => ({ q: f.question, a: f.answer })), ...location.faqs]
+  : location.faqs;
+
+const faqSchema = allFaqs.length > 0 ? {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: location.faqs.map(faq => ({
+  mainEntity: allFaqs.map(faq => ({
     '@type': 'Question',
     name: faq.q,
     acceptedAnswer: {
@@ -164,11 +206,11 @@ const nearbyAreas = neighborNames
   </Fragment>
 
   <PageHero
-    title={`Direct Mail Services in ${location.name}`}
+    title={h1Text}
     subtitle={`${typeLabel} in ${county.name} · ZIP ${location.zip.join(', ')} · Population ${location.population}`}
     breadcrumbs={[
       { label: 'Service Areas', href: '/service-areas' },
-      { label: county.name, href: `/service-areas/${county.slug}/` },
+      { label: county.name, href: `/service-areas/${county.slug}` },
       { label: location.name },
     ]}
   />
@@ -180,19 +222,27 @@ const nearbyAreas = neighborNames
     </a>
   </div>
 
-  <!-- Location Intro -->
   <section class="py-14 lg:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-3 gap-12">
-        <!-- Main Content -->
         <div class="lg:col-span-2">
           <div class="section-divider mb-6"></div>
           <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-6">
-            Direct Mail & Printing for {location.name} Businesses
+            {uniqueContent ? uniqueContent.h1 : `Direct Mail & Printing for ${location.name} Businesses`}
           </h2>
-          <p class="text-gray-700 leading-relaxed mb-8">
-            {location.intro}
-          </p>
+
+          {uniqueContent ? (
+            <p class="text-gray-700 leading-relaxed mb-4">
+              {uniqueContent.uniqueIntro}
+            </p>
+            <p class="text-gray-500 text-sm italic mb-8">
+              {uniqueContent.nearbyLandmark}
+            </p>
+          ) : (
+            <p class="text-gray-700 leading-relaxed mb-8">
+              {location.intro}
+            </p>
+          )}
 
           <div class="rounded-xl overflow-hidden shadow-md mb-10">
             <iframe
@@ -207,7 +257,29 @@ const nearbyAreas = neighborNames
             ></iframe>
           </div>
 
-          <!-- Services for this area -->
+          {uniqueContent && (
+            <div class="mb-10">
+              <h2 class="text-2xl font-display font-bold text-crst-primary mb-4">
+                Local Market Profile: {location.name}
+              </h2>
+              <p class="text-gray-700 leading-relaxed">
+                {uniqueContent.localContext}
+              </p>
+            </div>
+
+            <div class="mb-10">
+              <h2 class="text-2xl font-display font-bold text-crst-primary mb-4">
+                EDDM Strategy for {location.name}
+              </h2>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                {uniqueContent.eddmInsight}
+              </p>
+              <p class="text-gray-700 leading-relaxed">
+                {uniqueContent.populationNote}
+              </p>
+            </div>
+          )}
+
           <h3 class="text-xl font-display font-bold text-crst-primary mb-4">
             Services Available in {location.name}
           </h3>
@@ -228,7 +300,6 @@ const nearbyAreas = neighborNames
             ))}
           </div>
 
-          <!-- Client Types -->
           {location.clientTypes.length > 0 && (
             <div class="mb-10">
               <h3 class="text-xl font-display font-bold text-crst-primary mb-4">
@@ -250,7 +321,6 @@ const nearbyAreas = neighborNames
             </div>
           )}
 
-          <!-- Notable Organizations -->
           {location.notableOrgs.length > 0 && (
             <div class="mb-10">
               <h3 class="text-xl font-display font-bold text-crst-primary mb-4">
@@ -285,8 +355,23 @@ const nearbyAreas = neighborNames
             </div>
           </div>
 
-          <!-- FAQs -->
-          {location.faqs.length > 0 && (
+          {uniqueContent && uniqueContent.uniqueFAQs.length > 0 && (
+            <div class="mb-10">
+              <h3 class="text-xl font-display font-bold text-crst-primary mb-6">
+                {location.name} Direct Mail FAQ
+              </h3>
+              <div class="space-y-6">
+                {uniqueContent.uniqueFAQs.map((faq) => (
+                  <div class="bg-white border border-gray-200 rounded-lg p-5">
+                    <h4 class="font-semibold text-gray-800 text-sm mb-3">{faq.question}</h4>
+                    <p class="text-sm text-gray-600 leading-relaxed">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {!uniqueContent && location.faqs.length > 0 && (
             <div class="mb-10">
               <h3 class="text-xl font-display font-bold text-crst-primary mb-6">
                 {location.name} Direct Mail FAQ
@@ -309,12 +394,52 @@ const nearbyAreas = neighborNames
             </div>
           )}
 
+          {location.faqs.length > 0 && uniqueContent && (
+            <div class="mb-10">
+              <h3 class="text-xl font-display font-bold text-crst-primary mb-6">
+                General Direct Mail FAQ
+              </h3>
+              <div class="space-y-4">
+                {location.faqs.map((faq, i) => (
+                  <details class="group bg-white border border-gray-200 rounded-lg" open={i === 0}>
+                    <summary class="flex items-center justify-between p-5 cursor-pointer hover:bg-gray-50 transition-colors rounded-lg">
+                      <h4 class="font-semibold text-gray-800 text-sm pr-4">{faq.q}</h4>
+                      <svg class="w-5 h-5 text-gray-400 shrink-0 group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </summary>
+                    <div class="px-5 pb-5 text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+                      {faq.a}
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {relatedServiceLinks.length > 0 && (
+            <div class="mb-10 p-6 bg-gray-50 rounded-xl">
+              <h3 class="text-lg font-display font-bold text-crst-primary mb-3">
+                Related Services for {location.name}
+              </h3>
+              <p class="text-sm text-gray-700 leading-relaxed">
+                Learn more about our{' '}
+                {relatedServiceLinks.map((link, i) => (
+                  <>
+                    {i > 0 && i < relatedServiceLinks.length - 1 && ', '}
+                    {i > 0 && i === relatedServiceLinks.length - 1 && ', and '}
+                    <a href={link.href} class="text-crst-accent font-semibold hover:underline">{link.label}</a>
+                  </>
+                ))}
+                {' '}services available to {location.name} businesses.
+              </p>
+            </div>
+          )}
+
           <AuthorByline compact />
         </div>
 
-        <!-- Sidebar -->
         <div class="lg:col-span-1">
-          <!-- Quick Facts -->
           <div class="bg-crst-light rounded-xl p-6 mb-6 sticky top-24">
             <h3 class="font-display font-bold text-crst-primary mb-4">{location.name} Quick Facts</h3>
             <div class="space-y-3 text-sm">
@@ -352,7 +477,6 @@ const nearbyAreas = neighborNames
             </div>
           </div>
 
-          <!-- Nearby Locations -->
           <div class="bg-white border border-gray-200 rounded-xl p-6">
             <h3 class="font-display font-bold text-crst-primary mb-4">Nearby Service Areas</h3>
             <div class="space-y-2">
@@ -375,7 +499,6 @@ const nearbyAreas = neighborNames
     </div>
   </section>
 
-  <!-- Why Choose Cornerstone -->
   <section class="py-14 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-display font-bold text-crst-primary mb-10 text-center">

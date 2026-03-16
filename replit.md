@@ -20,7 +20,7 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 
 ### Technical Implementations
 - **Dynamic Content**: Uses data files (`site.ts`, `case-studies.ts`, `locations.ts`) to manage content dynamically.
-- **Location-Based Content**: Features dedicated pages for services and service areas, including county and town-specific content with geocoded coordinates (lat/lng on all 93+ locations).
+- **Location-Based Content**: Features dedicated pages for services and service areas, including county and town-specific content with geocoded coordinates (lat/lng on all 93+ locations). 17 flagged town pages (16 Dutchess + 1 Ulster) have unique content via `src/data/town-unique-content.ts` — unique metaTitle, metaDescription, H1, intro, local market profile, EDDM strategy, population notes, landmark context, town-specific FAQs (visible HTML + FAQPage schema), and Related Services links. Remaining ~78 towns use generic template content.
 - **SEO Optimization**: Implements JSON-LD schema (LocalBusiness/ProfessionalService, Service, FAQPage, Organization, Person, Review, WebPage, BreadcrumbList) for enhanced search engine visibility. AggregateRating is ONLY on the BBB page (`crst-better-business-bureau-a-direct-mailer.astro`) with reviewCount: 3 and real review data — removed sitewide elsewhere because reviewCount: 0 is invalid per Google's structured data requirements. E-E-A-T (Expertise, Authoritativeness, Trustworthiness) principles are applied through author bylines and detailed content.
 - **Redirects**: Comprehensive 301 redirects handled via dual system: `astro.config.mjs` (99 config-level redirects) + dynamic catch-all `[...slug].astro` (130+ exact redirects + 8 pattern-based wildcard rules). All redirect targets verified to resolve to live 200 pages. Redirect chain audit tool (`redirect-chain-check-v2.cjs`) installed in project root.
 - **Trailing Slash / Canonicalization**: `trailingSlash: 'never'` enforced in astro.config.mjs. ALL internal `href` links, schema `url` fields, breadcrumb `href` values, NAV_ITEMS hrefs, and sitemap URLs use the no-trailing-slash format. Canonical tags are auto-generated from `Astro.url.pathname` in BaseLayout (6 pages pass explicit `canonical` props). NEVER add trailing slashes to internal links — Astro will 301-redirect them, wasting a round-trip and diluting link equity.
@@ -32,7 +32,7 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 
 ### Feature Specifications
 - **Services Pages**: Nine dedicated service pages with detailed descriptions, FAQs, service area links, and 3+ CTAs per page (hero sidebar + mid-page CTA band + bottom CTASection).
-- **Service Areas**: Covers three counties (Ulster, Dutchess, Orange) with 93 town-specific pages (37 Ulster + 27 Dutchess + 29 Orange), including local business schema (no AggregateRating), nearby area links, Google Map iframes, mid-page CTAs, and county back links.
+- **Service Areas**: Covers three counties (Ulster, Dutchess, Orange) with 93 town-specific pages (37 Ulster + 27 Dutchess + 29 Orange), including local business schema (no AggregateRating), nearby area links, Google Map iframes, mid-page CTAs, and county back links. 17 pages have unique SEO-differentiated content (unique H1, meta, intro, local context, EDDM strategy, visible FAQs, Related Services) to resolve GSC duplicate canonical issues.
 - **County Hub Pages**: 3 county index pages with Google Map embeds (zoom 11), anchor city highlights, full town listing with links, and mid-page CTAs.
 - **Resources/Tools**: A section for direct mail tools and resources, including guides on postage rates, mailing permits, postal dictionaries, envelope sizes, address change/forwarding, USPS templates, EDDM guide, mail automation, ancillary service endorsements, periodicals, and a payments page.
 - **Case Studies**: 11 case studies with clickable industry filter tags.
@@ -76,7 +76,7 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 ```
 src/
 ├── components/     (8 components: Header, Footer, Hero, PageHero, CTASection, ServiceCard, AuthorByline, EstimateForm)
-├── data/           (site.ts, locations.ts, case-studies.ts, media-manifest.json)
+├── data/           (site.ts, locations.ts, case-studies.ts, town-unique-content.ts, media-manifest.json)
 ├── layouts/        (BaseLayout.astro — global schema, meta, scripts)
 ├── pages/
 │   ├── services/   (9 service pages + index)
