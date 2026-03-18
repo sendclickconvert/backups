@@ -18,3 +18,9 @@ id = "rmRkyqcCjhN3A3wTCwtLo"
 uri = "file://.local/fire-department-keyword-report.md"
 type = "text"
 title = "Fire Department & Fundraising Keyword Volume Report"
+
+[[outputs]]
+id = "wjJB0l_cElRwVpKfu98fK"
+uri = "file://.local/fire-dept-keyword-volumes.csv"
+type = "table"
+title = "Fire Dept & First Responder Keyword Volumes (CSV)"
