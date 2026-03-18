@@ -12,3 +12,9 @@ id = "Sz83STwNWHaXaa-GZBf5z"
 uri = "file://.local/promark-competitor-report.md"
 type = "text"
 title = "Promark vs CRST Competitor Keyword Report"
+
+[[outputs]]
+id = "rmRkyqcCjhN3A3wTCwtLo"
+uri = "file://.local/fire-department-keyword-report.md"
+type = "text"
+title = "Fire Department & Fundraising Keyword Volume Report"
