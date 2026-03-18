@@ -6,3 +6,9 @@ id = "wiVmD41fYqsBpY04t9p--"
 uri = "file://seo-audit-chmcnally.md"
 type = "text"
 title = "SEO Audit Report — chmcnally.com"
+
+[[outputs]]
+id = "Sz83STwNWHaXaa-GZBf5z"
+uri = "file://.local/promark-competitor-report.md"
+type = "text"
+title = "Promark vs CRST Competitor Keyword Report"
