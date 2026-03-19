@@ -24,3 +24,9 @@ id = "wjJB0l_cElRwVpKfu98fK"
 uri = "file://.local/fire-dept-keyword-volumes.csv"
 type = "table"
 title = "Fire Dept & First Responder Keyword Volumes (CSV)"
+
+[[outputs]]
+id = "8dxHN4kk3isAo8Z9OTLFm"
+uri = "file://.local/bing-keyword-volumes.csv"
+type = "table"
+title = "Bing Keyword Volumes — Fire Dept & First Responder (CSV)"
