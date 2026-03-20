@@ -10,13 +10,13 @@ const reviewDate = new Date().toLocaleDateString('en-US', { month: 'long', year:
 {compact ? (
   <div class="flex items-center gap-3 text-sm text-gray-500 mt-6">
     <svg class="w-4 h-4 text-crst-primary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-    <span>Reviewed by <strong class="text-gray-700">Sean Griffen</strong>, Owner · {reviewDate}</span>
+    <span>Reviewed by <strong class="text-gray-700">Sean Griffin</strong>, Owner · {reviewDate}</span>
   </div>
 ) : (
   <div class="bg-navy-50 border border-navy-100 rounded-lg p-4 mt-8 flex items-start gap-3">
     <svg class="w-5 h-5 text-crst-primary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
     <div class="text-sm">
-      <p class="font-semibold text-crst-primary">Sean Griffen</p>
+      <p class="font-semibold text-crst-primary">Sean Griffin</p>
       <p class="text-gray-600">Owner, Cornerstone Services · Hudson Valley direct mail since 1998 · Reviewed {reviewDate}</p>
     </div>
   </div>

@@ -41,8 +41,8 @@ const localBusinessSchema = {
 ---
 
 <BaseLayout
-  title="Home"
-  description="Cornerstone Services, Inc. is a BBB A+ accredited direct mail and printing company in New Paltz, NY serving Ulster, Dutchess, and Orange counties since 1998."
+  title="Direct Mail & Printing Services | New Paltz, NY"
+  description="Direct mail, printing, and mailing services from New Paltz, NY. Design, print, and mail under one roof since 1998. Serving the Hudson Valley."
   schema={localBusinessSchema}
 >
   <Hero />
@@ -53,10 +53,10 @@ const localBusinessSchema = {
       <div class="text-center mb-12">
         <div class="section-divider mx-auto mb-4"></div>
         <h2 class="text-3xl sm:text-4xl font-display text-crst-primary mb-3">
-          Full-Service Direct Mail
+          Direct Mail, Printing, and Mailing Services
         </h2>
         <p class="text-navy-600/70 font-heading text-lg max-w-2xl mx-auto">
-          From data targeting to doorstep delivery — we handle every step of your mailing campaign under one roof.
+          We run direct mail campaigns from data pull to delivery. Targeted mailing lists, graphic design, commercial printing, EDDM, postage prep, and postal induction. Political mail, nonprofit mail, union printing. Each service links to its own page below.
         </p>
       </div>
 
@@ -110,8 +110,30 @@ const localBusinessSchema = {
     </div>
   </section>
 
-  <!-- Case Studies Teaser -->
+  <!-- Who We Work With -->
   <section class="py-16 lg:py-20 bg-white">
+    <div class="container-wide">
+      <div class="text-center mb-12">
+        <div class="section-divider mx-auto mb-4"></div>
+        <h2 class="text-3xl sm:text-4xl font-display text-crst-primary mb-3">
+          Who We Work With
+        </h2>
+        <p class="text-navy-600/70 font-heading text-lg max-w-2xl mx-auto">
+          Local businesses, nonprofits, political campaigns, municipal governments, schools, fire departments, and PBA organizations. If you need something printed and mailed, we've probably done it for someone in your industry.
+        </p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
+        {['Local Businesses', 'Restaurants', 'Real Estate', 'Healthcare', 'Nonprofits', 'Political Campaigns', 'Municipalities', 'Schools', 'Fire Departments', 'PBA Organizations', 'Churches', 'Contractors'].map((type) => (
+          <span class="inline-block px-4 py-2 text-sm font-heading font-medium bg-navy-50 text-navy-600 rounded-full border border-navy-100">
+            {type}
+          </span>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies Teaser -->
+  <section class="py-16 lg:py-20 bg-navy-50/50 bg-grid">
     <div class="container-wide">
       <div class="text-center mb-12">
         <div class="section-divider mx-auto mb-4"></div>
@@ -159,10 +181,10 @@ const localBusinessSchema = {
       <div class="text-center mb-12">
         <div class="section-divider mx-auto mb-4"></div>
         <h2 class="text-3xl sm:text-4xl font-display text-crst-primary mb-3">
-          Serving the Hudson Valley
+          Serving the Hudson Valley Since 1998
         </h2>
         <p class="text-navy-600/70 font-heading text-lg max-w-2xl mx-auto">
-          Based in New Paltz, we serve businesses and organizations across three counties and {BUSINESS.stats.municipalities} municipalities.
+          Our facility is in New Paltz. We serve businesses and organizations across Ulster, Dutchess, and Orange Counties — {BUSINESS.stats.municipalities} municipalities total. Local means same-day pickups and face-to-face meetings when you need them.
         </p>
       </div>
 

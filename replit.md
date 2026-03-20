@@ -53,8 +53,11 @@ The website is built with Astro 4.16 in a hybrid output mode, utilizing `@astroj
 - **BUSINESS.rating** in `site.ts`: `ratingValue: '5.0'`, `reviewCount: '0'`, `bestRating: '5'`, `worstRating: '1'` — data definition retained but NOT rendered in any schema except BBB page.
 
 ### SEO Optimization (March 2026)
-- **Title Tags**: CTR-optimized titles on all service pages, tool pages, and resource pages with keyword-rich, natural language
-- **Meta Descriptions**: Rewritten for clarity, usefulness, and click appeal on high-priority pages
+- **Title Tags**: CTR-optimized titles (under 60 chars) on all 15 priority pages — homepage, 9 service pages, postage rates, envelope sizes, EDDM guide, county hubs, and BBB page
+- **Meta Descriptions**: Rewritten (under 155 chars) for clarity, usefulness, and click appeal on all priority pages
+- **H1/H2 Rewrites**: Descriptive, keyword-rich H1s and first H2s on all service pages + homepage. Generic headings ("Your Partner", "The Foundation") replaced with specific content-descriptive headings.
+- **Homepage**: New H1 "Direct Mail & Printing Services in New Paltz, NY", added "Who We Work With" section, updated "Full-Service Direct Mail" → "Direct Mail, Printing, and Mailing Services", "Serving the Hudson Valley" → "Serving the Hudson Valley Since 1998"
+- **Owner Name**: Sean **Griffin** (not Griffen) — corrected across all author bylines and page content (11 files)
 - **Internal Linking**: Resource/tool pages contextually link to relevant service pages for authority flow
 - **Mid-Page CTAs**: All 9 service pages have 3+ CTAs (sidebar, mid-page band, bottom CTASection)
 
