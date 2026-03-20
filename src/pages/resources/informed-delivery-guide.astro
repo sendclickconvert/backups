@@ -1,0 +1,268 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { BUSINESS } from '../../data/site';
+---
+
+<BaseLayout
+  title="Informed Delivery for Direct Mail — Free Guide"
+  description="Free guide to USPS Informed Delivery for direct mail campaigns. Learn how to add a digital touchpoint to every mail piece. Written by a Hudson Valley mailer."
+  canonical="https://crst.net/resources/informed-delivery-guide"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: 'Informed Delivery for Direct Mail — Free Guide',
+      description: 'Free guide to USPS Informed Delivery for direct mail campaigns. Learn how to add a digital touchpoint to every mail piece.',
+      url: 'https://crst.net/resources/informed-delivery-guide',
+      publisher: { '@id': 'https://crst.net/#organization' },
+      breadcrumb: {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crst.net' },
+          { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://crst.net/resources' },
+          { '@type': 'ListItem', position: 3, name: 'Informed Delivery Guide' },
+        ],
+      },
+    })} />
+  </Fragment>
+
+  <!-- HERO -->
+  <section class="relative bg-gradient-to-br from-crst-primary via-[#1a3250] to-[#0f2137] py-20 lg:py-28 overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.04),transparent_60%)]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-crst-gold/15 border border-crst-gold/30 text-crst-gold text-xs font-heading font-bold uppercase tracking-wider mb-6">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          FREE 22-PAGE GUIDE
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-display text-white leading-tight mb-6">
+          How to Use USPS Informed Delivery in Your Direct Mail Campaigns
+        </h1>
+
+        <p class="text-lg text-white/75 font-heading leading-relaxed mb-4">
+          Informed Delivery is a free USPS program that sends 72.9 million subscribers a daily email previewing their incoming mail. As a mailer, you can add a full-color image and a clickable link to those emails — turning every mail piece into a digital touchpoint at no extra postage cost. This guide explains how it works and how to set it up.
+        </p>
+
+        <p class="text-sm text-crst-gold/90 font-heading mb-8">
+          Written by USPS-certified Mail Design Professionals at Cornerstone Services, New Paltz, NY.
+        </p>
+
+        <a href="#download" class="inline-flex items-center gap-2 btn-accent text-sm px-8 py-4 sm:w-auto w-full justify-center">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          Download the Free Guide
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU'LL LEARN -->
+  <section class="py-16 lg:py-20 bg-navy-50/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <div class="section-divider mx-auto mb-4"></div>
+        <p class="text-xs font-heading font-bold uppercase tracking-wider text-crst-primary/60 mb-2">What's Inside</p>
+        <h2 class="text-2xl sm:text-3xl font-display text-crst-primary">What You'll Learn</h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {[
+          { icon: 'M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z', text: 'What Informed Delivery is, how the Daily Digest works, and why 72.9 million people use it' },
+          { icon: 'M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z', text: 'How to set up a ride-along image campaign through the USPS Mailer Campaign Portal' },
+          { icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z', text: 'Which mail classes qualify — and why EDDM Retail does not' },
+          { icon: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6', text: 'Real case study results: Pittsburgh Pirates saw a 39% response lift from one image change' },
+          { icon: 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z', text: 'How to measure ROI with UTM tracking, unique landing pages, and the three-group test design' },
+          { icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4', text: 'Why most organizations need a mail service provider to execute it correctly' },
+        ].map((card) => (
+          <div class="bg-white rounded-xl border border-navy-100 p-6 hover:shadow-md transition-shadow">
+            <div class="w-10 h-10 rounded-lg bg-crst-primary/10 flex items-center justify-center mb-4">
+              <svg class="w-5 h-5 text-crst-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d={card.icon} /></svg>
+            </div>
+            <p class="text-sm text-navy-600/80 leading-relaxed">{card.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT PREVIEW -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <p class="text-xs font-heading font-bold uppercase tracking-wider text-crst-primary/60 mb-2">Preview</p>
+        <div class="section-divider mb-6"></div>
+
+        <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-6">
+          What Is Informed Delivery and Why Should Mailers Care?
+        </h2>
+
+        <p class="text-navy-600/80 leading-relaxed mb-6">
+          USPS Informed Delivery is a free consumer program that sends daily email notifications showing grayscale scans of incoming letter-sized mail. Over 72.9 million people have signed up — roughly a third of all U.S. households. For them, it's a convenience feature. For mailers, it's an opportunity to add a <strong>full-color ride-along image and a clickable URL</strong> that appears alongside the grayscale scan in the Daily Digest email. If you're already running a <a href="/services/direct-mail" class="text-crst-primary underline hover:text-crst-gold">direct mail campaign</a>, Informed Delivery gives you a second impression at no additional postage cost. For a deeper overview of the program itself, see our <a href="/informed-delivery-review" class="text-crst-primary underline hover:text-crst-gold">Informed Delivery review</a>.
+        </p>
+
+        <!-- Stats Row -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 my-10">
+          {[
+            { value: '72.9M', label: 'Subscribers' },
+            { value: '60.1%', label: 'Open Rate' },
+            { value: '34.7%', label: 'Household Penetration' },
+            { value: '$0', label: 'Additional Postage' },
+          ].map((stat) => (
+            <div class="text-center p-5 bg-crst-light rounded-xl">
+              <div class="text-2xl sm:text-3xl font-display font-bold text-crst-primary">{stat.value}</div>
+              <div class="text-xs text-gray-600 mt-1 font-heading">{stat.label}</div>
+            </div>
+          ))}
+        </div>
+
+        <p class="text-navy-600/80 leading-relaxed mb-10">
+          The ride-along opportunity is straightforward: when you submit a qualifying mailing through the USPS Mailer Campaign Portal, you upload a color image (200×200px minimum) and a target URL. When Informed Delivery scans your physical mail piece and matches it to a subscriber's address, that subscriber sees your color image alongside the grayscale scan — plus a clickable button to your URL. First-Class Mail, Marketing Mail, and <a href="/services/non-profit-mailing" class="text-crst-primary underline hover:text-crst-gold">Nonprofit Marketing Mail</a> all qualify. <a href="/services/eddm" class="text-crst-primary underline hover:text-crst-gold">EDDM Retail</a> does not qualify for ride-along campaigns because EDDM pieces don't carry Intelligent Mail barcodes.
+        </p>
+
+        <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-6">
+          Real Campaign Results
+        </h2>
+
+        <div class="space-y-4 mb-8">
+          <div class="border-l-4 border-crst-primary bg-navy-50/60 rounded-r-lg p-5">
+            <p class="font-heading font-bold text-navy-800 mb-1">Pittsburgh Pirates</p>
+            <p class="text-sm text-navy-600/80 leading-relaxed">The Pittsburgh Pirates tested Informed Delivery ride-along images during a ticket sales campaign. Adding a single color image to the Daily Digest email produced a <strong>39% lift in response rate</strong> compared to the control group that received the physical mail piece alone.</p>
+          </div>
+          <div class="border-l-4 border-crst-primary bg-navy-50/60 rounded-r-lg p-5">
+            <p class="font-heading font-bold text-navy-800 mb-1">Bono's Pit Bar-B-Q</p>
+            <p class="text-sm text-navy-600/80 leading-relaxed">Bono's Pit Bar-B-Q ran an A/B test on their ride-along creative. The grayscale version of their coupon outperformed the color version, achieving a <strong>35% click-to-open rate</strong> — proving that creative testing matters as much as participation.</p>
+          </div>
+        </div>
+
+        <p class="text-navy-600/80 leading-relaxed">
+          The full guide includes a detailed ROI framework: how to set up UTM tracking for ride-along URLs, how to use unique landing pages per campaign, and how to run a three-group test design (mail only, mail + ride-along, control) to measure the true incremental lift. There's no additional USPS fee for Informed Delivery campaigns — your only cost is the time to set up the campaign in the portal and the creative work for the ride-along image.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPT-IN FORM -->
+  <section id="download" class="py-16 lg:py-20 bg-gradient-to-b from-navy-50/80 to-navy-50/40">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-2xl shadow-lg border border-navy-100 overflow-hidden">
+        <div class="grid lg:grid-cols-5 gap-0">
+          <!-- Cover Image Side -->
+          <div class="lg:col-span-2 bg-gradient-to-br from-navy-50 to-navy-50/60 p-8 lg:p-10 flex items-center justify-center">
+            <div class="relative w-48 sm:w-56 lg:w-full max-w-[240px]">
+              <div class="bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden aspect-[8.5/11]">
+                <div class="bg-crst-primary p-4 sm:p-5 text-center">
+                  <div class="w-10 h-10 mx-auto mb-3 rounded-full bg-white/20 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                  </div>
+                  <p class="text-white font-display text-sm sm:text-base font-bold leading-tight">USPS Informed Delivery</p>
+                  <p class="text-white/70 text-[10px] sm:text-xs font-heading mt-1">A Mailer's Guide</p>
+                </div>
+                <div class="p-4 text-center">
+                  <div class="space-y-2 mb-4">
+                    <div class="h-1.5 bg-gray-200 rounded w-full"></div>
+                    <div class="h-1.5 bg-gray-200 rounded w-4/5 mx-auto"></div>
+                    <div class="h-1.5 bg-gray-200 rounded w-3/5 mx-auto"></div>
+                  </div>
+                  <div class="flex justify-center gap-2 mb-4">
+                    <div class="w-8 h-8 rounded bg-crst-primary/10"></div>
+                    <div class="w-8 h-8 rounded bg-crst-gold/20"></div>
+                    <div class="w-8 h-8 rounded bg-crst-primary/10"></div>
+                  </div>
+                  <div class="space-y-1.5">
+                    <div class="h-1 bg-gray-100 rounded w-full"></div>
+                    <div class="h-1 bg-gray-100 rounded w-5/6 mx-auto"></div>
+                    <div class="h-1 bg-gray-100 rounded w-4/6 mx-auto"></div>
+                  </div>
+                  <p class="text-[8px] text-gray-400 font-heading mt-4 uppercase tracking-wider">Cornerstone Services</p>
+                  <p class="text-[7px] text-gray-300 font-heading">New Paltz, NY · 22 Pages</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Side -->
+          <div class="lg:col-span-3 p-8 lg:p-10">
+            <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-3">
+              Download the Complete Guide
+            </h2>
+            <p class="text-navy-600/80 text-sm leading-relaxed mb-6">
+              22 pages covering setup, design specs, campaign timing, case studies, and ROI measurement. Free.
+            </p>
+
+            <div class="min-h-[462px] bg-white rounded-lg">
+              <iframe
+                src="https://links.crst.net/widget/form/lXlaoRCdogZSdaLEhBJD"
+                style="width:100%;height:100%;border:none;border-radius:3px"
+                id="inline-lXlaoRCdogZSdaLEhBJD"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Informed Delivery Guide Download"
+                data-height="462"
+                data-layout-iframe-id="inline-lXlaoRCdogZSdaLEhBJD"
+                data-form-id="lXlaoRCdogZSdaLEhBJD"
+                title="Informed Delivery Guide Download"
+              ></iframe>
+              <script src="https://links.crst.net/js/form_embed.js"></script>
+            </div>
+
+            <p class="text-xs text-gray-400 mt-4 font-heading">
+              We don't sell your information. The guide goes straight to your inbox.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTHOR / CREDIBILITY -->
+  <section class="py-14 lg:py-16 bg-white border-t border-gray-100">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-start gap-5">
+        <div class="shrink-0 w-14 h-14 rounded-xl bg-crst-primary flex items-center justify-center">
+          <span class="text-white font-display text-lg font-bold">CS</span>
+        </div>
+        <div>
+          <h3 class="text-lg font-display text-crst-primary mb-1">About This Guide</h3>
+          <p class="text-sm text-crst-primary/80 font-heading font-semibold mb-3">
+            Gurleenkaur Bhatia, USPS® MDP · Sean Griffin, USPS® MDP
+          </p>
+          <p class="text-sm text-navy-600/80 leading-relaxed">
+            Written by <a href="/services/direct-mail" class="text-crst-primary underline hover:text-crst-gold">Cornerstone Services, Inc.</a> — a direct mail and printing company in New Paltz, NY, operating since 1998 and listed on the USPS Printer Directory. We wrote this because most of our clients didn't know Informed Delivery existed. The ones who did weren't sure how to set it up. This guide is sourced entirely from USPS primary documentation and includes a full bibliography. <a href="/estimate" class="text-crst-primary underline hover:text-crst-gold">Request an estimate</a> to add Informed Delivery to your next campaign.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED LINKS -->
+  <section class="py-14 lg:py-16 bg-navy-50/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <h2 class="text-xl font-display text-crst-primary">Related Resources</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {[
+          { title: 'What Is Informed Delivery?', desc: 'Our in-depth review of USPS Informed Delivery for businesses.', href: '/informed-delivery-review' },
+          { title: 'Direct Mail Services', desc: 'Full-service campaigns from data pull to mailbox delivery.', href: '/services/direct-mail' },
+          { title: 'Nonprofit Mailing', desc: 'Discounted USPS rates for qualifying nonprofit organizations.', href: '/services/non-profit-mailing' },
+          { title: 'Request an Estimate', desc: 'Get a free estimate for your next direct mail campaign.', href: '/estimate' },
+        ].map((link) => (
+          <a href={link.href} class="group bg-white rounded-xl border border-navy-100 p-5 hover:shadow-md hover:border-crst-primary/30 transition-all">
+            <h3 class="font-heading font-bold text-navy-800 group-hover:text-crst-primary transition-colors mb-2 text-sm">{link.title}</h3>
+            <p class="text-xs text-navy-500 leading-relaxed">{link.desc}</p>
+            <span class="inline-flex items-center gap-1 text-xs text-crst-primary font-heading font-semibold mt-3">
+              Learn more
+              <svg class="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
