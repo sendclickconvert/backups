@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { BUSINESS } from '../../data/site';
+import { BUSINESS, GHL } from '../../data/site';
 ---
 
 <BaseLayout
@@ -170,26 +170,90 @@ import { BUSINESS } from '../../data/site';
               22 pages covering setup, design specs, campaign timing, case studies, and ROI measurement. Free.
             </p>
 
-            <div class="min-h-[462px] bg-white rounded-lg">
-              <iframe
-                src="https://links.crst.net/widget/form/lXlaoRCdogZSdaLEhBJD"
-                style="width:100%;height:100%;border:none;border-radius:3px"
-                id="inline-lXlaoRCdogZSdaLEhBJD"
-                data-layout="{'id':'INLINE'}"
-                data-trigger-type="alwaysShow"
-                data-trigger-value=""
-                data-activation-type="alwaysActivated"
-                data-activation-value=""
-                data-deactivation-type="neverDeactivate"
-                data-deactivation-value=""
-                data-form-name="Informed Delivery Guide Download"
-                data-height="462"
-                data-layout-iframe-id="inline-lXlaoRCdogZSdaLEhBJD"
-                data-form-id="lXlaoRCdogZSdaLEhBJD"
-                title="Informed Delivery Guide Download"
-              ></iframe>
-              <script src="https://links.crst.net/js/form_embed.js"></script>
-            </div>
+            <form id="guide-form" class="space-y-5" novalidate>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="guideFirstName" class="block text-sm font-heading font-medium text-navy-700 mb-1.5">First Name *</label>
+                  <input
+                    type="text"
+                    id="guideFirstName"
+                    name="firstName"
+                    required
+                    class="w-full px-4 py-2.5 text-sm rounded-lg border border-navy-200 focus:border-crst-accent focus:ring-2 focus:ring-crst-accent/20 outline-none transition-all font-body placeholder:text-navy-400"
+                    placeholder="John"
+                  />
+                </div>
+                <div>
+                  <label for="guideLastName" class="block text-sm font-heading font-medium text-navy-700 mb-1.5">Last Name *</label>
+                  <input
+                    type="text"
+                    id="guideLastName"
+                    name="lastName"
+                    required
+                    class="w-full px-4 py-2.5 text-sm rounded-lg border border-navy-200 focus:border-crst-accent focus:ring-2 focus:ring-crst-accent/20 outline-none transition-all font-body placeholder:text-navy-400"
+                    placeholder="Smith"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="guideEmail" class="block text-sm font-heading font-medium text-navy-700 mb-1.5">Email *</label>
+                <input
+                  type="email"
+                  id="guideEmail"
+                  name="email"
+                  required
+                  class="w-full px-4 py-2.5 text-sm rounded-lg border border-navy-200 focus:border-crst-accent focus:ring-2 focus:ring-crst-accent/20 outline-none transition-all font-body placeholder:text-navy-400"
+                  placeholder="john@company.com"
+                />
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="guidePhone" class="block text-sm font-heading font-medium text-navy-700 mb-1.5">Phone</label>
+                  <input
+                    type="tel"
+                    id="guidePhone"
+                    name="phone"
+                    class="w-full px-4 py-2.5 text-sm rounded-lg border border-navy-200 focus:border-crst-accent focus:ring-2 focus:ring-crst-accent/20 outline-none transition-all font-body placeholder:text-navy-400"
+                    placeholder="(845) 555-0100"
+                  />
+                </div>
+                <div>
+                  <label for="guideCompany" class="block text-sm font-heading font-medium text-navy-700 mb-1.5">Company / Organization</label>
+                  <input
+                    type="text"
+                    id="guideCompany"
+                    name="company"
+                    class="w-full px-4 py-2.5 text-sm rounded-lg border border-navy-200 focus:border-crst-accent focus:ring-2 focus:ring-crst-accent/20 outline-none transition-all font-body placeholder:text-navy-400"
+                    placeholder="Acme Corp"
+                  />
+                </div>
+              </div>
+
+              <div class="hidden" aria-hidden="true">
+                <input type="text" name="website" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <button
+                type="submit"
+                class="btn-primary w-full text-sm px-8 py-3"
+                id="guide-submit"
+              >
+                <span id="guide-submit-text">Send Me the Free Guide</span>
+                <svg id="guide-spinner" class="hidden w-4 h-4 ml-2 animate-spin" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+              </button>
+
+              <div id="guide-success" class="hidden p-4 bg-green-50 border border-green-200 rounded-lg text-sm text-green-800 font-heading">
+                <strong>Check your inbox!</strong> The guide is on its way. If you don't see it within a few minutes, check your spam folder.
+              </div>
+              <div id="guide-error" class="hidden p-4 bg-red-50 border border-red-200 rounded-lg text-sm text-red-800 font-heading">
+                Something went wrong. Please call us at <a href="tel:8453936770" class="underline font-semibold">(845) 255-5722</a> or email <a href="mailto:info@crst.net" class="underline font-semibold">info@crst.net</a>.
+              </div>
+            </form>
 
             <p class="text-xs text-gray-400 mt-4 font-heading">
               We don't sell your information. The guide goes straight to your inbox.
@@ -245,4 +309,58 @@ import { BUSINESS } from '../../data/site';
       </div>
     </div>
   </section>
+
+  <script define:vars={{ webhookUrl: GHL.webhookUrl }}>
+    const form = document.getElementById('guide-form');
+    const submitBtn = document.getElementById('guide-submit');
+    const submitText = document.getElementById('guide-submit-text');
+    const spinner = document.getElementById('guide-spinner');
+    const successMsg = document.getElementById('guide-success');
+    const errorMsg = document.getElementById('guide-error');
+
+    form?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const honeypot = form.querySelector('input[name="website"]');
+      if (honeypot && honeypot.value) return;
+
+      submitBtn.disabled = true;
+      submitText.textContent = 'Sending...';
+      spinner.classList.remove('hidden');
+      successMsg.classList.add('hidden');
+      errorMsg.classList.add('hidden');
+
+      const fd = new FormData(form);
+      const payload = {
+        firstName: fd.get('firstName'),
+        lastName: fd.get('lastName'),
+        email: fd.get('email'),
+        phone: fd.get('phone') || '',
+        company: fd.get('company') || '',
+        source: 'informed-delivery-guide',
+      };
+
+      try {
+        const res = await fetch(webhookUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+
+        if (res.ok) {
+          successMsg.classList.remove('hidden');
+          form.reset();
+          form.classList.add('hidden');
+        } else {
+          throw new Error('Webhook failed');
+        }
+      } catch (err) {
+        errorMsg.classList.remove('hidden');
+      } finally {
+        submitBtn.disabled = false;
+        submitText.textContent = 'Send Me the Free Guide';
+        spinner.classList.add('hidden');
+      }
+    });
+  </script>
 </BaseLayout>
