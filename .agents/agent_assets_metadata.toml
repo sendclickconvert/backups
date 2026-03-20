@@ -36,3 +36,9 @@ id = "XSSTBNhH65W6LyHFu2kbX"
 uri = "file://.local/audit-pass1-full.md"
 type = "text"
 title = "CRST.net SEO Audit — Pass 1 Full Report"
+
+[[outputs]]
+id = "2lbVdKPQIVXXc52JtcZQB"
+uri = "file://.local/audit-pass2-rewrites.md"
+type = "text"
+title = "CRST.net — 15 Priority Page Top-of-Page Rewrites"
