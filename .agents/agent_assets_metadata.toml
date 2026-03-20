@@ -30,3 +30,9 @@ id = "8dxHN4kk3isAo8Z9OTLFm"
 uri = "file://.local/bing-keyword-volumes.csv"
 type = "table"
 title = "Bing Keyword Volumes — Fire Dept & First Responder (CSV)"
+
+[[outputs]]
+id = "XSSTBNhH65W6LyHFu2kbX"
+uri = "file://.local/audit-pass1-full.md"
+type = "text"
+title = "CRST.net SEO Audit — Pass 1 Full Report"
