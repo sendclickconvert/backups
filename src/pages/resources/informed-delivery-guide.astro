@@ -4,16 +4,16 @@ import { BUSINESS } from '../../data/site';
 ---
 
 <BaseLayout
-  title="Informed Delivery for Direct Mail — Free Guide"
-  description="Free guide to USPS Informed Delivery for direct mail campaigns. Learn how to add a digital touchpoint to every mail piece. Written by a Hudson Valley mailer."
+  title="USPS Informed Delivery for Business — Free 22-Page Guide"
+  description="Free 22-page guide to USPS Informed Delivery for businesses and nonprofits. Setup steps, ride-along specs, case studies, and ROI measurement. By Cornerstone Services."
   canonical="https://crst.net/resources/informed-delivery-guide"
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'WebPage',
-      name: 'Informed Delivery for Direct Mail — Free Guide',
-      description: 'Free guide to USPS Informed Delivery for direct mail campaigns. Learn how to add a digital touchpoint to every mail piece.',
+      name: 'USPS Informed Delivery for Business — Free 22-Page Guide',
+      description: 'Free 22-page guide to USPS Informed Delivery for businesses and nonprofits. Setup steps, ride-along specs, case studies, and ROI measurement.',
       url: 'https://crst.net/resources/informed-delivery-guide',
       publisher: { '@id': 'https://crst.net/#organization' },
       breadcrumb: {
@@ -150,32 +150,24 @@ import { BUSINESS } from '../../data/site';
           <!-- Cover Image Side -->
           <div class="lg:col-span-2 bg-gradient-to-br from-navy-50 to-navy-50/60 p-8 lg:p-10 flex items-center justify-center">
             <div class="relative w-48 sm:w-56 lg:w-full max-w-[240px]">
-              <div class="bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden aspect-[8.5/11]">
-                <div class="bg-crst-primary p-4 sm:p-5 text-center">
-                  <div class="w-10 h-10 mx-auto mb-3 rounded-full bg-white/20 flex items-center justify-center">
-                    <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                  </div>
-                  <p class="text-white font-display text-sm sm:text-base font-bold leading-tight">USPS Informed Delivery</p>
-                  <p class="text-white/70 text-[10px] sm:text-xs font-heading mt-1">A Mailer's Guide</p>
+              <div class="bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden aspect-[8.5/11]" role="img" aria-label="USPS Informed Delivery Guide cover — 22-page white paper by Cornerstone Services">
+                <div class="bg-crst-primary px-4 pt-6 pb-5 text-center flex flex-col items-center justify-center" style="min-height:55%">
+                  <p class="text-white/60 text-[8px] font-heading uppercase tracking-[0.2em] mb-3">USPS<sup>®</sup> Informed Delivery<sup>®</sup></p>
+                  <p class="text-white font-display text-sm sm:text-base font-bold leading-snug mb-1">for Businesses<br>&amp; Non-Profits</p>
+                  <p class="text-crst-gold text-[10px] sm:text-xs font-heading font-semibold tracking-wide mt-1">Complete Guide [2026]</p>
+                  <div class="w-12 border-t border-white/20 my-3"></div>
+                  <p class="text-white/50 text-[8px] font-heading">A White Paper by</p>
+                  <p class="text-white/80 text-[9px] font-heading font-semibold">Cornerstone Services, Inc.</p>
                 </div>
-                <div class="p-4 text-center">
-                  <div class="space-y-2 mb-4">
-                    <div class="h-1.5 bg-gray-200 rounded w-full"></div>
-                    <div class="h-1.5 bg-gray-200 rounded w-4/5 mx-auto"></div>
-                    <div class="h-1.5 bg-gray-200 rounded w-3/5 mx-auto"></div>
+                <div class="px-4 py-3 text-center bg-white flex flex-col items-center justify-end" style="min-height:45%">
+                  <div class="w-10 h-10 rounded-full bg-crst-primary/10 flex items-center justify-center mb-2">
+                    <svg class="w-5 h-5 text-crst-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                   </div>
-                  <div class="flex justify-center gap-2 mb-4">
-                    <div class="w-8 h-8 rounded bg-crst-primary/10"></div>
-                    <div class="w-8 h-8 rounded bg-crst-gold/20"></div>
-                    <div class="w-8 h-8 rounded bg-crst-primary/10"></div>
+                  <p class="text-[7px] text-gray-500 font-heading leading-relaxed">Lead Author: Gurleenkaur Bhatia, USPS<sup>®</sup> MDP</p>
+                  <p class="text-[7px] text-gray-500 font-heading leading-relaxed mb-2">Supporting Author: Sean Griffin, USPS<sup>®</sup> MDP</p>
+                  <div class="w-full border-t border-gray-100 pt-2">
+                    <p class="text-[6px] text-gray-400 font-heading">© 2026 Cornerstone Services, Inc. | crst.net | (845) 255-5722</p>
                   </div>
-                  <div class="space-y-1.5">
-                    <div class="h-1 bg-gray-100 rounded w-full"></div>
-                    <div class="h-1 bg-gray-100 rounded w-5/6 mx-auto"></div>
-                    <div class="h-1 bg-gray-100 rounded w-4/6 mx-auto"></div>
-                  </div>
-                  <p class="text-[8px] text-gray-400 font-heading mt-4 uppercase tracking-wider">Cornerstone Services</p>
-                  <p class="text-[7px] text-gray-300 font-heading">New Paltz, NY · 22 Pages</p>
                 </div>
               </div>
             </div>
