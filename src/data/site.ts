@@ -71,7 +71,6 @@ export const NAV_ITEMS = [
       { label: 'Postal Dictionary', href: '/direct-mail-tools/postal-dictionary' },
       { label: 'Non-Profit Mailing Tool', href: '/non-profit-mailing-application' },
       { label: 'Mail Automation', href: '/resources/mail-automation' },
-      { label: 'Informed Delivery Guide', href: '/resources/informed-delivery-guide' },
     ],
   },
   {
