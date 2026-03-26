@@ -10,6 +10,7 @@ export const POST: APIRoute = async ({ request }) => {
   try {
     const { amount, currency, metadata } = await request.json();
     const stripeMetadata: Record<string, string> = {};
+    if (metadata?.company_name) stripeMetadata.company_name = String(metadata.company_name).slice(0, 200);
     if (metadata?.invoice_number) stripeMetadata.invoice_number = String(metadata.invoice_number).slice(0, 500);
     if (metadata?.invoice_amount) stripeMetadata.invoice_amount = String(metadata.invoice_amount).slice(0, 50);
     if (metadata?.convenience_fee) stripeMetadata.convenience_fee = String(metadata.convenience_fee).slice(0, 50);
@@ -34,11 +35,12 @@ export const POST: APIRoute = async ({ request }) => {
 
 export const PUT: APIRoute = async ({ request }) => {
   try {
-    const { invoice_number, service_needed, notes, amount, invoice_amount, convenience_fee } = await request.json();
+    const { company_name, invoice_number, service_needed, notes, amount, invoice_amount, convenience_fee } = await request.json();
     fetch(GHL_WEBHOOK, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
+        company_name: String(company_name || '').slice(0, 200),
         invoice_number: String(invoice_number || '').slice(0, 500),
         service_needed: String(service_needed || '').slice(0, 100),
         notes: String(notes || '').slice(0, 500),
