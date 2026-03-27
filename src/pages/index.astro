@@ -7,16 +7,17 @@ import { BUSINESS, SERVICES, CASE_STUDIES, COUNTIES } from '../data/site';
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': 'https://crst.net/#localbusiness',
+  '@type': ['LocalBusiness', 'Organization'],
+  '@id': 'https://crst.net/#organization',
   name: 'Cornerstone Services, Inc.',
-  url: 'https://crst.net/',
-  telephone: '+1-845-255-5722',
-  email: 'info@crst.net',
-  image: 'https://crst.net/images/crst-og.jpg',
-  description: 'Cornerstone Services, Inc. provides direct mail, printing, mailing, graphic design, data list, and EDDM services from New Paltz, New York.',
+  alternateName: 'CRST',
+  url: 'https://crst.net',
+  logo: 'https://crst.net/images/crst-logo.webp',
+  image: 'https://crst.net/images/crst-logo.webp',
+  description: 'Full-service direct mail, printing, and mailing company serving the Hudson Valley since 1998. In-house data lists, graphic design, commercial printing, and USPS postal prep.',
   foundingDate: '1998',
-  priceRange: '$$',
+  telephone: '+18452555722',
+  email: 'info@crst.net',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '31 South Ohioville Road',
@@ -27,16 +28,55 @@ const localBusinessSchema = {
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: '41.7476',
-    longitude: '-74.0869',
+    latitude: 41.7476,
+    longitude: -74.0871,
   },
   areaServed: [
-    { '@type': 'AdministrativeArea', name: 'Ulster County' },
-    { '@type': 'AdministrativeArea', name: 'Dutchess County' },
-    { '@type': 'AdministrativeArea', name: 'Orange County' },
+    { '@type': 'AdministrativeArea', name: 'Ulster County, NY' },
+    { '@type': 'AdministrativeArea', name: 'Dutchess County, NY' },
+    { '@type': 'AdministrativeArea', name: 'Orange County, NY' },
   ],
-  openingHours: 'Mo-Fr 09:00-17:00',
-  sameAs: [],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Direct Mail & Printing Services',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Direct Mail Campaigns', url: 'https://crst.net/services/direct-mail' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Data Lists', url: 'https://crst.net/services/data-lists' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Printing Services', url: 'https://crst.net/services/printing' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Mailing Services', url: 'https://crst.net/services/mailing' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Graphic Design', url: 'https://crst.net/services/graphic-design' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Every Door Direct Mail (EDDM)', url: 'https://crst.net/services/eddm' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Non-Profit Mailing', url: 'https://crst.net/services/non-profit-mailing' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Web Design', url: 'https://crst.net/services/web-design' } },
+    ],
+  },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5',
+    bestRating: '5',
+    worstRating: '1',
+    reviewCount: '3',
+  },
+  review: [
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Marlene McTigue' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'Our agency uses Cornerstone for all our direct mail projects. They are super-responsive and meticulous in their work. Highly recommend.',
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'James Yaston' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: "I'm always impressed with Sean and his team. They stay on top of the latest technology in mailing and data management. True professionals.",
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Sapna Moudgil-Shah' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'I needed postcards printed and mailed fast. Cornerstone was knowledgeable, friendly, reliable, and delivered on time. Will use again.',
+    },
+  ],
 };
 ---
 
