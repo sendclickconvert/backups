@@ -6,14 +6,14 @@ import { BUSINESS } from '../data/site';
 const STAGING = "https://bhgr11gfrh.wpdns.site/wp-content/uploads";
 const T = "/images/templates";
 const postcardTemplates = [
-  { size: '3 1/2" x 5"', slug: '3.5x5', pdf: `${T}/3.5x5-postcard.pdf`, jpg: `${T}/3.5x5-postcard-front.jpg`, backJpg: `${T}/3.5x5-postcard-back.jpg` },
-  { size: '4" x 6"', slug: '4x6', pdf: `${T}/4x6-postcard.pdf`, jpg: `${T}/4x6-postcard-front.jpg`, backJpg: `${T}/4x6-postcard-back.jpg` },
-  { size: '4 1/4" x 6"', slug: '4.25x6', pdf: `${T}/4.25x6-postcard.pdf`, jpg: `${T}/4.25x6-postcard-front.jpg`, backJpg: `${T}/4.25x6-postcard-back.jpg` },
-  { size: '4" x 9"', slug: '4x9', pdf: `${T}/4x9-postcard.pdf`, jpg: `${T}/4x9-postcard-front.jpg`, backJpg: `${T}/4x9-postcard-back.jpg` },
-  { size: '5" x 7"', slug: '5x7', pdf: `${T}/5x7-postcard.pdf`, jpg: `${T}/5x7-postcard-front.jpg`, backJpg: `${T}/5x7-postcard-back.jpg` },
-  { size: '5" x 10"', slug: '5x10', pdf: `${T}/5x10-postcard.pdf`, jpg: `${T}/5x10-postcard-front.jpg`, backJpg: `${T}/5x10-postcard-back.jpg` },
+  { size: '3 1/2" x 5"', slug: '3.5x5', pdf: `${T}/3.5x5-postcard.pdf`, jpg: `${T}/3.5x5-postcard-front.jpg` },
+  { size: '4" x 6"', slug: '4x6', pdf: `${T}/4x6-postcard.pdf`, jpg: `${T}/4x6-postcard-front.jpg` },
+  { size: '4 1/4" x 6"', slug: '4.25x6', pdf: `${T}/4.25x6-postcard.pdf`, jpg: `${T}/4.25x6-postcard-front.jpg` },
+  { size: '4" x 9"', slug: '4x9', pdf: `${T}/4x9-postcard.pdf`, jpg: `${T}/4x9-postcard-front.jpg` },
+  { size: '5" x 7"', slug: '5x7', pdf: `${T}/5x7-postcard.pdf`, jpg: `${T}/5x7-postcard-front.jpg` },
+  { size: '5" x 10"', slug: '5x10', pdf: `${T}/5x10-postcard.pdf`, jpg: `${T}/5x10-postcard-front.jpg` },
   { size: '5 1/2" x 8 1/2"', slug: '5.5x8.5', pdf: `${T}/5.5x8.5-postcard.pdf`, jpg: `${T}/5.5x8.5-postcard-front.jpg` },
-  { size: '6" x 9"', slug: '6x9', pdf: `${T}/6x9-postcard.pdf`, jpg: `${T}/6x9-postcard-front.jpg`, backJpg: `${T}/6x9-postcard-back.jpg` },
+  { size: '6" x 9"', slug: '6x9', pdf: `${T}/6x9-postcard.pdf`, jpg: `${T}/6x9-postcard-front.jpg` },
   { size: '6" x 11"', slug: '6x11', pdf: `${STAGING}/2023/10/6-x-11-Postcard-Template.pdf`, jpg: `${STAGING}/2023/10/6-x-11-Postcard-Template-Image-scaled.jpg` },
 ];
 const eddmTemplates = [
@@ -66,7 +66,6 @@ interface TemplateItem {
   slug: string;
   pdf: string;
   jpg: string;
-  backJpg?: string;
   note?: string;
 }
 const sections: { title: string; tag: string; icon: string; subtext: string; templates: TemplateItem[] }[] = [
@@ -111,9 +110,6 @@ const sections: { title: string; tag: string; icon: string; subtext: string; tem
   title="Free USPS Direct Mail Templates — Postcards, EDDM Flats, Envelopes & Brochures (PDF)"
   description="Download free press-ready USPS direct mail templates for postcards, EDDM flats, envelopes, door hangers, and brochures. Pre-built with bleed areas, barcode clear zones, and address block positioning to USPS automation specs."
 >
-  <Fragment slot="head">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  </Fragment>
   <PageHero
     title="USPS® Direct Mail Templates"
     subtitle="Press-ready PDF templates for postcards, EDDM flats, envelopes, and brochures — pre-built to USPS automation specs with bleed areas, barcode clear zones, and address block positioning."
@@ -174,9 +170,7 @@ const sections: { title: string; tag: string; icon: string; subtext: string; tem
             </div>
 
             <div class="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5">
-              <div class="shrink-0 w-10 h-10 rounded-full bg-crst-primary/10 flex items-center justify-center">
-                <svg class="w-5 h-5 text-crst-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-              </div>
+              <img src="/images/sean-griffin.png" alt="Sean Griffin, Owner of Cornerstone Services" class="shrink-0 w-12 h-12 rounded-full object-cover" width="48" height="48" />
               <div>
                 <p class="text-sm font-heading font-semibold text-navy-800">Maintained by Sean Griffin, Owner — Cornerstone Services, Inc.</p>
                 <p class="text-xs text-navy-500 mt-1">Sean has produced USPS-compliant direct mail for Hudson Valley businesses since 1998. These templates reflect the exact specifications Cornerstone applies to every print job — First-Class letters, Marketing Mail postcards, and EDDM flats processed through the USPS Business Mail Entry Unit (BMEU) in New Paltz, NY.</p>
@@ -206,44 +200,14 @@ const sections: { title: string; tag: string; icon: string; subtext: string; tem
 
               <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
                 {section.templates.map((t: TemplateItem) => (
-                  <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden" x-data="{ tab: 'front' }">
-                    <div class="flex bg-[#1B2A4A]">
-                      <button
-                        x-on:click="tab = 'front'"
-                        x-bind:class="tab === 'front' ? 'text-white border-b-2 border-crst-gold' : 'text-white/50 border-b-2 border-transparent hover:text-white/80'"
-                        class="flex-1 text-xs font-heading font-semibold uppercase tracking-wider py-2.5 text-center transition-colors"
-                      >Front</button>
-                      <button
-                        x-on:click="tab = 'back'"
-                        x-bind:class="tab === 'back' ? 'text-white border-b-2 border-crst-gold' : 'text-white/50 border-b-2 border-transparent hover:text-white/80'"
-                        class="flex-1 text-xs font-heading font-semibold uppercase tracking-wider py-2.5 text-center transition-colors"
-                      >Back</button>
-                    </div>
+                  <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
                     <div class="aspect-[16/10] bg-gray-100 relative overflow-hidden">
                       <img
-                        x-show="tab === 'front'"
                         src={t.jpg}
-                        alt={`${t.size} ${section.tag} front template`}
+                        alt={`${t.size} ${section.tag} template`}
                         class="w-full h-full object-contain"
                         loading="lazy"
                       />
-                      {t.backJpg ? (
-                        <img
-                          x-show="tab === 'back'"
-                          src={t.backJpg}
-                          alt={`${t.size} ${section.tag} back template`}
-                          class="w-full h-full object-contain"
-                          loading="lazy"
-                        />
-                      ) : (
-                        <div
-                          x-show="tab === 'back'"
-                          class="w-full h-full flex flex-col items-center justify-center text-gray-400"
-                        >
-                          <svg class="w-10 h-10 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                          <span class="text-xs">Back preview coming soon</span>
-                        </div>
-                      )}
                     </div>
                     <div class="px-3 py-3 flex flex-wrap items-center justify-between gap-2">
                       <div class="flex items-center gap-2">
