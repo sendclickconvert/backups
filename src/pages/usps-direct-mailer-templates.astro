@@ -4,16 +4,14 @@ import PageHero from '../components/PageHero.astro';
 import CTASection from '../components/CTASection.astro';
 import { BUSINESS } from '../data/site';
 const STAGING = "https://bhgr11gfrh.wpdns.site/wp-content/uploads";
-const T = "/images/templates";
 const postcardTemplates = [
-  { size: '3 1/2" x 5"', slug: '3.5x5', pdf: `${T}/3.5x5-postcard.pdf`, jpg: `${T}/3.5x5-postcard-front.jpg` },
-  { size: '4" x 6"', slug: '4x6', pdf: `${T}/4x6-postcard.pdf`, jpg: `${T}/4x6-postcard-front.jpg` },
-  { size: '4 1/4" x 6"', slug: '4.25x6', pdf: `${T}/4.25x6-postcard.pdf`, jpg: `${T}/4.25x6-postcard-front.jpg` },
-  { size: '4" x 9"', slug: '4x9', pdf: `${T}/4x9-postcard.pdf`, jpg: `${T}/4x9-postcard-front.jpg` },
-  { size: '5" x 7"', slug: '5x7', pdf: `${T}/5x7-postcard.pdf`, jpg: `${T}/5x7-postcard-front.jpg` },
-  { size: '5" x 10"', slug: '5x10', pdf: `${T}/5x10-postcard.pdf`, jpg: `${T}/5x10-postcard-front.jpg` },
-  { size: '5 1/2" x 8 1/2"', slug: '5.5x8.5', pdf: `${T}/5.5x8.5-postcard.pdf`, jpg: `${T}/5.5x8.5-postcard-front.jpg` },
-  { size: '6" x 9"', slug: '6x9', pdf: `${T}/6x9-postcard.pdf`, jpg: `${T}/6x9-postcard-front.jpg` },
+  { size: '3 1/2" x 5"', slug: '3.5x5', pdf: `${STAGING}/2023/10/3.5-x-5-Postcard-Template.pdf`, jpg: `${STAGING}/2023/10/3.5-x-5-Postcard-Template-Image.jpg` },
+  { size: '4" x 6"', slug: '4x6', pdf: `${STAGING}/2023/10/4-x-6-Postcard-Template.pdf`, jpg: `${STAGING}/2023/10/4-x-6-Postcard-Template-Image.jpg` },
+  { size: '4 1/4" x 6"', slug: '4.25x6', pdf: `${STAGING}/2023/10/4.25-x-6-Postcard-Template.pdf`, jpg: `${STAGING}/2023/10/4.25-x-6-Postcard-Template-Image.jpg` },
+  { size: '5" x 7"', slug: '5x7', pdf: `${STAGING}/2023/10/5-x-7-Postcard-Template.pdf`, jpg: `${STAGING}/2023/10/5-x-7-Postcard-Template-Image.jpg` },
+  { size: '5" x 10"', slug: '5x10', pdf: `${STAGING}/2023/10/5-x-10-Postcard-Template.pdf`, jpg: `${STAGING}/2023/10/5-x-10-Postcard-Template-Image-scaled.jpg` },
+  { size: '5 1/2" x 8 1/2"', slug: '5.5x8.5', pdf: `${STAGING}/2023/10/5.5-x-8.5-Postcard-Template.pdf`, jpg: `${STAGING}/2023/10/5.5-x-8.5-Postcard-Template-Image-scaled.jpg` },
+  { size: '6" x 9"', slug: '6x9', pdf: `${STAGING}/2023/10/6-x-9-Postcard-Template.pdf`, jpg: `${STAGING}/2023/10/6-x-9-Postcard-Template-Image-scaled.jpg` },
   { size: '6" x 11"', slug: '6x11', pdf: `${STAGING}/2023/10/6-x-11-Postcard-Template.pdf`, jpg: `${STAGING}/2023/10/6-x-11-Postcard-Template-Image-scaled.jpg` },
 ];
 const eddmTemplates = [
