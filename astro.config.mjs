@@ -59,6 +59,8 @@ export default defineConfig({
   redirects: {
     '/training/conversations-tab': '/training/portal',
     '/training/conversations-tab/': '/training/portal',
+    '/direct-mail-tools': '/resources',
+    '/direct-mail-tools/': '/resources',
     // === EXISTING (already in your config) ===
     '/direct-mail-new-paltz': '/service-areas/ulster-county/new-paltz',
     '/direct-mail-kingston': '/service-areas/ulster-county/kingston',
