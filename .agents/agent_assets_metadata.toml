@@ -42,3 +42,9 @@ id = "2lbVdKPQIVXXc52JtcZQB"
 uri = "file://.local/audit-pass2-rewrites.md"
 type = "text"
 title = "CRST.net — 15 Priority Page Top-of-Page Rewrites"
+
+[[outputs]]
+id = "AiQqzQspz1lxrG6Qa13dQ"
+uri = "file://CRST-Project-Build-Summary.md"
+type = "text"
+title = "CRST Website — Complete Build Summary"
