@@ -1589,7 +1589,7 @@ export const COUNTIES_DATA: County[] = [
     lat: 41.8886,
     lng: -74.1257,
     description: 'Home base for Cornerstone Services. We serve every town, village, and hamlet across Ulster County.',
-    intro: 'Ulster County is home to Cornerstone Services, and we\'ve been serving businesses and organizations here since 1998. From the Hudson River to the Catskill Mountains, Ulster County encompasses thriving communities like Kingston, Saugerties, Woodstock, New Paltz, Highland, and Marlboro — our hometown region. With over 25 years of experience in direct mail, EDDM, commercial printing, graphic design, and mailing list services, no one knows Ulster County\'s postal landscape better than we do. Whether you\'re a Kingston restaurant targeting nearby neighborhoods with Every Door Direct Mail, a Saugerties retailer launching a postcard campaign, a Woodstock gallery promoting an exhibition, a Highland medical practice sending patient outreach, or a Marlboro winery building a mailing list, we have the data, equipment, and expertise to get your message delivered across the Hudson Valley.',
+    intro: 'Cornerstone Services, Inc. (CRST) provides full-service direct mail services in Ulster County, NY from its headquarters in New Paltz. Established in 1998, CRST handles in-house design, printing, data, EDDM, mail preparation, and fulfillment with no outsourcing for businesses, nonprofits, political organizations, municipalities, and real estate professionals throughout Ulster County.',
     locations: ulsterLocations,
   },
   {
@@ -1601,7 +1601,7 @@ export const COUNTIES_DATA: County[] = [
     lat: 41.7650,
     lng: -73.7949,
     description: 'From Beacon to Millerton, we provide full direct mail services throughout Dutchess County.',
-    intro: 'Dutchess County stretches from the Hudson River to the Connecticut border, encompassing vibrant communities like Poughkeepsie, Beacon, Hyde Park, Rhinebeck, Wappingers Falls, and Fishkill. Just 20 minutes from our New Paltz facility across the Mid-Hudson Bridge, Dutchess County is one of our most active service areas for direct mail, EDDM, commercial printing, graphic design, and targeted mailing lists. We work with colleges, healthcare systems, government agencies, and businesses of every size throughout the county. Whether you\'re reaching the diverse neighborhoods of Poughkeepsie with Every Door Direct Mail, the arts community in Beacon, the historic estates of Hyde Park, or the growing commercial corridor in Wappingers Falls and Fishkill, our carrier route data covers every deliverable address in Dutchess County.',
+    intro: 'Cornerstone Services, Inc. (CRST) is a full-service direct mail company serving Dutchess County, NY, offering in-house graphic design, printing, mailing lists, EDDM, and fulfillment since 1998. Based nearby in New Paltz, NY, CRST supports local organizations that want a USPS-certified, no-outsourcing partner for direct mail campaigns across Dutchess County.',
     locations: dutchessLocations,
   },
   {
@@ -1613,7 +1613,7 @@ export const COUNTIES_DATA: County[] = [
     lat: 41.4012,
     lng: -74.3118,
     description: 'Serving businesses and organizations across Orange County from Newburgh to Port Jervis.',
-    intro: 'Orange County is the most populated county in our service area, with over 400,000 residents across communities ranging from the diverse City of Newburgh to the charming villages of Warwick and Goshen. Located about 30 minutes south of our New Paltz facility, Orange County offers tremendous opportunities for businesses looking to reach large audiences through direct mail, EDDM, commercial printing, graphic design, and targeted mailing lists. We serve municipal agencies, healthcare organizations, retailers, restaurants, and nonprofits throughout Middletown, Monroe, Cornwall, and beyond — from the Woodbury Common corridor to the Port Jervis tri-state area. Our data covers every carrier route and deliverable address across all of Orange County\'s towns, villages, and cities in the Hudson Valley.',
+    intro: 'Cornerstone Services, Inc. (CRST) provides full-service direct mail services for Orange County, NY, helping organizations plan, print, and deliver campaigns with no outsourcing. From its base in New Paltz, CRST has served the Hudson Valley since 1998 with in-house design, printing, data services, EDDM, and fulfillment for nonprofits, municipalities, political campaigns, real estate professionals, and local businesses.',
     locations: orangeLocations,
   },
 ];
