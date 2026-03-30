@@ -4,7 +4,7 @@ import PageHero from '../components/PageHero.astro';
 import { BUSINESS } from '../data/site';
 ---
 
-<BaseLayout title="Terms & Conditions" description={`Terms and conditions for ${BUSINESS.name} direct mail, printing, mailing, graphic design, and related business services.`}>
+<BaseLayout title="Terms & Conditions" description={`Terms and conditions for ${BUSINESS.name} direct mail, printing, mailing, graphic design, and related business services.`} noIndex={true}>
   <PageHero title="Terms & Conditions" breadcrumbs={[{ label: 'Terms & Conditions' }]} />
 
   <section class="py-14 lg:py-20">
