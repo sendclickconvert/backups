@@ -38,7 +38,8 @@ The website is developed using Astro 4.16 in a hybrid output mode, leveraging th
 - **Resources/Tools**: A section providing direct mail tools and resources, including guides on postage rates, envelope sizes, EDDM, and various editorial articles.
 - **Landing Pages**: Two SEO-focused landing pages (`/full-service-direct-mail-company-hudson-valley` and `/why-crst-for-direct-mail-in-the-hudson-valley`) with author bylines and service area links.
 - **Specialized Service Pages**: Dedicated pages for "School District Direct Mail" and "Union Printing," incorporating specific strategies, E-E-A-T author blocks, and relevant schema.
-- **Memberships Page**: An `/about/memberships` page detailing association and chamber affiliations, including BBB A+ rating.
+- **Memberships Page**: `/about/memberships` — Association and chamber memberships page with custom WebPage schema (passed as prop to avoid duplicate with BaseLayout default). BBB A+ section with accredited logo, 7 Hudson Valley chambers, 3 national/industry associations (MSMA, BBB, GHV PCC), 10 extended regional memberships, SUNY New Paltz affiliations.
+- **Service × Location Pages**: Dynamic route at `src/pages/services/[service]/[town].astro` generating pages like `/services/eddm/new-paltz`. Uses `src/data/service-location.ts` for service configs and `ENABLED_COUNTIES` to control rollout. Currently Ulster County only (4 services × 37 towns = 148 pages). Each page has: localized H1, town-specific intro, service features grid, local client types, internal links to pillar service page and town page, Service schema. To expand: add county keys to `ENABLED_COUNTIES` array in `service-location.ts`.
 - **Case Studies**: Eleven case studies with industry filter tags.
 - **BBB Trust Page**: A dedicated page showcasing the BBB A+ rating with comprehensive schema and trust-building content.
 - **Author Byline**: A reusable component for author information on key content pages.
