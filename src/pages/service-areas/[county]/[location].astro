@@ -50,18 +50,19 @@ const serviceSlugToLabel: Record<string, string> = {
   '/services/non-profit-mailing': 'non-profit mailing',
 };
 
+const townSlug = location.slug;
 const serviceSlugToHref: Record<string, string> = {
-  '/services/direct-mail': '/services/direct-mail',
-  '/services/eddm': '/services/eddm',
-  '/services/postcards': '/services/printing',
-  '/services/printing': '/services/printing',
+  '/services/direct-mail': `/services/direct-mail/${townSlug}`,
+  '/services/eddm': `/services/eddm/${townSlug}`,
+  '/services/postcards': `/services/printing/${townSlug}`,
+  '/services/printing': `/services/printing/${townSlug}`,
   '/services/brochures': '/services/graphic-design',
   '/services/large-format': '/services/printing',
   '/services/mailing-lists': '/services/data-lists',
   '/services/data-lists': '/services/data-lists',
   '/services/mailing': '/services/mailing',
   '/services/graphic-design': '/services/graphic-design',
-  '/services/non-profit-mailing': '/services/non-profit-mailing',
+  '/services/non-profit-mailing': `/services/non-profit-mailing/${townSlug}`,
 };
 
 const relatedServiceLinks = uniqueContent?.relevantServices
@@ -284,9 +285,14 @@ const nearbyAreas = neighborNames
             Services Available in {location.name}
           </h3>
           <div class="grid sm:grid-cols-2 gap-4 mb-10">
-            {SERVICES.map((service) => (
+            {SERVICES.map((service) => {
+              const locationServices = ['eddm', 'direct-mail', 'printing', 'non-profit-mailing'];
+              const serviceHref = locationServices.includes(service.slug)
+                ? `/services/${service.slug}/${townSlug}`
+                : `/services/${service.slug}`;
+              return (
               <a
-                href={`/services/${service.slug}`}
+                href={serviceHref}
                 class="flex items-start gap-3 p-4 rounded-lg border border-gray-200 hover:border-crst-primary/30 hover:bg-gray-50 transition-all group"
               >
                 <div class="w-2 h-2 rounded-full bg-crst-gold mt-2 shrink-0"></div>
@@ -297,7 +303,7 @@ const nearbyAreas = neighborNames
                   <div class="text-xs text-gray-500 mt-1">{service.summary}</div>
                 </div>
               </a>
-            ))}
+            )})}
           </div>
 
           {location.clientTypes.length > 0 && (
