@@ -8,6 +8,8 @@ export interface ServiceConfig {
   metaDescTemplate: (town: string) => string;
   introTemplate: (town: string, county: string, localIntro: string) => string;
   features: { title: string; desc: string }[];
+  processContent?: (town: string) => string[];
+  faqs?: { q: string; a: string }[];
   schemaServiceName: string;
   schemaDescription: string;
 }
@@ -24,13 +26,26 @@ export const SERVICE_CONFIGS: ServiceConfig[] = [
     introTemplate: (town, county, localIntro) =>
       `Every Door Direct Mail (EDDM) lets you reach every address on a postal carrier route in ${town} without purchasing a mailing list. Cornerstone Services handles route selection, design, printing, and USPS paperwork for EDDM campaigns targeting ${town} and surrounding ${county} communities. ${localIntro}`,
     features: [
-      { title: 'Route Selection', desc: 'We use the USPS EDDM mapping tool to select carrier routes in and around your target area based on demographics and household count.' },
-      { title: 'Mail Piece Design', desc: 'USPS-compliant oversized postcards and flat-size mailers designed for maximum impact. Standard sizes: 6.5"×9", 8.5"×11", 6"×11".' },
-      { title: 'Commercial Printing', desc: 'High-quality offset and digital printing on heavy card stock. Full color, both sides.' },
-      { title: 'Bundling & Delivery', desc: 'We prepare facing slips, bundle by route, and deliver directly to the destination post office. Postage: $0.247/piece (Retail) or $0.214/piece (BMEU).' },
+      { title: 'Route Selection via EDDM Online Tool', desc: 'We use the USPS EDDM Online Tool to select carrier routes in and around your target area. The tool pulls U.S. Census demographics — household income, age, size — so we can target the routes most likely to respond. Cornerstone manages the entire route selection process through our Business Customer Gateway account.' },
+      { title: 'Mail Piece Design & EDDM Retail Indicia', desc: 'USPS-compliant oversized postcards and flat-size mailers designed for maximum impact. Every piece includes the required EDDM Retail Indicia — the postal marking that replaces a standard stamp or meter mark on EDDM mail. Standard sizes: 6.5"×9", 8.5"×11", 6"×11".' },
+      { title: 'Commercial Printing', desc: 'High-quality offset and digital printing on heavy card stock. Full color, both sides. Cornerstone is listed in the USPS Printer Directory as a qualified mail piece printer meeting USPS automation and design standards.' },
+      { title: 'PS Form 3587 & Postal Delivery', desc: 'We complete PS Form 3587 (the EDDM postage statement) for each mailing, prepare facing slips, bundle by route, and deliver to the destination post office or Business Mail Entry Unit (BMEU). Postage: $0.247/piece (Retail) or $0.214/piece (BMEU entry).' },
+    ],
+    processContent: (town) => [
+      `The EDDM process for ${town} starts with route selection using the USPS EDDM Online Tool, which is accessed through the USPS Business Customer Gateway. This tool lets us filter carrier routes by U.S. Census demographics including household income, age distribution, and household size — so your mail reaches the neighborhoods most relevant to your business.`,
+      `Once routes are selected, we design your mail piece to meet USPS Marketing Mail standards. Every EDDM piece must include the EDDM Retail Indicia — a printed marking in the upper-right corner that replaces traditional postage. The indicia, facing slips, and route bundling are all handled by Cornerstone as part of the production process.`,
+      `Before delivery, we complete PS Form 3587 — the official USPS postage statement for EDDM mailings. This form documents the number of pieces, carrier routes, and postage due. For larger volume campaigns, we enter mail directly at the Business Mail Entry Unit (BMEU) to take advantage of the lower $0.214/piece BMEU rate vs. the $0.247/piece retail rate.`,
+      `For questions about EDDM regulations, mail piece specifications, or postage requirements, USPS maintains PostalPro — its technical resource site for commercial mailers. Cornerstone stays current with PostalPro guidelines so your ${town} EDDM campaign meets all current USPS requirements without delays or rejections at the post office.`,
+    ],
+    faqs: [
+      { q: 'What is the EDDM Online Tool and do I need to use it myself?', a: 'The EDDM Online Tool is a USPS web application accessed through the Business Customer Gateway that lets mailers select carrier routes by ZIP code and demographic filters. Cornerstone handles the entire route selection process for you — you do not need a Business Customer Gateway account or access to the EDDM Online Tool.' },
+      { q: 'What is the EDDM Retail Indicia?', a: 'The EDDM Retail Indicia is a printed postal marking that appears in the upper-right corner of every EDDM mail piece. It replaces a standard postage stamp or meter mark and is required on all EDDM mailings. Cornerstone includes the indicia automatically in the mail piece design.' },
+      { q: 'What is PS Form 3587?', a: 'PS Form 3587 is the USPS postage statement required for every EDDM mailing. It documents the number of mail pieces, selected carrier routes, and total postage due. Cornerstone completes and submits PS Form 3587 as part of our EDDM service — you do not need to fill it out yourself.' },
+      { q: 'What is the difference between EDDM Retail and BMEU entry?', a: 'EDDM Retail ($0.247/piece) allows drop-off at any post office. BMEU entry ($0.214/piece) requires delivery to a Business Mail Entry Unit — a USPS bulk mail acceptance facility. Cornerstone handles BMEU entry for larger campaigns to maximize your postage savings.' },
+      { q: 'Does Cornerstone appear in the USPS Printer Directory?', a: 'Cornerstone is a qualified mail piece printer meeting USPS design and automation standards. The USPS Printer Directory is a resource maintained through PostalPro that lists printers capable of producing USPS-compliant mail pieces.' },
     ],
     schemaServiceName: 'Every Door Direct Mail (EDDM)',
-    schemaDescription: 'Every Door Direct Mail (EDDM) campaign services including route selection, design, printing, and USPS delivery.',
+    schemaDescription: 'Every Door Direct Mail (EDDM) campaign services including route selection via EDDM Online Tool, PS Form 3587 preparation, EDDM Retail Indicia, commercial printing, and USPS delivery through BMEU.',
   },
   {
     slug: 'direct-mail',
