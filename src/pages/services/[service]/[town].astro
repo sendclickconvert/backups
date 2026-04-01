@@ -96,7 +96,7 @@ const schema = {
 
           {location.notableOrgs.length > 0 && (
             <p class="text-navy-600/80 leading-relaxed mb-6">
-              {location.name} is home to organizations like {location.notableOrgs.slice(0, 3).join(', ')}{location.notableOrgs.length > 3 ? `, and ${location.notableOrgs[3]}` : ''} — the types of businesses and institutions that rely on professional {svc.name.toLowerCase()} services.
+              {location.name} is home to organizations like {location.notableOrgs.slice(0, 3).join(', ')}{location.notableOrgs.length > 3 ? `, and ${location.notableOrgs[3]}` : ''} — the types of businesses and institutions that rely on professional {svc.nameInline} services.
             </p>
           )}
 
@@ -128,7 +128,7 @@ const schema = {
 
           <div class="bg-crst-primary/5 border border-crst-primary/15 rounded-xl p-6 mt-10 text-center">
             <p class="font-heading font-bold text-crst-primary text-lg mb-2">Ready to Get Started?</p>
-            <p class="text-navy-600/70 text-sm mb-4">Get a free estimate for {svc.name.toLowerCase()} services in {location.name}, NY.</p>
+            <p class="text-navy-600/70 text-sm mb-4">Get a free estimate for {svc.nameInline} services in {location.name}, NY.</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
               <a href="/estimate" class="btn-primary text-sm">Get a Free Estimate</a>
               <a href={`tel:${BUSINESS.phoneClean}`} class="inline-flex items-center gap-2 text-sm font-heading font-semibold text-crst-primary hover:text-crst-accent transition-colors">
@@ -145,7 +145,7 @@ const schema = {
               <svg class="w-5 h-5 text-crst-primary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
               <div>
                 <span class="font-heading font-semibold text-navy-800 text-sm group-hover:text-crst-primary transition-colors">{svc.name} Services Overview</span>
-                <p class="text-xs text-navy-600/60">Full details on our {svc.name.toLowerCase()} capabilities</p>
+                <p class="text-xs text-navy-600/60">Full details on our {svc.nameInline} capabilities</p>
               </div>
             </a>
             <a href={townPageHref} class="flex items-center gap-3 p-4 bg-navy-50/40 rounded-lg border border-navy-100 hover:border-crst-primary/30 hover:shadow-sm transition-all group">
@@ -163,7 +163,7 @@ const schema = {
             <div class="bg-crst-primary rounded-xl p-6 text-white">
               <h3 class="font-display text-lg mb-2">Free Estimate</h3>
               <p class="text-white/60 text-sm leading-relaxed mb-4">
-                Get a quote for {svc.name.toLowerCase()} in {location.name}, NY.
+                Get a quote for {svc.nameInline} in {location.name}, NY.
               </p>
               <a href="/estimate" class="btn-accent w-full text-center text-sm">
                 Request Estimate
@@ -218,6 +218,6 @@ const schema = {
 
   <CTASection
     headline={`Need ${svc.name} in ${location.name}?`}
-    text={`Contact Cornerstone Services for a free estimate on your next ${svc.name.toLowerCase()} project.`}
+    text={`Contact Cornerstone Services for a free estimate on your next ${svc.nameInline} project.`}
   />
 </BaseLayout>

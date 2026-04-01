@@ -1,6 +1,7 @@
 export interface ServiceConfig {
   slug: string;
   name: string;
+  nameInline: string;
   pillarHref: string;
   h1Template: (town: string) => string;
   metaTitleTemplate: (town: string) => string;
@@ -15,6 +16,7 @@ export const SERVICE_CONFIGS: ServiceConfig[] = [
   {
     slug: 'eddm',
     name: 'EDDM',
+    nameInline: 'EDDM',
     pillarHref: '/services/eddm',
     h1Template: (town) => `EDDM in ${town}, NY`,
     metaTitleTemplate: (town) => `EDDM in ${town}, NY | Every Door Direct Mail`,
@@ -33,6 +35,7 @@ export const SERVICE_CONFIGS: ServiceConfig[] = [
   {
     slug: 'direct-mail',
     name: 'Direct Mail',
+    nameInline: 'direct mail',
     pillarHref: '/services/direct-mail',
     h1Template: (town) => `Direct Mail in ${town}, NY`,
     metaTitleTemplate: (town) => `Direct Mail in ${town}, NY | Cornerstone Services`,
@@ -51,6 +54,7 @@ export const SERVICE_CONFIGS: ServiceConfig[] = [
   {
     slug: 'printing',
     name: 'Printing',
+    nameInline: 'printing',
     pillarHref: '/services/printing',
     h1Template: (town) => `Printing Services in ${town}, NY`,
     metaTitleTemplate: (town) => `Printing Services in ${town}, NY | Cornerstone`,
@@ -69,6 +73,7 @@ export const SERVICE_CONFIGS: ServiceConfig[] = [
   {
     slug: 'non-profit-mailing',
     name: 'Non-Profit Mailing',
+    nameInline: 'non-profit mailing',
     pillarHref: '/services/non-profit-mailing',
     h1Template: (town) => `Non-Profit Mailing in ${town}, NY`,
     metaTitleTemplate: (town) => `Non-Profit Mailing in ${town}, NY | Discounted Rates`,
@@ -90,4 +95,4 @@ export function getServiceConfig(slug: string): ServiceConfig | undefined {
   return SERVICE_CONFIGS.find(s => s.slug === slug);
 }
 
-export const ENABLED_COUNTIES = ['ulster'] as const;
+export const ENABLED_COUNTIES = ['ulster', 'dutchess', 'orange'] as const;
