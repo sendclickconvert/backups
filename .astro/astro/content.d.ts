@@ -155,6 +155,27 @@ declare module 'astro:content' {
   collection: "dm-articles";
   data: InferEntrySchema<"dm-articles">
 } & { render(): Render[".md"] };
+"direct-mail-roi.md": {
+	id: "direct-mail-roi.md";
+  slug: "direct-mail-roi";
+  body: string;
+  collection: "dm-articles";
+  data: InferEntrySchema<"dm-articles">
+} & { render(): Render[".md"] };
+"direct-mail-vs-digital-marketing.md": {
+	id: "direct-mail-vs-digital-marketing.md";
+  slug: "direct-mail-vs-digital-marketing";
+  body: string;
+  collection: "dm-articles";
+  data: InferEntrySchema<"dm-articles">
+} & { render(): Render[".md"] };
+"eddm-every-door-direct-mail.md": {
+	id: "eddm-every-door-direct-mail.md";
+  slug: "eddm-every-door-direct-mail";
+  body: string;
+  collection: "dm-articles";
+  data: InferEntrySchema<"dm-articles">
+} & { render(): Render[".md"] };
 "eddm-vs-targeted-direct-mail.md": {
 	id: "eddm-vs-targeted-direct-mail.md";
   slug: "eddm-vs-targeted-direct-mail";
@@ -179,6 +200,13 @@ declare module 'astro:content' {
 "how-to-build-a-mailing-list-for-direct-mail.md": {
 	id: "how-to-build-a-mailing-list-for-direct-mail.md";
   slug: "how-to-build-a-mailing-list-for-direct-mail";
+  body: string;
+  collection: "dm-articles";
+  data: InferEntrySchema<"dm-articles">
+} & { render(): Render[".md"] };
+"postcard-marketing.md": {
+	id: "postcard-marketing.md";
+  slug: "postcard-marketing";
   body: string;
   collection: "dm-articles";
   data: InferEntrySchema<"dm-articles">
