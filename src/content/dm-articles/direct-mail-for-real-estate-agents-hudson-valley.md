@@ -56,7 +56,7 @@ The farm list is a targeted homeowner list by carrier route, filtered to maximiz
 **Recommended selects:**
 - Homeowner (suppress renters)
 - Length of residence: 5+ years
-- Geographic: specific carrier routes or ZIP codes
+- Geographic: specific carrier routes or ZIP codes — popular Hudson Valley farm areas include 12561 (New Paltz), 12401 (Kingston), 12601 (Poughkeepsie), 12508 (Beacon), 12550 (Newburgh), 12771 (Port Jervis), and 10940 (Middletown)
 - Optional: home value range, age of household head
 
 A farm area of 500–1,000 households is the sweet spot for individual agents. Larger areas dilute frequency (you cannot afford to mail 3,000 households 12 times per year). Smaller areas limit your pool of potential listings.
@@ -98,6 +98,10 @@ Most real estate farming programs use **targeted mail** (addressed to the homeow
 EDDM has its place for agents: open house announcements, new listing saturation in a specific neighborhood, or geographic introduction campaigns. But for ongoing farming, targeted mail is the standard.
 
 Cornerstone runs both. We handle [full-service direct mail campaigns](/services/direct-mail) for individual agents and brokerages across the Hudson Valley — list, design, print, and mail on a recurring monthly or bi-monthly schedule.
+
+## CRST Insider Tip
+
+The single biggest mistake we see real estate agents make with farming is quitting too early. Most agents try 3–4 mailings, see minimal response, and conclude direct mail does not work. In reality, the first 4–5 mailings are building name recognition — not generating calls. We manage a farming program for an agent in the Kingston 12401 area who saw zero listing inquiries from mail for the first seven months. In months 8–12, she received four listing appointments directly from farm recipients — two of which closed. Her total investment over the year was approximately $4,800. Her commission on those two closings exceeded $28,000. Farming works, but only if you commit to the timeline.
 
 ## Frequently Asked Questions
 

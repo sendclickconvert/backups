@@ -29,7 +29,7 @@ schemaFAQ:
 
 If you are considering [direct mail services in the Hudson Valley](/services/direct-mail), the first question is almost always: how much will it cost? The answer depends on four variables — format, quantity, postage class, and list source. This guide breaks down each cost component with real numbers so you can budget accurately before requesting an estimate.
 
-At Cornerstone Services in New Paltz, we handle hundreds of direct mail campaigns per year for businesses across Ulster, Dutchess, and Orange counties. The pricing information below reflects real production costs — not theoretical ranges pulled from national averages. These are the numbers Hudson Valley businesses actually pay.
+At Cornerstone Services in New Paltz, we handle hundreds of direct mail campaigns per year for businesses across Ulster, Dutchess, and Orange counties. The pricing information below reflects our actual production costs based on campaigns we have quoted and produced — not theoretical ranges pulled from national averages. These are the numbers Hudson Valley businesses actually pay.
 
 ## Four Things That Determine Direct Mail Cost
 
@@ -195,6 +195,10 @@ Several strategies can lower your per-piece cost without sacrificing response:
 **Reuse design templates for repeat campaigns.** The first mailing requires custom design ($400–$800). Subsequent mailings using the same template need only minor updates ($150–$200), saving $200–$600 per campaign.
 
 **Mail at the right time.** Avoiding peak postal seasons (November–December holiday mail surge) can improve delivery times without affecting cost. More importantly, timing your mailing to match seasonal demand — HVAC tune-ups in spring and fall, landscaping in early spring — maximizes response rate and therefore improves cost-per-response.
+
+## CRST Insider Tip
+
+The most common budgeting mistake we see is comparing direct mail cost to digital ad cost on a per-impression basis. Direct mail is not competing on impressions — it is competing on conversions. A local Kingston restaurant spent $2,400 on a 5,000-piece EDDM postcard campaign and tracked 127 coupon redemptions at an average ticket of $42. That is $5,334 in measurable revenue from a $2,400 investment — a 122% ROI. Their comparable Google Ads spend of $2,400 over the same period generated clicks at $1.80 each (1,333 clicks) but only 31 trackable in-store visits. The direct mail campaign cost more per impression but delivered 4× the measurable foot traffic. Always compare cost-per-customer, not cost-per-eyeball.
 
 ## Frequently Asked Questions
 

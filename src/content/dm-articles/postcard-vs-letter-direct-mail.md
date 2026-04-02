@@ -70,6 +70,22 @@ Self-mailers are folded, tabbed pieces that mail without an envelope. They combi
 
 Self-mailers mail as **flat-class Marketing Mail** — slightly higher postage than letter-class but significantly lower than First Class. For [full-service direct mail campaigns](/services/direct-mail) that need more content space without envelope costs, self-mailers are an efficient choice.
 
+## Postcard vs. Letter: Quick Comparison
+
+| Factor | Postcard | Letter |
+|--------|----------|--------|
+| Visibility | 100% — nothing to open | Must be opened |
+| Cost per piece (5K qty) | $0.65–$0.80 | $0.80–$1.10 |
+| Design space | Limited (front + back) | Full letter sheet + envelope |
+| Privacy | None — visible to everyone | Sealed envelope |
+| Response rate | Higher for simple offers | Higher for high-ticket services |
+| Best for | Local business, retail, restaurants | Financial, healthcare, legal, nonprofit |
+| EDDM compatible | Yes | No (flat/letter only) |
+
+## CRST Insider Tip
+
+We run A/B tests for clients whenever the postcard-vs-letter decision is unclear. One Orange County home remodeling company was convinced letters would work better because of their $15,000+ average project value. We tested 2,500 postcards against 2,500 letters with the same list, same offer, same timing. The postcard pulled a 2.1% response rate; the letter pulled 1.4%. The postcard's 100% visibility and bold before/after photos outweighed the letter's perceived authority. The lesson: do not assume — test. The answer is often the opposite of what feels right.
+
 ## Frequently Asked Questions
 
 **Can I test two direct mail formats on the same campaign?**

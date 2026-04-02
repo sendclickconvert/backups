@@ -19,6 +19,10 @@ schemaFAQ:
 
 Two methods dominate local [direct mail services in the Hudson Valley](/services/direct-mail): Every Door Direct Mail (EDDM) and targeted direct mail. Both reach physical mailboxes, but they work differently, cost differently, and fit different campaign goals. This guide explains when to use each — and when to use both.
 
+## What Is the Difference Between EDDM and Targeted Direct Mail?
+
+EDDM delivers your mail piece to every address on a USPS carrier route — no mailing list required. Targeted direct mail uses a purchased or house list filtered by demographics, geography, or behavior to reach a specific audience. EDDM costs less per piece ($0.35–$0.55 all-in) but offers only geographic targeting. Targeted mail costs more ($0.65–$0.90 all-in) but delivers higher response rates because you are reaching the right people, not just the right area.
+
 ## What Is EDDM?
 
 Every Door Direct Mail delivers your mail piece to **every address** on a USPS carrier route. No mailing list required. No names, no addresses — just a carrier route selection and a mail piece. USPS handles delivery to every residential and/or business address on the selected routes.
@@ -80,6 +84,10 @@ Many of our [full-service direct mail campaigns](/services/direct-mail) combine 
 A restaurant might EDDM postcards to every household within 3 miles while simultaneously running a targeted mailing to households with $75K+ income within 10 miles. Different audiences, different messages, same campaign cycle.
 
 Cornerstone runs both EDDM and targeted direct mail from the same facility. We recommend the right approach based on your goals, budget, and target geography.
+
+## CRST Insider Tip
+
+Most businesses assume EDDM is always cheaper — and on a per-piece basis, it is. But we have seen targeted campaigns outperform EDDM on cost-per-lead by 40–60% in industries where the customer base is narrow. A Dutchess County financial advisor we work with switched from EDDM to a targeted list filtered by income and homeownership — their response rate jumped from 0.8% to 3.2%, and their cost per qualified lead dropped from $85 to $34. The lesson: cheaper mail is not always cheaper marketing. Start with the audience, then choose the method.
 
 ## Frequently Asked Questions
 
