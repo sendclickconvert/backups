@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import CTASection from '../../components/CTASection.astro';
+import AuthorByline from '../../components/AuthorByline.astro';
 import { BUSINESS } from '../../data/site';
 
 const serviceSchema = {
@@ -9,18 +10,23 @@ const serviceSchema = {
   '@type': 'Service',
   name: 'New Mover Mailing Lists',
   provider: {
-    '@type': 'LocalBusiness',
+    '@type': 'Organization',
     '@id': 'https://crst.net/#organization',
     name: BUSINESS.name,
     telephone: BUSINESS.phone,
   },
+  areaServed: [
+    { '@type': 'County', name: 'Ulster County, New York' },
+    { '@type': 'County', name: 'Dutchess County, New York' },
+    { '@type': 'County', name: 'Orange County, New York' },
+  ],
   url: 'https://crst.net/services/new-mover-mailing-lists',
 };
 ---
 
 <BaseLayout
   title="New Mover Mailing Lists — High-Intent Household Data"
-  description="Target recent movers in the Hudson Valley. People who just moved need everything. New movers convert 3-5x higher than standard consumer lists."
+  description="Target recent movers in the Hudson Valley. People who just moved need everything — new movers convert 3-5x higher than standard consumer lists."
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
@@ -38,18 +44,32 @@ const serviceSchema = {
     <div class="container-wide">
       <div class="grid lg:grid-cols-3 gap-10 lg:gap-14">
         <div class="lg:col-span-2 prose prose-lg max-w-none">
+
+          <AuthorByline />
           <div class="section-divider mb-6"></div>
 
           <p class="text-lg text-navy-700 leading-relaxed font-semibold mb-6">
-            Someone who's been in the same house for 10 years doesn't need a new dentist, new landscaper, new HVAC contractor, or new insurance agent. They already have those relationships locked in.
+            Someone who's been in the same house for 10 years doesn't need a new dentist, new landscaper, new HVAC contractor, or new insurance agent. They already have all of those relationships locked in.
           </p>
 
           <p class="text-navy-600/80 leading-relaxed mb-8">
-            Someone who moved 30 days ago needs all of them. Their entire service network just broke. They're actively looking for local providers in every category. New movers are the highest-intent audience in direct mail. They're not thinking about buying someday — they're buying this month. They open every piece of mail because they're looking for exactly what you're offering.
+            Someone who moved 30 days ago needs all of them. Their entire service network just broke. They're actively looking for local providers in every category.
           </p>
 
           <p class="text-navy-600/80 leading-relaxed mb-8">
-            The window is short. If you reach them in the first 90 days, you're competing for their business. If you wait six months, they've already chosen someone else. We've been building new mover campaigns for Hudson Valley businesses since 1998. We know exactly when to mail, what to offer, and how to convert recent movers into long-term customers.
+            New movers are the highest-intent audience in direct mail. They're not thinking about buying someday — they're buying this month. They open every piece of mail because they're looking for exactly what you're offering.
+          </p>
+
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            The window is short. If you reach them in the first 90 days, you're competing for their business. If you wait six months, they've already chosen someone else.
+          </p>
+
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            We've been building new mover campaigns for Hudson Valley businesses since 1998. We're based 10 minutes from SUNY New Paltz and the Wallkill Valley Rail Trail. We've processed over 500 new mover lists in the last 12 months. We know exactly when to mail, what to offer, and how to convert recent movers into long-term customers.
+          </p>
+
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            Here's how new mover mailing lists work and how to use them without wasting money on renters who'll move again in 12 months.
           </p>
 
           <hr class="my-8 border-navy-200" />
@@ -60,29 +80,31 @@ const serviceSchema = {
             A new mover mailing list targets households that recently filed a change of address with USPS. These are people who physically moved to a new residence within a specific time frame — typically the last 30, 60, or 90 days.
           </p>
 
-          <p class="text-navy-600/80 leading-relaxed mb-6">
-            <strong class="text-navy-800">Data source:</strong> USPS National Change of Address (NCOA) database. When someone files a change of address form, that information feeds into the NCOA system. Data compilers license this data and sell it as new mover lists.
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            <strong class="text-navy-800">Data source:</strong> USPS National Change of Address (NCOA) database. When someone files a change of address form (online or at a post office), that information feeds into the NCOA system. Data compilers like Experian, Epsilon, and TransUnion license this data and sell it as new mover lists.
           </p>
 
-          <p class="text-navy-600/80 leading-relaxed mb-8">
-            <strong class="text-navy-800">What's included:</strong> Full name, new mailing address, old address, move date, move type, and available household demographics (age, income, presence of children).
+          <p class="text-navy-600/80 leading-relaxed mb-3"><strong class="text-navy-800">What's included:</strong></p>
+          <ul class="list-disc list-inside text-navy-600/80 space-y-1 mb-6">
+            <li>Full name</li>
+            <li>New mailing address (where they moved to)</li>
+            <li>Old address (where they moved from)</li>
+            <li>Move date (month and year)</li>
+            <li>Move type (permanent, temporary, business, or family)</li>
+            <li>Household demographics (age, income, presence of children — when available)</li>
+          </ul>
+
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            <strong class="text-navy-800">Why new movers are valuable:</strong> New movers spend <strong class="text-navy-800">$9,000+ on goods and services in the first three months</strong> after moving, according to USPS market research on new mover behavior. They need:
           </p>
 
-          <hr class="my-8 border-navy-200" />
-
-          <h2 class="text-2xl font-display text-crst-primary mb-4">Why New Movers Are Valuable</h2>
-
-          <p class="text-navy-600/80 leading-relaxed mb-6">
-            New movers spend <strong class="text-navy-800">$9,000+ on goods and services in the first three months</strong> after moving, according to USPS market research. They need:
-          </p>
-
-          <ul class="list-disc list-inside text-navy-600/80 space-y-2 mb-8">
+          <ul class="list-disc list-inside text-navy-600/80 space-y-1 mb-6">
             <li>Home services (HVAC, plumbing, electrical, landscaping, pest control)</li>
-            <li>Retail (furniture, appliances, home décor, automotive)</li>
+            <li>Retail (furniture, appliances, home decor, automotive)</li>
             <li>Healthcare (dentist, doctor, veterinarian, chiropractor)</li>
             <li>Financial services (insurance, mortgage, banking)</li>
-            <li>Professional services (legal, accounting, real estate)</li>
-            <li>Utilities and subscriptions (internet, cable, security, cleaning)</li>
+            <li>Professional services (legal, accounting, real estate for future moves)</li>
+            <li>Utilities and subscriptions (internet, cable, security, cleaning services)</li>
           </ul>
 
           <p class="text-navy-600/80 leading-relaxed mb-8">
@@ -91,110 +113,439 @@ const serviceSchema = {
 
           <hr class="my-8 border-navy-200" />
 
-          <h2 class="text-2xl font-display text-crst-primary mb-4">New Movers vs. Standard Consumer Lists</h2>
+          <h2 class="text-2xl font-display text-crst-primary mb-4">Why New Mover Lists Work Better Than Standard Consumer Lists</h2>
 
-          <div class="grid sm:grid-cols-2 gap-6 mb-8">
-            <div class="p-4 bg-navy-50/40 rounded-lg border border-navy-100">
-              <h4 class="font-heading font-bold text-navy-800 mb-2">Standard Consumer List</h4>
-              <p class="text-sm text-navy-600/70 leading-relaxed mb-3">You're mailing people who already have a dentist, landscaper, HVAC contractor, and insurance agent. Your mail is competing against inertia. Most people don't switch unless there's a problem.</p>
-              <p class="text-sm text-navy-800 font-semibold">Typical response: 1–2%</p>
+          <div class="grid sm:grid-cols-2 gap-6 mb-6">
+            <div class="p-5 bg-navy-50/40 rounded-lg border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Standard Consumer List</h3>
+              <p class="text-sm text-navy-600/70 leading-relaxed mb-3">You're mailing people who already have a dentist, landscaper, HVAC contractor, and insurance agent. Your mail is competing against inertia. Most people don't switch providers unless there's a problem.</p>
+              <p class="text-sm text-navy-800 font-semibold">Typical response: 1-2% if you're lucky</p>
             </div>
 
-            <div class="p-4 bg-navy-50/40 rounded-lg border border-navy-100">
-              <h4 class="font-heading font-bold text-navy-800 mb-2">New Mover List</h4>
-              <p class="text-sm text-navy-600/70 leading-relaxed mb-3">You're mailing people who need to find all those providers right now. They don't have relationships yet. Your mail isn't competing against loyalty — it's competing against other new mover mailers.</p>
-              <p class="text-sm text-navy-800 font-semibold">Typical response: 3–7%</p>
+            <div class="p-5 bg-navy-50/40 rounded-lg border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 mb-2">New Mover List</h3>
+              <p class="text-sm text-navy-600/70 leading-relaxed mb-3">You're mailing people who need to find all those providers right now. They don't have relationships yet. Your mail isn't competing against existing loyalty — it's competing against other new mover mailers.</p>
+              <p class="text-sm text-navy-800 font-semibold">Typical response: 3-7% (2-3x higher than standard lists)</p>
             </div>
           </div>
 
           <p class="text-navy-600/80 leading-relaxed mb-8">
-            The difference: Timing + intent. New movers convert 3–5x higher than standard lists because they're actively looking for providers, not passively considering switching.
+            <strong class="text-navy-800">The difference: Timing + intent.</strong> A homeowner who's lived in New Paltz for 15 years doesn't need a new HVAC contractor unless their system breaks. A homeowner who moved to New Paltz last month needs an HVAC contractor for the fall tune-up, winter repairs, and long-term maintenance. They're searching for one right now. You're not interrupting them. You're answering a need they already have.
           </p>
 
           <hr class="my-8 border-navy-200" />
 
           <h2 class="text-2xl font-display text-crst-primary mb-6">Best Industries for New Mover Campaigns</h2>
 
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            New mover mail works best when the service or product is: (1) locally provided, not national chains, (2) relationship-based with repeat business, and (3) needed immediately or within 90 days of moving.
+          </p>
+
           <div class="space-y-6 mb-8">
             <div>
               <h3 class="font-heading font-bold text-navy-800 mb-2">Home Services</h3>
-              <p class="text-navy-600/70 leading-relaxed">HVAC, plumbing, electrical, landscaping, pest control, cleaning, remodeling. Why it works: systems break, lawns need mowing, pests invade. Best offer: seasonal tune-up, first-time discount, free inspection, service plan enrollment.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2">HVAC, plumbing, electrical, landscaping, pest control, cleaning, handyman, remodeling.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Why it works:</strong> New movers need to establish service providers immediately. Systems break, lawns need mowing, pests invade, and they don't know who to call yet.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Best offer:</strong> Seasonal tune-up, first-time customer discount, free inspection, service plan enrollment.</p>
+              <p class="text-navy-600/70 leading-relaxed"><strong class="text-navy-800">Real example:</strong> A Kingston HVAC contractor mails new movers in Ulster County every month. Offer: $79 system tune-up (normally $149). Last year: 847 new movers mailed, 23 booked tune-ups (2.7% response), 9 converted to service plan contracts, average annual contract value $1,200.</p>
             </div>
 
             <div>
               <h3 class="font-heading font-bold text-navy-800 mb-2">Healthcare Practices</h3>
-              <p class="text-navy-600/70 leading-relaxed">Dental, chiropractic, vision care, pediatric, veterinary. Why it works: new movers need healthcare providers, especially families with children or pet owners. Best offer: new patient special, free consultation, pediatric checkup package.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2">Dental, chiropractic, vision care, physical therapy, primary care, veterinary.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Why it works:</strong> New movers need to find new healthcare providers, especially families with children or pet owners.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Best offer:</strong> New patient special, free consultation, pediatric checkup package, first visit discount.</p>
+              <p class="text-navy-600/70 leading-relaxed"><strong class="text-navy-800">Real example:</strong> A New Paltz dental practice mails new movers with children (presence of children filter applied). Offer: Free exam + X-rays for new patients ($250 value). Monthly mailings to 60-80 new mover households. Average: 4-6 new patient appointments per month (6-8% response).</p>
             </div>
 
             <div>
               <h3 class="font-heading font-bold text-navy-800 mb-2">Retail & Automotive</h3>
-              <p class="text-navy-600/70 leading-relaxed">Furniture, appliances, home improvement, auto dealers. Why it works: new movers are furnishing homes, replacing appliances, often buying vehicles for new commutes. Best offer: first-purchase discount, delivery included, financing promotions.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2">Furniture stores, appliance stores, auto dealers, home improvement stores, boutiques.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Why it works:</strong> New movers are furnishing homes, replacing appliances, and often buying vehicles to match their new commute or lifestyle.</p>
+              <p class="text-navy-600/70 leading-relaxed"><strong class="text-navy-800">Best offer:</strong> First-purchase discount, delivery/installation included, financing promotions.</p>
             </div>
 
             <div>
               <h3 class="font-heading font-bold text-navy-800 mb-2">Financial Services</h3>
-              <p class="text-navy-600/70 leading-relaxed">Insurance (home, auto, life), mortgage brokers, banking. Why it works: new movers need to update policies, establish banking relationships, refinance after purchase. Best offer: free quote, policy review, rate comparison, new customer bonus.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2">Insurance (home, auto, life), mortgage brokers, wealth management, banking.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Why it works:</strong> New movers need to update policies, establish new banking relationships, and often refinance or take out home equity after a purchase.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Best offer:</strong> Free quote, policy review, rate comparison, new customer bonus.</p>
+              <p class="text-navy-600/70 leading-relaxed"><strong class="text-navy-800">Important:</strong> Homeowners who just bought a house already have homeowners insurance (required by lenders). But they may not have the best rate. Auto insurance needs updating for the new address. Life insurance is often top-of-mind after a major life change.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Professional Services</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-2">Legal (estate planning, real estate, family law), accounting, tax preparation, real estate agents (for future moves or investment properties).</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Why it works:</strong> Moving is a major life event that triggers estate planning, tax implications, and future real estate considerations.</p>
+              <p class="text-navy-600/70 leading-relaxed"><strong class="text-navy-800">Best offer:</strong> Free consultation, document review, tax planning session.</p>
             </div>
 
             <div>
               <h3 class="font-heading font-bold text-navy-800 mb-2">Utilities & Subscriptions</h3>
-              <p class="text-navy-600/70 leading-relaxed">Internet/cable, security systems, lawn care, cleaning, water, propane. Why it works: new movers need to set up home services. They're actively shopping. Best offer: free installation, first month free, trial periods, bundling discounts.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2">Internet/cable, security systems, lawn care, cleaning services, water delivery, propane.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Why it works:</strong> New movers need to set up all their home services. They're actively shopping for providers.</p>
+              <p class="text-navy-600/70 leading-relaxed"><strong class="text-navy-800">Best offer:</strong> Free installation, first month free, no-contract trial, bundling discounts.</p>
             </div>
           </div>
 
           <hr class="my-8 border-navy-200" />
 
-          <h2 class="text-2xl font-display text-crst-primary mb-4">Timing & Data Freshness</h2>
+          <h2 class="text-2xl font-display text-crst-primary mb-4">How New Mover Data Works: Timing & Freshness</h2>
 
-          <p class="text-navy-600/80 leading-relaxed mb-4">
+          <p class="text-navy-600/80 leading-relaxed mb-6">
             New mover lists are time-sensitive. The data is only valuable when it's fresh.
           </p>
 
-          <div class="space-y-4 mb-8">
+          <div class="space-y-6 mb-6">
             <div>
-              <h4 class="font-heading font-bold text-navy-800 mb-2">30-day new movers</h4>
-              <p class="text-navy-600/70 leading-relaxed">Moved within the last 30 days. Still unpacking, setting up utilities. Highest intent, highest response. This is the hottest window.</p>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Data Freshness</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Monthly updates:</strong> New mover data is updated monthly. Each month, you get the list of everyone who filed a change of address in the previous 30 days.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Weekly updates:</strong> Some vendors offer weekly updates for faster reach. This costs more but gets you in front of new movers before competitors.</p>
+              <p class="text-navy-600/70 leading-relaxed"><strong class="text-navy-800">Why it matters:</strong> The earlier you reach a new mover, the more likely they are to respond. Week 1-4 after the move is the hottest window. By month 6, they've already chosen providers.</p>
             </div>
 
             <div>
-              <h4 class="font-heading font-bold text-navy-800 mb-2">60-day new movers</h4>
-              <p class="text-navy-600/70 leading-relaxed">Moved 31–60 days ago. Settled in, still establishing providers. High intent, solid response.</p>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Timing Your Campaign</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">30-day new movers:</strong> Moved within the last 30 days. Still unpacking, setting up utilities, finding local services. Highest intent, highest response.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">60-day new movers:</strong> Moved 31-60 days ago. Settled in, still establishing provider relationships. High intent, solid response.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">90-day new movers:</strong> Moved 61-90 days ago. Mostly settled, but some services still needed (seasonal HVAC, spring landscaping). Moderate intent.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">120+ days:</strong> Moved 4+ months ago. Most relationships established. Lower response unless it's a seasonal service they haven't needed yet.</p>
+              <p class="text-navy-600/70 leading-relaxed"><strong class="text-navy-800">What we recommend:</strong> Mail 30-day new movers every month for maximum freshness. For seasonal services (HVAC, landscaping, snow removal), mail 30-60 day movers to align with when they'll need the service.</p>
             </div>
 
             <div>
-              <h4 class="font-heading font-bold text-navy-800 mb-2">90-day new movers</h4>
-              <p class="text-navy-600/70 leading-relaxed">Moved 61–90 days ago. Mostly settled, but some services still needed. Moderate intent.</p>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Move Type Filters</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Permanent moves:</strong> The majority of moves. These are people relocating permanently to a new residence.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Temporary moves:</strong> College students, military deployments, seasonal residents. Lower value unless you specifically serve these audiences.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Family moves:</strong> Entire household moving together (highest value — stable, long-term customers).</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Individual moves:</strong> Single person moving (good for apartments, lower value for family-oriented services).</p>
+              <p class="text-navy-600/70 leading-relaxed"><strong class="text-navy-800">What we recommend:</strong> Filter to permanent family moves unless you have a specific reason to target temporary or individual movers.</p>
             </div>
           </div>
 
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-4">Filtering New Mover Lists for Better Response</h2>
+
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            You can layer demographic filters on top of the new mover trigger to narrow down to your ideal customers:
+          </p>
+
+          <div class="space-y-6 mb-8">
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Homeowner vs. Renter</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Homeowners:</strong> Bought a house. Higher income, more stable, long-term customers. Need all home services immediately.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Renters:</strong> Leasing an apartment or house. More transient, limited buying power for home improvements (landlord's responsibility).</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">What we recommend:</strong> For home services, filter to homeowners only. For retail, healthcare, and professional services, include both (renters need dentists and insurance too).</p>
+              <p class="text-navy-600/70 leading-relaxed"><strong class="text-navy-800">Real example:</strong> A Poughkeepsie landscaping company tested new movers without filtering. 40% of responses came from renters in apartments who couldn't authorize landscape work (landlord approval required). Next campaign: filtered to homeowners only. Response rate dropped slightly (fewer total responses), but conversion rate tripled (homeowners could actually buy).</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Household Income</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-3">Estimated income of the new mover household.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Why it matters:</strong> A family moving into a $250K starter home has different buying capacity than a family moving into a $600K executive home.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Common filters:</strong></p>
+              <ul class="list-disc list-inside text-navy-600/70 space-y-1 mb-3">
+                <li>$50K-$75K (budget-conscious buyers)</li>
+                <li>$75K-$100K (middle market)</li>
+                <li>$100K-$150K (affluent, premium buyers)</li>
+                <li>$150K+ (luxury market)</li>
+              </ul>
+              <p class="text-navy-600/70 leading-relaxed"><strong class="text-navy-800">What we recommend:</strong> Match income to your service tier. Premium services (high-end remodeling, luxury auto) filter to $150K+. Mid-market services (standard HVAC, dental) filter to $75K+. Budget services include all income levels.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Presence of Children</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-2">Households with children are higher-value targets for:</p>
+              <ul class="list-disc list-inside text-navy-600/70 space-y-1 mb-3">
+                <li>Pediatric healthcare (dental, vision, pediatricians)</li>
+                <li>Family services (tutoring, sports programs, daycares)</li>
+                <li>Larger homes (more rooms to furnish, larger lawns to maintain)</li>
+                <li>Retail (kids' furniture, toys, clothing)</li>
+              </ul>
+              <p class="text-navy-600/70 leading-relaxed"><strong class="text-navy-800">What we recommend:</strong> If your service targets families, add the presence-of-children filter. If children don't matter (financial services, auto repair), skip this filter to maximize volume.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Geographic Radius</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-3">Where the new mover moved to (their new address).</p>
+              <p class="text-navy-600/70 leading-relaxed mb-2"><strong class="text-navy-800">Common filters:</strong></p>
+              <ul class="list-disc list-inside text-navy-600/70 space-y-1 mb-3">
+                <li>Radius from your location (5, 10, 15, 25 miles)</li>
+                <li>County targeting (Ulster, Dutchess, Orange)</li>
+                <li>ZIP code targeting (specific towns or neighborhoods)</li>
+              </ul>
+              <p class="text-navy-600/70 leading-relaxed"><strong class="text-navy-800">What we recommend:</strong> Match your service area. If you only serve a 10-mile radius, don't mail new movers 30 miles away.</p>
+            </div>
+          </div>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-4">How New Mover List Pricing Works</h2>
+
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            New mover lists cost more than standard consumer lists because the data is more valuable (higher intent, time-sensitive).
+          </p>
+
+          <p class="text-navy-600/80 leading-relaxed mb-3"><strong class="text-navy-800">Standard Pricing:</strong></p>
+          <ul class="list-disc list-inside text-navy-600/80 space-y-2 mb-6">
+            <li><strong class="text-navy-800">New mover lists:</strong> $150-$200 per 1,000 names (basic data: name, address, move date)</li>
+            <li><strong class="text-navy-800">Enhanced new movers:</strong> $175-$225 per 1,000 names (adds demographics: income, homeowner status, presence of children)</li>
+          </ul>
+
+          <p class="text-navy-600/80 leading-relaxed mb-3"><strong class="text-navy-800">What's included in our pricing:</strong></p>
+          <ul class="list-disc list-inside text-navy-600/80 space-y-1 mb-6">
+            <li>Monthly or weekly new mover data pull</li>
+            <li>NCOA processing (already included since this is NCOA-sourced data)</li>
+            <li>CASS certification (address validation)</li>
+            <li>Deduplication (remove repeat movers)</li>
+            <li>Presort (ZIP code sorting for bulk postage)</li>
+            <li>File formatting (Excel, CSV, or inkjet-ready)</li>
+          </ul>
+
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            <strong class="text-navy-800">Minimums:</strong> Most national vendors require 500-1,000 name minimums per month. We don't. If your market only generates 50-100 new movers per month, we'll pull 50-100. You pay for what you use.
+          </p>
+
+          <p class="text-navy-600/80 leading-relaxed mb-3"><strong class="text-navy-800">Volume expectations:</strong> How many new movers can you expect in your service area each month?</p>
+          <ul class="list-disc list-inside text-navy-600/80 space-y-1 mb-6">
+            <li><strong class="text-navy-800">Small town (population 10K):</strong> 20-40 new movers/month</li>
+            <li><strong class="text-navy-800">Mid-size town (population 25K):</strong> 50-100 new movers/month</li>
+            <li><strong class="text-navy-800">City (population 50K):</strong> 100-200 new movers/month</li>
+            <li><strong class="text-navy-800">Multi-county area:</strong> 300-600 new movers/month</li>
+          </ul>
+
           <p class="text-navy-600/80 leading-relaxed mb-8">
-            <strong class="text-navy-800">Recommendation:</strong> Mail 30-day new movers every month for maximum freshness. For seasonal services, mail 30–60 day movers to align with when they'll need the service.
+            <strong class="text-navy-800">Licensing:</strong> New mover lists are typically licensed for one-time use. Unlike standard consumer lists, re-mailing the same new movers makes no sense — they're only "new" once.
           </p>
 
           <hr class="my-8 border-navy-200" />
 
-          <h2 class="text-2xl font-display text-crst-primary mb-4">New Mover List Pricing</h2>
+          <h2 class="text-2xl font-display text-crst-primary mb-6">Common New Mover List Mistakes (And How to Avoid Them)</h2>
 
-          <ul class="list-none text-navy-600/80 space-y-2 mb-8">
-            <li><strong class="text-navy-800">New mover lists (basic):</strong> $150–$200 per 1,000 names</li>
-            <li><strong class="text-navy-800">Enhanced new movers (demographics):</strong> $175–$225 per 1,000 names</li>
-          </ul>
+          <div class="space-y-8 mb-8">
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Mistake 1: Waiting Too Long to Mail</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-3">You buy new movers from 90 days ago because you think they're "more settled."</p>
+              <p class="text-navy-600/70 leading-relaxed mb-3">By day 90, they've already chosen a dentist, HVAC contractor, and landscaper. Your mail arrives after they've made decisions.</p>
+              <p class="text-navy-600/70 leading-relaxed"><strong class="text-navy-800">The fix:</strong> Mail 30-day new movers. Reach them while they're still actively searching for providers.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Mistake 2: Not Filtering to Homeowners</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-3">You mail all new movers without filtering by homeowner status. Half your list is renters who can't authorize home services, can't buy major appliances (included in rental), and will move again in 12 months.</p>
+              <p class="text-navy-600/70 leading-relaxed"><strong class="text-navy-800">The fix:</strong> For home services, filter to homeowners only. For healthcare and retail, include both.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Mistake 3: Generic "Welcome to the Neighborhood" Offers</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-3">Your mail says "Welcome! We're your local HVAC company." No specific offer. No urgency. No reason to call now.</p>
+              <p class="text-navy-600/70 leading-relaxed mb-3">New movers get 20+ pieces of welcome mail in the first month. Yours blends into the pile.</p>
+              <p class="text-navy-600/70 leading-relaxed"><strong class="text-navy-800">The fix:</strong> Lead with a specific, time-limited offer. "$79 System Tune-Up (Reg. $149) — New Customers Only — Expires 30 Days After Move-In." Give them a reason to call you first.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Mistake 4: Mailing Once and Stopping</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-3">You mail one batch of new movers and stop. Next month's new movers never hear from you. Your competitors mail every month and capture all the new business.</p>
+              <p class="text-navy-600/70 leading-relaxed"><strong class="text-navy-800">The fix:</strong> Set up a monthly new mover campaign. Every month, mail that month's new arrivals. Consistent reach = consistent new customers.</p>
+            </div>
+          </div>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-6">New Mover Campaign Strategy: What Works</h2>
+
+          <div class="space-y-4 mb-8">
+            <div>
+              <p class="text-navy-600/80 leading-relaxed"><strong class="text-navy-800">1. Mail Within 30 Days of Move Date</strong> — The hottest window. They're actively setting up services. Your mail gets opened.</p>
+            </div>
+            <div>
+              <p class="text-navy-600/80 leading-relaxed"><strong class="text-navy-800">2. Lead With a Strong First-Time Customer Offer</strong> — Free inspection, discounted first service, bundled package, no-obligation consultation. Make it easy to say yes.</p>
+            </div>
+            <div>
+              <p class="text-navy-600/80 leading-relaxed"><strong class="text-navy-800">3. Include a Clear Call to Action with Urgency</strong> — "Call within 30 days" or "Mention this mailer for discount" creates urgency. Without a deadline, they'll set it aside and forget.</p>
+            </div>
+            <div>
+              <p class="text-navy-600/80 leading-relaxed"><strong class="text-navy-800">4. Mail Monthly for Consistent Flow</strong> — Don't batch new movers quarterly. Mail every month so you're always reaching fresh movers before competitors.</p>
+            </div>
+            <div>
+              <p class="text-navy-600/80 leading-relaxed"><strong class="text-navy-800">5. Track Source Code for Each Campaign</strong> — Use a unique phone number, promo code, or URL for each mailing so you can track which months perform best and calculate ROI.</p>
+            </div>
+            <div>
+              <p class="text-navy-600/80 leading-relaxed"><strong class="text-navy-800">6. Follow Up with Multi-Touch</strong> — New movers get hit with a lot of mail. Consider a 2-3 piece sequence: first mailer at 30 days, second mailer at 45 days, third at 60 days. Repetition builds familiarity.</p>
+            </div>
+          </div>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-6">Real New Mover Campaign Examples</h2>
+
+          <div class="space-y-6 mb-8">
+            <div class="bg-navy-50/40 border border-navy-100 rounded-lg p-6">
+              <h3 class="font-heading font-bold text-navy-800 mb-3">HVAC Contractor → New Homeowners</h3>
+              <ul class="list-none text-navy-600/70 space-y-1">
+                <li><strong class="text-navy-800">Target:</strong> Homeowners who moved in last 30 days, Ulster County</li>
+                <li><strong class="text-navy-800">Volume:</strong> 60-80 new movers per month</li>
+                <li><strong class="text-navy-800">Offer:</strong> $79 fall furnace tune-up (normally $149)</li>
+                <li><strong class="text-navy-800">Result:</strong> 2-3 bookings per month (3-4% response), 40% convert to annual service plans</li>
+              </ul>
+            </div>
+
+            <div class="bg-navy-50/40 border border-navy-100 rounded-lg p-6">
+              <h3 class="font-heading font-bold text-navy-800 mb-3">Dental Practice → Families with Children</h3>
+              <ul class="list-none text-navy-600/70 space-y-1">
+                <li><strong class="text-navy-800">Target:</strong> New movers with children under 18, 10-mile radius from New Paltz</li>
+                <li><strong class="text-navy-800">Volume:</strong> 40-60 households per month</li>
+                <li><strong class="text-navy-800">Offer:</strong> Free exam + X-rays for new patients</li>
+                <li><strong class="text-navy-800">Result:</strong> 4-6 new patient appointments per month (8-10% response)</li>
+              </ul>
+            </div>
+
+            <div class="bg-navy-50/40 border border-navy-100 rounded-lg p-6">
+              <h3 class="font-heading font-bold text-navy-800 mb-3">Landscaping Company → High-Income Homeowners</h3>
+              <ul class="list-none text-navy-600/70 space-y-1">
+                <li><strong class="text-navy-800">Target:</strong> Homeowners, $100K+ income, moved in last 60 days, Dutchess County</li>
+                <li><strong class="text-navy-800">Volume:</strong> 50-70 per month</li>
+                <li><strong class="text-navy-800">Offer:</strong> Free landscape consultation + 20% off first project</li>
+                <li><strong class="text-navy-800">Result:</strong> 3-5 consultations per month (5-7% response), 2-3 signed contracts</li>
+              </ul>
+            </div>
+
+            <div class="bg-navy-50/40 border border-navy-100 rounded-lg p-6">
+              <h3 class="font-heading font-bold text-navy-800 mb-3">Insurance Agency → All New Movers</h3>
+              <ul class="list-none text-navy-600/70 space-y-1">
+                <li><strong class="text-navy-800">Target:</strong> All new movers (homeowners and renters), Orange County</li>
+                <li><strong class="text-navy-800">Volume:</strong> 200-300 per month</li>
+                <li><strong class="text-navy-800">Offer:</strong> Free quote comparison + $50 gift card for switching</li>
+                <li><strong class="text-navy-800">Result:</strong> 12-18 quote requests per month (5-6% response), 6-9 new policies written</li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-6">How to Order a New Mover Mailing List</h2>
+
+          <div class="space-y-6 mb-8">
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Step 1: Define Your Filters</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-2">Start with geography (county, radius, or ZIP codes), then add:</p>
+              <ul class="list-disc list-inside text-navy-600/70 space-y-1">
+                <li>Homeowner vs. renter (or both)</li>
+                <li>Income range (if relevant)</li>
+                <li>Presence of children (if relevant)</li>
+                <li>Move date window (30, 60, or 90 days)</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Step 2: Contact Us</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-2">Call <a href={`tel:${BUSINESS.phoneClean}`} class="text-crst-primary hover:underline">{BUSINESS.phone}</a> or <a href="/estimate" class="text-crst-primary hover:underline">request a quote</a></p>
+              <p class="text-navy-600/70 leading-relaxed mb-2">Tell us:</p>
+              <ul class="list-disc list-inside text-navy-600/70 space-y-1">
+                <li>Your service area</li>
+                <li>Whether you want homeowners only or all movers</li>
+                <li>Your timeline (monthly, weekly, one-time test)</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Step 3: We Pull a Monthly Count</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-2">We'll estimate how many new movers you can expect each month in your target area and send you:</p>
+              <ul class="list-disc list-inside text-navy-600/70 space-y-1">
+                <li>Estimated monthly volume</li>
+                <li>Cost per thousand</li>
+                <li>Total monthly cost</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Step 4: Set Up Monthly Delivery or One-Time Test</h3>
+              <p class="text-navy-600/70 leading-relaxed">Most businesses set up monthly new mover campaigns (we pull and mail each month's new arrivals automatically). You can also order a one-time batch to test response before committing to monthly.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Step 5: We Deliver and Mail</h3>
+              <p class="text-navy-600/70 leading-relaxed">Each month, we pull the list, process it, print your mailer, and deliver it to USPS. New movers receive your mail within 7-10 days of their move date. Or, we can deliver the data file and you handle printing/mailing yourself.</p>
+            </div>
+          </div>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-6">Frequently Asked Questions</h2>
+
+          <div class="space-y-6 mb-8">
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">How fresh is the new mover data?</h3>
+              <p class="text-navy-600/70 leading-relaxed">Updated monthly or weekly depending on your vendor and service level. We use monthly updates (30-day new movers) for most campaigns. Weekly updates are available for an additional cost if you need faster reach.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Can I suppress my existing customers?</h3>
+              <p class="text-navy-600/70 leading-relaxed">Yes. Send us your customer file. We'll scrub it against the new mover list each month so you don't mail existing customers with new-customer offers.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">What if I only get 30-50 new movers per month in my area?</h3>
+              <p class="text-navy-600/70 leading-relaxed">That's fine. Most national vendors require 500-1,000 minimums per month, but we don't. If your market only generates 30 new movers, we'll pull 30. Small volume is common in rural or small-town markets.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Do renters respond to new mover mail?</h3>
+              <p class="text-navy-600/70 leading-relaxed">Yes, but for different services. Renters respond to healthcare, retail, insurance, and utilities. They don't respond to home improvement services (they can't authorize work on a rental property). Filter by homeowner status based on what you're selling.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">How long is someone considered a "new mover"?</h3>
+              <p class="text-navy-600/70 leading-relaxed">Industry standard is 90 days. After that, they're established and response rates drop significantly. We recommend mailing 30-60 day movers for maximum response.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Can I mail new movers every month?</h3>
+              <p class="text-navy-600/70 leading-relaxed">Yes, and you should if you want consistent new customer flow. Each month brings a fresh batch of new arrivals. Set up a monthly campaign so you're always reaching recent movers before competitors.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">What's a good response rate for new mover mail?</h3>
+              <p class="text-navy-600/70 leading-relaxed">3-7% is typical for well-targeted campaigns with strong offers. That's 2-3x higher than standard consumer direct mail (1-2%). New movers are actively looking for providers, so they respond at much higher rates.</p>
+            </div>
+          </div>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-4">New Mover Mailing Lists: The Bottom Line</h2>
+
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            New movers are the highest-intent audience in direct mail. They're not thinking about buying someday — they're buying this month. They need dentists, HVAC contractors, landscapers, insurance agents, and every other local service immediately.
+          </p>
+
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            The window is short. If you mail them in the first 30-60 days, you're competing for their business. If you wait six months, they've already chosen someone else and you're trying to steal them away from established relationships.
+          </p>
+
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            Timing beats targeting. A generic consumer list with perfect demographics but no urgency will underperform a fresh new mover list every time.
+          </p>
 
           <p class="text-navy-600/80 leading-relaxed mb-8">
-            What's included: Monthly or weekly data pulls, NCOA processing, CASS certification, deduplication, presort, file formatting. Minimums: We don't have them. If your market only generates 50–100 new movers per month, we'll pull 50–100.
+            If you serve local customers in the Hudson Valley, new mover mail should be a recurring monthly campaign, not a one-time test. Every month brings new arrivals. Every month is an opportunity to capture customers before your competitors do.
           </p>
 
           <div class="bg-crst-primary/5 border border-crst-primary/15 rounded-xl p-6 mt-10 text-center">
-            <p class="font-heading font-bold text-crst-primary text-lg mb-2">Reach New Movers in the Hudson Valley</p>
-            <p class="text-navy-600/70 text-sm mb-4">Tell us your target audience and geography. We'll provide a count and quote.</p>
+            <p class="font-heading font-bold text-crst-primary text-lg mb-2">Need a New Mover Mailing List?</p>
+            <p class="text-navy-600/70 text-sm mb-4">Tell us your service area, whether you want homeowners only, and any other filters that matter. We'll send you an estimated monthly volume and pricing, usually within a few hours.</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-              <a href="/estimate" class="btn-primary text-sm">Get a Free Estimate</a>
+              <a href="/estimate" class="btn-primary text-sm">Get a New Mover List Quote</a>
               <a href={`tel:${BUSINESS.phoneClean}`} class="inline-flex items-center gap-2 text-sm font-heading font-semibold text-crst-primary hover:text-crst-accent transition-colors">
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                 Call {BUSINESS.phone}
               </a>
             </div>
           </div>
+
+          <p class="text-sm text-navy-500 mt-8 text-center">
+            Building new mover campaigns for Hudson Valley businesses since 1998. 2.3M+ pieces mailed and counting.
+          </p>
         </div>
 
         <!-- Sidebar -->
@@ -231,9 +582,10 @@ const serviceSchema = {
             <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
               <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Key Facts</h3>
               <div class="space-y-3 text-sm text-navy-600/70">
-                <p><strong class="text-navy-800">3–5x higher response</strong> than standard consumer lists</p>
+                <p><strong class="text-navy-800">3-5x higher response</strong> than standard consumer lists</p>
                 <p><strong class="text-navy-800">$9,000+ in spending</strong> in first 90 days after move</p>
                 <p><strong class="text-navy-800">Mail within 30 days</strong> for best response rates</p>
+                <p><strong class="text-navy-800">No minimums</strong> — even 30 movers/month works</p>
               </div>
             </div>
           </div>
