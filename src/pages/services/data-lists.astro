@@ -10,7 +10,7 @@ const serviceSchema = {
   '@type': 'Service',
   name: 'Mailing List & Data Services',
   provider: {
-    '@type': 'LocalBusiness',
+    '@type': 'Organization',
     '@id': 'https://crst.net/#organization',
     name: BUSINESS.name,
     telephone: BUSINESS.phone,
@@ -133,16 +133,24 @@ const serviceSchema = {
                 desc: 'Every deliverable address on selected carrier routes. Ideal for EDDM and hyper-local campaigns. No demographic filters — just blanket coverage of a geographic area.'
               },
               {
+                title: 'Direct Mail Lists',
+                desc: 'Our comprehensive overview of how mailing lists work — what\'s included in a list file, how data is verified, NCOA processing, CASS certification, and what separates a deliverable list from a wasted one.',
+                link: '/services/direct-mail-lists'
+              },
+              {
                 title: 'Consumer Lists',
-                desc: 'Filtered by age, income, homeownership, marital status, presence of children, lifestyle interests, purchase behavior, vehicle ownership, and dozens of other selects. If you need to reach "homeowners aged 45–65 making $100K+ within 10 miles of New Paltz," we can build that.'
+                desc: 'Filtered by age, income, homeownership, marital status, presence of children, lifestyle interests, purchase behavior, vehicle ownership, and dozens of other selects. If you need to reach "homeowners aged 45–65 making $100K+ within 10 miles of New Paltz," we can build that.',
+                link: '/services/consumer-mailing-lists'
               },
               {
                 title: 'Business Lists',
-                desc: 'Targeted by SIC/NAICS code (industry classification), employee count, revenue range, and geography. Want every HVAC contractor in Orange County with 5–20 employees? Every pediatric practice in the Hudson Valley? We pull from Dun & Bradstreet, InfoUSA, and Experian Business.'
+                desc: 'Targeted by SIC/NAICS code (industry classification), employee count, revenue range, and geography. Want every HVAC contractor in Orange County with 5–20 employees? Every pediatric practice in the Hudson Valley? We pull from Dun & Bradstreet, InfoUSA, and Experian Business.',
+                link: '/services/business-mailing-lists'
               },
               {
                 title: 'New Mover Lists',
-                desc: 'Recently relocated households. These are high-value prospects because they\'re actively looking for local services — lawn care, HVAC, dental, auto repair, internet, insurance. New movers convert 3–5x higher than standard consumer lists.'
+                desc: 'Recently relocated households. These are high-value prospects because they\'re actively looking for local services — lawn care, HVAC, dental, auto repair, internet, insurance. New movers convert 3–5x higher than standard consumer lists.',
+                link: '/services/new-mover-mailing-lists'
               },
               {
                 title: 'Voter Files',
@@ -154,8 +162,11 @@ const serviceSchema = {
               }
             ].map((item) => (
               <div class="p-4 bg-navy-50/40 rounded-lg border border-navy-100">
-                <h4 class="font-heading font-bold text-navy-800 mb-2">{item.title}</h4>
+                <h4 class="font-heading font-bold text-navy-800 mb-2">
+                  {item.link ? <a href={item.link} class="text-crst-primary hover:underline">{item.title}</a> : item.title}
+                </h4>
                 <p class="text-sm text-navy-600/70 leading-relaxed">{item.desc}</p>
+                {item.link && <a href={item.link} class="text-xs font-heading font-semibold text-crst-primary hover:underline mt-2 inline-block">Learn more →</a>}
               </div>
             ))}
           </div>
@@ -344,6 +355,46 @@ const serviceSchema = {
             ))}
           </div>
 
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-4">Related Mailing List Guides</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            Want to go deeper? These guides explain how each type of mailing list works, what filters are available, pricing, and real campaign examples from Hudson Valley businesses:
+          </p>
+          <div class="space-y-3 mb-8">
+            <a href="/services/direct-mail-lists" class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg border border-navy-100 hover:border-crst-primary/30 transition-colors group">
+              <svg class="w-5 h-5 text-crst-primary shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <div>
+                <span class="font-heading font-bold text-navy-800 group-hover:text-crst-primary transition-colors">Direct Mail Lists</span>
+                <p class="text-sm text-navy-600/70 mt-1">Overview of consumer, business, and specialty list types — what to expect, what to ask, and how lists are processed.</p>
+              </div>
+            </a>
+            <a href="/services/business-mailing-lists" class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg border border-navy-100 hover:border-crst-primary/30 transition-colors group">
+              <svg class="w-5 h-5 text-crst-primary shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <div>
+                <span class="font-heading font-bold text-navy-800 group-hover:text-crst-primary transition-colors">Business Mailing Lists</span>
+                <p class="text-sm text-navy-600/70 mt-1">How to target companies by industry, employee count, revenue, and geography for B2B campaigns.</p>
+              </div>
+            </a>
+            <a href="/services/consumer-mailing-lists" class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg border border-navy-100 hover:border-crst-primary/30 transition-colors group">
+              <svg class="w-5 h-5 text-crst-primary shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <div>
+                <span class="font-heading font-bold text-navy-800 group-hover:text-crst-primary transition-colors">Consumer Mailing Lists</span>
+                <p class="text-sm text-navy-600/70 mt-1">Target households by age, income, homeowner status, and demographics with real campaign examples.</p>
+              </div>
+            </a>
+            <a href="/services/new-mover-mailing-lists" class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg border border-navy-100 hover:border-crst-primary/30 transition-colors group">
+              <svg class="w-5 h-5 text-crst-primary shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <div>
+                <span class="font-heading font-bold text-navy-800 group-hover:text-crst-primary transition-colors">New Mover Mailing Lists</span>
+                <p class="text-sm text-navy-600/70 mt-1">Reach recent movers with 3–5x higher response rates — timing, filters, and monthly campaign strategies.</p>
+              </div>
+            </a>
+          </div>
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            All mailing list services are part of our full-service <a href="/services/direct-mail" class="text-crst-primary font-semibold hover:underline">direct mail campaigns</a> — from list to mailbox, one vendor, one invoice.
+          </p>
+
           <div class="bg-crst-primary/5 border border-crst-primary/15 rounded-xl p-6 mt-10 text-center">
             <p class="font-heading font-bold text-crst-primary text-lg mb-2">Get a List Count and Quote</p>
             <p class="text-navy-600/70 text-sm mb-4">Tell us your target audience and geography. We'll send you a record count and pricing — usually within a few hours.</p>
@@ -382,6 +433,10 @@ const serviceSchema = {
               <div class="space-y-2">
                 {[
                   { label: 'Direct Mail Campaigns', href: '/services/direct-mail' },
+                  { label: 'Direct Mail Lists', href: '/services/direct-mail-lists' },
+                  { label: 'Business Mailing Lists', href: '/services/business-mailing-lists' },
+                  { label: 'Consumer Mailing Lists', href: '/services/consumer-mailing-lists' },
+                  { label: 'New Mover Lists', href: '/services/new-mover-mailing-lists' },
                   { label: 'EDDM', href: '/services/eddm' },
                   { label: 'Mailing Services', href: '/services/mailing' },
                   { label: 'Non-Profit Mailing', href: '/services/non-profit-mailing' },

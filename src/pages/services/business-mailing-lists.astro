@@ -57,7 +57,7 @@ const serviceSchema = {
           </p>
 
           <p class="text-navy-600/80 leading-relaxed mb-8">
-            Business mailing lists only work when they're filtered correctly. Industry code isn't enough. You need employee count, revenue range, years in business, decision-maker titles, and geographic boundaries that match who you actually serve.
+            Business mailing lists only work when they're filtered correctly — just like <a href="/services/consumer-mailing-lists" class="text-crst-primary hover:underline">consumer mailing lists</a> need demographic filters to perform. Industry code isn't enough. You need employee count, revenue range, years in business, decision-maker titles, and geographic boundaries that match who you actually serve.
           </p>
 
           <p class="text-navy-600/80 leading-relaxed mb-8">
@@ -65,7 +65,7 @@ const serviceSchema = {
           </p>
 
           <p class="text-navy-600/80 leading-relaxed mb-8">
-            Here's how to build a business mailing list that doesn't waste half your budget on companies that can't or won't buy from you.
+            Here's how to build a business mailing list that doesn't waste half your budget on companies that can't or won't buy from you. This guide is part of our <a href="/services/data-lists" class="text-crst-primary hover:underline">mailing list and data services</a> — from list building to print and delivery.
           </p>
 
           <hr class="my-8 border-navy-200" />
@@ -555,8 +555,12 @@ const serviceSchema = {
             Buying a cheap, unfiltered list and mailing everyone wastes money. The "expensive" list that's highly targeted costs more per thousand names — but it performs better because you're not mailing businesses that can't or won't buy.
           </p>
 
-          <p class="text-navy-600/80 leading-relaxed mb-8">
+          <p class="text-navy-600/80 leading-relaxed mb-6">
             If you're selling B2B in the Hudson Valley, the list is the foundation. Get it right and everything else works. Get it wrong and the best offer, design, and copy in the world won't save the campaign.
+          </p>
+
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            Business mailing lists are one part of our complete <a href="/services/data-lists" class="text-crst-primary font-semibold hover:underline">mailing list and data services</a>. If you're also targeting households, see our guide to <a href="/services/consumer-mailing-lists" class="text-crst-primary font-semibold hover:underline">consumer mailing lists</a>. For reaching people who just relocated, <a href="/services/new-mover-mailing-lists" class="text-crst-primary font-semibold hover:underline">new mover mailing lists</a> convert 3–5x higher than standard lists. All of these feed into our full-service <a href="/services/direct-mail" class="text-crst-primary font-semibold hover:underline">direct mail campaigns</a> — from list to mailbox.
           </p>
 
           <div class="bg-crst-primary/5 border border-crst-primary/15 rounded-xl p-6 mt-10 text-center">
@@ -594,11 +598,11 @@ const serviceSchema = {
               <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Related Services</h3>
               <div class="space-y-2">
                 {[
+                  { label: 'Direct Mail Campaigns', href: '/services/direct-mail' },
                   { label: 'Mailing Lists & Data Services', href: '/services/data-lists' },
                   { label: 'Direct Mail Lists', href: '/services/direct-mail-lists' },
                   { label: 'Consumer Mailing Lists', href: '/services/consumer-mailing-lists' },
                   { label: 'New Mover Lists', href: '/services/new-mover-mailing-lists' },
-                  { label: 'Direct Mail Campaigns', href: '/services/direct-mail' },
                 ].map((link) => (
                   <a href={link.href} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-white rounded-md transition-colors font-heading">
                     {link.label}

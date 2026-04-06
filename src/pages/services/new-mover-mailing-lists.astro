@@ -108,7 +108,7 @@ const serviceSchema = {
           </ul>
 
           <p class="text-navy-600/80 leading-relaxed mb-8">
-            They're not browsing. They're buying. Now.
+            They're not browsing. They're buying. Now. This guide is part of our <a href="/services/data-lists" class="text-crst-primary hover:underline">mailing list and data services</a> — from list building to print and delivery.
           </p>
 
           <hr class="my-8 border-navy-200" />
@@ -117,7 +117,7 @@ const serviceSchema = {
 
           <div class="grid sm:grid-cols-2 gap-6 mb-6">
             <div class="p-5 bg-navy-50/40 rounded-lg border border-navy-100">
-              <h3 class="font-heading font-bold text-navy-800 mb-2">Standard Consumer List</h3>
+              <h3 class="font-heading font-bold text-navy-800 mb-2"><a href="/services/consumer-mailing-lists" class="text-crst-primary hover:underline">Standard Consumer List</a></h3>
               <p class="text-sm text-navy-600/70 leading-relaxed mb-3">You're mailing people who already have a dentist, landscaper, HVAC contractor, and insurance agent. Your mail is competing against inertia. Most people don't switch providers unless there's a problem.</p>
               <p class="text-sm text-navy-800 font-semibold">Typical response: 1-2% if you're lucky</p>
             </div>
@@ -524,11 +524,15 @@ const serviceSchema = {
           </p>
 
           <p class="text-navy-600/80 leading-relaxed mb-6">
-            Timing beats targeting. A generic consumer list with perfect demographics but no urgency will underperform a fresh new mover list every time.
+            Timing beats targeting. A generic <a href="/services/consumer-mailing-lists" class="text-crst-primary hover:underline">consumer list</a> with perfect demographics but no urgency will underperform a fresh new mover list every time.
+          </p>
+
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            If you serve local customers in the Hudson Valley, new mover mail should be a recurring monthly campaign, not a one-time test. Every month brings new arrivals. Every month is an opportunity to capture customers before your competitors do.
           </p>
 
           <p class="text-navy-600/80 leading-relaxed mb-8">
-            If you serve local customers in the Hudson Valley, new mover mail should be a recurring monthly campaign, not a one-time test. Every month brings new arrivals. Every month is an opportunity to capture customers before your competitors do.
+            New mover lists are one part of our complete <a href="/services/data-lists" class="text-crst-primary font-semibold hover:underline">mailing list and data services</a>. For broader household targeting, see our guide to <a href="/services/consumer-mailing-lists" class="text-crst-primary font-semibold hover:underline">consumer mailing lists</a>. For B2B campaigns, see <a href="/services/business-mailing-lists" class="text-crst-primary font-semibold hover:underline">business mailing lists</a>. All of these feed into our full-service <a href="/services/direct-mail" class="text-crst-primary font-semibold hover:underline">direct mail campaigns</a> — from list to mailbox.
           </p>
 
           <div class="bg-crst-primary/5 border border-crst-primary/15 rounded-xl p-6 mt-10 text-center">
@@ -566,10 +570,11 @@ const serviceSchema = {
               <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Related Services</h3>
               <div class="space-y-2">
                 {[
-                  { label: 'Mailing Lists & Data Services', href: '/services/data-lists' },
-                  { label: 'Consumer Mailing Lists', href: '/services/consumer-mailing-lists' },
-                  { label: 'Direct Mail Lists', href: '/services/direct-mail-lists' },
                   { label: 'Direct Mail Campaigns', href: '/services/direct-mail' },
+                  { label: 'Mailing Lists & Data Services', href: '/services/data-lists' },
+                  { label: 'Direct Mail Lists', href: '/services/direct-mail-lists' },
+                  { label: 'Business Mailing Lists', href: '/services/business-mailing-lists' },
+                  { label: 'Consumer Mailing Lists', href: '/services/consumer-mailing-lists' },
                 ].map((link) => (
                   <a href={link.href} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-white rounded-md transition-colors font-heading">
                     {link.label}
