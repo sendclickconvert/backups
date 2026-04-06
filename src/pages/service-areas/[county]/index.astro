@@ -2,7 +2,6 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import PageHero from '../../../components/PageHero.astro';
 import CTASection from '../../../components/CTASection.astro';
-import AuthorByline from '../../../components/AuthorByline.astro';
 import { BUSINESS, SERVICES } from '../../../data/site';
 import { COUNTIES_DATA } from '../../../data/locations';
 import type { County } from '../../../data/locations';
@@ -312,9 +311,6 @@ const serviceSchema = {
         )}
       </div>
 
-      <div class="mt-8">
-        <AuthorByline compact />
-      </div>
     </div>
   </section>
 
