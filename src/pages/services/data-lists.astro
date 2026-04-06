@@ -33,7 +33,7 @@ const serviceSchema = {
   </Fragment>
   <PageHero
     title="Mailing Lists & Data Services"
-    subtitle="A direct mail campaign is only as good as the list behind it. We build targeted mailing lists for consumer and business outreach, cleaned and ready to mail."
+    subtitle="You're not losing customers because your message is wrong. You're losing them because you're mailing the wrong people. We build targeted lists that actually reach people — cleaned, verified, and ready to mail."
     breadcrumbs={[
       { label: 'Services', href: '/services' },
       { label: 'Data Lists' },
@@ -44,62 +44,309 @@ const serviceSchema = {
     <div class="container-wide">
       <div class="grid lg:grid-cols-3 gap-10 lg:gap-14">
         <!-- Main content -->
-        <div class="lg:col-span-2">
+        <div class="lg:col-span-2 prose prose-lg max-w-none">
           <div class="section-divider mb-6"></div>
-          <h2 class="text-2xl font-display text-crst-primary mb-4">How We Build Your Mailing List</h2>
-          <p class="text-navy-600/80 leading-relaxed mb-6">
-            We pull mailing lists from national consumer and business databases. Consumer lists filter by geography, household income, age, homeowner status, and dozens of other demographics. Business lists filter by SIC/NAICS code, employee count, revenue, and location. Every list runs through NCOA (National Change of Address) to catch moves and CASS certification for address accuracy. You get a clean, mail-ready file. We also process and clean lists you already have — deduplication, merge/purge, and address standardization.
-          </p>
-          <p class="text-navy-600/80 leading-relaxed mb-6">
-            You start by telling us the geography and audience. A 5-mile radius around your location? All homeowners in a ZIP code? Every dentist in Dutchess County? We pull the data, apply your filters, run NCOA and CASS, and deliver a file ready for inkjet addressing. For existing lists, we run the same hygiene processing — NCOA updates, duplicate removal, ZIP+4 correction, and deliverability scoring. List counts and pricing come back the same day in most cases. Building mailing lists for Hudson Valley direct mail campaigns since 1998.
+          
+          <p class="text-lg text-navy-700 leading-relaxed font-semibold mb-6">
+            A direct mail campaign dies the second it hits an old address, a duplicate, or someone who moved six months ago. Every undeliverable piece is money you'll never get back. We build targeted mailing lists that actually reach people — cleaned, verified, and ready to mail the day you need them.
           </p>
 
-          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">List Types We Provide</h3>
-          <div class="grid sm:grid-cols-2 gap-3">
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            Hudson Valley businesses have trusted us with 2.3 million pieces since 1998. We don't sell you a list and disappear. We build your list, process it, mail it, and track what worked. Same team, same building, same phone number for 28 years.
+          </p>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-4">The Problem with Most Mailing Lists</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            Most list vendors hand you a spreadsheet and call it done. You're left figuring out:
+          </p>
+          <ul class="list-disc list-inside text-navy-600/80 space-y-2 mb-6">
+            <li>How many addresses are outdated</li>
+            <li>Who moved in the last four years</li>
+            <li>Which records are duplicates</li>
+            <li>Whether the addresses are even deliverable</li>
+            <li>How to format everything for the post office</li>
+            <li>If you're accidentally mailing your own customers</li>
+          </ul>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            Then you mail it. Half the pieces bounce. You spent $2,000 on printing and postage, and 40% of it never arrived.
+          </p>
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            We don't sell you raw data and walk away. We hand you a file that's been NCOA-processed, CASS-certified, deduplicated, and presorted. Every address has been verified. You're not guessing if it will deliver — we already checked.
+          </p>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-4">How We Build Your List (The Actual Process)</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            You tell us who you want to reach. We pull the data, clean it, verify every address, and deliver a mail-ready file. Here's what happens behind the scenes:
+          </p>
+
+          <div class="space-y-8">
             {[
-              { title: 'Saturation Lists', desc: 'Every deliverable address on selected carrier routes — ideal for EDDM and local campaigns' },
-              { title: 'Consumer Lists', desc: 'Filtered by age, income, homeownership, interests, purchase behavior, and more' },
-              { title: 'Business Lists', desc: 'Targeted by SIC/NAICS code, employee count, revenue, and geography' },
-              { title: 'New Mover Lists', desc: 'Recently relocated households — high-value prospects actively looking for local services' },
-              { title: 'Voter Files', desc: 'Registered voter data for political mailings and municipal notifications' },
-              { title: 'Custom Compiled Lists', desc: 'Specialty lists built to your exact specifications from multiple data sources' },
+              {
+                step: '1',
+                title: 'We Pull From National Databases',
+                desc: 'Consumer lists filter by geography, income, age, homeowner status, buying behavior, and 40+ other demographics. Business lists filter by SIC/NAICS code, employee count, revenue, and location. You want every dentist in Dutchess County? Done. Homeowners in a 5-mile radius making $75K+? We\'ll have the count in two hours.'
+              },
+              {
+                step: '2',
+                title: 'We Run NCOA (National Change of Address)',
+                desc: 'This catches anyone who moved in the last 48 months and updates their address. The USPS requires this for presorted mail. If you skip it, your mailing gets rejected or charges full postage. We don\'t skip it. Every list we deliver has been NCOA-processed.'
+              },
+              {
+                step: '3',
+                title: 'CASS Certification (Address Verification)',
+                desc: 'CASS stands for Coding Accuracy Support System. It\'s USPS software that checks every address against their master database. If an address doesn\'t exist, it gets flagged. If it\'s formatted wrong, we fix it. This is how you qualify for automation discounts — which can cut your postage by 30–50%. Without CASS, you pay retail rates on every piece.'
+              },
+              {
+                step: '4',
+                title: 'Deduplication',
+                desc: 'We identify duplicate records and remove them. You\'re not paying to mail the same person twice. If you have an existing customer list, we\'ll merge/purge it against the purchased list. This keeps you from accidentally mailing people who already buy from you — which is both expensive and annoying.'
+              },
+              {
+                step: '5',
+                title: 'Presort by ZIP Code',
+                desc: 'We sort your list by ZIP code to qualify for bulk postage rates. This alone saves most campaigns 30–40% on postage. On a 5,000-piece mailing, that\'s $400–$600 you keep instead of giving to the post office.'
+              }
             ].map((item) => (
-              <div class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg">
-                <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              <div class="flex items-start gap-4">
+                <div class="shrink-0 w-10 h-10 rounded-full bg-crst-primary flex items-center justify-center text-white font-heading font-bold">
+                  {item.step}
+                </div>
                 <div>
-                  <div class="font-heading font-semibold text-navy-800 text-sm">{item.title}</div>
-                  <div class="text-xs text-navy-600/60">{item.desc}</div>
+                  <h3 class="font-heading font-bold text-navy-800 mb-2">{item.title}</h3>
+                  <p class="text-navy-600/70 leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">Data Processing & Hygiene</h3>
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-6">List Types We Provide</h2>
+          <div class="space-y-5">
+            {[
+              {
+                title: 'Saturation Lists',
+                desc: 'Every deliverable address on selected carrier routes. Ideal for EDDM and hyper-local campaigns. No demographic filters — just blanket coverage of a geographic area.'
+              },
+              {
+                title: 'Consumer Lists',
+                desc: 'Filtered by age, income, homeownership, marital status, presence of children, lifestyle interests, purchase behavior, vehicle ownership, and dozens of other selects. If you need to reach "homeowners aged 45–65 making $100K+ within 10 miles of New Paltz," we can build that.'
+              },
+              {
+                title: 'Business Lists',
+                desc: 'Targeted by SIC/NAICS code (industry classification), employee count, revenue range, and geography. Want every HVAC contractor in Orange County with 5–20 employees? Every pediatric practice in the Hudson Valley? We pull from Dun & Bradstreet, InfoUSA, and Experian Business.'
+              },
+              {
+                title: 'New Mover Lists',
+                desc: 'Recently relocated households. These are high-value prospects because they\'re actively looking for local services — lawn care, HVAC, dental, auto repair, internet, insurance. New movers convert 3–5x higher than standard consumer lists.'
+              },
+              {
+                title: 'Voter Files',
+                desc: 'Registered voter data for political mailings, municipal notifications, and advocacy campaigns. Includes voting history, party affiliation, and household composition.'
+              },
+              {
+                title: 'Custom Compiled Lists',
+                desc: 'Specialty lists built from multiple sources. If you need something specific that doesn\'t fit a standard category, we compile it manually. Examples: every nonprofit with an annual budget over $500K, every business that filed for a construction permit in the last six months, every household that recently purchased solar panels.'
+              }
+            ].map((item) => (
+              <div class="p-4 bg-navy-50/40 rounded-lg border border-navy-100">
+                <h4 class="font-heading font-bold text-navy-800 mb-2">{item.title}</h4>
+                <p class="text-sm text-navy-600/70 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-4">Already Have a List? We'll Clean It.</h2>
           <p class="text-navy-600/80 leading-relaxed mb-4">
-            Raw data is only as good as its processing. We clean, verify, and prepare every list to maximize deliverability and minimize waste:
+            If you already have a customer list, prospect database, or purchased file from somewhere else, we can process it for direct mail. We accept data in Excel, CSV, Access, or any database export format. We'll:
           </p>
+          <ul class="list-disc list-inside text-navy-600/80 space-y-2 mb-6">
+            <li>Run NCOA to update moved addresses</li>
+            <li>CASS-certify for deliverability</li>
+            <li>Remove duplicates</li>
+            <li>Standardize formatting</li>
+            <li>Presort by ZIP code</li>
+            <li>Return a mail-ready file</li>
+          </ul>
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            This service is included when you print and mail with us. If you're only processing a list (not mailing), we charge $75 per 1,000 records.
+          </p>
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            We also offer merge/purge — combining multiple lists while removing duplicates. If you have three separate spreadsheets of prospects and customers, we'll combine them into one clean file.
+          </p>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-4">What You Actually Get</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            A spreadsheet (Excel or CSV) with these fields:
+          </p>
+          <ul class="list-disc list-inside text-navy-600/80 space-y-2 mb-6">
+            <li>Full name</li>
+            <li>Street address (standardized to USPS format)</li>
+            <li>City, State, ZIP+4</li>
+            <li>Barcode assignment (for automation discounts)</li>
+            <li>NCOA move status (if applicable)</li>
+            <li>Deliverability score</li>
+          </ul>
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            If you're printing and mailing with us, we take that file and run it directly through our inkjet addressing system. You don't touch it. We just need your approval on the design and we're mailing. If you're using the list elsewhere, we send you the file and you're done.
+          </p>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-4">Pricing (The Real Numbers)</h2>
+          <ul class="list-none text-navy-600/80 space-y-2 mb-6">
+            <li><strong class="text-navy-800">Consumer Lists:</strong> $75–$125 per 1,000 names, depending on the selects</li>
+            <li><strong class="text-navy-800">Business Lists:</strong> $125–$200 per 1,000 names</li>
+            <li><strong class="text-navy-800">New Mover Lists:</strong> $150 per 1,000 names</li>
+            <li><strong class="text-navy-800">Saturation Lists:</strong> $40–$60 per 1,000 addresses (no demographic filtering)</li>
+          </ul>
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            Pricing includes one-time use for a single mailing. Multi-use licenses are available.
+          </p>
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            NCOA processing, CASS certification, deduplication, and presort are included in every list we deliver. You're not paying extra for clean data — that's just how we do it.
+          </p>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-4">Why Hudson Valley Businesses Use Us for Data</h2>
           <div class="space-y-6">
             {[
-              { step: '1', title: 'NCOA Processing', desc: 'We run every list through the USPS National Change of Address database to update addresses for anyone who has moved in the last 48 months. This is required by the USPS for presorted mailings.' },
-              { step: '2', title: 'CASS Certification', desc: 'Coding Accuracy Support System verification standardizes and validates every address against the USPS database. This ensures deliverability and qualifies your mailing for automation postage discounts.' },
-              { step: '3', title: 'Deduplication', desc: 'We identify and remove duplicate records so you are not paying to mail the same person twice. We can also merge/purge against your existing customer list to avoid mailing current clients.' },
-              { step: '4', title: 'Presort Optimization', desc: 'Once cleaned, your list is presorted by ZIP code to qualify for the lowest available postage rate — often saving 30–50% compared to First-Class single-piece rates.' },
+              {
+                title: 'We\'ve been doing this since 1998.',
+                desc: 'We\'re not a startup. We\'re not a venture-backed tech platform that\'ll disappear in three years. Same ownership, same team, same building for 28 years.'
+              },
+              {
+                title: 'We\'re local.',
+                desc: 'You can call us. You can visit. You can walk in with a question and talk to the person who built your list. We\'re 10 minutes from the New Paltz plaza.'
+              },
+              {
+                title: 'We don\'t just sell lists — we mail them.',
+                desc: 'Most list brokers hand you a spreadsheet and you\'re on your own. We build your list, design your mailer, print it, address it, sort it, and deliver it to the post office. One vendor, one invoice, one point of contact.'
+              },
+              {
+                title: 'We know the Hudson Valley market.',
+                desc: 'We\'ve mailed to every ZIP code between Poughkeepsie and Newburgh. We know which routes deliver on Saturday. We know which towns have seasonal population swings. We know where the new developments are going in before the county updates the maps.'
+              },
+              {
+                title: 'We track what works.',
+                desc: 'When you mail with us, we track response. If a campaign underperforms, we\'ll tell you why — and we\'ll adjust the next one. We\'re not trying to sell you a list and disappear. We\'re trying to help you get customers.'
+              }
             ].map((item) => (
-              <div class="flex items-start gap-4">
-                <div class="shrink-0 w-9 h-9 rounded-full bg-crst-primary flex items-center justify-center text-white font-heading font-bold text-sm">
-                  {item.step}
+              <div>
+                <h3 class="font-heading font-bold text-navy-800 mb-2">{item.title}</h3>
+                <p class="text-navy-600/70 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-6">What Our Clients Are Mailing</h2>
+          <ul class="list-disc list-inside text-navy-600/80 space-y-3 mb-8">
+            <li><strong class="text-navy-800">HVAC contractors</strong> targeting homeowners 10+ years in the same house (older systems = replacement market)</li>
+            <li><strong class="text-navy-800">Dental practices</strong> mailing new movers and households with children</li>
+            <li><strong class="text-navy-800">Auto repair shops</strong> reaching vehicle owners by make, model, and year</li>
+            <li><strong class="text-navy-800">Landscapers</strong> hitting high-income homeowners in specific ZIP codes</li>
+            <li><strong class="text-navy-800">Insurance agencies</strong> mailing small businesses by employee count and revenue</li>
+            <li><strong class="text-navy-800">Political campaigns</strong> using voter files with turnout history</li>
+            <li><strong class="text-navy-800">Nonprofits</strong> reaching donors by giving capacity and affinity</li>
+            <li><strong class="text-navy-800">Realtors</strong> targeting pre-movers (equity triggers, life event signals)</li>
+          </ul>
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            If you're trying to reach a specific audience in the Hudson Valley, we've probably built that list before.
+          </p>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-6">Common Questions</h2>
+          <div class="space-y-6">
+            {[
+              {
+                q: 'Can you suppress my existing customers from a purchased list?',
+                a: 'Yes. Send us your customer file (Excel or CSV). We\'ll scrub it against the purchased list and remove any matches. This is included at no extra charge when you print and mail with us.'
+              },
+              {
+                q: 'How accurate are the lists?',
+                a: 'After NCOA and CASS processing, deliverability is typically 96–98%. Some addresses will still be undeliverable (vacant homes, business closures, data entry errors), but we\'ve removed the vast majority of bad addresses before you mail.'
+              },
+              {
+                q: 'Can I use the list more than once?',
+                a: 'Standard pricing is for one-time use. Multi-use licenses are available — just let us know how many times you plan to mail the list. Pricing adjusts accordingly.'
+              },
+              {
+                q: 'What if I only need 200 names?',
+                a: 'Most list vendors have minimums of 1,000–5,000 names. We don\'t. If you need 200 names, we\'ll pull 200 names. You pay for what you use.'
+              },
+              {
+                q: 'Do you rent lists or sell them?',
+                a: 'We rent them. You\'re licensing the data for a specific mailing. The list provider embeds seed addresses (decoys) to monitor usage. If you mail the list multiple times without a multi-use license, they\'ll know — and they\'ll charge you.'
+              },
+              {
+                q: 'Can you target businesses by how long they\'ve been in operation?',
+                a: 'Yes. Business lists include "years in business" as a selectable field. This is useful if you\'re targeting established companies (5+ years) or startups (0–2 years).'
+              },
+              {
+                q: 'Can I get phone numbers or email addresses?',
+                a: 'Consumer lists can include phone numbers (landline and cellular). Business lists include phone, email, and website URL. Email append services are available if you only have mailing addresses and want to add email.'
+              }
+            ].map((item) => (
+              <div>
+                <h3 class="font-heading font-bold text-navy-800 mb-2">{item.q}</h3>
+                <p class="text-navy-600/70 leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-6">Need a List? Here's What Happens Next</h2>
+          <div class="space-y-4">
+            {[
+              {
+                num: '1',
+                title: 'Tell us who you want to reach.',
+                desc: 'Call (845) 255-5722 or fill out the estimate form. Describe your target audience and geography. Examples: "homeowners in New Paltz making $80K+," "all HVAC contractors in Dutchess County," "new movers in Kingston within the last 90 days."'
+              },
+              {
+                num: '2',
+                title: 'We send you a count and quote.',
+                desc: 'Usually within a few hours. You\'ll see the total record count, pricing per thousand, and total cost.'
+              },
+              {
+                num: '3',
+                title: 'You approve it.',
+                desc: 'Reply with approval and we pull the list. If the count is higher or lower than expected, we\'ll discuss before pulling.'
+              },
+              {
+                num: '4',
+                title: 'We deliver the file (or mail it for you).',
+                desc: 'If you\'re just buying the list, we email you a cleaned, mail-ready file within 24 hours. If you\'re printing and mailing with us, we skip the file delivery and go straight to production.'
+              }
+            ].map((item) => (
+              <div class="flex gap-4">
+                <div class="shrink-0 w-8 h-8 rounded-full bg-crst-gold flex items-center justify-center text-crst-primary font-heading font-bold text-sm">
+                  {item.num}
                 </div>
                 <div>
                   <h4 class="font-heading font-bold text-navy-800 mb-1">{item.title}</h4>
-                  <p class="text-sm text-navy-600/70 leading-relaxed">{item.desc}</p>
+                  <p class="text-navy-600/70 leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
           </div>
 
           <div class="bg-crst-primary/5 border border-crst-primary/15 rounded-xl p-6 mt-10 text-center">
-            <p class="font-heading font-bold text-crst-primary text-lg mb-2">Need a Targeted Mailing List?</p>
-            <p class="text-navy-600/70 text-sm mb-4">Tell us your audience and geography — we'll provide a count and quote.</p>
+            <p class="font-heading font-bold text-crst-primary text-lg mb-2">Get a List Count and Quote</p>
+            <p class="text-navy-600/70 text-sm mb-4">Tell us your target audience and geography. We'll send you a record count and pricing — usually within a few hours.</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
               <a href="/estimate" class="btn-primary text-sm">Get a Free Estimate</a>
               <a href={`tel:${BUSINESS.phoneClean}`} class="inline-flex items-center gap-2 text-sm font-heading font-semibold text-crst-primary hover:text-crst-accent transition-colors">
@@ -108,11 +355,6 @@ const serviceSchema = {
               </a>
             </div>
           </div>
-
-          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">Already Have a List?</h3>
-          <p class="text-navy-600/80 leading-relaxed mb-4">
-            If you already have a customer or prospect list, we can process it for direct mail. We accept data in Excel, CSV, or database formats. We'll clean, verify, NCOA-process, and presort your list so it's ready for mailing. We also offer merge/purge services to combine multiple lists while removing duplicates.
-          </p>
         </div>
 
         <!-- Sidebar -->
