@@ -1,0 +1,207 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import CTASection from '../../components/CTASection.astro';
+import { BUSINESS } from '../../data/site';
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Consumer Mailing Lists',
+  provider: {
+    '@type': 'LocalBusiness',
+    '@id': 'https://crst.net/#organization',
+    name: BUSINESS.name,
+    telephone: BUSINESS.phone,
+  },
+  url: 'https://crst.net/services/consumer-mailing-lists',
+};
+---
+
+<BaseLayout
+  title="Consumer Mailing Lists — Targeted Household Data"
+  description="Target households by age, income, homeowner status, demographics. How to build consumer mailing lists that drive response."
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  </Fragment>
+  <PageHero
+    title="Consumer Mailing Lists"
+    subtitle="Most consumer mailing lists are either too broad or too narrow. Here's how to filter for people who actually need what you're selling."
+    breadcrumbs={[
+      { label: 'Services', href: '/services' },
+      { label: 'Consumer Mailing Lists' },
+    ]}
+  />
+
+  <section class="py-14 lg:py-20">
+    <div class="container-wide">
+      <div class="grid lg:grid-cols-3 gap-10 lg:gap-14">
+        <div class="lg:col-span-2 prose prose-lg max-w-none">
+          <div class="section-divider mb-6"></div>
+
+          <p class="text-lg text-navy-700 leading-relaxed font-semibold mb-6">
+            You want to reach "homeowners in the Hudson Valley." That's 150,000 households. Your offer is landscape design starting at $8,000. Most homeowners in the Hudson Valley can't afford that, and half rent apartments.
+          </p>
+
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            You mail all 150,000. Your response rate is 0.08%. You spent $18,000 on printing and postage to get 120 responses. Most are price shoppers who ghost after the estimate.
+          </p>
+
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            The problem isn't direct mail. It's the list. Consumer mailing lists work when you layer filters — income + home value + property size + years in home + age range + radius. "Homeowners in Ulster County with income $100K+, home values $400K+, 0.5+ acre lots, owned 3+ years, aged 45–65, within 15 miles of New Paltz."
+          </p>
+
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            That list is 3,200 households instead of 150,000. But every name is a qualified prospect. We've been building consumer mailing lists for Hudson Valley businesses since 1998.
+          </p>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-4">What Is a Consumer Mailing List?</h2>
+
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            A consumer mailing list targets households (individuals and families), not businesses. You're reaching people at home, not at work. Consumer lists are compiled from public records, consumer databases, purchasing behavior, and survey data. The major data sources are Experian, Acxiom, Epsilon, and TransUnion.
+          </p>
+
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            What's included: full name, mailing address, household composition, age ranges, estimated household income, homeowner vs. renter status, presence of children, lifestyle interests, and purchasing behavior. The key is layering these filters to narrow down to people who match your ideal customer profile.
+          </p>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-6">Available Data Filters</h2>
+
+          <div class="space-y-6 mb-8">
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Geographic Targeting</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-3">Radius targeting (5, 10, 15, 25 miles), county targeting, ZIP code targeting, town/village targeting, or carrier route targeting. For most local service campaigns, use radius or county targeting.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Age</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-3">Age is a proxy for life stage, buying capacity, and decision-making authority. A 28-year-old renter doesn't need landscape design. A 52-year-old homeowner does. For high-ticket home services, target 35–65. For senior services, 60+. For entry-level services, 25–40.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Household Income</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-3">If your service starts at $5,000, mailing households making $40K is pointless. Income determines buying capacity and willingness to pay premium prices. For premium services, target $100K+. For mid-market, $50K–$100K. For budget, $35K–$75K.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Homeowner vs. Renter</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-3">Homeowners are more likely to invest in home improvements. Renters can't make those decisions (landlord's responsibility). For all home services, filter to homeowners only. You can also filter by estimated home value for premium services.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Presence of Children</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-3">Households with children are higher-value targets for pediatric healthcare, family services, and larger homes. If your service targets families, add this filter. If children don't matter, skip it to maximize volume.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Home Ownership Duration</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-3">Homeowners 10+ years in the same house are prime prospects for system replacements (HVAC, roofing, windows). New homeowners (0–2 years) just spent all their money and aren't ready for big projects. For replacements, target 5+ years. For remodeling, 3+ years works.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Lifestyle Interests & Hobbies</h3>
+              <p class="text-navy-600/70 leading-relaxed mb-3">If you sell outdoor gear, targeting "outdoor enthusiasts" improves response over random households. If you're a veterinarian, pet owner data is gold. Use interest data for niche products where lifestyle alignment drives buying decisions.</p>
+            </div>
+          </div>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-6">Industries That Respond</h2>
+
+          <ul class="list-disc list-inside text-navy-600/80 space-y-3 mb-8">
+            <li><strong class="text-navy-800">Home Services:</strong> HVAC, plumbing, electrical, landscaping, roofing, remodeling</li>
+            <li><strong class="text-navy-800">Healthcare Practices:</strong> Dental, chiropractic, vision care, physical therapy, veterinary</li>
+            <li><strong class="text-navy-800">Retail:</strong> Local stores, boutiques, auto dealers, furniture</li>
+            <li><strong class="text-navy-800">Financial Services:</strong> Insurance, mortgages, wealth management</li>
+            <li><strong class="text-navy-800">Nonprofits:</strong> Fundraising, advocacy, volunteer recruitment</li>
+            <li><strong class="text-navy-800">Professional Services:</strong> Legal, accounting, real estate</li>
+          </ul>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-4">Real-World Example</h2>
+
+          <div class="bg-navy-50/40 border border-navy-100 rounded-lg p-6 mb-8">
+            <p class="text-navy-600/70 leading-relaxed">
+              We built a list for a Kingston dental practice targeting families with children. Age filter: 30–50 (parents of school-age kids). The practice wanted to attract families, not retirees or young singles. The list pulled 2,847 households. They mailed a back-to-school checkup offer and booked 47 new patient appointments — 1.6% response rate.
+            </p>
+          </div>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-4">Consumer List Pricing</h2>
+
+          <ul class="list-none text-navy-600/80 space-y-2 mb-8">
+            <li><strong class="text-navy-800">Consumer Lists:</strong> $75–$125 per 1,000 names, depending on selects</li>
+            <li><strong class="text-navy-800">Enhanced data (demographics + interests):</strong> $100–$150 per 1,000 names</li>
+          </ul>
+
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            What's included: NCOA processing, CASS certification, deduplication, presort, and file formatting. You're not paying extra for clean data — that's just how we do it.
+          </p>
+
+          <div class="bg-crst-primary/5 border border-crst-primary/15 rounded-xl p-6 mt-10 text-center">
+            <p class="font-heading font-bold text-crst-primary text-lg mb-2">Build Your Consumer List</p>
+            <p class="text-navy-600/70 text-sm mb-4">Tell us your target audience and geography. We'll provide a count and quote.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+              <a href="/estimate" class="btn-primary text-sm">Get a Free Estimate</a>
+              <a href={`tel:${BUSINESS.phoneClean}`} class="inline-flex items-center gap-2 text-sm font-heading font-semibold text-crst-primary hover:text-crst-accent transition-colors">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                Call {BUSINESS.phone}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          <div class="sticky top-24 space-y-5">
+            <div class="bg-crst-primary rounded-xl p-6 text-white">
+              <h3 class="font-display text-lg mb-2">Ready to Target Households?</h3>
+              <p class="text-white/60 text-sm leading-relaxed mb-4">Tell us who you want to reach. We'll provide a count and quote — usually within a few hours.</p>
+              <a href="/estimate" class="btn-accent w-full text-center text-sm">Request a List Quote</a>
+              <div class="mt-4 pt-4 border-t border-white/10 text-center">
+                <a href={`tel:${BUSINESS.phoneClean}`} class="text-white/70 text-sm font-heading hover:text-white transition-colors">
+                  or call {BUSINESS.phone}
+                </a>
+              </div>
+            </div>
+
+            <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Related Services</h3>
+              <div class="space-y-2">
+                {[
+                  { label: 'Mailing Lists & Data Services', href: '/services/data-lists' },
+                  { label: 'Direct Mail Lists', href: '/services/direct-mail-lists' },
+                  { label: 'Business Mailing Lists', href: '/services/business-mailing-lists' },
+                  { label: 'New Mover Lists', href: '/services/new-mover-mailing-lists' },
+                ].map((link) => (
+                  <a href={link.href} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-white rounded-md transition-colors font-heading">
+                    {link.label}
+                    <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Data Sources</h3>
+              <div class="space-y-3 text-sm text-navy-600/70">
+                <p><strong class="text-navy-800">Experian & Acxiom</strong> for most consumer data</p>
+                <p><strong class="text-navy-800">Multi-source verification</strong> for accuracy</p>
+                <p><strong class="text-navy-800">Lifestyle & interest data</strong> from purchase history</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>

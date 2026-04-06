@@ -1,0 +1,257 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import CTASection from '../../components/CTASection.astro';
+import { BUSINESS } from '../../data/site';
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Direct Mail Lists',
+  provider: {
+    '@type': 'LocalBusiness',
+    '@id': 'https://crst.net/#organization',
+    name: BUSINESS.name,
+    telephone: BUSINESS.phone,
+  },
+  areaServed: [
+    { '@type': 'County', name: 'Ulster County, New York' },
+    { '@type': 'County', name: 'Dutchess County, New York' },
+    { '@type': 'County', name: 'Orange County, New York' },
+  ],
+  url: 'https://crst.net/services/direct-mail-lists',
+};
+---
+
+<BaseLayout
+  title="Direct Mail Lists — Consumer, Business & Specialty Data"
+  description="What direct mail lists are, how they work, and types of mailing lists available: consumer lists, business lists, new mover lists, and more."
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  </Fragment>
+  <PageHero
+    title="Direct Mail Lists"
+    subtitle="A direct mail list is only as good as the data behind it. Here's what actually makes the difference between a 2% response and throwing money away."
+    breadcrumbs={[
+      { label: 'Services', href: '/services' },
+      { label: 'Direct Mail Lists' },
+    ]}
+  />
+
+  <section class="py-14 lg:py-20">
+    <div class="container-wide">
+      <div class="grid lg:grid-cols-3 gap-10 lg:gap-14">
+        <div class="lg:col-span-2 prose prose-lg max-w-none">
+          <div class="section-divider mb-6"></div>
+          
+          <p class="text-lg text-navy-700 leading-relaxed font-semibold mb-6">
+            Most businesses think buying a mailing list means getting names and addresses. What they actually get is a spreadsheet full of people who moved, addresses that don't exist, and duplicates that cost them twice. Then they wonder why half their mail comes back undeliverable.
+          </p>
+
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            A direct mail list isn't just contact information. It's verified, cleaned, formatted, and deliverable data that's been prepared specifically for mailing. The difference between a $500 list and a $2,000 list isn't the data source — it's what happens to that data before you mail it.
+          </p>
+
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            We've been building mailing lists for Hudson Valley businesses since 1998. We're based 10 minutes from SUNY New Paltz, and we've processed over 500 mailing lists in the last 12 months alone. We've seen what works and what doesn't. Good lists drive response. Bad lists waste money.
+          </p>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-4">What a Direct Mail List Actually Includes</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            A usable mailing list contains more than names and addresses. Here's what should be in every file you receive:
+          </p>
+
+          <ul class="space-y-4 mb-8">
+            <li>
+              <strong class="text-navy-800">Full Name</strong> — First name, last name, and middle initial. Business lists include company name and contact title.
+            </li>
+            <li>
+              <strong class="text-navy-800">Complete Mailing Address</strong> — Street address, city, state, and ZIP+4. The ZIP+4 is critical for automation postage discounts.
+            </li>
+            <li>
+              <strong class="text-navy-800">Barcode Assignment</strong> — The Intelligent Mail Barcode (IMb) that the post office uses to track mail and qualify you for presort discounts.
+            </li>
+            <li>
+              <strong class="text-navy-800">NCOA Status</strong> — A flag showing whether the person moved in the last 48 months, with their updated address if applicable.
+            </li>
+            <li>
+              <strong class="text-navy-800">Deliverability Score</strong> — A rating for each address showing likelihood of deliverability.
+            </li>
+          </ul>
+
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            If someone hands you a list without ZIP+4, barcode data, or NCOA processing, you don't have a mail-ready file. You have raw data that still needs work.
+          </p>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-6">Types of Direct Mail Lists</h2>
+
+          <div class="space-y-6 mb-8">
+            <div class="p-4 bg-navy-50/40 rounded-lg border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 mb-2"><a href="/services/consumer-mailing-lists" class="text-crst-primary hover:underline">Consumer Mailing Lists</a></h3>
+              <p class="text-sm text-navy-600/70 leading-relaxed">Target households by age, income, homeowner status, presence of children, and dozens of other demographics. Best for dental practices, landscapers, home services, retail, and nonprofits.</p>
+            </div>
+
+            <div class="p-4 bg-navy-50/40 rounded-lg border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 mb-2"><a href="/services/business-mailing-lists" class="text-crst-primary hover:underline">Business Mailing Lists</a></h3>
+              <p class="text-sm text-navy-600/70 leading-relaxed">Target companies by SIC/NAICS code (industry), employee count, revenue range, years in business, and geography. Best for B2B services, insurance agencies, equipment suppliers, and professional services.</p>
+            </div>
+
+            <div class="p-4 bg-navy-50/40 rounded-lg border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 mb-2"><a href="/services/new-mover-mailing-lists" class="text-crst-primary hover:underline">New Mover Lists</a></h3>
+              <p class="text-sm text-navy-600/70 leading-relaxed">Recently relocated households actively looking for local services. Convert 3–5x higher than standard consumer lists because they need everything right now.</p>
+            </div>
+
+            <div class="p-4 bg-navy-50/40 rounded-lg border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Voter Files</h3>
+              <p class="text-sm text-navy-600/70 leading-relaxed">Registered voter data including voting history, party affiliation, and household composition. Best for political campaigns and advocacy organizations.</p>
+            </div>
+
+            <div class="p-4 bg-navy-50/40 rounded-lg border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Saturation Lists</h3>
+              <p class="text-sm text-navy-600/70 leading-relaxed">Every deliverable address on selected carrier routes with no demographic filtering. Best for EDDM campaigns and hyper-local promotions.</p>
+            </div>
+
+            <div class="p-4 bg-navy-50/40 rounded-lg border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Custom Compiled Lists</h3>
+              <p class="text-sm text-navy-600/70 leading-relaxed">Specialty lists built from multiple data sources. Examples: every business that filed for a construction permit, households that installed solar, nonprofits with budgets over $500K.</p>
+            </div>
+          </div>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-4">Purchased Lists vs. In-House Lists</h2>
+          
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            <strong class="text-navy-800">Purchased Lists = Prospecting.</strong> Use these when reaching new audiences. You don't know these people yet. They haven't bought from you or requested information. You're introducing yourself.
+          </p>
+
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            <strong class="text-navy-800">In-House Lists = Customer Retention.</strong> Your customer database, past clients, newsletter subscribers — anyone who already knows you. These lists typically perform 5–10x better than purchased lists because there's an existing relationship.
+          </p>
+
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            You need both. Purchased lists to grow. In-house lists to retain. Most successful direct mail programs use both — purchased lists for acquisition, house lists for retention and repeat business.
+          </p>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-4">What Makes a List Actually Usable</h2>
+
+          <div class="space-y-6 mb-8">
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">NCOA Processing (National Change of Address)</h3>
+              <p class="text-navy-600/70 leading-relaxed">This catches anyone who moved in the last 48 months and updates their address. The USPS requires NCOA processing for presorted mail. If you skip it, your mailing either gets rejected or you pay full postage.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">CASS Certification (Coding Accuracy Support System)</h3>
+              <p class="text-navy-600/70 leading-relaxed">CASS verifies every address exists and formats it to postal standards. This is how you qualify for automation postage discounts — which can reduce postage by 30–50%. Without CASS certification, you pay retail rates on every piece.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Deduplication</h3>
+              <p class="text-navy-600/70 leading-relaxed">Removing duplicate records so you don't mail the same person twice. Good deduplication software catches variations in names, abbreviations, and formatting.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Merge/Purge (Suppression)</h3>
+              <p class="text-navy-600/70 leading-relaxed">If you have an existing customer list, scrub it against the purchased list and remove matches so you don't mail existing customers with prospect offers.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Presort by ZIP Code</h3>
+              <p class="text-navy-600/70 leading-relaxed">Sorting your list by ZIP code to qualify for bulk postage rates. On a 5,000-piece mailing, presort saves $400–$600 compared to retail postage.</p>
+            </div>
+          </div>
+
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-4">Common Direct Mail List Mistakes</h2>
+
+          <div class="space-y-6 mb-8">
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Buying Raw Data and Expecting It to Mail</h3>
+              <p class="text-navy-600/70 leading-relaxed">You get a file with 10,000 names for $300. No NCOA. No CASS. No deduplication. Result: 25% bounces. You spent $750 on postage for undeliverable mail. Fix: Only buy lists that have been NCOA-processed, CASS-certified, and deduplicated.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Mailing Too Broad</h3>
+              <p class="text-navy-600/70 leading-relaxed">You mail "all homeowners in the Hudson Valley" (150,000 households) for a $40K service most can't afford. Fix: Add filters. Income, home value, tenure. Now you're mailing 8,000 qualified prospects instead of 150,000 tire-kickers.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Skipping Hygiene on Your Own Customer File</h3>
+              <p class="text-navy-600/70 leading-relaxed">Your 5-year-old customer list looks clean. It's not. People moved. Businesses closed. Addresses got entered wrong. Fix: Run your customer list through NCOA and CASS before every mailing.</p>
+            </div>
+
+            <div>
+              <h3 class="font-heading font-bold text-navy-800 mb-2">Ignoring List Age</h3>
+              <p class="text-navy-600/70 leading-relaxed">You buy a list in January and use it again in July without updating. In six months, people moved, businesses closed, and data decayed. Fix: Re-process lists every 90 days if using multiple times.</p>
+            </div>
+          </div>
+
+          <div class="bg-crst-primary/5 border border-crst-primary/15 rounded-xl p-6 mt-10 text-center">
+            <p class="font-heading font-bold text-crst-primary text-lg mb-2">Ready to Build Your List?</p>
+            <p class="text-navy-600/70 text-sm mb-4">Tell us your target audience and geography. We'll provide a count and quote.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+              <a href="/estimate" class="btn-primary text-sm">Get a Free Estimate</a>
+              <a href={`tel:${BUSINESS.phoneClean}`} class="inline-flex items-center gap-2 text-sm font-heading font-semibold text-crst-primary hover:text-crst-accent transition-colors">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                Call {BUSINESS.phone}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          <div class="sticky top-24 space-y-5">
+            <div class="bg-crst-primary rounded-xl p-6 text-white">
+              <h3 class="font-display text-lg mb-2">Need a Mailing List?</h3>
+              <p class="text-white/60 text-sm leading-relaxed mb-4">Tell us who you want to reach. We'll provide a count and quote — usually within a few hours.</p>
+              <a href="/estimate" class="btn-accent w-full text-center text-sm">Request a List Quote</a>
+              <div class="mt-4 pt-4 border-t border-white/10 text-center">
+                <a href={`tel:${BUSINESS.phoneClean}`} class="text-white/70 text-sm font-heading hover:text-white transition-colors">
+                  or call {BUSINESS.phone}
+                </a>
+              </div>
+            </div>
+
+            <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Related Services</h3>
+              <div class="space-y-2">
+                {[
+                  { label: 'Mailing Lists & Data Services', href: '/services/data-lists' },
+                  { label: 'Business Mailing Lists', href: '/services/business-mailing-lists' },
+                  { label: 'Consumer Mailing Lists', href: '/services/consumer-mailing-lists' },
+                  { label: 'New Mover Lists', href: '/services/new-mover-mailing-lists' },
+                ].map((link) => (
+                  <a href={link.href} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-white rounded-md transition-colors font-heading">
+                    {link.label}
+                    <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Quick Facts</h3>
+              <div class="space-y-3 text-sm text-navy-600/70">
+                <p><strong class="text-navy-800">NCOA processing is required</strong> by USPS for all presorted mailings.</p>
+                <p><strong class="text-navy-800">List counts & quotes</strong> usually returned within a few hours.</p>
+                <p><strong class="text-navy-800">We suppress your existing customers</strong> from purchased lists at no extra charge.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>
