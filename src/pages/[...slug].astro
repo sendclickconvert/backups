@@ -318,6 +318,12 @@ if (path === '/case-study' || path.startsWith('/case-study/') || path.startsWith
 if (path.startsWith('/printing-partners/')) {
   return Astro.redirect('/about', 301);
 }
+if (path.startsWith('/services/printing/')) {
+  return Astro.redirect('/services/printing', 301);
+}
+if (path.startsWith('/services/non-profit-mailing/')) {
+  return Astro.redirect('/services/non-profit-mailing', 301);
+}
 if (path.startsWith('/direct-mail-services/')) {
   return Astro.redirect('/services', 301);
 }
