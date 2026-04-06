@@ -5,12 +5,32 @@ import CTASection from '../../components/CTASection.astro';
 import AuthorByline from '../../components/AuthorByline.astro';
 import { BUSINESS, COUNTIES } from '../../data/site';
 
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Mailing List & Data Services',
+  provider: {
+    '@type': 'Organization',
+    '@id': 'https://crst.net/#organization',
+    name: BUSINESS.name,
+    telephone: BUSINESS.phone,
+  },
+  areaServed: [
+    { '@type': 'County', name: 'Ulster County, New York' },
+    { '@type': 'County', name: 'Dutchess County, New York' },
+    { '@type': 'County', name: 'Orange County, New York' },
+  ],
+  url: 'https://crst.net/services/data-lists',
+};
 ---
 
 <BaseLayout
   title="Mailing Lists — Targeted Consumer & Business Data"
   description="Targeted mailing lists for direct mail — consumer and business data filtered by geography, demographics, and industry. NCOA-processed and CASS-certified."
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  </Fragment>
   <PageHero
     title="Mailing Lists & Data Services"
     subtitle="You're not losing customers because your message is wrong. You're losing them because you're mailing the wrong people. We build targeted lists that actually reach people — cleaned, verified, and ready to mail."
