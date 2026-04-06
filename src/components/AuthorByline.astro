@@ -4,20 +4,42 @@ export interface Props {
 }
 
 const { compact = false } = Astro.props;
-const reviewDate = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 ---
 
 {compact ? (
   <div class="flex items-center gap-3 text-sm text-gray-500 mt-6">
-    <svg class="w-4 h-4 text-crst-primary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-    <span>Reviewed by <strong class="text-gray-700">Sean Griffin</strong>, Owner · {reviewDate}</span>
+    <img
+      src="/images/sean-griffin.png"
+      alt="Sean Griffin, MDP"
+      class="w-12 h-12 rounded-full object-cover"
+      loading="lazy"
+    />
+    <div>
+      <span class="font-medium text-gray-900">Sean Griffin, MDP</span>
+      <span class="mx-1">&middot;</span>
+      <span>Mailpiece Design Professional</span>
+    </div>
   </div>
 ) : (
-  <div class="bg-navy-50 border border-navy-100 rounded-lg p-4 mt-8 flex items-start gap-3">
-    <svg class="w-5 h-5 text-crst-primary mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-    <div class="text-sm">
-      <p class="font-semibold text-crst-primary">Sean Griffin</p>
-      <p class="text-gray-600">Owner, Cornerstone Services · Hudson Valley direct mail since 1998 · Reviewed {reviewDate}</p>
+  <div class="my-8 p-6 bg-gray-50 border-l-4 border-crst-primary rounded-r-lg">
+    <div class="flex items-start gap-4">
+      <img
+        src="/images/sean-griffin.png"
+        alt="Sean Griffin, Mailpiece Design Professional"
+        class="w-20 h-20 rounded-full object-cover flex-shrink-0"
+        loading="lazy"
+      />
+      <div>
+        <div class="font-semibold text-lg text-gray-900">
+          <a href="/about" class="hover:text-crst-primary transition-colors">Sean Griffin, MDP</a>
+        </div>
+        <div class="text-sm text-gray-600 mb-2">
+          Mailpiece Design Professional | Owner, Cornerstone Services, Inc.
+        </div>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          Sean is a USPS-certified Mailpiece Design Professional (MDP) with 25+ years of experience producing compliant direct mail campaigns for Hudson Valley businesses. He has processed over 2.3 million mail pieces through the USPS Business Mail Entry Unit in New Paltz, NY since 1998.
+        </p>
+      </div>
     </div>
   </div>
 )}
