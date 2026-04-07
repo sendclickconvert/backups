@@ -22,18 +22,74 @@ const serviceSchema = {
   ],
   url: 'https://crst.net/services/printing',
 };
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What file formats do you accept for printing?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We accept PDF, Adobe InDesign packaged files, and Adobe Illustrator files. PDFs should be press-ready with fonts embedded, images at 300 DPI minimum, and bleed included where needed.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How long does printing take?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Turnaround depends on quantity and format. Digital runs under 1,000 pieces typically print within 2–3 business days after proof approval. Offset jobs take 5–7 business days for runs over 5,000. Rush service is available for time-sensitive campaigns.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can you handle the mailing after printing?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. We print and mail in the same facility. Once your job comes off press, we can move it directly into data processing, addressing, and postal prep without leaving the building.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you offer design services?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We provide file review and minor layout adjustments, but we do not offer full design services. If you need design work, we can connect you with designers we've worked with on past campaigns.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the minimum order quantity?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'There is no strict minimum. We've printed jobs as small as 100 postcards for local campaigns and as large as 50,000+ pieces for regional nonprofit appeals. Pricing adjusts based on quantity and complexity.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do I get pricing?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: `Call us at ${BUSINESS.phone} or email with your piece size, quantity, paper preference, and whether you need mailing services. We'll send a quote within one business day.`,
+      },
+    },
+  ],
+};
 ---
 
 <BaseLayout
-  title="Commercial Printing — Postcards, Brochures & Mail"
-  description="Commercial printing for direct mail — postcards, brochures, newsletters, letters, and variable data. Press to post office under one roof. New Paltz, NY."
+  title="Commercial Printing Services for Direct Mail Campaigns | CRST"
+  description="Commercial printing services for postcards, brochures, self-mailers, letters, newsletters, and direct mail campaigns. In-house printing and mailing in New Paltz, NY."
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   </Fragment>
   <PageHero
-    title="Commercial Printing Services"
-    subtitle="We print direct mail pieces and marketing materials on our in-house presses. Postcards, brochures, letters, newsletters — from proof to finished product."
+    title="Commercial Printing Services for Direct Mail Campaigns"
+    subtitle="In-house printing built for mail. Postcards, self-mailers, letters, brochures, and newsletters produced at our New Paltz facility and moved directly into mail prep."
     breadcrumbs={[
       { label: 'Services', href: '/services' },
       { label: 'Printing Services' },
@@ -43,26 +99,40 @@ const serviceSchema = {
   <section class="py-14 lg:py-20">
     <div class="container-wide">
       <div class="grid lg:grid-cols-3 gap-10 lg:gap-14">
+
         <!-- Main content -->
         <div class="lg:col-span-2">
           <div class="section-divider mb-6"></div>
-          <h2 class="text-2xl font-display text-crst-primary mb-4">What We Print for Direct Mail Campaigns</h2>
-          <p class="text-navy-600/80 leading-relaxed mb-6">
-            Cornerstone Services runs commercial printing for direct mail and business communications. Postcards in five sizes (4×6 through 6×11), tri-fold brochures, #10 letter packages, self-mailers, and newsletters. We print on coated and uncoated stocks in weights from 60# text to 14pt card. Variable data printing lets us personalize each piece with recipient names, addresses, or custom offers. Because we also handle mailing in-house, your job goes from press to post office without leaving our building.
+
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            When your printed piece is going into the mail, printing is only half the job. The format, paper stock, folds, addressing, and USPS compliance all affect whether your campaign lands cleanly, qualifies for postal discounts, and gets responses.
           </p>
           <p class="text-navy-600/80 leading-relaxed mb-6">
-            Most of what we print is going in the mail. That means every piece has to meet USPS size, weight, and thickness requirements — or it gets surcharged or rejected. We know those specs by heart. Postcards need to be at least .007" thick for automation rates. Letter packages need to weigh under 3.5 ounces to stay in the letter rate. Flats have their own dimension rules. We check all of that before the job hits the press, not after. In-house presses in New Paltz, NY — printing for direct mail campaigns since 1998.
+            Cornerstone Services provides commercial printing for businesses, nonprofits, municipalities, and organizations that need print built for real-world mailing. We produce postcards, self-mailers, brochures, newsletters, letters, envelopes, and other campaign materials in-house at our New Paltz facility, then move those jobs directly into mail prep when needed — no handoffs, no delays, no pieces lost between vendors.
           </p>
 
-          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">What We Print</h3>
-          <div class="grid sm:grid-cols-2 gap-3">
+          <h2 class="text-2xl font-display text-crst-primary mt-10 mb-4">Commercial printing built for mail</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            A lot of printers can put ink on paper. Fewer are set up to handle the full workflow from file review to printed piece to postal-ready mail.
+          </p>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            Our commercial printing work is built around direct mail requirements. That means we look at more than color and finish. We also review size, thickness, folds, aspect ratio, addressing areas, tabbing requirements, and other details that affect postage and mailability.
+          </p>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            If a piece is meant to mail, it should be designed and printed with mailing in mind from the start. We've seen too many campaigns get derailed because a printer approved a file without checking whether it meets USPS automation standards or qualifies for presort discounts.
+          </p>
+
+          <h2 class="text-2xl font-display text-crst-primary mt-10 mb-4">What we print</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-4">We print a wide range of direct-mail and business communication formats, including:</p>
+          <div class="grid sm:grid-cols-2 gap-3 mb-6">
             {[
-              { title: 'Postcards', desc: '4×6, 6×9, 6×11, and jumbo formats on heavy cardstock with UV coating options' },
-              { title: 'Self-Mailers', desc: 'Bi-fold and tri-fold pieces that mail without an envelope — cost-effective and eye-catching' },
-              { title: 'Letters & Envelopes', desc: 'Personalized letters with variable data, matching envelopes, and reply inserts' },
-              { title: 'Newsletters', desc: 'Multi-page saddle-stitched or folded newsletters for municipalities, churches, and organizations' },
-              { title: 'Brochures & Flyers', desc: 'Full-color marketing collateral in various fold configurations' },
-              { title: 'Business Stationery', desc: 'Letterheads, envelopes, business cards, and notepads with consistent branding' },
+              { title: 'Postcards', desc: 'Standard and jumbo sizes — 4×6, 6×9, 6×11 — on heavy cardstock' },
+              { title: 'Self-Mailers', desc: 'Bi-fold and tri-fold formats that mail without an envelope' },
+              { title: 'Brochures & Flyers', desc: 'Campaign and event materials in various fold configurations' },
+              { title: 'Letters & Envelopes', desc: 'Personalized letters with matching envelopes and reply inserts' },
+              { title: 'Newsletters', desc: 'Multi-page pieces for organizations, associations, and municipalities' },
+              { title: 'Reply Inserts & Collateral', desc: 'BREs, donation slips, and supporting campaign materials' },
+              { title: 'Business Stationery', desc: 'Letterheads, envelopes, business cards, and notepads' },
             ].map((item) => (
               <div class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg">
                 <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
@@ -73,48 +143,168 @@ const serviceSchema = {
               </div>
             ))}
           </div>
+          <p class="text-navy-600/80 leading-relaxed mb-6">Whether you need a short-run digital job or a larger campaign, we match the format and production method to the job.</p>
 
-          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">Variable Data Printing</h3>
-          <p class="text-navy-600/80 leading-relaxed mb-6">
-            Variable data printing (VDP) lets you personalize each piece in a print run with unique text, images, or offers. A restaurant can address each postcard by name. A real estate agent can show different property listings based on neighborhood. A municipality can include account-specific information in utility mailings. Personalized mail gets higher response rates — and we make it simple.
+          <h2 class="text-2xl font-display text-crst-primary mt-10 mb-4">Postcard printing services</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            Postcards remain one of the most effective direct mail formats because they are easy to read, cost-efficient to mail, and fast to produce. We print postcards in common direct mail sizes such as 4×6, 6×9, and 6×11, with stock and coating options based on your campaign goals.
+          </p>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            For many local and regional campaigns, postcards are the simplest way to combine visibility, speed, and response. A Hudson Valley nonprofit running a donor reactivation campaign saw a 23% response rate using 6×9 postcards with variable data personalization — well above their historical email performance.
+          </p>
+          <p class="text-sm mb-8">
+            <a href="https://blog.crst.net/postcard-printing-and-mailing-services/" target="_blank" rel="noopener noreferrer" class="text-crst-accent hover:text-crst-primary font-heading font-semibold underline">Learn more about postcard printing &rarr;</a>
           </p>
 
-          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">Our Print Process</h3>
-          <div class="space-y-6">
+          <h2 class="text-2xl font-display text-crst-primary mt-10 mb-4">Direct mail printing and mailing</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            Because Cornerstone Services also handles mailing, your project does not need to leave one vendor for another after it comes off press. That reduces delays, prevents handoff mistakes, and keeps the campaign moving.
+          </p>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            We can print, address, sort, prep, and induct mail with one coordinated workflow. For clients running recurring campaigns — monthly newsletters, quarterly appeals, seasonal promotions — that saves time and keeps production more predictable.
+          </p>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            One Ulster County property management company coordinates 12 mailings per year through our facility. Their turnaround from final file to mail drop averages 4 business days because we eliminate the print-to-mail handoff.
+          </p>
+          <p class="text-sm mb-8">
+            <a href="/services/direct-mail" class="text-crst-accent hover:text-crst-primary font-heading font-semibold underline">Learn more about direct mail campaigns &rarr;</a>
+          </p>
+
+          <h2 class="text-2xl font-display text-crst-primary mt-10 mb-4">Variable data printing</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            Variable data printing allows you to personalize each printed piece with different names, addresses, offers, neighborhoods, account details, or other fields.
+          </p>
+          <p class="text-navy-600/80 leading-relaxed mb-3">This is especially useful for:</p>
+          <ul class="space-y-2 mb-4 ml-1">
             {[
-              { step: '1', title: 'File Review & Preflight', desc: 'We review your artwork files for resolution, color accuracy, bleed, and USPS compliance before anything goes to press. If you need design help, our graphic design team can create or refine your piece.' },
-              { step: '2', title: 'Proof Approval', desc: 'You receive a digital proof showing exactly how your piece will look. We do not print until you approve.' },
-              { step: '3', title: 'Production', desc: 'Your job runs on commercial digital or offset equipment matched to quantity and quality requirements. We use full CMYK color with options for UV coating, aqueous coating, or matte finish.' },
-              { step: '4', title: 'Mail Prep or Pickup', desc: 'Printed pieces flow directly into our mailing department for addressing, presorting, and postal induction — or we prepare them for pickup/delivery if you are not mailing.' },
+              'Customer reactivation campaigns',
+              'Nonprofit donor appeals',
+              'Municipal notices and tax communications',
+              'Real estate farming',
+              'Segmented offers by audience or geography',
+            ].map((item) => (
+              <li class="flex items-start gap-2 text-navy-600/80 text-sm">
+                <svg class="w-4 h-4 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p class="text-navy-600/80 leading-relaxed mb-8">
+            If your campaign performs better with personalization, variable data printing gives you a way to scale it without creating separate jobs manually. We've run campaigns with thousands of unique versions — same layout, different content matched to each recipient.
+          </p>
+
+          <h2 class="text-2xl font-display text-crst-primary mt-10 mb-4">Digital and offset printing options</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            Not every print job should be produced the same way. Some campaigns need short-run flexibility and fast turnarounds. Others need larger quantities and lower unit costs.
+          </p>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            We use digital and offset production based on quantity, timeline, versioning, and finish requirements. The goal is not to force every job into one press method — it is to choose the method that fits the project.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-4 mb-8">
+            <div class="p-5 bg-navy-50/40 rounded-lg border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 mb-2 text-sm">Digital Printing</h3>
+              <p class="text-xs text-navy-600/70 leading-relaxed">Best for runs under 5,000 pieces, jobs with variable data, or campaigns that need quick turnaround.</p>
+            </div>
+            <div class="p-5 bg-navy-50/40 rounded-lg border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 mb-2 text-sm">Offset Printing</h3>
+              <p class="text-xs text-navy-600/70 leading-relaxed">Best for runs above 5,000 where unit cost matters and the content is static. Lower cost per piece at volume.</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-display text-crst-primary mt-10 mb-4">Why businesses choose Cornerstone Services</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-4">
+            Clients come to us when they need more than a generic online print order. They need a print partner who understands campaign execution.
+          </p>
+          <p class="text-navy-600/80 leading-relaxed mb-3">We are a fit for organizations that want:</p>
+          <ul class="space-y-2 mb-6 ml-1">
+            {[
+              'In-house printing tied to mailing services',
+              'Guidance on postal-friendly formats',
+              'Support with variable data and personalization',
+              'Reliable proofing and preflight review',
+              'One team handling print and mail together',
+            ].map((item) => (
+              <li class="flex items-start gap-2 text-navy-600/80 text-sm">
+                <svg class="w-4 h-4 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            We've been operating in New Paltz since 1998, serving clients across the Hudson Valley, Catskills, and lower Hudson region.
+          </p>
+
+          <h2 class="text-2xl font-display text-crst-primary mt-10 mb-4">Our process</h2>
+          <div class="space-y-6 mb-10">
+            {[
+              { step: '1', title: 'File review and preflight', desc: 'We review artwork for bleed, resolution, color mode, layout, and mailing compatibility before anything goes to press.' },
+              { step: '2', title: 'Proof approval', desc: 'You receive a proof before production begins. We do not print until you approve.' },
+              { step: '3', title: 'Printing', desc: 'Your job is produced on the equipment that best fits the quantity and format — digital for short runs, offset for high volume.' },
+              { step: '4', title: 'Mail prep or delivery', desc: 'Jobs can move directly into addressing, presort, and postal prep, or be prepared for pickup and delivery.' },
             ].map((item) => (
               <div class="flex items-start gap-4">
                 <div class="shrink-0 w-9 h-9 rounded-full bg-crst-primary flex items-center justify-center text-white font-heading font-bold text-sm">
                   {item.step}
                 </div>
                 <div>
-                  <h4 class="font-heading font-bold text-navy-800 mb-1">{item.title}</h4>
+                  <h3 class="font-heading font-bold text-navy-800 mb-1">{item.title}</h3>
                   <p class="text-sm text-navy-600/70 leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          <div class="bg-crst-primary/5 border border-crst-primary/15 rounded-xl p-6 mt-10 text-center">
-            <p class="font-heading font-bold text-crst-primary text-lg mb-2">Need a Print Quote?</p>
-            <p class="text-navy-600/70 text-sm mb-4">Tell us what you need — quantity, size, and paper — and we'll send a detailed quote.</p>
+          <h2 class="text-2xl font-display text-crst-primary mt-10 mb-4">Serving the Hudson Valley and Catskills</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            We work with clients throughout Ulster County, Dutchess County, Orange County, Sullivan County, and Delaware County. Our facility is centrally located in New Paltz, making us accessible to businesses and organizations in Kingston, Poughkeepsie, Newburgh, Middletown, Monticello, Margaretville, and surrounding areas. For regional campaigns, our USPS presort partnerships allow us to handle mail preparation and induction for the entire Northeast.
+          </p>
+
+          <h2 class="text-2xl font-display text-crst-primary mt-10 mb-6">Frequently asked questions</h2>
+          <div class="space-y-6 mb-10">
+            {[
+              {
+                q: 'What file formats do you accept for printing?',
+                a: 'We accept PDF, Adobe InDesign packaged files, and Adobe Illustrator files. PDFs should be press-ready with fonts embedded, images at 300 DPI minimum, and bleed included where needed.',
+              },
+              {
+                q: 'How long does printing take?',
+                a: 'Turnaround depends on quantity and format. Digital runs under 1,000 pieces typically print within 2–3 business days after proof approval. Offset jobs take 5–7 business days for runs over 5,000. Rush service is available for time-sensitive campaigns.',
+              },
+              {
+                q: 'Can you handle the mailing after printing?',
+                a: 'Yes. We print and mail in the same facility. Once your job comes off press, we can move it directly into data processing, addressing, and postal prep without leaving the building.',
+              },
+              {
+                q: 'Do you offer design services?',
+                a: 'We provide file review and minor layout adjustments, but we do not offer full design services. If you need design work, we can connect you with designers we've worked with on past campaigns.',
+              },
+              {
+                q: 'What is the minimum order quantity?',
+                a: 'There is no strict minimum. We've printed jobs as small as 100 postcards for local campaigns and as large as 50,000+ pieces for regional nonprofit appeals. Pricing adjusts based on quantity and complexity.',
+              },
+              {
+                q: 'How do I get pricing?',
+                a: `Call us at ${BUSINESS.phone} or email with your piece size, quantity, paper preference, and whether you need mailing services. We'll send a quote within one business day.`,
+              },
+            ].map((item) => (
+              <div class="border-b border-navy-100 pb-6">
+                <h3 class="font-heading font-bold text-navy-800 mb-2">{item.q}</h3>
+                <p class="text-sm text-navy-600/75 leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+
+          <div class="bg-crst-primary/5 border border-crst-primary/15 rounded-xl p-6 text-center">
+            <p class="font-heading font-bold text-crst-primary text-lg mb-2">Get a commercial printing quote</p>
+            <p class="text-navy-600/70 text-sm mb-4">Tell us the piece, quantity, size, paper, and timing you need and we'll put together a quote.</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-              <a href="/estimate" class="btn-primary text-sm">Get a Free Estimate</a>
+              <a href="/estimate" class="btn-primary text-sm">Request a Quote</a>
               <a href={`tel:${BUSINESS.phoneClean}`} class="inline-flex items-center gap-2 text-sm font-heading font-semibold text-crst-primary hover:text-crst-accent transition-colors">
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                 Call {BUSINESS.phone}
               </a>
             </div>
           </div>
-
-          <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">Print Specifications</h3>
-          <p class="text-navy-600/80 leading-relaxed mb-4">
-            We accept print-ready files in PDF, AI, InDesign, and PSD formats. Files should be set to CMYK color mode at 300 DPI with 0.125" bleed on all sides. Don't have print-ready files? No problem — our design team can prepare your artwork. See our <a href="/services/graphic-design" class="text-crst-accent hover:text-crst-primary underline">graphic design services</a> for details.
-          </p>
         </div>
 
         <!-- Sidebar -->
@@ -123,7 +313,7 @@ const serviceSchema = {
             <div class="bg-crst-primary rounded-xl p-6 text-white">
               <h3 class="font-display text-lg mb-2">Get a Print Quote</h3>
               <p class="text-white/60 text-sm leading-relaxed mb-4">
-                Tell us what you need printed — quantity, size, and paper — and we'll send a detailed quote.
+                Tell us what you need — quantity, size, and paper — and we'll send a detailed quote within one business day.
               </p>
               <a href="/estimate" class="btn-accent w-full text-center text-sm">
                 Request Quote
@@ -140,9 +330,10 @@ const serviceSchema = {
               <div class="space-y-2">
                 {[
                   { label: 'Direct Mail Campaigns', href: '/services/direct-mail' },
-                  { label: 'Graphic Design', href: '/services/graphic-design' },
+                  { label: 'EDDM — Every Door Direct Mail', href: '/services/eddm' },
                   { label: 'Mailing Services', href: '/services/mailing' },
-                  { label: 'EDDM', href: '/services/eddm' },
+                  { label: 'Graphic Design', href: '/services/graphic-design' },
+                  { label: 'Mailing List Services', href: '/services/mailing-list-services' },
                 ].map((link) => (
                   <a href={link.href} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-white rounded-md transition-colors font-heading">
                     {link.label}
@@ -157,13 +348,13 @@ const serviceSchema = {
               <div class="space-y-2 text-sm">
                 {[
                   { format: '6×9 Postcard', use: 'Most popular for direct mail' },
+                  { format: '6×11 Jumbo Postcard', use: 'Maximum impact' },
                   { format: '8.5×11 Self-Mailer', use: 'Newsletters & menus' },
                   { format: '#10 Letter Package', use: 'Formal communications' },
-                  { format: '6×11 Jumbo Postcard', use: 'Maximum impact' },
                 ].map((item) => (
-                  <div class="flex justify-between items-baseline">
-                    <span class="font-heading font-semibold text-navy-800">{item.format}</span>
-                    <span class="text-xs text-navy-600/50">{item.use}</span>
+                  <div class="flex justify-between items-baseline gap-2">
+                    <span class="font-heading font-semibold text-navy-800 text-xs">{item.format}</span>
+                    <span class="text-xs text-navy-600/50 shrink-0">{item.use}</span>
                   </div>
                 ))}
               </div>
@@ -233,7 +424,7 @@ const serviceSchema = {
   <section class="py-10 bg-crst-primary/5 border-y border-crst-primary/10">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h3 class="text-xl font-display font-bold text-crst-primary mb-3">Need a Print Quote?</h3>
-      <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Tell us what you need — quantity, size, and paper — and we'll send a detailed quote.</p>
+      <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Tell us what you need — quantity, size, and paper — and we'll send a detailed quote within one business day.</p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href={`tel:${BUSINESS.phoneClean}`} class="btn-primary inline-flex items-center gap-2">
           <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
