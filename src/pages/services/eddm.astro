@@ -4,7 +4,9 @@ import PageHero from '../../components/PageHero.astro';
 import CTASection from '../../components/CTASection.astro';
 import AuthorByline from '../../components/AuthorByline.astro';
 import { BUSINESS, COUNTIES } from '../../data/site';
+import { getCollection } from 'astro:content';
 
+const clusterArticles = await getCollection('eddm-articles');
 const eddmFaqs = [
   { q: 'What is Every Door Direct Mail (EDDM) and how does it work?', a: 'Every Door Direct Mail is a USPS program that lets you mail to every address on a carrier route without purchasing a mailing list. You select the postal routes you want to cover, print your mailpieces to USPS-approved dimensions, and drop them at the post office serving those routes. USPS carriers deliver one piece to every door on each route you\'ve selected. There are no individual names or addresses required \u2014 delivery is based entirely on the route.' },
   { q: 'How much does EDDM cost per piece?', a: 'EDDM Retail postage is currently $0.247 per piece for USPS Marketing Mail flats. This is significantly lower than First-Class postage and comparable to bulk Standard Mail rates, but without the permit fees or minimum volume requirements. Your total cost per piece \u2014 including printing and postage \u2014 depends on quantity and mailpiece size. Most clients running 5,000\u201310,000 piece campaigns land between $0.55 and $0.75 all-in.' },
@@ -321,6 +323,23 @@ const serviceSchema = {
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
             </svg>
             <span class="font-heading font-semibold text-gray-800 group-hover:text-crst-primary transition-colors">{county.name}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl font-display font-bold text-crst-primary mb-3">EDDM Guides &amp; Resources</h2>
+        <p class="text-navy-600/70 max-w-2xl mx-auto">In-depth guides on EDDM postcard sizes, postage costs, retail vs. BMEU, design specs, and how to set up a campaign — written by Sean Griffin, MDP, owner of Cornerstone Services since 1998.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {clusterArticles.map((a) => (
+          <a href={`/services/eddm/${a.slug}`} class="block p-5 bg-navy-50/40 rounded-xl border border-navy-100 hover:border-crst-primary/30 hover:shadow-sm transition-all group">
+            <h3 class="font-heading font-semibold text-navy-800 text-sm group-hover:text-crst-primary transition-colors leading-snug mb-2">{a.data.title}</h3>
+            <p class="text-xs text-navy-600/60 line-clamp-2 leading-relaxed">{a.data.description}</p>
           </a>
         ))}
       </div>

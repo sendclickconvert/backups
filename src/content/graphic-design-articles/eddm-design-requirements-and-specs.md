@@ -1,0 +1,123 @@
+---
+title: "EDDM Design Requirements: Every Spec You Need Before Going to Print"
+description: "EDDM pieces that don't meet USPS requirements get rejected at the post office — after you've paid to print them. Here are the exact size, weight, and design compliance specs for EDDM Retail and EDDM BMEU."
+pubDate: 2026-04-09
+updatedDate: 2026-04-09
+author: "Sean Griffin"
+authorTitle: "Owner, Cornerstone Services"
+authorLocation: "New Paltz, NY"
+primaryKeyword: "eddm design"
+pillar: "https://crst.net/services/graphic-design"
+schemaFAQ:
+  - q: "What are the minimum and maximum sizes for an EDDM mailer?"
+    a: "EDDM pieces must meet USPS flat requirements: minimum 6.125 inches x 11.5 inches (the most common EDDM size is exactly at the minimum — a 6.5x9 postcard does NOT qualify as EDDM because it is too small). Maximum dimensions are 12 inches x 15 inches. Thickness must be between 0.009 and 0.75 inches. Weight must be 3.3 oz or less. Pieces outside these parameters are rejected at postal acceptance."
+  - q: "Does an EDDM mailer need an address?"
+    a: "EDDM mailers do not carry individual recipient addresses. The address panel reads 'Postal Customer' in place of the recipient's name and address. The USPS carrier delivers one piece to each active delivery address on the selected routes. The mailer must still include a valid return address and an EDDM indicia in the correct position — 'EDDM Retail' indicia for EDDM Retail mailings, or a full permit imprint for EDDM BMEU."
+  - q: "What indicia does an EDDM piece use?"
+    a: "For EDDM Retail (dropped at the post office by the mailer), use the 'EDDM Retail' indicia — the specific USPS-approved mark that can be printed directly on the piece. It goes in the upper right area of the address side. No meter postage or stamps — only the EDDM Retail indicia. For EDDM BMEU (processed through a Business Mail Entry Unit by a permit holder), a standard permit imprint with 'ECRWSS' (Every Carrier Route Walk Sequenced) coding is used."
+  - q: "What paper weight is required for EDDM?"
+    a: "EDDM pieces must meet USPS flat rigidity requirements — the piece must be stiff enough to survive automated sorting equipment without bending or folding. In practice, this means a minimum of 80 lb. cover stock for postcards. The standard EDDM postcard at Cornerstone uses 100 lb. gloss cover — significantly above the minimum, which helps pieces pass USPS acceptance inspection reliably. Pieces on lighter stock (80 lb. text or similar) frequently fail the informal rigidity test applied by postal acceptance staff."
+schemaItemList:
+  - name: "Minimum EDDM size: 6.125\" × 11.5\""
+  - name: "Maximum EDDM size: 12\" × 15\""
+  - name: "Minimum thickness: 0.009\""
+  - name: "Maximum thickness: 0.75\""
+  - name: "Maximum weight: 3.3 oz"
+  - name: "Paper weight: 80 lb. cover minimum, 100 lb. cover recommended"
+  - name: "Indicia: EDDM Retail or permit imprint with ECRWSS"
+  - name: "Address line: 'Postal Customer' — no individual addresses"
+  - name: "Return address required: upper left of address side"
+  - name: "Barcode clear zone: bottom 5/8\" of address side — completely blank"
+---
+
+EDDM campaigns fail at the post office for one of three reasons: wrong size, wrong indicia, or wrong paper weight. All three are preventable. All three are caught after the pieces are printed — when reprinting is the only option.
+
+As the holder of the USPS Mailpiece Design Professional (MDP) certification and the owner of [Cornerstone Services](/services/graphic-design) in New Paltz, I verify EDDM compliance on every job before it goes to press. Here are the exact specs you need before your piece is designed.
+
+## Size Requirements: The Most Common Failure Point
+
+EDDM pieces must qualify as USPS **flats** — a mail category with specific dimensional requirements. Many businesses assume "large postcard = EDDM," but the minimum qualifying size is larger than most people expect.
+
+**EDDM flat size requirements:**
+
+| Dimension | Minimum | Maximum |
+|-----------|---------|---------|
+| Height | 6.125 inches | 12 inches |
+| Length | 11.5 inches | 15 inches |
+| Thickness | 0.009 inches | 0.75 inches |
+| Weight | — | 3.3 oz |
+
+The critical number: **6.125 inches tall by 11.5 inches long is the minimum qualifying EDDM size.** A 6x9 postcard is 6 inches tall — below the minimum. A 5.5x8.5 postcard is significantly below the minimum. Neither qualifies for EDDM.
+
+The most common EDDM size used by businesses in the Hudson Valley is **6.25 x 11 inches** — just above the minimum in both dimensions, keeping production cost low while meeting the spec. The 6.5 x 9 is frequently mistakenly requested as EDDM — it does not qualify.
+
+## The Address Side: Three Required Elements
+
+EDDM pieces don't carry individual recipient addresses, but the address side must include three specific elements:
+
+### 1. "Postal Customer" Address Line
+
+In place of the recipient's name and address, the address block reads:
+```
+[Return Address]          EDDM RETAIL
+
+Local
+Postal Customer
+[City, ST ZIP]
+```
+
+The format must follow USPS addressing standards for the recipient line. "Postal Customer" is the USPS-approved phrase. Do not substitute "Current Resident," "Occupant," or any other phrase.
+
+### 2. EDDM Retail Indicia
+
+For EDDM Retail mailings (dropped at the serving post office), the indicia reads:
+
+```
+EDDM RETAIL
+```
+
+This must appear in the upper right corner of the address side. It is printed as part of the piece — not a stamp, not a meter impression. The indicia box has a specific required layout:
+
+```
+┌─────────────────────────────┐
+│         EDDM RETAIL         │
+│                             │
+│ [Your Return Address Here]  │
+└─────────────────────────────┘
+```
+
+The USPS provides official EDDM indicia artwork for download at usps.com. Use the official version — handmade or modified versions may be rejected.
+
+### 3. Barcode Clear Zone
+
+The bottom 5/8 inch (0.625") of the address side must be **completely blank** — no text, no graphics, no background color bleeding into this area. This is the barcode clear zone where postal processing equipment scans and applies barcodes.
+
+Any printing in the barcode clear zone causes the piece to fail postal acceptance. This is one of the most common reasons EDDM pieces are rejected at the counter — a background color that extends to the bottom edge of the address side.
+
+## Paper Weight and Rigidity
+
+EDDM flats must be rigid enough to pass through USPS automated sorting equipment without folding. The USPS applies an informal "flex test" at acceptance — if the piece bends significantly when held from one end, it may be rejected.
+
+**At Cornerstone, all EDDM pieces are printed on 100 lb. gloss cover minimum.** This exceeds the technical minimum and provides a comfortable margin on the rigidity standard. We occasionally work with clients who want to reduce printing cost by using lighter stock — we advise against it and note the rejection risk.
+
+If your EDDM is a folded piece (a brochure-style flat rather than a postcard), the combined thickness after folding must still be within the 0.009–0.75 inch range, and any open edges must be tabbed.
+
+## Design Compliance Checklist
+
+Before submitting an EDDM design to print, verify:
+
+- [ ] Finished size: height between 6.125"–12", length between 11.5"–15"
+- [ ] Document set up at finished size + 0.125" bleed on all sides
+- [ ] Paper stock: 80 lb. cover minimum, 100 lb. recommended
+- [ ] Address side: "Postal Customer" in address line
+- [ ] EDDM Retail indicia in upper right, official USPS format
+- [ ] Return address in upper left
+- [ ] Barcode clear zone: bottom 5/8" of address side completely blank
+- [ ] No critical content within 0.25" of trim edges
+- [ ] All fonts embedded or outlined in PDF
+- [ ] CMYK color mode, not RGB
+- [ ] Images at 300 DPI at print size
+
+At Cornerstone, we run this checklist on every EDDM job we receive. Files that have issues are flagged and corrected before they go to press — never after.
+
+For EDDM design, printing, and post office drop, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate). We serve businesses throughout Ulster, Dutchess, and Orange counties.

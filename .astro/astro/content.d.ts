@@ -277,6 +277,288 @@ declare module 'astro:content' {
   data: InferEntrySchema<"dm-articles">
 } & { render(): Render[".md"] };
 };
+"eddm-articles": {
+"eddm-postcard-sizes-and-specs.md": {
+	id: "eddm-postcard-sizes-and-specs.md";
+  slug: "eddm-postcard-sizes-and-specs";
+  body: string;
+  collection: "eddm-articles";
+  data: InferEntrySchema<"eddm-articles">
+} & { render(): Render[".md"] };
+"eddm-printing-requirements.md": {
+	id: "eddm-printing-requirements.md";
+  slug: "eddm-printing-requirements";
+  body: string;
+  collection: "eddm-articles";
+  data: InferEntrySchema<"eddm-articles">
+} & { render(): Render[".md"] };
+"eddm-retail-vs-eddm-bmeu.md": {
+	id: "eddm-retail-vs-eddm-bmeu.md";
+  slug: "eddm-retail-vs-eddm-bmeu";
+  body: string;
+  collection: "eddm-articles";
+  data: InferEntrySchema<"eddm-articles">
+} & { render(): Render[".md"] };
+"how-much-does-eddm-cost.md": {
+	id: "how-much-does-eddm-cost.md";
+  slug: "how-much-does-eddm-cost";
+  body: string;
+  collection: "eddm-articles";
+  data: InferEntrySchema<"eddm-articles">
+} & { render(): Render[".md"] };
+"how-to-set-up-an-eddm-campaign.md": {
+	id: "how-to-set-up-an-eddm-campaign.md";
+  slug: "how-to-set-up-an-eddm-campaign";
+  body: string;
+  collection: "eddm-articles";
+  data: InferEntrySchema<"eddm-articles">
+} & { render(): Render[".md"] };
+"what-is-every-door-direct-mail.md": {
+	id: "what-is-every-door-direct-mail.md";
+  slug: "what-is-every-door-direct-mail";
+  body: string;
+  collection: "eddm-articles";
+  data: InferEntrySchema<"eddm-articles">
+} & { render(): Render[".md"] };
+};
+"graphic-design-articles": {
+"brochure-design-for-direct-mail.md": {
+	id: "brochure-design-for-direct-mail.md";
+  slug: "brochure-design-for-direct-mail";
+  body: string;
+  collection: "graphic-design-articles";
+  data: InferEntrySchema<"graphic-design-articles">
+} & { render(): Render[".md"] };
+"direct-mail-call-to-action-guide.md": {
+	id: "direct-mail-call-to-action-guide.md";
+  slug: "direct-mail-call-to-action-guide";
+  body: string;
+  collection: "graphic-design-articles";
+  data: InferEntrySchema<"graphic-design-articles">
+} & { render(): Render[".md"] };
+"direct-mail-design-best-practices.md": {
+	id: "direct-mail-design-best-practices.md";
+  slug: "direct-mail-design-best-practices";
+  body: string;
+  collection: "graphic-design-articles";
+  data: InferEntrySchema<"graphic-design-articles">
+} & { render(): Render[".md"] };
+"eddm-design-requirements-and-specs.md": {
+	id: "eddm-design-requirements-and-specs.md";
+  slug: "eddm-design-requirements-and-specs";
+  body: string;
+  collection: "graphic-design-articles";
+  data: InferEntrySchema<"graphic-design-articles">
+} & { render(): Render[".md"] };
+"how-to-design-a-direct-mail-postcard.md": {
+	id: "how-to-design-a-direct-mail-postcard.md";
+  slug: "how-to-design-a-direct-mail-postcard";
+  body: string;
+  collection: "graphic-design-articles";
+  data: InferEntrySchema<"graphic-design-articles">
+} & { render(): Render[".md"] };
+};
+"mailing-articles": {
+"bulk-mailing-vs-first-class.md": {
+	id: "bulk-mailing-vs-first-class.md";
+  slug: "bulk-mailing-vs-first-class";
+  body: string;
+  collection: "mailing-articles";
+  data: InferEntrySchema<"mailing-articles">
+} & { render(): Render[".md"] };
+"diy-vs-mail-house-direct-mail.md": {
+	id: "diy-vs-mail-house-direct-mail.md";
+  slug: "diy-vs-mail-house-direct-mail";
+  body: string;
+  collection: "mailing-articles";
+  data: InferEntrySchema<"mailing-articles">
+} & { render(): Render[".md"] };
+"inkjet-addressing-for-direct-mail.md": {
+	id: "inkjet-addressing-for-direct-mail.md";
+  slug: "inkjet-addressing-for-direct-mail";
+  body: string;
+  collection: "mailing-articles";
+  data: InferEntrySchema<"mailing-articles">
+} & { render(): Render[".md"] };
+"presort-mail-discount-guide.md": {
+	id: "presort-mail-discount-guide.md";
+  slug: "presort-mail-discount-guide";
+  body: string;
+  collection: "mailing-articles";
+  data: InferEntrySchema<"mailing-articles">
+} & { render(): Render[".md"] };
+"what-is-a-lettershop.md": {
+	id: "what-is-a-lettershop.md";
+  slug: "what-is-a-lettershop";
+  body: string;
+  collection: "mailing-articles";
+  data: InferEntrySchema<"mailing-articles">
+} & { render(): Render[".md"] };
+};
+"nonprofit-articles": {
+"annual-fund-direct-mail-strategy.md": {
+	id: "annual-fund-direct-mail-strategy.md";
+  slug: "annual-fund-direct-mail-strategy";
+  body: string;
+  collection: "nonprofit-articles";
+  data: InferEntrySchema<"nonprofit-articles">
+} & { render(): Render[".md"] };
+"eddm-vs-targeted-mail-for-nonprofits.md": {
+	id: "eddm-vs-targeted-mail-for-nonprofits.md";
+  slug: "eddm-vs-targeted-mail-for-nonprofits";
+  body: string;
+  collection: "nonprofit-articles";
+  data: InferEntrySchema<"nonprofit-articles">
+} & { render(): Render[".md"] };
+"how-to-qualify-for-nonprofit-bulk-mail.md": {
+	id: "how-to-qualify-for-nonprofit-bulk-mail.md";
+  slug: "how-to-qualify-for-nonprofit-bulk-mail";
+  body: string;
+  collection: "nonprofit-articles";
+  data: InferEntrySchema<"nonprofit-articles">
+} & { render(): Render[".md"] };
+"nonprofit-donor-acquisition-by-mail.md": {
+	id: "nonprofit-donor-acquisition-by-mail.md";
+  slug: "nonprofit-donor-acquisition-by-mail";
+  body: string;
+  collection: "nonprofit-articles";
+  data: InferEntrySchema<"nonprofit-articles">
+} & { render(): Render[".md"] };
+"nonprofit-postage-rates.md": {
+	id: "nonprofit-postage-rates.md";
+  slug: "nonprofit-postage-rates";
+  body: string;
+  collection: "nonprofit-articles";
+  data: InferEntrySchema<"nonprofit-articles">
+} & { render(): Render[".md"] };
+"writing-nonprofit-fundraising-letters.md": {
+	id: "writing-nonprofit-fundraising-letters.md";
+  slug: "writing-nonprofit-fundraising-letters";
+  body: string;
+  collection: "nonprofit-articles";
+  data: InferEntrySchema<"nonprofit-articles">
+} & { render(): Render[".md"] };
+};
+"printing-articles": {
+"brochure-printing-guide.md": {
+	id: "brochure-printing-guide.md";
+  slug: "brochure-printing-guide";
+  body: string;
+  collection: "printing-articles";
+  data: InferEntrySchema<"printing-articles">
+} & { render(): Render[".md"] };
+"commercial-printing-vs-online-printing.md": {
+	id: "commercial-printing-vs-online-printing.md";
+  slug: "commercial-printing-vs-online-printing";
+  body: string;
+  collection: "printing-articles";
+  data: InferEntrySchema<"printing-articles">
+} & { render(): Render[".md"] };
+"direct-mail-paper-stock-guide.md": {
+	id: "direct-mail-paper-stock-guide.md";
+  slug: "direct-mail-paper-stock-guide";
+  body: string;
+  collection: "printing-articles";
+  data: InferEntrySchema<"printing-articles">
+} & { render(): Render[".md"] };
+"flyer-printing-for-small-business.md": {
+	id: "flyer-printing-for-small-business.md";
+  slug: "flyer-printing-for-small-business";
+  body: string;
+  collection: "printing-articles";
+  data: InferEntrySchema<"printing-articles">
+} & { render(): Render[".md"] };
+"how-to-prepare-print-ready-files.md": {
+	id: "how-to-prepare-print-ready-files.md";
+  slug: "how-to-prepare-print-ready-files";
+  body: string;
+  collection: "printing-articles";
+  data: InferEntrySchema<"printing-articles">
+} & { render(): Render[".md"] };
+"postcard-printing-for-direct-mail.md": {
+	id: "postcard-printing-for-direct-mail.md";
+  slug: "postcard-printing-for-direct-mail";
+  body: string;
+  collection: "printing-articles";
+  data: InferEntrySchema<"printing-articles">
+} & { render(): Render[".md"] };
+};
+"school-articles": {
+"how-to-reach-voters-for-school-elections.md": {
+	id: "how-to-reach-voters-for-school-elections.md";
+  slug: "how-to-reach-voters-for-school-elections";
+  body: string;
+  collection: "school-articles";
+  data: InferEntrySchema<"school-articles">
+} & { render(): Render[".md"] };
+"school-budget-vote-direct-mail-guide.md": {
+	id: "school-budget-vote-direct-mail-guide.md";
+  slug: "school-budget-vote-direct-mail-guide";
+  body: string;
+  collection: "school-articles";
+  data: InferEntrySchema<"school-articles">
+} & { render(): Render[".md"] };
+"school-district-mailing-list-guide.md": {
+	id: "school-district-mailing-list-guide.md";
+  slug: "school-district-mailing-list-guide";
+  body: string;
+  collection: "school-articles";
+  data: InferEntrySchema<"school-articles">
+} & { render(): Render[".md"] };
+};
+"union-articles": {
+"union-printing-for-political-campaigns.md": {
+	id: "union-printing-for-political-campaigns.md";
+  slug: "union-printing-for-political-campaigns";
+  body: string;
+  collection: "union-articles";
+  data: InferEntrySchema<"union-articles">
+} & { render(): Render[".md"] };
+"what-is-the-union-bug.md": {
+	id: "what-is-the-union-bug.md";
+  slug: "what-is-the-union-bug";
+  body: string;
+  collection: "union-articles";
+  data: InferEntrySchema<"union-articles">
+} & { render(): Render[".md"] };
+"why-choose-a-union-print-shop.md": {
+	id: "why-choose-a-union-print-shop.md";
+  slug: "why-choose-a-union-print-shop";
+  body: string;
+  collection: "union-articles";
+  data: InferEntrySchema<"union-articles">
+} & { render(): Render[".md"] };
+};
+"web-design-articles": {
+"local-web-designer-vs-national-agency.md": {
+	id: "local-web-designer-vs-national-agency.md";
+  slug: "local-web-designer-vs-national-agency";
+  body: string;
+  collection: "web-design-articles";
+  data: InferEntrySchema<"web-design-articles">
+} & { render(): Render[".md"] };
+"small-business-website-cost-guide.md": {
+	id: "small-business-website-cost-guide.md";
+  slug: "small-business-website-cost-guide";
+  body: string;
+  collection: "web-design-articles";
+  data: InferEntrySchema<"web-design-articles">
+} & { render(): Render[".md"] };
+"website-design-for-hudson-valley-businesses.md": {
+	id: "website-design-for-hudson-valley-businesses.md";
+  slug: "website-design-for-hudson-valley-businesses";
+  body: string;
+  collection: "web-design-articles";
+  data: InferEntrySchema<"web-design-articles">
+} & { render(): Render[".md"] };
+"what-to-expect-from-web-design-project.md": {
+	id: "what-to-expect-from-web-design-project.md";
+  slug: "what-to-expect-from-web-design-project";
+  body: string;
+  collection: "web-design-articles";
+  data: InferEntrySchema<"web-design-articles">
+} & { render(): Render[".md"] };
+};
 
 	};
 

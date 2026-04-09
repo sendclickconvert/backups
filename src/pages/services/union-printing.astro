@@ -3,6 +3,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import CTASection from '../../components/CTASection.astro';
 import { BUSINESS, COUNTIES } from '../../data/site';
+import { getCollection } from 'astro:content';
+
+const clusterArticles = await getCollection('union-articles');
 
 const faqs = [
   { q: 'Does union printing cost more than standard printing?', a: 'Union printing may carry a slight premium depending on run size and material, but Cornerstone works with union print partners throughout the Hudson Valley to keep costs competitive. Request a quote for your specific job.' },
@@ -233,6 +236,23 @@ const faqSchema = {
             </div>
           </div>
         </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl font-display font-bold text-crst-primary mb-3">Union Printing Guides</h2>
+        <p class="text-navy-600/70 max-w-2xl mx-auto">In-depth guides on what the union bug is, why to choose a union print shop, and union printing for political campaigns in the Hudson Valley — written by Sean Griffin, owner of Cornerstone Services since 1998.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {clusterArticles.map((a) => (
+          <a href={`/services/union-printing/${a.slug}`} class="block p-5 bg-navy-50/40 rounded-xl border border-navy-100 hover:border-crst-primary/30 hover:shadow-sm transition-all group">
+            <h3 class="font-heading font-semibold text-navy-800 text-sm group-hover:text-crst-primary transition-colors leading-snug mb-2">{a.data.title}</h3>
+            <p class="text-xs text-navy-600/60 line-clamp-2 leading-relaxed">{a.data.description}</p>
+          </a>
+        ))}
       </div>
     </div>
   </section>

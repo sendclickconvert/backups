@@ -3,6 +3,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import CTASection from '../../components/CTASection.astro';
 import { BUSINESS, COUNTIES } from '../../data/site';
+import { getCollection } from 'astro:content';
+
+const clusterArticles = await getCollection('school-articles');
 
 const faqs = [
   { q: 'What is the minimum quantity for a school district mailing?', a: 'USPS Marketing Mail requires a minimum of 200 pieces or 50 pounds per mailing. EDDM (saturation) mailings require a minimum of 200 pieces per carrier route. Most school district mailings exceed these thresholds easily.' },
@@ -245,6 +248,23 @@ const faqSchema = {
             </div>
           </div>
         </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl font-display font-bold text-crst-primary mb-3">School District Mailing Guides</h2>
+        <p class="text-navy-600/70 max-w-2xl mx-auto">In-depth guides on school budget vote mail campaigns, reaching voters for school elections, and managing school district mailing lists — written by Sean Griffin, MDP, owner of Cornerstone Services since 1998.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {clusterArticles.map((a) => (
+          <a href={`/services/school-district-direct-mail/${a.slug}`} class="block p-5 bg-navy-50/40 rounded-xl border border-navy-100 hover:border-crst-primary/30 hover:shadow-sm transition-all group">
+            <h3 class="font-heading font-semibold text-navy-800 text-sm group-hover:text-crst-primary transition-colors leading-snug mb-2">{a.data.title}</h3>
+            <p class="text-xs text-navy-600/60 line-clamp-2 leading-relaxed">{a.data.description}</p>
+          </a>
+        ))}
       </div>
     </div>
   </section>
