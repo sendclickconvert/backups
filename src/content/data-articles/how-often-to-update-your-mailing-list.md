@@ -129,3 +129,7 @@ For lists you mail to repeatedly, refresh the existing list — new NCOA pull, u
 **How do I know when my house list needs cleaning?**
 
 Watch your undeliverable rate. If your return-mail rate exceeds 3–4% per campaign (trackable with the Address Service Requested endorsement), clean immediately. Even without that data: if your house file has not been NCOA-processed in 6 months and you mail regularly, clean it before the next drop regardless.
+
+**Is there a way to automate list updates?**
+
+For businesses on regular mailing programs with Cornerstone, we maintain your list file between campaigns and apply NCOA, CASS, and death file suppression automatically before each drop. You do not need to remember to request processing — it happens as part of every campaign workflow. For house files, you provide updated records (new customers, address changes from returned mail) and we merge them into the master file before the next campaign.

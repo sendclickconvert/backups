@@ -127,4 +127,8 @@ CASS (Coding Accuracy Support System) is USPS-approved software that verifies an
 
 Not on standard Marketing Mail. Undeliverable pieces are discarded or returned depending on the mail piece endorsement. The "Address Service Requested" endorsement instructs the USPS to return undeliverables to you with the reason for non-delivery — useful for list cleaning but carries a per-piece fee for returned and corrected pieces.
 
+**How can I improve my list's deliverability above 98%?**
+
+The best path to 98–99% deliverability is maintaining a house list over multiple campaign cycles. Each mailing with the Address Service Requested endorsement identifies and removes bad records. After 3–4 campaigns with active list cleaning, house file deliverability typically reaches 98–99% — as close to perfect as any mailing list can practically achieve. Purchased lists start at 96–98% and stay there because they are compiled from external sources rather than refined through your own mailing activity.
+
 Questions about your list's deliverability? Call Cornerstone at [(845) 255-5722](tel:8453936770) or [request an estimate](/estimate) — we'll tell you exactly what to expect before you mail.

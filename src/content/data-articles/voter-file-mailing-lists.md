@@ -90,4 +90,50 @@ For political campaigns, we also handle:
 - Precinct-level segmentation for walk lists or precinct-targeted mail
 - Integration with candidate's own voter file (VAN, NGP, or Excel export)
 
+## Voter File Data Quality and Processing
+
+Raw voter files from county Boards of Elections are not mail-ready. They require the same processing applied to any mailing list before they can be used for a direct mail campaign:
+
+**CASS certification.** Voter file addresses must be standardized and verified against the USPS master address file. Board of Elections records sometimes contain non-standard formatting, outdated rural route designations, or address entries that do not match current USPS delivery records.
+
+**NCOA processing.** Voters who have moved may have updated their voter registration at their new address, but many have not. NCOA processing catches voters who filed a USPS change-of-address but did not update their voter registration — their registration address is outdated, but NCOA can provide the current address.
+
+**Deduplication.** When combining voter file data with consumer lists or property owner records, deduplication is essential to avoid mailing the same household multiple times. Matching logic must account for name variations (married names, name changes), address formatting differences, and records that appear in both the voter file and the supplemental list.
+
+**Death file suppression.** Voter rolls are purged periodically, but there is a lag between a death and the removal of the record from the active voter file. Death file suppression against the Social Security Death Master File removes recently deceased voters before the Board of Elections purge cycle catches them.
+
+At Cornerstone, every voter file we process goes through the full CASS, NCOA, dedup, and death suppression workflow before a single piece prints.
+
+## Voter File Costs and Availability
+
+In New York State, voter file data is a public record. The Board of Elections provides voter file extracts for a nominal fee — typically $5–$25 for a county extract. The data itself is essentially free; the cost is in processing, formatting, and applying targeting selects.
+
+At Cornerstone, voter file sourcing and processing for campaign mailings is included in the campaign cost. We pull fresh data from the relevant county Board(s) of Elections for each campaign, process it through our standard workflow, and apply the campaign's targeting parameters (party, propensity, geography, age). There is no separate list purchase fee for voter file campaigns.
+
+For campaigns spanning multiple counties — common in state legislative and congressional districts that cross county lines — we pull from each relevant county and merge the files with cross-county deduplication.
+
+## Legal Considerations for Voter File Use
+
+New York Election Law governs the use of voter file data. Key considerations:
+
+**Permitted uses.** Voter files may be used for election-related purposes: political campaigns, voter registration drives, civic outreach, advocacy, and non-partisan voter education. This covers the vast majority of direct mail applications for voter file data.
+
+**Restricted uses.** Voter file data may not be used for purely commercial solicitation. You cannot use a voter file to market products or services unrelated to civic engagement. A home improvement company cannot mail to the voter file as a targeted consumer list — that requires a commercial consumer list.
+
+**Paid-for-by attribution.** Political mail — any communication that mentions a candidate, party, or ballot measure — requires paid-for-by attribution under New York Election Law. The attribution must identify the committee or individual responsible for the mailing and be printed in legible type on the mail piece.
+
+**Reporting.** Campaign expenditures, including direct mail costs, must be reported to the relevant Board of Elections per New York campaign finance law. Cornerstone provides invoices and documentation suitable for campaign finance reporting.
+
+## Timing Voter File Campaigns
+
+The timing of voter file pulls relative to election dates is critical:
+
+**Primary elections:** Pull the voter file no more than 14 days before your mail date. Late party enrollment changes and new registrations up to the registration deadline can add 3–5% to your target count. A file pulled 60 days before a primary may miss thousands of newly registered or re-enrolled voters.
+
+**General elections:** Pull within 30 days of your mail date. Post-primary purges, new registrations from voter drives, and address updates from the primary cycle can shift the file significantly.
+
+**Off-cycle elections (school board, fire district, special elections):** Pull within 30 days. Off-cycle voter files receive less frequent updates from the Board of Elections, so a recent pull is especially important.
+
+**Year-round advocacy or civic outreach:** For ongoing programs, pull quarterly and NCOA-process before each mailing. Voter files are living databases — they change with every registration, purge, and address update.
+
 For more on list types and targeting, see our [mailing lists and data services hub](/services/data-lists) or call [(845) 255-5722](tel:8453936770) to discuss your campaign.

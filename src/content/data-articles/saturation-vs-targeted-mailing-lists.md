@@ -97,4 +97,40 @@ Response rates are higher for targeted lists — but the cost per piece is also 
 
 The calculus flips when the audience is genuinely broad and demographic filtering would remove legitimate prospects. In that case, saturation's lower per-piece cost and full coverage produce better total results.
 
+## Decision Framework: Saturation or Targeted?
+
+If you're unsure which approach fits your campaign, answer these four questions:
+
+**1. Does your product or service appeal to nearly everyone in the area?**
+If yes → saturation. Restaurants, grocery stores, auto repair shops, and general retail serve virtually every household within a geographic area. Demographic filtering removes potential customers without meaningful improvement in response quality.
+
+**2. Does your ideal customer have specific demographic characteristics?**
+If yes → targeted. Services with a narrow customer profile — luxury home remodeling, wealth management, pediatric dentistry, commercial insurance — benefit from filtering that reduces waste and increases per-piece relevance.
+
+**3. What is your cost-per-acquisition target?**
+If you need the lowest possible cost per lead and your audience is broad, saturation's lower per-piece cost produces more leads per dollar. If you can afford a higher cost per lead in exchange for higher-quality leads, targeted mail delivers better-qualified prospects at a higher per-piece investment.
+
+**4. Is this a first campaign or an ongoing program?**
+First campaigns often benefit from saturation to establish brand awareness across the market. Ongoing programs can shift to targeted lists after the initial awareness phase, focusing subsequent mailings on the demographic segments that responded best to the saturation campaign.
+
+## Saturation and Targeted: Geography Still Comes First
+
+Regardless of whether you choose saturation or targeted, the geographic selection is the most important decision. Both list types start with geography — ZIP codes, carrier routes, counties, or radius from a location. The demographic filtering that distinguishes targeted from saturation is applied on top of the geographic selection.
+
+For Hudson Valley businesses, the geographic decision is usually straightforward: select the ZIP codes or carrier routes within your service area. A plumber in Kingston who serves a 20-mile radius selects the ZIP codes within that radius. A dentist in Poughkeepsie who draws patients from a 10-mile area selects carrier routes within 10 miles.
+
+Where geography gets more complex is when service areas cross county lines. Ulster, Dutchess, and Orange counties share borders, and many businesses serve all three. At Cornerstone, we build lists across county boundaries — combining carrier route data from multiple counties into a single mailing list with unified CASS and NCOA processing.
+
+## Tracking Results to Inform Future List Decisions
+
+The best way to determine whether saturation or targeted is right for your business is to track results from each approach:
+
+**Use unique phone numbers or URLs.** Assign a unique tracking phone number or landing page URL to each mailing. When a lead calls the saturation campaign number versus the targeted campaign number, you know which list produced the response.
+
+**Track cost per response, not just response rate.** A saturation campaign with a 0.5% response rate at $0.50 per piece produces leads at $100 each. A targeted campaign with a 2% response rate at $0.80 per piece produces leads at $40 each. The targeted campaign is more cost-effective per lead — but if you need volume, the saturation campaign may generate more total leads.
+
+**Test before committing.** For businesses new to direct mail, we often recommend a test campaign — 2,500 pieces saturation and 2,500 pieces targeted to the same geography with the same offer. Compare response rates, lead quality, and cost per acquisition. The test data tells you exactly which approach works better for your specific business and market.
+
+At Cornerstone, we track mailing results for all clients and use the data to refine list strategy over time. Your second campaign should always perform better than your first because the data from the first informs the targeting decisions for the second.
+
 Cornerstone will recommend the right approach — or combination — based on your specific campaign goals, service area, and target audience. [Request a count and quote](/estimate) and we'll walk through both options with real numbers.

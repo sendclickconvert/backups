@@ -87,4 +87,58 @@ Cornerstone processes your house files the same way we process purchased lists: 
 
 The cost is $75 per 1,000 records for processing-only jobs (where you're not printing and mailing with us). For all campaigns run through Cornerstone, cleaning is included.
 
+## Common List Problems and How Cleaning Fixes Them
+
+Even well-maintained databases accumulate issues over time. Here are the most common problems we see when clients bring us their house files:
+
+**Mixed formatting from multiple sources.** A customer database built over 10 years from web forms, trade show signups, phone orders, and point-of-sale entries will have wildly inconsistent formatting. "123 Main Street, Apt. 4" in one record and "123 Main St #4" in another — same address, two different records. CASS standardization resolves all formatting variations to a single USPS-standard format, and deduplication catches the resulting duplicates.
+
+**Deceased individuals still on active file.** Without death file suppression, deceased customers remain in the mailing database indefinitely. Family members receiving mail addressed to a deceased relative have a negative reaction to the sender. At Cornerstone, death file suppression is included in every list cleaning pass — we match against the Social Security Death Master File and remove confirmed deceased records.
+
+**Apartment and suite number errors.** Multi-unit addresses without correct unit numbers may be delivered to the wrong recipient or returned as undeliverable. CASS processing validates unit numbers against the USPS Delivery Sequence File but cannot always resolve ambiguous unit designations. For high-value mailings where apartment delivery accuracy matters, consider using the USPS SuiteLink service, which matches business addresses to specific suite numbers.
+
+**PO Box versus physical address conflicts.** Some records have PO Box addresses while others have physical street addresses for the same individual. If your campaign requires physical addresses (for example, EDDM-format mail that cannot be delivered to PO Boxes), the cleaning process should flag or suppress PO Box records. CASS identifies PO Box records during standardization.
+
+**Records with no ZIP code or wrong ZIP code.** Data entered manually — especially from phone orders or handwritten forms — frequently has missing or incorrect ZIP codes. CASS certification resolves this by looking up the correct ZIP+4 from the street address. Records where neither the street address nor ZIP code match USPS records are flagged and suppressed.
+
+## The Cost of Not Cleaning
+
+The math is straightforward. On a 5,000-piece campaign at $0.75 per piece all-in (printing, addressing, postage), the total campaign cost is $3,750. If 10% of the list is undeliverable because it was not cleaned, 500 pieces are wasted — $375 in pure waste. The cleaning fee for 5,000 records at $75 per thousand is $375.
+
+But the waste calculation is actually worse than the direct dollar comparison suggests:
+
+**Lost presort qualification.** If your list is not NCOA-processed within 95 days, you lose automation presort discounts. On 5,000 pieces, the postage difference between automation Marketing Mail and single-piece rates can exceed $1,000. The $375 cleaning fee prevents $1,000+ in postage surcharges.
+
+**Returned mail processing.** Undeliverable pieces with the Address Service Requested endorsement cost $0.45–$0.80 each when returned. 500 returned pieces at $0.60 each adds $300 in return fees — on top of the $375 in wasted production cost.
+
+**Brand impression damage.** Mail addressed to a previous occupant, a deceased person, or a non-existent address reflects poorly on the sender. Recipients who see their neighbor's name on your mail piece form a negative impression of your data quality and, by extension, your business quality.
+
+**Missed opportunities.** Every piece mailed to a bad address is a piece that did not reach a live prospect. On a campaign designed to generate a 2% response rate, 500 wasted pieces represent 10 potential responses lost.
+
+## When to Clean: A Quick Reference
+
+| Situation | Action |
+|-----------|--------|
+| Before any mailing | CASS + NCOA (mandatory for presort rates) |
+| House file not processed in 6+ months | Full clean: CASS, NCOA, dedup, death suppression |
+| Purchased list for first use | CASS + NCOA (usually pre-processed by vendor, but verify) |
+| Reusing a list from a previous campaign | Re-run NCOA (required if 95+ days since last processing) |
+| Merging multiple lists or databases | Full clean + dedup across all source files |
+| After a campaign with high return rate (>4%) | Immediate clean with returned-mail data applied |
+| Annual house file maintenance | Full clean regardless of campaign activity |
+
+## Preparing Your List for Cleaning
+
+To get the best results from list cleaning, provide your file in a structured format:
+
+**Required fields:** First name, last name, street address, city, state, ZIP code. The more complete the address data, the better the CASS match rate.
+
+**Helpful fields:** Company name (for business records), apartment or suite number (separate column preferred), phone number, email address. These fields assist with deduplication when address-only matching is insufficient.
+
+**File format:** Excel (.xlsx), CSV, or tab-delimited text. We accept any standard database export format. Avoid PDF lists or scanned documents — these require manual data entry before processing.
+
+**One record per row.** Each row should represent one individual or household. Avoid merged cells, header rows repeated throughout the file, or multiple addresses in a single cell.
+
+At Cornerstone, we review every file before processing and contact you if there are formatting issues that need resolution before cleaning can proceed. There is no charge for the file review.
+
 For questions about processing your specific list, call [(845) 255-5722](tel:8453936770) or [request an estimate](/estimate). We accept lists in Excel, CSV, or any standard database export format.
