@@ -70,4 +70,10 @@ For labor organizations, political campaigns, and government contractors in Ulst
 3. Ask for references from similar organizations in the region
 4. Confirm that the mailing services (if needed) can coordinate with the union-print job
 
+## When Union Printing Is Not the Right Fit
+
+Not every job needs union certification. Small-run commercial printing — business cards, rack cards, internal office signage — typically does not require a union bug. If there is no compliance requirement, no endorsement at stake, and no union audience scrutinizing the piece, the decision comes down to quality and price. In those cases, evaluate the shop on its portfolio, equipment, turnaround, and references — union status is a secondary consideration.
+
+Where union printing becomes essential is when someone on the receiving end will check. Union endorsement committees check. Government compliance officers check. Union members receiving campaign mail in their mailbox check. In those cases, the union bug is not decorative — it is documentation, and it must be legitimate.
+
 At Cornerstone Services in New Paltz, we provide union-label printing documentation for projects that require it. Call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate) to discuss your project requirements.

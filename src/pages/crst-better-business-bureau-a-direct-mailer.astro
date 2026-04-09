@@ -76,42 +76,18 @@ const organizationSchema = {
     },
     url: bbbUrl,
   },
-  sameAs: [bbbUrl, linkedInUrl, BUSINESS.url],
-};
-
-const localBusinessSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': 'https://crst.net/#localbusiness',
-  name: BUSINESS.name,
   image: `${BUSINESS.url}/images/crst-logo.webp`,
-  url: BUSINESS.url,
-  telephone: BUSINESS.phone,
-  priceRange: '$$',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: BUSINESS.address.street,
-    addressLocality: BUSINESS.address.city,
-    addressRegion: BUSINESS.address.state,
-    postalCode: BUSINESS.address.zip,
-    addressCountry: 'US',
-  },
   geo: {
     '@type': 'GeoCoordinates',
     latitude: 41.7476,
     longitude: -74.0871,
-  },
-  openingHoursSpecification: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-    opens: '08:30',
-    closes: '17:00',
   },
   areaServed: [
     { '@type': 'County', name: 'Ulster County, New York' },
     { '@type': 'County', name: 'Dutchess County, New York' },
     { '@type': 'County', name: 'Orange County, New York' },
   ],
+  sameAs: [bbbUrl, linkedInUrl, BUSINESS.url],
 };
 
 const personSchema = {
@@ -177,7 +153,6 @@ const webPageSchema = {
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
-    <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />

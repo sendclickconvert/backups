@@ -48,10 +48,10 @@ The website is developed using Astro 4.16 in a hybrid output mode, leveraging th
 - **38-Article Cluster Expansion (8 New Service Pillars)**: Full pillar+cluster architecture deployed across: EDDM (6 articles, `eddm-articles`), Printing (6, `printing-articles`), Non-Profit Mailing (6, `nonprofit-articles`), Mailing Services (5, `mailing-articles`), Graphic Design (5, `graphic-design-articles`), Web Design (4, `web-design-articles`), School District Direct Mail (3, `school-articles`), Union Printing (3, `union-articles`). Each `[slug].astro` template uses complete E-E-A-T schema: Sean Griffin Person entity (`@id: https://crst.net/about#sean-griffin`, MDP via `hasCredential`, `sameAs`), Organization `@id: https://crst.net/#organization` with full address/telephone/foundingDate, BreadcrumbList, Speakable on `['h1', '.article-lead', '.prose h2']`, `inLanguage: 'en-US'`. Each pillar page renders an article grid section (via `getCollection`) above the `<CTASection />`, creating bidirectional pillar↔cluster linking.
 
 ### Schema Configuration
-- **Homepage LocalBusiness**: `index.astro` passes a merged `["LocalBusiness", "Organization"]` JSON-LD schema, including address, geo-coordinates, area served, founding date, logo, offer catalog, aggregate rating (with three real reviews), and `sameAs` links.
+- **Homepage LocalBusiness**: `index.astro` passes a merged `["LocalBusiness", "Organization"]` JSON-LD schema, including address, geo-coordinates, area served, founding date, logo, offer catalog, and `sameAs` links. **LocalBusiness schema is homepage ONLY** — all other pages use `Organization` for provider/publisher/worksFor references.
 - **Default Schema**: `BaseLayout.astro` renders a `WebPage` schema (with `Organization` publisher) as the default for pages without explicit schema props.
-- **Page-Specific Schemas**: Service and location pages inject their own specific schemas (Service, LocalBusiness for locations, FAQPage, BreadcrumbList) in addition to the default WebPage schema.
-- **AggregateRating**: Implemented on the homepage LocalBusiness schema and the BBB page with specific `reviewCount` and real review data.
+- **Page-Specific Schemas**: Service and location pages inject their own specific schemas (Service, Organization for provider, FAQPage, BreadcrumbList) in addition to the default WebPage schema.
+- **AggregateRating**: Removed sitewide per SEO doctrine. No AggregateRating on any page.
 
 ## External Dependencies
 - **Google Fonts**: Used for typography.

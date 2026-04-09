@@ -75,4 +75,12 @@ A print shop that claims union affiliation should be able to provide:
 
 The union bug itself is a trademark — using it without active affiliation is infringement. Clients who need to document union-label printing for compliance purposes (government contracts, union endorsement requirements) should request written documentation from the printer.
 
+## Common Mistakes with Union Bug Placement
+
+The most frequent issue we see at Cornerstone is clients who wait until the proof stage to mention they need the union bug. By that point, the layout is finalized, and fitting the bug — plus required legal lines like the paid-for-by attribution on political mail — into the remaining space creates design compromises.
+
+The second most common problem is assuming any print shop can add a union bug after the fact. The bug is not clip art. It is a registered mark tied to a specific union local, and it can only appear on work produced by that local's affiliated shop. If your initial print run was produced by a non-union vendor, there is no way to retroactively add a legitimate union bug.
+
+For Hudson Valley campaigns and labor organizations that need certified union printing: specify the union bug requirement at the quoting stage, not the proof stage. It affects vendor selection, layout planning, and compliance documentation from day one.
+
 At Cornerstone Services in New Paltz, we can provide union-label documentation for jobs that require it. Call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate) to discuss union-label printing requirements for your project.
