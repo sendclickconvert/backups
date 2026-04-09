@@ -1,0 +1,99 @@
+---
+title: "Presort Mail Discounts: How the USPS Presort System Works"
+description: "Presort mail earns postage discounts by sorting pieces before USPS delivery. Here's how presort works, what discounts are available, and why every business mailing over 200 pieces should be presorted."
+pubDate: 2026-04-09
+updatedDate: 2026-04-09
+author: "Sean Griffin"
+authorTitle: "Owner, Cornerstone Services"
+authorLocation: "New Paltz, NY"
+primaryKeyword: "presort mailing"
+pillar: "https://crst.net/services/mailing"
+schemaFAQ:
+  - q: "What is presort mail?"
+    a: "Presort mail is direct mail that has been sorted by ZIP code and carrier route before being delivered to the USPS. The USPS offers postage discounts for presorted mail because it reduces their processing work — pieces that are already sorted by delivery destination require less automated and manual sorting at USPS facilities. Presort discounts are available for both Marketing Mail and First-Class mail, with Marketing Mail presort rates being significantly lower than the standard stamp rate."
+  - q: "How much can presort save on postage?"
+    a: "For Marketing Mail letters, presort at the automation rate saves approximately $0.45–$0.55 per piece compared to First-Class stamps, or $0.10–$0.15 per piece compared to non-automation Marketing Mail basic rates. On 5,000 pieces, automation presort saves $500–$700 versus basic Marketing Mail or $2,250–$2,750 versus First-Class stamps. For First-Class presorted letters, the savings over the stamp rate are approximately $0.25–$0.30 per piece."
+  - q: "What are the presort levels and how do they affect my discount?"
+    a: "USPS presort has four levels, each earning a deeper discount: (1) Carrier route sort — pieces sorted to the specific carrier route (highest discount), (2) 5-digit sort — pieces sorted to the specific 5-digit ZIP code, (3) 3-digit sort — pieces sorted to the 3-digit ZIP code prefix, and (4) Mixed AADC/ADC sort — the minimum presort level. Most marketing mail processed through professional mail houses achieves carrier route and 5-digit levels because presort software maximizes the sort depth automatically."
+  - q: "Do I need a postal permit for presort mail?"
+    a: "Yes. Presorted Marketing Mail and First-Class presort both require a USPS presort permit. The permit costs $240/year plus a per-mailing permit fee, and requires USPS approval. Most businesses that mail occasionally use a mail house's existing permit rather than maintaining their own — the annual cost and administrative burden only makes sense for organizations mailing regularly at high volumes. Cornerstone holds a presort permit that we use for all client mailings."
+---
+
+Every time a business pays full stamp price to mail an advertising piece, they're leaving money on the table. The USPS presort discount exists precisely to encourage businesses to mail at volume in sorted form — and the savings at any meaningful quantity are significant.
+
+At [Cornerstone Services](/services/mailing), every marketing mailing we process goes out at the automation presort rate. It's not a service upgrade — it's how professional direct mail is done. Here's how the system works.
+
+## Why the USPS Offers Presort Discounts
+
+The USPS processes billions of pieces of mail annually through a network of automated sorting equipment. Every piece that arrives at a USPS facility unsorted needs to be read, sequenced, and routed before it can be delivered. This costs money and time.
+
+Presorted mail arrives at the USPS already sorted by delivery destination — grouped by ZIP code, then by carrier route within each ZIP code. The USPS's sorting equipment and staff do less work. In exchange for this reduced processing burden, the USPS offers postage discounts.
+
+This is the fundamental logic: the more work you do sorting before induction, the less you pay per piece. It's a contractual trade between the mailer and the postal service.
+
+## Presort Levels and Discount Structure
+
+USPS presort has multiple levels. The deeper the sort, the higher the discount:
+
+**Carrier Route Sort (highest discount):**
+All pieces going to the same postal carrier route grouped together. This is the most precise sort and earns the deepest discount. Requires enough pieces to qualify the route (minimum 10 pieces per route for Marketing Mail).
+
+**5-Digit Sort:**
+All pieces for a specific 5-digit ZIP code grouped together. Earns a significant discount — less than carrier route, more than 3-digit.
+
+**3-Digit Sort:**
+Pieces grouped by the first three digits of the ZIP code. The sort precision level where carrier route and 5-digit qualified pieces "fall off" into when there aren't enough pieces to qualify the higher levels.
+
+**Mixed/Basic (minimum required presort):**
+The minimum sort level required to mail at presort rates. Earns a smaller discount than the precision levels above.
+
+Professional presort software (which all mail houses use) automatically sorts each piece to the highest qualifying level. A mailing with 5,000 pieces going to Hudson Valley ZIP codes will have some carrier-route-qualified pieces (going to routes with 10+ addressees), some 5-digit qualified pieces, and some falling to basic — the software calculates the optimal mix automatically.
+
+## Automation Discount: The Additional Layer
+
+Beyond presort level, USPS also offers automation discounts for pieces that:
+
+1. Are CASS-certified (addresses verified against USPS database)
+2. Carry an Intelligent Mail Barcode (IMb) — the machine-readable barcode on every addressed piece
+3. Meet specific format requirements (size, weight, paper type)
+
+Automation rates are lower than basic presort rates. The combination of carrier route sort + automation discount earns the maximum available postage discount.
+
+Most professional mail houses, including Cornerstone, process all mailings to automation standards as part of the standard process. CASS certification and IMb barcode application are included in every mailing we produce.
+
+## The Permit Requirement
+
+Presorted Marketing Mail requires a USPS presort permit. There are two ways to access the permit:
+
+**Hold your own permit:** $240/year annual fee, plus a per-mailing permit imprint fee ($240 for each additional post office where you mail), plus the setup process with your local USPS Business Mail Entry Unit. Makes sense for organizations mailing 12+ campaigns per year at high volume.
+
+**Use a mail house permit:** Most businesses that mail occasionally use their mail house's existing permit. The mail house holds the permit; your mail goes out under their permit number. No annual fee for you; no permit setup process. This is how virtually all of Cornerstone's clients mail — we hold the permit, they mail at presort rates without any permit overhead.
+
+## Calculating Your Savings
+
+For a 5,000-piece campaign mailing letters (first-class-size envelopes):
+
+| Approach | Postage/Piece | Total Postage | vs. Stamps |
+|----------|-------------|--------------|-----------|
+| First-Class stamp | $0.68 | $3,400 | — |
+| First-Class presorted | $0.39 | $1,950 | -$1,450 |
+| Marketing Mail basic | $0.281 | $1,405 | -$1,995 |
+| Marketing Mail automation | $0.214 | $1,070 | -$2,330 |
+| Nonprofit Marketing Mail automation | $0.149 | $745 | -$2,655 |
+
+The $0.066 difference between Marketing Mail basic ($0.281) and automation ($0.214 or lower) doesn't sound like much. On 5,000 pieces, it's a $330 difference. On 50,000 pieces, it's $3,300. Every campaign mailed at the automation level rather than basic presort captures this difference.
+
+## What You Don't Have to Do
+
+The value of using a mail house for presort is not just the discount — it's that you don't have to think about any of the above:
+
+- We hold the permit
+- We process CASS and NCOA on your list
+- We apply IMb barcodes during addressing
+- Our presort software sequences everything automatically
+- We prepare the tray labels, postage statements, and USPS documentation
+- We induct at the USPS Business Mail Entry Unit
+
+Your job is to supply the printed pieces and the mailing list. Everything else is our process.
+
+To get a presort mail quote for your next campaign, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).

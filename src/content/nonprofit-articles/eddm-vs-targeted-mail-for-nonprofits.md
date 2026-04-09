@@ -1,0 +1,85 @@
+---
+title: "EDDM vs. Targeted Mail for Nonprofits: Which Is Right for Your Campaign?"
+description: "Nonprofits can use EDDM to reach every household in their service area, or targeted mail to reach specific donor profiles. Here's when each approach makes sense — with real cost comparisons for Hudson Valley organizations."
+pubDate: 2026-04-09
+updatedDate: 2026-04-09
+author: "Sean Griffin"
+authorTitle: "Owner, Cornerstone Services"
+authorLocation: "New Paltz, NY"
+primaryKeyword: "nonprofit mailing"
+pillar: "https://crst.net/services/non-profit-mailing"
+schemaFAQ:
+  - q: "Can nonprofits use EDDM?"
+    a: "Yes. Nonprofits can use EDDM Retail at the same $0.247-per-piece postage rate as any other mailer. There is no special nonprofit EDDM rate — EDDM bypasses the presort system that nonprofit postage discounts are tied to. If a nonprofit has USPS nonprofit authorization and mails large quantities, targeted Mail at the nonprofit presort rate ($0.142–$0.177 per piece for letters) will usually be less expensive per piece than EDDM, but EDDM requires no mailing list and has a lower total setup cost."
+  - q: "When is EDDM the right choice for a nonprofit mailing?"
+    a: "EDDM makes sense for nonprofits when: (1) the target audience is all or most households in a specific geographic area (a community organization serving a defined geography), (2) the organization is announcing a community event or program that is relevant to anyone in the area, (3) the organization does not have a donor or prospect list and wants to build awareness broadly, or (4) the budget is very limited and the absence of list cost makes the overall campaign more accessible."
+  - q: "When is targeted mail the right choice for nonprofits?"
+    a: "Targeted mail is more appropriate when: (1) the organization has specific donor lists or can rent donor files from similar organizations, (2) the audience has a specific demographic profile (age, income, household type) that can be targeted with a purchased list, (3) the organization wants to suppress existing donors from a prospect mailing, (4) the volume is large enough that the nonprofit presort rate savings over EDDM offset the list cost."
+  - q: "Does EDDM work for nonprofit fundraising appeals?"
+    a: "EDDM can work for acquisition (reaching new potential donors) but is not appropriate for donor renewal or upgrade appeals. EDDM delivers to 'Postal Customer' — there are no individual names on the pieces, so you cannot personalize the mailing for existing donors or segment by giving history. Renewal and upgrade appeals that rely on donor relationship, giving history, and personalization require targeted mail to your house file."
+---
+
+When a nonprofit is planning a direct mail campaign, the choice between EDDM and targeted mail is not always obvious. One is simpler and cheaper to set up; the other can be less expensive per piece at scale and reaches a more qualified audience. The right choice depends on what you're trying to accomplish.
+
+At [Cornerstone Services](/services/non-profit-mailing), we run both types of mailings for nonprofits in the Hudson Valley. Here is a direct comparison that helps you choose.
+
+## What Each Approach Does
+
+**EDDM (Every Door Direct Mail):** Delivers one piece to every address on selected postal carrier routes. No mailing list required. No individual names. "Postal Customer" as the addressee. Postage at $0.247 per piece flat rate. Good for: awareness, events, community announcements, acquisition in a defined geographic area.
+
+**Targeted Mail:** Delivers to a specific list of individuals selected by name, address, and demographic criteria. Can be your house donor file, a rented or exchanged donor list, or a purchased compiled list. Postage at the nonprofit presort rate ($0.142–$0.177 per piece for letters) for organizations with USPS nonprofit authorization. Good for: donor renewal, upgrade appeals, acquisition from specific donor profiles.
+
+## The Postage Math
+
+EDDM does not qualify for nonprofit presort rates. The nonprofit discount is tied to the presort process — sorting by ZIP code and carrier route to earn postal discounts. EDDM bypasses the presort system entirely, delivering to every address on a route without sorting by individual address.
+
+This creates a postage rate comparison that surprises many nonprofits:
+
+| Approach | Postage Per Piece | 10,000 Pieces |
+|----------|-----------------|---------------|
+| EDDM Retail | $0.247 | $2,470 |
+| Nonprofit Marketing Mail (letters) | $0.142–$0.177 | $1,420–$1,770 |
+| Standard Marketing Mail (letters) | $0.214–$0.281 | $2,140–$2,810 |
+
+For a nonprofit with USPS authorization, targeted letter mail is significantly less expensive per piece than EDDM for quantities over 2,000–3,000 pieces. At 10,000 pieces, the postage savings of nonprofit targeted mail over EDDM is $700–$1,050.
+
+But this comparison doesn't include the list cost. A targeted mailing requires a mailing list — either your house file (free) or a purchased/rented list ($50–$120 per thousand names). For a 10,000-piece acquisition mailing, a rented list adds $500–$1,200 to the cost, which partially offsets the postage savings.
+
+## Scenario 1: Community Event Announcement
+
+A nonprofit in New Paltz is hosting a community fundraising gala and wants to announce it to every household within a 10-mile radius.
+
+**Best approach: EDDM.** The audience is anyone in the area — no demographic targeting improves on "every household nearby." EDDM requires no list, lower setup cost, and can be produced and mailed in 10–14 days. A 5,000-piece EDDM campaign covering routes in New Paltz, Highland, and Gardiner ZIP codes would cost approximately $1,200–$1,600 all-in including printing and postage.
+
+## Scenario 2: Annual Fund Renewal Appeal
+
+A nonprofit is sending its year-end appeal to 3,000 current and lapsed donors on its house file.
+
+**Best approach: Targeted mail to house file.** EDDM is not appropriate here — you cannot personalize pieces with the donor's name, giving history, or suggested ask amount. The house file also contains donors in multiple ZIP codes scattered across the region, not concentrated in specific carrier routes. Targeted mail to the house file at the nonprofit presort rate produces a personalized appeal that will consistently outperform an EDDM piece.
+
+## Scenario 3: New Donor Acquisition
+
+A food pantry wants to recruit new donors from households in Ulster County that have not previously given.
+
+**Best approach: It depends.** If the pantry serves the entire county and wants broad awareness, EDDM to routes in Kingston, Saugerties, and Woodstock is a simple and cost-effective reach. If the pantry has a budget for a targeted list and wants to focus on households with higher-than-average charitable giving rates, a targeted acquisition mailing to a compiled list with giving indicators will typically produce better response rates.
+
+Hybrid approach: EDDM to specific neighborhoods for broad awareness, targeted mail to households on a charitable giving list in the same area for a more focused acquisition attempt.
+
+## Scenario 4: Advocacy or Issue Campaign
+
+A nonprofit advocacy organization wants to reach voters in a specific geographic area about a ballot measure.
+
+**Best approach: EDDM or targeted voter file mail.** For broad saturation messaging where the audience is all residents in an area, EDDM is efficient. For targeted voter outreach where the organization wants to reach registered voters of a specific party or those who have voted in recent elections, a [voter file mailing list](/services/data-lists/voter-file-mailing-lists) enables targeted delivery to the specific voters most relevant to the campaign.
+
+## The Simple Decision Framework
+
+| Goal | Best Approach |
+|------|-------------|
+| Announce an event to a neighborhood | EDDM |
+| Renew existing donors | Targeted mail (house file) |
+| Acquire donors in a defined geography | EDDM or targeted compiled list |
+| Acquire donors by demographic profile | Targeted mail (rented/exchanged list) |
+| Advocacy to voters in an area | EDDM or voter file mail |
+| Personalized donor appeal | Targeted mail only |
+
+To discuss which approach fits your nonprofit's campaign goals, call [(845) 255-5722](tel:8453936770) or [contact us online](/estimate).

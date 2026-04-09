@@ -1,0 +1,96 @@
+---
+title: "Postcard Printing for Direct Mail: Sizes, Paper, and What Actually Works"
+description: "Postcard printing for direct mail is not the same as printing a greeting card. Here are the sizes, paper stocks, quantities, and specs that produce campaigns that hold up through USPS sorting and deliver response rates worth tracking."
+pubDate: 2026-04-09
+updatedDate: 2026-04-09
+author: "Sean Griffin"
+authorTitle: "Owner, Cornerstone Services"
+authorLocation: "New Paltz, NY"
+primaryKeyword: "postcard printing"
+pillar: "https://crst.net/services/printing"
+schemaFAQ:
+  - q: "What sizes are available for direct mail postcards?"
+    a: "Standard direct mail postcard sizes include 4x6 (First-Class postage, no permit required), 5x7 (Marketing Mail standard letter rate), 5.5x8.5 (standard postcard, most common for local service campaigns), and 6x9 or larger (presorted flat rate, higher postage but more visual real estate). For EDDM campaigns, the minimum qualifying size is 6.125\" x 11.5\". The right size depends on your mail class, offer complexity, and budget."
+  - q: "What paper stock should I use for direct mail postcards?"
+    a: "The minimum recommended paper stock for direct mail postcards is 100 lb. gloss cover. Lighter stocks feel cheap and are more prone to damage during USPS sorting. 100 lb. matte cover is a popular alternative for businesses that want a more premium, less glossy feel. For 4x6 First-Class postcards, 14 pt. card stock (roughly equivalent to 80 lb. cover) is acceptable and reduces postage cost by keeping the piece within First-Class postcard weight limits."
+  - q: "How many postcards do I need for a direct mail campaign?"
+    a: "There is no minimum for First-Class postcard mailing (individual stamps). For Marketing Mail presort (bulk rate), the USPS minimum is 200 pieces. Most effective direct mail campaigns run 2,500–10,000 pieces — large enough to generate statistically meaningful results and achieve significant per-piece cost savings compared to smaller quantities. Multi-drop campaigns (mailing the same list 3–4 times over a campaign cycle) typically see higher cumulative response rates than a single large drop."
+  - q: "How long does postcard printing take?"
+    a: "Standard postcard printing turnaround at Cornerstone is 5–7 business days from proof approval for quantities up to 10,000. Rush turnaround (3–5 business days) is available at additional cost. Add USPS mailing time — 3–5 business days for Marketing Mail delivery in the Hudson Valley — when planning your in-home date."
+---
+
+The postcard is the workhorse of direct mail. No envelope to open, immediate visibility, lower production cost per piece than a letter package, and strong response rates when the offer is right and the design is executed well. In 28 years of running [printing services](/services/printing) for Hudson Valley businesses, the postcard format remains the starting point for more campaigns than anything else we produce.
+
+But "postcard" covers a wide range — from a 4x6 First-Class mailing to a 9x12 EDDM flat. The right choice depends on your audience, mail class, offer, and budget. Here is what you need to know before selecting a format.
+
+## Postcard Sizes and the Mail Classes They Qualify For
+
+The USPS defines mail class eligibility by dimensions and weight. Choosing the wrong size can mean paying First-Class postage rates on what you intended as bulk Marketing Mail — or disqualifying the piece from EDDM.
+
+### 4x6 Inch — First-Class Postcard Rate
+
+A 4x6 postcard (technically: 3.5"–4.25" tall, 5"–6" long) qualifies for First-Class postcard postage — currently $0.38 per piece versus $0.68+ for a First-Class letter. No permit required. The 4x6 is the simplest, lowest-barrier direct mail format.
+
+**Best for:** Small test mailings to your house file, appointment reminders, thank-you cards, announcement postcards. Not appropriate for acquisition campaigns because the piece is too small to carry a compelling offer alongside your business information.
+
+### 5.5x8.5 Inch — Marketing Mail Letter Rate
+
+The most popular format for Marketing Mail (bulk) campaigns. At $0.21–$0.28 per piece with a presort permit, the per-piece postage savings over First-Class are substantial at volume.
+
+**Best for:** Targeted acquisition campaigns, new mover mailers, seasonal offers, any campaign where you want a reasonable-sized piece at the lowest bulk postage rate. This is the size we recommend most often for new clients running their first targeted direct mail campaign.
+
+### 6x9 Inch — Marketing Mail Flat or EDDM
+
+At 6 inches tall, the piece upgrades from a letter to a flat. This changes the postage rate — flats cost slightly more than letters in Marketing Mail. The visual impact of the larger format often more than compensates.
+
+**Best for:** Home service businesses, real estate, healthcare. The extra space allows a stronger visual, more copy, and a larger headline. A 6x9 or 6.5x9 postcard on 100 lb. gloss is also the most common EDDM format.
+
+### 9x12 Inch — Maximum Flat Size
+
+The largest common postcard format before moving into self-mailer or brochure territory. Postage is the same flat rate as a 6x9, but printing cost is significantly higher.
+
+**Best for:** High-impact introductory mailers, real estate listings where large property photos matter, premium product announcements. Not appropriate as a regular campaign format due to printing cost.
+
+## Paper Stock: What Holds Up Through USPS Handling
+
+Direct mail postcards travel through automated USPS sorting equipment — conveyor belts, rollers, optical readers — before reaching a carrier's vehicle and ultimately the mailbox. The piece needs to be stiff enough to survive this process without curling, bending, or sticking.
+
+**100 lb. gloss cover:** The industry standard for direct mail postcards. Stiff, holds ink color well, UV coating option adds protection and vibrancy. This is what we print on for the majority of our campaigns.
+
+**100 lb. matte cover:** Same weight and stiffness as gloss, but with a subdued, non-glossy finish. Popular for healthcare, professional services, and businesses that want a more sophisticated aesthetic. Colors print slightly less vibrantly than on gloss stock.
+
+**14 pt. card stock:** Equivalent to approximately 90–100 lb. cover. Used for premium business card-style postcards where extra stiffness is a brand signal.
+
+**80 lb. gloss text:** Acceptable for 4x6 First-Class postcards where the piece is light enough to stay under the 1 oz First-Class letter threshold. Not recommended for larger formats — the reduced stiffness leads to bending and reader perception of lower quality.
+
+## Coatings
+
+**UV coating:** Applied to the print surface after printing. Protects ink from scuffing and moisture, adds visible shine, makes colors pop. Standard for glossy promotional postcards.
+
+**Aqueous (AQ) coating:** Water-based, less protective than UV. Used when the piece needs to be written on (address side of self-mailers) or for pieces that will be scanned (some campaigns use QR-code-heavy designs where high gloss causes glare issues).
+
+**No coating:** Used on matte pieces or when the uncoated look is intentional. Less protection — fine for short-duration campaigns, not ideal for pieces that sit in a mailbox in rain or humidity.
+
+## Quantities and Pricing
+
+Postcard printing is significantly price-efficient at volume. Here are real pricing ranges from our shop in New Paltz for standard 5.5x8.5 and 6x9 formats on 100 lb. gloss cover with UV coating, two-sided full color:
+
+| Quantity | 5.5x8.5 Price | 6x9 Price |
+|----------|--------------|----------|
+| 500 | $120–$150 | $145–$185 |
+| 1,000 | $155–$195 | $185–$230 |
+| 2,500 | $220–$270 | $270–$330 |
+| 5,000 | $300–$380 | $360–$440 |
+| 10,000 | $460–$560 | $540–$660 |
+
+These prices are for print only — postage and mailing services are quoted separately. Add the [mailing services](/services/mailing) quote to get your all-in campaign cost.
+
+## What Actually Makes Postcards Work
+
+The most common reason postcard campaigns underperform is not the paper stock or the size — it's the offer. A postcard with a generic message ("We provide great home services in your area!") will consistently underperform a postcard with a specific, time-limited offer ("Free HVAC tune-up inspection — expires March 31. Call (845) 555-1234.").
+
+The postcard is small enough that the reader decides in 3 seconds whether to keep it or throw it away. Every design decision should serve that 3-second window: large headline with the offer, one compelling visual, and a clear call to action with a phone number or URL.
+
+For campaign design alongside printing, see our [graphic design for direct mail](/services/graphic-design/how-to-design-a-direct-mail-postcard) guide. For postage and mailing, see [mailing services](/services/mailing).
+
+To get a quote for postcard printing — with or without mailing services — call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).

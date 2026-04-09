@@ -1,0 +1,115 @@
+---
+title: "How to Set Up an EDDM Campaign: A Step-by-Step Guide"
+description: "From route selection to USPS drop, here's how to set up an Every Door Direct Mail campaign correctly — including the steps most small businesses skip that cause campaigns to underperform or get rejected."
+pubDate: 2026-04-09
+updatedDate: 2026-04-09
+author: "Sean Griffin"
+authorTitle: "Owner, Cornerstone Services"
+authorLocation: "New Paltz, NY"
+primaryKeyword: "eddm mailing services"
+pillar: "https://crst.net/services/eddm"
+schemaFAQ:
+  - q: "How do I select carrier routes for EDDM?"
+    a: "Use the USPS EDDM mapping tool at eddm.usps.com. You can search by ZIP code, draw a radius around your business, or browse routes by household demographics including income, age, and household size. Each route shows an address count — typically 300–600 stops — and you can add routes to your mailing to build a total piece count. Select routes that correspond to your realistic service or delivery area."
+  - q: "How far in advance do I need to plan an EDDM campaign?"
+    a: "Allow 10–14 business days from proof approval to in-home date for standard EDDM production. Rush production is possible in 5–7 business days at additional cost. After printing is complete, USPS delivery typically takes 3–5 business days from the drop date. For time-sensitive campaigns — grand openings, seasonal offers, election mail — plan for 3 full weeks from design approval to estimated in-home date."
+  - q: "Can I schedule EDDM to arrive on a specific day?"
+    a: "EDDM does not guarantee a specific delivery day. Once pieces are accepted at the post office, carriers deliver them on their regular route schedule, typically within 3–5 business days of the drop date. For time-sensitive campaigns, drop on a Monday or Tuesday to target delivery by Friday of that week or early the following week. Avoid dropping immediately before a postal holiday, which can extend delivery time by 1–3 days."
+  - q: "Should I test with a small EDDM mailing before committing to a larger campaign?"
+    a: "Yes, if you have not used EDDM before. A test with 2,000–3,000 pieces to your best-fit carrier routes — the highest-density residential areas within your service zone — gives you real response data before committing to a larger budget. Track responses by including a specific promo code, dedicated phone number, or landing page URL on the piece. One campaign is not a reliable data point; two or three consistent drops to the same routes give you a clearer picture of your response rate."
+schemaHowTo:
+  name: "How to Set Up an EDDM Campaign"
+  steps:
+    - name: "Define your target geography"
+      text: "Identify the specific area you want to cover. For most local service businesses, this is a 3–5 mile radius from your location or along major corridors where your customers live. For restaurants, it's typically the delivery area. For real estate agents, it's the specific neighborhood or 'farm area' you're working."
+    - name: "Select carrier routes using the USPS tool"
+      text: "Go to eddm.usps.com and use the Every Door Direct Mail mapping tool. Search your ZIP code, draw a radius, or browse route by route. Filter for household type (residential only, or include businesses). Add routes to your mailing and note the total address count."
+    - name: "Finalize your piece size and offer"
+      text: "Choose a size that fits your budget and message. 6.5x9 is the most cost-efficient format; 8.5x11 gives more space for content and photos. Write a specific offer — a discount, a free consultation, a limited-time special — not a generic brand awareness message. EDDM without a compelling offer almost never justifies the cost."
+    - name: "Design your mailpiece for EDDM specs"
+      text: "Set up your design to USPS flat dimensions with proper bleed, safe zones, and the EDDM indicia placement area reserved in the upper right of the address face. Keep the bottom 2.125 inches of the address face clear for the USPS barcode zone. Include a clear call to action with a phone number or URL."
+    - name: "Get your files to your printer and approve the proof"
+      text: "Submit a print-ready PDF or native files. Review the digital proof carefully — check that the offer, phone number, URL, and address are correct. Once you approve, the piece goes to press and changes are not possible."
+    - name: "Coordinate the drop date"
+      text: "Confirm the post office drop date with your printer. They will handle bundling, facing slips, and the USPS drop at the appropriate delivery unit. You'll receive confirmation of the drop and an estimated delivery window."
+---
+
+The first time a business owner comes to us for an EDDM campaign, they've usually already spent two hours on the USPS website wondering why it's more complicated than it looked in the video they watched. EDDM is genuinely accessible — but "no list required" does not mean "no decisions required."
+
+The campaigns that work are the ones where the route selection, piece design, and offer are each thought through before anything goes to press. This guide walks through each step in the order it needs to happen.
+
+## Step 1: Define Your Target Area — Before Touching the Mapping Tool
+
+The most common setup mistake is starting with the USPS mapping tool before defining the target area with any discipline. You open the map, see a grid of carrier routes, and start clicking routes until you hit your budget. The result is a geographic spread that includes neighborhoods where your product has low relevance alongside the core area where it has high relevance.
+
+Before touching the mapping tool, answer these questions:
+
+**What is your realistic service radius?** For a plumber in New Paltz, it might be a 10-mile radius. For a pizza shop in Poughkeepsie, it might be a 3-mile delivery zone. For a real estate agent farming a specific neighborhood, it might be a defined set of streets.
+
+**Who lives in your target area?** EDDM does not filter demographics, but you can look at routes by income bracket and household type in the USPS tool. A luxury home services company saturating a low-income rental corridor is waste. A restaurant delivering to a neighborhood of single-family homeowners with higher disposable income is money well spent.
+
+**How many pieces can you afford?** Route count follows from budget. Know your budget before selecting routes so you're not adding routes that you'll have to cut later when the piece count comes back higher than you planned.
+
+## Step 2: Route Selection — The USPS Tool
+
+At eddm.usps.com, the EDDM mapping tool shows every carrier route in the country as a shaded area on a map. Each route has:
+- A route ID (e.g., R001, C006)
+- Total address count
+- Residential count vs. business count
+- Demographic overlays (income, age, household size) — available for filtering
+
+**Start with a radius.** Draw a radius around your business address at the distance that matches your service area. The tool shows all routes that fall within or overlap the radius and sums the address count.
+
+**Filter by household type.** If your product is consumer-facing, check "residential only" to exclude business addresses and reduce wasted impressions. If you serve businesses too, keep both.
+
+**Check route demographics.** Filter by median household income and age to identify routes with the highest concentration of your ideal customer profile. This is not as precise as a targeted list, but it helps avoid obvious geographic mismatches.
+
+**Build your route list.** Add routes to your mailing, note the total piece count, and confirm it falls within your budget. Most campaigns we run for Hudson Valley businesses land between 2,500 and 8,000 pieces.
+
+## Step 3: The Offer — What the Piece Needs to Say
+
+EDDM is saturating — you're reaching households that have never heard of your business. A piece that says "We're here and we do great work" will not produce a measurable response. A piece with a specific, time-limited offer will.
+
+The most effective EDDM offers we've seen in 28 years:
+- **Dollar-off or percentage discounts** with an expiration date ("$50 off your first HVAC tune-up — expires [date]")
+- **Free first service or consultation** ("Free estimate on any roofing project")
+- **Limited-time introductory pricing** for restaurants or retail
+- **Grand opening specials** with a clear window ("Open [date] — bring this mailer for 20% off")
+
+The offer drives the response rate. A well-designed piece with a weak offer underperforms a mediocre piece with a compelling offer. This is not a design problem — it is a strategy problem. Before we ever talk about design, we discuss what the offer is going to be.
+
+## Step 4: Design for EDDM
+
+Key design requirements for EDDM — beyond the size and spec requirements covered in the [printing requirements guide](/services/eddm/eddm-printing-requirements):
+
+**Front of card (non-address side):** This is your primary attention piece. Large headline, single dominant visual, clear offer, phone number or URL visible. Someone should be able to understand the offer in 3 seconds.
+
+**Back of card (address side):** Reinforcing message or additional detail, your logo and address, secondary phone number or URL. Keep the bottom 2.125" clear for the USPS barcode zone. Reserve the upper right for the EDDM indicia.
+
+**Tracking mechanism:** Include something that allows you to track response. A specific promo code, a dedicated phone number (call tracking), or a unique landing page URL tied to the EDDM campaign. Without a tracking mechanism, you have no data to evaluate the campaign's ROI.
+
+## Step 5: Production — Print, Bundle, Drop
+
+Once your design is approved and files are submitted, production at Cornerstone runs 7–10 business days for standard jobs. Rush production is available at additional cost.
+
+After printing, we:
+1. Weigh a sample of pieces to verify under 3.3 oz
+2. Bundle in stacks of 50–100 with a completed USPS PS Form 3587 facing slip on each bundle
+3. Drop at the specific USPS delivery unit serving each route in your mailing
+4. Provide you with a drop confirmation and estimated in-home date
+
+USPS carriers deliver within 3–5 business days of our drop. For campaigns intended to arrive before a specific date, work backward: add 5 business days for delivery, plus 10 business days for production, plus 2 business days for proof approval. That's 17 business days minimum from "go" to in-home.
+
+## Step 6: Track and Evaluate
+
+After delivery, allow 2–3 weeks for responses to come in before evaluating the campaign. Direct mail responses are not immediate — some people hold a postcard on the fridge for a week before calling.
+
+Track:
+- **Total responses** (calls, website visits via the specific URL, promo code uses)
+- **Conversion rate** (responses that became customers)
+- **Revenue per response** (total revenue attributable to the campaign)
+- **Cost per acquisition** (total campaign cost ÷ new customers acquired)
+
+A first EDDM campaign rarely produces the return of a third or fourth one. Consistency and repetition — reaching the same routes 3–4 times over 6 months — builds name recognition that increases response rates over time. The businesses we see getting the best long-term results from EDDM treat it as a monthly or quarterly program, not a one-time experiment.
+
+To start planning your EDDM campaign, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate). We'll pull route counts and pricing the same day.
