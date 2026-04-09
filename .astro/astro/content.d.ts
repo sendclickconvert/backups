@@ -140,7 +140,58 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"dm-articles": {
+		"data-articles": {
+"how-often-to-update-your-mailing-list.md": {
+	id: "how-often-to-update-your-mailing-list.md";
+  slug: "how-often-to-update-your-mailing-list";
+  body: string;
+  collection: "data-articles";
+  data: InferEntrySchema<"data-articles">
+} & { render(): Render[".md"] };
+"how-to-clean-a-mailing-list.md": {
+	id: "how-to-clean-a-mailing-list.md";
+  slug: "how-to-clean-a-mailing-list";
+  body: string;
+  collection: "data-articles";
+  data: InferEntrySchema<"data-articles">
+} & { render(): Render[".md"] };
+"mailing-list-accuracy.md": {
+	id: "mailing-list-accuracy.md";
+  slug: "mailing-list-accuracy";
+  body: string;
+  collection: "data-articles";
+  data: InferEntrySchema<"data-articles">
+} & { render(): Render[".md"] };
+"mailing-list-selects.md": {
+	id: "mailing-list-selects.md";
+  slug: "mailing-list-selects";
+  body: string;
+  collection: "data-articles";
+  data: InferEntrySchema<"data-articles">
+} & { render(): Render[".md"] };
+"saturation-vs-targeted-mailing-lists.md": {
+	id: "saturation-vs-targeted-mailing-lists.md";
+  slug: "saturation-vs-targeted-mailing-lists";
+  body: string;
+  collection: "data-articles";
+  data: InferEntrySchema<"data-articles">
+} & { render(): Render[".md"] };
+"voter-file-mailing-lists.md": {
+	id: "voter-file-mailing-lists.md";
+  slug: "voter-file-mailing-lists";
+  body: string;
+  collection: "data-articles";
+  data: InferEntrySchema<"data-articles">
+} & { render(): Render[".md"] };
+"what-is-ncoa-processing.md": {
+	id: "what-is-ncoa-processing.md";
+  slug: "what-is-ncoa-processing";
+  body: string;
+  collection: "data-articles";
+  data: InferEntrySchema<"data-articles">
+} & { render(): Render[".md"] };
+};
+"dm-articles": {
 "direct-mail-for-real-estate-agents-hudson-valley.md": {
 	id: "direct-mail-for-real-estate-agents-hudson-valley.md";
   slug: "direct-mail-for-real-estate-agents-hudson-valley";

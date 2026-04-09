@@ -1,9 +1,12 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import CTASection from '../../components/CTASection.astro';
 import AuthorByline from '../../components/AuthorByline.astro';
 import { BUSINESS, COUNTIES } from '../../data/site';
+
+const clusterArticles = await getCollection('data-articles');
 
 const serviceSchema = {
   '@context': 'https://schema.org',
@@ -402,6 +405,21 @@ const serviceSchema = {
             All mailing list services are part of our full-service <a href="/services/direct-mail" class="text-crst-primary font-semibold hover:underline">direct mail campaigns</a> — from list to mailbox, one vendor, one invoice.
           </p>
 
+          <hr class="my-8 border-navy-200" />
+
+          <h2 class="text-2xl font-display text-crst-primary mb-4">Mailing List Guides &amp; Resources</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-6">
+            In-depth guides on NCOA processing, demographic targeting, list accuracy, saturation vs. targeted mail, list hygiene, voter files, and when to refresh your data — written by Sean Griffin, owner of Cornerstone Services since 1998.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-4 mb-10">
+            {clusterArticles.map((a) => (
+              <a href={`/services/data-lists/${a.slug}`} class="block p-4 bg-navy-50/40 rounded-xl border border-navy-100 hover:border-crst-primary/30 hover:shadow-sm transition-all group">
+                <h3 class="font-heading font-semibold text-navy-800 text-sm group-hover:text-crst-primary transition-colors leading-snug mb-1">{a.data.title}</h3>
+                <p class="text-xs text-navy-600/60 line-clamp-2 leading-relaxed">{a.data.description}</p>
+              </a>
+            ))}
+          </div>
+
           <div class="bg-crst-primary/5 border border-crst-primary/15 rounded-xl p-6 mt-10 text-center">
             <p class="font-heading font-bold text-crst-primary text-lg mb-2">Get a List Count and Quote</p>
             <p class="text-navy-600/70 text-sm mb-4">Tell us your target audience and geography. We'll send you a record count and pricing — usually within a few hours.</p>
@@ -431,6 +449,19 @@ const serviceSchema = {
                 <a href={`tel:${BUSINESS.phoneClean}`} class="text-white/70 text-sm font-heading hover:text-white transition-colors">
                   or call {BUSINESS.phone}
                 </a>
+              </div>
+            </div>
+
+            <!-- Cluster article links -->
+            <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Mailing List Guides</h3>
+              <div class="space-y-2">
+                {clusterArticles.map((a) => (
+                  <a href={`/services/data-lists/${a.slug}`} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-white rounded-md transition-colors font-heading">
+                    <span class="truncate mr-2">{a.data.title.replace(/ — .*$/, '').replace(/ for Direct Mail$/, '').replace(/\?$/, '')}</span>
+                    <svg class="w-3.5 h-3.5 opacity-40 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                  </a>
+                ))}
               </div>
             </div>
 
