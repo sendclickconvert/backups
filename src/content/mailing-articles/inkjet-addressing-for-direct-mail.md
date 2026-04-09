@@ -35,7 +35,7 @@ The process:
 4. For each piece, the addressing system reads a registration mark or sensors the piece position, and fires inkjet heads in the precise USPS-compliant position
 5. The address, optional personalized message, and IMb barcode print simultaneously in a single pass
 
-The output is an addressed piece with no applied sticker, no misregistration from manual placement, and a USPS-compliant address format with the required clear zones maintained.
+The output is an addressed piece with no applied sticker, no misregistration from manual placement, and a USPS-compliant address format with the required clear zones maintained. The entire process — from feeding the first piece to completing the last — runs continuously without manual intervention. For a 5,000-piece postcard campaign, inkjet addressing is complete in approximately 10–15 minutes of machine time.
 
 ## The Intelligent Mail Barcode (IMb)
 
@@ -89,4 +89,46 @@ The return address (your organization's address) appears in the upper left of th
 
 Inkjet addressing at Cornerstone is quoted as part of the overall mailing service package. As a standalone service (bringing printed pieces for addressing and mailing only), addressing runs approximately $0.025–$0.040 per piece depending on quantity, plus CASS and NCOA processing fees ($50–$100 per list).
 
-For most campaigns, addressing is bundled into an all-in mailing services quote that includes addressing, presort, and USPS drop. To get a quote, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).
+For most campaigns, addressing is bundled into an all-in mailing services quote that includes addressing, presort, and USPS drop.
+
+## Inkjet Addressing vs. Laser Addressing
+
+Some mail shops use laser printing instead of inkjet for addressing. The key differences:
+
+**Speed.** Inkjet addressing runs at 20,000–40,000 pieces per hour on high-speed systems. Laser addressing is typically slower — 5,000–15,000 pieces per hour on most production laser printers. For campaigns over 5,000 pieces, inkjet is significantly faster.
+
+**Surface compatibility.** Inkjet works on porous and semi-porous surfaces (uncoated, AQ-coated, matte). Laser toner adheres to almost any surface including UV-coated stock — but laser heat can damage thin or coated stocks. For standard direct mail production, inkjet is preferred because the piece design already accommodates it (UV on front, AQ or uncoated on back).
+
+**Cost.** Inkjet consumables (water-based ink cartridges) are less expensive per impression than laser toner at the volumes mail houses process. The inkjet cost advantage is marginal per piece but meaningful at scale.
+
+**Print quality.** Both produce commercially acceptable address printing. Inkjet on compatible surfaces produces sharp, clean text. Laser on glossy surfaces can sometimes show toner adhesion issues (the toner sits on top of the coating and can scratch off). For the IMb barcode specifically, inkjet on a receptive surface produces the most reliable machine-readable output.
+
+At Cornerstone, we use inkjet addressing for all production. Our equipment runs at 30,000+ pieces per hour, which means a 5,000-piece campaign is addressed in under 15 minutes of press time.
+
+## Common Addressing Errors and How We Prevent Them
+
+Even with automated systems, addressing errors can occur if the input data or equipment setup is wrong. Here are the most common issues and how professional mail houses prevent them:
+
+**Address drift.** If the inkjet head position shifts during a run, addresses print slightly outside the USPS-compliant zone. Our systems use optical sensors to verify piece position before each print — if a piece is misaligned on the conveyor, the system pauses or rejects that piece rather than printing the address in the wrong location.
+
+**IMb barcode scan failures.** If the inkjet ink is too light or the barcode is printed on a surface that absorbs ink unevenly, USPS automated readers may fail to scan the barcode. The piece gets manually sorted instead of automated — losing the presort discount benefit. We use ink formulations and surface preparation that produce consistent, scannable barcodes on every piece.
+
+**Duplicate addressing.** A mailing list with duplicate records (the same person at the same address appearing twice) wastes postage and annoys the recipient. We run de-duplication on every list before addressing — matching on name, address, and apartment/unit number to identify and remove duplicates.
+
+**Missing apartment or unit numbers.** Apartment and condo addresses without a unit number are technically undeliverable — the USPS carrier cannot determine which mailbox to deliver to. CASS processing flags these records, and we review them before addressing. Records with missing unit numbers are either corrected through data append services or flagged for the client's review.
+
+## How Inkjet Addressing Fits Into the Full Mailing Workflow
+
+In a typical direct mail campaign at Cornerstone, inkjet addressing is one step in a tightly sequenced production workflow:
+
+1. **List processing** — CASS certification and NCOA processing on the client's mailing list (1–2 hours for lists under 10,000 records)
+2. **De-duplication** — Matching and removing duplicate records within the list (automated, minutes)
+3. **Presort sequencing** — Sorting the list into USPS delivery sequence for maximum presort discount (automated)
+4. **Print production** — Printing the mail pieces on press (timeline depends on quantity and complexity)
+5. **Inkjet addressing** — Applying name, address, and IMb barcode to each piece in presort sequence (15–30 minutes for 5,000 pieces)
+6. **Tray preparation** — Placing addressed pieces into USPS trays with proper tray labels and documentation
+7. **USPS induction** — Delivering the prepared trays to the USPS Business Mail Entry Unit with postage statement
+
+Steps 5–7 happen in sequence on the same day for most campaigns. The pieces come off the inkjet system already in presort order, go directly into trays, and the trays go to USPS. For a 5,000-piece postcard campaign with print-ready files and a clean list, the entire mailing workflow — from list processing through USPS drop — can complete in one business day.
+
+To get a quote, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).

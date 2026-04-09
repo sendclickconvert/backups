@@ -61,7 +61,7 @@ Printing is where size, quantity, paper stock, and coating choices drive the act
 - 5,000 pieces: $360–$440
 - 10,000 pieces: $560–$680
 
-These ranges reflect real production costs. Lower end assumes supplied print-ready files with no bleeds to correct; upper end includes minor file prep. Significant file corrections or redesign are quoted separately.
+These ranges reflect real production costs from our New Paltz facility for Hudson Valley clients. Lower end assumes supplied print-ready files with no bleeds to correct; upper end includes minor file prep and adjustments. Significant file corrections or full redesign are quoted separately as part of our [graphic design services](/services/graphic-design).
 
 ### 3. Design: $150–$350 (One-Time)
 
@@ -107,6 +107,8 @@ This is the comparison that makes EDDM make sense for most small businesses:
 
 EDDM response rates for well-designed pieces with strong offers typically run 0.5–2% depending on the category, offer strength, and how well the audience fits the product. Home service businesses running recurring EDDM to the same routes consistently — not as a one-time test — see response rates at the higher end of this range as their name becomes familiar in the neighborhood.
 
+The channel comparison that most business owners miss: EDDM reaches people who are not actively searching for your service right now but will need it in the coming weeks or months. Digital ads capture active intent. EDDM builds passive awareness that converts when the need arises. The two channels complement each other, and the most effective local marketing programs we see in the Hudson Valley use both — EDDM for geographic saturation and digital for intent capture. For a deeper comparison, see our [direct mail vs. digital marketing guide](/services/direct-mail/direct-mail-vs-digital-marketing).
+
 ## The Cost of Running EDDM Yourself vs. Through a Mail House
 
 Some business owners attempt to run EDDM themselves — printing at a local copy shop, purchasing postage online, bundling at home. The savings are real but smaller than they appear:
@@ -119,8 +121,36 @@ Some business owners attempt to run EDDM themselves — printing at a local copy
 
 At Cornerstone, the bundling and post office drop is included in every EDDM job we run. It is part of the service, not an add-on.
 
+## Reducing EDDM Cost Without Cutting Quality
+
+There are legitimate ways to bring per-piece cost down without compromising the effectiveness of your campaign:
+
+**Run recurring campaigns.** A business that commits to quarterly or monthly EDDM drops to the same routes can negotiate volume pricing on printing. At Cornerstone, clients running three or more consecutive drops to the same route set receive preferential pricing because we can gang press runs, reuse templates, and streamline production.
+
+**Reuse your design.** The $150–$350 design cost is a one-time investment. For subsequent drops, you change the offer, date, and any seasonal imagery — which takes 30–60 minutes of design time, not a full redesign. Clients running monthly EDDM typically pay $50–$75 for template updates after the initial design.
+
+**Choose the most efficient piece size.** The 6.5x9 postcard is the most cost-efficient EDDM format. It prints two-up on a standard press sheet, minimizing paper waste. Larger pieces (8.5x11, 9x12) look more impressive but cost 25–40% more to print per piece. If your message fits on a 6.5x9, the smaller format is the better value.
+
+**Supply print-ready files.** If you or your designer can produce files that meet our print specifications (CMYK, 300 DPI, proper bleed and safe zones), you eliminate the design charge entirely. We provide file templates for every standard EDDM size at no charge.
+
+**Combine with targeted mail.** For businesses running both EDDM and [targeted direct mail](/services/direct-mail), Cornerstone can coordinate production to share press runs and reduce overall campaign cost. An EDDM saturation drop and a targeted acquisition mailing printed on the same stock can run simultaneously.
+
+## What EDDM Cannot Do (and What It Costs You When You Try)
+
+Understanding the limitations of EDDM prevents wasted budget:
+
+**No personalization.** Every household receives an identical piece addressed to "Postal Customer." You cannot print the recipient's name, customize the offer by neighborhood, or vary the content by route. For campaigns where personalization drives response — [donor appeals](/services/non-profit-mailing), financial services, healthcare recall — targeted mail is the better investment despite the higher per-piece cost.
+
+**No suppression.** You cannot exclude your existing customers from an EDDM drop. If your EDDM piece offers "20% off for new customers," your current customers receive the same piece — which may create confusion or resentment. Factor this into your offer design, or use targeted mail where you can apply a suppress file.
+
+**No Informed Delivery.** EDDM pieces cannot participate in [USPS Informed Delivery](/services/direct-mail/usps-informed-delivery-direct-mail-campaign) — the digital email preview system that adds a second touchpoint to addressed mail. This means EDDM is a single-channel impression; targeted mail with Informed Delivery is a dual-channel impression for the same postage cost difference.
+
+**No individual tracking.** You cannot track which specific household responded to your EDDM piece. You can track total response by campaign using promo codes, dedicated phone numbers, or unique URLs, but you cannot match responses to individual addresses for follow-up targeting.
+
 ## Getting a Quote
 
 The fastest way to know exactly what your EDDM campaign will cost: tell us your target geography (ZIP codes or a radius from your location) and the size piece you're considering. We'll pull the USPS route data, count the addresses, and send you a complete itemized quote — usually the same day.
+
+**What to have ready when you call:** Your business address (so we can pull nearby carrier routes), the approximate area you want to reach (ZIP codes, town names, or a radius), the piece size you are considering (or tell us you are not sure and we will recommend one), and whether you have a print-ready design or need [graphic design services](/services/graphic-design). With that information, we produce an itemized quote — postage, printing, design if applicable, and total — usually within a few hours.
 
 Call [(845) 255-5722](tel:8453936770) or [request a quote online](/estimate).

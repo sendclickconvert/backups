@@ -83,4 +83,50 @@ The second most common problem is assuming any print shop can add a union bug af
 
 For Hudson Valley campaigns and labor organizations that need certified union printing: specify the union bug requirement at the quoting stage, not the proof stage. It affects vendor selection, layout planning, and compliance documentation from day one.
 
+## Union Bug Variations and Related Labels
+
+The union bug is not the only labor-related label used in printing and related industries. Understanding the differences helps clients specify exactly what they need:
+
+**GCC/IBT bug:** The most common printing union bug in the United States, representing the Graphic Communications Conference of the International Brotherhood of Teamsters. This is the standard for commercial printing, including direct mail postcards, brochures, letters, and campaign materials.
+
+**Allied Printing Trades Council (APTC) label:** A broader label used when multiple printing trades unions were involved in producing a piece. Less common today due to union consolidation, but still referenced in some union contracts and government specifications.
+
+**"Printed in the USA" label:** Not a union label — this indicates domestic production but says nothing about labor standards. A non-union shop printing domestically can use "Printed in the USA." Do not confuse this with the union bug.
+
+**AFL-CIO "Union Made" label:** A general labor label indicating the product was made by union workers. Used more commonly in manufacturing than in printing, but some labor organizations request both the specific GCC/IBT bug and the broader AFL-CIO label on their materials.
+
+**"Bug-free" or "clean" printing:** Industry shorthand for non-union-produced printing. Some campaigns and organizations that do not need or want union certification specify "no bug required" in their print specifications.
+
+## The Union Bug in Digital Printing
+
+The rise of digital printing (as opposed to traditional offset printing) has created some complexity around the union bug. Historically, the bug applied to work done by union press operators on offset printing presses. Digital printing uses different equipment and different skill sets.
+
+In practice, the applicability of the union bug to digitally printed materials depends on the union local's coverage and the shop's collective bargaining agreement. At Cornerstone, our digital printing work is covered under our union agreement and carries the same bug as our offset work. Not all union shops operate this way — some shops have union coverage for offset operations only, with digital work performed by non-covered employees.
+
+Campaigns and organizations that need the union bug on digitally printed materials (short-run postcards, variable data letters, personalized campaign mail) should confirm with the print shop that their digital printing is covered under the union agreement.
+
+## Requesting Union-Bug-Certified Printing: A Client Checklist
+
+When ordering union-bug-certified printing, provide or confirm the following at the quote stage:
+
+1. **Specify the union bug requirement** in your initial request or RFP — do not assume the shop will add it automatically
+2. **Request documentation** of the shop's union local affiliation — the local name, number, and a contact at the local who can verify
+3. **Confirm placement** of the bug in your design layout — provide a designated area in the imprint block for the bug and any legal attribution text
+4. **Verify coverage** of the specific production method — if the job involves digital printing, confirm the digital work is covered by the union agreement
+5. **Request a proof** showing the bug in position before approving the final print run — verify the bug format, size, and placement are correct
+
+## Common Misconceptions About the Union Bug
+
+Several persistent misunderstandings about the union bug cause problems for campaigns and organizations:
+
+**"Any printer can add a union bug."** False. The bug is a registered mark that can only be used by shops affiliated with the specific union local. A non-union shop cannot legally place a union bug on its work, and doing so could constitute fraud.
+
+**"The union bug is just a logo."** The bug is a certification mark — it certifies that the work was performed by union labor under a collective bargaining agreement. It carries legal and ethical weight beyond a decorative element.
+
+**"Union printing always costs more."** Not necessarily. Union shops compete on price like any other business. The labor cost difference between union and non-union shops in the printing industry is typically 5–15%, and many union shops offset this through efficiency, modern equipment, and volume. For government contracts with prevailing wage requirements, the cost difference may be negligible.
+
+**"The bug goes anywhere on the piece."** The bug has conventional placement — typically in the lower-left corner or the imprint area of the piece. Placement should be visible but not distracting. It should not be resized to the point of illegibility or placed over other design elements.
+
+**"You can add the bug after the fact."** The bug must be printed as part of the production process at the union-affiliated shop. It cannot be stamped, stickered, or digitally added to a piece printed elsewhere.
+
 At Cornerstone Services in New Paltz, we can provide union-label documentation for jobs that require it. Call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate) to discuss union-label printing requirements for your project.

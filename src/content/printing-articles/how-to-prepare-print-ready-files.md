@@ -104,4 +104,28 @@ At Cornerstone, every submitted file goes through a preflight review before it g
 
 If we find issues, we contact you before production — not after. Most common file issues take 30–60 minutes to resolve. The ones that require going back to your designer take longer, which is why we'd rather catch them on day one than day five.
 
+## Common File Errors and How to Fix Them
+
+These are the five most frequent issues we catch during preflight at Cornerstone — and how to prevent them:
+
+**1. Low-resolution images scaled up in the layout.** A photo pulled from a website (typically 72 DPI, 600 pixels wide) placed in a design at 6 inches wide prints at roughly 100 DPI — visibly blurry. The fix: source the original photo from the photographer or use a stock image purchased at high resolution. If the original file is unavailable, reduce the image's placement size in the layout until the effective DPI reaches 300 or higher.
+
+**2. Spot colors mixed with CMYK.** Some designs include Pantone spot colors alongside CMYK process colors. Spot colors are used for exact color matching (brand identity work, logo colors) and require a dedicated ink channel on press. If your job is printing as a standard 4-color (CMYK) process job, convert all spot colors to their CMYK equivalents in your design software before exporting. Leaving spot colors in a CMYK-intended file can produce unexpected color output.
+
+**3. Transparency not flattened.** Drop shadows, gradient fills, and opacity effects in Illustrator and InDesign use transparency. PDF/X-1a export flattens transparency automatically. If you export a standard PDF without flattening, certain elements may not render correctly on press — drop shadows may disappear, gradient edges may show banding, or overlapping transparent elements may produce unexpected color blending. Use PDF/X-1a or PDF/X-4 export presets to avoid this.
+
+**4. Text too close to the fold or trim.** On folded pieces (brochures, self-mailers), the fold line has the same tolerance issue as the trim edge. Text that runs right up to the fold may appear misaligned when the piece is folded — one word on the left panel, the rest on the right. Keep text at least 0.25 inch from any fold line.
+
+**5. Black text built in CMYK instead of 100% K.** Small body text should be set as 100% black (K only) — not a rich black built from all four CMYK channels (e.g., C:60 M:40 Y:40 K:100). Rich black on body text creates registration issues on press — if the four ink channels are even slightly misaligned, the text shows color fringing (a colored halo around each letter). Use rich black only for large headlines and graphic elements where the coverage area justifies the additional ink channels.
+
+## Files From Canva, Word, and Other Non-Professional Tools
+
+We receive files from every design platform, including consumer tools. Here's how to get the best results from each:
+
+**Canva:** Use the "PDF Print" export option — not "PDF Standard." The Print export embeds fonts, converts to CMYK (approximately), and includes crop marks. Canva files often have resolution issues with free stock images — Canva Pro images are typically 300 DPI, but free images may be lower. We check resolution during preflight.
+
+**Microsoft Word and PowerPoint:** These are not print design tools, but we work with files from them when that's what a client has. The biggest issues: low-resolution images, RGB color mode, and fonts that don't embed in PDF export. If you must use Word or PowerPoint, export as PDF with the "Best for printing" option selected. We will likely need to adjust the file for press — factor in 30–60 minutes of file prep time.
+
+**Google Docs/Slides:** Similar issues to Word/PowerPoint, with the added challenge that Google's PDF export does not embed all fonts reliably. If using Google tools, convert text to a common system font (Arial, Times New Roman) before exporting, or accept that the printer may need to substitute fonts.
+
 To submit files or request a quote, call [(845) 255-5722](tel:8453936770) or [use our quote request](/estimate).

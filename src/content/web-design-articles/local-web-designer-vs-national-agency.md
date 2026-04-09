@@ -74,4 +74,54 @@ For service businesses in Ulster, Dutchess, and Orange counties, the local searc
 
 A designer who understands this context and builds accordingly produces better local search results than one applying a generic SEO template.
 
+## The Cost Comparison: What You're Actually Paying For
+
+The pricing gap between local designers and national agencies is real — but the difference isn't always what you expect:
+
+**Local freelance designer (Hudson Valley):** $1,500–$5,000 for a standard 5–8 page business website. The designer handles design, development, and basic SEO. Communication is direct — you talk to the person building your site.
+
+**Small local agency (2–10 people):** $4,000–$12,000 for a similar scope but with more process: discovery meetings, wireframes, content strategy, structured revision rounds, and ongoing support contracts.
+
+**National web design agency:** $8,000–$25,000+ for the same scope. The higher price reflects the agency's overhead — project managers, account executives, office space, marketing spend — not necessarily more hours of design or development work on your specific project. You may speak with a project manager rather than the developer.
+
+**DIY platforms (Wix, Squarespace):** $200–$800/year in platform fees. The real cost is your time — typically 40–80+ hours for a business owner to build and maintain a respectable site. At $100/hour opportunity cost, that's $4,000–$8,000 in time investment.
+
+The question isn't which option is cheapest — it's which option produces the best return on investment for your specific business. A $5,000 website that generates 5 new customers per month at $500 average value pays for itself in the first month. A $2,000 website that generates zero leads costs more in the long run.
+
+## Red Flags to Watch For (Any Provider)
+
+Regardless of whether you choose local or national, avoid providers who:
+
+**Won't show you their code or give you admin access.** Some agencies build your site on proprietary systems where you cannot access or export your own website if you leave. Your website should be on a standard platform (WordPress, Astro, Squarespace) where you retain full ownership.
+
+**Can't name a specific local SEO strategy.** "We optimize for search engines" is not a strategy. Ask: "How will you help me rank for 'printing services Kingston NY'?" The answer should be specific and actionable.
+
+**Have no maintenance or support plan after launch.** A website needs ongoing security updates, content changes, and performance monitoring. A provider who builds and disappears leaves you stranded when something breaks.
+
+**Require long-term contracts for basic hosting.** Hosting a standard business website costs $10–$50/month. Agencies charging $200+/month for "hosting" are typically bundling services — make sure you understand what's included and that you can leave without losing your site.
+
+**Promise first-page rankings within 30 days.** No legitimate SEO provider guarantees specific ranking positions on a fixed timeline. Anyone who does is either lying or planning black-hat tactics that may result in penalties.
+
+## Questions to Ask Before Hiring Any Web Designer
+
+Whether you're considering a local freelancer, a regional agency, or a national firm, ask these questions before signing a contract:
+
+1. **Can I see three live sites you've built for businesses similar to mine?** Not mockups — live, functioning websites. Check them on your phone. Are they fast? Do the contact forms work?
+
+2. **Who will own the website after the project is complete?** You should own the domain, the hosting account, and all content. Get this in writing.
+
+3. **What CMS or platform will you build on?** WordPress, Astro, Squarespace, and Webflow are all standard platforms. Proprietary systems owned by the designer create lock-in.
+
+4. **What is your process for local SEO?** The answer should include specific steps: Google Business Profile optimization, local keyword targeting, schema markup implementation, and citation building.
+
+5. **What happens after launch?** Understand the support arrangement — monthly retainer, hourly billing, or included maintenance period.
+
+6. **What is the timeline, and what could delay it?** A straightforward 5–8 page site typically takes 4–8 weeks. The most common delay is waiting for content from the client.
+
+7. **How do you measure success?** The designer should talk about traffic, leads, and conversions — not just visual aesthetics.
+
+The answers to these questions will tell you more about the designer's suitability than their portfolio alone. A designer who answers clearly and specifically is one who has done this enough times to have a process. Hesitation, vague responses, or deflection on ownership and SEO questions should prompt you to continue your search.
+
+For Hudson Valley businesses, the ideal web designer understands local search dynamics, has experience building sites that generate measurable leads, and communicates directly without layers of account management overhead. That combination is most commonly found with experienced local designers and small regional agencies — not because national firms are incapable, but because the economics and incentives align differently at the local level.
+
 At Cornerstone Services in New Paltz, we've been serving Hudson Valley businesses since 1998. Our [web design services](/services/web-design) are built around local search performance alongside the direct mail campaigns many of our clients use. Call [(845) 255-5722](tel:8453936770) or [contact us](/estimate) to discuss a website project.

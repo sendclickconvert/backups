@@ -91,4 +91,38 @@ For flyer campaigns intended to reach households beyond walking or driving distr
 
 For campaigns over 2,500 pieces, [combining print and mailing services](/services/mailing) at one shop eliminates the coordination overhead and reduces total cost compared to managing them separately.
 
+## Design Tips for Effective Flyers
+
+The flyer's job is different from a postcard or brochure — it needs to grab attention from a distance (bulletin board, door, counter) and communicate one idea quickly. These design principles consistently produce better results:
+
+**One dominant visual.** A single large photo or illustration that communicates the subject instantly. A flyer with four small photos reads as cluttered; a flyer with one strong image and a large headline reads from across the room. For event flyers, the photo should show the venue or the experience. For service flyers, before-and-after images work well.
+
+**Headline first, details second.** The headline should take up at least 30% of the flyer's visual space. If the flyer is for an event, the event name and date should be the largest elements. If it's for a service, the offer should dominate. Contact information and supporting details are secondary — they go in the lower third.
+
+**Readable from 3 feet away.** If the flyer will be posted on a bulletin board or window, the headline and key information should be readable from 3 feet. This means minimum 24-point type for headlines and 14-point for supporting text on an 8.5x11 format. A flyer designed for reading distance loses most of its impact when posted.
+
+**Strong call to action.** Every flyer needs to tell the reader what to do: "Call to reserve," "Visit us at [address]," "Use code SPRING25 for 20% off." A flyer without a CTA is a missed opportunity — the reader may appreciate the information but has no prompt to act on it.
+
+## Flyer Distribution Methods in the Hudson Valley
+
+Beyond mailing, flyers have several distribution channels available to Hudson Valley businesses:
+
+**Community bulletin boards.** Most libraries, community centers, laundromats, grocery stores, and coffee shops in towns like New Paltz, Woodstock, Kingston, and Rhinebeck maintain public bulletin boards. Post regulations vary — some require date stamps, some limit flyer size, some require approval from management. A standard 8.5x11 flyer on 80 lb. stock with UV coating holds up best in these environments.
+
+**Door-to-door drops.** Legal in most jurisdictions when placed in a door handle bag or on a doorstep — but not in a USPS mailbox (that is a federal offense reserved for USPS mail). Door drops are labor-intensive but highly targeted — you can walk a specific street or neighborhood and cover exactly the homes you want. For businesses operating in dense downtown areas (Kingston Stockade District, New Paltz Main Street), door drops are an efficient supplement to EDDM.
+
+**Counter displays and take-one racks.** Retail stores, restaurants, and professional offices often allow take-one displays from non-competing businesses. A stack of half-page (5.5x8.5) flyers in a counter display at a complementary business costs nothing to distribute — only the print cost.
+
+**Vehicle windshield drops.** Legal in most parking lots but check local ordinances — some municipalities and private lots prohibit this. Effective for event promotion — a quarter-page (4.25x5.5) flyer under a windshield wiper at a farmers' market, community event, or shopping center parking lot reaches an audience already in your target geographic area.
+
+**Insert in shopping bags.** Local retail stores and restaurants will sometimes insert a flyer from a non-competing business in their shopping bags. This is a form of co-marketing that costs nothing except the flyer itself and reaches a qualified local audience.
+
+## Flyer Printing for Nonprofits and Community Organizations
+
+Flyers are the most cost-effective print tool for nonprofits, schools, and community organizations in the Hudson Valley. Event announcements, fundraiser promotions, volunteer recruitment, and public meeting notices all work well in the 8.5x11 format.
+
+For organizations on tight budgets, we offer quantity-based pricing that makes large runs affordable — 1,000 single-sided flyers on 80 lb. text can run as low as $80–$110 depending on the specifics. Two-sided printing adds approximately 30–40% to the cost but doubles the available information space.
+
+For [nonprofit mailing campaigns](/services/non-profit-mailing) where the flyer will be inserted in an envelope or mailed as a self-mailer, we coordinate print and mailing services to ensure the pieces meet USPS requirements and qualify for nonprofit postage rates. Schools and PTAs are among our most frequent flyer clients — event announcements, fundraiser promotions, and parent communication pieces run through our facility regularly. We understand the tight timeline pressure that school organizations operate under and prioritize these jobs accordingly.
+
 To get a quote for flyers — print only or print with mailing — call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).

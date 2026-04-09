@@ -120,4 +120,42 @@ Before submitting an EDDM design to print, verify:
 
 At Cornerstone, we run this checklist on every EDDM job we receive. Files that have issues are flagged and corrected before they go to press — never after.
 
+## The Message Side: Designing for Response
+
+While the address side has rigid USPS requirements, the message side is where the campaign's creative work happens. Effective EDDM message side design follows the same principles as any direct mail piece — but the larger format (6.25x11 or larger) creates both opportunities and challenges:
+
+**More space is not a reason to add more content.** The larger EDDM format tempts many businesses to cram in multiple offers, extensive service lists, and large blocks of text. This consistently underperforms a clean layout with one strong offer, one compelling visual, and one clear CTA. The additional space should create breathing room — larger type, more white space, a larger photo — not more clutter.
+
+**The headline must work at mail-stack distance.** EDDM pieces are large and often viewed from the top of a mail stack. The headline should be readable from 2–3 feet away — which means 48–72 pt. type on a 6.25x11 piece. If you can't read the headline at arm's length, increase the size.
+
+**Full-bleed photography works exceptionally well on EDDM.** The large format allows a full-bleed photo to create visual impact that smaller postcards can't match. A 6.25x11 photo of a beautifully landscaped yard, a finished kitchen renovation, or a plated restaurant dish creates an emotional response that text descriptions cannot replicate. Use the space for one stunning image, not four mediocre ones.
+
+## Common EDDM Design Mistakes We See
+
+At Cornerstone, we review EDDM designs daily. These are the mistakes we catch most often:
+
+**Designing at 6x9 instead of 6.25x11.** The most common error. Clients or designers create a 6x9 postcard and request EDDM — but 6x9 does not meet the minimum EDDM size requirement of 6.125x11.5. The piece must be redesigned and reprinted at the correct size, wasting time and money.
+
+**Background color in the barcode clear zone.** A full-bleed design that extends to all edges of the address side will violate the barcode clear zone at the bottom 5/8 inch. The solution: design the address side with a white strip along the entire bottom edge, or use a background color that transitions to white before reaching the clear zone.
+
+**Using RGB color mode.** EDDM pieces are printed on commercial presses that use CMYK color. Designs submitted in RGB will have their colors converted, often resulting in dull or shifted hues. Always design and export in CMYK. Pay particular attention to blues and reds, which shift the most between RGB and CMYK.
+
+**Missing bleed.** The document must include 0.125 inch bleed on all sides beyond the trim edge. Without bleed, the printer cannot cut the pieces accurately — any slight misalignment in cutting will show a white edge on full-bleed designs. Set up the document at 6.5x11.25 (6.25+0.125+0.125 x 11+0.125+0.125) from the start.
+
+**Placing critical content too close to the trim edge.** Text, phone numbers, or logos placed within 0.125 inch of the trim edge may be partially cut off during finishing. Keep all critical content at least 0.25 inch inside the trim line — we call this the "safety margin."
+
+## EDDM Production Timeline at Cornerstone
+
+Understanding the production timeline helps you plan campaigns with realistic delivery expectations:
+
+**Day 1–2: Design review and proof.** We review the submitted design (or create a new design) against the EDDM compliance checklist. You receive a digital proof for approval. If the design requires corrections, add 1 day for revisions.
+
+**Day 2–3: Printing.** Once the proof is approved, the job goes to press. Printing a standard EDDM run of 5,000–10,000 pieces takes 1–2 days depending on workload and paper availability.
+
+**Day 3–4: Bundling and prep.** EDDM pieces must be bundled in carrier route bundles with facing slips — each bundle labeled for the specific route it will be delivered on. We handle all bundling and labeling in-house.
+
+**Day 4–5: Post office drop.** Bundled pieces are dropped at the serving post office for the selected routes. EDDM Retail pieces are delivered by USPS carriers within 7–14 business days of the drop.
+
+**Total timeline: 5 days from approved design to post office drop, plus 7–14 days for USPS delivery.** For time-sensitive campaigns (events, seasonal offers), plan for the full 3-week window from design approval to in-home delivery.
+
 For EDDM design, printing, and post office drop, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate). We serve businesses throughout Ulster, Dutchess, and Orange counties.

@@ -104,4 +104,44 @@ Start the mailing planning process no later than 8 weeks before the vote. Even i
 
 At Cornerstone Services in New Paltz, we handle the full process for school districts: voter file sourcing assistance, design review for USPS compliance, printing, addressing, and USPS drop. We've worked with districts in Ulster and Dutchess counties through multiple budget vote cycles and understand the timing pressures.
 
+## Absentee Ballot Information: A Critical Addition
+
+Many eligible voters cannot attend the polls on election day — work schedules, medical conditions, travel, or childcare conflicts prevent in-person voting. New York school districts must offer absentee ballots to qualified voters, and including absentee ballot information in budget vote mailings ensures that eligible voters who cannot attend the polls are not disenfranchised.
+
+**What to include in the mailing about absentee voting:**
+- How to request an absentee ballot (from the district clerk's office)
+- The deadline for requesting an absentee ballot (typically 7 days before the vote for mail delivery, or 1 day before for in-person pickup)
+- The deadline for returning the absentee ballot
+- Contact information for the district clerk
+
+This information is purely factual and well within the bounds of permissible district communication. Including it in the budget vote mailing ensures that voters who need absentee ballots request them in time.
+
+## Design Best Practices for Budget Vote Mailers
+
+School budget vote mailers should look like official district communication — not political advertising. Design considerations:
+
+**Use the district's official branding.** The district seal or logo, official colors, and typography create immediate recognition. Recipients should know at a glance that this is from the school district, not a political campaign.
+
+**Make the vote date and polling location the most prominent elements.** If a voter reads nothing else, they should know when and where to vote. Use large, bold type — 24 pt. minimum for the date on a postcard — in a high-contrast color.
+
+**Use clean, factual layout.** Bullet points for budget highlights, a simple table for tax impact, and clear section headers. Avoid decorative graphics, clip art, or emotional imagery. The design should communicate seriousness and transparency.
+
+**Include the district website URL or QR code.** For voters who want more detail than the mailer can provide, direct them to the full proposed budget on the district website. A QR code that links directly to the budget document page (not the homepage) is the most frictionless path.
+
+**Review accessibility.** Use high-contrast text (dark text on light background), minimum 10 pt. body copy, and avoid color combinations that are difficult for colorblind readers (red/green).
+
+## Lessons From Districts That Have Done This Well
+
+Hudson Valley school districts that consistently achieve higher-than-average turnout for budget votes share several practices:
+
+**They start early.** Budget information planning begins in February — content development, voter file sourcing, and mail house coordination. By the time budget numbers are finalized in March or April, the mailing framework is ready and only the specific numbers need to be inserted.
+
+**They mail to the full voter file, not just families.** Reaching registered voters without current school connections — who represent the majority of eligible voters in most districts — is the single most impactful decision a district can make about its voter outreach strategy.
+
+**They use two touches.** A single mailing is better than nothing. Two mailings — an information piece 3–4 weeks before the vote and a reminder 7–10 days before — consistently outperform a single piece. The cost of the second mailing is typically $800–$1,500 for a standard district, which is minimal relative to the budget at stake.
+
+**They keep it factual and let the numbers speak.** Districts that present clear, honest budget information — including the tax impact per average assessment — build community trust that compounds over multiple budget cycles. Districts that appear to be "selling" the budget through emotional appeals risk triggering the advocacy concerns that can create legal liability.
+
+**They evaluate results after each cycle.** After the vote, they review turnout data, undeliverable mail rates, and community feedback. This data informs improvements for the next year's mailing — better targeting, cleaner lists, and refined messaging. Continuous improvement, applied annually, produces measurably better results over a 3–5 year period.
+
 Contact us no later than 8 weeks before the vote: call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).

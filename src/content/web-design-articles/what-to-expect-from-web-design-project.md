@@ -95,4 +95,32 @@ The site goes live. The designer submits the sitemap to Google, verifies analyti
 
 Realistic SEO timeline: most new sites begin appearing in search results within 4–6 weeks. Competitive rankings take longer — typically 3–6 months of consistent effort.
 
+## Common Project Delays and How to Prevent Them
+
+The most common reasons web design projects take longer than planned — and how to prevent each:
+
+**Content delays (most common).** The designer is ready for your service descriptions, team photos, and about page copy — and you haven't written them yet. Prevention: start writing content the week the project begins, not the week the designer asks for it. If you're not a writer, hire a local copywriter ($500–$1,500 for a 5–8 page site) or ask if the designer offers copywriting.
+
+**Stakeholder disagreement.** Two partners, a spouse, and a marketing committee all have opinions on the design. Conflicting feedback creates revision loops. Prevention: designate one person with final decision authority before the project starts. That person collects input from others and delivers consolidated feedback.
+
+**Scope creep.** "While you're at it, can you also add a blog, an event calendar, and an online store?" Each addition extends the timeline and potentially the budget. Prevention: define the scope clearly in the contract. Additions are fine — but acknowledge them as additions with separate timelines and budgets.
+
+**Technical problems.** Domain transfer issues, hosting migration problems, or email disruptions during the switchover. Prevention: plan the technical transition in advance. Verify domain registrar access, confirm hosting compatibility, and schedule the DNS switchover for a low-traffic period.
+
+## After Launch: The First 90 Days
+
+The first 90 days after launch are when the site establishes its search presence and when most post-launch issues surface:
+
+**Week 1–2:** Verify all pages are indexed by Google (check Search Console). Test every form, link, and phone number. Monitor for 404 errors from old URLs that were not redirected.
+
+**Week 3–4:** Review initial analytics data. Are visitors finding the site? Which pages get the most traffic? Which pages have the highest bounce rate? The data may reveal content gaps or navigation problems.
+
+**Month 2:** Add new content if appropriate — a blog post, a new service description, an updated photo gallery. Fresh content signals to Google that the site is active and maintained.
+
+**Month 3:** Review search rankings for target keywords. Are you appearing in search results for the terms that matter? If not, the SEO strategy may need adjustment — more content, more local signals, or technical optimization.
+
+**Ongoing:** Monthly review of analytics, quarterly content updates, and immediate attention to any technical issues (downtime, slow loading, broken forms). A website is a living asset that requires ongoing attention to perform well.
+
+The businesses that get the most value from their websites treat them as marketing tools that require ongoing attention — not one-time projects that are finished at launch. A website that is updated, optimized, and monitored consistently outperforms one that was built well but then neglected.
+
 For web design services in the Hudson Valley, call [(845) 255-5722](tel:8453936770) or [contact us](/estimate).

@@ -118,4 +118,30 @@ For postcards going through USPS mail processing, specific areas of the address 
 
 At Cornerstone, we check every design against USPS compliance standards before it goes to press. We catch and fix these issues as part of our standard process — but if you're submitting a design from your own designer, send us the file before they finalize it and we'll verify compliance.
 
+## Paper Stock and Print Specifications
+
+The physical quality of the postcard affects how it's perceived. Paper weight, finish, and coating all influence whether the piece feels like a quality communication or disposable junk mail.
+
+**14 pt. C2S (coated two sides):** The industry standard for direct mail postcards. Thick enough to feel substantial, coated on both sides for sharp photo reproduction. Most commercial printers stock this weight, keeping costs low. This is our default at Cornerstone.
+
+**16 pt. C2S:** A premium option — noticeably thicker and more rigid. Creates a quality impression for professional services, luxury brands, and any campaign where the tactile experience signals value. Costs 15–20% more than 14 pt.
+
+**UV coating:** A high-gloss protective layer applied after printing. Makes colors more vivid, protects against scuffing during mail processing, and adds a professional finish. Available on one side (typically the message side) or both sides. UV coating on the message side with aqueous coating on the address side is a common combination that balances visual impact with write-ability on the address area.
+
+**Matte finish:** A non-reflective surface that communicates understated quality. Preferred by healthcare, legal, and financial services brands. Text-heavy designs often read better on matte because there's no glare interference under overhead lighting.
+
+## Common Postcard Design Mistakes
+
+After reviewing thousands of postcard designs at Cornerstone, these are the most frequent problems we flag:
+
+**Too many offers on one card.** A postcard advertising HVAC maintenance, new installations, duct cleaning, and indoor air quality testing with four different phone numbers and three different URLs. The reader doesn't know which offer is most relevant and acts on none of them. One postcard, one primary offer, one CTA.
+
+**Company logo as the dominant element.** The logo takes up 25% of the message side while the actual offer is set in 14 pt. type below it. The logo brands — the offer sells. Reverse the proportions.
+
+**No deadline or urgency.** "Call us today for a free estimate" is an evergreen statement with no reason to act now. "Call by April 30 for $50 off your spring service" creates a specific, time-bound reason to respond. Without urgency, pieces go in the "I'll call later" pile — and later never comes.
+
+**Dark background on the address side.** The inkjet address must be legible against the background. Dark backgrounds make the address unreadable and can cause USPS rejection. Keep the address area white or very light.
+
+**No tracking mechanism.** Without a unique phone number, promo code, or UTM-tracked URL, you can't measure response. You won't know whether the campaign worked, and you can't optimize the next one. Every postcard should include at least one trackable response mechanism.
+
 For postcard printing to go with your design, see our [printing services](/services/printing) page. For a full design-through-mail quote, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).

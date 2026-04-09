@@ -97,4 +97,72 @@ Once issued, USPS nonprofit authorization does not expire on a fixed schedule. H
 - If your organization's purpose or structure changes, you may need to update your documentation
 - You must continue to use the authorization only for mailings that qualify (organizational communications, fundraising, program announcements) — commercial product sales or political advertising at the nonprofit rate is not permitted
 
-For organizations already authorized, we simply need your authorization number to apply the nonprofit rate to your mailing. For organizations that aren't yet authorized, we can walk you through the application process. Call [(845) 255-5722](tel:8453936770) or [contact us online](/estimate).
+For organizations already authorized, we simply need your authorization number to apply the nonprofit rate to your mailing. For organizations that aren't yet authorized, we can walk you through the application process.
+
+## Nonprofit Rate vs. EDDM: An Important Distinction
+
+Many nonprofits assume that EDDM (Every Door Direct Mail) benefits from the nonprofit discount. It does not. EDDM is a separate mailing program that bypasses the presort system entirely — and the nonprofit rate discount is tied to the presort system.
+
+**EDDM Retail postage:** $0.247 per piece (same rate for nonprofits and for-profit businesses)
+**Nonprofit Marketing Mail (presorted letters):** $0.142–$0.177 per piece
+
+For a nonprofit with USPS authorization mailing 5,000 letters, the nonprofit presort rate saves $350–$525 compared to EDDM. However, EDDM requires no mailing list (it delivers to every address on selected carrier routes), which eliminates list cost and data processing. The right choice depends on whether the audience is geographically defined (favoring EDDM) or list-defined (favoring targeted presort mail).
+
+For a detailed comparison of these two approaches for nonprofits, see our guide on [EDDM vs. targeted mail for nonprofits](/services/non-profit-mailing/eddm-vs-targeted-mail-for-nonprofits).
+
+## Understanding Presort Levels and Rate Tiers
+
+The nonprofit rate is not a single number — it varies by presort level. Presort level measures how precisely the mailing is sorted by ZIP code and carrier route. More precise sorting reduces the work the USPS has to do, which earns a lower per-piece rate.
+
+**Nonprofit letter rates by presort level (current):**
+- **5-Digit automation:** $0.142/piece — mailing sorted by 5-digit ZIP code with automation-compatible barcodes
+- **3-Digit automation:** $0.160/piece — sorted by 3-digit ZIP prefix
+- **AADC automation:** $0.166/piece — sorted by Automated Area Distribution Center
+- **Mixed AADC:** $0.177/piece — the highest nonprofit letter rate, least sorted
+
+At Cornerstone, we presort every mailing to the maximum qualifying level automatically. The higher the percentage of pieces that qualify for 5-digit sort (meaning your donor list has concentration in specific ZIP codes), the lower your blended per-piece rate. Hudson Valley nonprofits with donor files concentrated in local ZIP codes often qualify for the lowest tier on 60–80% of their pieces.
+
+## How Much Can You Save? Real Campaign Examples
+
+Here are real postage savings from nonprofit campaigns we've processed at Cornerstone:
+
+**Example 1: Annual fund appeal, 8,000 letters**
+- Nonprofit automation rate: $0.149/piece → $1,192 total postage
+- Standard Marketing Mail automation: $0.214/piece → $1,712 total postage
+- First-Class stamps: $0.68/piece → $5,440 total postage
+- **Savings vs. standard Marketing Mail: $520**
+- **Savings vs. First-Class stamps: $4,248**
+
+**Example 2: Community event postcard, 3,000 flats**
+- Nonprofit automation flat rate: $0.283/piece → $849 total postage
+- Standard Marketing Mail flat automation: $0.402/piece → $1,206 total postage
+- **Savings: $357**
+
+**Example 3: Year-end campaign with follow-up, 5,000 letters × 2 mailings**
+- Nonprofit automation rate: $0.149/piece × 10,000 pieces → $1,490 total postage
+- Standard Marketing Mail automation: $0.214/piece × 10,000 → $2,140 total postage
+- **Savings: $650 across two mailings**
+
+These savings are pure postage — they don't include any difference in printing, addressing, or production costs, which are the same regardless of mail class. The nonprofit rate reduces only the USPS postage component, but on high-volume campaigns, that reduction is substantial.
+
+## Content Rules for Nonprofit Rate Mailings
+
+Not everything a nonprofit mails qualifies for the nonprofit postage rate. The USPS applies content restrictions:
+
+**Qualifying content:** Fundraising appeals, donor acknowledgments, program announcements, newsletters about organizational activities, event invitations, advocacy communications (issue-based, not candidate endorsements), membership recruitment, and volunteer recruitment.
+
+**Non-qualifying content:** Advertising for goods or services sold at market rates (even if the revenue supports the nonprofit's mission), political candidate endorsements or campaign materials, content that primarily benefits a for-profit entity, and mailings sent on behalf of a for-profit partner.
+
+**Gray area examples:** A nonprofit hospital mailing a newsletter that includes advertising for a for-profit physician practice affiliated with the hospital — this may not qualify. A nonprofit museum mailing a fundraising letter that includes a gift shop catalog — the fundraising letter qualifies, but the catalog portion may need to be evaluated separately.
+
+At Cornerstone, we review the content of every nonprofit mailing before processing to ensure it qualifies for the nonprofit rate. Mailing non-qualifying content at the nonprofit rate risks having the mailing reclassified and charged at the standard rate — or worse, having your nonprofit authorization reviewed or revoked.
+
+## When Nonprofit Postage Doesn't Apply: Alternatives
+
+Even when a nonprofit's mailing doesn't qualify for the nonprofit rate, other cost-saving options exist:
+
+**Standard Marketing Mail presort:** If a nonprofit mailing contains commercial content (such as advertising for a benefit shop or for-profit subsidiary), it can still be mailed at the standard Marketing Mail presort rate, which is lower than First-Class. The savings aren't as dramatic as the nonprofit rate, but presort processing still reduces postage significantly.
+
+**First-Class presort:** For mailings that require First-Class service (time-sensitive communications, legal notices, or content that benefits from forwarding and return service), presort processing at the First-Class rate is still substantially cheaper than First-Class stamps. A 5,000-piece First-Class presorted mailing costs $0.35–$0.44 per piece versus $0.68 per stamp.
+
+Call [(845) 255-5722](tel:8453936770) or [contact us online](/estimate).

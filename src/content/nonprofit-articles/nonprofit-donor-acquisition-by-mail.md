@@ -80,4 +80,42 @@ Include a premium incentive for new donor acquisitions where budget allows — a
 
 **Retention focus:** The real money in a direct mail acquisition program is in what happens after the first gift. Second-gift renewal rates of 50–60% are achievable with good renewal programming. Organizations that acquire 200 donors per year and retain 55% through year three build files that sustain multi-touch annual fund campaigns.
 
+## Building the Acquisition Package
+
+The physical mail package for acquisition differs from renewal mail in several ways:
+
+**Format:** For cold prospect acquisition, a 6x9 or 6.5x9 postcard is often the most cost-effective format. Postcards don't require opening — the message is visible immediately. Letter packages (letter + reply card + return envelope in a #10 envelope) perform better for high-value asks or when the story needs more space, but they cost more per piece.
+
+**Envelope strategy (for letter packages):** If using a letter package for acquisition, the outer envelope determines whether the letter gets read. A plain white #10 envelope with a teaser line ("Inside: how one family's life changed in Ulster County") outperforms branded envelopes that look like advertising. The goal of the envelope is to get opened — not to look impressive.
+
+**Reply mechanism:** Include a reply card with a return envelope, even for acquisition. The physical act of filling out a reply card and putting it in a return envelope creates commitment. Online donation URLs and QR codes should be secondary — not primary — response mechanisms for acquisition mail, because the audience has no established relationship with your organization and is less likely to navigate to an unfamiliar website.
+
+**Production considerations:** Acquisition mailings to rented or compiled lists use inkjet addressing — the address and IMb barcode are printed directly on the piece by the mail house (at Cornerstone, this is part of our standard mailing service). Variable data personalization — printing the recipient's name in the salutation — increases response rates even for cold prospects.
+
+## Measuring Acquisition Campaign Performance
+
+Track these metrics for every acquisition mailing:
+
+**Response rate:** Total donors who gave ÷ total pieces mailed. Track by list segment — your rented donor file will perform differently than your compiled consumer list, which will perform differently than EDDM.
+
+**Average first gift:** The mean dollar amount of first gifts from newly acquired donors. Higher average gifts typically come from rented donor lists (donors who already give); lower average gifts come from compiled lists and EDDM (people for whom this may be their first charitable gift by mail).
+
+**Cost per donor acquired:** Total campaign cost ÷ number of new donors. This is the investment number your board needs to evaluate. Frame it in terms of projected donor lifetime value, not single-campaign profitability.
+
+**Net revenue per piece:** (Total revenue – total cost) ÷ total pieces mailed. This number will be negative for most acquisition campaigns. The relevant question is how negative — and whether subsequent renewal campaigns generate enough revenue from acquired donors to recover the investment.
+
+**Second-gift rate:** What percentage of newly acquired donors make a second gift within 12 months? This is the leading indicator of acquisition program health. If less than 30% of acquired donors make a second gift, the acquisition investment may not be recoverable. If 50%+ make a second gift, the acquisition program is building a sustainable donor file.
+
+## Acquisition Timing and Cadence
+
+For Hudson Valley nonprofits, the strongest acquisition windows are:
+
+**September–October:** Donors are returning from summer, charitable giving awareness is building toward year-end, and Giving Tuesday is approaching. An acquisition mailing in early October catches donors with budget and generosity but before the year-end mail flood.
+
+**January–February:** Post-holiday budgets reset. Donors who gave to other organizations at year-end may be receptive to a new cause. Competition in the mailbox is low — most nonprofits do not mail acquisition in Q1.
+
+**April–May:** Spring energy and tax refund season create a secondary giving window. Donors who just filed taxes and received refunds may have discretionary funds available.
+
+Avoid acquisition during the year-end window (November–December) unless your organization has a compelling Giving Tuesday or year-end hook. The mailbox is saturated with renewal appeals from every organization the donor already supports, and acquisition pieces from unknown organizations compete poorly against established relationships.
+
 To discuss a nonprofit acquisition mailing, call [(845) 255-5722](tel:8453936770) or [contact us online](/estimate).

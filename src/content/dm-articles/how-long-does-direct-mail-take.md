@@ -95,6 +95,44 @@ Rush turnaround is available when the schedule allows. For a postcard with suppl
 
 Election mail and time-sensitive campaigns get priority scheduling. Political campaigns often operate on compressed timelines — mailing windows of 5–7 days from content approval to delivery are common during election season, and Cornerstone's in-house production capability makes these timelines possible.
 
+## Common Delays and How to Avoid Them
+
+After managing thousands of direct mail campaigns, we have identified the recurring delays that push timelines back. Most are avoidable with upfront planning:
+
+**Delay 1: Client proof review takes too long.** This is the number one timeline killer. Cornerstone can produce a proof in 24–48 hours, but if the proof sits in your inbox for a week, the campaign slips a week. Designate one person with final approval authority before the project starts. If that person is unavailable during the campaign window, assign a backup.
+
+**Delay 2: Multiple rounds of design revisions.** A clear creative brief at kick-off reduces revision rounds. Provide your logo files (vector format, not screenshots), brand colors (Pantone or hex values), approved photos, and a rough outline of the message before design begins. Campaigns that start with complete assets typically need one revision round. Campaigns that start with "just make something up" average three rounds.
+
+**Delay 3: List problems discovered late.** If you provide a house list that has never been CASS-processed, we may discover 15–20% bad addresses during data processing — and the list is smaller than expected. If the list needs supplementing with purchased records, that adds 1–2 business days. Provide your list early so data processing runs in parallel with design, not in sequence.
+
+**Delay 4: Artwork not print-ready.** Files designed for web display (RGB color, 72 DPI, no bleed) cannot go directly to press. Converting web files to print-ready specifications (CMYK, 300 DPI, 0.125" bleed on all sides) requires rework. If your designer is providing artwork, share Cornerstone's print specs with them before they begin — it prevents the rework step entirely. See our [print-ready file preparation guide](/services/printing/how-to-prepare-print-ready-files) for exact specifications.
+
+**Delay 5: Holiday postal slowdowns.** USPS delivery windows extend during peak mailing seasons — November through January and around federal holidays. A mailing that normally delivers in 3–5 business days may take 7–10 during peak periods. Plan earlier in-home dates during Q4 to compensate.
+
+## EDDM vs. Targeted Mail: Timeline Differences
+
+The two main direct mail methods have slightly different production timelines:
+
+**EDDM timeline advantage:** No mailing list to build or process. No addressing step. No NCOA/CASS/DPV processing. This removes 1–3 business days from the production timeline. An [EDDM campaign](/services/direct-mail/eddm-every-door-direct-mail) with print-ready artwork can go from proof approval to post office induction in 3–4 business days.
+
+**Targeted mail requires list processing:** Even if you provide a clean house list, Cornerstone runs CASS, DPV, and NCOA validation before mailing. Purchased lists require 1–2 business days for list pull and filtering. The addressing and barcoding step adds another day. Total list-related time: 2–4 business days.
+
+For campaigns where speed is the priority and demographic targeting is not critical, EDDM's faster turnaround is a genuine advantage. For campaigns where audience precision matters, the extra 2–3 days for targeted list processing is a worthwhile investment.
+
+## Seasonal Timing Strategy
+
+When your mail arrives matters as much as how fast it arrives. Seasonal timing affects both response rates and competition in the mailbox:
+
+**Q1 (January–March):** Mailbox competition drops after the holiday surge. Good window for financial services (tax season), home services (spring booking), and healthcare (new year resolutions). Response rates tend to be higher because fewer competing pieces are in the mailbox.
+
+**Q2 (April–June):** Peak window for home improvement, landscaping, HVAC, and real estate. School districts planning budget vote mailings should target [late April through mid-May delivery](/services/school-district-direct-mail/school-budget-vote-direct-mail-guide). Graduation and wedding seasons create opportunities for event-related mailings.
+
+**Q3 (July–September):** Back-to-school campaigns, fall service booking, and early holiday retail planning. Political campaign season begins — primary election mailings ramp up in August and September for November elections.
+
+**Q4 (October–December):** Heaviest mailing season of the year. Nonprofit year-end appeals, holiday retail promotions, and political campaign saturation mail all compete for mailbox attention. USPS delivery windows extend. Plan Q4 campaigns 3–4 weeks earlier than you think necessary.
+
+For Hudson Valley businesses, the strongest direct mail response windows we observe are February–March (low competition, high attention) and September–October (pre-holiday spending, back-to-routine mindset).
+
 ## Frequently Asked Questions
 
 **What is the fastest Cornerstone can turn a direct mail campaign?**
@@ -108,5 +146,13 @@ For a postcard with supplied print-ready artwork and a pre-processed mailing lis
 **How far in advance should I start planning a direct mail campaign?**
 
 Plan 15–20 business days from kick-off to in-home if starting from scratch (new design, new list). For established clients with pre-approved templates and a clean mailing list, 10–12 business days is achievable. Work backward from your target in-home date using the planning method in this guide.
+
+**Does First Class mail deliver faster than Marketing Mail?**
+
+Yes — significantly. First Class Mail delivers in 1–3 business days for local mailings versus 3–10 business days for Marketing Mail. First Class also includes forwarding service (if the recipient has moved, USPS forwards the piece to their new address) and return service (undeliverable pieces are returned to you). Marketing Mail does not include either service. The tradeoff is cost: First Class postage runs $0.73+ per piece versus $0.22–$0.30 for Marketing Mail. For time-sensitive campaigns where delivery date matters — event invitations, election mail, flash sales — the First Class premium is often justified.
+
+**Can I choose which day of the week mail arrives?**
+
+Not precisely. USPS does not offer day-of-week delivery selection for Marketing Mail. However, you can influence arrival timing by controlling your induction date. Mail inducted on Monday typically begins delivering Wednesday–Friday for local routes. Mail inducted on Thursday typically begins delivering the following Monday–Tuesday. Over time, you can calibrate induction day to approximate your preferred delivery window. Cornerstone tracks delivery patterns from the Newburgh SCF and can advise on the best induction day for your target geography.
 
 Get started with [Cornerstone's Hudson Valley direct mail services →](/services/direct-mail)

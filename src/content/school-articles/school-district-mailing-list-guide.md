@@ -105,4 +105,52 @@ The annual budget vote creates a recurring mailing need. To manage this efficien
 3. **Run NCOA immediately before each mailing** — do not rely on NCOA from a previous year's campaign
 4. **Track undeliverable pieces** — add address service endorsement to Marketing Mail to receive return/reason information on undeliverable pieces, which helps identify address errors in the enrollment database
 
+## Address Service Endorsements: Getting Return Information
+
+For school districts that want to improve their mailing list quality over time, USPS address service endorsements provide valuable return information on undeliverable pieces.
+
+Adding an address service endorsement to your Marketing Mail pieces tells the USPS what to do with undeliverable mail and whether to provide forwarding or return information:
+
+**"Address Service Requested":** Undeliverable pieces are returned to you with the reason for non-delivery (moved, no such address, vacant). If the recipient has filed a forwarding order, the piece is forwarded and you receive a separate notice with the new address. This endorsement costs $0.73–$0.79 per returned piece — but the address correction data it provides is invaluable for cleaning the enrollment database.
+
+**"Change Service Requested":** Undeliverable pieces are discarded (not returned), but you receive an electronic notification with the new address if the recipient has filed a forwarding order. Lower cost per notification, but you don't receive the physical piece back.
+
+For annual budget vote mailings, "Address Service Requested" provides the most useful data — each returned piece identifies an address error in your enrollment or voter database that can be corrected before the next mailing.
+
+## Building a Multi-Year List Strategy
+
+The most efficient approach to school district mailing list management treats the list as a long-term asset rather than a one-time project:
+
+**Year 1:** Build the comprehensive list by combining enrollment data, voter file, and staff records. Run full CASS/NCOA processing. Mail the budget vote campaign. Apply address service endorsement corrections to the master list after the mailing.
+
+**Year 2:** Refresh the voter file (request a new file from the Board of Elections 6 weeks before the mailing). Merge updated enrollment data. Run NCOA again. Apply corrections from the previous year's returned mail. The list is now significantly cleaner than year one.
+
+**Year 3 and beyond:** The annual refresh cycle becomes routine — new voter file, updated enrollment, NCOA processing, and correction application. Each cycle produces a cleaner, more deliverable list with lower waste.
+
+At Cornerstone, we maintain district mailing list files between campaigns. When budget vote season arrives, we update the list with the new voter file and enrollment data, run processing, and produce the mailing — often with a turnaround of 7–10 business days from data receipt to USPS drop.
+
+## Emergency and Safety Communications
+
+While budget vote mailings are the most common school district mailing need, districts also use direct mail for emergency and safety communications:
+
+**School safety updates:** Information about safety measures, emergency procedures, or community safety concerns may need to reach all district households — not just enrolled families.
+
+**Bond referendum information:** Capital project bond proposals require comprehensive voter outreach similar to budget vote mailings, often with more detailed content explaining the proposed project, cost, and tax impact.
+
+**School closure or redistricting notifications:** Changes that affect the entire community — school closings, attendance zone changes, or grade reconfiguration — benefit from direct mail to all households in the affected area.
+
+For each of these, the same mailing list strategy applies: combine the district database with the voter file to reach the broadest possible community audience.
+
+## Working With a Mail House: What to Expect
+
+When a school district engages a mail house like Cornerstone for budget vote mailings, the typical process involves:
+
+1. The district provides enrollment data and we source the voter file from the Board of Elections
+2. We merge, deduplicate, and process the combined list through CASS and NCOA
+3. The district provides or we design the mailing piece, reviewed for USPS compliance
+4. We print, address, presort, and deliver to the USPS on the scheduled drop date
+5. After the mailing, we provide a delivery report and address correction data for list maintenance
+
+The entire process — from data receipt to USPS drop — typically takes 7–10 business days for a standard budget vote mailing. Districts that provide clean data and approved designs earlier in the process benefit from more flexible scheduling and lower rush charges.
+
 For school district mailing list management and campaign production, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate). We serve school districts throughout Ulster, Dutchess, and Orange counties from our New Paltz facility at 31 S Ohioville Rd.

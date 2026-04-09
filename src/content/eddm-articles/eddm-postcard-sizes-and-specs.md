@@ -114,6 +114,32 @@ The 3.3 ounce maximum is the spec most clients don't think to check. For single-
 
 We weigh every job before bundling. If a piece is over 3.3 oz, it either needs to be reclassified (which changes the postage rate significantly) or the paper stock needs to drop to a lighter weight.
 
+## Common Size Mistakes That Cause Rejection
+
+After processing thousands of EDDM jobs, these are the size-related errors we catch most frequently:
+
+**Standard 4x6 postcard submitted as EDDM.** A 4x6 postcard is letter-class mail — it does not qualify for EDDM Retail. EDDM requires the piece to be at minimum 6.125 inches in the shorter dimension and 11.5 inches in the longer dimension. A 4x6 or 5x7 postcard will be rejected at the counter. If your budget only supports a smaller piece, you need targeted mail with presort postage, not EDDM.
+
+**Design set up at 6x9 without checking orientation.** A 6x9 piece can qualify for EDDM only if the 9-inch dimension is the height (shorter side). But standard 6x9 postcards are typically designed with 6 inches as the height and 9 inches as the width — and 6 inches is below the 6.125-inch EDDM minimum. We recommend 6.5x9 as the minimum safe size to avoid this issue.
+
+**Finished size measured before trim.** The press sheet is larger than the finished piece. Some designers set up files at the correct dimensions but forget that the trimmed piece loses 0.125 inches on each side to bleed trim. A design set up at exactly 6.125x11.5 with bleed will trim to approximately 5.875x11.25 — which falls below the EDDM minimum. Set your document dimensions to the finished trim size and add bleed outside those dimensions.
+
+**Folded pieces that exceed thickness.** A tri-fold self-mailer on heavy stock (100 lb. cover, three panels) can approach or exceed the 0.75-inch thickness limit when bundled. We measure individual piece thickness before bundling — a single piece at 0.3 inches means a bundle of 50 is 15 inches tall, which creates handling issues even if individual thickness is compliant.
+
+## Choosing the Right Size for Your Campaign
+
+The decision framework is straightforward:
+
+**Budget-constrained campaigns → 6.5x9.** Lowest print cost, efficient press layout, adequate space for a single offer with one photo and a headline. This is the workhorse format for restaurants, service businesses, and seasonal promotions.
+
+**Message-heavy campaigns → 8.5x11.** When you need to communicate multiple services, include a menu, show before/after photos, or present a service comparison, the extra space justifies the extra cost. Home services companies and healthcare practices use this size most frequently.
+
+**Maximum impact campaigns → 9x12.** For grand openings, real estate property showcases, or premium brand announcements where standing out in the mailbox is the primary objective. The cost premium is significant — 30–50% more than 6.5x9 — but the visual impact is undeniable.
+
+**Menu or catalog needs → 8.5x14 folded.** When the content requires interior pages. A bi-fold 8.5x14 opens to 8.5x28 inches of content — enough for a full restaurant menu, a detailed service catalog, or a multi-property real estate showcase. Production cost is highest due to folding and tabbing requirements.
+
+For Hudson Valley businesses running their first EDDM campaign, we almost always recommend starting with the 6.5x9 or 8.5x11 format. These sizes have the broadest production experience behind them, the most competitive printing pricing, and enough track record in our shop to predict response rates with reasonable confidence.
+
 ## Let Us Handle the Specs
 
 The simplest approach to EDDM specs is to have your printer set up the templates and verify the finished files before production. At Cornerstone, we provide EDDM-compliant templates for every common size, verify bleed and safe zone on every submitted file, weigh every job before bundling, and confirm USPS acceptance before considering the job complete.

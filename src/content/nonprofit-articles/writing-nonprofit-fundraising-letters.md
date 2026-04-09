@@ -95,4 +95,40 @@ At Cornerstone, we print and mail fundraising letters for nonprofits throughout 
 
 For the letter content itself, we work with organizations to review structure and make production recommendations. We don't write copy for hire, but we've seen enough letters to know what structure works.
 
+## Testing Letter Elements: What to Measure
+
+Testing is the discipline that separates fundraising programs that improve over time from those that plateau. The simplest tests to run on fundraising letters:
+
+**Ask amount test:** Split your file in half. Send one half a letter with a $35/$50/$75 ask ladder; send the other half a letter with a $50/$75/$100 ladder. Measure total revenue per segment, not just average gift — a lower ladder may produce more total revenue through a higher response rate.
+
+**Opening story test:** Test two different opening stories with the same ask. Track which story produces higher response. Over time, you'll develop a library of story types (client success stories, volunteer stories, community impact stories) and know which type resonates best with your donor base.
+
+**Deadline test:** Test a letter with a specific deadline ("Your gift must arrive by April 30 to be included in our spring matching fund") against one without. Deadlines almost always improve response, but the magnitude varies — test it.
+
+## The Physical Package: What Surrounds the Letter
+
+The letter is the centerpiece, but the package it arrives in affects whether it gets opened:
+
+**Outer envelope:** Use a plain white #10 envelope with a teaser line (short text on the outside that compels the recipient to open). Effective teasers: "Your gift has been matched" or "Inside: a message from Maria." Over-designed, full-color envelopes often underperform plain envelopes with a simple teaser — they look like advertising, which many recipients discard.
+
+**Reply card:** The reply card should restate the ask amounts with impact descriptions, include a "Make my gift $ ___" open field for donors who want to give a different amount, and provide a check box for credit card gifts with fields for card information. Always include a "Please contact me about planned giving" checkbox — it costs nothing and generates major gift pipeline leads.
+
+**Return envelope:** Always include a pre-addressed return envelope. Business reply envelopes (postage-paid by you) increase response by 10–15% over envelopes requiring a stamp, but they carry a per-piece return postage cost. For organizations with tight budgets, a non-postage-paid return envelope still significantly outperforms no return envelope.
+
+**Lift note:** A small additional piece — a 3x5 note card from the board chair, a client, or a volunteer — that adds a second voice to the appeal. Lift notes consistently increase response rates by 5–10% in testing. They are most effective when they come from someone other than the signer of the main letter.
+
+## Personalization: The Variable Data Advantage
+
+The difference between a letter addressed to "Dear Friend" and a letter addressed to "Dear Margaret" is measurable — personalized salutations typically increase response rates by 15–25% over generic salutations.
+
+Beyond the salutation, effective personalization includes:
+
+**Last gift acknowledgment:** "Your generous gift of $75 last March helped us serve 23 more families." This validates the donor's previous contribution and creates a specific reference point for the current ask.
+
+**Suggested upgrade:** "This year, would you consider increasing your gift to $100?" Calculating a modest upgrade from the donor's last gift amount — typically 15–30% higher — and printing it as a personalized suggestion is one of the most reliable techniques for increasing average gift size.
+
+**Cumulative impact:** "Over the past three years, your total giving of $225 has provided 450 meals for families in Ulster County." Cumulative giving statements reinforce the donor's importance to the organization and create a sense of ongoing partnership.
+
+Variable data printing — where each letter is personalized with the donor's name, address, giving history, and suggested ask amounts — is standard on Cornerstone's digital printing equipment. We merge your donor database with the letter template during production, producing a fully personalized letter for each recipient without manual intervention.
+
 To discuss your nonprofit mailing program, call [(845) 255-5722](tel:8453936770) or [contact us online](/estimate).

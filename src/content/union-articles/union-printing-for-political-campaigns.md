@@ -86,4 +86,50 @@ We provide union-label printing for Hudson Valley political campaigns including:
 
 Each piece is printed with union-label certification. We coordinate with your campaign's mail house for presort and USPS drop, or handle mailing in-house for campaigns that prefer one vendor for the full print-through-mail sequence.
 
+## Voter File Targeting for Campaign Mail
+
+Effective campaign mail reaches the right voters — not just every address on a route. Campaign mail strategy typically involves one or more of these targeting approaches:
+
+**Registered voter file (all registered voters):** For nonpartisan or broad-appeal campaigns, mailing to all registered voters within the district is the most comprehensive approach. The voter file is available from the county Board of Elections and includes name, address, party registration, and voting history.
+
+**Party-targeted voter file:** For primary campaigns, mail only to registered members of the candidate's party. For general election campaigns, target persuadable voters — registered voters in the opposite party who have low primary participation, or enrolled independents.
+
+**High-propensity voters:** Target voters who have voted in at least 2 of the last 4 elections. These voters are most likely to vote again and most receptive to campaign messaging. This is the most cost-effective targeting approach for campaigns with limited budgets.
+
+**Voter suppression is not mail suppression.** Targeting specific voter segments for your mail is standard campaign practice. It's about efficiency — reaching the voters most likely to respond to your message — not about preventing anyone from voting.
+
+At Cornerstone, we process voter file mailings for campaign clients using the same CASS and NCOA processing, inkjet addressing, and presort optimization that we apply to all direct mail. The union bug on the campaign piece and the professional quality of the mailing service combine to present a campaign that appears organized, labor-aligned, and serious.
+
+## Multi-Piece Campaign Mail Sequences
+
+Most successful campaign mail programs involve 3–5 mail pieces in a planned sequence over 4–6 weeks before Election Day:
+
+**Piece 1 (6 weeks out): Introduction.** Who the candidate is, primary qualifications, and the one-sentence reason they're running. This is the broad awareness piece — sent to the full target universe.
+
+**Piece 2 (4 weeks out): Issues/platform.** The candidate's position on the 2–3 issues most important to the district. This piece is more detailed and can be segmented — different messaging for different voter segments if budget allows.
+
+**Piece 3 (3 weeks out): Endorsements and social proof.** Union endorsements, community leader endorsements, and constituent testimonials. This is where the union bug is especially visible — a piece announcing a labor endorsement that carries the union bug reinforces the message.
+
+**Piece 4 (10–14 days out): Contrast/comparison.** For competitive races, a contrast piece that compares the candidate's record or positions to the opponent's. This piece must be factual — verifiable claims only — and must include the legally required paid-for-by attribution.
+
+**Piece 5 (5–7 days out): GOTV (Get Out The Vote).** A simple, urgent reminder to vote. Date, polling location, hours. Often a smaller postcard format to keep cost low. Sent to high-propensity supporters identified through the campaign's voter contact program.
+
+Each piece in the sequence is printed with the union bug when the campaign is pursuing or holding a labor endorsement. The consistency reinforces the labor message across the entire campaign mail program.
+
+## Campaign Mail Design Essentials
+
+Political campaign mail pieces have specific design requirements beyond standard commercial printing:
+
+**Paid-for-by attribution.** New York Election Law requires all political advertising to include a "Paid for by [committee name]" attribution. This must be legible — typically minimum 8 pt. type — and visible on the piece. The attribution, union bug, and postal indicia compete for space in the imprint area, so layout planning is important.
+
+**Clear candidate identification.** The candidate's name should be the largest text on the piece. Voters receiving 5–10 political mail pieces per week during campaign season spend 2–3 seconds deciding whether to read or discard each one. The candidate name and a brief message visible at a glance determine whether the piece gets read.
+
+**Consistent branding across all pieces.** The campaign's color palette, logo, and typography should be identical across every mail piece in the sequence. Consistency builds recognition — by the third or fourth piece, voters recognize the campaign's mail before reading it.
+
+**High-quality photography.** A professional headshot of the candidate and authentic local photography outperform stock images. Voters respond to candidates who look real and relatable, not polished and artificial.
+
+**Call to action.** Every campaign mail piece should tell the voter what to do: vote on a specific date, attend a rally, visit the campaign website, or call a phone number. A piece without a clear action item is informational but not motivational.
+
+The best campaign mail combines union certification with professional design and strategic messaging. When voters receive a well-designed piece with a clear union bug, they see a campaign that is organized, labor-aligned, and committed to the working people of the district.
+
 To discuss union-label campaign printing, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate). Early planning prevents the timing problems that have ended more than a few campaign mail cycles poorly.

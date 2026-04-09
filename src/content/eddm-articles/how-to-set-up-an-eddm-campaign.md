@@ -112,4 +112,20 @@ Track:
 
 A first EDDM campaign rarely produces the return of a third or fourth one. Consistency and repetition — reaching the same routes 3–4 times over 6 months — builds name recognition that increases response rates over time. The businesses we see getting the best long-term results from EDDM treat it as a monthly or quarterly program, not a one-time experiment.
 
+## Seasonal Timing for Hudson Valley EDDM Campaigns
+
+When your EDDM piece arrives matters as much as what it says. Based on 28 years of managing campaigns in the Hudson Valley, these are the seasonal windows that produce the strongest response by industry:
+
+**HVAC:** Late March–April for spring AC tune-ups; September–October for fall heating inspections. These two windows consistently produce the highest EDDM response rates for HVAC companies in our shop — homeowners are thinking about their systems before they need them.
+
+**Landscaping:** February–March for spring cleanup and seasonal contracts. By April, most homeowners have already committed to a landscaper for the season. Early wins.
+
+**Restaurants:** Thursday or Friday drop for weekend dining; Tuesday drop for mid-week specials. Avoid dropping immediately before major holidays when families are traveling or hosting — your piece arrives in an empty mailbox.
+
+**Real estate:** Spring (March–May) and fall (September–October) coincide with the strongest listing and buying seasons in the Hudson Valley market. Summer EDDM works for vacation/second-home markets in areas like Woodstock, Rhinebeck, and Phoenicia.
+
+**Home improvement:** April–June for exterior work (roofing, siding, painting); September–November for interior remodeling as homeowners prepare for winter hosting.
+
+**Healthcare/dental:** January–February for "new year, new health" messaging; August–September for back-to-school checkups. Late Q4 works for practices that accept flex spending accounts — patients rush to use remaining balances before year-end.
+
 To start planning your EDDM campaign, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate). We'll pull route counts and pricing the same day.

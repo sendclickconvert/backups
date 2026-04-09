@@ -99,4 +99,36 @@ At Cornerstone Services in New Paltz, our design services for direct mail are bu
 
 If you have an existing design, we'll review it against these standards as part of our quote process. If you need design from scratch, we build pieces around your offer and USPS compliance requirements simultaneously.
 
+## Principle 7: Design for the Format, Not the Screen
+
+Direct mail pieces are physical objects held in hands, viewed in ambient light, sorted in a stack. A design that looks striking on a 27-inch monitor can fail completely as a 5.5x8.5 postcard. Common format-specific mistakes:
+
+**Text that's too small at print size.** Body copy below 10 pt. is difficult to read on a printed piece — especially for the 45+ demographic that makes up a large share of direct mail responders. Always print a proof at actual size and read it at arm's length before approving.
+
+**Colors that shift from screen to press.** RGB colors displayed on monitors do not translate 1:1 to CMYK printing. Bright blues, vivid purples, and neon greens are particularly problematic — they look vibrant on screen but print duller. Request a press proof or use Pantone color matching for brand-critical colors. At Cornerstone, we provide digital proofs that simulate CMYK output before going to press.
+
+**Photos that are too low resolution.** An image that looks fine on a website at 72 DPI will print blurry at anything below 300 DPI. Direct mail photography must be 300 DPI at the final print size — not at the size it was downloaded. We check every image file for resolution before printing and flag any that will reproduce poorly.
+
+## Principle 8: Design for Response, Then for Brand
+
+Brand consistency matters — your colors, fonts, and logo should be recognizable. But brand consistency should never override response effectiveness. A beautifully branded piece that generates 0.3% response is a branding exercise, not a marketing campaign.
+
+The practical order of design priority for direct mail:
+1. **Offer clarity** — Can the reader understand what's being offered in 3 seconds?
+2. **CTA visibility** — Can the reader find the phone number or URL without searching?
+3. **Visual impact** — Does the piece stand out in a mail stack?
+4. **Brand consistency** — Does the piece look like it came from your company?
+
+All four matter. But when they conflict — when brand guidelines call for small, elegant typography that makes the offer hard to read at arm's length — response effectiveness should win. The purpose of the piece is to generate business, and beautiful design that doesn't generate response is a cost, not an investment.
+
+## Principle 9: Test Before You Scale
+
+The single most valuable habit in direct mail design is testing variations before committing the full budget. A 1,000-piece test run of two design variations costs a fraction of a 10,000-piece campaign — and the data it produces can double the response rate of the full-scale campaign.
+
+**What to test:** The most impactful elements to test, in order of typical effect size: (1) the offer itself (percentage off vs. flat dollar discount vs. free service), (2) the headline (benefit statement vs. question vs. problem/solution), (3) the CTA (phone vs. QR code vs. URL as primary), (4) the format (postcard vs. letter package).
+
+**How to test:** Split your mailing list randomly into two equal groups. Send one version to each group. Track response by version using unique phone numbers, promo codes, or UTM-tracked URLs. The version with higher response rate becomes the control for the next campaign.
+
+**What not to test:** Don't test multiple variables simultaneously. If you change the headline, the image, and the CTA in the same test, you won't know which change produced the result. Change one element per test.
+
 To get a design or print quote for your next campaign, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate). We serve businesses throughout Ulster, Dutchess, and Orange counties.

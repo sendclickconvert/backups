@@ -93,4 +93,34 @@ The postcard is small enough that the reader decides in 3 seconds whether to kee
 
 For campaign design alongside printing, see our [graphic design for direct mail](/services/graphic-design/how-to-design-a-direct-mail-postcard) guide. For postage and mailing, see [mailing services](/services/mailing).
 
+## Postcard Design: The 3-Second Rule
+
+Every element of a direct mail postcard must serve the 3-second window — the time between the recipient pulling the piece from the mailbox and deciding to keep it or throw it away. These design principles consistently produce higher response rates:
+
+**Front of card (non-address side):** One dominant image, one headline, one offer. The headline should communicate the value proposition in 7 words or fewer. The image should show the result the customer wants — a finished landscaping project, a renovated kitchen, a happy family at a restaurant table. Do not show your logo as the dominant element; show the outcome your customer is buying.
+
+**Back of card (address side):** Reinforcing detail, secondary offer terms, your business name, address, phone number, and URL. If the postcard is for [targeted direct mail](/services/direct-mail), the address panel takes up approximately one-third of the back — design the remaining two-thirds as supporting content. If the postcard is for [EDDM](/services/eddm), the address area is simpler (no individual addresses) but the indicia and barcode clear zone still require reserved space.
+
+**Color and contrast:** Use high-contrast color combinations for the headline and CTA. Dark text on a light background is more readable than reverse text (light on dark) for body copy. Reserve reverse text for short headlines or single-line callouts where readability is less of a concern.
+
+**Tracking mechanism:** Every postcard should include a tracking element — a unique promo code, a dedicated phone number, or a campaign-specific landing page URL. Without tracking, you cannot measure the campaign's return and cannot make informed decisions about future drops.
+
+## Multi-Drop Campaigns: Why One Mailing Is Not Enough
+
+The most common mistake businesses make with postcard direct mail is treating it as a one-time experiment. A single mailing to a list produces a baseline response rate — typically 0.5–1% for a cold list, 2–5% for a warm house file. That single data point is not enough to evaluate the channel.
+
+The businesses that see the strongest results from postcard mail at Cornerstone run multi-drop campaigns — the same list (or carrier routes, for EDDM) receives a postcard 3–4 times over a 3–6 month period. Each subsequent drop builds on the recognition created by the previous one. By the third or fourth mailing, the recipient recognizes your business name, remembers the previous offer, and is significantly more likely to respond.
+
+The economics of multi-drop campaigns also improve: design is a one-time cost (with minor updates for each drop), printing cost per piece drops when multiple runs are booked simultaneously, and response rates climb with repetition. A campaign that costs $3,500 for a single 5,000-piece drop might cost $9,000 for three drops — but produce four times the cumulative response of the single mailing.
+
+## Postcard Printing and Mailing: The One-Shop Advantage
+
+At Cornerstone, postcard campaigns move from design approval to press to the mail department without leaving our facility in New Paltz. This matters for three reasons:
+
+**Timeline control.** When print and mail are in the same building, there is no shipping gap. Pieces come off the press, move to addressing and sorting, and go to USPS — all within the same production schedule. A campaign that needs to arrive by a specific date can be managed to the day.
+
+**Quality continuity.** The same team that prints the piece also prepares it for mailing. If a press issue affects a small batch of pieces, the mail team catches it before those pieces go into the mail stream. Split-vendor workflows create handoff gaps where quality issues pass unnoticed.
+
+**Single point of accountability.** One vendor, one invoice, one contact. If something goes wrong — a print defect, a mailing list error, a missed deadline — there is one party responsible for resolution. When print and mail are at different vendors, finger-pointing between them costs you time.
+
 To get a quote for postcard printing — with or without mailing services — call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).

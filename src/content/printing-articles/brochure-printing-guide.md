@@ -107,4 +107,40 @@ Use a postcard when you need the reader to act immediately on a specific offer. 
 
 The strongest direct mail packages often combine both: an EDDM or targeted postcard with a strong offer drives calls; a brochure inserted in the response kit or handed over at the first appointment reinforces the brand and service detail.
 
+## Design Best Practices for Brochures
+
+The most common brochure design mistakes we see at Cornerstone — and how to avoid them:
+
+**Panel layout errors on tri-folds.** A tri-fold brochure does not have three equal panels on each side. The panel that folds inward (the right panel on the inside) must be approximately 1/16 inch narrower than the other two panels so the piece folds flat without buckling. Designers who set up three equal panels at 3.667 inches each (on an 11-inch sheet) produce a piece that does not fold cleanly. The inside panel should be approximately 3.625 inches; the remaining two panels should each be approximately 3.6875 inches.
+
+**Too much text, too little hierarchy.** A brochure has six panels (tri-fold) or four panels (bi-fold), but each panel is only 3.5 to 4 inches wide. Cramming full paragraphs of body text onto each panel makes the piece unreadable. The effective brochure uses bullet points, short paragraphs of 2–3 sentences maximum, and clear headlines on each panel. Each panel should convey one idea or one service category.
+
+**Ignoring the fold in the design.** Photos, headlines, or design elements that span across a fold look excellent on a flat proof and terrible when folded — the image splits awkwardly, text breaks mid-word, or colors appear misaligned at the fold line. Design each panel as an independent unit. If you want a full-bleed image across multiple panels, discuss the alignment with your printer before production.
+
+**Missing the address panel for self-mailers.** If the brochure will be mailed without an envelope, one panel must be designed as the address panel — with room for the mailing address, return address, postage indicia, and USPS barcode clear zone. This panel cannot carry your marketing message. Plan for it from the start; retrofitting an address panel into a finished brochure design wastes a panel and requires re-proofing.
+
+## Brochure Printing Turnaround at Cornerstone
+
+Standard turnaround for brochure orders at our New Paltz facility:
+
+- **500–1,000 pieces:** 5–7 business days from proof approval
+- **2,500–5,000 pieces:** 7–10 business days from proof approval
+- **Complex folds (gate fold, roll fold, custom):** 10–14 business days — hand-folding or specialty equipment may be required
+
+Rush production is available for standard formats (tri-fold, bi-fold) at additional cost. For trade shows, conferences, or events with hard deadlines, confirm the timeline before placing the order. We will not compromise folding quality for speed — a brochure with sloppy folds damages your brand more than arriving a day late.
+
+## Paper Stock Selection by Industry
+
+Based on the brochures we produce most frequently at Cornerstone, here are the stock and coating combinations that work best by industry:
+
+**Home services (HVAC, plumbing, landscaping):** 100 lb. gloss text with UV coating. The glossy finish makes before-and-after photos pop and communicates a professional, established business. Tri-fold is the standard format — enough space for 3–4 service categories with photos.
+
+**Healthcare and dental:** 100 lb. matte text. The subdued, non-reflective surface reads as clinical and professional. Patients associate matte-finish materials with medical offices and trust the content more than high-gloss promotional pieces.
+
+**Real estate:** 100 lb. gloss text or 100 lb. gloss cover (scored for folding). Real estate brochures are photo-heavy — property images need the best possible color reproduction, and gloss stock delivers that. Many agents use bi-fold 11x17 (folds to 8.5x11) for individual property sheets.
+
+**Nonprofits:** 80–100 lb. matte text. The understated finish communicates responsible stewardship of donor resources. Nonprofits that send high-gloss, expensive-looking brochures sometimes face donor perception issues — "why are they spending my donation on fancy printing?"
+
+**Restaurants and hospitality:** 100 lb. gloss cover (scored), UV coated. Menus and promotional pieces need durability — a restaurant brochure that sits in a take-one rack for weeks needs stock and coating that resist handling wear.
+
 For a quote or to discuss which format fits your campaign, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).

@@ -87,4 +87,57 @@ The combination works because:
 
 For Hudson Valley businesses serious about local customer acquisition, we recommend starting with one or both channels and measuring what's working before optimizing further.
 
+## Technical Performance: Speed and Mobile as Ranking Factors
+
+Google uses page speed and mobile usability as ranking factors. For Hudson Valley businesses competing in local search, technical performance can be the difference between page one and page two.
+
+**Page speed targets:**
+- Largest Contentful Paint (LCP): under 2.5 seconds on mobile
+- First Input Delay (FID): under 100 milliseconds
+- Cumulative Layout Shift (CLS): under 0.1
+
+These metrics — collectively called Core Web Vitals — measure how fast the page loads, how quickly it responds to user input, and how stable the layout is during loading. Sites that meet these thresholds have a ranking advantage over sites that don't.
+
+**Common speed problems for small business sites:**
+- Unoptimized images (a 5MB photo uploaded directly from a camera, displayed at 300px wide)
+- Too many plugins (WordPress sites with 15+ active plugins)
+- Cheap shared hosting where server response time exceeds 1 second
+- External scripts (chat widgets, social media embeds, analytics tools) that block page rendering
+
+At Cornerstone, our websites are built on modern frameworks with image optimization, minimal JavaScript, and fast hosting. We test every site against Core Web Vitals before launch and address any issues.
+
+## Schema Markup: The Hidden SEO Advantage
+
+Schema markup is structured data added to your website's code that helps search engines understand your business information more precisely. For local businesses, schema markup can improve how your site appears in search results — including rich snippets with ratings, hours, and service areas.
+
+**Essential schema types for Hudson Valley service businesses:**
+- **LocalBusiness** (or a more specific type like HomeAndConstructionBusiness, MedicalBusiness, etc.): your business name, address, phone number, hours, and service area
+- **Service**: descriptions of the specific services you offer
+- **FAQPage**: structured FAQ content that can appear directly in search results
+- **BreadcrumbList**: navigational structure that appears in search result URLs
+
+Most template website builders do not include schema markup. Custom-built sites can implement comprehensive schema that gives search engines precise information about your business — which translates to better search visibility for local queries.
+
+## Measuring Website Performance After Launch
+
+A website without measurement is a billboard with no way to know if anyone saw it. Every Hudson Valley business website should have, at minimum:
+
+**Google Analytics 4:** Tracks visitor counts, traffic sources, page views, and conversion events (form submissions, phone clicks). Free and essential.
+
+**Google Search Console:** Shows which search queries your site appears for, your average position, click-through rate, and any technical issues Google identifies. Free and essential.
+
+**Call tracking (optional but recommended):** A unique phone number on your website that tracks calls as conversions. Services like GoHighLevel or CallRail attribute website-generated calls to specific pages and traffic sources.
+
+Review these metrics monthly. If the site is generating fewer than expected leads, the data will tell you whether the problem is traffic (not enough visitors), content (visitors arrive but don't engage), or conversion (visitors engage but don't contact you). Each problem has a different solution.
+
+## Content Strategy for Hudson Valley Business Websites
+
+The best-performing local business websites are not static brochures — they are content platforms that give Google a reason to rank them. A content strategy for a Hudson Valley service business should include:
+
+**Service pages with genuine depth.** Each service you offer deserves its own page with detailed descriptions, pricing guidance, process explanations, and FAQs. A single "Services" page listing everything in bullet points is not sufficient for competitive local search.
+
+**Location-specific content.** If you serve multiple towns, create pages that address the specific needs and characteristics of each service area. "Printing services in Kingston" and "printing services in Poughkeepsie" are different search queries with different competitive landscapes.
+
+**Resource content that demonstrates expertise.** Blog posts, guides, and how-to articles that answer questions your customers actually ask. This content builds topical authority with Google and provides value to visitors before they become customers.
+
 To discuss web design services or a combined digital-and-mail strategy, call [(845) 255-5722](tel:8453936770) or [contact us at our New Paltz location](/estimate).

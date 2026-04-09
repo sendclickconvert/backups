@@ -116,4 +116,35 @@ When submitting files to your printer:
 
 At Cornerstone, we provide EDDM templates for all standard sizes and review every submitted file before sending to press. If your file has a clear zone violation, a color mode issue, or a dimension problem, we catch it before production rather than after the pieces are printed and the problem has to be fixed on your dime.
 
+## The Difference Between Online Printing and EDDM-Ready Printing
+
+Many businesses get their first EDDM pieces printed by an online print shop — Vista Print, GotPrint, 4Over — and then discover the pieces are not EDDM-ready when they try to drop them at the post office. Online printers produce excellent commercial printing, but most do not include EDDM-specific preparation:
+
+**Missing indicia.** Online printers print what you upload. If your file does not include the EDDM Retail indicia, the printed piece will not have it. Applying the indicia after printing requires a second print pass or hand-application of stickers — both of which are more expensive than doing it correctly the first time.
+
+**No bundling or facing slips.** Online printers deliver finished pieces in boxes. They do not bundle in stacks of 50–100, they do not prepare USPS PS Form 3587 facing slips, and they do not organize bundles by carrier route. This entire step falls on you — and it takes 5–7 hours for a 5,000-piece job done correctly.
+
+**No post office drop.** The printed pieces arrive at your location. Getting them to the correct USPS delivery unit, paying postage at the counter, and confirming acceptance is your responsibility.
+
+**No rejection recourse.** If the pieces are the wrong size, wrong weight, or missing the barcode clear zone, the post office rejects the job. You have already paid the online printer. Reprinting is a second expense.
+
+A full-service print shop that handles EDDM end-to-end — Cornerstone included — prints the indicia during production, bundles and prepares facing slips as part of the job, drops at the correct delivery unit, and guarantees USPS acceptance. The per-piece cost may be slightly higher than the cheapest online option, but the all-in cost including your time and risk of rejection is almost always lower.
+
+## Pre-Drop Checklist
+
+Before any EDDM job leaves our facility, we verify every item on this checklist:
+
+- ☐ Finished piece dimensions within EDDM flat range (6.125"–12" × 11.5"–15")
+- ☐ Weight under 3.3 oz (verified by scale, not estimated)
+- ☐ EDDM Retail indicia present and correctly positioned
+- ☐ Bottom 2.125" of address face clear of all design elements
+- ☐ Paper stock meets rigidity requirement
+- ☐ Bundles contain 50–100 pieces each, all facing same direction
+- ☐ PS Form 3587 completed accurately for each bundle
+- ☐ Route IDs on facing slips match routes served by the target delivery unit
+- ☐ Total piece count on facing slips matches total pieces in the drop
+- ☐ Correct delivery unit identified for each route group
+
+This checklist is the difference between a drop that gets accepted in 10 minutes and a drop that gets rejected and requires a return trip with corrected materials. We have never had a prepared job rejected at the counter.
+
 To start a quote or discuss your EDDM project, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).

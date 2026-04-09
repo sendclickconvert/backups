@@ -79,4 +79,54 @@ A $5,000 website that generates 3 new customers per month, at $800 average custo
 
 For businesses where new customer acquisition is the primary business challenge, investing in a well-designed, well-optimized website is usually the right decision. For businesses with full calendars and a need only for a basic online presence, the DIY platform tier may be entirely adequate.
 
+## Where the Money Actually Goes in a Website Project
+
+Understanding what you're paying for helps you evaluate quotes intelligently:
+
+**Discovery and strategy (10–15% of project cost).** Understanding your business, your competitors, your customers, and defining what the site needs to accomplish. This is the foundation — skip it, and the designer builds a site that looks nice but doesn't generate leads.
+
+**Design (25–35% of project cost).** Visual design, layout, typography, color, and user experience. This is where the "look and feel" gets created — the homepage design, interior page templates, and mobile layouts.
+
+**Development (25–35% of project cost).** Building the design as a functional website — coding, CMS setup, form integration, speed optimization, and cross-device testing. This is the technical implementation.
+
+**Content (15–25% of project cost).** Writing, photography, and media. If you provide your own content, this portion drops to near zero — but the designer still needs to integrate it. If the designer writes copy, this is a significant portion of the budget and a significant driver of quality.
+
+**SEO and launch (5–10% of project cost).** On-page SEO setup, Google Analytics and Search Console integration, sitemap submission, and launch verification. At the low end, this is minimal; at the high end, it includes keyword research, content optimization, and local citation building.
+
+## Hidden Costs That Catch Small Business Owners Off Guard
+
+**Premium plugins or integrations.** A booking system, payment gateway, or CRM integration may require paid plugins ($50–$300/year) or third-party subscriptions ($20–$200/month). Ask before the project starts which third-party tools will be needed and what they cost.
+
+**Photography.** If your designer recommends professional photography — and they should, because real photos outperform stock in local search — budget $300–$800 for a half-day shoot with a local photographer. This is a one-time investment that improves every page.
+
+**Content updates after launch.** The website you launch in month one will need updates: new services, seasonal offers, blog posts, event announcements. Budget for either your own time or a maintenance retainer ($100–$500/month) for ongoing changes.
+
+**Domain and email.** Your domain name ($15–$25/year) and business email through that domain ($6–$12/user/month for Google Workspace or Microsoft 365) are separate from the website cost. If you're switching to a new domain, email migration can add 2–4 hours of setup time.
+
+## When NOT to Invest in a Website
+
+Not every business needs a custom website right now. You may not need one if:
+
+- Your business is fully booked through referrals and word of mouth with no capacity for more customers
+- Your industry doesn't involve customers searching online (though this is increasingly rare)
+- You're testing a new business concept and haven't validated the market yet — in this case, a simple one-page landing page is sufficient
+
+For most established small businesses in the Hudson Valley with growth goals, a professional website is not optional — it's the digital equivalent of having a storefront. The question is how much to invest, and the answer depends on how important online lead generation is to your revenue.
+
+## How to Evaluate Website Quotes
+
+When you receive quotes from multiple web designers, compare them on these dimensions:
+
+**Scope clarity.** Does the quote specify exactly how many pages, what functionality is included, how many revision rounds are allowed, and what the client is responsible for providing (content, photography, logo files)? Vague quotes lead to scope disputes.
+
+**Timeline.** A 5–8 page business website should take 4–8 weeks from kickoff to launch. Quotes promising delivery in one week may indicate template-only work with no customization. Quotes projecting 16+ weeks for a simple site may indicate the designer is overextended.
+
+**What's excluded.** Check the fine print for items that are not included: copywriting, photography, domain registration, hosting setup, SSL certificate, Google Analytics configuration, and post-launch revisions. These excluded items can add $500–$2,000 to the actual project cost.
+
+**Ongoing costs.** Separate the one-time project cost from the ongoing monthly cost. Hosting, maintenance, and support retainer fees add up — a $200/month retainer is $2,400/year. Make sure the ongoing value justifies the ongoing cost.
+
+**Ownership terms.** Confirm that you will own the domain, the hosting account, the design files, and all content produced for the project. Some designers retain ownership of design files or build on platforms where you cannot transfer the site — these terms should be deal-breakers.
+
+The cheapest quote is rarely the best value. The best value is the quote that most clearly describes what you'll get, what you'll own, how long it will take, and what results you can reasonably expect. A designer who invests time in understanding your business before quoting is more likely to produce a website that generates real business results than one who quotes a price in five minutes based on a page count.
+
 At Cornerstone Services in New Paltz, we build websites for Hudson Valley businesses that need a professional site with genuine local SEO integration — matching the digital presence to the direct mail campaigns many of our clients already run. To discuss a website project, call [(845) 255-5722](tel:8453936770) or [contact us](/estimate).

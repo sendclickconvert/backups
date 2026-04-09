@@ -25,7 +25,7 @@ At [Cornerstone Services](/services/mailing), we presort and process mailings fo
 
 ## USPS Marketing Mail (Bulk Mail): What It Is
 
-USPS Marketing Mail — previously called Standard Mail, and before that Third-Class — is the mail class designed for advertising and promotional content. It exists specifically to allow businesses to mail at volume at reduced postage rates.
+USPS Marketing Mail — previously called Standard Mail, and before that Third-Class — is the mail class designed for advertising and promotional content. It exists specifically to allow businesses to mail at volume at reduced postage rates. For Hudson Valley businesses running regular direct mail campaigns through [Cornerstone's mailing services](/services/mailing), Marketing Mail is the default mail class for promotional campaigns because the postage savings at even modest volumes fund additional campaigns and more frequent drops.
 
 **What qualifies as Marketing Mail content:**
 - Promotional postcards and mailers
@@ -83,7 +83,7 @@ For a 5,000-piece campaign:
 | Marketing Mail automation | $1,070–$1,140 | $0.214–$0.228 |
 | Nonprofit Marketing Mail | $710–$885 | $0.142–$0.177 |
 
-The savings from Marketing Mail over First-Class stamps on a 5,000-piece campaign are $2,260–$2,330. The savings over First-Class presorted are still $610–$1,130. These are meaningful numbers.
+The savings from Marketing Mail over First-Class stamps on a 5,000-piece campaign are $2,260–$2,330. The savings over First-Class presorted are still $610–$1,130. These are meaningful numbers — often enough to fund an additional campaign cycle or upgrade the piece to a larger format with better response rates.
 
 ## When First-Class Is the Right Choice
 
@@ -100,5 +100,47 @@ The savings from Marketing Mail over First-Class stamps on a 5,000-piece campaig
 For the majority of direct mail campaigns — promotional content, known audience, campaign volume of 500+ pieces, no specific same-day delivery requirement — Marketing Mail at the automation presort rate is the right choice. The postage savings over First-Class fund more campaigns, more frequency, and ultimately more response.
 
 For customer relationship mail — a "thank you for your business" card to a known customer, a service completion follow-up, or any piece where personal delivery and forwarding matter — First-Class is worth the premium.
+
+## Service Endorsements: Getting More From Marketing Mail
+
+Marketing Mail's default behavior for undeliverable pieces is simple: the USPS discards them. But USPS offers service endorsements — optional add-on instructions printed on the mail piece — that change this behavior:
+
+**"Address Service Requested":** Undeliverable pieces are returned to you with the reason (moved, no such address, insufficient address) printed on the returned piece. If the recipient moved and filed a COA, the piece is returned with the new address. Per-piece return charges apply. This is useful for list hygiene — you learn which addresses are bad and can remove or update them.
+
+**"Return Service Requested":** The piece is returned to you regardless of the reason it was undeliverable. No forwarding attempt is made, even if the recipient filed a COA. Useful when you need every bad address identified.
+
+**"Change Service Requested":** The piece is not returned, but USPS sends you an electronic notification with the reason for non-delivery and the new address if available. This is the most efficient option for large-volume mailers who want list correction data without the bulk of returned physical pieces.
+
+**"Forwarding Service Requested":** The piece is forwarded to the new address for 12 months (same as First-Class). This effectively gives you First-Class forwarding behavior at Marketing Mail rates, but with a per-piece charge for forwarded pieces.
+
+Service endorsements are printed on the envelope or mail piece during production. At Cornerstone, we recommend "Address Service Requested" for most client mailings as a cost-effective list hygiene mechanism — the returned pieces identify bad addresses before your next campaign, reducing waste on future drops.
+
+## Commingling and Co-Palletization: Advanced Postage Optimization
+
+For high-volume mailers processing 50,000+ pieces, additional postage savings are available through commingling — combining mail from multiple clients into shared trays and pallets for deeper presort discounts.
+
+Commingling works because presort discounts are based on the total volume going to each ZIP code and carrier route. A single client mailing 5,000 pieces may only qualify a handful of routes at the carrier-route discount level. But when that mailing is combined with other mailings going to the same geography, the combined volume qualifies more routes for the deepest discount tiers.
+
+Cornerstone participates in commingling programs for Marketing Mail campaigns that benefit from the additional volume aggregation. For campaigns under 10,000 pieces, the standard presort process typically captures the available savings. For campaigns over 25,000 pieces, commingling can deliver an additional $0.01–$0.03 per piece in postage savings — meaningful at scale.
+
+## Timing Your Mail Class Decision
+
+The mail class decision should be made before the piece is designed — not after. Here's why:
+
+**Marketing Mail pieces must carry the Marketing Mail indicia** (postage imprint), which is different from the First-Class indicia. The indicia is printed on the piece or envelope during production. Changing from First-Class to Marketing Mail after printing means reprinting the piece or applying stickers over the incorrect indicia.
+
+**Self-mailing pieces (postcards, folded brochures) for Marketing Mail must meet specific size and weight requirements** that differ from First-Class requirements. Designing a piece without confirming the mail class first risks producing a piece that doesn't qualify for the intended postage rate.
+
+**Nonprofit postage rates require USPS nonprofit authorization**, which can take 4–6 weeks to establish if you don't already have it. Plan nonprofit mailings well in advance.
+
+## Nonprofit Marketing Mail: The Deepest Discount
+
+Qualifying nonprofit organizations — 501(c)(3) charities, religious organizations, educational institutions, and certain other tax-exempt entities — can apply for USPS nonprofit mailing authorization. Once authorized, nonprofits mail at significantly reduced Marketing Mail rates:
+
+**Nonprofit Marketing Mail automation rate:** Approximately $0.142–$0.177 per piece for letters, depending on sort level. Compare that to $0.214–$0.228 for standard Marketing Mail automation. On a 10,000-piece fundraising campaign, the nonprofit rate saves $370–$860 in postage versus standard Marketing Mail — and $5,030+ versus First-Class stamps.
+
+The application process for USPS nonprofit authorization requires submitting your organization's articles of incorporation, IRS determination letter, and evidence of mailing content. Once approved, the authorization applies to your mailing permit and can be used on all qualifying mailings.
+
+At Cornerstone, we process [nonprofit mailings](/services/non-profit-mailing) for organizations throughout the Hudson Valley — churches, PTAs, community nonprofits, and regional charities. We verify nonprofit authorization status before every campaign and ensure the mailing content qualifies for the nonprofit rate. Not all nonprofit content qualifies — pieces that promote goods or services at market rates, even from a nonprofit, may not be eligible for the nonprofit postage discount.
 
 For questions about which mail class fits your specific campaign, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).

@@ -111,4 +111,54 @@ If the brochure will be mailed without an envelope, it must comply with USPS sel
 
 We design for USPS compliance at Cornerstone — self-mailing brochures are set up so the address side functions correctly after folding and tabbing.
 
+## Paper Stock and Finish Selection for Brochures
+
+Paper choice affects both the tactile quality and the cost of the brochure. For direct mail brochures:
+
+**100 lb. gloss text:** The standard for most tri-fold brochures. Bright, sharp photo reproduction with a smooth finish that feels professional without being heavy. Folds cleanly. Cost-effective for quantities of 500–5,000. This is what we print most direct mail brochures on at Cornerstone.
+
+**100 lb. matte text:** Same weight as gloss text but with a non-reflective finish. Better for text-heavy brochures where glare from overhead light interferes with reading. Preferred by professional services (law firms, financial advisors) where the matte finish communicates understated quality.
+
+**80 lb. cover stock:** Heavier weight used for self-mailing brochures that need to survive postal processing without an envelope. Required for USPS self-mailer compliance. The additional weight adds cost but eliminates the need for an outer envelope, which can reduce total production cost for simpler campaigns.
+
+**UV coating vs. aqueous coating:** UV coating adds a high-gloss protective layer that makes colors pop and protects against scuffing in the mail. Aqueous coating is a water-based protective layer that is less glossy but allows writing on the surface (important if the brochure includes a fill-in form or reply area). For direct mail, UV coating on the cover panels and aqueous on the inside is a common combination.
+
+## Common Brochure Sizes Beyond the Tri-Fold
+
+While the 8.5x11 tri-fold is the standard, other formats serve specific purposes:
+
+**8.5x14 tri-fold (legal size):** 14% more content space per panel. Useful when the standard tri-fold is too cramped for the content. Slightly higher paper cost but the same folding and production process.
+
+**11x17 bi-fold (half-fold):** Four large panels (8.5x11 each when folded). Ideal for businesses with extensive service descriptions, large product photography, or complex process explanations. The larger panel size allows more visual breathing room and larger typography.
+
+**11x25.5 gate-fold:** A dramatic reveal format where two outer panels fold inward to meet in the center, then open to reveal a wide interior spread. Best for premium brands, luxury services, or any campaign where the unfolding experience itself creates engagement. More expensive to fold and finish, but the format itself communicates quality.
+
+**Z-fold (accordion fold):** Three panels that fold in alternating directions, creating a zigzag when partially opened. Each panel can function as a standalone section. Effective for step-by-step presentations or before/after sequences where each panel reveals the next stage.
+
+At Cornerstone, we produce all of these formats in-house. The choice between them depends on content volume, brand positioning, mailing method (self-mailer vs. envelope), and budget. We'll recommend the format that best fits your campaign goals during the quote process.
+
+## Content Strategy: What to Include on Each Panel
+
+The most common content mistake in brochure design is treating it like a website — trying to put everything the business does on six panels. A brochure with a clear content strategy outperforms one that tries to be comprehensive.
+
+**For service businesses (HVAC, landscaping, legal, dental):**
+- Cover: the primary service or seasonal offer
+- Inside panels: 3–4 key services with brief descriptions (2–3 sentences each), one strong testimonial, credentials and certifications
+- Back panel: phone number, address, service area, hours
+- Tucked panel: step-by-step process ("How it works")
+
+**For nonprofits (fundraising brochures):**
+- Cover: the impact story headline ("Last year, 847 families walked through our doors")
+- Inside panels: the mission in action (one compelling story, key statistics, donation impact breakdown), reply/giving information
+- Back panel: contact information, website, QR code for online giving
+- Tucked panel: board of directors, credentials, organizational history
+
+**For real estate and property businesses:**
+- Cover: the primary selling point (location, lifestyle, amenity)
+- Inside panels: property features, floor plans or community maps, pricing or financing information
+- Back panel: agent contact information, brokerage branding
+- Tucked panel: neighborhood highlights, school ratings, commute times
+
+Each of these structures follows the same principle: the cover creates interest, the inside delivers the full story, and the back panel enables action for readers who skip the interior entirely.
+
 For brochure design with printing and mailing, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).

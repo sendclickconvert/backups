@@ -132,4 +132,26 @@ For most small business direct mail campaigns in the Hudson Valley, the right pa
 
 If you're not sure which stock is right for your campaign, bring us the piece concept and we'll recommend based on the format, mail class, and budget. Every decision has a cost implication, and we'd rather explain the trade-offs before you're committed to a specification.
 
+## Common Paper Stock Mistakes in Direct Mail
+
+After 28 years of printing direct mail at Cornerstone, these are the errors we catch most frequently:
+
+**Using text stock for postcards.** The most expensive mistake is printing 5,000 postcards on 100 lb. gloss text (thinking "100 lb." means heavy) and discovering at the post office that the pieces are too flimsy for USPS acceptance as self-mailing flats. Text weight and cover weight are entirely different scales — 100 lb. text is roughly equivalent to 60 lb. cover. For postcards, always specify cover weight.
+
+**Choosing stock too heavy for the mail class.** An oversized postcard (9x12) on 120 lb. cover with UV coating and a heavy ink coverage can approach the 3.3 oz EDDM weight limit or the 1 oz First-Class letter limit. We weigh a sample from every job before mailing — if the piece exceeds the weight limit, the options are reprinting on lighter stock or paying a higher postage rate. Neither is ideal.
+
+**Mixing coated and uncoated on the same piece.** Some clients request UV coating on the front (for vibrant color) and uncoated back (for an address panel that accepts inkjet). This is possible but adds production cost because two different finishing processes are required. The more efficient solution: AQ coating on both sides, which provides reasonable color protection while remaining receptive to inkjet addressing.
+
+**Ignoring humidity and seasonal factors.** Paper absorbs moisture. A gloss-coated postcard holds up well in any season, but an uncoated or matte piece mailed in July may curl or warp in a humid mailbox before the recipient retrieves it. For summer campaigns in the Hudson Valley — especially pieces that may sit in outdoor mailboxes — we recommend coated stocks with at minimum AQ coating to resist moisture absorption.
+
+## Environmental Considerations
+
+Clients increasingly ask about sustainable paper options for direct mail. Here are the practical realities:
+
+**FSC-certified stocks.** Forest Stewardship Council–certified paper is available in most of the weights and finishes listed above. FSC certification adds a small premium to the paper cost (typically 5–10%) and allows you to print the FSC logo on your piece — a visible environmental credential that resonates with environmentally conscious recipients.
+
+**Recycled content.** Post-consumer recycled content paper (typically 10–30% PCR) is available in text and cover weights. At higher recycled content percentages (50%+), color reproduction and surface smoothness may be slightly lower than virgin stock. For most direct mail applications, 10–30% PCR paper is indistinguishable from non-recycled stock in both appearance and performance.
+
+**Soy-based inks.** All our offset printing uses soy-based inks as standard — lower VOC emissions and easier recycling than petroleum-based inks. This is not an upgrade or premium option; it is our standard process.
+
 Call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).

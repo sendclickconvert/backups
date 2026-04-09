@@ -118,4 +118,38 @@ Once approved, you receive a nonprofit authorization number. This number:
 
 At Cornerstone, we maintain your authorization number in our client file. Once it's on record, you never need to provide it again — we apply it automatically to every qualifying mailing.
 
+## What Happens After Approval: Using Your Authorization
+
+Once you receive your nonprofit authorization number, using it is straightforward. Here's how the authorization integrates with the mailing process:
+
+**Providing your authorization to a mail house:** Give your authorization number to Cornerstone or whatever mail house processes your mailings. We record it in your permanent client file. On every qualifying mailing, we reference your authorization number on the postage statement (PS Form 3602) that accompanies the mail to the USPS. You don't need to do anything for each individual mailing — the authorization applies automatically.
+
+**Mailing from multiple locations:** Your nonprofit authorization is on file nationally with the USPS. If your organization uses different mail houses for different campaigns (unlikely for most Hudson Valley nonprofits, but possible for organizations with national programs), each mail house can use your authorization number as long as the mailing qualifies.
+
+**Content compliance on each mailing:** Not every piece of mail a nonprofit sends qualifies for the nonprofit rate. Fundraising appeals, program announcements, newsletters, and event invitations qualify. Advertising for commercial products or services — even if the revenue supports the nonprofit — does not qualify. Political candidate endorsements do not qualify. Each mailing must be reviewed for content compliance before the nonprofit rate is applied.
+
+## Common Application Issues and How to Avoid Them
+
+Based on the nonprofit authorization applications we've helped Hudson Valley organizations prepare, these are the most common issues that delay or prevent approval:
+
+**Vague purpose descriptions.** The USPS reviewer needs to understand what your organization actually does — not just your mission statement. "Promoting community wellness" is too vague. "Operating a free health screening clinic serving 2,400 uninsured residents of Ulster County annually" is specific and clearly charitable. The more concrete detail you provide about your programs and services, the faster the review.
+
+**Missing documentation.** Applications submitted with only PS Form 3624 and an IRS determination letter often generate requests for additional information. Include your articles of incorporation, bylaws, and most recent Form 990 from the start. The marginal effort of gathering this documentation upfront saves weeks of back-and-forth.
+
+**Applying at the wrong USPS location.** PS Form 3624 must be submitted at a Business Mail Entry Unit (BMEU), not a regular post office counter. Counter staff at regular post offices cannot process this application and may provide incorrect information about the process. In the Hudson Valley, the Poughkeepsie and Newburgh BMEUs handle nonprofit authorization applications.
+
+**Confusing nonprofit status with nonprofit mail authorization.** IRS 501(c)(3) status and USPS nonprofit mailing authorization are two separate things. Having one does not automatically give you the other. We regularly encounter organizations that have been 501(c)(3) for years and never applied for USPS nonprofit authorization — mailing at standard Marketing Mail rates and overpaying on every campaign.
+
+## The Financial Impact Over Time
+
+For an organization running a modest direct mail program — four mailings per year to a 3,000-donor file — the nonprofit rate savings compound significantly:
+
+**Per mailing:** 3,000 pieces × $0.07 savings (nonprofit vs. standard Marketing Mail) = $210 saved
+**Per year (4 mailings):** $840 saved
+**Over 5 years:** $4,200 saved — enough to fund an entire additional acquisition campaign
+
+For larger organizations mailing 10,000+ pieces per campaign, the annual savings can exceed $3,000 — a meaningful budget line item that goes directly to programs instead of postage.
+
+The one-time effort of completing PS Form 3624 and visiting the BMEU typically takes 2–3 hours. The authorization is permanent. The return on that time investment is effectively infinite for any organization that continues to mail.
+
 To start a nonprofit mailing or get help with the authorization process, call [(845) 255-5722](tel:8453936770) or [contact us online](/estimate).

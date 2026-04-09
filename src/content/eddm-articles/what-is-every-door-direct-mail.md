@@ -109,3 +109,31 @@ Home service companies, restaurants, real estate agents, healthcare practices, g
 **How is EDDM different from targeted direct mail?**
 
 EDDM delivers to everyone on a route regardless of demographics. Targeted direct mail lets you filter by age, income, homeownership, and other criteria. EDDM costs less per piece and is faster to set up; targeted mail costs more per piece but reaches a more qualified audience.
+
+## The Real Cost of EDDM — and Why It Still Wins for Local Businesses
+
+EDDM postage is $0.247 per piece, but total campaign cost including printing, design, and production typically runs $0.50–$0.75 per piece all-in. For a detailed breakdown, see our [complete EDDM cost guide](/services/eddm/how-much-does-eddm-cost).
+
+At those rates, a 5,000-piece EDDM campaign costs approximately $2,500–$3,750 total. Compare that to the alternatives available to a local business in the Hudson Valley:
+
+**Google Ads for local services:** $8–$25 per click, with 3–5% click-to-lead conversion. At $15/click and 4% conversion, you are paying $375 per lead. To generate 25 leads, you spend $9,375.
+
+**Facebook/Instagram ads:** $15–$50 per lead for local service businesses, with constant management overhead and creative fatigue that requires ongoing investment.
+
+**EDDM at 5,000 pieces:** $2,500–$3,750 total. At 1% response (conservative), you generate 50 inquiries at $50–$75 per inquiry. At 2% response, 100 inquiries at $25–$37 each.
+
+The cost-per-lead math favors EDDM for businesses where geographic proximity defines the customer. Digital advertising reaches people who are actively searching; EDDM reaches people who are not searching yet but will need your service in the coming weeks or months. Both channels serve different points in the customer journey, and the most effective local marketing strategies use both.
+
+## EDDM Compliance: What Gets Your Job Rejected
+
+The USPS EDDM program has specific requirements that must be met for acceptance at the post office counter. Non-compliance means your prepared and printed pieces are rejected and you leave the post office with your mail still in your hands.
+
+**Size violations:** Pieces must fall within the USPS flat size window — 6.125" to 12" tall, 11.5" to 15" long. Standard postcards (4x6, 5x7) do not qualify. See our [EDDM sizes and specs guide](/services/eddm/eddm-postcard-sizes-and-specs) for exact dimensions.
+
+**Bundling errors:** Pieces must be in bundles of 50–100, all facing the same direction, with a completed PS Form 3587 facing slip on each bundle. Incorrect bundle counts or missing facing slips result in rejection.
+
+**Wrong delivery unit:** EDDM Retail must be dropped at the USPS facility that serves the carrier routes in your mailing — not just the nearest post office. Dropping at the wrong facility gets you turned away.
+
+**Weight violations:** Pieces exceeding 3.3 ounces are rejected or reclassified to a higher postage rate. This catches businesses printing on heavy stock with coatings and inserts.
+
+Cornerstone handles all compliance verification as part of our EDDM production process. We have never had a prepared job rejected at the post office counter.
