@@ -99,7 +99,7 @@ export default defineConfig({
     '/crst-daily/global-parcel-delivery-to-us-halted-august-2025/': 'https://blog.crst.net/',
     '/direct-mail-vs-email-comparison-and-roi-return-on-investment/': 'https://blog.crst.net/direct-mail-vs-email/',
     '/demystifying-direct-mail-common-misconceptions-and-practical-solutions/': 'https://blog.crst.net/',
-    '/chicken-shipping-101/': 'https://blog.crst.net/',
+    '/chicken-shipping-101/': '/resources/chicken-shipping-101',
     '/fun-fact-friday/': 'https://blog.crst.net/',
     '/case-study-thursday/': '/case-studies',
     '/crst-daily-post-category/case-study-thursday/': '/case-studies',
