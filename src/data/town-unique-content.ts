@@ -27,7 +27,29 @@
  * Census.gov data for the specific municipality before publishing.
  */
 
-export const townUniqueContent: Record<string, {
+export interface TownIndustryFocus {
+  industry: string;
+  description: string;
+}
+
+export interface TownNeighborhood {
+  name: string;
+  description: string;
+}
+
+export interface TownSeasonalTip {
+  season: string;
+  strategy: string;
+}
+
+export interface TownMailingProfile {
+  carrierRoutes: number;
+  avgHouseholdsPerRoute: number;
+  recommendedFormat: string;
+  estimatedCostFullSaturation: string;
+}
+
+export interface TownUniqueContent {
   metaTitle: string;
   metaDescription: string;
   h1: string;
@@ -38,7 +60,15 @@ export const townUniqueContent: Record<string, {
   nearbyLandmark: string;
   relevantServices: string[];
   uniqueFAQs: Array<{ question: string; answer: string }>;
-}> = {
+  industryFocus?: TownIndustryFocus[];
+  neighborhoods?: TownNeighborhood[];
+  seasonalTips?: TownSeasonalTip[];
+  mailingProfile?: TownMailingProfile;
+  whyCornerstone?: string;
+  localSuccessStory?: string;
+}
+
+export const townUniqueContent: Record<string, TownUniqueContent> = {
 
   // ═══════════════════════════════════════════════════════════
   // DUTCHESS COUNTY TOWNS (16 flagged pages)
@@ -436,6 +466,31 @@ export const townUniqueContent: Record<string, {
     populationNote: "The Town of Marlborough has roughly 8,800 residents and an estimated 3,200 households. The population is predominantly homeowners in single-family residences, making it an excellent audience for home service and agricultural tourism direct mail.",
     nearbyLandmark: "Located along Route 9W on the Hudson River, between Highland and Newburgh, home to Benmarl Winery and the Marlboro waterfront.",
     relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/printing", "/services/graphic-design"],
+    industryFocus: [
+      { industry: "Wineries & Vineyards", description: "Marlboro is the hub of the Hudson Valley wine trail. Benmarl Winery, one of the oldest vineyards in America, anchors a stretch of Route 9W known for weekend wine tourism. Wineries use direct mail to promote seasonal tastings, wine club memberships, harvest events, and holiday gift sales. Cornerstone designs and prints oversized postcards with full-color vineyard photography that drive reservations and club signups." },
+      { industry: "Orchards & Farm Markets", description: "Apple orchards and farm stands along Route 9W depend on seasonal foot traffic from the wider tri-state area. Direct mail postcards timed 2-3 weeks before apple-picking season, pumpkin festivals, and holiday farm markets are the primary customer acquisition tool. Cornerstone produces these seasonal mailings on a tight turnaround — designs approved Monday can be in mailboxes by Friday from our New Paltz facility." },
+      { industry: "Home Services & Contractors", description: "Marlboro's residential base of single-family homes on larger rural lots drives consistent demand for landscaping, HVAC, plumbing, well services, and general contracting. EDDM postcards targeting the 12542 ZIP are the most cost-effective way to reach every homeowner in the community. Seasonal timing matters — spring mailings for landscaping, fall for heating services, and year-round for emergency plumbing and electrical." },
+      { industry: "Real Estate", description: "Marlboro's mix of river-view properties, agricultural land, and established neighborhoods attracts buyers from the NYC metro area. Real estate agents use just-listed and just-sold postcards to farm Marlboro carrier routes, establishing neighborhood expertise. Cornerstone prints these on heavy card stock with full-bleed photography that showcases Marlboro's scenic character." }
+    ],
+    neighborhoods: [
+      { name: "Marlboro Hamlet & Route 9W Corridor", description: "The commercial and residential center of Marlboro runs along Route 9W, where the post office, school district buildings, local shops, and service businesses create the town's core identity. EDDM campaigns targeting this corridor reach the highest concentration of households and businesses in a single route selection." },
+      { name: "Hudson River Waterfront", description: "The streets descending from Route 9W to the Hudson River include some of Marlboro's most scenic residential properties. This area attracts buyers seeking river views and proximity to the waterfront parks. Real estate direct mail targeting these routes commands premium attention from high-value homeowners." },
+      { name: "Western Marlborough (Route 44-55 Corridor)", description: "The more rural western sections of the Town of Marlborough extend toward Plattekill and include larger agricultural properties, horse farms, and newer residential developments. Home service providers find strong demand here for well drilling, septic services, and property maintenance — services best promoted through EDDM since many residents lack reliable broadband for digital advertising." }
+    ],
+    seasonalTips: [
+      { season: "Spring (March–May)", strategy: "Landscapers and contractors should mail EDDM postcards by mid-March to capture spring cleanup and project planning budgets. Wineries promote spring barrel tastings and outdoor seating openings with postcards to their customer mailing lists." },
+      { season: "Summer (June–August)", strategy: "Farm stands and orchards begin promoting U-pick seasons. HVAC companies target Marlboro's older homes (many without central air) with cooling system offers. Real estate agents increase mailing frequency as the summer buying season peaks." },
+      { season: "Fall (September–November)", strategy: "Peak season for Marlboro agriculture tourism. Orchards, wineries, and farm markets should mail 3 weeks before Columbus Day weekend — the busiest period. Heating companies begin furnace tune-up campaigns. This is Marlboro's highest-ROI direct mail season." },
+      { season: "Winter (December–February)", strategy: "Holiday gift promotions for wineries (gift baskets, wine club memberships). Snow plowing and winter home maintenance services. New Year planning campaigns for businesses setting their marketing budgets. Lower mail volume means less competition in the mailbox." }
+    ],
+    mailingProfile: {
+      carrierRoutes: 8,
+      avgHouseholdsPerRoute: 400,
+      recommendedFormat: "6x9 or 6x11 oversized postcard — stands out in rural mailboxes and showcases Marlboro's scenic agricultural photography",
+      estimatedCostFullSaturation: "$1,100–$1,400 for full-town EDDM coverage including design, printing, and postage"
+    },
+    whyCornerstone: "Cornerstone's New Paltz facility is just 15 minutes from Marlboro — closer than any other full-service direct mail provider. We hand-deliver finished EDDM mailings to the Marlboro carrier routes through the New Paltz Post Office, eliminating transit time and ensuring your pieces enter the mail stream the same day they come off our press. For Marlboro's seasonal businesses that need tight turnaround on harvest festival and wine event mailings, this proximity is a genuine competitive advantage.",
+    localSuccessStory: "A Marlboro-area landscaping company used quarterly EDDM postcards to the 12542 ZIP to grow their residential client base by 40% over two seasons. The key was consistent seasonal timing — spring cleanup offers in March, lawn care in May, fall leaf removal in September, and snow plowing in November. Each 3,200-piece mailing cost under $1,400 all-in and generated 15-25 qualified leads per drop.",
     uniqueFAQs: [
       {
         question: "How can Marlboro wineries and orchards use direct mail effectively?",
@@ -444,6 +499,14 @@ export const townUniqueContent: Record<string, {
       {
         question: "Can I target just Marlboro households without reaching Milton or Highland?",
         answer: "Yes. Marlboro has its own 12542 ZIP code and dedicated carrier routes. We can target only Marlboro addresses for a focused local campaign, or expand to include neighboring communities like Highland (12528) and Milton for broader reach. EDDM route selection gives you precise geographic control."
+      },
+      {
+        question: "What does a full Marlboro EDDM campaign cost?",
+        answer: "A full-saturation EDDM campaign covering all ~3,200 Marlboro households typically runs $1,100–$1,400 including design, full-color printing on heavy card stock, and USPS postage at $0.223 per piece. That's roughly $0.40 per household for a full-color, oversized postcard delivered to every door — no mailing list purchase required."
+      },
+      {
+        question: "How quickly can Cornerstone turn around a Marlboro mailing?",
+        answer: "Standard turnaround is 5-7 business days from approved proof to mail entry. For rush jobs — common with Marlboro's seasonal businesses reacting to weather-dependent harvest schedules — we can produce and mail within 3 business days. Our New Paltz facility is 15 minutes from the Marlboro post office, eliminating transit delays."
       }
     ]
   },
@@ -458,6 +521,32 @@ export const townUniqueContent: Record<string, {
     populationNote: "The Town of Lloyd (which encompasses Highland) has roughly 11,000 residents and an estimated 4,200 households. Highland's population density along the Route 9W corridor is higher than most Ulster County communities, supporting cost-effective EDDM campaigns with strong per-route household counts.",
     nearbyLandmark: "Located at the western approach to the Mid-Hudson Bridge on Route 9W, home to the Walkway Over the Hudson western trailhead and just 10 minutes from our New Paltz facility.",
     relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/printing", "/services/mailing-lists"],
+    industryFocus: [
+      { industry: "Healthcare & Medical Offices", description: "Highland's Route 9W corridor is home to a concentration of medical practices, dental offices, urgent care facilities, and specialty clinics that serve patients from both Ulster and Dutchess counties. New patient acquisition through EDDM postcards is one of the most proven direct mail strategies in healthcare — a single postcard campaign targeting Highland's residential routes consistently generates 10-20 new patient inquiries for practices in this corridor. Cornerstone designs HIPAA-aware marketing materials that highlight practice specialties, insurance acceptance, and convenient location." },
+      { industry: "Restaurants & Food Service", description: "The Route 9W corridor and the area near the Walkway Over the Hudson trailhead support a diverse restaurant scene — from fast-casual to farm-to-table dining. Restaurants use EDDM postcards to promote grand openings, seasonal menus, catering services, and loyalty programs. The Walkway attracts over 500,000 visitors annually, and restaurants within walking distance of the western trailhead see measurable lifts from timed postcard campaigns during peak walking season (April through October)." },
+      { industry: "Auto Dealerships & Service Centers", description: "Highland has one of the highest concentrations of auto dealerships in Ulster County along Route 9W. Dealerships use oversized direct mail postcards for new model launches, seasonal sales events, and service center promotions. Cornerstone prints these on heavy card stock with full-bleed vehicle photography and variable data personalization for targeted list-based campaigns." },
+      { industry: "Home Services", description: "The residential neighborhoods of Lloyd surrounding the Route 9W commercial corridor create consistent demand for HVAC, plumbing, electrical, landscaping, and general contracting services. Highland's established homeowner base responds well to seasonal EDDM campaigns — spring and fall are peak mailing seasons for home service providers targeting this market." }
+    ],
+    neighborhoods: [
+      { name: "Route 9W Commercial Corridor", description: "The spine of Highland's economy, Route 9W from the Mid-Hudson Bridge south to Milton is lined with shopping centers, medical offices, restaurants, auto dealers, and professional services. Businesses here draw customers from a 15-mile radius on both sides of the river. Direct mail campaigns for 9W businesses should target both Highland residential routes and Poughkeepsie routes across the bridge." },
+      { name: "Walkway Over the Hudson / Haviland Road Area", description: "The western approach to the Walkway Over the Hudson State Historic Park has transformed the Haviland Road area into a visitor destination. Restaurants, ice cream shops, and tourist-oriented businesses near the trailhead benefit from seasonal postcard campaigns timed to the April–October walking season. This area has distinct direct mail needs compared to the broader Route 9W corridor." },
+      { name: "Vineyard Avenue & South Highland", description: "The residential neighborhoods south of the bridge along Vineyard Avenue and the surrounding streets include established single-family homes with strong homeowner demographics. This is prime territory for home service EDDM — landscaping, pool maintenance, painting, and renovation contractors see high response rates from these routes." },
+      { name: "North Lloyd / Clintondale Border", description: "The northern reaches of Lloyd toward Clintondale are more rural and agricultural, with larger lot sizes and newer construction mixed with historic farmhouses. Carrier routes here have lower household density but reach a high-value homeowner audience for premium home services, solar installation, and property management." }
+    ],
+    seasonalTips: [
+      { season: "Spring (March–May)", strategy: "Healthcare practices launch new-patient campaigns as people schedule deferred appointments. Landscapers and pool companies target Highland's suburban homeowners. The Walkway opens for peak season — restaurants near the trailhead should mail promotional postcards by early April." },
+      { season: "Summer (June–August)", strategy: "Auto dealerships push summer sales events. HVAC companies promote AC installation and maintenance. Walkway foot traffic peaks — restaurants and ice cream shops within walking distance should maintain consistent postcard presence." },
+      { season: "Fall (September–November)", strategy: "Back-to-school healthcare campaigns (pediatric, dental, vision). Heating companies begin furnace tune-up mailings. Auto service centers promote winterization. Real estate agents increase frequency as fall buying activity picks up in the Lloyd market." },
+      { season: "Winter (December–February)", strategy: "Holiday dining promotions for Route 9W restaurants. Tax preparation and financial services. Home renovation planning campaigns — contractors targeting spring project bookings. Lower mail volume in January makes it an ideal time for new business introductions." }
+    ],
+    mailingProfile: {
+      carrierRoutes: 12,
+      avgHouseholdsPerRoute: 350,
+      recommendedFormat: "6x11 oversized postcard for maximum mailbox visibility along the competitive Route 9W corridor",
+      estimatedCostFullSaturation: "$1,500–$1,900 for full Highland/Lloyd EDDM coverage including design, printing, and postage"
+    },
+    whyCornerstone: "Cornerstone is just 10 minutes from Highland — the closest full-service direct mail facility to the Route 9W corridor. We service Highland businesses with same-day proof reviews (you can stop by our South Ohioville Road facility in New Paltz), press checks on your print run, and direct mail entry through the local postal system. For Highland's healthcare practices and auto dealerships that run recurring monthly mailings, our proximity means faster turnaround and easier coordination than any competitor in the region.",
+    localSuccessStory: "A Highland dental practice on Route 9W used monthly EDDM postcards to the 12528 ZIP to add 180+ new patients over 12 months. The campaign targeted 4,200 households per month with a rotating offer (new patient special, teeth whitening, family discount) on an oversized 6x11 postcard. At roughly $1,600/month all-in, the cost per new patient acquisition was under $110 — a fraction of the lifetime value of a dental patient.",
     uniqueFAQs: [
       {
         question: "Can I reach both Highland and Poughkeepsie customers with one campaign?",
@@ -466,6 +555,14 @@ export const townUniqueContent: Record<string, {
       {
         question: "What types of Highland businesses get the best results from direct mail?",
         answer: "Healthcare offices along Route 9W see strong new-patient acquisition from EDDM postcards. Restaurants and retail shops near the Walkway Over the Hudson trailhead use seasonal postcards to capture foot traffic. Auto dealers and home service providers target the residential neighborhoods in Lloyd with oversized postcards and coupon mailers. The commercial density of Highland supports nearly every direct mail format."
+      },
+      {
+        question: "How does Highland's bridge traffic affect direct mail strategy?",
+        answer: "The Mid-Hudson Bridge means Highland businesses draw customers from Dutchess County — but EDDM only covers the 12528 ZIP on the Ulster side. To reach cross-river customers, Cornerstone builds targeted mailing lists for Poughkeepsie-area ZIP codes filtered by demographics matching your customer profile. We can run both the EDDM and targeted list campaigns simultaneously for complete market coverage."
+      },
+      {
+        question: "What is the Walkway Over the Hudson's impact on Highland direct mail?",
+        answer: "The Walkway draws 500,000+ visitors annually, most arriving from April through October. Restaurants, cafes, and shops within walking distance of the western trailhead on Haviland Road see measurable sales lifts from EDDM postcards mailed to residential routes in the 12528 ZIP during peak walking months. Cornerstone also prints rack cards and promotional flyers distributed at the Walkway visitor center."
       }
     ]
   },
@@ -473,13 +570,39 @@ export const townUniqueContent: Record<string, {
   "rosendale": {
     metaTitle: "Direct Mail & Printing Services in Rosendale, NY | Cornerstone Services",
     metaDescription: "Direct mail, EDDM, and printing for Rosendale businesses and arts organizations. Reach this creative Hudson Valley community — just 5 minutes from our New Paltz facility.",
-    h1: "Direct Mail & Printing for Rosendale, NY Businesses",
+    h1: "Direct Mail & Printing for Rosendale, NY Businesses & Organizations",
     uniqueIntro: "Rosendale is a small but culturally vibrant community along the Rondout Creek, known for its historic cement mines, thriving arts scene, and community-driven events like the Rosendale Street Festival and International Pickle Festival. For a town of its size, Rosendale punches well above its weight in community engagement — and direct mail is one of the most effective ways to reach this involved, responsive audience.",
     localContext: "Rosendale's economy blends arts and culture (the Rosendale Theatre Collective, Women's Studio Workshop, galleries, and studios), tourism drawn by the Wallkill Valley Rail Trail and historic cement caves, and a strong base of independent professionals and artisans who work from home. The town attracts a demographic that values locally made, locally sourced, and community-connected — making direct mail from a local print shop especially well-received. The Rosendale Recreation Center and local civic organizations are active mailers for community events, youth programs, and seasonal activities.",
-    eddmInsight: "Rosendale's compact geography makes EDDM exceptionally cost-effective. The primary carrier routes follow Main Street, Route 32, and the Rondout Creek corridor. A single EDDM campaign can saturate the entire Rosendale community for under $1,500 — reaching every household in the hamlet and surrounding area. For community events like the Street Festival, EDDM postcards are the primary outreach vehicle.",
+    eddmInsight: "Rosendale's compact geography makes EDDM exceptionally cost-effective. The primary carrier routes follow Main Street, Route 32, and the Rondout Creek corridor. A single EDDM campaign can saturate the entire Rosendale community for under $1,000 — reaching every household in the hamlet and surrounding area. For community events like the Street Festival, EDDM postcards are the primary outreach vehicle.",
     populationNote: "The Town of Rosendale has roughly 6,000 residents and an estimated 2,400 households. The compact, walkable hamlet center and the surrounding rural-residential areas create a tight community where direct mail has high visibility and engagement.",
     nearbyLandmark: "Nestled along the Rondout Creek just 5 minutes from our New Paltz facility, home to the Rosendale Theatre, historic cement mines, and the Wallkill Valley Rail Trail.",
     relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/graphic-design", "/services/non-profit-mailing"],
+    industryFocus: [
+      { industry: "Arts Organizations & Nonprofits", description: "Rosendale is home to a dense concentration of arts nonprofits for its size — the Rosendale Theatre Collective, Women's Studio Workshop, and multiple galleries and artist cooperatives. These organizations rely on direct mail for fundraising appeals, event invitations, membership renewals, and season announcements. Cornerstone provides nonprofit mailing rates through USPS authorization, saving Rosendale arts organizations 30-40% on postage compared to standard first-class mail." },
+      { industry: "Community Events & Festivals", description: "The Rosendale Street Festival, International Pickle Festival, and numerous smaller community events use direct mail as their primary outreach channel. EDDM postcards announcing festival dates, vendor applications, and volunteer calls reach every household in town. Cornerstone has printed festival materials for Rosendale events for over two decades — we know the community, the timing, and the formats that work." },
+      { industry: "Independent Artisans & Home-Based Businesses", description: "Rosendale has an unusually high concentration of independent artisans, craftspeople, and consultants working from home studios. These micro-businesses use targeted postcards and brochures to build awareness within the local community and attract customers from the broader Hudson Valley. Cornerstone offers small-run printing (as few as 250 pieces) that makes professional direct mail accessible to solo entrepreneurs." },
+      { industry: "Wellness & Holistic Health", description: "Yoga studios, massage therapists, acupuncturists, and holistic health practitioners are well-represented in Rosendale's business community. This demographic responds to thoughtfully designed postcards on premium card stock — Cornerstone prints on 14pt and 16pt stock with soft-touch and UV coating options that match the quality-conscious sensibility of Rosendale's wellness community." }
+    ],
+    neighborhoods: [
+      { name: "Rosendale Hamlet (Main Street)", description: "The walkable center of Rosendale along Main Street is where the Theatre, restaurants, galleries, and community businesses cluster. This is the densest carrier route in the Rosendale postal area — EDDM campaigns here reach the most engaged, community-oriented households at the lowest cost per piece." },
+      { name: "Route 32 Corridor (North & South)", description: "Route 32 runs through Rosendale connecting Kingston to the north and New Paltz to the south. The residential properties along this corridor are a mix of historic homes, converted farm buildings, and newer construction. Home service providers and contractors find strong demand in this area, particularly for older home maintenance and renovation." },
+      { name: "Binnewater & Creek Road Areas", description: "The residential areas along Binnewater Road and the Rondout Creek valley are more rural and spread out. These neighborhoods include artists' studios, small farms, and homes on larger lots. Carrier routes covering this area have lower household density but reach a higher-income demographic responsive to premium home services and cultural event invitations." },
+      { name: "Tillson Border Area", description: "The eastern edge of Rosendale borders Tillson and the Route 213 corridor. This transitional area includes a mix of residential and light commercial properties. Businesses targeting the broader Rosendale-Tillson market should include carrier routes from both communities for comprehensive coverage." }
+    ],
+    seasonalTips: [
+      { season: "Spring (March–May)", strategy: "Arts organizations launch season announcements and membership drives. Home service providers (landscaping, painting, deck repair) target Rosendale's older homes. The Wallkill Valley Rail Trail reopens for heavy use — wellness businesses and restaurants near the trail should time campaigns to April trail traffic." },
+      { season: "Summer (June–August)", strategy: "Rosendale Street Festival promotion is the biggest direct mail event of the year — postcards should drop 3-4 weeks before the festival date. Gallery openings and outdoor events drive postcard volume. EDDM is the primary channel for festival awareness in the local community." },
+      { season: "Fall (September–November)", strategy: "International Pickle Festival promotion follows the same pattern as the Street Festival. Fall fundraising appeals for nonprofits — Cornerstone processes multiple Rosendale nonprofit mailings between September and November. Heating companies begin seasonal service campaigns." },
+      { season: "Winter (December–February)", strategy: "Year-end nonprofit fundraising appeals and tax-deductible donation reminders. Rosendale Theatre winter season promotions. Planning season for businesses setting spring campaign schedules — Cornerstone offers pre-booking discounts for Q1 mailings contracted in December." }
+    ],
+    mailingProfile: {
+      carrierRoutes: 6,
+      avgHouseholdsPerRoute: 400,
+      recommendedFormat: "6x9 postcard on 14pt or 16pt card stock — matches Rosendale's quality-conscious community aesthetic",
+      estimatedCostFullSaturation: "$800–$1,000 for full Rosendale EDDM coverage including design, printing, and postage"
+    },
+    whyCornerstone: "Cornerstone is literally 5 minutes from Rosendale — we're the closest print shop to Main Street. We've been printing for Rosendale businesses and organizations since our founding in 1998. We know the community, the events calendar, the nonprofits, and the seasonal rhythms that drive direct mail timing. For Rosendale's arts organizations, we process USPS nonprofit mail authorization and handle the postal paperwork that reduces postage costs by up to 40%.",
+    localSuccessStory: "The Rosendale Theatre Collective uses Cornerstone for their annual season announcement mailing — a 4x6 postcard to their 1,800-person membership and donor list plus an EDDM saturation drop to all 2,400 Rosendale households. The combined campaign costs under $1,500 and consistently drives season subscription renewals and new memberships. The Theatre has used this same Cornerstone-produced campaign format for over 10 years.",
     uniqueFAQs: [
       {
         question: "Can Cornerstone help with mailings for Rosendale community events and festivals?",
@@ -487,13 +610,21 @@ export const townUniqueContent: Record<string, {
       },
       {
         question: "Is EDDM practical for a small town like Rosendale?",
-        answer: "Rosendale is actually an ideal EDDM market. The compact geography means a single campaign reaches the entire community at minimal cost. For local businesses and organizations that want complete town coverage — every household, every mailbox — EDDM at $0.223 per piece postage is the most affordable option available."
+        answer: "Rosendale is actually an ideal EDDM market. The compact geography means a single campaign reaches the entire community at minimal cost — under $1,000 for full-town saturation including design, printing, and postage. For local businesses and organizations that want complete town coverage — every household, every mailbox — EDDM at $0.223 per piece postage is the most affordable option available."
+      },
+      {
+        question: "Do you handle nonprofit mailing rates for Rosendale organizations?",
+        answer: "Yes. Cornerstone processes USPS nonprofit mail authorization for qualified 501(c)(3) organizations. This reduces postage from $0.223 per piece (EDDM rate) to as low as $0.139 per piece for nonprofit standard mail. We handle all the postal paperwork — PS Form 3624 authorization, mail piece design compliance, and tray preparation. Several Rosendale arts organizations already use this service through Cornerstone."
+      },
+      {
+        question: "Can I do a small-run mailing for my Rosendale home business?",
+        answer: "Yes. Cornerstone prints as few as 250 postcards or letters — ideal for Rosendale's many artisans, consultants, and home-based businesses that need professional direct mail without a large budget. A 500-piece postcard mailing to selected Rosendale carrier routes costs roughly $350 all-in. We also print business cards, brochures, and rack cards for local distribution."
       }
     ]
   },
 
   "rochester": {
-    metaTitle: "Direct Mail & Printing Services in Rochester, NY (Ulster County) | Cornerstone Services",
+    metaTitle: "Direct Mail & Printing Services in Rochester & Accord, NY | Cornerstone Services",
     metaDescription: "Direct mail, EDDM, and printing for Rochester and Accord, NY businesses — reaching the Rondout Valley's growing community of residents, artists, and outdoor enthusiasts from our New Paltz facility.",
     h1: "Direct Mail & Printing for Rochester & Accord, NY Businesses",
     uniqueIntro: "The Town of Rochester encompasses the hamlet of Accord and the surrounding Rondout Creek corridor between New Paltz and Ellenville, an area that has seen significant growth from artists, remote workers, and outdoor enthusiasts drawn by affordable rural living and Catskill Mountain access. Direct mail reaches this spread-out community where digital advertising has limited penetration — many Rochester households have unreliable internet service, making physical mail the most dependable marketing channel.",
@@ -502,6 +633,32 @@ export const townUniqueContent: Record<string, {
     populationNote: "The Town of Rochester has roughly 7,100 residents and an estimated 2,800 households spread across a large geographic area. The population is predominantly homeowners in single-family residences on larger rural lots — a prime audience for home services, landscaping, and property maintenance direct mail.",
     nearbyLandmark: "Situated along the Rondout Creek corridor between New Paltz and Ellenville, with the hamlet of Accord as its commercial center and the Catskill Mountains as its western backdrop.",
     relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/mailing-lists", "/services/printing"],
+    industryFocus: [
+      { industry: "Home Services & Rural Property Maintenance", description: "Rochester's rural residential landscape — larger lots, older homes, well water systems, septic tanks, wood-burning heat — creates consistent demand for specialized contractors. Well drillers, septic service companies, firewood suppliers, chimney sweeps, and general contractors are among the most active direct mail users in the Rochester market. EDDM postcards are particularly effective here because many Rochester homeowners are not reachable through digital channels — spotty broadband makes physical mail the most reliable way to reach this audience." },
+      { industry: "Vacation Rentals & Short-Term Lodging", description: "Rochester and Accord have become hotspots for Airbnb, VRBO, and independent vacation rentals, driven by proximity to Minnewaska State Park and the Catskills. Vacation rental operators use direct mail in two ways: targeted list mailings to NYC metro ZIP codes promoting weekend getaway bookings, and local EDDM campaigns offering property management, cleaning, and maintenance services to other rental operators in the area." },
+      { industry: "Agriculture & Farm Operations", description: "Rochester's agricultural base includes small farms, CSA operations, maple syrup producers, and specialty food businesses. These operations use direct mail to build CSA membership lists, promote farm stand openings, and drive sales of seasonal products (maple syrup, honey, holiday gift packages). Cornerstone designs agricultural marketing materials that reflect the authentic, handcrafted quality these businesses represent." },
+      { industry: "Arts, Crafts & Creative Businesses", description: "Rochester's growing population of artists, woodworkers, potters, and craft producers use direct mail to announce studio tours, gallery shows, and holiday sales. The town's creative community is tight-knit and responsive to beautifully designed printed materials. Cornerstone prints on premium card stock with specialty finishes that showcase the quality of handmade and artisan products." }
+    ],
+    neighborhoods: [
+      { name: "Accord Hamlet", description: "The commercial and social center of Rochester, Accord includes the restaurants, general store, and community gathering spaces that define daily life in the town. Carrier routes covering Accord hamlet have the highest household density in Rochester and are the most cost-effective EDDM targets. Businesses serving the immediate Accord community should start their campaigns with these routes." },
+      { name: "Routes 209 & 213 Corridor", description: "The main road corridors running through Rochester carry most of the through-traffic and include a mix of residential properties, small farms, and home-based businesses. These routes connect Rochester to New Paltz (south via 213) and Ellenville (north via 209). Service businesses with a broader geographic footprint should target these corridors for maximum visibility." },
+      { name: "Mettacahonts & Kyserike Areas", description: "The more remote western and northern sections of Rochester include scattered rural homesteads, vacation properties, and agricultural land approaching the Catskill foothills. Carrier routes here have the lowest household density but reach homeowners with the greatest need for rural services — well drilling, septic maintenance, firewood delivery, and snow plowing." },
+      { name: "Granite Road & Lower Cherrytown", description: "The areas south of Accord toward the Rosendale border include newer residential construction and established homesteads along quieter secondary roads. These neighborhoods attract families drawn by lower land costs and Rondout Valley school district access. Home service EDDM campaigns targeting these routes complement broader Accord-centered campaigns." }
+    ],
+    seasonalTips: [
+      { season: "Spring (March–May)", strategy: "Contractors and home service providers should mail by early March — Rochester's building season starts as soon as frost breaks. Septic pump-out reminders and well water testing promotions are spring staples. Vacation rental cleaning and preparation services target the pre-season window." },
+      { season: "Summer (June–August)", strategy: "Peak vacation rental season — property management and cleaning services stay busy. Landscaping and property maintenance companies maintain EDDM frequency. Farm stands and CSA operations promote mid-season availability. This is Rochester's highest-traffic period for tourism-related businesses." },
+      { season: "Fall (September–November)", strategy: "Firewood suppliers should mail by mid-September — Rochester residents begin stocking for winter early. Heating system maintenance and chimney sweep campaigns. Fall foliage tourism drives short-term rental bookings — rental operators should mail to metro-area lists by early September." },
+      { season: "Winter (December–February)", strategy: "Snow plowing contracts should be promoted by November at the latest. Winter emergency preparedness services (generator installation, pipe insulation). Holiday gift promotions for farm products and artisan goods. Planning season for spring construction projects — contractors mailing in February capture early bookings." }
+    ],
+    mailingProfile: {
+      carrierRoutes: 7,
+      avgHouseholdsPerRoute: 400,
+      recommendedFormat: "6x9 postcard on heavy 14pt stock — durable enough for rural mailbox conditions (weather exposure, longer delivery routes)",
+      estimatedCostFullSaturation: "$950–$1,200 for full Rochester/Accord EDDM coverage including design, printing, and postage"
+    },
+    whyCornerstone: "Cornerstone's New Paltz facility is just 20 minutes from Accord via Route 213 — we're the closest full-service direct mail provider to Rochester. For a rural community where many businesses lack high-speed internet for managing online print orders, our in-person service model is especially valuable. You can drop off artwork, review printed proofs, and pick up short-run jobs without shipping delays. We enter Rochester-bound EDDM mailings through the local postal system, ensuring your pieces reach rural carrier routes without the transit delays that plague mailings shipped from distant facilities.",
+    localSuccessStory: "A Rochester-based septic service company used bi-annual EDDM postcards (spring and fall) to every household in the 12446 ZIP to build a client base of over 200 regular maintenance accounts. The spring mailing promotes pump-out and inspection services; the fall mailing promotes winterization. Each 2,800-piece drop costs under $1,000 all-in and generates 30-40 service calls — a cost-per-lead of roughly $25 for a service averaging $350+ per visit.",
     uniqueFAQs: [
       {
         question: "Does direct mail work in a rural area like Rochester?",
@@ -510,6 +667,14 @@ export const townUniqueContent: Record<string, {
       {
         question: "Can I target vacation rental owners and Airbnb hosts in Rochester?",
         answer: "Yes. We can build targeted mailing lists filtered by property type and ownership characteristics to reach vacation rental operators in the Rochester and Accord area. For broader outreach, EDDM campaigns reach every address on selected carrier routes — including vacation rental properties and second homes."
+      },
+      {
+        question: "How do I reach Rochester residents who don't have reliable internet?",
+        answer: "That's exactly where direct mail excels. EDDM delivers to every physical address on a carrier route regardless of whether the household has internet, email, or social media. For Rochester's rural homeowners who are largely offline, a well-designed postcard is the single most reliable way to put your business in front of them. No other marketing channel guarantees this kind of reach in underserved broadband areas."
+      },
+      {
+        question: "What's the turnaround time for a Rochester EDDM mailing?",
+        answer: "Standard turnaround is 5-7 business days from approved proof to mail entry. Rochester mailings enter the postal system through our New Paltz post office — 20 minutes from Accord — and typically reach Rochester mailboxes within 2-3 business days after entry. Total time from proof approval to delivery is usually under 10 business days."
       }
     ]
   },
@@ -521,13 +686,39 @@ export const townUniqueContent: Record<string, {
   "millerton": {
     metaTitle: "Direct Mail & Printing Services in Millerton, NY | Cornerstone Services",
     metaDescription: "Direct mail, EDDM, and printing for Millerton and North East, NY — reach the village's year-round residents, weekenders, and farm-to-table businesses. Postcards, brochures, and targeted mailing lists.",
-    h1: "Direct Mail & Printing for Millerton, NY Businesses",
+    h1: "Direct Mail & Printing for Millerton & North East, NY Businesses",
     uniqueIntro: "Millerton is the walkable village center of the Town of North East, tucked into Dutchess County's northeastern corner near the Connecticut and Massachusetts borders. Once a quiet railroad town, Millerton has evolved into a destination for independent shops, farm-to-table restaurants, and cultural venues like The Moviehouse and Oblong Books — attracting a loyal base of weekenders and second-home owners from New York City alongside its established year-round community.",
     localContext: "Millerton's economy operates on two distinct cycles: the year-round local economy (hardware stores, auto services, healthcare, school-related businesses) and the weekend/seasonal economy driven by NYC visitors (restaurants, antique shops, galleries, farm stands, bed-and-breakfasts). The Harlem Valley Rail Trail brings recreational visitors through town. This dual market means direct mail campaigns in Millerton can serve two audiences: EDDM to the local 12546 ZIP for home services and community announcements, and targeted list-based mailings to metro-area ZIP codes for tourism promotion and event invitations.",
     eddmInsight: "Millerton's 12546 ZIP covers the village and the surrounding Town of North East. Household density is lower than river valley towns, but EDDM's flat-rate postage makes total market coverage practical. A full-town saturation campaign reaches every household — year-round residents and seasonal homeowners alike — for a modest investment. For businesses targeting the weekender market specifically, a mailing list filtered to second-home ownership is more precise than EDDM.",
     populationNote: "The Town of North East (including Millerton) has roughly 3,000 residents and an estimated 1,400 households. The population effectively doubles on weekends during peak seasons as second-home owners arrive from the city — a unique dynamic that shapes direct mail strategy.",
     nearbyLandmark: "Located along Route 22 near the Connecticut border, home to Oblong Books & Music, The Moviehouse, and the Harlem Valley Rail Trail.",
     relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/mailing-lists", "/services/graphic-design"],
+    industryFocus: [
+      { industry: "Restaurants & Farm-to-Table Dining", description: "Millerton's restaurant scene punches far above its weight for a village of 900 people. Farm-to-table restaurants, cafés, and bakeries depend on both local patronage and the weekend visitor economy. Direct mail for Millerton restaurants works on two levels: EDDM postcards to the 12546 ZIP promote weeknight specials and catering to year-round residents, while targeted list mailings to NYC metro ZIP codes promote weekend dining experiences and special event dinners to the second-home audience." },
+      { industry: "Independent Retail & Bookstores", description: "Oblong Books & Music is Millerton's anchor retailer and a Hudson Valley institution. Independent shops along Main Street — antiques, home goods, clothing, artisan products — rely on the weekend visitor economy and a loyal local base. Seasonal postcards promoting holiday shopping, author events, trunk shows, and new arrivals drive foot traffic from both audiences. Cornerstone prints these on premium stock that reflects the curated aesthetic of Millerton's retail environment." },
+      { industry: "Real Estate & Second-Home Market", description: "Millerton's real estate market is driven by NYC buyers seeking weekend homes and eventual retirement properties in the tri-state border area. Agents working this market use just-listed postcards, market update newsletters, and lifestyle-focused mailers that position Millerton properties alongside Berkshire County and Litchfield County competitors. Cornerstone produces these on heavy card stock with full-bleed photography showcasing the area's pastoral character." },
+      { industry: "Bed-and-Breakfasts & Hospitality", description: "Millerton's B&Bs, inns, and vacation rentals serve the weekend visitor market year-round. Direct mail to NYC metro ZIP codes — particularly Manhattan, Brooklyn, and Westchester — promotes seasonal packages (fall foliage weekends, holiday getaways, summer rail trail trips). Cornerstone builds these targeted mailing lists and produces the oversized postcards that generate bookings." }
+    ],
+    neighborhoods: [
+      { name: "Millerton Village Center (Main Street)", description: "The walkable village core along Main Street is where Millerton's restaurants, shops, cultural venues, and community businesses concentrate. This is the commercial heart of the community and the primary destination for weekend visitors. Businesses here benefit from EDDM targeting the village carrier routes and from targeted mailings to the NYC metro second-home owner database." },
+      { name: "Route 22 Corridor (North & South)", description: "Route 22 runs through the heart of the Harlem Valley, connecting Millerton to Amenia to the south and the Connecticut border to the north. Auto services, agricultural supply, and convenience businesses along this corridor serve the broader rural community. EDDM campaigns on Route 22 routes reach a wider geographic audience than the village-only routes." },
+      { name: "Harlem Valley Rail Trail Zone", description: "The Rail Trail corridor through Millerton brings cyclists, walkers, and outdoor enthusiasts through town, especially from April through October. Businesses near trail access points — restaurants, bike shops, ice cream shops — see measurable seasonal traffic. Promotional postcards and rack cards distributed at trail access points complement EDDM campaigns timed to trail season." },
+      { name: "North East Outlying Areas (Indian Lake, Boston Corners)", description: "The rural sections of the Town of North East beyond the village include agricultural land, equestrian properties, and scattered residential homesteads. These areas have very low household density but include high-value properties and second homes. Targeted mailing lists filtered by property value and ownership type reach this audience more efficiently than EDDM." }
+    ],
+    seasonalTips: [
+      { season: "Spring (March–May)", strategy: "Restaurants promote outdoor seating openings and seasonal menus to both local EDDM routes and NYC metro mailing lists. The Harlem Valley Rail Trail opens for peak use — bike shops and trail-adjacent businesses should mail by early April. Real estate agents launch spring listing campaigns to metro-area buyer lists." },
+      { season: "Summer (June–August)", strategy: "Peak weekend visitor season. Restaurants, shops, and B&Bs should maintain consistent EDDM presence in the 12546 ZIP plus targeted mailings to NYC second-home owner lists. Farm stands promote seasonal availability. Gallery openings and outdoor cultural events drive postcard volume." },
+      { season: "Fall (September–November)", strategy: "Fall foliage is Millerton's second-biggest tourism draw after summer weekends. B&Bs and restaurants should mail to metro-area lists by mid-September. Apple orchards and farm stands promote fall festivals. Holiday shopping campaigns for Millerton's independent retailers begin in November." },
+      { season: "Winter (December–February)", strategy: "Holiday shopping promotions for Oblong Books and Main Street retailers — gift guide postcards to local and metro-area lists. Year-end tax planning for real estate (second-home purchase timing). January is planning season — Cornerstone offers pre-booking discounts for businesses committing to annual direct mail programs." }
+    ],
+    mailingProfile: {
+      carrierRoutes: 4,
+      avgHouseholdsPerRoute: 350,
+      recommendedFormat: "6x9 postcard on 16pt card stock with soft-touch coating — matches the premium aesthetic of Millerton's village character",
+      estimatedCostFullSaturation: "$450–$600 for full Millerton/North East EDDM coverage including design, printing, and postage"
+    },
+    whyCornerstone: "Cornerstone serves the full eastern Dutchess County corridor from our New Paltz facility — roughly 45 minutes from Millerton via Route 44. While we're not around the corner, we're the only full-service direct mail provider in the region that offers the complete package: graphic design, high-quality commercial printing, USPS-compliant mail preparation, targeted mailing list acquisition, and postal entry — all under one roof. Millerton businesses that have tried online print services know the difference: Cornerstone provides proofs you can review in person, prints on premium stock, and enters your mail through the local USPS system for fastest delivery to the 12546 ZIP.",
+    localSuccessStory: "A Millerton restaurant used a dual-channel direct mail strategy through Cornerstone: monthly EDDM postcards to 1,400 local households promoting weeknight specials ($0.40/household all-in), plus quarterly targeted postcards to 3,000 second-home owners in NYC metro ZIP codes promoting weekend dining and private event availability. The local EDDM campaign filled weeknight tables that were previously slow; the targeted metro-area campaign generated a measurable increase in weekend reservation volume, particularly for special event dinners.",
     uniqueFAQs: [
       {
         question: "How can Millerton businesses reach weekenders and second-home owners?",
@@ -535,7 +726,15 @@ export const townUniqueContent: Record<string, {
       },
       {
         question: "Is Millerton too small for cost-effective direct mail?",
-        answer: "Millerton's small population is actually an advantage for direct mail economics. An EDDM campaign covering the entire town costs roughly $300-$400 in postage — meaning total market saturation is affordable even for the smallest local business. For a restaurant, shop, or service provider that serves the entire community, there is no cheaper way to reach every household."
+        answer: "Millerton's small population is actually an advantage for direct mail economics. An EDDM campaign covering the entire town costs roughly $450-$600 all-in including design, printing, and postage — meaning total market saturation is affordable even for the smallest local business. For a restaurant, shop, or service provider that serves the entire community, there is no cheaper way to reach every household."
+      },
+      {
+        question: "Can I reach the Connecticut and Massachusetts border communities from a Millerton mailing?",
+        answer: "EDDM is limited to the 12546 ZIP on the New York side. To reach households in Lakeville, Salisbury (CT), or Sheffield (MA), Cornerstone builds targeted mailing lists covering those ZIP codes. We can run a combined campaign — EDDM in Millerton plus targeted list-based mail across the state border — as a single project with unified design and coordinated drop dates."
+      },
+      {
+        question: "What direct mail format works best for Millerton's upscale market?",
+        answer: "Millerton's audience — both year-round residents and NYC weekenders — responds to quality. We recommend 6x9 postcards on 16pt card stock with soft-touch or UV spot coating, printed with full-bleed photography that showcases the area's character. For restaurants and hospitality businesses, oversized 6x11 postcards with a seasonal food or landscape image on the front generate the strongest response rates in this market."
       }
     ]
   },
@@ -547,13 +746,39 @@ export const townUniqueContent: Record<string, {
   "wawayanda": {
     metaTitle: "Direct Mail & Printing Services in Wawayanda, NY | Cornerstone Services",
     metaDescription: "Direct mail, EDDM, and printing for Wawayanda businesses and home service providers. Reach this growing Orange County community's new and established homeowners with targeted campaigns.",
-    h1: "Direct Mail & Printing for Wawayanda, NY Businesses",
+    h1: "Direct Mail & Printing for Wawayanda, NY Home Service Businesses",
     uniqueIntro: "Wawayanda is a growing residential town west of Middletown in Orange County, where new housing developments and established neighborhoods create steady demand for home services, landscaping, and local businesses. Named for the scenic Wawayanda Creek, this community has expanded significantly in recent years as families relocate from more expensive markets — making it one of the most dynamic direct mail markets in western Orange County.",
     localContext: "Wawayanda's growth is driven by residential development — new subdivisions attracting families from Rockland County, northern New Jersey, and the NYC metro area. These new residents are actively searching for local service providers: landscapers, contractors, dentists, pediatricians, auto mechanics, and restaurants. They have no established loyalty to existing businesses, making them exceptionally responsive to direct mail introductions. The Minisink Valley Central School District serves as the community anchor. Established homeowners in Wawayanda's older neighborhoods along Route 284 and Ridgebury Road represent a stable, high-value audience for home improvement and maintenance services.",
     eddmInsight: "Wawayanda's carrier routes split between the newer residential developments (higher household density, younger families, strong response to home service offers) and the more rural agricultural areas along the town's western edge (lower density, established homeowners). For maximum ROI, EDDM campaigns should prioritize the routes covering new development areas where move-in rates are highest. Cornerstone can help you map routes by development age and household density.",
     populationNote: "Wawayanda has roughly 7,500 residents and an estimated 2,600 households. The population has grown significantly over the past decade due to new residential construction, meaning a higher-than-average percentage of households are recent movers — the most responsive audience for direct mail.",
     nearbyLandmark: "Located west of Middletown along Route 284 and the Wawayanda Creek, adjacent to Middletown and the Minisink Valley school district.",
     relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/mailing-lists", "/services/printing"],
+    industryFocus: [
+      { industry: "Landscaping & Lawn Care", description: "New development communities in Wawayanda have bare-lot yards that need full landscaping — sod, plantings, hardscaping, irrigation systems. Established neighborhoods need ongoing maintenance. Landscapers are among the highest-volume EDDM users in Wawayanda because every new homeowner is a potential customer with immediate needs. Cornerstone recommends quarterly EDDM postcards timed to seasonal demand: spring cleanup (March), midsummer maintenance (June), fall leaf removal (September), and snow plowing contracts (November)." },
+      { industry: "HVAC, Plumbing & Electrical", description: "New construction homes in Wawayanda come with builder-grade HVAC systems that need maintenance within 2-3 years. Established homes along Route 284 have aging systems requiring replacement. HVAC companies use EDDM postcards to promote seasonal tune-ups, emergency service availability, and equipment upgrade financing. Plumbing and electrical contractors target both new and established neighborhoods with service introduction postcards." },
+      { industry: "Dental, Pediatric & Family Healthcare", description: "Wawayanda's growing family population creates consistent demand for pediatricians, family dentists, and orthodontists. Healthcare practices targeting new residents use EDDM postcards with new-patient welcome offers. The Minisink Valley school district enrollment provides a natural targeting framework — Cornerstone can build mailing lists filtered by households with school-age children in Wawayanda ZIP codes." },
+      { industry: "Restaurants & Food Delivery", description: "As Wawayanda's population grows, so does demand for dining options. Restaurants in the Middletown-Wawayanda corridor use EDDM postcards to introduce themselves to new neighborhoods, promote delivery zones, and advertise catering for family events. Menu mailer postcards with coupon offers generate strong first-visit response rates from new residents who haven't established dining habits yet." }
+    ],
+    neighborhoods: [
+      { name: "New Development Communities (Route 284 East)", description: "The newest residential subdivisions in Wawayanda are concentrated along the Route 284 corridor east of Ridgebury Road. These developments have the highest household density, the youngest family demographics, and the highest new-mover rates in the town. EDDM campaigns targeting these carrier routes consistently generate the strongest response rates for home service businesses — new homeowners are actively seeking contractors, landscapers, and service providers." },
+      { name: "Ridgebury Road & Western Wawayanda", description: "The older residential areas along Ridgebury Road and the western sections of town include established single-family homes on larger lots with mature landscaping. Homeowners here are more likely to need renovation, replacement, and upgrade services (roof replacement, kitchen remodel, HVAC upgrade) than the basic installation services demanded by new construction neighborhoods. Direct mail messaging should emphasize quality and experience over introductory pricing." },
+      { name: "Route 284 Corridor (Commercial)", description: "Route 284 is Wawayanda's primary commercial corridor, connecting the town to Middletown. Businesses along this corridor serve both Wawayanda and Middletown traffic. For restaurants, auto services, and retail businesses on Route 284, EDDM campaigns should include both Wawayanda and adjacent Middletown carrier routes to capture the full commuter audience." },
+      { name: "Minisink Valley School District Zone", description: "The Minisink Valley Central School District encompasses Wawayanda and portions of neighboring towns. For family-oriented businesses (pediatrics, tutoring, youth sports, family entertainment), targeting the MVCSD zone through a combination of EDDM in Wawayanda and targeted mailing lists in adjacent communities provides the most comprehensive coverage of households with school-age children." }
+    ],
+    seasonalTips: [
+      { season: "Spring (March–May)", strategy: "The most competitive EDDM season in Wawayanda. Landscapers, deck builders, painters, and contractors flood mailboxes in March and April. To stand out, Cornerstone recommends oversized 6x11 postcards with bold design and a clear, specific offer — not generic 'call for estimate' messaging. Pediatric and dental practices launch back-to-school scheduling campaigns." },
+      { season: "Summer (June–August)", strategy: "Pool installation and maintenance companies target Wawayanda's newer developments. HVAC companies promote AC service and upgrade financing. Restaurants promote summer catering for backyard parties — a strong market in family-oriented developments. Real estate agents increase frequency as the summer buying season peaks." },
+      { season: "Fall (September–November)", strategy: "Heating companies begin furnace tune-up and replacement campaigns — critical timing for Wawayanda's newer homes approaching their first system maintenance cycle. Landscapers promote fall cleanup and snow contract signups. Back-to-school campaigns for tutoring services and extracurricular activities target Minisink Valley families." },
+      { season: "Winter (December–February)", strategy: "Snow plowing and winter property maintenance campaigns. Home renovation planning — contractors promoting spring project bookings see strong response from Wawayanda homeowners planning during the quiet winter months. Tax preparation services target the community's mix of new homeowners and established families. January's low mail volume makes it ideal for new business introductions." }
+    ],
+    mailingProfile: {
+      carrierRoutes: 7,
+      avgHouseholdsPerRoute: 370,
+      recommendedFormat: "6x11 oversized postcard — critical for standing out in Wawayanda's competitive home-service mailbox environment",
+      estimatedCostFullSaturation: "$900–$1,150 for full Wawayanda EDDM coverage including design, printing, and postage"
+    },
+    whyCornerstone: "Cornerstone serves Wawayanda from our New Paltz facility via I-87 — roughly 35 minutes door-to-door. We're the only full-service direct mail provider in the region that combines graphic design, commercial printing, mailing list acquisition, and postal entry under one roof. For Wawayanda's home service businesses running recurring monthly or quarterly EDDM campaigns, Cornerstone offers campaign management: we store your design template, update the offer and timing for each drop, and handle production and mailing automatically on your schedule.",
+    localSuccessStory: "A Wawayanda-area HVAC company used Cornerstone's campaign management program to run quarterly EDDM postcards to all 2,600 Wawayanda households for a full year. Each seasonal mailing promoted a timely service: spring AC tune-up, summer energy efficiency check, fall furnace inspection, winter emergency service. The annual program cost $4,200 total ($1,050/quarter) and generated 120+ service calls — a cost-per-lead of $35 for services averaging $250-$500 per visit. The company has renewed the program annually for three consecutive years.",
     uniqueFAQs: [
       {
         question: "How do I reach new homeowners moving into Wawayanda developments?",
@@ -562,6 +787,14 @@ export const townUniqueContent: Record<string, {
       {
         question: "Can Wawayanda businesses target both new and established residents?",
         answer: "Yes. EDDM covers every household on selected routes regardless of how long they've lived there. For segmented messaging — a welcome offer for new residents and a loyalty offer for established ones — Cornerstone can split your campaign into two lists with different creative, mailed simultaneously for maximum impact."
+      },
+      {
+        question: "How does Wawayanda's growth rate affect direct mail strategy?",
+        answer: "Wawayanda's above-average growth rate is a direct mail advantage. New residents are 3-5x more responsive to direct mail than established households because they're actively seeking new service providers. EDDM campaigns in Wawayanda's newer development routes consistently outperform the same campaigns in stable, established communities — making Wawayanda one of the highest-ROI EDDM markets in Orange County."
+      },
+      {
+        question: "Should I combine Wawayanda and Middletown in one EDDM campaign?",
+        answer: "It depends on your service area. If you serve both communities — which is common for home service providers, restaurants, and healthcare practices — combining Wawayanda and Middletown carrier routes into a single EDDM campaign is more cost-effective than running two separate drops. Cornerstone maps carrier routes across both communities and provides household counts per route so you can choose the exact coverage area that matches your business."
       }
     ]
   },
@@ -569,13 +802,41 @@ export const townUniqueContent: Record<string, {
   "warwick": {
     metaTitle: "Direct Mail & Printing Services in Warwick, NY | Cornerstone Services",
     metaDescription: "Direct mail, EDDM, and printing for Warwick businesses — wineries, orchards, farm markets, restaurants, and tourism businesses. Reach the Warwick Valley and tri-state visitors with targeted campaigns.",
-    h1: "Direct Mail & Printing for Warwick, NY Businesses",
+    h1: "Direct Mail & Printing for Warwick Valley, NY Businesses",
     uniqueIntro: "Warwick is one of Orange County's premier destination communities — a place where apple orchards, vineyards, creameries, and a charming village center draw hundreds of thousands of visitors annually from across the tri-state area. Direct mail is a cornerstone of marketing for Warwick Valley businesses because it reaches both the local residential community and the visitor database that fuels seasonal tourism revenue.",
     localContext: "Warwick's economy runs on two engines: year-round local commerce (restaurants, professional services, healthcare, retail along Main Street) and seasonal agriculture-tourism (Warwick Applefest, Warwick Valley Winery, Masker Orchards, Bellvale Farms Creamery, and dozens of farm operations). The annual Applefest alone draws over 30,000 visitors in a single weekend. Local businesses build customer mailing lists from event attendees, farm stand purchases, and wine club memberships — and use those lists for repeat direct mail campaigns promoting seasonal events, new products, and special offers. The village center's walkable Main Street supports independent retailers, galleries, and restaurants that compete with larger commercial centers in Middletown and Monroe through quality, character, and customer relationships reinforced by direct mail.",
     eddmInsight: "Warwick's 10990 ZIP covers the village center and surrounding Warwick Valley. EDDM campaigns targeting local carrier routes reach year-round residents — the core local customer base for restaurants, services, and retail. For tourism-driven businesses that need to reach beyond Warwick, targeted mailing lists to metro-area ZIP codes (northern New Jersey, Rockland County, NYC) are more effective than EDDM, which is limited to local routes.",
     populationNote: "The Town of Warwick has roughly 33,000 residents and an estimated 12,000 households across a large geographic area that includes the Village of Warwick, Warwick village center, and surrounding rural areas. This is one of the largest town populations in Orange County, supporting substantial EDDM campaign volume.",
     nearbyLandmark: "Located in southwestern Orange County along Route 17A, home to Warwick Applefest, Warwick Valley Winery, and one of the Hudson Valley's most photographed village centers.",
     relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/printing", "/services/graphic-design", "/services/mailing-lists"],
+    industryFocus: [
+      { industry: "Wineries, Cideries & Craft Beverage", description: "Warwick Valley Winery & Distillery anchors a growing craft beverage scene that includes cideries, craft breweries, and boutique producers throughout the valley. These businesses rely on direct mail for wine club promotions, tasting room event invitations, seasonal release announcements, and holiday gift package sales. Cornerstone designs and prints oversized postcards with full-color product photography and variable data personalization — each wine club member can receive a postcard with their name and purchase history-based recommendations." },
+      { industry: "Orchards, Farm Markets & Agritourism", description: "Masker Orchards, Applewood Orchards, and dozens of smaller farm operations make Warwick the apple capital of Orange County. Direct mail drives seasonal traffic: apple-picking announcements in August, cider donut promotions in September, Applefest pre-event mailings in October, and holiday farm gift packages in November. Cornerstone produces these seasonal campaigns on tight turnarounds — a Warwick orchard can approve a proof on Monday and have postcards in metro-area mailboxes by the following weekend." },
+      { industry: "Village Retail & Independent Shops", description: "Warwick's walkable Main Street supports boutiques, antique shops, galleries, home goods stores, and specialty retailers. These independent businesses compete with big-box retail not on price but on character, curation, and personal service — values that direct mail communicates effectively. Holiday shopping postcards, seasonal sale promotions, and new arrival announcements keep Warwick's retail community top-of-mind with both local residents and the tri-state visitor base." },
+      { industry: "Restaurants & Hospitality", description: "Warwick's restaurant scene ranges from casual pizza and diner fare to farm-to-table fine dining. Restaurants use EDDM postcards to promote weeknight specials to local residents and targeted list mailings to promote weekend dining to the northern New Jersey and Rockland County visitor audience. Bed-and-breakfasts and inns use seasonal postcards to drive fall foliage and holiday weekend bookings." },
+      { industry: "Real Estate", description: "Warwick's combination of village charm, agricultural landscape, and relative affordability compared to Westchester and Rockland counties makes it one of Orange County's most active real estate markets. Agents use just-listed and just-sold postcards to farm Warwick carrier routes, plus targeted mailings to metro-area ZIP codes reaching potential buyers considering a move to the valley. Cornerstone prints these on heavy card stock with full-bleed photography showcasing Warwick's pastoral character." }
+    ],
+    neighborhoods: [
+      { name: "Village of Warwick (Main Street)", description: "The walkable village center is the commercial and cultural heart of the Warwick Valley. Restaurants, shops, the Warwick Valley Farmers Market, and community events create a Main Street economy that thrives on foot traffic and local loyalty. EDDM campaigns targeting village carrier routes reach the most engaged, highest-frequency shoppers in the Warwick market. Businesses here should also consider targeted mailings to the broader town population and the metro-area visitor database." },
+      { name: "Route 17A / Kings Highway Corridor", description: "Route 17A connects Warwick to the broader Orange County road network and carries significant through-traffic. Businesses along this corridor — auto services, convenience stores, farm stands — serve both local residents and pass-through drivers. EDDM campaigns on 17A carrier routes complement village-center campaigns by reaching the more suburban and rural residential areas outside the walkable core." },
+      { name: "Warwick Valley Agricultural Zone", description: "The orchards, vineyards, and farm operations spread across the valley floor and surrounding hillsides are Warwick's economic identity. Agricultural tourism businesses in this zone need two direct mail strategies: local EDDM to remind valley residents of seasonal offerings, and targeted list-based mailings to metro-area ZIP codes driving the weekend visitor traffic that fuels revenue." },
+      { name: "Pine Island / Black Dirt Region", description: "The Pine Island area in northern Warwick encompasses the famous Black Dirt farming region — one of the most fertile agricultural zones in the northeastern United States. Onion farms, vegetable growers, and specialty produce operations here serve wholesale and retail markets. For businesses in the Pine Island area, EDDM campaigns should include both Warwick and adjacent Goshen carrier routes to reach the full local customer base." },
+      { name: "Bellvale & Western Warwick", description: "The western sections of the Town of Warwick, including the Bellvale area (home to Bellvale Farms Creamery), are more rural and spread out. Carrier routes here have lower household density but reach established homeowners with higher property values. Home service businesses targeting this area should use EDDM for broad coverage, supplemented by targeted mailing lists for premium service offerings." }
+    ],
+    seasonalTips: [
+      { season: "Spring (March–May)", strategy: "Wineries promote spring barrel tastings, new vintages, and outdoor seating openings. Farm markets announce seasonal opening dates. Home service providers (landscaping, pool opening, painting) target Warwick's homeowner base. Real estate agents launch spring listing campaigns to metro-area buyer lists. Restaurants promote outdoor dining and Mother's Day specials." },
+      { season: "Summer (June–August)", strategy: "Peak agritourism season begins. Farm stands and orchards promote U-pick operations and farm dinners. Restaurants drive weekend dining reservations with postcards to the metro-area visitor database. Real estate activity peaks — agents increase mailing frequency. The Warwick Valley Farmers Market drives Saturday foot traffic that benefits all Main Street businesses." },
+      { season: "Fall (September–November)", strategy: "Warwick's highest-ROI direct mail season. Applefest promotion begins 4-6 weeks before the event — both local EDDM and metro-area targeted mailings. Orchards promote apple-picking, cider, and pumpkin patches. Wineries push fall harvest events. Heating companies begin seasonal service campaigns. Holiday shopping promotions for Main Street retailers launch in early November." },
+      { season: "Winter (December–February)", strategy: "Holiday gift promotions for wineries (gift baskets, wine club memberships), farm markets (gift packages), and Main Street retailers. Year-end fundraising for local nonprofits. New Year resolution campaigns for health, fitness, and wellness businesses. January planning season — Cornerstone offers annual campaign packages for businesses committing to quarterly or monthly mailings." }
+    ],
+    mailingProfile: {
+      carrierRoutes: 28,
+      avgHouseholdsPerRoute: 430,
+      recommendedFormat: "6x11 oversized postcard with full-bleed photography — Warwick's scenic agricultural landscape provides compelling visual content that drives response",
+      estimatedCostFullSaturation: "$4,200–$5,000 for full Town of Warwick EDDM coverage; $800–$1,000 for Village of Warwick only"
+    },
+    whyCornerstone: "Cornerstone serves the Warwick Valley from our New Paltz facility via I-87 and Route 17 — roughly 40 minutes. We're the region's only full-service direct mail provider that combines graphic design, commercial printing, targeted mailing list acquisition, and USPS postal entry under one roof. For Warwick's agricultural tourism businesses that need both local EDDM and metro-area targeted mailings, Cornerstone manages both channels as a unified campaign — coordinating design, timing, and postal entry so your local postcards and metro-area postcards arrive in the same week for maximum market impact.",
+    localSuccessStory: "A Warwick Valley winery used Cornerstone to build a direct mail program targeting two audiences: quarterly EDDM postcards to 12,000 local households promoting tasting room events, and quarterly targeted postcards to 5,000 NYC metro-area households from their wine club and event attendance database. The local EDDM campaign cost roughly $4,500/quarter; the targeted metro campaign cost roughly $3,200/quarter. Combined annual investment: ~$31,000. Measured result: a 25% increase in tasting room visits and a 35% increase in wine club memberships over 12 months — ROI that justified making direct mail the winery's largest single marketing line item.",
     uniqueFAQs: [
       {
         question: "How can Warwick tourism businesses use direct mail to drive seasonal visits?",
@@ -583,7 +844,19 @@ export const townUniqueContent: Record<string, {
       },
       {
         question: "Can I do an EDDM campaign just for the Warwick Village area?",
-        answer: "Yes. EDDM lets you select specific carrier routes within Warwick's 10990 ZIP — you can target just the village center routes for a restaurant or shop promotion without paying to reach the more rural outlying areas. For businesses that want total Warwick Valley coverage, we can build a campaign that includes all routes in the 10990 ZIP. Cornerstone maps your routes and provides household counts before you commit."
+        answer: "Yes. EDDM lets you select specific carrier routes within Warwick's 10990 ZIP — you can target just the village center routes for a restaurant or shop promotion at roughly $800-$1,000 all-in without paying to reach the more rural outlying areas. For businesses that want total Warwick Valley coverage, a full-town saturation campaign runs $4,200-$5,000. Cornerstone maps your routes and provides household counts before you commit."
+      },
+      {
+        question: "How should Warwick businesses prepare for Applefest direct mail?",
+        answer: "Applefest is Warwick's single largest economic event — plan your direct mail 6-8 weeks in advance. Orchards and food vendors should mail to both local EDDM routes and metro-area visitor lists 3-4 weeks before the event. Main Street retailers should mail Applefest weekend promotions to the local 10990 ZIP 2 weeks before. Restaurants should promote Applefest weekend dining reservations. Cornerstone can coordinate all of these mailings on a unified production schedule."
+      },
+      {
+        question: "What's the difference between EDDM and targeted mailing lists for Warwick businesses?",
+        answer: "EDDM reaches every household on selected carrier routes within the 10990 ZIP — ideal for local awareness and total market coverage at $0.223/piece with no list cost. Targeted mailing lists let you select specific households by demographics, purchase behavior, or geographic criteria — ideal for reaching metro-area visitors at their NYC, NJ, or Rockland County primary addresses. Most Warwick businesses benefit from using both: EDDM for local reach and targeted lists for the visitor/tourism audience."
+      },
+      {
+        question: "Can Cornerstone handle both my local and metro-area Warwick mailings?",
+        answer: "Yes — that's our specialty for Warwick Valley businesses. We manage dual-channel campaigns: EDDM postcards to local 10990 routes and targeted list-based postcards to NYC metro, northern NJ, and Rockland County ZIP codes. Both channels use coordinated design and synchronized drop dates so your marketing message reaches local and visiting audiences simultaneously."
       }
     ]
   }

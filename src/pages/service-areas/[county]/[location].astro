@@ -232,12 +232,14 @@ const nearbyAreas = neighborNames
           </h2>
 
           {uniqueContent ? (
-            <p class="text-gray-700 leading-relaxed mb-4">
-              {uniqueContent.uniqueIntro}
-            </p>
-            <p class="text-gray-500 text-sm italic mb-8">
-              {uniqueContent.nearbyLandmark}
-            </p>
+            <>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                {uniqueContent.uniqueIntro}
+              </p>
+              <p class="text-gray-500 text-sm italic mb-8">
+                {uniqueContent.nearbyLandmark}
+              </p>
+            </>
           ) : (
             <p class="text-gray-700 leading-relaxed mb-8">
               {location.intro}
@@ -258,6 +260,7 @@ const nearbyAreas = neighborNames
           </div>
 
           {uniqueContent && (
+            <>
             <div class="mb-10">
               <h2 class="text-2xl font-display font-bold text-crst-primary mb-4">
                 Local Market Profile: {location.name}
@@ -266,6 +269,38 @@ const nearbyAreas = neighborNames
                 {uniqueContent.localContext}
               </p>
             </div>
+
+            {uniqueContent.industryFocus && uniqueContent.industryFocus.length > 0 && (
+              <div class="mb-10">
+                <h2 class="text-2xl font-display font-bold text-crst-primary mb-6">
+                  Industries We Serve in {location.name}
+                </h2>
+                <div class="space-y-6">
+                  {uniqueContent.industryFocus.map((ind) => (
+                    <div class="border-l-4 border-crst-gold pl-5 py-1">
+                      <h3 class="text-lg font-display font-bold text-gray-800 mb-2">{ind.industry}</h3>
+                      <p class="text-gray-700 text-sm leading-relaxed">{ind.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {uniqueContent.neighborhoods && uniqueContent.neighborhoods.length > 0 && (
+              <div class="mb-10">
+                <h2 class="text-2xl font-display font-bold text-crst-primary mb-6">
+                  {location.name} Neighborhoods & Mailing Zones
+                </h2>
+                <div class="grid gap-4">
+                  {uniqueContent.neighborhoods.map((nb) => (
+                    <div class="bg-gray-50 rounded-lg p-5">
+                      <h3 class="text-base font-display font-bold text-crst-primary mb-2">{nb.name}</h3>
+                      <p class="text-gray-700 text-sm leading-relaxed">{nb.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             <div class="mb-10">
               <h2 class="text-2xl font-display font-bold text-crst-primary mb-4">
@@ -278,6 +313,72 @@ const nearbyAreas = neighborNames
                 {uniqueContent.populationNote}
               </p>
             </div>
+
+            {uniqueContent.mailingProfile && (
+              <div class="mb-10 bg-crst-light rounded-xl p-6">
+                <h3 class="text-lg font-display font-bold text-crst-primary mb-4">
+                  {location.name} EDDM Mailing Profile
+                </h3>
+                <div class="grid sm:grid-cols-2 gap-4 text-sm mb-4">
+                  <div class="flex justify-between border-b border-crst-primary/10 pb-2">
+                    <span class="text-gray-600">Carrier Routes</span>
+                    <span class="font-semibold text-gray-800">{uniqueContent.mailingProfile.carrierRoutes}</span>
+                  </div>
+                  <div class="flex justify-between border-b border-crst-primary/10 pb-2">
+                    <span class="text-gray-600">Avg. Households/Route</span>
+                    <span class="font-semibold text-gray-800">~{uniqueContent.mailingProfile.avgHouseholdsPerRoute}</span>
+                  </div>
+                </div>
+                <div class="text-sm mb-2">
+                  <span class="text-gray-600 font-medium">Recommended Format: </span>
+                  <span class="text-gray-800">{uniqueContent.mailingProfile.recommendedFormat}</span>
+                </div>
+                <div class="text-sm">
+                  <span class="text-gray-600 font-medium">Est. Full Saturation Cost: </span>
+                  <span class="text-gray-800 font-semibold">{uniqueContent.mailingProfile.estimatedCostFullSaturation}</span>
+                </div>
+              </div>
+            )}
+
+            {uniqueContent.seasonalTips && uniqueContent.seasonalTips.length > 0 && (
+              <div class="mb-10">
+                <h2 class="text-2xl font-display font-bold text-crst-primary mb-6">
+                  Seasonal Direct Mail Calendar for {location.name}
+                </h2>
+                <div class="grid sm:grid-cols-2 gap-4">
+                  {uniqueContent.seasonalTips.map((tip) => (
+                    <div class="border border-gray-200 rounded-lg p-5">
+                      <h3 class="text-base font-display font-bold text-crst-accent mb-2">{tip.season}</h3>
+                      <p class="text-gray-700 text-sm leading-relaxed">{tip.strategy}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {uniqueContent.whyCornerstone && (
+              <div class="mb-10">
+                <h2 class="text-2xl font-display font-bold text-crst-primary mb-4">
+                  Why {location.name} Businesses Choose Cornerstone
+                </h2>
+                <p class="text-gray-700 leading-relaxed">
+                  {uniqueContent.whyCornerstone}
+                </p>
+              </div>
+            )}
+
+            {uniqueContent.localSuccessStory && (
+              <div class="mb-10 bg-white border-2 border-crst-gold/30 rounded-xl p-6">
+                <div class="flex items-center gap-2 mb-3">
+                  <svg class="w-5 h-5 text-crst-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <h3 class="text-lg font-display font-bold text-crst-primary">{location.name} Success Story</h3>
+                </div>
+                <p class="text-gray-700 text-sm leading-relaxed">
+                  {uniqueContent.localSuccessStory}
+                </p>
+              </div>
+            )}
+            </>
           )}
 
           <h3 class="text-xl font-display font-bold text-crst-primary mb-4">
@@ -506,7 +607,7 @@ const nearbyAreas = neighborNames
   <section class="py-14 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-display font-bold text-crst-primary mb-10 text-center">
-        Why {location.name} Businesses Choose Cornerstone
+        Cornerstone by the Numbers
       </h2>
       <div class="grid md:grid-cols-4 gap-6">
         <div class="text-center p-6">
