@@ -420,5 +420,171 @@ export const townUniqueContent: Record<string, {
         answer: "You can reach the residential areas around campus with EDDM, which includes off-campus student housing. For targeting families visiting during move-in weekends, orientation, and graduation, Cornerstone also prints flyers, rack cards, and promotional materials for distribution at campus-adjacent businesses and events."
       }
     ]
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  // ADDITIONAL ULSTER COUNTY TOWNS
+  // ═══════════════════════════════════════════════════════════
+
+  "marlboro": {
+    metaTitle: "Direct Mail & Printing Services in Marlboro, NY | Cornerstone Services",
+    metaDescription: "Direct mail, EDDM, and commercial printing for Marlboro businesses — wineries, orchards, farm markets, and local service providers. Reach 12542 ZIP from our facility minutes away in New Paltz.",
+    h1: "Direct Mail & Printing for Marlboro, NY Businesses",
+    uniqueIntro: "Marlboro sits along the Hudson River in the heart of the Hudson Valley wine and farm country, where Route 9W connects a string of vineyards, orchards, and farm stands that draw visitors from the metro New York area year-round. Direct mail is a natural fit for Marlboro's agricultural tourism economy — timed postcards promoting harvest festivals, wine tastings, and seasonal farm stand openings reach both local residents and visitors who have opted into mailing lists from previous visits.",
+    localContext: "Marlboro's economy is built on three pillars: agriculture (apple orchards, vineyards, farm markets), residential services for the growing commuter population that uses the Newburgh-Beacon Bridge corridor, and small commercial businesses along Route 9W. Benmarl Winery — one of the oldest vineyards in the country — anchors the local wine trail. The Marlborough Central School District serves as a community hub. Home service providers (landscaping, HVAC, plumbing) find strong demand among Marlboro's homeowner base, which skews toward established families in single-family homes on larger lots than the denser river towns.",
+    eddmInsight: "Marlboro's 12542 ZIP covers the hamlet and surrounding rural residential areas along Route 9W and the roads leading up from the river. EDDM campaigns here reach a concentrated homeowner audience — the carrier routes follow the main road corridors where most households are located. A single EDDM drop can saturate the entire Marlboro community at a fraction of what targeted list-based mail would cost.",
+    populationNote: "The Town of Marlborough has roughly 8,800 residents and an estimated 3,200 households. The population is predominantly homeowners in single-family residences, making it an excellent audience for home service and agricultural tourism direct mail.",
+    nearbyLandmark: "Located along Route 9W on the Hudson River, between Highland and Newburgh, home to Benmarl Winery and the Marlboro waterfront.",
+    relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/printing", "/services/graphic-design"],
+    uniqueFAQs: [
+      {
+        question: "How can Marlboro wineries and orchards use direct mail effectively?",
+        answer: "Timed seasonal postcards are the highest-performing format for Marlboro's agricultural businesses. A 6x9 postcard mailed 2-3 weeks before apple-picking season, a wine tasting event, or a holiday farm market drives visits from both local residents and your customer mailing list from previous seasons. Cornerstone handles the design, printing, and mailing from our facility just 15 minutes away in New Paltz."
+      },
+      {
+        question: "Can I target just Marlboro households without reaching Milton or Highland?",
+        answer: "Yes. Marlboro has its own 12542 ZIP code and dedicated carrier routes. We can target only Marlboro addresses for a focused local campaign, or expand to include neighboring communities like Highland (12528) and Milton for broader reach. EDDM route selection gives you precise geographic control."
+      }
+    ]
+  },
+
+  "highland": {
+    metaTitle: "Direct Mail & Printing Services in Highland, NY | Cornerstone Services",
+    metaDescription: "Direct mail, EDDM, and printing for Highland businesses on the Route 9W corridor. Target 12528 ZIP — retail, restaurants, healthcare, and home services. Just 10 minutes from our New Paltz facility.",
+    h1: "Direct Mail & Printing for Highland, NY Businesses",
+    uniqueIntro: "Highland is one of the busiest commercial corridors in Ulster County, anchored by Route 9W and the western approach to the Mid-Hudson Bridge connecting to Poughkeepsie. This strategic location gives Highland businesses access to both Ulster County residents heading south on 9W and Dutchess County commuters crossing the bridge daily — a dual-market advantage that direct mail can target precisely.",
+    localContext: "Highland's economy benefits from its position as the Ulster County gateway to the Mid-Hudson Bridge. The Route 9W corridor features shopping centers, healthcare offices, auto dealerships, restaurants, and professional services that draw customers from both sides of the river. The Walkway Over the Hudson's western trailhead brings steady foot traffic to the area. Residential neighborhoods in the Town of Lloyd surround the commercial corridor, creating a strong local customer base for home services, healthcare, and retail. Highland's mix of commercial density and residential stability makes it one of the most responsive direct mail markets in Ulster County.",
+    eddmInsight: "Highland's 12528 ZIP encompasses both the dense Route 9W commercial corridor and the surrounding residential neighborhoods in Lloyd. EDDM campaigns can target the high-density routes near the bridge and shopping centers for maximum retail impact, or expand to the more suburban routes for home service campaigns. The carrier route structure follows the main road corridors, making geographic targeting straightforward.",
+    populationNote: "The Town of Lloyd (which encompasses Highland) has roughly 11,000 residents and an estimated 4,200 households. Highland's population density along the Route 9W corridor is higher than most Ulster County communities, supporting cost-effective EDDM campaigns with strong per-route household counts.",
+    nearbyLandmark: "Located at the western approach to the Mid-Hudson Bridge on Route 9W, home to the Walkway Over the Hudson western trailhead and just 10 minutes from our New Paltz facility.",
+    relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/printing", "/services/mailing-lists"],
+    uniqueFAQs: [
+      {
+        question: "Can I reach both Highland and Poughkeepsie customers with one campaign?",
+        answer: "You can, but they require different mailing approaches. Highland (12528) is in Ulster County; Poughkeepsie (12601/12603) is in Dutchess County. Cornerstone can build a single campaign that targets carrier routes on both sides of the Mid-Hudson Bridge — combining EDDM routes in Highland with targeted list-based mail in Poughkeepsie, or running EDDM in both areas."
+      },
+      {
+        question: "What types of Highland businesses get the best results from direct mail?",
+        answer: "Healthcare offices along Route 9W see strong new-patient acquisition from EDDM postcards. Restaurants and retail shops near the Walkway Over the Hudson trailhead use seasonal postcards to capture foot traffic. Auto dealers and home service providers target the residential neighborhoods in Lloyd with oversized postcards and coupon mailers. The commercial density of Highland supports nearly every direct mail format."
+      }
+    ]
+  },
+
+  "rosendale": {
+    metaTitle: "Direct Mail & Printing Services in Rosendale, NY | Cornerstone Services",
+    metaDescription: "Direct mail, EDDM, and printing for Rosendale businesses and arts organizations. Reach this creative Hudson Valley community — just 5 minutes from our New Paltz facility.",
+    h1: "Direct Mail & Printing for Rosendale, NY Businesses",
+    uniqueIntro: "Rosendale is a small but culturally vibrant community along the Rondout Creek, known for its historic cement mines, thriving arts scene, and community-driven events like the Rosendale Street Festival and International Pickle Festival. For a town of its size, Rosendale punches well above its weight in community engagement — and direct mail is one of the most effective ways to reach this involved, responsive audience.",
+    localContext: "Rosendale's economy blends arts and culture (the Rosendale Theatre Collective, Women's Studio Workshop, galleries, and studios), tourism drawn by the Wallkill Valley Rail Trail and historic cement caves, and a strong base of independent professionals and artisans who work from home. The town attracts a demographic that values locally made, locally sourced, and community-connected — making direct mail from a local print shop especially well-received. The Rosendale Recreation Center and local civic organizations are active mailers for community events, youth programs, and seasonal activities.",
+    eddmInsight: "Rosendale's compact geography makes EDDM exceptionally cost-effective. The primary carrier routes follow Main Street, Route 32, and the Rondout Creek corridor. A single EDDM campaign can saturate the entire Rosendale community for under $1,500 — reaching every household in the hamlet and surrounding area. For community events like the Street Festival, EDDM postcards are the primary outreach vehicle.",
+    populationNote: "The Town of Rosendale has roughly 6,000 residents and an estimated 2,400 households. The compact, walkable hamlet center and the surrounding rural-residential areas create a tight community where direct mail has high visibility and engagement.",
+    nearbyLandmark: "Nestled along the Rondout Creek just 5 minutes from our New Paltz facility, home to the Rosendale Theatre, historic cement mines, and the Wallkill Valley Rail Trail.",
+    relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/graphic-design", "/services/non-profit-mailing"],
+    uniqueFAQs: [
+      {
+        question: "Can Cornerstone help with mailings for Rosendale community events and festivals?",
+        answer: "Absolutely — we've printed and mailed for Rosendale organizations for years. Community event postcards, festival announcements, and nonprofit fundraising appeals are among our most common Rosendale jobs. Our facility is literally 5 minutes away on South Ohioville Road in New Paltz, so turnaround is fast and you can stop by for a proof check any time."
+      },
+      {
+        question: "Is EDDM practical for a small town like Rosendale?",
+        answer: "Rosendale is actually an ideal EDDM market. The compact geography means a single campaign reaches the entire community at minimal cost. For local businesses and organizations that want complete town coverage — every household, every mailbox — EDDM at $0.223 per piece postage is the most affordable option available."
+      }
+    ]
+  },
+
+  "rochester": {
+    metaTitle: "Direct Mail & Printing Services in Rochester, NY (Ulster County) | Cornerstone Services",
+    metaDescription: "Direct mail, EDDM, and printing for Rochester and Accord, NY businesses — reaching the Rondout Valley's growing community of residents, artists, and outdoor enthusiasts from our New Paltz facility.",
+    h1: "Direct Mail & Printing for Rochester & Accord, NY Businesses",
+    uniqueIntro: "The Town of Rochester encompasses the hamlet of Accord and the surrounding Rondout Creek corridor between New Paltz and Ellenville, an area that has seen significant growth from artists, remote workers, and outdoor enthusiasts drawn by affordable rural living and Catskill Mountain access. Direct mail reaches this spread-out community where digital advertising has limited penetration — many Rochester households have unreliable internet service, making physical mail the most dependable marketing channel.",
+    localContext: "Rochester's economy reflects its evolving identity: a base of longtime farming families and tradespeople alongside a growing cohort of creative professionals, homesteaders, and vacation rental operators. The Rondout Valley Central School District is a major community anchor. Accord's small commercial center includes restaurants, a general store, and local service businesses. The town's proximity to Minnewaska State Park, Mohonk Preserve, and the broader Catskills drives vacation rental and tourism-related commerce. Home service providers — contractors, well drillers, septic services, firewood suppliers — find especially strong demand in Rochester's rural residential market.",
+    eddmInsight: "Rochester's rural geography means carrier routes cover larger areas with lower household density than river valley towns. EDDM campaigns here reach a geographically dispersed audience — but the per-piece cost remains the same $0.223, making it efficient for home service providers and community organizations that need total market coverage. Route selection should focus on the corridors along Routes 209 and 213 where most households are concentrated.",
+    populationNote: "The Town of Rochester has roughly 7,100 residents and an estimated 2,800 households spread across a large geographic area. The population is predominantly homeowners in single-family residences on larger rural lots — a prime audience for home services, landscaping, and property maintenance direct mail.",
+    nearbyLandmark: "Situated along the Rondout Creek corridor between New Paltz and Ellenville, with the hamlet of Accord as its commercial center and the Catskill Mountains as its western backdrop.",
+    relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/mailing-lists", "/services/printing"],
+    uniqueFAQs: [
+      {
+        question: "Does direct mail work in a rural area like Rochester?",
+        answer: "Direct mail is often more effective in rural areas than digital marketing because physical mail reaches every household regardless of internet connectivity. In Rochester, where broadband coverage is inconsistent and many residents are not active on social media, a postcard in the mailbox has higher guaranteed reach than any digital channel. EDDM at $0.223 per piece makes total market coverage affordable even for small businesses."
+      },
+      {
+        question: "Can I target vacation rental owners and Airbnb hosts in Rochester?",
+        answer: "Yes. We can build targeted mailing lists filtered by property type and ownership characteristics to reach vacation rental operators in the Rochester and Accord area. For broader outreach, EDDM campaigns reach every address on selected carrier routes — including vacation rental properties and second homes."
+      }
+    ]
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  // ADDITIONAL DUTCHESS COUNTY TOWNS
+  // ═══════════════════════════════════════════════════════════
+
+  "millerton": {
+    metaTitle: "Direct Mail & Printing Services in Millerton, NY | Cornerstone Services",
+    metaDescription: "Direct mail, EDDM, and printing for Millerton and North East, NY — reach the village's year-round residents, weekenders, and farm-to-table businesses. Postcards, brochures, and targeted mailing lists.",
+    h1: "Direct Mail & Printing for Millerton, NY Businesses",
+    uniqueIntro: "Millerton is the walkable village center of the Town of North East, tucked into Dutchess County's northeastern corner near the Connecticut and Massachusetts borders. Once a quiet railroad town, Millerton has evolved into a destination for independent shops, farm-to-table restaurants, and cultural venues like The Moviehouse and Oblong Books — attracting a loyal base of weekenders and second-home owners from New York City alongside its established year-round community.",
+    localContext: "Millerton's economy operates on two distinct cycles: the year-round local economy (hardware stores, auto services, healthcare, school-related businesses) and the weekend/seasonal economy driven by NYC visitors (restaurants, antique shops, galleries, farm stands, bed-and-breakfasts). The Harlem Valley Rail Trail brings recreational visitors through town. This dual market means direct mail campaigns in Millerton can serve two audiences: EDDM to the local 12546 ZIP for home services and community announcements, and targeted list-based mailings to metro-area ZIP codes for tourism promotion and event invitations.",
+    eddmInsight: "Millerton's 12546 ZIP covers the village and the surrounding Town of North East. Household density is lower than river valley towns, but EDDM's flat-rate postage makes total market coverage practical. A full-town saturation campaign reaches every household — year-round residents and seasonal homeowners alike — for a modest investment. For businesses targeting the weekender market specifically, a mailing list filtered to second-home ownership is more precise than EDDM.",
+    populationNote: "The Town of North East (including Millerton) has roughly 3,000 residents and an estimated 1,400 households. The population effectively doubles on weekends during peak seasons as second-home owners arrive from the city — a unique dynamic that shapes direct mail strategy.",
+    nearbyLandmark: "Located along Route 22 near the Connecticut border, home to Oblong Books & Music, The Moviehouse, and the Harlem Valley Rail Trail.",
+    relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/mailing-lists", "/services/graphic-design"],
+    uniqueFAQs: [
+      {
+        question: "How can Millerton businesses reach weekenders and second-home owners?",
+        answer: "Two approaches work well. First, EDDM to the 12546 ZIP reaches every local mailbox — including second homes that receive mail delivery even when the owner is in the city. Second, Cornerstone can build a targeted mailing list of households in NYC metro ZIP codes with second-home ownership flags in Dutchess County, letting you reach weekenders at their primary address with event invitations and seasonal promotions."
+      },
+      {
+        question: "Is Millerton too small for cost-effective direct mail?",
+        answer: "Millerton's small population is actually an advantage for direct mail economics. An EDDM campaign covering the entire town costs roughly $300-$400 in postage — meaning total market saturation is affordable even for the smallest local business. For a restaurant, shop, or service provider that serves the entire community, there is no cheaper way to reach every household."
+      }
+    ]
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  // ADDITIONAL ORANGE COUNTY TOWNS
+  // ═══════════════════════════════════════════════════════════
+
+  "wawayanda": {
+    metaTitle: "Direct Mail & Printing Services in Wawayanda, NY | Cornerstone Services",
+    metaDescription: "Direct mail, EDDM, and printing for Wawayanda businesses and home service providers. Reach this growing Orange County community's new and established homeowners with targeted campaigns.",
+    h1: "Direct Mail & Printing for Wawayanda, NY Businesses",
+    uniqueIntro: "Wawayanda is a growing residential town west of Middletown in Orange County, where new housing developments and established neighborhoods create steady demand for home services, landscaping, and local businesses. Named for the scenic Wawayanda Creek, this community has expanded significantly in recent years as families relocate from more expensive markets — making it one of the most dynamic direct mail markets in western Orange County.",
+    localContext: "Wawayanda's growth is driven by residential development — new subdivisions attracting families from Rockland County, northern New Jersey, and the NYC metro area. These new residents are actively searching for local service providers: landscapers, contractors, dentists, pediatricians, auto mechanics, and restaurants. They have no established loyalty to existing businesses, making them exceptionally responsive to direct mail introductions. The Minisink Valley Central School District serves as the community anchor. Established homeowners in Wawayanda's older neighborhoods along Route 284 and Ridgebury Road represent a stable, high-value audience for home improvement and maintenance services.",
+    eddmInsight: "Wawayanda's carrier routes split between the newer residential developments (higher household density, younger families, strong response to home service offers) and the more rural agricultural areas along the town's western edge (lower density, established homeowners). For maximum ROI, EDDM campaigns should prioritize the routes covering new development areas where move-in rates are highest. Cornerstone can help you map routes by development age and household density.",
+    populationNote: "Wawayanda has roughly 7,500 residents and an estimated 2,600 households. The population has grown significantly over the past decade due to new residential construction, meaning a higher-than-average percentage of households are recent movers — the most responsive audience for direct mail.",
+    nearbyLandmark: "Located west of Middletown along Route 284 and the Wawayanda Creek, adjacent to Middletown and the Minisink Valley school district.",
+    relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/mailing-lists", "/services/printing"],
+    uniqueFAQs: [
+      {
+        question: "How do I reach new homeowners moving into Wawayanda developments?",
+        answer: "Two proven approaches: EDDM campaigns targeting the carrier routes covering new developments reach every household — including recent move-ins — at $0.223 per piece postage. For more precision, Cornerstone can pull a new mover mailing list filtered to Wawayanda ZIP codes, delivering your offer specifically to households that moved within the last 30, 60, or 90 days."
+      },
+      {
+        question: "Can Wawayanda businesses target both new and established residents?",
+        answer: "Yes. EDDM covers every household on selected routes regardless of how long they've lived there. For segmented messaging — a welcome offer for new residents and a loyalty offer for established ones — Cornerstone can split your campaign into two lists with different creative, mailed simultaneously for maximum impact."
+      }
+    ]
+  },
+
+  "warwick": {
+    metaTitle: "Direct Mail & Printing Services in Warwick, NY | Cornerstone Services",
+    metaDescription: "Direct mail, EDDM, and printing for Warwick businesses — wineries, orchards, farm markets, restaurants, and tourism businesses. Reach the Warwick Valley and tri-state visitors with targeted campaigns.",
+    h1: "Direct Mail & Printing for Warwick, NY Businesses",
+    uniqueIntro: "Warwick is one of Orange County's premier destination communities — a place where apple orchards, vineyards, creameries, and a charming village center draw hundreds of thousands of visitors annually from across the tri-state area. Direct mail is a cornerstone of marketing for Warwick Valley businesses because it reaches both the local residential community and the visitor database that fuels seasonal tourism revenue.",
+    localContext: "Warwick's economy runs on two engines: year-round local commerce (restaurants, professional services, healthcare, retail along Main Street) and seasonal agriculture-tourism (Warwick Applefest, Warwick Valley Winery, Masker Orchards, Bellvale Farms Creamery, and dozens of farm operations). The annual Applefest alone draws over 30,000 visitors in a single weekend. Local businesses build customer mailing lists from event attendees, farm stand purchases, and wine club memberships — and use those lists for repeat direct mail campaigns promoting seasonal events, new products, and special offers. The village center's walkable Main Street supports independent retailers, galleries, and restaurants that compete with larger commercial centers in Middletown and Monroe through quality, character, and customer relationships reinforced by direct mail.",
+    eddmInsight: "Warwick's 10990 ZIP covers the village center and surrounding Warwick Valley. EDDM campaigns targeting local carrier routes reach year-round residents — the core local customer base for restaurants, services, and retail. For tourism-driven businesses that need to reach beyond Warwick, targeted mailing lists to metro-area ZIP codes (northern New Jersey, Rockland County, NYC) are more effective than EDDM, which is limited to local routes.",
+    populationNote: "The Town of Warwick has roughly 33,000 residents and an estimated 12,000 households across a large geographic area that includes the Village of Warwick, Warwick village center, and surrounding rural areas. This is one of the largest town populations in Orange County, supporting substantial EDDM campaign volume.",
+    nearbyLandmark: "Located in southwestern Orange County along Route 17A, home to Warwick Applefest, Warwick Valley Winery, and one of the Hudson Valley's most photographed village centers.",
+    relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/printing", "/services/graphic-design", "/services/mailing-lists"],
+    uniqueFAQs: [
+      {
+        question: "How can Warwick tourism businesses use direct mail to drive seasonal visits?",
+        answer: "The most effective strategy is building a customer mailing list from farm stand purchases, wine club signups, event attendance, and website inquiries — then mailing seasonal postcards 2-3 weeks before key events (apple-picking season, wine festivals, holiday markets). Cornerstone handles the list management, postcard design, printing, and mailing. For reaching new audiences, we can build targeted lists of households in northern NJ and Rockland County with demographic profiles matching your visitor base."
+      },
+      {
+        question: "Can I do an EDDM campaign just for the Warwick Village area?",
+        answer: "Yes. EDDM lets you select specific carrier routes within Warwick's 10990 ZIP — you can target just the village center routes for a restaurant or shop promotion without paying to reach the more rural outlying areas. For businesses that want total Warwick Valley coverage, we can build a campaign that includes all routes in the 10990 ZIP. Cornerstone maps your routes and provides household counts before you commit."
+      }
+    ]
   }
 };
