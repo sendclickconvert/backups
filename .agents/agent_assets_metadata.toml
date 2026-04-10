@@ -54,3 +54,9 @@ id = "G5bgoH8-HGLG6it5F928G"
 uri = "file://crst-all-pages.csv"
 type = "table"
 title = "CRST All Pages - Service, Article & Town URLs"
+
+[[outputs]]
+id = "QPqs9s2MU1-A-yEngODWf"
+uri = "file://pages-to-reindex.txt"
+type = "text"
+title = "184 Pages to Reindex in GSC"
