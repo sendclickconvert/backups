@@ -29,7 +29,7 @@ const mailClasses = [
   {
     name: 'Postcards',
     icon: '📮',
-    description: 'The most cost-effective mail format. No envelope needed — your message is immediately visible.',
+    description: 'The most cost-effective mail format. No envelope needed — your message is immediately visible. The 6×11 size is the largest option within letter-rate pricing and is widely used for <a href="/services/eddm" class="text-crst-primary underline hover:text-crst-gold">Every Door Direct Mail</a> saturation campaigns.',
     sizes: [
       { label: 'Minimum', dimensions: '3.5" × 5"', notes: 'Smallest USPS-accepted postcard size' },
       { label: 'Standard (4×6)', dimensions: '4.25" × 6"', notes: 'Most common — qualifies for letter-rate postage' },
@@ -156,7 +156,7 @@ const faqs = [
 ---
 
 <BaseLayout
-  title="Envelope Sizes Chart — Dimensions & USPS Mail Classes"
+  title="2026 USPS Envelope Sizes: Complete Chart + Dimensions Guide"
   description="Standard envelope dimensions in inches and mm — #10, 6x9, 9x12, A2 through A10. Includes USPS letter vs. flat cutoffs and which sizes cost more to mail."
   canonical="https://crst.net/direct-mail-tools/envelope-sizes"
 >
@@ -222,7 +222,7 @@ const faqs = [
         <div class="bg-crst-primary/5 border-l-4 border-crst-primary rounded-r-xl p-6 mb-10">
           <h3 class="text-lg font-display font-bold text-crst-primary mb-2">The #10 Envelope</h3>
           <p class="text-navy-600/80 leading-relaxed">
-            The #10 envelope measures <strong>4⅛ × 9½ inches</strong> (105 × 241 mm). It's the standard business envelope used for letters, invoices, statements, and most commercial mail in the United States. It fits a standard 8½ × 11 letter folded in thirds and qualifies for USPS letter-rate <a href="/direct-mail-tools/postage-rates" class="text-crst-primary underline hover:text-crst-gold">postage</a>.
+            The #10 envelope measures <strong>4⅛ × 9½ inches</strong> (105 × 241 mm). It's the standard business envelope used for letters, invoices, statements, and <a href="/services/direct-mail" class="text-crst-primary underline hover:text-crst-gold">targeted direct mail campaigns</a>. It fits a standard 8½ × 11 letter folded in thirds and qualifies for USPS letter-rate <a href="/direct-mail-tools/postage-rates" class="text-crst-primary underline hover:text-crst-gold">postage</a>.
           </p>
         </div>
 
@@ -268,7 +268,7 @@ const faqs = [
           Why Mail Piece Size Matters
         </h2>
         <p class="text-navy-600/80 leading-relaxed mb-4">
-          The USPS classifies every mail piece by size, shape, and weight. This classification directly determines your <a href="/direct-mail-tools/postage-rates" class="text-crst-primary underline hover:text-crst-gold">postage rate</a>. A postcard that's slightly too large becomes a "flat" — and your postage rate can double. A letter that's too square gets a non-machinable surcharge. Understanding these boundaries saves real money on every mailing.
+          The USPS classifies every mail piece by size, shape, and weight. This classification directly determines your <a href="/direct-mail-tools/postage-rates" class="text-crst-primary underline hover:text-crst-gold">postage rate</a>. A postcard that's slightly too large becomes a "flat" — and your postage rate can double. A letter that's too square gets a non-machinable surcharge. Understanding these boundaries — and using them to <a href="/services/direct-mail/how-much-does-direct-mail-cost" class="text-crst-primary underline hover:text-crst-gold">calculate your direct mail costs</a> before committing to a format — saves real money on every mailing.
         </p>
         <p class="text-navy-600/80 leading-relaxed mb-10">
           At Cornerstone, we design and produce every mail piece to meet <a href="/direct-mail-tools/postal-dictionary" class="text-crst-primary underline hover:text-crst-gold">USPS automation specifications</a>. Our <a href="/services/printing" class="text-crst-primary underline hover:text-crst-gold">commercial printing services</a> ensure every piece is cut, folded, and finished to exact USPS dimensions, and our <a href="/services/mailing" class="text-crst-primary underline hover:text-crst-gold">full-service mailing</a> handles presort, postage, and USPS entry so your campaign qualifies for maximum savings with zero risk of surcharges, returns, or delays. For a complete breakdown of postcard-specific requirements, see our guide to <a href="https://blog.crst.net/usps-postcard-printing-requirements/" class="text-crst-primary underline hover:text-crst-gold">USPS Postcard Printing Requirements</a>.
@@ -289,7 +289,7 @@ const faqs = [
               <span class="text-2xl">{mailClass.icon}</span>
               <h3 class="text-xl font-display font-bold text-crst-primary">{mailClass.name}</h3>
             </div>
-            <p class="text-navy-600/80 text-sm leading-relaxed mb-5">{mailClass.description}</p>
+            <p class="text-navy-600/80 text-sm leading-relaxed mb-5" set:html={mailClass.description}></p>
 
             <div class="overflow-x-auto mb-5">
               <table class="w-full text-sm">
