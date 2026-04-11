@@ -8,22 +8,62 @@ import { BUSINESS, COUNTIES } from '../../data/site';
 
 const clusterArticles = await getCollection('data-articles');
 
-const serviceSchema = {
+const dataListFaqs = [
+  { q: 'Can you suppress my existing customers from a purchased list?', a: 'Yes. Send us your customer file (Excel or CSV). We\'ll scrub it against the purchased list and remove any matches. This is included at no extra charge when you print and mail with us.' },
+  { q: 'How accurate are the lists?', a: 'After NCOA and CASS processing, deliverability is typically 96–98%. Some addresses will still be undeliverable (vacant homes, business closures, data entry errors), but we\'ve removed the vast majority of bad addresses before you mail.' },
+  { q: 'Can I use the list more than once?', a: 'Standard pricing is for one-time use. Multi-use licenses are available — just let us know how many times you plan to mail the list. Pricing adjusts accordingly.' },
+  { q: 'What if I only need 200 names?', a: 'Most list vendors have minimums of 1,000–5,000 names. We don\'t. If you need 200 names, we\'ll pull 200 names. You pay for what you use.' },
+  { q: 'Do you rent lists or sell them?', a: 'We rent them. You\'re licensing the data for a specific mailing. The list provider embeds seed addresses (decoys) to monitor usage. If you mail the list multiple times without a multi-use license, they\'ll know — and they\'ll charge you.' },
+  { q: 'Can you target businesses by how long they\'ve been in operation?', a: 'Yes. Business lists include "years in business" as a selectable field. This is useful if you\'re targeting established companies (5+ years) or startups (0–2 years).' },
+  { q: 'Can I get phone numbers or email addresses?', a: 'Consumer lists can include phone numbers (landline and cellular). Business lists include phone, email, and website URL. Email append services are available if you only have mailing addresses and want to add email.' },
+];
+
+const graphSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Mailing List & Data Services',
-  provider: {
-    '@type': 'Organization',
-    '@id': 'https://crst.net/#organization',
-    name: BUSINESS.name,
-    telephone: BUSINESS.phone,
-  },
-  areaServed: [
-    { '@type': 'County', name: 'Ulster County, New York' },
-    { '@type': 'County', name: 'Dutchess County, New York' },
-    { '@type': 'County', name: 'Orange County, New York' },
+  '@graph': [
+    {
+      '@type': 'Service',
+      name: 'Mailing List & Data Services',
+      provider: {
+        '@type': 'Organization',
+        '@id': 'https://crst.net/#organization',
+        name: BUSINESS.name,
+        telephone: BUSINESS.phone,
+      },
+      areaServed: [
+        { '@type': 'County', name: 'Ulster County, New York' },
+        { '@type': 'County', name: 'Dutchess County, New York' },
+        { '@type': 'County', name: 'Orange County, New York' },
+      ],
+      url: 'https://crst.net/services/data-lists',
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: dataListFaqs.map(faq => ({
+        '@type': 'Question',
+        name: faq.q,
+        acceptedAnswer: { '@type': 'Answer', text: faq.a },
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crst.net' },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://crst.net/services' },
+        { '@type': 'ListItem', position: 3, name: 'Mailing Lists & Data Services', item: 'https://crst.net/services/data-lists' },
+      ],
+    },
+    {
+      '@type': 'WebPage',
+      '@id': 'https://crst.net/services/data-lists',
+      name: 'Mailing Lists — Targeted Consumer & Business Data',
+      url: 'https://crst.net/services/data-lists',
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['h1', 'h2'],
+      },
+    },
   ],
-  url: 'https://crst.net/services/data-lists',
 };
 ---
 
@@ -32,7 +72,7 @@ const serviceSchema = {
   description="Targeted mailing lists for direct mail — consumer and business data filtered by geography, demographics, and industry. NCOA-processed and CASS-certified."
 >
   <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(graphSchema)} />
   </Fragment>
   <PageHero
     title="Mailing Lists & Data Services"
@@ -282,40 +322,11 @@ const serviceSchema = {
           <hr class="my-8 border-navy-200" />
 
           <h2 class="text-2xl font-display text-crst-primary mb-6">Common Questions</h2>
-          <div class="space-y-6">
-            {[
-              {
-                q: 'Can you suppress my existing customers from a purchased list?',
-                a: 'Yes. Send us your customer file (Excel or CSV). We\'ll scrub it against the purchased list and remove any matches. This is included at no extra charge when you print and mail with us.'
-              },
-              {
-                q: 'How accurate are the lists?',
-                a: 'After NCOA and CASS processing, deliverability is typically 96–98%. Some addresses will still be undeliverable (vacant homes, business closures, data entry errors), but we\'ve removed the vast majority of bad addresses before you mail.'
-              },
-              {
-                q: 'Can I use the list more than once?',
-                a: 'Standard pricing is for one-time use. Multi-use licenses are available — just let us know how many times you plan to mail the list. Pricing adjusts accordingly.'
-              },
-              {
-                q: 'What if I only need 200 names?',
-                a: 'Most list vendors have minimums of 1,000–5,000 names. We don\'t. If you need 200 names, we\'ll pull 200 names. You pay for what you use.'
-              },
-              {
-                q: 'Do you rent lists or sell them?',
-                a: 'We rent them. You\'re licensing the data for a specific mailing. The list provider embeds seed addresses (decoys) to monitor usage. If you mail the list multiple times without a multi-use license, they\'ll know — and they\'ll charge you.'
-              },
-              {
-                q: 'Can you target businesses by how long they\'ve been in operation?',
-                a: 'Yes. Business lists include "years in business" as a selectable field. This is useful if you\'re targeting established companies (5+ years) or startups (0–2 years).'
-              },
-              {
-                q: 'Can I get phone numbers or email addresses?',
-                a: 'Consumer lists can include phone numbers (landline and cellular). Business lists include phone, email, and website URL. Email append services are available if you only have mailing addresses and want to add email.'
-              }
-            ].map((item) => (
-              <div>
-                <h3 class="font-heading font-bold text-navy-800 mb-2">{item.q}</h3>
-                <p class="text-navy-600/70 leading-relaxed">{item.a}</p>
+          <div class="space-y-4">
+            {dataListFaqs.map((item) => (
+              <div class="bg-navy-50/40 rounded-xl border border-navy-100 p-5">
+                <h3 class="font-heading font-bold text-navy-800 mb-2 text-sm">{item.q}</h3>
+                <p class="text-navy-600/70 leading-relaxed text-sm">{item.a}</p>
               </div>
             ))}
           </div>
@@ -504,7 +515,7 @@ const serviceSchema = {
   </section>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-    <AuthorByline compact />
+    <AuthorByline />
   </div>
 
   <section class="py-10 bg-crst-primary/5 border-y border-crst-primary/10">

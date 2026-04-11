@@ -8,22 +8,62 @@ import { getCollection } from 'astro:content';
 
 const clusterArticles = await getCollection('mailing-articles');
 
-const serviceSchema = {
+const mailingFaqs = [
+  { q: 'What postage class saves the most money on bulk mailings?', a: 'USPS Marketing Mail (formerly Bulk Mail) with presort processing saves 30–50% compared to First-Class single-piece rates. For nonprofits, the nonprofit Marketing Mail authorization cuts costs even further — to as low as $0.132 per piece.' },
+  { q: 'What is the minimum quantity for bulk mail?', a: 'USPS Marketing Mail requires a minimum of 200 pieces or 50 pounds per mailing. EDDM mailings require a minimum of 200 pieces per carrier route selected. First-Class presort has no minimum, but the discount only applies when you hit the required quantity thresholds.' },
+  { q: 'Can I bring my own printed pieces for mailing only?', a: 'Yes. We offer mailing-only services. Deliver your printed pieces to our facility in New Paltz and we handle addressing, presorting, postage, and USPS induction. This is popular with organizations that print in-house but need postal expertise and presort discounts.' },
+  { q: 'What does inkjet addressing mean?', a: 'Inkjet addressing is the process of printing mailing addresses directly onto a mail piece using a high-speed inkjet printer — no labels required. It is required for most USPS automation discounts and produces a cleaner, more professional appearance than adhesive labels.' },
+  { q: 'How long does mail processing take?', a: 'Standard mail processing (addressing, barcoding, presorting, tray preparation, and USPS delivery) typically takes 2–3 business days after print is complete. We coordinate closely with the print schedule so mail prep does not add unnecessary delays.' },
+  { q: 'What is CASS certification and why does it matter?', a: 'CASS (Coding Accuracy Support System) is USPS-approved software that verifies every address against the official USPS delivery database. CASS-certified addresses qualify for automation postage discounts. Without CASS certification, mail cannot receive presort rates and may be rejected at the post office.' },
+  { q: 'Do you have your own mailing permit?', a: 'Yes. If your organization does not have a USPS mailing permit, you can mail under our permit. We can also help you obtain your own permit for long-term mailing programs. For nonprofits, we assist with the USPS nonprofit mailing authorization process.' },
+];
+
+const graphSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Mailing Services',
-  provider: {
-    '@type': 'Organization',
-    '@id': 'https://crst.net/#organization',
-    name: BUSINESS.name,
-    telephone: BUSINESS.phone,
-  },
-  areaServed: [
-    { '@type': 'County', name: 'Ulster County, New York' },
-    { '@type': 'County', name: 'Dutchess County, New York' },
-    { '@type': 'County', name: 'Orange County, New York' },
+  '@graph': [
+    {
+      '@type': 'Service',
+      name: 'Mailing Services',
+      provider: {
+        '@type': 'Organization',
+        '@id': 'https://crst.net/#organization',
+        name: BUSINESS.name,
+        telephone: BUSINESS.phone,
+      },
+      areaServed: [
+        { '@type': 'County', name: 'Ulster County, New York' },
+        { '@type': 'County', name: 'Dutchess County, New York' },
+        { '@type': 'County', name: 'Orange County, New York' },
+      ],
+      url: 'https://crst.net/services/mailing',
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: mailingFaqs.map(faq => ({
+        '@type': 'Question',
+        name: faq.q,
+        acceptedAnswer: { '@type': 'Answer', text: faq.a },
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crst.net' },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://crst.net/services' },
+        { '@type': 'ListItem', position: 3, name: 'Mailing Services', item: 'https://crst.net/services/mailing' },
+      ],
+    },
+    {
+      '@type': 'WebPage',
+      '@id': 'https://crst.net/services/mailing',
+      name: 'Mailing Services — USPS Presort & Postal Prep',
+      url: 'https://crst.net/services/mailing',
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['h1', 'h2'],
+      },
+    },
   ],
-  url: 'https://crst.net/services/mailing',
 };
 ---
 
@@ -32,7 +72,7 @@ const serviceSchema = {
   description="USPS mailing services — inkjet addressing, presorting, barcoding, and postal prep. Save 30–50% on postage with automation rates. New Paltz, NY."
 >
   <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(graphSchema)} />
   </Fragment>
   <PageHero
     title="Mailing Services"
@@ -112,6 +152,16 @@ const serviceSchema = {
           <p class="text-navy-600/80 leading-relaxed mb-4">
             USPS requires a mailing permit for presorted and bulk mailings. If your organization doesn't have one, we can mail under our permit or help you obtain your own. We also assist non-profits in applying for the USPS non-profit authorization that unlocks the lowest available postage rates. Visit our <a href="/direct-mail-tools/cornerstone-mailing-permits" class="text-crst-accent hover:text-crst-primary underline">mailing permits guide</a> for more information.
           </p>
+
+          <h3 class="text-xl font-display text-crst-primary mt-10 mb-6">Mailing Services FAQ</h3>
+          <div class="space-y-4">
+            {mailingFaqs.map((item) => (
+              <div class="bg-navy-50/40 rounded-xl border border-navy-100 p-5">
+                <h3 class="font-heading font-semibold text-navy-800 text-sm mb-2">{item.q}</h3>
+                <p class="text-sm text-navy-600/70 leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         <!-- Sidebar -->
@@ -165,7 +215,7 @@ const serviceSchema = {
   </section>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-    <AuthorByline compact />
+    <AuthorByline />
   </div>
 
   <section class="py-10 bg-crst-primary/5 border-y border-crst-primary/10">

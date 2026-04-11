@@ -8,74 +8,58 @@ import { getCollection } from 'astro:content';
 
 const clusterArticles = await getCollection('printing-articles');
 
-const serviceSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Commercial Printing Services',
-  provider: {
-    '@type': 'Organization',
-    '@id': 'https://crst.net/#organization',
-    name: BUSINESS.name,
-    telephone: BUSINESS.phone,
-  },
-  areaServed: [
-    { '@type': 'County', name: 'Ulster County, New York' },
-    { '@type': 'County', name: 'Dutchess County, New York' },
-    { '@type': 'County', name: 'Orange County, New York' },
-  ],
-  url: 'https://crst.net/services/printing',
-};
+const printingFaqs = [
+  { q: 'What file formats do you accept for printing?', a: 'We accept PDF, Adobe InDesign packaged files, and Adobe Illustrator files. PDFs should be press-ready with fonts embedded, images at 300 DPI minimum, and bleed included where needed.' },
+  { q: 'How long does printing take?', a: 'Turnaround depends on quantity and format. Digital runs under 1,000 pieces typically print within 2–3 business days after proof approval. Offset jobs take 5–7 business days for runs over 5,000. Rush service is available for time-sensitive campaigns.' },
+  { q: 'Can you handle the mailing after printing?', a: 'Yes. We print and mail in the same facility. Once your job comes off press, we can move it directly into data processing, addressing, and postal prep without leaving the building.' },
+  { q: 'Do you offer design services?', a: "We provide file review and minor layout adjustments, but full graphic design is handled by our design team. If you need a mail piece designed, ask us about bundling design with your print job." },
+  { q: 'What is the minimum order quantity?', a: "There is no strict minimum. We've printed jobs as small as 100 postcards for local campaigns and as large as 50,000+ pieces for regional nonprofit appeals. Pricing adjusts based on quantity and complexity." },
+  { q: 'How do I get pricing?', a: `Call us at ${BUSINESS.phone} or fill out our estimate form with your piece size, quantity, paper preference, and whether you need mailing services. We'll send a quote within one business day.` },
+];
 
-const faqSchema = {
+const graphSchema = {
   '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
+  '@graph': [
     {
-      '@type': 'Question',
-      name: 'What file formats do you accept for printing?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'We accept PDF, Adobe InDesign packaged files, and Adobe Illustrator files. PDFs should be press-ready with fonts embedded, images at 300 DPI minimum, and bleed included where needed.',
+      '@type': 'Service',
+      name: 'Commercial Printing Services',
+      provider: {
+        '@type': 'Organization',
+        '@id': 'https://crst.net/#organization',
+        name: BUSINESS.name,
+        telephone: BUSINESS.phone,
       },
+      areaServed: [
+        { '@type': 'County', name: 'Ulster County, New York' },
+        { '@type': 'County', name: 'Dutchess County, New York' },
+        { '@type': 'County', name: 'Orange County, New York' },
+      ],
+      url: 'https://crst.net/services/printing',
     },
     {
-      '@type': 'Question',
-      name: 'How long does printing take?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Turnaround depends on quantity and format. Digital runs under 1,000 pieces typically print within 2–3 business days after proof approval. Offset jobs take 5–7 business days for runs over 5,000. Rush service is available for time-sensitive campaigns.',
-      },
+      '@type': 'FAQPage',
+      mainEntity: printingFaqs.map(faq => ({
+        '@type': 'Question',
+        name: faq.q,
+        acceptedAnswer: { '@type': 'Answer', text: faq.a },
+      })),
     },
     {
-      '@type': 'Question',
-      name: 'Can you handle the mailing after printing?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. We print and mail in the same facility. Once your job comes off press, we can move it directly into data processing, addressing, and postal prep without leaving the building.',
-      },
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crst.net' },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://crst.net/services' },
+        { '@type': 'ListItem', position: 3, name: 'Printing Services', item: 'https://crst.net/services/printing' },
+      ],
     },
     {
-      '@type': 'Question',
-      name: 'Do you offer design services?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: "We provide file review and minor layout adjustments, but we do not offer full design services. If you need design work, we can connect you with designers we've worked with on past campaigns.",
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is the minimum order quantity?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: "There is no strict minimum. We've printed jobs as small as 100 postcards for local campaigns and as large as 50,000+ pieces for regional nonprofit appeals. Pricing adjusts based on quantity and complexity.",
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How do I get pricing?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: `Call us at ${BUSINESS.phone} or email with your piece size, quantity, paper preference, and whether you need mailing services. We'll send a quote within one business day.`,
+      '@type': 'WebPage',
+      '@id': 'https://crst.net/services/printing',
+      name: 'Commercial Printing Services for Direct Mail Campaigns',
+      url: 'https://crst.net/services/printing',
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['h1', 'h2'],
       },
     },
   ],
@@ -87,8 +71,7 @@ const faqSchema = {
   description="Commercial printing services for postcards, brochures, self-mailers, letters, newsletters, and direct mail campaigns. In-house printing and mailing in New Paltz, NY."
 >
   <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
-    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(graphSchema)} />
   </Fragment>
   <PageHero
     title="Commercial Printing Services for Direct Mail Campaigns"
@@ -264,32 +247,7 @@ const faqSchema = {
 
           <h2 class="text-2xl font-display text-crst-primary mt-10 mb-6">Frequently asked questions</h2>
           <div class="space-y-6 mb-10">
-            {[
-              {
-                q: 'What file formats do you accept for printing?',
-                a: 'We accept PDF, Adobe InDesign packaged files, and Adobe Illustrator files. PDFs should be press-ready with fonts embedded, images at 300 DPI minimum, and bleed included where needed.',
-              },
-              {
-                q: 'How long does printing take?',
-                a: 'Turnaround depends on quantity and format. Digital runs under 1,000 pieces typically print within 2–3 business days after proof approval. Offset jobs take 5–7 business days for runs over 5,000. Rush service is available for time-sensitive campaigns.',
-              },
-              {
-                q: 'Can you handle the mailing after printing?',
-                a: 'Yes. We print and mail in the same facility. Once your job comes off press, we can move it directly into data processing, addressing, and postal prep without leaving the building.',
-              },
-              {
-                q: 'Do you offer design services?',
-                a: "We provide file review and minor layout adjustments, but we do not offer full design services. If you need design work, we can connect you with designers we've worked with on past campaigns.",
-              },
-              {
-                q: 'What is the minimum order quantity?',
-                a: "There is no strict minimum. We've printed jobs as small as 100 postcards for local campaigns and as large as 50,000+ pieces for regional nonprofit appeals. Pricing adjusts based on quantity and complexity.",
-              },
-              {
-                q: 'How do I get pricing?',
-                a: `Call us at ${BUSINESS.phone} or email with your piece size, quantity, paper preference, and whether you need mailing services. We'll send a quote within one business day.`,
-              },
-            ].map((item) => (
+            {printingFaqs.map((item) => (
               <div class="border-b border-navy-100 pb-6">
                 <h3 class="font-heading font-bold text-navy-800 mb-2">{item.q}</h3>
                 <p class="text-sm text-navy-600/75 leading-relaxed">{item.a}</p>
@@ -369,7 +327,7 @@ const faqSchema = {
   </section>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-    <AuthorByline compact />
+    <AuthorByline />
   </div>
 
   <section class="py-14 bg-white">

@@ -8,22 +8,61 @@ import { getCollection } from 'astro:content';
 
 const clusterArticles = await getCollection('web-design-articles');
 
-const schema = {
+const webFaqs = [
+  { q: 'Do you only build websites for direct mail clients?', a: 'We primarily build websites for businesses that also use our direct mail services, but we are open to standalone web projects. Our strongest work is when we can align the website with the mail campaign — same messaging, same offer, same landing page for the URL printed on the mail piece.' },
+  { q: 'What platform do you build on?', a: 'We build on WordPress for most client sites. It is manageable by non-technical staff, well-supported, and works with every major marketing tool. For smaller campaigns we also build simple static landing pages that load quickly and are easy to maintain.' },
+  { q: 'Can you create a specific landing page for a mail campaign?', a: 'Yes. Campaign-specific landing pages are one of the most effective ways to track mail response rates. The page URL goes on the mail piece, anyone who visits it came from the mailing, and you can measure exactly how many people responded.' },
+  { q: 'Do you provide ongoing hosting and maintenance?', a: 'Yes. We offer hosting and maintenance plans for sites we build. This includes security updates, plugin updates, uptime monitoring, and basic content changes. We do not host sites we did not build.' },
+  { q: 'How long does a website take to build?', a: 'A basic five-page WordPress site typically takes 4–6 weeks from kickoff to launch, assuming content and images are provided promptly. More complex sites with custom functionality, e-commerce, or member portals take longer.' },
+  { q: 'What do you need from me to start?', a: 'We need your logo (vector if available), your company colors and brand guidelines, the pages you want on the site, and your content (text and photos). If you need help with copy or photography, let us know and we can discuss options.' },
+];
+
+const graphSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Web Design & Development Services',
-  provider: {
-    '@type': 'Organization',
-    '@id': 'https://crst.net/#organization',
-    name: BUSINESS.name,
-    telephone: BUSINESS.phone,
-  },
-  areaServed: [
-    { '@type': 'County', name: 'Ulster County, New York' },
-    { '@type': 'County', name: 'Dutchess County, New York' },
-    { '@type': 'County', name: 'Orange County, New York' },
+  '@graph': [
+    {
+      '@type': 'Service',
+      name: 'Web Design & Development Services',
+      provider: {
+        '@type': 'Organization',
+        '@id': 'https://crst.net/#organization',
+        name: BUSINESS.name,
+        telephone: BUSINESS.phone,
+      },
+      areaServed: [
+        { '@type': 'County', name: 'Ulster County, New York' },
+        { '@type': 'County', name: 'Dutchess County, New York' },
+        { '@type': 'County', name: 'Orange County, New York' },
+      ],
+      url: 'https://crst.net/services/web-design',
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: webFaqs.map(faq => ({
+        '@type': 'Question',
+        name: faq.q,
+        acceptedAnswer: { '@type': 'Answer', text: faq.a },
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crst.net' },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://crst.net/services' },
+        { '@type': 'ListItem', position: 3, name: 'Web Design', item: 'https://crst.net/services/web-design' },
+      ],
+    },
+    {
+      '@type': 'WebPage',
+      '@id': 'https://crst.net/services/web-design',
+      name: 'Web Design for Direct Mail Clients',
+      url: 'https://crst.net/services/web-design',
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['h1', 'h2'],
+      },
+    },
   ],
-  url: 'https://crst.net/services/web-design',
 };
 ---
 
@@ -32,7 +71,7 @@ const schema = {
   description="Website design and development for Hudson Valley businesses. WordPress sites that complete the marketing loop alongside your direct mail campaigns."
 >
   <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(graphSchema)} />
   </Fragment>
 
   <PageHero
@@ -113,8 +152,22 @@ const schema = {
     </div>
   </section>
 
+  <section class="py-14 bg-white">
+    <div class="container-narrow max-w-3xl mx-auto">
+      <h2 class="text-2xl font-display text-crst-primary mb-6">Web Design FAQ</h2>
+      <div class="space-y-4">
+        {webFaqs.map((item) => (
+          <div class="bg-navy-50/40 rounded-xl border border-navy-100 p-5">
+            <h3 class="font-heading font-semibold text-navy-800 text-sm mb-2">{item.q}</h3>
+            <p class="text-sm text-navy-600/70 leading-relaxed">{item.a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-    <AuthorByline compact />
+    <AuthorByline />
   </div>
 
   <section class="py-10 bg-crst-primary/5 border-y border-crst-primary/10">

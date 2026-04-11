@@ -8,22 +8,61 @@ import { getCollection } from 'astro:content';
 
 const clusterArticles = await getCollection('graphic-design-articles');
 
-const serviceSchema = {
+const gdesignFaqs = [
+  { q: 'Do you design for print and mail at the same time?', a: 'Yes. Every piece we design is built with printing and mailing in mind from the start. That means correct bleed, USPS-compliant clear zones for addressing, aspect ratios that qualify for automation postage, and file specs that work on press without additional prep.' },
+  { q: 'What formats do you provide when design is complete?', a: 'We provide press-ready PDFs with embedded fonts, 300 DPI images, and appropriate bleed. If you are printing elsewhere, we can provide print-ready files. If you are printing with us, files move directly into the production queue.' },
+  { q: 'Can I supply my own content and copy?', a: 'Yes. Most clients supply copy, logos, and any images or photos they want included. We handle layout, typography, and design. If you need copywriting or photography, we can connect you with resources we have worked with on past projects.' },
+  { q: 'How many revisions are included?', a: 'We include two rounds of revisions in our standard design work. Additional rounds are available at an hourly rate. In our experience, most projects are approved within two rounds when the client provides clear direction upfront.' },
+  { q: 'How long does design take?', a: 'A standard postcard or self-mailer takes 3–5 business days for initial proof after we receive all materials. Complex multi-page pieces or campaigns with multiple versions take longer. Rush design is available for time-sensitive campaigns.' },
+  { q: 'Do you design for digital channels too?', a: 'Our design focus is direct mail and print. We do not build websites or create social media graphics as a primary service. If you need a coordinated digital component to match your mail campaign, we can discuss options.' },
+];
+
+const graphSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Graphic Design Services',
-  provider: {
-    '@type': 'Organization',
-    '@id': 'https://crst.net/#organization',
-    name: BUSINESS.name,
-    telephone: BUSINESS.phone,
-  },
-  areaServed: [
-    { '@type': 'County', name: 'Ulster County, New York' },
-    { '@type': 'County', name: 'Dutchess County, New York' },
-    { '@type': 'County', name: 'Orange County, New York' },
+  '@graph': [
+    {
+      '@type': 'Service',
+      name: 'Graphic Design Services for Direct Mail',
+      provider: {
+        '@type': 'Organization',
+        '@id': 'https://crst.net/#organization',
+        name: BUSINESS.name,
+        telephone: BUSINESS.phone,
+      },
+      areaServed: [
+        { '@type': 'County', name: 'Ulster County, New York' },
+        { '@type': 'County', name: 'Dutchess County, New York' },
+        { '@type': 'County', name: 'Orange County, New York' },
+      ],
+      url: 'https://crst.net/services/graphic-design',
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: gdesignFaqs.map(faq => ({
+        '@type': 'Question',
+        name: faq.q,
+        acceptedAnswer: { '@type': 'Answer', text: faq.a },
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crst.net' },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://crst.net/services' },
+        { '@type': 'ListItem', position: 3, name: 'Graphic Design', item: 'https://crst.net/services/graphic-design' },
+      ],
+    },
+    {
+      '@type': 'WebPage',
+      '@id': 'https://crst.net/services/graphic-design',
+      name: 'Graphic Design for Direct Mail & Print',
+      url: 'https://crst.net/services/graphic-design',
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['h1', 'h2'],
+      },
+    },
   ],
-  url: 'https://crst.net/services/graphic-design',
 };
 ---
 
@@ -32,7 +71,7 @@ const serviceSchema = {
   description="In-house graphic design for direct mail pieces — postcards, brochures, letters, and self-mailers. Designed to USPS specs. New Paltz, NY."
 >
   <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(graphSchema)} />
   </Fragment>
   <PageHero
     title="Graphic Design for Direct Mail"
@@ -168,8 +207,22 @@ const serviceSchema = {
     </div>
   </section>
 
+  <section class="py-14 lg:py-20 bg-white">
+    <div class="container-wide max-w-3xl mx-auto">
+      <h2 class="text-2xl font-display text-crst-primary mb-6">Graphic Design FAQ</h2>
+      <div class="space-y-4">
+        {gdesignFaqs.map((item) => (
+          <div class="bg-navy-50/40 rounded-xl border border-navy-100 p-5">
+            <h3 class="font-heading font-semibold text-navy-800 text-sm mb-2">{item.q}</h3>
+            <p class="text-sm text-navy-600/70 leading-relaxed">{item.a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-    <AuthorByline compact />
+    <AuthorByline />
   </div>
 
   <section class="py-10 bg-crst-primary/5 border-y border-crst-primary/10">
