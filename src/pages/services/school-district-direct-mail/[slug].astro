@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AuthorByline from '../../../components/AuthorByline.astro';
 import { BUSINESS } from '../../../data/site';
 
 export async function getStaticPaths() {
@@ -35,15 +36,6 @@ graphItems.push({ '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListI
 
 <BaseLayout title={title} description={description} canonical={canonical}>
   <Fragment slot="head"><script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graphItems })} /></Fragment>
-
-  <section class="bg-crst-primary text-white py-3">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center gap-3 text-sm">
-        <img src="/images/sean-griffin.png" alt={author} class="w-8 h-8 rounded-full object-cover border-2 border-white/30" loading="eager" />
-        <span class="text-white/80">By <a href="/about" class="text-white font-bold hover:underline">{author}</a> · {authorTitle} · {authorLocation} · Since 1998</span>
-      </div>
-    </div>
-  </section>
 
   <section class="bg-crst-primary text-white py-12 lg:py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
