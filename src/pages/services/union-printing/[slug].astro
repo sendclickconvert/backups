@@ -60,6 +60,24 @@ graphItems.push({ '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListI
             </nav>
           )}
           <div class="prose prose-navy max-w-none prose-headings:font-display prose-headings:text-crst-primary prose-a:text-crst-accent hover:prose-a:text-crst-primary prose-strong:text-navy-800 prose-p:text-navy-600/80 prose-li:text-navy-600/80"><Content /></div>
+
+          <AuthorByline />
+
+          {schemaFAQ && schemaFAQ.length > 0 && (
+            <div class="mt-12">
+              <div class="section-divider mb-6"></div>
+              <h2 class="text-2xl font-display text-crst-primary mb-6">Frequently Asked Questions</h2>
+              <div class="space-y-4">
+                {schemaFAQ.map((item) => (
+                  <div class="bg-navy-50/40 rounded-xl border border-navy-100 p-5">
+                    <h3 class="font-heading font-semibold text-navy-800 text-sm mb-2">{item.q}</h3>
+                    <p class="text-sm text-navy-600/70 leading-relaxed">{item.a}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           <div class="bg-crst-primary/5 border border-crst-primary/15 rounded-xl p-6 text-center mt-10">
             <p class="font-heading font-bold text-crst-primary text-lg mb-2">Need Union-Printed Materials?</p>
             <p class="text-navy-600/70 text-sm mb-4">We print with the union bug. Every piece we produce for organized labor carries the proper imprint.</p>
