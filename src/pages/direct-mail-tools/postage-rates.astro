@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import CTASection from '../../components/CTASection.astro';
+import PostageCalculator from '../../components/calculators/PostageCalculator';
 import { BUSINESS } from '../../data/site';
 ---
 
@@ -100,6 +101,10 @@ import { BUSINESS } from '../../data/site';
             <p class="text-xs text-navy-500 mt-1">Sean has processed bulk mail campaigns for Hudson Valley businesses since 1998. The rates on this page are applied to every campaign Cornerstone produces. We update this guide every time USPS announces a rate change.</p>
             <p class="text-xs text-navy-400 mt-1">Last reviewed: January 2026 · Source: <a href="https://pe.usps.com/text/dmm300/dmm300_landing.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-crst-primary">USPS Domestic Mail Manual</a> & <a href="https://www.usps.com/business/prices.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-crst-primary">USPS Business Prices</a></p>
           </div>
+        </div>
+
+        <div class="not-prose mb-10">
+          <PostageCalculator client:load />
         </div>
 
         <!-- Marketing Mail -->

@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 import node from '@astrojs/node';
+import react from '@astrojs/react';
 
 const redirectPaths = [
   '/direct-mail-new-paltz',
@@ -52,6 +53,7 @@ export default defineConfig({
   vite: { server: { allowedHosts: true } },
   integrations: [
     tailwind(),
+    react(),
     sitemap({
       filter: (page) => !page.includes('/thank-you') && !page.includes('/training'),
     }),

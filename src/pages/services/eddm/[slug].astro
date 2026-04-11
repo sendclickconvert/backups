@@ -2,6 +2,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AuthorByline from '../../../components/AuthorByline.astro';
+import EDDMCalculator from '../../../components/calculators/EDDMCalculator';
 import { BUSINESS } from '../../../data/site';
 
 export async function getStaticPaths() {
@@ -59,6 +60,12 @@ graphItems.push({ '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListI
               <ul class="space-y-2">{tocHeadings.map((h) => (<li><a href={`#${h.slug}`} class="text-sm text-crst-accent hover:text-crst-primary transition-colors hover:underline">{h.text}</a></li>))}</ul>
             </nav>
           )}
+          {article.slug === 'how-much-does-eddm-cost' && (
+            <div class="not-prose mb-10">
+              <EDDMCalculator client:load />
+            </div>
+          )}
+
           <div class="prose prose-navy max-w-none prose-headings:font-display prose-headings:text-crst-primary prose-a:text-crst-accent hover:prose-a:text-crst-primary prose-strong:text-navy-800 prose-p:text-navy-600/80 prose-li:text-navy-600/80"><Content /></div>
 
           <AuthorByline />

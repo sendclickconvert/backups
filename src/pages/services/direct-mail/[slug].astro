@@ -2,6 +2,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AuthorByline from '../../../components/AuthorByline.astro';
+import DirectMailCostCalculator from '../../../components/calculators/DirectMailCostCalculator';
 import { BUSINESS } from '../../../data/site';
 
 export async function getStaticPaths() {
@@ -131,6 +132,12 @@ const graphSchema = { '@context': 'https://schema.org', '@graph': graphItems };
                 ))}
               </ul>
             </nav>
+          )}
+
+          {article.slug === 'how-much-does-direct-mail-cost' && (
+            <div class="not-prose mb-10">
+              <DirectMailCostCalculator client:load />
+            </div>
           )}
 
           <div class="prose prose-navy max-w-none prose-headings:font-display prose-headings:text-crst-primary prose-a:text-crst-accent hover:prose-a:text-crst-primary prose-strong:text-navy-800 prose-p:text-navy-600/80 prose-li:text-navy-600/80 prose-td:text-navy-600/80 prose-th:text-navy-800 prose-th:font-heading">
