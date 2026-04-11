@@ -15,7 +15,7 @@ const eddmFaqs = [
   { q: 'What is the difference between EDDM Retail and EDDM BMEU?', a: 'EDDM Retail lets you drop mail at a local post office with no permit required and no minimum volume beyond 200 pieces per route. The daily cap is 5,000 pieces per ZIP code. EDDM BMEU (Business Mail Entry Unit) requires a USPS postage permit and delivery to a Bulk Mail facility, but removes the 5,000 piece cap and typically offers lower postage rates for large volumes. Cornerstone uses the New Paltz BMEU for campaigns over 10,000 pieces — we process the paperwork, transport the mail, and handle the entry verification.' },
   { q: 'Can I target specific demographics with EDDM?', a: 'EDDM targets by geography, not by individual demographics. You select entire carrier routes — every address on that route gets a piece. However, the USPS mapping tool lets you filter routes by average household income, age, and household size, so you can select routes where the demographics skew toward your ideal customer. For precise demographic targeting (by name, income, homeowner status, etc.), you need a targeted direct mail campaign with a purchased mailing list instead.' },
   { q: 'How long does an EDDM campaign take from start to delivery?', a: 'Standard production is 10–14 business days from proof approval to post office drop. USPS then delivers within 3–7 business days after drop-off, depending on route volume and local carrier schedules. Total timeline from design finalization to in-home delivery is typically 3 full weeks. Rush production in 5–7 business days is available for time-sensitive campaigns like grand openings or seasonal promotions, though we recommend building in the full timeline whenever possible.' },
-  { q: 'Does Cornerstone handle the USPS paperwork and bundling for EDDM?', a: 'Yes. We manage the full EDDM fulfillment process — printing, cutting, bundling in stacks of 50–100 per carrier route, completing the USPS facing slips, and delivering to the post office or BMEU. Bundling errors and incomplete paperwork are the most common reasons EDDM drops get rejected at the counter. We have processed over 850 EDDM campaigns since 2013 without a single rejection. Handling this in-house eliminates the logistics burden and the risk of a failed drop.' },
+  { q: 'Does Cornerstone handle the USPS paperwork and bundling for EDDM?', a: 'Yes. We manage the full EDDM fulfillment process — printing, cutting, bundling in stacks of 50–100 per carrier route, completing the USPS facing slips, and delivering to the post office or BMEU. Bundling errors and incomplete paperwork are the most common reasons EDDM drops get rejected at the counter. Handling this in-house eliminates the logistics burden and the risk of a failed drop.' },
   { q: 'What industries get the best results from EDDM?', a: 'Restaurants, dental practices, real estate agents, HVAC contractors, fitness studios, and auto dealers consistently see the strongest EDDM response rates in our experience. The common thread is a local service area — if your customers come from a defined geography (3–10 mile radius), EDDM saturates that area efficiently. Political campaigns and school districts also use EDDM heavily for voter outreach and budget vote mailings, where reaching every household in a district is the explicit goal.' },
 ];
 
@@ -60,7 +60,7 @@ const graphSchema = {
       '@type': 'WebPage',
       '@id': 'https://crst.net/services/eddm',
       name: 'EDDM Services — Every Door Direct Mail',
-      description: 'Full-service EDDM campaigns from $0.247 postage. Route selection, design, printing, bundling, and USPS drop — handled in-house at our New Paltz, NY facility since 2013.',
+      description: 'Full-service EDDM campaigns from $0.247 postage. Route selection, design, printing, bundling, and USPS drop — handled in-house at our New Paltz, NY facility since 1998.',
       speakable: {
         '@type': 'SpeakableSpecification',
         cssSelector: ['h1', '.article-lead', '.prose h2'],
@@ -73,7 +73,7 @@ const graphSchema = {
 
 <BaseLayout
   title="EDDM Services — Every Door Direct Mail | Postage From $0.247/Piece"
-  description="Full-service EDDM campaigns for Hudson Valley businesses. Route selection, design, printing, USPS bundling, and delivery — all in-house. Postage from $0.247/piece. 850+ campaigns since 2013."
+  description="Full-service EDDM campaigns for Hudson Valley businesses. Route selection, design, printing, USPS bundling, and delivery — all in-house at our New Paltz facility. Postage from $0.247/piece."
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(graphSchema)} />
@@ -97,7 +97,7 @@ const graphSchema = {
             Every Door Direct Mail (EDDM) is a USPS program that delivers your mailpiece to every address on a postal carrier route — no mailing list required. You pick the routes, we print the postcards, bundle them to USPS specs, and drop them at the post office. The carrier does the rest. Postage is $0.247 per piece at the EDDM Retail rate, which is lower than First-Class and comparable to bulk presort rates without the permit fees.
           </p>
           <p class="text-navy-600/80 leading-relaxed mb-6">
-            Cornerstone Services has managed EDDM campaigns in the Hudson Valley since the USPS launched the program. We have produced over 850 EDDM drops for restaurants, dental practices, real estate agents, political campaigns, school districts, and local service businesses across Ulster, Dutchess, and Orange counties. Every campaign is designed, printed, bundled, and delivered to the post office from our facility at 31 South Ohioville Road in New Paltz, NY — one building, one team, no handoffs.
+            Cornerstone Services has managed EDDM campaigns for Hudson Valley businesses and organizations since 1998. Every campaign is designed, printed, bundled, and delivered to the post office from our facility at 31 South Ohioville Road in New Paltz, NY — one building, one team, no handoffs. We serve restaurants, dental practices, real estate agents, political campaigns, school districts, and local service businesses across Ulster, Dutchess, and Orange counties.
           </p>
           <p class="text-navy-600/80 leading-relaxed mb-6">
             The reason EDDM works for local businesses is simple math. A restaurant in Kingston mailing 4,000 postcards to every household within a 3-mile radius pays $988 in postage. Add printing and design, and the total campaign cost is typically $2,500–$3,200. Compare that to a Facebook ad campaign with the same geographic targeting — EDDM puts a physical piece in the mailbox, which the <a href="/services/direct-mail/direct-mail-response-rates" class="text-crst-accent hover:text-crst-primary underline">DMA reports</a> generates a 4.4% response rate for house lists versus 0.12% for display ads. The piece doesn't disappear when the customer scrolls past.
@@ -105,7 +105,7 @@ const graphSchema = {
 
           <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">How We Run an EDDM Campaign</h3>
           <p class="text-navy-600/80 leading-relaxed mb-6">
-            We have refined this process over 850+ campaigns. Here is exactly what happens when you call us about EDDM:
+            We have refined this process over many years of EDDM campaigns. Here is exactly what happens when you call us about EDDM:
           </p>
           <div class="space-y-6">
             {[
@@ -282,7 +282,7 @@ const graphSchema = {
 
           <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">5 EDDM Mistakes That Waste Your Budget</h3>
           <p class="text-navy-600/80 leading-relaxed mb-4">
-            After 850+ campaigns, we have seen every EDDM mistake there is. These are the five that cost businesses the most money:
+            After years of producing EDDM campaigns, we have seen every mistake there is. These are the five that cost businesses the most money:
           </p>
           <div class="space-y-4 mb-6">
             {[
@@ -290,7 +290,7 @@ const graphSchema = {
               { num: '2', title: 'Printing pieces that do not meet EDDM flat-size specs', detail: 'A standard 6x9 postcard is technically too small for EDDM — it must be at least 6.125" tall. We have seen businesses print 5,000 pieces with an online printer only to have them rejected at the post office. Our design templates are pre-verified to USPS specifications.' },
               { num: '3', title: 'Mailing once and expecting results', detail: 'The industry rule of thumb is three impressions before recognition. A single EDDM drop generates awareness but rarely drives significant response. We recommend a minimum three-drop campaign spaced 3–4 weeks apart. Response rates typically increase 25–40% by the third mailing.' },
               { num: '4', title: 'No tracking mechanism on the mailpiece', detail: 'If you cannot measure response, you cannot improve the campaign. Every EDDM piece we design includes a unique URL, QR code, promo code, or dedicated phone number so you know exactly how many responses came from the mailing.' },
-              { num: '5', title: 'Bundling and paperwork errors at the counter', detail: 'EDDM drops require facing slips completed with route number, piece count, and postage payment method for every bundle. Errors get the entire drop rejected. We prepare all paperwork in-house and have maintained a 100% acceptance rate across our 850+ EDDM campaigns.' },
+              { num: '5', title: 'Bundling and paperwork errors at the counter', detail: 'EDDM drops require facing slips completed with route number, piece count, and postage payment method for every bundle. Errors get the entire drop rejected. We prepare all paperwork in-house — it is why our EDDM drops clear the counter without issue.' },
             ].map((item) => (
               <div class="bg-navy-50/40 rounded-lg p-4 border-l-4 border-crst-primary/40">
                 <h4 class="font-heading font-bold text-navy-800 text-sm mb-1">
@@ -303,7 +303,7 @@ const graphSchema = {
 
           <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">Why Businesses Choose Cornerstone for EDDM</h3>
           <p class="text-navy-600/80 leading-relaxed mb-4">
-            You can run EDDM yourself. The USPS tool is free, and any printer can produce oversized postcards. So why do 850+ campaigns come through our shop? Three reasons:
+            You can run EDDM yourself. The USPS tool is free, and any printer can produce oversized postcards. Here is why clients run their EDDM campaigns through us:
           </p>
           <div class="space-y-4 mb-6">
             <div class="flex items-start gap-3">
@@ -324,7 +324,7 @@ const graphSchema = {
               <svg class="w-5 h-5 text-crst-primary shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
               <div>
                 <span class="font-heading font-bold text-navy-800 text-sm">Zero rejected drops.</span>
-                <span class="text-sm text-navy-600/70"> EDDM bundling and facing slip requirements are specific and unforgiving. Incomplete paperwork or wrong bundle counts mean your mail sits at the counter until you fix it. We have processed 850+ drops with a 100% acceptance rate because we do this every week — not once a quarter.</span>
+                <span class="text-sm text-navy-600/70"> EDDM bundling and facing slip requirements are specific and unforgiving. Incomplete paperwork or wrong bundle counts mean your mail sits at the counter until you fix it. We do this every week — not once a quarter — and our drops clear the counter without issue.</span>
               </div>
             </div>
           </div>
@@ -355,8 +355,7 @@ const graphSchema = {
                 <p>Min per route: <strong class="text-navy-800">200 pieces</strong></p>
                 <p>Max per ZIP/day: <strong class="text-navy-800">5,000 pieces</strong> (Retail)</p>
                 <p>Delivery: <strong class="text-navy-800">3–7 business days</strong> after drop</p>
-                <p>Campaigns produced: <strong class="text-navy-800">850+ since 2013</strong></p>
-                <p>Drop acceptance rate: <strong class="text-navy-800">100%</strong></p>
+                <p>In business since: <strong class="text-navy-800">1998</strong></p>
               </div>
             </div>
 
