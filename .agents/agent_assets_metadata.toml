@@ -66,3 +66,9 @@ id = "xYjHPgtDlybwnxcaoA3Oh"
 uri = "file://crst-service-keywords.md"
 type = "text"
 title = "CRST Service Keywords (88 keywords across 10 services)"
+
+[[outputs]]
+id = "2-U8eKtQtuD2Ot4khVqPc"
+uri = "file://CRST-SEO-Architecture-Audit.md"
+type = "text"
+title = "CRST SEO Architecture Audit — Full Forensic Teardown"
