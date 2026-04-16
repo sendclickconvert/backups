@@ -1,5 +1,5 @@
 ---
-import { GHL } from '../data/site';
+const siteKey = import.meta.env.TURNSTILE_SITE ?? '';
 ---
 
 <form id="estimate-form" class="space-y-5" novalidate>
@@ -93,6 +93,11 @@ import { GHL } from '../data/site';
     <input type="text" name="_loadtime" tabindex="-1" autocomplete="off" id="form-loadtime" />
   </div>
 
+  <!-- Cloudflare Turnstile widget -->
+  {siteKey && (
+    <div class="cf-turnstile" data-sitekey={siteKey} data-theme="light"></div>
+  )}
+
   <button
     type="submit"
     class="btn-primary w-full sm:w-auto text-sm px-8 py-3"
@@ -110,11 +115,16 @@ import { GHL } from '../data/site';
     <strong>Thank you!</strong> We've received your request and will be in touch within one business day.
   </div>
   <div id="form-error" class="hidden p-4 bg-red-50 border border-red-200 rounded-lg text-sm text-red-800 font-heading">
-    Something went wrong. Please call us at <a href="tel:8453936770" class="underline font-semibold">(845) 255-5722</a> or email <a href="mailto:info@crst.net" class="underline font-semibold">info@crst.net</a>.
+    Something went wrong. Please call us at <a href="tel:8452555722" class="underline font-semibold">(845) 255-5722</a> or email <a href="mailto:info@crst.net" class="underline font-semibold">info@crst.net</a>.
   </div>
 </form>
 
-<script define:vars={{ webhookUrl: GHL.webhookUrl }}>
+<!-- Load Turnstile script once per page -->
+{siteKey && (
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+)}
+
+<script>
   const form = document.getElementById('estimate-form');
   const submitBtn = document.getElementById('estimate-submit');
   const submitText = document.getElementById('submit-text');
@@ -136,57 +146,59 @@ import { GHL } from '../data/site';
     e.preventDefault();
 
     // Honeypot check
-    const honeypot = form.querySelector('input[name="website"]');
-    if (honeypot && honeypot.value) return;
+    const honeypot = form.querySelector('input[name="website"]') as HTMLInputElement | null;
+    if (honeypot?.value) return;
 
     // Time-based check — reject if submitted in under 3 seconds
-    const loadTime = parseInt(loadTimeField?.value || '0', 10);
+    const loadTime = parseInt((loadTimeField as HTMLInputElement)?.value || '0', 10);
     if (loadTime && Date.now() - loadTime < 3000) return;
 
-    // Content filter — check message for spam patterns
-    const message = (form.querySelector('textarea[name="message"]')?.value || '').toLowerCase();
-    const isSpam = SPAM_PATTERNS.some((pattern) => pattern.test(message));
-    if (isSpam) return;
+    // Content filter
+    const messageEl = form.querySelector('textarea[name="message"]') as HTMLTextAreaElement | null;
+    const message = messageEl?.value || '';
+    if (SPAM_PATTERNS.some((p) => p.test(message))) return;
 
     // Disable button, show spinner
-    submitBtn.disabled = true;
-    submitText.textContent = 'Sending...';
-    spinner.classList.remove('hidden');
-    successMsg.classList.add('hidden');
-    errorMsg.classList.add('hidden');
+    (submitBtn as HTMLButtonElement).disabled = true;
+    submitText!.textContent = 'Sending...';
+    spinner!.classList.remove('hidden');
+    successMsg!.classList.add('hidden');
+    errorMsg!.classList.add('hidden');
 
     const formData = new FormData(form);
-    const payload = {
-      firstName: formData.get('firstName'),
-      lastName: formData.get('lastName'),
-      email: formData.get('email'),
-      phone: formData.get('phone') || '',
-      company: formData.get('company') || '',
-      message: formData.get('message'),
-      source: 'website',
+
+    const payload: Record<string, string> = {
+      firstName: formData.get('firstName') as string,
+      lastName: formData.get('lastName') as string,
+      email: formData.get('email') as string,
+      phone: (formData.get('phone') as string) || '',
+      company: (formData.get('company') as string) || '',
+      message: formData.get('message') as string,
     };
 
+    // Include Turnstile token if widget is present
+    const turnstileToken = formData.get('cf-turnstile-response') as string | null;
+    if (turnstileToken) payload['cf-turnstile-response'] = turnstileToken;
+
     try {
-      const response = await fetch(webhookUrl, {
+      const response = await fetch('/api/submit-form', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
 
       if (response.ok) {
-        successMsg.classList.remove('hidden');
+        successMsg!.classList.remove('hidden');
         form.reset();
-        // Optional: redirect to thank-you page
-        // window.location.href = '/thank-you/';
       } else {
-        throw new Error('Webhook failed');
+        throw new Error('Submission failed');
       }
-    } catch (err) {
-      errorMsg.classList.remove('hidden');
+    } catch {
+      errorMsg!.classList.remove('hidden');
     } finally {
-      submitBtn.disabled = false;
-      submitText.textContent = 'Get Free Estimate';
-      spinner.classList.add('hidden');
+      (submitBtn as HTMLButtonElement).disabled = false;
+      submitText!.textContent = 'Get Free Estimate';
+      spinner!.classList.add('hidden');
     }
   });
 </script>
