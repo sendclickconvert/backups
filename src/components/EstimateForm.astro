@@ -90,6 +90,7 @@ import { GHL } from '../data/site';
   <!-- Honeypot -->
   <div class="hidden" aria-hidden="true">
     <input type="text" name="website" tabindex="-1" autocomplete="off" />
+    <input type="text" name="_loadtime" tabindex="-1" autocomplete="off" id="form-loadtime" />
   </div>
 
   <button
@@ -121,12 +122,31 @@ import { GHL } from '../data/site';
   const successMsg = document.getElementById('form-success');
   const errorMsg = document.getElementById('form-error');
 
+  // Record load time for time-based bot check
+  const loadTimeField = document.getElementById('form-loadtime');
+  if (loadTimeField) loadTimeField.value = Date.now().toString();
+
+  // Spam keyword patterns
+  const SPAM_PATTERNS = [
+    /\b(seo services|backlink|crypto|bitcoin|loan offer|earn \$|work from home|click here|buy now|free money|casino|viagra|cialis|porn|xxx)\b/i,
+    /https?:\/\/[^\s]{3,}/,
+  ];
+
   form?.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     // Honeypot check
     const honeypot = form.querySelector('input[name="website"]');
     if (honeypot && honeypot.value) return;
+
+    // Time-based check — reject if submitted in under 3 seconds
+    const loadTime = parseInt(loadTimeField?.value || '0', 10);
+    if (loadTime && Date.now() - loadTime < 3000) return;
+
+    // Content filter — check message for spam patterns
+    const message = (form.querySelector('textarea[name="message"]')?.value || '').toLowerCase();
+    const isSpam = SPAM_PATTERNS.some((pattern) => pattern.test(message));
+    if (isSpam) return;
 
     // Disable button, show spinner
     submitBtn.disabled = true;
