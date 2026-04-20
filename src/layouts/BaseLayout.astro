@@ -90,13 +90,13 @@ const pageSchema = schema || defaultSchema;
 
   <slot name="head" />
 
-  <!-- Google Analytics 4 -->
-  <script async src={`https://www.googletagmanager.com/gtag/js?id=${GHL.ga4Id}`}></script>
-  <script define:vars={{ ga4Id: GHL.ga4Id }}>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRBG2H3FE7"></script>
+  <script is:inline>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', ga4Id);
+    gtag('config', 'G-HRBG2H3FE7');
   </script>
 
 
