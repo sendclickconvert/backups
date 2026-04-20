@@ -88,11 +88,11 @@ const pageSchema = schema || defaultSchema;
   <!-- Schema Markup -->
   <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
 
+  <!-- Google Tag Manager -->
+  <Fragment set:html={`<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-58VFRL7V');</script>`} />
+  <!-- End Google Tag Manager -->
+
   <slot name="head" />
-
-  <!-- Google tag (gtag.js) — Fragment bypasses Astro script processing -->
-  <Fragment set:html={`<script async src="https://www.googletagmanager.com/gtag/js?id=G-HRBG2H3FE7"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HRBG2H3FE7');</script>`} />
-
 
   <!-- GHL Tracking Pixel (loaded after page load) -->
   <script define:vars={{ trackingId: GHL.trackingId }}>
@@ -105,6 +105,10 @@ const pageSchema = schema || defaultSchema;
   </script>
 </head>
 <body class="min-h-screen flex flex-col antialiased">
+  <!-- Google Tag Manager (noscript) -->
+  <Fragment set:html={`<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58VFRL7V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`} />
+  <!-- End Google Tag Manager (noscript) -->
+
   <Header />
 
   <main class="flex-1">
