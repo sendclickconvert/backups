@@ -248,6 +248,13 @@ const exactRedirects: Record<string, string> = {
   '/crst-daily/direct-mail-vs-email-marketing-comparison-and-roi-return-on-investment': 'https://blog.crst.net',
   '/crst-daily/direct-mail-campaign-cairo-ny-12413': 'https://blog.crst.net',
 
+  '/blog': 'https://blog.crst.net',
+  '/blog/': 'https://blog.crst.net',
+  '/sitemap': '/sitemap-index.xml',
+  '/sitemap/': '/sitemap-index.xml',
+  '/sitemap.xml': '/sitemap-index.xml',
+  '/resources/address-change': '/direct-mail-tools/address-change',
+  '/resources/address-change/': '/direct-mail-tools/address-change',
   '/chicken-shipping-101': '/resources/chicken-shipping-101',
   '/ancillary-service-endorsements': '/resources',
   '/guide-for-self-mailer-tabbing-regulations': '/resources',
@@ -285,6 +292,15 @@ if (malformedSuffix) {
     return new Response(gone410Html, { status: 410, headers: { 'Content-Type': 'text/html' } });
   }
   return Astro.redirect(knownClean || cleanPath, 301);
+}
+
+// WordPress scanner / bot paths — return 410 Gone
+const wpBotPaths = [
+  '/wp-login.php', '/wp-admin', '/xmlrpc.php', '/wp-json',
+  '/sample-page', '/hello-world', '/uncategorized',
+];
+if (wpBotPaths.some(p => path === p || path.startsWith(p + '/') || path.startsWith(p + '?'))) {
+  return new Response(gone410Html, { status: 410, headers: { 'Content-Type': 'text/html' } });
 }
 
 const gone410Patterns = [
