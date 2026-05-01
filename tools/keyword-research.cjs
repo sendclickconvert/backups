@@ -1,6 +1,50 @@
 const axios = require('axios');
 const { createObjectCsvWriter } = require('csv-writer');
 
+// ─── Keyword Scope Rules (see tools/keyword-research-scope.md) ───────────────
+
+// Generic post office terms — exclude entirely from all output
+const EXCLUDE_PATTERNS = [
+  /\bpost office hours\b/i,
+  /\bpost office phone\b/i,
+  /\bpost office passport\b/i,
+  /\busps hours\b/i,
+  /\bpassport appointment\b/i,
+  /\bmail lobby\b/i,
+  /\bpackage pickup\b/i,
+  /^[\w\s]+ post office$/i,          // "[town] post office" — exact
+  /^[\w\s]+ usps$/i,                  // "[town] USPS" — exact
+];
+
+// Mailing-logistics post office terms — section use only, no standalone page
+const SECTION_ONLY_PATTERNS = [
+  /\beddm drop.?off\b/i,
+  /\bbulk mail post office\b/i,
+  /\bbulk mail permit\b/i,
+  /\busps eddm\b/i,
+  /\bwhere to drop off eddm\b/i,
+  /\bmailing permit\b/i,
+  /\bbusiness mail entry unit\b/i,
+  /\busps direct mail acceptance\b/i,
+  /\bpost office bulk mail\b/i,
+  /\bpost office eddm\b/i,
+  /\bpost office direct mail\b/i,
+  /\blocal post office mailing\b/i,
+];
+
+function classifyKeyword(keyword) {
+  const kw = keyword.toLowerCase();
+  if (EXCLUDE_PATTERNS.some(p => p.test(kw))) {
+    return { standaloneTarget: 'EXCLUDE', useAs: 'Exclude entirely' };
+  }
+  if (SECTION_ONLY_PATTERNS.some(p => p.test(kw))) {
+    return { standaloneTarget: 'No', useAs: 'On-Page Section' };
+  }
+  return { standaloneTarget: 'Yes', useAs: 'Standalone Page' };
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+
 const login = process.env.DATAFORSEO_LOGIN;
 const password = process.env.DATAFORSEO_PASSWORD;
 
@@ -253,6 +297,12 @@ async function script1() {
       const vol = volumeData[key] || {};
       const kd = kdData[key] ?? 'NO DATA';
 
+      const classification = classifyKeyword(keyword);
+      if (classification.standaloneTarget === 'EXCLUDE') {
+        console.log(`  [EXCLUDED] ${keyword}`);
+        continue;
+      }
+
       const row = {
         group,
         hub: hubCounter,
@@ -262,10 +312,12 @@ async function script1() {
         cpc: vol.cpc ?? 'NO DATA',
         competition: vol.competition ?? 'NO DATA',
         intent: '',
+        standaloneTarget: classification.standaloneTarget,
+        useAs: classification.useAs,
       };
 
       allResults.push(row);
-      console.log(`  ${hubCounter}. ${keyword} — vol: ${row.volume}, KD: ${row.kd}, CPC: $${row.cpc}`);
+      console.log(`  ${hubCounter}. ${keyword} — vol: ${row.volume}, KD: ${row.kd}, CPC: $${row.cpc} [${row.standaloneTarget}]`);
     }
   }
 
@@ -286,6 +338,8 @@ async function script1() {
       { id: 'cpc', title: 'CPC' },
       { id: 'competition', title: 'Competition' },
       { id: 'intent', title: 'Intent' },
+      { id: 'standaloneTarget', title: 'Standalone Target?' },
+      { id: 'useAs', title: 'Use As' },
     ],
   });
 
@@ -368,7 +422,12 @@ async function script3() {
       console.log('    No spoke ideas found');
     } else {
       ideas.forEach((idea, j) => {
-        console.log(`    ${j + 1}. "${idea.keyword}" — vol: ${idea.volume}, KD: ${idea.kd}, CPC: $${idea.cpc}, ${idea.intent}`);
+        const classification = classifyKeyword(idea.keyword);
+        if (classification.standaloneTarget === 'EXCLUDE') {
+          console.log(`    [EXCLUDED] "${idea.keyword}"`);
+          return;
+        }
+        console.log(`    ${j + 1}. "${idea.keyword}" — vol: ${idea.volume}, KD: ${idea.kd}, CPC: $${idea.cpc}, ${idea.intent} [${classification.standaloneTarget}]`);
         allSpokes.push({
           hubKeyword: hub,
           spokeKeyword: idea.keyword,
@@ -376,6 +435,8 @@ async function script3() {
           kd: idea.kd,
           cpc: idea.cpc,
           intent: idea.intent,
+          standaloneTarget: classification.standaloneTarget,
+          useAs: classification.useAs,
         });
       });
     }
@@ -390,6 +451,8 @@ async function script3() {
       { id: 'kd', title: 'Keyword Difficulty' },
       { id: 'cpc', title: 'CPC' },
       { id: 'intent', title: 'Intent' },
+      { id: 'standaloneTarget', title: 'Standalone Target?' },
+      { id: 'useAs', title: 'Use As' },
     ],
   });
 
