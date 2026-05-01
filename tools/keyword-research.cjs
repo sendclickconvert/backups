@@ -58,108 +58,115 @@ const headers = { 'Authorization': `Basic ${token}`, 'Content-Type': 'applicatio
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
+const RUN_DATE = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+const RAW_DIR = `tools/raw-responses-${RUN_DATE}`;
+const fs = require('fs');
+if (!fs.existsSync(RAW_DIR)) fs.mkdirSync(RAW_DIR, { recursive: true });
+
+function saveRaw(label, data) {
+  const file = `${RAW_DIR}/${label}.json`;
+  fs.writeFileSync(file, JSON.stringify(data, null, 2));
+}
+
 const GROUPS = {
-  'Tier 1 Service': [
-    'direct mail ROI',
-    'direct mail response rates',
-    'direct mail vs email marketing',
-    'how much does direct mail cost',
-    'targeted mailing lists',
-    'digital vs offset printing',
-    'bulk printing services',
-    'eco friendly printing',
-    'brochure printing services',
-    'flyer printing services',
-    'business card printing services',
-    'large format printing',
-    'banner printing services',
-    'variable data printing',
-    'direct mail design services',
+  'Core Direct Mail': [
+    'direct mail',
+    'direct mail printing',
+    'printing and mailing',
+    'mailing services',
+    'bulk mailing',
+    'postcard mailing',
+    'saturation mailing',
+    'local business direct mail',
+    'direct mail advertising',
+    'direct mail company',
+    'direct mail marketing',
   ],
-  'Tier 2 Industry': [
-    'direct mail for restaurants',
-    'direct mail for real estate agents',
-    'direct mail for nonprofits',
-    'political campaign direct mail printing',
-    'credit union direct mail marketing',
+  'EDDM & Saturation': [
+    'EDDM',
+    'Every Door Direct Mail',
+    'EDDM printing',
+    'EDDM mailing service',
+    'EDDM marketing',
+    'EDDM postcard',
+    'saturation mail',
+    'residential saturation mailing',
+    'carrier route mailing',
+  ],
+  'Industry Verticals': [
+    'nonprofit mailing',
+    'nonprofit direct mail',
+    'political mailing',
+    'political direct mail',
+    'real estate direct mail',
+    'contractor direct mail',
     'home services direct mail',
-    'HVAC direct mail marketing',
-    'roofing direct mail marketing',
-    'healthcare direct mail marketing',
-    'medical practice direct mail',
-    'retail direct mail marketing',
-    'printing for contractors',
-    'construction company printing',
-    'printing for schools',
-    'church printing services',
+    'HVAC direct mail',
+    'roofing direct mail',
+    'restaurant direct mail',
+    'healthcare direct mail',
+    'church direct mail',
+    'school district direct mail',
   ],
-  'Tier 3 Local': [
-    'direct mail services Hudson Valley NY',
-    'printing services New Paltz NY',
-    'direct mail marketing Poughkeepsie NY',
-    'printing services Kingston NY',
-    'mailing services Ulster County NY',
-    'EDDM Hudson Valley NY',
-    'local marketing Dutchess County NY',
-    'direct mail services Dutchess County',
-    'printing services Hudson Valley',
-    'marketing services New Paltz NY',
-  ],
-  'EDDM Spokes': [
-    'EDDM vs targeted mail',
-    'EDDM for restaurants',
-    'EDDM for real estate',
-    'EDDM design tips',
-    'how to set up EDDM',
-    'EDDM route selection',
-    'EDDM marketing strategy',
-    'EDDM success stories',
-    'EDDM vs digital advertising',
-    'every door direct mail for small business',
+  'Post Office Logistics — Section Only': [
+    'mail drop',
+    'postal mailing',
+    'USPS EDDM',
+    'USPS saturation mailing',
+    'local post office mailing',
+    'post office bulk mail',
+    'post office EDDM',
+    'post office direct mail',
+    'bulk mail permit',
+    'mailing permit',
+    'business mail entry unit',
+    'EDDM drop off',
+    'where to drop off EDDM',
+    'USPS direct mail acceptance',
   ],
 };
 
 const NO_DATA_KEYWORDS = [
-  'political campaign direct mail printing',
-  'roofing direct mail marketing',
-  'medical practice direct mail',
-  'printing for contractors',
-  'construction company printing',
-  'direct mail services Hudson Valley NY',
-  'printing services New Paltz NY',
-  'direct mail marketing Poughkeepsie NY',
-  'mailing services Ulster County NY',
-  'EDDM Hudson Valley NY',
-  'local marketing Dutchess County NY',
-  'direct mail services Dutchess County',
-  'printing services Hudson Valley',
-  'marketing services New Paltz NY',
-  'EDDM for restaurants',
-  'EDDM design tips',
-  'how to set up EDDM',
-  'EDDM route selection',
-  'EDDM marketing strategy',
-  'EDDM success stories',
-  'EDDM vs digital advertising',
-  'every door direct mail for small business',
+  // Populated dynamically from script1 results — see script2 logic
+  'saturation mailing',
+  'carrier route mailing',
+  'residential saturation mailing',
+  'contractor direct mail',
+  'HVAC direct mail',
+  'roofing direct mail',
+  'church direct mail',
+  'school district direct mail',
+  'EDDM drop off',
+  'where to drop off EDDM',
+  'USPS direct mail acceptance',
+  'business mail entry unit',
+  'mailing permit',
+  'local post office mailing',
+  'USPS saturation mailing',
+  'post office EDDM',
+  'post office direct mail',
+  'post office bulk mail',
+  'mail drop',
+  'postal mailing',
 ];
 
 const HUB_KEYWORDS = [
-  'direct mail ROI',
-  'direct mail response rates',
-  'direct mail vs email marketing',
-  'how much does direct mail cost',
-  'targeted mailing lists',
-  'digital vs offset printing',
-  'bulk printing services',
-  'brochure printing services',
-  'business card printing services',
-  'large format printing',
-  'variable data printing',
-  'flyer printing services',
-  'banner printing services',
+  'direct mail',
+  'EDDM',
+  'Every Door Direct Mail',
+  'mailing services',
+  'postcard mailing',
+  'saturation mailing',
+  'bulk mailing',
+  'direct mail printing',
+  'nonprofit mailing',
+  'political mailing',
+  'real estate direct mail',
+  'USPS EDDM',
+  'bulk mail permit',
 ];
 
+let _rawBatchCounter = 0;
 async function fetchSearchVolume(keywords) {
   try {
     const response = await axios.post(
@@ -167,6 +174,7 @@ async function fetchSearchVolume(keywords) {
       [{ keywords, language_name: 'English', location_code: 2840 }],
       { headers }
     );
+    saveRaw(`s1-search-volume-batch${++_rawBatchCounter}`, response.data);
     const task = response.data?.tasks?.[0];
     if (task?.status_code !== 20000) {
       console.error(`  Search volume API error: ${task?.status_message}`);
