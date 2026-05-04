@@ -44,6 +44,17 @@ const seanGriffin = {
   },
 };
 
+const hubFaqs = [
+  { q: 'What is the standard size for a business envelope?', a: 'The #10 envelope (4.125" × 9.5") is the standard business envelope in the United States. It\'s used for letters, invoices, statements, and most general business correspondence. See our <a href="/guides/envelope-sizes/no-10">#10 envelope page</a> for the full breakdown.' },
+  { q: "What's the difference between a letter and a large envelope?", a: 'USPS classifies any envelope at or under 6.125" high × 11.5" long × 0.25" thick as a letter, with First-Class postage starting at $0.78. Anything larger — including 9×12 and 10×13 — is a flat (also called a large envelope), with postage starting at $1.63 for the first ounce.' },
+  { q: 'What is the smallest envelope you can mail?', a: 'The minimum mailable envelope size is 3.5" high × 5" long × 0.007" thick. Anything smaller is not accepted by USPS.' },
+  { q: 'What is the largest first-class letter envelope?', a: 'The maximum letter-rate envelope is 6.125" high × 11.5" long × 0.25" thick, weighing no more than 3.5 oz. Beyond any of those limits, the piece is rated as a flat.' },
+  { q: 'Why is a square envelope more expensive to mail?', a: 'A square envelope has an aspect ratio of 1.0, which falls outside the USPS machinable range of 1.3 to 2.5. That makes it nonmachinable and triggers a surcharge on top of the standard letter rate. If postage cost matters, choose a rectangular envelope.' },
+  { q: 'What postage do I need for a 9×12 envelope?', a: 'A 9×12 envelope is a flat. First-Class postage starts at $1.63 for the first ounce in 2026, with $0.20 added per additional ounce. The piece must be flexible and no thicker than 0.75". The full breakdown is on our <a href="/guides/envelope-sizes/9x12">9×12 envelope page</a>.' },
+  { q: 'How do I choose between an A7 and a #10 for an invitation mailing?', a: 'A7 envelopes (5.25" × 7.25") fit standard card-size invitations and announcements without folding. #10 envelopes are designed for trifolded 8.5×11" letters. For invitations, the A-series is the correct choice; for letters with reply slips and inserts, the #10 is standard.' },
+  { q: 'Are there USPS rules about envelope thickness?', a: 'Yes. Letter-size pieces must be no more than 0.25" thick. They must also be flexible — bending easily without breaking — and uniformly thick. Coins, keys, and similar contents cause uneven thickness and disqualify the piece from machine processing.' },
+];
+
 const graphItems: object[] = [
   {
     '@type': 'Article',
@@ -71,6 +82,14 @@ const graphItems: object[] = [
       { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://crst.net/guides' },
       { '@type': 'ListItem', position: 3, name: 'Envelope Sizes', item: canonical },
     ],
+  },
+  {
+    '@type': 'FAQPage',
+    mainEntity: hubFaqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
   },
 ];
 
@@ -118,8 +137,8 @@ const comparisonRows = [
         <div class="lg:col-span-2">
 
           <!-- RETRIEVAL_PARAGRAPH:start -->
-          <div class="bg-navy-50/60 border border-navy-100 rounded-xl p-5 mb-8 text-sm text-navy-700 leading-relaxed">
-            Standard envelope sizes in the United States range from the #9 reply envelope (3⅞ × 8⅞ inches) to the 9×12 catalog envelope (228.6 × 304.8 mm). Letter-rate envelopes must not exceed 6.125 × 11.5 inches. Larger envelopes are classified as USPS flats with higher per-piece postage. The #10 envelope (4⅛ × 9½ inches) is the most common American business envelope. Cornerstone Services in New Paltz, NY prints and mails all standard envelope formats for direct mail campaigns across Ulster, Dutchess, and Orange County.
+          <div class="bg-navy-50/60 border border-navy-100 rounded-xl p-5 mb-8 text-navy-700 leading-relaxed">
+            Standard envelope sizes range from the #10 business envelope (4.125" × 9.5") used for letters and invoices to large flats like 9×12 used for unfolded documents. USPS classifies envelopes as either letters (up to 6.125" × 11.5" × 0.25" thick, weighing no more than 3.5 oz) or flats. First-Class letter postage starts at $0.78 in 2026; large envelope postage starts at $1.63. The right size depends on contents, postage class, and automation eligibility.
           </div>
           <!-- RETRIEVAL_PARAGRAPH:end -->
 
@@ -159,21 +178,51 @@ const comparisonRows = [
           </div>
           <p class="text-xs text-navy-600/50 -mt-8 mb-10">* A10 postage class depends on mailing orientation — verify with Cornerstone before ordering.</p>
 
-          <!-- BODY_INTRO:start -->
           <div class="prose prose-navy max-w-none prose-headings:font-display prose-headings:text-crst-primary prose-a:text-crst-accent hover:prose-a:text-crst-primary prose-strong:text-navy-800 prose-p:text-navy-600/80 prose-li:text-navy-600/80">
-            <h2>How Envelope Size Affects Postage</h2>
-            <!-- BODY_INTRO:end -->
-            <!-- USE_CASES:start -->
-            <p>[Placeholder: Explain letter vs. flat rate classification, the 6.125 × 11.5 inch threshold, weight limits, and the aspect ratio rule. Include real cost comparison between letter and flat rates at volume. Link to <a href="/direct-mail-tools/postage-rates">postage rates calculator</a>.]</p>
-            <!-- USE_CASES:end -->
 
-            <!-- POSTAGE_NOTES:start -->
-            <h2>Letter vs. Flat: What the Classification Means for Your Campaign</h2>
-            <p>[Placeholder: Practical explanation of how the letter/flat distinction affects a direct mail campaign budget. Include example: 5,000 pieces at letter rate vs. flat rate, total cost difference. Tie back to format selection and how Cornerstone helps clients choose the right size before print.]</p>
-            <!-- POSTAGE_NOTES:end -->
+            <h2>Why envelope size matters</h2>
+            <p>Envelope size determines three things on every mailing: which postage class applies, whether the piece qualifies for automation discounts, and whether the contents fit without folding. Get any of them wrong and the cost shows up either at the post office or weeks later — wrinkled inserts, surcharged pieces, or returns.</p>
+            <p>This page is the comparison reference we use at Cornerstone Services when setting up direct mail and printing jobs. Every standard envelope size is listed below with exact dimensions in inches and millimeters, the postage class it falls under, and what it's typically used for. Each entry links to a deeper page with paper weights, window options, USPS rules, and design specs for that specific size.</p>
+            <p>If you already know the size you need, jump to it from the comparison table. If you're not sure, the next section covers the three questions that decide it.</p>
 
-            <h2>Choosing the Right Envelope for Direct Mail</h2>
-            <p>[Placeholder: Guide for matching envelope to insert. Cover: what size is the finished insert? Does it need to mail flat or can it fold? Is it a multi-piece package? What postage budget does the campaign have? CTA to contact Cornerstone for a format recommendation.]</p>
+            <h2>How to choose the right envelope size</h2>
+            <p>Three questions decide it:</p>
+
+            <h3>1. What's going inside?</h3>
+            <p>A single trifolded 8.5×11" letter fits a #10. A flat 8.5×11" page that has to stay unfolded needs a 9×12 or larger. Wedding invitations and announcements use the A-series (A6, A7, A9) because the proportions match standard card sizes. Match the contents to the envelope, not the other way around.</p>
+
+            <h3>2. Letter rate or flat rate?</h3>
+            <p>USPS classifies any envelope at or under 6.125" × 11.5" and 0.25" thick as a letter. Anything larger is a flat — and flat-rate postage starts at $1.63 versus $0.78 for a letter. For most direct mail, staying inside the letter envelope is the cheaper play. For documents that can't fold, the flat rate is unavoidable.</p>
+
+            <h3>3. Will the piece qualify for automation discounts?</h3>
+            <p>Bulk and presort discounts require the envelope to be machinable: rectangular, flexible, no clasps or strings, and within the 1.3-to-2.5 aspect ratio (length divided by height). A square envelope has an aspect ratio of 1.0 and is automatically nonmachinable — the surcharge adds up fast on a 5,000-piece campaign. The full rules are in the next section.</p>
+            <p>Once those three are answered, the size choice is usually narrow. The comparison table above shows every standard option side by side.</p>
+
+            <h2>USPS rules for letter-size envelopes</h2>
+            <p>Every letter-size envelope has to clear a short list of physical standards before it qualifies for First-Class or Marketing Mail rates. These come from the USPS Domestic Mail Manual (DMM 201) and apply nationwide:</p>
+            <ul>
+              <li><strong>Minimum dimensions:</strong> 3.5" high × 5" long × 0.007" thick. Anything smaller is not accepted for mailing.</li>
+              <li><strong>Maximum dimensions:</strong> 6.125" high × 11.5" long × 0.25" thick. Beyond any of these, the piece is rated as a flat.</li>
+              <li><strong>Aspect ratio:</strong> length divided by height must fall between 1.3 and 2.5. A square envelope falls outside this range and is nonmachinable by rule.</li>
+              <li><strong>Maximum weight:</strong> 3.5 oz for First-Class letters. Heavier pieces are rated as flats.</li>
+              <li><strong>Shape:</strong> rectangular, with four square corners and parallel opposite sides.</li>
+              <li><strong>Construction:</strong> flexible, uniformly thick, no clasps, strings, buttons, or rigid contents that create uneven thickness.</li>
+            </ul>
+            <p>Pieces that meet every standard above qualify for machinable letter rates. Pieces that fail one or more criteria are still mailable in most cases but are charged the nonmachinable surcharge.</p>
+
+            <h3>2026 First-Class postage rates</h3>
+            <p>These rates have been in effect since July 13, 2025. USPS has proposed a rate adjustment effective July 12, 2026 that would raise the First-Class stamp price to $0.82, pending Postal Regulatory Commission approval.</p>
+            <ul>
+              <li>1-oz letter, Forever stamp: <strong>$0.78</strong></li>
+              <li>1-oz letter, metered postage: <strong>$0.74</strong></li>
+              <li>Each additional ounce, up to 3.5 oz: <strong>$0.29</strong></li>
+              <li>Postcard: <strong>$0.61</strong></li>
+              <li>Large envelope (flat), 1 oz: <strong>$1.63</strong></li>
+              <li>Each additional flat ounce: <strong>$0.20</strong></li>
+            </ul>
+            <p>Metered postage saves $0.04 per piece versus stamps — small per piece, meaningful at volume. Presort and automation discounts take per-piece costs significantly lower than retail rates; we cover those on our <a href="/services/direct-mail">direct mail services page</a>.</p>
+            <p class="text-sm text-navy-600/50 not-italic"><em>Last verified: May 2026. Source: USPS Domestic Mail Manual 201; USPS rate announcements.</em></p>
+
           </div>
 
           <div class="not-prose mt-8">
@@ -185,22 +234,12 @@ const comparisonRows = [
             <div class="section-divider mb-6"></div>
             <h2 class="text-2xl font-display text-crst-primary mb-6">Frequently Asked Questions</h2>
             <div class="space-y-4">
-              <div class="bg-navy-50/40 rounded-xl border border-navy-100 p-5">
-                <h3 class="font-heading font-semibold text-navy-800 text-sm mb-2">What is the most common business envelope size?</h3>
-                <p class="text-sm text-navy-600/70 leading-relaxed">The #10 envelope (4⅛ × 9½ inches, 104.8 × 241.3 mm) is the standard American business envelope. It fits an 8.5 × 11 sheet folded in thirds and qualifies for the lowest available USPS letter-rate postage. It is the default choice for direct mail letters, invoices, billing statements, and business correspondence.</p>
-              </div>
-              <div class="bg-navy-50/40 rounded-xl border border-navy-100 p-5">
-                <h3 class="font-heading font-semibold text-navy-800 text-sm mb-2">What is the maximum letter-rate envelope size?</h3>
-                <p class="text-sm text-navy-600/70 leading-relaxed">USPS letter-rate mail must not exceed 6.125 inches in height, 11.5 inches in length, or 0.25 inches in thickness. Any envelope larger than these limits is classified as a flat and requires higher postage. The envelope must also have a length-to-height aspect ratio between 1.3:1 and 2.5:1 to avoid a non-machinable surcharge.</p>
-              </div>
-              <div class="bg-navy-50/40 rounded-xl border border-navy-100 p-5">
-                <h3 class="font-heading font-semibold text-navy-800 text-sm mb-2">What is the difference between letter and flat postage?</h3>
-                <p class="text-sm text-navy-600/70 leading-relaxed">First-Class letter postage is $0.73 per piece (1 oz, 2026 rate). First-Class flat postage starts at approximately $1.39 per piece. At volume with presorted USPS Marketing Mail, the letter/flat gap narrows but the difference remains significant — especially across campaigns of 5,000+ pieces.</p>
-              </div>
-              <div class="bg-navy-50/40 rounded-xl border border-navy-100 p-5">
-                <h3 class="font-heading font-semibold text-navy-800 text-sm mb-2">Does Cornerstone Services print and mail all envelope formats?</h3>
-                <p class="text-sm text-navy-600/70 leading-relaxed">Yes. Cornerstone Services produces direct mail campaigns using all standard envelope formats — #10, #9 BRE, A-series, 6×9 booklet, 9×12 catalog, window, and custom formats — at our New Paltz, NY facility. We advise on format selection, verify USPS compliance, print, address, presort, and deliver to the post office.</p>
-              </div>
+              {hubFaqs.map((item) => (
+                <div class="bg-navy-50/40 rounded-xl border border-navy-100 p-5">
+                  <h3 class="font-heading font-semibold text-navy-800 text-sm mb-2">{item.q}</h3>
+                  <p class="text-sm text-navy-600/70 leading-relaxed" set:html={item.a} />
+                </div>
+              ))}
             </div>
           </div>
           <!-- FAQ_BLOCK:end -->
