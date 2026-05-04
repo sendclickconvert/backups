@@ -66,7 +66,7 @@ export const NAV_ITEMS = [
     children: [
       { label: 'Mailing Permits Guide', href: '/direct-mail-tools/cornerstone-mailing-permits' },
       { label: 'Postage Rates', href: '/direct-mail-tools/postage-rates' },
-      { label: 'Envelope Sizes', href: '/direct-mail-tools/envelope-sizes' },
+      { label: 'Envelope Sizes', href: '/guides/envelope-sizes' },
       { label: 'USPS Templates', href: '/usps-direct-mailer-templates' },
       { label: 'Postal Dictionary', href: '/direct-mail-tools/postal-dictionary' },
       { label: 'Non-Profit Mailing Tool', href: '/non-profit-mailing-application' },

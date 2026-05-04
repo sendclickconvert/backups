@@ -1,0 +1,36 @@
+---
+import { HUB_NAV_ITEMS } from '../../data/envelope-spokes';
+
+interface Props {
+  currentSlug?: string;
+}
+const { currentSlug } = Astro.props;
+---
+
+<div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
+  <h3 class="font-heading font-bold text-navy-800 text-sm mb-1">Envelope Size Guide</h3>
+  <p class="text-xs text-navy-600/60 mb-3 leading-relaxed">
+    <a href="/guides/envelope-sizes" class="text-crst-accent hover:text-crst-primary transition-colors hover:underline">All envelope sizes →</a>
+  </p>
+  <div class="space-y-1">
+    {HUB_NAV_ITEMS.map((item) => {
+      const isCurrent = item.slug === currentSlug;
+      return (
+        <a
+          href={`/guides/envelope-sizes/${item.slug}`}
+          class={`flex items-center justify-between px-3 py-2 text-sm rounded-md transition-colors font-heading ${
+            isCurrent
+              ? 'text-crst-primary bg-white font-semibold shadow-sm'
+              : 'text-navy-700 hover:text-crst-primary hover:bg-white'
+          }`}
+          aria-current={isCurrent ? 'page' : undefined}
+        >
+          <span class="truncate mr-2">{item.label}</span>
+          <svg class="w-3.5 h-3.5 opacity-40 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+      );
+    })}
+  </div>
+</div>

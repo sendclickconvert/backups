@@ -1,0 +1,51 @@
+---
+interface Props {
+  dimensionsInches: string;
+  dimensionsMm: string;
+  weightLimitOz: string;
+  postageClass: string;
+  primaryUseCases: string[];
+}
+const { dimensionsInches, dimensionsMm, weightLimitOz, postageClass, primaryUseCases } = Astro.props;
+---
+
+<div class="overflow-x-auto rounded-xl border border-navy-100 mb-10">
+  <table class="w-full text-sm">
+    <thead>
+      <tr class="bg-crst-primary text-white">
+        <th colspan="2" class="px-5 py-3 text-left font-heading font-semibold text-sm">Envelope Specifications</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-navy-100">
+      <tr class="bg-white hover:bg-navy-50/30 transition-colors">
+        <td class="px-5 py-3 font-heading font-semibold text-navy-800 w-2/5">Dimensions (inches)</td>
+        <td class="px-5 py-3 text-navy-600 font-mono text-xs">{dimensionsInches}</td>
+      </tr>
+      <tr class="bg-white hover:bg-navy-50/30 transition-colors">
+        <td class="px-5 py-3 font-heading font-semibold text-navy-800">Dimensions (mm)</td>
+        <td class="px-5 py-3 text-navy-600 font-mono text-xs">{dimensionsMm}</td>
+      </tr>
+      <tr class="bg-white hover:bg-navy-50/30 transition-colors">
+        <td class="px-5 py-3 font-heading font-semibold text-navy-800">Weight Limit</td>
+        <td class="px-5 py-3 text-navy-600">{weightLimitOz}</td>
+      </tr>
+      <tr class="bg-white hover:bg-navy-50/30 transition-colors">
+        <td class="px-5 py-3 font-heading font-semibold text-navy-800">USPS Postage Class</td>
+        <td class="px-5 py-3 text-navy-600">{postageClass}</td>
+      </tr>
+      <tr class="bg-white hover:bg-navy-50/30 transition-colors">
+        <td class="px-5 py-3 font-heading font-semibold text-navy-800 align-top">Primary Uses</td>
+        <td class="px-5 py-3">
+          <ul class="space-y-1">
+            {primaryUseCases.map((use) => (
+              <li class="flex items-start gap-2 text-navy-600">
+                <svg class="w-3.5 h-3.5 text-crst-primary shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                {use}
+              </li>
+            ))}
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
