@@ -90,7 +90,7 @@ At [Cornerstone Services](/services/eddm), we manage the full EDDM process: rout
 
 We have run EDDM campaigns for businesses in New Paltz, Kingston, Poughkeepsie, Newburgh, Middletown, and throughout the Hudson Valley. Postage at $0.247 per piece, combined with printing and production, typically lands between $0.55 and $0.75 per piece all-in for campaigns of 2,500–10,000 pieces.
 
-To see what an EDDM campaign would cost for your specific geography and piece size, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate). We'll pull route counts and pricing the same day.
+To see what an EDDM campaign would cost for your specific geography and piece size, call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate). We'll pull route counts and pricing the same day.
 
 ## Frequently Asked Questions
 

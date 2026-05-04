@@ -212,7 +212,7 @@ Both. Cornerstone has an in-house design team that creates USPS-compliant mail p
 
 **How do I get a quote?**
 
-Submit the estimate form at [crst.net/estimate](/estimate). We will have a detailed itemized quote — broken out by design, printing, list, presort, and postage — back in one business day. Or call [(845) 255-5722](tel:8453936770) to discuss your project. Every quote is fully transparent with no hidden fees.
+Submit the estimate form at [crst.net/estimate](/estimate). We will have a detailed itemized quote — broken out by design, printing, list, presort, and postage — back in one business day. Or call [(845) 255-5722](tel:8452555722) to discuss your project. Every quote is fully transparent with no hidden fees.
 
 **Is direct mail still worth the cost in 2025?**
 

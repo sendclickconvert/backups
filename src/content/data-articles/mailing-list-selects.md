@@ -137,4 +137,4 @@ Geography. Before applying any demographic filter, define the geographic boundar
 
 An over-filtered list applies enough selects to reduce the record count below a viable mailing quantity — typically fewer than 500–1,000 records for a local campaign. Over-filtering also creates false precision: it excludes real prospects because they fall just outside one demographic threshold. The goal is a well-qualified list of sufficient size — not a theoretically perfect list of 200 people.
 
-Ready to build a targeted list for your Hudson Valley campaign? Call Cornerstone at [(845) 255-5722](tel:8453936770) or [request a count and quote](/estimate) — we'll have a count back to you within a few hours.
+Ready to build a targeted list for your Hudson Valley campaign? Call Cornerstone at [(845) 255-5722](tel:8452555722) or [request a count and quote](/estimate) — we'll have a count back to you within a few hours.

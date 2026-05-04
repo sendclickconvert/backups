@@ -141,4 +141,4 @@ To get the best results from list cleaning, provide your file in a structured fo
 
 At Cornerstone, we review every file before processing and contact you if there are formatting issues that need resolution before cleaning can proceed. There is no charge for the file review.
 
-For questions about processing your specific list, call [(845) 255-5722](tel:8453936770) or [request an estimate](/estimate). We accept lists in Excel, CSV, or any standard database export format.
+For questions about processing your specific list, call [(845) 255-5722](tel:8452555722) or [request an estimate](/estimate). We accept lists in Excel, CSV, or any standard database export format.

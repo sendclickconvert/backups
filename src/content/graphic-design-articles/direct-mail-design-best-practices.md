@@ -131,4 +131,4 @@ The single most valuable habit in direct mail design is testing variations befor
 
 **What not to test:** Don't test multiple variables simultaneously. If you change the headline, the image, and the CTA in the same test, you won't know which change produced the result. Change one element per test.
 
-To get a design or print quote for your next campaign, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate). We serve businesses throughout Ulster, Dutchess, and Orange counties.
+To get a design or print quote for your next campaign, call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate). We serve businesses throughout Ulster, Dutchess, and Orange counties.

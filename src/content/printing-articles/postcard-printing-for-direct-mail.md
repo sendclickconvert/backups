@@ -123,4 +123,4 @@ At Cornerstone, postcard campaigns move from design approval to press to the mai
 
 **Single point of accountability.** One vendor, one invoice, one contact. If something goes wrong — a print defect, a mailing list error, a missed deadline — there is one party responsible for resolution. When print and mail are at different vendors, finger-pointing between them costs you time.
 
-To get a quote for postcard printing — with or without mailing services — call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).
+To get a quote for postcard printing — with or without mailing services — call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate).

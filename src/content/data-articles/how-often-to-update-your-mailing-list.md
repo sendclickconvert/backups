@@ -110,7 +110,7 @@ Run NCOA before every mailing. Refresh the underlying data annually. Clean your 
 
 At Cornerstone, every list we deliver — whether we built it or you supplied it — goes through NCOA, CASS certification, deduplication, and formatting before a single piece prints. It is included in every campaign we run. For lists you process through us without mailing, the fee is $75 per 1,000 records.
 
-To discuss your specific list and refresh schedule, call [(845) 255-5722](tel:8453936770) or [request a consultation](/estimate). We'll tell you exactly what your list needs and when.
+To discuss your specific list and refresh schedule, call [(845) 255-5722](tel:8452555722) or [request a consultation](/estimate). We'll tell you exactly what your list needs and when.
 
 ## Frequently Asked Questions
 

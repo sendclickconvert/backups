@@ -158,4 +158,4 @@ If you've never used a lettershop before, here's what to have ready when you cal
 
 At Cornerstone, initial campaign consultations are free and typically take 15–20 minutes. We'll review your list, recommend a format and mail class, provide a complete quote (printing, addressing, presort, postage, and USPS drop), and confirm the production timeline — usually within the same business day.
 
-To get a quote for mailing services — addressing, presort, USPS drop, or all three — call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).
+To get a quote for mailing services — addressing, presort, USPS drop, or all three — call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate).

@@ -143,4 +143,4 @@ Based on the brochures we produce most frequently at Cornerstone, here are the s
 
 **Restaurants and hospitality:** 100 lb. gloss cover (scored), UV coated. Menus and promotional pieces need durability — a restaurant brochure that sits in a take-one rack for weeks needs stock and coating that resist handling wear.
 
-For a quote or to discuss which format fits your campaign, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).
+For a quote or to discuss which format fits your campaign, call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate).

@@ -144,4 +144,4 @@ For Hudson Valley businesses running their first EDDM campaign, we almost always
 
 The simplest approach to EDDM specs is to have your printer set up the templates and verify the finished files before production. At Cornerstone, we provide EDDM-compliant templates for every common size, verify bleed and safe zone on every submitted file, weigh every job before bundling, and confirm USPS acceptance before considering the job complete.
 
-To discuss your EDDM piece size and get a quote, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate). We'll confirm specs the same day.
+To discuss your EDDM piece size and get a quote, call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate). We'll confirm specs the same day.

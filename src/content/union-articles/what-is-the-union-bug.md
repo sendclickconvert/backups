@@ -129,4 +129,4 @@ Several persistent misunderstandings about the union bug cause problems for camp
 
 **"You can add the bug after the fact."** The bug must be printed as part of the production process at the union-affiliated shop. It cannot be stamped, stickered, or digitally added to a piece printed elsewhere.
 
-At Cornerstone Services in New Paltz, we can provide union-label documentation for jobs that require it. Call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate) to discuss union-label printing requirements for your project.
+At Cornerstone Services in New Paltz, we can provide union-label documentation for jobs that require it. Call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate) to discuss union-label printing requirements for your project.

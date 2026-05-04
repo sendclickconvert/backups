@@ -125,4 +125,4 @@ For organizations on tight budgets, we offer quantity-based pricing that makes l
 
 For [nonprofit mailing campaigns](/services/non-profit-mailing) where the flyer will be inserted in an envelope or mailed as a self-mailer, we coordinate print and mailing services to ensure the pieces meet USPS requirements and qualify for nonprofit postage rates. Schools and PTAs are among our most frequent flyer clients — event announcements, fundraiser promotions, and parent communication pieces run through our facility regularly. We understand the tight timeline pressure that school organizations operate under and prioritize these jobs accordingly.
 
-To get a quote for flyers — print only or print with mailing — call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).
+To get a quote for flyers — print only or print with mailing — call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate).

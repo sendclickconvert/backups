@@ -118,4 +118,4 @@ For Hudson Valley nonprofits, the strongest acquisition windows are:
 
 Avoid acquisition during the year-end window (November–December) unless your organization has a compelling Giving Tuesday or year-end hook. The mailbox is saturated with renewal appeals from every organization the donor already supports, and acquisition pieces from unknown organizations compete poorly against established relationships.
 
-To discuss a nonprofit acquisition mailing, call [(845) 255-5722](tel:8453936770) or [contact us online](/estimate).
+To discuss a nonprofit acquisition mailing, call [(845) 255-5722](tel:8452555722) or [contact us online](/estimate).

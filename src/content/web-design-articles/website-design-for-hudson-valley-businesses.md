@@ -140,4 +140,4 @@ The best-performing local business websites are not static brochures — they ar
 
 **Resource content that demonstrates expertise.** Blog posts, guides, and how-to articles that answer questions your customers actually ask. This content builds topical authority with Google and provides value to visitors before they become customers.
 
-To discuss web design services or a combined digital-and-mail strategy, call [(845) 255-5722](tel:8453936770) or [contact us at our New Paltz location](/estimate).
+To discuss web design services or a combined digital-and-mail strategy, call [(845) 255-5722](tel:8452555722) or [contact us at our New Paltz location](/estimate).

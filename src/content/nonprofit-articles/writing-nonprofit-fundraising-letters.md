@@ -131,4 +131,4 @@ Beyond the salutation, effective personalization includes:
 
 Variable data printing — where each letter is personalized with the donor's name, address, giving history, and suggested ask amounts — is standard on Cornerstone's digital printing equipment. We merge your donor database with the letter template during production, producing a fully personalized letter for each recipient without manual intervention.
 
-To discuss your nonprofit mailing program, call [(845) 255-5722](tel:8453936770) or [contact us online](/estimate).
+To discuss your nonprofit mailing program, call [(845) 255-5722](tel:8452555722) or [contact us online](/estimate).

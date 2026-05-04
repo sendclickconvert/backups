@@ -161,4 +161,4 @@ The most common content mistake in brochure design is treating it like a website
 
 Each of these structures follows the same principle: the cover creates interest, the inside delivers the full story, and the back panel enables action for readers who skip the interior entirely.
 
-For brochure design with printing and mailing, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).
+For brochure design with printing and mailing, call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate).

@@ -137,4 +137,4 @@ The most effective voter outreach campaigns use direct mail as the primary chann
 
 No single supplementary channel replaces the reach of mail to the full voter file. Digital channels augment the core mailing — they do not substitute for it. Districts that skip direct mail and rely solely on social media and email reach only a fraction of their eligible voters. The data consistently shows that multi-channel campaigns anchored by direct mail produce the highest voter turnout rates for school elections.
 
-To plan a school election voter outreach campaign, contact us early — 8 weeks before the vote if possible. Call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).
+To plan a school election voter outreach campaign, contact us early — 8 weeks before the vote if possible. Call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate).

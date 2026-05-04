@@ -143,4 +143,4 @@ At Cornerstone, our full-service nonprofit mailing workflow covers every step fr
 
 For organizations planning their first structured annual fund program, we offer consultation on campaign calendar, format selection, and budget planning at no charge. The investment in a well-structured mailing program pays for itself in higher donor retention, larger average gifts, and more predictable annual fund revenue.
 
-To build your annual fund mailing calendar and get a full-year print and mail quote, call [(845) 255-5722](tel:8453936770) or [contact us](/estimate).
+To build your annual fund mailing calendar and get a full-year print and mail quote, call [(845) 255-5722](tel:8452555722) or [contact us](/estimate).

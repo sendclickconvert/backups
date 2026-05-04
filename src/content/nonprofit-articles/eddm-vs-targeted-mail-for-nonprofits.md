@@ -145,4 +145,4 @@ Measuring response differently for EDDM and targeted mail is critical to underst
 
 For nonprofits running both EDDM and targeted campaigns, maintaining separate tracking mechanisms for each channel allows you to calculate true cost-per-donor-acquired by channel and make informed budget allocation decisions for future campaigns.
 
-To discuss which approach fits your nonprofit's campaign goals, call [(845) 255-5722](tel:8453936770) or [contact us online](/estimate).
+To discuss which approach fits your nonprofit's campaign goals, call [(845) 255-5722](tel:8452555722) or [contact us online](/estimate).

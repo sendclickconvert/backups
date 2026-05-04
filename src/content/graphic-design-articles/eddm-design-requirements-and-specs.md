@@ -158,4 +158,4 @@ Understanding the production timeline helps you plan campaigns with realistic de
 
 **Total timeline: 5 days from approved design to post office drop, plus 7–14 days for USPS delivery.** For time-sensitive campaigns (events, seasonal offers), plan for the full 3-week window from design approval to in-home delivery.
 
-For EDDM design, printing, and post office drop, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate). We serve businesses throughout Ulster, Dutchess, and Orange counties.
+For EDDM design, printing, and post office drop, call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate). We serve businesses throughout Ulster, Dutchess, and Orange counties.

@@ -143,4 +143,4 @@ The application process for USPS nonprofit authorization requires submitting you
 
 At Cornerstone, we process [nonprofit mailings](/services/non-profit-mailing) for organizations throughout the Hudson Valley — churches, PTAs, community nonprofits, and regional charities. We verify nonprofit authorization status before every campaign and ensure the mailing content qualifies for the nonprofit rate. Not all nonprofit content qualifies — pieces that promote goods or services at market rates, even from a nonprofit, may not be eligible for the nonprofit postage discount.
 
-For questions about which mail class fits your specific campaign, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).
+For questions about which mail class fits your specific campaign, call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate).

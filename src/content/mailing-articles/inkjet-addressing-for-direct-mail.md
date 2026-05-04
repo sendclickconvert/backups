@@ -131,4 +131,4 @@ In a typical direct mail campaign at Cornerstone, inkjet addressing is one step 
 
 Steps 5–7 happen in sequence on the same day for most campaigns. The pieces come off the inkjet system already in presort order, go directly into trays, and the trays go to USPS. For a 5,000-piece postcard campaign with print-ready files and a clean list, the entire mailing workflow — from list processing through USPS drop — can complete in one business day.
 
-To get a quote, call [(845) 255-5722](tel:8453936770) or [request a quote](/estimate).
+To get a quote, call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate).

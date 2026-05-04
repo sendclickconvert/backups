@@ -128,4 +128,4 @@ We receive files from every design platform, including consumer tools. Here's ho
 
 **Google Docs/Slides:** Similar issues to Word/PowerPoint, with the added challenge that Google's PDF export does not embed all fonts reliably. If using Google tools, convert text to a common system font (Arial, Times New Roman) before exporting, or accept that the printer may need to substitute fonts.
 
-To submit files or request a quote, call [(845) 255-5722](tel:8453936770) or [use our quote request](/estimate).
+To submit files or request a quote, call [(845) 255-5722](tel:8452555722) or [use our quote request](/estimate).
