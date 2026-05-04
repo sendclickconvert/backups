@@ -136,22 +136,19 @@ const relatedSpokes = HUB_NAV_ITEMS.filter((item) => item.slug !== spoke.slug).s
             primaryUseCases={spoke.primaryUseCases}
           />
 
-          <!-- Body content placeholders -->
+          <!-- Body content — reads from data file; placeholders render nothing until content lands -->
           <div class="prose prose-navy max-w-none prose-headings:font-display prose-headings:text-crst-primary prose-a:text-crst-accent hover:prose-a:text-crst-primary prose-strong:text-navy-800 prose-p:text-navy-600/80 prose-li:text-navy-600/80">
 
             <!-- BODY_INTRO:start -->
-            <h2>About the {spoke.h1}</h2>
-            <p>[Placeholder: 150–200 word introduction covering this specific envelope size — history, where it is used in practice, why it exists as a distinct size. First-hand perspective from Sean Griffin on where he encounters this envelope most often in Hudson Valley direct mail campaigns. Include specific client type examples.]</p>
+            {spoke.bodyIntro && <Fragment set:html={spoke.bodyIntro} />}
             <!-- BODY_INTRO:end -->
 
             <!-- USE_CASES:start -->
-            <h2>When to Use This Envelope Size</h2>
-            <p>[Placeholder: 200–250 words on the specific use cases. Which types of businesses, nonprofits, or organizations use this envelope? What kind of insert goes in it? What campaigns work best with this format? Include at least one concrete Hudson Valley client example or scenario. Link contextually to <a href="/services/direct-mail">direct mail services</a> or <a href="/services/printing">printing services</a>.]</p>
+            {spoke.useCases && <Fragment set:html={spoke.useCases} />}
             <!-- USE_CASES:end -->
 
             <!-- POSTAGE_NOTES:start -->
-            <h2>USPS Postage for This Envelope</h2>
-            <p>[Placeholder: 150–200 words on postage specifics for this envelope. What presort rate is available? What is the single-piece rate? Any special considerations — non-machinable surcharge risk, orientation issues, weight thresholds? Link to <a href="/direct-mail-tools/postage-rates">postage rates calculator</a>. Include a note that Cornerstone verifies all pieces against current USPS specs before printing.]</p>
+            {spoke.postageNotes && <Fragment set:html={spoke.postageNotes} />}
             <!-- POSTAGE_NOTES:end -->
 
           </div>
@@ -168,7 +165,7 @@ const relatedSpokes = HUB_NAV_ITEMS.filter((item) => item.slug !== spoke.slug).s
               {spoke.faqs.map((item) => (
                 <div class="bg-navy-50/40 rounded-xl border border-navy-100 p-5">
                   <h3 class="font-heading font-semibold text-navy-800 text-sm mb-2">{item.q}</h3>
-                  <p class="text-sm text-navy-600/70 leading-relaxed">{item.a}</p>
+                  <p class="text-sm text-navy-600/70 leading-relaxed" set:html={item.a} />
                 </div>
               ))}
             </div>

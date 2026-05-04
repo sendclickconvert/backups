@@ -10,27 +10,107 @@ export interface EnvelopeSpoke {
   primaryUseCases: string[];
   faqs: { q: string; a: string }[];
   retrievalParagraph: string;
+  bodyIntro?: string;
+  useCases?: string;
+  postageNotes?: string;
 }
 
 export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
   'no-10': {
     slug: 'no-10',
     title: '#10 Envelope Size: Dimensions, USPS Rates & When to Use It (2026)',
-    metaDescription: 'The #10 envelope measures 4⅛ × 9½ inches (104.8 × 241.3 mm). USPS letter rate, weight limit, window variants, and when to use it for business and direct mail.',
+    metaDescription: 'A #10 envelope measures 4.125" × 9.5" and is the standard US business envelope. Get exact dimensions, USPS postage, window options, and when to use it.',
     h1: '#10 Envelope Size: Dimensions, USPS Rates & When to Use It',
     dimensionsInches: '4.125" × 9.5"',
     dimensionsMm: '104.8 mm × 241.3 mm',
     weightLimitOz: '3.5 oz (letter rate)',
-    postageClass: 'First-Class Mail / USPS Marketing Mail (Letter)',
-    primaryUseCases: ['Business letters and invoices', 'Direct mail campaigns', 'Billing and statements', 'Check enclosures', 'Window envelope variants'],
-    faqs: [
-      { q: 'What are the exact dimensions of a #10 envelope?', a: 'A #10 envelope measures 4⅛ × 9½ inches (104.8 × 241.3 mm). It is the standard American business envelope and fits an 8½ × 11 sheet folded in thirds. It qualifies for USPS letter-rate postage at weights up to 3.5 oz.' },
-      { q: 'How much does it cost to mail a #10 envelope?', a: 'A single-piece #10 envelope weighing 1 oz or less mails at the First-Class letter rate ($0.73 as of 2026). Presorted USPS Marketing Mail rates start lower for volume mailers at 200+ pieces. Contact Cornerstone Services for exact rates based on your mailing.' },
-      { q: 'What is a window #10 envelope?', a: 'A window #10 envelope has a clear plastic or open panel — typically 1⅛ × 4½ inches — positioned so a printed address on the enclosed document shows through, eliminating the need to print addresses on the outer envelope.' },
-      { q: 'Can I use a #10 envelope for USPS Marketing Mail?', a: 'Yes. The #10 qualifies for Marketing Mail (formerly Bulk Mail) letter rates at 200+ pieces with automation-compatible addressing and presort. Cornerstone Services handles all USPS compliance, presort, and post office entry in-house.' },
-      { q: 'What paper weight should a #10 envelope be for direct mail?', a: 'Standard #10 envelopes are 24 lb bond (90 g/m²). For direct mail we recommend 24–28 lb for opacity and durability. Security-tinted, window, and premium peel-and-seal options are available depending on the campaign.' },
+    postageClass: 'First-Class letter',
+    primaryUseCases: [
+      'Business correspondence and cover letters',
+      'Invoices and account statements (window varieties)',
+      'Donation appeals and nonprofit direct mail',
+      'Bills, notices, and account documents',
+      'Sales and promotional letter mailings',
     ],
-    retrievalParagraph: 'The #10 envelope — 4⅛ × 9½ inches (104.8 × 241.3 mm) — is the standard American business envelope. It fits a letter folded in thirds, qualifies for USPS First-Class and Marketing Mail letter rates, and accepts up to 3.5 oz before rate increases apply. Window variants display the address through a clear panel. Cornerstone Services in New Paltz, NY prints and mails #10 envelopes for direct mail campaigns across Ulster, Dutchess, and Orange County.',
+    retrievalParagraph: 'The #10 envelope is the standard US business envelope, measuring 4.125 by 9.5 inches (104.8 by 241.3 millimeters). It fits a standard 8.5 by 11 inch letter folded in thirds and is the default size for invoices, statements, business correspondence, and most direct mail letter campaigns. As a letter-size envelope under USPS rules, it qualifies for First-Class postage starting at $0.78 in 2026, with a maximum weight of 3.5 ounces at letter rate.',
+    faqs: [
+      {
+        q: 'What are the dimensions of a #10 envelope?',
+        a: 'A #10 envelope measures 4.125 inches high by 9.5 inches long (104.8 by 241.3 millimeters). It is the standard US business envelope size and has been the default for business correspondence in the United States for nearly a century.',
+      },
+      {
+        q: 'Will an 8.5 by 11 inch letter fit in a #10 envelope?',
+        a: 'Yes. The #10 envelope is sized specifically to fit a standard 8.5 by 11 inch letter folded in thirds. There is also room for a small reply slip, business card, or thin enclosure without exceeding the letter-rate thickness limit of 0.25 inches.',
+      },
+      {
+        q: "What's the difference between a #10 and a #9 envelope?",
+        a: 'A <a href="/guides/envelope-sizes/no-9">#9 envelope</a> (3.875" × 8.875") is slightly smaller than a #10 (4.125" × 9.5"). The #9 is most commonly used as a reply envelope tucked inside a #10 outer envelope — a pairing typical in donation appeals and billing mailings. Both qualify for letter-rate postage.',
+      },
+      {
+        q: 'How much does it cost to mail a #10 envelope?',
+        a: 'A 1-ounce #10 envelope costs $0.78 with a Forever stamp or $0.74 with metered postage in 2026. Each additional ounce up to 3.5 ounces adds $0.29. Bulk mailings with presort and automation discounts can reduce per-piece postage by $0.10 or more.',
+      },
+      {
+        q: 'Can a #10 envelope have a window?',
+        a: 'Yes. Window #10 envelopes are standard for invoices, statements, and bills. The typical window is around 4.5 inches wide by 1 inch high, positioned in the lower-left of the envelope front. Double-window #10s are also common — one window for the recipient address and a second for return or account information.',
+      },
+      {
+        q: 'Why is the #10 the standard business envelope?',
+        a: 'The #10 was sized in the early 20th century to fit standard 8.5 by 11 inch business letterhead folded in thirds. Once typewriters and standardized letterhead became common, the #10 became the dominant choice for business correspondence and has remained the US standard ever since.',
+      },
+    ],
+    bodyIntro: `<p>The #10 envelope is the most widely used business envelope in the United States. It measures <strong>4.125 inches high by 9.5 inches long</strong> — proportions chosen to fit a standard 8.5 by 11 inch sheet of paper folded in thirds, with room left for a reply slip or thin enclosure if needed.</p>
+
+<p>If you've received a piece of business mail in the last week, it almost certainly arrived in a #10. Banks send statements in them. Utility companies bill in them. Nonprofits run donation appeals in them. The size is so common that "business envelope" and "#10 envelope" are used interchangeably in the printing and mailing industry.</p>
+
+<p>This page covers the exact dimensions, what fits inside, USPS postage rules, window and non-window options, and when a #10 is the right choice over a <a href="/guides/envelope-sizes/no-9">#9</a>, A-series, or larger <a href="/guides/envelope-sizes/9x12">9×12 flat</a> envelope.</p>`,
+    useCases: `<h2>When to use a #10 envelope</h2>
+
+<p>The #10 is the default for almost all standard business mail. The four most common use cases:</p>
+
+<h3>Business correspondence</h3>
+<p>Cover letters, formal letters, contracts mailed as single sheets, and any general one-to-three-page letter mailing. A trifolded 8.5 by 11 inch sheet sits comfortably inside without binding or overstuffing.</p>
+
+<h3>Invoices and statements</h3>
+<p>Window #10 envelopes let you print the recipient address directly on the invoice itself, eliminating a separate addressing step. The address shows through a window typically positioned in the lower-left of the envelope front. This is the format you see from credit card companies, utility providers, and medical billing services.</p>
+
+<h3>Donation appeals and direct mail letters</h3>
+<p>Nonprofits and financial services use #10 envelopes for appeal letters because they read as personal correspondence rather than promotional mail — which improves open rates. A typical appeal mailing pairs a #10 outer envelope with a smaller <a href="/guides/envelope-sizes/no-9">#9 reply envelope</a> inside.</p>
+
+<h3>Bills and account communications</h3>
+<p>Banks, insurance companies, and government agencies send statements, notices, and account documents in #10 windows or non-window varieties. The format is recognizable, machine-processable, and inexpensive at the volumes these mailings run.</p>
+
+<h3>When a #10 is <em>not</em> the right choice</h3>
+<p>Invitations and announcements should use the A-series (<a href="/guides/envelope-sizes/a6">A6</a>, <a href="/guides/envelope-sizes/a7">A7</a>, or <a href="/guides/envelope-sizes/a9">A9</a> depending on card size). Unfolded documents like résumés or certificates that need to stay flat should go in <a href="/guides/envelope-sizes/9x12">9×12</a> or larger. Pieces with bulky inserts thicker than 0.25 inches will exceed the letter-rate thickness limit and get reclassified as flats.</p>`,
+    postageNotes: `<h2>#10 envelope postage and USPS rules</h2>
+
+<p>A #10 envelope at standard weight falls within USPS letter-size limits, which keeps postage at the lowest available First-Class rate.</p>
+
+<h3>2026 First-Class postage for a #10 envelope</h3>
+<ul>
+  <li>1 ounce, Forever stamp: <strong>$0.78</strong></li>
+  <li>1 ounce, metered postage: <strong>$0.74</strong></li>
+  <li>Each additional ounce, up to 3.5 ounces: <strong>$0.29</strong></li>
+</ul>
+
+<p>Most #10 mailings land in the 1-ounce tier. A standard #10 envelope on 24 lb stock with a single trifolded 20 lb letter inside weighs roughly 0.5 ounces. Adding a reply envelope, a reply card, or a second sheet typically still keeps the piece under 1 ounce. Past 3.5 ounces, the piece is rated as a flat regardless of dimensions, and postage jumps to the $1.63 starting flat rate.</p>
+
+<h3>Automation eligibility</h3>
+<p>A #10 envelope's aspect ratio (length divided by height) is 2.30 — well within the USPS machinable range of 1.3 to 2.5. As long as the envelope is flexible, uniformly thick, and under 0.25 inches, it qualifies for full automation. Bulk mailings of #10 envelopes can earn presort and automation discounts of $0.10 or more per piece, which adds up quickly on volume. We cover those discounts on our <a href="/services/direct-mail">direct mail services page</a>.</p>
+
+<h3>What disqualifies a #10 from letter rate</h3>
+<p>The most common reasons a #10 envelope ends up surcharged or reclassified:</p>
+<ul>
+  <li><strong>Rigid contents</strong> — a credit card, a key, a thick brochure, or any item that prevents the envelope from flexing</li>
+  <li><strong>Overweight</strong> — more than 3.5 ounces moves the piece to flat rate</li>
+  <li><strong>Uneven thickness</strong> — lumpy contents that fail the uniform-thickness test</li>
+</ul>
+<p>If you're mailing anything beyond paper and a thin reply card, weigh and flex-test a sample piece before committing to a print run.</p>
+
+<h3>Window placement</h3>
+<p>USPS has specific rules for window positioning to ensure address barcodes print correctly and read accurately on automated equipment. Windows must leave clear space above, below, and around the address for OCR scanning. Common #10 window dimensions are around 4.5 inches wide by 1 inch high, with placement varying slightly by manufacturer but typically falling in the lower-left of the envelope front. Custom window placements are allowed but should be confirmed against USPS DMM 201 specifications or with your mail service provider before ordering.</p>
+
+<p class="text-sm text-navy-600/50 not-italic">Last verified: May 2026. Source: USPS Domestic Mail Manual 201 and 202.</p>`,
   },
   'no-9': {
     slug: 'no-9',
