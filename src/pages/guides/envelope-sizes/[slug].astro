@@ -15,7 +15,8 @@ export function getStaticPaths() {
 }
 
 const { spoke } = Astro.props;
-const canonical = `https://crst.net/guides/envelope-sizes/${spoke.slug}`;
+const { slug } = Astro.params;
+const canonical = `https://crst.net/guides/envelope-sizes/${slug}`;
 const pubDate = '2026-05-04';
 
 const seanGriffin = {
@@ -215,7 +216,7 @@ const relatedSpokes = HUB_NAV_ITEMS.filter((item) => item.slug !== spoke.slug).s
               </div>
             </div>
 
-            <EnvelopeHubNav currentSlug={spoke.slug} />
+            <EnvelopeHubNav currentSlug={slug} />
 
             <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
               <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Related Services</h3>
