@@ -92,7 +92,7 @@ The site had three different EDDM Retail rate citations before this fix pass:
 | `eddm-articles/eddm-postcard-sizes-and-specs.md` | ✅ 54 chars | ✅ 149 chars | ✅ `updatedDate: 2026-05-07` | via template ✅ | ✅ template banner | |
 | `eddm-articles/eddm-printing-requirements.md` | ✅ 51 chars | ✅ 153 chars | ✅ `updatedDate: 2026-05-07` | via template ✅ | ✅ template banner | |
 | `eddm-articles/how-to-set-up-an-eddm-campaign.md` | ✅ 56 chars | ✅ 149 chars | ✅ `updatedDate: 2026-05-07` | via template ✅ | ✅ template banner | |
-| `eddm-articles/eddm-retail-vs-eddm-bmeu.md` | ⏸ HELD | ⏸ HELD | ⏸ HELD | ⏸ HELD | ⏸ HELD | **BMEU rate unverified — no edits made** |
+| `eddm-articles/eddm-retail-vs-eddm-bmeu.md` | ✅ 49 chars | ✅ 141 chars | ✅ `updatedDate: 2026-05-07` | ✅ → `/contact?service=eddm` | ✅ template banner | BMEU rates verified; three-tier table added; permit break-even math added |
 
 ### Tier 2 — Title + desc + rate correction (2 DM-cluster articles)
 
@@ -119,9 +119,9 @@ The site had three different EDDM Retail rate citations before this fix pass:
 
 ## Open Items
 
-1. **`eddm-retail-vs-eddm-bmeu.md` — all 5 fixes held.** BMEU rate must be verified from USPS Notice 123 PDF before any edit to this file. Current file incorrectly shows BMEU = $0.247 (identical to Retail). Confirmed BMEU is lower — exact rate unknown until verification.
+1. **BMEU rates verified (2026-05-07).** DDU: $0.242 | DSCF: $0.253 | Origin: $0.291. All three tiers now documented in comparison article. `eddm-guide.astro` BMEU row ($0.242) confirmed correct as DDU headline rate — no change needed.
 
-2. **`eddm-guide.astro` BMEU table row ($0.242)** — left in place, unverified. Could be close to correct but should be updated alongside the comparison article once BMEU rate is confirmed.
+2. **Rate change calendar.** Mailing services rates stable since July 2025 (January 2026 USPS increase was shipping-only). Next Marketing Mail / EDDM rate change expected July 2026 — schedule a verification pass on all EDDM files in mid-July 2026.
 
 3. **`/contact?service=eddm` pre-fill** — the contact page does not currently parse the `?service=eddm` query parameter to pre-fill the form's service field. CTAs will route correctly but no auto-selection occurs. Consider adding query-param pre-fill to `EstimateForm` as a future improvement.
 
