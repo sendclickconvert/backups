@@ -121,10 +121,67 @@ The site had three different EDDM Retail rate citations before this fix pass:
 
 1. **BMEU rates verified (2026-05-07).** DDU: $0.242 | DSCF: $0.253 | Origin: $0.291. All three tiers now documented in comparison article. `eddm-guide.astro` BMEU row ($0.242) confirmed correct as DDU headline rate — no change needed.
 
-2. **Rate change calendar.** Mailing services rates stable since July 2025 (January 2026 USPS increase was shipping-only). Next Marketing Mail / EDDM rate change expected July 2026 — schedule a verification pass on all EDDM files in mid-July 2026.
+2. **Rate change calendar — CORRECTED 2026-05-07.** The "mailing services stable since July 2025" framing was wrong. USPS Notice 123 shows a new effective date of **April 26, 2026**, with First-Class retail and Marketing Mail automation rates all increased. EDDM was not touched. Next expected rate change: mid-2026 — schedule a re-verification of all postage-rates and EDDM files in July 2026. Set a Google Alert on "USPS Notice 123 effective" or run a monthly spot-check — rate changes do not always arrive on a predictable schedule.
 
 3. **`/contact?service=eddm` pre-fill** — the contact page does not currently parse the `?service=eddm` query parameter to pre-fill the form's service field. CTAs will route correctly but no auto-selection occurs. Consider adding query-param pre-fill to `EstimateForm` as a future improvement.
 
 ---
+
+---
+
+## Postage Rates Page Update — 2026-05-07
+
+**Page:** `src/pages/direct-mail-tools/postage-rates.astro`
+**Source verified:** USPS Notice 123 PDF — `https://pe.usps.com/cpim/ftp/manuals/dmm300/notice123.pdf`
+**Effective date of rates:** April 26, 2026
+**PDF accessed:** 2026-05-07
+
+### Confirmed stale rates corrected
+
+| Rate | Was | Now | PDF line |
+|---|---|---|---|
+| FC letter metered 1 oz | $0.73 | $0.74 | 300 |
+| FC letter stamped (Forever) | $0.73 | $0.78 | 290 |
+| FC postcard retail | $0.56 | $0.61 | 288, 858 |
+| FC large envelope ≤1 oz | $1.35 | $1.63 | 290 |
+| FC large envelope ≤2 oz | — | $1.90 | 291 |
+| FC large envelope ≤3–13 oz | — | full table | 291–308 |
+| FC presort automation 5-digit | $0.485 | $0.593 | 838 |
+| FC postcard commercial auto | $0.405 | $0.420 | 840 |
+| Mktg Mail letters auto 5-digit | $0.308 | $0.372 | 1099 |
+| Mktg Mail letters auto AADC | $0.357 | $0.407 | 1099 |
+| Mktg Mail letters saturation CR | — | $0.244 | 1099 |
+| Mktg Mail flats saturation CR | $0.542 | $0.290 | 1269 |
+| Mktg Mail flats auto 5-digit | $0.488 | $0.770 | 1286 |
+| NP letters saturation CR | $0.154 | $0.155 | 1186 |
+| NP letters auto 5-digit | — | $0.178 | 1186 |
+| NP flats saturation CR | $0.243 | $0.180 | 1346 |
+| NP flats EDDM CR | — | $0.181 | 1346 |
+
+### Confirmed unchanged (EDDM — no rate change in April 2026)
+
+| Rate | Value | PDF line |
+|---|---|---|
+| EDDM Retail | $0.247 | 293 |
+| EDDM BMEU DDU | $0.242 | 1271 |
+| EDDM BMEU DSCF | $0.253 | 1270 |
+| EDDM BMEU Origin | $0.291 | 1269 |
+
+### Schema added (was missing)
+- Article schema with `datePublished`/`dateModified: 2026-05-07`
+- BreadcrumbList schema (Home > Direct Mail Tools > USPS Postage Rates 2026)
+- FAQPage schema moved to `<Fragment slot="head">` (was inline before PageHero)
+
+### Other fixes applied
+- `const YEAR = 2026` and `const lastUpdated = '2026-05-07'` at top of file — single-point annual update
+- Visible "Last updated: May 2026" with `<time itemprop="dateModified">` element
+- CTA `href="/estimate"` → `href="/contact?service=direct-mail"`
+- Author block updated to "Last reviewed: May 2026"
+- Quick Answer top table added (featured-snippet play)
+- Large Envelope given its own standalone section with full weight table ($1.63–$5.04)
+- "What Changed in 2026" section added with April 26, 2026 effective date
+- EDDM BMEU table expanded to all three entry tiers (DDU/DSCF/Origin)
+- Forever stamp called out explicitly in Quick Answer and First-Class table
+- Meta description updated (removed "January 2026")
 
 *End of audit. All changes tracked above were applied in one atomic pass on 2026-05-07.*

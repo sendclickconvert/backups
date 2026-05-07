@@ -4,78 +4,115 @@ import PageHero from '../../components/PageHero.astro';
 import CTASection from '../../components/CTASection.astro';
 import PostageCalculator from '../../components/calculators/PostageCalculator';
 import { BUSINESS } from '../../data/site';
+
+const YEAR = 2026;
+const lastUpdated = '2026-05-07';
+const lastUpdatedDisplay = 'May 2026';
+const canonical = 'https://crst.net/direct-mail-tools/postage-rates';
+
+const org = {
+  '@type': 'Organization',
+  '@id': 'https://crst.net/#organization',
+  name: 'Cornerstone Services, Inc.',
+  url: 'https://crst.net',
+  telephone: '+1-845-255-5722',
+  foundingDate: '1998',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '31 S Ohioville Rd',
+    addressLocality: 'New Paltz',
+    addressRegion: 'NY',
+    postalCode: '12561',
+    addressCountry: 'US',
+  },
+};
+
+const faqs = [
+  {
+    q: `What is the ${YEAR} USPS postage rate for a standard letter?`,
+    a: `The ${YEAR} USPS First-Class rate for a 1 oz metered letter is $0.74. Using a Forever stamp (stamped letter) costs $0.78. USPS raised First-Class retail rates on April 26, ${YEAR} — up from $0.73 (metered) and $0.73 (stamped). For bulk presorted First-Class mailings of 500+ pieces, automation rates start at $0.593 per piece at the 5-digit sort level.`,
+  },
+  {
+    q: `How much does EDDM postage cost in ${YEAR}?`,
+    a: `EDDM (Every Door Direct Mail) postage in ${YEAR} costs $0.247 per piece for EDDM Retail — no permit required, limit 5,000 pieces per day per ZIP. EDDM BMEU (Business Mail Entry Unit) at DDU entry costs $0.242 per piece; it requires a permit but removes the daily volume cap. EDDM postage was not affected by the April 26, ${YEAR} rate change and is unchanged from 2025.`,
+  },
+  {
+    q: `What is the cheapest way to mail postcards in bulk?`,
+    a: `The cheapest bulk postcard option is EDDM at $0.242–$0.247 per piece, which requires no mailing list. For targeted list mailings, Marketing Mail carrier route saturation rates start at $0.244 per piece (200-piece minimum). A single First-Class postcard costs $0.61 at retail in ${YEAR}. The right choice depends on whether you need targeted addressing or blanket neighborhood coverage.`,
+  },
+  {
+    q: `What are the USPS Nonprofit postage rates for ${YEAR}?`,
+    a: `Qualifying 501(c)(3) organizations can mail Marketing Mail at carrier route saturation rates starting at $0.155 per piece for letters and $0.180 per piece for flats — roughly 40–50% less than standard commercial Marketing Mail rates. Automation 5-digit rates for nonprofit letters are $0.178 per piece. Nonprofit mailing authorization requires USPS PS Form 3624. Cornerstone helps nonprofits apply for and maintain their authorization.`,
+  },
+  {
+    q: `What is the difference between Marketing Mail and First-Class Mail?`,
+    a: `Marketing Mail (formerly Standard Mail) is designed for advertising and bulk mailings. It starts at $0.244 per piece for carrier route saturation letters but delivers in 3–10 business days with no forwarding or return service. First-Class Mail costs more — $0.593+ per piece in bulk or $0.74 at retail — but delivers in 1–3 days and includes address forwarding and return to sender. First-Class is best for invoices, statements, and time-sensitive mail. Marketing Mail is best for advertising campaigns, coupons, and newsletters.`,
+  },
+  {
+    q: `What is the minimum quantity for bulk mail postage rates?`,
+    a: `USPS Marketing Mail requires a minimum of 200 pieces or 50 lbs per mailing, whichever comes first. First-Class presort discounts require a minimum of 500 pieces. EDDM Retail has a minimum of 200 pieces per mailing per ZIP code. To access bulk rates you need a valid USPS mailing permit — Cornerstone can mail under our permit on your behalf, so most clients never need to obtain their own.`,
+  },
+  {
+    q: `Did USPS raise postage rates in ${YEAR}?`,
+    a: `Yes. USPS implemented a rate change effective April 26, ${YEAR}. Key increases for direct mail senders: First-Class metered letter rose from $0.73 to $0.74; the Forever stamp rose from $0.73 to $0.78; First-Class postcards rose from $0.56 to $0.61; First-Class large envelopes rose from $1.35 to $1.63 for the first ounce. Marketing Mail automation rates also increased. EDDM postage was not changed — it remains $0.247 (Retail) and $0.242 (BMEU DDU).`,
+  },
+  {
+    q: `How much does a USPS mailing permit cost?`,
+    a: `A USPS bulk mail Permit Imprint requires an annual fee that varies by mail class and post office of mailing. Many businesses mail under a direct mail company's existing permit rather than obtaining their own — this is the standard arrangement for periodic mailers. Cornerstone Services mails under our own permit on behalf of clients, so you get access to bulk rates with no permit application required. Contact us for details on permit costs if you need your own account.`,
+  },
+];
+
+const graphItems = [
+  {
+    '@type': 'Article',
+    '@id': `${canonical}#article`,
+    headline: `USPS Postage Rates ${YEAR}: Complete Rate Chart`,
+    description: `Current ${YEAR} USPS postage rates for First-Class Mail, postcards, large envelopes, EDDM, and Marketing Mail. Verified against USPS Notice 123, effective April 26, ${YEAR}.`,
+    datePublished: lastUpdated,
+    dateModified: lastUpdated,
+    inLanguage: 'en-US',
+    author: {
+      '@type': 'Person',
+      '@id': 'https://crst.net/about#sean-griffin',
+      name: 'Sean Griffin',
+    },
+    publisher: org,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  },
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crst.net' },
+      { '@type': 'ListItem', position: 2, name: 'Direct Mail Tools', item: 'https://crst.net/direct-mail-tools' },
+      { '@type': 'ListItem', position: 3, name: `USPS Postage Rates ${YEAR}`, item: canonical },
+    ],
+  },
+  {
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
+  },
+];
 ---
 
 <BaseLayout
-  title="2026 USPS Postage Rates: First Class, Marketing Mail & EDDM"
-  description="Every 2026 USPS rate in one table — First-Class stamps, Marketing Mail bulk, EDDM flat rates, and nonprofit discounts. Updated with January 2026 prices."
+  title={`${YEAR} USPS Postage Rates: First Class, Marketing Mail & EDDM`}
+  description={`Current ${YEAR} USPS postage rates for First-Class, EDDM, Marketing Mail, and Nonprofit mail. Verified ${lastUpdatedDisplay} against USPS Notice 123 by CRST, certified direct mail experts.`}
+  canonical={canonical}
 >
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is the 2026 USPS postage rate for a standard letter?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The 2026 USPS First-Class rate for a single 1 oz letter is $0.73. For bulk presort First-Class mailings of 500+ pieces, the rate drops to $0.485 per piece. For Marketing Mail (bulk advertising), automation rates start at $0.308 per letter with an Intelligent Mail barcode. USPS rates typically change in January and July each year."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does EDDM postage cost in 2026?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "EDDM (Every Door Direct Mail) postage in 2026 costs $0.247 per piece for EDDM Retail (no permit required, limit 5,000 pieces per day per ZIP) and $0.242 per piece for EDDM BMEU (Business Mail Entry Unit), which requires a permit but has no daily volume limit. EDDM is one of the most cost-effective options for local businesses targeting every address in a neighborhood."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the cheapest way to mail postcards in bulk?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The cheapest bulk postcard rate is EDDM at $0.242–$0.247 per piece, which requires no mailing list. If you need to target a specific list, Marketing Mail automation rate for postcards is $0.276 per piece with a minimum of 200 pieces. For comparison, a single First-Class postcard costs $0.56. The right choice depends on whether you need targeted addressing or blanket neighborhood coverage."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What are the USPS Non-Profit postage rates for 2026?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Qualifying 501(c)(3) organizations can mail at $0.154 per piece for automation letters and $0.243 per piece for flats — roughly 50% less than standard commercial Marketing Mail rates. Non-profit mailing authorization requires submitting USPS PS Form 3624. Once approved, the authorization is permanent and applies to all future mailings. Cornerstone helps non-profits apply and manage their mailing permit."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the difference between Marketing Mail and First-Class Mail?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Marketing Mail (formerly Standard Mail) is designed for advertising and bulk mailings — it costs less ($0.276–$0.357 per piece) but delivers in 3–10 business days and does not include forwarding or return service. First-Class Mail costs more ($0.485–$0.73 per piece) but delivers in 1–3 days and includes address forwarding and return to sender. First-Class is best for invoices, statements, and time-sensitive mail. Marketing Mail is best for advertising campaigns, coupons, and newsletters."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the minimum quantity for bulk mail postage rates?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "USPS Marketing Mail (bulk mail) requires a minimum of 200 pieces or 50 lbs per mailing, whichever comes first. First-Class presort discounts require a minimum of 500 pieces. EDDM Retail has a minimum of 200 pieces per mailing per ZIP code. To access bulk rates, you also need a valid USPS mailing permit, which Cornerstone can provide on your behalf."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does a mailing permit cost from USPS?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A USPS bulk mail permit (Permit Imprint) has an annual fee of $250 for a permit imprint account. There is also a one-time application fee. Many direct mail companies, including Cornerstone Services, mail under their own permit on behalf of clients — meaning clients can access bulk rates without obtaining their own permit. This is typically the most cost-effective approach for businesses that mail periodically rather than continuously."
-        }
-      }
-    ]
-  })} />
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': graphItems,
+    })} />
+  </Fragment>
 
   <PageHero
-    title="2026 USPS Postage Rates"
-    subtitle="Current rates for Marketing Mail, EDDM, First-Class presort, and nonprofit mail — plus automation discounts, presort minimums, and permit requirements."
+    title={`${YEAR} USPS Postage Rates`}
+    subtitle={`Current rates for Marketing Mail, EDDM, First-Class presort, and Nonprofit mail — plus automation discounts, presort minimums, and permit requirements. Verified ${lastUpdatedDisplay}.`}
     breadcrumbs={[
       { label: 'Direct Mail Tools', href: '/direct-mail-tools' },
       { label: 'Postage Rates' },
@@ -85,70 +122,181 @@ import { BUSINESS } from '../../data/site';
   <section class="py-14 lg:py-20">
     <div class="container-wide">
       <div class="max-w-4xl mx-auto">
-        <div class="section-divider mb-6"></div>
-        <p class="text-navy-600/80 leading-relaxed mb-8">
-          USPS postage rates change periodically — typically in January and July. The rates below reflect the most common categories for direct mail. Always confirm current rates with Cornerstone or the USPS before planning your budget. We automatically apply the lowest qualifying rate to every campaign we process.
-        </p>
 
-        <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-10 text-sm text-amber-800">
-          <strong>Note:</strong> Rates shown are approximate and subject to change. Actual rates depend on mail piece size, weight, presort level, and entry point. Contact us for an exact quote for your specific campaign.
+        <div class="section-divider mb-6"></div>
+
+        <!-- Last Updated + Source -->
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-8">
+          <p class="text-navy-600/80 leading-relaxed">
+            USPS postage rates change periodically — verify current rates before planning your budget. Cornerstone automatically applies the lowest qualifying rate to every campaign we process.
+          </p>
+          <p class="text-xs text-navy-400 shrink-0">
+            Last updated: <time itemprop="dateModified" datetime={lastUpdated}>{lastUpdatedDisplay}</time> ·
+            Source: <a href="https://pe.usps.com/cpim/ftp/manuals/dmm300/notice123.pdf" target="_blank" rel="noopener noreferrer" class="underline hover:text-crst-primary">USPS Notice 123 (eff. Apr 26, {YEAR})</a>
+          </p>
         </div>
 
+        <!-- Quick Answer Box -->
+        <div id="quick-answer" class="bg-crst-primary/5 border-l-4 border-crst-primary rounded-r-xl p-6 mb-10">
+          <h2 class="font-display text-lg text-crst-primary mb-4">Quick Answer — Top {YEAR} USPS Rates</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="border-b border-crst-primary/20">
+                  <th class="text-left pb-2 font-heading text-navy-700">Mail Type</th>
+                  <th class="text-left pb-2 font-heading text-navy-700">Rate</th>
+                  <th class="text-left pb-2 font-heading text-navy-700 hidden sm:table-cell">Notes</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-navy-100">
+                <tr>
+                  <td class="py-2 font-semibold text-navy-800">Forever stamp (1 oz letter)</td>
+                  <td class="py-2 text-crst-primary font-bold">$0.78</td>
+                  <td class="py-2 text-navy-500 hidden sm:table-cell">Single piece, stamped retail</td>
+                </tr>
+                <tr>
+                  <td class="py-2 font-semibold text-navy-800">First-Class postcard</td>
+                  <td class="py-2 text-crst-primary font-bold">$0.61</td>
+                  <td class="py-2 text-navy-500 hidden sm:table-cell">Single piece, retail</td>
+                </tr>
+                <tr>
+                  <td class="py-2 font-semibold text-navy-800">Large envelope / flat (≤1 oz)</td>
+                  <td class="py-2 text-crst-primary font-bold">$1.63</td>
+                  <td class="py-2 text-navy-500 hidden sm:table-cell">First-Class, single piece</td>
+                </tr>
+                <tr>
+                  <td class="py-2 font-semibold text-navy-800">EDDM Retail (no permit)</td>
+                  <td class="py-2 text-crst-primary font-bold">$0.247/pc</td>
+                  <td class="py-2 text-navy-500 hidden sm:table-cell">Bulk, 200 min, no mailing list needed</td>
+                </tr>
+                <tr>
+                  <td class="py-2 font-semibold text-navy-800">Marketing Mail letter (bulk)</td>
+                  <td class="py-2 text-crst-primary font-bold">from $0.244/pc</td>
+                  <td class="py-2 text-navy-500 hidden sm:table-cell">Carrier route saturation, 200 min</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Author / Byline -->
         <div class="flex items-start gap-4 bg-navy-50 rounded-xl p-5 mb-10 border border-navy-100">
           <img src="/images/sean-griffin.png" alt="Sean Griffin, Owner of Cornerstone Services" class="shrink-0 w-12 h-12 rounded-full object-cover" width="48" height="48" />
           <div>
             <p class="text-sm font-heading font-semibold text-navy-800">Compiled by Sean Griffin, Owner — Cornerstone Services, Inc.</p>
             <p class="text-xs text-navy-500 mt-1">Sean has processed bulk mail campaigns for Hudson Valley businesses since 1998. The rates on this page are applied to every campaign Cornerstone produces. We update this guide every time USPS announces a rate change.</p>
-            <p class="text-xs text-navy-400 mt-1">Last reviewed: January 2026 · Source: <a href="https://pe.usps.com/text/dmm300/dmm300_landing.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-crst-primary">USPS Domestic Mail Manual</a> & <a href="https://www.usps.com/business/prices.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-crst-primary">USPS Business Prices</a></p>
+            <p class="text-xs text-navy-400 mt-1">Last reviewed: {lastUpdatedDisplay} · Source: <a href="https://pe.usps.com/cpim/ftp/manuals/dmm300/notice123.pdf" target="_blank" rel="noopener noreferrer" class="underline hover:text-crst-primary">USPS Notice 123 (eff. Apr 26, {YEAR})</a></p>
           </div>
         </div>
 
-        <div class="not-prose mb-10">
+        <!-- Calculator -->
+        <div class="not-prose mb-12">
           <PostageCalculator client:visible />
         </div>
 
+        <!-- What Changed in 2026 -->
+        <div id="what-changed" class="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-12">
+          <h2 class="font-display text-xl text-amber-900 mb-3">What Changed in {YEAR}</h2>
+          <p class="text-sm text-amber-800 mb-4">USPS implemented a rate change <strong>effective April 26, {YEAR}</strong>. EDDM rates were not changed. Key increases for direct mail:</p>
+          <ul class="space-y-1.5 text-sm text-amber-800">
+            <li class="flex gap-2"><span class="text-amber-600 font-bold shrink-0">↑</span> <span><strong>Forever stamp (stamped letter):</strong> $0.73 → $0.78 (+$0.05, +7%)</span></li>
+            <li class="flex gap-2"><span class="text-amber-600 font-bold shrink-0">↑</span> <span><strong>First-Class letter (metered):</strong> $0.73 → $0.74 (+$0.01)</span></li>
+            <li class="flex gap-2"><span class="text-amber-600 font-bold shrink-0">↑</span> <span><strong>First-Class postcard:</strong> $0.56 → $0.61 (+$0.05, +9%)</span></li>
+            <li class="flex gap-2"><span class="text-amber-600 font-bold shrink-0">↑</span> <span><strong>First-Class large envelope (≤1 oz):</strong> $1.35 → $1.63 (+$0.28, +21%)</span></li>
+            <li class="flex gap-2"><span class="text-amber-600 font-bold shrink-0">↑</span> <span><strong>Marketing Mail letters (automation 5-digit):</strong> $0.308 → $0.372</span></li>
+            <li class="flex gap-2"><span class="text-amber-600 font-bold shrink-0">↑</span> <span><strong>Marketing Mail letters (automation AADC):</strong> $0.357 → $0.407</span></li>
+            <li class="flex gap-2"><span class="text-green-700 font-bold shrink-0">✓</span> <span><strong>EDDM Retail:</strong> unchanged at $0.247/piece</span></li>
+            <li class="flex gap-2"><span class="text-green-700 font-bold shrink-0">✓</span> <span><strong>EDDM BMEU (DDU entry):</strong> unchanged at $0.242/piece</span></li>
+          </ul>
+        </div>
+
         <!-- Marketing Mail -->
-        <h3 class="text-xl font-display text-crst-primary mb-4">USPS Marketing Mail (Bulk Mail)</h3>
+        <h2 id="marketing-mail" class="text-2xl font-display text-crst-primary mb-3">Marketing Mail Rates {YEAR}</h2>
         <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
           Marketing Mail (formerly Standard Mail) is the most common class for <a href="/services/direct-mail" class="text-crst-primary underline hover:text-crst-gold">direct mail advertising</a>. Requires a minimum of 200 pieces or 50 lbs per mailing. Delivery is typically 3–10 business days. Cornerstone's <a href="/services/mailing" class="text-crst-primary underline hover:text-crst-gold">full-service mailing</a> automatically qualifies your campaign for the lowest applicable rate.
         </p>
+
+        <h3 class="text-base font-heading font-semibold text-navy-700 mb-2 mt-6">Marketing Mail — Letters (≤3.5 oz)</h3>
+        <div class="overflow-x-auto mb-6">
+          <table class="w-full text-sm border border-navy-200 rounded-lg overflow-hidden">
+            <thead>
+              <tr class="bg-crst-primary text-white">
+                <th class="text-left p-3 font-heading">Sort / Entry Level</th>
+                <th class="text-left p-3 font-heading">Rate per Piece</th>
+                <th class="text-left p-3 font-heading">Best For</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-navy-100">
+              <tr class="bg-white">
+                <td class="p-3 font-semibold text-navy-800">Carrier Route Saturation</td>
+                <td class="p-3 text-navy-600 font-bold">$0.244</td>
+                <td class="p-3 text-navy-500">Neighborhood coverage, EDDM-adjacent campaigns</td>
+              </tr>
+              <tr class="bg-navy-50/50">
+                <td class="p-3 font-semibold text-navy-800">Carrier Route High Density Plus</td>
+                <td class="p-3 text-navy-600">$0.275</td>
+                <td class="p-3 text-navy-500">Dense residential routes</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="p-3 font-semibold text-navy-800">Automation 5-Digit</td>
+                <td class="p-3 text-navy-600">$0.372</td>
+                <td class="p-3 text-navy-500">Targeted lists, IMb required</td>
+              </tr>
+              <tr class="bg-navy-50/50">
+                <td class="p-3 font-semibold text-navy-800">Automation AADC</td>
+                <td class="p-3 text-navy-600">$0.407</td>
+                <td class="p-3 text-navy-500">Broader geographic lists</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="text-base font-heading font-semibold text-navy-700 mb-2">Marketing Mail — Flats / Self-Mailers (≤4 oz)</h3>
+        <p class="text-navy-600/80 text-xs leading-relaxed mb-3">Flats include catalogs, booklets, oversized postcards, and self-mailers that exceed letter dimensions. Carrier route rates apply to saturation mailings; automation-sorted targeted flat campaigns are significantly higher.</p>
         <div class="overflow-x-auto mb-10">
           <table class="w-full text-sm border border-navy-200 rounded-lg overflow-hidden">
             <thead>
               <tr class="bg-crst-primary text-white">
-                <th class="text-left p-3 font-heading">Mail Piece Type</th>
-                <th class="text-left p-3 font-heading">Presort Rate</th>
-                <th class="text-left p-3 font-heading">Automation Rate</th>
+                <th class="text-left p-3 font-heading">Sort / Entry Level</th>
+                <th class="text-left p-3 font-heading">Rate per Piece</th>
                 <th class="text-left p-3 font-heading">Notes</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-navy-100">
               <tr class="bg-white">
-                <td class="p-3 font-semibold text-navy-800">Letters (up to 3.5 oz)</td>
-                <td class="p-3 text-navy-600">$0.357</td>
-                <td class="p-3 text-navy-600">$0.308</td>
-                <td class="p-3 text-navy-500">Automation requires <a href="/direct-mail-tools/postal-dictionary" class="text-crst-primary underline hover:text-crst-gold">Intelligent Mail barcode (IMb)</a></td>
+                <td class="p-3 font-semibold text-navy-800">Carrier Route Saturation</td>
+                <td class="p-3 text-navy-600 font-bold">$0.290</td>
+                <td class="p-3 text-navy-500">Neighborhood saturation campaigns</td>
               </tr>
               <tr class="bg-navy-50/50">
-                <td class="p-3 font-semibold text-navy-800">Postcards</td>
-                <td class="p-3 text-navy-600">$0.322</td>
-                <td class="p-3 text-navy-600">$0.276</td>
-                <td class="p-3 text-navy-500">Must meet postcard size requirements</td>
+                <td class="p-3 font-semibold text-navy-800">EDDM (carrier route)</td>
+                <td class="p-3 text-navy-600">$0.291</td>
+                <td class="p-3 text-navy-500">Every Door Direct Mail flats</td>
               </tr>
               <tr class="bg-white">
-                <td class="p-3 font-semibold text-navy-800">Flats / Self-Mailers</td>
-                <td class="p-3 text-navy-600">$0.542</td>
-                <td class="p-3 text-navy-600">$0.488</td>
-                <td class="p-3 text-navy-500">Larger pieces, catalogs, booklets</td>
+                <td class="p-3 font-semibold text-navy-800">Carrier Route High Density Plus</td>
+                <td class="p-3 text-navy-600">$0.351</td>
+                <td class="p-3 text-navy-500">Dense residential routes</td>
+              </tr>
+              <tr class="bg-navy-50/50">
+                <td class="p-3 font-semibold text-navy-800">Carrier Route Basic</td>
+                <td class="p-3 text-navy-600">$0.501</td>
+                <td class="p-3 text-navy-500">Lower-density carrier routes</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="p-3 font-semibold text-navy-800">Automation 5-Digit (sorted flat)</td>
+                <td class="p-3 text-navy-600">$0.770</td>
+                <td class="p-3 text-navy-500">Targeted list + full automation sort</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <!-- EDDM -->
-        <h3 class="text-xl font-display text-crst-primary mb-4">EDDM (Every Door Direct Mail)</h3>
+        <h2 id="eddm" class="text-2xl font-display text-crst-primary mb-3">EDDM Postage Rates {YEAR}</h2>
         <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
-          EDDM delivers to every address on selected <a href="/resources/eddm-guide" class="text-crst-primary underline hover:text-crst-gold">carrier routes</a> — no mailing list needed. Ideal for local businesses wanting blanket coverage of their area. EDDM postage is $0.242–$0.247 per piece. Estimate your total <a href="/services/eddm/how-much-does-eddm-cost" class="text-crst-primary underline hover:text-crst-gold">EDDM campaign cost</a> including printing and design.
+          EDDM delivers to every address on selected <a href="/resources/eddm-guide" class="text-crst-primary underline hover:text-crst-gold">carrier routes</a> — no mailing list needed. Ideal for local businesses wanting blanket coverage. EDDM postage rates were <strong>not changed</strong> in the April 26, {YEAR} rate update.
+          See <a href="/services/eddm" class="text-crst-primary underline hover:text-crst-gold">our EDDM service page</a> for the full breakdown, or <a href="/services/eddm/how-much-does-eddm-cost" class="text-crst-primary underline hover:text-crst-gold">estimate your EDDM campaign cost</a>.
         </p>
         <div class="overflow-x-auto mb-10">
           <table class="w-full text-sm border border-navy-200 rounded-lg overflow-hidden">
@@ -163,100 +311,261 @@ import { BUSINESS } from '../../data/site';
             <tbody class="divide-y divide-navy-100">
               <tr class="bg-white">
                 <td class="p-3 font-semibold text-navy-800">EDDM Retail</td>
-                <td class="p-3 text-navy-600">$0.247</td>
+                <td class="p-3 text-navy-600 font-bold">$0.247</td>
                 <td class="p-3 text-navy-600">No</td>
                 <td class="p-3 text-navy-500">5,000/day per ZIP</td>
               </tr>
               <tr class="bg-navy-50/50">
-                <td class="p-3 font-semibold text-navy-800">EDDM BMEU</td>
-                <td class="p-3 text-navy-600">$0.242</td>
+                <td class="p-3 font-semibold text-navy-800">EDDM BMEU — DDU entry</td>
+                <td class="p-3 text-navy-600 font-bold">$0.242</td>
                 <td class="p-3 text-navy-600">Yes</td>
-                <td class="p-3 text-navy-500">No daily limit</td>
+                <td class="p-3 text-navy-500">No limit</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="p-3 font-semibold text-navy-800">EDDM BMEU — DSCF entry</td>
+                <td class="p-3 text-navy-600">$0.253</td>
+                <td class="p-3 text-navy-600">Yes</td>
+                <td class="p-3 text-navy-500">No limit</td>
+              </tr>
+              <tr class="bg-navy-50/50">
+                <td class="p-3 font-semibold text-navy-800">EDDM BMEU — Origin entry</td>
+                <td class="p-3 text-navy-600">$0.291</td>
+                <td class="p-3 text-navy-600">Yes</td>
+                <td class="p-3 text-navy-500">No limit</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <!-- First-Class -->
-        <h3 class="text-xl font-display text-crst-primary mb-4">First-Class Mail</h3>
+        <!-- First-Class Mail -->
+        <h2 id="first-class" class="text-2xl font-display text-crst-primary mb-3">First-Class Mail Rates {YEAR}</h2>
         <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
-          First-Class is faster (1–3 days) and includes forwarding and return service. Used for invoices, statements, and time-sensitive communications. Presort discounts are available for 500+ pieces.
+          First-Class is faster (1–3 days) and includes forwarding and return service. Used for invoices, statements, and time-sensitive communications. Presort discounts are available for 500+ pieces with an <a href="/direct-mail-tools/postal-dictionary" class="text-crst-primary underline hover:text-crst-gold">Intelligent Mail barcode (IMb)</a>.
         </p>
+
+        <h3 class="text-base font-heading font-semibold text-navy-700 mb-2 mt-6">Single Piece — Retail</h3>
+        <div class="overflow-x-auto mb-6">
+          <table class="w-full text-sm border border-navy-200 rounded-lg overflow-hidden">
+            <thead>
+              <tr class="bg-crst-primary text-white">
+                <th class="text-left p-3 font-heading">Piece Type</th>
+                <th class="text-left p-3 font-heading">Rate</th>
+                <th class="text-left p-3 font-heading">Notes</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-navy-100">
+              <tr class="bg-white">
+                <td class="p-3 font-semibold text-navy-800">Letter, 1 oz — metered</td>
+                <td class="p-3 text-navy-600 font-bold">$0.74</td>
+                <td class="p-3 text-navy-500">Standard window envelope</td>
+              </tr>
+              <tr class="bg-navy-50/50">
+                <td class="p-3 font-semibold text-navy-800">Letter, 1 oz — stamped (Forever)</td>
+                <td class="p-3 text-navy-600 font-bold">$0.78</td>
+                <td class="p-3 text-navy-500">Forever stamp price</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="p-3 font-semibold text-navy-800">Letter, 2 oz</td>
+                <td class="p-3 text-navy-600">$1.03</td>
+                <td class="p-3 text-navy-500">Metered</td>
+              </tr>
+              <tr class="bg-navy-50/50">
+                <td class="p-3 font-semibold text-navy-800">Letter, 3 oz</td>
+                <td class="p-3 text-navy-600">$1.32</td>
+                <td class="p-3 text-navy-500">Metered</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="p-3 font-semibold text-navy-800">Postcard</td>
+                <td class="p-3 text-navy-600 font-bold">$0.61</td>
+                <td class="p-3 text-navy-500">Min 3.5″×5″, max 4.25″×6″</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="text-base font-heading font-semibold text-navy-700 mb-2">Presorted / Bulk (500+ pieces)</h3>
         <div class="overflow-x-auto mb-10">
           <table class="w-full text-sm border border-navy-200 rounded-lg overflow-hidden">
             <thead>
               <tr class="bg-crst-primary text-white">
-                <th class="text-left p-3 font-heading">Mail Piece Type</th>
-                <th class="text-left p-3 font-heading">Single Piece</th>
-                <th class="text-left p-3 font-heading">Presort/Automation</th>
+                <th class="text-left p-3 font-heading">Sort Level</th>
+                <th class="text-left p-3 font-heading">Rate per Piece</th>
                 <th class="text-left p-3 font-heading">Min. Quantity</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-navy-100">
               <tr class="bg-white">
-                <td class="p-3 font-semibold text-navy-800">Letters (1 oz)</td>
-                <td class="p-3 text-navy-600">$0.73</td>
-                <td class="p-3 text-navy-600">$0.485</td>
+                <td class="p-3 font-semibold text-navy-800">Letters — Automation 5-Digit</td>
+                <td class="p-3 text-navy-600 font-bold">$0.593</td>
                 <td class="p-3 text-navy-500">500 pieces</td>
               </tr>
               <tr class="bg-navy-50/50">
-                <td class="p-3 font-semibold text-navy-800">Postcards</td>
-                <td class="p-3 text-navy-600">$0.56</td>
-                <td class="p-3 text-navy-600">$0.405</td>
+                <td class="p-3 font-semibold text-navy-800">Letters — Automation AADC</td>
+                <td class="p-3 text-navy-600">$0.641</td>
                 <td class="p-3 text-navy-500">500 pieces</td>
               </tr>
               <tr class="bg-white">
-                <td class="p-3 font-semibold text-navy-800">Flats</td>
-                <td class="p-3 text-navy-600">$1.35</td>
-                <td class="p-3 text-navy-600">$0.80</td>
+                <td class="p-3 font-semibold text-navy-800">Postcards — Automation 5-Digit</td>
+                <td class="p-3 text-navy-600 font-bold">$0.420</td>
+                <td class="p-3 text-navy-500">500 pieces</td>
+              </tr>
+              <tr class="bg-navy-50/50">
+                <td class="p-3 font-semibold text-navy-800">Postcards — Automation AADC</td>
+                <td class="p-3 text-navy-600">$0.445</td>
                 <td class="p-3 text-navy-500">500 pieces</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <!-- Non-Profit -->
-        <h3 class="text-xl font-display text-crst-primary mb-4">Non-Profit Mail Rates</h3>
+        <!-- Postcard Postage -->
+        <h2 id="postcard-postage" class="text-2xl font-display text-crst-primary mb-3">Postcard Postage {YEAR}</h2>
         <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
-          Qualifying 501(c)(3) organizations receive the lowest USPS rates — typically 40–60% less than commercial Marketing Mail. Requires USPS authorization via <a href="/non-profit-mailing-application" class="text-crst-primary underline hover:text-crst-gold">PS Form 3624</a>. Learn more about how our <a href="/services/non-profit-mailing" class="text-crst-primary underline hover:text-crst-gold">non-profit mailing services</a> help organizations apply for and maintain their authorization. 501(c)(3) organizations qualify for discounted rates starting at $0.154/piece. Calculate your annual savings with our <a href="/services/non-profit-mailing/nonprofit-postage-rates" class="text-crst-primary underline hover:text-crst-gold">nonprofit postage savings calculator</a>.
+          USPS defines a postcard as a single-sheet, unfolded piece between 3.5″×5″ and 4.25″×6″ (min), made of cardstock at least 0.007″ thick. Oversized cards that exceed postcard dimensions mail at letter or flat rates.
         </p>
         <div class="overflow-x-auto mb-10">
           <table class="w-full text-sm border border-navy-200 rounded-lg overflow-hidden">
             <thead>
               <tr class="bg-crst-primary text-white">
-                <th class="text-left p-3 font-heading">Mail Piece Type</th>
-                <th class="text-left p-3 font-heading">Non-Profit Rate</th>
+                <th class="text-left p-3 font-heading">Service / Volume</th>
+                <th class="text-left p-3 font-heading">Rate</th>
+                <th class="text-left p-3 font-heading">Requirements</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-navy-100">
+              <tr class="bg-white">
+                <td class="p-3 font-semibold text-navy-800">First-Class single piece</td>
+                <td class="p-3 text-navy-600 font-bold">$0.61</td>
+                <td class="p-3 text-navy-500">3.5″×5″ – 4.25″×6″ (USPS postcard dimensions)</td>
+              </tr>
+              <tr class="bg-navy-50/50">
+                <td class="p-3 font-semibold text-navy-800">First-Class bulk (automation 5-digit)</td>
+                <td class="p-3 text-navy-600">$0.420</td>
+                <td class="p-3 text-navy-500">500+ pieces, IMb, presorted</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="p-3 font-semibold text-navy-800">Marketing Mail bulk (letter rate)</td>
+                <td class="p-3 text-navy-600">from $0.244</td>
+                <td class="p-3 text-navy-500">200+ pieces, carrier route saturation</td>
+              </tr>
+              <tr class="bg-navy-50/50">
+                <td class="p-3 font-semibold text-navy-800">EDDM (oversized postcard, ≥6.125″ long)</td>
+                <td class="p-3 text-navy-600">$0.247</td>
+                <td class="p-3 text-navy-500">200+ pieces, no permit, every address</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Large Envelope (Flats) -->
+        <h2 id="large-envelope" class="text-2xl font-display text-crst-primary mb-3">Large Envelope (Flat) Rates {YEAR}</h2>
+        <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+          USPS classifies pieces larger than 6.125″ tall or 11.5″ long or 0.25″ thick as <em>large envelopes</em> (also called flats). Common formats include <a href="/guides/envelope-sizes/9x12" class="text-crst-primary underline hover:text-crst-gold">9×12 envelopes</a>, <a href="/guides/envelope-sizes/a10" class="text-crst-primary underline hover:text-crst-gold">A10 envelopes</a>, and catalog mailers. First-Class large envelope postage increased 21% on April 26, {YEAR}.
+        </p>
+        <div class="overflow-x-auto mb-10">
+          <table class="w-full text-sm border border-navy-200 rounded-lg overflow-hidden">
+            <thead>
+              <tr class="bg-crst-primary text-white">
+                <th class="text-left p-3 font-heading">Weight (not over)</th>
+                <th class="text-left p-3 font-heading">First-Class Retail</th>
+                <th class="text-left p-3 font-heading">Notes</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-navy-100">
+              <tr class="bg-white"><td class="p-3 font-semibold text-navy-800">1 oz</td><td class="p-3 text-navy-600 font-bold">$1.63</td><td class="p-3 text-navy-500">Most 9×12 single-sheet mailings</td></tr>
+              <tr class="bg-navy-50/50"><td class="p-3 font-semibold text-navy-800">2 oz</td><td class="p-3 text-navy-600">$1.90</td><td class="p-3 text-navy-500"></td></tr>
+              <tr class="bg-white"><td class="p-3 font-semibold text-navy-800">3 oz</td><td class="p-3 text-navy-600">$2.17</td><td class="p-3 text-navy-500"></td></tr>
+              <tr class="bg-navy-50/50"><td class="p-3 font-semibold text-navy-800">4 oz</td><td class="p-3 text-navy-600">$2.44</td><td class="p-3 text-navy-500"></td></tr>
+              <tr class="bg-white"><td class="p-3 font-semibold text-navy-800">5 oz</td><td class="p-3 text-navy-600">$2.72</td><td class="p-3 text-navy-500"></td></tr>
+              <tr class="bg-navy-50/50"><td class="p-3 font-semibold text-navy-800">6 oz</td><td class="p-3 text-navy-600">$3.00</td><td class="p-3 text-navy-500"></td></tr>
+              <tr class="bg-white"><td class="p-3 font-semibold text-navy-800">7 oz</td><td class="p-3 text-navy-600">$3.28</td><td class="p-3 text-navy-500"></td></tr>
+              <tr class="bg-navy-50/50"><td class="p-3 font-semibold text-navy-800">8 oz</td><td class="p-3 text-navy-600">$3.56</td><td class="p-3 text-navy-500"></td></tr>
+              <tr class="bg-white"><td class="p-3 font-semibold text-navy-800">9 oz</td><td class="p-3 text-navy-600">$3.84</td><td class="p-3 text-navy-500"></td></tr>
+              <tr class="bg-navy-50/50"><td class="p-3 font-semibold text-navy-800">10 oz</td><td class="p-3 text-navy-600">$4.14</td><td class="p-3 text-navy-500"></td></tr>
+              <tr class="bg-white"><td class="p-3 font-semibold text-navy-800">13 oz</td><td class="p-3 text-navy-600">$5.04</td><td class="p-3 text-navy-500">Max First-Class flat weight</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Non-Profit -->
+        <h2 id="nonprofit" class="text-2xl font-display text-crst-primary mb-3">Non-Profit Mail Rates {YEAR}</h2>
+        <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+          Qualifying 501(c)(3) organizations receive significantly reduced USPS rates — typically 40–50% less than commercial Marketing Mail. Requires USPS nonprofit authorization via <a href="/non-profit-mailing-application" class="text-crst-primary underline hover:text-crst-gold">PS Form 3624</a>. See our <a href="/services/non-profit-mailing" class="text-crst-primary underline hover:text-crst-gold">nonprofit mailing services page</a> and <a href="/services/non-profit-mailing/nonprofit-postage-rates" class="text-crst-primary underline hover:text-crst-gold">savings calculator</a>.
+        </p>
+        <div class="overflow-x-auto mb-4">
+          <table class="w-full text-sm border border-navy-200 rounded-lg overflow-hidden">
+            <thead>
+              <tr class="bg-crst-primary text-white">
+                <th class="text-left p-3 font-heading">Mail Piece / Sort Level</th>
+                <th class="text-left p-3 font-heading">Nonprofit Rate</th>
                 <th class="text-left p-3 font-heading">vs. Commercial</th>
                 <th class="text-left p-3 font-heading">Savings</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-navy-100">
               <tr class="bg-white">
-                <td class="p-3 font-semibold text-navy-800">Letters (automation)</td>
-                <td class="p-3 text-navy-600">$0.154</td>
-                <td class="p-3 text-navy-600">$0.308</td>
-                <td class="p-3 text-green-600 font-semibold">~50%</td>
+                <td class="p-3 font-semibold text-navy-800">Letters — Carrier Route Saturation</td>
+                <td class="p-3 text-navy-600 font-bold">$0.155</td>
+                <td class="p-3 text-navy-600">$0.244</td>
+                <td class="p-3 text-green-600 font-semibold">~37%</td>
               </tr>
               <tr class="bg-navy-50/50">
-                <td class="p-3 font-semibold text-navy-800">Flats (automation)</td>
-                <td class="p-3 text-navy-600">$0.243</td>
-                <td class="p-3 text-navy-600">$0.488</td>
-                <td class="p-3 text-green-600 font-semibold">~50%</td>
+                <td class="p-3 font-semibold text-navy-800">Letters — Automation 5-Digit</td>
+                <td class="p-3 text-navy-600 font-bold">$0.178</td>
+                <td class="p-3 text-navy-600">$0.372</td>
+                <td class="p-3 text-green-600 font-semibold">~52%</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="p-3 font-semibold text-navy-800">Letters — Automation AADC</td>
+                <td class="p-3 text-navy-600">$0.213</td>
+                <td class="p-3 text-navy-600">$0.407</td>
+                <td class="p-3 text-green-600 font-semibold">~48%</td>
+              </tr>
+              <tr class="bg-navy-50/50">
+                <td class="p-3 font-semibold text-navy-800">Flats — Carrier Route Saturation</td>
+                <td class="p-3 text-navy-600 font-bold">$0.180</td>
+                <td class="p-3 text-navy-600">$0.290</td>
+                <td class="p-3 text-green-600 font-semibold">~38%</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="p-3 font-semibold text-navy-800">Flats — EDDM / Carrier Route</td>
+                <td class="p-3 text-navy-600">$0.181</td>
+                <td class="p-3 text-navy-600">$0.291</td>
+                <td class="p-3 text-green-600 font-semibold">~38%</td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p class="text-xs text-navy-400 mb-10">Rates shown at no entry discount (origin facility). DSCF/DDU entry discounts available. Nonprofit authorization is permanent once approved.</p>
 
+        <!-- FAQ -->
+        <h2 id="faq" class="text-2xl font-display text-crst-primary mb-6">Frequently Asked Questions</h2>
+        <div class="space-y-4 mb-12">
+          {faqs.map(({ q, a }) => (
+            <details class="group bg-navy-50/50 rounded-xl border border-navy-100 overflow-hidden">
+              <summary class="flex items-center justify-between p-4 cursor-pointer font-heading font-semibold text-navy-800 text-sm list-none hover:bg-navy-100/50 transition-colors">
+                {q}
+                <svg class="w-4 h-4 shrink-0 opacity-50 group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </summary>
+              <div class="px-4 pb-4 text-sm text-navy-600/80 leading-relaxed border-t border-navy-100 pt-3">
+                {a}
+              </div>
+            </details>
+          ))}
+        </div>
+
+        <!-- CTA -->
         <div class="bg-crst-primary/5 border border-crst-primary/20 rounded-xl p-6 mt-8">
-          <h4 class="font-heading font-bold text-crst-primary mb-2">Get an Exact Quote</h4>
+          <h3 class="font-heading font-bold text-crst-primary mb-2">Get an Exact Postage Quote</h3>
           <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
-            Actual postage depends on your specific mail piece size, weight, presort level, and entry point. Let us analyze your campaign and provide an exact postage cost.
+            Actual postage depends on your specific mail piece size, weight, presort level, and entry point. Let us analyze your campaign and provide an exact all-in cost — postage, printing, and mailing combined.
           </p>
           <div class="flex flex-wrap gap-3">
-            <a href="/estimate" class="btn-primary text-sm">Request Estimate</a>
-            <a href="/direct-mail-tools/envelope-sizes" class="btn-secondary text-sm">Mail Piece Sizes →</a>
+            <a href="/contact?service=direct-mail" class="btn-primary text-sm">Request a Free Quote</a>
+            <a href="/guides/envelope-sizes" class="btn-secondary text-sm">Mail Piece Size Guide →</a>
           </div>
         </div>
+
       </div>
     </div>
   </section>
