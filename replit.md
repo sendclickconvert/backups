@@ -45,6 +45,11 @@ This project is a full-service website for Cornerstone Services, Inc., specializ
 - Shopping cart icon in header for order page access
 - White bird on blue circular favicon (inverted from logo colors)
 
+## Editorial / SEO Workflow Convention
+- **"Scan, understand, apply"** is the standing operating procedure for all content and SEO work. Always audit the existing page (title, meta, H1, schema, word count, inbound links, content gaps) and cross-check against GSC data before proposing or making any changes.
+- **Default to "improve in place"** — evergreen slugs win. Never create a new page or change a URL slug without explicitly flagging it first and confirming the structural reason makes Path A impossible.
+- This pattern has caught scope errors (would-have-been duplicate pages, stale rates shipped without verification, wrong-placement schema) on every task where it was applied. It is the default, not the exception.
+
 ## System Architecture
 The website is developed using Astro 4.16 in a hybrid output mode, leveraging the `@astrojs/node` adapter for deployment on Replit autoscale. Tailwind CSS is used for styling. React (`@astrojs/react`) is integrated for interactive calculator components.
 
