@@ -1,8 +1,8 @@
 ---
-title: "EDDM vs. Targeted Direct Mail"
-description: "Every Door Direct Mail vs. targeted direct mail — cost, response rates, list requirements, and when to use each. Hudson Valley comparison guide."
+title: "EDDM vs. Targeted Direct Mail: 2026 Comparison Guide"
+description: "EDDM vs. targeted direct mail in 2026 — cost, response rates, list requirements, and when each method wins. Hudson Valley comparison from CRST."
 pubDate: 2026-04-01
-updatedDate: 2026-04-01
+updatedDate: 2026-05-07
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
 authorLocation: "New Paltz, NY"
@@ -27,7 +27,7 @@ EDDM delivers your mail piece to every address on a USPS carrier route — no ma
 
 Every Door Direct Mail delivers your mail piece to **every address** on a USPS carrier route. No mailing list required. No names, no addresses — just a carrier route selection and a mail piece. USPS handles delivery to every residential and/or business address on the selected routes.
 
-EDDM postage runs **$0.22–$0.23 per piece** — the lowest available USPS rate. There is no permit fee for Retail EDDM. You select routes using the USPS EDDM Online Tool, which provides demographic data (household income, age, size) pulled from U.S. Census records. Cornerstone handles the entire process — route selection, design, printing, PS Form 3587, bundling, and post office delivery.
+EDDM postage runs **$0.247 per piece** — the lowest available USPS rate. There is no permit fee for Retail EDDM. You select routes using the USPS EDDM Online Tool, which provides demographic data (household income, age, size) pulled from U.S. Census records. Cornerstone handles the entire process — route selection, design, printing, PS Form 3587, bundling, and post office delivery.
 
 ## What Is Targeted Direct Mail?
 

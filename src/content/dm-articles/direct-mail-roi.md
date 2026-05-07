@@ -2,7 +2,7 @@
 title: "Direct Mail ROI: How Hudson Valley Businesses Measure and Maximize Returns"
 description: "Direct mail ROI guide — calculation formula, industry benchmarks, three worked campaign examples, factors that improve and kill ROI, and tracking methods for Hudson Valley businesses."
 pubDate: 2026-04-01
-updatedDate: 2026-04-01
+updatedDate: 2026-05-07
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
 authorLocation: "New Paltz, NY"
@@ -136,9 +136,9 @@ The campaign that "only" returned 60% in the first transaction produces nearly 7
 |---------------|--------|
 | Postcards (6×9, 10,000 qty) | $3,800 |
 | Design (template-based) | $250 |
-| EDDM postage (10,000 × $0.223) | $2,230 |
+| EDDM postage (10,000 × $0.247) | $2,470 |
 | Mailing list | $0 (EDDM — no list required) |
-| **Total campaign cost** | **$6,280** |
+| **Total campaign cost** | **$6,520** |
 
 | Response Metric | Value |
 |----------------|-------|
@@ -149,7 +149,7 @@ The campaign that "only" returned 60% in the first transaction produces nearly 7
 | Average profit per deal (after rehab) | $22,000 |
 | **Total profit** | **$88,000** |
 | **Campaign ROI** | **1,301%** |
-| **Cost per deal** | **$1,570** |
+| **Cost per deal** | **$1,630** |
 
 Real estate investor campaigns have low response rates but extremely high per-transaction value. Four deals at $22,000 profit each from a $6,280 campaign investment — the ROI speaks for itself.
 
@@ -162,9 +162,9 @@ Real estate investor campaigns have low response rates but extremely high per-tr
 |---------------|--------|
 | Postcards (6×9, 15,000 qty) | $5,250 |
 | Custom design | $500 |
-| EDDM postage (15,000 × $0.223) | $3,345 |
+| EDDM postage (15,000 × $0.247) | $3,705 |
 | Mailing list | $0 (EDDM) |
-| **Total campaign cost** | **$9,095** |
+| **Total campaign cost** | **$9,455** |
 
 | Response Metric | Value |
 |----------------|-------|
@@ -174,7 +174,7 @@ Real estate investor campaigns have low response rates but extremely high per-tr
 | Gross revenue from postcard visits | $18,900 |
 | Minus 20% discount cost | -$3,780 |
 | **Net revenue from postcard visits** | **$15,120** |
-| **First-visit ROI** | **66%** |
+| **First-visit ROI** | **60%** |
 
 | Lifetime Metric | Value |
 |----------------|-------|

@@ -1,8 +1,8 @@
 ---
-title: "Every Door Direct Mail (EDDM): Saturate Hudson Valley Neighborhoods Without Buying Lists"
-description: "EDDM guide for Hudson Valley businesses — cost breakdown, route selection, design requirements, ROI calculation, and step-by-step process for Every Door Direct Mail."
+title: "EDDM Direct Mail Guide 2026: Routes, Rates & Results"
+description: "EDDM guide for Hudson Valley businesses — $0.247/piece postage, route selection, design requirements, and step-by-step campaign process."
 pubDate: 2026-04-01
-updatedDate: 2026-04-01
+updatedDate: 2026-05-07
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
 authorLocation: "New Paltz, NY"
@@ -12,7 +12,7 @@ schemaFAQ:
   - q: "What does EDDM stand for?"
     a: "EDDM stands for Every Door Direct Mail. It is a USPS program that delivers your mail piece to every residential and/or business address on selected postal carrier routes — without requiring a mailing list or individual addressing."
   - q: "How much does EDDM cost per piece?"
-    a: "EDDM Retail postage is $0.223 per piece regardless of piece size (up to 15\" x 12\"). Combined with printing costs of $0.45–$0.95 depending on format, total all-in cost runs $0.66–$1.18 per piece. There is no mailing list cost with EDDM."
+    a: "EDDM Retail postage is $0.247 per piece regardless of piece size (up to 15\" x 12\"). Combined with printing costs of $0.45–$0.95 depending on format, total all-in cost runs $0.69–$1.21 per piece. There is no mailing list cost with EDDM."
   - q: "Can I target specific demographics with EDDM?"
     a: "EDDM allows geographic targeting by carrier route, and you can filter routes by demographic data — median household income, average age, and household size — using the USPS EDDM Online Tool. You cannot target individual households by name or specific attributes like homeownership."
   - q: "What is the minimum quantity for EDDM?"
@@ -50,7 +50,7 @@ You select routes using the USPS EDDM Online Tool, which provides demographic da
 
 Each carrier route covers a specific geographic area served by one mail carrier. Routes typically contain 200–500 delivery points. You can select as few or as many routes as needed to cover your target geography — from a single route around your storefront to dozens of routes covering an entire town.
 
-The key advantage of EDDM is cost. Without a mailing list to purchase ($50–$100 per thousand records) and with the lowest available USPS postage rate ($0.223 per piece), EDDM delivers the most mail pieces per dollar of any direct mail method.
+The key advantage of EDDM is cost. Without a mailing list to purchase ($50–$100 per thousand records) and with the lowest available USPS postage rate ($0.247 per piece), EDDM delivers the most mail pieces per dollar of any direct mail method.
 
 ## EDDM Pricing Breakdown
 
@@ -58,7 +58,7 @@ Here is a complete cost breakdown for a typical EDDM campaign:
 
 | Component | Cost per Piece | Notes |
 |-----------|---------------|-------|
-| EDDM Retail postage | $0.223 | Flat rate regardless of piece size (up to 15"×12") |
+| EDDM Retail postage | $0.247 | Flat rate regardless of piece size (up to 15"×12") |
 | Postcard printing (6×9) | $0.45–$0.75 | Depends on quantity and cardstock weight |
 | Postcard printing (6×11) | $0.65–$0.95 | Larger format; more design space |
 | Self-mailer printing (tri-fold) | $0.75–$1.25 | Bi-fold or tri-fold formats |
@@ -76,7 +76,7 @@ The choice between EDDM and targeted mail depends on whether geographic reach or
 | Factor | EDDM | Targeted Direct Mail |
 |--------|------|---------------------|
 | Mailing list cost | $0 (no list) | $50–$100/thousand records |
-| Postage per piece | $0.223 | $0.22–$0.30 (Marketing Mail) |
+| Postage per piece | $0.247 | $0.22–$0.30 (Marketing Mail) |
 | All-in cost per piece | $0.66–$0.98 | $0.75–$1.10 |
 | Targeting precision | Geographic + basic demographics | Full demographic + geographic |
 | Minimum quantity | Entire carrier route (200–500) | 200 pieces (presort) |
@@ -130,7 +130,7 @@ Running an EDDM campaign involves five steps. Cornerstone handles all of these, 
 
 **Step 4: Bundle by carrier route.** Organize printed pieces into bundles of 50–100, secured with rubber bands or shrink wrap. Label each bundle with the carrier route number. Facing slips separate bundles for different routes.
 
-**Step 5: Complete PS Form 3587 and deliver to Post Office.** Fill out PS Form 3587 for each mailing, listing carrier routes, piece counts, and postage totals. Deliver bundled mail and completed forms to the destination Post Office. Pay postage at the retail counter — $0.223 per piece.
+**Step 5: Complete PS Form 3587 and deliver to Post Office.** Fill out PS Form 3587 for each mailing, listing carrier routes, piece counts, and postage totals. Deliver bundled mail and completed forms to the destination Post Office. Pay postage at the retail counter — $0.247 per piece.
 
 Total timeline from design approval to Post Office delivery is typically **5–7 business days** at Cornerstone. USPS delivery to mailboxes takes an additional 5–7 business days for local Hudson Valley routes. See our [campaign timeline guide](/services/direct-mail/how-long-does-direct-mail-take) for detailed planning.
 
@@ -144,9 +144,9 @@ Here is a complete ROI calculation for a real-world EDDM campaign:
 | Item | Amount |
 |------|--------|
 | Postcards (6×9, 2,800 qty, full color) | $1,820 |
-| EDDM postage (2,800 × $0.223) | $624 |
+| EDDM postage (2,800 × $0.247) | $692 |
 | Design (template-based) | $200 |
-| **Total campaign investment** | **$2,644** |
+| **Total campaign investment** | **$2,712** |
 
 | Response Metric | Value |
 |----------------|-------|
@@ -157,8 +157,8 @@ Here is a complete ROI calculation for a real-world EDDM campaign:
 | Average first-year customer value | $850 |
 | **First-year gross revenue** | **$14,450** |
 | Profit margin (40%) | $5,780 |
-| **First-campaign ROI** | **119%** |
-| **Cost per new customer** | **$156** |
+| **First-campaign ROI** | **113%** |
+| **Cost per new customer** | **$160** |
 
 The campaign pays for itself in the first season. If even 50% of those 17 customers return the following year, the lifetime ROI exceeds 300%. This is why EDDM is one of the highest-ROI marketing channels for local service businesses.
 
@@ -196,7 +196,7 @@ EDDM stands for Every Door Direct Mail. It is a USPS program that delivers your 
 
 **How much does EDDM cost per piece?**
 
-EDDM Retail postage is $0.223 per piece regardless of piece size (up to 15"×12"). Combined with printing costs of $0.45–$0.95 depending on format and quantity, total all-in cost runs $0.66–$1.18 per piece. There is no mailing list cost with EDDM, which is the primary cost advantage over targeted direct mail. Design costs are amortized across the total piece count.
+EDDM Retail postage is $0.247 per piece regardless of piece size (up to 15"×12"). Combined with printing costs of $0.45–$0.95 depending on format and quantity, total all-in cost runs $0.69–$1.21 per piece. There is no mailing list cost with EDDM, which is the primary cost advantage over targeted direct mail. Design costs are amortized across the total piece count.
 
 **Can I target specific demographics with EDDM?**
 

@@ -1,8 +1,8 @@
 ---
-title: "EDDM Printing Requirements: What Every Printer Needs to Know"
-description: "EDDM pieces must meet USPS printing requirements for indicia placement, facing slips, and bundling — or they get rejected at the post office counter. Here's everything your printer needs to do it right."
+title: "EDDM Printing Requirements: 2026 USPS Specs | CRST"
+description: "2026 USPS EDDM printing requirements — indicia placement, facing slips, and bundling. Rejections at the counter explained by a USPS-certified print shop."
 pubDate: 2026-04-09
-updatedDate: 2026-04-09
+updatedDate: 2026-05-07
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
 authorLocation: "New Paltz, NY"

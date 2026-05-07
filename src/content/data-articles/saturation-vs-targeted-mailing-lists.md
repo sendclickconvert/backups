@@ -2,7 +2,7 @@
 title: "Saturation vs. Targeted Mailing Lists: Which Is Right for Your Campaign?"
 description: "Saturation mailing lists hit every address on a carrier route. Targeted lists filter by demographics. Here's how to choose between them — and when to use both."
 pubDate: 2026-04-09
-updatedDate: 2026-04-09
+updatedDate: 2026-05-07
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
 authorLocation: "New Paltz, NY"
@@ -10,7 +10,7 @@ primaryKeyword: "saturation vs targeted mailing list"
 pillar: "https://crst.net/services/data-lists"
 schemaFAQ:
   - q: "What is a saturation mailing list?"
-    a: "A saturation mailing list includes every deliverable address on selected USPS carrier routes — no demographic filtering, no exclusions. It is the list type used for EDDM (Every Door Direct Mail) campaigns. Postage runs $0.223 per piece. Cost is lower than targeted lists because no demographic data is purchased."
+    a: "A saturation mailing list includes every deliverable address on selected USPS carrier routes — no demographic filtering, no exclusions. It is the list type used for EDDM (Every Door Direct Mail) campaigns. Postage runs $0.247 per piece. Cost is lower than targeted lists because no demographic data is purchased."
   - q: "What is a targeted mailing list?"
     a: "A targeted mailing list filters a compiled database by demographics, geography, or behavior to reach a specific audience — homeowners in a certain income range, businesses in a specific industry, new movers within a defined area. Postage is higher than EDDM ($0.22–$0.30 for presorted Marketing Mail), and list cost adds $50–$200 per thousand records."
   - q: "When should I use saturation instead of targeted?"
@@ -27,11 +27,11 @@ This is not a complex decision, but it is one that most businesses get wrong in 
 
 A saturation list includes every deliverable address on selected USPS carrier routes. No demographic filters, no income thresholds, no homeownership selects — every address gets a piece. Businesses, apartments, houses, PO Boxes on select routes: all included.
 
-Saturation is the list type that powers [EDDM (Every Door Direct Mail)](/services/eddm). With EDDM, you select carrier routes on the USPS online mapping tool, print to the route count, and deliver at $0.223 per piece — the lowest available postage rate. No mailing list purchase required because the route roster is built from USPS carrier data.
+Saturation is the list type that powers [EDDM (Every Door Direct Mail)](/services/eddm). With EDDM, you select carrier routes on the USPS online mapping tool, print to the route count, and deliver at $0.247 per piece — the lowest available postage rate. No mailing list purchase required because the route roster is built from USPS carrier data.
 
 When using saturation with a purchased list (rather than true EDDM), you get the same coverage but with slightly more control over route selection and business/residential filtering. You can exclude business addresses on a residential campaign, or exclude PO Boxes if the format requires a physical address. True EDDM Retail does not allow these exclusions — you mail to every active delivery point.
 
-**Saturation list cost:** No demographic data purchase. EDDM postage $0.223 per piece. All-in cost for a standard 6×9 postcard runs $0.44–$0.60 per piece.
+**Saturation list cost:** No demographic data purchase. EDDM postage $0.247 per piece. All-in cost for a standard 6×9 postcard runs $0.48–$0.65 per piece.
 
 ## Targeted Lists: What They Are
 
@@ -53,7 +53,7 @@ Saturation is the right choice when geographic presence matters more than demogr
 
 **Home services where the property is the customer.** Lawn care, snow removal, gutter cleaning, exterior painting — the property needs the service regardless of who owns it. Blanket coverage of a geographic area costs less per piece and reaches every eligible address.
 
-**EDDM-eligible formats.** If you are mailing a self-mailer, flat-size postcard (9×12+), or other EDDM-eligible format, saturation at $0.223 per piece may be substantially cheaper than targeted mail at $0.26–$0.30 per piece — even after adding demographic value.
+**EDDM-eligible formats.** If you are mailing a self-mailer, flat-size postcard (9×12+), or other EDDM-eligible format, saturation at $0.247 per piece may be substantially cheaper than targeted mail at $0.26–$0.30 per piece — even after adding demographic value.
 
 **Political and advocacy campaigns.** Voter outreach, municipal notifications, school district communications — all addresses in the jurisdiction receive the piece. Filtering by demographics is either not relevant (everyone votes) or legally problematic.
 
@@ -86,9 +86,9 @@ A dental practice in Poughkeepsie might run an EDDM saturation to the three carr
 
 | Factor | Saturation | Targeted |
 |--------|-----------|---------|
-| Postage rate | $0.223 (EDDM) | $0.22–$0.30 (presorted) |
+| Postage rate | $0.247 (EDDM) | $0.22–$0.30 (presorted) |
 | List cost | $0 (EDDM) | $50–$200/thousand |
-| All-in cost per piece | $0.44–$0.60 | $0.65–$0.90 |
+| All-in cost per piece | $0.48–$0.65 | $0.65–$0.90 |
 | Audience precision | Low (everyone) | High (filtered) |
 | Expected response rate | 0.5–1.5% | 1–4% |
 | Best for | Broad awareness | Specific audiences |

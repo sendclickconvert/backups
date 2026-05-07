@@ -1,8 +1,8 @@
 ---
-title: "EDDM Postcard Sizes and Specs: The Complete USPS Guide"
-description: "EDDM mailpieces must fall within specific USPS size and weight limits. Here are the exact dimensions, the most popular formats, and the specs mistakes that get jobs rejected — from a print shop that has run EDDM for 28 years."
+title: "EDDM Postcard Sizes & Specs: Complete 2026 USPS Guide"
+description: "EDDM size requirements for 2026 — exact dimensions, popular formats, and the spec mistakes that get jobs rejected. From 28 years of EDDM production."
 pubDate: 2026-04-09
-updatedDate: 2026-04-09
+updatedDate: 2026-05-07
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
 authorLocation: "New Paltz, NY"

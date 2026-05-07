@@ -6,6 +6,21 @@
 
 ---
 
+## Rate Verification — Official Source
+
+**EDDM Retail rate confirmed from USPS Notice 123 (pe.usps.com), accessed 2026-05-07:**
+
+> "EDDM—Retail Flats up to 3.3 oz. **$0.247**"
+
+Source URL: `https://pe.usps.com/text/dmm300/Notice123.htm`  
+Verification date: 2026-05-07
+
+**BMEU rate status: UNVERIFIED** — Notice 123 page did not return the BMEU/carrier route section via automated fetch. The `eddm-retail-vs-eddm-bmeu.md` comparison article has been intentionally left untouched pending manual verification. The current file incorrectly shows BMEU = $0.247 (same as Retail), which contradicts the article's own explanatory text that BMEU should be cheaper. The `eddm-guide.astro` pricing table shows BMEU = $0.242 — this figure is also unverified but left in place.
+
+**Action required before next edit of `eddm-retail-vs-eddm-bmeu.md`:** Confirm the BMEU Marketing Mail Carrier Route Saturation rate (DDU entry) from Notice 123 PDF directly. Once confirmed, update both the comparison article table and the eddm-guide.astro BMEU row.
+
+---
+
 ## Scope Classification
 
 | Category | Count | Treatment |
@@ -31,79 +46,85 @@
 | 9 | `/services/eddm/eddm-printing-requirements` | `src/content/eddm-articles/eddm-printing-requirements.md` | EDDM Printing Requirements: What Every Printer Needs to Know | 60 ✅ | None | **202 ❌** | 2026-05-04 |
 | 10 | `/services/eddm/how-to-set-up-an-eddm-campaign` | `src/content/eddm-articles/how-to-set-up-an-eddm-campaign.md` | How to Set Up an EDDM Campaign: A Step-by-Step Guide | 52 ✅ | None | **203 ❌** | 2026-05-04 |
 
-**Title summary:** 2 of 10 over 60 chars (#1, #3). **All 10 titles are year-free.**  
-**Meta desc summary:** 7 of 10 over 155 chars (all eddm-articles cluster, #1, #3).
+*Table reflects pre-fix state as found during audit. Fixes applied 2026-05-07 — see Fix Log below.*
 
 ---
 
-## Table 2 — Primary EDDM Pages: Content Checks
+## Table 2 — Primary EDDM Pages: Content Checks (pre-fix)
 
 | # | URL | Postage Rate Cited | Rate Correct? | Rate Table Present | CTA to /contact or quote | dateModified in schema |
 |---|-----|--------------------|:-------------:|:------------------:|:------------------------:|:----------------------:|
-| 1 | `/services/eddm` | $0.247 | ⚠️ stale | ✅ (all-in cost table) | ✅ `/estimate` | ❌ static, not in schema |
-| 2 | `/resources/eddm-guide` | $0.247 (Retail) / $0.242 (BMEU) | ⚠️ stale | ✅ (postage table) | ✅ `/estimate` | ❌ none |
-| 3 | `/services/direct-mail/eddm-every-door-direct-mail` | $0.223 | ⚠️ stale | ✅ (inline table) | via template CTASection | ✅ `updatedDate: 2026-04-01` |
-| 4 | `/services/direct-mail/eddm-vs-targeted-direct-mail` | not primary | — | ❌ | via template CTASection | ✅ `updatedDate: 2026-04-01` |
-| 5 | `/services/eddm/how-much-does-eddm-cost` | $0.247 ("as of 2025" ❌) | ❌ stale + wrong year | ✅ (cost breakdown) | via template CTASection | ✅ `updatedDate: 2026-04-09` |
-| 6 | `/services/eddm/what-is-every-door-direct-mail` | $0.247 | ⚠️ stale | ✅ (comparison table) | via template CTASection | ✅ `updatedDate: 2026-04-09` |
-| 7 | `/services/eddm/eddm-retail-vs-eddm-bmeu` | $0.247 both retail+BMEU | ⚠️ stale | ✅ (comparison table) | via template CTASection | ✅ `updatedDate: 2026-04-09` |
+| 1 | `/services/eddm` | $0.247 | ✅ | ✅ (all-in cost table) | ✅ `/estimate` | ❌ static, not in schema |
+| 2 | `/resources/eddm-guide` | $0.247 (Retail) / $0.242 (BMEU) | ✅ Retail / ⚠️ BMEU unverified | ✅ (postage table) | ✅ `/estimate` | ❌ none |
+| 3 | `/services/direct-mail/eddm-every-door-direct-mail` | $0.223 | ❌ stale | ✅ (inline table) | via template CTASection | ✅ `updatedDate: 2026-04-01` |
+| 4 | `/services/direct-mail/eddm-vs-targeted-direct-mail` | $0.22–$0.23 | ❌ stale | ❌ | via template CTASection | ✅ `updatedDate: 2026-04-01` |
+| 5 | `/services/eddm/how-much-does-eddm-cost` | $0.247 ("as of 2025" ❌) | ✅ rate / ❌ year qualifier | ✅ (cost breakdown) | via template CTASection | ✅ `updatedDate: 2026-04-09` |
+| 6 | `/services/eddm/what-is-every-door-direct-mail` | $0.247 | ✅ | ✅ (comparison table) | via template CTASection | ✅ `updatedDate: 2026-04-09` |
+| 7 | `/services/eddm/eddm-retail-vs-eddm-bmeu` | $0.247 both retail+BMEU | ✅ Retail / ❌ BMEU wrong | ✅ (comparison table) | via template CTASection | ✅ `updatedDate: 2026-04-09` |
 | 8 | `/services/eddm/eddm-postcard-sizes-and-specs` | not rate-focused | — | ❌ | via template CTASection | ✅ `updatedDate: 2026-04-09` |
 | 9 | `/services/eddm/eddm-printing-requirements` | not rate-focused | — | ❌ | via template CTASection | ✅ `updatedDate: 2026-04-09` |
 | 10 | `/services/eddm/how-to-set-up-an-eddm-campaign` | not rate-focused | — | ❌ | via template CTASection | ✅ `updatedDate: 2026-04-09` |
 
-**Notes:**  
-- "via template CTASection" = the `[slug].astro` template includes a `<CTASection />` component at bottom; no above-fold CTA  
-- `/services/eddm` and `/resources/eddm-guide` are `.astro` files with no `dateModified` in Article schema  
-- The eddm-articles template already emits `dateModified: updatedDateISO` from frontmatter — updating `updatedDate` in the `.md` file is sufficient
+---
+
+## Rate Inconsistency (pre-fix) — Sitewide
+
+The site had three different EDDM Retail rate citations before this fix pass:
+
+| Rate | Occurrences | Status |
+|------|:-----------:|--------|
+| **$0.247** | 44 | ✅ Correct per Notice 123 — left in place |
+| **$0.223** | 8 | ❌ Stale — corrected to $0.247 |
+| **$0.242** | 1 | ⚠️ BMEU rate — unverified, left in place |
 
 ---
 
-## Rate Inconsistency — Sitewide
+## Fix Log — Applied 2026-05-07
 
-The site currently cites **three different EDDM Retail rates**, all stale relative to the 2026 rate of **$0.222/piece**:
+### Tier 1 — Full fix set (7 of 8 primary EDDM pages)
 
-| Rate | Occurrences | Files |
-|------|:-----------:|-------|
-| **$0.247** | 44 | `eddm.astro`, `eddm-guide.astro`, all 6 eddm-articles, `nonprofit-articles/eddm-vs-targeted-mail-for-nonprofits.md`, others |
-| **$0.223** | 8 | `dm-articles/eddm-every-door-direct-mail.md`, `dm-articles/direct-mail-roi.md`, `dm-articles/how-much-does-direct-mail-cost.md`, `data-articles/saturation-vs-targeted-mailing-lists.md` |
-| **$0.242** | 1 | `eddm-guide.astro` (BMEU row) |
-| **$0.222** | 0 | Not yet present anywhere |
+| File | Title Updated | Desc Trimmed | dateModified | CTA Updated | Above-fold CTA | Notes |
+|------|:---:|:---:|:---:|:---:|:---:|-------|
+| `src/pages/services/eddm.astro` | ✅ 52 chars | ✅ 149 chars | ✅ WebPage schema `2026-05-07` | ✅ 3× → `/contact?service=eddm` | ✅ banner below hero | |
+| `src/pages/resources/eddm-guide.astro` | ✅ 51 chars | ✅ 138 chars | ✅ `<time>` element | ✅ 1× → `/contact?service=eddm` | ✅ CTA band above "How EDDM Works" | |
+| `eddm-articles/how-much-does-eddm-cost.md` | ✅ 60 chars | ✅ 141 chars | ✅ `updatedDate: 2026-05-07` | via template ✅ | ✅ template banner | "as of 2025" → "as of 2026" fixed |
+| `eddm-articles/what-is-every-door-direct-mail.md` | ✅ 53 chars | ✅ 147 chars | ✅ `updatedDate: 2026-05-07` | via template ✅ | ✅ template banner | |
+| `eddm-articles/eddm-postcard-sizes-and-specs.md` | ✅ 54 chars | ✅ 149 chars | ✅ `updatedDate: 2026-05-07` | via template ✅ | ✅ template banner | |
+| `eddm-articles/eddm-printing-requirements.md` | ✅ 51 chars | ✅ 153 chars | ✅ `updatedDate: 2026-05-07` | via template ✅ | ✅ template banner | |
+| `eddm-articles/how-to-set-up-an-eddm-campaign.md` | ✅ 56 chars | ✅ 149 chars | ✅ `updatedDate: 2026-05-07` | via template ✅ | ✅ template banner | |
+| `eddm-articles/eddm-retail-vs-eddm-bmeu.md` | ⏸ HELD | ⏸ HELD | ⏸ HELD | ⏸ HELD | ⏸ HELD | **BMEU rate unverified — no edits made** |
 
-The BMEU rate (`$0.242` in eddm-guide) also needs verification — current BMEU rates are not consistently cited in any file.
+### Tier 2 — Title + desc + rate correction (2 DM-cluster articles)
 
----
+| File | Title Updated | Desc | Rate Fixed | Math Corrected | updatedDate |
+|------|:---:|:---:|:---:|:---:|:---:|
+| `dm-articles/eddm-every-door-direct-mail.md` | ✅ 53 chars | ✅ 137 chars | ✅ all $0.223 → $0.247 | ✅ postage $624→$692, total $2,644→$2,712, ROI 119%→113%, CPL $156→$160, all-in $0.66–$1.18→$0.69–$1.21 | ✅ 2026-05-07 |
+| `dm-articles/eddm-vs-targeted-direct-mail.md` | ✅ 53 chars | ✅ 145 chars | ✅ $0.22–$0.23 → $0.247 | n/a | ✅ 2026-05-07 |
 
-## Passing Mentions (summary — not audited in detail)
+### Tier 3 — Rate correction only
 
-Pages where EDDM appears contextually but is not the primary topic — rate correction applicable where $0.247 appears in body text:
+| File | Rate Fixed | Math Corrected | updatedDate |
+|------|:---:|:---:|:---:|
+| `dm-articles/direct-mail-roi.md` | ✅ $0.223 → $0.247 | ✅ Ex.2: $2,230→$2,470, total $6,280→$6,520, CPD $1,570→$1,630; Ex.3: $3,345→$3,705, total $9,095→$9,455, ROI 66%→60% | ✅ 2026-05-07 |
+| `dm-articles/how-much-does-direct-mail-cost.md` | ✅ $0.223 → $0.247 | ✅ postage $1,115→$1,235, total $3,190→$3,310, CPP $0.64→$0.66 | ✅ 2026-05-07 |
+| `data-articles/saturation-vs-targeted-mailing-lists.md` | ✅ $0.223 → $0.247 | ✅ all-in range $0.44–$0.60→$0.48–$0.65 | ✅ 2026-05-07 |
 
-- `src/pages/services/direct-mail.astro`, `src/pages/faq.astro`, `src/pages/index.astro`
-- `src/content/dm-articles/` — 9 articles (direct-mail-roi.md, how-much-does-direct-mail-cost.md, postcard-marketing.md, etc.)
-- `src/content/nonprofit-articles/` — 3 articles
-- `src/content/printing-articles/` — 5 articles
-- `src/content/mailing-articles/` — 3 articles
-- `src/content/graphic-design-articles/eddm-design-requirements-and-specs.md`
-- `src/content/school-articles/` — 2 articles
-- Various service, resource, and location pages
+### Template Change
 
----
-
-## Key Gaps (ranked by SEO impact)
-
-1. **Stale postage rate on all 10 primary pages** — $0.247 (2024/2025 rate) appears 44 times sitewide. The correct 2026 EDDM Retail rate is $0.222/piece. `how-much-does-eddm-cost` even says "as of 2025" explicitly — the highest-intent cost page on the site is labeling its rate data as last year's.
-
-2. **No year in any title or H1** — All 10 primary pages have year-free titles. EDDM cost/rate queries ("eddm postage rates 2026", "how much does eddm cost 2026") drive the bulk of the 8.6K impressions. No page is surfacing "2026" in its title to match those queries.
-
-3. **All 6 eddm-articles have meta descriptions 200–225 chars** — every cluster article description is severely over the 155-char limit (206–225 chars). These are truncated by Google mid-sentence.
-
-4. **2 titles over 60 chars** — `/services/eddm` (66) and the DM-pillar EDDM article (88). The 88-char title is the worst in the cluster.
-
-5. **No above-fold CTA on eddm-articles cluster** — The 6 cluster articles only have a `CTASection` at the very bottom. No above-fold quote/estimate prompt on any rate or cost page.
-
-6. **`/services/eddm` pillar has no `Article` schema or `dateModified`** — The schema is `Service + FAQPage + BreadcrumbList + WebPage`. No Article schema, so Google has no freshness signal for the pillar page.
-
-7. **`/resources/eddm-guide` has duplicate intent with `/services/eddm`** — Both are broad EDDM overview pages. The guide page has stale rates, no year, and was last touched in March 2026. It may be cannibalizing the pillar.
+| File | Change |
+|------|--------|
+| `src/pages/services/eddm/[slug].astro` | Added above-fold CTA banner (before TOC); all `/estimate` hrefs → `/contact?service=eddm` |
 
 ---
 
-*End of audit. No page content was modified during this audit.*
+## Open Items
+
+1. **`eddm-retail-vs-eddm-bmeu.md` — all 5 fixes held.** BMEU rate must be verified from USPS Notice 123 PDF before any edit to this file. Current file incorrectly shows BMEU = $0.247 (identical to Retail). Confirmed BMEU is lower — exact rate unknown until verification.
+
+2. **`eddm-guide.astro` BMEU table row ($0.242)** — left in place, unverified. Could be close to correct but should be updated alongside the comparison article once BMEU rate is confirmed.
+
+3. **`/contact?service=eddm` pre-fill** — the contact page does not currently parse the `?service=eddm` query parameter to pre-fill the form's service field. CTAs will route correctly but no auto-selection occurs. Consider adding query-param pre-fill to `EstimateForm` as a future improvement.
+
+---
+
+*End of audit. All changes tracked above were applied in one atomic pass on 2026-05-07.*

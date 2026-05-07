@@ -1,8 +1,8 @@
 ---
-title: "What Is Every Door Direct Mail (EDDM)?"
-description: "EDDM lets you mail to every address on a postal carrier route without a mailing list. Here's exactly how it works, who it's for, and when to use it — from a Hudson Valley print shop that has run thousands of EDDM campaigns."
+title: "What Is EDDM? Every Door Direct Mail Explained (2026)"
+description: "EDDM lets you mail to every postal route without a list. How it works, who uses it, and when it makes sense — from Hudson Valley's EDDM specialist."
 pubDate: 2026-04-09
-updatedDate: 2026-04-09
+updatedDate: 2026-05-07
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
 authorLocation: "New Paltz, NY"

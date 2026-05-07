@@ -1,8 +1,8 @@
 ---
-title: "How Much Does EDDM Cost? A Real Pricing Breakdown"
-description: "EDDM postage is $0.247 per piece, but that's only part of the cost. Here's a complete breakdown of EDDM printing, postage, and production costs — with real numbers from campaigns we've run for Hudson Valley businesses."
+title: "USPS EDDM Postage Rates 2026: Current Cost Per Piece | CRST"
+description: "EDDM Retail postage is $0.247/piece in 2026. Real cost breakdown — printing, design, and production — from Hudson Valley's EDDM specialists."
 pubDate: 2026-04-09
-updatedDate: 2026-04-09
+updatedDate: 2026-05-07
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
 authorLocation: "New Paltz, NY"
@@ -10,7 +10,7 @@ primaryKeyword: "eddm cost"
 pillar: "https://crst.net/services/eddm"
 schemaFAQ:
   - q: "How much does EDDM postage cost?"
-    a: "EDDM Retail postage is $0.247 per piece as of 2025. This rate applies to all qualifying EDDM flat pieces — size does not affect the postage rate. For a 5,000-piece mailing, postage alone totals $1,235. EDDM Retail requires no postal permit and no annual fee, making it the most accessible entry point into bulk mail for small businesses."
+    a: "EDDM Retail postage is $0.247 per piece as of 2026. This rate applies to all qualifying EDDM flat pieces — size does not affect the postage rate. For a 5,000-piece mailing, postage alone totals $1,235. EDDM Retail requires no postal permit and no annual fee, making it the most accessible entry point into bulk mail for small businesses."
   - q: "What is the all-in cost per piece for an EDDM campaign?"
     a: "All-in cost — including printing, postage, and production — typically ranges from $0.50 to $0.80 per piece depending on piece size and quantity. A 5,000-piece 6.5x9 postcard campaign usually runs $650–$900 all-in. A 5,000-piece 8.5x11 flat runs $900–$1,300 all-in. Per-piece cost decreases as quantity increases — 10,000 pieces costs significantly less per piece than 5,000."
   - q: "Is design included in EDDM pricing?"

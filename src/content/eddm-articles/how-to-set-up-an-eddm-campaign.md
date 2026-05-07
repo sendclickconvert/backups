@@ -1,8 +1,8 @@
 ---
-title: "How to Set Up an EDDM Campaign: A Step-by-Step Guide"
-description: "From route selection to USPS drop, here's how to set up an Every Door Direct Mail campaign correctly — including the steps most small businesses skip that cause campaigns to underperform or get rejected."
+title: "How to Set Up an EDDM Campaign: 2026 Step-by-Step Guide"
+description: "How to run an EDDM campaign in 2026: route selection to USPS drop, including the steps most businesses skip that cause rejections or underperformance."
 pubDate: 2026-04-09
-updatedDate: 2026-04-09
+updatedDate: 2026-05-07
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
 authorLocation: "New Paltz, NY"
