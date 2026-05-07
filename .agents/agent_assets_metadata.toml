@@ -78,3 +78,9 @@ id = "9t1Ai3-h4W686_4NWo2Px"
 uri = "file://eForest-Build-Blueprint.md"
 type = "text"
 title = "eForestProducts.com — Build Blueprint (Based on CRST Architecture)"
+
+[[outputs]]
+id = "MDB1Luxo6QjplXeG4F7eG"
+uri = "file://audits/envelope-audit-2026.md"
+type = "text"
+title = "Envelope Size Pages — SEO Audit 2026"

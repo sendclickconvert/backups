@@ -1,3 +1,39 @@
+# Project Context for Agent
+
+## Business
+- **Name:** Cornerstone Services, Inc. (CRST)
+- **Location:** New Paltz, NY — serves Ulster, Dutchess, Orange counties (Hudson Valley)
+- **Since:** 1998
+- **Services:** Full-service direct mail, printing, EDDM, data lists, graphic design, mail prep, fulfillment
+- **Audience:** Businesses, nonprofits, political orgs, municipalities, real estate
+- **Trust signals:** USPS-certified direct mail partner, BBB A+, 98% on-time, serves 47 municipalities
+
+## Site
+- **Stack:** Astro on Replit
+- **Domain:** crst.net
+- **Existing structure:**
+  - Top nav: Services, Service Areas, Resources, Case Studies, Blog, About, Contact
+  - Envelope sizes hub: /guides/envelope-sizes
+  - 12 spokes: /guides/envelope-sizes/{no-10, no-9, a6, a7, a9, a10, 6x9, 9x12, legal, window, usps-minimum-maximum, business-envelope-types}
+  - PS Form pages exist (3533, 3624) — performing well in GSC
+
+## SEO Priorities (90-day GSC data)
+- 118K impressions, 232 clicks, 0.20% sitewide CTR
+- Envelope cluster: 49K impressions, 0.12% CTR — pillar exists, needs optimization
+- EDDM cluster: 8.6K impressions, **0 clicks** — broken
+- Year-pinned rate queries (2026): 13K impressions, 7 clicks — outdated/missing pages
+- Forms cluster: 2.48% CTR — model to replicate
+
+## Build Conventions
+- Don't break existing routes or change URL slugs without flagging it
+- Always preview changes before deploy
+- Preserve existing component structure unless asked to refactor
+- All meta titles ≤ 60 chars, meta descriptions ≤ 155 chars
+- Use schema.org: Article + FAQPage where applicable, BreadcrumbList on all guide pages
+- Show "Last updated [Month YYYY]" on time-sensitive pages with itemprop="dateModified"
+
+---
+
 # Cornerstone Services (CRST) Website
 
 ## Overview
