@@ -4,6 +4,27 @@ import PageHero from '../components/PageHero.astro';
 import CTASection from '../components/CTASection.astro';
 import { BUSINESS } from '../data/site';
 
+const lastUpdated = '2026-05-07';
+const lastUpdatedDisplay = 'May 2026';
+const canonical = 'https://crst.net/how-to-get-a-refund-on-postage-a-guide-to-post-office-application-to-refund-postage';
+
+const org = {
+  '@type': 'Organization',
+  '@id': 'https://crst.net/#organization',
+  name: 'Cornerstone Services, Inc.',
+  url: 'https://crst.net',
+  telephone: '+1-845-255-5722',
+  foundingDate: '1998',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '31 S Ohioville Rd',
+    addressLocality: 'New Paltz',
+    addressRegion: 'NY',
+    postalCode: '12561',
+    addressCountry: 'US',
+  },
+};
+
 const otherTools = [
   { label: 'Mailing Permits', href: '/direct-mail-tools/cornerstone-mailing-permits' },
   { label: 'Postage Rates', href: '/direct-mail-tools/postage-rates' },
@@ -96,23 +117,50 @@ const faqs = [
     a: 'USPS will send a written notice explaining the reason for denial. You have the right to appeal the decision through the Consumer Advocate office. Cornerstone can help document bulk mail refund claims if you believe a denial was in error.',
   },
 ];
----
 
-<BaseLayout
-  title="PS Form 3533: How to Get a USPS Postage Refund | Cornerstone Services"
-  description="Complete guide to PS Form 3533 — the USPS Application for Refund of Fees. Learn what qualifies for a postage refund, how to complete the form, and where to submit it."
-  canonical="https://crst.net/how-to-get-a-refund-on-postage-a-guide-to-post-office-application-to-refund-postage"
->
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" set:html={JSON.stringify({
-    '@context': 'https://schema.org',
+const graphItems = [
+  {
+    '@type': 'Article',
+    '@id': `${canonical}#article`,
+    headline: 'PS Form 3533: How to Get a USPS Postage Refund',
+    description: 'Complete guide to PS Form 3533 — the USPS Application for Refund of Fees. What qualifies for a postage refund, how to complete the form, and where to submit it.',
+    datePublished: '2026-02-01',
+    dateModified: lastUpdated,
+    inLanguage: 'en-US',
+    author: { '@type': 'Person', '@id': 'https://crst.net/about#sean-griffin', name: 'Sean Griffin' },
+    publisher: org,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  },
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crst.net' },
+      { '@type': 'ListItem', position: 2, name: 'Direct Mail Tools', item: 'https://crst.net/direct-mail-tools' },
+      { '@type': 'ListItem', position: 3, name: 'PS Form 3533 — Postage Refund Guide', item: canonical },
+    ],
+  },
+  {
     '@type': 'FAQPage',
     mainEntity: faqs.map(f => ({
       '@type': 'Question',
       name: f.q,
       acceptedAnswer: { '@type': 'Answer', text: f.a },
     })),
-  })} />
+  },
+];
+---
+
+<BaseLayout
+  title="PS Form 3533: USPS Postage Refund Guide"
+  description="Complete guide to PS Form 3533 — the USPS Application for Refund of Fees. Learn what qualifies for a postage refund, how to complete the form, and where to submit it."
+  canonical={canonical}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': graphItems,
+    })} />
+  </Fragment>
 
   <PageHero
     title="How to Get a USPS Postage Refund"
@@ -138,7 +186,7 @@ const faqs = [
             <div class="w-10 h-0.5 bg-crst-gold mb-3"></div>
             <p class="text-sm text-navy-600/70 mb-4">We handle presort, permits, and postage for bulk mailers across the Hudson Valley.</p>
             <div class="space-y-3">
-              <a href="/estimate" class="block w-full text-center text-sm font-heading font-semibold text-white bg-crst-primary rounded-lg px-4 py-2.5 hover:bg-navy-700 transition-colors">
+              <a href="/contact?service=direct-mail" class="block w-full text-center text-sm font-heading font-semibold text-white bg-crst-primary rounded-lg px-4 py-2.5 hover:bg-navy-700 transition-colors">
                 Get Free Estimate
               </a>
               <a href={`tel:${BUSINESS.phoneClean}`} class="block w-full text-center text-sm font-heading font-semibold text-crst-primary border border-crst-primary/30 rounded-lg px-4 py-2.5 hover:bg-crst-primary/5 transition-colors">
@@ -150,7 +198,7 @@ const faqs = [
             <h3 class="font-heading font-bold text-crst-primary text-sm uppercase tracking-wider mb-3">Related Resources</h3>
             <nav class="flex flex-col gap-2">
               {otherTools.map(tool => (
-                <a href={tool.href} class="text-sm font-heading font-medium text-navy-700 px-3 py-2 bg-gray-50 rounded-md border-l-3 border-crst-gold hover:bg-crst-primary hover:text-white hover:border-crst-gold transition-colors">
+                <a href={tool.href} class="text-sm font-heading font-medium text-navy-700 px-3 py-2 bg-gray-50 rounded-md border-l-[3px] border-crst-gold hover:bg-crst-primary hover:text-white hover:border-crst-gold transition-colors">
                   {tool.label}
                 </a>
               ))}
@@ -231,7 +279,7 @@ const faqs = [
               <div class="space-y-3 text-sm text-navy-600/80 leading-relaxed">
                 <p><strong class="text-navy-800">In person:</strong> Submit at your local Post Office window or USPS Business Mail Entry Unit (BMEU). In-person submission is recommended — staff can review your documentation on the spot and flag issues before you leave.</p>
                 <p><strong class="text-navy-800">By mail:</strong> Mail the completed form with supporting documentation to your servicing Post Office. Allow extra processing time and consider sending via Certified Mail so you have proof of submission.</p>
-                <p><strong class="text-navy-800">For permit account refunds:</strong> These are typically processed through the BMEU where your permit is held. The BMEU will verify your account balance before approving the refund, which is then issued by check from USPS Headquarters. See our guide to <a href="/direct-mail-tools/cornerstone-mailing-permits" class="text-crst-primary underline hover:text-crst-gold">mailing permits</a> for more on how permit accounts work.</p>
+                <p><strong class="text-navy-800">For permit account refunds:</strong> These are processed through the BMEU where your permit is held. The BMEU verifies your account balance before approving the refund, which is then issued by check from USPS Headquarters. See our guide to <a href="/direct-mail-tools/cornerstone-mailing-permits" class="text-crst-primary underline hover:text-crst-gold">mailing permits</a> for more on how permit accounts work.</p>
               </div>
             </div>
 
@@ -248,8 +296,8 @@ const faqs = [
             <div class="space-y-3 mb-8">
               {faqs.map((faq, i) => (
                 <details class="group bg-white border border-gray-200 rounded-lg" open={i === 0}>
-                  <summary class="flex items-center justify-between p-5 cursor-pointer hover:bg-gray-50 transition-colors rounded-lg">
-                    <h4 class="font-semibold text-gray-800 text-sm pr-4">{faq.q}</h4>
+                  <summary class="flex items-center justify-between p-5 cursor-pointer hover:bg-gray-50 transition-colors rounded-lg list-none">
+                    <h3 class="font-semibold text-gray-800 text-sm pr-4">{faq.q}</h3>
                     <svg class="w-5 h-5 text-gray-400 shrink-0 group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
@@ -271,12 +319,14 @@ const faqs = [
 
             <!-- Author block -->
             <div class="flex items-center gap-3 bg-navy-50 rounded-xl p-4 mb-8">
-              <div class="w-10 h-10 rounded-full bg-crst-primary flex items-center justify-center shrink-0">
-                <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-              </div>
+              <img src="/images/sean-griffin.png" alt="Sean Griffin, Owner of Cornerstone Services" class="w-10 h-10 rounded-full object-cover shrink-0" width="40" height="40" />
               <div>
-                <div class="font-heading font-bold text-navy-800 text-sm">Sean Griffin</div>
-                <div class="text-xs text-navy-600/70">Owner, Cornerstone Services · Hudson Valley direct mail since 1998 · Reviewed February 2026 · Source: <a href="https://pe.usps.com/text/dmm300/604.htm" target="_blank" rel="noopener noreferrer" class="underline">USPS DMM Section 604 — Exchanges and Refunds</a></div>
+                <div class="font-heading font-bold text-navy-800 text-sm">Sean Griffin — Owner, Cornerstone Services</div>
+                <div class="text-xs text-navy-600/70">
+                  Hudson Valley direct mail since 1998 ·
+                  Last reviewed: <time itemprop="dateModified" datetime={lastUpdated}>{lastUpdatedDisplay}</time> ·
+                  Source: <a href="https://pe.usps.com/text/dmm300/604.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-crst-primary">USPS DMM Section 604 — Exchanges and Refunds</a>
+                </div>
               </div>
             </div>
 
@@ -288,7 +338,7 @@ const faqs = [
               </p>
               <div class="flex flex-wrap justify-center gap-3">
                 <a href={`tel:${BUSINESS.phoneClean}`} class="btn-primary text-sm">Call {BUSINESS.phone}</a>
-                <a href="/estimate" class="btn-secondary text-sm">Get a Free Estimate</a>
+                <a href="/contact?service=direct-mail" class="btn-secondary text-sm">Get a Free Estimate</a>
               </div>
             </div>
 
@@ -299,7 +349,7 @@ const faqs = [
             <h3 class="font-heading font-bold text-crst-primary text-sm uppercase tracking-wider mb-3">Related Resources</h3>
             <div class="grid grid-cols-2 gap-2">
               {otherTools.map(tool => (
-                <a href={tool.href} class="text-sm font-heading font-medium text-navy-700 px-3 py-2 bg-gray-50 rounded-md border-l-3 border-crst-gold hover:bg-crst-primary hover:text-white transition-colors">
+                <a href={tool.href} class="text-sm font-heading font-medium text-navy-700 px-3 py-2 bg-gray-50 rounded-md border-l-[3px] border-crst-gold hover:bg-crst-primary hover:text-white transition-colors">
                   {tool.label}
                 </a>
               ))}
