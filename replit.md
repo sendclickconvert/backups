@@ -31,6 +31,7 @@
 - All meta titles ≤ 60 chars, meta descriptions ≤ 155 chars
 - Use schema.org: Article + FAQPage where applicable, BreadcrumbList on all guide pages
 - Show "Last updated [Month YYYY]" on time-sensitive pages with itemprop="dateModified"
+- When editing any envelope spoke's body content, bump that spoke's `lastUpdated` field in `src/data/envelope-spokes.ts` as part of the same change (ISO format yyyy-mm-dd). Hub `lastUpdated` lives in `src/pages/guides/envelope-sizes/index.astro` as `const lastUpdated`.
 
 ---
 

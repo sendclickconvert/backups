@@ -17,7 +17,7 @@ export function getStaticPaths() {
 const { spoke } = Astro.props;
 const { slug } = Astro.params;
 const canonical = `https://crst.net/guides/envelope-sizes/${slug}`;
-const pubDate = '2026-05-04';
+const pubDate = spoke.lastUpdated;
 
 const seanGriffin = {
   '@type': 'Person',
@@ -91,7 +91,7 @@ const graphItems: object[] = [
   },
 ];
 
-const relatedSpokes = HUB_NAV_ITEMS.filter((item) => item.slug !== spoke.slug).slice(0, 4);
+const relatedSpokes = HUB_NAV_ITEMS.filter((item) => item.slug !== slug).slice(0, 4);
 ---
 
 <BaseLayout title={spoke.title} description={spoke.metaDescription} canonical={canonical}>
