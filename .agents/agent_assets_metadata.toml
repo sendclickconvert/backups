@@ -84,3 +84,9 @@ id = "MDB1Luxo6QjplXeG4F7eG"
 uri = "file://audits/envelope-audit-2026.md"
 type = "text"
 title = "Envelope Size Pages — SEO Audit 2026"
+
+[[outputs]]
+id = "G6yQLRg3-ae71UrU8GO68"
+uri = "file://CRST-SITE-BLUEPRINT.md"
+type = "text"
+title = "CRST Site Blueprint — Full Reverse-Engineering Document"
