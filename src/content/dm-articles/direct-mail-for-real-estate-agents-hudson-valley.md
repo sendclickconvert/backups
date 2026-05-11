@@ -40,7 +40,7 @@ Real estate farming by direct mail remains one of the highest-ROI marketing stra
 
 The agents who show up in the mailbox every 4–6 weeks with relevant local information become the default call when a homeowner decides to sell. That is the farming thesis: consistent presence builds recognition, recognition builds trust, and trust converts to listings.
 
-Digital marketing reaches people searching right now. Direct mail reaches people who will search later — and ensures they think of you first when they do. In a market where 85% of sellers contact only one agent before listing, being the first name they think of is the entire game.
+Digital marketing reaches people searching right now. Direct mail reaches people who will search later — and ensures they think of you first when they do. In a market where [81% of sellers contact only one agent](https://www.nar.realtor/research-and-statistics/research-reports/highlights-from-the-profile-of-home-buyers-and-sellers) before listing *(NAR 2025 Profile of Home Buyers and Sellers)*, being the first name they think of is the entire game.
 
 For real estate agents, the cost question is straightforward — see our [2026 direct mail pricing guide](/services/direct-mail/how-much-does-direct-mail-cost) for exact cost-per-piece breakdowns. A 6×11 postcard mailing at 500–1,000 pieces runs approximately **$0.70–$0.85 per piece** including design, printing, list processing, and postage.
 
@@ -190,4 +190,4 @@ Most farming programs take 6–12 months of consistent mailing before generating
 
 Yes. Cornerstone manages complete farm programs for individual agents and brokerages across the Hudson Valley — list building, design templates, printing, CASS/DPV/NCOA processing, presort, and USPS induction on a recurring monthly or bi-monthly schedule. You approve the proof each month; we handle everything else.
 
-Get started with [Cornerstone's Hudson Valley direct mail services →](/services/direct-mail)
+Get started with [Cornerstone's Hudson Valley direct mail services →](/services/direct-mail) or call us directly at <a href="tel:+18452555722">(845) 255-5722</a>.
