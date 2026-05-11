@@ -35,8 +35,7 @@ externalPort = 80
 
 [deployment]
 run = ["sh", "-c", "HOST=0.0.0.0 PORT=${PORT:-5000} node dist/server/entry.mjs"]
-deploymentTarget = "autoscale"
-publicDir = "dist/client"
+deploymentTarget = "gce"
 build = ["npm", "run", "build"]
 
 [agent]
