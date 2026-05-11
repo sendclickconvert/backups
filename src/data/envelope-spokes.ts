@@ -30,10 +30,10 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
   // #10 — Standard US business envelope
   // ============================================================
   'no-10': {
-    title: '#10 Envelope Size: Dimensions & USPS Postage (2026)',
-    metaDescription: 'A #10 envelope measures 4.125" × 9.5" and is the standard US business envelope. Get exact dimensions, USPS postage, window options, and when to use it.',
-    h1: '#10 Envelope Size: Dimensions & USPS Postage',
-    lastUpdated: '2026-05-05',
+    title: '#10 Envelope Size: 4.125 × 9.5 Inches | Dimensions & Uses',
+    metaDescription: '#10 envelope is the standard business size: 4.125 × 9.5 inches (105 × 241 mm). The most common envelope for letters, invoices, and business correspondence.',
+    h1: '#10 Envelope Size: 4.125 × 9.5 Inches',
+    lastUpdated: '2026-05-11',
     dimensionsInches: '4.125" × 9.5"',
     dimensionsMm: '104.8mm × 241.3mm',
     weightLimitOz: 3.5,
@@ -171,10 +171,10 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
   // A6 — Social/announcement
   // ============================================================
   'a6': {
-    title: 'A6 Envelope Size: Dimensions in Inches and Millimeters',
-    metaDescription: 'An A6 envelope measures 4.75" × 6.5" and fits A6 cards, save-the-dates, and small invitations. Get dimensions, postage, and use cases.',
-    h1: 'A6 Envelope Size: Dimensions and Use Cases',
-    lastUpdated: '2026-05-05',
+    title: 'A6 Envelope Size: 4.75 × 6.5 Inches | Inches, MM & Mailing Guide',
+    metaDescription: 'A6 envelope size: 4.75 × 6.5 inches (120 × 165 mm). Common uses, USPS mailing specs, and postage requirements for A6 envelopes.',
+    h1: 'A6 Envelope Size: 4.75 × 6.5 Inches',
+    lastUpdated: '2026-05-11',
     dimensionsInches: '4.75" × 6.5"',
     dimensionsMm: '120.7mm × 165.1mm',
     weightLimitOz: 3.5,
@@ -240,10 +240,10 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
   // A7 — Wedding invitation standard
   // ============================================================
   'a7': {
-    title: 'A7 Envelope Size: The Standard for 5×7 Wedding Invitations',
-    metaDescription: 'An A7 envelope measures 5.25" × 7.25" and fits 5×7 invitation cards. The default for wedding invitations, photo cards, and formal announcements.',
-    h1: 'A7 Envelope Size: The Standard for Wedding Invitations',
-    lastUpdated: '2026-05-05',
+    title: 'A7 Envelope Size: 5.25 × 7.25 Inches | Dimensions, MM & Uses',
+    metaDescription: 'A7 envelope size: 5.25 × 7.25 inches (133 × 184 mm). The standard for 5×7 wedding invitations, holiday photo cards, and formal announcements.',
+    h1: 'A7 Envelope Size: 5.25 × 7.25 Inches',
+    lastUpdated: '2026-05-11',
     dimensionsInches: '5.25" × 7.25"',
     dimensionsMm: '133.4mm × 184.2mm',
     weightLimitOz: 3.5,
@@ -529,10 +529,10 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
   // 9×12 — Standard flat
   // ============================================================
   '9x12': {
-    title: '9x12 Envelope Size: Flat Mail Dimensions & Rates',
-    metaDescription: 'A 9×12 envelope measures 9" × 12" and is the standard large envelope (flat) for unfolded 8.5×11 documents. Get dimensions, USPS flat rates, and use cases.',
-    h1: '9x12 Envelope Size: Flat Mail Dimensions & Rates',
-    lastUpdated: '2026-05-05',
+    title: '9×12 Envelope Size: 9 × 12 Inches | Dimensions, Postage & Uses',
+    metaDescription: '9×12 envelope size: exactly 9 × 12 inches. Use for documents, catalogs, and marketing pieces. USPS postage requirements and mailing specs included.',
+    h1: '9×12 Envelope Size: 9 × 12 Inches',
+    lastUpdated: '2026-05-11',
     dimensionsInches: '9" × 12"',
     dimensionsMm: '228.6mm × 304.8mm',
     weightLimitOz: 13,
@@ -606,10 +606,10 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
   // Legal — Long envelopes for legal-size documents
   // ============================================================
   'legal': {
-    title: 'Legal Envelope Size: Dimensions & Mailing Guide',
+    title: 'Legal Envelope Size: Dimensions, Postage & Uses Guide',
     metaDescription: 'Legal envelopes (#11, #12, #14) range from 4.5"×10.375" to 5"×11.5" and fit folded 8.5×14 legal-size paper. Get dimensions, postage, and which to use.',
-    h1: 'Legal Envelope Size: Dimensions & Mailing Guide',
-    lastUpdated: '2026-05-05',
+    h1: 'Legal Envelope Sizes: Dimensions & Mailing Guide',
+    lastUpdated: '2026-05-11',
     dimensionsInches: '5" × 11.5" (#14, most common)',
     dimensionsMm: '127mm × 292.1mm',
     weightLimitOz: 3.5,
@@ -766,10 +766,10 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
   // USPS minimum and maximum — mailability rules
   // ============================================================
   'usps-minimum-maximum': {
-    title: 'USPS Minimum Envelope Size: Full Mailability Rules',
-    metaDescription: 'USPS minimum envelope size is 3.5×5 inches; maximum letter-rate is 6.125×11.5. Full mailability rules, aspect ratio limits, and what gets reclassified.',
-    h1: 'USPS Minimum Envelope Size: Full Mailability Rules',
-    lastUpdated: '2026-05-05',
+    title: 'USPS Minimum Envelope Size: 3.5 × 5 Inches (Plus Maximum)',
+    metaDescription: 'USPS minimum envelope size is 3.5 × 5 inches. Maximum is 6.125 × 11.5 inches for letters. Complete size requirements, weight limits, and mailing rules.',
+    h1: 'USPS Minimum & Maximum Envelope Sizes',
+    lastUpdated: '2026-05-11',
     dimensionsInches: 'Min 3.5"×5"×0.007" / Max letter 6.125"×11.5"×0.25"',
     dimensionsMm: 'Min 88.9mm×127mm / Max letter 155.6mm×292.1mm',
     weightLimitOz: 3.5,
