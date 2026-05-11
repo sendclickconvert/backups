@@ -9,21 +9,36 @@ const envelopes = [
   { name: '#6¼', inches: '3½ × 6', mm: '89 × 152', aka: '—', mailClass: 'Letter', use: 'Reply envelopes, RSVPs' },
   { name: '#6¾', inches: '3⅝ × 6½', mm: '92 × 165', aka: '—', mailClass: 'Letter', use: 'Personal correspondence' },
   { name: 'Monarch', inches: '3⅞ × 7½', mm: '98 × 191', aka: '#7¾', mailClass: 'Letter', use: 'Executive stationery' },
-  { name: '#9', inches: '3⅞ × 8⅞', mm: '98 × 225', aka: '—', mailClass: 'Letter', use: 'Return envelopes for #10' },
-  { name: '#10', inches: '4⅛ × 9½', mm: '105 × 241', aka: 'Standard business', mailClass: 'Letter', use: 'Business letters, invoices, statements', highlight: true },
-  { name: '#11', inches: '4½ × 10⅜', mm: '114 × 264', aka: '—', mailClass: 'Letter', use: 'Legal documents' },
-  { name: '#12', inches: '4¾ × 11', mm: '121 × 279', aka: '—', mailClass: 'Letter / Flat', use: 'Catalogs, reports' },
-  { name: '#14', inches: '5 × 11½', mm: '127 × 292', aka: '—', mailClass: 'Flat', use: 'Long documents' },
+  { name: '#9', inches: '3⅞ × 8⅞', mm: '98 × 225', aka: '—', mailClass: 'Letter', use: 'Return envelopes for #10', guide: 'no-9' },
+  { name: '#10', inches: '4⅛ × 9½', mm: '105 × 241', aka: 'Standard business', mailClass: 'Letter', use: 'Business letters, invoices, statements', highlight: true, guide: 'no-10' },
+  { name: '#11', inches: '4½ × 10⅜', mm: '114 × 264', aka: '—', mailClass: 'Letter', use: 'Legal documents', guide: 'legal' },
+  { name: '#12', inches: '4¾ × 11', mm: '121 × 279', aka: '—', mailClass: 'Letter / Flat', use: 'Catalogs, reports', guide: 'legal' },
+  { name: '#14', inches: '5 × 11½', mm: '127 × 292', aka: '—', mailClass: 'Flat', use: 'Long documents', guide: 'legal' },
   { name: 'A2', inches: '4⅜ × 5¾', mm: '111 × 146', aka: '—', mailClass: 'Letter', use: 'Note cards, RSVPs' },
-  { name: 'A6', inches: '4¾ × 6½', mm: '121 × 165', aka: '—', mailClass: 'Letter', use: 'Invitations, greeting cards' },
-  { name: 'A7', inches: '5¼ × 7¼', mm: '133 × 184', aka: '—', mailClass: 'Letter', use: '5×7 invitations, photos' },
+  { name: 'A6', inches: '4¾ × 6½', mm: '121 × 165', aka: '—', mailClass: 'Letter', use: 'Invitations, greeting cards', guide: 'a6' },
+  { name: 'A7', inches: '5¼ × 7¼', mm: '133 × 184', aka: '—', mailClass: 'Letter', use: '5×7 invitations, photos', guide: 'a7' },
   { name: 'A8', inches: '5½ × 8⅛', mm: '140 × 206', aka: '—', mailClass: 'Letter', use: 'Large cards, announcements' },
-  { name: 'A9', inches: '5¾ × 8¾', mm: '146 × 222', aka: '—', mailClass: 'Letter', use: 'Large invitations' },
-  { name: 'A10', inches: '6 × 9½', mm: '152 × 241', aka: '—', mailClass: 'Letter', use: 'Large greeting cards' },
-  { name: '6×9', inches: '6 × 9', mm: '152 × 229', aka: 'Booklet', mailClass: 'Letter / Flat', use: 'Booklets, catalogs, direct mail' },
-  { name: '9×12', inches: '9 × 12', mm: '229 × 305', aka: 'Catalog', mailClass: 'Flat', use: 'Magazines, catalogs, documents' },
+  { name: 'A9', inches: '5¾ × 8¾', mm: '146 × 222', aka: '—', mailClass: 'Letter', use: 'Large invitations', guide: 'a9' },
+  { name: 'A10', inches: '6 × 9½', mm: '152 × 241', aka: '—', mailClass: 'Letter', use: 'Large greeting cards', guide: 'a10' },
+  { name: '6×9', inches: '6 × 9', mm: '152 × 229', aka: 'Booklet', mailClass: 'Letter / Flat', use: 'Booklets, catalogs, direct mail', guide: '6x9' },
+  { name: '9×12', inches: '9 × 12', mm: '229 × 305', aka: 'Catalog', mailClass: 'Flat', use: 'Magazines, catalogs, documents', guide: '9x12' },
   { name: '10×13', inches: '10 × 13', mm: '254 × 330', aka: 'Catalog', mailClass: 'Flat', use: 'Large catalogs, manuscripts' },
   { name: '12×15½', inches: '12 × 15½', mm: '305 × 394', aka: '—', mailClass: 'Flat / Parcel', use: 'Oversized catalogs, posters' },
+];
+
+const guideCards = [
+  { slug: 'no-10', anchor: '#10 envelope size', desc: '4⅛ × 9½ in. — standard business letter, invoices, direct mail' },
+  { slug: 'no-9', anchor: '#9 envelope size', desc: '3⅞ × 8⅞ in. — reply/return envelope, nests inside a #10' },
+  { slug: 'a6', anchor: 'A6 envelope size', desc: '4¾ × 6½ in. — invitations, greeting cards, 4×6 inserts' },
+  { slug: 'a7', anchor: 'A7 envelope size', desc: '5¼ × 7¼ in. — 5×7 invitations and announcements' },
+  { slug: 'a9', anchor: 'A9 envelope size', desc: '5¾ × 8¾ in. — large invitations and formal cards' },
+  { slug: 'a10', anchor: 'A10 envelope size', desc: '6 × 9½ in. — oversized greeting cards' },
+  { slug: '6x9', anchor: '6×9 envelope size', desc: '6 × 9 in. — booklets, catalogs, direct mail flats' },
+  { slug: '9x12', anchor: '9×12 envelope size', desc: '9 × 12 in. — catalogs, documents, unfolded 8.5×11' },
+  { slug: 'legal', anchor: 'legal envelope size', desc: '#11, #12, #14 — 8.5×14 legal documents' },
+  { slug: 'window', anchor: 'window envelope size', desc: '#9 and #10 window — address visible through die-cut' },
+  { slug: 'usps-minimum-maximum', anchor: 'USPS minimum envelope size', desc: 'Min 3½×5 in., max 6⅛×11½ in. — full rules' },
+  { slug: 'business-envelope-types', anchor: 'business envelope types', desc: 'Full comparison: #10, 6×9, 9×12, window, and more' },
 ];
 
 const mailClasses = [
@@ -212,7 +227,12 @@ const faqs = [
                   env.highlight ? 'bg-amber-50 font-semibold border-l-4 border-l-crst-gold' : (i % 2 === 0 ? 'bg-white' : 'bg-gray-50'),
                   'border-b border-gray-100'
                 ]}>
-                  <td class="py-2.5 px-4 text-navy-800 whitespace-nowrap">{env.name}</td>
+                  <td class="py-2.5 px-4 text-navy-800 whitespace-nowrap">
+                    {env.guide
+                      ? <a href={`/guides/envelope-sizes/${env.guide}`} class="text-crst-primary underline hover:text-crst-gold font-medium">{env.name}</a>
+                      : env.name
+                    }
+                  </td>
                   <td class="py-2.5 px-4 text-navy-600/80 font-mono text-xs whitespace-nowrap">{env.inches}</td>
                   <td class="py-2.5 px-4 text-navy-600/80 font-mono text-xs whitespace-nowrap">{env.mm}</td>
                   <td class="py-2.5 px-4 text-navy-600/70 hidden sm:table-cell">{env.aka}</td>
@@ -222,6 +242,25 @@ const faqs = [
               ))}
             </tbody>
           </table>
+        </div>
+
+        <div class="section-divider mb-6 mt-2"></div>
+        <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-3">
+          Individual Envelope Size Guides
+        </h2>
+        <p class="text-navy-600/80 leading-relaxed mb-6">
+          Each guide covers exact dimensions in inches and millimeters, paper insert sizes, USPS postage class, common uses, and design tips. Select the envelope type your campaign uses.
+        </p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-10">
+          {guideCards.map((card) => (
+            <a
+              href={`/guides/envelope-sizes/${card.slug}`}
+              class="group block bg-white border border-gray-200 rounded-xl p-4 hover:border-crst-primary hover:shadow-sm transition-all"
+            >
+              <span class="block font-heading font-bold text-crst-primary group-hover:underline text-sm mb-1">{card.anchor}</span>
+              <span class="block text-xs text-navy-500 leading-snug">{card.desc}</span>
+            </a>
+          ))}
         </div>
 
         <div class="bg-crst-primary/5 border-l-4 border-crst-primary rounded-r-xl p-6 mb-10">
@@ -283,7 +322,7 @@ const faqs = [
           <div>
             <p class="text-sm font-heading font-semibold text-navy-800">Written by Sean Griffin, Owner — Cornerstone Services, Inc.</p>
             <p class="text-xs text-navy-500 mt-1">Sean has managed direct mail production for Hudson Valley businesses since 1998. Over 2.3 million pieces mailed. This guide reflects the USPS size and postage rules we apply to every job we produce.</p>
-            <p class="text-xs text-navy-400 mt-1">Last reviewed: January 2025 · Source: <a href="https://pe.usps.com/text/dmm300/dmm300_landing.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-crst-primary">USPS Domestic Mail Manual (DMM)</a></p>
+            <p class="text-xs text-navy-400 mt-1">Last reviewed: May 2026 · Source: <a href="https://pe.usps.com/text/dmm300/dmm300_landing.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-crst-primary">USPS Domestic Mail Manual (DMM)</a></p>
           </div>
         </div>
 
