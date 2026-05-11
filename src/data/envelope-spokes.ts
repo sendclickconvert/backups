@@ -103,10 +103,10 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
   // #9 — Reply envelope, fits inside #10
   // ============================================================
   'no-9': {
-    title: '#9 Envelope Size: Reply Envelope Dimensions',
-    metaDescription: 'A #9 envelope measures 3.875" × 8.875" and is the standard reply envelope that fits inside a #10 outer. Get dimensions, postage, and use cases.',
-    h1: '#9 Envelope Size: Reply Envelope Dimensions',
-    lastUpdated: '2026-05-05',
+    title: '#9 Envelope Size: 3.875 × 8.875 Inches | Dimensions & Uses',
+    metaDescription: '#9 envelope size: 3.875 × 8.875 inches (98 × 225 mm). Standard reply envelope — fits inside a #10 outer. Dimensions, postage, BRM specs, and use cases.',
+    h1: '#9 Envelope Size: 3.875 × 8.875 Inches',
+    lastUpdated: '2026-05-11',
     dimensionsInches: '3.875" × 8.875"',
     dimensionsMm: '98.4mm × 225.4mm',
     weightLimitOz: 3.5,
@@ -315,10 +315,10 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
   // A9 — Larger announcement
   // ============================================================
   'a9': {
-    title: 'A9 Envelope Size: Dimensions, Use Cases, and Postage',
-    metaDescription: 'An A9 envelope measures 5.75" × 8.75" and fits larger invitations, programs, and 5.5×8.5 cards. Get exact dimensions, postage, and when to use it.',
-    h1: 'A9 Envelope Size: Dimensions and Use Cases',
-    lastUpdated: '2026-05-05',
+    title: 'A9 Envelope Size: 5.75 × 8.75 Inches | Inches, MM & Uses',
+    metaDescription: 'A9 envelope size: 5.75 × 8.75 inches (146 × 222 mm). Fits half-page cards, folded brochures, and formal invitations. Dimensions, postage, and use cases.',
+    h1: 'A9 Envelope Size: 5.75 × 8.75 Inches',
+    lastUpdated: '2026-05-11',
     dimensionsInches: '5.75" × 8.75"',
     dimensionsMm: '146mm × 222.3mm',
     weightLimitOz: 3.5,
@@ -382,10 +382,10 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
   // A10 — Largest letter-rate A-series
   // ============================================================
   'a10': {
-    title: 'A10 Envelope Size: Dimensions and Mailability Rules',
-    metaDescription: 'An A10 envelope measures 6" × 9.5" and is the largest A-series envelope still at letter rate. Get dimensions, postage, and mailability considerations.',
-    h1: 'A10 Envelope Size: Dimensions and Mailability Rules',
-    lastUpdated: '2026-05-05',
+    title: 'A10 Envelope Size: 6 × 9.5 Inches | Dimensions & Uses',
+    metaDescription: 'A10 envelope size: 6 × 9.5 inches (152 × 241 mm). Largest A-series envelope at letter rate. Dimensions, postage class, mailability rules, and use cases.',
+    h1: 'A10 Envelope Size: 6 × 9.5 Inches',
+    lastUpdated: '2026-05-11',
     dimensionsInches: '6" × 9.5"',
     dimensionsMm: '152.4mm × 241.3mm',
     weightLimitOz: 3.5,
@@ -451,10 +451,10 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
   // 6×9 — Booklet/catalog letter
   // ============================================================
   '6x9': {
-    title: '6x9 Envelope Dimensions, Postage Class, and When to Use It',
-    metaDescription: 'A 6×9 envelope measures 6" × 9" and is commonly used for booklets, brochures, and multi-page direct mail. Get dimensions, postage rules, and mailability.',
-    h1: '6x9 Envelope: Dimensions, Postage, and Use Cases',
-    lastUpdated: '2026-05-05',
+    title: '6×9 Envelope Size: 6 × 9 Inches | Dimensions, Postage & Uses',
+    metaDescription: '6×9 envelope size: 6 × 9 inches (152 × 229 mm). Booklet and catalog styles — letter rate when under 0.25" thick, flat rate when thicker. Full specs and uses.',
+    h1: '6×9 Envelope Size: 6 × 9 Inches',
+    lastUpdated: '2026-05-11',
     dimensionsInches: '6" × 9"',
     dimensionsMm: '152.4mm × 228.6mm',
     weightLimitOz: 3.5,
