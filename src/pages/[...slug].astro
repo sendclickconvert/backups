@@ -21,7 +21,7 @@ const exactRedirects: Record<string, string> = {
   '/direct-mail-company/direct-mail-associations-memberships/': '/about',
   '/order-online-direct-mail/': '/contact',
   '/order-online-direct-mail': '/contact',
-  '/order-online/': '/contact',
+  '/order-online/': '/resources/payments',
   '/grow-your-business-with-eddm/': '/services/eddm',
   '/crst-web-design-and-development/': '/services/web-design',
   '/lessons-from-marketing-failure-case-study-in-tree-service-marketing/': '/resources/lessons-from-marketing-failure',
@@ -107,16 +107,35 @@ const exactRedirects: Record<string, string> = {
   '/crst-daily/point-roberts-post-office-a-postal-oddity/': '/resources/point-roberts-post-office',
   '/demystifying-direct-mail-common-misconceptions-and-practical-solutions/': 'https://blog.crst.net/',
   '/chicken-shipping-101/': '/resources/chicken-shipping-101',
-  '/fun-fact-friday/': 'https://blog.crst.net/',
-  '/category/review/': 'https://blog.crst.net/',
+  // legacy WP taxonomy index pages → 410
+  '/fun-fact-friday/': '410',
+  '/fun-fact-friday': '410',
+  '/mailbox-monday': '410',
+  '/mailers-tip-tuesday': '410',
+  '/mailers-tip-tuesday/': '410',
+  '/mailbag-wednesday': '410',
+  '/mailbag-wednesday/': '410',
+  '/case-study-thursday': '410',
+  '/case-study-thursday/': '410',
+  '/category/review/': '410',
   '/new-home-page-2/': '/',
   '/new-home/': '/',
+  '/new-home': '410',
+  '/home-8896': '410',
+  '/home-8896/': '410',
+  '/thank-you-templates': '410',
+  '/thank-you-templates/': '410',
+  '/non-profit-database-change': '410',
+  '/non-profit-database-change/': '410',
+  '/a-': '410',
+  '/a-november-': '410',
   '/website-terms-and-conditions/': '/terms',
   '/web-terms/': '/terms',
   '/website-web-development-terms-and-conditions/': '/terms',
   '/terms-and-conditions/': '/terms',
   '/terms-and-conditions/crst-website-web-development-terms-and-conditions/': '/terms',
   '/contact-us/': '/contact',
+  '/informed': '/informed-delivery-review',
   '/cart': '/services',
   '/checkout': '/contact',
   '/products-list': '/services',
@@ -132,6 +151,7 @@ const exactRedirects: Record<string, string> = {
   '/printing-partners/p-p-quickcopy-center/': '/about',
   '/printing-partners/chatham-printing-copy-center/': '/about',
   '/printing-partners/pro-printers/': '/about',
+  // wp-content specific asset redirects kept (legit document links)
   '/wp-content/uploads/2023/10/4.25-x-11-EDDM-Flat-Card-Template.pdf': '/usps-direct-mailer-templates',
   '/wp-content/uploads/2023/11/11-Envelope-Template.pdf': '/direct-mail-tools/envelope-sizes',
   '/ancillary-service-endorsements/': '/resources/ancillary-service-endorsements',
@@ -141,19 +161,20 @@ const exactRedirects: Record<string, string> = {
   '/complete-friendraising-guide/': '/resources/complete-friendraising-guide',
   '/complete-friendraising-guide': '/resources/complete-friendraising-guide',
   '/a-november-2024-post-election-assessment-from-a-hudson-valley-political-consultant/': 'https://blog.crst.net/',
-  '/tag/mail-design/': 'https://blog.crst.net/',
-  '/tag/overview/': 'https://blog.crst.net/',
-  '/tag/shipping/': 'https://blog.crst.net/',
-  '/category/periodicals/': 'https://blog.crst.net/',
-  '/category/business-to-business/': 'https://blog.crst.net/',
-  '/category/how-to/': 'https://blog.crst.net/',
-  '/crst-daily-post-tag/fun-fact-friday/': 'https://blog.crst.net/',
-  '/crst-daily-post-tag/mailboxmonday/': 'https://blog.crst.net/',
-  '/crst-daily-post-tag/hudsonvalleyny/page/2/': 'https://blog.crst.net/',
-  '/crst-daily-post-tag/mailboxmonday/page/2/': 'https://blog.crst.net/',
-  '/crst-daily-post-category/mailbag-wednesday/page/2/': 'https://blog.crst.net/',
-  '/mailbox-monday/page/2/': 'https://blog.crst.net/',
-  '/mailbox-monday/page/4/': 'https://blog.crst.net/',
+  // legacy WP tag/category individual entries → 410
+  '/tag/mail-design/': '410',
+  '/tag/overview/': '410',
+  '/tag/shipping/': '410',
+  '/category/periodicals/': '410',
+  '/category/business-to-business/': '410',
+  '/category/how-to/': '410',
+  '/crst-daily-post-tag/fun-fact-friday/': '410',
+  '/crst-daily-post-tag/mailboxmonday/': '410',
+  '/crst-daily-post-tag/hudsonvalleyny/page/2/': '410',
+  '/crst-daily-post-tag/mailboxmonday/page/2/': '410',
+  '/crst-daily-post-category/mailbag-wednesday/page/2/': '410',
+  '/mailbox-monday/page/2/': '410',
+  '/mailbox-monday/page/4/': '410',
   '/toolbox/address-change/': '/direct-mail-tools/address-change',
   '/tools/postal-dictionary/': '/direct-mail-tools/postal-dictionary',
   '/tools/envelope-sizes/': '/direct-mail-tools/envelope-sizes',
@@ -193,14 +214,14 @@ const exactRedirects: Record<string, string> = {
   '/tag/how-to': '/resources',
   '/tag/apply': '/resources',
   '/tag/design-tips': '/resources',
-  '/crst-daily-post-tag/case-study-thursday': '/case-studies',
-  '/crst-daily-post-tag/fun-fact-friday': '/resources',
-  '/crst-daily-post-category/fun-fact-friday': '/resources',
-  '/crst-daily-post-tag/mailers-tip-tuesday': '/resources',
+  '/crst-daily-post-tag/case-study-thursday': '410',
+  '/crst-daily-post-tag/fun-fact-friday': '410',
+  '/crst-daily-post-category/fun-fact-friday': '410',
+  '/crst-daily-post-tag/mailers-tip-tuesday': '410',
 
-  '/mailbox-monday/page/4': '/',
-  '/mailbox-monday/page/2': '/',
-  '/mailers-tip-tuesday/page/4': '/resources',
+  '/mailbox-monday/page/4': '410',
+  '/mailbox-monday/page/2': '410',
+  '/mailers-tip-tuesday/page/4': '410',
   '/blog/page/1': 'https://blog.crst.net',
   '/blog/page/2': 'https://blog.crst.net',
   '/direct-mail-case-studies/page/3': '/case-studies',
@@ -209,46 +230,9 @@ const exactRedirects: Record<string, string> = {
   '/case-study-category/direct-mail/page/2': '/case-studies',
   '/case-study-category/case-studies': '/case-studies',
 
-  '/crst-daily/magnetized-postcards-for-pizzeria-restaurants': 'https://blog.crst.net/crst-daily/magnetized-postcards-for-pizzeria-restaurants/',
-  '/crst-daily/direct-mail-for-municipal-citizen-awareness': 'https://blog.crst.net',
-  '/crst-daily/clean-up-mailing-list': 'https://blog.crst.net',
-  '/crst-daily/gotv-political-mail-strategy': 'https://blog.crst.net',
-  '/crst-daily/amazon-parcel-delivery-to-surpass-usps-by-2028': 'https://blog.crst.net',
-  '/crst-daily/mail-chute-henry-clay-hotel-louisville': 'https://blog.crst.net',
-  '/crst-daily/marking-return-address-on-envelope': 'https://blog.crst.net',
-  '/crst-daily/postcard-marketing-with-quickbooks-for-chimney-firms': 'https://blog.crst.net',
-  '/crst-daily/when-business-data-rental-goes-wrong': 'https://blog.crst.net',
-  '/crst-daily/reclaiming-your-501c3-irs-tax-info-to-obtain-usps-non-profit-rates': 'https://blog.crst.net',
-  '/crst-daily/absentee-voting-history-vote-by-mail-info': 'https://blog.crst.net',
-  '/crst-daily/simple-trick-for-segmenting-responses': 'https://blog.crst.net',
-  '/crst-daily/record-holder-most-mail-received-consistently-over-20-years': 'https://blog.crst.net',
-  '/crst-daily/missile-mail-usps-once-used-navy-rocket': 'https://blog.crst.net',
-  '/crst-daily/us-postal-traffic-disrupted-by-tariffs-september-2025': 'https://blog.crst.net',
-  '/crst-daily/global-parcel-delivery-to-us-halted-august-2025': 'https://blog.crst.net',
-  '/crst-daily/living-in-paradise-in-hyde-park-ny': 'https://blog.crst.net',
-  '/crst-daily/local-marketing-strategy-for-independent-hearing-aid-clinics': 'https://blog.crst.net',
-  '/crst-daily/the-postal-service-older-than-the-nation': 'https://blog.crst.net',
-  '/crst-daily/usps-250-years-of-national-service-new-stamp-booklet': 'https://blog.crst.net',
-  '/crst-daily/wood-stove-marketing-in-central-ny-eddm-lawn-signs': 'https://blog.crst.net',
-  '/crst-daily/world-of-unusual-services-at-japan-post': 'https://blog.crst.net',
-  '/crst-daily/why-no-one-reads-appeal-letters': 'https://blog.crst.net',
-  '/crst-daily/donor-list-the-10-percent-solution': 'https://blog.crst.net',
-  '/crst-daily/fcm-to-clean-up-master-list': 'https://blog.crst.net',
-  '/crst-daily/direct-mail-tip-write-for-the-reader': 'https://blog.crst.net',
-  '/crst-daily/artist-marketing-strategy-make-100k-via-direct-mail-web': 'https://blog.crst.net',
-  '/crst-daily/japanese-direct-mail-soft-touch-targeting-wins': 'https://blog.crst.net',
-  '/crst-daily/direct-mail-strategies-for-winning-primary-races': 'https://blog.crst.net',
-  '/crst-daily/cairo-ny-12413': 'https://blog.crst.net',
-  '/crst-daily/pine-plains-ny-12567': 'https://blog.crst.net',
-  '/crst-daily/warwick-ny-10990': 'https://blog.crst.net',
-  '/crst-daily/otsego-county-morris-ny-13808': 'https://blog.crst.net',
-  '/crst-daily/hope-diamond': 'https://blog.crst.net',
-  '/crst-daily/mailing-babies-chicks-more': 'https://blog.crst.net',
-  '/crst-daily/postal-services-missing-3-countries-without-mail': 'https://blog.crst.net',
-  '/crst-daily/marking-return-envelopes-for-tracking': 'https://blog.crst.net',
-  '/crst-daily/how-usps-tracking-works': 'https://blog.crst.net',
-  '/crst-daily/direct-mail-vs-email-marketing-comparison-and-roi-return-on-investment': 'https://blog.crst.net',
-  '/crst-daily/direct-mail-campaign-cairo-ny-12413': 'https://blog.crst.net',
+  // /crst-daily/* slugs that have a real CRST destination page stay as 301s.
+  // All other /crst-daily/* paths fall through to gone410Patterns → 410.
+  // (The generic blog-destination entries were removed — gone410Patterns handles them.)
 
   '/blog': 'https://blog.crst.net',
   '/blog/': 'https://blog.crst.net',
@@ -296,7 +280,7 @@ if (malformedSuffix) {
   return Astro.redirect(knownClean || cleanPath, 301);
 }
 
-// WordPress scanner / bot paths — return 410 Gone
+// WordPress scanner / bot paths → 410 Gone
 const wpBotPaths = [
   '/wp-login.php', '/wp-admin', '/xmlrpc.php', '/wp-json',
   '/sample-page', '/hello-world', '/uncategorized',
@@ -305,34 +289,57 @@ if (wpBotPaths.some(p => path === p || path.startsWith(p + '/') || path.startsWi
   return new Response(gone410Html, { status: 410, headers: { 'Content-Type': 'text/html' } });
 }
 
+// Namespace 410s — entire path prefixes permanently gone
 const gone410Patterns = [
+  '/wp-content/',
+  '/wp-includes/',
+  '/wp-admin/',
   '/category/',
   '/tag/',
   '/case-study-category/',
   '/crst-daily-post-category/',
-  '/mailbox-monday/page/',
+  '/crst-daily-post-tag/',
+  '/crst-daily/',
+  '/portfolio-2/',
+  '/mailbox-monday/',
+  '/mailers-tip-tuesday/',
+  '/mailbag-wednesday/',
+  '/fun-fact-friday/',
+  '/case-study-thursday/',
 ];
 
 if (gone410Patterns.some(p => path.startsWith(p))) {
   return new Response(gone410Html, { status: 410, headers: { 'Content-Type': 'text/html' } });
 }
 
-const blogPatterns = [
-  '/crst-daily/',
-  '/crst-daily-post-tag/',
-  '/mailbox-monday/',
-  '/mailers-tip-tuesday/',
-  '/case-study-thursday/',
-  '/fun-fact-friday/',
-  '/mailbag-wednesday/',
-];
-
-if (blogPatterns.some(p => path.startsWith(p))) {
-  return Astro.redirect('https://blog.crst.net/', 301);
+// AMP paths → 410
+if (path.includes('/amp/') || path === '/amp' || path.endsWith('/amp')) {
+  return new Response(gone410Html, { status: 410, headers: { 'Content-Type': 'text/html' } });
 }
+
+// Pagination paths /page/N/ → 410, EXCEPT /blog/page/* which goes to blog
+if (path.startsWith('/blog/page/')) {
+  return Astro.redirect('https://blog.crst.net', 301);
+}
+if (/\/page\/\d+/.test(path)) {
+  return new Response(gone410Html, { status: 410, headers: { 'Content-Type': 'text/html' } });
+}
+
+// Truncated WP slugs ending in bare dash → 410
+if (path.endsWith('-')) {
+  return new Response(gone410Html, { status: 410, headers: { 'Content-Type': 'text/html' } });
+}
+
+// Case study catch-all
 if (path === '/case-study' || path.startsWith('/case-study/') || path.startsWith('/direct-mail-case-studies/')) {
   return Astro.redirect('/case-studies', 301);
 }
+
+// Portfolio catch-all
+if (path.startsWith('/portfolio/')) {
+  return Astro.redirect('/case-studies', 301);
+}
+
 if (path.startsWith('/printing-partners/')) {
   return Astro.redirect('/about', 301);
 }
@@ -348,13 +355,9 @@ if (path.startsWith('/direct-mail-services/')) {
 if (path.startsWith('/direct-mail-tools/') && path !== '/direct-mail-tools/envelope-sizes/' && path !== '/direct-mail-tools/postal-dictionary/' && path !== '/direct-mail-tools/address-change/' && path !== '/direct-mail-tools/cornerstone-mailing-permits/' && path !== '/direct-mail-tools/postage-rates/') {
   return Astro.redirect('/resources', 301);
 }
-if (path.startsWith('/wp-content/')) {
-  return Astro.redirect('/resources', 301);
-}
 if (path.startsWith('/author/') || path.startsWith('/feed')) {
   return Astro.redirect('/', 301);
 }
 
 return new Response(null, { status: 404 });
 ---
-

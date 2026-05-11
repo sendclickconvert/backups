@@ -1,3 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /wp-admin/
+Disallow: /*?nonamp=
+Disallow: /*?vp_page=
+Disallow: /*?fbclid=
 Sitemap: https://crst.net/sitemap-index.xml
