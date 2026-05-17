@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>CRST Web Training Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            navy: '#1A2B4A',
+            teal: '#00BFA6',
+            'teal-light': '#E6F7F5',
+            'bg-gray': '#F4F6F9',
+            'text-body': '#374151',
+            'text-muted': '#6B7280',
+            'complete-green': '#22C55E',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; margin: 0; background: #F4F6F9; color: #374151; }
+    video::-webkit-media-controls-panel { background: linear-gradient(transparent, rgba(0,0,0,.6)); }
+    .sidebar-scroll::-webkit-scrollbar { width: 6px; }
+    .sidebar-scroll::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 3px; }
+    .lesson-item { transition: all 0.15s ease; }
+    .lesson-item:hover { background: #f9fafb; }
+    .lesson-item.active { background: #E6F7F5; border-left: 3px solid #00BFA6; }
+    .lesson-item.completed .lesson-label { color: #6B7280; }
+    .lesson-item.upcoming .lesson-label { color: #6B7280; }
+    .video-container { background: #111827; border-radius: 12px; overflow: hidden; }
+    .btn-teal { background: #00BFA6; color: #fff; transition: background 0.2s; }
+    .btn-teal:hover { background: #00a893; }
+    .btn-outline { border: 2px solid #00BFA6; color: #00BFA6; transition: all 0.2s; }
+    .btn-outline:hover { background: #E6F7F5; }
+    .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .accordion-content.open { max-height: 8000px; }
+    .accordion-chevron { transition: transform 0.3s ease; }
+    .accordion-chevron.open { transform: rotate(180deg); }
+    .accordion-article h3 { color: #1A2B4A; font-size: 1.1rem; font-weight: 700; margin: 1.25rem 0 0.5rem; }
+    .accordion-article h3:first-child { margin-top: 0; }
+    .accordion-article p { margin: 0.5rem 0; line-height: 1.7; }
+    .accordion-article ul { list-style: disc; padding-left: 1.5rem; margin: 0.5rem 0; }
+    .accordion-article ul li { margin: 0.25rem 0; line-height: 1.6; }
+    .accordion-article strong { color: #1A2B4A; }
+    .module-section { min-height: auto; }
+    @media (max-width: 768px) {
+      .module-layout { flex-direction: column !important; }
+      .module-sidebar { width: 100% !important; position: relative !important; }
+      .module-sidebar.collapsed .lesson-list { display: none; }
+      .module-sidebar.collapsed .progress-section { border-bottom: none; }
+      .mobile-toggle { display: flex !important; }
+      .module-main { margin-left: 0 !important; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-navy text-white shadow-lg" style="height:64px">
+  <div class="h-full flex items-center justify-between px-6 max-w-screen-2xl mx-auto">
+    <div class="flex items-center gap-3">
+      <img src="/images/crst-logo-white.png" alt="CRST" class="h-8" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <span class="font-bold text-xl tracking-tight hidden">CRST</span>
+    </div>
+    <h1 class="text-base md:text-lg font-semibold tracking-tight text-center">CRST Web Training</h1>
+    <span class="text-xs text-gray-400 hidden sm:block">Internal Client Training</span>
+  </div>
+</header>
+
+<div style="padding-top:64px">
+
+  <!-- ===================== MODULE 1: CONVERSATIONS TAB ===================== -->
+  <section class="module-section" id="module1">
+    <div class="bg-navy text-white px-6 py-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 1</span>
+        <h2 class="text-lg font-semibold">Conversations Tab</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:500px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m1')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m1-progressLabel" class="text-xs font-medium text-text-muted">0 of 8 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m1-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m1-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m1-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="video-container mb-8">
+            <video id="m1-videoPlayer" controls playsinline class="w-full aspect-video bg-gray-900" preload="metadata">
+              <source id="m1-videoSource" src="" type="video/mp4">
+              Your browser does not support the video element.
+            </video>
+          </div>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m1-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m1-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m1')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              Mark as Complete
+            </button>
+            <button onclick="nextLesson('m1')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">Next Lesson →</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ===================== MODULE 2: PIPELINES & OPPORTUNITIES ===================== -->
+  <section class="module-section" id="module2">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 2</span>
+        <h2 class="text-lg font-semibold">Pipelines &amp; Opportunities</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m2')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m2-progressLabel" class="text-xs font-medium text-text-muted">0 of 10 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m2-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m2-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m2-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m2-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m2-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m2')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Mark as Complete</button>
+            <button onclick="nextLesson('m2')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">Next Lesson →</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ===================== MODULE 3: WORKFLOWS & AUTOMATIONS ===================== -->
+  <section class="module-section" id="module3">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 3</span>
+        <h2 class="text-lg font-semibold">Workflows &amp; Automations</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m3')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m3-progressLabel" class="text-xs font-medium text-text-muted">0 of 7 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m3-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m3-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m3-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m3-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m3-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m3')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Mark as Complete</button>
+            <button onclick="nextLesson('m3')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">Next Lesson →</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ===================== MODULE 4: CALENDARS & APPOINTMENTS ===================== -->
+  <section class="module-section" id="module4">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 4</span>
+        <h2 class="text-lg font-semibold">Calendars &amp; Appointments</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m4')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m4-progressLabel" class="text-xs font-medium text-text-muted">0 of 7 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m4-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m4-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m4-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m4-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m4-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m4')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Mark as Complete</button>
+            <button onclick="nextLesson('m4')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">Next Lesson →</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ===================== MODULE 5: CONTACTS & CRM ===================== -->
+  <section class="module-section" id="module5">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 5</span>
+        <h2 class="text-lg font-semibold">Contacts &amp; CRM</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m5')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m5-progressLabel" class="text-xs font-medium text-text-muted">0 of 5 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m5-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m5-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m5-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m5-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m5-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m5')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Mark as Complete</button>
+            <button onclick="nextLesson('m5')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">Next Lesson →</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ===================== MODULE 6: SITES, FUNNELS & FORMS ===================== -->
+  <section class="module-section" id="module6">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 6</span>
+        <h2 class="text-lg font-semibold">Sites, Funnels &amp; Forms</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m6')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m6-progressLabel" class="text-xs font-medium text-text-muted">0 of 5 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m6-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m6-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m6-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m6-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m6-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m6')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Mark as Complete</button>
+            <button onclick="nextLesson('m6')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">Next Lesson →</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ===================== MODULE 7: PAYMENTS & INVOICING ===================== -->
+  <section class="module-section" id="module7">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 7</span>
+        <h2 class="text-lg font-semibold">Payments &amp; Invoicing</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m7')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m7-progressLabel" class="text-xs font-medium text-text-muted">0 of 5 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m7-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m7-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m7-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m7-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m7-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m7')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Mark as Complete</button>
+            <button onclick="nextLesson('m7')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">Next Lesson →</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ===================== MODULE 8: DASHBOARDS & REPORTING ===================== -->
+  <section class="module-section" id="module8">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 8</span>
+        <h2 class="text-lg font-semibold">Dashboards &amp; Reporting</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m8')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m8-progressLabel" class="text-xs font-medium text-text-muted">0 of 4 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m8-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m8-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m8-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m8-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m8-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m8')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Mark as Complete</button>
+            <button onclick="nextLesson('m8')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">Next Lesson →</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ===================== MODULE 9: REPUTATION MANAGEMENT & REVIEWS ===================== -->
+  <section class="module-section" id="module9">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 9</span>
+        <h2 class="text-lg font-semibold">Reputation Management &amp; Reviews</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m9')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m9-progressLabel" class="text-xs font-medium text-text-muted">0 of 3 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m9-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m9-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m9-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m9-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m9-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m9')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Mark as Complete</button>
+            <button onclick="nextLesson('m9')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">Next Lesson →</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- ===================== MODULE 10: SETTINGS & CONFIGURATION ===================== -->
+  <section class="module-section" id="module10">
+    <div class="bg-navy text-white px-6 py-4 mt-4">
+      <div class="max-w-screen-2xl mx-auto flex items-center gap-3">
+        <span class="bg-teal text-white text-xs font-bold px-3 py-1 rounded-full">MODULE 10</span>
+        <h2 class="text-lg font-semibold">Settings &amp; Configuration</h2>
+      </div>
+    </div>
+    <div class="module-layout flex max-w-screen-2xl mx-auto">
+      <aside class="module-sidebar w-[280px] flex-shrink-0 bg-white shadow-md sidebar-scroll overflow-y-auto" style="min-height:400px">
+        <div class="mobile-toggle hidden items-center justify-between px-4 py-3 border-b cursor-pointer" onclick="toggleModuleSidebar('m10')">
+          <span class="font-semibold text-navy text-sm">Lesson Menu</span>
+          <svg class="w-5 h-5 text-gray-500 chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </div>
+        <div class="progress-section p-4 border-b">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-navy uppercase tracking-wide">Your Progress</span>
+            <span id="m10-progressLabel" class="text-xs font-medium text-text-muted">0 of 5 complete</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div id="m10-progressBar" class="h-2 rounded-full transition-all duration-500" style="width:0%;background:#00BFA6"></div>
+          </div>
+        </div>
+        <nav class="lesson-list flex-1 py-2" id="m10-lessonNav"></nav>
+      </aside>
+      <main class="module-main flex-1 p-6 md:p-10">
+        <div class="max-w-4xl">
+          <h2 id="m10-lessonTitle" class="text-2xl md:text-3xl font-bold text-navy mb-6"></h2>
+          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8 mb-6">
+            <div id="m10-lessonDescription" class="prose max-w-none text-text-body leading-relaxed"></div>
+          </div>
+          <div id="m10-accordion" class="mb-6"></div>
+          <div class="flex flex-wrap gap-3">
+            <button onclick="markComplete('m10')" class="btn-teal px-6 py-3 rounded-lg font-semibold text-sm flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Mark as Complete</button>
+            <button onclick="nextLesson('m10')" class="btn-outline px-6 py-3 rounded-lg font-semibold text-sm">Next Lesson →</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+</div>
+
+<footer class="bg-navy text-white mt-8">
+  <div class="max-w-screen-2xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+    <span class="text-xs text-gray-400">&copy; 2025 CRST | Cornerstone Services &mdash; New Paltz, NY</span>
+    <span class="text-xs text-gray-500">Internal Training Resource &mdash; Not for Public Distribution</span>
+  </div>
+</footer>
+
+<script>
+const modules = {
+  m1: {
+    currentLesson: 0,
+    lessons: [
+      { title: "Inbox Panel", video: "/videos/Inbox_Panel.mp4", completed: false,
+        description: `<p>The Inbox Panel is the left-hand navigation inside the CRST Web Conversations Tab. Here you'll find quick-access filters to manage your message workload efficiently.</p>
+        <p class="font-semibold mt-4 mb-2">Key areas of the Inbox Panel:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>My Inbox</strong> — Shows conversations assigned specifically to you</li>
+          <li><strong>All</strong> — Displays every open conversation across the account</li>
+          <li><strong>Assigned to Me</strong> — Filters to only conversations where you are the assigned user</li>
+          <li><strong>Followed by Me</strong> — Shows conversations you've chosen to follow for visibility</li>
+          <li><strong>Team Inbox</strong> — Shared inbox view for your team</li>
+          <li><strong>Internal Chat</strong> — Use this for communicating internally with your team without it going to the contact</li>
+        </ul>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Use the Inbox Panel filters to stay focused on your own workload without getting distracted by your full team's conversations. Start your day in "Assigned to Me" and work from there.</p>`,
+        accordions: [] },
+      { title: "Chat List Panel", video: "/videos/chat-list-panel.mp4", completed: false,
+        description: `<p>The Chat List Panel displays all active conversations based on your selected inbox filter. You can sort by newest, oldest, or unread. Each conversation card shows the contact name, channel icon, last message preview, and timestamp.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: [] },
+      { title: "Filtering Your Inbox", video: "/videos/filtering-your-inbox.mp4", completed: false,
+        description: `<p>Learn how to use CRST Web's built-in conversation filters to narrow your inbox by channel type (SMS, Email, Facebook, etc.), assigned user, status (open, closed, unread), and date range. Filtering is essential for high-volume accounts.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: [] },
+      { title: "Message History Panel", video: "/videos/message-history-panel.mp4", completed: false,
+        description: `<p>The Message History Panel is the center column showing the full thread of all messages exchanged with a contact across all channels in chronological order.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: [] },
+      { title: "Sending Messages", video: "/videos/sending-messages.mp4", completed: false,
+        description: `<p>Learn how to compose and send messages directly from the CRST Web Conversations Tab. Covers SMS, email, internal notes, attachments, and using snippets for fast replies.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: [] },
+      { title: "Individual Convo Filters and Actions", video: "/videos/individual-convo-filters.mp4", completed: false,
+        description: `<p>Each conversation has its own set of actions — assign to a team member, change status, add tags, set a reminder, and more. This lesson walks through every action available at the individual conversation level inside CRST Web.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: [] },
+      { title: "Right Hand Panel", video: "/videos/right-hand-panel.mp4", completed: false,
+        description: `<p>The Right Hand Panel gives you a full snapshot of the contact record while you're in a conversation — no need to leave the chat. View contact info, pipeline stage, recent activity, appointments, tasks, and notes all in one place.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: [] },
+      { title: "Bonus: Shortcuts!", video: "/videos/bonus-shortcuts.mp4", completed: false,
+        description: `<p>Speed up your workflow with CRST Web keyboard shortcuts and power-user tips inside the Conversations Tab.</p><p class="mt-3 text-text-muted italic">Full notes coming soon. Check back after watching the video above.</p>`,
+        accordions: [] }
+    ]
+  },
+  m2: {
+    currentLesson: 0,
+    lessons: [
+      { title: "Lead Automation Through a Pipeline", completed: false,
+        description: `<p>In this lesson you'll learn how leads automatically move through your CRST Web pipeline based on triggers and actions. Understanding how automation connects to your pipeline stages is the foundation of a hands-free follow-up system.</p>`,
+        accordions: [
+          { title: "Understanding Pipelines",
+            content: `<p>CRST Web pipelines let you visually manage opportunities as they move through different stages of your sales or service workflow.</p>
+<h3>Overview</h3>
+<p>Pipelines are visual workflow tools that show the progress of leads, deals, or customers from start to finish. Each opportunity moves through defined stages, helping your team understand what actions are needed and where items may be getting stuck.</p>
+<p>Access Pipelines from: <strong>CRST Web Dashboard &rarr; Opportunities &rarr; Pipelines</strong></p>
+<h3>Why Pipelines Matter</h3>
+<ul>
+  <li><strong>Improve visibility</strong> &mdash; Instantly see where every opportunity stands</li>
+  <li><strong>Maintain consistency</strong> &mdash; Standardize how leads move through your workflow</li>
+  <li><strong>Increase efficiency</strong> &mdash; Automate follow-ups and task assignments based on stage changes</li>
+  <li><strong>Track performance</strong> &mdash; Monitor conversion rates, identify bottlenecks, measure pipeline health</li>
+</ul>
+<h3>Pipeline Stages</h3>
+<p>Stages represent steps in your sales or customer journey. Opportunities move left to right. Stages should be clearly defined and action-oriented.</p>
+<h3>Deleting a Pipeline Stage</h3>
+<p>When deleting a stage, you can move all existing opportunities to another stage instead of losing them. Navigate to Opportunities &rarr; Pipelines, open the pipeline, click the delete icon next to the stage, select a destination stage, and confirm.</p>
+<h3>Example Stages</h3>
+<p><strong>Sales:</strong> Lead Capture &rarr; Qualification &rarr; Appointment Scheduled &rarr; Proposal &rarr; Closing</p>
+<p><strong>Service:</strong> New Inquiry &rarr; Discovery Call &rarr; Service Selected &rarr; Payment &rarr; Onboarding</p>
+<h3>Best Practices</h3>
+<p><strong>Keep It Simple</strong> &mdash; 5&ndash;7 stages max. <strong>Automate Smartly</strong> &mdash; Send follow-ups when deals stall. <strong>Review Regularly</strong> &mdash; Clean up opportunities monthly.</p>
+<h3>FAQs</h3>
+<p><strong>Q: Do I lose opportunities when I delete a stage?</strong><br>A: No. You choose another stage to move them to.</p>
+<p><strong>Q: Do existing automations still work after editing?</strong><br>A: Yes. All pipeline-based automations continue to function normally.</p>` },
+          { title: "Understanding Opportunities",
+            content: `<p>Opportunities represent potential sales or deals at various stages of the pipeline. Each stores the prospect's contact info, deal value, and notes.</p>
+<h3>What Are Opportunities?</h3>
+<p>A contact becomes an opportunity when there is a prospect of a sale or deal associated with that contact and it is added to a sales pipeline. Each opportunity stores contact information, deal value, and historical notes so everyone on your team has context.</p>
+<h3>Key Benefits</h3>
+<ul>
+  <li><strong>Centralized Tracking</strong> &mdash; Notes, tasks, and communications on one card</li>
+  <li><strong>Stage-Based Forecasting</strong> &mdash; Predict revenue by stage</li>
+  <li><strong>Automation Triggers</strong> &mdash; Fire workflows on opportunity events</li>
+  <li><strong>Team Collaboration</strong> &mdash; Assign owners, track activity</li>
+  <li><strong>Performance Reporting</strong> &mdash; Win rates and bottlenecks at a glance</li>
+</ul>
+<h3>Opportunity Status</h3>
+<ul>
+  <li><strong>Open</strong> &mdash; Actively being pursued</li>
+  <li><strong>Won</strong> &mdash; Successfully converted into a sale</li>
+  <li><strong>Lost</strong> &mdash; Deal concluded unsuccessfully</li>
+  <li><strong>Abandoned</strong> &mdash; No further action planned</li>
+</ul>` },
+          { title: "Understanding The Create New Opportunity Toggle",
+            content: `<p>This toggle controls whether CRST Web automatically creates a new opportunity or updates an existing one when a trigger fires.</p>
+<p><strong>Toggle ON:</strong> Creates a new opportunity every time (good when contacts have multiple deals simultaneously).</p>
+<p><strong>Toggle OFF:</strong> Updates the existing opportunity (prevents duplicates &mdash; most common for service businesses).</p>
+<p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> For most CRST Web clients, keep this toggle OFF to avoid duplicate opportunities.</p>` }
+        ] },
+      { title: "Creating Pipelines Step-by-Step", completed: false,
+        description: `<p>This lesson walks through creating a new pipeline from scratch &mdash; naming it, adding stages, setting stage order, configuring colors, and saving. Follow along in your CRST Web account.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Map out stages on paper first. Keep pipelines to 5&ndash;7 stages max with distinct colors for quick scanning.</p>`,
+        accordions: [{ title: "Step-by-Step: Creating a New Pipeline",
+          content: `<h3>Creating a Pipeline</h3>
+<ul><li>Navigate to <strong>Opportunities &rarr; Pipelines</strong></li><li>Click <strong>Create New Pipeline</strong></li><li>Enter a unique pipeline name</li><li>Add stages &mdash; each represents a step in your process</li><li>Set stage order using drag handles</li><li>Configure dashboard visibility (funnel and pie chart toggles)</li><li>Click <strong>Save</strong></li></ul>
+<h3>Editing a Pipeline</h3>
+<ul><li>Rename stages &mdash; existing opportunities stay in the renamed stage</li><li>Reorder stages via drag and drop</li><li>Add new stages at the end, then reorder</li><li>Delete stages &mdash; move existing opportunities to another stage first</li></ul>
+<h3>Important Notes</h3>
+<p>Pipeline names must be unique. CRST Web automatically adds <strong>Won</strong> and <strong>Lost</strong> stages to every pipeline &mdash; these cannot be removed.</p>` }] },
+      { title: "Creating & Managing Opportunities", completed: false,
+        description: `<p>Create opportunities manually and through workflows. Fill out the form, assign to a pipeline/stage, attach to a contact, set value, and add custom fields. Also covers editing, reassigning, and adding notes.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Use "[Client Name] &mdash; [Service Type]" naming convention. Add notes every time you take action on a deal.</p>`,
+        accordions: [{ title: "Step-by-Step: Creating an Opportunity",
+          content: `<h3>Manual Creation</h3>
+<ul><li>Navigate to <strong>Opportunities</strong> &rarr; Click <strong>+ Add Opportunity</strong></li><li>Select a <strong>Primary Contact</strong></li><li>Add <strong>Opportunity Name</strong></li><li>Select <strong>Pipeline</strong> and <strong>Stage</strong></li><li>Enter <strong>Opportunity Value</strong></li><li>Assign an <strong>Owner</strong></li><li>Add <strong>Followers</strong> if needed</li><li>Click <strong>Create</strong></li></ul>
+<h3>Editing an Opportunity</h3>
+<p>Click any opportunity card to open the detail drawer. From there you can change the stage, update the value/owner/status, add notes and attachments, set tasks and reminders, and view the full activity timeline.</p>
+<h3>Opportunity Notes</h3>
+<p>Notes are critical for team communication. Every note is timestamped and attributed to the user who created it. Use them to log call summaries, meeting outcomes, pricing discussions, or next steps.</p>
+<h3>FAQs</h3>
+<p><strong>Q: Can I move an opportunity to a different pipeline?</strong><br>A: Not directly &mdash; create a new one in the target pipeline and copy details.</p>
+<p><strong>Q: What if I delete a linked contact?</strong><br>A: The opportunity remains but the contact link breaks.</p>` }] },
+      { title: "Importing Opportunities", completed: false,
+        description: `<p>Bulk import opportunities from a CSV or spreadsheet directly into a pipeline. Covers file format requirements, field mapping, and what to watch out for.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Test with 5&ndash;10 rows first. Opportunity imports are NOT reversible.</p>`,
+        accordions: [{ title: "Bulk Import Guide",
+          content: `<h3>How to Import</h3>
+<ul><li>Navigate to <strong>Opportunities &rarr; Import</strong></li><li>Select <strong>Opportunities</strong> as the import type</li><li>Upload your CSV or Excel file</li><li>Map file columns to Opportunity fields</li><li>Verify on the review screen</li><li>Click <strong>Start Bulk Import</strong></li></ul>
+<h3>Required Fields</h3>
+<ul><li><strong>Contact ID</strong> (export contacts first to get IDs)</li><li><strong>Opportunity Name</strong></li><li><strong>Pipeline ID or Pipeline Name</strong></li></ul>
+<h3>File Requirements</h3>
+<ul><li>Supported formats: CSV, XLS, XLSX</li><li>First row must be column headers</li><li>No special characters in headers</li><li>One opportunity per row</li></ul>
+<p><strong>Warning:</strong> Imports cannot be undone. Always test with a small batch first.</p>` }] },
+      { title: "Using Custom Fields for Opportunities", completed: false,
+        description: `<p>Track data that doesn't fit default fields &mdash; project deadlines, service categories, lead sources. Covers creating fields, choosing types, and organizing into groups.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Use dropdowns instead of text fields to keep data clean and filterable. Don't duplicate data already stored on the contact record.</p>`,
+        accordions: [{ title: "Custom Fields Reference",
+          content: `<h3>Creating Custom Fields</h3>
+<p>Go to <strong>Settings &rarr; Custom Fields &rarr; Opportunities</strong>. Click <strong>Add Field</strong>, choose your field type, select "Opportunity" as the object, enter a name, and assign to a group.</p>
+<h3>Contact vs. Opportunity Custom Fields</h3>
+<p><strong>Contact fields</strong> store personal details (lead type, birthday, referral source) and appear on the contact record. <strong>Opportunity fields</strong> store deal-specific info (budget range, urgency, timeline) and appear only on the opportunity card. Once created, a field cannot be switched between types.</p>
+<h3>Available Field Types</h3>
+<ul><li><strong>Single Line Text</strong> &mdash; Short text input</li><li><strong>Multi Line Text</strong> &mdash; Longer notes</li><li><strong>Number</strong> &mdash; Numeric values</li><li><strong>Dropdown</strong> &mdash; Single selection from predefined options (recommended)</li><li><strong>Multi Select</strong> &mdash; Multiple selections</li><li><strong>Date Picker</strong> &mdash; Calendar date selection</li><li><strong>Checkbox</strong> &mdash; Yes/No toggle</li><li><strong>File Upload</strong> &mdash; Attach documents</li></ul>
+<h3>Using Custom Fields in Workflows & Filters</h3>
+<p>Custom field values can be used as conditions in workflow triggers, filter criteria in opportunity views, data points in reports, and merge fields in email/SMS templates.</p>` }] },
+      { title: "Filtering & Searching Opportunities", completed: false,
+        description: `<p>Find deals fast with filters for stage, status, assigned user, date, value, tags, and custom fields. Covers Board View vs. List View and saving filter presets.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Create a saved filter for "My Open Opportunities" &mdash; your daily starting point.</p>`,
+        accordions: [{ title: "Search & Filter Reference",
+          content: `<h3>Searching</h3>
+<p>The search bar at the top of the Opportunities page lets you search by opportunity name or contact name. Results update in real-time as you type.</p>
+<h3>Available Filters</h3>
+<ul><li><strong>Pipeline</strong> &mdash; Show from a specific pipeline</li><li><strong>Stage</strong> &mdash; One or more specific stages</li><li><strong>Status</strong> &mdash; Open, Won, Lost, or Abandoned</li><li><strong>Assigned User</strong> &mdash; Filter by owner</li><li><strong>Date Range</strong> &mdash; By created or last updated date</li><li><strong>Value Range</strong> &mdash; By monetary value</li><li><strong>Tags</strong> &mdash; By applied tags</li><li><strong>Custom Fields</strong> &mdash; By any custom field value</li></ul>
+<h3>Board View vs. List View</h3>
+<p><strong>Board (Kanban)</strong> &mdash; Visual cards organized by stage. Great for drag-and-drop management and seeing the big picture.</p>
+<p><strong>List</strong> &mdash; Table format with sortable columns. Best for scanning large datasets, exporting, and bulk actions.</p>
+<h3>Useful Saved Filter Presets</h3>
+<ul><li>"My Open Deals" &mdash; Status: Open + Assigned: You</li><li>"Stale Opportunities" &mdash; Last Updated: 30+ days ago</li><li>"High Value" &mdash; Value over $5,000 + Status: Open</li></ul>` }] },
+      { title: "Automating Opportunities with Workflows", completed: false,
+        description: `<p>Trigger workflows on opportunity events &mdash; created, stage-changed, won, lost. Also use workflow actions to auto-create opportunities, move stages, or update values.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Most common CRST automation: estimate form &rarr; auto-create opportunity &rarr; assign team member. Always test with a test contact first.</p>`,
+        accordions: [{ title: "Opportunity Workflow Triggers & Actions",
+          content: `<h3>Available Triggers</h3>
+<ul><li><strong>Opportunity Created</strong> &mdash; Fires when any new opportunity is added</li><li><strong>Opportunity Stage Changed</strong> &mdash; Fires when an opportunity moves stages</li><li><strong>Opportunity Status Changed</strong> &mdash; Fires when status changes (Open &rarr; Won, etc.)</li><li><strong>Opportunity Changed</strong> &mdash; Fires on any modification (value, stage, assignment, custom field)</li><li><strong>Opportunity Value Changed</strong> &mdash; Fires when monetary value is updated</li><li><strong>Opportunity Assigned User Changed</strong> &mdash; Fires when owner is reassigned</li></ul>
+<h3>Available Actions</h3>
+<ul><li><strong>Create/Update Opportunity</strong> &mdash; Set Pipeline, Stage, Status, Value, Owner</li><li><strong>Move Opportunity to Stage</strong> &mdash; Advance a deal automatically</li><li><strong>Update Opportunity Status</strong> &mdash; Set to Open, Won, Lost, or Abandoned</li></ul>
+<h3>The Multiple Opportunities Toggle</h3>
+<p>Enable "Allow Multiple Opportunities" if one contact can have multiple active deals. Otherwise, the workflow updates the existing opportunity.</p>
+<h3>Trigger Filters</h3>
+<p>Narrow triggers using filters: Assigned To, Has Tag, Lead Value Change, Lost Reason, Pipeline, and Stage. This ensures automations only fire for specific scenarios.</p>` }] },
+      { title: "Bulk Actions for Opportunities", completed: false,
+        description: `<p>Update many opportunities at once &mdash; stage changes, owner reassignment, status updates, deletion. Covers selecting, available actions, and safety best practices.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Always filter first, review, THEN apply. Never bulk-edit from an unfiltered view. Bulk deletions cannot be undone.</p>`,
+        accordions: [{ title: "Bulk Actions Reference",
+          content: `<h3>How to Use</h3>
+<ul><li>Navigate to <strong>Opportunities &rarr; List View</strong></li><li>Select opportunities using checkboxes (individually or "Select All")</li><li>Bulk action toolbar appears at the top</li><li>Choose action, configure, and confirm</li></ul>
+<h3>Available Bulk Actions</h3>
+<ul><li><strong>Change Stage</strong> &mdash; Move selected to a different stage</li><li><strong>Change Status</strong> &mdash; Set all to Open, Won, Lost, or Abandoned</li><li><strong>Reassign Owner</strong> &mdash; Change assigned user</li><li><strong>Delete</strong> &mdash; Permanently remove (cannot be undone)</li><li><strong>Update Custom Fields</strong> &mdash; Bulk update any custom field value</li></ul>
+<h3>Monitoring</h3>
+<p>After submitting a bulk action, navigate to the Bulk Actions page to monitor progress. Large batches may take a few minutes.</p>` }] },
+      { title: "Pipeline Reporting & Dashboards", completed: false,
+        description: `<p>Read pipeline reports &mdash; total value, conversion rates, average time in stage, win/loss ratios. Add pipeline widgets to your dashboard for at-a-glance metrics.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Check weekly &mdash; look for deals stuck in the same stage too long. Conversion drops between stages signal process problems.</p>`,
+        accordions: [{ title: "Dashboard & Reporting Reference",
+          content: `<h3>Pipeline Widgets</h3>
+<ul><li><strong>Pipeline Value</strong> &mdash; Total open opportunity value</li><li><strong>Conversion Rate</strong> &mdash; Stage-to-stage progression</li><li><strong>Funnel</strong> &mdash; Visual stage distribution</li><li><strong>Pie Chart</strong> &mdash; Proportional breakdown</li><li><strong>Won vs. Lost</strong> &mdash; Outcome comparison over time</li></ul>
+<h3>Adding Widgets</h3>
+<ul><li>Navigate to <strong>Dashboard</strong></li><li>Click <strong>Edit &rarr; Add Widget</strong></li><li>Select a pipeline widget type</li><li>Choose pipeline and date range</li><li>Save and arrange</li></ul>
+<h3>Key Metrics to Track</h3>
+<ul><li>Total Pipeline Value</li><li>Average Deal Size</li><li>Average Time in Stage</li><li>Stage-to-Stage Conversion</li><li>Win Rate</li><li>Sales Cycle Length</li></ul>
+<h3>Visibility Controls</h3>
+<p>When editing a pipeline, toggle visibility for each stage in dashboard funnel and pie charts. Stages toggled off won't appear in reporting but still function normally.</p>` }] }
+    ]
+  },
+  m3: {
+    currentLesson: 0,
+    lessons: [
+      { title: "Introduction to Workflows", completed: false,
+        description: `<p>Workflows are the automation engine of CRST Web. They let you build "if this, then that" sequences that fire automatically based on triggers. This lesson introduces how workflows work, the builder interface, and the difference between triggers and actions.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Think of workflows as your digital employee &mdash; they handle the repetitive follow-up so your team can focus on closing deals.</p>`,
+        accordions: [{ title: "Workflows Overview",
+          content: `<h3>What is a Workflow?</h3>
+<p>A workflow is a chronological list of tasks triggered by a specific event. When the trigger fires, CRST Web executes each action in order &mdash; sending emails, SMS, updating records, creating tasks, and more.</p>
+<h3>Key Concepts</h3>
+<ul><li><strong>Trigger</strong> &mdash; The event that starts the workflow (form submitted, tag added, stage changed)</li>
+<li><strong>Action</strong> &mdash; What happens after the trigger (send email, send SMS, wait, create opportunity)</li>
+<li><strong>Conditions/Filters</strong> &mdash; Rules that control which contacts flow through (if/else branching)</li>
+<li><strong>Wait Steps</strong> &mdash; Delays between actions (wait 5 minutes, wait until Monday)</li></ul>
+<h3>Draft vs. Published</h3>
+<p>Workflows start in Draft mode &mdash; they only run on live contacts when toggled to Published. Always test before publishing.</p>
+<h3>Multi-Workflow Strategy</h3>
+<p>Complex sales processes often use multiple workflows working together &mdash; one per pipeline stage. The new workflow removes the contact from the previous workflow to prevent unrelated actions from firing out of turn.</p>` }] },
+      { title: "Building Your First Workflow", completed: false,
+        description: `<p>Step-by-step walkthrough of creating a workflow from scratch &mdash; choosing a trigger, adding actions, setting wait steps, adding conditions, and publishing.</p>`,
+        accordions: [{ title: "Step-by-Step: Creating a Workflow",
+          content: `<h3>Steps</h3>
+<ul><li>Go to <strong>Automation &rarr; Workflows</strong></li><li>Click <strong>+ Create Workflow</strong></li><li>Choose <strong>Start from Scratch</strong> or select a recipe/template</li><li>Add a <strong>Trigger</strong> (e.g., Form Submitted)</li><li>Add <strong>Actions</strong> below the trigger (Send Email, Wait, Send SMS, etc.)</li><li>Use <strong>If/Else</strong> branches for conditional logic</li><li>Click <strong>Save</strong></li><li>Use <strong>Test Workflow</strong> button with a test contact</li><li>Toggle from Draft to <strong>Published</strong></li></ul>
+<h3>Workflow Recipes</h3>
+<p>CRST Web includes pre-built workflow recipes (templates) that provide a ready-to-use structure you can customize. These are great starting points for common automations like lead follow-up, appointment reminders, and review requests.</p>` }] },
+      { title: "Workflow Triggers Explained", completed: false,
+        description: `<p>Deep dive into every available trigger category &mdash; CRM, appointment, opportunity, form/survey, payment, and more. Know which trigger to use for which scenario.</p>`,
+        accordions: [{ title: "Trigger Categories",
+          content: `<h3>CRM Triggers</h3>
+<ul><li><strong>Contact Created</strong> &mdash; New contact added to CRM</li><li><strong>Contact Changed</strong> &mdash; Any contact field is updated</li><li><strong>Contact Tag Added/Removed</strong> &mdash; Tag is applied or removed</li><li><strong>Contact DND</strong> &mdash; Do Not Disturb status changes</li><li><strong>Note Added</strong> &mdash; A note is added to a contact record</li></ul>
+<h3>Appointment Triggers</h3>
+<ul><li><strong>Appointment Booked</strong> &mdash; New booking created</li><li><strong>Appointment Status Changed</strong> &mdash; Confirmed, showed, no-showed</li><li><strong>Appointment Cancelled</strong></li></ul>
+<h3>Opportunity Triggers</h3>
+<ul><li><strong>Opportunity Created / Changed / Status Changed</strong></li><li><strong>Opportunity Value Changed</strong></li></ul>
+<h3>Form & Survey Triggers</h3>
+<ul><li><strong>Form Submitted / Survey Submitted</strong></li><li><strong>Chat Widget Message</strong></li></ul>
+<h3>Communication Triggers</h3>
+<ul><li><strong>Customer Replied</strong> &mdash; Reply on any channel</li><li><strong>Email Events</strong> &mdash; Delivered, opened, clicked, bounced, spam, unsubscribe</li><li><strong>Trigger Link Clicked</strong></li></ul>
+<h3>Payment Triggers</h3>
+<ul><li><strong>Invoice Paid / Subscription Created / Payment Failed</strong></li></ul>
+<h3>Advanced Triggers</h3>
+<ul><li><strong>Inbound Webhook</strong> &mdash; Data received at workflow's webhook URL</li><li><strong>Scheduler</strong> &mdash; Time-based, contactless trigger (hourly/daily/weekly/monthly)</li><li><strong>Custom Trigger</strong> &mdash; For non-standard events</li></ul>` }] },
+      { title: "Workflow Actions Explained", completed: false,
+        description: `<p>Every action you can use &mdash; communication, CRM, internal, and logic actions. Understand what each does and when to use it.</p>`,
+        accordions: [{ title: "Action Categories",
+          content: `<h3>Communication Actions</h3>
+<ul><li><strong>Send Email</strong> &mdash; Automated email with merge fields</li><li><strong>Send SMS</strong> &mdash; Text message to contact</li><li><strong>Send Voicemail Drop</strong> &mdash; Pre-recorded voicemail without ringing</li><li><strong>Send to Messenger</strong> &mdash; Facebook Messenger message</li><li><strong>Send Review Request</strong> &mdash; Automated review request via SMS or email</li></ul>
+<h3>CRM Actions</h3>
+<ul><li><strong>Add/Remove Tag</strong></li><li><strong>Update Contact Field</strong> &mdash; Change any standard or custom field</li><li><strong>Create/Update Opportunity</strong></li><li><strong>Add to Workflow / Remove from Workflow</strong></li><li><strong>Add Note</strong></li></ul>
+<h3>Internal Actions</h3>
+<ul><li><strong>Assign User</strong> &mdash; Set the contact's assigned user</li><li><strong>Create Task</strong> &mdash; Assign a to-do with due date</li><li><strong>Send Internal Notification</strong> &mdash; Alert team members</li><li><strong>Manual Call / Manual SMS</strong> &mdash; Create a task for personal outreach</li></ul>
+<h3>Logic Actions</h3>
+<ul><li><strong>If/Else Branch</strong> &mdash; Conditional paths based on contact data</li><li><strong>Wait</strong> &mdash; Time delay (minutes, hours, days)</li><li><strong>Wait Until</strong> &mdash; Pause until specific date/time or condition</li><li><strong>Go To</strong> &mdash; Jump to another step in the workflow</li><li><strong>Math Operations</strong> &mdash; Calculate and update values</li></ul>
+<h3>Integration Actions</h3>
+<ul><li><strong>Webhook (Outbound)</strong> &mdash; Send data to external systems</li><li><strong>Google Sheets</strong> &mdash; Add rows to spreadsheets</li></ul>` }] },
+      { title: "If/Else Conditions & Branching", completed: false,
+        description: `<p>Build smart workflows that adapt based on contact data, behavior, or timing. Covers if/else branching, multiple conditions, and common patterns for service businesses.</p>`,
+        accordions: [{ title: "Branching Logic Reference",
+          content: `<h3>How If/Else Works</h3>
+<p>An If/Else action splits the workflow into two or more paths based on conditions you define. Contacts that match the condition follow the "If" branch. Those that don't follow the "Else" branch.</p>
+<h3>Condition Types</h3>
+<ul><li><strong>Contact field</strong> &mdash; Name, email, phone, custom fields</li><li><strong>Tag</strong> &mdash; Has or doesn't have a specific tag</li><li><strong>Opportunity</strong> &mdash; Stage, status, value, pipeline</li><li><strong>Appointment</strong> &mdash; Booked, status, calendar</li><li><strong>Time/Date</strong> &mdash; Day of week, time of day, date range</li></ul>
+<h3>AND vs. OR</h3>
+<p><strong>AND</strong> &mdash; All conditions must be true. <strong>OR</strong> &mdash; Any condition can be true.</p>
+<h3>Common Patterns</h3>
+<ul><li>If tag = "Hot Lead" &rarr; Send SMS immediately. Else &rarr; Add to email nurture sequence.</li><li>If opportunity value > $5,000 &rarr; Notify sales manager. Else &rarr; Standard follow-up.</li><li>If appointment status = "No Show" &rarr; Send re-engagement sequence.</li></ul>` }] },
+      { title: "Workflow Organization & Documentation", completed: false,
+        description: `<p>Keep your workflows clean and documented using naming conventions, folder organization, action notes, and sticky notes. Essential for team collaboration and troubleshooting.</p>`,
+        accordions: [{ title: "Organization Best Practices",
+          content: `<h3>Naming Conventions</h3>
+<p>Use clear, descriptive names that include the purpose and trigger. Examples:</p>
+<ul><li>"New Lead &rarr; SMS + Email Follow-Up"</li><li>"Appointment No-Show &rarr; Re-Engagement"</li><li>"Opportunity Won &rarr; Onboarding Sequence"</li></ul>
+<h3>Folder Organization</h3>
+<p>Group related workflows into folders by function: Lead Nurture, Appointments, Pipeline, Internal Notifications, Reviews.</p>
+<h3>Action Notes</h3>
+<p>Add notes to individual actions explaining WHY that step exists. This helps team members understand the logic months later.</p>
+<h3>Workflow Documentation</h3>
+<p>For complex multi-workflow systems, maintain a simple document that maps: which workflows exist, what triggers each one, and how they connect to each other and to your pipeline stages.</p>` }] },
+      { title: "Testing & Troubleshooting Workflows", completed: false,
+        description: `<p>How to test workflows with test contacts, read the execution log, troubleshoot common issues, and debug stuck contacts.</p>
+        <p class="mt-4 bg-teal-light rounded-lg px-4 py-3 text-sm"><strong>Pro tip:</strong> Never publish without testing. Use a test contact with your own email and phone to verify every step fires correctly.</p>`,
+        accordions: [{ title: "Testing & Debugging Guide",
+          content: `<h3>Testing Before Publishing</h3>
+<ul><li>Create a dedicated test contact with your own email and phone number</li><li>Use the <strong>Test Workflow</strong> button in the builder</li><li>Verify each action fires: check email inbox, SMS, CRM updates</li><li>Only toggle to Published after successful testing</li></ul>
+<h3>Execution Log</h3>
+<p>Every workflow has an execution log showing which contacts entered, which actions fired, where contacts are currently waiting, and any errors. Access it from the workflow's overview screen.</p>
+<h3>Common Issues</h3>
+<ul><li><strong>Contact not entering workflow</strong> &mdash; Check trigger filters, contact DND status, and whether the workflow is Published</li><li><strong>Contact stuck on a Wait step</strong> &mdash; Check wait conditions and time settings</li><li><strong>Duplicate entries</strong> &mdash; Check if multiple triggers are firing for the same event</li><li><strong>SMS/Email not sending</strong> &mdash; Check sending limits, DND settings, and contact phone/email validity</li></ul>
+<h3>Removing Contacts from a Workflow</h3>
+<p>You can manually remove contacts from a workflow's execution log, or use the "Remove from Workflow" action in another workflow to automate it.</p>` }] }
+    ]
+  },
+  m4: {
+    currentLesson: 0,
+    lessons: [
+      { title: "Calendar Types in CRST Web", completed: false,
+        description: `<p>CRST Web offers multiple calendar types &mdash; Personal, Round Robin, Class Booking, Collective, and Service. This lesson explains each type, when to use them, and how they differ.</p>`,
+        accordions: [{ title: "Calendar Types Reference",
+          content: `<h3>Personal Booking</h3>
+<p>One-on-one booking with a specific person. Shares all features with Round Robin but is limited to one team member. Ideal for individual consultations, sales calls, or coaching sessions.</p>
+<h3>Round Robin</h3>
+<p>Distributes appointments evenly among multiple team members. Ensures scheduling is fair and optimized based on availability or workload balance. Two distribution methods: <strong>Optimize for Availability</strong> (assigns to next available) or <strong>Optimize for Equal Distribution</strong> (balances load evenly).</p>
+<h3>Class Booking</h3>
+<p>Multiple participants book the same time slot. Ideal for group sessions, webinars, workshops, or training classes. Set seat limits per class to control group sizes.</p>
+<h3>Collective</h3>
+<p>Requires ALL selected team members to be available for the time slot to show as bookable. Good for joint calls, co-hosted meetings, or multi-department sessions.</p>
+<h3>Service Calendar</h3>
+<p>Purpose-built for service-based businesses. Supports variations, add-ons, multiple services, and staff-specific pricing. Best for salons, repair shops, or any business with multiple service types.</p>` }] },
+      { title: "Creating & Configuring a Calendar", completed: false,
+        description: `<p>Build a booking calendar from scratch &mdash; set availability, buffer times, minimum scheduling notice, custom fields, confirmation messages, and redirect URLs.</p>`,
+        accordions: [{ title: "Calendar Setup Guide",
+          content: `<h3>Creating a Calendar</h3>
+<ul><li>Go to <strong>Calendar Settings &rarr; Create Calendar</strong></li><li>Choose your calendar type (Personal, Round Robin, Class, Collective, Service)</li><li>Enter a <strong>Calendar Name</strong> and optional description</li><li>Set a <strong>Custom URL</strong> slug for the booking link</li><li>Configure <strong>Meeting Duration</strong> (minutes or hours)</li><li>Select <strong>Team Members</strong> (for Round Robin/Collective)</li><li>Set <strong>Booking Availability</strong> &mdash; which days/hours are open</li><li>Configure payment collection if needed</li><li>Click <strong>Save</strong></li></ul>
+<h3>Key Settings</h3>
+<ul><li><strong>Buffer Time</strong> &mdash; Gap before/after appointments (e.g., 15 min between meetings)</li><li><strong>Minimum Scheduling Notice</strong> &mdash; How far in advance someone must book</li><li><strong>Maximum Bookings Per Slot</strong> &mdash; For Class/Round Robin calendars</li><li><strong>Confirmation & Reminder Messages</strong> &mdash; Auto-send via email or SMS</li><li><strong>Custom Form Fields</strong> &mdash; Collect info at booking time</li></ul>` }] },
+      { title: "Calendar Availability Settings", completed: false,
+        description: `<p>Configure when you're available &mdash; office hours, specific days, blocked times, date-specific overrides, and how availability syncs with linked calendars.</p>`,
+        accordions: [{ title: "Availability Reference",
+          content: `<h3>Schedules (Centralized Availability)</h3>
+<p>Schedules are shared availability templates that combine weekly working hours, date-specific overrides, and staff-level time-zone settings into a single, reusable object. Instead of editing each calendar individually, attach a schedule to any calendar that should follow those hours.</p>
+<h3>Key Features</h3>
+<ul><li><strong>Weekly Working Hours</strong> &mdash; Set which days and hours you're available</li><li><strong>Date-Specific Overrides</strong> &mdash; Block specific dates (holidays, time off) or add extra availability</li><li><strong>Time Zone</strong> &mdash; Each schedule respects the staff member's time zone; the booking widget converts to the visitor's browser zone automatically</li><li><strong>Default Schedule</strong> &mdash; Set a default that auto-applies when a staff member is added to a new calendar</li></ul>
+<h3>Custom Schedules</h3>
+<p>A Custom Schedule is a one-off edit to a Schedule for a specific calendar only. Use when one calendar needs different hours than your standard schedule.</p>
+<h3>FAQ</h3>
+<p><strong>Q: Will updating a schedule cancel existing appointments?</strong><br>A: No. Existing events remain; only future open time slots update.</p>` }] },
+      { title: "Linking External Calendars", completed: false,
+        description: `<p>Connect Google Calendar, Outlook, or iCloud to sync availability and prevent double-bookings. Covers two-way sync, conflict calendars, and troubleshooting.</p>`,
+        accordions: [{ title: "Calendar Integration Guide",
+          content: `<h3>Supported Integrations</h3>
+<ul><li><strong>Google Calendar</strong> &mdash; Two-way sync</li><li><strong>Outlook / Office 365</strong></li><li><strong>iCloud Calendar</strong></li></ul>
+<h3>Conflict Calendars</h3>
+<p>Conflict calendars block time slots that are already booked on your external calendar, preventing double-bookings even when appointments are made outside CRST Web. This is the most important setting for preventing scheduling conflicts.</p>
+<h3>Important Notes</h3>
+<p>In Services View, any changes made directly on third-party calendars (Google, Outlook, iCal) will not be reflected inside CRST Web. To ensure accuracy, all updates should be made within CRST Web.</p>
+<h3>Setup</h3>
+<ul><li>Go to <strong>Settings &rarr; Integrations</strong></li><li>Connect your Google/Outlook account</li><li>Select which calendars to use as conflict calendars</li><li>Choose two-way sync if you want CRST Web bookings to appear on your external calendar</li></ul>` }] },
+      { title: "Appointment Notifications", completed: false,
+        description: `<p>Set up confirmation emails, SMS reminders, and follow-up messages for appointments. Customize timing, content, and which channels to use.</p>`,
+        accordions: [{ title: "Notification Setup",
+          content: `<h3>Types of Notifications</h3>
+<ul><li><strong>Booking Confirmation</strong> &mdash; Sent immediately when appointment is booked</li><li><strong>Reminder</strong> &mdash; Sent before the appointment (e.g., 24 hours, 1 hour before)</li><li><strong>Follow-Up</strong> &mdash; Sent after the appointment</li><li><strong>Cancellation/Reschedule</strong> &mdash; Sent when changes are made</li></ul>
+<h3>Channels</h3>
+<p>Configure notifications via Email, SMS, or both. Each can be enabled independently per calendar.</p>
+<h3>Best Practices</h3>
+<ul><li>Send a confirmation immediately after booking</li><li>Send an SMS reminder 1 hour before the appointment</li><li>Send a follow-up email after the appointment requesting a review</li><li>Use merge fields to personalize all notifications with contact name, appointment time, and location</li></ul>` }] },
+      { title: "Embedding Calendars & Booking Widgets", completed: false,
+        description: `<p>Embed your CRST Web calendar on websites, funnels, and landing pages using HTML embed code or booking widget links.</p>`,
+        accordions: [{ title: "Embedding Reference",
+          content: `<h3>Embed Options</h3>
+<ul><li><strong>Direct Link</strong> &mdash; Share the calendar URL directly via email, SMS, or social media</li><li><strong>Inline Embed</strong> &mdash; Embed the calendar directly into a page using an iframe or embed code</li><li><strong>Popup Widget</strong> &mdash; Add a floating button that opens the calendar in a popup</li></ul>
+<h3>Calendar Groups</h3>
+<p>Combine multiple calendars into a single booking link using Calendar Groups. Clients choose between team members or services from one page. Create groups under Calendar Settings &rarr; Create Group.</p>
+<h3>Widget Styles</h3>
+<p>CRST Web supports Classic and Neo widget templates. Classic shows a traditional calendar grid. Neo provides a modern, step-by-step booking flow.</p>` }] },
+      { title: "Managing Appointments & No-Shows", completed: false,
+        description: `<p>View, reschedule, cancel, and manage appointments from the calendar view. Set up automated no-show follow-ups and appointment status tracking.</p>`,
+        accordions: [{ title: "Appointment Management",
+          content: `<h3>Calendar Views</h3>
+<p>Use the Calendar View to see all appointments across calendars. Filter by calendar, group, staff, service, or category. Switch between day, week, and month views.</p>
+<h3>Appointment Statuses</h3>
+<ul><li><strong>Confirmed</strong> &mdash; Appointment is booked and confirmed</li><li><strong>Showed</strong> &mdash; Contact attended the appointment</li><li><strong>No-Show</strong> &mdash; Contact did not attend</li><li><strong>Cancelled</strong> &mdash; Appointment was cancelled</li></ul>
+<h3>Automating No-Show Follow-Up</h3>
+<p>Create a workflow with the trigger "Appointment Status Changed" filtered to "No-Show." Add actions like: send an SMS apologizing for the missed meeting, offer a reschedule link, and add a "No-Show" tag for tracking.</p>
+<h3>Best Practices</h3>
+<ul><li>Update appointment status promptly (Showed/No-Show)</li><li>Use workflow automations for consistent follow-up</li><li>Review no-show rates monthly to identify patterns</li><li>Consider requiring deposits for high no-show services</li></ul>` }] }
+    ]
+  },
+  m5: {
+    currentLesson: 0,
+    lessons: [
+      { title: "CRM Overview & Contact Records", completed: false,
+        description: `<p>Tour of the CRST Web CRM &mdash; how contact records work, what data is stored, and how contacts relate to opportunities, conversations, and appointments.</p>`,
+        accordions: [{ title: "Contact Record Anatomy",
+          content: `<h3>Key Sections</h3>
+<ul><li><strong>Contact Info</strong> &mdash; Name, email, phone, address, tags, source, assigned user</li><li><strong>Activity Timeline</strong> &mdash; Every interaction logged chronologically (calls, emails, SMS, form submissions, appointments)</li><li><strong>Opportunities</strong> &mdash; Linked deals and pipeline status</li><li><strong>Appointments</strong> &mdash; Past and upcoming bookings</li><li><strong>Tasks</strong> &mdash; Assigned to-do items with due dates</li><li><strong>Notes</strong> &mdash; Internal team notes (timestamped and attributed)</li><li><strong>Conversations</strong> &mdash; Full message history across all channels</li><li><strong>Custom Fields</strong> &mdash; Business-specific data points</li></ul>
+<h3>Collapsible Panels</h3>
+<p>Contact detail sections are collapsible so you can control how much information is visible at once. This keeps the interface clean when working with data-heavy records.</p>
+<h3>Navigation</h3>
+<p>Access contacts from <strong>Contacts</strong> in the left sidebar. The main view shows all contacts with customizable columns &mdash; add business name, lead source, pipeline stage, or tags to avoid opening individual records unnecessarily.</p>` }] },
+      { title: "Adding & Importing Contacts", completed: false,
+        description: `<p>Add contacts manually, import from CSV, or let them flow in through forms, workflows, and integrations. Covers required fields, duplicate handling, and bulk import best practices.</p>`,
+        accordions: [{ title: "Contact Import Guide",
+          content: `<h3>Manual Contact Creation</h3>
+<ul><li>Go to <strong>Contacts &rarr; + Add Contact</strong></li><li>Fill in required fields (Name, Email or Phone minimum)</li><li>Add optional fields, tags, and custom field values</li><li>Click <strong>Save</strong> or <strong>Save & Add Another</strong> for batch entry</li></ul>
+<h3>Customized Add Contact Form</h3>
+<p>Admins can customize which fields appear when creating contacts &mdash; add/remove fields, set required fields, and drag to reorder. This ensures consistent data entry across the team.</p>
+<h3>CSV Import</h3>
+<ul><li>Go to <strong>Contacts &rarr; Import</strong></li><li>Upload CSV file (first row = column headers)</li><li>Map columns to CRST Web fields (name, phone, email, custom fields)</li><li>Set duplicate handling rules (skip, overwrite, or merge)</li><li>Review and confirm</li></ul>
+<h3>Automatic Contact Creation</h3>
+<p>Contacts are automatically created when someone submits a form, books an appointment, sends a chat message, or is added through a workflow or integration.</p>` }] },
+      { title: "Tags, Custom Fields & Smart Lists", completed: false,
+        description: `<p>Organize your CRM with tags for segmentation, custom fields for extra data, and Smart Lists for dynamic filtered views that update automatically.</p>`,
+        accordions: [{ title: "CRM Organization Reference",
+          content: `<h3>Tags</h3>
+<p>Tags are labels you apply to contacts for grouping and segmentation. Use them for interests, campaigns, lead sources, or behaviors (e.g., "Hot Lead", "Direct Mail Interest", "Event Attendee"). Tags can trigger workflows, filter Smart Lists, and segment email campaigns.</p>
+<h3>Custom Fields</h3>
+<p>Store business-specific data beyond default fields. Created under <strong>Settings &rarr; Custom Fields &rarr; Contacts</strong>. Available types: text, dropdown, multi-select, date picker, checkbox, file upload, and more. Organize fields into groups for clean contact records.</p>
+<h3>Smart Lists</h3>
+<p>Smart Lists are dynamic, filter-based views of your contacts that update automatically as data changes. Unlike static lists, they always reflect current data.</p>
+<h3>Creating a Smart List</h3>
+<ul><li>Go to <strong>Contacts</strong></li><li>Apply filters (tags, custom fields, pipeline stage, activity, date ranges)</li><li>Combine filters with AND/OR logic</li><li>Save as a named Smart List (e.g., "Warm Leads &mdash; Facebook Ads")</li><li>Access anytime from tabs at the top of the Contacts view</li></ul>
+<h3>Smart List Best Practices</h3>
+<ul><li>Use clear, descriptive names that reflect the filter logic</li><li>Create recurring cleanup lists (invalid emails, missing fields)</li><li>Review and audit lists regularly as your process evolves</li><li>Smart Lists can be used as campaign recipient lists &mdash; the list is generated at send time, not when scheduled</li></ul>` }] },
+      { title: "Tasks & Notes", completed: false,
+        description: `<p>Create, assign, and manage tasks tied to contacts or opportunities. Add internal notes for team visibility. Covers due dates, reminders, and completion tracking.</p>`,
+        accordions: [{ title: "Tasks & Notes Reference",
+          content: `<h3>Tasks</h3>
+<p>Tasks are to-do items assigned to team members with due dates. They can be linked to specific contacts or opportunities.</p>
+<ul><li>Create tasks manually from a contact record or opportunity card</li><li>Create tasks automatically via workflow actions ("Create Task")</li><li>Set due dates and assignees</li><li>Track completion status</li><li>View all tasks from the Tasks section or within individual contact records</li></ul>
+<h3>Notes</h3>
+<p>Notes are internal-only text entries on contact and opportunity records. Every note is timestamped and attributed to the user who created it.</p>
+<ul><li>Use notes to log call summaries, meeting outcomes, and next steps</li><li>Notes can trigger workflows via the "Note Added" trigger</li><li>Anyone on the team can read notes &mdash; use them to maintain continuity when deals change hands</li></ul>` }] },
+      { title: "Bulk Actions for Contacts", completed: false,
+        description: `<p>Select multiple contacts and apply bulk actions &mdash; add/remove tags, update fields, add to workflows, delete, export, and more.</p>`,
+        accordions: [{ title: "Bulk Actions Reference",
+          content: `<h3>How to Use</h3>
+<ul><li>Go to <strong>Contacts</strong></li><li>Apply filters or use a Smart List to narrow your selection</li><li>Select contacts using checkboxes</li><li>Choose an action from the bulk action toolbar</li></ul>
+<h3>Available Bulk Actions</h3>
+<ul><li><strong>Add/Remove Tag</strong></li><li><strong>Add to Workflow</strong></li><li><strong>Remove from Workflow</strong></li><li><strong>Update Field</strong> &mdash; Change any standard or custom field</li><li><strong>Assign User</strong></li><li><strong>Send Review Request</strong></li><li><strong>Delete Contacts</strong> (cannot be undone)</li><li><strong>Export</strong> &mdash; Download selected contacts as CSV</li></ul>
+<h3>Safety</h3>
+<p>Always filter first, review the count, then apply. Bulk deletions are permanent and cannot be reversed. Start with a small test batch if you're unsure.</p>` }] }
+    ]
+  },
+  m6: {
+    currentLesson: 0,
+    lessons: [
+      { title: "Funnels & Websites Overview", completed: false,
+        description: `<p>CRST Web includes a full website and funnel builder. This lesson introduces the builder interface, the difference between funnels and websites, and when to use each.</p>`,
+        accordions: [{ title: "Funnels vs. Websites",
+          content: `<h3>Funnels</h3>
+<p>Multi-step pages designed for a specific conversion goal &mdash; lead capture, appointment booking, product purchase. Each step has one clear call-to-action. Best for targeted campaigns and landing pages.</p>
+<h3>Websites</h3>
+<p>Traditional multi-page websites with navigation, blog, and multiple sections. Better for overall web presence and SEO.</p>
+<h3>Shared Builder</h3>
+<p>Both use the same drag-and-drop builder with identical elements and design capabilities. The builder includes sections, rows, columns, and elements (text, images, forms, buttons, videos, etc.).</p>
+<h3>When to Use Each</h3>
+<ul><li><strong>Funnel</strong> &mdash; Running a specific campaign (e.g., free estimate landing page, webinar registration, product launch)</li><li><strong>Website</strong> &mdash; Building a full online presence with multiple pages, navigation, and blog content</li></ul>` }] },
+      { title: "Building Forms", completed: false,
+        description: `<p>Create lead capture forms with custom fields, conditional logic, file uploads, and auto-responders. Forms are the primary way new contacts enter your CRST Web CRM.</p>`,
+        accordions: [{ title: "Forms Builder Reference",
+          content: `<h3>Creating a Form</h3>
+<ul><li>Go to <strong>Sites &rarr; Forms</strong></li><li>Click <strong>+ Create Form</strong></li><li>Choose from templates (Application, Contact, Order, Registration, Subscribe) or start from scratch</li><li>Use <strong>Quick Add</strong> for common fields (Name, Email, Phone)</li><li>Add <strong>Custom Fields</strong> for business-specific data</li><li>Style fonts, spacing, borders, backgrounds, and button text</li><li>Configure confirmation behavior (message, redirect, or both)</li><li>Save and embed</li></ul>
+<h3>Conditional Logic</h3>
+<p>Show/hide fields, redirect users, display custom messages, or disqualify leads based on answers. Build rules using a 3-step logic builder: Select Field &rarr; Select State &rarr; Provide Value.</p>
+<h3>Inline Editing</h3>
+<p>Click directly on labels, placeholders, dropdown options, or button text in the builder to edit them &mdash; no need to open side panels. Changes preview instantly.</p>
+<h3>Analytics</h3>
+<p>Track form performance under <strong>Sites &rarr; Analytics</strong>. View submissions, completion rates, and drop-off points.</p>` }] },
+      { title: "Building Surveys", completed: false,
+        description: `<p>Multi-step question flows with scoring, conditional branching, jump-to logic, progress bars, and custom thank-you pages. Great for qualification, intake, and feedback.</p>`,
+        accordions: [{ title: "Surveys Reference",
+          content: `<h3>Forms vs. Surveys</h3>
+<p><strong>Forms</strong> show all fields on one page. <strong>Surveys</strong> show one question at a time (slide-by-slide) with progress tracking, branching logic, and more sophisticated conditional flows.</p>
+<h3>Survey Features</h3>
+<ul><li><strong>Multi-slide format</strong> &mdash; One question per slide</li><li><strong>Progress bar</strong> &mdash; Shows completion percentage</li><li><strong>Conditional logic</strong> &mdash; Show/hide slides, jump to specific slides, display messages, redirect, or disqualify based on answers</li><li><strong>Custom styling</strong> &mdash; Footer customization, button colors, backgrounds</li><li><strong>Custom fields</strong> &mdash; Answers map to contact custom fields automatically</li></ul>
+<h3>Use Cases</h3>
+<ul><li>Lead qualification (budget, timeline, needs assessment)</li><li>Client intake forms</li><li>Customer satisfaction surveys</li><li>Service selection quizzes</li></ul>` }] },
+      { title: "Chat Widget Setup", completed: false,
+        description: `<p>Add a live chat widget to any website. Configure business hours, auto-responses, agent assignment, and styling. Chat messages flow into the Conversations Tab.</p>`,
+        accordions: [{ title: "Chat Widget Reference",
+          content: `<h3>Setup</h3>
+<ul><li>Go to <strong>Sites &rarr; Chat Widget</strong></li><li>Configure widget appearance (colors, position, greeting message)</li><li>Set business hours (messages outside hours get auto-responses)</li><li>Configure agent assignment rules</li><li>Copy the embed code and add to your website</li></ul>
+<h3>How It Works</h3>
+<p>When a visitor starts a chat, their message appears in the CRST Web Conversations Tab. If they provide their name and contact info, a contact record is automatically created. All chat messages are threaded in the conversation history alongside SMS, email, and other channels.</p>
+<h3>Auto-Responses</h3>
+<p>Set automatic greeting messages and out-of-hours responses. Use these to collect visitor info (name, email, phone) before a team member responds.</p>` }] },
+      { title: "Domain & DNS Setup", completed: false,
+        description: `<p>Connect your custom domain to CRST Web funnels, websites, and client portals. Covers DNS records, SSL certificates, and subdomain configuration.</p>`,
+        accordions: [{ title: "Domain Setup Guide",
+          content: `<h3>Adding a Custom Domain</h3>
+<ul><li>Go to <strong>Settings &rarr; Custom Domains</strong></li><li>Enter your domain or subdomain</li><li>Update DNS records at your domain registrar (CNAME or A record)</li><li>Wait for DNS propagation (can take up to 48 hours)</li><li>SSL certificate is automatically provisioned once DNS is verified</li></ul>
+<h3>Subdomains</h3>
+<p>Use subdomains for different purposes: <code>book.yourdomain.com</code> for calendars, <code>app.yourdomain.com</code> for client portals, <code>go.yourdomain.com</code> for funnels.</p>
+<h3>Troubleshooting</h3>
+<ul><li><strong>Domain not connecting</strong> &mdash; Double-check DNS record values and wait for propagation</li><li><strong>SSL not working</strong> &mdash; Ensure DNS is properly pointed; SSL auto-provisions within minutes of verification</li><li><strong>Old site still showing</strong> &mdash; Clear browser cache or try incognito mode</li></ul>` }] }
+    ]
+  },
+  m7: {
+    currentLesson: 0,
+    lessons: [
+      { title: "Payment Setup & Stripe Integration", completed: false,
+        description: `<p>Connect Stripe to your CRST Web account to accept payments. Covers setup, payment methods, and account configuration.</p>`,
+        accordions: [{ title: "Stripe Setup Guide",
+          content: `<h3>Connecting Stripe</h3>
+<ul><li>Go to <strong>Payments &rarr; Integrations</strong></li><li>Click <strong>Connect with Stripe</strong></li><li>Log into your Stripe account and authorize</li><li>Stripe is now connected to your CRST Web sub-account</li></ul>
+<h3>Managing Payment Methods</h3>
+<p>You can manage which payment methods (credit cards, Apple Pay, Google Pay, ACH Direct Debit, etc.) are available for each channel directly inside CRST Web under <strong>Payments &rarr; Integrations &rarr; Manage</strong>.</p>
+<h3>Payment Method Channels</h3>
+<ul><li><strong>Invoice</strong> &mdash; One-time invoices and Text-to-Pay links</li><li><strong>Invoice with Autopayment</strong> &mdash; Recurring invoices with auto-pay</li><li><strong>Order Forms</strong> &mdash; Checkout pages in funnels</li><li><strong>Subscriptions</strong> &mdash; Recurring product billing</li></ul>
+<h3>Important Notes</h3>
+<p>Each sub-account connects to one Stripe account. If managing multiple brands, use separate sub-accounts. Stripe transaction fees apply per their standard pricing.</p>` }] },
+      { title: "Creating & Managing Invoices", completed: false,
+        description: `<p>Create one-time and recurring invoices, send via email or SMS, track payment status, and set up automatic payment reminders.</p>`,
+        accordions: [{ title: "Invoicing Guide",
+          content: `<h3>Creating an Invoice</h3>
+<ul><li>Go to <strong>Payments &rarr; Invoices</strong></li><li>Click <strong>+ New &rarr; New Invoice</strong></li><li>Edit the "From" info (your business details, logo)</li><li>Add the client (must be an existing contact)</li><li>Set invoice number, issue date, and due date</li><li>Click <strong>Add Item</strong> to add products/services</li><li>Apply discounts, tax, or late fees if needed</li><li>Click <strong>Send</strong> &mdash; choose email or SMS delivery</li></ul>
+<h3>Recurring Invoices</h3>
+<p>Select "Recurring Invoice" when creating. Set the billing interval (weekly, monthly, yearly) and duration. Enable auto-pay to charge the client's saved payment method automatically.</p>
+<h3>Manual Payment Recording</h3>
+<p>For payments collected outside CRST Web (cash, check, bank transfer), use the "Record Payment" option on any invoice to log it without Stripe.</p>
+<h3>Payment Reminders</h3>
+<p>Set up automated email or SMS reminders for unpaid invoices. Customize the number of reminders, timing, and message content.</p>` }] },
+      { title: "Payment Links & Text-to-Pay", completed: false,
+        description: `<p>Generate shareable payment links for quick transactions. Send Text-to-Pay links via SMS so clients can pay from their phone in seconds.</p>`,
+        accordions: [{ title: "Text-to-Pay Guide",
+          content: `<h3>Prerequisites</h3>
+<ul><li>Active Stripe connection</li><li>Active phone number in the sub-account</li><li>At least one active product created</li></ul>
+<h3>Sending a Text-to-Pay Link</h3>
+<ul><li>Go to <strong>Conversations</strong> and open a contact's chat</li><li>Select <strong>SMS</strong> as the channel</li><li>Click the <strong>Request Payment ($)</strong> icon</li><li>Select the product, confirm the price</li><li>Add discount or tax if needed</li><li>Set a due date</li><li>Choose Test or Live mode</li><li>Send the payment link via SMS</li></ul>
+<h3>Benefits</h3>
+<p>Text-to-Pay has higher conversion than email invoices because SMS has significantly higher open rates. Clients click the link, see a branded payment page, and pay instantly with their card, Apple Pay, or Google Pay.</p>` }] },
+      { title: "Products, Coupons & Taxes", completed: false,
+        description: `<p>Set up your product catalog, create discount coupons, and configure tax settings for invoices and order forms.</p>`,
+        accordions: [{ title: "Products & Pricing Reference",
+          content: `<h3>Creating Products</h3>
+<ul><li>Go to <strong>Payments &rarr; Products</strong></li><li>Click <strong>+ Add Product</strong></li><li>Enter product name, description, and image</li><li>Set pricing type: <strong>One-Time</strong> or <strong>Recurring</strong></li><li>For recurring, choose billing interval (monthly, yearly, custom)</li><li>Save the product</li></ul>
+<h3>Coupons</h3>
+<p>Create discount codes that clients can apply at checkout. Set as percentage or fixed amount, with optional expiration dates and usage limits.</p>
+<h3>Tax Configuration</h3>
+<p>Configure tax rates under Payments settings. For US-based businesses, CRST Web has an automatic tax calculator based on tax category and nexus state. For other regions, manually add tax rates for each applicable location.</p>` }] },
+      { title: "Subscriptions & Recurring Payments", completed: false,
+        description: `<p>Set up recurring billing, manage active subscriptions, handle failed payment retries, and track subscription revenue.</p>`,
+        accordions: [{ title: "Subscriptions Reference",
+          content: `<h3>Creating a Subscription Product</h3>
+<ul><li>Go to <strong>Payments &rarr; Products</strong></li><li>Create a product with <strong>Recurring</strong> pricing type</li><li>Set billing interval and amount</li><li>Add to an order form, funnel page, or invoice</li></ul>
+<h3>Managing Subscriptions</h3>
+<ul><li>View active subscriptions under <strong>Payments &rarr; Subscriptions</strong></li><li>See linked contacts and payment histories</li><li>Cancel or pause subscriptions when needed</li><li>Track failed payments and retry status</li></ul>
+<h3>Failed Payment Handling</h3>
+<p>When a subscription payment fails, Stripe automatically retries based on your retry settings. Use workflow triggers ("Payment Failed") to send automated follow-up messages to the client about updating their payment method.</p>
+<h3>Automation Integration</h3>
+<p>Use payment triggers in workflows: Subscription Created, Payment Received, Payment Failed. This enables automated onboarding sequences, access provisioning, and dunning campaigns.</p>` }] }
+    ]
+  },
+  m8: {
+    currentLesson: 0,
+    lessons: [
+      { title: "Dashboard Overview & Navigation", completed: false,
+        description: `<p>Tour of the CRST Web dashboard &mdash; default widgets, how data flows in, and what you can see at a glance. The dashboard is your daily command center.</p>`,
+        accordions: [{ title: "Dashboard Basics",
+          content: `<h3>What is the Dashboard?</h3>
+<p>The Dashboard is a configurable analytics space where you can track KPIs from contacts, appointments, opportunities, calls, revenue, and more. You control the layout, widgets, metrics, and even the look and feel.</p>
+<h3>Key Features</h3>
+<ul><li><strong>Multiple Dashboards</strong> &mdash; Create dedicated dashboards for Sales, Marketing, Finance, or any team</li><li><strong>Custom Widgets</strong> &mdash; Add, edit, and update metrics with unlimited flexibility</li><li><strong>Scheduled Reports</strong> &mdash; Deliver reports automatically to your team</li><li><strong>Themes & Customization</strong> &mdash; Match your brand colors and style</li></ul>
+<h3>Widget Categories</h3>
+<ul><li><strong>Contacts</strong> &mdash; Count, by tags, by activity, by type</li><li><strong>Opportunities</strong> &mdash; Pipeline value, conversion rate, funnel, won vs. lost</li><li><strong>Appointments</strong> &mdash; Booked, completed, no-shows</li><li><strong>Revenue</strong> &mdash; Payment tracking, subscription metrics</li><li><strong>Ads</strong> &mdash; Google Ads and Meta (Facebook/Instagram) Ads performance</li><li><strong>Google Analytics</strong> &mdash; Users, sessions, engagement, traffic sources</li></ul>` }] },
+      { title: "Creating Custom Dashboards", completed: false,
+        description: `<p>Build custom dashboards tailored to your role &mdash; add widgets, configure data sources, set date ranges, and share with team members.</p>`,
+        accordions: [{ title: "Custom Dashboard Guide",
+          content: `<h3>Creating a Dashboard</h3>
+<ul><li>Navigate to <strong>Dashboard</strong></li><li>Click the Dashboard menu &rarr; <strong>+ Add Dashboard</strong></li><li>Name it (e.g., "Sales Dashboard")</li><li>Set <strong>Private</strong> (only you) or <strong>For Everyone</strong> (shared)</li><li>Click <strong>Confirm</strong></li></ul>
+<h3>Adding Widgets</h3>
+<ul><li>Click <strong>Edit (pencil icon) &rarr; + Add Widget</strong></li><li>Choose chart type (Numeric, Donut, Line, Bar, Horizontal Bar, Table)</li><li>Select widget category and specific metric</li><li>Configure: Title, Metrics, Group By, Date Range, Conditions</li><li>Click <strong>Save</strong></li></ul>
+<h3>Customizing Widgets</h3>
+<p>Each widget supports: title rename, metric selection, chart type switching, date range override, filter conditions (AND/OR grouping), comparison date property, result sorting and limits, and theme/color customization.</p>
+<h3>Quick Start</h3>
+<p>When a dashboard is blank, use the Quick Start options: select from "Top Used Widgets" or set a goal, and CRST Web suggests relevant widgets to add instantly.</p>` }] },
+      { title: "Tracking & Attribution", completed: false,
+        description: `<p>Understand where your leads come from. Covers UTM tracking, source attribution, ad reporting, and Google Analytics integration.</p>`,
+        accordions: [{ title: "Attribution Reference",
+          content: `<h3>Lead Source Tracking</h3>
+<p>CRST Web automatically tracks contact sources based on how they entered the system &mdash; form submissions, appointments, chat messages, manual imports, or integrations. This data appears on the contact record and can be used in reports and Smart Lists.</p>
+<h3>UTM Parameters</h3>
+<p>Add UTM parameters to your marketing links to track which campaigns, channels, and ads drive contacts. CRST Web captures UTM data and stores it on the contact record for attribution reporting.</p>
+<h3>Ad Platform Integration</h3>
+<p>Connect Google Ads and Meta (Facebook/Instagram) Ads to pull performance data directly into your dashboard. View clicks, conversions, spend, CTR, and top campaigns alongside CRM data.</p>
+<h3>Google Analytics Integration</h3>
+<p>Connect your GA4 property to surface website metrics (users, sessions, engagement, traffic sources, top pages) inside CRST Web dashboards &mdash; no need to switch between platforms.</p>` }] },
+      { title: "Custom Reports & Scheduling", completed: false,
+        description: `<p>Build custom reports, save templates, and schedule automated email reports to stakeholders on a daily, weekly, or monthly basis.</p>`,
+        accordions: [{ title: "Custom Reports Guide",
+          content: `<h3>Creating a Custom Report</h3>
+<ul><li>Go to <strong>Reports &rarr; Custom Reports</strong></li><li>Click <strong>Create Report</strong></li><li>Choose: Start from scratch, use a template, or convert an existing dashboard</li><li>Add a cover page with your logo, headers, and brand colors</li><li>Add widgets from the sidebar (same library as dashboards)</li><li>Add titles and section elements for organization</li><li>Apply a theme for consistent styling</li></ul>
+<h3>Scheduling Reports</h3>
+<ul><li>Set the <strong>Date Range</strong> for included data</li><li>Configure <strong>Sender Email</strong> and <strong>Subject Line</strong></li><li>Enter <strong>Recipient Email Addresses</strong> (can be non-users)</li><li>Add an optional email body message</li><li>Send a <strong>Test Email</strong> to preview</li><li>Click <strong>Save and Schedule</strong></li></ul>
+<h3>Important Notes</h3>
+<p>Report builder uses your browser's timezone. Scheduled email previews use the sub-account timezone. Ad data uses the ad account's timezone. Images and iframes appear in email previews but are not included in PDF exports.</p>` }] }
+    ]
+  },
+  m9: {
+    currentLesson: 0,
+    lessons: [
+      { title: "Review Requests Overview", completed: false,
+        description: `<p>CRST Web can automatically request Google and Facebook reviews from your customers via email and SMS. This lesson covers setup, customization, and timing best practices.</p>`,
+        accordions: [{ title: "Review Request Setup",
+          content: `<h3>How It Works</h3>
+<p>CRST Web sends a review request message (SMS or email) with a direct link to your Google Business Profile review page or custom review URL. Trigger these manually, through workflows, or automatically after key events.</p>
+<h3>Setup Wizard</h3>
+<p>New accounts see a Guided Review Setup Wizard on the Reputation Management Overview page. It walks through 6 steps: connect review platforms, create review link, send first request, enable Reviews AI, customize templates, and configure settings.</p>
+<h3>Review Link Configuration</h3>
+<ul><li>Go to <strong>Reputation &rarr; Settings &rarr; Review Link</strong></li><li><strong>Review Balancing</strong> &mdash; Toggle on to distribute review traffic across platforms</li><li><strong>Get Reviews on Google</strong> &mdash; Connect GBP to route traffic to Google</li><li><strong>Custom Link</strong> &mdash; Override with a specific URL if needed</li></ul>
+<h3>SMS Review Requests</h3>
+<ul><li>Go to <strong>Reputation &rarr; Settings &rarr; SMS Requests</strong></li><li>Toggle on automated SMS review requests</li><li>Set when to send after check-in (immediately, after delay)</li><li>Configure retry interval and maximum retries</li><li>Create or select SMS templates</li></ul>
+<h3>Email Review Requests</h3>
+<p>Same configuration under Reputation &rarr; Settings &rarr; Email Requests. Customize templates with your branding and review link.</p>
+<h3>Best Practices</h3>
+<ul><li>Send requests immediately after completing a service while the experience is fresh</li><li>Use personalized messages with the client's name</li><li>SMS has higher open rates than email &mdash; prioritize it</li><li>Follow up once if no response, but don't over-request</li></ul>` }] },
+      { title: "Google Business Profile Integration", completed: false,
+        description: `<p>Connect your Google Business Profile to CRST Web. Monitor reviews, respond directly from the platform, and track your reputation score over time.</p>`,
+        accordions: [{ title: "GBP Integration Guide",
+          content: `<h3>Connecting Your Google Business Profile</h3>
+<ul><li>Go to <strong>Settings &rarr; Integrations</strong></li><li>Find <strong>Google Business Profile</strong> and click <strong>Connect</strong></li><li>Sign in with the Google account that has Owner or Manager access</li><li>Select the correct business location from the list</li><li>Optionally toggle on <strong>GBP Call Tracking</strong></li><li>Click <strong>Connect</strong> to finalize</li></ul>
+<h3>What the Integration Enables</h3>
+<ul><li><strong>Review Monitoring</strong> &mdash; New reviews automatically appear in your Reputation dashboard</li><li><strong>Direct Response</strong> &mdash; Reply to Google reviews without leaving CRST Web</li><li><strong>GBP Messages</strong> &mdash; Customer messages from Google flow into the Conversations Tab</li><li><strong>Lead Attribution</strong> &mdash; Contacts from GBP are tagged with "Google My Business" source</li><li><strong>Reputation Tracking</strong> &mdash; Monitor average rating, review volume, and trends over time</li></ul>
+<h3>Multi-Location Support</h3>
+<p>You can connect multiple GBP locations to the same sub-account. CRST Web stores review and message data per location while keeping all activity centralized.</p>
+<h3>Reviews AI</h3>
+<p>Enable Reviews AI to generate automated responses to customer reviews. Choose between <strong>Suggestive Mode</strong> (AI drafts, you approve) or <strong>Auto-Pilot Mode</strong> (AI responds automatically).</p>` }] },
+      { title: "Automating Review Requests in Workflows", completed: false,
+        description: `<p>Build workflows that automatically request reviews at the perfect moment &mdash; after project completion, invoice payment, or when an opportunity is marked as Won.</p>`,
+        accordions: [{ title: "Review Automation Examples",
+          content: `<h3>Using the Review Request Action</h3>
+<p>In any workflow, add the <strong>Send Review Request</strong> action. This sends the configured review request template to the contact via SMS or email.</p>
+<h3>Example: Review After Opportunity Won</h3>
+<ul><li>Trigger: <strong>Opportunity Status Changed</strong> &rarr; Filter: Status = Won</li><li>Action: <strong>Wait</strong> &rarr; 2 hours (let the client experience the service first)</li><li>Action: <strong>Send Review Request</strong> via SMS</li><li>Action: <strong>Wait</strong> &rarr; 3 days</li><li>Action: <strong>If/Else</strong> &rarr; Check if review was submitted</li><li>If no review: <strong>Send Review Request</strong> via Email (follow-up)</li></ul>
+<h3>Example: Review After Invoice Paid</h3>
+<ul><li>Trigger: <strong>Invoice Paid</strong></li><li>Action: <strong>Wait</strong> &rarr; 1 day</li><li>Action: <strong>Send Review Request</strong></li></ul>
+<h3>Example: Review After Appointment</h3>
+<ul><li>Trigger: <strong>Appointment Status Changed</strong> &rarr; Filter: Status = Showed</li><li>Action: <strong>Wait</strong> &rarr; 30 minutes</li><li>Action: <strong>Send Review Request</strong></li></ul>
+<h3>Tips</h3>
+<ul><li>Add a "Review Requested" tag to prevent duplicate requests</li><li>Use If/Else to check the tag before sending</li><li>Route negative feedback privately instead of to public review sites</li></ul>` }] }
+    ]
+  },
+  m10: {
+    currentLesson: 0,
+    lessons: [
+      { title: "Business Profile & Account Settings", completed: false,
+        description: `<p>Configure your CRST Web account &mdash; business name, address, phone, timezone, logo, and branding. These appear across emails, invoices, and client-facing pages.</p>`,
+        accordions: [{ title: "Account Settings Reference",
+          content: `<h3>Business Info</h3>
+<p>Go to <strong>Settings &rarr; Business Profile</strong> to configure: business name, address, phone number, website URL, timezone, and logo. This information populates automatically in invoices, emails, booking pages, and forms.</p>
+<h3>Key Settings</h3>
+<ul><li><strong>Timezone</strong> &mdash; Affects appointment scheduling, workflow timing, and reporting</li><li><strong>Logo</strong> &mdash; Appears on invoices, emails, and client-facing pages</li><li><strong>Business Hours</strong> &mdash; Used as default for chat widgets and auto-responses</li></ul>` }] },
+      { title: "User Roles & Permissions", completed: false,
+        description: `<p>Add team members, set roles, and configure who can see and edit what across the platform.</p>`,
+        accordions: [{ title: "Roles & Permissions Reference",
+          content: `<h3>Admin vs. User</h3>
+<p><strong>Admin</strong> &mdash; Full access to all settings, billing, users, and data.</p>
+<p><strong>User</strong> &mdash; Access controlled by permission scopes. Can be restricted to specific features, pipelines, calendars, or contacts.</p>
+<h3>Adding a Team Member</h3>
+<ul><li>Go to <strong>Settings &rarr; My Staff</strong></li><li>Click <strong>+ Add Employee</strong></li><li>Enter name, email, phone</li><li>Set role (Admin or User)</li><li>Configure permission scopes</li><li>Send invitation</li></ul>
+<h3>Permission Scopes</h3>
+<ul><li><strong>Contacts</strong> &mdash; View, edit, delete, export</li><li><strong>Opportunities</strong> &mdash; View, edit, delete</li><li><strong>Conversations</strong> &mdash; View, send messages</li><li><strong>Workflows</strong> &mdash; View, create, publish</li><li><strong>Calendars</strong> &mdash; View, create, manage</li><li><strong>Reporting</strong> &mdash; View dashboards</li><li><strong>Settings</strong> &mdash; Manage account settings</li></ul>
+<h3>Best Practice</h3>
+<p>Give team members the minimum permissions needed for their role. Admins should be limited to account owners and operations managers.</p>` }] },
+      { title: "Phone Numbers & Call Settings", completed: false,
+        description: `<p>Set up phone numbers for SMS, call tracking, and voicemail. Configure forwarding, inbound routing, timeout settings, and call recording.</p>`,
+        accordions: [{ title: "Phone Configuration Guide",
+          content: `<h3>Getting a Phone Number</h3>
+<ul><li>Go to <strong>Settings &rarr; Phone Numbers</strong></li><li>Click <strong>+ Add Number</strong></li><li>Search by area code or location</li><li>Select and purchase a number</li></ul>
+<h3>Configuration Options</h3>
+<ul><li><strong>Forwarding Number</strong> &mdash; Where inbound calls ring (your cell, office line, etc.)</li><li><strong>Call Timeout</strong> &mdash; How long to ring before going to voicemail</li><li><strong>Voicemail</strong> &mdash; Upload a custom voicemail greeting</li><li><strong>Call Recording</strong> &mdash; Enable to record all calls (check local laws)</li><li><strong>Missed Call Text Back</strong> &mdash; Auto-send an SMS when a call is missed</li><li><strong>Whisper Message</strong> &mdash; Play a message to the agent before connecting the call</li></ul>
+<h3>SMS Configuration</h3>
+<p>The same number handles both calls and SMS. For high-volume SMS, register for A2P 10DLC compliance to ensure deliverability.</p>` }] },
+      { title: "Email & Domain Configuration", completed: false,
+        description: `<p>Set up your sending domain for email, configure authentication records (DKIM/SPF/DMARC), and manage email settings.</p>`,
+        accordions: [{ title: "Email Setup Guide",
+          content: `<h3>Sending Domain Setup</h3>
+<p>To send emails from your own domain (e.g., @yourbusiness.com), you need to configure email authentication records at your domain registrar.</p>
+<h3>Required DNS Records</h3>
+<ul><li><strong>SPF</strong> &mdash; Tells email providers which servers are allowed to send email for your domain</li><li><strong>DKIM</strong> &mdash; Adds a digital signature to verify emails haven't been tampered with</li><li><strong>DMARC</strong> &mdash; Tells providers what to do with emails that fail SPF/DKIM checks</li></ul>
+<h3>Setup Steps</h3>
+<ul><li>Go to <strong>Settings &rarr; Email Services</strong></li><li>Add your sending domain</li><li>Copy the DNS records provided</li><li>Add them at your domain registrar</li><li>Wait for verification (usually minutes to hours)</li></ul>
+<h3>Email Signatures</h3>
+<p>Configure default email signatures for each team member under their user profile. Signatures are appended to all outgoing emails.</p>` }] },
+      { title: "Integrations Overview", completed: false,
+        description: `<p>Connect external tools &mdash; Google, Facebook, Stripe, Zapier, Quickbooks, and more. This lesson covers what's available and how integrations enhance your workflows.</p>`,
+        accordions: [{ title: "Integrations Reference",
+          content: `<h3>Native Integrations</h3>
+<ul><li><strong>Google</strong> &mdash; Calendar, Business Profile, Analytics, Ads</li><li><strong>Meta (Facebook/Instagram)</strong> &mdash; Lead Ads, Messenger, Reviews, Ads reporting</li><li><strong>Stripe</strong> &mdash; Payments, invoicing, subscriptions</li><li><strong>Zoom</strong> &mdash; Meeting links for calendar bookings</li><li><strong>TikTok</strong> &mdash; Lead form submissions</li><li><strong>Shopify</strong> &mdash; E-commerce integration</li><li><strong>Quickbooks</strong> &mdash; Accounting sync</li><li><strong>WordPress</strong> &mdash; Form and chat widget embedding</li></ul>
+<h3>Third-Party Connectors</h3>
+<ul><li><strong>Zapier</strong> &mdash; Connect CRST Web to 5,000+ apps</li><li><strong>Webhooks</strong> &mdash; Send/receive data with any system that supports webhooks</li><li><strong>API</strong> &mdash; Full REST API for custom integrations</li></ul>
+<h3>Managing Integrations</h3>
+<p>Go to <strong>Settings &rarr; Integrations</strong> to view, connect, and manage all integrations. Each integration has its own connection flow and configuration options.</p>
+<h3>Best Practice</h3>
+<p>Only connect integrations you actively use. Each connected platform adds data flow complexity. Review integrations quarterly and disconnect unused ones.</p>` }] }
+    ]
+  }
+};
+
+function getModuleEl(moduleId) {
+  const num = moduleId.replace('m', '');
+  return document.getElementById('module' + num);
+}
+
+function renderSidebar(moduleId) {
+  const mod = modules[moduleId];
+  const nav = document.getElementById(`${moduleId}-lessonNav`);
+  nav.innerHTML = mod.lessons.map((l, i) => {
+    let stateClass = 'upcoming';
+    let icon = `<span class="w-5 h-5 rounded-full border-2 border-gray-300 flex-shrink-0 inline-block"></span>`;
+    if (l.completed) {
+      stateClass = 'completed';
+      icon = `<svg class="w-5 h-5 flex-shrink-0 text-complete-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>`;
+    }
+    if (i === mod.currentLesson) {
+      stateClass = 'active';
+      icon = `<svg class="w-5 h-5 flex-shrink-0 text-teal" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>`;
+    }
+    return `<button class="lesson-item ${stateClass} w-full text-left px-4 py-3 flex items-center gap-3 cursor-pointer" onclick="switchLesson('${moduleId}', ${i})">
+      ${icon}
+      <span class="lesson-label text-sm ${i === mod.currentLesson ? 'font-semibold text-teal' : ''}">${i + 1}. ${l.title}</span>
+    </button>`;
+  }).join('');
+  const completedCount = mod.lessons.filter(l => l.completed).length;
+  document.getElementById(`${moduleId}-progressLabel`).textContent = `${completedCount} of ${mod.lessons.length} complete`;
+  document.getElementById(`${moduleId}-progressBar`).style.width = `${(completedCount / mod.lessons.length) * 100}%`;
+}
+
+function renderAccordions(moduleId, lesson) {
+  const container = document.getElementById(`${moduleId}-accordion`);
+  if (!lesson.accordions || lesson.accordions.length === 0) { container.innerHTML = ''; return; }
+
+  if (moduleId === 'm1') {
+    container.innerHTML = `
+      <div class="mb-2">
+        <h3 class="text-sm font-semibold text-navy uppercase tracking-wide mb-3 flex items-center gap-2">
+          <span>&#128196;</span> Reference Guides
+        </h3>
+        ${lesson.accordions.map((a, i) => `
+          <div class="bg-white rounded-xl shadow-sm mb-3 border-l-4 border-teal overflow-hidden">
+            <button onclick="toggleAccordion('${moduleId}', ${i})" class="w-full text-left px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition">
+              <span class="font-semibold text-navy text-sm">${a.title}</span>
+              <svg class="w-5 h-5 text-gray-400 accordion-chevron" id="${moduleId}-chevron-${i}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="accordion-content" id="${moduleId}-acc-${i}">
+              <div class="px-6 pb-6 accordion-article text-sm text-text-body">${a.content}</div>
+            </div>
+          </div>
+        `).join('')}
+      </div>`;
+  } else {
+    container.innerHTML = `
+      <div class="mb-2">
+        <h3 class="text-sm font-semibold text-navy uppercase tracking-wide mb-3 flex items-center gap-2">
+          <span>&#128196;</span> Reference Guides
+        </h3>
+        ${lesson.accordions.map(a => `
+          <div class="bg-white rounded-xl shadow-sm mb-4 border-l-4 border-teal overflow-hidden">
+            <div class="px-6 py-4">
+              <h3 class="font-semibold text-navy text-base mb-3">${a.title}</h3>
+              <div class="accordion-article text-sm text-text-body">${a.content}</div>
+            </div>
+          </div>
+        `).join('')}
+      </div>`;
+  }
+}
+
+function toggleAccordion(moduleId, index) {
+  document.getElementById(`${moduleId}-acc-${index}`).classList.toggle('open');
+  document.getElementById(`${moduleId}-chevron-${index}`).classList.toggle('open');
+}
+
+function switchLesson(moduleId, index) {
+  const mod = modules[moduleId];
+
+  if (moduleId === 'm1') {
+    const video = document.getElementById('m1-videoPlayer');
+    if (video) video.pause();
+  }
+
+  mod.currentLesson = index;
+  const lesson = mod.lessons[index];
+  document.getElementById(`${moduleId}-lessonTitle`).textContent = lesson.title;
+
+  if (moduleId === 'm1') {
+    const source = document.getElementById('m1-videoSource');
+    const video = document.getElementById('m1-videoPlayer');
+    source.src = lesson.video;
+    video.load();
+  }
+
+  document.getElementById(`${moduleId}-lessonDescription`).innerHTML = lesson.description;
+  renderAccordions(moduleId, lesson);
+  renderSidebar(moduleId);
+
+  if (window.innerWidth < 769) {
+    const moduleEl = getModuleEl(moduleId);
+    const sidebar = moduleEl.querySelector('.module-sidebar');
+    if (sidebar) sidebar.classList.add('collapsed');
+  }
+
+  getModuleEl(moduleId).scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function markComplete(moduleId) {
+  const mod = modules[moduleId];
+  mod.lessons[mod.currentLesson].completed = true;
+  if (mod.currentLesson < mod.lessons.length - 1) {
+    switchLesson(moduleId, mod.currentLesson + 1);
+  } else {
+    renderSidebar(moduleId);
+    showCongrats(moduleId);
+  }
+}
+
+function nextLesson(moduleId) {
+  const mod = modules[moduleId];
+  if (mod.currentLesson < mod.lessons.length - 1) switchLesson(moduleId, mod.currentLesson + 1);
+}
+
+function toggleModuleSidebar(moduleId) {
+  const moduleEl = getModuleEl(moduleId);
+  const sidebar = moduleEl.querySelector('.module-sidebar');
+  sidebar.classList.toggle('collapsed');
+  const chevron = sidebar.querySelector('.chevron-icon');
+  chevron.style.transform = sidebar.classList.contains('collapsed') ? 'rotate(-90deg)' : 'rotate(0deg)';
+}
+
+function showCongrats(moduleId) {
+  const mod = modules[moduleId];
+  if (mod.lessons.every(l => l.completed)) {
+    const names = {m1:'Conversations Tab',m2:'Pipelines & Opportunities',m3:'Workflows & Automations',m4:'Calendars & Appointments',m5:'Contacts & CRM',m6:'Sites, Funnels & Forms',m7:'Payments & Invoicing',m8:'Dashboards & Reporting',m9:'Reputation Management & Reviews',m10:'Settings & Configuration'};
+    document.getElementById(`${moduleId}-lessonDescription`).innerHTML += `
+      <div class="mt-6 bg-green-50 border border-green-200 rounded-xl p-6 text-center">
+        <p class="text-2xl mb-2">&#127881;</p>
+        <p class="text-lg font-semibold text-green-800">Congratulations!</p>
+        <p class="text-green-700 text-sm mt-1">You've completed all ${mod.lessons.length} lesson${mod.lessons.length > 1 ? 's' : ''} in the ${names[moduleId]} training module.</p>
+      </div>`;
+  }
+}
+
+renderSidebar('m1');
+switchLesson('m1', 0);
+renderSidebar('m2');
+switchLesson('m2', 0);
+renderSidebar('m3');
+switchLesson('m3', 0);
+renderSidebar('m4');
+switchLesson('m4', 0);
+renderSidebar('m5');
+switchLesson('m5', 0);
+renderSidebar('m6');
+switchLesson('m6', 0);
+renderSidebar('m7');
+switchLesson('m7', 0);
+renderSidebar('m8');
+switchLesson('m8', 0);
+renderSidebar('m9');
+switchLesson('m9', 0);
+renderSidebar('m10');
+switchLesson('m10', 0);
+</script>
+
+</body>
+</html>

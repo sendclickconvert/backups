@@ -1,0 +1,366 @@
+/* empty css                                  */
+import { f as createAstro, g as createComponent } from '../chunks/astro/server_CTVANr5S.mjs';
+import 'kleur/colors';
+import 'clsx';
+export { renderers } from '../renderers.mjs';
+
+const $$Astro = createAstro("https://crst.net");
+const prerender = false;
+const $$ = createComponent(($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  Astro2.self = $$;
+  const { slug } = Astro2.params;
+  const path = `/${slug || ""}`;
+  const exactRedirects = {
+    "/direct-mail-new-paltz": "/service-areas/ulster-county/new-paltz",
+    "/direct-mail-kingston": "/service-areas/ulster-county/kingston",
+    "/direct-mail-poughkeepsie": "/service-areas/dutchess-county/poughkeepsie",
+    "/direct-mail-services/union-printing-for-direct-mail-materials/": "/services/union-printing",
+    "/direct-mail-services/mail-design/": "/services/graphic-design",
+    "/direct-mail-services/printing-services/": "/services/printing",
+    "/direct-mail-services/crst-web-design-and-development/": "/services/web-design",
+    "/direct-mail-services/data-lists/": "/services/data-lists",
+    "/direct-mail-services/post-office-mailing/": "/services/mailing",
+    "/direct-mail-marketing": "/services/direct-mail",
+    "/direct-mail-marketing/": "/services/direct-mail",
+    "/direct-mail-company/": "/about",
+    "/direct-mail-company/memberships/": "/about",
+    "/direct-mail-company/direct-mail-associations-memberships/": "/about",
+    "/order-online-direct-mail/": "/contact",
+    "/order-online-direct-mail": "/contact",
+    "/order-online/": "/resources/payments",
+    "/grow-your-business-with-eddm/": "/services/eddm",
+    "/crst-web-design-and-development/": "/services/web-design",
+    "/lessons-from-marketing-failure-case-study-in-tree-service-marketing/": "/resources/lessons-from-marketing-failure",
+    "/crst-daily/lessons-from-marketing-failure/": "/resources/lessons-from-marketing-failure",
+    "/b2b-data-review/": "https://blog.crst.net/",
+    "/cold-calling-using-direct-mail/": "https://blog.crst.net/",
+    "/independent-insurance-agency-a-no-bs-2024-web-direct-mail-approach/": "https://blog.crst.net/",
+    "/three-mail-piece-design-rules/": "https://blog.crst.net/",
+    "/remote-job-openings/": "/contact",
+    "/resources/usps-templates": "/usps-direct-mailer-templates",
+    "/resources/usps-templates/": "/usps-direct-mailer-templates",
+    "/resources/mailing-permits": "/direct-mail-tools/cornerstone-mailing-permits",
+    "/resources/mailing-permits/": "/direct-mail-tools/cornerstone-mailing-permits",
+    "/resources/postage-rates": "/direct-mail-tools/postage-rates",
+    "/resources/postage-rates/": "/direct-mail-tools/postage-rates",
+    "/resources/mail-forwarding/": "/direct-mail-tools/address-change",
+    "/resources/envelope-sizes/": "/guides/envelope-sizes",
+    "/direct-mail-tools/envelope-sizes": "/guides/envelope-sizes",
+    "/direct-mail-tools/envelope-sizes/": "/guides/envelope-sizes",
+    "/resources/postal-dictionary/": "/direct-mail-tools/postal-dictionary",
+    "/resources/cornerstone-mailing-permits/": "/direct-mail-tools/cornerstone-mailing-permits",
+    "/resources/non-profit-mailing": "/non-profit-mailing-application",
+    "/resources/non-profit-mailing/": "/non-profit-mailing-application",
+    "/permits-page/": "/direct-mail-tools/cornerstone-mailing-permits",
+    "/how-to-get-a-refund-on-postage": "/how-to-get-a-refund-on-postage-a-guide-to-post-office-application-to-refund-postage",
+    "/how-to-get-a-refund-on-postage/": "/how-to-get-a-refund-on-postage-a-guide-to-post-office-application-to-refund-postage",
+    "/direct-mail-case-studies/": "/case-studies",
+    "/direct-mail-case-studies/school-district-direct-mail-strategy/": "/case-studies",
+    "/case-study": "/case-studies",
+    "/case-study/retail-furniture-store/": "/case-studies/retail-furniture-store",
+    "/case-study/waste-management/": "/case-studies/waste-management",
+    "/case-study/cintas/": "/case-studies/cintas-recruitment",
+    "/case-study/cintas": "/case-studies/cintas-recruitment",
+    "/case-study/niche-insurance-general-insurance-direct-mail-marketing/": "/case-studies/niche-insurance",
+    "/case-study/republican-town-committee-caucus-electoral-cards/": "/case-studies/republican-town-committee",
+    "/case-study/chinese-menu-misprint-fix/": "/case-studies/chinese-menu-misprint",
+    "/case-study/national-magazine-at-periodical-mailing-rate-class/": "/case-studies/national-magazine-periodical",
+    "/case-study/direct-mail-strategy-for-hearing-aid-firm-lawrence-hearing/": "/case-studies/lawrence-hearing",
+    "/case-study/daughters-of-the-american-revolution/": "/case-studies/daughters-american-revolution",
+    "/case-study/national-industrial-product-recall/": "/case-studies/national-product-recall",
+    "/case-study/british-american-collegiate-association/": "/case-studies/british-american-collegiate",
+    "/case-study/benkiger-com/": "/case-studies",
+    "/case-study/broadhead-manufacturing-distribution-website/": "/case-studies",
+    "/case-study/creative-eyeglasses/": "/case-studies",
+    "/case-study/simple-handyman-carpenter-direct-mailpiece/": "/case-studies",
+    "/case-study/new-subscribers-for-a-nys-regional-newspaper/": "/case-studies",
+    "/case-study/national-organic-growers-association/": "/case-studies",
+    "/case-study/lions-club-community-appeal/": "/case-studies",
+    "/case-study/horse-academy/": "/case-studies",
+    "/case-study/historical-society-newsletters/": "/case-studies",
+    "/case-study/evergreen-contracting-services/": "/case-studies",
+    "/case-study/large-painting-contracting-firm-homeowner-via-eddm-cards/": "/case-studies",
+    "/case-study/financial-investment-firm/": "/case-studies",
+    "/case-study/architecture-engineering-firm-wall-calendar-parcels/": "/case-studies",
+    "/case-study/west-hurley-fire-department/": "/case-studies",
+    "/case-study/ems-emt-ambulance-rescue/": "/case-studies",
+    "/case-study/high-end-kitchen-bath-contractor-website/": "/case-studies",
+    "/case-study/realtors-to-reach-florida-homeowners/": "/case-studies",
+    "/case-study/sourcing-sensitive-nyc-households-with-children-data/": "/case-studies",
+    "/case-study/autism-awareness-newsletter-nonprofit/": "/case-studies",
+    "/case-study/classics-on-hudson/": "/case-studies",
+    "/case-study/case-study-thursday-institute-for-family-health-september-26-2024/": "/case-studies",
+    "/case-study/coarc-revamped-data-strategy-for-unsolicited-arc-new-member-donor-appeal/": "/case-studies",
+    "/case-study/benevolent-gerrymandering-for-a-new-york-central-school-district/": "/case-studies",
+    "/case-study/creating-marketing-annuity-with-magnetized-postcards-for-pizzeria-restaurants/": "/case-studies",
+    "/case-study/nysca-the-art-of-soliciting-new-members-and-growing-your-non-profit-volunteer-base/": "/case-studies",
+    "/case-study-category/direct-mail/case-studies/": "/case-studies",
+    "/case-study-category/direct-mail/review/": "/case-studies",
+    "/case-study-category/graphic-design/": "/case-studies",
+    "/case-study-category/printing/": "/case-studies",
+    "/case-study-category/direct-mail/page/2/": "/case-studies",
+    "/case-study-category/case-study-thursday/": "/case-studies",
+    "/crst-daily-post-category/case-study-thursday/": "/case-studies",
+    "/portfolio/": "/case-studies",
+    "/portfolio-2/": "410",
+    "/cornerstone-portfolio/": "/case-studies",
+    "/direct-mail-portfolio/": "/case-studies",
+    "/direct-mail-vs-email-comparison-and-roi-return-on-investment/": "/resources/direct-mail-vs-email-marketing",
+    "/crst-daily/direct-mail-vs-email-marketing-comparison-and-roi-return-on-investment/": "/resources/direct-mail-vs-email-marketing",
+    "/crst-daily/ship-potatoes-through-the-united-states-postal-service/": "/resources/ship-potatoes-through-usps",
+    "/crst-daily/famous-postmasters-at-the-usps/": "/resources/famous-postmasters-usps",
+    "/crst-daily/point-roberts-post-office-a-postal-oddity/": "/resources/point-roberts-post-office",
+    "/demystifying-direct-mail-common-misconceptions-and-practical-solutions/": "https://blog.crst.net/",
+    "/chicken-shipping-101/": "/resources/chicken-shipping-101",
+    // legacy WP taxonomy index pages → 410
+    "/fun-fact-friday/": "410",
+    "/fun-fact-friday": "410",
+    "/mailbox-monday": "410",
+    "/mailers-tip-tuesday": "410",
+    "/mailers-tip-tuesday/": "410",
+    "/mailbag-wednesday": "410",
+    "/mailbag-wednesday/": "410",
+    "/case-study-thursday": "410",
+    "/case-study-thursday/": "410",
+    "/category/review/": "410",
+    "/new-home-page-2/": "/",
+    "/new-home/": "/",
+    "/new-home": "410",
+    "/home-8896": "410",
+    "/home-8896/": "410",
+    "/thank-you-templates": "410",
+    "/thank-you-templates/": "410",
+    "/non-profit-database-change": "410",
+    "/non-profit-database-change/": "410",
+    "/a-": "410",
+    "/a-november-": "410",
+    "/website-terms-and-conditions/": "/terms",
+    "/web-terms/": "/terms",
+    "/website-web-development-terms-and-conditions/": "/terms",
+    "/terms-and-conditions/": "/terms",
+    "/terms-and-conditions/crst-website-web-development-terms-and-conditions/": "/terms",
+    "/contact-us/": "/contact",
+    "/informed": "/informed-delivery-review",
+    "/cart": "/services",
+    "/checkout": "/contact",
+    "/products-list": "/services",
+    "/product-details": "/services",
+    "/payments/": "/resources/payments",
+    "/paypal-payment/": "/resources/payments",
+    "/check-payment/": "/resources/payments",
+    "/venmo-payment/": "/resources/payments",
+    "/printing-partners/": "/about",
+    "/printing-partners/sherburne-news-press/": "/about",
+    "/printing-partners/copy-hut-printing/": "/about",
+    "/printing-partners/the-shipping-place-more/": "/about",
+    "/printing-partners/p-p-quickcopy-center/": "/about",
+    "/printing-partners/chatham-printing-copy-center/": "/about",
+    "/printing-partners/pro-printers/": "/about",
+    // wp-content specific asset redirects kept (legit document links)
+    "/wp-content/uploads/2023/10/4.25-x-11-EDDM-Flat-Card-Template.pdf": "/usps-direct-mailer-templates",
+    "/wp-content/uploads/2023/11/11-Envelope-Template.pdf": "/direct-mail-tools/envelope-sizes",
+    "/ancillary-service-endorsements/": "/resources/ancillary-service-endorsements",
+    "/periodicals-complete-overview/": "/resources/periodicals",
+    "/understanding-periodicals/": "/resources/understanding-periodicals",
+    "/guide-for-self-mailer-tabbing-regulations/": "/resources",
+    "/complete-friendraising-guide/": "/resources/complete-friendraising-guide",
+    "/complete-friendraising-guide": "/resources/complete-friendraising-guide",
+    "/a-november-2024-post-election-assessment-from-a-hudson-valley-political-consultant/": "https://blog.crst.net/",
+    // legacy WP tag/category individual entries → 410
+    "/tag/mail-design/": "410",
+    "/tag/overview/": "410",
+    "/tag/shipping/": "410",
+    "/category/periodicals/": "410",
+    "/category/business-to-business/": "410",
+    "/category/how-to/": "410",
+    "/crst-daily-post-tag/fun-fact-friday/": "410",
+    "/crst-daily-post-tag/mailboxmonday/": "410",
+    "/crst-daily-post-tag/hudsonvalleyny/page/2/": "410",
+    "/crst-daily-post-tag/mailboxmonday/page/2/": "410",
+    "/crst-daily-post-category/mailbag-wednesday/page/2/": "410",
+    "/mailbox-monday/page/2/": "410",
+    "/mailbox-monday/page/4/": "410",
+    "/toolbox/address-change/": "/direct-mail-tools/address-change",
+    "/tools/postal-dictionary/": "/direct-mail-tools/postal-dictionary",
+    "/tools/envelope-sizes/": "/direct-mail-tools/envelope-sizes",
+    "/direct-mail-tools/envelope": "/direct-mail-tools/envelope-sizes",
+    "/direct-mail-tools/address": "/direct-mail-tools/address-change",
+    "/direct-mail-tools": "/resources",
+    "/direct-mail-tools/mailing-letter": "/resources",
+    "/non-profit-database-change-request/": "/resources/non-profit-database-change-request",
+    // note: '/non-profit-database-change-request' (no slash) handled below — keep as resource redirect
+    "/lessons-from-marketing-failure": "/resources/lessons-from-marketing-failure",
+    "/direct-mail-vs-email-marketing": "/resources/direct-mail-vs-email-marketing",
+    "/ship-potatoes-through-usps": "/resources/ship-potatoes-through-usps",
+    "/famous-postmasters-usps": "/resources/famous-postmasters-usps",
+    "/point-roberts-post-office": "/resources/point-roberts-post-office",
+    "/postage-rates": "/direct-mail-tools/postage-rates",
+    "/mailing-permits": "/direct-mail-tools/cornerstone-mailing-permits",
+    "/postal-dictionary": "/direct-mail-tools/postal-dictionary",
+    "/online-payments": "/resources/payments",
+    "/direct-mail-services": "/services",
+    "/how-to-respond-to-a-negative-yelp-review-a-true-story": "/resources/how-to-respond-to-a-negative-yelp-review-a-true-story",
+    "/how-to-respond-to-a-negative-yelp-review-a-true-story/": "/resources/how-to-respond-to-a-negative-yelp-review-a-true-story",
+    "/team": "/about",
+    "/increase-data-quality": "410",
+    "/increase-data-quality/": "410",
+    "/category/direct-mail": "/services/direct-mail",
+    "/category/marketing": "/services/direct-mail",
+    "/category/b2b": "/services/direct-mail",
+    "/category/ancillary-endorsements": "/resources",
+    "/category/how-to": "/resources",
+    "/category/periodicals": "/services/direct-mail",
+    "/tag/direct-mail": "/services/direct-mail",
+    "/tag/b2b": "/services/direct-mail",
+    "/tag/ncoa": "/services/mailing-list-services",
+    "/tag/cold-calling": "/services/direct-mail",
+    "/tag/ps-form-3624": "/resources",
+    "/tag/rates": "/direct-mail-tools/postage-rates",
+    "/tag/how-to": "/resources",
+    "/tag/apply": "/resources",
+    "/tag/design-tips": "/resources",
+    "/crst-daily-post-tag/case-study-thursday": "410",
+    "/crst-daily-post-tag/fun-fact-friday": "410",
+    "/crst-daily-post-category/fun-fact-friday": "410",
+    "/crst-daily-post-tag/mailers-tip-tuesday": "410",
+    "/mailbox-monday/page/4": "410",
+    "/mailbox-monday/page/2": "410",
+    "/mailers-tip-tuesday/page/4": "410",
+    "/blog/page/1": "https://blog.crst.net",
+    "/blog/page/2": "https://blog.crst.net",
+    "/direct-mail-case-studies/page/3": "/case-studies",
+    "/case-study-category/direct-mail": "/case-studies",
+    "/case-study-category/direct-mail/case-studies": "/case-studies",
+    "/case-study-category/direct-mail/page/2": "/case-studies",
+    "/case-study-category/case-studies": "/case-studies",
+    // /crst-daily/* slugs that have a real CRST destination page stay as 301s.
+    // All other /crst-daily/* paths fall through to gone410Patterns → 410.
+    // (The generic blog-destination entries were removed — gone410Patterns handles them.)
+    "/blog": "https://blog.crst.net",
+    "/blog/": "https://blog.crst.net",
+    "/sitemap": "/sitemap-index.xml",
+    "/sitemap/": "/sitemap-index.xml",
+    "/sitemap.xml": "/sitemap-index.xml",
+    "/resources/address-change": "/direct-mail-tools/address-change",
+    "/resources/address-change/": "/direct-mail-tools/address-change",
+    "/chicken-shipping-101": "/resources/chicken-shipping-101",
+    "/ancillary-service-endorsements": "/resources",
+    "/guide-for-self-mailer-tabbing-regulations": "/resources",
+    "/three-mail-piece-design-rules": "/resources",
+    "/crst-better-business-bureau-a-rating": "/crst-better-business-bureau-a-direct-mailer",
+    "/direct-mail-company/memberships": "/about/memberships",
+    "/printing-partners/chatham-printing-copy-center": "/",
+    "/non-profit-database-change-request": "/resources/non-profit-database-change-request",
+    "/tools/postal-dictionary": "/direct-mail-tools/postal-dictionary",
+    "/direct-mail-services/union-printing-for-direct-mail-materials": "/services/direct-mail",
+    "/portfolio/broadhead-manufacturing-distribution-website": "/case-studies",
+    "/portfolio/national-magazine-at-periodical-mailing-rate-class": "/case-studies",
+    "/portfolio/architecture-engineering-firm-wall-calendar-parcels": "/case-studies",
+    "/portfolio/daughters-of-the-american-revolution": "/case-studies",
+    "/portfolio/ems-emt-ambulance-rescue": "/case-studies",
+    "/lessons-from-marketing-failure-case-study-in-tree-service-marketing": "/resources/lessons-from-marketing-failure",
+    "/a-november-2024-post-election-assessment-from-a-hudson-valley-political-consultant": "https://blog.crst.net/a-november-2024-post-election-assessment-from-a-hudson-valley-political-consultant/"
+  };
+  const gone410Html = `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Page Removed</title></head><body style="font-family:system-ui,sans-serif;max-width:600px;margin:80px auto;text-align:center;color:#333"><h1>This page has been removed</h1><p>The content you're looking for is no longer available.</p><p><a href="/" style="color:#1e3a5f">Return to the homepage</a></p></body></html>`;
+  const exact = exactRedirects[path] || exactRedirects[path + "/"] || exactRedirects[path.replace(/\/$/, "")];
+  if (exact) {
+    if (exact === "410") {
+      return new Response(gone410Html, { status: 410, headers: { "Content-Type": "text/html" } });
+    }
+    return Astro2.redirect(exact, 301);
+  }
+  const malformedSuffix = path.match(/^(.+?)(?:\/\/1000|\/1000)$/);
+  if (malformedSuffix) {
+    const cleanPath = malformedSuffix[1];
+    const knownClean = exactRedirects[cleanPath] || exactRedirects[cleanPath + "/"] || exactRedirects[cleanPath.replace(/\/$/, "")];
+    if (knownClean === "410") {
+      return new Response(gone410Html, { status: 410, headers: { "Content-Type": "text/html" } });
+    }
+    return Astro2.redirect(knownClean || cleanPath, 301);
+  }
+  const wpBotPaths = [
+    "/wp-login.php",
+    "/wp-admin",
+    "/xmlrpc.php",
+    "/wp-json",
+    "/sample-page",
+    "/hello-world",
+    "/uncategorized"
+  ];
+  if (wpBotPaths.some((p) => path === p || path.startsWith(p + "/") || path.startsWith(p + "?"))) {
+    return new Response(gone410Html, { status: 410, headers: { "Content-Type": "text/html" } });
+  }
+  const gone410Patterns = [
+    "/wp-content/",
+    "/wp-includes/",
+    "/wp-admin/",
+    "/category/",
+    "/tag/",
+    "/case-study-category/",
+    "/crst-daily-post-category/",
+    "/crst-daily-post-tag/",
+    "/crst-daily/",
+    "/portfolio-2/",
+    "/mailbox-monday/",
+    "/mailers-tip-tuesday/",
+    "/mailbag-wednesday/",
+    "/fun-fact-friday/",
+    "/case-study-thursday/"
+  ];
+  if (gone410Patterns.some((p) => path.startsWith(p))) {
+    return new Response(gone410Html, { status: 410, headers: { "Content-Type": "text/html" } });
+  }
+  if (path.includes("/amp/") || path === "/amp" || path.endsWith("/amp")) {
+    return new Response(gone410Html, { status: 410, headers: { "Content-Type": "text/html" } });
+  }
+  if (path.startsWith("/blog/page/")) {
+    return Astro2.redirect("https://blog.crst.net", 301);
+  }
+  if (/\/page\/\d+/.test(path)) {
+    return new Response(gone410Html, { status: 410, headers: { "Content-Type": "text/html" } });
+  }
+  if (path.endsWith("-")) {
+    return new Response(gone410Html, { status: 410, headers: { "Content-Type": "text/html" } });
+  }
+  if (path === "/case-study" || path.startsWith("/case-study/") || path.startsWith("/direct-mail-case-studies/")) {
+    return Astro2.redirect("/case-studies", 301);
+  }
+  if (path.startsWith("/portfolio/")) {
+    return Astro2.redirect("/case-studies", 301);
+  }
+  if (path.startsWith("/printing-partners/")) {
+    return Astro2.redirect("/about", 301);
+  }
+  if (path.startsWith("/services/printing/")) {
+    return Astro2.redirect("/services/printing", 301);
+  }
+  if (path.startsWith("/services/non-profit-mailing/")) {
+    return Astro2.redirect("/services/non-profit-mailing", 301);
+  }
+  if (path.startsWith("/direct-mail-services/")) {
+    return Astro2.redirect("/services", 301);
+  }
+  if (path.startsWith("/direct-mail-tools/") && path !== "/direct-mail-tools/envelope-sizes/" && path !== "/direct-mail-tools/postal-dictionary/" && path !== "/direct-mail-tools/address-change/" && path !== "/direct-mail-tools/cornerstone-mailing-permits/" && path !== "/direct-mail-tools/postage-rates/") {
+    return Astro2.redirect("/resources", 301);
+  }
+  if (path.startsWith("/author/") || path.startsWith("/feed")) {
+    return Astro2.redirect("/", 301);
+  }
+  return new Response(null, { status: 404 });
+}, "/home/runner/workspace/src/pages/[...slug].astro", void 0);
+
+const $$file = "/home/runner/workspace/src/pages/[...slug].astro";
+const $$url = "/[...slug]";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$,
+  file: $$file,
+  prerender,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

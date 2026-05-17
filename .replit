@@ -34,7 +34,7 @@ localPort = 5000
 externalPort = 80
 
 [deployment]
-run = ["sh", "-c", "npm run build && node server.mjs"]
+run = ["node", "server.mjs"]
 deploymentTarget = "vm"
 build = ["npm", "run", "build"]
 
