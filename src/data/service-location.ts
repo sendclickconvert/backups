@@ -71,7 +71,7 @@ export const SERVICE_CONFIGS: ServiceConfig[] = [
     nameInline: 'EDDM',
     pillarHref: '/services/eddm',
     h1Template: (town) => `EDDM in ${town}, NY`,
-    metaTitleTemplate: (town) => `EDDM in ${town}, NY | Every Door Direct Mail`,
+    metaTitleTemplate: (town) => `EDDM in ${town}, NY`,
     metaDescTemplate: (town, county) => `Every Door Direct Mail (EDDM) in ${town}, ${county}, NY. ${town} carrier route saturation — design, print, and deliver without a mailing list. Cornerstone Services.`,
     introTemplate: (loc, county) => {
       const s = getTownStats(loc);

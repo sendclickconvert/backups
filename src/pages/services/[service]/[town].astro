@@ -6,6 +6,7 @@ import { BUSINESS, COUNTIES } from '../../../data/site';
 import { COUNTIES_DATA } from '../../../data/locations';
 import type { Location, County } from '../../../data/locations';
 import { SERVICE_CONFIGS, ENABLED_COUNTIES, getTownStats } from '../../../data/service-location';
+import NearbyTowns from '../../../components/NearbyTowns.astro';
 
 export function getStaticPaths() {
   const paths: { params: { service: string; town: string }; props: { serviceSlug: string; location: Location; county: County } }[] = [];
@@ -298,6 +299,14 @@ const faqSchema = faqs.length > 0 ? {
       </div>
     </div>
   </section>
+
+  <NearbyTowns
+    currentSlug={location.slug}
+    countySlug={county.slug}
+    countyDisplayName={county.name}
+    basePath={`/services/${svc.slug}`}
+    serviceType={`${svc.nameInline} services`}
+  />
 
   <CTASection
     headline={`Need ${svc.name} in ${location.name}?`}

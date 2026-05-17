@@ -209,7 +209,7 @@ const graphSchema = {
                   {item.link ? <a href={item.link} class="text-crst-primary hover:underline">{item.title}</a> : item.title}
                 </h4>
                 <p class="text-sm text-navy-600/70 leading-relaxed">{item.desc}</p>
-                {item.link && <a href={item.link} class="text-xs font-heading font-semibold text-crst-primary hover:underline mt-2 inline-block">Learn more →</a>}
+                {item.link && <a href={item.link} class="text-xs font-heading font-semibold text-crst-primary hover:underline mt-2 inline-block">View {item.title} →</a>}
               </div>
             ))}
           </div>

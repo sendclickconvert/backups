@@ -7,6 +7,7 @@ import { BUSINESS, SERVICES } from '../../../data/site';
 import { COUNTIES_DATA, getAllLocations } from '../../../data/locations';
 import type { Location, County } from '../../../data/locations';
 import { townUniqueContent } from '../../../data/town-unique-content';
+import NearbyTowns from '../../../components/NearbyTowns.astro';
 
 export function getStaticPaths() {
   const paths: { params: { county: string; location: string }; props: { location: Location; county: County } }[] = [];
@@ -31,7 +32,7 @@ const nearbyLocations = county.locations
   .filter(l => l.slug !== location.slug)
   .slice(0, 8);
 
-const title = uniqueContent?.metaTitle || `Direct Mail Services in ${location.name}, ${county.name}`;
+const title = uniqueContent?.metaTitle || `${location.name} Direct Mail`;
 const description = uniqueContent?.metaDescription || `Professional direct mail, printing, and mailing services in ${location.name}, NY. ZIP ${location.zip.join(', ')} — EDDM, data lists, commercial printing. Free estimates from ${BUSINESS.name}.`;
 const h1Text = uniqueContent?.h1 || `Direct Mail Services in ${location.name}`;
 
@@ -607,27 +608,13 @@ const nearbyAreas = neighborNames
     </div>
   </section>
 
-  {nearbyAreas.length > 0 && (
-    <section class="py-14 bg-navy-50/50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl font-display font-bold text-crst-primary mb-8 text-center">Nearby Areas We Serve</h2>
-        <div class="grid sm:grid-cols-2 gap-3 max-w-2xl mx-auto">
-          {nearbyAreas.map((area) => (
-            <a
-              href={`/service-areas/${county.slug}/${area.slug}`}
-              class="flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-200 hover:border-crst-primary/30 hover:shadow-sm transition-all group"
-            >
-              <svg class="w-5 h-5 text-crst-primary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-              </svg>
-              <span class="font-heading font-semibold text-gray-800 group-hover:text-crst-primary transition-colors">Direct Mail in {area.name}</span>
-            </a>
-          ))}
-        </div>
-      </div>
-    </section>
-  )}
+  <NearbyTowns
+    currentSlug={location.slug}
+    countySlug={county.slug}
+    countyDisplayName={county.name}
+    basePath={`/service-areas/${county.slug}`}
+    serviceType="direct mail services"
+  />
 
   <CTASection
     headline={`Start Your ${location.name} Direct Mail Campaign`}

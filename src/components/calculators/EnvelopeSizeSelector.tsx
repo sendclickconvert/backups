@@ -196,7 +196,7 @@ const EnvelopeSizeSelector: React.FC = () => {
                     <p className="text-xs text-gray-500 mt-2">{rec.specifications}</p>
                     
                     <a
-                      href={`/direct-mail-tools/envelope-sizes#${rec.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
+                      href={`/guides/envelope-sizes#${rec.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
                       className="inline-block mt-3 text-sm text-blue-600 hover:text-blue-700 font-medium"
                     >
                       View Full Specs →
