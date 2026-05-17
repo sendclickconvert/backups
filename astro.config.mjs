@@ -55,7 +55,7 @@ export default defineConfig({
     tailwind(),
     react(),
     sitemap({
-      filter: (page) => !page.includes('/thank-you') && !page.includes('/training'),
+      filter: (page) => !page.includes('/thank-you') && !page.includes('/training') && !page.endsWith('/terms') && !page.includes('/resources/payments'),
     }),
   ],
   redirects: {

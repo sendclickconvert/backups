@@ -20,24 +20,21 @@ const towns = county.locations.filter(l => l.type === 'town');
 const villages = county.locations.filter(l => l.type === 'village');
 const hamlets = county.locations.filter(l => l.type === 'hamlet' || l.type === 'cdp');
 
-const countyMeta: Record<string, { title: string; description: string; featuredTowns: string[]; blogLink: string }> = {
+const countyMeta: Record<string, { title: string; description: string; featuredTowns: string[] }> = {
   'ulster-county': {
     title: 'Direct Mail Services in Ulster County NY',
     description: `CRST provides direct mail, EDDM, and commercial printing services across Ulster County NY including New Paltz, Kingston, and Saugerties. Get a free estimate.`,
     featuredTowns: ['New Paltz', 'Kingston', 'Saugerties', 'Woodstock', 'Highland', 'Marlboro'],
-    blogLink: 'https://blog.crst.net/direct-mail-services-hudson-valley-ny',
   },
   'dutchess-county': {
     title: 'Direct Mail Services in Dutchess County NY',
     description: `Direct mail, printing, and mailing services across Dutchess County NY including Poughkeepsie, Beacon, and Hyde Park. CRST — Hudson Valley's print shop since 1998.`,
     featuredTowns: ['Poughkeepsie', 'Beacon', 'Hyde Park', 'Rhinebeck', 'Wappingers Falls', 'Fishkill'],
-    blogLink: 'https://blog.crst.net/direct-mail-marketing-poughkeepsie-ny',
   },
   'orange-county': {
     title: 'Direct Mail Services in Orange County NY',
     description: `CRST delivers direct mail, EDDM, and commercial printing services across Orange County NY including Newburgh, Middletown, and Warwick. Request a free quote.`,
     featuredTowns: ['Newburgh', 'Middletown', 'Warwick', 'Goshen', 'Monroe', 'Cornwall'],
-    blogLink: 'https://blog.crst.net/direct-mail-services-hudson-valley-ny',
   },
 };
 
@@ -45,7 +42,6 @@ const meta = countyMeta[county.slug] || {
   title: `Direct Mail Services in ${county.name}, NY`,
   description: `Professional direct mail, printing, and mailing services for businesses and organizations across ${county.name}, NY. Serving ${county.locations.length} communities from our ${BUSINESS.address.city} facility.`,
   featuredTowns: county.locations.slice(0, 6).map(l => l.name),
-  blogLink: 'https://blog.crst.net/direct-mail-services-hudson-valley-ny',
 };
 
 const serviceSchema = {
