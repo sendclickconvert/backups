@@ -1,0 +1,523 @@
+{
+  "version": "0.1.20260430",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.0826 sec.",
+  "cost": 0.02036,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "05171400-1173-0272-0000-7ab80af7a785",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.0730 sec.",
+      "cost": 0.02036,
+      "result_count": 1,
+      "path": [
+        "v3",
+        "backlinks",
+        "anchors",
+        "live"
+      ],
+      "data": {
+        "api": "backlinks",
+        "function": "anchors",
+        "target": "maildatainc.com",
+        "limit": 1000,
+        "backlinks_status_type": "live",
+        "include_subdomains": true
+      },
+      "result": [
+        {
+          "target": "maildatainc.com",
+          "total_count": 12,
+          "items_count": 12,
+          "items": [
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Mail Data Inc.",
+              "rank": 54,
+              "backlinks": 1,
+              "first_seen": "2026-04-28 06:52:10 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "organization": 1
+              },
+              "referring_links_semantic_locations": {
+                "footer": 1
+              },
+              "referring_links_countries": {
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "postal optimization services",
+              "rank": 23,
+              "backlinks": 1,
+              "first_seen": "2026-03-17 08:16:38 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "org": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "article": 1
+              },
+              "referring_links_countries": {
+                "WW": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": null,
+              "rank": 23,
+              "backlinks": 4,
+              "first_seen": "2025-04-07 03:34:43 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 4,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 4,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 4,
+              "referring_subnets": 4,
+              "referring_pages": 4,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "com": 2,
+                "do": 1,
+                "org": 1
+              },
+              "referring_links_types": {
+                "image": 3,
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "noopener": 4,
+                "external": 1,
+                "nofollow": 1,
+                "noreferrer": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 2,
+                "cms": 2,
+                "organization": 1,
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 2,
+                "article": 2
+              },
+              "referring_links_countries": {
+                "": 2,
+                "DO": 1,
+                "WW": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "maildatainc.com",
+              "rank": 23,
+              "backlinks": 37,
+              "first_seen": "2023-11-13 13:06:38 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 44,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 30,
+              "referring_domains_nofollow": 9,
+              "referring_main_domains": 27,
+              "referring_main_domains_nofollow": 8,
+              "referring_ips": 20,
+              "referring_subnets": 20,
+              "referring_pages": 36,
+              "referring_pages_nofollow": 9,
+              "referring_links_tld": {
+                "com": 14,
+                "info": 4,
+                "org": 3,
+                "pages.dev": 3,
+                "pro": 2,
+                "click": 1,
+                "cloud": 1,
+                "cv": 1,
+                "fyi": 1,
+                "ga": 1
+              },
+              "referring_links_types": {
+                "anchor": 36
+              },
+              "referring_links_attributes": {
+                "nofollow": 9,
+                "noopener": 4,
+                "noreferrer": 3
+              },
+              "referring_links_platform_types": {
+                "blogs": 20,
+                "cms": 20,
+                "unknown": 9,
+                "organization": 7
+              },
+              "referring_links_semantic_locations": {
+                "": 28,
+                "section": 7,
+                "article": 1
+              },
+              "referring_links_countries": {
+                "": 23,
+                "US": 10,
+                "CV": 1,
+                "GA": 1,
+                "IN": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "analyzing real-world mailing data",
+              "rank": 0,
+              "backlinks": 2,
+              "first_seen": "2026-03-17 03:09:42 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 2,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "info": 2
+              },
+              "referring_links_types": {
+                "anchor": 2
+              },
+              "referring_links_attributes": {
+                "noopener": 2
+              },
+              "referring_links_platform_types": {
+                "organization": 2
+              },
+              "referring_links_semantic_locations": {
+                "article": 2
+              },
+              "referring_links_countries": {
+                "": 2
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "https://maildatainc.com/",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-12-19 22:28:24 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "main": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Mail List and Data Processing, Customer and Prospect Targeting",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-07-07 16:45:10 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "https://maildatainc.com \u2013 You need to Skyrocket your Ahrefs DR, Moz DA, and Majestic TF with real PBN, Guest posts, and premium backlinks\u2014competitors trust us, why not you? Pay after work! Visit SeoBoost.agency now!",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-05-14 14:41:25 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 45,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "agency": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1
+              },
+              "referring_links_semantic_locations": {
+                "main": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "https://maildatainc.com \u2013 Increase your site\u2019s backlinks and skyrocket your DA, DR, and TF with our expert SEO services\u2014authentic dofollow backlinks, guest posts, and PBN links delivered by our team. Visit BuySeoLink.com to choose a plan, enjoy our pay-after-work model, and access 24/7 support!",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-05-08 21:08:57 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 45,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "agency": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1
+              },
+              "referring_links_semantic_locations": {
+                "main": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "maildatainc.com/",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-03-06 17:00:04 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 35,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "ru": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "RU": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Visit Website",
+              "rank": 0,
+              "backlinks": 10,
+              "first_seen": "2024-05-20 16:37:05 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 5,
+              "referring_domains_nofollow": 5,
+              "referring_main_domains": 5,
+              "referring_main_domains_nofollow": 5,
+              "referring_ips": 5,
+              "referring_subnets": 5,
+              "referring_pages": 9,
+              "referring_pages_nofollow": 9,
+              "referring_links_tld": {
+                "com": 8,
+                "co": 1
+              },
+              "referring_links_types": {
+                "anchor": 8,
+                "image": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 9,
+                "noopener": 8,
+                "noreferrer": 2
+              },
+              "referring_links_platform_types": {
+                "unknown": 8,
+                "message-boards": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 6,
+                "main": 2,
+                "section": 1
+              },
+              "referring_links_countries": {
+                "US": 8,
+                "CO": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "www.maildatainc.com",
+              "rank": 0,
+              "backlinks": 2,
+              "first_seen": "2023-11-04 23:31:27 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 2,
+              "referring_domains_nofollow": 2,
+              "referring_main_domains": 2,
+              "referring_main_domains_nofollow": 2,
+              "referring_ips": 2,
+              "referring_subnets": 2,
+              "referring_pages": 2,
+              "referring_pages_nofollow": 2,
+              "referring_links_tld": {
+                "com": 2
+              },
+              "referring_links_types": {
+                "anchor": 2
+              },
+              "referring_links_attributes": {
+                "nofollow": 2
+              },
+              "referring_links_platform_types": {
+                "organization": 2
+              },
+              "referring_links_semantic_locations": {
+                "main": 2
+              },
+              "referring_links_countries": {
+                "US": 1,
+                "WW": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

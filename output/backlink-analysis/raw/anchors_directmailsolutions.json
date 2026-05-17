@@ -1,0 +1,1145 @@
+{
+  "version": "0.1.20260430",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.1704 sec.",
+  "cost": 0.02084,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "05171400-1173-0272-0000-efa29f2e006f",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.0740 sec.",
+      "cost": 0.02084,
+      "result_count": 1,
+      "path": [
+        "v3",
+        "backlinks",
+        "anchors",
+        "live"
+      ],
+      "data": {
+        "api": "backlinks",
+        "function": "anchors",
+        "target": "directmailsolutions.com",
+        "limit": 1000,
+        "backlinks_status_type": "live",
+        "include_subdomains": true
+      },
+      "result": [
+        {
+          "target": "directmailsolutions.com",
+          "total_count": 28,
+          "items_count": 28,
+          "items": [
+            {
+              "type": "backlinks_anchor",
+              "anchor": "directmailsolutions.com",
+              "rank": 60,
+              "backlinks": 53,
+              "first_seen": "2023-10-14 18:03:22 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 41,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 38,
+              "referring_domains_nofollow": 12,
+              "referring_main_domains": 36,
+              "referring_main_domains_nofollow": 12,
+              "referring_ips": 23,
+              "referring_subnets": 22,
+              "referring_pages": 51,
+              "referring_pages_nofollow": 15,
+              "referring_links_tld": {
+                "com": 16,
+                "info": 7,
+                "org": 3,
+                "pages.dev": 3,
+                "party": 3,
+                "pro": 3,
+                "eu": 2,
+                "world": 2,
+                "ai": 1,
+                "co.uk": 1
+              },
+              "referring_links_types": {
+                "anchor": 51
+              },
+              "referring_links_attributes": {
+                "nofollow": 15,
+                "noopener": 4,
+                "noreferrer": 3
+              },
+              "referring_links_platform_types": {
+                "blogs": 23,
+                "cms": 23,
+                "unknown": 16,
+                "organization": 11,
+                "message-boards": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 38,
+                "section": 11,
+                "article": 2
+              },
+              "referring_links_countries": {
+                "": 30,
+                "US": 13,
+                "AI": 1,
+                "CV": 1,
+                "DE": 1,
+                "GA": 1,
+                "GB": 1,
+                "IN": 1,
+                "RU": 1,
+                "UA": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": null,
+              "rank": 59,
+              "backlinks": 26,
+              "first_seen": "2019-10-19 18:22:12 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 12,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 10,
+              "referring_domains_nofollow": 3,
+              "referring_main_domains": 10,
+              "referring_main_domains_nofollow": 3,
+              "referring_ips": 10,
+              "referring_subnets": 10,
+              "referring_pages": 24,
+              "referring_pages_nofollow": 7,
+              "referring_links_tld": {
+                "com": 13,
+                "org": 6,
+                "ru": 5
+              },
+              "referring_links_types": {
+                "anchor": 12,
+                "image": 12
+              },
+              "referring_links_attributes": {
+                "noopener": 8,
+                "noreferrer": 8,
+                "nofollow": 7
+              },
+              "referring_links_platform_types": {
+                "organization": 13,
+                "unknown": 8,
+                "blogs": 6,
+                "cms": 6
+              },
+              "referring_links_semantic_locations": {
+                "": 15,
+                "article": 3,
+                "main": 3,
+                "section": 3
+              },
+              "referring_links_countries": {
+                "US": 13,
+                "": 5,
+                "RU": 5,
+                "RO": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "www.directmailsolutions.com",
+              "rank": 47,
+              "backlinks": 7,
+              "first_seen": "2022-06-09 11:52:30 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 1,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 6,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 6,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 6,
+              "referring_subnets": 6,
+              "referring_pages": 7,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "com": 5,
+                "co": 1,
+                "org": 1
+              },
+              "referring_links_types": {
+                "anchor": 7
+              },
+              "referring_links_attributes": {
+                "nofollow": 1,
+                "noopener": 1,
+                "noreferrer": 1
+              },
+              "referring_links_platform_types": {
+                "organization": 5,
+                "blogs": 2,
+                "cms": 2,
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "article": 4,
+                "": 1,
+                "main": 1,
+                "section": 1
+              },
+              "referring_links_countries": {
+                "US": 3,
+                "GB": 2,
+                "CO": 1,
+                "WW": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Direct Mail Solutions company website",
+              "rank": 7,
+              "backlinks": 1,
+              "first_seen": "2026-03-20 18:02:34 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "organization": 1
+              },
+              "referring_links_semantic_locations": {
+                "main": 1
+              },
+              "referring_links_countries": {
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "http://www.directmailsolutions.com/",
+              "rank": 0,
+              "backlinks": 3,
+              "first_seen": "2025-08-08 11:55:34 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 5,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 2,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 2,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 2,
+              "referring_subnets": 2,
+              "referring_pages": 2,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "com": 2
+              },
+              "referring_links_types": {
+                "anchor": 2
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "organization": 1,
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1,
+                "section": 1
+              },
+              "referring_links_countries": {
+                "": 1,
+                "WW": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "visit directmailsolutions.com for latest info",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-07-05 04:43:35 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 60,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Website",
+              "rank": 0,
+              "backlinks": 3,
+              "first_seen": "2025-06-29 19:28:53 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 2,
+              "referring_domains_nofollow": 2,
+              "referring_main_domains": 2,
+              "referring_main_domains_nofollow": 2,
+              "referring_ips": 2,
+              "referring_subnets": 2,
+              "referring_pages": 2,
+              "referring_pages_nofollow": 2,
+              "referring_links_tld": {
+                "com": 2
+              },
+              "referring_links_types": {
+                "anchor": 1,
+                "image": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 2,
+                "noopener": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 2
+              },
+              "referring_links_semantic_locations": {
+                "header": 1,
+                "section": 1
+              },
+              "referring_links_countries": {
+                "US": 2
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Visit Website",
+              "rank": 0,
+              "backlinks": 4,
+              "first_seen": "2025-06-03 01:19:28 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 2,
+              "referring_domains_nofollow": 2,
+              "referring_main_domains": 2,
+              "referring_main_domains_nofollow": 2,
+              "referring_ips": 2,
+              "referring_subnets": 2,
+              "referring_pages": 4,
+              "referring_pages_nofollow": 4,
+              "referring_links_tld": {
+                "com": 4
+              },
+              "referring_links_types": {
+                "anchor": 2,
+                "image": 2
+              },
+              "referring_links_attributes": {
+                "nofollow": 4,
+                "noopener": 4
+              },
+              "referring_links_platform_types": {
+                "unknown": 4
+              },
+              "referring_links_semantic_locations": {
+                "": 4
+              },
+              "referring_links_countries": {
+                "US": 4
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "https://directmailsolutions.com \u2013 You need to Skyrocket your Ahrefs DR, Moz DA, and Majestic TF with real PBN, Guest posts, and premium backlinks\u2014competitors trust us, why not you? Pay after work! Visit SeoBoost.agency now!",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-05-17 03:02:16 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 45,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "agency": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1
+              },
+              "referring_links_semantic_locations": {
+                "main": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Direct Mail Solutions",
+              "rank": 0,
+              "backlinks": 2,
+              "first_seen": "2025-05-12 00:43:29 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 2,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 2,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 2,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1,
+                "work": 1
+              },
+              "referring_links_types": {
+                "anchor": 2
+              },
+              "referring_links_attributes": {
+                "noopener": 2,
+                "noreferrer": 2
+              },
+              "referring_links_platform_types": {
+                "organization": 2
+              },
+              "referring_links_semantic_locations": {
+                "": 2
+              },
+              "referring_links_countries": {
+                "": 2
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "https://directmailsolutions.com \u2013 Increase your site\u2019s backlinks and skyrocket your DA, DR, and TF with our expert SEO services\u2014authentic dofollow backlinks, guest posts, and PBN links delivered by our team. Visit BuySeoLink.com to choose a plan, enjoy our pay-after-work model, and access 24/7 support!",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-05-11 11:30:33 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 45,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "agency": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1
+              },
+              "referring_links_semantic_locations": {
+                "main": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "http://www.directmailsolutions.com/jobs/",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-02-14 14:23:43 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 10,
+              "broken_backlinks": 1,
+              "broken_pages": 1,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "ugc": 1
+              },
+              "referring_links_platform_types": {
+                "message-boards": 1
+              },
+              "referring_links_semantic_locations": {
+                "article": 1
+              },
+              "referring_links_countries": {
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Sitio Web Oficial",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2024-11-12 15:57:25 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "message-boards": 1
+              },
+              "referring_links_semantic_locations": {
+                "article": 1
+              },
+              "referring_links_countries": {
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "1",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2024-09-27 08:00:39 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 5,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "noopener": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1,
+                "organization": 1
+              },
+              "referring_links_semantic_locations": {
+                "article": 1
+              },
+              "referring_links_countries": {
+                "WW": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "/connect",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2024-06-12 05:46:44 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 35,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "ru": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "RU": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "directmailsolutions.com/usps-m...",
+              "rank": 0,
+              "backlinks": 3,
+              "first_seen": "2024-06-12 05:46:44 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 35,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "ru": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "RU": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "directmailsolutions.com/employment/",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2024-06-12 05:46:44 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 35,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "ru": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "RU": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "directmailsolutions.com/",
+              "rank": 0,
+              "backlinks": 6,
+              "first_seen": "2024-06-12 05:46:44 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 35,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "ru": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "RU": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "directmailsolutions.com/dms-ma...",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2024-06-12 05:46:44 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 35,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "ru": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "RU": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "directmailsolutions.com/connect/",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2024-06-12 05:46:44 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 35,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "ru": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "RU": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "/capabilities/",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2024-06-12 05:46:44 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 35,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "ru": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "RU": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "/about-us/",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2024-06-12 05:46:44 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 35,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "ru": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "RU": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "directmailsolutions.com/equipment/",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2024-06-12 05:46:44 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 35,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "ru": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "RU": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "http://www.directmailsolutions.com",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2023-10-12 09:30:15 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1,
+                "noopener": 1
+              },
+              "referring_links_platform_types": {
+                "organization": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "River City Kids",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2023-09-06 11:22:38 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "main": 1
+              },
+              "referring_links_countries": {
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Home - Direct Mail Solutions",
+              "rank": 0,
+              "backlinks": 5,
+              "first_seen": "2022-03-11 18:37:12 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 2,
+              "referring_domains_nofollow": 2,
+              "referring_main_domains": 2,
+              "referring_main_domains_nofollow": 2,
+              "referring_ips": 2,
+              "referring_subnets": 2,
+              "referring_pages": 5,
+              "referring_pages_nofollow": 5,
+              "referring_links_tld": {
+                "com.au": 4,
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 5
+              },
+              "referring_links_attributes": {
+                "nofollow": 5
+              },
+              "referring_links_platform_types": {
+                "unknown": 5
+              },
+              "referring_links_semantic_locations": {
+                "section": 4,
+                "": 1
+              },
+              "referring_links_countries": {
+                "AU": 4,
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Employment - Direct Mail Solutions",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2022-03-11 18:37:12 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "com.au": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "section": 1
+              },
+              "referring_links_countries": {
+                "AU": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "About Us - Direct Mail Solutions",
+              "rank": 0,
+              "backlinks": 3,
+              "first_seen": "2022-03-11 18:37:12 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 3,
+              "referring_pages_nofollow": 3,
+              "referring_links_tld": {
+                "com.au": 3
+              },
+              "referring_links_types": {
+                "anchor": 3
+              },
+              "referring_links_attributes": {
+                "nofollow": 3
+              },
+              "referring_links_platform_types": {
+                "unknown": 3
+              },
+              "referring_links_semantic_locations": {
+                "section": 3
+              },
+              "referring_links_countries": {
+                "AU": 3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

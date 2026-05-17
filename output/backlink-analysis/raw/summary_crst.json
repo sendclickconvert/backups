@@ -1,0 +1,121 @@
+{
+  "version": "0.1.20260430",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.2980 sec.",
+  "cost": 0.02003,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "05171359-1173-0265-0000-eedecfbb1f4c",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.2465 sec.",
+      "cost": 0.02003,
+      "result_count": 1,
+      "path": [
+        "v3",
+        "backlinks",
+        "summary",
+        "live"
+      ],
+      "data": {
+        "api": "backlinks",
+        "function": "summary",
+        "target": "crst.net",
+        "backlinks_status_type": "live",
+        "include_subdomains": true
+      },
+      "result": [
+        {
+          "target": "crst.net",
+          "first_seen": "2019-01-19 18:57:38 +00:00",
+          "lost_date": null,
+          "rank": 322,
+          "backlinks": 3612,
+          "backlinks_spam_score": 6,
+          "crawled_pages": 1174,
+          "info": {
+            "server": "cloudflare",
+            "cms": "wordpress",
+            "platform_type": [
+              "cms",
+              "blogs",
+              "organization"
+            ],
+            "ip_address": "104.17.144.110",
+            "country": "US",
+            "is_ip": false,
+            "target_spam_score": 0
+          },
+          "internal_links_count": 35745,
+          "external_links_count": 7960,
+          "broken_backlinks": 0,
+          "broken_pages": 30,
+          "referring_domains": 231,
+          "referring_domains_nofollow": 41,
+          "referring_main_domains": 219,
+          "referring_main_domains_nofollow": 41,
+          "referring_ips": 126,
+          "referring_subnets": 113,
+          "referring_pages": 3524,
+          "referring_pages_nofollow": 293,
+          "referring_links_tld": {
+            "com": 1578,
+            "org": 1422,
+            "blogspot.com": 143,
+            "gov.co": 86,
+            "edu.br": 69,
+            "edu.pe": 64,
+            "gov.gh": 39,
+            "net": 30,
+            "ca": 15,
+            "us": 14
+          },
+          "referring_links_types": {
+            "anchor": 3082,
+            "image": 442
+          },
+          "referring_links_attributes": {
+            "noopener": 2581,
+            "nofollow": 293,
+            "external": 48,
+            "noreferrer": 21,
+            "ugc": 4
+          },
+          "referring_links_platform_types": {
+            "unknown": 1419,
+            "blogs": 1204,
+            "organization": 1070,
+            "cms": 784,
+            "ecommerce": 49,
+            "news": 10
+          },
+          "referring_links_semantic_locations": {
+            "footer": 2579,
+            "article": 370,
+            "": 353,
+            "section": 180,
+            "main": 29,
+            "aside": 9,
+            "details": 3,
+            "header": 1
+          },
+          "referring_links_countries": {
+            "": 3016,
+            "US": 156,
+            "CO": 87,
+            "BR": 70,
+            "PE": 64,
+            "WW": 49,
+            "GH": 39,
+            "CA": 15,
+            "NG": 8,
+            "RU": 3
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "version": "0.1.20260430",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.2679 sec.",
+  "cost": 0.02003,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "05171400-1173-0265-0000-7425e4caf33f",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.1651 sec.",
+      "cost": 0.02003,
+      "result_count": 1,
+      "path": [
+        "v3",
+        "backlinks",
+        "summary",
+        "live"
+      ],
+      "data": {
+        "api": "backlinks",
+        "function": "summary",
+        "target": "directmailsolutions.com",
+        "backlinks_status_type": "live",
+        "include_subdomains": true
+      },
+      "result": [
+        {
+          "target": "directmailsolutions.com",
+          "first_seen": "2019-10-19 18:22:12 +00:00",
+          "lost_date": null,
+          "rank": 110,
+          "backlinks": 132,
+          "backlinks_spam_score": 24,
+          "crawled_pages": 28,
+          "info": {
+            "server": "Apache",
+            "cms": "wordpress",
+            "platform_type": [
+              "cms",
+              "blogs"
+            ],
+            "ip_address": "192.185.66.123",
+            "country": null,
+            "is_ip": false,
+            "target_spam_score": 0
+          },
+          "internal_links_count": 149,
+          "external_links_count": 98,
+          "broken_backlinks": 1,
+          "broken_pages": 3,
+          "referring_domains": 70,
+          "referring_domains_nofollow": 26,
+          "referring_main_domains": 68,
+          "referring_main_domains_nofollow": 26,
+          "referring_ips": 54,
+          "referring_subnets": 51,
+          "referring_pages": 119,
+          "referring_pages_nofollow": 53,
+          "referring_links_tld": {
+            "com": 51,
+            "ru": 15,
+            "org": 10,
+            "com.au": 8,
+            "info": 7,
+            "pages.dev": 3,
+            "party": 3,
+            "pro": 3,
+            "eu": 2,
+            "world": 2
+          },
+          "referring_links_types": {
+            "anchor": 104,
+            "image": 15
+          },
+          "referring_links_attributes": {
+            "nofollow": 53,
+            "noopener": 22,
+            "noreferrer": 14,
+            "ugc": 1
+          },
+          "referring_links_platform_types": {
+            "unknown": 52,
+            "organization": 35,
+            "blogs": 34,
+            "cms": 34,
+            "message-boards": 3
+          },
+          "referring_links_semantic_locations": {
+            "": 73,
+            "section": 25,
+            "article": 12,
+            "main": 8,
+            "header": 1
+          },
+          "referring_links_countries": {
+            "": 41,
+            "US": 41,
+            "RU": 15,
+            "AU": 8,
+            "WW": 3,
+            "GB": 3,
+            "DE": 1,
+            "IN": 1,
+            "CV": 1,
+            "CO": 1
+          }
+        }
+      ]
+    }
+  ]
+}

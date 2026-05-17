@@ -1,0 +1,124 @@
+{
+  "version": "0.1.20260430",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.2507 sec.",
+  "cost": 0.02003,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "05171400-1173-0265-0000-0dc5cd8ad445",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.1857 sec.",
+      "cost": 0.02003,
+      "result_count": 1,
+      "path": [
+        "v3",
+        "backlinks",
+        "summary",
+        "live"
+      ],
+      "data": {
+        "api": "backlinks",
+        "function": "summary",
+        "target": "johnsbyrne.com",
+        "backlinks_status_type": "live",
+        "include_subdomains": true
+      },
+      "result": [
+        {
+          "target": "johnsbyrne.com",
+          "first_seen": "2019-01-16 09:02:55 +00:00",
+          "lost_date": null,
+          "rank": 247,
+          "backlinks": 2175,
+          "backlinks_spam_score": 12,
+          "crawled_pages": 1126,
+          "info": {
+            "server": "nginx",
+            "cms": null,
+            "platform_type": [
+              "organization"
+            ],
+            "ip_address": "23.185.0.3",
+            "country": "US",
+            "is_ip": false,
+            "target_spam_score": 0
+          },
+          "internal_links_count": 42650,
+          "external_links_count": 5902,
+          "broken_backlinks": 1,
+          "broken_pages": 3,
+          "referring_domains": 818,
+          "referring_domains_nofollow": 302,
+          "referring_main_domains": 686,
+          "referring_main_domains_nofollow": 198,
+          "referring_ips": 486,
+          "referring_subnets": 352,
+          "referring_pages": 1970,
+          "referring_pages_nofollow": 829,
+          "referring_links_tld": {
+            "com": 1182,
+            "org": 156,
+            "pages.dev": 123,
+            "blogspot.com": 79,
+            "edu.pe": 54,
+            "info": 46,
+            "gov.co": 24,
+            "edu.br": 21,
+            "in": 19,
+            "net": 17
+          },
+          "referring_links_types": {
+            "anchor": 1613,
+            "image": 348,
+            "redirect": 9
+          },
+          "referring_links_attributes": {
+            "nofollow": 828,
+            "noopener": 420,
+            "noreferrer": 164,
+            "external": 114,
+            "alternate": 2,
+            "ugc": 2
+          },
+          "referring_links_platform_types": {
+            "blogs": 748,
+            "organization": 688,
+            "cms": 546,
+            "unknown": 535,
+            "news": 371,
+            "message-boards": 7,
+            "ecommerce": 5
+          },
+          "referring_links_semantic_locations": {
+            "": 676,
+            "article": 654,
+            "section": 243,
+            "main": 224,
+            "aside": 135,
+            "header": 29,
+            "details": 4,
+            "figcaption": 2,
+            "figure": 2,
+            "footer": 1
+          },
+          "referring_links_countries": {
+            "US": 728,
+            "": 689,
+            "WW": 162,
+            "PE": 54,
+            "CN": 51,
+            "IN": 48,
+            "CO": 32,
+            "BR": 21,
+            "NG": 13,
+            "GB": 11
+          }
+        }
+      ]
+    }
+  ]
+}

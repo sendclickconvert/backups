@@ -1,0 +1,111 @@
+{
+  "version": "0.1.20260430",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.1596 sec.",
+  "cost": 0.02003,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "05171400-1173-0265-0000-9678bc32a274",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.1485 sec.",
+      "cost": 0.02003,
+      "result_count": 1,
+      "path": [
+        "v3",
+        "backlinks",
+        "summary",
+        "live"
+      ],
+      "data": {
+        "api": "backlinks",
+        "function": "summary",
+        "target": "maildatainc.com",
+        "backlinks_status_type": "live",
+        "include_subdomains": true
+      },
+      "result": [
+        {
+          "target": "maildatainc.com",
+          "first_seen": "2023-11-04 23:31:27 +00:00",
+          "lost_date": null,
+          "rank": 94,
+          "backlinks": 62,
+          "backlinks_spam_score": 28,
+          "crawled_pages": 0,
+          "info": {
+            "server": null,
+            "cms": null,
+            "platform_type": null,
+            "ip_address": null,
+            "country": null,
+            "is_ip": false,
+            "target_spam_score": 0
+          },
+          "internal_links_count": 0,
+          "external_links_count": 0,
+          "broken_backlinks": 0,
+          "broken_pages": 0,
+          "referring_domains": 49,
+          "referring_domains_nofollow": 21,
+          "referring_main_domains": 46,
+          "referring_main_domains_nofollow": 20,
+          "referring_ips": 38,
+          "referring_subnets": 38,
+          "referring_pages": 60,
+          "referring_pages_nofollow": 25,
+          "referring_links_tld": {
+            "com": 29,
+            "info": 6,
+            "org": 5,
+            "pages.dev": 3,
+            "pro": 2,
+            "agency": 2,
+            "cloud": 1,
+            "co": 1,
+            "click": 1,
+            "fyi": 1
+          },
+          "referring_links_types": {
+            "anchor": 56,
+            "image": 4
+          },
+          "referring_links_attributes": {
+            "nofollow": 25,
+            "noopener": 18,
+            "noreferrer": 6,
+            "external": 1
+          },
+          "referring_links_platform_types": {
+            "blogs": 24,
+            "cms": 24,
+            "unknown": 22,
+            "organization": 13,
+            "message-boards": 1
+          },
+          "referring_links_semantic_locations": {
+            "": 38,
+            "section": 8,
+            "main": 7,
+            "article": 6,
+            "footer": 1
+          },
+          "referring_links_countries": {
+            "": 30,
+            "US": 21,
+            "WW": 3,
+            "CO": 1,
+            "IN": 1,
+            "RU": 1,
+            "CV": 1,
+            "GA": 1,
+            "DO": 1
+          }
+        }
+      ]
+    }
+  ]
+}

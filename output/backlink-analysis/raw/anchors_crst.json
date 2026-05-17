@@ -1,0 +1,2352 @@
+{
+  "version": "0.1.20260430",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "0.1454 sec.",
+  "cost": 0.02177,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "05171400-1173-0272-0000-b068baeda0fe",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "0.0874 sec.",
+      "cost": 0.02177,
+      "result_count": 1,
+      "path": [
+        "v3",
+        "backlinks",
+        "anchors",
+        "live"
+      ],
+      "data": {
+        "api": "backlinks",
+        "function": "anchors",
+        "target": "crst.net",
+        "limit": 1000,
+        "backlinks_status_type": "live",
+        "include_subdomains": true
+      },
+      "result": [
+        {
+          "target": "crst.net",
+          "total_count": 59,
+          "items_count": 59,
+          "items": [
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Cornerstone Services, Inc",
+              "rank": 316,
+              "backlinks": 2483,
+              "first_seen": "2020-09-28 02:33:40 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 2,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 15,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 15,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 3,
+              "referring_subnets": 2,
+              "referring_pages": 2481,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "org": 1354,
+                "com": 1105,
+                "net": 22
+              },
+              "referring_links_types": {
+                "anchor": 2481
+              },
+              "referring_links_attributes": {
+                "noopener": 2481
+              },
+              "referring_links_platform_types": {
+                "unknown": 1287,
+                "organization": 824,
+                "blogs": 360,
+                "cms": 360,
+                "ecommerce": 49
+              },
+              "referring_links_semantic_locations": {
+                "footer": 2480,
+                "": 1
+              },
+              "referring_links_countries": {
+                "": 2481
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Cornerstone Services, Inc.",
+              "rank": 184,
+              "backlinks": 151,
+              "first_seen": "2021-11-07 16:39:38 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 4,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 9,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 8,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 7,
+              "referring_subnets": 7,
+              "referring_pages": 102,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 96,
+                "org": 6
+              },
+              "referring_links_types": {
+                "anchor": 102
+              },
+              "referring_links_attributes": {
+                "noopener": 3,
+                "noreferrer": 3
+              },
+              "referring_links_platform_types": {
+                "cms": 96,
+                "blogs": 92,
+                "organization": 56,
+                "unknown": 6
+              },
+              "referring_links_semantic_locations": {
+                "footer": 86,
+                "": 9,
+                "article": 5,
+                "section": 2
+              },
+              "referring_links_countries": {
+                "": 88,
+                "US": 9,
+                "WW": 5
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": null,
+              "rank": 178,
+              "backlinks": 509,
+              "first_seen": "2022-03-19 12:30:14 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 24,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 112,
+              "referring_domains_nofollow": 4,
+              "referring_main_domains": 104,
+              "referring_main_domains_nofollow": 4,
+              "referring_ips": 50,
+              "referring_subnets": 39,
+              "referring_pages": 502,
+              "referring_pages_nofollow": 49,
+              "referring_links_tld": {
+                "blogspot.com": 139,
+                "gov.co": 86,
+                "edu.br": 69,
+                "edu.pe": 64,
+                "org": 47,
+                "gov.gh": 39,
+                "ca": 14,
+                "com": 13,
+                "ng": 8,
+                "net": 7
+              },
+              "referring_links_types": {
+                "image": 431,
+                "anchor": 71
+              },
+              "referring_links_attributes": {
+                "nofollow": 49,
+                "external": 46,
+                "noopener": 8,
+                "noreferrer": 6
+              },
+              "referring_links_platform_types": {
+                "blogs": 432,
+                "organization": 139,
+                "unknown": 23,
+                "cms": 7,
+                "news": 7
+              },
+              "referring_links_semantic_locations": {
+                "": 208,
+                "section": 145,
+                "article": 123,
+                "main": 19,
+                "aside": 7
+              },
+              "referring_links_countries": {
+                "": 155,
+                "CO": 86,
+                "BR": 70,
+                "PE": 64,
+                "GH": 39,
+                "WW": 37,
+                "US": 19,
+                "CA": 14,
+                "NG": 8,
+                "RU": 3
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Design",
+              "rank": 147,
+              "backlinks": 1,
+              "first_seen": "2025-12-24 23:21:55 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1,
+                "organization": 1
+              },
+              "referring_links_semantic_locations": {
+                "article": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Print",
+              "rank": 147,
+              "backlinks": 2,
+              "first_seen": "2025-12-24 23:21:55 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1,
+                "organization": 1
+              },
+              "referring_links_semantic_locations": {
+                "article": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Data",
+              "rank": 147,
+              "backlinks": 1,
+              "first_seen": "2025-12-24 23:21:55 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1,
+                "organization": 1
+              },
+              "referring_links_semantic_locations": {
+                "article": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Mail",
+              "rank": 147,
+              "backlinks": 1,
+              "first_seen": "2025-12-24 23:21:55 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1,
+                "organization": 1
+              },
+              "referring_links_semantic_locations": {
+                "article": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Cornerstone Services Inc.",
+              "rank": 135,
+              "backlinks": 12,
+              "first_seen": "2024-01-28 11:26:34 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 2,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 2,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 2,
+              "referring_subnets": 2,
+              "referring_pages": 11,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "us": 10,
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 11
+              },
+              "referring_links_attributes": {
+                "noopener": 10
+              },
+              "referring_links_platform_types": {
+                "blogs": 11,
+                "cms": 11,
+                "organization": 1
+              },
+              "referring_links_semantic_locations": {
+                "footer": 10,
+                "article": 1
+              },
+              "referring_links_countries": {
+                "US": 10,
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Cornerstone Services Inc.'s",
+              "rank": 119,
+              "backlinks": 1,
+              "first_seen": "2025-12-24 23:21:55 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1,
+                "organization": 1
+              },
+              "referring_links_semantic_locations": {
+                "article": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "our trusted partner",
+              "rank": 98,
+              "backlinks": 3,
+              "first_seen": "2024-10-11 09:02:28 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 3,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 3
+              },
+              "referring_links_types": {
+                "anchor": 3
+              },
+              "referring_links_attributes": {
+                "noopener": 3
+              },
+              "referring_links_platform_types": {
+                "blogs": 3,
+                "cms": 3,
+                "organization": 3
+              },
+              "referring_links_semantic_locations": {
+                "footer": 3
+              },
+              "referring_links_countries": {
+                "": 2,
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "crst.net",
+              "rank": 62,
+              "backlinks": 81,
+              "first_seen": "2023-07-03 17:33:46 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 41,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 54,
+              "referring_domains_nofollow": 17,
+              "referring_main_domains": 52,
+              "referring_main_domains_nofollow": 17,
+              "referring_ips": 34,
+              "referring_subnets": 34,
+              "referring_pages": 74,
+              "referring_pages_nofollow": 23,
+              "referring_links_tld": {
+                "com": 32,
+                "info": 8,
+                "org": 5,
+                "pro": 4,
+                "world": 3,
+                "click": 2,
+                "cloud": 2,
+                "co.uk": 2,
+                "eu": 2,
+                "party": 2
+              },
+              "referring_links_types": {
+                "anchor": 74
+              },
+              "referring_links_attributes": {
+                "nofollow": 23,
+                "noopener": 7,
+                "noreferrer": 5,
+                "ugc": 1
+              },
+              "referring_links_platform_types": {
+                "cms": 43,
+                "blogs": 39,
+                "unknown": 26,
+                "organization": 6
+              },
+              "referring_links_semantic_locations": {
+                "": 53,
+                "article": 15,
+                "details": 2,
+                "main": 2,
+                "header": 1,
+                "section": 1
+              },
+              "referring_links_countries": {
+                "": 55,
+                "US": 7,
+                "WW": 4,
+                "GB": 2,
+                "IN": 2,
+                "CV": 1,
+                "ES": 1,
+                "NL": 1,
+                "UA": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Website",
+              "rank": 57,
+              "backlinks": 7,
+              "first_seen": "2024-11-15 17:28:20 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 4,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 4,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 4,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 4,
+              "referring_subnets": 4,
+              "referring_pages": 6,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "com": 5,
+                "org": 1
+              },
+              "referring_links_types": {
+                "anchor": 6
+              },
+              "referring_links_attributes": {
+                "noopener": 4,
+                "nofollow": 1,
+                "noreferrer": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 4,
+                "cms": 4,
+                "organization": 4,
+                "unknown": 2
+              },
+              "referring_links_semantic_locations": {
+                "section": 4,
+                "": 1,
+                "article": 1
+              },
+              "referring_links_countries": {
+                "": 4,
+                "US": 2
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Visit Website",
+              "rank": 46,
+              "backlinks": 89,
+              "first_seen": "2024-11-04 09:09:19 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 8,
+              "referring_domains_nofollow": 3,
+              "referring_main_domains": 7,
+              "referring_main_domains_nofollow": 3,
+              "referring_ips": 5,
+              "referring_subnets": 5,
+              "referring_pages": 88,
+              "referring_pages_nofollow": 44,
+              "referring_links_tld": {
+                "com": 87,
+                "org": 1
+              },
+              "referring_links_types": {
+                "anchor": 77,
+                "image": 11
+              },
+              "referring_links_attributes": {
+                "nofollow": 44,
+                "noopener": 43,
+                "noreferrer": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 44,
+                "cms": 44,
+                "unknown": 43,
+                "organization": 16
+              },
+              "referring_links_semantic_locations": {
+                "": 42,
+                "article": 28,
+                "section": 17,
+                "main": 1
+              },
+              "referring_links_countries": {
+                "US": 66,
+                "": 21,
+                "CO": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "direct mail advertising",
+              "rank": 33,
+              "backlinks": 26,
+              "first_seen": "2025-10-01 15:17:39 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 2,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 2,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 26,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 26
+              },
+              "referring_links_types": {
+                "anchor": 26
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "blogs": 26,
+                "cms": 26
+              },
+              "referring_links_semantic_locations": {
+                "article": 26
+              },
+              "referring_links_countries": {
+                "US": 14,
+                "": 12
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Cornerstone Services",
+              "rank": 32,
+              "backlinks": 6,
+              "first_seen": "2019-01-19 18:57:38 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 19,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 4,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 4,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 5,
+              "referring_subnets": 5,
+              "referring_pages": 6,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 3,
+                "blogspot.com": 2,
+                "org": 1
+              },
+              "referring_links_types": {
+                "anchor": 6
+              },
+              "referring_links_attributes": {
+                "noopener": 2,
+                "noreferrer": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 5,
+                "cms": 3,
+                "organization": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 4,
+                "article": 1,
+                "main": 1
+              },
+              "referring_links_countries": {
+                "": 5,
+                "WW": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "http://crst.net",
+              "rank": 29,
+              "backlinks": 3,
+              "first_seen": "2024-05-11 17:01:50 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 2,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 2,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 2,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 2
+              },
+              "referring_links_types": {
+                "anchor": 2
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "unknown": 2
+              },
+              "referring_links_semantic_locations": {
+                "main": 2
+              },
+              "referring_links_countries": {
+                "IN": 1,
+                "WW": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Direct Mail Marketing website",
+              "rank": 23,
+              "backlinks": 3,
+              "first_seen": "2023-11-21 22:41:07 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 15,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "noopener": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1
+              },
+              "referring_links_semantic_locations": {
+                "article": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "https://crst.net/",
+              "rank": 14,
+              "backlinks": 6,
+              "first_seen": "2026-01-30 21:22:45 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 6,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 6
+              },
+              "referring_links_types": {
+                "anchor": 6
+              },
+              "referring_links_attributes": {
+                "noopener": 6
+              },
+              "referring_links_platform_types": {
+                "blogs": 6,
+                "cms": 6,
+                "organization": 6
+              },
+              "referring_links_semantic_locations": {
+                "section": 6
+              },
+              "referring_links_countries": {
+                "": 5,
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Visit Site",
+              "rank": 6,
+              "backlinks": 6,
+              "first_seen": "2026-01-31 15:54:54 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 6,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "org": 6
+              },
+              "referring_links_types": {
+                "anchor": 6
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "unknown": 6
+              },
+              "referring_links_semantic_locations": {
+                "": 6
+              },
+              "referring_links_countries": {
+                "US": 6
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "blog.crst.net",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2026-02-25 23:59:31 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "section": 1
+              },
+              "referring_links_countries": {
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Saturation mailing NY",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2026-02-10 05:34:01 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 40,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "VISIT WEBSITE",
+              "rank": 0,
+              "backlinks": 2,
+              "first_seen": "2025-12-20 02:31:13 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "noopener": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1,
+                "organization": 1
+              },
+              "referring_links_semantic_locations": {
+                "article": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "CRST DIRECT MAIL",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-12-20 02:30:25 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1,
+                "organization": 1
+              },
+              "referring_links_semantic_locations": {
+                "article": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Visit Cornerstone Services Inc. play_circle_filled_white",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-12-20 02:30:25 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "noopener": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1,
+                "organization": 1
+              },
+              "referring_links_semantic_locations": {
+                "article": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "CRST",
+              "rank": 0,
+              "backlinks": 6,
+              "first_seen": "2025-12-20 02:27:45 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 2,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 2
+              },
+              "referring_links_types": {
+                "anchor": 2
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "blogs": 2,
+                "cms": 2,
+                "organization": 2
+              },
+              "referring_links_semantic_locations": {
+                "": 2
+              },
+              "referring_links_countries": {
+                "": 2
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "\u201chttps://crst.net/terms-and-conditions/",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-12-20 02:08:04 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1
+              },
+              "referring_links_semantic_locations": {
+                "article": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "http://www.crst.net",
+              "rank": 0,
+              "backlinks": 157,
+              "first_seen": "2025-12-20 01:28:25 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 150,
+              "referring_pages_nofollow": 150,
+              "referring_links_tld": {
+                "com": 150
+              },
+              "referring_links_types": {
+                "anchor": 150
+              },
+              "referring_links_attributes": {
+                "nofollow": 150
+              },
+              "referring_links_platform_types": {
+                "blogs": 150,
+                "cms": 150
+              },
+              "referring_links_semantic_locations": {
+                "article": 150
+              },
+              "referring_links_countries": {
+                "": 150
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Save Now",
+              "rank": 0,
+              "backlinks": 2,
+              "first_seen": "2025-11-15 14:26:41 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 5,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 2,
+              "referring_pages_nofollow": 2,
+              "referring_links_tld": {
+                "blogspot.com": 2
+              },
+              "referring_links_types": {
+                "anchor": 2
+              },
+              "referring_links_attributes": {
+                "nofollow": 2
+              },
+              "referring_links_platform_types": {
+                "blogs": 2,
+                "organization": 2
+              },
+              "referring_links_semantic_locations": {
+                "aside": 2
+              },
+              "referring_links_countries": {
+                "": 2
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Cornerstone Services, Inc. (CRST)",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-11-04 21:13:09 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "blogs": 1
+              },
+              "referring_links_semantic_locations": {
+                "section": 1
+              },
+              "referring_links_countries": {
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Shiela CRST",
+              "rank": 0,
+              "backlinks": 2,
+              "first_seen": "2025-10-15 12:53:12 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "external": 1,
+                "nofollow": 1,
+                "ugc": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "article": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "CRST Better Business Bureau A+ Rating",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-09-16 18:32:33 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 60,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "homes": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "news": 1
+              },
+              "referring_links_semantic_locations": {
+                "main": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Niche Insurance & General Insurance Direct Mail Marketing - Cornerstone  Services, I\u2026",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-09-12 17:26:03 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 70,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "homes": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "news": 1
+              },
+              "referring_links_semantic_locations": {
+                "main": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "crst.netVisit Official Website",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-08-13 18:42:16 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1,
+                "noopener": 1,
+                "noreferrer": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "section": 1
+              },
+              "referring_links_countries": {
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "visit crst.net for latest info",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-07-05 17:40:36 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 60,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Visit CRST.net",
+              "rank": 0,
+              "backlinks": 2,
+              "first_seen": "2025-06-06 19:32:10 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 37,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 2,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 2
+              },
+              "referring_links_types": {
+                "anchor": 2
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "blogs": 2,
+                "cms": 2
+              },
+              "referring_links_semantic_locations": {
+                "article": 2
+              },
+              "referring_links_countries": {
+                "": 2
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "https://crst.net \u2013 You need to Skyrocket your Ahrefs DR, Moz DA, and Majestic TF with real PBN, Guest posts, and premium backlinks\u2014competitors trust us, why not you? Pay after work! Visit SeoBoost.agency now!",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-05-16 17:21:22 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 45,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "agency": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1
+              },
+              "referring_links_semantic_locations": {
+                "main": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "https://crst.net/informed-delivery-review/",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-05-14 17:33:46 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "org": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1,
+                "noopener": 1,
+                "noreferrer": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "details": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "https://crst.net \u2013 Increase your site\u2019s backlinks and skyrocket your DA, DR, and TF with our expert SEO services\u2014authentic dofollow backlinks, guest posts, and PBN links delivered by our team. Visit BuySeoLink.com to choose a plan, enjoy our pay-after-work model, and access 24/7 support!",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-05-10 23:35:37 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 45,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "agency": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1
+              },
+              "referring_links_semantic_locations": {
+                "main": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "website",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-05-01 09:18:14 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 10,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "cms": 1,
+                "organization": 1
+              },
+              "referring_links_semantic_locations": {
+                "article": 1
+              },
+              "referring_links_countries": {
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Details",
+              "rank": 0,
+              "backlinks": 2,
+              "first_seen": "2025-04-13 22:14:33 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 2,
+              "referring_domains_nofollow": 2,
+              "referring_main_domains": 2,
+              "referring_main_domains_nofollow": 2,
+              "referring_ips": 2,
+              "referring_subnets": 2,
+              "referring_pages": 2,
+              "referring_pages_nofollow": 2,
+              "referring_links_tld": {
+                "ca": 1,
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 2
+              },
+              "referring_links_attributes": {
+                "nofollow": 2,
+                "noopener": 2
+              },
+              "referring_links_platform_types": {
+                "unknown": 2
+              },
+              "referring_links_semantic_locations": {
+                "article": 2
+              },
+              "referring_links_countries": {
+                "CA": 1,
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "www.crst.net",
+              "rank": 0,
+              "backlinks": 2,
+              "first_seen": "2025-04-06 08:35:02 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 2,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 2,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 2,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 2
+              },
+              "referring_links_types": {
+                "anchor": 2
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "blogs": 2,
+                "cms": 2
+              },
+              "referring_links_semantic_locations": {
+                "article": 2
+              },
+              "referring_links_countries": {
+                "": 1,
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "https://www.crst.net",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2025-02-28 17:46:50 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1,
+                "noopener": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "https://www.crst.net/",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2024-12-12 13:16:26 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 40,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "cms": 1
+              },
+              "referring_links_semantic_locations": {
+                "section": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Informed Delivery by USPS: 2018 Review | Cornerstone Services, Inc.",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2024-04-24 11:16:53 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1,
+                "noreferrer": 1,
+                "ugc": 1
+              },
+              "referring_links_platform_types": {
+                "organization": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Visit our Website",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2024-03-07 06:39:34 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 65,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "How to Complete the Non-Profit Mailing Application",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2024-02-25 03:41:14 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "noopener": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Cornerstone",
+              "rank": 0,
+              "backlinks": 4,
+              "first_seen": "2024-02-25 03:41:14 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 2,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 2,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 2,
+              "referring_subnets": 2,
+              "referring_pages": 2,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 2
+              },
+              "referring_links_types": {
+                "anchor": 2
+              },
+              "referring_links_attributes": {
+                "noopener": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 2,
+                "cms": 2
+              },
+              "referring_links_semantic_locations": {
+                "": 1,
+                "article": 1
+              },
+              "referring_links_countries": {
+                "": 2
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "contact page",
+              "rank": 0,
+              "backlinks": 2,
+              "first_seen": "2024-02-25 03:41:10 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "noopener": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Cornerstone Services builds websites",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2024-02-25 03:41:10 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "noopener": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Cornerstone\u2019s website design services",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2024-01-28 11:30:09 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "us": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Crst.net",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2024-01-28 11:30:09 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "us": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "BMEU",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2024-01-28 11:28:12 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "us": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "noopener": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "US": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "National Organic Growers Association - Cornerstone Services, Inc.",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2023-11-20 04:24:09 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "com.au": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "AU": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "web marketing strategy",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2023-10-27 19:59:54 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "noopener": 1,
+                "noreferrer": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "crst.net/",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2022-09-23 11:22:40 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "WW": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "Informed Delivery by USPS - What is it? How does it work ...",
+              "rank": 0,
+              "backlinks": 10,
+              "first_seen": "2022-07-06 04:40:30 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 10,
+              "referring_pages_nofollow": 10,
+              "referring_links_tld": {
+                "com": 10
+              },
+              "referring_links_types": {
+                "anchor": 10
+              },
+              "referring_links_attributes": {
+                "nofollow": 10
+              },
+              "referring_links_platform_types": {
+                "unknown": 10
+              },
+              "referring_links_semantic_locations": {
+                "": 10
+              },
+              "referring_links_countries": {
+                "US": 10
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "crst",
+              "rank": 0,
+              "backlinks": 2,
+              "first_seen": "2021-10-05 13:31:49 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 47,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 2,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 2,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 2,
+              "referring_subnets": 2,
+              "referring_pages": 2,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "com": 2
+              },
+              "referring_links_types": {
+                "anchor": 2
+              },
+              "referring_links_attributes": {
+                "nofollow": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1,
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1,
+                "section": 1
+              },
+              "referring_links_countries": {
+                "": 2
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "View Project",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2020-02-19 22:25:39 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 0,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 0,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 0,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 0,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": null,
+              "referring_links_platform_types": {
+                "unknown": 1
+              },
+              "referring_links_semantic_locations": {
+                "": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            },
+            {
+              "type": "backlinks_anchor",
+              "anchor": "S. Griffin",
+              "rank": 0,
+              "backlinks": 1,
+              "first_seen": "2019-02-23 10:59:51 +00:00",
+              "lost_date": null,
+              "backlinks_spam_score": 40,
+              "broken_backlinks": 0,
+              "broken_pages": 0,
+              "referring_domains": 1,
+              "referring_domains_nofollow": 1,
+              "referring_main_domains": 1,
+              "referring_main_domains_nofollow": 1,
+              "referring_ips": 1,
+              "referring_subnets": 1,
+              "referring_pages": 1,
+              "referring_pages_nofollow": 1,
+              "referring_links_tld": {
+                "com": 1
+              },
+              "referring_links_types": {
+                "anchor": 1
+              },
+              "referring_links_attributes": {
+                "external": 1,
+                "nofollow": 1,
+                "ugc": 1
+              },
+              "referring_links_platform_types": {
+                "blogs": 1,
+                "cms": 1,
+                "news": 1
+              },
+              "referring_links_semantic_locations": {
+                "article": 1
+              },
+              "referring_links_countries": {
+                "": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
