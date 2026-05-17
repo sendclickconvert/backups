@@ -102,3 +102,9 @@ id = "k86Q-eUb64t10Qs1ifk-l"
 uri = "file://output/backlink-analysis/SUMMARY_REPORT.md"
 type = "text"
 title = "SUMMARY_REPORT.md"
+
+[[outputs]]
+id = "7_zQ6bDdH101Z2XOVDTwo"
+uri = "file://output/backlink-analysis/target_url_distribution.csv"
+type = "table"
+title = "target_url_distribution.csv"
