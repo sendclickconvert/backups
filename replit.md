@@ -36,8 +36,8 @@
 ## Deployment Doctrine (Reserved VM — pre-built artifact model)
 - The Reserved VM runs `node server.mjs` only — it does NOT run a build on startup.
 - `dist/` is committed to the repo (removed from `.gitignore`) and ships as a pre-built artifact with every deploy.
-- **Before every Publish:** the workspace `dist/` must be fresh. Run `npm run build` in the workspace shell (or confirm the "Start application" workflow has rebuilt it), verify no build errors, then click Publish.
-- If `dist/` is stale at publish time, the deployed VM will serve stale content — there is no fallback build step.
+- **Before every Publish:** run `npm run build` explicitly in the workspace shell. Astro's dev server does NOT populate `dist/` — only a manual `npm run build` does. After the build completes, verify new content is present with `grep -c "<phrase>" dist/client/index.html` before clicking Publish.
+- If `dist/` is stale or missing at publish time, the deployed VM will serve stale content — there is no fallback build step.
 - Agent verification rule: never use `curl https://crst.net/` from inside the Replit shell to confirm production. The shell may resolve to the workspace dev server. Only the user's own browser (incognito) is the authoritative production check.
 
 ---
