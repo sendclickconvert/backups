@@ -33,6 +33,13 @@
 - Show "Last updated [Month YYYY]" on time-sensitive pages with itemprop="dateModified"
 - When editing any envelope spoke's body content, bump that spoke's `lastUpdated` field in `src/data/envelope-spokes.ts` as part of the same change (ISO format yyyy-mm-dd). Hub `lastUpdated` lives in `src/pages/guides/envelope-sizes/index.astro` as `const lastUpdated`.
 
+## Deployment Doctrine (Reserved VM — pre-built artifact model)
+- The Reserved VM runs `node server.mjs` only — it does NOT run a build on startup.
+- `dist/` is committed to the repo (removed from `.gitignore`) and ships as a pre-built artifact with every deploy.
+- **Before every Publish:** the workspace `dist/` must be fresh. Run `npm run build` in the workspace shell (or confirm the "Start application" workflow has rebuilt it), verify no build errors, then click Publish.
+- If `dist/` is stale at publish time, the deployed VM will serve stale content — there is no fallback build step.
+- Agent verification rule: never use `curl https://crst.net/` from inside the Replit shell to confirm production. The shell may resolve to the workspace dev server. Only the user's own browser (incognito) is the authoritative production check.
+
 ---
 
 # Cornerstone Services (CRST) Website
