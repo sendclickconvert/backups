@@ -49,7 +49,7 @@ export default defineConfig({
   site: 'https://crst.net',
   output: 'hybrid',
   trailingSlash: 'never',
-  adapter: node({ mode: 'standalone' }),
+  adapter: node({ mode: 'middleware' }),
   vite: { server: { allowedHosts: true } },
   integrations: [
     tailwind(),

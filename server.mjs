@@ -1,0 +1,18 @@
+import { handler as ssrHandler } from './dist/server/entry.mjs';
+import express from 'express';
+import compression from 'compression';
+
+const app = express();
+
+app.use(compression({ threshold: 0 }));
+
+app.use(express.static('dist/client', { maxAge: '1y', immutable: true }));
+
+app.use(ssrHandler);
+
+const port = process.env.PORT || 3000;
+const host = process.env.HOST || '0.0.0.0';
+
+app.listen(port, host, () => {
+  console.log(`Server listening on http://${host}:${port}`);
+});
