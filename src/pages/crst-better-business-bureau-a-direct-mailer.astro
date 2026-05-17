@@ -46,48 +46,18 @@ const testimonials = [
   },
 ];
 
-const organizationSchema = {
+const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Organization',
-  '@id': 'https://crst.net/#organization',
-  name: BUSINESS.name,
-  alternateName: BUSINESS.shortName,
-  url: BUSINESS.url,
-  logo: `${BUSINESS.url}/images/crst-logo.webp`,
-  foundingDate: '1998',
-  telephone: BUSINESS.phone,
-  email: BUSINESS.email,
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: BUSINESS.address.street,
-    addressLocality: BUSINESS.address.city,
-    addressRegion: BUSINESS.address.state,
-    postalCode: BUSINESS.address.zip,
-    addressCountry: 'US',
+  '@type': 'Article',
+  headline: 'BBB A+ Accredited Direct Mail Company in New Paltz, NY',
+  author: {
+    '@type': 'Person',
+    name: 'Sean Griffin',
   },
-  hasCredential: {
-    '@type': 'EducationalOccupationalCredential',
-    name: 'BBB A+ Accreditation',
-    credentialCategory: 'Business Accreditation',
-    recognizedBy: {
-      '@type': 'Organization',
-      name: 'Better Business Bureau',
-      url: 'https://www.bbb.org',
-    },
-    url: bbbUrl,
-  },
-  image: `${BUSINESS.url}/images/crst-logo.webp`,
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 41.7476,
-    longitude: -74.0871,
-  },
-  areaServed: [
-    { '@type': 'County', name: 'Ulster County, New York' },
-    { '@type': 'County', name: 'Dutchess County, New York' },
-    { '@type': 'County', name: 'Orange County, New York' },
-  ],
-  sameAs: [bbbUrl, linkedInUrl, BUSINESS.url],
+  publisher: { '@id': 'https://crst.net/#organization' },
+  datePublished: '2026-02-27',
+  dateModified: '2026-02-27',
+  url: 'https://crst.net/crst-better-business-bureau-a-direct-mailer',
 };
 
 const personSchema = {
@@ -152,7 +122,7 @@ const webPageSchema = {
   canonical="https://crst.net/crst-better-business-bureau-a-direct-mailer"
 >
   <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />

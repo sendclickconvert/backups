@@ -24,12 +24,7 @@ const graphSchema = {
     {
       '@type': 'Service',
       name: 'School District Direct Mail Strategy',
-      provider: {
-        '@type': 'Organization',
-        '@id': 'https://crst.net/#organization',
-        name: BUSINESS.name,
-        telephone: BUSINESS.phone,
-      },
+      provider: { '@id': 'https://crst.net/#organization' },
       description: 'Data-driven direct mail strategy for school districts using hybrid saturation and automation mail to eliminate boundary overmailing and reduce postage waste.',
       areaServed: [
         { '@type': 'County', name: 'Ulster County, New York' },

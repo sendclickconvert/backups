@@ -9,12 +9,7 @@ const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Consumer Mailing Lists',
-  provider: {
-    '@type': 'Organization',
-    '@id': 'https://crst.net/#organization',
-    name: BUSINESS.name,
-    telephone: BUSINESS.phone,
-  },
+  provider: { '@id': 'https://crst.net/#organization' },
   areaServed: [
     { '@type': 'County', name: 'Ulster County, New York' },
     { '@type': 'County', name: 'Dutchess County, New York' },

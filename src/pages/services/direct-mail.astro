@@ -85,19 +85,7 @@ const graphSchema = {
     {
       '@type': 'Service',
       name: 'Direct Mail Services Hudson Valley',
-      provider: {
-        '@type': 'Organization',
-        name: 'Cornerstone Services',
-        url: 'https://crst.net',
-        telephone: '+18452555722',
-        address: {
-          '@type': 'PostalAddress',
-          streetAddress: '31 South Ohioville Road',
-          addressLocality: 'New Paltz',
-          addressRegion: 'NY',
-          postalCode: '12561',
-        },
-      },
+      provider: { '@id': 'https://crst.net/#organization' },
       areaServed: [
         { '@type': 'County', name: 'Ulster County' },
         { '@type': 'County', name: 'Dutchess County' },
@@ -107,12 +95,10 @@ const graphSchema = {
     },
     {
       '@type': 'Person',
+      '@id': 'https://crst.net/#sean-griffin',
       name: 'Sean Griffin',
       jobTitle: 'Owner',
-      worksFor: {
-        '@type': 'Organization',
-        name: 'Cornerstone Services',
-      },
+      worksFor: { '@id': 'https://crst.net/#organization' },
       image: 'https://crst.net/images/sean-griffin.png',
     },
     {

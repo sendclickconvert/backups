@@ -91,19 +91,18 @@ const faqSchema = allFaqs.length > 0 ? {
 
 const townSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: `Cornerstone Services — Direct Mail ${location.name} NY`,
-  url: `https://crst.net/service-areas/${county.slug}/${location.slug}`,
+  '@type': 'Service',
+  serviceType: 'Direct Mail Services',
+  provider: { '@id': 'https://crst.net/#organization' },
   areaServed: {
     '@type': 'City',
-    name: `${location.name}, New York`,
+    name: location.name,
+    containedInPlace: {
+      '@type': 'AdministrativeArea',
+      name: `${county.name}, NY`,
+    },
   },
-  provider: { '@id': 'https://crst.net/#organization' },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: location.lat,
-    longitude: location.lng,
-  },
+  url: `https://crst.net/service-areas/${county.slug}/${location.slug}`,
 };
 
 const typeLabel = location.type.charAt(0).toUpperCase() + location.type.slice(1);

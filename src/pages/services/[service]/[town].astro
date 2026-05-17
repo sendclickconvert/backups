@@ -50,24 +50,15 @@ const otherServiceHref = `/services/${otherServiceSlug}/${location.slug}`;
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  name: `${svc.schemaServiceName} in ${location.name}, NY`,
-  provider: {
-    '@type': 'Organization',
-    '@id': 'https://crst.net/#organization',
-    name: 'Cornerstone Services, Inc.',
-    url: 'https://crst.net',
-    telephone: '+18452555722',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '31 S Ohioville Rd',
-      addressLocality: 'New Paltz',
-      addressRegion: 'NY',
-      postalCode: '12561',
-    },
-  },
+  serviceType: svc.schemaServiceName,
+  provider: { '@id': 'https://crst.net/#organization' },
   areaServed: {
     '@type': 'City',
-    name: `${location.name}, NY`,
+    name: location.name,
+    containedInPlace: {
+      '@type': 'AdministrativeArea',
+      name: `${county.name}, NY`,
+    },
   },
   description: svc.schemaDescription,
   url: canonical,

@@ -48,54 +48,21 @@ const meta = countyMeta[county.slug] || {
   blogLink: 'https://blog.crst.net/direct-mail-services-hudson-valley-ny',
 };
 
-const townAreaServed = meta.featuredTowns.map(town => ({
-  '@type': 'City',
-  name: `${town}, New York`,
-}));
-
-const countySchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: `Cornerstone Services, Inc. — ${county.name}`,
-  url: `https://crst.net/service-areas/${county.slug}`,
-  provider: { '@id': 'https://crst.net/#organization' },
-  areaServed: [
-    { '@type': 'County', name: `${county.name}, New York` },
-    ...townAreaServed,
-  ],
-  telephone: BUSINESS.phone,
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: BUSINESS.address.street,
-    addressLocality: BUSINESS.address.city,
-    addressRegion: BUSINESS.address.state,
-    postalCode: BUSINESS.address.zip,
-    addressCountry: 'US',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: county.lat,
-    longitude: county.lng,
-  },
-};
-
 const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  name: `Direct Mail & Printing Services — ${county.name}`,
+  serviceType: 'Direct Mail Services',
   provider: { '@id': 'https://crst.net/#organization' },
-  areaServed: [
-    { '@type': 'County', name: `${county.name}, New York` },
-    ...townAreaServed,
-  ],
-  serviceType: ['Direct Mail Marketing', 'EDDM', 'Commercial Printing', 'Graphic Design', 'Data Lists', 'Mailing Services'],
+  areaServed: {
+    '@type': 'AdministrativeArea',
+    name: `${county.name}, NY`,
+  },
   url: `https://crst.net/service-areas/${county.slug}`,
 };
 ---
 
 <BaseLayout title={meta.title} description={meta.description}>
   <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify(countySchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
   </Fragment>
 

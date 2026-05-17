@@ -21,12 +21,7 @@ const graphSchema = {
     {
       '@type': 'Service',
       name: 'Union Printing for Direct Mail',
-      provider: {
-        '@type': 'Organization',
-        '@id': 'https://crst.net/#organization',
-        name: BUSINESS.name,
-        telephone: BUSINESS.phone,
-      },
+      provider: { '@id': 'https://crst.net/#organization' },
       description: 'Union-printed direct mail materials including postcards, envelopes, letterhead, and brochures for political campaigns, nonprofits, and labor organizations in the Hudson Valley.',
       areaServed: [
         { '@type': 'County', name: 'Ulster County, New York' },
