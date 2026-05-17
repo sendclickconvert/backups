@@ -1,12 +1,40 @@
 import { handler as ssrHandler } from './dist/server/entry.mjs';
 import express from 'express';
 import compression from 'compression';
+import fs from 'fs';
+import path from 'path';
 
 const app = express();
 
 app.use(compression({ threshold: 0 }));
 
-app.use(express.static('dist/client', { maxAge: '1y', immutable: true }));
+// Trailing-slash redirect: enforce trailingSlash: 'never' at the request layer
+app.use((req, res, next) => {
+  if (req.path !== '/' && req.path.endsWith('/')) {
+    const newPath = req.path.slice(0, -1);
+    const queryString = req.originalUrl.includes('?')
+      ? req.originalUrl.substring(req.originalUrl.indexOf('?'))
+      : '';
+    return res.redirect(301, newPath + queryString);
+  }
+  next();
+});
+
+// Serve static assets (CSS, JS, images, fonts).
+// redirect: false prevents express.static from issuing its own directory→slash
+// redirect, which would conflict with the trailing-slash middleware above.
+app.use(express.static('dist/client', { maxAge: '1y', immutable: true, redirect: false }));
+
+// Serve pre-rendered Astro HTML pages.
+// express.static falls through for directory paths when redirect: false.
+// This layer maps /path → dist/client/path/index.html so those pages are served.
+app.use((req, res, next) => {
+  const indexPath = path.resolve(path.join('dist/client', req.path, 'index.html'));
+  if (fs.existsSync(indexPath)) {
+    return res.sendFile(indexPath);
+  }
+  next();
+});
 
 app.use(ssrHandler);
 
