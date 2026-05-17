@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import CTASection from '../../components/CTASection.astro';
+import CaseStudyCallout from '../../components/CaseStudyCallout.astro';
 import AuthorByline from '../../components/AuthorByline.astro';
 import { BUSINESS, COUNTIES } from '../../data/site';
 
@@ -382,6 +383,30 @@ const countyTowns = [
           <p class="text-navy-600/80 leading-relaxed mb-4">
             The number that matters is cost-per-response, not cost-per-piece. At 2% response on 5,000 pieces, you have 100 leads. If 25% of those close at a $300 average transaction, that's $7,500 in revenue. The cost of the campaign — $3,250–$4,500 all-in — pays back within one cycle for most local businesses. Not sure about budget? Use our <a href="/services/direct-mail/how-much-does-direct-mail-cost" class="text-crst-accent hover:underline">direct mail cost calculator</a> to estimate printing, postage, and design costs. <a href="/estimate" class="text-crst-accent hover:underline">Request a free itemized estimate</a> to see exact pricing for your campaign.
           </p>
+
+          <div class="section-divider mb-6 mt-14"></div>
+          <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-3">Recent Campaigns</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-6">We've managed direct mail campaigns for businesses, nonprofits, and organizations across the Hudson Valley and nationally. A few recent examples:</p>
+          <div class="grid sm:grid-cols-2 gap-4 mb-4">
+            <CaseStudyCallout
+              href="/case-studies/niche-insurance"
+              client="Tango Insurance — Nassau County, NY"
+              summary="We built a targeted data list of homeowners aged 45+ and ran a First-Class presorted postcard campaign. Response rates exceeded insurance direct mail industry averages, generating multiple policy bundle closings."
+              anchor="insurance direct mail campaign for Tango Insurance"
+            />
+            <CaseStudyCallout
+              href="/case-studies/lawrence-hearing"
+              client="Lawrence Hearing — Orange County, NY"
+              summary="We designed and executed a three-round direct mail campaign reaching adults 55+ with untreated hearing loss — bypassing the physician referral path and driving consistent appointment bookings."
+              anchor="healthcare direct mail for Lawrence Hearing audiology"
+            />
+            <CaseStudyCallout
+              href="/case-studies/republican-town-committee"
+              client="Hudson Valley Republican Town Committee"
+              summary="A contested local election required union-printed palm cards and full slate mailers produced and mailed within a 3-week window. All materials carried the Allied Printing Trades Council label and delivered on schedule."
+              anchor="political direct mail palm cards and slate mailers"
+            />
+          </div>
 
           <div class="section-divider mb-6 mt-14"></div>
           <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-6">Frequently Asked Questions</h2>

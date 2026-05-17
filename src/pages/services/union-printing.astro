@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import CTASection from '../../components/CTASection.astro';
+import CaseStudyCallout from '../../components/CaseStudyCallout.astro';
 import AuthorByline from '../../components/AuthorByline.astro';
 import { BUSINESS, COUNTIES } from '../../data/site';
 import { getCollection } from 'astro:content';
@@ -171,6 +172,18 @@ const graphSchema = {
           <p class="text-navy-600/80 leading-relaxed mb-6">
             <strong>Nonprofits and civic organizations.</strong> Nonprofits with union affiliations or those seeking labor endorsements use union-printed fundraising appeals, event invitations, and newsletters to demonstrate alignment with organized labor values.
           </p>
+
+          <div class="section-divider mb-6 mt-14"></div>
+          <h2 class="text-2xl font-display text-crst-primary mb-3">Recent Campaigns</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-6">A recent example of union-printed direct mail work from our facility:</p>
+          <div class="mb-4">
+            <CaseStudyCallout
+              href="/case-studies/republican-town-committee"
+              client="Hudson Valley Republican Town Committee"
+              summary="A contested local election required union-printed palm cards and full slate mailers produced and delivered within a 3-week window. All pieces carried the Allied Printing Trades Council label, satisfying party labor requirements."
+              anchor="union-printed political palm cards and slate mailers"
+            />
+          </div>
 
           <div class="section-divider mb-6 mt-14"></div>
           <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-6">Frequently Asked Questions</h2>

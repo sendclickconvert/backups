@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import CTASection from '../../components/CTASection.astro';
+import CaseStudyCallout from '../../components/CaseStudyCallout.astro';
 import AuthorByline from '../../components/AuthorByline.astro';
 import { BUSINESS, COUNTIES } from '../../data/site';
 import { getCollection } from 'astro:content';
@@ -147,6 +148,30 @@ const graphSchema = {
           <p class="text-navy-600/80 leading-relaxed mb-4">
             USPS requires a mailing permit for presorted and bulk mailings. If your organization doesn't have one, we can mail under our permit or help you obtain your own. We also assist non-profits in applying for the USPS non-profit authorization that unlocks the lowest available postage rates. Visit our <a href="/direct-mail-tools/cornerstone-mailing-permits" class="text-crst-accent hover:text-crst-primary underline">mailing permits guide</a> for more information.
           </p>
+
+          <div class="section-divider mb-6 mt-14"></div>
+          <h2 class="text-2xl font-display text-crst-primary mb-3">Recent Campaigns</h2>
+          <p class="text-navy-600/80 leading-relaxed mb-6">We've handled mailing services for businesses, nonprofits, publishers, and national organizations. A few recent examples:</p>
+          <div class="grid sm:grid-cols-2 gap-4 mb-4">
+            <CaseStudyCallout
+              href="/case-studies/national-magazine-periodical"
+              client="O'Dwyer's PR Magazine — National"
+              summary="We handle Periodical rate presort and USPS induction for O'Dwyer's PR magazine each month, including full compliance verification of indicia placement, content ratios, and documentation before every drop."
+              anchor="USPS periodical rate mailing for O'Dwyer's PR magazine"
+            />
+            <CaseStudyCallout
+              href="/case-studies/national-product-recall"
+              client="Robertshaw Controls — Multi-State"
+              summary="Robertshaw Controls needed to notify hundreds of thousands of appliance owners across multiple states of a product safety recall within a compressed legal timeline. We coordinated variable-data printing, presort, and USPS induction without outsourcing a single step."
+              anchor="national product recall notification mailing for Robertshaw Controls"
+            />
+            <CaseStudyCallout
+              href="/case-studies/waste-management"
+              client="Multi-County Waste Management Provider"
+              summary="A regional waste management company needed zone-specific customer notifications with variable data delivered within a required notification window. We produced customized pieces by service zone and completed distribution on schedule."
+              anchor="regional customer notification mailing for a multi-county waste management provider"
+            />
+          </div>
 
           <h3 class="text-xl font-display text-crst-primary mt-10 mb-6">Mailing Services FAQ</h3>
           <div class="space-y-4">

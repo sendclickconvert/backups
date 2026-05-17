@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import CTASection from '../../components/CTASection.astro';
+import CaseStudyCallout from '../../components/CaseStudyCallout.astro';
 import AuthorByline from '../../components/AuthorByline.astro';
 import { BUSINESS, COUNTIES } from '../../data/site';
 import { getCollection } from 'astro:content';
@@ -198,6 +199,34 @@ const graphSchema = {
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-14 bg-navy-50/30">
+    <div class="container-wide">
+      <div class="section-divider mb-6"></div>
+      <h2 class="text-2xl font-display text-crst-primary mb-3">Recent Campaigns</h2>
+      <p class="text-navy-600/80 leading-relaxed mb-6">We've designed direct mail creative for healthcare, insurance, retail, and more. A few recent examples:</p>
+      <div class="grid sm:grid-cols-3 gap-5">
+        <CaseStudyCallout
+          href="/case-studies/niche-insurance"
+          client="Tango Insurance — Nassau County, NY"
+          summary="We designed a 6×9 First-Class postcard for a homeowner-targeted insurance campaign — built to appeal to a 45+ demographic with a low-commitment offer. The creative contributed to above-average response rates for insurance direct mail."
+          anchor="graphic design for an insurance direct mail campaign"
+        />
+        <CaseStudyCallout
+          href="/case-studies/lawrence-hearing"
+          client="Lawrence Hearing — Orange County, NY"
+          summary="We designed a multi-round direct mail series for an audiology practice reaching adults with untreated hearing loss — visually accessible, appropriately credentialed, and crafted to prompt action."
+          anchor="healthcare direct mail design for an audiology practice"
+        />
+        <CaseStudyCallout
+          href="/case-studies/retail-furniture-store"
+          client="Hudson Valley Furniture Retailer"
+          summary="We designed EDDM postcard creative for a furniture retailer's seasonal clearance event — produced to USPS flat-size specifications and targeted to every homeowner within driving distance of the showroom."
+          anchor="EDDM postcard design for a Hudson Valley retailer"
+        />
       </div>
     </div>
   </section>

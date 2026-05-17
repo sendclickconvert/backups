@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import CTASection from '../../components/CTASection.astro';
+import CaseStudyCallout from '../../components/CaseStudyCallout.astro';
 import AuthorByline from '../../components/AuthorByline.astro';
 import { BUSINESS, COUNTIES } from '../../data/site';
 import { getCollection } from 'astro:content';
@@ -452,6 +453,28 @@ const graphSchema = {
           Get a Free EDDM Quote
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-14 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="section-divider mb-6"></div>
+      <h2 class="text-2xl font-display text-crst-primary mb-3">Recent EDDM Campaigns</h2>
+      <p class="text-navy-600/80 leading-relaxed mb-6">We've run EDDM campaigns for businesses across the Hudson Valley and nationally. A few recent examples:</p>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <CaseStudyCallout
+          href="/case-studies/cintas-recruitment"
+          client="Cintas Corporation — Ladson, SC"
+          summary="Cintas needed to reach hourly job seekers near their Ladson facility who weren't active on online job boards. We ran a saturation EDDM campaign to every household within range, driving a measurable uptick in local applications."
+          anchor="EDDM recruitment campaign for Cintas in Ladson, SC"
+        />
+        <CaseStudyCallout
+          href="/case-studies/retail-furniture-store"
+          client="Hudson Valley Furniture Retailer"
+          summary="With no existing customer list, a Hudson Valley furniture retailer needed to announce a seasonal clearance event to every homeowner within driving distance. EDDM delivered blanket coverage at a cost per household well below comparable digital advertising."
+          anchor="EDDM saturation campaign for a Hudson Valley furniture retailer"
+        />
       </div>
     </div>
   </section>

@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import CTASection from '../../components/CTASection.astro';
+import CaseStudyCallout from '../../components/CaseStudyCallout.astro';
 import AuthorByline from '../../components/AuthorByline.astro';
 import { BUSINESS, COUNTIES } from '../../data/site';
 import { getCollection } from 'astro:content';
@@ -369,6 +370,28 @@ const graphSchema = {
             <p class="text-xs text-navy-600/60 line-clamp-2 leading-relaxed">{a.data.description}</p>
           </a>
         ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-14 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="section-divider mb-6"></div>
+      <h2 class="text-2xl font-display text-crst-primary mb-3">Recent Campaigns</h2>
+      <p class="text-navy-600/80 leading-relaxed mb-6">We've produced commercial print for time-sensitive and high-volume campaigns. A few recent examples:</p>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <CaseStudyCallout
+          href="/case-studies/chinese-menu-misprint"
+          client="Hudson Valley Restaurant — Grand Opening"
+          summary="A restaurant received 10,000 menus with pricing errors days before their grand opening. Their original printer's 10-day reprint timeline would have missed the opening. We reprinted the full run in 48 hours so the owner opened on schedule."
+          anchor="48-hour emergency menu reprint for a Hudson Valley restaurant"
+        />
+        <CaseStudyCallout
+          href="/case-studies/national-product-recall"
+          client="Robertshaw Controls — Global Product Recall"
+          summary="Robertshaw Controls needed hundreds of thousands of product recall notices printed, processed, and mailed within a compressed legal timeline. We handled the entire job — variable-data print, presort, and USPS induction — without outsourcing a single step."
+          anchor="high-volume notification printing for a global product recall"
+        />
       </div>
     </div>
   </section>

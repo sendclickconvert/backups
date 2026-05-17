@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import CTASection from '../../components/CTASection.astro';
+import CaseStudyCallout from '../../components/CaseStudyCallout.astro';
 import AuthorByline from '../../components/AuthorByline.astro';
 import { BUSINESS, COUNTIES } from '../../data/site';
 import { getCollection } from 'astro:content';
@@ -175,6 +176,24 @@ const graphSchema = {
             </div>
           </div>
         ))}
+      </div>
+
+      <div class="section-divider mb-6 mt-14"></div>
+      <h2 class="text-2xl font-display text-crst-primary mb-3">Recent Campaigns</h2>
+      <p class="text-navy-600/80 leading-relaxed mb-6">We've handled nonprofit mailing for organizations across the Hudson Valley and nationally. A few recent examples:</p>
+      <div class="grid sm:grid-cols-2 gap-4 mb-4">
+        <CaseStudyCallout
+          href="/case-studies/daughters-american-revolution"
+          client="Daughters of the American Revolution"
+          summary="DAR needed to coordinate membership renewals and fundraising appeals at the USPS nonprofit rate. We managed the PS Form 3624 permit process, print, presort, and BMEU induction on their behalf."
+          anchor="nonprofit membership and fundraising mailing for DAR"
+        />
+        <CaseStudyCallout
+          href="/case-studies/british-american-collegiate"
+          client="Winant-Clayton Volunteers"
+          summary="The Winant-Clayton Volunteers program needed to reach US-based and UK-based donors for their annual fundraising appeal. We coordinated USPS outbound for domestic addresses and international mail handling for supporters in the United Kingdom."
+          anchor="international nonprofit mailing for the Winant-Clayton Volunteers"
+        />
       </div>
 
       <!-- FAQ -->
