@@ -90,3 +90,15 @@ id = "G6yQLRg3-ae71UrU8GO68"
 uri = "file://CRST-SITE-BLUEPRINT.md"
 type = "text"
 title = "CRST Site Blueprint — Full Reverse-Engineering Document"
+
+[[outputs]]
+id = "J7ABbXR-FWO7YthtPERQb"
+uri = "file://output/backlink-analysis/anchor_distribution.csv"
+type = "table"
+title = "anchor_distribution.csv"
+
+[[outputs]]
+id = "k86Q-eUb64t10Qs1ifk-l"
+uri = "file://output/backlink-analysis/SUMMARY_REPORT.md"
+type = "text"
+title = "SUMMARY_REPORT.md"
