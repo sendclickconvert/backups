@@ -20,6 +20,17 @@ app.use((req, res, next) => {
   next();
 });
 
+// Short cache for crawlable index files — must-revalidate, no immutable.
+// Sitemaps and robots.txt change on every build; a 1-year immutable header
+// would prevent Googlebot from picking up new URLs after content updates.
+app.use((req, res, next) => {
+  if (/^\/(sitemap[^/]*\.xml|robots\.txt)$/.test(req.path)) {
+    res.set('Cache-Control', 'public, max-age=3600, must-revalidate');
+    return express.static('dist/client', { redirect: false })(req, res, next);
+  }
+  next();
+});
+
 // Serve static assets (CSS, JS, images, fonts).
 // redirect: false prevents express.static from issuing its own directory→slash
 // redirect, which would conflict with the trailing-slash middleware above.
