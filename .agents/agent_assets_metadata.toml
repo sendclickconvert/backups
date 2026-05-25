@@ -108,3 +108,9 @@ id = "7_zQ6bDdH101Z2XOVDTwo"
 uri = "file://output/backlink-analysis/target_url_distribution.csv"
 type = "table"
 title = "target_url_distribution.csv"
+
+[[outputs]]
+id = "OxPLWwO5Sjq8FNSj7tUCo"
+uri = "file://crst_keyword_research_may2026.md"
+type = "text"
+title = "CRST Keyword Research Report — May 2026"
