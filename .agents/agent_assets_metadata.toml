@@ -114,3 +114,9 @@ id = "OxPLWwO5Sjq8FNSj7tUCo"
 uri = "file://crst_keyword_research_may2026.md"
 type = "text"
 title = "CRST Keyword Research Report — May 2026"
+
+[[outputs]]
+id = "9GkyWfJyezTzeVJdmw-ju"
+uri = "file://crst-mothership.zip"
+type = "unspecified"
+title = "CRST Mothership — Full Source ZIP"
