@@ -91,6 +91,7 @@ const graphSchema = { '@context': 'https://schema.org', '@graph': graphItems };
   title={title}
   description={description}
   canonical={canonical}
+  schema={null}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(graphSchema)} />

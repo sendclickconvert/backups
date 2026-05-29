@@ -80,6 +80,7 @@ export default defineConfig({
     '/resources/mailing-permits': '/direct-mail-tools/cornerstone-mailing-permits',
     '/resources/mailing-permits/': '/direct-mail-tools/cornerstone-mailing-permits',
     '/permits-page/': '/direct-mail-tools/cornerstone-mailing-permits',
+    '/resources/eddm-guide': '/services/eddm',
     '/resources/postage-rates': '/direct-mail-tools/postage-rates',
     '/resources/postage-rates/': '/direct-mail-tools/postage-rates',
     '/resources/non-profit-mailing': '/non-profit-mailing-application',

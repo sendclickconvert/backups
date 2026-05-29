@@ -1,0 +1,1 @@
+- [BaseLayout schema={null} pattern](baselayout-schema-null.md) — pages using Fragment slot="head" for custom schema MUST pass schema={null} to BaseLayout or get duplicate JSON-LD blocks.

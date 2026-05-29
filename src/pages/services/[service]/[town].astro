@@ -83,6 +83,7 @@ const faqSchema = faqs.length > 0 ? {
   title={pageTitle.replace(' | Cornerstone Services', '').replace(' | Cornerstone', '')}
   description={metaDesc}
   canonical={canonical}
+  schema={null}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />

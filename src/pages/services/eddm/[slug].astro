@@ -35,7 +35,7 @@ if (schemaItemList?.length) graphItems.push({ '@type': 'ItemList', itemListEleme
 graphItems.push({ '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crst.net' }, { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://crst.net/services' }, { '@type': 'ListItem', position: 3, name: 'Every Door Direct Mail (EDDM)', item: 'https://crst.net/services/eddm' }, { '@type': 'ListItem', position: 4, name: title, item: canonical }] });
 ---
 
-<BaseLayout title={title} description={description} canonical={canonical}>
+<BaseLayout title={title} description={description} canonical={canonical} schema={null}>
   <Fragment slot="head"><script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graphItems })} /></Fragment>
 
   <section class="bg-crst-primary text-white py-12 lg:py-16">
