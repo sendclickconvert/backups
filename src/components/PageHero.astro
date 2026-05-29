@@ -5,9 +5,10 @@ export interface Props {
   title: string;
   subtitle?: string;
   breadcrumbs?: { label: string; href?: string }[];
+  noSchema?: boolean;
 }
 
-const { title, subtitle, breadcrumbs } = Astro.props;
+const { title, subtitle, breadcrumbs, noSchema } = Astro.props;
 
 const pageUrl = `${BUSINESS.url}${Astro.url.pathname}`;
 
@@ -27,7 +28,7 @@ const breadcrumbSchema = breadcrumbs ? {
 } : null;
 ---
 
-{breadcrumbSchema && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />}
+{breadcrumbSchema && !noSchema && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />}
 
 <section class="relative bg-crst-primary overflow-hidden">
   <div class="absolute inset-0">

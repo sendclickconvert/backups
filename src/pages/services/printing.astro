@@ -65,6 +65,7 @@ const graphSchema = {
 <BaseLayout
   title="Commercial Printing Services for Direct Mail Campaigns"
   description="Commercial printing services for postcards, brochures, self-mailers, letters, newsletters, and direct mail campaigns. In-house printing and mailing in New Paltz, NY."
+  schema={null}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(graphSchema)} />
@@ -76,6 +77,7 @@ const graphSchema = {
       { label: 'Services', href: '/services' },
       { label: 'Printing Services' },
     ]}
+    noSchema={true}
   />
 
   <section class="py-14 lg:py-20">

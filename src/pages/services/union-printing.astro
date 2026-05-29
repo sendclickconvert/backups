@@ -65,6 +65,7 @@ const graphSchema = {
   title="Union Printing for Direct Mail"
   description="Cornerstone Services provides union-printed direct mail materials including postcards, envelopes, letterhead, and brochures. CWA partner. New Paltz, NY. Est. 1998."
   canonical="https://crst.net/services/union-printing"
+  schema={null}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(graphSchema)} />
@@ -77,6 +78,7 @@ const graphSchema = {
       { label: 'Services', href: '/services' },
       { label: 'Union Printing' },
     ]}
+    noSchema={true}
   />
 
   <section class="py-14 lg:py-20">

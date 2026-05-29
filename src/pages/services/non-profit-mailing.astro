@@ -63,6 +63,7 @@ const graphSchema = {
 <BaseLayout
   title="Nonprofit Mailing Services — Discounted USPS Rates"
   description="Nonprofit mailing services with discounted USPS postage rates. Permit setup, design, printing, and postal prep for fundraisers and appeals."
+  schema={null}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(graphSchema)} />
@@ -75,6 +76,7 @@ const graphSchema = {
       { label: 'Services', href: '/services' },
       { label: 'Non-Profit Mailing' },
     ]}
+    noSchema={true}
   />
 
   <section class="py-14 lg:py-20">

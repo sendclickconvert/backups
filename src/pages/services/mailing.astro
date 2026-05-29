@@ -66,6 +66,7 @@ const graphSchema = {
 <BaseLayout
   title="Mailing Services — USPS Presort & Postal Prep"
   description="USPS mailing services — inkjet addressing, presorting, barcoding, and postal prep. Save 30–50% on postage with automation rates. New Paltz, NY."
+  schema={null}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(graphSchema)} />
@@ -77,6 +78,7 @@ const graphSchema = {
       { label: 'Services', href: '/services' },
       { label: 'Mailing Services' },
     ]}
+    noSchema={true}
   />
 
   <section class="py-14 lg:py-20">

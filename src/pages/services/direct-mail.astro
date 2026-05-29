@@ -154,6 +154,7 @@ const countyTowns = [
   title="Direct Mail Services Hudson Valley, NY"
   description="Full-service direct mail campaigns in Hudson Valley — list, design, print, presort, and USPS delivery from our New Paltz, NY facility since 1998. Free estimate in one business day."
   canonical={canonical}
+  schema={null}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(graphSchema)} />
@@ -175,6 +176,7 @@ const countyTowns = [
       { label: 'Services', href: '/services' },
       { label: 'Direct Mail' },
     ]}
+    noSchema={true}
   />
 
   <section class="py-14 lg:py-20">

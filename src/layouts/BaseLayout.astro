@@ -45,7 +45,7 @@ const defaultSchema = {
   },
 };
 
-const pageSchema = schema === null ? null : (schema || defaultSchema);
+const pageSchema = schema === undefined ? defaultSchema : schema;
 ---
 
 <!DOCTYPE html>
@@ -94,7 +94,7 @@ const pageSchema = schema === null ? null : (schema || defaultSchema);
 
   <slot name="head" />
 
-  <!-- GHL Tracking Pixel (loaded after page load) -->
+  <!-- Tracking Pixel (loaded after page load) -->
   <script define:vars={{ trackingId: GHL.trackingId }}>
     window.addEventListener('load', function() {
       var s = document.createElement('script');
@@ -117,7 +117,7 @@ const pageSchema = schema === null ? null : (schema || defaultSchema);
 
   <Footer />
 
-  <!-- GHL Chat Widget (deferred 3s for performance) -->
+  <!-- Chat Widget (deferred 3s for performance) -->
   <script define:vars={{ chatWidgetId: GHL.chatWidgetId }}>
     setTimeout(function() {
       var s = document.createElement('script');
