@@ -120,3 +120,9 @@ id = "9GkyWfJyezTzeVJdmw-ju"
 uri = "file://crst-mothership.zip"
 type = "unspecified"
 title = "CRST Mothership — Full Source ZIP"
+
+[[outputs]]
+id = "QpXDIjiXB9ahEiuEMbOpZ"
+uri = "file://SEO-PLAYBOOK.md"
+type = "text"
+title = "CRST.net SEO Playbook"
