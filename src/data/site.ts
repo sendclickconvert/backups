@@ -79,8 +79,8 @@ export const NAV_ITEMS = [
     href: '/case-studies',
   },
   {
-    label: 'Blog',
-    href: 'https://blog.crst.net',
+    label: 'Store',
+    href: '/shop/plastic-postcard',
   },
   {
     label: 'About',
