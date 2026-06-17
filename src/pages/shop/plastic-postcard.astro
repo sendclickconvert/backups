@@ -1,0 +1,128 @@
+---
+export const prerender = false;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProductSelector from '../../components/shop/ProductSelector.tsx';
+
+const STOREFRONT_URL =
+  'https://cornerstone-services-i42crwvc.myshopify.com/api/2025-10/graphql.json';
+
+const PRODUCT_QUERY = `
+  query ProductByHandle($handle: String!) {
+    productByHandle(handle: $handle) {
+      title
+      handle
+      descriptionHtml
+      images(first: 10) {
+        edges {
+          node {
+            url
+            altText
+            width
+            height
+          }
+        }
+      }
+      options {
+        name
+        values
+      }
+      variants(first: 100) {
+        edges {
+          node {
+            id
+            title
+            sku
+            availableForSale
+            price {
+              amount
+              currencyCode
+            }
+            selectedOptions {
+              name
+              value
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+
+const token = import.meta.env.SHOPIFY_STOREFRONT_TOKEN;
+let productData = null;
+let fetchError = '';
+
+if (!token) {
+  fetchError = 'Store not configured. Set SHOPIFY_STOREFRONT_TOKEN.';
+} else {
+  try {
+    const res = await fetch(STOREFRONT_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Shopify-Storefront-Access-Token': token,
+      },
+      body: JSON.stringify({
+        query: PRODUCT_QUERY,
+        variables: { handle: 'plastic-postcard' },
+      }),
+    });
+    const json = await res.json();
+    const raw = json.data?.productByHandle;
+    if (!raw) {
+      fetchError = 'Product not found. Confirm it is active and assigned to the storefront sales channel.';
+    } else {
+      productData = {
+        title: raw.title,
+        handle: raw.handle,
+        descriptionHtml: raw.descriptionHtml ?? '',
+        images: raw.images.edges.map((e: any) => e.node),
+        options: raw.options,
+        variants: raw.variants.edges.map((e: any) => e.node),
+      };
+    }
+  } catch (err) {
+    fetchError = 'Failed to reach Shopify Storefront API.';
+  }
+}
+---
+
+<BaseLayout
+  title="Plastic Postcards — Print & Mail"
+  description="Order plastic postcards from Cornerstone Services. Choose your size, finish, and quantity — full-service print and direct mail from New Paltz, NY."
+  schema={null}
+  noIndex={true}
+>
+  <div class="min-h-[70vh] bg-gray-50 py-14">
+    <div class="container-wide max-w-5xl">
+
+      <nav aria-label="Breadcrumb" class="mb-8">
+        <ol class="flex items-center gap-2 text-sm font-heading text-navy-400">
+          <li><a href="/" class="hover:text-crst-primary transition-colors">Home</a></li>
+          <li class="flex items-center gap-2">
+            <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+            <a href="/services/printing" class="hover:text-crst-primary transition-colors">Printing</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+            <span class="text-navy-600">Plastic Postcards</span>
+          </li>
+        </ol>
+      </nav>
+
+      {fetchError ? (
+        <div class="bg-red-50 border border-red-200 text-red-700 px-6 py-4 rounded-xl font-heading text-sm">
+          <strong>Error:</strong> {fetchError}
+        </div>
+      ) : productData ? (
+        <ProductSelector product={productData} client:load />
+      ) : null}
+
+    </div>
+  </div>
+</BaseLayout>
