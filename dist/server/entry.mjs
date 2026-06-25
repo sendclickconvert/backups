@@ -1,6 +1,6 @@
 import { renderers } from './renderers.mjs';
 import { c as createExports, s as serverEntrypointModule } from './chunks/_@astrojs-ssr-adapter_kqOmapBX.mjs';
-import { manifest } from './manifest_Cf7nHmLF.mjs';
+import { manifest } from './manifest_D7xeaFM3.mjs';
 
 const _page0 = () => import('./pages/_image.astro.mjs');
 const _page1 = () => import('./pages/about/memberships.astro.mjs');
@@ -17,9 +17,9 @@ const _page11 = () => import('./pages/direct-mail-tools/address-change.astro.mjs
 const _page12 = () => import('./pages/direct-mail-tools/bmeu/_slug_.astro.mjs');
 const _page13 = () => import('./pages/direct-mail-tools/bmeu.astro.mjs');
 const _page14 = () => import('./pages/direct-mail-tools/cornerstone-mailing-permits.astro.mjs');
-const _page15 = () => import('./pages/direct-mail-tools/mailing-letter-rates.astro.mjs');
-const _page16 = () => import('./pages/direct-mail-tools/postage-rates.astro.mjs');
-const _page17 = () => import('./pages/direct-mail-tools/postal-dictionary.astro.mjs');
+const _page15 = () => import('./pages/direct-mail-tools/postage-rates.astro.mjs');
+const _page16 = () => import('./pages/direct-mail-tools/postal-dictionary.astro.mjs');
+const _page17 = () => import('./pages/direct-mail-tools/usps-notice-67.astro.mjs');
 const _page18 = () => import('./pages/estimate.astro.mjs');
 const _page19 = () => import('./pages/faq.astro.mjs');
 const _page20 = () => import('./pages/full-service-direct-mail-company-hudson-valley.astro.mjs');
@@ -100,9 +100,9 @@ const pageMap = new Map([
     ["src/pages/direct-mail-tools/bmeu/[slug].astro", _page12],
     ["src/pages/direct-mail-tools/bmeu/index.astro", _page13],
     ["src/pages/direct-mail-tools/cornerstone-mailing-permits.astro", _page14],
-    ["src/pages/direct-mail-tools/mailing-letter-rates.astro", _page15],
-    ["src/pages/direct-mail-tools/postage-rates.astro", _page16],
-    ["src/pages/direct-mail-tools/postal-dictionary.astro", _page17],
+    ["src/pages/direct-mail-tools/postage-rates.astro", _page15],
+    ["src/pages/direct-mail-tools/postal-dictionary.astro", _page16],
+    ["src/pages/direct-mail-tools/usps-notice-67.astro", _page17],
     ["src/pages/estimate.astro", _page18],
     ["src/pages/faq.astro", _page19],
     ["src/pages/full-service-direct-mail-company-hudson-valley.astro", _page20],

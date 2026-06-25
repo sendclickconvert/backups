@@ -188,6 +188,7 @@ const $$ = createComponent(($$result, $$props, $$slots) => {
     "/direct-mail-tools/address": "/direct-mail-tools/address-change",
     "/direct-mail-tools": "/resources",
     "/direct-mail-tools/mailing-letter": "/resources",
+    "/direct-mail-tools/mailing-letter-rates": "/direct-mail-tools/usps-notice-67",
     "/non-profit-database-change-request/": "/resources/non-profit-database-change-request",
     // note: '/non-profit-database-change-request' (no slash) handled below — keep as resource redirect
     "/lessons-from-marketing-failure": "/resources/lessons-from-marketing-failure",
@@ -341,7 +342,7 @@ const $$ = createComponent(($$result, $$props, $$slots) => {
   if (path.startsWith("/direct-mail-services/")) {
     return Astro2.redirect("/services", 301);
   }
-  if (path.startsWith("/direct-mail-tools/") && path !== "/direct-mail-tools/envelope-sizes/" && path !== "/direct-mail-tools/postal-dictionary/" && path !== "/direct-mail-tools/address-change/" && path !== "/direct-mail-tools/cornerstone-mailing-permits/" && path !== "/direct-mail-tools/postage-rates/" && path !== "/direct-mail-tools/mailing-letter-rates" && path !== "/direct-mail-tools/bmeu" && !path.startsWith("/direct-mail-tools/bmeu/")) {
+  if (path.startsWith("/direct-mail-tools/") && path !== "/direct-mail-tools/envelope-sizes/" && path !== "/direct-mail-tools/postal-dictionary/" && path !== "/direct-mail-tools/address-change/" && path !== "/direct-mail-tools/cornerstone-mailing-permits/" && path !== "/direct-mail-tools/postage-rates/" && path !== "/direct-mail-tools/usps-notice-67" && path !== "/direct-mail-tools/bmeu" && !path.startsWith("/direct-mail-tools/bmeu/")) {
     return Astro2.redirect("/resources", 301);
   }
   if (path.startsWith("/author/") || path.startsWith("/feed")) {

@@ -5,7 +5,7 @@ import CTASection from '../../components/CTASection.astro';
 import Notice67Checker from '../../components/tools/Notice67Checker';
 import { LETTER_SPEC, POSTCARD_SPEC, ZONES } from '../../data/notice67-specs';
 
-const canonical = 'https://crst.net/direct-mail-tools/mailing-letter-rates';
+const canonical = 'https://crst.net/direct-mail-tools/usps-notice-67';
 const lastUpdated = '2026-06-25';
 const lastUpdatedDisplay = 'June 2026';
 
@@ -175,6 +175,18 @@ const graphSchema = JSON.stringify({
               <p class="text-navy-600/70 text-xs leading-relaxed">{c.desc}</p>
             </div>
           ))}
+        </div>
+
+        <!-- Zone diagram -->
+        <div class="mb-8">
+          <img
+            src="/images/notice-67-zones.svg"
+            alt="USPS Notice 67 letter automation zones — return address upper left, FIM upper right, OCR delivery-address read area lower center, barcode clear zone lower right"
+            loading="lazy"
+            width="820"
+            height="470"
+            style="max-width:100%;height:auto;display:block;"
+          />
         </div>
 
         <!-- The Zones -->
