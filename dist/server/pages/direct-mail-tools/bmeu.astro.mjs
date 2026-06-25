@@ -1,7 +1,7 @@
 /* empty css                                     */
 import { f as createAstro, g as createComponent, j as renderComponent, r as renderTemplate, k as Fragment, u as unescapeHTML, m as maybeRenderHead, i as addAttribute } from '../../chunks/astro/server_CTVANr5S.mjs';
 import 'kleur/colors';
-import { $ as $$BaseLayout } from '../../chunks/BaseLayout_CVG9MwJR.mjs';
+import { $ as $$BaseLayout } from '../../chunks/BaseLayout_BC9QKKkw.mjs';
 import { $ as $$PageHero } from '../../chunks/PageHero_BBHibGk9.mjs';
 import { $ as $$CTASection } from '../../chunks/CTASection_gDvPr2ru.mjs';
 import { b as bmeus } from '../../chunks/bmeu-data_B-4yahVI.mjs';
