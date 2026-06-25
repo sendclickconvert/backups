@@ -57,7 +57,7 @@ const NAV_ITEMS = [
       { label: "USPS Templates", href: "/usps-direct-mailer-templates" },
       { label: "Postal Dictionary", href: "/direct-mail-tools/postal-dictionary" },
       { label: "Non-Profit Mailing Tool", href: "/non-profit-mailing-application" },
-      { label: "Mail Automation", href: "/resources/mail-automation" },
+      { label: "Mail Automation", href: "/direct-mail-tools/usps-notice-67" },
       { label: "Informed Delivery Guide", href: "/resources/informed-delivery-guide" }
     ]
   },
