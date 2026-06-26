@@ -1,7 +1,7 @@
 import { f as createAstro, g as createComponent, r as renderTemplate, u as unescapeHTML, m as maybeRenderHead, i as addAttribute } from './astro/server_CTVANr5S.mjs';
 import 'kleur/colors';
 import 'clsx';
-import { B as BUSINESS } from './site_B1N_EUh-.mjs';
+import { B as BUSINESS } from './site_hCY61IW0.mjs';
 
 var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;

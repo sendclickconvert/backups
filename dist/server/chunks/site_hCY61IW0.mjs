@@ -67,7 +67,7 @@ const NAV_ITEMS = [
   },
   {
     label: "Store",
-    href: "/shop/plastic-postcard"
+    href: "/shop"
   },
   {
     label: "About",

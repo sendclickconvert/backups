@@ -1,7 +1,7 @@
 /* empty css                                  */
 import { g as createComponent, j as renderComponent, r as renderTemplate, m as maybeRenderHead, i as addAttribute, k as Fragment } from '../chunks/astro/server_CTVANr5S.mjs';
 import 'kleur/colors';
-import { $ as $$BaseLayout } from '../chunks/BaseLayout_Dykw7lxx.mjs';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_KnIkPZY-.mjs';
 import { s as storefrontFetch, A as ALL_PRODUCTS_QUERY } from '../chunks/shopify_c6w46TDs.mjs';
 export { renderers } from '../renderers.mjs';
 
