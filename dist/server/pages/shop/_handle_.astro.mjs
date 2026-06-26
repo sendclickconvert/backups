@@ -1,9 +1,10 @@
 /* empty css                                     */
-import { g as createComponent, j as renderComponent, r as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_CTVANr5S.mjs';
+import { f as createAstro, g as createComponent, j as renderComponent, r as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_CTVANr5S.mjs';
 import 'kleur/colors';
-import { $ as $$BaseLayout } from '../../chunks/BaseLayout_BlKfmheo.mjs';
+import { $ as $$BaseLayout } from '../../chunks/BaseLayout_Dykw7lxx.mjs';
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { useState, useCallback } from 'react';
+import { s as storefrontFetch, P as PRODUCT_BY_HANDLE_QUERY } from '../../chunks/shopify_c6w46TDs.mjs';
 export { renderers } from '../../renderers.mjs';
 
 function formatPrice(amount, currency) {
@@ -199,50 +200,12 @@ function ProductSelector({ product }) {
   ] });
 }
 
+const $$Astro = createAstro("https://crst.net");
 const prerender = false;
-const $$PlasticPostcard = createComponent(async ($$result, $$props, $$slots) => {
-  const STOREFRONT_URL = "https://cornerstone-services-i42crwvc.myshopify.com/api/2025-10/graphql.json";
-  const PRODUCT_QUERY = `
-  query ProductByHandle($handle: String!) {
-    productByHandle(handle: $handle) {
-      title
-      handle
-      descriptionHtml
-      images(first: 10) {
-        edges {
-          node {
-            url
-            altText
-            width
-            height
-          }
-        }
-      }
-      options {
-        name
-        values
-      }
-      variants(first: 100) {
-        edges {
-          node {
-            id
-            title
-            sku
-            availableForSale
-            price {
-              amount
-              currencyCode
-            }
-            selectedOptions {
-              name
-              value
-            }
-          }
-        }
-      }
-    }
-  }
-`;
+const $$handle = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  Astro2.self = $$handle;
+  const { handle } = Astro2.params;
   const token = process.env.SHOPIFY_STOREFRONT_TOKEN;
   let productData = null;
   let fetchError = "";
@@ -250,43 +213,35 @@ const $$PlasticPostcard = createComponent(async ($$result, $$props, $$slots) => 
     fetchError = "Store not configured. Set SHOPIFY_STOREFRONT_TOKEN.";
   } else {
     try {
-      const res = await fetch(STOREFRONT_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "X-Shopify-Storefront-Access-Token": token
-        },
-        body: JSON.stringify({
-          query: PRODUCT_QUERY,
-          variables: { handle: "plastic-postcard" }
-        })
-      });
-      const json = await res.json();
-      const raw = json.data?.productByHandle;
+      const data = await storefrontFetch(
+        PRODUCT_BY_HANDLE_QUERY,
+        { handle },
+        token
+      );
+      const raw = data.productByHandle;
       if (!raw) {
-        fetchError = "Product not found. Confirm it is active and assigned to the storefront sales channel.";
-      } else {
-        productData = {
-          title: raw.title,
-          handle: raw.handle,
-          descriptionHtml: raw.descriptionHtml ?? "",
-          images: raw.images.edges.map((e) => e.node),
-          options: raw.options,
-          variants: raw.variants.edges.map((e) => e.node)
-        };
+        return Astro2.redirect("/shop", 302);
       }
+      productData = {
+        title: raw.title,
+        handle: raw.handle,
+        descriptionHtml: raw.descriptionHtml ?? "",
+        images: raw.images.edges.map((e) => e.node),
+        options: raw.options,
+        variants: raw.variants.edges.map((e) => e.node)
+      };
     } catch (err) {
       fetchError = "Failed to reach Shopify Storefront API.";
     }
   }
-  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": "Plastic Postcards — Print & Mail", "description": "Order plastic postcards from Cornerstone Services. Choose your size, finish, and quantity — full-service print and direct mail from New Paltz, NY.", "schema": null, "noIndex": true }, { "default": async ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="min-h-[70vh] bg-gray-50 py-14"> <div class="container-wide max-w-5xl"> <nav aria-label="Breadcrumb" class="mb-8"> <ol class="flex items-center gap-2 text-sm font-heading text-navy-400"> <li><a href="/" class="hover:text-crst-primary transition-colors">Home</a></li> <li class="flex items-center gap-2"> <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path> </svg> <a href="/services/printing" class="hover:text-crst-primary transition-colors">Printing</a> </li> <li class="flex items-center gap-2"> <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path> </svg> <span class="text-navy-600">Plastic Postcards</span> </li> </ol> </nav> ${fetchError ? renderTemplate`<div class="bg-red-50 border border-red-200 text-red-700 px-6 py-4 rounded-xl font-heading text-sm"> <strong>Error:</strong> ${fetchError} </div>` : productData ? renderTemplate`${renderComponent($$result2, "ProductSelector", ProductSelector, { "product": productData, "client:load": true, "client:component-hydration": "load", "client:component-path": "/home/runner/workspace/src/components/shop/ProductSelector.tsx", "client:component-export": "default" })}` : null} </div> </div> ` })}`;
-}, "/home/runner/workspace/src/pages/shop/plastic-postcard.astro", void 0);
-const $$file = "/home/runner/workspace/src/pages/shop/plastic-postcard.astro";
-const $$url = "/shop/plastic-postcard";
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": productData ? `${productData.title} — Print & Mail | Cornerstone` : "Product | Cornerstone Services", "description": productData ? `Order ${productData.title} from Cornerstone Services. Choose your options and go straight to checkout. Full-service print and direct mail from New Paltz, NY.` : "", "schema": null, "noIndex": true }, { "default": async ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="min-h-[70vh] bg-gray-50 py-14"> <div class="container-wide max-w-5xl"> <nav aria-label="Breadcrumb" class="mb-8"> <ol class="flex items-center gap-2 text-sm font-heading text-navy-400"> <li><a href="/" class="hover:text-crst-primary transition-colors">Home</a></li> <li class="flex items-center gap-2"> <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path> </svg> <a href="/shop" class="hover:text-crst-primary transition-colors">Shop</a> </li> ${productData && renderTemplate`<li class="flex items-center gap-2"> <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path> </svg> <span class="text-navy-600">${productData.title}</span> </li>`} </ol> </nav> ${fetchError ? renderTemplate`<div class="bg-red-50 border border-red-200 text-red-700 px-6 py-4 rounded-xl font-heading text-sm"> <strong>Error:</strong> ${fetchError} </div>` : productData ? renderTemplate`${renderComponent($$result2, "ProductSelector", ProductSelector, { "product": productData, "client:load": true, "client:component-hydration": "load", "client:component-path": "/home/runner/workspace/src/components/shop/ProductSelector.tsx", "client:component-export": "default" })}` : null} </div> </div> ` })}`;
+}, "/home/runner/workspace/src/pages/shop/[handle].astro", void 0);
+const $$file = "/home/runner/workspace/src/pages/shop/[handle].astro";
+const $$url = "/shop/[handle]";
 
 const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
-  default: $$PlasticPostcard,
+  default: $$handle,
   file: $$file,
   prerender,
   url: $$url

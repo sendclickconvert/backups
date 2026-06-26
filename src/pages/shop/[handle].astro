@@ -1,0 +1,96 @@
+---
+export const prerender = false;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProductSelector from '../../components/shop/ProductSelector.tsx';
+import { storefrontFetch, PRODUCT_BY_HANDLE_QUERY } from '../../lib/shopify';
+
+const { handle } = Astro.params as { handle: string };
+
+interface ProductData {
+  title: string;
+  handle: string;
+  descriptionHtml: string;
+  images: { url: string; altText: string | null; width: number; height: number }[];
+  options: { name: string; values: string[] }[];
+  variants: {
+    id: string;
+    title: string;
+    sku: string;
+    availableForSale: boolean;
+    price: { amount: string; currencyCode: string };
+    selectedOptions: { name: string; value: string }[];
+  }[];
+}
+
+const token = import.meta.env.SHOPIFY_STOREFRONT_TOKEN;
+let productData: ProductData | null = null;
+let fetchError = '';
+
+if (!token) {
+  fetchError = 'Store not configured. Set SHOPIFY_STOREFRONT_TOKEN.';
+} else {
+  try {
+    const data = await storefrontFetch<{ productByHandle: any }>(
+      PRODUCT_BY_HANDLE_QUERY,
+      { handle },
+      token
+    );
+    const raw = data.productByHandle;
+    if (!raw) {
+      return Astro.redirect('/shop', 302);
+    }
+    productData = {
+      title: raw.title,
+      handle: raw.handle,
+      descriptionHtml: raw.descriptionHtml ?? '',
+      images: raw.images.edges.map((e: any) => e.node),
+      options: raw.options,
+      variants: raw.variants.edges.map((e: any) => e.node),
+    };
+  } catch (err) {
+    fetchError = 'Failed to reach Shopify Storefront API.';
+  }
+}
+---
+
+<BaseLayout
+  title={productData ? `${productData.title} — Print & Mail | Cornerstone` : 'Product | Cornerstone Services'}
+  description={productData ? `Order ${productData.title} from Cornerstone Services. Choose your options and go straight to checkout. Full-service print and direct mail from New Paltz, NY.` : ''}
+  schema={null}
+  noIndex={true}
+>
+  <div class="min-h-[70vh] bg-gray-50 py-14">
+    <div class="container-wide max-w-5xl">
+
+      <nav aria-label="Breadcrumb" class="mb-8">
+        <ol class="flex items-center gap-2 text-sm font-heading text-navy-400">
+          <li><a href="/" class="hover:text-crst-primary transition-colors">Home</a></li>
+          <li class="flex items-center gap-2">
+            <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+            <a href="/shop" class="hover:text-crst-primary transition-colors">Shop</a>
+          </li>
+          {productData && (
+            <li class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+              </svg>
+              <span class="text-navy-600">{productData.title}</span>
+            </li>
+          )}
+        </ol>
+      </nav>
+
+      {fetchError ? (
+        <div class="bg-red-50 border border-red-200 text-red-700 px-6 py-4 rounded-xl font-heading text-sm">
+          <strong>Error:</strong> {fetchError}
+        </div>
+      ) : productData ? (
+        <ProductSelector product={productData} client:load />
+      ) : null}
+
+    </div>
+  </div>
+</BaseLayout>
