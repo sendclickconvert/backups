@@ -1,6 +1,6 @@
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
-const zipcodes = require('zipcodes');
+import zipLatLong from '../../data/zip-latlong.json';
+
+const ZIP_DATA = zipLatLong as Record<string, [number, number]>;
 
 export interface GeoPoint {
   lat: number;
@@ -10,9 +10,9 @@ export interface GeoPoint {
 export function getZipCoords(zip: string): GeoPoint | null {
   const normalized = zip.trim().replace(/\D/g, '').slice(0, 5).padStart(5, '0');
   if (normalized.length !== 5) return null;
-  const result = zipcodes.lookup(normalized);
-  if (!result || result.latitude == null || result.longitude == null) return null;
-  return { lat: result.latitude, lng: result.longitude };
+  const entry = ZIP_DATA[normalized];
+  if (!entry) return null;
+  return { lat: entry[0], lng: entry[1] };
 }
 
 export function haversineMiles(a: GeoPoint, b: GeoPoint): number {
