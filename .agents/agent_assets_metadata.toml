@@ -6,6 +6,12 @@ uri = "file://public/images/shop/plastic-postcard-placeholder.png"
 type = "image"
 title = "plastic postcard product"
 
+[[generated]]
+id = "2SCsG-mKIuVA3K_Z-9AQi"
+uri = "file://public/images/shop/magnet-postcard-placeholder.png"
+type = "image"
+title = "magnet postcard product"
+
 [[outputs]]
 id = "wiVmD41fYqsBpY04t9p--"
 uri = "file://seo-audit-chmcnally.md"

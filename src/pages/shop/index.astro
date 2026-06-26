@@ -31,6 +31,11 @@ if (!token) {
   }
 }
 
+const GRID_PLACEHOLDERS: Record<string, string> = {
+  'plastic-postcard': '/images/shop/plastic-postcard-placeholder.png',
+  'magnet-postcard':  '/images/shop/magnet-postcard-placeholder.png',
+};
+
 function formatPrice(amount: string, currency: string) {
   return new Intl.NumberFormat('en-US', {
     style: 'currency',
@@ -87,6 +92,13 @@ function formatPrice(amount: string, currency: string) {
                   <img
                     src={product.featuredImage.url}
                     alt={product.featuredImage.altText ?? product.title}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                ) : GRID_PLACEHOLDERS[product.handle] ? (
+                  <img
+                    src={GRID_PLACEHOLDERS[product.handle]}
+                    alt={product.title}
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
