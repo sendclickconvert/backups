@@ -1,7 +1,7 @@
 /* empty css                                     */
 import { f as createAstro, g as createComponent, j as renderComponent, r as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_CTVANr5S.mjs';
 import 'kleur/colors';
-import { $ as $$BaseLayout } from '../../chunks/BaseLayout_KnIkPZY-.mjs';
+import { $ as $$BaseLayout } from '../../chunks/BaseLayout_vZj_wND7.mjs';
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { useState, useCallback } from 'react';
 import { s as storefrontFetch, P as PRODUCT_BY_HANDLE_QUERY } from '../../chunks/shopify_c6w46TDs.mjs';
