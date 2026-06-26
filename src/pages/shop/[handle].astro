@@ -9,6 +9,7 @@ const { handle } = Astro.params as { handle: string };
 
 const PRODUCT_PLACEHOLDERS: Record<string, string> = {
   'plastic-postcard': '/images/shop/plastic-postcard-placeholder.png',
+  'magnet-postcard':  '/images/shop/magnet-postcard-placeholder.png',
 };
 const placeholderSrc = PRODUCT_PLACEHOLDERS[handle] ?? null;
 
