@@ -30,6 +30,11 @@ type Product = {
   variants: ShopifyVariant[];
 };
 
+type ProductSelectorProps = {
+  product: Product;
+  placeholderSrc?: string | null;
+};
+
 function formatPrice(amount: string, currency: string): string {
   return new Intl.NumberFormat('en-US', {
     style: 'currency',
@@ -50,7 +55,7 @@ function findVariant(
   );
 }
 
-export default function ProductSelector({ product }: { product: Product }) {
+export default function ProductSelector({ product, placeholderSrc }: ProductSelectorProps) {
   const blank: Record<string, string> = {};
   product.options.forEach(opt => { blank[opt.name] = ''; });
 
@@ -109,6 +114,12 @@ export default function ProductSelector({ product }: { product: Product }) {
             alt={firstImage.altText ?? product.title}
             width={firstImage.width}
             height={firstImage.height}
+            className="w-full h-auto object-cover"
+          />
+        ) : placeholderSrc ? (
+          <img
+            src={placeholderSrc}
+            alt={product.title}
             className="w-full h-auto object-cover"
           />
         ) : (

@@ -20,7 +20,7 @@ function findVariant(variants, selections) {
     (v) => v.selectedOptions.every((opt) => selections[opt.name] === opt.value)
   ) ?? null;
 }
-function ProductSelector({ product }) {
+function ProductSelector({ product, placeholderSrc }) {
   const blank = {};
   product.options.forEach((opt) => {
     blank[opt.name] = "";
@@ -75,6 +75,13 @@ function ProductSelector({ product }) {
         alt: firstImage.altText ?? product.title,
         width: firstImage.width,
         height: firstImage.height,
+        className: "w-full h-auto object-cover"
+      }
+    ) : placeholderSrc ? /* @__PURE__ */ jsx(
+      "img",
+      {
+        src: placeholderSrc,
+        alt: product.title,
         className: "w-full h-auto object-cover"
       }
     ) : /* @__PURE__ */ jsx("div", { className: "aspect-square bg-navy-50 flex items-center justify-center", children: /* @__PURE__ */ jsx(
@@ -206,6 +213,10 @@ const $$handle = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$handle;
   const { handle } = Astro2.params;
+  const PRODUCT_PLACEHOLDERS = {
+    "plastic-postcard": "/images/shop/plastic-postcard-placeholder.png"
+  };
+  const placeholderSrc = PRODUCT_PLACEHOLDERS[handle] ?? null;
   const token = process.env.SHOPIFY_STOREFRONT_TOKEN;
   let productData = null;
   let fetchError = "";
@@ -234,7 +245,7 @@ const $$handle = createComponent(async ($$result, $$props, $$slots) => {
       fetchError = "Failed to reach Shopify Storefront API.";
     }
   }
-  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": productData ? `${productData.title} — Print & Mail | Cornerstone` : "Product | Cornerstone Services", "description": productData ? `Order ${productData.title} from Cornerstone Services. Choose your options and go straight to checkout. Full-service print and direct mail from New Paltz, NY.` : "", "schema": null, "noIndex": true }, { "default": async ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="min-h-[70vh] bg-gray-50 py-14"> <div class="container-wide max-w-5xl"> <nav aria-label="Breadcrumb" class="mb-8"> <ol class="flex items-center gap-2 text-sm font-heading text-navy-400"> <li><a href="/" class="hover:text-crst-primary transition-colors">Home</a></li> <li class="flex items-center gap-2"> <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path> </svg> <a href="/shop" class="hover:text-crst-primary transition-colors">Shop</a> </li> ${productData && renderTemplate`<li class="flex items-center gap-2"> <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path> </svg> <span class="text-navy-600">${productData.title}</span> </li>`} </ol> </nav> ${fetchError ? renderTemplate`<div class="bg-red-50 border border-red-200 text-red-700 px-6 py-4 rounded-xl font-heading text-sm"> <strong>Error:</strong> ${fetchError} </div>` : productData ? renderTemplate`${renderComponent($$result2, "ProductSelector", ProductSelector, { "product": productData, "client:load": true, "client:component-hydration": "load", "client:component-path": "/home/runner/workspace/src/components/shop/ProductSelector.tsx", "client:component-export": "default" })}` : null} </div> </div> ` })}`;
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": productData ? `${productData.title} — Print & Mail | Cornerstone` : "Product | Cornerstone Services", "description": productData ? `Order ${productData.title} from Cornerstone Services. Choose your options and go straight to checkout. Full-service print and direct mail from New Paltz, NY.` : "", "schema": null, "noIndex": true }, { "default": async ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="min-h-[70vh] bg-gray-50 py-14"> <div class="container-wide max-w-5xl"> <nav aria-label="Breadcrumb" class="mb-8"> <ol class="flex items-center gap-2 text-sm font-heading text-navy-400"> <li><a href="/" class="hover:text-crst-primary transition-colors">Home</a></li> <li class="flex items-center gap-2"> <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path> </svg> <a href="/shop" class="hover:text-crst-primary transition-colors">Shop</a> </li> ${productData && renderTemplate`<li class="flex items-center gap-2"> <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path> </svg> <span class="text-navy-600">${productData.title}</span> </li>`} </ol> </nav> ${fetchError ? renderTemplate`<div class="bg-red-50 border border-red-200 text-red-700 px-6 py-4 rounded-xl font-heading text-sm"> <strong>Error:</strong> ${fetchError} </div>` : productData ? renderTemplate`${renderComponent($$result2, "ProductSelector", ProductSelector, { "product": productData, "placeholderSrc": placeholderSrc, "client:load": true, "client:component-hydration": "load", "client:component-path": "/home/runner/workspace/src/components/shop/ProductSelector.tsx", "client:component-export": "default" })}` : null} </div> </div> ` })}`;
 }, "/home/runner/workspace/src/pages/shop/[handle].astro", void 0);
 const $$file = "/home/runner/workspace/src/pages/shop/[handle].astro";
 const $$url = "/shop/[handle]";

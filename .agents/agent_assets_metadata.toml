@@ -1,5 +1,10 @@
 uploads = []
-generated = []
+
+[[generated]]
+id = "OnStZusytvJUQu9xqs1qX"
+uri = "file://public/images/shop/plastic-postcard-placeholder.png"
+type = "image"
+title = "plastic postcard product"
 
 [[outputs]]
 id = "wiVmD41fYqsBpY04t9p--"

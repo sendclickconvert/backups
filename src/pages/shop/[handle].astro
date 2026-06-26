@@ -7,6 +7,11 @@ import { storefrontFetch, PRODUCT_BY_HANDLE_QUERY } from '../../lib/shopify';
 
 const { handle } = Astro.params as { handle: string };
 
+const PRODUCT_PLACEHOLDERS: Record<string, string> = {
+  'plastic-postcard': '/images/shop/plastic-postcard-placeholder.png',
+};
+const placeholderSrc = PRODUCT_PLACEHOLDERS[handle] ?? null;
+
 interface ProductData {
   title: string;
   handle: string;
@@ -88,7 +93,7 @@ if (!token) {
           <strong>Error:</strong> {fetchError}
         </div>
       ) : productData ? (
-        <ProductSelector product={productData} client:load />
+        <ProductSelector product={productData} placeholderSrc={placeholderSrc} client:load />
       ) : null}
 
     </div>
