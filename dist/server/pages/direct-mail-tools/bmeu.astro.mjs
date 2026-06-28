@@ -170365,11 +170365,11 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
         "@id": "https://crst.net/#organization",
         name: "Cornerstone Services, Inc.",
         url: "https://crst.net",
-        telephone: "+1-845-255-5722",
+        telephone: "+18452555722",
         foundingDate: "1998",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "31 S Ohioville Rd",
+          streetAddress: "31 South Ohioville Road",
           addressLocality: "New Paltz",
           addressRegion: "NY",
           postalCode: "12561",

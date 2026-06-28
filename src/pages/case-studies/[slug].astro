@@ -30,7 +30,7 @@ const relatedServicePages = SERVICES.filter(s =>
   caseStudy.relatedServices.includes(s.slug)
 );
 
-const title = `${caseStudy.title} | Case Study | ${BUSINESS.shortName}`;
+const title = `${caseStudy.title} | Case Study`;
 const description = `${caseStudy.client} — ${caseStudy.challenge.slice(0, 150)}... See how Cornerstone Services helped with ${caseStudy.servicesUsed.join(', ')}.`;
 
 const schema = {
