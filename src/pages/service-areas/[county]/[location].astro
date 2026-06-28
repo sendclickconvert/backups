@@ -8,6 +8,7 @@ import { COUNTIES_DATA, getAllLocations } from '../../../data/locations';
 import type { Location, County } from '../../../data/locations';
 import { townUniqueContent } from '../../../data/town-unique-content';
 import NearbyTowns from '../../../components/NearbyTowns.astro';
+import AnswerBlock from '../../../components/AnswerBlock.astro';
 
 export function getStaticPaths() {
   const paths: { params: { county: string; location: string }; props: { location: Location; county: County } }[] = [];
@@ -222,6 +223,12 @@ const nearbyAreas = neighborNames
       Back to {county.name}
     </a>
   </div>
+
+  {uniqueContent?.leadAnswer && (
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-3 pb-0">
+      <AnswerBlock answer={uniqueContent.leadAnswer} />
+    </div>
+  )}
 
   <section class="py-14 lg:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -66,6 +66,7 @@ export interface TownUniqueContent {
   mailingProfile?: TownMailingProfile;
   whyCornerstone?: string;
   localSuccessStory?: string;
+  leadAnswer?: string;
 }
 
 export const townUniqueContent: Record<string, TownUniqueContent> = {
@@ -75,6 +76,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // ═══════════════════════════════════════════════════════════
 
   "beacon": {
+    leadAnswer: "Cornerstone provides EDDM, postcards, and full campaign services to Beacon's 12508 ZIP — the arts-driven Main Street and Metro-North residential community that responds well to physical mail.",
     metaTitle: "Direct Mail & Printing Services in Beacon, NY | Cornerstone Services",
     metaDescription: "Cornerstone prints and mails for Beacon businesses — from Main Street restaurants to home service providers. EDDM, postcards, brochures, and full direct mail campaigns targeting Beacon's 12508 ZIP.",
     h1: "Direct Mail & Printing for Beacon, NY Businesses",
@@ -97,6 +99,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "red-hook": {
+    leadAnswer: "Red Hook is a Hudson Valley town along Route 9 where agriculture, Bard College, and farm-to-table culture define a tight-knit community — Cornerstone provides EDDM, postcards, and full direct mail campaigns reaching Red Hook's 4,300+ households.",
     metaTitle: "Direct Mail & Printing in Red Hook, NY | Cornerstone Services",
     metaDescription: "Reach Red Hook's farm-to-table community, Bard College neighbors, and weekender population with targeted direct mail and EDDM from Cornerstone Services.",
     h1: "Direct Mail & Printing for Red Hook, NY Businesses",
@@ -119,6 +122,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "hyde-park": {
+    leadAnswer: "Hyde Park is home to the FDR Presidential Library and the Culinary Institute of America along the Hudson River — Cornerstone provides EDDM, postcards, and full direct mail campaigns to Hyde Park's 8,000+ households and Route 9 businesses.",
     metaTitle: "Direct Mail & Printing in Hyde Park, NY | Cornerstone Services",
     metaDescription: "Direct mail and printing for Hyde Park businesses along the Route 9 corridor — from CIA-adjacent restaurants to residential home service providers. EDDM, postcards, and more.",
     h1: "Direct Mail & Printing for Hyde Park, NY Businesses",
@@ -141,6 +145,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "pawling": {
+    leadAnswer: "Pawling is a compact Dutchess County town along Route 22 at the Connecticut border where the Appalachian Trail passes through the village center — Cornerstone provides full-town EDDM saturation for Pawling businesses at an affordable single-campaign cost.",
     metaTitle: "Direct Mail & Printing in Pawling, NY | Cornerstone Services",
     metaDescription: "Affordable direct mail and EDDM for Pawling businesses — saturate the entire town with a single campaign. Postcards, brochures, and full mailing services from Cornerstone.",
     h1: "Direct Mail & Printing for Pawling, NY Businesses",
@@ -163,6 +168,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "millbrook": {
+    leadAnswer: "Millbrook is Dutchess County's equestrian and estate country, with an affluent audience that engages with premium physical mail — Cornerstone provides high-quality postcards, brochures, and EDDM to horse farms, specialty retailers, and the estate households surrounding the village.",
     metaTitle: "Direct Mail & Printing in Millbrook, NY | Cornerstone Services",
     metaDescription: "Premium direct mail for Millbrook's equestrian and estate community. High-end postcards, brochures, and EDDM campaigns from Cornerstone — printed on quality stock that matches Millbrook's market.",
     h1: "Direct Mail & Printing for Millbrook, NY Businesses",
@@ -185,6 +191,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "wappingers-falls": {
+    leadAnswer: "Cornerstone provides high-volume EDDM, postcards, and full mailing services in Wappingers Falls — the 12590 ZIP anchoring southern Dutchess County's busiest Route 9 commercial corridor, with some of the county's densest residential carrier routes.",
     metaTitle: "Direct Mail & Printing in Wappingers Falls, NY | Cornerstone Services",
     metaDescription: "High-volume direct mail and EDDM for the Wappingers Falls commercial corridor — reach the densest residential population in southern Dutchess County with Cornerstone.",
     h1: "Direct Mail & Printing for Wappingers Falls, NY Businesses",
@@ -207,6 +214,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "east-fishkill": {
+    leadAnswer: "East Fishkill is southern Dutchess County's fastest-growing town, with new subdivisions around Hopewell Junction actively seeking local services — Cornerstone provides EDDM and direct mail reaching new households before they've built loyalty to any local business.",
     metaTitle: "Direct Mail & Printing in East Fishkill, NY | Cornerstone Services",
     metaDescription: "Reach East Fishkill's growing residential neighborhoods with EDDM and direct mail from Cornerstone. New subdivisions near Hopewell Junction mean new customers looking for local businesses.",
     h1: "Direct Mail & Printing for East Fishkill, NY Businesses",
@@ -229,6 +237,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "pleasant-valley": {
+    leadAnswer: "Pleasant Valley is a residential community along the Route 44 corridor between Poughkeepsie and Millbrook, where homeowners respond well to seasonal service offers delivered by mail — Cornerstone provides EDDM and direct mail campaigns for Pleasant Valley contractors and home service businesses.",
     metaTitle: "Direct Mail & Printing in Pleasant Valley, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Pleasant Valley home service businesses and contractors. Reach homeowners along the Route 44 corridor with Cornerstone's printing and mailing services.",
     h1: "Direct Mail & Printing for Pleasant Valley, NY Businesses",
@@ -251,6 +260,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "stanford": {
+    leadAnswer: "Stanford is one of Dutchess County's most rural towns, where large-lot properties and farmland mean direct mail faces virtually no competing pieces in the mailbox — Cornerstone provides affordable full-town EDDM saturation for Stanford homeowners and rural property owners.",
     metaTitle: "Direct Mail & Printing in Stanford, NY | Cornerstone Services",
     metaDescription: "Direct mail for Stanford's rural residential community — where your EDDM postcard may be the only business marketing piece in the mailbox. Affordable full-town saturation from Cornerstone.",
     h1: "Direct Mail & Printing for Stanford, NY Businesses",
@@ -273,6 +283,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "clinton": {
+    leadAnswer: "Clinton is a rural central Dutchess town encompassing the Clinton Corners and Schultzville hamlets — Cornerstone provides affordable EDDM saturation and direct mail to Clinton's spread-out residential households, often combined with Hyde Park or Pleasant Valley routes.",
     metaTitle: "Direct Mail & Printing in Clinton, NY (Dutchess County) | Cornerstone Services",
     metaDescription: "EDDM and direct mail for Clinton's residential-rural community in central Dutchess County. Affordable saturation campaigns from Cornerstone — reach Clinton Corners, Schultzville, and surrounding areas.",
     h1: "Direct Mail & Printing for Clinton, NY Businesses",
@@ -295,6 +306,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "milan": {
+    leadAnswer: "Milan is a quiet rural town in northeastern Dutchess County with no commercial center, where direct mail typically faces zero competing pieces in the mailbox — Cornerstone provides affordable EDDM saturation for Milan homeowners, often combined with Red Hook or Pine Plains routes.",
     metaTitle: "Direct Mail & Printing in Milan, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Milan's rural Dutchess County homeowners. Combine with Red Hook or Pine Plains routes for a cost-effective regional mailing from Cornerstone.",
     h1: "Direct Mail & Printing for Milan, NY Businesses",
@@ -317,6 +329,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "north-east": {
+    leadAnswer: "The Town of North East — home to the Village of Millerton — sits at the Connecticut border with a walkable Main Street and Harlem Valley Rail Trail — Cornerstone provides affordable full-town EDDM reaching all area households including weekend second-home residents.",
     metaTitle: "Direct Mail & Printing in North East & Millerton, NY | Cornerstone Services",
     metaDescription: "Direct mail for North East and Millerton businesses — reach year-round residents and weekend visitors along the Harlem Valley. EDDM, postcards, and printing from Cornerstone.",
     h1: "Direct Mail & Printing for North East & Millerton, NY Businesses",
@@ -339,6 +352,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "tivoli": {
+    leadAnswer: "Tivoli is a small Hudson River village closely tied to Bard College, with an outsized restaurant and arts scene for its size — Cornerstone provides direct mail and EDDM for Tivoli businesses, typically included as part of a broader Red Hook mailing.",
     metaTitle: "Direct Mail & Printing in Tivoli, NY | Cornerstone Services",
     metaDescription: "Direct mail for Tivoli's restaurant and arts community near Bard College. Combine with Red Hook routes for affordable EDDM coverage from Cornerstone Services.",
     h1: "Direct Mail & Printing for Tivoli, NY Businesses",
@@ -361,6 +375,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "union-vale": {
+    leadAnswer: "Union Vale is a rural central Dutchess town known for equestrian farms and conservation land along Route 82 — Cornerstone provides EDDM and direct mail reaching Union Vale's rural residential and equestrian household base.",
     metaTitle: "Direct Mail & Printing in Union Vale, NY | Cornerstone Services",
     metaDescription: "Direct mail for Union Vale's equestrian and rural property owners. EDDM targeting horse farms, large lots, and residential corridors in central Dutchess County from Cornerstone.",
     h1: "Direct Mail & Printing for Union Vale, NY Businesses",
@@ -383,6 +398,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "washington": {
+    leadAnswer: "The Town of Washington encompasses the Village of Millbrook and the surrounding estate country of eastern Dutchess County — Cornerstone provides premium direct mail, EDDM, and printing for Washington's equestrian community and rural estate homeowners.",
     metaTitle: "Direct Mail & Printing in Washington, NY (Dutchess County) | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for the Town of Washington and surrounding Millbrook area. Reach estate owners, equestrian families, and rural residents with Cornerstone's printing services.",
     h1: "Direct Mail & Printing for Washington, NY (Dutchess County)",
@@ -405,6 +421,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "wappinger": {
+    leadAnswer: "Cornerstone provides high-volume EDDM and full direct mail campaigns in the Town of Wappinger — the dense southern Dutchess residential corridor along Route 9, with prime EDDM density for neighborhood or full-town saturation.",
     metaTitle: "Direct Mail & Printing in the Town of Wappinger, NY | Cornerstone Services",
     metaDescription: "High-volume EDDM and direct mail for the Town of Wappinger's dense residential neighborhoods. Reach Hughsonville, Chelsea, New Hamburg, and the Route 9D corridor with Cornerstone.",
     h1: "Direct Mail & Printing for the Town of Wappinger, NY",
@@ -431,6 +448,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // ═══════════════════════════════════════════════════════════
 
   "new-paltz": {
+    leadAnswer: "New Paltz is Cornerstone's home base — we print and mail from our South Ohioville Road facility, offering in-person press checks, same-day turnaround, and a direct handoff to the New Paltz Post Office without shipping delays for any other provider.",
     metaTitle: "Direct Mail & Printing in New Paltz, NY — Our Home Base | Cornerstone Services",
     metaDescription: "Cornerstone is based right here in New Paltz. Same-day turnaround, in-person press checks, and zero shipping to the New Paltz Post Office. EDDM, postcards, brochures, and full direct mail services.",
     h1: "Direct Mail & Printing in New Paltz, NY — Our Home Base",
@@ -457,6 +475,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // ═══════════════════════════════════════════════════════════
 
   "marlboro": {
+    leadAnswer: "Marlboro is an Ulster County town on the Hudson River along Route 9W, known for its orchard heritage and residential commuter community between New Paltz and Newburgh — Cornerstone provides EDDM and direct mail reaching Marlboro's households from our New Paltz facility.",
     metaTitle: "Direct Mail & Printing Services in Marlboro, NY | Cornerstone Services",
     metaDescription: "Direct mail, EDDM, and commercial printing for Marlboro businesses — wineries, orchards, farm markets, and local service providers. Reach 12542 ZIP from our facility minutes away in New Paltz.",
     h1: "Direct Mail & Printing for Marlboro, NY Businesses",
@@ -512,6 +531,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "highland": {
+    leadAnswer: "Highland is a large Ulster County hamlet across the Mid-Hudson Bridge from Poughkeepsie, with one of the county's most accessible commuter residential bases — Cornerstone provides EDDM and direct mail to Highland's 12528 ZIP from our New Paltz facility.",
     metaTitle: "Direct Mail & Printing Services in Highland, NY | Cornerstone Services",
     metaDescription: "Direct mail, EDDM, and printing for Highland businesses on the Route 9W corridor. Target 12528 ZIP — retail, restaurants, healthcare, and home services. Just 10 minutes from our New Paltz facility.",
     h1: "Direct Mail & Printing for Highland, NY Businesses",
@@ -568,6 +588,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "rosendale": {
+    leadAnswer: "Rosendale is a historic canal and cement heritage town along the Rondout Creek between New Paltz and Kingston, with a thriving arts community — Cornerstone provides EDDM, postcards, and direct mail for Rosendale businesses and its residential corridor.",
     metaTitle: "Direct Mail & Printing Services in Rosendale, NY | Cornerstone Services",
     metaDescription: "Direct mail, EDDM, and printing for Rosendale businesses and arts organizations. Reach this creative Hudson Valley community — just 5 minutes from our New Paltz facility.",
     h1: "Direct Mail & Printing for Rosendale, NY Businesses & Organizations",
@@ -624,6 +645,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "rochester": {
+    leadAnswer: "Rochester is a rural Ulster County town encompassing the Accord and Kerhonkson hamlets in the Rondout Valley — Cornerstone provides EDDM and direct mail reaching Rochester's rural homeowner base from our New Paltz facility, less than 20 miles south.",
     metaTitle: "Direct Mail & Printing Services in Rochester & Accord, NY | Cornerstone Services",
     metaDescription: "Direct mail, EDDM, and printing for Rochester and Accord, NY businesses — reaching the Rondout Valley's growing community of residents, artists, and outdoor enthusiasts from our New Paltz facility.",
     h1: "Direct Mail & Printing for Rochester & Accord, NY Businesses",
@@ -684,6 +706,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // ═══════════════════════════════════════════════════════════
 
   "millerton": {
+    leadAnswer: "Millerton is the commercial heart of the Town of North East at the Connecticut border, with a revitalized Main Street drawing weekenders and year-round residents — Cornerstone provides EDDM, postcards, and direct mail serving the 12546 ZIP.",
     metaTitle: "Direct Mail & Printing Services in Millerton, NY | Cornerstone Services",
     metaDescription: "Direct mail, EDDM, and printing for Millerton and North East, NY — reach the village's year-round residents, weekenders, and farm-to-table businesses. Postcards, brochures, and targeted mailing lists.",
     h1: "Direct Mail & Printing for Millerton & North East, NY Businesses",
@@ -744,6 +767,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // ═══════════════════════════════════════════════════════════
 
   "wawayanda": {
+    leadAnswer: "Wawayanda is a growing Orange County town west of Middletown where new residential developments and established neighborhoods create steady demand for home services and local businesses — Cornerstone provides EDDM and targeted direct mail to Wawayanda's households.",
     metaTitle: "Direct Mail & Printing Services in Wawayanda, NY | Cornerstone Services",
     metaDescription: "Direct mail, EDDM, and printing for Wawayanda businesses and home service providers. Reach this growing Orange County community's new and established homeowners with targeted campaigns.",
     h1: "Direct Mail & Printing for Wawayanda, NY Home Service Businesses",
@@ -800,6 +824,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "warwick": {
+    leadAnswer: "Warwick is one of Orange County's premier destination communities, where apple orchards, vineyards, and a charming village center draw hundreds of thousands of visitors annually — Cornerstone provides EDDM, event postcards, and direct mail for Warwick's year-round businesses.",
     metaTitle: "Direct Mail & Printing Services in Warwick, NY | Cornerstone Services",
     metaDescription: "Direct mail, EDDM, and printing for Warwick businesses — wineries, orchards, farm markets, restaurants, and tourism businesses. Reach the Warwick Valley and tri-state visitors with targeted campaigns.",
     h1: "Direct Mail & Printing for Warwick Valley, NY Businesses",
@@ -871,6 +896,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.kingstonchamber.org/
   // - https://www.usps.com/ (ZIPs 12401, 12402)
   "kingston": {
+    leadAnswer: "Cornerstone provides full-service direct mail, EDDM, commercial printing, and targeted campaigns across Kingston's three districts — the Historic Stockade, Rondout waterfront, and Midtown Broadway corridor — Ulster County's seat and largest city.",
     metaTitle: "Direct Mail & Printing in Kingston, NY | Cornerstone Services",
     metaDescription: "Full-service direct mail, EDDM, and printing for Kingston businesses — Uptown Stockade, Midtown arts corridor, and Rondout waterfront. USPS presort automation from New Paltz.",
     h1: "Direct Mail & Printing for Kingston, NY Businesses",
@@ -914,6 +940,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.hits.org/ (HITS on the Hudson equestrian facility)
   // - https://www.usps.com/ (ZIP 12477)
   "saugerties": {
+    leadAnswer: "Cornerstone provides EDDM, postcards, and full direct mail campaigns in Saugerties — a substantial Ulster County town where the walkable historic village, Route 9W corridor, and Woodstock-adjacent tourism economy create diverse direct mail demand.",
     metaTitle: "Direct Mail & Printing in Saugerties, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Saugerties businesses — village center, Route 9W corridor, and the HITS on the Hudson equestrian community. Cornerstone serves all of Ulster County.",
     h1: "Direct Mail & Printing for Saugerties, NY Businesses",
@@ -941,6 +968,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://woodstockfilmfestival.org/
   // - https://www.usps.com/ (ZIP 12498)
   "woodstock": {
+    leadAnswer: "Woodstock is a world-renowned Ulster County arts town with a year-round residential community of roughly 6,000 and a large seasonal tourism draw along Route 212 — Cornerstone provides EDDM, postcards, and direct mail reaching Woodstock's households and Main Street businesses.",
     metaTitle: "Direct Mail & Printing in Woodstock, NY | Cornerstone Services",
     metaDescription: "Direct mail and printing for Woodstock businesses — reaching year-round residents and the NYC weekend visitor community. Boutiques, galleries, and restaurants rely on Cornerstone.",
     h1: "Direct Mail & Printing for Woodstock, NY Businesses",
@@ -967,6 +995,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.hurleyny.gov/
   // - https://www.usps.com/ (ZIP 12443)
   "hurley": {
+    leadAnswer: "Hurley is a historic Ulster County town between Kingston and New Paltz along Route 209, with a well-established residential community and one of the Hudson Valley's best-preserved collections of original Dutch stone houses — Cornerstone provides EDDM and direct mail for Hurley households.",
     metaTitle: "Direct Mail & Printing in Hurley, NY | Cornerstone Services",
     metaDescription: "EDDM and direct mail for Hurley, NY — a residential homeowner community adjacent to Kingston. Full-town saturation under $700. Cornerstone serves all of Ulster County.",
     h1: "Direct Mail & Printing for Hurley, NY Businesses",
@@ -994,6 +1023,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.ellenvilleny.gov/
   // - https://www.usps.com/ (ZIP 12428)
   "ellenville": {
+    leadAnswer: "Ellenville is the commercial center of the Town of Wawarsing at the foot of the Shawangunk Ridge — Cornerstone provides EDDM, postcards, and full direct mail campaigns to Ellenville businesses and the surrounding Rondout Valley residential households.",
     metaTitle: "Direct Mail & Printing in Ellenville, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Ellenville businesses in southwestern Ulster County. Reach the full Rondout Valley trade area — including the broader Wawarsing township — with targeted campaigns.",
     h1: "Direct Mail & Printing for Ellenville, NY Businesses",
@@ -1020,6 +1050,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofesopus.us/
   // - https://www.usps.com/ (ZIPs 12466 Port Ewen, 12429, 12487 Rifton)
   "esopus": {
+    leadAnswer: "Esopus is a Hudson River town in Ulster County encompassing the hamlets of Port Ewen, Connelly, and Rifton along Route 9W — Cornerstone provides EDDM and direct mail reaching Esopus' residential base from our New Paltz facility.",
     metaTitle: "Direct Mail & Printing in Esopus, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for the Town of Esopus — covering Port Ewen, Connelly, West Park, and Rifton along the Route 9W corridor in Ulster County.",
     h1: "Direct Mail & Printing for the Town of Esopus, NY",
@@ -1047,6 +1078,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.hasbrouckhouse.com/
   // - https://www.usps.com/ (ZIPs 12484 Stone Ridge, 12440 High Falls, 12419 Cottekill)
   "marbletown": {
+    leadAnswer: "Marbletown is a rural southern Ulster County town encompassing the Stone Ridge and High Falls hamlets — Cornerstone provides EDDM and direct mail for Marbletown's rural homeowners, agricultural community, and local businesses from our New Paltz facility.",
     metaTitle: "Direct Mail & Printing in Stone Ridge & Marbletown, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Stone Ridge, High Falls, Cottekill, and the Town of Marbletown. Reach Ulster County's agricultural and arts community with targeted campaigns from Cornerstone.",
     h1: "Direct Mail & Printing for Marbletown, Stone Ridge & High Falls, NY",
@@ -1074,6 +1106,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.nyc.gov/site/dep/water/ashokan-reservoir.page
   // - https://www.usps.com/ (ZIPs 12481 Shokan, 12412 Boiceville)
   "olive": {
+    leadAnswer: "Olive is a rural Ulster County town centered on the Ashokan Reservoir and Catskill foothills, neighboring Woodstock and Shandaken — Cornerstone provides EDDM and direct mail reaching Olive's rural residential community from our New Paltz facility.",
     metaTitle: "Direct Mail & Printing in Olive, NY | Cornerstone Services",
     metaDescription: "EDDM and direct mail for businesses in the Town of Olive — covering Shokan, Boiceville, and the Ashokan Reservoir gateway in the Catskill Mountains of Ulster County.",
     h1: "Direct Mail & Printing for the Town of Olive, NY",
@@ -1100,6 +1133,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofdenning.us/
   // - https://www.usps.com/ (ZIP 12457, shared with parts of Shandaken)
   "denning": {
+    leadAnswer: "Denning is one of Ulster County's most remote towns in the Slide Mountain and Balsam Lake Mountain corridor of the western Catskills — Cornerstone provides direct mail and targeted mailing services for Denning's rural households, most effectively as part of a broader Catskill area campaign.",
     metaTitle: "Direct Mail Services for the Denning, NY Area | Cornerstone Services",
     metaDescription: "Cornerstone serves businesses in and around Denning, NY — one of Ulster County's most remote Catskill Mountain communities. Rural EDDM and mailing services for the western Catskills.",
     h1: "Direct Mail Services for the Denning, NY Area",
@@ -1127,6 +1161,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.belleayre.com/ (Belleayre Mountain, adjacent in Shandaken)
   // - https://www.usps.com/ (ZIP 12464, shared with Oliverea/Big Indian area)
   "hardenburgh": {
+    leadAnswer: "Hardenburgh is one of Ulster County's most rural and sparsely populated Catskill Mountain towns near the Pepacton Reservoir — Cornerstone provides direct mail for Hardenburgh households, typically as part of a broader western Catskills campaign.",
     metaTitle: "Direct Mail Services for the Hardenburgh, NY Area | Cornerstone Services",
     metaDescription: "Cornerstone serves the Hardenburgh area — Ulster County's most remote Catskill Mountain community. Rural direct mail and mailing services for the Big Indian and Oliverea corridors.",
     h1: "Direct Mail Services for the Hardenburgh, NY Area",
@@ -1153,6 +1188,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofmarbletown.org/
   // - https://www.usps.com/ (ZIP 12440)
   "high-falls": {
+    leadAnswer: "High Falls is a historic hamlet in the Town of Marbletown along the Delaware and Hudson Canal corridor in southern Ulster County — Cornerstone provides direct mail and EDDM reaching High Falls households as part of Rosendale or Marbletown area campaigns.",
     metaTitle: "Direct Mail & Printing in High Falls, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for High Falls businesses — the D&H Canal hamlet in Ulster County known for its waterfall, restaurants, and arts community. Cornerstone serves Marbletown and beyond.",
     h1: "Direct Mail & Printing for High Falls, NY Businesses",
@@ -1179,6 +1215,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://en.wikipedia.org/wiki/Ashokan_Reservoir
   // - https://www.usps.com/ (ZIP 12481)
   "shokan": {
+    leadAnswer: "Shokan is a hamlet in the Town of Olive along Route 28A adjacent to the Ashokan Reservoir — Cornerstone provides direct mail and EDDM for Shokan households, typically as part of a broader Olive or West Hurley campaign.",
     metaTitle: "Direct Mail & Printing in Shokan, NY | Cornerstone Services",
     metaDescription: "EDDM and direct mail for businesses in Shokan, NY — the Ashokan Reservoir hamlet at the eastern gateway to the Catskills in the Town of Olive, Ulster County.",
     h1: "Direct Mail & Printing for Shokan, NY Businesses",
@@ -1205,6 +1242,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.phoeniciany.com/ (local business association)
   // - https://www.usps.com/ (ZIP 12464)
   "phoenicia": {
+    leadAnswer: "Phoenicia is a small Catskill town along Route 28 in the Esopus Creek fly-fishing corridor, a weekend tourism and arts destination — Cornerstone provides direct mail, postcards, and EDDM for Phoenicia businesses and the surrounding Shandaken town households.",
     metaTitle: "Direct Mail & Printing in Phoenicia, NY | Cornerstone Services",
     metaDescription: "Direct mail and printing for Phoenicia businesses — the Catskill Mountain tubing and arts hamlet that draws heavy NYC weekend traffic. Reach both local residents and the metro visitor base.",
     h1: "Direct Mail & Printing for Phoenicia, NY Businesses",
@@ -1231,6 +1269,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.belleayre.com/ (Belleayre Mountain Ski Center)
   // - https://www.usps.com/ (ZIPs 12464, 12480)
   "shandaken": {
+    leadAnswer: "Shandaken is a large Ulster County town along Route 28 encompassing the Phoenicia, Big Indian, and Pine Hill hamlets in the central Catskill Mountains — Cornerstone provides direct mail and EDDM for Shandaken businesses and its seasonal and year-round residential base.",
     metaTitle: "Direct Mail & Printing in Shandaken, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Shandaken businesses — covering Phoenicia, Pine Hill, Belleayre, and the Catskill Mountain corridor in Ulster County. Reach both locals and ski season visitors.",
     h1: "Direct Mail & Printing for Shandaken, NY Businesses",
@@ -1257,6 +1296,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.wawarsing.net/
   // - https://www.usps.com/ (ZIPs 12428 Ellenville, 12458 Napanoch, 12489 Accord)
   "wawarsing": {
+    leadAnswer: "Wawarsing is Ulster County's largest town by area, spanning the communities of Ellenville, Napanoch, and Kerhonkson across three ZIP codes — Cornerstone provides EDDM and direct mail for each Wawarsing community, reaching the full Rondout Valley from New Paltz.",
     metaTitle: "Direct Mail & Printing in Wawarsing, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for businesses throughout Wawarsing — Ulster County's largest town by area, spanning Ellenville, Napanoch, Accord, and the Shawangunk Ridge corridor.",
     h1: "Direct Mail & Printing for Wawarsing, NY Businesses",
@@ -1282,6 +1322,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://en.wikipedia.org/wiki/Napanoch,_New_York
   // - https://www.usps.com/ (ZIP 12458)
   "napanoch": {
+    leadAnswer: "Napanoch is a hamlet in the Town of Wawarsing in the Rondout Valley between Ellenville and the Catskill foothills — Cornerstone provides direct mail and EDDM for Napanoch households, typically as part of a broader Wawarsing area campaign.",
     metaTitle: "Direct Mail & Printing in Napanoch, NY | Cornerstone Services",
     metaDescription: "EDDM and direct mail for businesses in Napanoch and the upper Wawarsing area of Ulster County. Reach Route 209 corridor households with targeted campaigns from Cornerstone.",
     h1: "Direct Mail & Printing for Napanoch, NY Businesses",
@@ -1308,6 +1349,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.accordny.com/ (Accord area context)
   // - https://www.usps.com/ (ZIP 12446)
   "kerhonkson": {
+    leadAnswer: "Kerhonkson is a hamlet in the Town of Wawarsing in the Catskill foothills along Route 44/55 — Cornerstone provides direct mail and EDDM reaching Kerhonkson's rural households, typically as part of a broader Wawarsing or Ellenville campaign from New Paltz.",
     metaTitle: "Direct Mail & Printing in Kerhonkson & Accord, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Kerhonkson and Accord businesses in the Shawangunk foothills of Ulster County — serving a rapidly changing rural-meets-NYC-transplant market.",
     h1: "Direct Mail & Printing for Kerhonkson & Accord, NY Businesses",
@@ -1334,6 +1376,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofrosendale.com/ (Cottekill is in Rosendale)
   // - https://www.usps.com/ (ZIP 12419)
   "cottekill": {
+    leadAnswer: "Cottekill is a hamlet in the Town of Rosendale along the Rondout Creek in southern Ulster County — Cornerstone provides direct mail and EDDM reaching Cottekill's households, typically as part of a broader Rosendale or New Paltz campaign.",
     metaTitle: "Direct Mail & Printing in Cottekill, NY | Cornerstone Services",
     metaDescription: "EDDM and direct mail for businesses in Cottekill, NY — a small hamlet in the Town of Rosendale along the Rondout Creek, close to Cornerstone's New Paltz facility.",
     h1: "Direct Mail & Printing for Cottekill, NY Businesses",
@@ -1360,6 +1403,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.shawangunk.org/ (Town of Shawangunk, which contains Wallkill hamlet)
   // - https://www.usps.com/ (ZIP 12589)
   "wallkill": {
+    leadAnswer: "Wallkill is a southern Ulster County town along the Wallkill River valley between New Paltz and the Orange County border — Cornerstone provides EDDM and direct mail reaching Wallkill's residential community from our New Paltz facility, just miles north.",
     metaTitle: "Direct Mail & Printing in Wallkill, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Wallkill, NY — the growing hamlet in the Town of Shawangunk with Route 208 commercial development and strong residential homeowner base in southern Ulster County.",
     h1: "Direct Mail & Printing for Wallkill, NY Businesses",
@@ -1387,6 +1431,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.mohonkpreserve.org/ (major employer/anchor)
   // - https://www.usps.com/ (ZIP 12525)
   "gardiner": {
+    leadAnswer: "Gardiner is a rural Ulster County town neighboring New Paltz at the foot of the Shawangunk Ridge and Mohonk Preserve — Cornerstone provides EDDM and direct mail for Gardiner homeowners with same-day turnaround from our New Paltz facility.",
     metaTitle: "Direct Mail & Printing in Gardiner, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Gardiner businesses — the Shawangunk Cliffs climbing mecca and Wallkill Valley agricultural town south of New Paltz in Ulster County.",
     h1: "Direct Mail & Printing for Gardiner, NY Businesses",
@@ -1413,6 +1458,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.plattekill.org/
   // - https://www.usps.com/ (ZIPs 12568, 12589)
   "plattekill": {
+    leadAnswer: "Plattekill is a southern Ulster County town in the Shawangunk foothills apple country along Route 44/55 — Cornerstone provides EDDM and direct mail for Plattekill's residential and agricultural households from our New Paltz facility, just minutes south.",
     metaTitle: "Direct Mail & Printing in Plattekill, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Plattekill businesses — a growing residential and agricultural town in southeastern Ulster County along the Routes 32 and 208 corridor.",
     h1: "Direct Mail & Printing for Plattekill, NY Businesses",
@@ -1439,6 +1485,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.shawangunk.org/
   // - https://www.usps.com/ (ZIP 12589)
   "shawangunk": {
+    leadAnswer: "Shawangunk is a southern Ulster County town at the foot of the Shawangunk Ridge, encompassing residential and agricultural communities along the Route 208 corridor — Cornerstone provides EDDM and direct mail to Shawangunk's households from our New Paltz facility.",
     metaTitle: "Direct Mail & Printing in Shawangunk, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for the Town of Shawangunk — covering Wallkill, Pine Bush, and the agricultural corridor of southern Ulster County along Routes 208 and 302.",
     h1: "Direct Mail & Printing for the Town of Shawangunk, NY",
@@ -1465,6 +1512,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofulsterne.org/
   // - https://www.usps.com/ (ZIP 12401, shared with Kingston)
   "ulster-town": {
+    leadAnswer: "The Town of Ulster is a suburban Ulster County community adjacent to Kingston, encompassing Lake Katrine and other residential hamlets along Route 9W — Cornerstone provides EDDM and full direct mail campaigns to Ulster Town's growing household base.",
     metaTitle: "Direct Mail & Printing in Ulster, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for businesses in the Town of Ulster — covering the Ulster Town Center, Hudson Valley Mall corridor, and Route 9W commercial strip south of Kingston.",
     h1: "Direct Mail & Printing for the Town of Ulster, NY",
@@ -1490,6 +1538,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://en.wikipedia.org/wiki/West_Hurley,_New_York
   // - https://www.usps.com/ (ZIP 12491)
   "west-hurley": {
+    leadAnswer: "West Hurley is a hamlet along Route 28 at the crossroads of the Kingston-to-Woodstock corridor, adjacent to the Ashokan Reservoir — Cornerstone provides direct mail and EDDM reaching West Hurley's households from our New Paltz facility.",
     metaTitle: "Direct Mail & Printing in West Hurley, NY | Cornerstone Services",
     metaDescription: "EDDM and direct mail for West Hurley businesses — a hamlet near the Ashokan Reservoir between Kingston and Woodstock in Ulster County. Cornerstone serves the full mid-Ulster corridor.",
     h1: "Direct Mail & Printing for West Hurley, NY Businesses",
@@ -1516,6 +1565,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofmarbletown.org/
   // - https://www.usps.com/ (ZIP 12484)
   "stone-ridge": {
+    leadAnswer: "Stone Ridge is the civic and commercial center of the Town of Marbletown in southern Ulster County, surrounded by farmland, historic estates, and the Rondout Valley — Cornerstone provides EDDM and direct mail reaching Stone Ridge households from our New Paltz facility.",
     metaTitle: "Direct Mail & Printing in Stone Ridge, NY | Cornerstone Services",
     metaDescription: "Direct mail and printing for Stone Ridge businesses — the Route 209 hamlet in Marbletown known for its restaurant scene, Hasbrouck House, and Stone Ridge Orchard.",
     h1: "Direct Mail & Printing for Stone Ridge, NY Businesses",
@@ -1542,6 +1592,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofesopus.us/
   // - https://www.usps.com/ (ZIP 12466)
   "port-ewen": {
+    leadAnswer: "Port Ewen is a riverside hamlet in the Town of Esopus directly south of Kingston along Route 9W — Cornerstone provides EDDM and direct mail reaching Port Ewen's residential households, most effectively as part of a broader Esopus or Kingston area campaign.",
     metaTitle: "Direct Mail & Printing in Port Ewen, NY | Cornerstone Services",
     metaDescription: "EDDM and direct mail for Port Ewen businesses — the Hudson River hamlet in the Town of Esopus, Ulster County. Reach residential neighborhoods along Route 9W south of Kingston.",
     h1: "Direct Mail & Printing for Port Ewen, NY Businesses",
@@ -1568,6 +1619,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofesopus.us/
   // - https://www.usps.com/ (ZIP 12417)
   "connelly": {
+    leadAnswer: "Connelly is a small riverside hamlet in the Town of Esopus across the Rondout Creek from Kingston's waterfront district — Cornerstone provides direct mail and EDDM for Connelly households, most effectively as part of a broader Kingston or Esopus area campaign.",
     metaTitle: "Direct Mail & Printing in Connelly, NY | Cornerstone Services",
     metaDescription: "EDDM and direct mail for Connelly, NY — a small riverside hamlet in the Town of Esopus adjacent to the Kingston Rondout waterfront in Ulster County.",
     h1: "Direct Mail & Printing for Connelly, NY Businesses",
@@ -1594,6 +1646,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofljlloyd.com/
   // - https://www.usps.com/ (ZIP 12528, covers Highland area)
   "lloyd": {
+    leadAnswer: "Lloyd is an Ulster County town encompassing the Highland hamlet and the Mid-Hudson Bridge corridor along Route 9W and Route 44 — Cornerstone provides EDDM and full direct mail campaigns reaching Lloyd's residential and commercial base from our New Paltz facility.",
     metaTitle: "Direct Mail & Printing in Lloyd, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for the Town of Lloyd — covering Highland, Milton, and the western Hudson River communities of southern Ulster County near the Mid-Hudson Bridge.",
     h1: "Direct Mail & Printing for Lloyd, NY Businesses",
@@ -1620,6 +1673,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofrosendale.com/ (Tillson is in Rosendale)
   // - https://www.usps.com/ (ZIP 12486)
   "tillson": {
+    leadAnswer: "Tillson is a small residential hamlet in the Town of Rosendale in southern Ulster County — Cornerstone provides direct mail and EDDM for Tillson households, typically combined with New Paltz or Rosendale routes for a cost-effective area campaign.",
     metaTitle: "Direct Mail & Printing in Tillson, NY | Cornerstone Services",
     metaDescription: "EDDM and direct mail for Tillson businesses — a hamlet in the Town of Rosendale along Route 213 between New Paltz and Kingston in Ulster County.",
     h1: "Direct Mail & Printing for Tillson, NY Businesses",
@@ -1646,6 +1700,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofulsterne.org/ (Lake Katrine is in Ulster Town)
   // - https://www.usps.com/ (ZIP 12449)
   "lake-katrine": {
+    leadAnswer: "Lake Katrine is a residential hamlet in the Town of Ulster along Route 9W north of Kingston — Cornerstone provides EDDM and direct mail to Lake Katrine's suburban households, most effectively as part of a broader Ulster Town or Kingston campaign.",
     metaTitle: "Direct Mail & Printing in Lake Katrine, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Lake Katrine businesses — the Route 9W commercial hamlet in the Town of Ulster between Kingston and Saugerties in Ulster County.",
     h1: "Direct Mail & Printing for Lake Katrine, NY Businesses",
@@ -1672,6 +1727,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.plattekill.org/ (Clintondale is in Plattekill)
   // - https://www.usps.com/ (ZIP 12515)
   "clintondale": {
+    leadAnswer: "Clintondale is a hamlet in the Town of Plattekill along Route 44/55 in Ulster County's Shawangunk foothills apple country — Cornerstone provides affordable EDDM and direct mail to Clintondale households, typically combined with neighboring Plattekill or New Paltz routes.",
     metaTitle: "Direct Mail & Printing in Clintondale, NY | Cornerstone Services",
     metaDescription: "EDDM and direct mail for Clintondale, NY — a hamlet in the Town of Plattekill along Route 44/55 in Ulster County between New Paltz and Newburgh.",
     h1: "Direct Mail & Printing for Clintondale, NY Businesses",
@@ -1703,6 +1759,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.troutbeck.com/ (Troutbeck resort, major anchor)
   // - https://www.usps.com/ (ZIP 12501)
   "amenia": {
+    leadAnswer: "Amenia is a rural northeastern Dutchess County town anchored by Troutbeck resort and the Connecticut border farm economy — Cornerstone provides EDDM and direct mail for Amenia's agricultural households and hospitality businesses, reaching 12501.",
     metaTitle: "Direct Mail & Printing in Amenia, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Amenia businesses in northeastern Dutchess County — reaching the Troutbeck resort community, Connecticut border trade area, and rural homeowner base.",
     h1: "Direct Mail & Printing for Amenia, NY Businesses",
@@ -1729,6 +1786,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.doveny.gov/
   // - https://www.usps.com/ (ZIPs 12522 Dover Plains, 12594 Wingdale)
   "dover": {
+    leadAnswer: "Dover encompasses the Dover Plains and Wingdale hamlets at the terminus of Metro-North's Harlem Line — Cornerstone provides EDDM and direct mail to Dover's residential base across both the 12522 and 12594 ZIPs.",
     metaTitle: "Direct Mail & Printing in Dover, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Dover businesses in eastern Dutchess County — covering Dover Plains, Wingdale, and the Harlem Valley Rail Trail corridor near the Connecticut border.",
     h1: "Direct Mail & Printing for Dover, NY Businesses",
@@ -1755,6 +1813,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.fishkillny.gov/
   // - https://www.usps.com/ (ZIP 12524)
   "fishkill": {
+    leadAnswer: "Fishkill anchors southern Dutchess County's busiest commercial corridor at the I-84 and Route 9 interchange — Cornerstone provides EDDM, postcards, and full direct mail campaigns reaching an estimated 7,000–9,000 households in the 12524 ZIP.",
     metaTitle: "Direct Mail & Printing in Fishkill, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Fishkill businesses — the major commercial hub at the I-84 / Route 9 interchange in southern Dutchess County. High-volume campaigns for the region's busiest retail corridor.",
     h1: "Direct Mail & Printing for Fishkill, NY Businesses",
@@ -1781,6 +1840,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.eastfishkill.org/
   // - https://www.usps.com/ (ZIP 12533)
   "hopewell-junction": {
+    leadAnswer: "Hopewell Junction is a rapidly growing hamlet in East Fishkill at the Route 82 and Taconic intersection — Cornerstone provides EDDM and targeted direct mail to the 12533 ZIP's 5,000–7,000 households, reaching new families before local brand loyalty is established.",
     metaTitle: "Direct Mail & Printing in Hopewell Junction, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Hopewell Junction businesses — the growing commercial and residential hub in the Town of East Fishkill at the Route 82 / Taconic Parkway crossroads.",
     h1: "Direct Mail & Printing for Hopewell Junction, NY Businesses",
@@ -1807,6 +1867,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.lagrangeny.gov/
   // - https://www.usps.com/ (ZIPs 12540, 12603)
   "lagrange": {
+    leadAnswer: "LaGrange is one of Dutchess County's most populated suburban towns, centered on the LaGrangeville corridor east of Poughkeepsie — Cornerstone provides EDDM, postcards, and full direct mail campaigns to LaGrange's established residential and commercial base.",
     metaTitle: "Direct Mail & Printing in LaGrange, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for LaGrange businesses — the residential township east of Poughkeepsie with the Freedom Plains and Arlington communities. Strong homeowner base in central Dutchess County.",
     h1: "Direct Mail & Printing for LaGrange, NY Businesses",
@@ -1834,6 +1895,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://en.wikipedia.org/wiki/Poughkeepsie_(town),_New_York
   // - https://www.usps.com/ (ZIPs 12601, 12602, 12603, 12604)
   "poughkeepsie": {
+    leadAnswer: "Cornerstone provides full-service direct mail, EDDM, commercial printing, and targeted campaigns in Poughkeepsie — Dutchess County's largest city and mid-Hudson Valley hub, anchored by Vassar, Marist, and Dutchess Community College.",
     metaTitle: "Direct Mail & Printing in Poughkeepsie, NY | Cornerstone Services",
     metaDescription: "Full-service direct mail, EDDM, and printing for Poughkeepsie businesses — the county seat of Dutchess County with Vassar College, Marist, IBM, and one of the Hudson Valley's largest healthcare sectors.",
     h1: "Direct Mail & Printing for Poughkeepsie, NY Businesses",
@@ -1866,6 +1928,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.dutchessfair.com/ (Dutchess County Fairgrounds, Rhinebeck)
   // - https://www.usps.com/ (ZIP 12572)
   "rhinebeck": {
+    leadAnswer: "Rhinebeck is one of the Hudson Valley's most celebrated historic villages, with independent shops, farm-to-table restaurants, and strong weekend tourism — Cornerstone provides premium direct mail, EDDM, and printing for Rhinebeck businesses and its surrounding residential households.",
     metaTitle: "Direct Mail & Printing in Rhinebeck, NY | Cornerstone Services",
     metaDescription: "Premium direct mail and printing for Rhinebeck businesses — one of the Hudson Valley's most recognized village destinations, home to the Dutchess County Fairgrounds and a thriving Main Street economy.",
     h1: "Direct Mail & Printing for Rhinebeck, NY Businesses",
@@ -1893,6 +1956,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.amtrak.com/stations/rhi (Rhinecliff-Kingston Amtrak station)
   // - https://www.usps.com/ (ZIP 12574)
   "rhinecliff": {
+    leadAnswer: "Rhinecliff is a small Hudson River hamlet within the Town of Rhinebeck, served by an Amtrak station with direct NYC connections — Cornerstone provides direct mail and EDDM for Rhinecliff households, typically as part of a broader Rhinebeck area campaign.",
     metaTitle: "Direct Mail & Printing in Rhinecliff, NY | Cornerstone Services",
     metaDescription: "EDDM and direct mail for Rhinecliff businesses — the Hudson River hamlet and Amtrak station community in the Town of Rhinebeck, Dutchess County.",
     h1: "Direct Mail & Printing for Rhinecliff, NY Businesses",
@@ -1920,6 +1984,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.staatspark.com/ (Staatsburg State Historic Site)
   // - https://www.usps.com/ (ZIP 12580)
   "staatsburg": {
+    leadAnswer: "Staatsburg is a residential hamlet in the Town of Hyde Park along the Hudson River, home to Mills Mansion State Historic Site — Cornerstone provides direct mail and EDDM for Staatsburg households, most effectively combined with the broader Hyde Park campaign.",
     metaTitle: "Direct Mail & Printing in Staatsburg, NY | Cornerstone Services",
     metaDescription: "EDDM and direct mail for Staatsburg businesses — a small Hudson River hamlet in the Town of Hyde Park with the Mills Mansion State Historic Site along Route 9.",
     h1: "Direct Mail & Printing for Staatsburg, NY Businesses",
@@ -1946,6 +2011,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofpineplains.com/
   // - https://www.usps.com/ (ZIP 12567)
   "pine-plains": {
+    leadAnswer: "Pine Plains is a rural eastern Dutchess County town in the Harlem Valley agricultural corridor — Cornerstone provides affordable EDDM saturation and direct mail to Pine Plains' rural homeowners and local businesses.",
     metaTitle: "Direct Mail & Printing in Pine Plains, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Pine Plains businesses — a rural Dutchess County town in the Harlem Valley with agricultural roots and a growing arts and hospitality community.",
     h1: "Direct Mail & Printing for Pine Plains, NY Businesses",
@@ -1976,6 +2042,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofbloominggrove.com/
   // - https://www.usps.com/ (ZIPs 10914 Blooming Grove, 10992 Washingtonville)
   "blooming-grove": {
+    leadAnswer: "Blooming Grove is a residential and agricultural Orange County town between Newburgh and the Monroe-Woodbury corridor — Cornerstone provides EDDM and direct mail reaching Blooming Grove's households across both the 10914 and 10992 ZIPs.",
     metaTitle: "Direct Mail & Printing in Blooming Grove, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Blooming Grove businesses in Orange County — a growing residential community between Newburgh and Monroe with the Washingtonville wine corridor nearby.",
     h1: "Direct Mail & Printing for Blooming Grove, NY Businesses",
@@ -2003,6 +2070,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://sugarloafny.com/ (Sugar Loaf artisan hamlet)
   // - https://www.usps.com/ (ZIP 10918)
   "chester": {
+    leadAnswer: "Chester is a western Orange County town encompassing the village center on Route 94 and the Sugar Loaf artisan hamlet — one of the Hudson Valley's oldest craft communities — Cornerstone provides EDDM and direct mail to the full 10918 ZIP.",
     metaTitle: "Direct Mail & Printing in Chester, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Chester businesses — including the Sugar Loaf artisan hamlet and the growing Chester village residential community in western Orange County.",
     h1: "Direct Mail & Printing for Chester, NY Businesses",
@@ -2030,6 +2098,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.stormking.org/ (Storm King Art Center)
   // - https://www.usps.com/ (ZIPs 12518 Cornwall, 12520 Cornwall-on-Hudson)
   "cornwall": {
+    leadAnswer: "Cornwall is a southern Orange County town on the Hudson River, anchored by Storm King Art Center — one of the world's premier outdoor sculpture parks — Cornerstone provides EDDM and direct mail across Cornwall's 12518 and 12520 ZIPs.",
     metaTitle: "Direct Mail & Printing in Cornwall, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Cornwall and Cornwall-on-Hudson businesses — home to Storm King Art Center and the southern Hudson River gateway community in Orange County.",
     h1: "Direct Mail & Printing for Cornwall, NY Businesses",
@@ -2056,6 +2125,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofcrawford.org/
   // - https://www.usps.com/ (ZIP 12549 Pine Bush, 12586 Walden area)
   "crawford": {
+    leadAnswer: "Crawford is a rural Orange County town in the Pine Bush corridor between Newburgh and Middletown, encompassing the Bullville and Pine Bush area communities — Cornerstone provides EDDM and direct mail reaching Crawford's residential and agricultural households.",
     metaTitle: "Direct Mail & Printing in Crawford, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Crawford businesses in Orange County — a rural and residential town in the Pine Bush and Bullville area west of Newburgh and the Route 302 corridor.",
     h1: "Direct Mail & Printing for Crawford, NY Businesses",
@@ -2083,6 +2153,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.visitport-jervis.com/
   // - https://www.usps.com/ (ZIPs 12771 Port Jervis, 12780 Sparrowbush/Huguenot)
   "deerpark": {
+    leadAnswer: "Deerpark is a Delaware River town in western Orange County near Port Jervis, encompassing the Sparrowbush and Huguenot hamlets along the Neversink River corridor — Cornerstone provides EDDM and direct mail for Deerpark's rural residential base.",
     metaTitle: "Direct Mail & Printing in Deerpark, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Deerpark businesses in southwestern Orange County — covering Port Jervis, Huguenot, Sparrowbush, and the tri-state Delaware River corridor.",
     h1: "Direct Mail & Printing for Deerpark, NY Businesses",
@@ -2109,6 +2180,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.floridany.org/
   // - https://www.usps.com/ (ZIP 10921)
   "florida": {
+    leadAnswer: "Florida is a small Orange County town along Route 17A in the Black Dirt region, one of the most productive onion-farming areas in the eastern United States — Cornerstone provides EDDM and direct mail to Florida's agricultural and residential community.",
     metaTitle: "Direct Mail & Printing in Florida, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Florida, NY businesses — a mid-Orange County agricultural and residential village near Warwick and the Wallkill Valley corridor.",
     h1: "Direct Mail & Printing for Florida, NY Businesses",
@@ -2136,6 +2208,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.orangecountygov.com/ (Orange County seat)
   // - https://www.usps.com/ (ZIP 10924)
   "goshen": {
+    leadAnswer: "Goshen is Orange County's governmental seat and home to the Historic Track, one of North America's oldest harness racing venues — Cornerstone provides EDDM, postcards, and full direct mail campaigns to Goshen businesses and its surrounding residential community.",
     metaTitle: "Direct Mail & Printing in Goshen, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Goshen businesses — the Orange County seat, home to county government, the Harness Racing Museum, and the Route 17 commercial corridor.",
     h1: "Direct Mail & Printing for Goshen, NY Businesses",
@@ -2162,6 +2235,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofgreenville.org/
   // - https://www.usps.com/ (ZIP 10940, shared with Middletown)
   "greenville": {
+    leadAnswer: "Greenville is a rural Orange County town in the Catskill foothills along the Goshen and Middletown corridor — Cornerstone provides EDDM and direct mail reaching Greenville's residential and agricultural households.",
     metaTitle: "Direct Mail & Printing in Greenville, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Greenville, NY businesses — a rural Orange County town near the New Jersey border east of Port Jervis and southwest of Middletown.",
     h1: "Direct Mail & Printing for Greenville, NY Businesses",
@@ -2188,6 +2262,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofhamptonburgh.org/
   // - https://www.usps.com/ (ZIP 10916)
   "hamptonburgh": {
+    leadAnswer: "Hamptonburgh is an Orange County town along the Route 207 corridor between Goshen and Newburgh, encompassing the Campbell Hall and Bullville communities — Cornerstone provides EDDM and direct mail to Hamptonburgh's growing residential base.",
     metaTitle: "Direct Mail & Printing in Hamptonburgh, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Hamptonburgh businesses — a growing residential town in central Orange County between Goshen and Campbell Hall on the Route 207 corridor.",
     h1: "Direct Mail & Printing for Hamptonburgh, NY Businesses",
@@ -2214,6 +2289,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.harrimanvillage.org/
   // - https://www.usps.com/ (ZIP 10926)
   "harriman": {
+    leadAnswer: "Harriman is a small Orange County village near the Route 17 and I-87 interchange in southeastern Orange County — Cornerstone provides EDDM and direct mail to Harriman's residential and commercial base, most effectively as part of a broader Monroe or Woodbury area campaign.",
     metaTitle: "Direct Mail & Printing in Harriman, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Harriman businesses — the I-87 / Route 17 gateway village in Orange County near Woodbury Common Premium Outlets and Stewart International Airport.",
     h1: "Direct Mail & Printing for Harriman, NY Businesses",
@@ -2241,6 +2317,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.westpoint.edu/ (West Point Military Academy)
   // - https://www.usps.com/ (ZIP 10928)
   "highland-falls": {
+    leadAnswer: "Highland Falls is a small Orange County village at the gates of West Point Military Academy — Cornerstone provides direct mail and EDDM for Highland Falls businesses and the surrounding residential community that supports the West Point population.",
     metaTitle: "Direct Mail & Printing in Highland Falls, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Highland Falls businesses — the commercial gateway to West Point Military Academy in Orange County on the Hudson River.",
     h1: "Direct Mail & Printing for Highland Falls, NY Businesses",
@@ -2267,6 +2344,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofhighlandsny.com/
   // - https://www.usps.com/ (ZIPs 10922 Fort Montgomery, 10928 Highland Falls)
   "highlands": {
+    leadAnswer: "Highlands is an Orange County town encompassing Fort Montgomery and the Bear Mountain State Park corridor along the Hudson River — Cornerstone provides direct mail and EDDM to Highlands' residential and tourism-adjacent businesses.",
     metaTitle: "Direct Mail & Printing in Highlands, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for the Town of Highlands — covering Fort Montgomery, Highland Falls, and the Hudson Highlands communities adjacent to West Point in Orange County.",
     h1: "Direct Mail & Printing for the Town of Highlands, NY",
@@ -2293,6 +2371,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.villageofmaybrook.com/
   // - https://www.usps.com/ (ZIP 12543)
   "maybrook": {
+    leadAnswer: "Maybrook is a small Orange County village along Route 208 between Walden and Newburgh, with a tight-knit residential community — Cornerstone provides EDDM and direct mail reaching Maybrook's households, most effectively as part of a broader Route 208 corridor campaign.",
     metaTitle: "Direct Mail & Printing in Maybrook, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Maybrook businesses — a working-class village in eastern Orange County near the Route 208 and I-84 corridor between Newburgh and Montgomery.",
     h1: "Direct Mail & Printing for Maybrook, NY Businesses",
@@ -2320,6 +2399,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.garnethealth.org/ (Garnet Health Medical Center)
   // - https://www.usps.com/ (ZIPs 10940, 10941)
   "middletown": {
+    leadAnswer: "Cornerstone provides full-service direct mail, EDDM, commercial printing, and targeted campaigns in Middletown — Orange County's largest commercial city, anchored by Garnet Health Medical Center and the Routes 17 and 84 interchange.",
     metaTitle: "Direct Mail & Printing in Middletown, NY | Cornerstone Services",
     metaDescription: "Full-service direct mail, EDDM, and printing for Middletown businesses — Orange County's second largest city, anchored by Garnet Health Medical Center, SUNY Orange, and the Route 17/I-84 commercial corridor.",
     h1: "Direct Mail & Printing for Middletown, NY Businesses",
@@ -2350,6 +2430,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.minisink.org/
   // - https://www.usps.com/ (ZIP 10998)
   "minisink": {
+    leadAnswer: "Minisink is a rural Orange County town along the Delaware River valley near the New Jersey border, encompassing the Westtown and Unionville hamlets — Cornerstone provides EDDM and direct mail for Minisink's rural residential base.",
     metaTitle: "Direct Mail & Printing in Minisink, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Minisink businesses in southwestern Orange County — a rural agricultural and residential town near the New Jersey border.",
     h1: "Direct Mail & Printing for Minisink, NY Businesses",
@@ -2376,6 +2457,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.monroeny.org/
   // - https://www.usps.com/ (ZIP 10950)
   "monroe": {
+    leadAnswer: "Cornerstone provides high-volume EDDM, postcards, and full direct mail campaigns in Monroe — one of Orange County's fastest-growing towns along Route 17, with a large and commercially active residential community.",
     metaTitle: "Direct Mail & Printing in Monroe, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Monroe businesses — a major Orange County commercial center at the Route 17 / I-87 corridor with one of the Hudson Valley's most diverse community demographics.",
     h1: "Direct Mail & Printing for Monroe, NY Businesses",
@@ -2402,6 +2484,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofmontgomery.com/
   // - https://www.usps.com/ (ZIPs 12549, 12586 Walden)
   "montgomery": {
+    leadAnswer: "Montgomery is an eastern Orange County town encompassing the Village of Walden on Route 208, with an active Main Street corridor and growing residential base — Cornerstone provides EDDM and direct mail campaigns reaching Montgomery's 6,000–8,000 area households.",
     metaTitle: "Direct Mail & Printing in Montgomery, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for the Town of Montgomery — covering the Village of Walden, Montgomery hamlet, and the Route 17K commercial corridor in eastern Orange County.",
     h1: "Direct Mail & Printing for Montgomery, NY Businesses",
@@ -2428,6 +2511,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofmounthope.org/
   // - https://www.usps.com/ (ZIP 10940)
   "mount-hope": {
+    leadAnswer: "Mount Hope is a small Orange County town between Middletown and the New Jersey border, encompassing the Otisville and Howells communities — Cornerstone provides EDDM and direct mail reaching Mount Hope households.",
     metaTitle: "Direct Mail & Printing in Mount Hope, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Mount Hope businesses — a rural Orange County town between Middletown and the Sullivan County border with agricultural and residential character.",
     h1: "Direct Mail & Printing for Mount Hope, NY Businesses",
@@ -2455,6 +2539,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.stewartairport.com/ (Stewart International Airport)
   // - https://www.usps.com/ (ZIP 12553)
   "new-windsor": {
+    leadAnswer: "Cornerstone provides high-volume EDDM and full direct mail campaigns in New Windsor — a large Orange County town along Route 32, anchored by Stewart International Airport and one of the county's most substantial residential populations south of Newburgh.",
     metaTitle: "Direct Mail & Printing in New Windsor, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for New Windsor businesses — a growing Orange County community anchored by Stewart International Airport and Route 9W commercial development north of Newburgh.",
     h1: "Direct Mail & Printing for New Windsor, NY Businesses",
@@ -2481,6 +2566,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.cityofnewburgh-ny.gov/
   // - https://www.usps.com/ (ZIPs 12550, 12551)
   "newburgh": {
+    leadAnswer: "Cornerstone provides full-service direct mail, EDDM, and commercial printing in Newburgh — Orange County's largest city, with a revitalizing waterfront along the Hudson and a large, diverse residential base.",
     metaTitle: "Direct Mail & Printing in Newburgh, NY | Cornerstone Services",
     metaDescription: "Full-service direct mail, EDDM, and printing for Newburgh businesses — Orange County's largest city on the Hudson River with a revitalizing waterfront, diverse neighborhoods, and active arts scene.",
     h1: "Direct Mail & Printing for Newburgh, NY Businesses",
@@ -2506,6 +2592,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://en.wikipedia.org/wiki/Pine_Bush,_New_York
   // - https://www.usps.com/ (ZIP 12566)
   "pine-bush": {
+    leadAnswer: "Pine Bush is a central Orange County village at the intersection of Routes 302 and 52, serving the surrounding agricultural and rural residential community — Cornerstone provides EDDM and direct mail reaching Pine Bush and Crawford-area households.",
     metaTitle: "Direct Mail & Printing in Pine Bush, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Pine Bush businesses — the commercial hamlet at the Orange-Ulster county border on Route 302, serving the mid-Wallkill Valley trade area.",
     h1: "Direct Mail & Printing for Pine Bush, NY Businesses",
@@ -2533,6 +2620,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.njtransit.com/ (Port Jervis Line)
   // - https://www.usps.com/ (ZIP 12771)
   "port-jervis": {
+    leadAnswer: "Port Jervis is a small Hudson Valley city at the only tri-state corner where New York, New Jersey, and Pennsylvania meet at the Delaware River — Cornerstone provides EDDM and full direct mail services to Port Jervis' 4,000–5,500 households.",
     metaTitle: "Direct Mail & Printing in Port Jervis, NY | Cornerstone Services",
     metaDescription: "Full-service direct mail and EDDM for Port Jervis businesses — Orange County's westernmost city at the tri-state New York-New Jersey-Pennsylvania corner, served by NJ Transit commuter rail.",
     h1: "Direct Mail & Printing for Port Jervis, NY Businesses",
@@ -2560,6 +2648,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.tuxedopark.org/ (Tuxedo Park gated community)
   // - https://www.usps.com/ (ZIP 10987)
   "tuxedo": {
+    leadAnswer: "Tuxedo is a small southeastern Orange County town anchored by Tuxedo Park — the historic Gilded Age gated community that gave the formal dinner jacket its name — Cornerstone provides EDDM and direct mail to Tuxedo's 1,800–2,500 households.",
     metaTitle: "Direct Mail & Printing in Tuxedo, NY | Cornerstone Services",
     metaDescription: "Direct mail and printing for Tuxedo, NY businesses — including the historic Tuxedo Park gated community, the Ramapo Mountains corridor, and Route 17 commercial development in southern Orange County.",
     h1: "Direct Mail & Printing for Tuxedo, NY Businesses",
@@ -2586,6 +2675,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.villageofwalden.org/
   // - https://www.usps.com/ (ZIP 12586)
   "walden": {
+    leadAnswer: "Walden is the primary commercial village of the Town of Montgomery in eastern Orange County, with an active Route 208 Main Street and one of the area's larger EDDM markets — Cornerstone provides full campaigns reaching 6,000–8,000 area households.",
     metaTitle: "Direct Mail & Printing in Walden, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Walden businesses — the primary commercial village of the Town of Montgomery in eastern Orange County, anchored by Main Street retail and the Route 208 corridor.",
     h1: "Direct Mail & Printing for Walden, NY Businesses",
@@ -2612,6 +2702,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofwallkill.com/
   // - https://www.usps.com/ (ZIPs 10940, 10941 shared with Middletown)
   "wallkill-orange": {
+    leadAnswer: "The Town of Wallkill in Orange County is a large municipality adjacent to Middletown, encompassing the Scotchtown hamlet and substantial residential and agricultural land — Cornerstone provides EDDM and direct mail targeting Wallkill's specific carrier routes.",
     metaTitle: "Direct Mail & Printing in Wallkill, NY (Orange County) | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Wallkill, Orange County — the large residential and agricultural town between Middletown and Goshen, distinct from Wallkill hamlet in Ulster County.",
     h1: "Direct Mail & Printing for Wallkill, NY — Orange County",
@@ -2639,6 +2730,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.brotherhoodwinery.net/ (Brotherhood Winery)
   // - https://www.usps.com/ (ZIP 10992)
   "washingtonville": {
+    leadAnswer: "Washingtonville is a Blooming Grove village anchored by Brotherhood Winery — America's oldest winery in continuous operation — Cornerstone provides EDDM and direct mail to Washingtonville's growing residential base in the 10992 ZIP.",
     metaTitle: "Direct Mail & Printing in Washingtonville, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Washingtonville businesses — home to Brotherhood Winery (America's oldest winery) and a growing Route 94 commercial corridor in central Orange County.",
     h1: "Direct Mail & Printing for Washingtonville, NY Businesses",
@@ -2666,6 +2758,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.premiumoutlets.com/outlet/woodbury-common (Woodbury Common)
   // - https://www.usps.com/ (ZIPs 10917 Central Valley, 10926 Harriman)
   "woodbury": {
+    leadAnswer: "Woodbury is home to Woodbury Common Premium Outlets — one of the world's largest outlet centers — but serves a permanent residential base of 2,000–3,000 households in Central Valley that Cornerstone reaches with targeted EDDM and direct mail campaigns.",
     metaTitle: "Direct Mail & Printing in Woodbury, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Woodbury businesses — home to Woodbury Common Premium Outlets, a major I-87 / Route 17 commercial hub in southeastern Orange County.",
     h1: "Direct Mail & Printing for Woodbury, NY Businesses",
