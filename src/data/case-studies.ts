@@ -10,6 +10,7 @@ export interface CaseStudy {
   services: string[];
   image?: string;
   imageAlt?: string;
+  leadAnswer?: string;
   challenge: string;
   solution: string;
   results: string;

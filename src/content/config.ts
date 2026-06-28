@@ -10,6 +10,7 @@ const articleSchema = z.object({
   authorLocation: z.string(),
   primaryKeyword: z.string(),
   pillar: z.string(),
+  leadAnswer: z.string().optional(),
   schemaFAQ: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
   schemaHowTo: z.object({
     name: z.string(),

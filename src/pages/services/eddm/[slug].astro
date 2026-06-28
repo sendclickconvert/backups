@@ -2,6 +2,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AuthorByline from '../../../components/AuthorByline.astro';
+import AnswerBlock from '../../../components/AnswerBlock.astro';
 import EDDMCalculator from '../../../components/calculators/EDDMCalculator';
 import { BUSINESS } from '../../../data/site';
 
@@ -54,6 +55,7 @@ graphItems.push({ '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListI
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-3 gap-10 lg:gap-14">
         <div class="lg:col-span-2">
+          {article.data.leadAnswer && <AnswerBlock answer={article.data.leadAnswer} />}
           <div class="not-prose bg-crst-primary/5 border border-crst-primary/15 rounded-xl p-4 mb-8 flex flex-col sm:flex-row items-center justify-between gap-3">
             <p class="font-heading font-semibold text-crst-primary text-sm">Ready to run an EDDM campaign in 2026?</p>
             <a href="/contact?service=eddm" class="btn-primary text-sm shrink-0">Get a Free EDDM Cost Estimate →</a>

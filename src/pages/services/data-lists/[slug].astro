@@ -2,6 +2,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AuthorByline from '../../../components/AuthorByline.astro';
+import AnswerBlock from '../../../components/AnswerBlock.astro';
 import { BUSINESS } from '../../../data/site';
 
 export async function getStaticPaths() {
@@ -115,6 +116,7 @@ const graphSchema = { '@context': 'https://schema.org', '@graph': graphItems };
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-3 gap-10 lg:gap-14">
         <div class="lg:col-span-2">
+          {article.data.leadAnswer && <AnswerBlock answer={article.data.leadAnswer} />}
 
           {tocHeadings.length > 0 && (
             <nav class="bg-navy-50/40 rounded-xl border border-navy-100 p-5 mb-10">

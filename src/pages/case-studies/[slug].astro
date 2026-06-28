@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import CTASection from '../../components/CTASection.astro';
+import AnswerBlock from '../../components/AnswerBlock.astro';
 import { BUSINESS, SERVICES } from '../../data/site';
 import { CASE_STUDIES_FULL } from '../../data/case-studies';
 import type { CaseStudy } from '../../data/case-studies';
@@ -81,6 +82,7 @@ const faqSchema = caseStudy.faqs && caseStudy.faqs.length > 0 ? {
       <div class="grid lg:grid-cols-3 gap-12">
         <!-- Main Content -->
         <div class="lg:col-span-2">
+          {caseStudy.leadAnswer && <AnswerBlock answer={caseStudy.leadAnswer} />}
           <!-- Case Study Image -->
           {caseStudy.image && (
             <div class="mb-10 rounded-xl overflow-hidden bg-gradient-to-br from-crst-primary/5 to-crst-accent/5">
