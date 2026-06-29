@@ -50,7 +50,7 @@ export default defineConfig({
   output: 'hybrid',
   trailingSlash: 'never',
   adapter: node({ mode: 'middleware' }),
-  vite: { server: { allowedHosts: true } },
+  vite: { server: { allowedHosts: true }, ssr: { noExternal: ['stripe'] } },
   integrations: [
     tailwind(),
     react(),
