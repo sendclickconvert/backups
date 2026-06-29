@@ -263,6 +263,7 @@ export const COUNTIES = {
 // GHL Integration
 export const GHL = {
   webhookUrl: 'https://services.leadconnectorhq.com/hooks/qS83M3cJvj01NjchLqjy/webhook-trigger/06294598-cdaf-4748-af4b-bbb89412e973',
+  guideWebhookUrl: 'https://services.leadconnectorhq.com/hooks/qS83M3cJvj01NjchLqjy/webhook-trigger/2339ccae-2d7c-4408-9869-a062e61bab8d',
   trackingId: 'tk_7f785045033a4132bec45bd33cffe9b4',
   chatWidgetId: '698f05276dc9bbabc4529ff6',
   ga4Id: 'G-HRBG2H3FE7',

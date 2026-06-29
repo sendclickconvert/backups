@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { BUSINESS } from '../../data/site';
+const siteKey = import.meta.env.TURNSTILE_SITE ?? '';
 ---
 
 <BaseLayout
@@ -209,7 +210,12 @@ import { BUSINESS } from '../../data/site';
 
               <div class="hidden" aria-hidden="true">
                 <input type="text" name="website" tabindex="-1" autocomplete="off" />
+                <input type="text" name="_loadtime" tabindex="-1" autocomplete="off" id="guide-loadtime" />
               </div>
+
+              {siteKey && (
+                <div class="cf-turnstile" data-sitekey={siteKey} data-theme="light"></div>
+              )}
 
               <button
                 type="submit"
@@ -286,55 +292,66 @@ import { BUSINESS } from '../../data/site';
     </div>
   </section>
 
-  <script>
-    const GUIDE_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/qS83M3cJvj01NjchLqjy/webhook-trigger/2339ccae-2d7c-4408-9869-a062e61bab8d';
+  {siteKey && (
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  )}
 
-    const form = document.getElementById('guide-form');
-    const submitBtn = document.getElementById('guide-submit');
+  <script>
+    const form = document.getElementById('guide-form') as HTMLFormElement | null;
+    const submitBtn = document.getElementById('guide-submit') as HTMLButtonElement | null;
     const submitText = document.getElementById('guide-submit-text');
     const spinner = document.getElementById('guide-spinner');
     const successMsg = document.getElementById('guide-success');
     const errorMsg = document.getElementById('guide-error');
+    const loadTimeField = document.getElementById('guide-loadtime') as HTMLInputElement | null;
+
+    if (loadTimeField) loadTimeField.value = Date.now().toString();
 
     form?.addEventListener('submit', async (e) => {
       e.preventDefault();
 
-      const honeypot = form.querySelector('input[name="website"]');
-      if (honeypot && honeypot.value) return;
+      const honeypot = form.querySelector('input[name="website"]') as HTMLInputElement | null;
+      if (honeypot?.value) return;
 
-      submitBtn.disabled = true;
-      submitText.textContent = 'Sending...';
-      spinner.classList.remove('hidden');
-      successMsg.classList.add('hidden');
-      errorMsg.classList.add('hidden');
+      const loadTime = parseInt(loadTimeField?.value || '0', 10);
+      if (loadTime && Date.now() - loadTime < 3000) return;
+
+      submitBtn!.disabled = true;
+      submitText!.textContent = 'Sending...';
+      spinner!.classList.remove('hidden');
+      successMsg!.classList.add('hidden');
+      errorMsg!.classList.add('hidden');
 
       const fd = new FormData(form);
-      const payload = {
-        first_name: fd.get('first_name'),
-        email: fd.get('email'),
-        company: fd.get('company') || '',
+      const payload: Record<string, string> = {
+        first_name: fd.get('first_name') as string,
+        email: fd.get('email') as string,
+        company: (fd.get('company') as string) || '',
       };
 
+      const turnstileToken = fd.get('cf-turnstile-response') as string | null;
+      if (turnstileToken) payload['cf-turnstile-response'] = turnstileToken;
+
       try {
-        const res = await fetch(GUIDE_WEBHOOK, {
+        const res = await fetch('/api/submit-guide', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload),
         });
 
         if (res.ok) {
-          successMsg.classList.remove('hidden');
+          successMsg!.classList.remove('hidden');
           form.reset();
           form.classList.add('hidden');
         } else {
-          throw new Error('Webhook failed');
+          throw new Error('Submission failed');
         }
-      } catch (err) {
-        errorMsg.classList.remove('hidden');
+      } catch {
+        errorMsg!.classList.remove('hidden');
       } finally {
-        submitBtn.disabled = false;
-        submitText.textContent = 'Download the Free Guide';
-        spinner.classList.add('hidden');
+        submitBtn!.disabled = false;
+        submitText!.textContent = 'Download the Free Guide';
+        spinner!.classList.add('hidden');
       }
     });
   </script>
