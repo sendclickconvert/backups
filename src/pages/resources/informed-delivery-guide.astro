@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { BUSINESS } from '../../data/site';
+import OptinHero from '../../components/OptinHero.astro';
 const siteKey = import.meta.env.TURNSTILE_SITE ?? '';
 ---
 
@@ -28,6 +29,12 @@ const siteKey = import.meta.env.TURNSTILE_SITE ?? '';
       },
     })} />
   </Fragment>
+
+  <OptinHero
+    eyebrow="USPS Informed Delivery"
+    heading="Get more from every mailing's free digital impression"
+    subhead="Grab the Informed Delivery campaign checklist — sizing, what to send, and the rules that trip most mailers up."
+  />
 
   <!-- HERO -->
   <section class="relative bg-gradient-to-br from-crst-primary via-[#1a3250] to-[#0f2137] py-20 lg:py-28 overflow-hidden">
@@ -291,10 +298,6 @@ const siteKey = import.meta.env.TURNSTILE_SITE ?? '';
       </div>
     </div>
   </section>
-
-  {siteKey && (
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-  )}
 
   <script>
     const form = document.getElementById('guide-form') as HTMLFormElement | null;

@@ -1,0 +1,177 @@
+---
+// src/components/OptinHero.astro
+// Above-the-fold opt-in hero for press-release / landing traffic.
+// Render as the FIRST element in the page body, before any guide content.
+// Posts to /api/submit-guide (Turnstile-verified server-side).
+
+interface Props {
+  eyebrow?: string;
+  heading: string;
+  subhead?: string;
+}
+const { eyebrow = '', heading, subhead = '' } = Astro.props;
+const siteKey = import.meta.env.TURNSTILE_SITE ?? '';
+---
+
+<section class="border-t-4 border-crst-accent bg-gradient-to-b from-white to-navy-50/60 border-b border-navy-100 py-10 lg:py-14">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-[1.15fr_0.85fr] gap-8 lg:gap-12 items-center">
+
+      <!-- Copy — second on mobile so form card leads -->
+      <div class="order-2 lg:order-1">
+        {eyebrow && (
+          <p class="text-xs font-heading font-bold uppercase tracking-widest text-crst-accent mb-3">{eyebrow}</p>
+        )}
+        <h2 class="text-3xl sm:text-4xl font-display text-crst-primary leading-tight mb-4">{heading}</h2>
+        {subhead && (
+          <p class="text-navy-600/80 font-heading leading-relaxed mb-5 max-w-[46ch]">{subhead}</p>
+        )}
+        <ul class="space-y-2 text-sm text-navy-600/80 font-heading">
+          <li class="flex items-center gap-2">
+            <span class="text-crst-accent font-bold">✓</span>
+            Free, no obligation
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-crst-accent font-bold">✓</span>
+            From a USPS-certified mail partner since 1998
+          </li>
+        </ul>
+      </div>
+
+      <!-- Form card — first on mobile -->
+      <div class="order-1 lg:order-2 bg-white rounded-2xl border border-navy-100 shadow-lg p-6 sm:p-7">
+        <form id="optin-hero-form" class="space-y-4" novalidate>
+          <div>
+            <label for="oh-first-name" class="block text-sm font-heading font-medium text-navy-700 mb-1.5">First Name *</label>
+            <input
+              type="text"
+              id="oh-first-name"
+              name="first_name"
+              required
+              class="w-full px-4 py-2.5 text-sm rounded-lg border border-navy-200 focus:border-crst-accent focus:ring-2 focus:ring-crst-accent/20 outline-none transition-all font-body placeholder:text-navy-400"
+              placeholder="John"
+            />
+          </div>
+
+          <div>
+            <label for="oh-email" class="block text-sm font-heading font-medium text-navy-700 mb-1.5">Email *</label>
+            <input
+              type="email"
+              id="oh-email"
+              name="email"
+              required
+              class="w-full px-4 py-2.5 text-sm rounded-lg border border-navy-200 focus:border-crst-accent focus:ring-2 focus:ring-crst-accent/20 outline-none transition-all font-body placeholder:text-navy-400"
+              placeholder="john@company.com"
+            />
+          </div>
+
+          <div>
+            <label for="oh-company" class="block text-sm font-heading font-medium text-navy-700 mb-1.5">Company / Organization</label>
+            <input
+              type="text"
+              id="oh-company"
+              name="company"
+              class="w-full px-4 py-2.5 text-sm rounded-lg border border-navy-200 focus:border-crst-accent focus:ring-2 focus:ring-crst-accent/20 outline-none transition-all font-body placeholder:text-navy-400"
+              placeholder="Acme Corp"
+            />
+          </div>
+
+          <!-- Honeypot + load-time -->
+          <div class="hidden" aria-hidden="true">
+            <input type="text" name="website" tabindex="-1" autocomplete="off" />
+            <input type="text" name="_loadtime" tabindex="-1" autocomplete="off" id="oh-loadtime" />
+          </div>
+
+          {siteKey && (
+            <div class="cf-turnstile" data-sitekey={siteKey} data-theme="light"></div>
+          )}
+
+          <button
+            type="submit"
+            id="oh-submit"
+            class="btn-primary w-full text-sm px-8 py-3 flex items-center justify-center gap-2"
+          >
+            <span id="oh-submit-text">Send me the checklist</span>
+            <svg id="oh-spinner" class="hidden w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+          </button>
+
+          <div id="oh-success" class="hidden p-4 bg-green-50 border border-green-200 rounded-lg text-sm text-green-800 font-heading">
+            <strong>Check your inbox</strong> — the checklist is on its way.
+          </div>
+          <div id="oh-error" class="hidden p-4 bg-red-50 border border-red-200 rounded-lg text-sm text-red-800 font-heading">
+            Something went wrong. Please call <a href="tel:8452555722" class="underline font-semibold">(845) 255-5722</a>.
+          </div>
+
+          <p class="text-xs text-navy-400 font-heading text-center pt-1">We don't sell your information.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{siteKey && (
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+)}
+
+<script>
+  const form = document.getElementById('optin-hero-form') as HTMLFormElement | null;
+  const submitBtn = document.getElementById('oh-submit') as HTMLButtonElement | null;
+  const submitText = document.getElementById('oh-submit-text');
+  const spinner = document.getElementById('oh-spinner');
+  const successMsg = document.getElementById('oh-success');
+  const errorMsg = document.getElementById('oh-error');
+  const loadTimeField = document.getElementById('oh-loadtime') as HTMLInputElement | null;
+
+  if (loadTimeField) loadTimeField.value = Date.now().toString();
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const honeypot = form.querySelector('input[name="website"]') as HTMLInputElement | null;
+    if (honeypot?.value) return;
+
+    const loadTime = parseInt(loadTimeField?.value || '0', 10);
+    if (loadTime && Date.now() - loadTime < 3000) return;
+
+    submitBtn!.disabled = true;
+    submitText!.textContent = 'Sending...';
+    spinner!.classList.remove('hidden');
+    successMsg!.classList.add('hidden');
+    errorMsg!.classList.add('hidden');
+
+    const fd = new FormData(form);
+    const payload: Record<string, string> = {
+      first_name: fd.get('first_name') as string,
+      email: fd.get('email') as string,
+      company: (fd.get('company') as string) || '',
+    };
+
+    const turnstileToken = fd.get('cf-turnstile-response') as string | null;
+    if (turnstileToken) payload['cf-turnstile-response'] = turnstileToken;
+
+    try {
+      const res = await fetch('/api/submit-guide', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+
+      if (res.ok) {
+        successMsg!.classList.remove('hidden');
+        form.classList.add('hidden');
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch {
+      errorMsg!.classList.remove('hidden');
+    } finally {
+      submitBtn!.disabled = false;
+      submitText!.textContent = 'Send me the checklist';
+      spinner!.classList.add('hidden');
+    }
+  });
+</script>
