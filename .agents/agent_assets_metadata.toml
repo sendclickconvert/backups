@@ -137,3 +137,9 @@ id = "QpXDIjiXB9ahEiuEMbOpZ"
 uri = "file://SEO-PLAYBOOK.md"
 type = "text"
 title = "CRST.net SEO Playbook"
+
+[[outputs]]
+id = "qYGk9q5vn4uLm9kZ3QTo9"
+uri = "file://pullman_keywords.csv"
+type = "table"
+title = "Pullman Car Service — Keyword Pull (DataForSEO)"
