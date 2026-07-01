@@ -55,6 +55,32 @@ function findVariant(
   );
 }
 
+function getAvailableValues(
+  variants: ShopifyVariant[],
+  options: { name: string }[],
+  selections: Record<string, string>,
+  optionIndex: number
+): string[] {
+  const priorOptions = options.slice(0, optionIndex);
+  const filtered = variants.filter(v =>
+    priorOptions.every(prior => {
+      const sel = selections[prior.name];
+      return sel && v.selectedOptions.some(o => o.name === prior.name && o.value === sel);
+    }) && v.availableForSale
+  );
+  const currentName = options[optionIndex].name;
+  const seen = new Set<string>();
+  const result: string[] = [];
+  for (const v of filtered) {
+    const opt = v.selectedOptions.find(o => o.name === currentName);
+    if (opt && !seen.has(opt.value)) {
+      seen.add(opt.value);
+      result.push(opt.value);
+    }
+  }
+  return result;
+}
+
 export default function ProductSelector({ product, placeholderSrc }: ProductSelectorProps) {
   const blank: Record<string, string> = {};
   product.options.forEach(opt => { blank[opt.name] = ''; });
@@ -69,7 +95,12 @@ export default function ProductSelector({ product, placeholderSrc }: ProductSele
   const canBuy = allSelected && available;
 
   const handleSelect = (name: string, value: string) => {
-    setSelections(prev => ({ ...prev, [name]: value }));
+    const idx = product.options.findIndex(o => o.name === name);
+    setSelections(prev => {
+      const next = { ...prev, [name]: value };
+      product.options.slice(idx + 1).forEach(o => { next[o.name] = ''; });
+      return next;
+    });
     setError('');
   };
 
@@ -155,25 +186,41 @@ export default function ProductSelector({ product, placeholderSrc }: ProductSele
         </div>
 
         <div className="space-y-4">
-          {product.options.map(opt => (
-            <div key={opt.name}>
-              <label className="block text-sm font-heading font-semibold text-navy-700 mb-1.5">
-                {opt.name}
-              </label>
-              <select
-                value={selections[opt.name]}
-                onChange={e => handleSelect(opt.name, e.target.value)}
-                className="w-full border border-navy-200 rounded-lg px-3 py-2.5 text-sm font-heading text-navy-700 bg-white focus:outline-none focus:ring-2 focus:ring-crst-accent focus:border-transparent transition-colors"
-              >
-                <option value="">— Select {opt.name} —</option>
-                {opt.values.map(val => (
-                  <option key={val} value={val}>
-                    {val}
+          {product.options.map((opt, idx) => {
+            const prevName = idx > 0 ? product.options[idx - 1].name : null;
+            const upstreamMissing = idx > 0 && !selections[product.options[idx - 1].name];
+            const availableValues = upstreamMissing
+              ? []
+              : getAvailableValues(product.variants, product.options, selections, idx);
+            return (
+              <div key={opt.name}>
+                <label className="block text-sm font-heading font-semibold text-navy-700 mb-1.5">
+                  {opt.name}
+                </label>
+                <select
+                  value={selections[opt.name]}
+                  onChange={e => handleSelect(opt.name, e.target.value)}
+                  disabled={upstreamMissing}
+                  className={`w-full border rounded-lg px-3 py-2.5 text-sm font-heading bg-white focus:outline-none focus:ring-2 focus:ring-crst-accent focus:border-transparent transition-colors ${
+                    upstreamMissing
+                      ? 'border-navy-100 text-navy-300 cursor-not-allowed'
+                      : 'border-navy-200 text-navy-700'
+                  }`}
+                >
+                  <option value="">
+                    {upstreamMissing
+                      ? `Select ${prevName} first`
+                      : `— Select ${opt.name} —`}
                   </option>
-                ))}
-              </select>
-            </div>
-          ))}
+                  {availableValues.map(val => (
+                    <option key={val} value={val}>
+                      {val}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            );
+          })}
         </div>
 
         <div className="bg-navy-50 rounded-xl px-4 py-4 border border-navy-100">

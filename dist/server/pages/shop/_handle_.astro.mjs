@@ -20,6 +20,26 @@ function findVariant(variants, selections) {
     (v) => v.selectedOptions.every((opt) => selections[opt.name] === opt.value)
   ) ?? null;
 }
+function getAvailableValues(variants, options, selections, optionIndex) {
+  const priorOptions = options.slice(0, optionIndex);
+  const filtered = variants.filter(
+    (v) => priorOptions.every((prior) => {
+      const sel = selections[prior.name];
+      return sel && v.selectedOptions.some((o) => o.name === prior.name && o.value === sel);
+    }) && v.availableForSale
+  );
+  const currentName = options[optionIndex].name;
+  const seen = /* @__PURE__ */ new Set();
+  const result = [];
+  for (const v of filtered) {
+    const opt = v.selectedOptions.find((o) => o.name === currentName);
+    if (opt && !seen.has(opt.value)) {
+      seen.add(opt.value);
+      result.push(opt.value);
+    }
+  }
+  return result;
+}
 function ProductSelector({ product, placeholderSrc }) {
   const blank = {};
   product.options.forEach((opt) => {
@@ -33,7 +53,14 @@ function ProductSelector({ product, placeholderSrc }) {
   const available = matched?.availableForSale ?? false;
   const canBuy = allSelected && available;
   const handleSelect = (name, value) => {
-    setSelections((prev) => ({ ...prev, [name]: value }));
+    const idx = product.options.findIndex((o) => o.name === name);
+    setSelections((prev) => {
+      const next = { ...prev, [name]: value };
+      product.options.slice(idx + 1).forEach((o) => {
+        next[o.name] = "";
+      });
+      return next;
+    });
     setError("");
   };
   const handleAddToCart = useCallback(async () => {
@@ -113,25 +140,27 @@ function ProductSelector({ product, placeholderSrc }) {
           }
         )
       ] }),
-      /* @__PURE__ */ jsx("div", { className: "space-y-4", children: product.options.map((opt) => /* @__PURE__ */ jsxs("div", { children: [
-        /* @__PURE__ */ jsx("label", { className: "block text-sm font-heading font-semibold text-navy-700 mb-1.5", children: opt.name }),
-        /* @__PURE__ */ jsxs(
-          "select",
-          {
-            value: selections[opt.name],
-            onChange: (e) => handleSelect(opt.name, e.target.value),
-            className: "w-full border border-navy-200 rounded-lg px-3 py-2.5 text-sm font-heading text-navy-700 bg-white focus:outline-none focus:ring-2 focus:ring-crst-accent focus:border-transparent transition-colors",
-            children: [
-              /* @__PURE__ */ jsxs("option", { value: "", children: [
-                "— Select ",
-                opt.name,
-                " —"
-              ] }),
-              opt.values.map((val) => /* @__PURE__ */ jsx("option", { value: val, children: val }, val))
-            ]
-          }
-        )
-      ] }, opt.name)) }),
+      /* @__PURE__ */ jsx("div", { className: "space-y-4", children: product.options.map((opt, idx) => {
+        const prevName = idx > 0 ? product.options[idx - 1].name : null;
+        const upstreamMissing = idx > 0 && !selections[product.options[idx - 1].name];
+        const availableValues = upstreamMissing ? [] : getAvailableValues(product.variants, product.options, selections, idx);
+        return /* @__PURE__ */ jsxs("div", { children: [
+          /* @__PURE__ */ jsx("label", { className: "block text-sm font-heading font-semibold text-navy-700 mb-1.5", children: opt.name }),
+          /* @__PURE__ */ jsxs(
+            "select",
+            {
+              value: selections[opt.name],
+              onChange: (e) => handleSelect(opt.name, e.target.value),
+              disabled: upstreamMissing,
+              className: `w-full border rounded-lg px-3 py-2.5 text-sm font-heading bg-white focus:outline-none focus:ring-2 focus:ring-crst-accent focus:border-transparent transition-colors ${upstreamMissing ? "border-navy-100 text-navy-300 cursor-not-allowed" : "border-navy-200 text-navy-700"}`,
+              children: [
+                /* @__PURE__ */ jsx("option", { value: "", children: upstreamMissing ? `Select ${prevName} first` : `— Select ${opt.name} —` }),
+                availableValues.map((val) => /* @__PURE__ */ jsx("option", { value: val, children: val }, val))
+              ]
+            }
+          )
+        ] }, opt.name);
+      }) }),
       /* @__PURE__ */ jsx("div", { className: "bg-navy-50 rounded-xl px-4 py-4 border border-navy-100", children: matched ? /* @__PURE__ */ jsxs("div", { children: [
         /* @__PURE__ */ jsx("p", { className: "text-xs font-heading font-medium text-navy-500 uppercase tracking-wide mb-1", children: "Total Order Price" }),
         /* @__PURE__ */ jsx("p", { className: "text-3xl font-display text-crst-primary", children: formatPrice(matched.price.amount, matched.price.currencyCode) }),
