@@ -143,3 +143,15 @@ id = "qYGk9q5vn4uLm9kZ3QTo9"
 uri = "file://pullman_keywords.csv"
 type = "table"
 title = "Pullman Car Service — Keyword Pull (DataForSEO)"
+
+[[outputs]]
+id = "1iGsto01n9OSDrBSehLoe"
+uri = "file://magnets_full.csv"
+type = "table"
+title = "Magnetic Postcards — Full Keyword Set (61 keywords)"
+
+[[outputs]]
+id = "S__p_spQ0fMJ5MesZsRL9"
+uri = "file://magnets_opportunities.csv"
+type = "table"
+title = "Magnetic Postcards — Opportunities Only (11 keywords)"
