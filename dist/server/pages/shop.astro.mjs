@@ -2,7 +2,7 @@
 import { g as createComponent, j as renderComponent, r as renderTemplate, m as maybeRenderHead, i as addAttribute, k as Fragment } from '../chunks/astro/server_CTVANr5S.mjs';
 import 'kleur/colors';
 import { $ as $$BaseLayout } from '../chunks/BaseLayout_Bgxbn2dx.mjs';
-import { s as storefrontFetch, A as ALL_PRODUCTS_QUERY } from '../chunks/shopify_c6w46TDs.mjs';
+import { s as storefrontFetch, A as ALL_PRODUCTS_QUERY } from '../chunks/shopify_Ck_Dc9c6.mjs';
 export { renderers } from '../renderers.mjs';
 
 const prerender = false;

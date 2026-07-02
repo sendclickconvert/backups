@@ -64,7 +64,40 @@ export const PRODUCT_BY_HANDLE_QUERY = `
         name
         values
       }
-      variants(first: 100) {
+      variants(first: 250) {
+        pageInfo {
+          hasNextPage
+          endCursor
+        }
+        edges {
+          node {
+            id
+            title
+            sku
+            availableForSale
+            price {
+              amount
+              currencyCode
+            }
+            selectedOptions {
+              name
+              value
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+
+export const PRODUCT_VARIANTS_PAGE_QUERY = `
+  query ProductVariantsPage($handle: String!, $after: String!) {
+    productByHandle(handle: $handle) {
+      variants(first: 250, after: $after) {
+        pageInfo {
+          hasNextPage
+          endCursor
+        }
         edges {
           node {
             id

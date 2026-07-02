@@ -56,7 +56,39 @@ const PRODUCT_BY_HANDLE_QUERY = `
         name
         values
       }
-      variants(first: 100) {
+      variants(first: 250) {
+        pageInfo {
+          hasNextPage
+          endCursor
+        }
+        edges {
+          node {
+            id
+            title
+            sku
+            availableForSale
+            price {
+              amount
+              currencyCode
+            }
+            selectedOptions {
+              name
+              value
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+const PRODUCT_VARIANTS_PAGE_QUERY = `
+  query ProductVariantsPage($handle: String!, $after: String!) {
+    productByHandle(handle: $handle) {
+      variants(first: 250, after: $after) {
+        pageInfo {
+          hasNextPage
+          endCursor
+        }
         edges {
           node {
             id
@@ -78,4 +110,4 @@ const PRODUCT_BY_HANDLE_QUERY = `
   }
 `;
 
-export { ALL_PRODUCTS_QUERY as A, PRODUCT_BY_HANDLE_QUERY as P, storefrontFetch as s };
+export { ALL_PRODUCTS_QUERY as A, PRODUCT_BY_HANDLE_QUERY as P, PRODUCT_VARIANTS_PAGE_QUERY as a, storefrontFetch as s };

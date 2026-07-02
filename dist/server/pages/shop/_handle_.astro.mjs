@@ -4,7 +4,7 @@ import 'kleur/colors';
 import { $ as $$BaseLayout } from '../../chunks/BaseLayout_Bgxbn2dx.mjs';
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { useState, useCallback } from 'react';
-import { s as storefrontFetch, P as PRODUCT_BY_HANDLE_QUERY } from '../../chunks/shopify_c6w46TDs.mjs';
+import { s as storefrontFetch, P as PRODUCT_BY_HANDLE_QUERY, a as PRODUCT_VARIANTS_PAGE_QUERY } from '../../chunks/shopify_Ck_Dc9c6.mjs';
 export { renderers } from '../../renderers.mjs';
 
 function formatPrice(amount, currency) {
@@ -263,13 +263,26 @@ const $$handle = createComponent(async ($$result, $$props, $$slots) => {
       if (!raw) {
         return Astro2.redirect("/shop", 302);
       }
+      const allVariants = raw.variants.edges.map((e) => e.node);
+      let pageInfo = raw.variants.pageInfo;
+      while (pageInfo.hasNextPage) {
+        const nextData = await storefrontFetch(
+          PRODUCT_VARIANTS_PAGE_QUERY,
+          { handle, after: pageInfo.endCursor },
+          token
+        );
+        const nextVariants = nextData.productByHandle?.variants;
+        if (!nextVariants) break;
+        allVariants.push(...nextVariants.edges.map((e) => e.node));
+        pageInfo = nextVariants.pageInfo;
+      }
       productData = {
         title: raw.title,
         handle: raw.handle,
         descriptionHtml: raw.descriptionHtml ?? "",
         images: raw.images.edges.map((e) => e.node),
         options: raw.options,
-        variants: raw.variants.edges.map((e) => e.node)
+        variants: allVariants
       };
     } catch (err) {
       fetchError = "Failed to reach Shopify Storefront API.";

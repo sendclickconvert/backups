@@ -3,7 +3,7 @@ export const prerender = false;
 
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ProductSelector from '../../components/shop/ProductSelector.tsx';
-import { storefrontFetch, PRODUCT_BY_HANDLE_QUERY } from '../../lib/shopify';
+import { storefrontFetch, PRODUCT_BY_HANDLE_QUERY, PRODUCT_VARIANTS_PAGE_QUERY } from '../../lib/shopify';
 
 const { handle } = Astro.params as { handle: string };
 
@@ -46,13 +46,29 @@ if (!token) {
     if (!raw) {
       return Astro.redirect('/shop', 302);
     }
+
+    const allVariants: any[] = raw.variants.edges.map((e: any) => e.node);
+    let pageInfo = raw.variants.pageInfo;
+
+    while (pageInfo.hasNextPage) {
+      const nextData = await storefrontFetch<{ productByHandle: any }>(
+        PRODUCT_VARIANTS_PAGE_QUERY,
+        { handle, after: pageInfo.endCursor },
+        token
+      );
+      const nextVariants = nextData.productByHandle?.variants;
+      if (!nextVariants) break;
+      allVariants.push(...nextVariants.edges.map((e: any) => e.node));
+      pageInfo = nextVariants.pageInfo;
+    }
+
     productData = {
       title: raw.title,
       handle: raw.handle,
       descriptionHtml: raw.descriptionHtml ?? '',
       images: raw.images.edges.map((e: any) => e.node),
       options: raw.options,
-      variants: raw.variants.edges.map((e: any) => e.node),
+      variants: allVariants,
     };
   } catch (err) {
     fetchError = 'Failed to reach Shopify Storefront API.';
