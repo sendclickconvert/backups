@@ -23,9 +23,9 @@ app.use((req, res, next) => {
       "img-src 'self' data: https:",
       "font-src 'self' https://fonts.gstatic.com https://*.leadconnectorhq.com https://assets.msgsndr.com",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.leadconnectorhq.com https://assets.msgsndr.com",
-      "script-src 'self' https://*.leadconnectorhq.com https://*.googletagmanager.com https://*.google-analytics.com https://challenges.cloudflare.com https://links.crst.net 'sha256-TIsCKC0x7tZhZK7IVj5sCCzZ9NyIKk+7KhLv5fngT3E=' 'sha256-Uwx7m+npaVrfQX0+ekjf3jcN4DpKG3Y09NyqV3nvrTc=' 'sha256-9da8aMdYj5v2hE3Y5rGvruXvd3YJFJp+vHaZEt9fnaU='",
-      "connect-src 'self' https://*.leadconnectorhq.com https://*.googletagmanager.com https://*.google-analytics.com https://services.msgsndr.com",
-      "frame-src https://player.vimeo.com https://*.leadconnectorhq.com https://challenges.cloudflare.com",
+      "script-src 'self' https://*.leadconnectorhq.com https://*.googletagmanager.com https://*.google-analytics.com https://challenges.cloudflare.com https://links.crst.net https://js.stripe.com 'sha256-TIsCKC0x7tZhZK7IVj5sCCzZ9NyIKk+7KhLv5fngT3E=' 'sha256-Uwx7m+npaVrfQX0+ekjf3jcN4DpKG3Y09NyqV3nvrTc=' 'sha256-9da8aMdYj5v2hE3Y5rGvruXvd3YJFJp+vHaZEt9fnaU='",
+      "connect-src 'self' https://*.leadconnectorhq.com https://*.googletagmanager.com https://*.google-analytics.com https://services.msgsndr.com https://api.stripe.com",
+      "frame-src https://player.vimeo.com https://*.leadconnectorhq.com https://challenges.cloudflare.com https://*.stripe.com",
       "upgrade-insecure-requests",
     ].join('; ')
   );
