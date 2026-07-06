@@ -6,6 +6,37 @@ import path from 'path';
 
 const app = express();
 
+// ── Security headers ──────────────────────────────────────────────────────────
+// Inserted at line 1 of the middleware chain so every response path is covered:
+// pre-rendered HTML (res.sendFile), static assets (express.static), SSR + /api (ssrHandler).
+// Report-Only — enforced ONLY after live incognito verification passes.
+// NO Strict-Transport-Security — Replit's edge sets it (blog.crst.net is HTTPS, includeSubDomains safe).
+app.use((req, res, next) => {
+  res.setHeader(
+    'Content-Security-Policy-Report-Only',
+    [
+      "default-src 'self'",
+      "base-uri 'self'",
+      "object-src 'none'",
+      "frame-ancestors 'none'",
+      "form-action 'self' https://*.leadconnectorhq.com",
+      "img-src 'self' data: https:",
+      "font-src 'self' https://fonts.gstatic.com",
+      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+      "script-src 'self' https://*.leadconnectorhq.com https://*.googletagmanager.com https://*.google-analytics.com",
+      "connect-src 'self' https://*.leadconnectorhq.com https://*.googletagmanager.com https://*.google-analytics.com",
+      "frame-src https://player.vimeo.com https://*.leadconnectorhq.com",
+      "upgrade-insecure-requests",
+    ].join('; ')
+  );
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'DENY');
+  res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+  res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=(), interest-cohort=()');
+  res.setHeader('Cross-Origin-Opener-Policy', 'same-origin');
+  next();
+});
+
 app.use(compression({ threshold: 0 }));
 
 // Trailing-slash redirect: enforce trailingSlash: 'never' at the request layer
