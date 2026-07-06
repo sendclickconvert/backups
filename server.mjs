@@ -23,9 +23,9 @@ app.use((req, res, next) => {
       "img-src 'self' data: https:",
       "font-src 'self' https://fonts.gstatic.com",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-      "script-src 'self' https://*.leadconnectorhq.com https://*.googletagmanager.com https://*.google-analytics.com",
-      "connect-src 'self' https://*.leadconnectorhq.com https://*.googletagmanager.com https://*.google-analytics.com",
-      "frame-src https://player.vimeo.com https://*.leadconnectorhq.com",
+      "script-src 'self' https://*.leadconnectorhq.com https://*.googletagmanager.com https://*.google-analytics.com https://challenges.cloudflare.com https://links.crst.net",
+      "connect-src 'self' https://*.leadconnectorhq.com https://*.googletagmanager.com https://*.google-analytics.com https://services.msgsndr.com",
+      "frame-src https://player.vimeo.com https://*.leadconnectorhq.com https://challenges.cloudflare.com",
       "upgrade-insecure-requests",
     ].join('; ')
   );
