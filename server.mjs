@@ -9,11 +9,11 @@ const app = express();
 // ── Security headers ──────────────────────────────────────────────────────────
 // Inserted at line 1 of the middleware chain so every response path is covered:
 // pre-rendered HTML (res.sendFile), static assets (express.static), SSR + /api (ssrHandler).
-// Report-Only — enforced ONLY after live incognito verification passes.
+// Enforced — verified clean via Incognito (0 blocked:csp), all payment/form paths confirmed.
 // NO Strict-Transport-Security — Replit's edge sets it (blog.crst.net is HTTPS, includeSubDomains safe).
 app.use((req, res, next) => {
   res.setHeader(
-    'Content-Security-Policy-Report-Only',
+    'Content-Security-Policy',
     [
       "default-src 'self'",
       "base-uri 'self'",
