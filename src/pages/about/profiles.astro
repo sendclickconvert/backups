@@ -78,6 +78,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     .pr-creds .badge{flex:0 0 auto;width:26px;height:26px;border-radius:6px;background:var(--brand-deep);color:#fff;font-size:.7rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px}
     .pr-creds .ctext strong{display:block;color:var(--ink)}
     .pr-creds .ctext span{font-size:.86rem;color:var(--ink-soft)}
+    .pr-creds .ctext a{font-size:.86rem;color:var(--brand);font-weight:500;text-decoration:none}
+    .pr-creds .ctext a:hover{text-decoration:underline}
+    .pr-creds .ctext a .arrow{opacity:.7}
     @media (prefers-reduced-motion:reduce){*{transition:none!important}}
   </style>
 
@@ -131,8 +134,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <ul class="pr-creds">
         <li><span class="badge">✓</span><span class="ctext"><strong>USPS-certified direct mail partner</strong><span>Automation, presort, and EDDM preparation handled in-house.</span></span></li>
         <li><span class="badge">A+</span><span class="ctext"><strong>BBB Accredited Business — A+ rating</strong><span>Accredited since January 2024.</span></span></li>
-        <li><span class="badge">★</span><span class="ctext"><strong>Orange County Chamber of Commerce — Member</strong><span>Add the public member-directory link once captured.</span></span></li>
-        <li><span class="badge">★</span><span class="ctext"><strong>Pawling Chamber of Commerce — Member</strong><span>Add the public member-directory link once captured.</span></span></li>
+        <li><span class="badge">★</span><span class="ctext"><strong>Orange County Chamber of Commerce — Member</strong><span>Hudson Valley's largest chamber — member.</span></span></li>
+        <li><span class="badge">★</span><span class="ctext"><strong>Pawling Chamber of Commerce — Member</strong><a href="https://pawlingchamber.org/members/cornerstone-services-inc" target="_blank" rel="noopener">Member directory listing <span class="arrow">↗</span></a></span></li>
+        <li><span class="badge">★</span><span class="ctext"><strong>Rhinebeck Area Chamber of Commerce — Member</strong><a href="https://business.rhinebeckchamber.com/list/member/cornerstone-services-inc-new-paltz-2140" target="_blank" rel="noopener">Member directory listing <span class="arrow">↗</span></a></span></li>
         <li><span class="badge">⎙</span><span class="ctext"><strong>Union printing</strong><span>Union-label printing for political and labor organizations.</span></span></li>
       </ul>
     </div>
