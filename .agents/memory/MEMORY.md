@@ -1,1 +1,2 @@
 - [BaseLayout schema={null} pattern](baselayout-schema-null.md) — pages using Fragment slot="head" for custom schema MUST pass schema={null} to BaseLayout or get duplicate JSON-LD blocks.
+- [CSP inline script hashes are fragile](csp-inline-script-hashes.md) — prefer hoisted external scripts (plain `<script>`, not `is:inline`) over hash-maintained inline blocks; caused a real Stripe outage.

@@ -112,7 +112,7 @@ import { BUSINESS } from '../../data/site';
         </div>
 
         <script is:inline src="https://js.stripe.com/v3/"></script>
-        <script is:inline>
+        <script>
           const stripe = Stripe('pk_live_51O7KqZK2qDuroGqaYn5XZGX6w0Uv8XmRXG5xi1tJbLxN0AYS6ozN2rAvRViSzEwpyhF2fJbPIZAZtUybBiUkDkJ600IHbruLNY');
           const elements = stripe.elements();
           const cardElement = elements.create('card', {
