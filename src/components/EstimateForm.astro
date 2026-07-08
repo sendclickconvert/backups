@@ -2,7 +2,7 @@
 const siteKey = import.meta.env.TURNSTILE_SITE ?? '';
 ---
 
-<form id="estimate-form" class="space-y-5" novalidate>
+<form id="estimate-form" class="space-y-5">
   <div class="grid sm:grid-cols-2 gap-4">
     <div>
       <label for="firstName" class="block text-sm font-heading font-medium text-navy-700 mb-1.5">First Name *</label>
@@ -145,6 +145,12 @@ const siteKey = import.meta.env.TURNSTILE_SITE ?? '';
   form?.addEventListener('submit', async (e) => {
     e.preventDefault();
 
+    // Native required-field / email-format validation
+    if (!(form as HTMLFormElement).checkValidity()) {
+      (form as HTMLFormElement).reportValidity();
+      return;
+    }
+
     // Honeypot check
     const honeypot = form.querySelector('input[name="website"]') as HTMLInputElement | null;
     if (honeypot?.value) return;
@@ -190,10 +196,14 @@ const siteKey = import.meta.env.TURNSTILE_SITE ?? '';
       if (response.ok) {
         successMsg!.classList.remove('hidden');
         form.reset();
+      } else if (response.status === 400) {
+        errorMsg!.textContent = 'Please fill in all required fields with a valid email address.';
+        errorMsg!.classList.remove('hidden');
       } else {
         throw new Error('Submission failed');
       }
     } catch {
+      errorMsg!.textContent = 'Something went wrong. Please call us at (845) 255-5722 or email info@crst.net.';
       errorMsg!.classList.remove('hidden');
     } finally {
       (submitBtn as HTMLButtonElement).disabled = false;

@@ -13,6 +13,17 @@ const POST = async ({ request }) => {
     });
   }
   const { "cf-turnstile-response": token, ...formData } = body;
+  const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const firstName = (formData.firstName ?? "").trim();
+  const lastName = (formData.lastName ?? "").trim();
+  const email = (formData.email ?? "").trim();
+  const message = (formData.message ?? "").trim();
+  if (!firstName || !lastName || !email || !message || !EMAIL_PATTERN.test(email)) {
+    return new Response(JSON.stringify({ error: "Missing required fields" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" }
+    });
+  }
   const secretKey = process.env.TURNSTILE_SECRET_KEY;
   if (secretKey) {
     if (!token) {

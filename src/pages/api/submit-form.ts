@@ -17,6 +17,21 @@ export const POST: APIRoute = async ({ request }) => {
 
   const { 'cf-turnstile-response': token, ...formData } = body as Record<string, string>;
 
+  // Required-field validation — must run before Turnstile/GHL so empty
+  // submissions never reach the CRM.
+  const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const firstName = (formData.firstName ?? '').trim();
+  const lastName = (formData.lastName ?? '').trim();
+  const email = (formData.email ?? '').trim();
+  const message = (formData.message ?? '').trim();
+
+  if (!firstName || !lastName || !email || !message || !EMAIL_PATTERN.test(email)) {
+    return new Response(JSON.stringify({ error: 'Missing required fields' }), {
+      status: 400,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }
+
   // Verify Turnstile token server-side (skip in dev if secret not set)
   const secretKey = import.meta.env.TURNSTILE_SECRET_KEY;
 
