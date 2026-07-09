@@ -179,3 +179,9 @@ id = "8ZPL47jsEY1K8cK7Vof3A"
 uri = "file://exports/4_search_mentions_seo_services.csv"
 type = "table"
 title = "4 — Search Mentions: \"seo services\" (100 Q&A rows)"
+
+[[outputs]]
+id = "QIFQMKdEPzfggS3Sh0hOo"
+uri = "file://exports/candidates.csv"
+type = "table"
+title = "candidates.csv — 332 questions with AI search volume"
