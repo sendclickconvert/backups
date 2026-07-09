@@ -203,3 +203,39 @@ id = "Tbc8VhCXFafiTe8UtySdW"
 uri = "file://exports/questions.txt"
 type = "text"
 title = "questions.txt — the 40 finalized questions"
+
+[[outputs]]
+id = "s1WAdgnH1nxBEcKsmhj7T"
+uri = "file://exports/kw_research_master.csv"
+type = "table"
+title = "kw_research_master.csv — 570 keywords, all hubs"
+
+[[outputs]]
+id = "XycG1YgtifhRXaGwQWDyP"
+uri = "file://exports/hub1_land_clearing.csv"
+type = "table"
+title = "HUB 1 — Land Clearing (175 rows)"
+
+[[outputs]]
+id = "W9CEaSmENvUmjbVPJSQ6g"
+uri = "file://exports/hub2_tree_planting.csv"
+type = "table"
+title = "HUB 2 — Tree Planting / Reforestation (144 rows)"
+
+[[outputs]]
+id = "V2ryHHyZ2PClq9JKkKjIg"
+uri = "file://exports/hub3_landowner_money.csv"
+type = "table"
+title = "HUB 3 — Landowner Money & Legal (98 rows)"
+
+[[outputs]]
+id = "oqwNN_P80j333GsuKTbFS"
+uri = "file://exports/hub4_stump_grinding.csv"
+type = "table"
+title = "HUB 4 — Stump Grinding (146 rows)"
+
+[[outputs]]
+id = "OeSmZ9GwTCiXBuf4Ev2Hi"
+uri = "file://exports/root_buying_timber.csv"
+type = "table"
+title = "ROOT — Buying Standing Timber (23 rows)"
