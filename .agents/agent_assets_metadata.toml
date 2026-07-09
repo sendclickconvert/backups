@@ -155,3 +155,27 @@ id = "S__p_spQ0fMJ5MesZsRL9"
 uri = "file://magnets_opportunities.csv"
 type = "table"
 title = "Magnetic Postcards — Opportunities Only (11 keywords)"
+
+[[outputs]]
+id = "PiUX5k8euEFUy4PifLbj6"
+uri = "file://exports/1_top_mentioned_pages.csv"
+type = "table"
+title = "1 — Top Mentioned Pages (500 rows, 6 domains)"
+
+[[outputs]]
+id = "K4q0pPJnEndvMlbEdWzfa"
+uri = "file://exports/2_top_mentioned_domains.csv"
+type = "table"
+title = "2 — Top Mentioned Domains (200 rows, 4 keywords)"
+
+[[outputs]]
+id = "ndEZkcYj7dyY_MrUGLqEh"
+uri = "file://exports/3_multi_target_comparison.csv"
+type = "table"
+title = "3 — Multi-Domain Comparison (6 domains ranked)"
+
+[[outputs]]
+id = "8ZPL47jsEY1K8cK7Vof3A"
+uri = "file://exports/4_search_mentions_seo_services.csv"
+type = "table"
+title = "4 — Search Mentions: \"seo services\" (100 Q&A rows)"
