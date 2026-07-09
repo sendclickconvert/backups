@@ -185,3 +185,21 @@ id = "QIFQMKdEPzfggS3Sh0hOo"
 uri = "file://exports/candidates.csv"
 type = "table"
 title = "candidates.csv — 332 questions with AI search volume"
+
+[[outputs]]
+id = "XV5j6Q69flS--F4ypEMib"
+uri = "file://exports/llm_citations.csv"
+type = "table"
+title = "llm_citations.csv — 29,671 source citations (40 questions × all models)"
+
+[[outputs]]
+id = "YLvaNw_m4PI08Vy4W9v2i"
+uri = "file://exports/llm_summary.csv"
+type = "table"
+title = "llm_summary.csv — per-question × model summary"
+
+[[outputs]]
+id = "Tbc8VhCXFafiTe8UtySdW"
+uri = "file://exports/questions.txt"
+type = "text"
+title = "questions.txt — the 40 finalized questions"
