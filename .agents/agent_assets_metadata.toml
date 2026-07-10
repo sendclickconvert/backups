@@ -239,3 +239,9 @@ id = "OeSmZ9GwTCiXBuf4Ev2Hi"
 uri = "file://exports/root_buying_timber.csv"
 type = "table"
 title = "ROOT — Buying Standing Timber (23 rows)"
+
+[[outputs]]
+id = "btDKRw-41tD5wAtOrlXxe"
+uri = "file://exports/cornerstone-site-source.zip"
+type = "unspecified"
+title = "cornerstone-site-source.zip — website source (src/ + public/ + config)"
