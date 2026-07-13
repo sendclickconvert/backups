@@ -245,3 +245,9 @@ id = "btDKRw-41tD5wAtOrlXxe"
 uri = "file://exports/cornerstone-site-source.zip"
 type = "unspecified"
 title = "cornerstone-site-source.zip — website source (src/ + public/ + config)"
+
+[[outputs]]
+id = "EAl4fLhNiqSf9Mau-fBV8"
+uri = "file://exports/cornerstone-logos.zip"
+type = "unspecified"
+title = "Cornerstone Logo Assets"
