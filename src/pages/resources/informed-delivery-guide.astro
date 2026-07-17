@@ -1,361 +1,607 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import { BUSINESS } from '../../data/site';
-import OptinHero from '../../components/OptinHero.astro';
-const siteKey = import.meta.env.TURNSTILE_SITE ?? '';
+export const prerender = true;
+const FORM_ENDPOINT = import.meta.env.FORM_ENDPOINT ?? '/api/submit-guide';
 ---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>USPS Informed Delivery for Direct Mail — Free 22-Page Guide</title>
+  <meta name="description" content="Free 22-page guide: add a color image and clickable link to your mail piece inside the USPS Daily Digest email — at no extra postage. 72.9M subscribers. Written by a USPS-certified mailer." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://crst.net/resources/informed-delivery-guide" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
-<BaseLayout
-  title="Informed Delivery for Direct Mail — Free Guide"
-  description="Free guide to USPS Informed Delivery for direct mail campaigns. Learn how to add a digital touchpoint to every mail piece. Written by a Hudson Valley mailer."
-  canonical="https://crst.net/resources/informed-delivery-guide"
-  schema={null}
->
-  <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'WebPage',
-      name: 'Informed Delivery for Direct Mail — Free Guide',
-      description: 'Free guide to USPS Informed Delivery for direct mail campaigns. Learn how to add a digital touchpoint to every mail piece. Written by a Hudson Valley mailer.',
-      url: 'https://crst.net/resources/informed-delivery-guide',
-      publisher: { '@id': 'https://crst.net/#organization' },
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crst.net' },
-          { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://crst.net/resources' },
-          { '@type': 'ListItem', position: 3, name: 'Informed Delivery Guide' },
-        ],
-      },
-    })} />
-  </Fragment>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-  <OptinHero
-    eyebrow="USPS Informed Delivery"
-    heading="Get more from every mailing's free digital impression"
-    subhead="Grab the Informed Delivery campaign checklist — sizing, what to send, and the rules that trip most mailers up."
-  />
+  <style>
+    /* ── Brand tokens ─────────────────────────────────────────────────── */
+    :root {
+      --navy:      #0F1B2D;
+      --navy-2:    #16273d;
+      --gold:      #B8893A;
+      --gold-l:    #d3a556;
+      --cream:     #FAF6EE;
+      --ink:       #1a2230;
+      --muted:     #5f6b7a;
+      --line:      #e6ddcd;
+    }
 
-  <!-- HERO -->
-  <section class="relative bg-gradient-to-br from-crst-primary via-[#1a3250] to-[#0f2137] py-20 lg:py-28 overflow-hidden">
-    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.04),transparent_60%)]"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="max-w-3xl">
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-crst-gold/15 border border-crst-gold/30 text-crst-gold text-xs font-heading font-bold uppercase tracking-wider mb-6">
-          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-          FREE 22-PAGE GUIDE
-        </div>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0 }
+    html  { scroll-behavior: smooth; -webkit-text-size-adjust: 100% }
+    body  {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'Source Sans 3', system-ui, sans-serif;
+      font-size: clamp(15px, 1vw + 11px, 17px);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px }
 
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-display text-white leading-tight mb-6">
-          How to Use USPS Informed Delivery in Your Direct Mail Campaigns
+    /* ── Type helpers ────────────────────────────────────────────────── */
+    .f-display { font-family: 'Playfair Display', Georgia, serif }
+    .f-mono    { font-family: 'JetBrains Mono', monospace }
+
+    .eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .72rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ── Button ──────────────────────────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      background: var(--gold);
+      color: #fff;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: .95rem;
+      font-weight: 600;
+      padding: .85rem 2rem;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      letter-spacing: .015em;
+      transition: background .18s, transform .1s;
+    }
+    .btn:hover  { background: var(--gold-l) }
+    .btn:active { transform: scale(.98) }
+    .btn-full   { width: 100% }
+
+    /* ── Form fields ─────────────────────────────────────────────────── */
+    .field {
+      display: block;
+      width: 100%;
+      padding: .72rem 1rem;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: .95rem;
+      border: 1.5px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      color: var(--ink);
+      transition: border-color .15s, box-shadow .15s;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    .field:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(184,137,58,.13);
+    }
+    .field::placeholder { color: #a8b2bc }
+
+    label {
+      display: block;
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: .35rem;
+    }
+
+    /* ── Dotted texture ──────────────────────────────────────────────── */
+    .texture::after {
+      content: "";
+      position: absolute; inset: 0;
+      background-image: radial-gradient(circle, rgba(255,255,255,.07) 1px, transparent 1px);
+      background-size: 22px 22px;
+      pointer-events: none;
+    }
+
+    /* ── Responsive grid helpers ─────────────────────────────────────── */
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      gap: 3rem;
+      align-items: start;
+    }
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      text-align: center;
+      gap: 1rem;
+    }
+    .compare-grid {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 1.5rem;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .inside-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+    .author-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    /* ── Responsive overrides ────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr }
+      .hero-form-col { order: -1 }
+    }
+    @media (max-width: 680px) {
+      .proof-grid  { grid-template-columns: repeat(2, 1fr) }
+      .inside-grid { grid-template-columns: 1fr }
+    }
+    @media (max-width: 600px) {
+      .compare-grid {
+        grid-template-columns: 1fr;
+      }
+      .compare-arrow { transform: rotate(90deg) }
+    }
+    @media (max-width: 560px) {
+      .author-grid { grid-template-columns: 1fr }
+      .author-photo { justify-self: center }
+    }
+
+    @keyframes spin { to { transform: rotate(360deg) } }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">{JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "USPS Informed Delivery for Direct Mail — Free 22-Page Guide",
+    "url": "https://crst.net/resources/informed-delivery-guide",
+    "publisher": { "@id": "https://crst.net/#organization" }
+  })}</script>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════════════════
+     1. TOP BAR
+     ════════════════════════════════════════════════════════════════════ -->
+<header style="background:var(--navy); border-bottom:1px solid rgba(255,255,255,.07)">
+  <div style="max-width:1180px; margin:0 auto; padding:.9rem 1.5rem; display:flex; align-items:center; justify-content:space-between; gap:1rem">
+    <a href="/" style="display:flex; align-items:center; gap:.75rem; text-decoration:none; flex-shrink:0" aria-label="Cornerstone Services home">
+      <img src="/images/crst-logo-white.png" alt="Cornerstone Services, Inc." style="height:30px; width:auto; display:block" />
+    </a>
+    <a href="tel:8452555722"
+       class="f-mono"
+       style="font-size:.78rem; color:rgba(255,255,255,.65); text-decoration:none; letter-spacing:.04em; white-space:nowrap; transition:color .15s"
+       onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,.65)'"
+       aria-label="Call us at (845) 255-5722">
+      (845) 255-5722
+    </a>
+  </div>
+</header>
+
+
+<!-- ════════════════════════════════════════════════════════════════════
+     2. HERO
+     ════════════════════════════════════════════════════════════════════ -->
+<section class="texture" style="position:relative; background:linear-gradient(140deg, var(--navy) 0%, var(--navy-2) 55%, #0c1924 100%); padding:4.5rem 1.5rem 5.5rem; overflow:hidden">
+  <div style="position:absolute; top:-20%; right:-8%; width:60%; height:140%; background:radial-gradient(ellipse, rgba(184,137,58,.07) 0%, transparent 60%); pointer-events:none; z-index:0"></div>
+
+  <div style="max-width:1180px; margin:0 auto; position:relative; z-index:1">
+    <div class="hero-grid">
+
+      <!-- LEFT: Copy + video -->
+      <div>
+        <span class="eyebrow" style="display:block; margin-bottom:.85rem">Free 22-Page Guide</span>
+
+        <h1 class="f-display" style="font-size:clamp(2rem,3.8vw,3rem); font-weight:500; color:#fff; line-height:1.1; letter-spacing:-.025em; margin-bottom:1.3rem">
+          Give every mail piece a<br>
+          <em style="font-style:italic; color:var(--gold)">second impression</em>&thinsp;—<br>
+          in the inbox.
         </h1>
 
-        <p class="text-lg text-white/75 font-heading leading-relaxed mb-4">
-          Informed Delivery is a free USPS program that sends 72.9 million subscribers a daily email previewing their incoming mail. As a mailer, you can add a full-color image and a clickable link to those emails — turning every mail piece into a digital touchpoint at no extra postage cost. This guide explains how it works and how to set it up.
+        <p style="color:rgba(255,255,255,.78); font-size:1.05rem; line-height:1.72; max-width:520px; margin-bottom:.9rem">
+          USPS emails a daily preview of incoming mail to <strong style="color:#fff">72.9 million subscribers</strong>. As a mailer, you can ride alongside that email with a <strong style="color:#fff">full-color image and a clickable link</strong> — at no extra postage cost. This free guide shows you exactly how to set it up.
+        </p>
+        <p class="f-mono" style="font-size:.72rem; color:rgba(255,255,255,.4); letter-spacing:.05em; margin-bottom:2.75rem">
+          Based on USPS primary documentation · Includes official USPS case studies
         </p>
 
-        <p class="text-sm text-crst-gold/90 font-heading mb-8">
-          Written by USPS-certified Mail Design Professionals at Cornerstone Services, New Paltz, NY.
-        </p>
-
-        <a href="#download" class="inline-flex items-center gap-2 btn-accent text-sm px-8 py-4 sm:w-auto w-full justify-center">
-          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-          Download the Free Guide
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHAT YOU'LL LEARN -->
-  <section class="py-16 lg:py-20 bg-navy-50/50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-12">
-        <div class="section-divider mx-auto mb-4"></div>
-        <p class="text-xs font-heading font-bold uppercase tracking-wider text-crst-primary/60 mb-2">What's Inside</p>
-        <h2 class="text-2xl sm:text-3xl font-display text-crst-primary">What You'll Learn</h2>
-      </div>
-
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {[
-          { icon: 'M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z', text: 'What Informed Delivery is, how the Daily Digest works, and why 72.9 million people use it' },
-          { icon: 'M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z', text: 'How to set up a ride-along image campaign through the USPS Mailer Campaign Portal' },
-          { icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z', text: 'Which mail classes qualify — and why EDDM Retail does not' },
-          { icon: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6', text: 'Real case study results: Pittsburgh Pirates saw a 39% response lift from one image change' },
-          { icon: 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z', text: 'How to measure ROI with UTM tracking, unique landing pages, and the three-group test design' },
-          { icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4', text: 'Why most organizations need a mail service provider to execute it correctly' },
-        ].map((card) => (
-          <div class="bg-white rounded-xl border border-navy-100 p-6 hover:shadow-md transition-shadow">
-            <div class="w-10 h-10 rounded-lg bg-crst-primary/10 flex items-center justify-center mb-4">
-              <svg class="w-5 h-5 text-crst-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d={card.icon} /></svg>
+        <!-- ── VIDEO EMBED SLOT ──────────────────────────────────────
+             Replace the div below with your Vimeo / Wistia / HeyGen embed.
+             Example:
+             <iframe src="https://player.vimeo.com/video/YOUR_ID?title=0&byline=0"
+               style="position:absolute;inset:0;width:100%;height:100%;border:0"
+               allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+             </iframe>
+        ─────────────────────────────────────────────────────────────── -->
+        <div style="position:relative; aspect-ratio:16/10; background:rgba(255,255,255,.04); border:1.5px dashed rgba(255,255,255,.18); border-radius:10px; overflow:hidden" id="video-slot">
+          <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.9rem;color:rgba(255,255,255,.35);text-align:center;padding:2rem">
+            <svg style="width:52px;height:52px;opacity:.3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <div>
+              <p class="f-mono" style="font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.3rem">Video embed slot</p>
+              <p style="font-size:.82rem;line-height:1.5;color:rgba(255,255,255,.28)">Drop your Vimeo · Wistia · HeyGen embed<br>inside <code style="font-size:.75em;opacity:.7">#video-slot</code> in the Astro source</p>
             </div>
-            <p class="text-sm text-navy-600/80 leading-relaxed">{card.text}</p>
           </div>
-        ))}
+        </div>
+        <!-- ── END VIDEO SLOT ──────────────────────────────────────── -->
       </div>
+
+      <!-- RIGHT: Form card -->
+      <div class="hero-form-col" style="background:var(--cream); border-radius:14px; padding:2rem; box-shadow:0 4px 6px rgba(0,0,0,.25), 0 24px 60px rgba(0,0,0,.45)">
+        <!-- Guide cover + title -->
+        <div style="display:flex; align-items:center; gap:1rem; padding-bottom:1.3rem; margin-bottom:1.4rem; border-bottom:1px solid var(--line)">
+          <img src="/images/informed-delivery-cover.jpg"
+               alt="USPS Informed Delivery Guide cover"
+               style="width:62px; flex-shrink:0; border-radius:5px; box-shadow:0 2px 10px rgba(0,0,0,.22)"
+               loading="eager" width="124" height="161" />
+          <div>
+            <p class="f-display" style="font-size:1.08rem; font-weight:600; color:var(--navy); line-height:1.25; margin-bottom:.2rem">Get the free guide</p>
+            <p class="f-mono" style="font-size:.72rem; color:var(--muted); letter-spacing:.05em">Instant PDF &nbsp;·&nbsp; 22 pages</p>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form id="guide-form" novalidate style="display:flex; flex-direction:column; gap:.95rem">
+          <!-- Honeypot fields (hidden) -->
+          <div style="display:none" aria-hidden="true">
+            <input type="text" name="website" tabindex="-1" autocomplete="off" />
+            <input type="text" name="_loadtime" id="guide-loadtime" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <div>
+            <label for="g-first-name">First Name <span style="color:var(--gold)">*</span></label>
+            <input class="field" type="text" id="g-first-name" name="first_name" required
+                   placeholder="Jane" autocomplete="given-name" />
+          </div>
+          <div>
+            <label for="g-email">Email <span style="color:var(--gold)">*</span></label>
+            <input class="field" type="email" id="g-email" name="email" required
+                   placeholder="jane@company.com" autocomplete="email" />
+          </div>
+          <div>
+            <label for="g-company">
+              Company / Organization
+              <span style="color:var(--muted); font-weight:400">(optional)</span>
+            </label>
+            <input class="field" type="text" id="g-company" name="company"
+                   placeholder="Acme Corp" autocomplete="organization" />
+          </div>
+
+          <button type="submit" class="btn btn-full" id="guide-submit" style="margin-top:.25rem">
+            <span id="guide-submit-text">Send me the guide</span>
+            <svg id="guide-spinner" style="display:none; width:16px; height:16px; animation:spin .75s linear infinite; flex-shrink:0"
+                 fill="none" viewBox="0 0 24 24">
+              <circle style="opacity:.25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
+              <path style="opacity:.75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/>
+            </svg>
+          </button>
+
+          <p style="font-size:.75rem; color:var(--muted); text-align:center; line-height:1.5">
+            Free &nbsp;·&nbsp; No obligation. We don't sell your information.
+          </p>
+        </form>
+
+        <!-- Success state (replaces form on submit) -->
+        <div id="guide-success" style="display:none; text-align:center; padding:1.75rem 0">
+          <div style="width:52px; height:52px; background:var(--gold); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 1.1rem">
+            <svg style="width:26px;height:26px;color:#fff" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+            </svg>
+          </div>
+          <p class="f-display" style="font-size:1.2rem; font-weight:500; color:var(--navy); margin-bottom:.5rem">Check your inbox.</p>
+          <p style="font-size:.88rem; color:var(--muted); line-height:1.55">
+            The guide is on its way. If you don't see it in a few minutes, check your spam folder.
+          </p>
+        </div>
+
+        <div id="guide-error" style="display:none; margin-top:.8rem; padding:.75rem 1rem; background:#fef2f2; border:1px solid #fecaca; border-radius:6px; font-size:.82rem; color:#b91c1c; line-height:1.5">
+          Something went wrong. Try again or call
+          <a href="tel:8452555722" style="font-weight:600; color:#b91c1c">(845) 255-5722</a>.
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CONTENT PREVIEW -->
-  <section class="py-16 lg:py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl mx-auto">
-        <p class="text-xs font-heading font-bold uppercase tracking-wider text-crst-primary/60 mb-2">Preview</p>
-        <div class="section-divider mb-6"></div>
 
-        <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-6">
-          What Is Informed Delivery and Why Should Mailers Care?
+<!-- ════════════════════════════════════════════════════════════════════
+     3. PROOF BAR
+     ════════════════════════════════════════════════════════════════════ -->
+<div style="background:#fff; border-bottom:1px solid var(--line)">
+  <div style="max-width:1180px; margin:0 auto; padding:1.8rem 1.5rem">
+    <div class="proof-grid">
+      {[
+        { n: '72.9M',  label: 'USPS subscribers' },
+        { n: '60.1%',  label: 'Daily Digest open rate' },
+        { n: '+39%',   label: 'Response lift (case study)' },
+        { n: 'Since 1998', label: 'Cornerstone Services' },
+      ].map(s => (
+        <div style="padding:.5rem 1rem">
+          <div class="f-display" style="font-size:1.65rem; font-weight:700; color:var(--navy); line-height:1">{s.n}</div>
+          <div class="f-mono" style="font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-top:.35rem">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════════════════
+     4. THE OPPORTUNITY
+     ════════════════════════════════════════════════════════════════════ -->
+<section style="background:var(--cream); padding:5.5rem 1.5rem">
+  <div style="max-width:1020px; margin:0 auto">
+    <span class="eyebrow" style="display:block; text-align:center; margin-bottom:.8rem">The Opportunity</span>
+    <h2 class="f-display" style="font-size:clamp(1.7rem,3vw,2.4rem); font-weight:500; color:var(--navy); text-align:center; margin:0 auto 1.1rem; max-width:580px; letter-spacing:-.025em; line-height:1.2">
+      Right now, your mail shows up<br>as a gray blur.
+    </h2>
+    <p style="text-align:center; color:var(--muted); max-width:480px; margin:0 auto 3.5rem; font-size:1rem; line-height:1.7">
+      Every subscriber sees a grayscale scan by default. You can appear alongside it — full color, with a button — for free.
+    </p>
+
+    <!-- Side-by-side comparison -->
+    <div class="compare-grid">
+
+      <!-- Default: grayscale scan -->
+      <div style="background:#fff; border:1px solid var(--line); border-radius:10px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,.05)">
+        <div style="background:#f3f4f6; padding:.6rem 1rem; border-bottom:1px solid #e5e7eb; display:flex; align-items:center; gap:.5rem">
+          <div style="width:7px;height:7px;border-radius:50%;background:#d1d5db"></div>
+          <span class="f-mono" style="font-size:.65rem; color:#9ca3af; letter-spacing:.08em">Default USPS scan</span>
+        </div>
+        <div style="padding:1.25rem; filter:grayscale(1) contrast(.85)">
+          <div style="background:#e5e7eb; height:78px; border-radius:6px; margin-bottom:.85rem; display:flex; align-items:center; justify-content:center">
+            <svg style="width:30px;height:30px;color:#9ca3af" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor"/><path d="M3 10h18" stroke="currentColor"/></svg>
+          </div>
+          <div style="background:#d1d5db;height:9px;border-radius:3px;width:80%;margin-bottom:.4rem"></div>
+          <div style="background:#d1d5db;height:8px;border-radius:3px;width:55%"></div>
+        </div>
+        <div style="padding:.55rem 1rem;background:#fafafa;border-top:1px solid #f0f0f0;text-align:center;font-size:.72rem;color:#9ca3af">
+          Grayscale scan only
+        </div>
+      </div>
+
+      <!-- Arrow -->
+      <div class="compare-arrow" style="flex-shrink:0; text-align:center">
+        <span class="f-mono" style="display:block; font-size:.62rem; letter-spacing:.12em; color:var(--gold); text-transform:uppercase; white-space:nowrap; margin-bottom:.45rem">Same mail piece</span>
+        <svg style="width:38px;height:18px;color:var(--gold)" fill="none" viewBox="0 0 38 18">
+          <path d="M2 9h30m0 0l-6-5.5M32 9l-6 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <!-- With ride-along: color -->
+      <div style="background:#fff; border:2px solid var(--gold); border-radius:10px; overflow:hidden; box-shadow:0 4px 24px rgba(184,137,58,.14)">
+        <div style="background:var(--navy); padding:.6rem 1rem; display:flex; align-items:center; gap:.5rem">
+          <div style="width:7px;height:7px;border-radius:50%;background:var(--gold)"></div>
+          <span class="f-mono" style="font-size:.65rem; color:rgba(255,255,255,.65); letter-spacing:.08em">With ride-along image</span>
+        </div>
+        <div style="padding:1.25rem">
+          <div style="background:linear-gradient(135deg,#dbeafe,#eff6ff); height:78px; border-radius:6px; margin-bottom:.85rem; display:flex; align-items:center; justify-content:center; border:1px solid #bfdbfe">
+            <svg style="width:30px;height:30px;color:#3b82f6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+          <div style="background:#1e40af;height:9px;border-radius:3px;width:80%;margin-bottom:.4rem"></div>
+          <div style="background:#dbeafe;height:8px;border-radius:3px;width:55%;margin-bottom:.85rem"></div>
+          <span style="display:inline-flex;align-items:center;gap:.4rem;background:var(--gold);color:#fff;padding:.3rem .8rem;border-radius:4px;font-size:.72rem;font-weight:600;letter-spacing:.02em">
+            <svg style="width:9px;height:9px" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            Learn More
+          </span>
+        </div>
+        <div style="padding:.55rem 1rem;background:#fffbf5;border-top:1px solid var(--line);text-align:center;font-size:.72rem;color:var(--gold);font-weight:600">
+          Color image + clickable link &nbsp;·&nbsp; No extra postage
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════════════
+     5. WHAT'S INSIDE
+     ════════════════════════════════════════════════════════════════════ -->
+<section style="background:#fff; padding:5.5rem 1.5rem; border-top:1px solid var(--line)">
+  <div style="max-width:960px; margin:0 auto">
+    <span class="eyebrow" style="display:block; text-align:center; margin-bottom:.8rem">What's Inside</span>
+    <h2 class="f-display" style="font-size:clamp(1.6rem,2.8vw,2.2rem); font-weight:500; color:var(--navy); text-align:center; margin:0 auto 3rem; max-width:580px; letter-spacing:-.02em; line-height:1.2">
+      22 pages. No filler.<br>Sourced from USPS documentation.
+    </h2>
+
+    <div class="inside-grid">
+      {[
+        { n: '01', title: 'How the USPS Daily Digest works',         body: 'The mechanics behind the email — what 72.9M subscribers see, how scans are processed, and when your piece appears.' },
+        { n: '02', title: 'Setting up a ride-along campaign',        body: 'Step-by-step walkthrough of the USPS Mailer Campaign Portal: uploading creative, scheduling, and linking to your mailing.' },
+        { n: '03', title: 'Which mail classes qualify',              body: 'First-Class Mail, Marketing Mail, and Nonprofit Mail qualify. EDDM Retail does not — and we explain exactly why.' },
+        { n: '04', title: 'Image specs',                             body: '200×200px minimum, JPEG or PNG, under 200KB. Plus safe zones, color best practices, and what USPS rejects.' },
+        { n: '05', title: 'Measuring ROI with UTM tracking',         body: 'How to set up UTM parameters, unique landing pages per campaign, and the three-group test design to isolate lift.' },
+        { n: '06', title: "The Pittsburgh Pirates' 39% response lift", body: 'The full case study: test design, creative used, results, and what every mailer can take from their Informed Delivery strategy.' },
+      ].map(item => (
+        <div style="display:flex; gap:1.1rem; align-items:flex-start; padding:1.5rem; border:1px solid var(--line); border-radius:10px; background:var(--cream)">
+          <div class="f-display" style="font-size:1.9rem; font-weight:700; color:var(--gold); opacity:.35; line-height:1; flex-shrink:0; font-style:italic; min-width:2.5rem">{item.n}</div>
+          <div>
+            <p style="font-weight:600; color:var(--navy); margin-bottom:.35rem; font-size:.95rem; line-height:1.35">{item.title}</p>
+            <p style="font-size:.85rem; color:var(--muted); line-height:1.65; margin:0">{item.body}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════════════
+     6. AUTHOR / CREDIBILITY
+     ════════════════════════════════════════════════════════════════════ -->
+<section style="background:var(--navy); padding:5rem 1.5rem; position:relative; overflow:hidden">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 90% at 95% 50%, rgba(184,137,58,.06), transparent);pointer-events:none"></div>
+  <div style="max-width:860px; margin:0 auto; position:relative; z-index:1">
+    <div class="author-grid">
+
+      <div class="author-photo">
+        <img src="/images/wp/sean2.png"
+             alt="Sean H. Griffin, President and Founder of Cornerstone Services, Inc."
+             style="width:100px; height:100px; border-radius:50%; object-fit:cover; border:2.5px solid var(--gold); display:block"
+             loading="lazy" />
+      </div>
+
+      <div>
+        <span class="eyebrow" style="display:block; margin-bottom:.75rem">Written by a mailer, not a marketer</span>
+        <h2 class="f-display" style="font-size:1.55rem; font-weight:500; color:#fff; margin-bottom:.3rem; letter-spacing:-.015em">
+          Sean H. Griffin
         </h2>
-
-        <p class="text-navy-600/80 leading-relaxed mb-6">
-          USPS Informed Delivery is a free consumer program that sends daily email notifications showing grayscale scans of incoming letter-sized mail. Over 72.9 million people have signed up — roughly a third of all U.S. households. For them, it's a convenience feature. For mailers, it's an opportunity to add a <strong>full-color ride-along image and a clickable URL</strong> that appears alongside the grayscale scan in the Daily Digest email. If you're already running a <a href="/services/direct-mail" class="text-crst-primary underline hover:text-crst-gold">direct mail campaign</a>, Informed Delivery gives you a second impression at no additional postage cost. For a deeper overview of the program itself, see our <a href="/informed-delivery-review" class="text-crst-primary underline hover:text-crst-gold">Informed Delivery review</a>.
+        <p class="f-mono" style="font-size:.74rem; color:var(--gold); letter-spacing:.06em; text-transform:uppercase; margin-bottom:1.3rem">
+          President &amp; Founder &nbsp;·&nbsp; USPS® Mail Design Professional
         </p>
-
-        <!-- Stats Row -->
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 my-10">
+        <p style="color:rgba(255,255,255,.72); font-size:1rem; line-height:1.72; max-width:580px; margin-bottom:2rem">
+          I wrote this guide because most of our clients didn't know Informed Delivery existed — and the ones who did weren't sure how to set it up. I've been mailing since 1998, we've processed over 2.3 million pieces, and everything here comes directly from USPS primary documentation. No speculation. No filler. Just what you actually need to run a campaign.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:.65rem">
           {[
-            { value: '72.9M', label: 'Subscribers' },
-            { value: '60.1%', label: 'Open Rate' },
-            { value: '34.7%', label: 'Household Penetration' },
-            { value: '$0', label: 'Additional Postage' },
-          ].map((stat) => (
-            <div class="text-center p-5 bg-crst-light rounded-xl">
-              <div class="text-2xl sm:text-3xl font-display font-bold text-crst-primary">{stat.value}</div>
-              <div class="text-xs text-gray-600 mt-1 font-heading">{stat.label}</div>
-            </div>
+            'USPS® Printer Directory',
+            'BBB A+ Rated',
+            'Ulster · Dutchess · Orange County',
+            '2.3M+ pieces mailed',
+          ].map(badge => (
+            <span class="f-mono" style="font-size:.69rem; letter-spacing:.08em; text-transform:uppercase; color:var(--gold); border:1px solid rgba(184,137,58,.32); padding:.3rem .8rem; border-radius:999px; background:rgba(184,137,58,.07)">
+              {badge}
+            </span>
           ))}
         </div>
-
-        <p class="text-navy-600/80 leading-relaxed mb-10">
-          The ride-along opportunity is straightforward: when you submit a qualifying mailing through the USPS Mailer Campaign Portal, you upload a color image (200×200px minimum) and a target URL. When Informed Delivery scans your physical mail piece and matches it to a subscriber's address, that subscriber sees your color image alongside the grayscale scan — plus a clickable button to your URL. First-Class Mail, Marketing Mail, and <a href="/services/non-profit-mailing" class="text-crst-primary underline hover:text-crst-gold">Nonprofit Marketing Mail</a> all qualify. <a href="/services/eddm" class="text-crst-primary underline hover:text-crst-gold">EDDM Retail</a> does not qualify for ride-along campaigns because EDDM pieces don't carry Intelligent Mail barcodes.
-        </p>
-
-        <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-6">
-          Real Campaign Results
-        </h2>
-
-        <div class="space-y-4 mb-8">
-          <div class="border-l-4 border-crst-primary bg-navy-50/60 rounded-r-lg p-5">
-            <p class="font-heading font-bold text-navy-800 mb-1">Pittsburgh Pirates</p>
-            <p class="text-sm text-navy-600/80 leading-relaxed">The Pittsburgh Pirates tested Informed Delivery ride-along images during a ticket sales campaign. Adding a single color image to the Daily Digest email produced a <strong>39% lift in response rate</strong> compared to the control group that received the physical mail piece alone.</p>
-          </div>
-          <div class="border-l-4 border-crst-primary bg-navy-50/60 rounded-r-lg p-5">
-            <p class="font-heading font-bold text-navy-800 mb-1">Bono's Pit Bar-B-Q</p>
-            <p class="text-sm text-navy-600/80 leading-relaxed">Bono's Pit Bar-B-Q ran an A/B test on their ride-along creative. The grayscale version of their coupon outperformed the color version, achieving a <strong>35% click-to-open rate</strong> — proving that creative testing matters as much as participation.</p>
-          </div>
-        </div>
-
-        <p class="text-navy-600/80 leading-relaxed">
-          The full guide includes a detailed ROI framework: how to set up UTM tracking for ride-along URLs, how to use unique landing pages per campaign, and how to run a three-group test design (mail only, mail + ride-along, control) to measure the true incremental lift. There's no additional USPS fee for Informed Delivery campaigns — your only cost is the time to set up the campaign in the portal and the creative work for the ride-along image.
-        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- OPT-IN FORM -->
-  <section id="download" class="py-16 lg:py-20 bg-gradient-to-b from-navy-50/80 to-navy-50/40">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-white rounded-2xl shadow-lg border border-navy-100 overflow-hidden">
-        <div class="grid lg:grid-cols-5 gap-0">
-          <!-- Cover Image Side -->
-          <div class="lg:col-span-2 bg-gradient-to-br from-navy-50 to-navy-50/60 p-8 lg:p-10 flex items-center justify-center">
-            <div class="relative w-48 sm:w-56 lg:w-full max-w-[240px]">
-              <img
-                src="/images/informed-delivery-cover.jpg"
-                alt="USPS Informed Delivery for Businesses and Non-Profits — Complete Guide 2026 cover by Cornerstone Services"
-                class="rounded-lg shadow-xl border border-gray-200 w-full h-auto"
-                width="480"
-                height="622"
-                loading="lazy"
-              />
-            </div>
-          </div>
 
-          <!-- Form Side -->
-          <div class="lg:col-span-3 p-8 lg:p-10">
-            <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-3">
-              Download the Complete Guide
-            </h2>
-            <p class="text-navy-600/80 text-sm leading-relaxed mb-6">
-              22 pages covering setup, design specs, campaign timing, case studies, and ROI measurement. Free.
-            </p>
+<!-- ════════════════════════════════════════════════════════════════════
+     7. CLOSING CTA
+     ════════════════════════════════════════════════════════════════════ -->
+<section style="background:var(--cream); padding:5.5rem 1.5rem; text-align:center; border-top:1px solid var(--line)">
+  <div style="max-width:520px; margin:0 auto">
+    <h2 class="f-display" style="font-size:clamp(1.5rem,2.8vw,2.1rem); font-weight:500; font-style:italic; color:var(--navy); margin-bottom:1rem; letter-spacing:-.02em; line-height:1.2">
+      Get the guide, then decide<br>if it's worth doing.
+    </h2>
+    <p style="color:var(--muted); margin-bottom:2rem; font-size:1rem; line-height:1.65; max-width:420px; margin-left:auto; margin-right:auto">
+      Free. No obligation. Sourced from USPS documentation. Your inbox is the first stop — not our CRM.
+    </p>
+    <button class="btn" id="cta-scroll-btn">
+      Get the free guide &rarr;
+    </button>
+  </div>
+</section>
 
-            <form id="guide-form" class="space-y-5" novalidate>
-              <div>
-                <label for="guideFirstName" class="block text-sm font-heading font-medium text-navy-700 mb-1.5">First Name *</label>
-                <input
-                  type="text"
-                  id="guideFirstName"
-                  name="first_name"
-                  required
-                  class="w-full px-4 py-2.5 text-sm rounded-lg border border-navy-200 focus:border-crst-accent focus:ring-2 focus:ring-crst-accent/20 outline-none transition-all font-body placeholder:text-navy-400"
-                  placeholder="John"
-                />
-              </div>
 
-              <div>
-                <label for="guideEmail" class="block text-sm font-heading font-medium text-navy-700 mb-1.5">Email *</label>
-                <input
-                  type="email"
-                  id="guideEmail"
-                  name="email"
-                  required
-                  class="w-full px-4 py-2.5 text-sm rounded-lg border border-navy-200 focus:border-crst-accent focus:ring-2 focus:ring-crst-accent/20 outline-none transition-all font-body placeholder:text-navy-400"
-                  placeholder="john@company.com"
-                />
-              </div>
+<!-- ════════════════════════════════════════════════════════════════════
+     8. FOOTER
+     ════════════════════════════════════════════════════════════════════ -->
+<footer style="background:var(--navy); border-top:1px solid rgba(255,255,255,.07); padding:1.75rem 1.5rem">
+  <div style="max-width:1180px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap">
+    <p class="f-mono" style="font-size:.7rem; color:rgba(255,255,255,.38); line-height:1.65; margin:0">
+      Cornerstone Services, Inc. &nbsp;·&nbsp; 31 South Ohioville Road, New Paltz, NY 12561 &nbsp;·&nbsp; (845) 255-5722
+    </p>
+    <p class="f-mono" style="font-size:.7rem; color:rgba(255,255,255,.38); margin:0">
+      &copy; 2026 Cornerstone Services, Inc.
+    </p>
+  </div>
+</footer>
 
-              <div>
-                <label for="guideCompany" class="block text-sm font-heading font-medium text-navy-700 mb-1.5">Company / Organization</label>
-                <input
-                  type="text"
-                  id="guideCompany"
-                  name="company"
-                  class="w-full px-4 py-2.5 text-sm rounded-lg border border-navy-200 focus:border-crst-accent focus:ring-2 focus:ring-crst-accent/20 outline-none transition-all font-body placeholder:text-navy-400"
-                  placeholder="Acme Corp"
-                />
-              </div>
 
-              <div class="hidden" aria-hidden="true">
-                <input type="text" name="website" tabindex="-1" autocomplete="off" />
-                <input type="text" name="_loadtime" tabindex="-1" autocomplete="off" id="guide-loadtime" />
-              </div>
+<!-- ════════════════════════════════════════════════════════════════════
+     SCRIPTS
+     ════════════════════════════════════════════════════════════════════ -->
+<script define:vars={{ FORM_ENDPOINT }}>
+  /* ── Closing CTA scroll ── */
+  document.getElementById('cta-scroll-btn')?.addEventListener('click', () => {
+    const firstField = document.getElementById('g-first-name');
+    const form = document.getElementById('guide-form');
+    if (!form || !firstField) return;
+    const top = form.getBoundingClientRect().top + window.scrollY - 120;
+    window.scrollTo({ top, behavior: 'smooth' });
+    setTimeout(() => firstField.focus(), 350);
+  });
 
-              {siteKey && (
-                <div class="cf-turnstile" data-sitekey={siteKey} data-theme="light"></div>
-              )}
+  /* ── Form ── */
+  const form       = document.getElementById('guide-form');
+  const submitBtn  = document.getElementById('guide-submit');
+  const submitTxt  = document.getElementById('guide-submit-text');
+  const spinner    = document.getElementById('guide-spinner');
+  const success    = document.getElementById('guide-success');
+  const errorMsg   = document.getElementById('guide-error');
+  const loadField  = document.getElementById('guide-loadtime');
 
-              <button
-                type="submit"
-                class="btn-primary w-full text-sm px-8 py-3"
-                id="guide-submit"
-              >
-                <span id="guide-submit-text">Download the Free Guide</span>
-                <svg id="guide-spinner" class="hidden w-4 h-4 ml-2 animate-spin" fill="none" viewBox="0 0 24 24">
-                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                </svg>
-              </button>
+  if (loadField) loadField.value = Date.now().toString();
 
-              <div id="guide-success" class="hidden p-4 bg-green-50 border border-green-200 rounded-lg text-sm text-green-800 font-heading">
-                <strong>Check your inbox</strong> — the guide is on its way.
-              </div>
-              <div id="guide-error" class="hidden p-4 bg-red-50 border border-red-200 rounded-lg text-sm text-red-800 font-heading">
-                Something went wrong. Please try again or call <a href="tel:8452555722" class="underline font-semibold">(845) 255-5722</a>.
-              </div>
-            </form>
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
 
-            <p class="text-xs text-gray-400 mt-4 font-heading">
-              We don't sell your information. The guide goes straight to your inbox.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    /* honeypot */
+    const hp = form.querySelector('input[name="website"]');
+    if (hp?.value) return;
 
-  <!-- AUTHOR / CREDIBILITY -->
-  <section class="py-14 lg:py-16 bg-white border-t border-gray-100">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-start gap-5">
-        <div class="shrink-0 w-14 h-14 rounded-xl bg-crst-primary flex items-center justify-center">
-          <span class="text-white font-display text-lg font-bold">CS</span>
-        </div>
-        <div>
-          <h3 class="text-lg font-display text-crst-primary mb-1">About This Guide</h3>
-          <p class="text-sm text-crst-primary/80 font-heading font-semibold mb-3">
-            Gurleenkaur Bhatia, USPS® MDP · Sean Griffin, USPS® MDP
-          </p>
-          <p class="text-sm text-navy-600/80 leading-relaxed">
-            Written by <a href="/services/direct-mail" class="text-crst-primary underline hover:text-crst-gold">Cornerstone Services, Inc.</a> — a direct mail and printing company in New Paltz, NY, operating since 1998 and listed on the USPS Printer Directory. We wrote this because most of our clients didn't know Informed Delivery existed. The ones who did weren't sure how to set it up. This guide is sourced entirely from USPS primary documentation and includes a full bibliography. <a href="/estimate" class="text-crst-primary underline hover:text-crst-gold">Request an estimate</a> to add Informed Delivery to your next campaign.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+    /* time check — must be at least 3 s after page load */
+    const loadTime = parseInt(loadField?.value || '0', 10);
+    if (loadTime && Date.now() - loadTime < 3000) return;
 
-  <!-- RELATED LINKS -->
-  <section class="py-14 lg:py-16 bg-navy-50/50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-8">
-        <h2 class="text-xl font-display text-crst-primary">Related Resources</h2>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {[
-          { title: 'What Is Informed Delivery?', desc: 'Our in-depth review of USPS Informed Delivery for businesses.', href: '/informed-delivery-review' },
-          { title: 'Direct Mail Services', desc: 'Full-service campaigns from data pull to mailbox delivery.', href: '/services/direct-mail' },
-          { title: 'Nonprofit Mailing', desc: 'Discounted USPS rates for qualifying nonprofit organizations.', href: '/services/non-profit-mailing' },
-          { title: 'Request an Estimate', desc: 'Get a free estimate for your next direct mail campaign.', href: '/estimate' },
-        ].map((link) => (
-          <a href={link.href} class="group bg-white rounded-xl border border-navy-100 p-5 hover:shadow-md hover:border-crst-primary/30 transition-all">
-            <h3 class="font-heading font-bold text-navy-800 group-hover:text-crst-primary transition-colors mb-2 text-sm">{link.title}</h3>
-            <p class="text-xs text-navy-500 leading-relaxed">{link.desc}</p>
-            <span class="inline-flex items-center gap-1 text-xs text-crst-primary font-heading font-semibold mt-3">
-              Learn more
-              <svg class="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-            </span>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
+    submitBtn.disabled = true;
+    submitTxt.textContent = 'Sending\u2026';
+    spinner.style.display = 'inline-block';
+    success.style.display = 'none';
+    errorMsg.style.display = 'none';
 
-  <script>
-    const form = document.getElementById('guide-form') as HTMLFormElement | null;
-    const submitBtn = document.getElementById('guide-submit') as HTMLButtonElement | null;
-    const submitText = document.getElementById('guide-submit-text');
-    const spinner = document.getElementById('guide-spinner');
-    const successMsg = document.getElementById('guide-success');
-    const errorMsg = document.getElementById('guide-error');
-    const loadTimeField = document.getElementById('guide-loadtime') as HTMLInputElement | null;
+    const fd = new FormData(form);
+    const payload = {
+      first_name: fd.get('first_name') ?? '',
+      email:      fd.get('email') ?? '',
+      company:    fd.get('company') ?? '',
+    };
 
-    if (loadTimeField) loadTimeField.value = Date.now().toString();
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error('non-2xx');
+      form.style.display = 'none';
+      success.style.display = 'block';
+    } catch {
+      errorMsg.style.display = 'block';
+    } finally {
+      submitBtn.disabled = false;
+      submitTxt.textContent = 'Send me the guide';
+      spinner.style.display = 'none';
+    }
+  });
+</script>
 
-    form?.addEventListener('submit', async (e) => {
-      e.preventDefault();
-
-      const honeypot = form.querySelector('input[name="website"]') as HTMLInputElement | null;
-      if (honeypot?.value) return;
-
-      const loadTime = parseInt(loadTimeField?.value || '0', 10);
-      if (loadTime && Date.now() - loadTime < 3000) return;
-
-      submitBtn!.disabled = true;
-      submitText!.textContent = 'Sending...';
-      spinner!.classList.remove('hidden');
-      successMsg!.classList.add('hidden');
-      errorMsg!.classList.add('hidden');
-
-      const fd = new FormData(form);
-      const payload: Record<string, string> = {
-        first_name: fd.get('first_name') as string,
-        email: fd.get('email') as string,
-        company: (fd.get('company') as string) || '',
-      };
-
-      const turnstileToken = fd.get('cf-turnstile-response') as string | null;
-      if (turnstileToken) payload['cf-turnstile-response'] = turnstileToken;
-
-      try {
-        const res = await fetch('/api/submit-guide', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload),
-        });
-
-        if (res.ok) {
-          successMsg!.classList.remove('hidden');
-          form.reset();
-          form.classList.add('hidden');
-        } else {
-          throw new Error('Submission failed');
-        }
-      } catch {
-        errorMsg!.classList.remove('hidden');
-      } finally {
-        submitBtn!.disabled = false;
-        submitText!.textContent = 'Download the Free Guide';
-        spinner!.classList.add('hidden');
-      }
-    });
-  </script>
-</BaseLayout>
+</body>
+</html>
