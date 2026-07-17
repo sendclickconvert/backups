@@ -140,8 +140,7 @@ Cornerstone Services, Inc. &nbsp;·&nbsp; 31 South Ohioville Road, New Paltz, NY
         body: JSON.stringify(payload),
       });
       if (!res.ok) throw new Error('non-2xx');
-      form.style.display = 'none';
-      success.style.display = 'block';
+      window.location.href = '/resources/informed-delivery-guide-thank-you';
     } catch {
       errorMsg.style.display = 'block';
     } finally {

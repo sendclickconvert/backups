@@ -622,8 +622,7 @@ const FORM_ENDPOINT = import.meta.env.FORM_ENDPOINT ?? '/api/submit-guide';
         body: JSON.stringify(payload),
       });
       if (!res.ok) throw new Error('non-2xx');
-      form.style.display = 'none';
-      success.style.display = 'block';
+      window.location.href = '/resources/informed-delivery-guide-thank-you';
     } catch {
       errorMsg.style.display = 'block';
     } finally {
