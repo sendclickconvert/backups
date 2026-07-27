@@ -20,7 +20,7 @@ const EDDMCalculator: React.FC = () => {
   const [result, setResult] = useState<EDDMResult | null>(null);
 
   const AVG_HOMES_PER_ROUTE = 425;
-  const EDDM_POSTAGE_RATE = 0.216;
+  const EDDM_POSTAGE_RATE = 0.247;
   const DESIGN_FEE = 350;
 
   const printingRates: { [key: string]: number } = {

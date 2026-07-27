@@ -20,7 +20,7 @@ schemaFAQ:
   - q: "How long do postcards take to produce?"
     a: "Standard production at Cornerstone is 5–7 business days from proof approval to USPS induction. Rush production (3 business days) is available for postcards with supplied artwork and a pre-processed mailing list. USPS delivery adds 3–5 business days for local Hudson Valley mailings."
   - q: "Should I mail postcards First-Class or Marketing Mail?"
-    a: "Marketing Mail for most campaigns. Marketing Mail postage runs $0.22–$0.30 per piece versus $0.73+ for First Class. The trade-off is delivery speed: 3–10 business days for Marketing Mail versus 1–3 days for First Class. Use First Class only for time-critical mailings or very small quantities under 200 pieces."
+    a: "Marketing Mail for most campaigns. Marketing Mail postage runs $0.22–$0.30 per piece versus $0.78+ for First Class. The trade-off is delivery speed: 3–10 business days for Marketing Mail versus 1–3 days for First Class. Use First Class only for time-critical mailings or very small quantities under 200 pieces."
 ---
 
 Postcards are the highest-visibility format in [direct mail marketing](/services/direct-mail). There is nothing to open — the recipient sees your headline, image, and offer the moment they pick up the mail. This immediate visibility, combined with the lowest production cost of any direct mail format, makes postcards the default choice for local business campaigns across the Hudson Valley.
@@ -207,6 +207,6 @@ Standard production at Cornerstone is 5–7 business days from proof approval to
 
 **Should I mail postcards First-Class or Marketing Mail?**
 
-Marketing Mail for the vast majority of campaigns. Marketing Mail postage runs $0.22–$0.30 per piece versus $0.73+ for First Class — a savings of $0.40–$0.50 per piece. At 5,000 pieces, that is $2,000–$2,500 in postage savings. The trade-off is delivery speed: 3–10 business days for Marketing Mail versus 1–3 days for First Class. Use First Class only for genuinely time-critical mailings or very small quantities under 200 pieces where presort discounts do not apply.
+Marketing Mail for the vast majority of campaigns. Marketing Mail postage runs $0.22–$0.30 per piece versus $0.78+ for First Class — a savings of $0.48–$0.56 per piece. At 5,000 pieces, that is $2,400–$2,800 in postage savings. The trade-off is delivery speed: 3–10 business days for Marketing Mail versus 1–3 days for First Class. Use First Class only for genuinely time-critical mailings or very small quantities under 200 pieces where presort discounts do not apply.
 
 Get started with [Cornerstone's Hudson Valley direct mail services →](/services/direct-mail)

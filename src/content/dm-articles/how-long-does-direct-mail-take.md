@@ -69,7 +69,7 @@ USPS does not guarantee delivery dates for Marketing Mail (the postage class use
 
 For Hudson Valley campaigns mailing to Ulster, Dutchess, and Orange counties, mail inducted at the Newburgh Sectional Center Facility (SCF) typically delivers in **3–5 business days**. This is the best-case Marketing Mail window.
 
-National campaigns — mailing to multiple states — should plan for **7–10 business day** delivery windows. For time-sensitive national campaigns, First Class postage ($0.73+) cuts delivery to 3–5 business days at higher cost.
+National campaigns — mailing to multiple states — should plan for **7–10 business day** delivery windows. For time-sensitive national campaigns, First Class postage ($0.78+) cuts delivery to 3–5 business days at higher cost.
 
 ## Planning Backward from Your In-Home Date
 
@@ -149,7 +149,7 @@ Plan 15–20 business days from kick-off to in-home if starting from scratch (ne
 
 **Does First Class mail deliver faster than Marketing Mail?**
 
-Yes — significantly. First Class Mail delivers in 1–3 business days for local mailings versus 3–10 business days for Marketing Mail. First Class also includes forwarding service (if the recipient has moved, USPS forwards the piece to their new address) and return service (undeliverable pieces are returned to you). Marketing Mail does not include either service. The tradeoff is cost: First Class postage runs $0.73+ per piece versus $0.22–$0.30 for Marketing Mail. For time-sensitive campaigns where delivery date matters — event invitations, election mail, flash sales — the First Class premium is often justified.
+Yes — significantly. First Class Mail delivers in 1–3 business days for local mailings versus 3–10 business days for Marketing Mail. First Class also includes forwarding service (if the recipient has moved, USPS forwards the piece to their new address) and return service (undeliverable pieces are returned to you). Marketing Mail does not include either service. The tradeoff is cost: First Class postage runs $0.78+ per piece versus $0.22–$0.30 for Marketing Mail. For time-sensitive campaigns where delivery date matters — event invitations, election mail, flash sales — the First Class premium is often justified.
 
 **Can I choose which day of the week mail arrives?**
 

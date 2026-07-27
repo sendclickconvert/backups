@@ -45,7 +45,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
       'Bills, notices, and account documents',
       'Sales and promotional letter mailings',
     ],
-    retrievalParagraph: 'The #10 envelope is the standard US business envelope, measuring 4.125 by 9.5 inches (104.8 by 241.3 millimeters). It fits a standard 8.5 by 11 inch letter folded in thirds and is the default size for invoices, statements, business correspondence, and most direct mail letter campaigns. As a letter-size envelope under USPS rules, it qualifies for First-Class postage starting at $0.78 in 2026, with a maximum weight of 3.5 ounces at letter rate.',
+    retrievalParagraph: 'The #10 envelope is the standard US business envelope, measuring 4.125 by 9.5 inches (104.8 by 241.3 millimeters). It fits a standard 8.5 by 11 inch letter folded in thirds and is the default size for invoices, statements, business correspondence, and most direct mail letter campaigns. As a letter-size envelope under USPS rules, it qualifies for First-Class postage starting at $0.82 in 2026, with a maximum weight of 3.5 ounces at letter rate.',
     bodyIntro: `<p>The #10 envelope is the most widely used business envelope in the United States. It measures <strong>4.125 inches high by 9.5 inches long</strong> — proportions chosen to fit a standard 8.5 by 11 inch sheet of paper folded in thirds, with room left for a reply slip or thin enclosure if needed.</p>
 
 <p>If you've received a piece of business mail in the last week, it almost certainly arrived in a #10. Banks send statements in them. Utility companies bill in them. Nonprofits run donation appeals in them. The size is so common that "business envelope" and "#10 envelope" are used interchangeably in the printing and mailing industry.</p>
@@ -75,8 +75,8 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
 
 <h3>2026 First-Class postage for a #10 envelope</h3>
 <ul>
-  <li>1 ounce, Forever stamp: <strong>$0.78</strong></li>
-  <li>1 ounce, metered postage: <strong>$0.74</strong></li>
+  <li>1 ounce, Forever stamp: <strong>$0.82</strong></li>
+  <li>1 ounce, metered postage: <strong>$0.78</strong></li>
   <li>Each additional ounce, up to 3.5 ounces: <strong>$0.29</strong></li>
 </ul>
 
@@ -93,7 +93,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
       { q: 'What are the dimensions of a #10 envelope?', a: 'A #10 envelope measures 4.125 inches high by 9.5 inches long (104.8 by 241.3 millimeters). It is the standard US business envelope size and has been the default for business correspondence in the United States for nearly a century.' },
       { q: 'Will an 8.5 by 11 inch letter fit in a #10 envelope?', a: 'Yes. The #10 envelope is sized specifically to fit a standard 8.5 by 11 inch letter folded in thirds. There is also room for a small reply slip, business card, or thin enclosure without exceeding the letter-rate thickness limit of 0.25 inches.' },
       { q: "What's the difference between a #10 and a #9 envelope?", a: 'A <a href="/guides/envelope-sizes/no-9">#9 envelope</a> (3.875" × 8.875") is slightly smaller than a #10 (4.125" × 9.5"). The #9 is most commonly used as a reply envelope tucked inside a #10 outer envelope — typical in donation appeals and billing mailings. Both qualify for letter-rate postage.' },
-      { q: 'How much does it cost to mail a #10 envelope?', a: 'A 1-ounce #10 envelope costs $0.78 with a Forever stamp or $0.74 with metered postage in 2026. Each additional ounce up to 3.5 ounces adds $0.29. Bulk mailings with presort and automation can reduce per-piece postage by $0.10 or more.' },
+      { q: 'How much does it cost to mail a #10 envelope?', a: 'A 1-ounce #10 envelope costs $0.82 with a Forever stamp or $0.78 with metered postage in 2026. Each additional ounce up to 3.5 ounces adds $0.29. Bulk mailings with presort and automation can reduce per-piece postage by $0.10 or more.' },
       { q: 'Can a #10 envelope have a window?', a: 'Yes. Window #10 envelopes are standard for invoices, statements, and bills. The typical window is around 4.5 inches wide by 1 inch high, positioned in the lower-left of the envelope front. Double-window #10s are also common — one window for the recipient address and a second for return information.' },
       { q: 'Why is the #10 the standard business envelope?', a: 'The #10 was sized in the early 20th century to fit standard 8.5 by 11 inch business letterhead folded in thirds. Once typewriters and standardized letterhead became common, the #10 became the dominant choice for business correspondence and has remained the US standard ever since.' },
     ],
@@ -118,7 +118,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
       'Order forms and remittance returns',
       'Survey response envelopes',
     ],
-    retrievalParagraph: 'A #9 envelope measures 3.875 by 8.875 inches (98.4 by 225.4 millimeters), making it slightly smaller than a #10. It is the standard reply envelope used inside a #10 outer envelope for donation appeals, invoices, and remittances. The #9 qualifies for First-Class letter postage starting at $0.78 in 2026 and is also the most common envelope used for Business Reply Mail (BRM).',
+    retrievalParagraph: 'A #9 envelope measures 3.875 by 8.875 inches (98.4 by 225.4 millimeters), making it slightly smaller than a #10. It is the standard reply envelope used inside a #10 outer envelope for donation appeals, invoices, and remittances. The #9 qualifies for First-Class letter postage starting at $0.82 in 2026 and is also the most common envelope used for Business Reply Mail (BRM).',
     bodyIntro: `<p>The #9 envelope measures <strong>3.875 inches high by 8.875 inches long</strong> — about a quarter inch smaller in each dimension than a <a href="/guides/envelope-sizes/no-10">#10</a>. That sizing is deliberate: a #9 is designed to slip inside an unsealed #10 without folding.</p>
 
 <p>If you've ever received a donation appeal, an invoice, or a charity solicitation, you've seen this pairing. The outer #10 carries the letter; the inner #9 carries the response. It's the default architecture for any mailing that asks for something back.</p>
@@ -145,8 +145,8 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
 
 <h3>2026 First-Class postage for a #9 envelope</h3>
 <ul>
-  <li>1 ounce, Forever stamp: <strong>$0.78</strong></li>
-  <li>1 ounce, metered postage: <strong>$0.74</strong></li>
+  <li>1 ounce, Forever stamp: <strong>$0.82</strong></li>
+  <li>1 ounce, metered postage: <strong>$0.78</strong></li>
   <li>Each additional ounce, up to 3.5 ounces: <strong>$0.29</strong></li>
 </ul>
 
@@ -162,7 +162,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
       { q: 'What are the dimensions of a #9 envelope?', a: 'A #9 envelope measures 3.875 inches high by 8.875 inches long (98.4 by 225.4 millimeters). It is approximately a quarter inch smaller than a #10 in each dimension.' },
       { q: 'What is a #9 envelope used for?', a: 'The #9 envelope is most commonly used as a reply envelope inside a #10 outer envelope for donation appeals, invoices, surveys, and remittance mailings. It is also the standard size for Business Reply Mail (BRM).' },
       { q: 'Does a #9 envelope fit inside a #10?', a: 'Yes. The #9 was specifically designed to slip inside a #10 envelope without folding. This pairing is the standard architecture for any mailing that includes a return reply piece.' },
-      { q: 'How much does a #9 envelope cost to mail?', a: 'A 1-ounce #9 envelope costs $0.78 with a Forever stamp or $0.74 with metered postage in 2026 — the same letter rate as a #10. Each additional ounce up to 3.5 ounces adds $0.29.' },
+      { q: 'How much does a #9 envelope cost to mail?', a: 'A 1-ounce #9 envelope costs $0.82 with a Forever stamp or $0.78 with metered postage in 2026 — the same letter rate as a #10. Each additional ounce up to 3.5 ounces adds $0.29.' },
       { q: 'Can I use a #9 envelope for outgoing business mail?', a: 'You can, but it is undersized for a trifolded 8.5 by 11 letter. For outgoing business correspondence, use a <a href="/guides/envelope-sizes/no-10">#10 envelope</a>. Reserve the #9 for reply use, where its smaller size keeps it from getting lost inside the outer envelope.' },
     ],
   },
@@ -186,7 +186,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
       'Photo announcement cards',
       'Greeting card mailings',
     ],
-    retrievalParagraph: 'An A6 envelope measures 4.75 by 6.5 inches (120.7 by 165.1 millimeters) and is part of the A-series of social and announcement envelopes. It is sized to fit standard A6 cards (4.5 by 6.25 inches) and is most commonly used for save-the-dates, shower invitations, photo announcements, and greeting cards. As a letter-size envelope, it qualifies for First-Class postage starting at $0.78 in 2026.',
+    retrievalParagraph: 'An A6 envelope measures 4.75 by 6.5 inches (120.7 by 165.1 millimeters) and is part of the A-series of social and announcement envelopes. It is sized to fit standard A6 cards (4.5 by 6.25 inches) and is most commonly used for save-the-dates, shower invitations, photo announcements, and greeting cards. As a letter-size envelope, it qualifies for First-Class postage starting at $0.82 in 2026.',
     bodyIntro: `<p>The A6 envelope measures <strong>4.75 inches high by 6.5 inches long</strong>. It's the smallest of the A-series envelopes commonly used for social mailings — invitations, announcements, photo cards, and greeting cards.</p>
 
 <p>The A-series is a sizing convention developed for the stationery industry, where each size is built to fit a specific card insert with a small margin around it. The A6 fits an A6 card, sized at 4.5 by 6.25 inches.</p>
@@ -216,8 +216,8 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
 
 <h3>2026 First-Class postage for an A6 envelope</h3>
 <ul>
-  <li>1 ounce, Forever stamp: <strong>$0.78</strong></li>
-  <li>1 ounce, metered postage: <strong>$0.74</strong></li>
+  <li>1 ounce, Forever stamp: <strong>$0.82</strong></li>
+  <li>1 ounce, metered postage: <strong>$0.78</strong></li>
   <li>Each additional ounce, up to 3.5 ounces: <strong>$0.29</strong></li>
 </ul>
 
@@ -231,7 +231,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
       { q: 'What are the dimensions of an A6 envelope?', a: 'An A6 envelope measures 4.75 inches high by 6.5 inches long (120.7 by 165.1 millimeters). It fits standard A6 cards sized at 4.5 by 6.25 inches.' },
       { q: 'What size card fits in an A6 envelope?', a: 'A6 cards measure 4.5 by 6.25 inches and fit an A6 envelope with a small margin on each side. 4 by 6 inch photo cards and 5 by 5 inch square cards also fit comfortably.' },
       { q: "What's the difference between an A6 and an A7 envelope?", a: 'An <a href="/guides/envelope-sizes/a7">A7 envelope</a> (5.25" × 7.25") is larger than an A6 (4.75" × 6.5"). The A7 is sized for 5 by 7 inch invitation cards — the standard wedding invitation size. Use A6 for save-the-dates and smaller cards; use A7 for formal invitations.' },
-      { q: 'Can A6 envelopes be mailed at letter rate?', a: 'Yes. The A6 falls within USPS letter-size limits and qualifies for First-Class letter postage starting at $0.78 in 2026, provided the piece is flexible, under 0.25 inches thick, and under 3.5 ounces.' },
+      { q: 'Can A6 envelopes be mailed at letter rate?', a: 'Yes. The A6 falls within USPS letter-size limits and qualifies for First-Class letter postage starting at $0.82 in 2026, provided the piece is flexible, under 0.25 inches thick, and under 3.5 ounces.' },
       { q: 'Are A6 envelopes machinable?', a: 'Yes. The A6 aspect ratio of 1.37 sits within the USPS machinable range of 1.3 to 2.5. As long as the piece is flexible and uniformly thick, it qualifies for automation rates.' },
     ],
   },
@@ -255,7 +255,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
       'Graduation invitations',
       'Photography prints (5×7)',
     ],
-    retrievalParagraph: 'An A7 envelope measures 5.25 by 7.25 inches (133.4 by 184.2 millimeters) and is the standard envelope for 5 by 7 inch invitation cards — the most common wedding invitation size. It is also widely used for formal announcements, holiday photo cards, and 5 by 7 photography prints. The A7 qualifies for First-Class letter postage starting at $0.78 in 2026.',
+    retrievalParagraph: 'An A7 envelope measures 5.25 by 7.25 inches (133.4 by 184.2 millimeters) and is the standard envelope for 5 by 7 inch invitation cards — the most common wedding invitation size. It is also widely used for formal announcements, holiday photo cards, and 5 by 7 photography prints. The A7 qualifies for First-Class letter postage starting at $0.82 in 2026.',
     bodyIntro: `<p>The A7 envelope measures <strong>5.25 inches high by 7.25 inches long</strong> and is, by a wide margin, the most popular envelope size for wedding invitations in the United States.</p>
 
 <p>The proportions exist to fit a 5 by 7 inch invitation card with about a quarter-inch margin on each side — the same 5 by 7 dimensions used for standard photo prints, formal announcements, and most premium greeting cards.</p>
@@ -283,8 +283,8 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
 
 <h3>2026 First-Class postage for an A7 envelope</h3>
 <ul>
-  <li>1 ounce, Forever stamp: <strong>$0.78</strong></li>
-  <li>1 ounce, metered postage: <strong>$0.74</strong></li>
+  <li>1 ounce, Forever stamp: <strong>$0.82</strong></li>
+  <li>1 ounce, metered postage: <strong>$0.78</strong></li>
   <li>Each additional ounce, up to 3.5 ounces: <strong>$0.29</strong></li>
 </ul>
 
@@ -306,7 +306,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
       { q: 'What are the dimensions of an A7 envelope?', a: 'An A7 envelope measures 5.25 inches high by 7.25 inches long (133.4 by 184.2 millimeters). It fits 5 by 7 inch invitation cards with about a quarter-inch margin on each side.' },
       { q: 'Will a 5 by 7 invitation fit in an A7 envelope?', a: 'Yes. The A7 is sized specifically for 5 by 7 inch cards, which is the standard wedding invitation size in the United States.' },
       { q: 'Why are wedding invitations sent in A7 envelopes?', a: 'The A7 became the wedding standard because 5 by 7 inch invitation cards are the dominant format in the stationery industry, and the A7 fits them with appropriate margin. The proportions read formal, and the size sits within USPS letter-rate limits.' },
-      { q: 'How much does it cost to mail an A7 wedding invitation?', a: 'Letter rate starts at $0.78 in 2026, but most wedding invitations exceed 1 ounce due to multiple inserts, heavy cardstock, and embellishments — adding $0.29 per additional ounce. Many invitations also trigger the $0.44 nonmachinable surcharge for thickness or rigidity. Weigh a complete sample at the post office before printing postage.' },
+      { q: 'How much does it cost to mail an A7 wedding invitation?', a: 'Letter rate starts at $0.82 in 2026, but most wedding invitations exceed 1 ounce due to multiple inserts, heavy cardstock, and embellishments — adding $0.29 per additional ounce. Many invitations also trigger the $0.44 nonmachinable surcharge for thickness or rigidity. Weigh a complete sample at the post office before printing postage.' },
       { q: "What's the difference between A6 and A7 envelopes?", a: 'An <a href="/guides/envelope-sizes/a6">A6</a> (4.75" × 6.5") is smaller and fits 4.5 by 6.25 inch cards. An A7 (5.25" × 7.25") is larger and fits 5 by 7 inch cards. A6 is typical for save-the-dates and shower invitations; A7 is typical for formal wedding invitations.' },
     ],
   },
@@ -330,7 +330,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
       'Half-page (5.5×8.5) booklets',
       'Premium announcements',
     ],
-    retrievalParagraph: 'An A9 envelope measures 5.75 by 8.75 inches (146 by 222.3 millimeters). It is the larger end of the A-series and fits half-page 5.5 by 8.5 inch cards, programs, and trifolded 8.5 by 11 brochures. The A9 qualifies for First-Class letter postage starting at $0.78 in 2026 and is commonly used for premium event invitations and direct mail brochures.',
+    retrievalParagraph: 'An A9 envelope measures 5.75 by 8.75 inches (146 by 222.3 millimeters). It is the larger end of the A-series and fits half-page 5.5 by 8.5 inch cards, programs, and trifolded 8.5 by 11 brochures. The A9 qualifies for First-Class letter postage starting at $0.82 in 2026 and is commonly used for premium event invitations and direct mail brochures.',
     bodyIntro: `<p>The A9 envelope measures <strong>5.75 inches high by 8.75 inches long</strong>. It sits at the upper end of the A-series and is the right choice when an <a href="/guides/envelope-sizes/a7">A7</a> is too small but a <a href="/guides/envelope-sizes/9x12">9×12 flat</a> is overkill.</p>
 
 <p>The A9 fits the half-page format — 5.5 by 8.5 inch cards, brochures, and programs — with a comfortable margin. It also accommodates 8.5 by 11 inch sheets folded in half lengthwise (folded to 5.5 by 8.5), which makes it useful for direct mail brochures and event programs.</p>
@@ -358,8 +358,8 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
 
 <h3>2026 First-Class postage for an A9 envelope</h3>
 <ul>
-  <li>1 ounce, Forever stamp: <strong>$0.78</strong></li>
-  <li>1 ounce, metered postage: <strong>$0.74</strong></li>
+  <li>1 ounce, Forever stamp: <strong>$0.82</strong></li>
+  <li>1 ounce, metered postage: <strong>$0.78</strong></li>
   <li>Each additional ounce, up to 3.5 ounces: <strong>$0.29</strong></li>
 </ul>
 
@@ -372,7 +372,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
     faqs: [
       { q: 'What are the dimensions of an A9 envelope?', a: 'An A9 envelope measures 5.75 inches high by 8.75 inches long (146 by 222.3 millimeters). It is part of the A-series of social and announcement envelopes.' },
       { q: 'What fits in an A9 envelope?', a: 'A9 envelopes fit 5.5 by 8.5 inch half-page cards, programs, and brochures, as well as 8.5 by 11 sheets folded in half lengthwise. They are also used for some saddle-stitched booklets and small newsletters.' },
-      { q: 'Is an A9 envelope letter rate or flat rate?', a: 'A9 envelopes qualify for First-Class letter postage starting at $0.78 in 2026, provided the piece is flexible, under 0.25 inches thick, and under 3.5 ounces.' },
+      { q: 'Is an A9 envelope letter rate or flat rate?', a: 'A9 envelopes qualify for First-Class letter postage starting at $0.82 in 2026, provided the piece is flexible, under 0.25 inches thick, and under 3.5 ounces.' },
       { q: "What's the difference between A9 and A7 envelopes?", a: 'An <a href="/guides/envelope-sizes/a7">A7</a> (5.25" × 7.25") fits 5 by 7 inch cards and is the standard wedding invitation envelope. An A9 (5.75" × 8.75") is larger and fits half-page formats including 5.5 by 8.5 cards and folded brochures.' },
       { q: 'Can I use an A9 for direct mail?', a: 'Yes. A9 envelopes are common for premium direct mail brochures, especially folded 8.5 by 11 pieces. The size reads more substantial than a #10 and works well for financial services, real estate, and luxury campaigns.' },
     ],
@@ -397,7 +397,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
       'Promotional materials with substantial inserts',
       'Trifolded 8.5×11 marketing pieces',
     ],
-    retrievalParagraph: 'An A10 envelope measures 6 by 9.5 inches (152.4 by 241.3 millimeters) and is the largest A-series envelope still classified as letter-rate by USPS — the height (6") sits just below the 6.125" letter-size maximum. The A10 qualifies for First-Class letter postage starting at $0.78 in 2026 and is used for oversized announcements, premium invitations, and substantial direct mail pieces.',
+    retrievalParagraph: 'An A10 envelope measures 6 by 9.5 inches (152.4 by 241.3 millimeters) and is the largest A-series envelope still classified as letter-rate by USPS — the height (6") sits just below the 6.125" letter-size maximum. The A10 qualifies for First-Class letter postage starting at $0.82 in 2026 and is used for oversized announcements, premium invitations, and substantial direct mail pieces.',
     bodyIntro: `<p>The A10 envelope measures <strong>6 inches high by 9.5 inches long</strong> and represents the upper boundary of letter-rate envelope mailing. At 6 inches high, it sits just below the USPS maximum letter height of 6.125 inches.</p>
 
 <p>That tight margin matters. Manufacturing variance can push some A10 envelopes a hair over the 6.125 inch limit, which reclassifies them as flats and triples the postage. If you're running a large A10 mailing, measure the actual envelope dimensions — not just the spec sheet — before committing to letter-rate postage.</p>
@@ -425,15 +425,15 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
 
 <h3>2026 First-Class postage for an A10 envelope</h3>
 <ul>
-  <li>1 ounce, Forever stamp: <strong>$0.78</strong></li>
-  <li>1 ounce, metered postage: <strong>$0.74</strong></li>
+  <li>1 ounce, Forever stamp: <strong>$0.82</strong></li>
+  <li>1 ounce, metered postage: <strong>$0.78</strong></li>
   <li>Each additional ounce, up to 3.5 ounces: <strong>$0.29</strong></li>
 </ul>
 
 <p>The A10's aspect ratio is 1.58, comfortably inside the machinable range of 1.3 to 2.5.</p>
 
 <h3>The 6.125 inch boundary</h3>
-<p>USPS letter-rate maximum height is 6.125 inches. The A10 spec is 6.0 inches. That's a margin of 0.125 inches — narrow enough that any manufacturing inconsistency, slight cutting variance, or paper expansion can push the actual envelope over the limit. If a postal acceptance clerk measures a piece at 6.13 inches or more, it's reclassified as a flat — postage jumps from $0.78 to $1.63.</p>
+<p>USPS letter-rate maximum height is 6.125 inches. The A10 spec is 6.0 inches. That's a margin of 0.125 inches — narrow enough that any manufacturing inconsistency, slight cutting variance, or paper expansion can push the actual envelope over the limit. If a postal acceptance clerk measures a piece at 6.13 inches or more, it's reclassified as a flat — postage jumps from $0.82 to $1.63.</p>
 
 <p>Before mailing a large A10 run: measure 5 to 10 random envelopes from your stock with a ruler. If any of them measure 6.10 inches or higher, plan for flat-rate postage or use a different envelope.</p>
 
@@ -442,7 +442,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
       { q: 'What are the dimensions of an A10 envelope?', a: 'An A10 envelope measures 6 inches high by 9.5 inches long (152.4 by 241.3 millimeters). It is the largest A-series envelope still classified as letter-rate by USPS.' },
       { q: 'Is an A10 envelope letter rate?', a: 'Yes, but barely. The A10 is 6 inches high, just below the USPS letter-rate maximum of 6.125 inches. Manufacturing variance can occasionally push individual envelopes over the limit, reclassifying them as flats. Measure actual stock before committing.' },
       { q: 'What fits in an A10 envelope?', a: 'A10 envelopes fit prints up to 6 by 9 inches, large premium invitations, and trifolded 8.5 by 11 sheets with room for additional inserts. They are also used for oversized announcements and substantial direct mail.' },
-      { q: 'How much does it cost to mail an A10 envelope?', a: 'Letter rate is $0.78 with a Forever stamp or $0.74 metered for 1 ounce in 2026. Each additional ounce up to 3.5 ounces adds $0.29. If the envelope is reclassified as a flat at the post office, postage jumps to $1.63 starting.' },
+      { q: 'How much does it cost to mail an A10 envelope?', a: 'Letter rate is $0.82 with a Forever stamp or $0.78 metered for 1 ounce in 2026. Each additional ounce up to 3.5 ounces adds $0.29. If the envelope is reclassified as a flat at the post office, postage jumps to $1.63 starting.' },
       { q: 'Should I use an A10 or a 9×12 envelope?', a: 'Use A10 when you want a larger envelope feel at letter-rate postage and an unfolded 8.5 by 11 document is not required. Use <a href="/guides/envelope-sizes/9x12">9×12</a> when the document needs to stay flat — A10 forces you to fold an 8.5 by 11 sheet.' },
     ],
   },
@@ -466,7 +466,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
       'Document mailers with margin',
       'Premium product mailings',
     ],
-    retrievalParagraph: 'A 6x9 envelope measures 6 by 9 inches (152.4 by 228.6 millimeters) and is commonly used for booklets, brochures, and multi-page direct mail. It can qualify for First-Class letter postage at $0.78 in 2026 if it stays under 0.25 inches thick and 3.5 ounces, but most 6x9 mailings are classified as flats due to thickness — flat rate starts at $1.63.',
+    retrievalParagraph: 'A 6x9 envelope measures 6 by 9 inches (152.4 by 228.6 millimeters) and is commonly used for booklets, brochures, and multi-page direct mail. It can qualify for First-Class letter postage at $0.82 in 2026 if it stays under 0.25 inches thick and 3.5 ounces, but most 6x9 mailings are classified as flats due to thickness — flat rate starts at $1.63.',
     bodyIntro: `<p>The 6x9 envelope measures <strong>6 inches high by 9 inches long</strong> — the same height as an <a href="/guides/envelope-sizes/a10">A10</a>, but slightly shorter in length. It's commonly stocked as a "booklet" envelope (open-side) or "catalog" envelope (open-end), distinguished by which edge of the envelope opens.</p>
 
 <p>The 6x9's relationship to USPS letter rates is more complicated than most envelope sizes. The dimensions technically fit within letter-rate maximums (6.125" × 11.5"), but most 6x9 mailings end up rated as flats anyway because of what's inside them — multi-page booklets, thick brochures, and bound documents that exceed the 0.25 inch thickness limit.</p>
@@ -494,8 +494,8 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
 
 <h3>2026 letter-rate postage (if eligible)</h3>
 <ul>
-  <li>1 ounce, Forever stamp: <strong>$0.78</strong></li>
-  <li>1 ounce, metered postage: <strong>$0.74</strong></li>
+  <li>1 ounce, Forever stamp: <strong>$0.82</strong></li>
+  <li>1 ounce, metered postage: <strong>$0.78</strong></li>
   <li>Each additional ounce, up to 3.5 ounces: <strong>$0.29</strong></li>
 </ul>
 
@@ -519,7 +519,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
     faqs: [
       { q: 'What are the dimensions of a 6x9 envelope?', a: 'A 6x9 envelope measures 6 inches high by 9 inches long (152.4 by 228.6 millimeters). The size is commonly stocked in two styles: booklet (opens on the long side) and catalog (opens on the short side).' },
       { q: 'Is a 6x9 envelope letter rate or flat rate?', a: 'It depends on what is inside. The envelope dimensions qualify for letter rate, but most 6x9 mailings are reclassified as flats because the contents (multi-page booklets, thick brochures, document sets) exceed the 0.25 inch thickness limit. Plan for flat rate by default unless contents are thin.' },
-      { q: 'How much does it cost to mail a 6x9 envelope?', a: 'At letter rate (if eligible), $0.78 with a Forever stamp for 1 ounce in 2026. At flat rate (most common for 6x9), $1.63 for 1 ounce with $0.20 per additional ounce.' },
+      { q: 'How much does it cost to mail a 6x9 envelope?', a: 'At letter rate (if eligible), $0.82 with a Forever stamp for 1 ounce in 2026. At flat rate (most common for 6x9), $1.63 for 1 ounce with $0.20 per additional ounce.' },
       { q: "What's the difference between booklet and catalog 6x9 envelopes?", a: 'Booklet envelopes open on the long (9 inch) side and slide contents in horizontally. Catalog envelopes open on the short (6 inch) side and load contents vertically. Both share the same outer dimensions and postage rules. Choose based on how your contents need to be inserted.' },
       { q: 'Will an 8.5 by 11 sheet fit in a 6x9 envelope?', a: 'Not unfolded. An 8.5 by 11 sheet folded in half is too large; folded in thirds, it fits comfortably. For unfolded 8.5 by 11 documents, use a <a href="/guides/envelope-sizes/9x12">9×12 envelope</a>.' },
     ],
@@ -621,7 +621,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
       'Long-format contracts',
       'Court filings and legal notices',
     ],
-    retrievalParagraph: 'Legal envelopes are sized to fit legal-size 8.5 by 14 inch paper folded once. The most common is the #14 envelope at 5 by 11.5 inches (127 by 292.1 millimeters), which fits 8.5 by 14 paper folded in half lengthwise. The #11 (4.5 by 10.375 inches) and #12 (4.75 by 11 inches) are smaller variants for trifolded legal paper. All three qualify for First-Class letter postage starting at $0.78 in 2026.',
+    retrievalParagraph: 'Legal envelopes are sized to fit legal-size 8.5 by 14 inch paper folded once. The most common is the #14 envelope at 5 by 11.5 inches (127 by 292.1 millimeters), which fits 8.5 by 14 paper folded in half lengthwise. The #11 (4.5 by 10.375 inches) and #12 (4.75 by 11 inches) are smaller variants for trifolded legal paper. All three qualify for First-Class letter postage starting at $0.82 in 2026.',
     bodyIntro: `<p>"Legal envelope" doesn't refer to a single standardized size. It refers to a category of long, narrow envelopes designed to hold legal-size 8.5 by 14 inch paper either folded in half or folded in thirds.</p>
 
 <p>The three most common legal envelope sizes:</p>
@@ -655,8 +655,8 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
 
 <h3>2026 First-Class postage for legal envelopes</h3>
 <ul>
-  <li>1 ounce, Forever stamp: <strong>$0.78</strong></li>
-  <li>1 ounce, metered postage: <strong>$0.74</strong></li>
+  <li>1 ounce, Forever stamp: <strong>$0.82</strong></li>
+  <li>1 ounce, metered postage: <strong>$0.78</strong></li>
   <li>Each additional ounce, up to 3.5 ounces: <strong>$0.29</strong></li>
 </ul>
 
@@ -681,7 +681,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
     faqs: [
       { q: 'What is the standard legal envelope size?', a: 'The most common legal envelope is the #14, measuring 5 by 11.5 inches (127 by 292.1 millimeters). It fits 8.5 by 14 inch legal-size paper folded in half lengthwise. Smaller variants include the #12 (4.75" × 11") and #11 (4.5" × 10.375").' },
       { q: 'What size envelope fits legal paper?', a: 'For 8.5 by 14 inch legal paper folded in half, use a #14 envelope (5 × 11.5). For legal paper folded in thirds, use a #12 (4.75 × 11) or #11 (4.5 × 10.375). For unfolded legal documents, use a 10×15 catalog envelope or larger.' },
-      { q: 'Are legal envelopes letter rate or flat rate?', a: 'All three common legal envelope sizes (#11, #12, #14) qualify for First-Class letter postage at $0.78 in 2026, provided they are flexible, under 0.25 inches thick, and under 3.5 ounces.' },
+      { q: 'Are legal envelopes letter rate or flat rate?', a: 'All three common legal envelope sizes (#11, #12, #14) qualify for First-Class letter postage at $0.82 in 2026, provided they are flexible, under 0.25 inches thick, and under 3.5 ounces.' },
       { q: "What's the difference between a legal envelope and a #10?", a: 'A <a href="/guides/envelope-sizes/no-10">#10 envelope</a> (4.125 × 9.5) fits 8.5 by 11 letter-size paper folded in thirds. Legal envelopes are longer (10.375 to 11.5 inches) and designed to fit 8.5 by 14 legal-size paper. Use #10 for letter-size correspondence; use legal envelopes for legal-size documents.' },
       { q: 'Where can I buy legal envelopes?', a: 'Legal envelopes are specialty stock — most office supply stores carry #14 envelopes, but #11 and #12 sizes are typically ordered through commercial printers or envelope specialists. Cornerstone stocks and prints all three sizes for client mailings.' },
     ],
@@ -706,7 +706,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
       'Insurance documents',
       'Government correspondence',
     ],
-    retrievalParagraph: 'Window envelopes have a transparent panel cut into the front that displays the recipient address printed on the contents inside, eliminating the need for a separate addressing step. The most common window envelope is the #10 single-window at 4.125 by 9.5 inches, with a window typically around 4.5 by 1 inch. Double-window varieties show both the recipient address and an account number or return reference. All standard window envelopes qualify for First-Class letter postage at $0.78 in 2026.',
+    retrievalParagraph: 'Window envelopes have a transparent panel cut into the front that displays the recipient address printed on the contents inside, eliminating the need for a separate addressing step. The most common window envelope is the #10 single-window at 4.125 by 9.5 inches, with a window typically around 4.5 by 1 inch. Double-window varieties show both the recipient address and an account number or return reference. All standard window envelopes qualify for First-Class letter postage at $0.82 in 2026.',
     bodyIntro: `<p>A window envelope has a transparent panel — usually a thin film of cellophane or glassine — cut into the front of the envelope. When a billing statement or invoice is folded and inserted correctly, the recipient's address printed on the document shows through the window. No labels, no separate addressing pass, no printer time spent on envelopes.</p>
 
 <p>This is the format that drives nearly all consumer billing in the United States: utility bills, credit card statements, insurance invoices, medical billing, and bank statements. The window envelope architecture is built around volume mailing efficiency.</p>
@@ -733,8 +733,8 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
 <h3>2026 First-Class postage</h3>
 <p>Window envelopes follow standard letter-rate postage based on the underlying envelope size:</p>
 <ul>
-  <li>#10 window envelope, 1 ounce: <strong>$0.78</strong> Forever stamp / $0.74 metered</li>
-  <li>#9 window envelope, 1 ounce: <strong>$0.78</strong> / $0.74 metered</li>
+  <li>#10 window envelope, 1 ounce: <strong>$0.82</strong> Forever stamp / $0.78 metered</li>
+  <li>#9 window envelope, 1 ounce: <strong>$0.82</strong> / $0.78 metered</li>
   <li>Each additional ounce up to 3.5 oz: <strong>$0.29</strong></li>
 </ul>
 
@@ -756,7 +756,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
     faqs: [
       { q: 'What sizes do window envelopes come in?', a: 'The most common window envelope is the <a href="/guides/envelope-sizes/no-10">#10</a> (4.125" × 9.5"). Window <a href="/guides/envelope-sizes/no-9">#9</a> envelopes (3.875" × 8.875") are common for reply mail. A-series window envelopes exist but are less common. Larger windows are also available on 6×9 booklet envelopes for invoices and statements.' },
       { q: 'What is a double-window envelope?', a: 'A double-window envelope has two transparent panels: a lower window for the recipient address and an upper window for an account number, return-reply reference, or transit-routing number. Common in financial services billing and high-volume statements.' },
-      { q: 'Are window envelopes more expensive to mail?', a: 'No. Window envelopes follow the same letter-rate postage as non-window envelopes of the same outer size — $0.78 for a #10 at 1 ounce in 2026. The window itself is made of USPS-compliant film and does not affect mailability or postage.' },
+      { q: 'Are window envelopes more expensive to mail?', a: 'No. Window envelopes follow the same letter-rate postage as non-window envelopes of the same outer size — $0.82 for a #10 at 1 ounce in 2026. The window itself is made of USPS-compliant film and does not affect mailability or postage.' },
       { q: 'Where does the window go on a #10 envelope?', a: 'Standard #10 single-window placement is approximately 4.5 inches wide by 1 inch high, positioned 0.5 inches from the bottom edge and 0.875 inches from the left edge of the envelope front. Variations exist; confirm window placement against your printed contents before production.' },
       { q: 'Can I design my own window envelope?', a: 'Yes, but custom window placements must comply with USPS DMM 202 — the window must allow the address to show fully through, even if the contents shift slightly during mailing. For non-standard layouts, confirm specs with a USPS Mail Design Analyst or work with a print partner familiar with the rules.' },
     ],
@@ -807,7 +807,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
   <li><strong>Weight:</strong> 3.5 ounces maximum</li>
   <li><strong>Aspect ratio:</strong> length divided by height between 1.3 and 2.5</li>
 </ul>
-<p>Cross any one of these and the piece moves to flat rate (currently $1.63 starting versus $0.78 for letter rate).</p>
+<p>Cross any one of these and the piece moves to flat rate (currently $1.63 starting versus $0.82 for letter rate).</p>
 
 <h3>The aspect ratio rule</h3>
 <p>Aspect ratio (length divided by height) must fall between 1.3 and 2.5 for a piece to be machinable at letter rate. A square envelope has an aspect ratio of 1.0 — automatically nonmachinable, with a $0.44 surcharge per piece in 2026. A very long, narrow envelope with an aspect ratio above 2.5 is also nonmachinable.</p>
@@ -831,14 +831,14 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
 
 <h3>Letter rate</h3>
 <ul>
-  <li>1 ounce, Forever stamp: <strong>$0.78</strong></li>
-  <li>1 ounce, metered: <strong>$0.74</strong></li>
+  <li>1 ounce, Forever stamp: <strong>$0.82</strong></li>
+  <li>1 ounce, metered: <strong>$0.78</strong></li>
   <li>Each additional ounce, up to 3.5 oz: <strong>$0.29</strong></li>
-  <li>Postcard rate: <strong>$0.61</strong></li>
+  <li>Postcard rate: <strong>$0.65</strong></li>
 </ul>
 
 <h3>Nonmachinable letter surcharge</h3>
-<p>If a piece meets letter-size dimensions but fails machinability standards (aspect ratio outside 1.3–2.5, rigid contents, uneven thickness, etc.), the postage is letter rate plus a <strong>$0.44 nonmachinable surcharge per piece</strong>. For a 1-ounce nonmachinable letter, that's $0.78 + $0.44 = $1.22.</p>
+<p>If a piece meets letter-size dimensions but fails machinability standards (aspect ratio outside 1.3–2.5, rigid contents, uneven thickness, etc.), the postage is letter rate plus a <strong>$0.44 nonmachinable surcharge per piece</strong>. For a 1-ounce nonmachinable letter, that's $0.82 + $0.44 = $1.26.</p>
 
 <h3>Flat rate (large envelope)</h3>
 <ul>
@@ -864,9 +864,9 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
     faqs: [
       { q: 'What is the minimum envelope size USPS will mail?', a: 'The USPS minimum is 3.5 inches high by 5 inches long by 0.007 inches thick. Pieces smaller than this in any dimension are not accepted by USPS for mailing.' },
       { q: 'What is the maximum size for a first-class letter envelope?', a: 'The maximum letter-rate envelope is 6.125 inches high by 11.5 inches long by 0.25 inches thick, with a maximum weight of 3.5 ounces. Pieces exceeding any of these limits are reclassified as flats with higher postage.' },
-      { q: 'How thick can an envelope be before it is rated as a flat?', a: 'Letter-rate envelopes can be up to 0.25 inches thick. Beyond 0.25 inches, the piece is rated as a flat, with postage starting at $1.63 versus $0.78 for letter rate. Flats can be up to 0.75 inches thick.' },
+      { q: 'How thick can an envelope be before it is rated as a flat?', a: 'Letter-rate envelopes can be up to 0.25 inches thick. Beyond 0.25 inches, the piece is rated as a flat, with postage starting at $1.63 versus $0.82 for letter rate. Flats can be up to 0.75 inches thick.' },
       { q: 'What is the aspect ratio rule for envelopes?', a: 'The aspect ratio (length divided by height) of a letter-rate envelope must fall between 1.3 and 2.5 to qualify for machinable rates. A square envelope has an aspect ratio of 1.0 and is automatically nonmachinable, triggering a $0.44 surcharge per piece in 2026.' },
-      { q: 'What happens if my envelope is too big for letter rate?', a: 'If the envelope exceeds 6.125 by 11.5 by 0.25 inches or weighs over 3.5 ounces, it is reclassified as a flat. Flat-rate postage starts at $1.63 for the first ounce in 2026, more than double the letter rate of $0.78.' },
+      { q: 'What happens if my envelope is too big for letter rate?', a: 'If the envelope exceeds 6.125 by 11.5 by 0.25 inches or weighs over 3.5 ounces, it is reclassified as a flat. Flat-rate postage starts at $1.63 for the first ounce in 2026, more than double the letter rate of $0.82.' },
       { q: 'What is the maximum size for a flat envelope?', a: 'The maximum flat envelope is 12 inches high by 15 inches long by 0.75 inches thick, with a maximum weight of 13 ounces at First-Class flat rate. Pieces beyond these dimensions are rated as parcels.' },
     ],
   },
@@ -890,7 +890,7 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
       'Sizing decisions for printed mail pieces',
       'Reference for envelope ordering',
     ],
-    retrievalParagraph: 'Standard business envelope sizes range from the #10 (4.125" × 9.5"), the dominant US business envelope, through the #9 reply envelope (3.875" × 8.875"), the A-series for invitations (A6, A7, A9, A10), legal envelopes for 8.5×14 documents (#11, #12, #14), and the larger 6×9 and 9×12 formats for booklets and unfolded documents. Letter-rate envelopes mail at $0.78 in 2026; flat-rate envelopes (typically 9×12 and larger) mail at $1.63 starting.',
+    retrievalParagraph: 'Standard business envelope sizes range from the #10 (4.125" × 9.5"), the dominant US business envelope, through the #9 reply envelope (3.875" × 8.875"), the A-series for invitations (A6, A7, A9, A10), legal envelopes for 8.5×14 documents (#11, #12, #14), and the larger 6×9 and 9×12 formats for booklets and unfolded documents. Letter-rate envelopes mail at $0.82 in 2026; flat-rate envelopes (typically 9×12 and larger) mail at $1.63 starting.',
     bodyIntro: `<p>Choosing a business envelope comes down to four questions: what's going inside, whether the piece needs letter rate or flat rate, whether the recipient should see the address through a window, and how formal the format needs to be.</p>
 
 <p>This page is a comparison reference covering every standard business envelope size, organized by use case rather than by number. For deep-dive specs on any individual size, follow the link to the dedicated page for that envelope.</p>`,
@@ -933,10 +933,10 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
 </ul>
 
 <h3>Decision tree</h3>
-<p>Start with the document. If it's an 8.5 × 11 letter folded in thirds, use a #10. If it's a 5 × 7 invitation, use an A7. If it's an unfolded 8.5 × 11 document, use a 9×12 flat. If it's an 8.5 × 14 legal document, use a #14. For everything else, check the comparison table above and consider the postage class first — letter rate at $0.78 versus flat rate at $1.63 is a meaningful cost difference at any volume.</p>`,
+<p>Start with the document. If it's an 8.5 × 11 letter folded in thirds, use a #10. If it's a 5 × 7 invitation, use an A7. If it's an unfolded 8.5 × 11 document, use a 9×12 flat. If it's an 8.5 × 14 legal document, use a #14. For everything else, check the comparison table above and consider the postage class first — letter rate at $0.82 versus flat rate at $1.63 is a meaningful cost difference at any volume.</p>`,
     postageNotes: `<h2>Postage classes by envelope type</h2>
 
-<h3>Letter rate ($0.78 starting in 2026)</h3>
+<h3>Letter rate ($0.82 starting in 2026)</h3>
 <p>All envelopes within USPS letter-size limits — 6.125" × 11.5" × 0.25", under 3.5 ounces, aspect ratio 1.3–2.5:</p>
 <ul>
   <li>#10, #9, all A-series (A6, A7, A9, A10)</li>
@@ -962,9 +962,9 @@ export const ENVELOPE_SPOKES: Record<string, EnvelopeSpoke> = {
 <p class="text-sm text-navy-600/50 not-italic">Last verified: May 2026. Source: USPS Domestic Mail Manual 201, 301, and current rate schedules.</p>`,
     faqs: [
       { q: 'What is the most common business envelope size?', a: 'The <a href="/guides/envelope-sizes/no-10">#10 envelope</a> (4.125" × 9.5") is by far the most common business envelope in the United States. It is the default for invoices, statements, business letters, and most direct mail.' },
-      { q: 'Which business envelope is cheapest to mail?', a: 'Any letter-size envelope mails at the same First-Class letter rate of $0.78 in 2026 — #9, #10, A-series, and legal envelopes all share this rate. The cheapest practical option for personal-feeling mail is the #10 because it is widely stocked and machinable.' },
-      { q: "What's the difference between a letter envelope and a flat envelope?", a: 'Letter envelopes are 6.125" × 11.5" × 0.25" or smaller, weigh under 3.5 ounces, and have an aspect ratio between 1.3 and 2.5. They mail at $0.78 starting. Flat envelopes (large envelopes) exceed letter-size limits, can be up to 12" × 15" × 0.75", weigh up to 13 ounces, and start at $1.63 postage.' },
-      { q: 'When should I use a 9×12 envelope instead of a #10?', a: 'Use a <a href="/guides/envelope-sizes/9x12">9×12</a> when documents must arrive unfolded — certificates, contracts, photography prints, and important presentations. Use a <a href="/guides/envelope-sizes/no-10">#10</a> when contents can be folded and the lower postage cost ($0.78 vs $1.63) matters.' },
+      { q: 'Which business envelope is cheapest to mail?', a: 'Any letter-size envelope mails at the same First-Class letter rate of $0.82 in 2026 — #9, #10, A-series, and legal envelopes all share this rate. The cheapest practical option for personal-feeling mail is the #10 because it is widely stocked and machinable.' },
+      { q: "What's the difference between a letter envelope and a flat envelope?", a: 'Letter envelopes are 6.125" × 11.5" × 0.25" or smaller, weigh under 3.5 ounces, and have an aspect ratio between 1.3 and 2.5. They mail at $0.82 starting. Flat envelopes (large envelopes) exceed letter-size limits, can be up to 12" × 15" × 0.75", weigh up to 13 ounces, and start at $1.63 postage.' },
+      { q: 'When should I use a 9×12 envelope instead of a #10?', a: 'Use a <a href="/guides/envelope-sizes/9x12">9×12</a> when documents must arrive unfolded — certificates, contracts, photography prints, and important presentations. Use a <a href="/guides/envelope-sizes/no-10">#10</a> when contents can be folded and the lower postage cost ($0.82 vs $1.63) matters.' },
       { q: 'What size envelope do I need for wedding invitations?', a: 'For 5 by 7 inch wedding invitations (the standard size), use an <a href="/guides/envelope-sizes/a7">A7 envelope</a> (5.25" × 7.25"). This is the dominant wedding invitation envelope in the US.' },
       { q: 'Where can I order custom business envelopes?', a: 'Cornerstone Services prints custom envelopes in every standard size with your branding, return address, window placement, and security tints — and pairs envelope production with direct mail and printing services. <a href="/services/direct-mail">Get a quote</a>.' },
     ],

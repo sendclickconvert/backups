@@ -106,7 +106,7 @@ Format choice affects postage classification, which directly impacts campaign co
 
 **Self-mailers and oversized pieces:** Anything exceeding letter-class dimensions (6.125×11.5 inches, 0.25 inches thick, 3.5 oz) moves to flat-class Marketing Mail at $0.45–$0.55 per piece — roughly double the letter-class rate. This includes tri-fold self-mailers, catalogs, and oversized postcards beyond 6×11.
 
-**First Class alternative:** For time-sensitive campaigns where [Marketing Mail delivery windows](/services/direct-mail/how-long-does-direct-mail-take) are too slow, First Class postage ($0.73 for postcards, $0.73 for letters up to 1 oz) cuts delivery from 3–10 days to 1–3 days. The postage premium is significant — roughly 3× the Marketing Mail rate — but First Class also includes forwarding and return service, which Marketing Mail does not.
+**First Class alternative:** For time-sensitive campaigns where [Marketing Mail delivery windows](/services/direct-mail/how-long-does-direct-mail-take) are too slow, First Class postage ($0.65 for postcards, $0.82 for letters up to 1 oz) cuts delivery from 3–10 days to 1–3 days. The postage premium is significant — roughly 3× the Marketing Mail rate — but First Class also includes forwarding and return service, which Marketing Mail does not.
 
 ## Choosing the Right Format for Your Industry
 

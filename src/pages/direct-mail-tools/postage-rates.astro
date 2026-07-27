@@ -6,8 +6,8 @@ import PostageCalculator from '../../components/calculators/PostageCalculator';
 import { BUSINESS } from '../../data/site';
 
 const YEAR = 2026;
-const lastUpdated = '2026-05-07';
-const lastUpdatedDisplay = 'May 2026';
+const lastUpdated = '2026-07-12';
+const lastUpdatedDisplay = 'July 2026';
 const canonical = 'https://crst.net/direct-mail-tools/postage-rates';
 
 const org = {
@@ -30,15 +30,15 @@ const org = {
 const faqs = [
   {
     q: `What is the ${YEAR} USPS postage rate for a standard letter?`,
-    a: `The ${YEAR} USPS First-Class rate for a 1 oz metered letter is $0.74. Using a Forever stamp (stamped letter) costs $0.78. USPS raised First-Class retail rates on April 26, ${YEAR} — up from $0.73 (metered) and $0.73 (stamped). For bulk presorted First-Class mailings of 500+ pieces, automation rates start at $0.593 per piece at the 5-digit sort level.`,
+    a: `The ${YEAR} USPS First-Class rate for a 1 oz metered letter is $0.78. Using a Forever stamp (stamped letter) costs $0.82. USPS raised First-Class retail rates on July 12, ${YEAR} — up from $0.74 (metered) and $0.78 (stamped). For bulk presorted First-Class mailings of 500+ pieces, automation rates start at $0.593 per piece at the 5-digit sort level.`,
   },
   {
     q: `How much does EDDM postage cost in ${YEAR}?`,
-    a: `EDDM (Every Door Direct Mail) postage in ${YEAR} costs $0.247 per piece for EDDM Retail — no permit required, limit 5,000 pieces per day per ZIP. EDDM BMEU (Business Mail Entry Unit) at DDU entry costs $0.242 per piece; it requires a permit but removes the daily volume cap. EDDM postage was not affected by the April 26, ${YEAR} rate change and is unchanged from 2025.`,
+    a: `EDDM (Every Door Direct Mail) postage in ${YEAR} costs $0.247 per piece for EDDM Retail — no permit required, limit 5,000 pieces per day per ZIP. EDDM BMEU (Business Mail Entry Unit) at DDU entry costs $0.242 per piece; it requires a permit but removes the daily volume cap. EDDM postage was not affected by either the April 26 or July 12, ${YEAR} rate changes and is unchanged from 2025.`,
   },
   {
     q: `What is the cheapest way to mail postcards in bulk?`,
-    a: `The cheapest bulk postcard option is EDDM at $0.242–$0.247 per piece, which requires no mailing list. For targeted list mailings, Marketing Mail carrier route saturation rates start at $0.244 per piece (200-piece minimum). A single First-Class postcard costs $0.61 at retail in ${YEAR}. The right choice depends on whether you need targeted addressing or blanket neighborhood coverage.`,
+    a: `The cheapest bulk postcard option is EDDM at $0.242–$0.247 per piece, which requires no mailing list. For targeted list mailings, Marketing Mail carrier route saturation rates start at $0.244 per piece (200-piece minimum). A single First-Class postcard costs $0.65 at retail in ${YEAR}. The right choice depends on whether you need targeted addressing or blanket neighborhood coverage.`,
   },
   {
     q: `What are the USPS Nonprofit postage rates for ${YEAR}?`,
@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     q: `What is the difference between Marketing Mail and First-Class Mail?`,
-    a: `Marketing Mail (formerly Standard Mail) is designed for advertising and bulk mailings. It starts at $0.244 per piece for carrier route saturation letters but delivers in 3–10 business days with no forwarding or return service. First-Class Mail costs more — $0.593+ per piece in bulk or $0.74 at retail — but delivers in 1–3 days and includes address forwarding and return to sender. First-Class is best for invoices, statements, and time-sensitive mail. Marketing Mail is best for advertising campaigns, coupons, and newsletters.`,
+    a: `Marketing Mail (formerly Standard Mail) is designed for advertising and bulk mailings. It starts at $0.244 per piece for carrier route saturation letters but delivers in 3–10 business days with no forwarding or return service. First-Class Mail costs more — $0.593+ per piece in bulk or $0.78 at retail — but delivers in 1–3 days and includes address forwarding and return to sender. First-Class is best for invoices, statements, and time-sensitive mail. Marketing Mail is best for advertising campaigns, coupons, and newsletters.`,
   },
   {
     q: `What is the minimum quantity for bulk mail postage rates?`,
@@ -54,7 +54,7 @@ const faqs = [
   },
   {
     q: `Did USPS raise postage rates in ${YEAR}?`,
-    a: `Yes. USPS implemented a rate change effective April 26, ${YEAR}. Key increases for direct mail senders: First-Class metered letter rose from $0.73 to $0.74; the Forever stamp rose from $0.73 to $0.78; First-Class postcards rose from $0.56 to $0.61; First-Class large envelopes rose from $1.35 to $1.63 for the first ounce. Marketing Mail automation rates also increased. EDDM postage was not changed — it remains $0.247 (Retail) and $0.242 (BMEU DDU).`,
+    a: `Yes. USPS implemented two rate changes in ${YEAR}. The first took effect April 26 (Forever stamp: $0.73 → $0.78; metered: $0.73 → $0.74; postcard: $0.56 → $0.61). The second took effect July 12, ${YEAR}: Forever stamp rose from $0.78 to $0.82; metered letter rose from $0.74 to $0.78; First-Class postcards rose from $0.61 to $0.65. EDDM postage was not changed in either update — it remains $0.247 (Retail) and $0.242 (BMEU DDU).`,
   },
   {
     q: `How much does a USPS mailing permit cost?`,
@@ -67,7 +67,7 @@ const graphItems = [
     '@type': 'Article',
     '@id': `${canonical}#article`,
     headline: `USPS Postage Rates ${YEAR}: Complete Rate Chart`,
-    description: `Current ${YEAR} USPS postage rates for First-Class Mail, postcards, large envelopes, EDDM, and Marketing Mail. Verified against USPS Notice 123, effective April 26, ${YEAR}.`,
+    description: `Current ${YEAR} USPS postage rates for First-Class Mail, postcards, large envelopes, EDDM, and Marketing Mail. Verified against USPS Notice 123, effective July 12, ${YEAR}.`,
     datePublished: lastUpdated,
     dateModified: lastUpdated,
     inLanguage: 'en-US',
@@ -132,7 +132,7 @@ const graphItems = [
           </p>
           <p class="text-xs text-navy-400 shrink-0">
             Last updated: <time itemprop="dateModified" datetime={lastUpdated}>{lastUpdatedDisplay}</time> ·
-            Source: <a href="https://pe.usps.com/text/dmm300/Notice123.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-crst-primary">USPS Notice 123 (eff. Apr 26, {YEAR})</a>
+            Source: <a href="https://pe.usps.com/text/dmm300/Notice123.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-crst-primary">USPS Notice 123 (eff. Jul 12, {YEAR})</a>
           </p>
         </div>
 
@@ -151,12 +151,12 @@ const graphItems = [
               <tbody class="divide-y divide-navy-100">
                 <tr>
                   <td class="py-2 font-semibold text-navy-800">Forever stamp (1 oz letter)</td>
-                  <td class="py-2 text-crst-primary font-bold">$0.78</td>
+                  <td class="py-2 text-crst-primary font-bold">$0.82</td>
                   <td class="py-2 text-navy-500 hidden sm:table-cell">Single piece, stamped retail</td>
                 </tr>
                 <tr>
                   <td class="py-2 font-semibold text-navy-800">First-Class postcard</td>
-                  <td class="py-2 text-crst-primary font-bold">$0.61</td>
+                  <td class="py-2 text-crst-primary font-bold">$0.65</td>
                   <td class="py-2 text-navy-500 hidden sm:table-cell">Single piece, retail</td>
                 </tr>
                 <tr>
@@ -185,7 +185,7 @@ const graphItems = [
           <div>
             <p class="text-sm font-heading font-semibold text-navy-800">Compiled by Sean Griffin, Owner — Cornerstone Services, Inc.</p>
             <p class="text-xs text-navy-500 mt-1">Sean has processed bulk mail campaigns for Hudson Valley businesses since 1998. The rates on this page are applied to every campaign Cornerstone produces. We update this guide every time USPS announces a rate change.</p>
-            <p class="text-xs text-navy-400 mt-1">Last reviewed: {lastUpdatedDisplay} · Source: <a href="https://pe.usps.com/text/dmm300/Notice123.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-crst-primary">USPS Notice 123 (eff. Apr 26, {YEAR})</a></p>
+            <p class="text-xs text-navy-400 mt-1">Last reviewed: {lastUpdatedDisplay} · Source: <a href="https://pe.usps.com/text/dmm300/Notice123.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-crst-primary">USPS Notice 123 (eff. Jul 12, {YEAR})</a></p>
           </div>
         </div>
 
@@ -197,14 +197,13 @@ const graphItems = [
         <!-- What Changed in 2026 -->
         <div id="what-changed" class="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-12">
           <h2 class="font-display text-xl text-amber-900 mb-3">What Changed in {YEAR}</h2>
-          <p class="text-sm text-amber-800 mb-4">USPS implemented a rate change <strong>effective April 26, {YEAR}</strong>. EDDM rates were not changed. Key increases for direct mail:</p>
+          <p class="text-sm text-amber-800 mb-4">USPS implemented two rate changes in {YEAR}. The most recent took effect <strong>July 12, {YEAR}</strong>. EDDM rates were not changed in either update. Key increases for direct mail:</p>
           <ul class="space-y-1.5 text-sm text-amber-800">
-            <li class="flex gap-2"><span class="text-amber-600 font-bold shrink-0">↑</span> <span><strong>Forever stamp (stamped letter):</strong> $0.73 → $0.78 (+$0.05, +7%)</span></li>
-            <li class="flex gap-2"><span class="text-amber-600 font-bold shrink-0">↑</span> <span><strong>First-Class letter (metered):</strong> $0.73 → $0.74 (+$0.01)</span></li>
-            <li class="flex gap-2"><span class="text-amber-600 font-bold shrink-0">↑</span> <span><strong>First-Class postcard:</strong> $0.56 → $0.61 (+$0.05, +9%)</span></li>
-            <li class="flex gap-2"><span class="text-amber-600 font-bold shrink-0">↑</span> <span><strong>First-Class large envelope (≤1 oz):</strong> $1.35 → $1.63 (+$0.28, +21%)</span></li>
-            <li class="flex gap-2"><span class="text-amber-600 font-bold shrink-0">↑</span> <span><strong>Marketing Mail letters (automation 5-digit):</strong> $0.308 → $0.372</span></li>
-            <li class="flex gap-2"><span class="text-amber-600 font-bold shrink-0">↑</span> <span><strong>Marketing Mail letters (automation AADC):</strong> $0.357 → $0.407</span></li>
+            <li class="flex gap-2"><span class="text-amber-600 font-bold shrink-0">↑</span> <span><strong>Forever stamp (stamped letter):</strong> $0.78 → $0.82 (+$0.04, +5%) — eff. Jul 12</span></li>
+            <li class="flex gap-2"><span class="text-amber-600 font-bold shrink-0">↑</span> <span><strong>First-Class letter (metered):</strong> $0.74 → $0.78 (+$0.04, +5%) — eff. Jul 12</span></li>
+            <li class="flex gap-2"><span class="text-amber-600 font-bold shrink-0">↑</span> <span><strong>First-Class postcard:</strong> $0.61 → $0.65 (+$0.04, +7%) — eff. Jul 12</span></li>
+            <li class="flex gap-2"><span class="text-amber-600 font-bold shrink-0">↑</span> <span><strong>First-Class large envelope (≤1 oz):</strong> $1.63 — unchanged from Apr 26 update</span></li>
+            <li class="flex gap-2"><span class="text-amber-600 font-bold shrink-0">↑</span> <span><strong>April 26 change (reference):</strong> stamp $0.73 → $0.78; metered $0.73 → $0.74; postcard $0.56 → $0.61</span></li>
             <li class="flex gap-2"><span class="text-green-700 font-bold shrink-0">✓</span> <span><strong>EDDM Retail:</strong> unchanged at $0.247/piece</span></li>
             <li class="flex gap-2"><span class="text-green-700 font-bold shrink-0">✓</span> <span><strong>EDDM BMEU (DDU entry):</strong> unchanged at $0.242/piece</span></li>
           </ul>
@@ -295,7 +294,7 @@ const graphItems = [
         <!-- EDDM -->
         <h2 id="eddm" class="text-2xl font-display text-crst-primary mb-3">EDDM Postage Rates {YEAR}</h2>
         <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
-          EDDM delivers to every address on selected <a href="/services/eddm" class="text-crst-primary underline hover:text-crst-gold">carrier routes</a> — no mailing list needed. Ideal for local businesses wanting blanket coverage. EDDM postage rates were <strong>not changed</strong> in the April 26, {YEAR} rate update.
+          EDDM delivers to every address on selected <a href="/services/eddm" class="text-crst-primary underline hover:text-crst-gold">carrier routes</a> — no mailing list needed. Ideal for local businesses wanting blanket coverage. EDDM postage rates were <strong>not changed</strong> in either the April 26 or July 12, {YEAR} rate updates.
           See <a href="/services/eddm" class="text-crst-primary underline hover:text-crst-gold">our EDDM service page</a> for the full breakdown, or <a href="/services/eddm/how-much-does-eddm-cost" class="text-crst-primary underline hover:text-crst-gold">estimate your EDDM campaign cost</a>.
         </p>
         <div class="overflow-x-auto mb-10">
@@ -356,12 +355,12 @@ const graphItems = [
             <tbody class="divide-y divide-navy-100">
               <tr class="bg-white">
                 <td class="p-3 font-semibold text-navy-800">Letter, 1 oz — metered</td>
-                <td class="p-3 text-navy-600 font-bold">$0.74</td>
+                <td class="p-3 text-navy-600 font-bold">$0.78</td>
                 <td class="p-3 text-navy-500">Standard window envelope</td>
               </tr>
               <tr class="bg-navy-50/50">
                 <td class="p-3 font-semibold text-navy-800">Letter, 1 oz — stamped (Forever)</td>
-                <td class="p-3 text-navy-600 font-bold">$0.78</td>
+                <td class="p-3 text-navy-600 font-bold">$0.82</td>
                 <td class="p-3 text-navy-500">Forever stamp price</td>
               </tr>
               <tr class="bg-white">
@@ -376,7 +375,7 @@ const graphItems = [
               </tr>
               <tr class="bg-white">
                 <td class="p-3 font-semibold text-navy-800">Postcard</td>
-                <td class="p-3 text-navy-600 font-bold">$0.61</td>
+                <td class="p-3 text-navy-600 font-bold">$0.65</td>
                 <td class="p-3 text-navy-500">Min 3.5″×5″, max 4.25″×6″</td>
               </tr>
             </tbody>
@@ -435,7 +434,7 @@ const graphItems = [
             <tbody class="divide-y divide-navy-100">
               <tr class="bg-white">
                 <td class="p-3 font-semibold text-navy-800">First-Class single piece</td>
-                <td class="p-3 text-navy-600 font-bold">$0.61</td>
+                <td class="p-3 text-navy-600 font-bold">$0.65</td>
                 <td class="p-3 text-navy-500">3.5″×5″ – 4.25″×6″ (USPS postcard dimensions)</td>
               </tr>
               <tr class="bg-navy-50/50">

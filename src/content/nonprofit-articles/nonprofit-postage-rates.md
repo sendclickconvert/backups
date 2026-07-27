@@ -163,6 +163,6 @@ Even when a nonprofit's mailing doesn't qualify for the nonprofit rate, other co
 
 **Standard Marketing Mail presort:** If a nonprofit mailing contains commercial content (such as advertising for a benefit shop or for-profit subsidiary), it can still be mailed at the standard Marketing Mail presort rate, which is lower than First-Class. The savings aren't as dramatic as the nonprofit rate, but presort processing still reduces postage significantly.
 
-**First-Class presort:** For mailings that require First-Class service (time-sensitive communications, legal notices, or content that benefits from forwarding and return service), presort processing at the First-Class rate is still substantially cheaper than First-Class stamps. A 5,000-piece First-Class presorted mailing costs $0.35–$0.44 per piece versus $0.68 per stamp.
+**First-Class presort:** For mailings that require First-Class service (time-sensitive communications, legal notices, or content that benefits from forwarding and return service), presort processing at the First-Class rate is still substantially cheaper than First-Class stamps. A 5,000-piece First-Class presorted mailing costs $0.35–$0.44 per piece versus $0.82 per stamp.
 
 Call [(845) 255-5722](tel:8452555722) or [contact us online](/estimate).

@@ -12,7 +12,7 @@ schemaFAQ:
   - q: "What is presort mail?"
     a: "Presort mail is direct mail that has been sorted by ZIP code and carrier route before being delivered to the USPS. The USPS offers postage discounts for presorted mail because it reduces their processing work — pieces that are already sorted by delivery destination require less automated and manual sorting at USPS facilities. Presort discounts are available for both Marketing Mail and First-Class mail, with Marketing Mail presort rates being significantly lower than the standard stamp rate."
   - q: "How much can presort save on postage?"
-    a: "For Marketing Mail letters, presort at the automation rate saves approximately $0.45–$0.55 per piece compared to First-Class stamps, or $0.10–$0.15 per piece compared to non-automation Marketing Mail basic rates. On 5,000 pieces, automation presort saves $500–$700 versus basic Marketing Mail or $2,250–$2,750 versus First-Class stamps. For First-Class presorted letters, the savings over the stamp rate are approximately $0.25–$0.30 per piece."
+    a: "For Marketing Mail letters, presort at the automation rate saves approximately $0.54–$0.61 per piece compared to First-Class stamps, or $0.10–$0.15 per piece compared to non-automation Marketing Mail basic rates. On 5,000 pieces, automation presort saves $500–$700 versus basic Marketing Mail or $2,695–$3,030 versus First-Class stamps. For First-Class presorted letters, the savings over the stamp rate are approximately $0.38–$0.47 per piece."
   - q: "What are the presort levels and how do they affect my discount?"
     a: "USPS presort has four levels, each earning a deeper discount: (1) Carrier route sort — pieces sorted to the specific carrier route (highest discount), (2) 5-digit sort — pieces sorted to the specific 5-digit ZIP code, (3) 3-digit sort — pieces sorted to the 3-digit ZIP code prefix, and (4) Mixed AADC/ADC sort — the minimum presort level. Most marketing mail processed through professional mail houses achieves carrier route and 5-digit levels because presort software maximizes the sort depth automatically."
   - q: "Do I need a postal permit for presort mail?"
@@ -75,11 +75,11 @@ For a 5,000-piece campaign mailing letters (first-class-size envelopes):
 
 | Approach | Postage/Piece | Total Postage | vs. Stamps |
 |----------|-------------|--------------|-----------|
-| First-Class stamp | $0.68 | $3,400 | — |
-| First-Class presorted | $0.39 | $1,950 | -$1,450 |
-| Marketing Mail basic | $0.281 | $1,405 | -$1,995 |
-| Marketing Mail automation | $0.214 | $1,070 | -$2,330 |
-| Nonprofit Marketing Mail automation | $0.149 | $745 | -$2,655 |
+| First-Class stamp | $0.82 | $4,100 | — |
+| First-Class presorted | $0.39 | $1,950 | -$2,150 |
+| Marketing Mail basic | $0.281 | $1,405 | -$2,695 |
+| Marketing Mail automation | $0.214 | $1,070 | -$3,030 |
+| Nonprofit Marketing Mail automation | $0.149 | $745 | -$3,355 |
 
 The $0.066 difference between Marketing Mail basic ($0.281) and automation ($0.214 or lower) doesn't sound like much. On 5,000 pieces, it's a $330 difference. On 50,000 pieces, it's $3,300. Every campaign mailed at the automation level rather than basic presort captures this difference.
 

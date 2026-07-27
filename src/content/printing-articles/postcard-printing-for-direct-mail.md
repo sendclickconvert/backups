@@ -29,7 +29,7 @@ The USPS defines mail class eligibility by dimensions and weight. Choosing the w
 
 ### 4x6 Inch — First-Class Postcard Rate
 
-A 4x6 postcard (technically: 3.5"–4.25" tall, 5"–6" long) qualifies for First-Class postcard postage — currently $0.38 per piece versus $0.68+ for a First-Class letter. No permit required. The 4x6 is the simplest, lowest-barrier direct mail format.
+A 4x6 postcard (technically: 3.5"–4.25" tall, 5"–6" long) qualifies for First-Class postcard postage — currently $0.65 per piece versus $0.82+ for a First-Class letter. No permit required. The 4x6 is the simplest, lowest-barrier direct mail format.
 
 **Best for:** Small test mailings to your house file, appointment reminders, thank-you cards, announcement postcards. Not appropriate for acquisition campaigns because the piece is too small to carry a compelling offer alongside your business information.
 

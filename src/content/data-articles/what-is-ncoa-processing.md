@@ -37,7 +37,7 @@ The result is a list with current addresses for people who moved and filed chang
 
 The USPS requires NCOA processing within 95 days of your mail date for all presorted Marketing Mail and First Class Presort mailings. This is not a suggestion — it is a condition of the automation discount. When you drop a mailing at the Business Mail Entry Unit, you certify that the list has been NCOA-processed within that 95-day window.
 
-Here's the cost consequence of skipping it: presort automation discounts lower your postage from single-piece rates ($0.73+ for First Class, $0.40–$0.55 for Marketing Mail flats) to $0.22–$0.30 for presorted Marketing Mail. On a 5,000-piece mailing, that difference is $1,500–$2,000 in postage savings. NCOA processing costs a fraction of that — it is one of the few true free lunches in direct mail.
+Here's the cost consequence of skipping it: presort automation discounts lower your postage from single-piece rates ($0.82+ for First Class, $0.40–$0.55 for Marketing Mail flats) to $0.22–$0.30 for presorted Marketing Mail. On a 5,000-piece mailing, that difference is $1,500–$2,000 in postage savings. NCOA processing costs a fraction of that — it is one of the few true free lunches in direct mail.
 
 If you submit a mailing without current NCOA certification, the BMECU will either reject it or process it at single-piece rates. At Cornerstone, we have never submitted a mailing without current NCOA. Every list is processed within 48 hours of the mail date.
 
@@ -103,9 +103,9 @@ The postage math is straightforward. Consider a 5,000-piece 6×9 postcard mailin
 
 | Scenario | Postage Rate | Total Postage | Savings |
 |----------|-------------|--------------|---------|
-| Single-piece First Class | $0.73 | $3,650 | — |
-| Presorted Marketing Mail (with NCOA) | $0.26 | $1,300 | $2,350 |
-| Presorted First Class (with NCOA) | $0.52 | $2,600 | $1,050 |
+| Single-piece First Class | $0.82 | $4,100 | — |
+| Presorted Marketing Mail (with NCOA) | $0.26 | $1,300 | $2,800 |
+| Presorted First Class (with NCOA) | $0.52 | $2,600 | $1,500 |
 
 NCOA compliance is what unlocks the presort discount. Without it, you pay the full retail rate. The processing fee is nominal compared to the savings — on a 5,000-piece mailing, NCOA pays for itself within the first hundred pieces.
 

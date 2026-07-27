@@ -12,7 +12,7 @@ schemaFAQ:
   - q: "Can I run a direct mail campaign without using a mail house?"
     a: "Yes, but the economics only favor DIY for small, simple campaigns. For First-Class postcard campaigns under 200 pieces, stamps and a home printer are often faster and cheaper than a mail house. For any campaign over 500 pieces where Marketing Mail presort rates apply, a mail house's presort discount and addressing equipment typically produce lower total cost than DIY postage plus the time cost of manual preparation. For campaigns over 2,500 pieces, using a mail house is almost always the more cost-effective approach."
   - q: "What does it actually cost to do direct mail yourself?"
-    a: "DIY direct mail costs include: printing (at a copy shop or home printer), postage (at the counter or with stamps — you won't qualify for presort rates without a permit and minimum quantity of 200 pieces), addressing (labels, printer toner, and labor time), and any materials (envelopes, tabs for self-mailers). DIY postage at full First-Class rates runs $0.68/piece. DIY Marketing Mail at counter rates runs $0.38–$0.68/piece for letters depending on weight, versus $0.214 for presorted automation at a mail house. The time cost of bundling, labeling, and post office trips frequently exceeds any apparent savings."
+    a: "DIY direct mail costs include: printing (at a copy shop or home printer), postage (at the counter or with stamps — you won't qualify for presort rates without a permit and minimum quantity of 200 pieces), addressing (labels, printer toner, and labor time), and any materials (envelopes, tabs for self-mailers). DIY postage at full First-Class rates runs $0.82/piece. DIY Marketing Mail at counter rates runs $0.38–$0.68/piece for letters depending on weight, versus $0.214 for presorted automation at a mail house. The time cost of bundling, labeling, and post office trips frequently exceeds any apparent savings."
   - q: "When does DIY make sense for direct mail?"
     a: "DIY direct mail makes sense for: very small quantities (under 200 pieces) where Marketing Mail minimums don't apply, simple postcard campaigns where stamps are used and there's no presort advantage to be captured, local community announcements where informality is appropriate, and businesses testing a concept before committing to a production run. For any recurring campaign at volume, the economics of a mail house become more favorable with every additional piece."
   - q: "What should I look for in a mail house?"
@@ -37,11 +37,11 @@ Assume a business wants to mail 2,000 promotional postcards to a list of local p
 
 **Step 3: Print address labels.** Print adhesive labels on a home printer, apply one by one to each postcard. Time: 3–4 hours for 2,000 pieces.
 
-**Step 4: Apply postage.** The business goes to the post office and buys stamps — $0.68 per piece for First-Class (because Marketing Mail requires a permit and 200-piece minimum). Or they have metered mail at $0.655 per piece. Total postage: $1,310–$1,360 for 2,000 pieces.
+**Step 4: Apply postage.** The business goes to the post office and buys stamps — $0.82 per piece for First-Class (because Marketing Mail requires a permit and 200-piece minimum). Or they have metered mail at $0.78 per piece. Total postage: $1,560–$1,640 for 2,000 pieces.
 
 **Step 5: Deliver to the post office.** Bag the pieces, drive to the post office, wait in line, hand them over. Time: 1.5–2 hours.
 
-**Total cost:** $1,590–$1,760 for 2,000 pieces, plus 5–6 hours of time.
+**Total cost:** $1,840–$2,040 for 2,000 pieces, plus 5–6 hours of time.
 
 ### What Mail House Processing Costs for the Same Campaign
 
@@ -62,14 +62,14 @@ Assume a business wants to mail 2,000 promotional postcards to a list of local p
 | Printing | $280–$400 | $280–$400 |
 | List processing | $0 | $50–$75 |
 | Addressing | $0 (labor cost) | $50–$80 |
-| Postage | $1,310–$1,360 | $428 |
+| Postage | $1,560–$1,640 | $428 |
 | Post office handling | $0 (time cost) | $60–$100 |
-| **Total out-of-pocket** | **$1,590–$1,760** | **$868–$1,053** |
+| **Total out-of-pocket** | **$1,840–$2,040** | **$868–$1,053** |
 | **Time spent** | **5–6 hours** | **<1 hour** |
 
 The mail house costs $500–$700 less for the same campaign — and the client's time investment is a brief intake conversation versus 5–6 hours of label printing, postage purchasing, and post office trips.
 
-The DIY postage savings never materialize because the business doesn't qualify for presort rates. The mail house's postage, at $0.214 per piece, is $0.466 per piece less than First-Class stamps. On 2,000 pieces, that's $932 in postage savings — more than the entire non-postage cost of the mail house processing.
+The DIY postage savings never materialize because the business doesn't qualify for presort rates. The mail house's postage, at $0.214 per piece, is $0.606 per piece less than First-Class stamps. On 2,000 pieces, that's $1,212 in postage savings — more than the entire non-postage cost of the mail house processing.
 
 ## When DIY Actually Makes Sense
 
@@ -79,7 +79,7 @@ Below the Marketing Mail 200-piece minimum, presort discounts aren't available. 
 
 ### Simple First-Class Postcard Campaigns
 
-If you're mailing a small quantity of standard-size 4x6 postcards at the $0.38 First-Class postcard rate (not the letter rate), and the volume is under 200, DIY is fine. Buy postcards, apply stamps, drop them in the mail slot. No presort advantage to capture.
+If you're mailing a small quantity of standard-size 4x6 postcards at the $0.65 First-Class postcard rate (not the letter rate), and the volume is under 200, DIY is fine. Buy postcards, apply stamps, drop them in the mail slot. No presort advantage to capture.
 
 ### Test Campaigns Before Committing
 
@@ -101,7 +101,7 @@ At Cornerstone, print and mailing are in the same building.
 
 Business owners who run the numbers on DIY direct mail typically account for printing and postage. They rarely account for the following:
 
-**List decay.** A mailing list that hasn't been processed through NCOA loses approximately 4% of its addresses per year to moves alone. On a 2,000-piece mailing with a 2-year-old list, 160 pieces go to addresses where the intended recipient no longer lives. At $0.68 per piece (DIY postage), that's $109 wasted on undeliverable mail. A mail house processes NCOA before every mailing, correcting moved addresses and flagging invalid ones before they waste postage.
+**List decay.** A mailing list that hasn't been processed through NCOA loses approximately 4% of its addresses per year to moves alone. On a 2,000-piece mailing with a 2-year-old list, 160 pieces go to addresses where the intended recipient no longer lives. At $0.82 per piece (DIY postage), that's $131 wasted on undeliverable mail. A mail house processes NCOA before every mailing, correcting moved addresses and flagging invalid ones before they waste postage.
 
 **Post office rejection.** If your self-prepared Marketing Mail job doesn't meet USPS presort standards (incorrect bundling, missing documentation, wrong tray labels), the USPS acceptance clerk rejects the mailing at the counter. You take everything home, fix it, and come back — a process that can take an additional full day. Mail houses prepare and induct mailings professionally; rejection is extremely rare when the preparation is done correctly.
 

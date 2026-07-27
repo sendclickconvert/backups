@@ -18,10 +18,10 @@ const PostageCalculator: React.FC = () => {
 
   const postageRates: { [key: string]: { [key: string]: number } } = {
     'first-class': {
-      'local': 0.73,
-      'zone1-3': 0.73,
-      'zone4-6': 0.88,
-      'zone7-8': 1.03,
+      'local': 0.78,
+      'zone1-3': 0.78,
+      'zone4-6': 0.93,
+      'zone7-8': 1.08,
     },
     'marketing': {
       'local': 0.40,
@@ -48,7 +48,7 @@ const PostageCalculator: React.FC = () => {
   }, [weight, length, width, height, mailClass, zone]);
 
   const calculatePostage = () => {
-    const baseRate = postageRates[mailClass]?.[zone] || 0.73;
+    const baseRate = postageRates[mailClass]?.[zone] || 0.78;
     const weightSurcharge = weight > 1 ? (weight - 1) * 0.28 : 0;
     const basePostage = baseRate + weightSurcharge;
     

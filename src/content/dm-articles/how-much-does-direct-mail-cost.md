@@ -85,7 +85,7 @@ Postage is typically 30–50% of total campaign cost — the single largest line
 | Marketing Mail (flats) | $0.40–$0.55 | 3–10 business days | 200+ pieces; presort required |
 | EDDM Retail | $0.247 | 3–10 business days | No list; entire carrier route |
 | First Class Presort | $0.50–$0.55 | 1–3 business days | 500+ pieces; fastest delivery |
-| First Class (single piece) | $0.73+ | 1–3 business days | No minimum; no presort discount |
+| First Class (single piece) | $0.78+ | 1–3 business days | No minimum; no presort discount |
 
 Marketing Mail is the standard class for direct mail campaigns because it offers the lowest rates. The trade-off is delivery speed — Marketing Mail takes 3–10 business days compared to 1–3 days for First Class. For most marketing campaigns, delivery speed is less important than cost savings.
 
@@ -204,7 +204,7 @@ The most common budgeting mistake we see is comparing direct mail cost to digita
 
 **Can I mail fewer than 500 pieces?**
 
-Yes. There is no minimum at Cornerstone. Very small quantities — under 200 pieces — mail at First Class rates without presort discounts, bringing per-piece cost to $0.73+ for postage alone. For most campaigns, 1,000+ pieces delivers the best cost efficiency and enough volume for meaningful response data. If you need to reach a very targeted audience of 200–500 recipients, the higher per-piece cost is often justified by the audience precision.
+Yes. There is no minimum at Cornerstone. Very small quantities — under 200 pieces — mail at First Class rates without presort discounts, bringing per-piece cost to $0.78+ for postage alone. For most campaigns, 1,000+ pieces delivers the best cost efficiency and enough volume for meaningful response data. If you need to reach a very targeted audience of 200–500 recipients, the higher per-piece cost is often justified by the audience precision.
 
 **Do you offer design services, or do I supply artwork?**
 

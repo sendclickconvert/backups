@@ -21,7 +21,7 @@ const NonprofitSavingsCalculator: React.FC = () => {
   const NONPROFIT_APPLICATION_FEE = 0;
 
   const postageRates: { [key: string]: { standard: number; nonprofit: number } } = {
-    'first-class': { standard: 0.73, nonprofit: 0.338 },
+    'first-class': { standard: 0.78, nonprofit: 0.338 },
     'marketing': { standard: 0.40, nonprofit: 0.338 },
   };
 
@@ -129,7 +129,7 @@ const NonprofitSavingsCalculator: React.FC = () => {
                 onChange={(e) => setCurrentPostageClass(e.target.value)}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
               >
-                <option value="first-class">First Class ($0.73/piece)</option>
+                <option value="first-class">First Class ($0.78/piece)</option>
                 <option value="marketing">Marketing Mail ($0.40/piece)</option>
               </select>
             </div>
