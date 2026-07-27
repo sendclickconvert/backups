@@ -127,7 +127,7 @@ Self-mailers are increasingly popular because they eliminate the envelope cost a
 - Bundling in stacks of 50–100 pieces
 - Facing slip preparation (USPS PS Form 3587 for each bundle)
 - Drop at the serving USPS delivery unit
-- Postage payment at the counter ($0.247/piece)
+- Postage payment at the counter ($0.260/piece)
 
 EDDM is the simplest lettershop workflow because there is no addressing, no presort, and no list processing. The lettershop's value is in the bundling, facing slip preparation, and knowledge of which USPS facility serves which carrier routes.
 

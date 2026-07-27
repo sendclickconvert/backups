@@ -30,10 +30,10 @@ const PostageCalculator: React.FC = () => {
       'zone7-8': 0.52,
     },
     'eddm': {
-      'local': 0.216,
-      'zone1-3': 0.216,
-      'zone4-6': 0.216,
-      'zone7-8': 0.216,
+      'local': 0.260,
+      'zone1-3': 0.260,
+      'zone4-6': 0.260,
+      'zone7-8': 0.260,
     },
   };
 

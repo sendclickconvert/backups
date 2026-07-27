@@ -57,7 +57,7 @@ Data compilers like SRDS and Donnelley (now Precisely) build compiled consumer l
 
 ### EDDM for Locally-Focused Organizations
 
-For nonprofits whose donor base is primarily local — a food pantry, a local theater, a town library — EDDM saturation to every household within a geographic radius makes sense. The postage cost is lower than targeted mail (EDDM Retail at $0.247 versus Marketing Mail at $0.142 for nonprofits — but the nonprofit rate requires presort infrastructure that EDDM bypasses), and the simple reach-everyone approach eliminates list cost entirely.
+For nonprofits whose donor base is primarily local — a food pantry, a local theater, a town library — EDDM saturation to every household within a geographic radius makes sense. The postage cost is lower than targeted mail (EDDM Retail at $0.260 versus Marketing Mail at $0.142 for nonprofits — but the nonprofit rate requires presort infrastructure that EDDM bypasses), and the simple reach-everyone approach eliminates list cost entirely.
 
 Organizations with very local audiences (serving a single town or county) often find EDDM more cost-efficient than compiled lists because every household within their service area is a plausible donor.
 

@@ -1,6 +1,6 @@
 ---
 title: "USPS EDDM Postage Rates 2026: Current Cost Per Piece | CRST"
-description: "EDDM Retail postage is $0.247/piece in 2026. Real cost breakdown — printing, design, and production — from Hudson Valley's EDDM specialists."
+description: "EDDM Retail postage is $0.260/piece in 2026. Real cost breakdown — printing, design, and production — from Hudson Valley's EDDM specialists."
 pubDate: 2026-04-09
 updatedDate: 2026-05-07
 author: "Sean Griffin"
@@ -10,18 +10,18 @@ primaryKeyword: "eddm cost"
 pillar: "https://crst.net/services/eddm"
 schemaFAQ:
   - q: "How much does EDDM postage cost?"
-    a: "EDDM Retail postage is $0.247 per piece as of 2026. This rate applies to all qualifying EDDM flat pieces — size does not affect the postage rate. For a 5,000-piece mailing, postage alone totals $1,235. EDDM Retail requires no postal permit and no annual fee, making it the most accessible entry point into bulk mail for small businesses."
+    a: "EDDM Retail postage is $0.260 per piece as of 2026. This rate applies to all qualifying EDDM flat pieces — size does not affect the postage rate. For a 5,000-piece mailing, postage alone totals $1,300. EDDM Retail requires no postal permit and no annual fee, making it the most accessible entry point into bulk mail for small businesses."
   - q: "What is the all-in cost per piece for an EDDM campaign?"
     a: "All-in cost — including printing, postage, and production — typically ranges from $0.50 to $0.80 per piece depending on piece size and quantity. A 5,000-piece 6.5x9 postcard campaign usually runs $650–$900 all-in. A 5,000-piece 8.5x11 flat runs $900–$1,300 all-in. Per-piece cost decreases as quantity increases — 10,000 pieces costs significantly less per piece than 5,000."
   - q: "Is design included in EDDM pricing?"
     a: "Design is typically quoted separately from print and postage. At Cornerstone, graphic design for an EDDM postcard runs $150–$350 depending on complexity. If you supply a print-ready file, there is no design charge. Design for the first campaign is the highest cost — subsequent drops can reuse the same design or make minor updates for a fraction of the original design cost."
   - q: "Does EDDM cost more for larger pieces?"
-    a: "Postage is flat at $0.247 per piece regardless of size. Printing cost increases with size — an 8.5x11 costs more to print than a 6.5x9. Paper weight and coating also affect printing cost. However, larger pieces often deliver higher response rates, which can make the higher print cost cost-effective per response compared to a smaller, cheaper piece."
+    a: "Postage is flat at $0.260 per piece regardless of size. Printing cost increases with size — an 8.5x11 costs more to print than a 6.5x9. Paper weight and coating also affect printing cost. However, larger pieces often deliver higher response rates, which can make the higher print cost cost-effective per response compared to a smaller, cheaper piece."
   - q: "How do I know how many pieces I need?"
     a: "Piece count is determined by the carrier routes you select. Each route covers 300–600 addresses. Use the USPS EDDM mapping tool at eddm.usps.com to count addresses before committing to a quantity. Most small business EDDM campaigns run 2,500–10,000 pieces. Multi-drop campaigns covering the same routes monthly can negotiate volume printing pricing that brings per-piece cost down significantly."
 ---
 
-The number I hear most often from business owners who have tried EDDM on their own: "I thought it was supposed to be cheap." It is inexpensive — especially compared to targeted direct mail — but "postage is $0.247 per piece" is not the full picture. By the time you add printing, production, and design, the all-in cost is two to three times the postage rate.
+The number I hear most often from business owners who have tried EDDM on their own: "I thought it was supposed to be cheap." It is inexpensive — especially compared to targeted direct mail — but "postage is $0.260 per piece" is not the full picture. By the time you add printing, production, and design, the all-in cost is two to three times the postage rate.
 
 Here is an honest breakdown of every cost involved in an EDDM campaign, based on what we actually charge at [Cornerstone Services](/services/eddm) in New Paltz and what Hudson Valley businesses typically spend.
 
@@ -31,7 +31,7 @@ Every EDDM campaign has three cost buckets: **postage, printing, and design**. S
 
 ### 1. Postage: $0.247 Per Piece (Flat Rate)
 
-EDDM Retail postage is a flat $0.247 per piece regardless of piece size. An 8.5x11 flat costs the same to mail as a 6x9 card. There is no permit fee and no annual fee for EDDM Retail — you pay postage at the post office counter when you drop.
+EDDM Retail postage is a flat $0.260 per piece regardless of piece size. An 8.5x11 flat costs the same to mail as a 6x9 card. There is no permit fee and no annual fee for EDDM Retail — you pay postage at the post office counter when you drop.
 
 | Quantity | Postage Cost |
 |----------|-------------|

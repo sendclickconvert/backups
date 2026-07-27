@@ -10,7 +10,7 @@ primaryKeyword: "nonprofit mailing"
 pillar: "https://crst.net/services/non-profit-mailing"
 schemaFAQ:
   - q: "Can nonprofits use EDDM?"
-    a: "Yes. Nonprofits can use EDDM Retail at the same $0.247-per-piece postage rate as any other mailer. There is no special nonprofit EDDM rate — EDDM bypasses the presort system that nonprofit postage discounts are tied to. If a nonprofit has USPS nonprofit authorization and mails large quantities, targeted Mail at the nonprofit presort rate ($0.142–$0.177 per piece for letters) will usually be less expensive per piece than EDDM, but EDDM requires no mailing list and has a lower total setup cost."
+    a: "Yes. Nonprofits can use EDDM Retail at the same $0.260-per-piece postage rate as any other mailer. There is no special nonprofit EDDM rate — EDDM bypasses the presort system that nonprofit postage discounts are tied to. If a nonprofit has USPS nonprofit authorization and mails large quantities, targeted Mail at the nonprofit presort rate ($0.142–$0.257 per piece for letters) will usually be less expensive per piece than EDDM, but EDDM requires no mailing list and has a lower total setup cost."
   - q: "When is EDDM the right choice for a nonprofit mailing?"
     a: "EDDM makes sense for nonprofits when: (1) the target audience is all or most households in a specific geographic area (a community organization serving a defined geography), (2) the organization is announcing a community event or program that is relevant to anyone in the area, (3) the organization does not have a donor or prospect list and wants to build awareness broadly, or (4) the budget is very limited and the absence of list cost makes the overall campaign more accessible."
   - q: "When is targeted mail the right choice for nonprofits?"
@@ -25,7 +25,7 @@ At [Cornerstone Services](/services/non-profit-mailing), we run both types of ma
 
 ## What Each Approach Does
 
-**EDDM (Every Door Direct Mail):** Delivers one piece to every address on selected postal carrier routes. No mailing list required. No individual names. "Postal Customer" as the addressee. Postage at $0.247 per piece flat rate. Good for: awareness, events, community announcements, acquisition in a defined geographic area.
+**EDDM (Every Door Direct Mail):** Delivers one piece to every address on selected postal carrier routes. No mailing list required. No individual names. "Postal Customer" as the addressee. Postage at $0.260 per piece flat rate. Good for: awareness, events, community announcements, acquisition in a defined geographic area.
 
 **Targeted Mail:** Delivers to a specific list of individuals selected by name, address, and demographic criteria. Can be your house donor file, a rented or exchanged donor list, or a purchased compiled list. Postage at the nonprofit presort rate ($0.142–$0.177 per piece for letters) for organizations with USPS nonprofit authorization. Good for: donor renewal, upgrade appeals, acquisition from specific donor profiles.
 
@@ -37,7 +37,7 @@ This creates a postage rate comparison that surprises many nonprofits:
 
 | Approach | Postage Per Piece | 10,000 Pieces |
 |----------|-----------------|---------------|
-| EDDM Retail | $0.247 | $2,470 |
+| EDDM Retail | $0.260 | $2,600 |
 | Nonprofit Marketing Mail (letters) | $0.142–$0.177 | $1,420–$1,770 |
 | Standard Marketing Mail (letters) | $0.214–$0.281 | $2,140–$2,810 |
 
@@ -100,7 +100,7 @@ Here's what each approach costs for a nonprofit mailing 5,000 pieces in the Huds
 
 **EDDM (5,000 postcards, 6.5x9, 100 lb. gloss cover):**
 - Printing: $350–$450
-- Postage: $1,235 ($0.247/piece — no nonprofit discount for EDDM)
+- Postage: $1,235 ($0.260/piece — no nonprofit discount for EDDM)
 - Production (bundling, facing slips, drop): $75–$100
 - **Total: $1,660–$1,785** ($0.33–$0.36/piece)
 - No list cost

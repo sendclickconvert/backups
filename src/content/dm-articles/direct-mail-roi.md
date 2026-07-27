@@ -136,9 +136,9 @@ The campaign that "only" returned 60% in the first transaction produces nearly 7
 |---------------|--------|
 | Postcards (6×9, 10,000 qty) | $3,800 |
 | Design (template-based) | $250 |
-| EDDM postage (10,000 × $0.247) | $2,470 |
+| EDDM postage (10,000 × $0.260) | $2,600 |
 | Mailing list | $0 (EDDM — no list required) |
-| **Total campaign cost** | **$6,520** |
+| **Total campaign cost** | **$6,650** |
 
 | Response Metric | Value |
 |----------------|-------|
@@ -148,10 +148,10 @@ The campaign that "only" returned 60% in the first transaction produces nearly 7
 | Properties purchased | 4 |
 | Average profit per deal (after rehab) | $22,000 |
 | **Total profit** | **$88,000** |
-| **Campaign ROI** | **1,301%** |
-| **Cost per deal** | **$1,630** |
+| **Campaign ROI** | **1,223%** |
+| **Cost per deal** | **$1,663** |
 
-Real estate investor campaigns have low response rates but extremely high per-transaction value. Four deals at $22,000 profit each from a $6,280 campaign investment — the ROI speaks for itself.
+Real estate investor campaigns have low response rates but extremely high per-transaction value. Four deals at $22,000 profit each from a $6,650 campaign investment — the ROI speaks for itself.
 
 ### Example 3: Restaurant Grand Opening
 
@@ -162,9 +162,9 @@ Real estate investor campaigns have low response rates but extremely high per-tr
 |---------------|--------|
 | Postcards (6×9, 15,000 qty) | $5,250 |
 | Custom design | $500 |
-| EDDM postage (15,000 × $0.247) | $3,705 |
+| EDDM postage (15,000 × $0.260) | $3,900 |
 | Mailing list | $0 (EDDM) |
-| **Total campaign cost** | **$9,455** |
+| **Total campaign cost** | **$9,650** |
 
 | Response Metric | Value |
 |----------------|-------|
@@ -174,7 +174,7 @@ Real estate investor campaigns have low response rates but extremely high per-tr
 | Gross revenue from postcard visits | $18,900 |
 | Minus 20% discount cost | -$3,780 |
 | **Net revenue from postcard visits** | **$15,120** |
-| **First-visit ROI** | **60%** |
+| **First-visit ROI** | **57%** |
 
 | Lifetime Metric | Value |
 |----------------|-------|
@@ -184,7 +184,7 @@ Real estate investor campaigns have low response rates but extremely high per-tr
 | **Year 1 revenue from repeat customers** | **$51,300** |
 | **Lifetime ROI (first year only)** | **464%** |
 
-The first-visit ROI of 66% is solid but not spectacular. The real value is the 135 repeat customers who generate $51,300 in their first year alone. Restaurant direct mail is a long-game investment in building a customer base.
+The first-visit ROI of 57% is solid but not spectacular. The real value is the 135 repeat customers who generate $51,300 in their first year alone. Restaurant direct mail is a long-game investment in building a customer base.
 
 ## Factors That Improve ROI
 

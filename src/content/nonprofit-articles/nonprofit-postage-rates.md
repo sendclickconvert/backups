@@ -103,7 +103,7 @@ For organizations already authorized, we simply need your authorization number t
 
 Many nonprofits assume that EDDM (Every Door Direct Mail) benefits from the nonprofit discount. It does not. EDDM is a separate mailing program that bypasses the presort system entirely — and the nonprofit rate discount is tied to the presort system.
 
-**EDDM Retail postage:** $0.247 per piece (same rate for nonprofits and for-profit businesses)
+**EDDM Retail postage:** $0.260 per piece (same rate for nonprofits and for-profit businesses)
 **Nonprofit Marketing Mail (presorted letters):** $0.142–$0.177 per piece
 
 For a nonprofit with USPS authorization mailing 5,000 letters, the nonprofit presort rate saves $350–$525 compared to EDDM. However, EDDM requires no mailing list (it delivers to every address on selected carrier routes), which eliminates list cost and data processing. The right choice depends on whether the audience is geographically defined (favoring EDDM) or list-defined (favoring targeted presort mail).
@@ -117,8 +117,7 @@ The nonprofit rate is not a single number — it varies by presort level. Presor
 **Nonprofit letter rates by presort level (current):**
 - **5-Digit automation:** $0.142/piece — mailing sorted by 5-digit ZIP code with automation-compatible barcodes
 - **3-Digit automation:** $0.160/piece — sorted by 3-digit ZIP prefix
-- **AADC automation:** $0.166/piece — sorted by Automated Area Distribution Center
-- **Mixed AADC:** $0.177/piece — the highest nonprofit letter rate, least sorted
+- **Mixed:** $0.257/piece — the highest nonprofit letter rate, least sorted
 
 At Cornerstone, we presort every mailing to the maximum qualifying level automatically. The higher the percentage of pieces that qualify for 5-digit sort (meaning your donor list has concentration in specific ZIP codes), the lower your blended per-piece rate. Hudson Valley nonprofits with donor files concentrated in local ZIP codes often qualify for the lowest tier on 60–80% of their pieces.
 
@@ -129,9 +128,9 @@ Here are real postage savings from nonprofit campaigns we've processed at Corner
 **Example 1: Annual fund appeal, 8,000 letters**
 - Nonprofit automation rate: $0.149/piece → $1,192 total postage
 - Standard Marketing Mail automation: $0.214/piece → $1,712 total postage
-- First-Class stamps: $0.68/piece → $5,440 total postage
+- First-Class stamps: $0.82/piece → $6,560 total postage
 - **Savings vs. standard Marketing Mail: $520**
-- **Savings vs. First-Class stamps: $4,248**
+- **Savings vs. First-Class stamps: $5,368**
 
 **Example 2: Community event postcard, 3,000 flats**
 - Nonprofit automation flat rate: $0.283/piece → $849 total postage

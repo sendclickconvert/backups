@@ -29,7 +29,7 @@ const DirectMailCostCalculator: React.FC = () => {
   const postageRates: { [key: string]: number } = {
     'first-class': 0.78,
     'marketing': 0.40,
-    'eddm': 0.247,
+    'eddm': 0.260,
     'nonprofit': 0.338,
   };
 
@@ -155,7 +155,7 @@ const DirectMailCostCalculator: React.FC = () => {
               >
                 <option value="first-class">First Class ($0.78/piece)</option>
                 <option value="marketing">Marketing Mail ($0.40/piece)</option>
-                <option value="eddm">EDDM ($0.247/piece)</option>
+                <option value="eddm">EDDM ($0.260/piece)</option>
                 <option value="nonprofit">Nonprofit ($0.338/piece)</option>
               </select>
             </div>
