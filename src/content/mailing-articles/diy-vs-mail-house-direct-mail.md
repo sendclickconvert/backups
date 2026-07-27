@@ -12,7 +12,7 @@ schemaFAQ:
   - q: "Can I run a direct mail campaign without using a mail house?"
     a: "Yes, but the economics only favor DIY for small, simple campaigns. For First-Class postcard campaigns under 200 pieces, stamps and a home printer are often faster and cheaper than a mail house. For any campaign over 500 pieces where Marketing Mail presort rates apply, a mail house's presort discount and addressing equipment typically produce lower total cost than DIY postage plus the time cost of manual preparation. For campaigns over 2,500 pieces, using a mail house is almost always the more cost-effective approach."
   - q: "What does it actually cost to do direct mail yourself?"
-    a: "DIY direct mail costs include: printing (at a copy shop or home printer), postage (at the counter or with stamps — you won't qualify for presort rates without a permit and minimum quantity of 200 pieces), addressing (labels, printer toner, and labor time), and any materials (envelopes, tabs for self-mailers). DIY postage at full First-Class rates runs $0.82/piece. DIY Marketing Mail at counter rates runs $0.38–$0.68/piece for letters depending on weight, versus $0.214 for presorted automation at a mail house. The time cost of bundling, labeling, and post office trips frequently exceeds any apparent savings."
+    a: "DIY direct mail costs include: printing (at a copy shop or home printer), postage (at the counter or with stamps — you won't qualify for presort rates without a permit and minimum quantity of 200 pieces), addressing (labels, printer toner, and labor time), and any materials (envelopes, tabs for self-mailers). DIY postage at full First-Class rates runs $0.82/piece. DIY Marketing Mail at counter rates runs $0.38–$0.68/piece for letters depending on weight, versus $0.395 for presorted automation at a mail house. The time cost of bundling, labeling, and post office trips frequently exceeds any apparent savings."
   - q: "When does DIY make sense for direct mail?"
     a: "DIY direct mail makes sense for: very small quantities (under 200 pieces) where Marketing Mail minimums don't apply, simple postcard campaigns where stamps are used and there's no presort advantage to be captured, local community announcements where informality is appropriate, and businesses testing a concept before committing to a production run. For any recurring campaign at volume, the economics of a mail house become more favorable with every additional piece."
   - q: "What should I look for in a mail house?"
@@ -51,7 +51,7 @@ Assume a business wants to mail 2,000 promotional postcards to a list of local p
 
 **Step 3: Inkjet addressing.** We address each piece in presort sequence with the recipient's address and IMb barcode. Cost: $0.025–$0.040 per piece, or $50–$80 for 2,000.
 
-**Step 4: Presort and USPS induction.** We sort to the maximum qualifying presort level, prepare USPS documentation, and induct at the USPS Business Mail Entry Unit. Postage at Marketing Mail automation rate: $0.214 per piece, or $428 for 2,000. Our permit, no annual fee to the client. Handling fee: $60–$100.
+**Step 4: Presort and USPS induction.** We sort to the maximum qualifying presort level, prepare USPS documentation, and induct at the USPS Business Mail Entry Unit. Postage at Marketing Mail automation rate: $0.395 per piece, or $790 for 2,000. Our permit, no annual fee to the client. Handling fee: $60–$100.
 
 **Total cost:** $868–$1,053 for 2,000 pieces (print + addressing + presort + postage). Plus our time — not yours.
 
@@ -62,14 +62,14 @@ Assume a business wants to mail 2,000 promotional postcards to a list of local p
 | Printing | $280–$400 | $280–$400 |
 | List processing | $0 | $50–$75 |
 | Addressing | $0 (labor cost) | $50–$80 |
-| Postage | $1,560–$1,640 | $428 |
+| Postage | $1,560–$1,640 | $790 |
 | Post office handling | $0 (time cost) | $60–$100 |
-| **Total out-of-pocket** | **$1,840–$2,040** | **$868–$1,053** |
+| **Total out-of-pocket** | **$1,840–$2,040** | **$1,230–$1,445** |
 | **Time spent** | **5–6 hours** | **<1 hour** |
 
-The mail house costs $500–$700 less for the same campaign — and the client's time investment is a brief intake conversation versus 5–6 hours of label printing, postage purchasing, and post office trips.
+The mail house costs $400–$800 less for the same campaign — and the client's time investment is a brief intake conversation versus 5–6 hours of label printing, postage purchasing, and post office trips.
 
-The DIY postage savings never materialize because the business doesn't qualify for presort rates. The mail house's postage, at $0.214 per piece, is $0.606 per piece less than First-Class stamps. On 2,000 pieces, that's $1,212 in postage savings — more than the entire non-postage cost of the mail house processing.
+The DIY postage savings never materialize because the business doesn't qualify for presort rates. The mail house's postage, at $0.395 per piece, is $0.425 per piece less than First-Class stamps. On 2,000 pieces, that's $850 in postage savings — still more than the addressing and handling fees combined.
 
 ## When DIY Actually Makes Sense
 

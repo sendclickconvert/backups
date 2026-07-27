@@ -10,7 +10,7 @@ import { getCollection } from 'astro:content';
 const clusterArticles = await getCollection('eddm-articles');
 const eddmFaqs = [
   { q: 'What is Every Door Direct Mail (EDDM) and how does it work?', a: 'Every Door Direct Mail is a USPS program that lets you mail to every residential and business address on a carrier route without purchasing a mailing list. You select the postal routes you want to cover, print your mailpieces to USPS flat-size dimensions, and drop them at the post office serving those routes. Carriers deliver one piece to every door on each selected route. No individual names or addresses are required — delivery is based entirely on the carrier route geography.' },
-  { q: 'How much does EDDM cost per piece?', a: 'EDDM Retail postage is $0.247 per piece for USPS Marketing Mail flats. Your total cost per piece — including design, printing, and postage — depends on quantity and mailpiece size. A 5,000-piece 6.5x9 postcard campaign through Cornerstone typically runs $0.58–$0.72 all-in. A 10,000-piece campaign drops to $0.48–$0.62 per piece because printing costs scale down. These are real numbers from campaigns we produced in 2025, not estimates.' },
+  { q: 'How much does EDDM cost per piece?', a: 'EDDM Retail postage is $0.260 per piece for USPS Marketing Mail flats as of July 12, 2026. Your total cost per piece — including design, printing, and postage — depends on quantity and mailpiece size. A 5,000-piece 6.5x9 postcard campaign through Cornerstone typically runs $0.59–$0.73 all-in. A 10,000-piece campaign drops to $0.49–$0.63 per piece because printing costs scale down. These are real numbers from recent campaigns.' },
   { q: 'What are the USPS size requirements for EDDM mailpieces?', a: 'EDDM mailpieces must qualify as USPS flats. The piece must be between 6.125" and 12" in height, between 11.5" and 15" in length, and no more than 0.75" thick. Maximum weight is 3.3 oz. The piece must also exceed at least one letter-size threshold: longer than 11.5", taller than 6.125", or thicker than 0.25". Common formats include 6.5x9, 8.5x11, 6.5x12, and 9x12 postcards. Pieces outside these dimensions are rejected at the post office counter — we have seen this happen to businesses that used an out-of-area printer unfamiliar with EDDM specs.' },
   { q: 'How do I choose which carrier routes to target with EDDM?', a: 'USPS provides a free mapping tool at eddm.usps.com that lets you filter routes by ZIP code, household income, age range, and household size. Each route typically covers 300–600 addresses. For most local service businesses — restaurants, dentists, HVAC, real estate — we recommend starting with a 3–5 mile radius around the business location, filtered for the income bracket most likely to convert. We run this route selection for every client and provide a route map with delivery counts before printing begins.' },
   { q: 'What is the difference between EDDM Retail and EDDM BMEU?', a: 'EDDM Retail lets you drop mail at a local post office with no permit required and no minimum volume beyond 200 pieces per route. The daily cap is 5,000 pieces per ZIP code. EDDM BMEU (Business Mail Entry Unit) requires a USPS postage permit and delivery to a Bulk Mail facility, but removes the 5,000 piece cap and typically offers lower postage rates for large volumes. Cornerstone uses the New Paltz BMEU for campaigns over 10,000 pieces — we process the paperwork, transport the mail, and handle the entry verification.' },
@@ -56,7 +56,7 @@ const graphSchema = {
       '@type': 'WebPage',
       '@id': 'https://crst.net/services/eddm',
       name: 'EDDM Services — Every Door Direct Mail',
-      description: 'Full-service EDDM campaigns from $0.247 postage. Route selection, design, printing, bundling, and USPS drop — handled in-house at our New Paltz, NY facility since 1998.',
+      description: 'Full-service EDDM campaigns from $0.260 postage. Route selection, design, printing, bundling, and USPS drop — handled in-house at our New Paltz, NY facility since 1998.',
       speakable: {
         '@type': 'SpeakableSpecification',
         cssSelector: ['h1', '.article-lead', '.prose h2'],
@@ -77,7 +77,7 @@ const graphSchema = {
     <script type="application/ld+json" set:html={JSON.stringify(graphSchema)} />
   </Fragment>
   <PageHero
-    title="2026 EDDM Retail Postage Rate: $0.247 Per Piece"
+    title="2026 EDDM Retail Postage Rate: $0.260 Per Piece"
     subtitle="Reach every household on selected postal routes without buying a mailing list. We handle route selection, design, printing, bundling, and USPS delivery — all from our New Paltz facility."
     breadcrumbs={[
       { label: 'Services', href: '/services' },
@@ -88,7 +88,7 @@ const graphSchema = {
 
   <div class="bg-crst-primary py-3">
     <div class="container-wide flex flex-col sm:flex-row items-center justify-between gap-3">
-      <p class="text-white text-sm font-heading">2026 EDDM postage $0.247/piece — route map and full quote, no obligation.</p>
+      <p class="text-white text-sm font-heading">2026 EDDM postage $0.260/piece — route map and full quote, no obligation.</p>
       <a href="/contact?service=eddm" class="btn-accent text-sm shrink-0">Get a Free EDDM Cost Estimate →</a>
     </div>
   </div>
@@ -104,8 +104,8 @@ const graphSchema = {
           </p>
 
           <div class="bg-crst-primary/5 border-l-4 border-crst-primary rounded-r-lg px-5 py-4 mb-6">
-            <h2 class="text-base font-heading font-bold text-crst-primary mb-1">2025 vs 2026 EDDM Postage Rate</h2>
-            <p class="text-sm text-navy-600/80 leading-relaxed">The EDDM Retail postage rate did not change between 2025 and 2026 — it remains $0.247 per piece for USPS Marketing Mail flats under 3.3 oz. EDDM was not affected by the April 26, 2026 USPS rate increase that raised First-Class and Marketing Mail letter rates. Whether you are comparing 2025 EDDM pricing to 2026 planning budgets, the per-piece postage figure is the same.</p>
+            <h2 class="text-base font-heading font-bold text-crst-primary mb-1">EDDM Postage Rate — July 12, 2026 Update</h2>
+            <p class="text-sm text-navy-600/80 leading-relaxed">EDDM Retail postage rose to $0.260 per piece on July 12, 2026 — up from $0.247. EDDM was not affected by the earlier April 26, 2026 rate increase, but did increase with the July 12 USPS rate adjustment. For campaigns budgeted using 2025 or early-2026 figures, update your per-piece postage to $0.260.</p>
           </div>
 
           <p class="text-navy-600/80 leading-relaxed mb-6">
@@ -205,7 +205,7 @@ const graphSchema = {
             </table>
           </div>
           <p class="text-navy-600/80 leading-relaxed mb-4">
-            Your cost per piece goes down as quantity goes up because the fixed costs (design, plate setup, facing slips) spread across more pieces. The postage component — $0.247/piece — stays constant regardless of volume at the EDDM Retail rate. For campaigns over 10,000 pieces, we typically use the <a href="/services/eddm/eddm-retail-vs-eddm-bmeu" class="text-crst-accent hover:text-crst-primary underline">EDDM BMEU</a> entry point at the <a href="/direct-mail-tools/bmeu" class="text-crst-accent hover:text-crst-primary underline">New Paltz Business Mail Entry Unit</a>, which can lower the postage rate further.
+            Your cost per piece goes down as quantity goes up because the fixed costs (design, plate setup, facing slips) spread across more pieces. The postage component — $0.260/piece — stays constant regardless of volume at the EDDM Retail rate. For campaigns over 10,000 pieces, we typically use the <a href="/services/eddm/eddm-retail-vs-eddm-bmeu" class="text-crst-accent hover:text-crst-primary underline">EDDM BMEU</a> entry point at the <a href="/direct-mail-tools/bmeu" class="text-crst-accent hover:text-crst-primary underline">New Paltz Business Mail Entry Unit</a>, which can lower the postage rate further.
           </p>
           <p class="text-navy-600/80 leading-relaxed">
             For a detailed pricing breakdown by size and quantity, see our full guide: <a href="/services/eddm/how-much-does-eddm-cost" class="text-crst-accent hover:text-crst-primary underline">How Much Does EDDM Cost? A Real Pricing Breakdown</a>.
@@ -254,7 +254,7 @@ const graphSchema = {
                 </tr>
                 <tr class="border-b border-navy-100">
                   <td class="py-2.5 px-4 font-heading font-semibold text-navy-800">Postage</td>
-                  <td class="py-2.5 px-4">$0.247/piece (Retail)</td>
+                  <td class="py-2.5 px-4">$0.260/piece (Retail)</td>
                   <td class="py-2.5 px-4">$0.30–$0.55 depending on class and presort</td>
                 </tr>
                 <tr class="border-b border-navy-100">
@@ -362,7 +362,7 @@ const graphSchema = {
             <div class="bg-crst-gold/10 rounded-xl p-5 border border-crst-gold/20">
               <h3 class="font-heading font-bold text-navy-800 text-sm mb-2">EDDM Quick Facts</h3>
               <div class="space-y-2 text-sm text-navy-600/70">
-                <p>Postage: <strong class="text-navy-800">$0.247/piece</strong> (Retail)</p>
+                <p>Postage: <strong class="text-navy-800">$0.260/piece</strong> (Retail)</p>
                 <p>No mailing list needed</p>
                 <p>Min per route: <strong class="text-navy-800">200 pieces</strong></p>
                 <p>Max per ZIP/day: <strong class="text-navy-800">5,000 pieces</strong> (Retail)</p>

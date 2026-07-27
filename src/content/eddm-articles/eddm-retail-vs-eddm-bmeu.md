@@ -10,7 +10,7 @@ primaryKeyword: "eddm retail"
 pillar: "https://crst.net/services/eddm"
 schemaFAQ:
   - q: "What is the difference between EDDM Retail and EDDM BMEU?"
-    a: "EDDM Retail lets you drop your mail at any local post office serving your target routes without a postal permit. It caps at 5,000 pieces per ZIP code per day. EDDM BMEU requires a postal permit and entry at a USPS Business Mail Entry facility, removes the 5,000-piece cap, and allows a single induction point for large multi-ZIP campaigns. BMEU postage at DDU (destination delivery unit) entry is $0.242/piece — $0.005 cheaper than Retail's $0.247 — but that savings only applies when you drop at the actual post office serving your routes. BMEU entered at an origin facility costs $0.291/piece, which is more expensive than Retail."
+    a: "EDDM Retail lets you drop your mail at any local post office serving your target routes without a postal permit. It caps at 5,000 pieces per ZIP code per day. EDDM BMEU requires a postal permit and entry at a USPS Business Mail Entry facility, removes the 5,000-piece cap, and allows a single induction point for large multi-ZIP campaigns. BMEU postage at DDU (destination delivery unit) entry is $0.259/piece — $0.001 cheaper than Retail's $0.260 as of July 12, 2026. BMEU's primary advantage is now operational: single induction point, no 5,000-piece-per-ZIP daily cap, and no per-route counter drops."
   - q: "Do I need a postal permit for EDDM?"
     a: "For EDDM Retail, no permit is required. You pay postage at the post office counter when you drop. For EDDM BMEU, a postal permit is required. Printers and mail houses that process BMEU mailings regularly have existing permits that clients can use, eliminating the need to establish your own — this is how Cornerstone handles BMEU jobs for clients in the Hudson Valley."
   - q: "What is the EDDM Retail piece limit per drop?"
@@ -34,7 +34,7 @@ EDDM Retail is the consumer-facing version of the program, designed to be access
 2. Print your pieces to USPS flat specifications
 3. Bundle in stacks of 50–100 with a completed facing slip on each bundle
 4. Drop at the post office that serves your target routes (not just any post office — it must be the delivery unit)
-5. Pay $0.247 per piece at the counter in cash, check, or credit card
+5. Pay $0.260 per piece at the counter in cash, check, or credit card
 
 **Limits and requirements:**
 - Maximum 5,000 pieces per ZIP code per day
@@ -58,7 +58,7 @@ EDDM BMEU is processed through a USPS Business Mail Entry Unit — specialized U
 **What BMEU adds:**
 - A postal permit is required (or the mail house's existing permit is used)
 - Entry at a designated BMEU facility (not the local post office counter)
-- Postage varies by entry point — see the rate table below; DDU entry ($0.242/piece) beats EDDM Retail's $0.247, but only when mail is dropped at the destination delivery unit serving your routes
+- Postage varies by entry point — see the rate table below; DDU entry ($0.259/piece) is $0.001 less than Retail's $0.260; the primary BMEU advantage is operational, not per-piece cost
 
 **What it does not change:**
 - The USPS size and weight requirements for the mail pieces are identical
@@ -71,7 +71,7 @@ For most clients in the Hudson Valley — businesses mailing 2,500–8,000 piece
 
 For clients running larger campaigns — a restaurant group covering all routes in a five-ZIP-code radius, or a real estate firm saturating an entire county — we process as EDDM BMEU using our existing postal permit. This is operationally cleaner: one induction point for the full quantity, regardless of how many different delivery units serve the target routes.
 
-**The permit question:** Clients do not need their own postal permit to use BMEU through a mail house. Our permit covers the mailing. This is the standard arrangement for businesses that do not mail at sufficient volume to justify a permit of their own ($370/year). At $0.005/piece savings from DDU entry vs. Retail, break-even on the permit alone is roughly 74,000 pieces per year — before factoring in any operational savings.
+**The permit question:** Clients do not need their own postal permit to use BMEU through a mail house. Our permit covers the mailing. This is the standard arrangement for businesses that do not mail at sufficient volume to justify a permit of their own ($370/year). After July 12, 2026, the DDU vs. Retail postage difference is $0.001/piece — the permit break-even on postage savings alone is 370,000 pieces. The practical reason to choose BMEU is operational: one induction point, no daily piece cap, and permit-imprint billing rather than counter cash.
 
 ## Choosing Between Retail and BMEU
 
@@ -80,7 +80,7 @@ For clients running larger campaigns — a restaurant group covering all routes 
 | Permit required | No | Yes (use mail house permit) |
 | Piece limit | 5,000/ZIP/day | No cap |
 | Drop location | Serving post office for each route | BMEU facility |
-| Postage rate | **$0.247/piece** | **$0.242** (DDU) / $0.253 (DSCF) / $0.291 (Origin) |
+| Postage rate | **$0.260/piece** | **$0.259** (DDU) / DSCF and Origin rates pending July 12 confirmation |
 | Multi-ZIP campaigns | Multiple drops required | Single induction point |
 | Best for | Under 5,000 pieces per ZIP | Over 5,000 pieces, multi-ZIP |
 
@@ -88,11 +88,11 @@ For clients running larger campaigns — a restaurant group covering all routes 
 
 | Entry Point | Rate | What It Requires |
 |-------------|------|-----------------|
-| DDU (Destination Delivery Unit) | **$0.242/piece** | Drop at the actual post office serving your routes |
-| DSCF (Destination Sectional Center) | $0.253/piece | Drop at the sectional center serving the destination |
-| Origin (any acceptance facility) | $0.291/piece | Drop anywhere — no entry discount |
+| DDU (Destination Delivery Unit) | **$0.259/piece** | Drop at the actual post office serving your routes |
+| DSCF (Destination Sectional Center) | Pending Notice 123 confirmation | Drop at the sectional center serving the destination |
+| Origin (any acceptance facility) | Pending Notice 123 confirmation | Drop anywhere — no entry discount |
 
-The only BMEU rate that beats EDDM Retail's $0.247 is DDU at $0.242. DSCF saves $0.006 less per piece, and Origin is $0.044/piece *more* expensive than Retail. Most BMEU campaigns Cornerstone runs enter at DDU for the full $0.005/piece savings — which is the number to use when comparing BMEU vs. Retail on a cost basis.
+As of July 12, 2026, BMEU DDU entry at $0.259 saves $0.001/piece over EDDM Retail's $0.260. DSCF and Origin BMEU rates from the July 12 update have not yet been cleanly extracted from Notice 123 — contact us for current BMEU rate schedules. The per-piece postage advantage of BMEU is now essentially negligible; the value is operational.
 
 For the majority of Hudson Valley small businesses — a restaurant in Rhinebeck, a landscaper in Woodstock, a dental practice in Poughkeepsie — EDDM Retail is the right choice. The volume is manageable, the per-ZIP limit is not constraining, and the process is simpler.
 
@@ -112,18 +112,18 @@ We see businesses make the same errors when deciding between EDDM Retail and BME
 
 ## Volume Thresholds: When BMEU Saves Money
 
-BMEU at DDU entry runs $0.242/piece vs. EDDM Retail at $0.247 — a savings of $0.005 per piece. Whether that difference is meaningful depends entirely on volume.
+BMEU at DDU entry runs $0.259/piece vs. EDDM Retail at $0.260 — a savings of $0.001 per piece. Whether that postage difference is meaningful depends entirely on volume, but it almost never is.
 
-**The permit cost math:** A USPS postal permit costs $370/year. Cornerstone's permit covers client mailings, so you don't pay this directly — but it sets the floor for when BMEU is economically rational. At $0.005/piece savings, you need 74,000 pieces per year just to cover the permit cost in postage savings. That's roughly six 12,000-piece campaigns per year, or one campaign per month of 6,000+ pieces.
+**The permit cost math:** A USPS postal permit costs $370/year. Cornerstone's permit covers client mailings, so you don't pay this directly — but it illustrates the economics. At $0.001/piece savings, you would need 370,000 pieces per year to recoup a permit cost in postage alone. The real reason to use BMEU is operational, not financial: single-facility induction, no 5,000-piece-per-ZIP daily cap, and cleaner logistics for multi-ZIP campaigns.
 
 For most Hudson Valley small businesses running one or two EDDM campaigns per year at 2,500–8,000 pieces, the postage savings from BMEU are small in dollar terms:
 
-| Volume | Postage @ Retail ($0.247) | Postage @ BMEU DDU ($0.242) | Savings |
+| Volume | Postage @ Retail ($0.260) | Postage @ BMEU DDU ($0.259) | Savings |
 |--------|--------------------------|----------------------------|---------|
-| 5,000 pieces | $1,235 | $1,210 | $25 |
-| 10,000 pieces | $2,470 | $2,420 | $50 |
-| 25,000 pieces | $6,175 | $6,050 | $125 |
-| 50,000 pieces | $12,350 | $12,100 | $250 |
+| 5,000 pieces | $1,300 | $1,295 | $5 |
+| 10,000 pieces | $2,600 | $2,590 | $10 |
+| 25,000 pieces | $6,500 | $6,475 | $25 |
+| 50,000 pieces | $13,000 | $12,950 | $50 |
 
 **The operational savings are often larger than the postage savings.** BMEU's real advantage at volume is a single induction point for the full quantity — no multi-post-office coordination, no per-ZIP counter transactions, and a permit imprint instead of cash/check payment at the counter.
 
@@ -141,7 +141,7 @@ The bottom line for most CRST clients: volume under 10,000 pieces and one or two
 
 ## One More Distinction: EDDM BMEU for Non-Profits
 
-Non-profit organizations with authorized USPS nonprofit status can mail EDDM through BMEU at a reduced postage rate. The nonprofit automation rate for Marketing Mail flats is significantly lower than $0.247 per piece — for qualifying nonprofits, the savings on a 10,000-piece campaign can be $400–$600 in postage alone.
+Non-profit organizations with authorized USPS nonprofit status can mail EDDM through BMEU at a reduced postage rate. The nonprofit automation rate for Marketing Mail flats is significantly lower than $0.260 per piece — for qualifying nonprofits, the savings on a 10,000-piece campaign can be $400–$700 in postage alone.
 
 If you're a non-profit running EDDM, confirm your USPS authorization status and discuss the nonprofit rate structure with your mail house before pricing your campaign. We handle nonprofit EDDM regularly for organizations throughout the Hudson Valley.
 

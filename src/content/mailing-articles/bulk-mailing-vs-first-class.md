@@ -12,7 +12,7 @@ schemaFAQ:
   - q: "What is the difference between First-Class mail and bulk mail?"
     a: "First-Class mail is the premium USPS mail class — faster delivery (2–5 days), forwarded to new addresses if the recipient has moved, and returned to the sender if undeliverable. Bulk mail (officially called USPS Marketing Mail) is the standard class for advertising and promotional mail — slower delivery (3–10 days), not forwarded automatically, and discarded rather than returned if undeliverable. Marketing Mail requires a presort permit and a minimum of 200 pieces per mailing, but the postage rate is significantly lower than First-Class."
   - q: "How much cheaper is bulk mail than First-Class?"
-    a: "Marketing Mail (bulk) postage for presorted letters runs approximately $0.214–$0.281 per piece depending on sort level and automation eligibility. First-Class stamp rate is $0.82 per letter. First-Class presorted automation rate is $0.35–$0.44 per piece. For a 5,000-piece campaign, Marketing Mail presorted saves approximately $2,695–$3,030 in postage versus First-Class stamps, and $345–$1,130 versus First-Class presort. The savings increase proportionally with volume."
+    a: "Marketing Mail (bulk) postage for presorted letters runs $0.395–$0.467 per piece at automation rates as of July 12, 2026 (5-digit to Mixed tier). First-Class stamp rate is $0.82. First-Class presorted 5-digit rate is $0.593 per piece. For a 5,000-piece campaign at Marketing Mail 5-digit automation ($0.395), postage totals $1,975 — saving $2,125 versus First-Class stamps. Carrier route saturation tiers carry lower rates; contact us for current carrier-route pricing."
   - q: "Can I use bulk mail for invoices and statements?"
     a: "No. USPS Marketing Mail is designated for advertising and promotional content — catalogs, flyers, postcards, newsletters, and promotional correspondence. Transactional mail (invoices, statements, contracts, legal notices, account confirmations) must be sent First-Class. Mailing invoices or statements as Marketing Mail violates USPS content regulations and can result in the mailing being rejected or reclassified at acceptance."
   - q: "Does bulk mail get forwarded if the recipient has moved?"
@@ -69,21 +69,21 @@ First-Class mail costs more per piece but offers features that Marketing Mail ca
 | Mail Class | Letter Rate | Notes |
 |-----------|------------|-------|
 | First-Class stamp | $0.82 | No permit, no minimum, no presort |
-| First-Class presorted | $0.35–$0.44 | Permit required, minimum 500 pieces |
+| First-Class presorted | from $0.593 | Permit required, minimum 500 pieces |
 | Marketing Mail basic (non-automation) | $0.281 | Permit required, minimum 200 pieces |
-| Marketing Mail automation | $0.214–$0.228 | Requires barcode, higher precision sort |
-| Nonprofit Marketing Mail automation | $0.142–$0.177 | Requires nonprofit authorization |
+| Marketing Mail automation | $0.395–$0.467 | Requires barcode, higher precision sort |
+| Nonprofit Marketing Mail automation | $0.185–$0.257 | Requires nonprofit authorization |
 
 For a 5,000-piece campaign:
 
 | Approach | Total Postage | Per-Piece Postage |
 |----------|-------------|-----------------|
 | First-Class stamps | $4,100 | $0.82 |
-| First-Class presorted | $1,750–$2,200 | $0.35–$0.44 |
-| Marketing Mail automation | $1,070–$1,140 | $0.214–$0.228 |
-| Nonprofit Marketing Mail | $710–$885 | $0.142–$0.177 |
+| First-Class presorted | from $2,965 | from $0.593 |
+| Marketing Mail automation | $1,975–$2,335 | $0.395–$0.467 |
+| Nonprofit Marketing Mail | $925–$1,285 | $0.185–$0.257 |
 
-The savings from Marketing Mail over First-Class stamps on a 5,000-piece campaign are $2,960–$3,030. The savings over First-Class presorted are still $610–$1,130. These are meaningful numbers — often enough to fund an additional campaign cycle or upgrade the piece to a larger format with better response rates.
+The savings from Marketing Mail over First-Class stamps on a 5,000-piece campaign are $1,765–$2,125. The savings over First-Class presorted are still $610–$1,130. These are meaningful numbers — often enough to fund an additional campaign cycle or upgrade the piece to a larger format with better response rates.
 
 ## When First-Class Is the Right Choice
 
@@ -137,7 +137,7 @@ The mail class decision should be made before the piece is designed — not afte
 
 Qualifying nonprofit organizations — 501(c)(3) charities, religious organizations, educational institutions, and certain other tax-exempt entities — can apply for USPS nonprofit mailing authorization. Once authorized, nonprofits mail at significantly reduced Marketing Mail rates:
 
-**Nonprofit Marketing Mail automation rate:** Approximately $0.142–$0.177 per piece for letters, depending on sort level. Compare that to $0.214–$0.228 for standard Marketing Mail automation. On a 10,000-piece fundraising campaign, the nonprofit rate saves $370–$860 in postage versus standard Marketing Mail — and $6,430–$6,780 versus First-Class stamps.
+**Nonprofit Marketing Mail automation rate:** Approximately $0.185–$0.257 per piece for letters as of July 12, 2026, depending on sort level. Compare that to $0.395–$0.467 for standard Marketing Mail automation. On a 10,000-piece fundraising campaign, the nonprofit 5-digit rate ($0.185) saves $2,100 in postage versus standard Marketing Mail 5-digit ($0.395) — and $6,350 versus First-Class stamps.
 
 The application process for USPS nonprofit authorization requires submitting your organization's articles of incorporation, IRS determination letter, and evidence of mailing content. Once approved, the authorization applies to your mailing permit and can be used on all qualifying mailings.
 

@@ -29,7 +29,7 @@ schemaHowTo:
     - name: "Bundle and prepare facing slips"
       text: "EDDM pieces must be bundled in stacks of 50–100 with a completed USPS facing slip on top of each bundle. The facing slip identifies the carrier route and drop count. Errors in bundling or facing slips are the most common reason EDDM drops get rejected at the post office counter."
     - name: "Drop at the serving post office"
-      text: "Bring your bundled pieces to the specific USPS facility that serves your target routes — not just any post office. Pay postage at $0.247 per piece at the counter. Carriers deliver within 3–5 business days of acceptance."
+      text: "Bring your bundled pieces to the specific USPS facility that serves your target routes — not just any post office. Pay postage at $0.260 per piece at the counter. Carriers deliver within 3–5 business days of acceptance."
 ---
 
 Every Door Direct Mail is the simplest entry point into direct mail marketing for most small businesses. No list. No individual addresses. No permit application. You pick the neighborhoods, print the pieces, and USPS carriers hand-deliver one to every door.
@@ -40,7 +40,7 @@ That said, EDDM is not the right tool for every job. This guide covers exactly w
 
 ## What EDDM Actually Is
 
-Every Door Direct Mail is a USPS program introduced in 2012 to make direct mail accessible to small businesses without a postal permit or mailing list. Under EDDM Retail, you can mail to any combination of postal carrier routes in the United States at a flat postage rate of $0.247 per piece — well below the standard Marketing Mail automation rates that require volume commitments and presort infrastructure.
+Every Door Direct Mail is a USPS program introduced in 2012 to make direct mail accessible to small businesses without a postal permit or mailing list. Under EDDM Retail, you can mail to any combination of postal carrier routes in the United States at a flat postage rate of $0.260 per piece — well below the First-Class stamp rate that require volume commitments and presort infrastructure.
 
 The mechanics are simple: the USPS has divided the country into carrier routes — the specific geographic areas each letter carrier walks or drives on a given day. Each route contains 300–600 stops. You select which routes you want covered, print mail pieces to USPS-approved dimensions, bundle them with facing slips, and bring them to the post office that serves those routes. USPS carriers add your piece to their daily delivery for every address on each route you selected.
 
@@ -78,7 +78,7 @@ The cases where I steer clients away from EDDM and toward targeted mail:
 |---|---|---|
 | Mailing list needed | No | Yes |
 | Demographic filtering | No | Yes |
-| Postage per piece | $0.247 | $0.21–$0.35+ |
+| Postage per piece | $0.260 | $0.395–$0.467 (automation) |
 | Permit required | No | Yes (or through a mail house) |
 | Minimum volume | None | Typically 200+ pieces |
 | Suppression (existing customers) | No | Yes |
@@ -88,7 +88,7 @@ The cases where I steer clients away from EDDM and toward targeted mail:
 
 At [Cornerstone Services](/services/eddm), we manage the full EDDM process: route selection, design coordination, printing to USPS specs, bundling with facing slips, and dropping at the serving post office. The piece of the process that trips up the most businesses attempting EDDM on their own is the bundling and facing slips — the USPS has specific requirements for how pieces must be bundled (50–100 per bundle, specific facing slip format), and post offices reject improperly prepared jobs at the counter.
 
-We have run EDDM campaigns for businesses in New Paltz, Kingston, Poughkeepsie, Newburgh, Middletown, and throughout the Hudson Valley. Postage at $0.247 per piece, combined with printing and production, typically lands between $0.55 and $0.75 per piece all-in for campaigns of 2,500–10,000 pieces.
+We have run EDDM campaigns for businesses in New Paltz, Kingston, Poughkeepsie, Newburgh, Middletown, and throughout the Hudson Valley. Postage at $0.260 per piece, combined with printing and production, typically lands between $0.56 and $0.76 per piece all-in for campaigns of 2,500–10,000 pieces.
 
 To see what an EDDM campaign would cost for your specific geography and piece size, call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate). We'll pull route counts and pricing the same day.
 
@@ -112,7 +112,7 @@ EDDM delivers to everyone on a route regardless of demographics. Targeted direct
 
 ## The Real Cost of EDDM — and Why It Still Wins for Local Businesses
 
-EDDM postage is $0.247 per piece, but total campaign cost including printing, design, and production typically runs $0.50–$0.75 per piece all-in. For a detailed breakdown, see our [complete EDDM cost guide](/services/eddm/how-much-does-eddm-cost).
+EDDM postage is $0.260 per piece as of July 12, 2026, but total campaign cost including printing, design, and production typically runs $0.55–$0.78 per piece all-in. For a detailed breakdown, see our [complete EDDM cost guide](/services/eddm/how-much-does-eddm-cost).
 
 At those rates, a 5,000-piece EDDM campaign costs approximately $2,500–$3,750 total. Compare that to the alternatives available to a local business in the Hudson Valley:
 

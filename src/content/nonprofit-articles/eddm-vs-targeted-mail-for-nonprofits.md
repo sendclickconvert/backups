@@ -39,7 +39,7 @@ This creates a postage rate comparison that surprises many nonprofits:
 |----------|-----------------|---------------|
 | EDDM Retail | $0.260 | $2,600 |
 | Nonprofit Marketing Mail (letters) | $0.142–$0.177 | $1,420–$1,770 |
-| Standard Marketing Mail (letters) | $0.214–$0.281 | $2,140–$2,810 |
+| Standard Marketing Mail (letters) | $0.395–$0.467 | $3,950–$4,670 |
 
 For a nonprofit with USPS authorization, targeted letter mail is significantly less expensive per piece than EDDM for quantities over 2,000–3,000 pieces. At 10,000 pieces, the postage savings of nonprofit targeted mail over EDDM is $700–$1,050.
 

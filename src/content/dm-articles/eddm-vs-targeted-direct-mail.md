@@ -27,7 +27,7 @@ EDDM delivers your mail piece to every address on a USPS carrier route — no ma
 
 Every Door Direct Mail delivers your mail piece to **every address** on a USPS carrier route. No mailing list required. No names, no addresses — just a carrier route selection and a mail piece. USPS handles delivery to every residential and/or business address on the selected routes.
 
-EDDM postage runs **$0.247 per piece** — the lowest available USPS rate. There is no permit fee for Retail EDDM. You select routes using the USPS EDDM Online Tool, which provides demographic data (household income, age, size) pulled from U.S. Census records. Cornerstone handles the entire process — route selection, design, printing, PS Form 3587, bundling, and post office delivery.
+EDDM postage runs **$0.260 per piece** — the lowest available USPS rate. There is no permit fee for Retail EDDM. You select routes using the USPS EDDM Online Tool, which provides demographic data (household income, age, size) pulled from U.S. Census records. Cornerstone handles the entire process — route selection, design, printing, PS Form 3587, bundling, and post office delivery.
 
 ## What Is Targeted Direct Mail?
 

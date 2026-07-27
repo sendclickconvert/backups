@@ -18,7 +18,7 @@ schemaFAQ:
   - q: "Is direct mail still worth the cost in 2025?"
     a: "Yes. The DMA reports direct mail delivers a median ROI of 29%, outperforming paid search and online display advertising. For local businesses in the Hudson Valley, direct mail consistently generates leads at a lower cost-per-acquisition than digital channels alone."
   - q: "What is the cheapest way to do direct mail?"
-    a: "EDDM (Every Door Direct Mail) is the lowest-cost method. EDDM postage runs $0.247 per piece with no mailing list cost, bringing all-in cost to $0.44–$0.60 per piece for a standard postcard. It saturates every address on selected carrier routes without purchasing a list."
+    a: "EDDM (Every Door Direct Mail) is the lowest-cost method. EDDM postage runs $0.260 per piece with no mailing list cost, bringing all-in cost to $0.50–$0.65 per piece for a standard postcard. It saturates every address on selected carrier routes without purchasing a list."
   - q: "Does the cost per piece go down for repeat mailings?"
     a: "Yes. Repeat campaigns reuse existing design templates, eliminating the design fee. List refresh costs less than initial list building. Printing costs stay the same or decrease if you commit to a multi-drop schedule, since Cornerstone can batch print runs for efficiency."
   - q: "How much should I budget for my first direct mail campaign?"
@@ -83,7 +83,7 @@ Postage is typically 30–50% of total campaign cost — the single largest line
 |---------------|---------------|---------------|-------------|
 | Marketing Mail (letters/postcards) | $0.22–$0.30 | 3–10 business days | 200+ pieces; presort required |
 | Marketing Mail (flats) | $0.40–$0.55 | 3–10 business days | 200+ pieces; presort required |
-| EDDM Retail | $0.247 | 3–10 business days | No list; entire carrier route |
+| EDDM Retail | $0.260 | 3–10 business days | No list; entire carrier route |
 | First Class Presort | $0.50–$0.55 | 1–3 business days | 500+ pieces; fastest delivery |
 | First Class (single piece) | $0.78+ | 1–3 business days | No minimum; no presort discount |
 
@@ -91,7 +91,7 @@ Marketing Mail is the standard class for direct mail campaigns because it offers
 
 Presort automation — sorting mail to USPS standards before induction — is what unlocks the lower rates. Cornerstone handles all presort processing, Intelligent Mail barcoding, and CASS/DPV verification to qualify your mailing for the lowest applicable rate. The presort process alone saves $0.15–$0.25 per piece compared to single-piece rates.
 
-[EDDM (Every Door Direct Mail)](/services/direct-mail/eddm-every-door-direct-mail) offers the lowest available postage rate at $0.247 per piece, with no mailing list cost. It is the most cost-effective option for businesses that want to saturate specific neighborhoods.
+[EDDM (Every Door Direct Mail)](/services/direct-mail/eddm-every-door-direct-mail) offers the lowest available postage rate at $0.260 per piece, with no mailing list cost. It is the most cost-effective option for businesses that want to saturate specific neighborhoods.
 
 ## Design Costs
 
@@ -131,7 +131,7 @@ Here are three real campaign scenarios showing total costs for Hudson Valley bus
 | Design (custom 6×9 postcard) | $450 |
 | Printing (5,000 pieces) | $1,625 |
 | Mailing list | $0 (EDDM — no list required) |
-| EDDM postage (5,000 × $0.247) | $1,235 |
+| EDDM postage (5,000 × $0.260) | $1,300 |
 | **Total** | **$3,310** |
 | **Cost per piece** | **$0.66** |
 
@@ -220,7 +220,7 @@ Yes. The Data & Marketing Association reports direct mail delivers a median ROI 
 
 **What is the cheapest way to do direct mail?**
 
-EDDM (Every Door Direct Mail) is the lowest-cost method. EDDM postage runs $0.247 per piece with no mailing list cost, bringing all-in cost to $0.44–$0.60 per piece for a standard postcard. It saturates every address on selected carrier routes without purchasing a list. The trade-off is targeting precision — you reach every address, not just your ideal customer profile. For many local businesses, that saturation is exactly what they need.
+EDDM (Every Door Direct Mail) is the lowest-cost method. EDDM postage runs $0.260 per piece with no mailing list cost, bringing all-in cost to $0.50–$0.65 per piece for a standard postcard. It saturates every address on selected carrier routes without purchasing a list. The trade-off is targeting precision — you reach every address, not just your ideal customer profile. For many local businesses, that saturation is exactly what they need.
 
 **Does the cost per piece go down for repeat mailings?**
 

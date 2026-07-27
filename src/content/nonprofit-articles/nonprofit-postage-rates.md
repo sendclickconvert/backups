@@ -10,7 +10,7 @@ primaryKeyword: "nonprofit postage rates"
 pillar: "https://crst.net/services/non-profit-mailing"
 schemaFAQ:
   - q: "What is the nonprofit postage rate for bulk mail?"
-    a: "The USPS nonprofit Marketing Mail rate for letters is currently $0.142–$0.177 per piece (presorted automation) versus $0.214–$0.281 for standard Marketing Mail. For flats, the nonprofit rate is $0.283–$0.397 versus $0.402–$0.582 for standard Marketing Mail. The actual rate depends on the automation category (5-digit sort, carrier route, basic presort) and whether the mailing is letters or flats. Nonprofit organizations with USPS authorization can save 20–40% on postage costs compared to standard Marketing Mail rates."
+    a: "The USPS nonprofit Marketing Mail rate for letters is $0.185 per piece at 5-digit automation and $0.257 at the Mixed tier as of July 12, 2026, versus $0.395–$0.467 for standard Marketing Mail automation. Carrier route saturation and 3-digit tier pricing is available — contact us for a per-piece quote. Nonprofit organizations with USPS authorization save approximately 50–55% at the 5-digit level compared to standard commercial rates."
   - q: "Who qualifies for nonprofit postage rates?"
     a: "The USPS authorizes nonprofit postage for qualifying organizations in these categories: religious, educational, scientific, philanthropic (charitable), agricultural, labor, veterans, and fraternal organizations. Politically active organizations, business leagues, chambers of commerce, and organizations that operate primarily for profit are not eligible. 501(c)(3) tax status is the most common basis for USPS nonprofit authorization, but IRS tax status alone does not automatically qualify an organization — separate USPS authorization is required."
   - q: "How do I get USPS nonprofit mailing authorization?"
@@ -114,9 +114,9 @@ For a detailed comparison of these two approaches for nonprofits, see our guide 
 
 The nonprofit rate is not a single number — it varies by presort level. Presort level measures how precisely the mailing is sorted by ZIP code and carrier route. More precise sorting reduces the work the USPS has to do, which earns a lower per-piece rate.
 
-**Nonprofit letter rates by presort level (current):**
-- **5-Digit automation:** $0.142/piece — mailing sorted by 5-digit ZIP code with automation-compatible barcodes
-- **3-Digit automation:** $0.160/piece — sorted by 3-digit ZIP prefix
+**Nonprofit letter rates by presort level (effective July 12, 2026):**
+- **5-Digit automation:** $0.185/piece — mailing sorted by 5-digit ZIP code with automation-compatible barcodes
+- **3-Digit automation:** Contact us for current rate — sorted by 3-digit ZIP prefix
 - **Mixed:** $0.257/piece — the highest nonprofit letter rate, least sorted
 
 At Cornerstone, we presort every mailing to the maximum qualifying level automatically. The higher the percentage of pieces that qualify for 5-digit sort (meaning your donor list has concentration in specific ZIP codes), the lower your blended per-piece rate. Hudson Valley nonprofits with donor files concentrated in local ZIP codes often qualify for the lowest tier on 60–80% of their pieces.
@@ -126,11 +126,11 @@ At Cornerstone, we presort every mailing to the maximum qualifying level automat
 Here are real postage savings from nonprofit campaigns we've processed at Cornerstone:
 
 **Example 1: Annual fund appeal, 8,000 letters**
-- Nonprofit automation rate: $0.149/piece → $1,192 total postage
-- Standard Marketing Mail automation: $0.214/piece → $1,712 total postage
+- Nonprofit 5-digit automation rate: $0.185/piece → $1,480 total postage
+- Standard Marketing Mail 5-digit automation: $0.395/piece → $3,160 total postage
 - First-Class stamps: $0.82/piece → $6,560 total postage
-- **Savings vs. standard Marketing Mail: $520**
-- **Savings vs. First-Class stamps: $5,368**
+- **Savings vs. standard Marketing Mail: $1,680**
+- **Savings vs. First-Class stamps: $5,080**
 
 **Example 2: Community event postcard, 3,000 flats**
 - Nonprofit automation flat rate: $0.283/piece → $849 total postage
