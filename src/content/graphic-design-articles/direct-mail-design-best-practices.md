@@ -5,7 +5,7 @@ pubDate: 2026-04-09
 updatedDate: 2026-04-09
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
-authorLocation: "New Paltz, NY"
+authorLocation: "Saugerties, NY"
 primaryKeyword: "direct mail design"
 pillar: "https://crst.net/services/graphic-design"
 schemaFAQ:
@@ -95,7 +95,7 @@ The call-to-action should require zero interpretation. One clear instruction, on
 
 ## Applying These Principles at Cornerstone
 
-At Cornerstone Services in New Paltz, our design services for direct mail are built around these response-oriented principles. We don't design to win awards — we design to generate calls.
+At Cornerstone Services in Saugerties, NY, our design services for direct mail are built around these response-oriented principles. We don't design to win awards — we design to generate calls.
 
 If you have an existing design, we'll review it against these standards as part of our quote process. If you need design from scratch, we build pieces around your offer and USPS compliance requirements simultaneously.
 

@@ -448,11 +448,11 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // ═══════════════════════════════════════════════════════════
 
   "new-paltz": {
-    leadAnswer: "New Paltz is Cornerstone's home base — we print and mail from our South Ohioville Road facility, offering in-person press checks, same-day turnaround, and a direct handoff to the New Paltz Post Office without shipping delays for any other provider.",
-    metaTitle: "Direct Mail & Printing in New Paltz, NY — Our Home Base | Cornerstone Services",
-    metaDescription: "Cornerstone is based right here in New Paltz. Same-day turnaround, in-person press checks, and zero shipping to the New Paltz Post Office. EDDM, postcards, brochures, and full direct mail services.",
-    h1: "Direct Mail & Printing in New Paltz, NY — Our Home Base",
-    uniqueIntro: "New Paltz is Cornerstone's home base — we print and mail from our facility on South Ohioville Road. That means in-person consultations, press checks you can attend yourself, and a direct handoff to the New Paltz Post Office without shipping delays. No other printer in the Hudson Valley offers that kind of local access.",
+    leadAnswer: "New Paltz is a key service area for Cornerstone — we serve New Paltz businesses from our Saugerties facility, offering in-person press checks and same-day turnaround with delivery directly to the local USPS without shipping delays.",
+    metaTitle: "Direct Mail & Printing for New Paltz, NY | Cornerstone Services",
+    metaDescription: "Cornerstone serves New Paltz businesses from our Saugerties facility — same-day turnaround, in-person press checks available, and EDDM, postcards, brochures, and full direct mail services.",
+    h1: "Direct Mail & Printing for New Paltz, NY",
+    uniqueIntro: "Cornerstone serves New Paltz businesses from our Saugerties facility — just a short drive up Route 9W. That means in-person consultations, press checks you can attend yourself, and fast delivery into the local USPS without shipping delays. No other printer in the Hudson Valley offers that kind of nearby access.",
     localContext: "New Paltz combines a vibrant college town economy (SUNY New Paltz), a walkable Main Street with independent restaurants and shops, world-class rock climbing at the Mohonk Preserve and Shawangunk Ridge, and a steady flow of tourism year-round. The town's mix of students, long-term residents, outdoor enthusiasts, and weekenders creates diverse direct mail opportunities. Local businesses range from Main Street boutiques to adventure outfitters to farm-to-table restaurants.",
     eddmInsight: "New Paltz's 12561 ZIP spans the village center, student housing areas, and the surrounding residential neighborhoods along Routes 299 and 32. EDDM campaigns can target the dense village routes for retail and restaurant promotions, or expand to suburban routes for home services.",
     populationNote: "New Paltz has roughly 14,000 residents, with population swelling during SUNY academic sessions. The mix of year-round homeowners and student renters means direct mail strategy varies by neighborhood and season.",
@@ -460,8 +460,8 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
     relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/brochures", "/services/printing", "/services/large-format"],
     uniqueFAQs: [
       {
-        question: "What's the advantage of using a printer based in New Paltz?",
-        answer: "Cornerstone's facility is on South Ohioville Road in New Paltz. You can stop by for a press check, approve proofs in person, and pick up jobs the same day. For direct mail, your pieces go from our press to the New Paltz Post Office without shipping delays or transit damage."
+        question: "What's the advantage of using Cornerstone for New Paltz printing?",
+        answer: "Cornerstone's facility is in Saugerties — a short drive from New Paltz. You can stop by for a press check, approve proofs in person, and pick up jobs the same day. For direct mail, your pieces go from our press to the local USPS without shipping delays or transit damage."
       },
       {
         question: "Can I target SUNY New Paltz students and families with direct mail?",
@@ -487,7 +487,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
     relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/printing", "/services/graphic-design"],
     industryFocus: [
       { industry: "Wineries & Vineyards", description: "Marlboro is the hub of the Hudson Valley wine trail. Benmarl Winery, one of the oldest vineyards in America, anchors a stretch of Route 9W known for weekend wine tourism. Wineries use direct mail to promote seasonal tastings, wine club memberships, harvest events, and holiday gift sales. Cornerstone designs and prints oversized postcards with full-color vineyard photography that drive reservations and club signups." },
-      { industry: "Orchards & Farm Markets", description: "Apple orchards and farm stands along Route 9W depend on seasonal foot traffic from the wider tri-state area. Direct mail postcards timed 2-3 weeks before apple-picking season, pumpkin festivals, and holiday farm markets are the primary customer acquisition tool. Cornerstone produces these seasonal mailings on a tight turnaround — designs approved Monday can be in mailboxes by Friday from our New Paltz facility." },
+      { industry: "Orchards & Farm Markets", description: "Apple orchards and farm stands along Route 9W depend on seasonal foot traffic from the wider tri-state area. Direct mail postcards timed 2-3 weeks before apple-picking season, pumpkin festivals, and holiday farm markets are the primary customer acquisition tool. Cornerstone produces these seasonal mailings on a tight turnaround — designs approved Monday can be in mailboxes by Friday from our Saugerties facility." },
       { industry: "Home Services & Contractors", description: "Marlboro's residential base of single-family homes on larger rural lots drives consistent demand for landscaping, HVAC, plumbing, well services, and general contracting. EDDM postcards targeting the 12542 ZIP are the most cost-effective way to reach every homeowner in the community. Seasonal timing matters — spring mailings for landscaping, fall for heating services, and year-round for emergency plumbing and electrical." },
       { industry: "Real Estate", description: "Marlboro's mix of river-view properties, agricultural land, and established neighborhoods attracts buyers from the NYC metro area. Real estate agents use just-listed and just-sold postcards to farm Marlboro carrier routes, establishing neighborhood expertise. Cornerstone prints these on heavy card stock with full-bleed photography that showcases Marlboro's scenic character." }
     ],
@@ -513,7 +513,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
     uniqueFAQs: [
       {
         question: "How can Marlboro wineries and orchards use direct mail effectively?",
-        answer: "Timed seasonal postcards are the highest-performing format for Marlboro's agricultural businesses. A 6x9 postcard mailed 2-3 weeks before apple-picking season, a wine tasting event, or a holiday farm market drives visits from both local residents and your customer mailing list from previous seasons. Cornerstone handles the design, printing, and mailing from our facility just 15 minutes away in New Paltz."
+        answer: "Timed seasonal postcards are the highest-performing format for Marlboro's agricultural businesses. A 6x9 postcard mailed 2-3 weeks before apple-picking season, a wine tasting event, or a holiday farm market drives visits from both local residents and your customer mailing list from previous seasons. Cornerstone handles the design, printing, and mailing from our Saugerties facility."
       },
       {
         question: "Can I target just Marlboro households without reaching Milton or Highland?",
@@ -531,15 +531,15 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   },
 
   "highland": {
-    leadAnswer: "Highland is a large Ulster County hamlet across the Mid-Hudson Bridge from Poughkeepsie, with one of the county's most accessible commuter residential bases — Cornerstone provides EDDM and direct mail to Highland's 12528 ZIP from our New Paltz facility.",
+    leadAnswer: "Highland is a large Ulster County hamlet across the Mid-Hudson Bridge from Poughkeepsie, with one of the county's most accessible commuter residential bases — Cornerstone provides EDDM and direct mail to Highland's 12528 ZIP from our Saugerties facility.",
     metaTitle: "Direct Mail & Printing Services in Highland, NY | Cornerstone Services",
-    metaDescription: "Direct mail, EDDM, and printing for Highland businesses on the Route 9W corridor. Target 12528 ZIP — retail, restaurants, healthcare, and home services. Just 10 minutes from our New Paltz facility.",
+    metaDescription: "Direct mail, EDDM, and printing for Highland businesses on the Route 9W corridor. Target 12528 ZIP — retail, restaurants, healthcare, and home services. Saugerties, NY.",
     h1: "Direct Mail & Printing for Highland, NY Businesses",
     uniqueIntro: "Highland is one of the busiest commercial corridors in Ulster County, anchored by Route 9W and the western approach to the Mid-Hudson Bridge connecting to Poughkeepsie. This strategic location gives Highland businesses access to both Ulster County residents heading south on 9W and Dutchess County commuters crossing the bridge daily — a dual-market advantage that direct mail can target precisely.",
     localContext: "Highland's economy benefits from its position as the Ulster County gateway to the Mid-Hudson Bridge. The Route 9W corridor features shopping centers, healthcare offices, auto dealerships, restaurants, and professional services that draw customers from both sides of the river. The Walkway Over the Hudson's western trailhead brings steady foot traffic to the area. Residential neighborhoods in the Town of Lloyd surround the commercial corridor, creating a strong local customer base for home services, healthcare, and retail. Highland's mix of commercial density and residential stability makes it one of the most responsive direct mail markets in Ulster County.",
     eddmInsight: "Highland's 12528 ZIP encompasses both the dense Route 9W commercial corridor and the surrounding residential neighborhoods in Lloyd. EDDM campaigns can target the high-density routes near the bridge and shopping centers for maximum retail impact, or expand to the more suburban routes for home service campaigns. The carrier route structure follows the main road corridors, making geographic targeting straightforward.",
     populationNote: "The Town of Lloyd (which encompasses Highland) has roughly 11,000 residents and an estimated 4,200 households. Highland's population density along the Route 9W corridor is higher than most Ulster County communities, supporting cost-effective EDDM campaigns with strong per-route household counts.",
-    nearbyLandmark: "Located at the western approach to the Mid-Hudson Bridge on Route 9W, home to the Walkway Over the Hudson western trailhead and just 10 minutes from our New Paltz facility.",
+    nearbyLandmark: "Located at the western approach to the Mid-Hudson Bridge on Route 9W, home to the Walkway Over the Hudson western trailhead.",
     relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/printing", "/services/mailing-lists"],
     industryFocus: [
       { industry: "Healthcare & Medical Offices", description: "Highland's Route 9W corridor is home to a concentration of medical practices, dental offices, urgent care facilities, and specialty clinics that serve patients from both Ulster and Dutchess counties. New patient acquisition through EDDM postcards is one of the most proven direct mail strategies in healthcare — a single postcard campaign targeting Highland's residential routes consistently generates 10-20 new patient inquiries for practices in this corridor. Cornerstone designs HIPAA-aware marketing materials that highlight practice specialties, insurance acceptance, and convenient location." },
@@ -565,7 +565,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
       recommendedFormat: "6x11 oversized postcard for maximum mailbox visibility along the competitive Route 9W corridor",
       estimatedCostFullSaturation: "$1,500–$1,900 for full Highland/Lloyd EDDM coverage including design, printing, and postage"
     },
-    whyCornerstone: "Cornerstone is just 10 minutes from Highland — the closest full-service direct mail facility to the Route 9W corridor. We service Highland businesses with same-day proof reviews (you can stop by our South Ohioville Road facility in New Paltz), press checks on your print run, and direct mail entry through the local postal system. For Highland's healthcare practices and auto dealerships that run recurring monthly mailings, our proximity means faster turnaround and easier coordination than any competitor in the region.",
+    whyCornerstone: "Cornerstone is the closest full-service direct mail facility to the Route 9W corridor. We service Highland businesses with same-day proof reviews (you can stop by our Saugerties facility), press checks on your print run, and direct mail entry through the local postal system. For Highland's healthcare practices and auto dealerships that run recurring monthly mailings, our proximity means faster turnaround and easier coordination than any competitor in the region.",
     localSuccessStory: "A Highland dental practice on Route 9W used monthly EDDM postcards to the 12528 ZIP to add 180+ new patients over 12 months. The campaign targeted 4,200 households per month with a rotating offer (new patient special, teeth whitening, family discount) on an oversized 6x11 postcard. At roughly $1,600/month all-in, the cost per new patient acquisition was under $110 — a fraction of the lifetime value of a dental patient.",
     uniqueFAQs: [
       {
@@ -590,13 +590,13 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   "rosendale": {
     leadAnswer: "Rosendale is a historic canal and cement heritage town along the Rondout Creek between New Paltz and Kingston, with a thriving arts community — Cornerstone provides EDDM, postcards, and direct mail for Rosendale businesses and its residential corridor.",
     metaTitle: "Direct Mail & Printing Services in Rosendale, NY | Cornerstone Services",
-    metaDescription: "Direct mail, EDDM, and printing for Rosendale businesses and arts organizations. Reach this creative Hudson Valley community — just 5 minutes from our New Paltz facility.",
+    metaDescription: "Direct mail, EDDM, and printing for Rosendale businesses and arts organizations. Reach this creative Hudson Valley community — served from our Saugerties facility.",
     h1: "Direct Mail & Printing for Rosendale, NY Businesses & Organizations",
     uniqueIntro: "Rosendale is a small but culturally vibrant community along the Rondout Creek, known for its historic cement mines, thriving arts scene, and community-driven events like the Rosendale Street Festival and International Pickle Festival. For a town of its size, Rosendale punches well above its weight in community engagement — and direct mail is one of the most effective ways to reach this involved, responsive audience.",
     localContext: "Rosendale's economy blends arts and culture (the Rosendale Theatre Collective, Women's Studio Workshop, galleries, and studios), tourism drawn by the Wallkill Valley Rail Trail and historic cement caves, and a strong base of independent professionals and artisans who work from home. The town attracts a demographic that values locally made, locally sourced, and community-connected — making direct mail from a local print shop especially well-received. The Rosendale Recreation Center and local civic organizations are active mailers for community events, youth programs, and seasonal activities.",
     eddmInsight: "Rosendale's compact geography makes EDDM exceptionally cost-effective. The primary carrier routes follow Main Street, Route 32, and the Rondout Creek corridor. A single EDDM campaign can saturate the entire Rosendale community for under $1,000 — reaching every household in the hamlet and surrounding area. For community events like the Street Festival, EDDM postcards are the primary outreach vehicle.",
     populationNote: "The Town of Rosendale has roughly 6,000 residents and an estimated 2,400 households. The compact, walkable hamlet center and the surrounding rural-residential areas create a tight community where direct mail has high visibility and engagement.",
-    nearbyLandmark: "Nestled along the Rondout Creek just 5 minutes from our New Paltz facility, home to the Rosendale Theatre, historic cement mines, and the Wallkill Valley Rail Trail.",
+    nearbyLandmark: "Nestled along the Rondout Creek between Kingston and Saugerties, home to the Rosendale Theatre, historic cement mines, and the Wallkill Valley Rail Trail.",
     relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/graphic-design", "/services/non-profit-mailing"],
     industryFocus: [
       { industry: "Arts Organizations & Nonprofits", description: "Rosendale is home to a dense concentration of arts nonprofits for its size — the Rosendale Theatre Collective, Women's Studio Workshop, and multiple galleries and artist cooperatives. These organizations rely on direct mail for fundraising appeals, event invitations, membership renewals, and season announcements. Cornerstone provides nonprofit mailing rates through USPS authorization, saving Rosendale arts organizations 30-40% on postage compared to standard first-class mail." },
@@ -627,7 +627,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
     uniqueFAQs: [
       {
         question: "Can Cornerstone help with mailings for Rosendale community events and festivals?",
-        answer: "Absolutely — we've printed and mailed for Rosendale organizations for years. Community event postcards, festival announcements, and nonprofit fundraising appeals are among our most common Rosendale jobs. Our facility is literally 5 minutes away on South Ohioville Road in New Paltz, so turnaround is fast and you can stop by for a proof check any time."
+        answer: "Absolutely — we've printed and mailed for Rosendale organizations for years. Community event postcards, festival announcements, and nonprofit fundraising appeals are among our most common Rosendale jobs. Our Saugerties facility is a short drive away, so turnaround is fast and you can stop by for a proof check any time."
       },
       {
         question: "Is EDDM practical for a small town like Rosendale?",
@@ -647,7 +647,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   "rochester": {
     leadAnswer: "Rochester is a rural Ulster County town encompassing the Accord and Kerhonkson hamlets in the Rondout Valley — Cornerstone provides EDDM and direct mail reaching Rochester's rural homeowner base from our New Paltz facility, less than 20 miles south.",
     metaTitle: "Direct Mail & Printing Services in Rochester & Accord, NY | Cornerstone Services",
-    metaDescription: "Direct mail, EDDM, and printing for Rochester and Accord, NY businesses — reaching the Rondout Valley's growing community of residents, artists, and outdoor enthusiasts from our New Paltz facility.",
+    metaDescription: "Direct mail, EDDM, and printing for Rochester and Accord, NY businesses — reaching the Rondout Valley's growing community of residents, artists, and outdoor enthusiasts from our Saugerties facility.",
     h1: "Direct Mail & Printing for Rochester & Accord, NY Businesses",
     uniqueIntro: "The Town of Rochester encompasses the hamlet of Accord and the surrounding Rondout Creek corridor between New Paltz and Ellenville, an area that has seen significant growth from artists, remote workers, and outdoor enthusiasts drawn by affordable rural living and Catskill Mountain access. Direct mail reaches this spread-out community where digital advertising has limited penetration — many Rochester households have unreliable internet service, making physical mail the most dependable marketing channel.",
     localContext: "Rochester's economy reflects its evolving identity: a base of longtime farming families and tradespeople alongside a growing cohort of creative professionals, homesteaders, and vacation rental operators. The Rondout Valley Central School District is a major community anchor. Accord's small commercial center includes restaurants, a general store, and local service businesses. The town's proximity to Minnewaska State Park, Mohonk Preserve, and the broader Catskills drives vacation rental and tourism-related commerce. Home service providers — contractors, well drillers, septic services, firewood suppliers — find especially strong demand in Rochester's rural residential market.",
@@ -898,7 +898,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   "kingston": {
     leadAnswer: "Cornerstone provides full-service direct mail, EDDM, commercial printing, and targeted campaigns across Kingston's three districts — the Historic Stockade, Rondout waterfront, and Midtown Broadway corridor — Ulster County's seat and largest city.",
     metaTitle: "Direct Mail & Printing in Kingston, NY | Cornerstone Services",
-    metaDescription: "Full-service direct mail, EDDM, and printing for Kingston businesses — Uptown Stockade, Midtown arts corridor, and Rondout waterfront. USPS presort automation from New Paltz.",
+    metaDescription: "Full-service direct mail, EDDM, and printing for Kingston businesses — Uptown Stockade, Midtown arts corridor, and Rondout waterfront. USPS presort automation from Saugerties.",
     h1: "Direct Mail & Printing for Kingston, NY Businesses",
     uniqueIntro: "Kingston operates across three distinct commercial districts — the Uptown Stockade historic district, the Midtown Broadway arts corridor, and the Rondout waterfront — each with a different customer base and mailing strategy. As Ulster County's largest city and former state capital, Kingston has the business density, household volume, and demographic range to support every direct mail format from EDDM saturation to precision-targeted list campaigns.",
     localContext: "Kingston's economy has shifted toward arts, tourism, hospitality, and tech workers relocating from New York City, while retaining institutional anchors: HealthAlliance Hospital, BOCES, Kingston City Schools, and Ulster County government. Uptown's Stockade district anchors the historic commercial core around Wall Street and North Front Street. Midtown Broadway has become one of the Hudson Valley's most concentrated arts and creative business corridors. The Rondout waterfront draws restaurants, galleries, and the Hudson River Maritime Museum. ZIP 12401 covers most residential and commercial Kingston; ZIP 12402 is primarily a P.O. Box ZIP for institutional mail.",
@@ -1040,7 +1040,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
       },
       {
         question: "Can a local Ellenville nonprofit use reduced postage rates?",
-        answer: "Yes — qualifying nonprofits mail at USPS nonprofit presort rates using Form 3624 authorization, which meaningfully reduces per-piece postage costs. Local organizations including social service agencies, civic groups, and healthcare-adjacent nonprofits in the Ellenville area have used this program through Cornerstone. We handle the 3624 authorization process and presort pieces at our USPS-approved New Paltz facility."
+        answer: "Yes — qualifying nonprofits mail at USPS nonprofit presort rates using Form 3624 authorization, which meaningfully reduces per-piece postage costs. Local organizations including social service agencies, civic groups, and healthcare-adjacent nonprofits in the Ellenville area have used this program through Cornerstone. We handle the 3624 authorization process and presort pieces at our USPS-approved Saugerties facility."
       }
     ]
   },
@@ -1050,7 +1050,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofesopus.us/
   // - https://www.usps.com/ (ZIPs 12466 Port Ewen, 12429, 12487 Rifton)
   "esopus": {
-    leadAnswer: "Esopus is a Hudson River town in Ulster County encompassing the hamlets of Port Ewen, Connelly, and Rifton along Route 9W — Cornerstone provides EDDM and direct mail reaching Esopus' residential base from our New Paltz facility.",
+    leadAnswer: "Esopus is a Hudson River town in Ulster County encompassing the hamlets of Port Ewen, Connelly, and Rifton along Route 9W — Cornerstone provides EDDM and direct mail reaching Esopus' residential base from our Saugerties facility.",
     metaTitle: "Direct Mail & Printing in Esopus, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for the Town of Esopus — covering Port Ewen, Connelly, West Park, and Rifton along the Route 9W corridor in Ulster County.",
     h1: "Direct Mail & Printing for the Town of Esopus, NY",
@@ -1058,7 +1058,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
     localContext: "Esopus has limited commercial development of its own — most businesses serving Esopus residents operate out of Kingston or along the Route 9W corridor. Port Ewen, the largest hamlet (ZIP 12466), has a cluster of restaurants, a marina, and residential neighborhoods directly on the Hudson. Connelly is a small waterfront hamlet adjacent to the Kingston Rondout. West Park and Rifton are more rural hamlets south along Route 9W. The town attracts retirees and Hudson River enthusiasts, with a higher-than-county-average proportion of owner-occupied homes, including waterfront and water-view properties that skew home values and maintenance spending upward.",
     eddmInsight: "Esopus spans multiple ZIP codes — 12466 covers Port Ewen and portions near Highland, 12429 covers other sections, and 12487 serves Rifton. EDDM targeting Esopus must be planned across ZIP codes based on which hamlets a business wants to reach. Port Ewen's 12466 ZIP has the densest household concentration. For businesses serving the full Town of Esopus, a coordinated multi-ZIP EDDM campaign is more effective than a single-ZIP approach.",
     populationNote: "The Town of Esopus has roughly 9,000 residents and approximately 3,800 households, with a higher-than-county-average homeownership rate — a strong market for home service and property maintenance businesses.",
-    nearbyLandmark: "Port Ewen's marina and restaurants sit on the Hudson River directly adjacent to the Rondout Lighthouse; the town borders Kingston's southern edge and sits roughly 8 miles from our New Paltz facility.",
+    nearbyLandmark: "Port Ewen's marina and restaurants sit on the Hudson River directly adjacent to the Rondout Lighthouse; the town borders Kingston's southern edge and sits within easy reach of our Saugerties facility.",
     relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards", "/services/printing"],
     uniqueFAQs: [
       {
@@ -1078,7 +1078,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.hasbrouckhouse.com/
   // - https://www.usps.com/ (ZIPs 12484 Stone Ridge, 12440 High Falls, 12419 Cottekill)
   "marbletown": {
-    leadAnswer: "Marbletown is a rural southern Ulster County town encompassing the Stone Ridge and High Falls hamlets — Cornerstone provides EDDM and direct mail for Marbletown's rural homeowners, agricultural community, and local businesses from our New Paltz facility.",
+    leadAnswer: "Marbletown is a rural southern Ulster County town encompassing the Stone Ridge and High Falls hamlets — Cornerstone provides EDDM and direct mail for Marbletown's rural homeowners, agricultural community, and local businesses from our Saugerties facility.",
     metaTitle: "Direct Mail & Printing in Stone Ridge & Marbletown, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Stone Ridge, High Falls, Cottekill, and the Town of Marbletown. Reach Ulster County's agricultural and arts community with targeted campaigns from Cornerstone.",
     h1: "Direct Mail & Printing for Marbletown, Stone Ridge & High Falls, NY",
@@ -1106,7 +1106,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.nyc.gov/site/dep/water/ashokan-reservoir.page
   // - https://www.usps.com/ (ZIPs 12481 Shokan, 12412 Boiceville)
   "olive": {
-    leadAnswer: "Olive is a rural Ulster County town centered on the Ashokan Reservoir and Catskill foothills, neighboring Woodstock and Shandaken — Cornerstone provides EDDM and direct mail reaching Olive's rural residential community from our New Paltz facility.",
+    leadAnswer: "Olive is a rural Ulster County town centered on the Ashokan Reservoir and Catskill foothills, neighboring Woodstock and Shandaken — Cornerstone provides EDDM and direct mail reaching Olive's rural residential community from our Saugerties facility.",
     metaTitle: "Direct Mail & Printing in Olive, NY | Cornerstone Services",
     metaDescription: "EDDM and direct mail for businesses in the Town of Olive — covering Shokan, Boiceville, and the Ashokan Reservoir gateway in the Catskill Mountains of Ulster County.",
     h1: "Direct Mail & Printing for the Town of Olive, NY",
@@ -1296,7 +1296,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.wawarsing.net/
   // - https://www.usps.com/ (ZIPs 12428 Ellenville, 12458 Napanoch, 12489 Accord)
   "wawarsing": {
-    leadAnswer: "Wawarsing is Ulster County's largest town by area, spanning the communities of Ellenville, Napanoch, and Kerhonkson across three ZIP codes — Cornerstone provides EDDM and direct mail for each Wawarsing community, reaching the full Rondout Valley from New Paltz.",
+    leadAnswer: "Wawarsing is Ulster County's largest town by area, spanning the communities of Ellenville, Napanoch, and Kerhonkson across three ZIP codes — Cornerstone provides EDDM and direct mail for each Wawarsing community, reaching the full Rondout Valley from our Saugerties facility.",
     metaTitle: "Direct Mail & Printing in Wawarsing, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for businesses throughout Wawarsing — Ulster County's largest town by area, spanning Ellenville, Napanoch, Accord, and the Shawangunk Ridge corridor.",
     h1: "Direct Mail & Printing for Wawarsing, NY Businesses",
@@ -1349,7 +1349,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.accordny.com/ (Accord area context)
   // - https://www.usps.com/ (ZIP 12446)
   "kerhonkson": {
-    leadAnswer: "Kerhonkson is a hamlet in the Town of Wawarsing in the Catskill foothills along Route 44/55 — Cornerstone provides direct mail and EDDM reaching Kerhonkson's rural households, typically as part of a broader Wawarsing or Ellenville campaign from New Paltz.",
+    leadAnswer: "Kerhonkson is a hamlet in the Town of Wawarsing in the Catskill foothills along Route 44/55 — Cornerstone provides direct mail and EDDM reaching Kerhonkson's rural households, typically as part of a broader Wawarsing or Ellenville campaign from our Saugerties facility.",
     metaTitle: "Direct Mail & Printing in Kerhonkson & Accord, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Kerhonkson and Accord businesses in the Shawangunk foothills of Ulster County — serving a rapidly changing rural-meets-NYC-transplant market.",
     h1: "Direct Mail & Printing for Kerhonkson & Accord, NY Businesses",
@@ -1378,13 +1378,13 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   "cottekill": {
     leadAnswer: "Cottekill is a hamlet in the Town of Rosendale along the Rondout Creek in southern Ulster County — Cornerstone provides direct mail and EDDM reaching Cottekill's households, typically as part of a broader Rosendale or New Paltz campaign.",
     metaTitle: "Direct Mail & Printing in Cottekill, NY | Cornerstone Services",
-    metaDescription: "EDDM and direct mail for businesses in Cottekill, NY — a small hamlet in the Town of Rosendale along the Rondout Creek, close to Cornerstone's New Paltz facility.",
+    metaDescription: "EDDM and direct mail for businesses in Cottekill, NY — a small hamlet in the Town of Rosendale along the Rondout Creek, close to Cornerstone's Saugerties facility.",
     h1: "Direct Mail & Printing for Cottekill, NY Businesses",
     uniqueIntro: "Cottekill is a small hamlet in the Town of Rosendale tucked along the Rondout Creek in southern Ulster County, a short drive from both New Paltz and Kingston. Despite its small size, Cottekill's proximity to the Walkway Over the Hudson trail system and the Rondout Creek watershed makes it part of the outdoor recreation corridor that draws cyclists and hikers from across the region. The hamlet itself is primarily residential — a quiet community of homeowners who access services in Rosendale, New Paltz, or Kingston.",
     localContext: "Cottekill's own commercial footprint is minimal — the hamlet has no business district to speak of. It functions primarily as a residential community within Rosendale Township, sharing some commercial identity with nearby Stone Ridge (3 miles northwest) and High Falls (4 miles north). For direct mail purposes, Cottekill's 12419 ZIP code is most useful to businesses targeting the full Rosendale-Cottekill residential area, or as a component of a broader Marbletown Township campaign pairing Cottekill with Stone Ridge (12484) and High Falls (12440).",
     eddmInsight: "Cottekill's 12419 ZIP is one of Ulster County's smaller postal areas, covering the hamlet and a limited surrounding rural area. Carrier routes yield an estimated 600–900 total households. A standalone Cottekill EDDM campaign is inexpensive but produces limited volume — most effective when combined with adjacent Rosendale (12472) and Stone Ridge (12484) routes to create a meaningful Rondout Valley campaign.",
     populationNote: "Cottekill has approximately 400–600 permanent residents as a hamlet; the 12419 ZIP covers a somewhat larger area, but total household count remains among the lowest in Ulster County — best treated as part of a broader campaign geography.",
-    nearbyLandmark: "Located along Route 213 between Stone Ridge and Rosendale, adjacent to the Rondout Creek and approximately 5 miles from Cornerstone's New Paltz facility — one of the closest communities we serve.",
+    nearbyLandmark: "Located along Route 213 between Stone Ridge and Rosendale, adjacent to the Rondout Creek — one of the closest communities we serve from our Saugerties facility.",
     relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards"],
     uniqueFAQs: [
       {
@@ -1392,7 +1392,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
         answer: "Almost always, yes. Cottekill's 12419 ZIP is too small to justify standalone EDDM production costs for most businesses. The most logical pairings are Rosendale (12472) for businesses serving the Route 213 corridor, or Stone Ridge (12484) for businesses based in the Marbletown area. Cornerstone handles multi-ZIP EDDM as a single project — you approve one design and we coordinate the split postal entry."
       },
       {
-        question: "Cottekill is close to your New Paltz facility — does that affect turnaround time?",
+        question: "Cottekill is close to your Saugerties facility — does that affect turnaround time?",
         answer: "Proximity helps with consultations and proofing, but production and postal entry are the same regardless of distance. What it does mean is that Cornerstone's team knows the Cottekill and Rondout Creek corridor intimately — we serve neighbors here, which informs how we think about your campaign targeting and messaging. Local knowledge is an advantage at this geographic scale."
       }
     ]
@@ -1458,7 +1458,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.plattekill.org/
   // - https://www.usps.com/ (ZIPs 12568, 12589)
   "plattekill": {
-    leadAnswer: "Plattekill is a southern Ulster County town in the Shawangunk foothills apple country along Route 44/55 — Cornerstone provides EDDM and direct mail for Plattekill's residential and agricultural households from our New Paltz facility, just minutes south.",
+    leadAnswer: "Plattekill is a southern Ulster County town in the Shawangunk foothills apple country along Route 44/55 — Cornerstone provides EDDM and direct mail for Plattekill's residential and agricultural households from our Saugerties facility.",
     metaTitle: "Direct Mail & Printing in Plattekill, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for Plattekill businesses — a growing residential and agricultural town in southeastern Ulster County along the Routes 32 and 208 corridor.",
     h1: "Direct Mail & Printing for Plattekill, NY Businesses",
@@ -1485,7 +1485,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.shawangunk.org/
   // - https://www.usps.com/ (ZIP 12589)
   "shawangunk": {
-    leadAnswer: "Shawangunk is a southern Ulster County town at the foot of the Shawangunk Ridge, encompassing residential and agricultural communities along the Route 208 corridor — Cornerstone provides EDDM and direct mail to Shawangunk's households from our New Paltz facility.",
+    leadAnswer: "Shawangunk is a southern Ulster County town at the foot of the Shawangunk Ridge, encompassing residential and agricultural communities along the Route 208 corridor — Cornerstone provides EDDM and direct mail to Shawangunk's households from our Saugerties facility.",
     metaTitle: "Direct Mail & Printing in Shawangunk, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for the Town of Shawangunk — covering Wallkill, Pine Bush, and the agricultural corridor of southern Ulster County along Routes 208 and 302.",
     h1: "Direct Mail & Printing for the Town of Shawangunk, NY",
@@ -1538,7 +1538,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://en.wikipedia.org/wiki/West_Hurley,_New_York
   // - https://www.usps.com/ (ZIP 12491)
   "west-hurley": {
-    leadAnswer: "West Hurley is a hamlet along Route 28 at the crossroads of the Kingston-to-Woodstock corridor, adjacent to the Ashokan Reservoir — Cornerstone provides direct mail and EDDM reaching West Hurley's households from our New Paltz facility.",
+    leadAnswer: "West Hurley is a hamlet along Route 28 at the crossroads of the Kingston-to-Woodstock corridor, adjacent to the Ashokan Reservoir — Cornerstone provides direct mail and EDDM reaching West Hurley's households from our Saugerties facility.",
     metaTitle: "Direct Mail & Printing in West Hurley, NY | Cornerstone Services",
     metaDescription: "EDDM and direct mail for West Hurley businesses — a hamlet near the Ashokan Reservoir between Kingston and Woodstock in Ulster County. Cornerstone serves the full mid-Ulster corridor.",
     h1: "Direct Mail & Printing for West Hurley, NY Businesses",
@@ -1565,7 +1565,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofmarbletown.org/
   // - https://www.usps.com/ (ZIP 12484)
   "stone-ridge": {
-    leadAnswer: "Stone Ridge is the civic and commercial center of the Town of Marbletown in southern Ulster County, surrounded by farmland, historic estates, and the Rondout Valley — Cornerstone provides EDDM and direct mail reaching Stone Ridge households from our New Paltz facility.",
+    leadAnswer: "Stone Ridge is the civic and commercial center of the Town of Marbletown in southern Ulster County, surrounded by farmland, historic estates, and the Rondout Valley — Cornerstone provides EDDM and direct mail reaching Stone Ridge households from our Saugerties facility.",
     metaTitle: "Direct Mail & Printing in Stone Ridge, NY | Cornerstone Services",
     metaDescription: "Direct mail and printing for Stone Ridge businesses — the Route 209 hamlet in Marbletown known for its restaurant scene, Hasbrouck House, and Stone Ridge Orchard.",
     h1: "Direct Mail & Printing for Stone Ridge, NY Businesses",
@@ -1635,7 +1635,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
         answer: "Connelly's 12417 ZIP is distinct from Kingston's 12401, so a Kingston EDDM campaign won't automatically cover Connelly households. Whether to add Connelly depends on whether your business serves that immediate riverside area. At roughly $200–$400 all-in for full 12417 saturation, adding Connelly to a Kingston campaign is inexpensive. For home service and local retail businesses along the Route 9W corridor, it's typically worth including."
       },
       {
-        question: "Does Cornerstone serve Connelly from the New Paltz facility?",
+        question: "Does Cornerstone serve Connelly from its Saugerties facility?",
         answer: "Yes. Connelly is approximately 15 miles from our New Paltz facility via Route 9W — within our standard service radius. We enter Connelly-bound EDDM at the Kingston USPS postal unit along with adjacent ZIP drops, so Connelly campaigns run on the same production and delivery schedule as Kingston campaigns. No additional logistics or timeline penalty for including Connelly in a multi-ZIP campaign."
       }
     ]
@@ -1646,7 +1646,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
   // - https://www.townofljlloyd.com/
   // - https://www.usps.com/ (ZIP 12528, covers Highland area)
   "lloyd": {
-    leadAnswer: "Lloyd is an Ulster County town encompassing the Highland hamlet and the Mid-Hudson Bridge corridor along Route 9W and Route 44 — Cornerstone provides EDDM and full direct mail campaigns reaching Lloyd's residential and commercial base from our New Paltz facility.",
+    leadAnswer: "Lloyd is an Ulster County town encompassing the Highland hamlet and the Mid-Hudson Bridge corridor along Route 9W and Route 44 — Cornerstone provides EDDM and full direct mail campaigns reaching Lloyd's residential and commercial base from our Saugerties facility.",
     metaTitle: "Direct Mail & Printing in Lloyd, NY | Cornerstone Services",
     metaDescription: "Direct mail and EDDM for the Town of Lloyd — covering Highland, Milton, and the western Hudson River communities of southern Ulster County near the Mid-Hudson Bridge.",
     h1: "Direct Mail & Printing for Lloyd, NY Businesses",
@@ -1689,7 +1689,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
         answer: "Tillson's 12486 ZIP is separate from New Paltz's 12561, so a New Paltz EDDM won't automatically cover Tillson. Whether to add it depends on your trade area — Tillson residents regularly use New Paltz services and businesses, so the answer for most New Paltz-based businesses is yes. At roughly $350–$550 all-in for full 12486 saturation, adding Tillson is an affordable extension. Cornerstone can add Tillson to a New Paltz campaign in the same production run."
       },
       {
-        question: "How close is Tillson to Cornerstone's New Paltz facility?",
+        question: "How close is Tillson to Cornerstone's Saugerties facility?",
         answer: "Approximately 4 miles via Route 213 — Tillson is one of the closest communities we serve outside of New Paltz itself. This doesn't change production timelines (mail still enters through the USPS postal network), but it means our team has strong local knowledge of Tillson and the Rondout Creek corridor that informs how we approach campaign targeting and messaging for businesses serving this area."
       }
     ]
@@ -2608,8 +2608,8 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
         answer: "Yes — ZIP 12566 covers areas in both Orange County (Crawford) and Ulster County (Shawangunk), making it one of the few ZIPs in the region that spans county boundaries. An EDDM campaign on 12566 automatically reaches households in both counties without any additional coordination. For businesses serving the full Pine Bush trade area, this cross-county reach is a natural advantage of the ZIP code geography."
       },
       {
-        question: "How does Cornerstone coordinate Pine Bush EDDM from its New Paltz facility in Ulster County?",
-        answer: "Our New Paltz facility is approximately 12 miles from Pine Bush via Route 208/302 — in the same postal area as the 12566 ZIP. We enter Pine Bush EDDM at the appropriate USPS postal unit and coordinate with the Crawford and Shawangunk carrier routes through standard EDDM procedures. The cross-county geography is transparent to the postal entry process."
+        question: "How does Cornerstone coordinate Pine Bush EDDM from its Saugerties facility?",
+        answer: "Our Saugerties facility is approximately 20 miles from Pine Bush via Route 32/208 — in the same postal area as the 12566 ZIP. We enter Pine Bush EDDM at the appropriate USPS postal unit and coordinate with the Crawford and Shawangunk carrier routes through standard EDDM procedures. The cross-county geography is transparent to the postal entry process."
       }
     ]
   },

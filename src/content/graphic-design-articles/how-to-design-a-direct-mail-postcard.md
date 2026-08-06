@@ -5,7 +5,7 @@ pubDate: 2026-04-09
 updatedDate: 2026-04-09
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
-authorLocation: "New Paltz, NY"
+authorLocation: "Saugerties, NY"
 primaryKeyword: "direct mail design"
 pillar: "https://crst.net/services/graphic-design"
 schemaFAQ:

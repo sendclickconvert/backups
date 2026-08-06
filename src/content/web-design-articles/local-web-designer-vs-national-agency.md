@@ -5,7 +5,7 @@ pubDate: 2026-04-09
 updatedDate: 2026-04-09
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
-authorLocation: "New Paltz, NY"
+authorLocation: "Saugerties, NY"
 primaryKeyword: "web design"
 pillar: "https://crst.net/services/web-design"
 schemaFAQ:
@@ -124,4 +124,4 @@ The answers to these questions will tell you more about the designer's suitabili
 
 For Hudson Valley businesses, the ideal web designer understands local search dynamics, has experience building sites that generate measurable leads, and communicates directly without layers of account management overhead. That combination is most commonly found with experienced local designers and small regional agencies — not because national firms are incapable, but because the economics and incentives align differently at the local level.
 
-At Cornerstone Services in New Paltz, we've been serving Hudson Valley businesses since 1998. Our [web design services](/services/web-design) are built around local search performance alongside the direct mail campaigns many of our clients use. Call [(845) 255-5722](tel:8452555722) or [contact us](/estimate) to discuss a website project.
+At Cornerstone Services in Saugerties, NY, we've been serving Hudson Valley businesses since 1998. Our [web design services](/services/web-design) are built around local search performance alongside the direct mail campaigns many of our clients use. Call [(845) 255-5722](tel:8452555722) or [contact us](/estimate) to discuss a website project.

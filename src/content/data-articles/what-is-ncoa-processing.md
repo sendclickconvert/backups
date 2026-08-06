@@ -5,7 +5,7 @@ pubDate: 2026-04-09
 updatedDate: 2026-04-09
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
-authorLocation: "New Paltz, NY"
+authorLocation: "Saugerties, NY"
 primaryKeyword: "NCOA processing direct mail"
 pillar: "https://crst.net/services/data-lists"
 schemaFAQ:
@@ -155,4 +155,4 @@ NCOA updates addresses for people who moved. CASS (Coding Accuracy Support Syste
 
 Records with no NCOA match (code 91) remain in the list at their original address. A no-match does not mean the person moved — most no-matches are people who still live at the original address and never filed a change-of-address request. The records are treated as deliverable unless CASS processing separately identifies them as non-existent addresses.
 
-Ready to mail with a clean, NCOA-processed list? [Request a free estimate](/estimate) from Cornerstone Services in New Paltz, NY — we process NCOA on every mailing, included in the base service price.
+Ready to mail with a clean, NCOA-processed list? [Request a free estimate](/estimate) from Cornerstone Services in Saugerties, NY — we process NCOA on every mailing, included in the base service price.

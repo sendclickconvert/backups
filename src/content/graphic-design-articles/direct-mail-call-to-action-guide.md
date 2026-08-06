@@ -5,7 +5,7 @@ pubDate: 2026-04-09
 updatedDate: 2026-04-09
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
-authorLocation: "New Paltz, NY"
+authorLocation: "Saugerties, NY"
 primaryKeyword: "direct mail design"
 pillar: "https://crst.net/services/graphic-design"
 schemaFAQ:
@@ -139,4 +139,4 @@ The general rule is one primary CTA per piece. But there are situations where mu
 
 The distinction matters because repetition of the same CTA in multiple locations increases response, while presentation of competing CTAs in the same location decreases it. Repeat one action; don't present multiple actions as equals.
 
-For direct mail design with CTA structure built in from the start, call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate). We serve businesses throughout the Hudson Valley from our New Paltz location at 31 S Ohioville Rd.
+For direct mail design with CTA structure built in from the start, call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate). We serve businesses throughout the Hudson Valley from our Saugerties facility at 387 Malden Turnpike.

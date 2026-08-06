@@ -5,7 +5,7 @@ pubDate: 2026-04-01
 updatedDate: 2026-04-01
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
-authorLocation: "New Paltz, NY"
+authorLocation: "Saugerties, NY"
 primaryKeyword: "direct mail response rates"
 pillar: "https://crst.net/services/direct-mail"
 schemaFAQ:

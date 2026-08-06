@@ -5,7 +5,7 @@ pubDate: 2026-04-09
 updatedDate: 2026-05-07
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
-authorLocation: "New Paltz, NY"
+authorLocation: "Saugerties, NY"
 primaryKeyword: "eddm sizes"
 pillar: "https://crst.net/services/eddm"
 schemaFAQ:

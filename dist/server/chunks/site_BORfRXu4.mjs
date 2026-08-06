@@ -7,11 +7,11 @@ const BUSINESS = {
   altPhoneClean: "8453936770",
   email: "info@crst.net",
   address: {
-    street: "31 South Ohioville Road",
-    city: "New Paltz",
+    street: "387 Malden Turnpike",
+    city: "Saugerties",
     state: "NY",
-    zip: "12561",
-    full: "31 South Ohioville Road, New Paltz, NY 12561"
+    zip: "12477",
+    full: "387 Malden Turnpike, Saugerties, NY 12477"
   },
   owner: "Sean Griffin",
   url: "https://crst.net",

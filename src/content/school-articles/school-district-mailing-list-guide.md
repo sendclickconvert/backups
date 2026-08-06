@@ -5,7 +5,7 @@ pubDate: 2026-04-09
 updatedDate: 2026-04-09
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
-authorLocation: "New Paltz, NY"
+authorLocation: "Saugerties, NY"
 primaryKeyword: "school district direct mail"
 pillar: "https://crst.net/services/school-district-direct-mail"
 schemaFAQ:
@@ -153,4 +153,4 @@ When a school district engages a mail house like Cornerstone for budget vote mai
 
 The entire process — from data receipt to USPS drop — typically takes 7–10 business days for a standard budget vote mailing. Districts that provide clean data and approved designs earlier in the process benefit from more flexible scheduling and lower rush charges.
 
-For school district mailing list management and campaign production, call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate). We serve school districts throughout Ulster, Dutchess, and Orange counties from our New Paltz facility at 31 S Ohioville Rd.
+For school district mailing list management and campaign production, call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate). We serve school districts throughout Ulster, Dutchess, and Orange counties from our Saugerties facility at 387 Malden Turnpike.

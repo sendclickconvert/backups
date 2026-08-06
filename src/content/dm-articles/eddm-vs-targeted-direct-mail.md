@@ -5,7 +5,7 @@ pubDate: 2026-04-01
 updatedDate: 2026-05-07
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
-authorLocation: "New Paltz, NY"
+authorLocation: "Saugerties, NY"
 primaryKeyword: "eddm vs targeted direct mail"
 pillar: "https://crst.net/services/direct-mail"
 schemaFAQ:
