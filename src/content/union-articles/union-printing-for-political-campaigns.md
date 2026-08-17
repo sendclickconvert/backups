@@ -81,7 +81,7 @@ We provide union-label printing for Hudson Valley political campaigns including:
 
 - **Postcards (5.5x8.5, 6x9, EDDM format):** The most common format for broad voter outreach, with union bug and paid-for-by imprint
 - **Canvass walk sheets and door hangers:** Distributed by volunteers, typically not mailed
-- **Fundraising letters:** Letter packages (outer envelope, letter, reply card, return envelope) for donor solicitation
+- **Fundraising letters:** [Letter packages](/shop/up-letter) (outer envelope, letter, reply card, return envelope) for donor solicitation
 - **Vote-by-mail and absentee voter outreach pieces:** Specific to get-out-the-vote operations
 
 Each piece is printed with union-label certification. We coordinate with your campaign's mail house for presort and USPS drop, or handle mailing in-house for campaigns that prefer one vendor for the full print-through-mail sequence.
@@ -112,7 +112,7 @@ Most successful campaign mail programs involve 3–5 mail pieces in a planned se
 
 **Piece 4 (10–14 days out): Contrast/comparison.** For competitive races, a contrast piece that compares the candidate's record or positions to the opponent's. This piece must be factual — verifiable claims only — and must include the legally required paid-for-by attribution.
 
-**Piece 5 (5–7 days out): GOTV (Get Out The Vote).** A simple, urgent reminder to vote. Date, polling location, hours. Often a smaller postcard format to keep cost low. Sent to high-propensity supporters identified through the campaign's voter contact program.
+**Piece 5 (5–7 days out): GOTV (Get Out The Vote).** A simple, urgent reminder to vote. Date, polling location, hours. Often a [smaller postcard format](/shop/up-postcard) to keep cost low. Sent to high-propensity supporters identified through the campaign's voter contact program.
 
 Each piece in the sequence is printed with the union bug when the campaign is pursuing or holding a labor endorsement. The consistency reinforces the labor message across the entire campaign mail program.
 

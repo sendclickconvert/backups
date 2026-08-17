@@ -103,7 +103,7 @@ For larger formats, heavier stocks, special coatings, or complex folds, we quote
 
 Use a brochure when the buyer needs more information before committing. Service businesses with multiple offerings, complex pricing, or a process that requires explanation benefit from the brochure format. The prospect who needs to understand how your service works, what they get, and why you're different before calling is the brochure reader.
 
-Use a postcard when you need the reader to act immediately on a specific offer. The 3-second decision that drives direct mail response rates is a postcard job, not a brochure job.
+Use a postcard when you need the reader to act immediately on a specific offer. The 3-second decision that drives direct mail response rates is a postcard job, not a [brochure](/shop/brochure) job.
 
 The strongest direct mail packages often combine both: an EDDM or targeted postcard with a strong offer drives calls; a brochure inserted in the response kit or handed over at the first appointment reinforces the brand and service detail.
 

@@ -181,7 +181,7 @@ Postcards are not always the right choice. Here is how they compare to other for
 
 **Postcards vs self-mailers:** Self-mailers (folded pieces with tab seals) provide more content space than postcards without the cost of an envelope. They work well for newsletters, multi-product promotions, and nonprofit updates. Postcards are simpler, cheaper, and have higher immediate visibility.
 
-**When postcards are the clear winner:** Local service businesses, restaurants, retail promotions, real estate farming, seasonal offers, grand openings, and any campaign where visual impact and cost efficiency are the top priorities.
+**When [postcards](/shop/postcard) are the clear winner:** Local service businesses, restaurants, retail promotions, real estate farming, seasonal offers, grand openings, and any campaign where visual impact and cost efficiency are the top priorities.
 
 ## Frequently Asked Questions
 
