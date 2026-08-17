@@ -189,7 +189,7 @@ export default defineConfig({
 
     // --- Shop handle renames (underscore → hyphen) ---
     '/shop/raffle_ticket': '/shop/raffle-ticket',
-    '/shop/simple_mail_package': '/shop/simple-mailing-package',
+    '/shop/simple_mail_package': '/shop/simple-mail-package',
     '/shop/presentation_folder': '/shop/presentation-folder',
   },
 });
