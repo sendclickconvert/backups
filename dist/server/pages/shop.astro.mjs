@@ -5,9 +5,9 @@ import { $ as $$BaseLayout } from '../chunks/BaseLayout_B4gpCp1X.mjs';
 import { s as storefrontFetch, A as ALL_PRODUCTS_QUERY } from '../chunks/shopify_Ck_Dc9c6.mjs';
 export { renderers } from '../renderers.mjs';
 
-const prerender = false;
+const prerender = true;
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
-  const token = process.env.SHOPIFY_STOREFRONT_TOKEN;
+  const token = process.env.SHOPIFY_STOREFRONT_TOKEN ?? process.env.SHOPIFY_STOREFRONT_TOKEN;
   let products = [];
   let fetchError = "";
   if (!token) {

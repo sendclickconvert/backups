@@ -1,1 +1,121 @@
-// Contents removed by Astro as it's used for prerendering only
+/* empty css                                     */
+import { g as createComponent, j as renderComponent, r as renderTemplate, k as Fragment, u as unescapeHTML, m as maybeRenderHead, i as addAttribute } from '../../chunks/astro/server_CTVANr5S.mjs';
+import 'kleur/colors';
+import { $ as $$BaseLayout } from '../../chunks/BaseLayout_B4gpCp1X.mjs';
+import { $ as $$PageHero } from '../../chunks/PageHero_DTn0WEdl.mjs';
+import { $ as $$CTASection } from '../../chunks/CTASection_CpJqys7-.mjs';
+import { $ as $$CaseStudyCallout } from '../../chunks/CaseStudyCallout_KvOZC1Gd.mjs';
+import { $ as $$AuthorByline } from '../../chunks/AuthorByline_DNWN2IXS.mjs';
+import { B as BUSINESS, C as COUNTIES } from '../../chunks/site_BORfRXu4.mjs';
+import { g as getCollection } from '../../chunks/_astro_content_DiiJMhjs.mjs';
+export { renderers } from '../../renderers.mjs';
+
+var __freeze = Object.freeze;
+var __defProp = Object.defineProperty;
+var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(cooked.slice()) }));
+var _a;
+const $$GraphicDesign = createComponent(async ($$result, $$props, $$slots) => {
+  const clusterArticles = await getCollection("graphic-design-articles");
+  const gdesignFaqs = [
+    { q: "Do you design for print and mail at the same time?", a: "Yes. Every piece we design is built with printing and mailing in mind from the start. That means correct bleed, USPS-compliant clear zones for addressing, aspect ratios that qualify for automation postage, and file specs that work on press without additional prep." },
+    { q: "What formats do you provide when design is complete?", a: "We provide press-ready PDFs with embedded fonts, 300 DPI images, and appropriate bleed. If you are printing elsewhere, we can provide print-ready files. If you are printing with us, files move directly into the production queue." },
+    { q: "Can I supply my own content and copy?", a: "Yes. Most clients supply copy, logos, and any images or photos they want included. We handle layout, typography, and design. If you need copywriting or photography, we can connect you with resources we have worked with on past projects." },
+    { q: "How many revisions are included?", a: "We include two rounds of revisions in our standard design work. Additional rounds are available at an hourly rate. In our experience, most projects are approved within two rounds when the client provides clear direction upfront." },
+    { q: "How long does design take?", a: "A standard postcard or self-mailer takes 3\u20135 business days for initial proof after we receive all materials. Complex multi-page pieces or campaigns with multiple versions take longer. Rush design is available for time-sensitive campaigns." },
+    { q: "Do you design for digital channels too?", a: "Our design focus is direct mail and print. We do not build websites or create social media graphics as a primary service. If you need a coordinated digital component to match your mail campaign, we can discuss options." }
+  ];
+  const graphSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        name: "Graphic Design Services for Direct Mail",
+        provider: { "@id": "https://crst.net/#organization" },
+        areaServed: [
+          { "@type": "County", name: "Ulster County, New York" },
+          { "@type": "County", name: "Dutchess County, New York" },
+          { "@type": "County", name: "Orange County, New York" }
+        ],
+        url: "https://crst.net/services/graphic-design"
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: gdesignFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.q,
+          acceptedAnswer: { "@type": "Answer", text: faq.a }
+        }))
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://crst.net" },
+          { "@type": "ListItem", position: 2, name: "Services", item: "https://crst.net/services" },
+          { "@type": "ListItem", position: 3, name: "Graphic Design", item: "https://crst.net/services/graphic-design" }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://crst.net/services/graphic-design",
+        name: "Graphic Design for Direct Mail & Print",
+        url: "https://crst.net/services/graphic-design",
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: ["h1", "h2"]
+        }
+      }
+    ]
+  };
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": "Graphic Design for Direct Mail & Print", "description": "In-house graphic design for direct mail pieces \u2014 postcards, brochures, letters, and self-mailers. Designed to USPS specs. Saugerties, NY.", "schema": null }, { "default": async ($$result2) => renderTemplate`  ${renderComponent($$result2, "PageHero", $$PageHero, { "title": "Graphic Design for Direct Mail", "subtitle": "We design mail pieces that meet USPS specs and get responses. Postcards, brochures, letters, self-mailers \u2014 designed and printed under one roof.", "breadcrumbs": [
+    { label: "Services", href: "/services" },
+    { label: "Graphic Design" }
+  ], "noSchema": true })} ${maybeRenderHead()}<section class="py-14 lg:py-20"> <div class="container-wide"> <div class="grid lg:grid-cols-3 gap-10 lg:gap-14"> <div class="lg:col-span-2"> <div class="section-divider mb-6"></div> <h2 class="text-2xl font-display text-crst-primary mb-4">Mail Piece Design That Meets USPS Standards</h2> <p class="text-navy-600/80 leading-relaxed mb-6">
+Our design team builds direct mail pieces from scratch or works from your existing brand assets. Every design accounts for USPS automation requirements — barcode clear zones, address placement, return address positioning, and size specifications. That matters because a mail piece that doesn't meet USPS specs gets surcharged or rejected at the post office. We design postcards, tri-fold brochures, #10 letter packages, self-mailers, newsletters, and flyers. Most designs go from first draft to approved proof in 3–5 business days.
+</p> <p class="text-navy-600/80 leading-relaxed mb-6">
+Every direct mail piece has two jobs: meet USPS requirements and get the recipient to act. The USPS side is technical — indicia placement, barcode clear zones, aspect ratios, minimum thickness, tab requirements for self-mailers. We build those specs into every template before the creative work starts. The marketing side is about layout, copy hierarchy, call-to-action placement, and readability. We handle both. You get a proof that's print-ready and mail-ready. In-house design team in Saugerties — we design for the press and the post office.
+</p> <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">What We Design</h3> <div class="grid sm:grid-cols-2 gap-3"> ${[
+    { title: "Postcards", desc: "High-impact designs for standard, oversized, and jumbo formats" },
+    { title: "Self-Mailers", desc: "Bi-fold and tri-fold pieces with proper tab placement and postal panels" },
+    { title: "Letters & Inserts", desc: "Professional letterhead, reply cards, donation forms, and envelope designs" },
+    { title: "Newsletters", desc: "Multi-page layouts for municipal, church, and organizational newsletters" },
+    { title: "Menus & Flyers", desc: "Restaurant menus, event flyers, and promotional materials" },
+    { title: "Branding & Identity", desc: "Logos, business cards, letterheads, and style guides for consistent branding" }
+  ].map((item) => renderTemplate`<div class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg"> <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> <div> <div class="font-heading font-semibold text-navy-800 text-sm">${item.title}</div> <div class="text-xs text-navy-600/60">${item.desc}</div> </div> </div>`)} </div> <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">Our Design Process</h3> <div class="space-y-6"> ${[
+    { step: "1", title: "Creative Brief", desc: "We start with your goals, audience, and brand. What do you want the recipient to do? Who are they? What does your brand look like? This shapes every design decision." },
+    { step: "2", title: "Concept & Layout", desc: "Our designers create initial layout concepts based on your brief. We focus on visual hierarchy, readability, and clear calls to action \u2014 while ensuring all USPS requirements are built into the design from the start." },
+    { step: "3", title: "Revisions & Approval", desc: "You review the design and provide feedback. We include two rounds of revisions in our standard design fee. Once approved, the files are prepared for print production." },
+    { step: "4", title: "Print-Ready Files", desc: "Your approved design is output as print-ready files with proper bleed, color settings, and resolution \u2014 ready to move directly into our printing department." }
+  ].map((item) => renderTemplate`<div class="flex items-start gap-4"> <div class="shrink-0 w-9 h-9 rounded-full bg-crst-primary flex items-center justify-center text-white font-heading font-bold text-sm"> ${item.step} </div> <div> <h4 class="font-heading font-bold text-navy-800 mb-1">${item.title}</h4> <p class="text-sm text-navy-600/70 leading-relaxed">${item.desc}</p> </div> </div>`)} </div> <div class="bg-crst-primary/5 border border-crst-primary/15 rounded-xl p-6 mt-10 text-center"> <p class="font-heading font-bold text-crst-primary text-lg mb-2">Need a Mail Piece Designed?</p> <p class="text-navy-600/70 text-sm mb-4">Send us your content and ideas — we'll create a design that works in the mailbox.</p> <div class="flex flex-col sm:flex-row items-center justify-center gap-3"> <a href="/estimate" class="btn-primary text-sm">Get a Free Estimate</a> <a${addAttribute(`tel:${BUSINESS.phoneClean}`, "href")} class="inline-flex items-center gap-2 text-sm font-heading font-semibold text-crst-primary hover:text-crst-accent transition-colors"> <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+Call ${BUSINESS.phone} </a> </div> </div> <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">USPS Compliance Built In</h3> <p class="text-navy-600/80 leading-relaxed mb-4">
+Every mail piece has specific USPS requirements for address block placement, barcode clear zones, return address location, and postal indicia. Non-compliant pieces can be rejected by the USPS or lose their automation rate qualification — costing you time and money. Our designers know these rules and build compliance into every layout from the start, so you never have to worry about it.
+</p> <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">USPS Design Templates</h3> <p class="text-navy-600/80 leading-relaxed mb-4">
+Want to design your own mail piece? Download our free USPS-compliant design templates with pre-set address panels, barcode zones, and bleed guides. Available for all standard mail piece sizes in Adobe InDesign and PDF formats. Visit our <a href="/usps-direct-mailer-templates" class="text-crst-accent hover:text-crst-primary underline">USPS templates page</a> to download.
+</p> </div> <!-- Sidebar --> <div class="lg:col-span-1"> <div class="sticky top-24 space-y-5"> <div class="bg-crst-primary rounded-xl p-6 text-white"> <h3 class="font-display text-lg mb-2">Need Design Help?</h3> <p class="text-white/60 text-sm leading-relaxed mb-4">
+Send us your content and ideas — we'll create a design that works in the mailbox and represents your brand.
+</p> <a href="/estimate" class="btn-accent w-full text-center text-sm">
+Request Design Quote
+</a> <div class="mt-4 pt-4 border-t border-white/10 text-center"> <a${addAttribute(`tel:${BUSINESS.phoneClean}`, "href")} class="text-white/70 text-sm font-heading hover:text-white transition-colors">
+or call ${BUSINESS.phone} </a> </div> </div> <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100"> <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Related Services</h3> <div class="space-y-2"> ${[
+    { label: "Direct Mail Campaigns", href: "/services/direct-mail" },
+    { label: "Printing Services", href: "/services/printing" },
+    { label: "Web Design", href: "/services/web-design" },
+    { label: "EDDM", href: "/services/eddm" }
+  ].map((link) => renderTemplate`<a${addAttribute(link.href, "href")} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-white rounded-md transition-colors font-heading"> ${link.label} <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg> </a>`)} </div> </div> <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100"> <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Design Tips</h3> <div class="space-y-3 text-sm text-navy-600/70"> <p>Include <strong class="text-navy-800">one clear call to action</strong> — don't make the reader guess what to do next.</p> <p>Use <strong class="text-navy-800">high-contrast colors</strong> for headlines and CTAs to grab attention.</p> <p>Keep body text <strong class="text-navy-800">10pt or larger</strong> for readability.</p> </div> </div> </div> </div> </div> </div> </section> <section class="py-14 bg-navy-50/30"> <div class="container-wide"> <div class="section-divider mb-6"></div> <h2 class="text-2xl font-display text-crst-primary mb-3">Recent Campaigns</h2> <p class="text-navy-600/80 leading-relaxed mb-6">We've designed direct mail creative for healthcare, insurance, retail, and more. A few recent examples:</p> <div class="grid sm:grid-cols-3 gap-5"> ${renderComponent($$result2, "CaseStudyCallout", $$CaseStudyCallout, { "href": "/case-studies/niche-insurance", "client": "Tango Insurance \u2014 Nassau County, NY", "summary": "We designed a 6\xD79 First-Class postcard for a homeowner-targeted insurance campaign \u2014 built to appeal to a 45+ demographic with a low-commitment offer. The creative contributed to above-average response rates for insurance direct mail.", "anchor": "graphic design for an insurance direct mail campaign" })} ${renderComponent($$result2, "CaseStudyCallout", $$CaseStudyCallout, { "href": "/case-studies/lawrence-hearing", "client": "Lawrence Hearing \u2014 Orange County, NY", "summary": "We designed a multi-round direct mail series for an audiology practice reaching adults with untreated hearing loss \u2014 visually accessible, appropriately credentialed, and crafted to prompt action.", "anchor": "healthcare direct mail design for an audiology practice" })} ${renderComponent($$result2, "CaseStudyCallout", $$CaseStudyCallout, { "href": "/case-studies/retail-furniture-store", "client": "Hudson Valley Furniture Retailer", "summary": "We designed EDDM postcard creative for a furniture retailer's seasonal clearance event \u2014 produced to USPS flat-size specifications and targeted to every homeowner within driving distance of the showroom.", "anchor": "EDDM postcard design for a Hudson Valley retailer" })} </div> </div> </section> <section class="py-14 lg:py-20 bg-white"> <div class="container-wide max-w-3xl mx-auto"> <h2 class="text-2xl font-display text-crst-primary mb-6">Graphic Design FAQ</h2> <div class="space-y-4"> ${gdesignFaqs.map((item) => renderTemplate`<div class="bg-navy-50/40 rounded-xl border border-navy-100 p-5"> <h3 class="font-heading font-semibold text-navy-800 text-sm mb-2">${item.q}</h3> <p class="text-sm text-navy-600/70 leading-relaxed">${item.a}</p> </div>`)} </div> </div> </section> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8"> ${renderComponent($$result2, "AuthorByline", $$AuthorByline, {})} </div> <section class="py-10 bg-crst-primary/5 border-y border-crst-primary/10"> <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"> <h3 class="text-xl font-display font-bold text-crst-primary mb-3">Need a Mail Piece Designed?</h3> <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Send us your content and ideas — we'll create a design that works in the mailbox.</p> <div class="flex flex-col sm:flex-row items-center justify-center gap-4"> <a${addAttribute(`tel:${BUSINESS.phoneClean}`, "href")} class="btn-primary inline-flex items-center gap-2"> <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+Call ${BUSINESS.phone} </a> <a href="/estimate" class="btn-accent inline-flex items-center gap-2">
+Get a Free Estimate
+<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg> </a> </div> </div> </section> <section class="py-14 bg-navy-50/50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="text-center mb-8"> <h2 class="text-2xl font-display font-bold text-crst-primary">Service Areas</h2> <p class="text-gray-600 mt-2">We serve businesses and organizations across three Hudson Valley counties.</p> </div> <div class="grid sm:grid-cols-3 gap-4 max-w-3xl mx-auto"> ${Object.values(COUNTIES).map((county) => renderTemplate`<a${addAttribute(`/service-areas/${county.slug}`, "href")} class="flex items-center justify-center gap-2 p-4 bg-white rounded-lg border border-gray-200 hover:border-crst-primary/30 hover:shadow-sm transition-all group"> <svg class="w-5 h-5 text-crst-primary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"> <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path> <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path> </svg> <span class="font-heading font-semibold text-gray-800 group-hover:text-crst-primary transition-colors">${county.name}</span> </a>`)} </div> </div> </section> <section class="py-16 bg-white"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="text-center mb-10"> <h2 class="text-2xl font-display font-bold text-crst-primary mb-3">Graphic Design Guides &amp; Resources</h2> <p class="text-navy-600/70 max-w-2xl mx-auto">In-depth guides on postcard design, direct mail design best practices, brochure layout, call-to-action copy, and EDDM design compliance — written by Sean Griffin, MDP, owner of Cornerstone Services since 1998.</p> </div> <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"> ${clusterArticles.map((a) => renderTemplate`<a${addAttribute(`/services/graphic-design/${a.slug}`, "href")} class="block p-5 bg-navy-50/40 rounded-xl border border-navy-100 hover:border-crst-primary/30 hover:shadow-sm transition-all group"> <h3 class="font-heading font-semibold text-navy-800 text-sm group-hover:text-crst-primary transition-colors leading-snug mb-2">${a.data.title}</h3> <p class="text-xs text-navy-600/60 line-clamp-2 leading-relaxed">${a.data.description}</p> </a>`)} </div> </div> </section> ${renderComponent($$result2, "CTASection", $$CTASection, {})} `, "head": async ($$result2) => renderTemplate`${renderComponent($$result2, "Fragment", Fragment, { "slot": "head" }, { "default": async ($$result3) => renderTemplate(_a || (_a = __template([' <script type="application/ld+json">', "<\/script> "])), unescapeHTML(JSON.stringify(graphSchema))) })}` })}`;
+}, "/home/runner/workspace/src/pages/services/graphic-design.astro", void 0);
+
+const $$file = "/home/runner/workspace/src/pages/services/graphic-design.astro";
+const $$url = "/services/graphic-design";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$GraphicDesign,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

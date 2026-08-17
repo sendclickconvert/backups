@@ -1,1 +1,3 @@
-// Contents removed by Astro as it's used for prerendering only
+const _astro_assetImports = new Map();
+
+export { _astro_assetImports as default };

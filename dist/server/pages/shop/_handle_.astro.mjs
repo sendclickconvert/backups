@@ -4,7 +4,7 @@ import 'kleur/colors';
 import { $ as $$BaseLayout } from '../../chunks/BaseLayout_B4gpCp1X.mjs';
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { useState, useCallback } from 'react';
-import { s as storefrontFetch, P as PRODUCT_BY_HANDLE_QUERY, a as PRODUCT_VARIANTS_PAGE_QUERY } from '../../chunks/shopify_Ck_Dc9c6.mjs';
+import { s as storefrontFetch, P as PRODUCT_BY_HANDLE_QUERY, a as PRODUCT_VARIANTS_PAGE_QUERY, A as ALL_PRODUCTS_QUERY } from '../../chunks/shopify_Ck_Dc9c6.mjs';
 export { renderers } from '../../renderers.mjs';
 
 function formatPrice(amount, currency) {
@@ -237,7 +237,17 @@ function ProductSelector({ product, placeholderSrc }) {
 }
 
 const $$Astro = createAstro("https://crst.net");
-const prerender = false;
+const prerender = true;
+async function getStaticPaths() {
+  const token = process.env.SHOPIFY_STOREFRONT_TOKEN ?? process.env.SHOPIFY_STOREFRONT_TOKEN;
+  if (!token) return [];
+  const data = await storefrontFetch(
+    ALL_PRODUCTS_QUERY,
+    {},
+    token
+  );
+  return data.products.edges.map((e) => ({ params: { handle: e.node.handle } }));
+}
 const $$handle = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$handle;
@@ -247,7 +257,7 @@ const $$handle = createComponent(async ($$result, $$props, $$slots) => {
     "magnet-postcard": "/images/shop/magnet-postcard-placeholder.png"
   };
   const placeholderSrc = PRODUCT_PLACEHOLDERS[handle] ?? null;
-  const token = process.env.SHOPIFY_STOREFRONT_TOKEN;
+  const token = process.env.SHOPIFY_STOREFRONT_TOKEN ?? process.env.SHOPIFY_STOREFRONT_TOKEN;
   let productData = null;
   let fetchError = "";
   if (!token) {
@@ -260,9 +270,6 @@ const $$handle = createComponent(async ($$result, $$props, $$slots) => {
         token
       );
       const raw = data.productByHandle;
-      if (!raw) {
-        return Astro2.redirect("/shop", 302);
-      }
       const allVariants = raw.variants.edges.map((e) => e.node);
       let pageInfo = raw.variants.pageInfo;
       while (pageInfo.hasNextPage) {
@@ -297,6 +304,7 @@ const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   default: $$handle,
   file: $$file,
+  getStaticPaths,
   prerender,
   url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));

@@ -1,1 +1,243 @@
-// Contents removed by Astro as it's used for prerendering only
+/* empty css                                     */
+import { g as createComponent, j as renderComponent, r as renderTemplate, k as Fragment, u as unescapeHTML, m as maybeRenderHead, i as addAttribute } from '../../chunks/astro/server_CTVANr5S.mjs';
+import 'kleur/colors';
+import { $ as $$BaseLayout } from '../../chunks/BaseLayout_B4gpCp1X.mjs';
+import { $ as $$PageHero } from '../../chunks/PageHero_DTn0WEdl.mjs';
+import { $ as $$CTASection } from '../../chunks/CTASection_CpJqys7-.mjs';
+export { renderers } from '../../renderers.mjs';
+
+const LETTER_SPEC = {
+  height: { min: 3.5, max: 6.125 },
+  // inches — DMM 101.1.2
+  length: { min: 5, max: 11.5 },
+  // inches — DMM 101.1.2
+  thickness: { min: 7e-3, max: 0.25 },
+  // inches — DMM 101.1.2
+  aspectRatio: { min: 1.3, max: 2.5 },
+  // L÷H   — DMM 101.1.2
+  maxWeightOz: 3.5
+  // oz     — DMM 101.1.2
+};
+const POSTCARD_SPEC = {
+  height: { min: 3.5, max: 4.25 },
+  // inches — DMM 101.1.2
+  length: { min: 5, max: 6 },
+  // inches — DMM 101.1.2
+  thickness: { min: 7e-3, max: 0.016 }
+  // inches — DMM 101.1.2
+};
+const ZONES = {
+  // ── OCR Read Area ────────────────────────────────────────────────────────
+  // Delivery address MUST be placed entirely within this zone.
+  // Source: Publication 25, Section 2 / DMM 202.3.2 / Notice 67 template.
+  ocrReadArea: {
+    fromBottomEdge: 0.625,
+    // confirmed — Publication 25 §2, DMM 202.3
+    toBottomEdge: 2.75,
+    // approximate — measured from Notice 67 template;
+    // DMM 202.3 references "address area" but does not
+    // give a single universal upper bound for all sizes.
+    fromLeftEdge: 0.5},
+  // ── Barcode Clear Zone ───────────────────────────────────────────────────
+  // This strip must be clear of all printing EXCEPT the Intelligent Mail Barcode (IMb).
+  // The IMb is placed here by Cornerstone / the mail house — designers must keep it clear.
+  // Source: DMM 202.5 / Publication 25, §2.4
+  barcodeZone: {
+    fromBottomEdge: 0,
+    // starts at bottom edge — confirmed
+    toBottomEdge: 0.625,
+    // 5/8″ up — confirmed, DMM 202.5
+    fromRightEdge: 0.5,
+    // right-edge boundary — confirmed, DMM 202.5.1
+    extentFromRight: 4.75},
+  // ── FIM (Facing Identification Mark) location ────────────────────────────
+  // FIM pattern is printed by the mail house. Designers must reserve this area.
+  // Source: DMM 202.4.1
+  fim: {
+    fromTopEdge: 0.125,
+    // 1/8″ — confirmed, DMM 202.4.1
+    height: 0.5,
+    // approximate — FIM bar field is nominally 1/2″ tall
+    fromRightEdge: 0.5,
+    // confirmed start point — DMM 202.4.1
+    width: 1.25}};
+
+var __freeze = Object.freeze;
+var __defProp = Object.defineProperty;
+var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(cooked.slice()) }));
+var _a;
+const $$UspsNotice67 = createComponent(($$result, $$props, $$slots) => {
+  const canonical = "https://crst.net/direct-mail-tools/usps-notice-67";
+  const lastUpdated = "2026-06-25";
+  const lastUpdatedDisplay = "June 2026";
+  const faqs = [
+    {
+      q: "What is USPS Notice 67?",
+      a: "USPS Notice 67 is a physical plastic overlay gauge that mailers, printers, and graphic designers use to verify that a letter-size mailpiece meets USPS automation compatibility standards. It overlays on the piece and shows the four critical zones: the OCR read area (where the delivery address must be placed), the barcode clear zone (reserved for the Intelligent Mail Barcode), the FIM location (Facing Identification Mark, used by mail processing equipment), and character/size gauges for font height compliance. Notice 67 is distributed by USPS Business Mail Entry Units (BMEUs) at no charge."
+    },
+    {
+      q: "What are the minimum and maximum sizes for a USPS letter?",
+      a: `A USPS letter must be at least 3.5" tall and 5" long (minimum), and no more than 6.125" tall and 11.5" long (maximum). Thickness must be between 0.007" and 0.25". The aspect ratio \u2014 length divided by height \u2014 must fall between 1.3 and 2.5. Pieces outside these dimensions are either non-machinable (subject to a surcharge) or classified as flats. All standards are sourced from DMM 101.1.2.`
+    },
+    {
+      q: "What is the OCR read area on a letter-size mailpiece?",
+      a: 'The OCR (Optical Character Recognition) read area is the zone on the address side of the piece where the delivery address must be placed for USPS automation equipment to scan it. It runs from 5/8" above the bottom edge of the piece to approximately 2.75" from the bottom, and from 1/2" from each side edge. Placing the delivery address outside this zone \u2014 too high, too far left, or too close to the bottom \u2014 causes the piece to miss automation scans and may result in manual handling surcharges or delivery delays.'
+    },
+    {
+      q: "What is the barcode clear zone?",
+      a: `The barcode clear zone is the strip along the bottom-right of the mailpiece where the USPS Intelligent Mail Barcode (IMb) is printed \u2014 either by the mailer's mail house or by USPS processing equipment. This zone must be clear of all background printing, photos, and design elements except the barcode itself. The clear zone runs approximately 5/8" up from the bottom edge across 4.75" from the right edge. Printing over the barcode zone is one of the most common reasons pieces fail automation sorting.`
+    },
+    {
+      q: "What is a FIM pattern and where does it go?",
+      a: 'A FIM (Facing Identification Mark) is a series of vertical bars printed in the upper-right area of the address side. USPS automation equipment uses the FIM to orient incoming mail \u2014 it tells the machine which side is the address side and what mail class the piece is. FIM-A is used for courtesy reply mail; FIM-C for metered and permit mail; FIM-D for business reply mail. The FIM must be placed in the upper-right corner within 1/8" from the top edge and no more than about 1.75" from the right edge. Your mail house applies the FIM \u2014 designers must reserve that area.'
+    },
+    {
+      q: "Where do I get a physical USPS Notice 67 template?",
+      a: "Physical Notice 67 plastic templates are available at no charge from your nearest USPS Business Mail Entry Unit (BMEU). In the Hudson Valley, the Mid-Hudson BMEU in Newburgh, NY serves Ulster, Orange, and Dutchess county mailers. Call ahead before visiting \u2014 BMEU hours and availability can change. Cornerstone Services can also provide guidance on automation compliance as part of our pre-press services."
+    },
+    {
+      q: "What happens if my mailpiece fails automation standards?",
+      a: "A piece that fails automation standards \u2014 wrong size, address outside the OCR read area, barcode zone covered, or missing FIM \u2014 can be assessed a non-automation surcharge, rejected at the BMEU, or sorted manually at a higher postage rate. For Marketing Mail, the difference between automation rates and non-automation rates can be $0.05\u2013$0.10 per piece \u2014 significant on a 10,000-piece campaign. Catching these issues before production is why pre-press review matters."
+    },
+    {
+      q: "What is the aspect ratio rule for USPS letter mail?",
+      a: 'The USPS requires that all letter-size mail have an aspect ratio \u2014 length divided by height \u2014 between 1.3 and 2.5 (DMM 101.1.2). A perfectly square piece (1:1) fails this test and is non-machinable. A very elongated piece over 2.5:1 also fails. For example: a 6" \xD7 4" piece has a ratio of 1.5 \u2014 passes. A 10" \xD7 4" piece has a ratio of 2.5 \u2014 just passes. A 3.5" \xD7 3.5" square fails (ratio = 1.0). The checker above calculates this automatically from your PDF dimensions.'
+    }
+  ];
+  const graphSchema = JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": `${canonical}#webpage`,
+        url: canonical,
+        name: "USPS Notice 67 \u2014 Automation Letter Spec & Artwork Checker",
+        description: "USPS Notice 67 reference and interactive artwork checker. Upload your print-ready PDF and check dimensions against DMM 101.1.2 \u2014 fully client-side, your file never leaves the browser.",
+        dateModified: lastUpdated,
+        isPartOf: { "@id": "https://crst.net/#website" },
+        breadcrumb: { "@id": `${canonical}#breadcrumb` },
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: ["h1", ".article-lead", "h2"]
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${canonical}#breadcrumb`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://crst.net" },
+          { "@type": "ListItem", position: 2, name: "Direct Mail Tools", item: "https://crst.net/direct-mail-tools" },
+          { "@type": "ListItem", position: 3, name: "Notice 67 Artwork Checker", item: canonical }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a }
+        }))
+      },
+      {
+        "@type": "SoftwareApplication",
+        name: "USPS Notice 67 Artwork Checker",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web browser",
+        description: "Upload a print-ready PDF to check letter-size dimensions against USPS DMM 101.1.2. Fully client-side \u2014 your file never leaves the browser.",
+        provider: {
+          "@type": "Organization",
+          "@id": "https://crst.net/#organization",
+          name: "Cornerstone Services, Inc."
+        },
+        url: canonical,
+        offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://crst.net/#organization",
+        name: "Cornerstone Services, Inc.",
+        url: "https://crst.net",
+        telephone: "+18452555722",
+        foundingDate: "1998",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "387 Malden Turnpike",
+          addressLocality: "Saugerties",
+          addressRegion: "NY",
+          postalCode: "12477",
+          addressCountry: "US"
+        }
+      }
+    ]
+  });
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": "USPS Notice 67 \u2014 Automation Letter Spec & Artwork Checker | Cornerstone", "description": "Check your letter-size artwork against USPS automation standards. Dimensions sourced from DMM 101.1.2. Upload your PDF \u2014 runs in your browser, your file never hits a server.", "schema": null }, { "default": ($$result2) => renderTemplate`  ${renderComponent($$result2, "PageHero", $$PageHero, { "title": "USPS Notice 67 \u2014 Automation Letter Spec & Artwork Checker", "subtitle": "Verify your letter-size mailpiece meets USPS automation standards. Upload your print-ready PDF to check dimensions against DMM 101.1.2. Your file never leaves the browser.", "breadcrumbs": [
+    { label: "Direct Mail Tools", href: "/direct-mail-tools" },
+    { label: "Notice 67 Checker" }
+  ], "noSchema": true })}  ${maybeRenderHead()}<section class="py-14 lg:py-20 border-b border-navy-100"> <div class="container-wide"> <div class="max-w-2xl mx-auto"> <div class="section-divider mb-6"></div> <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-2">Artwork Checker</h2> <p class="text-navy-600/70 text-sm mb-8">
+Upload page 1 of your print-ready PDF. We read dimensions locally in your browser using PDF.js
+          and run size checks against USPS DMM 101.1.2 — height, length, and aspect ratio.
+</p> ${renderComponent($$result2, "Notice67Checker", null, { "client:only": "react", "client:component-hydration": "only", "client:component-path": "/home/runner/workspace/src/components/tools/Notice67Checker", "client:component-export": "default" })} </div> </div> </section>  <section class="py-14 lg:py-20"> <div class="container-wide"> <div class="max-w-3xl mx-auto"> <div class="section-divider mb-6"></div> <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-6 article-lead">What Is USPS Notice 67?</h2> <p class="text-navy-600/80 leading-relaxed mb-4 article-lead">
+Notice 67 is the USPS Automation Letters Template — a physical plastic overlay gauge distributed by USPS Business Mail Entry Units (BMEUs) at no charge. Mailers, printers, and graphic designers use it to verify that a letter-size piece meets USPS automation compatibility requirements before it goes to press.
+</p> <p class="text-navy-600/80 leading-relaxed mb-4">
+The template lays on top of the piece and shows four critical zones: where the delivery address must be placed (the OCR read area), what area must be kept clear for the barcode (the IMb clear zone), where the FIM pattern goes, and character height gauges for font compliance. A piece that fails any of these zones gets kicked out of the automation line — either manually sorted at a higher rate or returned to the mailer.
+</p> <p class="text-navy-600/80 leading-relaxed mb-8">
+In 28 years of running bulk mail campaigns for businesses across Ulster, Orange, and Dutchess counties, Cornerstone Services has reviewed thousands of client artwork files against Notice 67 standards. The most common failure is an address block placed too high — the designer centered it visually, but it sits above the OCR read area. The second most common: a photo or dark background bleeds into the barcode clear zone.
+</p> <!-- Who Uses Notice 67 --> <div class="grid sm:grid-cols-3 gap-4 mb-12"> ${[
+    { title: "Graphic designers", desc: "Setting up letter templates, positioning address blocks and indicias, confirming font heights before sending to print." },
+    { title: "Print houses & lettershops", desc: "Pre-press compliance review before imposition \u2014 catching address placement issues before plates are made." },
+    { title: "Direct mailers", desc: "Verifying piece dimensions and zone clearance before dropping at the BMEU \u2014 a rejection at the dock is a two-week setback." }
+  ].map((c) => renderTemplate`<div class="bg-navy-50 rounded-xl p-5"> <p class="font-heading font-bold text-navy-800 text-sm mb-2">${c.title}</p> <p class="text-navy-600/70 text-xs leading-relaxed">${c.desc}</p> </div>`)} </div> <!-- Zone diagram --> <div class="mb-8"> <img src="/images/notice-67-zones.svg" alt="USPS Notice 67 letter automation zones — return address upper left, FIM upper right, OCR delivery-address read area lower center, barcode clear zone lower right" loading="lazy" width="820" height="470" style="max-width:100%;height:auto;display:block;"> </div> <!-- The Zones --> <h2 class="text-2xl font-display text-crst-primary mb-6">The Four Notice 67 Zones</h2> <div class="space-y-5 mb-12"> <!-- OCR Read Area --> <div class="bg-white border-l-4 rounded-r-xl p-5" style="border-color: rgba(37,99,235,0.7)"> <div class="flex items-start gap-3"> <span class="w-3 h-3 rounded-sm shrink-0 mt-1 border" style="background: rgba(59,130,246,0.18); border-color: rgba(37,99,235,0.7)"></span> <div> <h3 class="font-heading font-bold text-navy-800 mb-1">OCR Read Area <span class="text-xs font-normal text-navy-400 ml-1">— delivery address must be here</span></h3> <p class="text-navy-600/80 text-sm leading-relaxed mb-2">
+USPS optical character recognition equipment scans a defined zone on the address side for the delivery address. Your address block must fall entirely within this area for the piece to be sorted by machine.
+</p> <div class="text-xs text-navy-500 space-y-0.5"> <p>From bottom: <strong>${ZONES.ocrReadArea.fromBottomEdge}"</strong> to <strong>${ZONES.ocrReadArea.toBottomEdge}"</strong> <span class="text-amber-500">~</span></p> <p>From each side: <strong>${ZONES.ocrReadArea.fromLeftEdge}"</strong></p> <p class="text-navy-400 italic">Source: Publication 25 §2 / DMM 202.3.2</p> </div> </div> </div> </div> <!-- Barcode Clear Zone --> <div class="bg-white border-l-4 rounded-r-xl p-5" style="border-color: rgba(234,88,12,0.7)"> <div class="flex items-start gap-3"> <span class="w-3 h-3 rounded-sm shrink-0 mt-1 border" style="background: rgba(251,146,60,0.20); border-color: rgba(234,88,12,0.7)"></span> <div> <h3 class="font-heading font-bold text-navy-800 mb-1">Barcode Clear Zone <span class="text-xs font-normal text-navy-400 ml-1">— must be free of all printing</span></h3> <p class="text-navy-600/80 text-sm leading-relaxed mb-2">
+The Intelligent Mail Barcode (IMb) is printed in the lower-right strip of the piece — either by your mail house or by USPS equipment. This area must be completely clear of background images, dark colors, and design elements. A barcode printed over artwork fails to scan.
+</p> <div class="text-xs text-navy-500 space-y-0.5"> <p>Bottom strip: <strong>${ZONES.barcodeZone.fromBottomEdge}"</strong> to <strong>${ZONES.barcodeZone.toBottomEdge}"</strong> from bottom</p> <p>From right edge: <strong>${ZONES.barcodeZone.fromRightEdge}"</strong> extending <strong>${ZONES.barcodeZone.extentFromRight}"</strong> left <span class="text-amber-500">~</span></p> <p class="text-navy-400 italic">Source: DMM 202.5 / Publication 25 §2.4</p> </div> </div> </div> </div> <!-- FIM --> <div class="bg-white border-l-4 rounded-r-xl p-5" style="border-color: rgba(22,163,74,0.7)"> <div class="flex items-start gap-3"> <span class="w-3 h-3 rounded-sm shrink-0 mt-1 border" style="background: rgba(34,197,94,0.18); border-color: rgba(22,163,74,0.7)"></span> <div> <h3 class="font-heading font-bold text-navy-800 mb-1">FIM Location <span class="text-xs font-normal text-navy-400 ml-1">— upper right, applied by mail house</span></h3> <p class="text-navy-600/80 text-sm leading-relaxed mb-2">
+The Facing Identification Mark (FIM) is a pattern of vertical bars in the upper-right corner that tells USPS automation equipment which side is the address side and what mail class it is. FIM-C is standard for permit mail. Your mail house applies it — designers must reserve this area clear.
+</p> <div class="text-xs text-navy-500 space-y-0.5"> <p>From top: <strong>${ZONES.fim.fromTopEdge}"</strong>, height: <strong>${ZONES.fim.height}"</strong> <span class="text-amber-500">~</span></p> <p>From right edge: <strong>${ZONES.fim.fromRightEdge}"</strong>, width reserved: <strong>${ZONES.fim.width}"</strong> <span class="text-amber-500">~</span></p> <p class="text-navy-400 italic">Source: DMM 202.4.1 — width is conservative clearance, not exact DMM bound</p> </div> </div> </div> </div> <!-- Return Address --> <div class="bg-white border-l-4 rounded-r-xl p-5" style="border-color: rgba(100,116,139,0.5)"> <div class="flex items-start gap-3"> <span class="w-3 h-3 rounded-sm shrink-0 mt-1 border" style="background: rgba(148,163,184,0.15); border-color: rgba(100,116,139,0.5)"></span> <div> <h3 class="font-heading font-bold text-navy-800 mb-1">Return Address Area <span class="text-xs font-normal text-navy-400 ml-1">— upper left, conventional placement</span></h3> <p class="text-navy-600/80 text-sm leading-relaxed mb-2">
+The return address goes in the upper-left of the address side. USPS does not define a hard boundary for return address position, but it must be clearly readable and above the delivery address. Upper-left quadrant is the accepted convention (Publication 25 §1.1).
+</p> <div class="text-xs text-navy-400 italic"> <p>Shown zone is conventional — not a USPS-specified hard boundary <span class="text-amber-500">~</span></p> </div> </div> </div> </div> </div> <!-- Size spec tables --> <h2 class="text-2xl font-display text-crst-primary mb-6">Piece Size Requirements</h2> <p class="text-navy-600/70 text-sm mb-4">
+Source: <strong>USPS DMM 101.1.2</strong>. All dimensions in inches. "Length" = longer dimension; "Height" = shorter dimension.
+<span class="text-amber-500 font-bold">~</span> = approximate or pending exact source confirmation.
+</p> <div class="grid sm:grid-cols-2 gap-6 mb-4"> <!-- Letter table --> <div class="bg-white border border-navy-200 rounded-xl overflow-hidden"> <div class="bg-crst-primary px-5 py-3"> <p class="font-heading font-bold text-white text-sm">Letter-size mail</p> <p class="text-white/60 text-xs">DMM 101.1.2 — Marketing Mail &amp; First-Class</p> </div> <table class="w-full text-sm"> <thead><tr class="bg-navy-50 text-navy-500 text-xs uppercase tracking-wide"> <th class="px-4 py-2 text-left font-semibold">Dimension</th> <th class="px-4 py-2 text-right font-semibold">Min</th> <th class="px-4 py-2 text-right font-semibold">Max</th> </tr></thead> <tbody class="divide-y divide-navy-100 text-navy-700"> <tr><td class="px-4 py-2.5">Height</td><td class="px-4 py-2.5 text-right font-mono">${LETTER_SPEC.height.min}"</td><td class="px-4 py-2.5 text-right font-mono">${LETTER_SPEC.height.max}"</td></tr> <tr><td class="px-4 py-2.5">Length</td><td class="px-4 py-2.5 text-right font-mono">${LETTER_SPEC.length.min}"</td><td class="px-4 py-2.5 text-right font-mono">${LETTER_SPEC.length.max}"</td></tr> <tr><td class="px-4 py-2.5">Thickness</td><td class="px-4 py-2.5 text-right font-mono">${LETTER_SPEC.thickness.min}"</td><td class="px-4 py-2.5 text-right font-mono">${LETTER_SPEC.thickness.max}"</td></tr> <tr><td class="px-4 py-2.5">Aspect ratio (L÷H)</td><td class="px-4 py-2.5 text-right font-mono">${LETTER_SPEC.aspectRatio.min}</td><td class="px-4 py-2.5 text-right font-mono">${LETTER_SPEC.aspectRatio.max}</td></tr> <tr><td class="px-4 py-2.5">Max weight</td><td class="px-4 py-2.5 text-right font-mono" colspan="2">${LETTER_SPEC.maxWeightOz} oz</td></tr> </tbody> </table> </div> <!-- Postcard table --> <div class="bg-white border border-navy-200 rounded-xl overflow-hidden"> <div class="bg-navy-700 px-5 py-3"> <p class="font-heading font-bold text-white text-sm">Postcard</p> <p class="text-white/60 text-xs">DMM 101.1.2 — First-Class &amp; Marketing Mail</p> </div> <table class="w-full text-sm"> <thead><tr class="bg-navy-50 text-navy-500 text-xs uppercase tracking-wide"> <th class="px-4 py-2 text-left font-semibold">Dimension</th> <th class="px-4 py-2 text-right font-semibold">Min</th> <th class="px-4 py-2 text-right font-semibold">Max</th> </tr></thead> <tbody class="divide-y divide-navy-100 text-navy-700"> <tr><td class="px-4 py-2.5">Height</td><td class="px-4 py-2.5 text-right font-mono">${POSTCARD_SPEC.height.min}"</td><td class="px-4 py-2.5 text-right font-mono">${POSTCARD_SPEC.height.max}"</td></tr> <tr><td class="px-4 py-2.5">Length</td><td class="px-4 py-2.5 text-right font-mono">${POSTCARD_SPEC.length.min}"</td><td class="px-4 py-2.5 text-right font-mono">${POSTCARD_SPEC.length.max}"</td></tr> <tr><td class="px-4 py-2.5">Thickness</td><td class="px-4 py-2.5 text-right font-mono">${POSTCARD_SPEC.thickness.min}"</td><td class="px-4 py-2.5 text-right font-mono">${POSTCARD_SPEC.thickness.max}"</td></tr> <tr><td class="px-4 py-2.5 text-navy-400 italic text-xs" colspan="3">Aspect ratio: same 1.3–2.5 rule applies</td></tr> </tbody> </table> </div> </div> <p class="text-xs text-navy-400 mb-12">
+Pieces outside letter-size limits are classified as <strong>flats</strong> (max 12"×15") or parcels, each with different rates and automation rules. Pieces within letter size but failing aspect ratio or thickness are assessed a <strong>non-machinable surcharge</strong> — currently $0.41 per piece (First-Class, 2026 rates).
+</p> <!-- Get the physical template — CTA to BMEU --> <div class="bg-navy-800 text-white rounded-2xl p-8 mb-12"> <h2 class="text-xl font-display text-white mb-2">Get the physical Notice 67 template</h2> <p class="text-white/70 text-sm leading-relaxed mb-5">
+The physical plastic overlay gauge is available at no charge from your USPS Business Mail Entry Unit (BMEU). In the Hudson Valley, the <strong>Mid-Hudson BMEU in Newburgh, NY</strong> serves Ulster, Orange, and Dutchess county mailers. Call ahead before visiting — BMEU hours and template availability can vary.
+</p> <div class="flex flex-wrap gap-3"> <a href="/direct-mail-tools/bmeu" class="btn-primary bg-crst-gold hover:bg-crst-gold/90 text-navy-900 text-sm px-5 py-2.5">Find your BMEU →</a> <a href="tel:+18452555722" class="text-sm font-semibold border border-white/30 px-5 py-2.5 rounded-lg hover:bg-white/10 transition-colors">(845) 255-5722</a> </div> </div> <!-- Official USPS Resources --> <h2 class="text-2xl font-display text-crst-primary mb-4">Official USPS Resources</h2> <div class="space-y-3 mb-12"> ${[
+    {
+      label: "USPS Publication 25 \u2014 Designing Letter and Reply Mail",
+      url: "https://pe.usps.com/text/pub25/pub25apg.htm",
+      desc: "The definitive USPS guide to letter-mail design standards. Includes zone diagrams, size tables, and automation compatibility requirements."
+    },
+    {
+      label: "USPS Mailpiece Design Analyst Resources",
+      url: "https://pe.usps.com/mpdesign/mpdfaqsanswers_non.aspx",
+      desc: "FAQ and downloadable resources from the USPS Mailpiece Design team, including Notice 67 and other templates."
+    },
+    {
+      label: "USPS DMM 101 \u2014 Physical Standards for Automation Letters",
+      url: "https://pe.usps.com/DMM300/Index#_RG_P_101",
+      desc: "Domestic Mail Manual section covering size, weight, and shape standards for letter-class mailpieces. Source for this page's spec tables."
+    },
+    {
+      label: "USPS Notice 67 \u2014 PDF version (pe.usps.com)",
+      url: "https://pe.usps.com/text/dmm300/Notice67.pdf",
+      desc: "Official PDF version of the Notice 67 automation letter template. Use this to verify zone positions against your artwork."
+    }
+  ].map((r) => renderTemplate`<a${addAttribute(r.url, "href")} target="_blank" rel="noopener noreferrer" class="flex items-start gap-4 bg-white border border-navy-100 rounded-xl px-5 py-4 hover:border-crst-primary transition-colors group"> <svg class="w-4 h-4 text-navy-300 group-hover:text-crst-primary mt-0.5 shrink-0 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg> <div> <p class="text-sm font-heading font-semibold text-navy-800 group-hover:text-crst-primary transition-colors">${r.label}</p> <p class="text-xs text-navy-500 mt-0.5">${r.desc}</p> </div> </a>`)} </div> </div> </div> </section>  <section class="py-14 bg-navy-50 border-t border-navy-100"> <div class="container-wide"> <div class="max-w-3xl mx-auto"> <div class="section-divider mb-6"></div> <h2 class="text-2xl font-display text-crst-primary mb-8">Frequently Asked Questions</h2> <div class="space-y-5"> ${faqs.map((faq) => renderTemplate`<div class="bg-white border border-navy-100 rounded-xl px-6 py-5"> <h3 class="font-heading font-bold text-navy-800 mb-3">${faq.q}</h3> <p class="text-navy-600/80 text-sm leading-relaxed">${faq.a}</p> </div>`)} </div> </div> </div> </section>  <section class="py-10 border-t border-navy-100 bg-white"> <div class="container-wide"> <div class="max-w-3xl mx-auto"> <div class="flex gap-4 items-start"> <img src="/images/sean-griffin.png" alt="Sean Griffin, President of Cornerstone Services" class="w-14 h-14 rounded-full object-cover shrink-0 ring-2 ring-crst-primary/20" width="56" height="56"> <div> <p class="font-heading font-bold text-navy-800">Sean Griffin — President, Cornerstone Services, Inc.</p> <p class="text-navy-600/70 text-sm mb-2">Saugerties, NY · Since 1998 · BBB A+</p> <p class="text-navy-600/80 text-sm leading-relaxed">
+This reference and tool is maintained by Cornerstone Services. Spec values are sourced directly from DMM 101.1.2, DMM 202, and USPS Publication 25 — not approximated from competitor pages.
+              Last updated: <time${addAttribute(lastUpdated, "datetime")} itemprop="dateModified">${lastUpdatedDisplay}</time>.
+</p> </div> </div> </div> </div> </section> ${renderComponent($$result2, "CTASection", $$CTASection, {})} `, "head": ($$result2) => renderTemplate`${renderComponent($$result2, "Fragment", Fragment, { "slot": "head" }, { "default": ($$result3) => renderTemplate(_a || (_a = __template([' <script type="application/ld+json">', "<\/script> "])), unescapeHTML(graphSchema)) })}` })}`;
+}, "/home/runner/workspace/src/pages/direct-mail-tools/usps-notice-67.astro", void 0);
+
+const $$file = "/home/runner/workspace/src/pages/direct-mail-tools/usps-notice-67.astro";
+const $$url = "/direct-mail-tools/usps-notice-67";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$UspsNotice67,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };
