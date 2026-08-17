@@ -7,13 +7,35 @@ import { storefrontFetch, PRODUCT_BY_HANDLE_QUERY, PRODUCT_VARIANTS_PAGE_QUERY, 
 
 export async function getStaticPaths() {
   const token: string | undefined = import.meta.env.SHOPIFY_STOREFRONT_TOKEN ?? process.env.SHOPIFY_STOREFRONT_TOKEN;
-  if (!token) return [];
-  const data = await storefrontFetch<{ products: { edges: { node: { handle: string } }[] } }>(
-    ALL_PRODUCTS_QUERY,
-    {},
-    token
-  );
-  return data.products.edges.map(e => ({ params: { handle: e.node.handle } }));
+  if (!token) {
+    throw new Error(
+      '[shop/[handle]] Build aborted: SHOPIFY_STOREFRONT_TOKEN is not set. ' +
+      'Set the secret and rebuild.'
+    );
+  }
+  let data: { products: { edges: { node: { handle: string } }[] } };
+  try {
+    data = await storefrontFetch<{ products: { edges: { node: { handle: string } }[] } }>(
+      ALL_PRODUCTS_QUERY,
+      {},
+      token
+    );
+  } catch (err) {
+    throw new Error(
+      `[shop/[handle]] Build aborted: Shopify product fetch failed — ` +
+      `${err instanceof Error ? err.message : String(err)}. ` +
+      `Check SHOPIFY_STOREFRONT_TOKEN and rebuild.`
+    );
+  }
+  const paths = data.products.edges.map(e => ({ params: { handle: e.node.handle } }));
+  if (paths.length === 0) {
+    throw new Error(
+      '[shop/[handle]] Build aborted: Shopify returned zero products. ' +
+      'The token may be invalid or the store may be empty. ' +
+      'Refusing to build with an empty shop.'
+    );
+  }
+  return paths;
 }
 
 const { handle } = Astro.params as { handle: string };

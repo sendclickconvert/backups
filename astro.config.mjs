@@ -186,5 +186,10 @@ export default defineConfig({
     '/crst-daily-post-category/mailbag-wednesday/page/2/': 'https://blog.crst.net/',
     '/mailbox-monday/page/2/': 'https://blog.crst.net/',
     '/mailbox-monday/page/4/': 'https://blog.crst.net/',
+
+    // --- Shop handle renames (underscore → hyphen) ---
+    '/shop/raffle_ticket': '/shop/raffle-ticket',
+    '/shop/simple_mail_package': '/shop/simple-mailing-package',
+    '/shop/presentation_folder': '/shop/presentation-folder',
   },
 });
