@@ -6,6 +6,7 @@
 
 import { BUSINESS } from '../data/site';
 import { SHOP_SCHEMA_CONFIG, type ProductMeta } from '../data/products';
+import { isPlaceholder, hasRealFaqs } from './product-content';
 
 export interface SchemaProductData {
   title: string;
@@ -95,11 +96,14 @@ export function buildProductGraph(
   const productSchema: Record<string, unknown> = {
     '@type': 'Product',
     name: product.title,
-    description: content.intro,
     url: canonicalUrl,
     brand: { '@type': 'Brand', name: BUSINESS.name },
     offers: offer,
   };
+  // Never emit the literal TODO_SPEC placeholder into schema — omit the
+  // description field entirely rather than shipping placeholder text to
+  // search engines / rich results.
+  if (!isPlaceholder(content.intro)) productSchema.description = content.intro;
   if (image) productSchema.image = image;
   if (cheapest?.sku) productSchema.sku = cheapest.sku;
 
@@ -112,14 +116,22 @@ export function buildProductGraph(
     ],
   };
 
-  const faqPage = {
-    '@type': 'FAQPage',
-    mainEntity: content.faqs.map((f) => ({
-      '@type': 'Question',
-      name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
-    })),
-  };
+  const graph: object[] = [productSchema, breadcrumb];
 
-  return [productSchema, breadcrumb, faqPage];
+  // Drop FAQPage entirely when there are no real (non-placeholder) FAQs —
+  // an FAQPage with only a TODO_SPEC question/answer is worse than no
+  // FAQPage at all.
+  if (hasRealFaqs(content)) {
+    const realFaqs = content.faqs.filter((f) => !isPlaceholder(f.q) && !isPlaceholder(f.a));
+    graph.push({
+      '@type': 'FAQPage',
+      mainEntity: realFaqs.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    });
+  }
+
+  return graph;
 }

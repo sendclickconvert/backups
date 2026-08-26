@@ -9,6 +9,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import { PRODUCT_META } from '../../data/products';
 import { buildProductGraph } from '../../lib/product-schema';
 import { BUSINESS } from '../../data/site';
+import { isDraftProduct, isPlaceholder, hasRealFaqs } from '../../lib/product-content';
 
 export async function getStaticPaths() {
   const token: string | undefined = import.meta.env.SHOPIFY_STOREFRONT_TOKEN ?? process.env.SHOPIFY_STOREFRONT_TOKEN;
@@ -125,6 +126,11 @@ const relatedProducts = (content?.relatedProducts ?? [])
 const schemaGraph = (productData && content && meta)
   ? buildProductGraph(productData, content, meta, canonicalUrl)
   : null;
+
+// A draft product (placeholder editorial content — see src/lib/product-content.ts
+// for the exact rule and the documented deviation) renders its configurator,
+// real intro (if any), and CTAs, but hides specs/use-cases/how-to-order/FAQ.
+const draft = content ? isDraftProduct(content) : true;
 ---
 
 <BaseLayout
@@ -186,66 +192,84 @@ const schemaGraph = (productData && content && meta)
             <div class="mt-16 grid lg:grid-cols-3 gap-10">
               <div class="lg:col-span-2 space-y-12">
 
-                <!-- 3. Intro -->
-                <div class="prose prose-navy max-w-none prose-headings:font-display prose-headings:text-crst-primary prose-p:text-navy-600/80">
-                  <p class="text-lg leading-relaxed">{content.intro}</p>
-                </div>
-
-                <!-- 4. Specifications -->
-                <section>
-                  <h2 class="text-2xl font-display text-crst-primary mb-4">Specifications</h2>
-                  <div class="overflow-x-auto rounded-xl border border-navy-100 bg-white">
-                    <table class="w-full text-sm">
-                      <tbody class="divide-y divide-navy-100">
-                        <tr><th class="text-left px-4 py-3 font-heading font-semibold text-navy-700 w-40 align-top">Sizes</th><td class="px-4 py-3 text-navy-600/80">{content.specs.sizes}</td></tr>
-                        <tr><th class="text-left px-4 py-3 font-heading font-semibold text-navy-700 align-top">Stock</th><td class="px-4 py-3 text-navy-600/80">{content.specs.stock}</td></tr>
-                        <tr><th class="text-left px-4 py-3 font-heading font-semibold text-navy-700 align-top">Ink / Finish</th><td class="px-4 py-3 text-navy-600/80">{content.specs.inkFinish}</td></tr>
-                        <tr><th class="text-left px-4 py-3 font-heading font-semibold text-navy-700 align-top">Minimum Quantity</th><td class="px-4 py-3 text-navy-600/80">{content.specs.minQuantity}</td></tr>
-                        <tr><th class="text-left px-4 py-3 font-heading font-semibold text-navy-700 align-top">Quantity Breaks</th><td class="px-4 py-3 text-navy-600/80">{content.specs.quantityBreaks}</td></tr>
-                        <tr><th class="text-left px-4 py-3 font-heading font-semibold text-navy-700 align-top">Turnaround</th><td class="px-4 py-3 text-navy-600/80">{content.specs.turnaround}</td></tr>
-                      </tbody>
-                    </table>
+                <!-- 3. Intro (never renders the literal placeholder) -->
+                {!isPlaceholder(content.intro) && (
+                  <div class="prose prose-navy max-w-none prose-headings:font-display prose-headings:text-crst-primary prose-p:text-navy-600/80">
+                    <p class="text-lg leading-relaxed">{content.intro}</p>
                   </div>
-                </section>
+                )}
+
+                <!-- 4. Specifications — hidden entirely while draft; per-row
+                     guards protect stock/inkFinish/turnaround, which can be
+                     unfilled even on a non-draft product. -->
+                {!draft && (
+                  <section>
+                    <h2 class="text-2xl font-display text-crst-primary mb-4">Specifications</h2>
+                    <div class="overflow-x-auto rounded-xl border border-navy-100 bg-white">
+                      <table class="w-full text-sm">
+                        <tbody class="divide-y divide-navy-100">
+                          <tr><th class="text-left px-4 py-3 font-heading font-semibold text-navy-700 w-40 align-top">Sizes</th><td class="px-4 py-3 text-navy-600/80">{content.specs.sizes}</td></tr>
+                          {!isPlaceholder(content.specs.stock) && (
+                            <tr><th class="text-left px-4 py-3 font-heading font-semibold text-navy-700 align-top">Stock</th><td class="px-4 py-3 text-navy-600/80">{content.specs.stock}</td></tr>
+                          )}
+                          {!isPlaceholder(content.specs.inkFinish) && (
+                            <tr><th class="text-left px-4 py-3 font-heading font-semibold text-navy-700 align-top">Ink / Finish</th><td class="px-4 py-3 text-navy-600/80">{content.specs.inkFinish}</td></tr>
+                          )}
+                          <tr><th class="text-left px-4 py-3 font-heading font-semibold text-navy-700 align-top">Minimum Quantity</th><td class="px-4 py-3 text-navy-600/80">{content.specs.minQuantity}</td></tr>
+                          <tr><th class="text-left px-4 py-3 font-heading font-semibold text-navy-700 align-top">Quantity Breaks</th><td class="px-4 py-3 text-navy-600/80">{content.specs.quantityBreaks}</td></tr>
+                          {!isPlaceholder(content.specs.turnaround) && (
+                            <tr><th class="text-left px-4 py-3 font-heading font-semibold text-navy-700 align-top">Turnaround</th><td class="px-4 py-3 text-navy-600/80">{content.specs.turnaround}</td></tr>
+                          )}
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                )}
 
                 <!-- 5. Use Cases -->
-                <section>
-                  <h2 class="text-2xl font-display text-crst-primary mb-4">Common Use Cases</h2>
-                  <ul class="grid sm:grid-cols-2 gap-3">
-                    {content.useCases.map((uc) => (
-                      <li class="flex items-start gap-2 text-navy-600/80 text-sm bg-white border border-navy-100 rounded-lg px-4 py-3">
-                        <svg class="w-4 h-4 text-crst-accent mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                        {uc}
-                      </li>
-                    ))}
-                  </ul>
-                </section>
+                {!draft && (
+                  <section>
+                    <h2 class="text-2xl font-display text-crst-primary mb-4">Common Use Cases</h2>
+                    <ul class="grid sm:grid-cols-2 gap-3">
+                      {content.useCases.map((uc) => (
+                        <li class="flex items-start gap-2 text-navy-600/80 text-sm bg-white border border-navy-100 rounded-lg px-4 py-3">
+                          <svg class="w-4 h-4 text-crst-accent mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                          {uc}
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
+                )}
 
                 <!-- 6. How to Order -->
-                <section>
-                  <h2 class="text-2xl font-display text-crst-primary mb-4">How to Order</h2>
-                  <ol class="space-y-3">
-                    {content.howToOrder.map((step, i) => (
-                      <li class="flex items-start gap-3 text-navy-600/80 text-sm">
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-crst-primary text-white text-xs font-heading font-bold flex items-center justify-center">{i + 1}</span>
-                        <span class="pt-0.5">{step}</span>
-                      </li>
-                    ))}
-                  </ol>
-                </section>
+                {!draft && (
+                  <section>
+                    <h2 class="text-2xl font-display text-crst-primary mb-4">How to Order</h2>
+                    <ol class="space-y-3">
+                      {content.howToOrder.map((step, i) => (
+                        <li class="flex items-start gap-3 text-navy-600/80 text-sm">
+                          <span class="flex-shrink-0 w-6 h-6 rounded-full bg-crst-primary text-white text-xs font-heading font-bold flex items-center justify-center">{i + 1}</span>
+                          <span class="pt-0.5">{step}</span>
+                        </li>
+                      ))}
+                    </ol>
+                  </section>
+                )}
 
                 <!-- 7. FAQ (fully expanded, no JS) -->
-                <section>
-                  <h2 class="text-2xl font-display text-crst-primary mb-4">Frequently Asked Questions</h2>
-                  <div class="space-y-4">
-                    {content.faqs.map((f) => (
-                      <div class="bg-white rounded-xl border border-navy-100 p-5">
-                        <h3 class="font-heading font-semibold text-navy-800 text-sm mb-2">{f.q}</h3>
-                        <p class="text-sm text-navy-600/70 leading-relaxed">{f.a}</p>
-                      </div>
-                    ))}
-                  </div>
-                </section>
+                {!draft && hasRealFaqs(content) && (
+                  <section>
+                    <h2 class="text-2xl font-display text-crst-primary mb-4">Frequently Asked Questions</h2>
+                    <div class="space-y-4">
+                      {content.faqs.filter((f) => !isPlaceholder(f.q) && !isPlaceholder(f.a)).map((f) => (
+                        <div class="bg-white rounded-xl border border-navy-100 p-5">
+                          <h3 class="font-heading font-semibold text-navy-800 text-sm mb-2">{f.q}</h3>
+                          <p class="text-sm text-navy-600/70 leading-relaxed">{f.a}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                )}
 
               </div>
 

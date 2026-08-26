@@ -44,6 +44,11 @@ const productContentSchema = z.object({
   howToOrder: z.array(z.string()),
   faqs: z.array(z.object({ q: z.string(), a: z.string() })),
   relatedProducts: z.array(z.string()),
+  // Manual override: a content author can force a product to draft status
+  // regardless of placeholder detection (see src/lib/product-content.ts).
+  // Auto-detection from TODO_SPEC placeholders is the primary mechanism;
+  // this exists for cases that need a page pulled without editing content.
+  draft: z.boolean().optional(),
 });
 const products = defineCollection({ type: 'content', schema: productContentSchema });
 

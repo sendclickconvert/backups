@@ -1,8 +1,10 @@
 export const prerender = true;
 
 import type { APIRoute } from 'astro';
+import { getCollection } from 'astro:content';
 import { storefrontFetch, ALL_PRODUCTS_QUERY } from '../../lib/shopify';
 import { PRODUCT_META } from '../../data/products';
+import { isDraftProduct } from '../../lib/product-content';
 
 interface ProductNode {
   title: string;
@@ -49,6 +51,13 @@ export const GET: APIRoute = async () => {
     }
   }
 
+  // Cross-reference the editorial content collection so the feed only ships
+  // products whose specs/use-cases/how-to-order/FAQ content is real — see
+  // src/lib/product-content.ts for the exact "draft" rule and the documented
+  // deviation (turnaround/stock/inkFinish are excluded from this check).
+  const contentEntries = await getCollection('products');
+  const contentByHandle = new Map(contentEntries.map((e) => [e.slug, e.data]));
+
   const items = products
     .map((product) => {
       const meta = PRODUCT_META[product.handle];
@@ -57,6 +66,12 @@ export const GET: APIRoute = async () => {
       // incomplete <item>. All 20 current handles are mapped, so this should
       // not fire in practice; it's a guard against future unmapped products.
       if (!meta) return '';
+
+      // No editorial content entry, or content is still a draft (placeholder
+      // specs/use-cases/how-to-order/FAQ) — do not submit it to Google
+      // Merchant Center yet.
+      const content = contentByHandle.get(product.handle);
+      if (!content || isDraftProduct(content)) return '';
 
       const link = `${SITE_URL}/shop/${product.handle}`;
       const title = xmlEscape(product.title);
@@ -77,8 +92,7 @@ export const GET: APIRoute = async () => {
       <g:price>${price}</g:price>
       <g:condition>new</g:condition>
       <g:brand>${xmlEscape(BRAND)}</g:brand>
-      <g:mpn>TODO_SPEC</g:mpn>
-      <g:gtin>TODO_SPEC</g:gtin>
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>${xmlEscape(meta.googleProductCategory)}</g:google_product_category>
       <g:product_type>${xmlEscape(meta.productType)}</g:product_type>
     </item>`;

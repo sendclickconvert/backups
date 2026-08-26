@@ -8,6 +8,11 @@ const canonical = 'https://crst.net/guides/union-bug-printing';
 const title = 'Union Bug Printing: What It Is & When You Need It (2026 Guide)';
 const description = 'TODO_COPY — meta description for the union bug printing guide.';
 const lastUpdated = '2026-08-26';
+// Hardcoded true because this page's body copy is still TODO_COPY
+// placeholder text. Flip to false (or remove the prop) once real copy
+// replaces every TODO_COPY block below, and add it back to the sitemap
+// filter exclusion in astro.config.mjs at the same time.
+const noIndex = true;
 
 const seanGriffin = {
   '@type': 'Person',
@@ -87,7 +92,7 @@ const graphItems: object[] = [
 ];
 ---
 
-<BaseLayout title={title} description={description} canonical={canonical} schema={null}>
+<BaseLayout title={title} description={description} canonical={canonical} schema={null} noIndex={noIndex}>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graphItems })} />
   </Fragment>

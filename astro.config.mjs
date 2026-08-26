@@ -59,7 +59,12 @@ export default defineConfig({
       // Center product feed (/feed/google-merchant.xml) from the sitemap — it
       // is a machine-readable product feed, not a page, and Google Merchant
       // Center is fed via the Content API / feed URL directly, not the sitemap.
-      filter: (page) => !page.includes('/thank-you') && !page.includes('/training') && !page.endsWith('/terms') && !page.includes('/resources/payments') && !page.includes('/feed/'),
+      //
+      // NOTE: `/guides/palm-card-sizes` and `/guides/union-bug-printing` are
+      // temporarily excluded — their body copy is still TODO_COPY placeholder
+      // text and they carry noIndex. Remove both exclusions once real copy
+      // ships and the noIndex prop is removed from those pages.
+      filter: (page) => !page.includes('/thank-you') && !page.includes('/training') && !page.endsWith('/terms') && !page.includes('/resources/payments') && !page.includes('/feed/') && !page.includes('/guides/palm-card-sizes') && !page.includes('/guides/union-bug-printing'),
     }),
   ],
   redirects: {
