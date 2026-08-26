@@ -30,6 +30,23 @@ const nonprofitArticles = defineCollection({ type: 'content', schema: articleSch
 const schoolArticles = defineCollection({ type: 'content', schema: articleSchema });
 const unionArticles = defineCollection({ type: 'content', schema: articleSchema });
 
+const productContentSchema = z.object({
+  intro: z.string(),
+  specs: z.object({
+    sizes: z.string(),
+    stock: z.string(),
+    inkFinish: z.string(),
+    minQuantity: z.string(),
+    quantityBreaks: z.string(),
+    turnaround: z.string(),
+  }),
+  useCases: z.array(z.string()),
+  howToOrder: z.array(z.string()),
+  faqs: z.array(z.object({ q: z.string(), a: z.string() })),
+  relatedProducts: z.array(z.string()),
+});
+const products = defineCollection({ type: 'content', schema: productContentSchema });
+
 export const collections = {
   'dm-articles': dmArticles,
   'data-articles': dataArticles,
@@ -41,4 +58,5 @@ export const collections = {
   'nonprofit-articles': nonprofitArticles,
   'school-articles': schoolArticles,
   'union-articles': unionArticles,
+  'products': products,
 };

@@ -27,6 +27,7 @@ export const ALL_PRODUCTS_QUERY = `
         node {
           title
           handle
+          description
           featuredImage {
             url
             altText

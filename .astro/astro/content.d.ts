@@ -483,6 +483,148 @@ declare module 'astro:content' {
   data: any
 } & { render(): Render[".md"] };
 };
+"products": {
+"banner.md": {
+	id: "banner.md";
+  slug: "banner";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"brochure.md": {
+	id: "brochure.md";
+  slug: "brochure";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"car-magnet.md": {
+	id: "car-magnet.md";
+  slug: "car-magnet";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"certified-mailing-package.md": {
+	id: "certified-mailing-package.md";
+  slug: "certified-mailing-package";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"eddm-card.md": {
+	id: "eddm-card.md";
+  slug: "eddm-card";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"envelope.md": {
+	id: "envelope.md";
+  slug: "envelope";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"greeting-card.md": {
+	id: "greeting-card.md";
+  slug: "greeting-card";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"lawn-sign.md": {
+	id: "lawn-sign.md";
+  slug: "lawn-sign";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"magnet-postcard.md": {
+	id: "magnet-postcard.md";
+  slug: "magnet-postcard";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"palm-card.md": {
+	id: "palm-card.md";
+  slug: "palm-card";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"plastic-postcard.md": {
+	id: "plastic-postcard.md";
+  slug: "plastic-postcard";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"postcard.md": {
+	id: "postcard.md";
+  slug: "postcard";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"presentation-folder.md": {
+	id: "presentation-folder.md";
+  slug: "presentation-folder";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"raffle-ticket.md": {
+	id: "raffle-ticket.md";
+  slug: "raffle-ticket";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"scratchoff-postcard.md": {
+	id: "scratchoff-postcard.md";
+  slug: "scratchoff-postcard";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"simple-mail-package.md": {
+	id: "simple-mail-package.md";
+  slug: "simple-mail-package";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"up-envelope.md": {
+	id: "up-envelope.md";
+  slug: "up-envelope";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"up-letter.md": {
+	id: "up-letter.md";
+  slug: "up-letter";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"up-palm-card.md": {
+	id: "up-palm-card.md";
+  slug: "up-palm-card";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+"up-postcard.md": {
+	id: "up-postcard.md";
+  slug: "up-postcard";
+  body: string;
+  collection: "products";
+  data: any
+} & { render(): Render[".md"] };
+};
 "school-articles": {
 "how-to-reach-voters-for-school-elections.md": {
 	id: "how-to-reach-voters-for-school-elections.md";

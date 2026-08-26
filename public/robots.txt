@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Allow: /feed/google-merchant.xml
 Disallow: /wp-content/
 Disallow: /wp-includes/
 Disallow: /wp-admin/

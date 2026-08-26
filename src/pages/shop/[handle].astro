@@ -2,8 +2,13 @@
 export const prerender = true;
 
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import CTASection from '../../components/CTASection.astro';
 import ProductSelector from '../../components/shop/ProductSelector.tsx';
 import { storefrontFetch, PRODUCT_BY_HANDLE_QUERY, PRODUCT_VARIANTS_PAGE_QUERY, ALL_PRODUCTS_QUERY } from '../../lib/shopify';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import { PRODUCT_META } from '../../data/products';
+import { buildProductGraph } from '../../lib/product-schema';
+import { BUSINESS } from '../../data/site';
 
 export async function getStaticPaths() {
   const token: string | undefined = import.meta.env.SHOPIFY_STOREFRONT_TOKEN ?? process.env.SHOPIFY_STOREFRONT_TOKEN;
@@ -104,16 +109,40 @@ if (!token) {
     fetchError = 'Failed to reach Shopify Storefront API.';
   }
 }
+
+// Per-product editorial content (specs, use cases, FAQs, related products).
+const contentEntries = await getCollection('products');
+const contentEntry: CollectionEntry<'products'> | undefined = contentEntries.find((e) => e.slug === handle);
+const content = contentEntry?.data ?? null;
+const meta = PRODUCT_META[handle] ?? null;
+
+const canonicalUrl = `${BUSINESS.url}/shop/${handle}`;
+
+const relatedProducts = (content?.relatedProducts ?? [])
+  .map((h) => contentEntries.find((e) => e.slug === h))
+  .filter((e): e is CollectionEntry<'products'> => !!e);
+
+const schemaGraph = (productData && content && meta)
+  ? buildProductGraph(productData, content, meta, canonicalUrl)
+  : null;
 ---
 
 <BaseLayout
   title={productData ? `${productData.title} — Print & Mail | Cornerstone` : 'Product | Cornerstone Services'}
   description={productData ? `Order ${productData.title} from Cornerstone Services. Choose your options and go straight to checkout. Full-service print and direct mail from Saugerties, NY.` : ''}
+  canonical={canonicalUrl}
   schema={null}
 >
+  {schemaGraph && (
+    <Fragment slot="head">
+      <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': schemaGraph })} />
+    </Fragment>
+  )}
+
   <div class="min-h-[70vh] bg-gray-50 py-14">
     <div class="container-wide max-w-5xl">
 
+      <!-- 1. Breadcrumb -->
       <nav aria-label="Breadcrumb" class="mb-8">
         <ol class="flex items-center gap-2 text-sm font-heading text-navy-400">
           <li><a href="/" class="hover:text-crst-primary transition-colors">Home</a></li>
@@ -139,9 +168,140 @@ if (!token) {
           <strong>Error:</strong> {fetchError}
         </div>
       ) : productData ? (
-        <ProductSelector product={productData} placeholderSrc={placeholderSrc} client:load />
+        <>
+          <!-- 2. Hero: configurator + dual CTA -->
+          <ProductSelector product={productData} placeholderSrc={placeholderSrc} client:load />
+
+          <div class="mt-4 flex justify-end">
+            <a
+              href={`/estimate?product=${handle}`}
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-crst-primary text-crst-primary font-heading font-semibold text-sm hover:bg-crst-primary hover:text-white transition-colors"
+            >
+              Request a Quote Instead
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            </a>
+          </div>
+
+          {content && (
+            <div class="mt-16 grid lg:grid-cols-3 gap-10">
+              <div class="lg:col-span-2 space-y-12">
+
+                <!-- 3. Intro -->
+                <div class="prose prose-navy max-w-none prose-headings:font-display prose-headings:text-crst-primary prose-p:text-navy-600/80">
+                  <p class="text-lg leading-relaxed">{content.intro}</p>
+                </div>
+
+                <!-- 4. Specifications -->
+                <section>
+                  <h2 class="text-2xl font-display text-crst-primary mb-4">Specifications</h2>
+                  <div class="overflow-x-auto rounded-xl border border-navy-100 bg-white">
+                    <table class="w-full text-sm">
+                      <tbody class="divide-y divide-navy-100">
+                        <tr><th class="text-left px-4 py-3 font-heading font-semibold text-navy-700 w-40 align-top">Sizes</th><td class="px-4 py-3 text-navy-600/80">{content.specs.sizes}</td></tr>
+                        <tr><th class="text-left px-4 py-3 font-heading font-semibold text-navy-700 align-top">Stock</th><td class="px-4 py-3 text-navy-600/80">{content.specs.stock}</td></tr>
+                        <tr><th class="text-left px-4 py-3 font-heading font-semibold text-navy-700 align-top">Ink / Finish</th><td class="px-4 py-3 text-navy-600/80">{content.specs.inkFinish}</td></tr>
+                        <tr><th class="text-left px-4 py-3 font-heading font-semibold text-navy-700 align-top">Minimum Quantity</th><td class="px-4 py-3 text-navy-600/80">{content.specs.minQuantity}</td></tr>
+                        <tr><th class="text-left px-4 py-3 font-heading font-semibold text-navy-700 align-top">Quantity Breaks</th><td class="px-4 py-3 text-navy-600/80">{content.specs.quantityBreaks}</td></tr>
+                        <tr><th class="text-left px-4 py-3 font-heading font-semibold text-navy-700 align-top">Turnaround</th><td class="px-4 py-3 text-navy-600/80">{content.specs.turnaround}</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+
+                <!-- 5. Use Cases -->
+                <section>
+                  <h2 class="text-2xl font-display text-crst-primary mb-4">Common Use Cases</h2>
+                  <ul class="grid sm:grid-cols-2 gap-3">
+                    {content.useCases.map((uc) => (
+                      <li class="flex items-start gap-2 text-navy-600/80 text-sm bg-white border border-navy-100 rounded-lg px-4 py-3">
+                        <svg class="w-4 h-4 text-crst-accent mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                        {uc}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+
+                <!-- 6. How to Order -->
+                <section>
+                  <h2 class="text-2xl font-display text-crst-primary mb-4">How to Order</h2>
+                  <ol class="space-y-3">
+                    {content.howToOrder.map((step, i) => (
+                      <li class="flex items-start gap-3 text-navy-600/80 text-sm">
+                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-crst-primary text-white text-xs font-heading font-bold flex items-center justify-center">{i + 1}</span>
+                        <span class="pt-0.5">{step}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </section>
+
+                <!-- 7. FAQ (fully expanded, no JS) -->
+                <section>
+                  <h2 class="text-2xl font-display text-crst-primary mb-4">Frequently Asked Questions</h2>
+                  <div class="space-y-4">
+                    {content.faqs.map((f) => (
+                      <div class="bg-white rounded-xl border border-navy-100 p-5">
+                        <h3 class="font-heading font-semibold text-navy-800 text-sm mb-2">{f.q}</h3>
+                        <p class="text-sm text-navy-600/70 leading-relaxed">{f.a}</p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+
+              </div>
+
+              <!-- Sidebar -->
+              <aside class="lg:col-span-1">
+                <div class="sticky top-28 space-y-6">
+
+                  <!-- 10. Parent service back-link -->
+                  {meta && (
+                    <div class="bg-crst-primary rounded-xl p-6 text-white">
+                      <h3 class="font-display text-lg mb-2">Part of {meta.parentService.label}</h3>
+                      <p class="text-white/60 text-sm leading-relaxed mb-4">See the full service this product supports, including design and mailing.</p>
+                      <a href={meta.parentService.href} class="btn-accent w-full text-center text-sm">View {meta.parentService.label} →</a>
+                    </div>
+                  )}
+
+                  <!-- 9. Related guides -->
+                  {meta && meta.guides.length > 0 && (
+                    <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
+                      <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Related Guides</h3>
+                      <div class="space-y-2">
+                        {meta.guides.map((g) => (
+                          <a href={g.href} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-white rounded-md transition-colors font-heading">
+                            {g.label}
+                            <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  <!-- 8. Related products -->
+                  {relatedProducts.length > 0 && (
+                    <div class="bg-white rounded-xl p-5 border border-navy-100">
+                      <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Related Products</h3>
+                      <div class="space-y-2">
+                        {relatedProducts.map((p) => (
+                          <a href={`/shop/${p.slug}`} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-navy-50 rounded-md transition-colors font-heading">
+                            {p.slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())}
+                            <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                </div>
+              </aside>
+            </div>
+          )}
+        </>
       ) : null}
 
     </div>
   </div>
+
+  <!-- 11. Bottom CTA -->
+  <CTASection />
 </BaseLayout>

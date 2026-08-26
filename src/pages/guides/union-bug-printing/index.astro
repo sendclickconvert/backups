@@ -1,0 +1,198 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import CTASection from '../../../components/CTASection.astro';
+import AuthorByline from '../../../components/AuthorByline.astro';
+import { BUSINESS } from '../../../data/site';
+
+const canonical = 'https://crst.net/guides/union-bug-printing';
+const title = 'Union Bug Printing: What It Is & When You Need It (2026 Guide)';
+const description = 'TODO_COPY — meta description for the union bug printing guide.';
+const lastUpdated = '2026-08-26';
+
+const seanGriffin = {
+  '@type': 'Person',
+  '@id': 'https://crst.net/about#sean-griffin',
+  name: 'Sean Griffin',
+  jobTitle: 'Owner & Mailpiece Design Professional',
+  description: 'Sean Griffin founded Cornerstone Services in 1998. He holds the USPS Mailpiece Design Professional (MDP) certification and has managed direct mail, printing, and mailing campaigns for businesses across Ulster, Dutchess, and Orange counties for over 28 years.',
+  url: 'https://crst.net/about',
+  image: 'https://crst.net/images/sean-griffin.png',
+  sameAs: ['https://crst.net/about'],
+  hasCredential: {
+    '@type': 'EducationalOccupationalCredential',
+    name: 'Mailpiece Design Professional (MDP)',
+    credentialCategory: 'Professional Certification',
+    recognizedBy: { '@type': 'Organization', name: 'United States Postal Service' },
+  },
+  worksFor: {
+    '@type': 'Organization',
+    '@id': 'https://crst.net/#organization',
+    name: 'Cornerstone Services, Inc.',
+    url: 'https://crst.net',
+    telephone: '+1-845-255-5722',
+    foundingDate: '1998',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '387 Malden Turnpike',
+      addressLocality: 'Saugerties',
+      addressRegion: 'NY',
+      postalCode: '12477',
+      addressCountry: 'US',
+    },
+  },
+};
+
+const faqs = [
+  { q: 'What is a union bug?', a: 'TODO_COPY' },
+  { q: 'Why do political campaigns require union-printed materials?', a: 'TODO_COPY' },
+  { q: 'Which Cornerstone products are available union-printed?', a: 'TODO_COPY' },
+  { q: 'Does union printing cost more?', a: 'TODO_COPY' },
+];
+
+const graphItems: object[] = [
+  {
+    '@type': 'Article',
+    headline: title,
+    description,
+    url: canonical,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+    datePublished: lastUpdated,
+    dateModified: lastUpdated,
+    inLanguage: 'en-US',
+    author: seanGriffin,
+    publisher: {
+      '@type': 'Organization',
+      '@id': 'https://crst.net/#organization',
+      name: 'Cornerstone Services, Inc.',
+      url: 'https://crst.net',
+      logo: { '@type': 'ImageObject', url: 'https://crst.net/images/crst-logo.png', width: 200, height: 60 },
+    },
+  },
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crst.net' },
+      { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://crst.net/guides' },
+      { '@type': 'ListItem', position: 3, name: 'Union Bug Printing', item: canonical },
+    ],
+  },
+  {
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+];
+---
+
+<BaseLayout title={title} description={description} canonical={canonical} schema={null}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graphItems })} />
+  </Fragment>
+
+  <section class="bg-crst-primary text-white py-12 lg:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="text-sm text-white/50 mb-4" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white/80 transition-colors">Home</a><span class="mx-2">›</span>
+        <a href="/guides" class="hover:text-white/80 transition-colors">Guides</a><span class="mx-2">›</span>
+        <span class="text-white/70">Union Bug Printing</span>
+      </nav>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold leading-tight text-white mb-4">
+        Union Bug Printing: What It Is & When You Need It
+      </h1>
+      <p class="article-lead text-white/70 text-lg max-w-2xl leading-relaxed">
+        TODO_COPY — hero lead paragraph introducing this guide.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-14 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-10 lg:gap-14">
+
+        <div class="lg:col-span-2">
+
+          <div class="bg-navy-50/60 border border-navy-100 rounded-xl p-5 mb-8 text-navy-700 leading-relaxed">
+            TODO_COPY — short retrieval-style summary paragraph for search snippets.
+          </div>
+
+          <div class="prose prose-navy max-w-none prose-headings:font-display prose-headings:text-crst-primary prose-a:text-crst-accent hover:prose-a:text-crst-primary prose-strong:text-navy-800 prose-p:text-navy-600/80 prose-li:text-navy-600/80">
+            <h2>What Is a Union Bug?</h2>
+            <p>TODO_COPY</p>
+            <h2>Who Requires Union-Printed Materials?</h2>
+            <p>TODO_COPY</p>
+            <h2>Union-Printed Products Available at Cornerstone</h2>
+            <p>Cornerstone Services prints several product lines at a union shop, each carrying the official union bug:</p>
+            <ul>
+              <li><a href="/shop/up-palm-card">Union Palm Card</a> — a 4 x 9 palm card for canvassing and outreach.</li>
+              <li><a href="/shop/up-envelope">Union Envelope</a> — a standard #10 mailing envelope.</li>
+              <li><a href="/shop/up-postcard">Union Postcard</a> — a union-printed postcard for direct mail.</li>
+              <li><a href="/shop/up-letter">Union Letter</a> — a union-printed letter package.</li>
+            </ul>
+            <p>See our <a href="/services/union-printing">Union Printing services page</a> for the full program, or our <a href="/guides/palm-card-sizes">Palm Card Sizes guide</a> if you're comparing formats before you order.</p>
+          </div>
+
+          <div class="not-prose mt-8">
+            <AuthorByline />
+          </div>
+
+          <div class="mt-12">
+            <div class="section-divider mb-6"></div>
+            <h2 class="text-2xl font-display text-crst-primary mb-6">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+              {faqs.map((item) => (
+                <div class="bg-navy-50/40 rounded-xl border border-navy-100 p-5">
+                  <h3 class="font-heading font-semibold text-navy-800 text-sm mb-2">{item.q}</h3>
+                  <p class="text-sm text-navy-600/70 leading-relaxed">{item.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div class="bg-crst-primary/5 border border-crst-primary/15 rounded-xl p-6 text-center mt-10">
+            <p class="font-heading font-bold text-crst-primary text-lg mb-2">Need union-printed materials?</p>
+            <p class="text-navy-600/70 text-sm mb-4">Order online in minutes, or talk it through with us first.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+              <a href="/services/union-printing" class="btn-primary text-sm">View Union Printing →</a>
+              <a href={`tel:${BUSINESS.phoneClean}`} class="inline-flex items-center gap-2 text-sm font-heading font-semibold text-crst-primary hover:text-crst-accent transition-colors">
+                Call {BUSINESS.phone}
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="lg:col-span-1">
+          <div class="sticky top-28 space-y-6">
+            <div class="bg-crst-primary rounded-xl p-6 text-white">
+              <h3 class="font-display text-lg mb-2">Get a Union Printing Quote</h3>
+              <p class="text-white/60 text-sm leading-relaxed mb-4">Tell us your product, quantity, and timeline. We'll send a detailed quote within one business day.</p>
+              <a href="/estimate" class="btn-accent w-full text-center text-sm">Request a Quote</a>
+            </div>
+            <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100">
+              <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Related Resources</h3>
+              <div class="space-y-2">
+                {[
+                  { label: 'Union Printing Services', href: '/services/union-printing' },
+                  { label: 'Shop Union Palm Cards', href: '/shop/up-palm-card' },
+                  { label: 'Shop Union Envelopes', href: '/shop/up-envelope' },
+                  { label: 'Palm Card Sizes Guide', href: '/guides/palm-card-sizes' },
+                ].map((link) => (
+                  <a href={link.href} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-white rounded-md transition-colors font-heading">
+                    {link.label}
+                    <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>

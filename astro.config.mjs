@@ -55,7 +55,11 @@ export default defineConfig({
     tailwind(),
     react(),
     sitemap({
-      filter: (page) => !page.includes('/thank-you') && !page.includes('/training') && !page.endsWith('/terms') && !page.includes('/resources/payments'),
+      // NOTE: added `!page.includes('/feed/')` to exclude the Google Merchant
+      // Center product feed (/feed/google-merchant.xml) from the sitemap — it
+      // is a machine-readable product feed, not a page, and Google Merchant
+      // Center is fed via the Content API / feed URL directly, not the sitemap.
+      filter: (page) => !page.includes('/thank-you') && !page.includes('/training') && !page.endsWith('/terms') && !page.includes('/resources/payments') && !page.includes('/feed/'),
     }),
   ],
   redirects: {
