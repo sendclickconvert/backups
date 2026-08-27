@@ -6,13 +6,8 @@ import { BUSINESS } from '../../../data/site';
 
 const canonical = 'https://crst.net/guides/union-bug-printing';
 const title = 'Union Bug Printing: What It Is & When You Need It (2026 Guide)';
-const description = 'TODO_COPY — meta description for the union bug printing guide.';
+const description = 'Learn what a union bug means, when campaigns and organizations may need union-printed materials, and how to order union postcards, palm cards, letters, and envelopes.';
 const lastUpdated = '2026-08-26';
-// Hardcoded true because this page's body copy is still TODO_COPY
-// placeholder text. Flip to false (or remove the prop) once real copy
-// replaces every TODO_COPY block below, and add it back to the sitemap
-// filter exclusion in astro.config.mjs at the same time.
-const noIndex = true;
 
 const seanGriffin = {
   '@type': 'Person',
@@ -48,10 +43,10 @@ const seanGriffin = {
 };
 
 const faqs = [
-  { q: 'What is a union bug?', a: 'TODO_COPY' },
-  { q: 'Why do political campaigns require union-printed materials?', a: 'TODO_COPY' },
-  { q: 'Which Cornerstone products are available union-printed?', a: 'TODO_COPY' },
-  { q: 'Does union printing cost more?', a: 'TODO_COPY' },
+  { q: 'What is a union bug?', a: 'A union bug is a small printed mark or emblem identifying the union-affiliated shop or labor program responsible for producing a piece. It is usually placed in a bottom corner or another unobtrusive location. The exact label and placement can vary, so a printer should confirm the appropriate mark for the job.' },
+  { q: 'Why do political campaigns require union-printed materials?', a: 'Some campaigns are asked to use union printing by a labor organization, party, endorsement, contract, or internal campaign policy. The union bug provides a visible record that the material was produced in a union shop and can be important when demonstrating labor support. It is not a universal legal requirement for every political campaign, so confirm the specification with the organization making the request.' },
+  { q: 'Which Cornerstone products are available union-printed?', a: 'Cornerstone offers union palm cards, union envelopes, union postcards, and union letters through its shop. Brochures, letterhead, and other campaign or organizational materials can also be discussed as part of a union-printing quote. The best product depends on whether you are canvassing, mailing, or preparing formal correspondence.' },
+  { q: 'Does union printing cost more?', a: 'There is no single union-printing price or automatic surcharge. The total depends on the product, finished size, stock, coating, quantity, artwork, and whether mailing is included. Request a quote with your specifications so the production requirements and any union-label needs can be confirmed together.' },
 ];
 
 const graphItems: object[] = [
@@ -92,7 +87,7 @@ const graphItems: object[] = [
 ];
 ---
 
-<BaseLayout title={title} description={description} canonical={canonical} schema={null} noIndex={noIndex}>
+<BaseLayout title={title} description={description} canonical={canonical} schema={null}>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graphItems })} />
   </Fragment>
@@ -108,7 +103,7 @@ const graphItems: object[] = [
         Union Bug Printing: What It Is & When You Need It
       </h1>
       <p class="article-lead text-white/70 text-lg max-w-2xl leading-relaxed">
-        TODO_COPY — hero lead paragraph introducing this guide.
+        A union bug is more than a small mark on a printed piece: for campaigns, labor organizations, and other groups, it can document that the work was produced in a union shop. Learn what the label means, who may request it, and how to plan a union-printed order.
       </p>
     </div>
   </section>
@@ -120,14 +115,14 @@ const graphItems: object[] = [
         <div class="lg:col-span-2">
 
           <div class="bg-navy-50/60 border border-navy-100 rounded-xl p-5 mb-8 text-navy-700 leading-relaxed">
-            TODO_COPY — short retrieval-style summary paragraph for search snippets.
+            Union bug printing means producing printed materials through a union-affiliated shop and adding the appropriate union label to the finished piece. Political campaigns, labor organizations, municipalities, and nonprofits may request it to meet a party, labor, contract, or organizational requirement. Cornerstone offers union-printed palm cards, postcards, envelopes, and letters.
           </div>
 
           <div class="prose prose-navy max-w-none prose-headings:font-display prose-headings:text-crst-primary prose-a:text-crst-accent hover:prose-a:text-crst-primary prose-strong:text-navy-800 prose-p:text-navy-600/80 prose-li:text-navy-600/80">
             <h2>What Is a Union Bug?</h2>
-            <p>TODO_COPY</p>
+            <p>A union bug is a small logo, emblem, or imprint that identifies the labor union or union-affiliated program connected to a printed piece. It signals that the work was produced under the shop's union arrangement and is commonly placed in a bottom corner or another standard location. The mark is part of the production specifications, not artwork a customer has to recreate. At Cornerstone, union bug placement is handled during production and the appropriate mark is included in the final design before press.</p>
             <h2>Who Requires Union-Printed Materials?</h2>
-            <p>TODO_COPY</p>
+            <p>Union printing is often requested by political campaigns, labor organizations, municipalities, nonprofits, and civic groups. A labor endorsement, party rule, collective bargaining or procurement requirement, or an organization's own policy may call for a union-printed piece. These requirements vary by organization and project; the union bug is not a blanket legal requirement for every campaign or mailing. If a specific label, location, or wording is required, provide that instruction when requesting a quote so it can be confirmed before production.</p>
             <h2>Union-Printed Products Available at Cornerstone</h2>
             <p>Cornerstone Services prints several product lines at a union shop, each carrying the official union bug:</p>
             <ul>

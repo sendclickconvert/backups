@@ -83,11 +83,6 @@ export default defineConfig({
       // is a machine-readable product feed, not a page, and Google Merchant
       // Center is fed via the Content API / feed URL directly, not the sitemap.
       //
-      // NOTE: `/guides/palm-card-sizes` and `/guides/union-bug-printing` are
-      // temporarily excluded — their body copy is still TODO_COPY placeholder
-      // text and they carry noIndex. Remove both exclusions once real copy
-      // ships and the noIndex prop is removed from those pages.
-      //
       // NOTE: `/shop/<handle>` pages whose content is still draft (see
       // draftProductHandles above) are excluded automatically — no
       // hardcoded handle list here, so a product drops out of this
@@ -99,8 +94,6 @@ export default defineConfig({
         !page.endsWith('/terms') &&
         !page.includes('/resources/payments') &&
         !page.includes('/feed/') &&
-        !page.includes('/guides/palm-card-sizes') &&
-        !page.includes('/guides/union-bug-printing') &&
         ![...draftProductHandles].some((handle) => page.includes(`/shop/${handle}`)),
     }),
   ],

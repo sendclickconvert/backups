@@ -6,13 +6,8 @@ import { BUSINESS } from '../../../data/site';
 
 const canonical = 'https://crst.net/guides/palm-card-sizes';
 const title = 'Palm Card Sizes: Dimensions, Stock & Use Cases (2026 Guide)';
-const description = 'TODO_COPY — meta description for the palm card sizes guide.';
+const description = 'Compare palm card sizes, paper stocks, and coatings for canvassing, campaign literature, and direct mail. Choose the right format for your message.';
 const lastUpdated = '2026-08-26';
-// Hardcoded true because this page's body copy is still TODO_COPY
-// placeholder text. Flip to false (or remove the prop) once real copy
-// replaces every TODO_COPY block below, and add it back to the sitemap
-// filter exclusion in astro.config.mjs at the same time.
-const noIndex = true;
 
 const seanGriffin = {
   '@type': 'Person',
@@ -58,10 +53,10 @@ const sizes = [
 ];
 
 const faqs = [
-  { q: 'What is the most common palm card size?', a: 'TODO_COPY' },
-  { q: 'What stock should I choose for a palm card?', a: 'TODO_COPY' },
-  { q: 'How many palm cards do I need for a canvassing campaign?', a: 'TODO_COPY' },
-  { q: 'Do palm cards need a union bug for political campaigns?', a: 'TODO_COPY' },
+  { q: 'What is the most common palm card size?', a: 'There is no single standard, but 4 x 9 is a popular all-purpose format. It gives a campaign room for a photo, short bio, key positions, and contact information while remaining easy for volunteers to carry and hand out. A 4 x 6 card is a better fit when the message needs to stay especially compact.' },
+  { q: 'What stock should I choose for a palm card?', a: 'For a durable campaign handout, 14pt card stock is a common choice. An aqueous coating (AQ) adds a practical protective finish, while UV coating creates a glossy, high-impact surface. A 100# option can work when you want a lighter paper feel. The best choice depends on how the card will be distributed, the look of the artwork, and your budget.' },
+  { q: 'How many palm cards do I need for a canvassing campaign?', a: 'Start with the number of doors, events, polling locations, or volunteers you plan to cover, then add a reasonable amount for handouts and reprints. A targeted door-to-door effort may need fewer cards than a campaign distributing at every event or polling place. If you share your audience and distribution plan, we can help turn it into a practical quantity.' },
+  { q: 'Do palm cards need a union bug for political campaigns?', a: 'Not every political campaign is subject to the same union-printing requirement. A party, labor organization, endorsement, contract, or campaign policy may call for a union-printed piece and its union bug. Confirm the requirement with the organization requesting it; when you need union printing, our Union Palm Card is produced at a union shop with the official union bug.' },
 ];
 
 const graphItems: object[] = [
@@ -102,7 +97,7 @@ const graphItems: object[] = [
 ];
 ---
 
-<BaseLayout title={title} description={description} canonical={canonical} schema={null} noIndex={noIndex}>
+<BaseLayout title={title} description={description} canonical={canonical} schema={null}>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graphItems })} />
   </Fragment>
@@ -118,7 +113,7 @@ const graphItems: object[] = [
         Palm Card Sizes: Dimensions, Stock & Use Cases
       </h1>
       <p class="article-lead text-white/70 text-lg max-w-2xl leading-relaxed">
-        TODO_COPY — hero lead paragraph introducing this guide.
+        Palm cards are compact campaign pieces, but the right size still depends on how people will read and use them. Compare common dimensions, available stocks, and finishes before you send your artwork to print.
       </p>
     </div>
   </section>
@@ -130,7 +125,7 @@ const graphItems: object[] = [
         <div class="lg:col-span-2">
 
           <div class="bg-navy-50/60 border border-navy-100 rounded-xl p-5 mb-8 text-navy-700 leading-relaxed">
-            TODO_COPY — short retrieval-style summary paragraph for search snippets.
+            Palm cards are commonly printed in sizes from 4 x 6 to 4.5 x 11 inches. Choose a smaller card for a focused handout, a 4 x 9 format for a balanced campaign piece, or a longer size when your message needs more room. Available options include 100# paper and 14pt card stock with AQ or UV coating.
           </div>
 
           <h2 class="text-2xl font-display font-bold text-crst-primary mb-4">Palm Card Sizes at a Glance</h2>
@@ -155,9 +150,9 @@ const graphItems: object[] = [
 
           <div class="prose prose-navy max-w-none prose-headings:font-display prose-headings:text-crst-primary prose-a:text-crst-accent hover:prose-a:text-crst-primary prose-strong:text-navy-800 prose-p:text-navy-600/80 prose-li:text-navy-600/80">
             <h2>Choosing the Right Palm Card Size</h2>
-            <p>TODO_COPY</p>
+            <p>Think about the job the card has to do before choosing a dimension. A 4 x 6 card keeps a short message, contact details, or event information easy to scan. The 4 x 9 format gives most campaign handouts a useful balance of writing space and portability, while 4 x 11 and other longer formats accommodate more positions, endorsements, or candidate information. For door-to-door canvassing and events, consider how comfortably volunteers can carry the cards and how quickly recipients can read them. Keep important text and logos comfortably inside the trim area, and let the final size guide the hierarchy of your artwork.</p>
             <h2>Palm Card Stock Options Explained</h2>
-            <p>TODO_COPY</p>
+            <p>Stock affects the feel, durability, and finish of the finished piece. The 100# option provides a lighter paper choice, while 14pt card stock feels more substantial in the hand and stands up well to repeated handling. AQ coating gives the surface a practical protective finish; UV coating produces a brighter gloss and helps images stand out. Choose the finish alongside your design: a highly photographic piece may benefit from gloss, while a simpler handout may call for a more understated surface. Quantity, artwork, and how the cards will be distributed also matter when comparing options.</p>
             <h2>Union-Printed Palm Cards</h2>
             <p>Campaigns and labor organizations that need a union-printed palm card can order our <a href="/shop/up-palm-card">Union Palm Card</a>, produced at a union shop with the official union bug. See our <a href="/guides/union-bug-printing">Union Bug Printing guide</a> for background on when a union label is required.</p>
           </div>
