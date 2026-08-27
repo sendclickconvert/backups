@@ -138,6 +138,7 @@ const draft = content ? isDraftProduct(content) : true;
   description={productData ? `Order ${productData.title} from Cornerstone Services. Choose your options and go straight to checkout. Full-service print and direct mail from Saugerties, NY.` : ''}
   canonical={canonicalUrl}
   schema={null}
+  noIndex={draft}
 >
   {schemaGraph && (
     <Fragment slot="head">

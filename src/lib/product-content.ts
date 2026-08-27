@@ -2,8 +2,15 @@
 // Shared "is this real content or still a placeholder" logic for product
 // editorial content (src/content/products/*.md). This is the single
 // definition of "complete" used by the product page template, the
-// Product/Offer/FAQPage JSON-LD builder, AND the Google Merchant feed — so a
-// product is never treated as complete on one surface and draft on another.
+// Product/Offer/FAQPage JSON-LD builder, the Google Merchant feed, AND the
+// sitemap/noindex filter in astro.config.mjs — so a product is never
+// treated as complete on one surface and draft on another.
+//
+// The actual field-level rules live in src/lib/product-draft-rules.mjs (a
+// plain-JS module with no astro:content import), because astro.config.mjs
+// needs to read them at config-load time, before the Astro content
+// pipeline exists. This file just re-exports that logic with the
+// astro:content-derived TypeScript types layered on top.
 //
 // ── DEVIATION FLAGGED FOR REVIEW ──────────────────────────────────────────
 // A fully literal reading of "any TODO_SPEC anywhere -> draft" would flag
@@ -30,41 +37,31 @@
 // ───────────────────────────────────────────────────────────────────────────
 
 import type { CollectionEntry } from 'astro:content';
-
-const PLACEHOLDER = 'TODO_SPEC';
+import {
+  isPlaceholder as isPlaceholderRaw,
+  hasRealFaqs as hasRealFaqsRaw,
+  isDraftProduct as isDraftProductRaw,
+} from './product-draft-rules.mjs';
 
 export type ProductContent = CollectionEntry<'products'>['data'];
 
 /** True when a string field is the literal unfilled placeholder. */
 export function isPlaceholder(value: string): boolean {
-  return value.trim() === PLACEHOLDER;
+  return isPlaceholderRaw(value);
 }
 
 /** True when the FAQ list has at least one real (non-placeholder) entry. */
 export function hasRealFaqs(content: Pick<ProductContent, 'faqs'>): boolean {
-  return (
-    content.faqs.length > 0 &&
-    content.faqs.some((f) => !isPlaceholder(f.q) && !isPlaceholder(f.a))
-  );
+  return hasRealFaqsRaw(content);
 }
 
 /**
  * True when a product's core editorial content has not been written yet and
  * the page/feed entry should be treated as a draft: specs, use cases,
  * how-to-order, and FAQ sections are hidden (configurator, intro-if-real,
- * and CTAs still render); the item is excluded from the Merchant feed.
+ * and CTAs still render); the item is excluded from the Merchant feed, the
+ * sitemap, and carries noindex.
  */
 export function isDraftProduct(content: ProductContent): boolean {
-  if (content.draft === true) return true;
-  return (
-    isPlaceholder(content.intro) ||
-    isPlaceholder(content.specs.sizes) ||
-    isPlaceholder(content.specs.minQuantity) ||
-    isPlaceholder(content.specs.quantityBreaks) ||
-    content.useCases.length === 0 ||
-    content.useCases.some(isPlaceholder) ||
-    content.howToOrder.length === 0 ||
-    content.howToOrder.some(isPlaceholder) ||
-    !hasRealFaqs(content)
-  );
+  return isDraftProductRaw(content);
 }
