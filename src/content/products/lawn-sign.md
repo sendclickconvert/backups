@@ -6,7 +6,7 @@ specs:
   inkFinish: "TODO_SPEC"
   minQuantity: "2"
   quantityBreaks: "2, 4, 6, 8, 9, 10, 12, 14, 18, 20, 24, 27, 28, 30, 32, 36, 40, 42, 45, 48, 50, 54, 56, 60, 63, 64, 70, 72, 80, 81, 84, 90, 96, 100"
-  turnaround: "TODO_SPEC"
+  turnaround: "5–7 business days from proof approval"
 useCases:
   - "Real estate for-sale and open house signage"
   - "Political and campaign yard signs"

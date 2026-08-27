@@ -6,7 +6,7 @@ specs:
   inkFinish: "14pt AQ and 14pt UV options include a protective coating; 100# is uncoated text stock"
   minQuantity: "250"
   quantityBreaks: "250, 500, 750, 1000, 1500, 2000, 2500, 3000, 4000, 5000, 7500, 10000, 15000, 20000, 25000"
-  turnaround: "TODO_SPEC"
+  turnaround: "5–7 business days from proof approval"
 useCases:
   - "Political and issue campaign walk pieces for door-to-door canvassing"
   - "Event promos and handouts at tabling, fairs, and community events"

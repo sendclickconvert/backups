@@ -6,7 +6,7 @@ specs:
   inkFinish: "TODO_SPEC"
   minQuantity: "TODO_SPEC"
   quantityBreaks: "TODO_SPEC"
-  turnaround: "TODO_SPEC"
+  turnaround: "5–7 business days from proof approval"
 useCases:
   - "TODO_SPEC"
 howToOrder:

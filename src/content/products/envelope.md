@@ -6,7 +6,7 @@ specs:
   inkFinish: "Color or Black & White printing, selectable per size"
   minQuantity: "250"
   quantityBreaks: "250, 500, 1000, 1500, 2000, 2500, 3000, 4000, 5000, 7500, 10000, 15000, 20000, 25000"
-  turnaround: "TODO_SPEC"
+  turnaround: "5–7 business days from proof approval"
 useCases:
   - "Letters and general business correspondence (#10)"
   - "Business reply envelopes for surveys and order forms (#9)"

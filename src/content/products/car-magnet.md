@@ -6,7 +6,7 @@ specs:
   inkFinish: "TODO_SPEC"
   minQuantity: "2"
   quantityBreaks: "2, 4, 10, 20, 50"
-  turnaround: "TODO_SPEC"
+  turnaround: "5–7 business days from proof approval"
 useCases:
   - "Business advertising on company or employee vehicles"
   - "Sports team and organization support magnets"

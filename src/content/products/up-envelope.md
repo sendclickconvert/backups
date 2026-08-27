@@ -6,7 +6,7 @@ specs:
   inkFinish: "TODO_SPEC"
   minQuantity: "1000"
   quantityBreaks: "1000, 2500, 5000, 10000"
-  turnaround: "TODO_SPEC"
+  turnaround: "5–7 business days from proof approval"
 useCases:
   - "Political campaign mailings requiring a union label"
   - "Labor organization correspondence and member mailings"
