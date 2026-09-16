@@ -1,5 +1,14 @@
+export const SHOPIFY_STORE_DOMAIN =
+  import.meta.env.SHOPIFY_STORE_DOMAIN ?? process.env.SHOPIFY_STORE_DOMAIN;
+
+if (!SHOPIFY_STORE_DOMAIN) {
+  throw new Error(
+    'SHOPIFY_STORE_DOMAIN is not configured. Set it to the store myshopify.com domain.'
+  );
+}
+
 export const STOREFRONT_URL =
-  'https://cornerstone-services-i42crwvc.myshopify.com/api/2025-10/graphql.json';
+  `https://${SHOPIFY_STORE_DOMAIN}/api/2025-10/graphql.json`;
 
 export async function storefrontFetch<T = unknown>(
   query: string,

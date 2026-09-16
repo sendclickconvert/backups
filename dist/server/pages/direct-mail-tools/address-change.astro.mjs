@@ -1,1 +1,56 @@
-// Contents removed by Astro as it's used for prerendering only
+/* empty css                                     */
+import { g as createComponent, j as renderComponent, r as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_CTVANr5S.mjs';
+import 'kleur/colors';
+import { $ as $$BaseLayout } from '../../chunks/BaseLayout_BFB5IMP7.mjs';
+import { $ as $$PageHero } from '../../chunks/PageHero_DTn0WEdl.mjs';
+import { $ as $$CTASection } from '../../chunks/CTASection_CpJqys7-.mjs';
+export { renderers } from '../../renderers.mjs';
+
+const $$AddressChange = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": "Address Change & Mail Forwarding: How NCOA Keeps Your List Current", "description": "How USPS address changes and mail forwarding affect your mailing list. Learn about NCOA processing, COA updates, and keeping deliverability high.", "canonical": "https://crst.net/direct-mail-tools/address-change" }, { "default": ($$result2) => renderTemplate` ${renderComponent($$result2, "PageHero", $$PageHero, { "title": "Mail Forwarding Guide", "subtitle": "How USPS forwarding works, why it matters for your mailing list, and how NCOA processing keeps your list clean.", "breadcrumbs": [
+    { label: "Direct Mail Tools", href: "/direct-mail-tools" },
+    { label: "Mail Forwarding" }
+  ] })} ${maybeRenderHead()}<section class="py-14 lg:py-20"> <div class="container-wide"> <div class="max-w-3xl mx-auto"> <div class="section-divider mb-6"></div> <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-6">
+How USPS Mail Forwarding Works
+</h2> <p class="text-navy-600/80 leading-relaxed mb-4">
+When someone moves and files a change of address with the USPS, their mail is forwarded to the new address for a limited time. The rules differ by mail class, and understanding them is critical for anyone who mails in volume.
+</p> <p class="text-navy-600/80 leading-relaxed mb-8">
+Approximately 40 million Americans move every year. If you're mailing to even a few thousand addresses, a meaningful percentage of your list goes stale every month. That means wasted print costs, missed opportunities — and <a href="/direct-mail-tools/postage-rates" class="text-crst-primary underline hover:text-crst-gold">wasted postage</a> on pieces that will never reach anyone.
+</p> <h3 class="text-xl font-display font-bold text-crst-primary mb-4">Forwarding by Mail Class</h3> <div class="space-y-4 mb-10"> <div class="bg-white border border-gray-200 rounded-xl p-6"> <h4 class="font-heading font-bold text-navy-800 mb-2">First-Class Mail</h4> <p class="text-sm text-navy-600/80 leading-relaxed mb-3">
+First-Class mail is forwarded free of charge for 12 months after a move. After 12 months, it's returned to the sender with the new address attached (if available). This is the most forgiving class for address accuracy.
+</p> <div class="text-xs bg-green-50 text-green-800 rounded-lg px-4 py-2 inline-block">
+✓ Forwarded 12 months · Returned to sender after
+</div> </div> <div class="bg-white border border-gray-200 rounded-xl p-6"> <h4 class="font-heading font-bold text-navy-800 mb-2">USPS Marketing Mail (Bulk / Standard)</h4> <p class="text-sm text-navy-600/80 leading-relaxed mb-3">
+Marketing Mail is not forwarded. If the address is undeliverable, the piece is discarded by the USPS. The mailer does not receive a return or notification unless they have paid for Address Service Requested (ACS) endorsement. This is why list hygiene is critical for Marketing Mail.
+</p> <div class="text-xs bg-red-50 text-red-800 rounded-lg px-4 py-2 inline-block">
+✗ Not forwarded · Discarded if undeliverable
+</div> </div> <div class="bg-white border border-gray-200 rounded-xl p-6"> <h4 class="font-heading font-bold text-navy-800 mb-2">Periodicals</h4> <p class="text-sm text-navy-600/80 leading-relaxed mb-3">
+Periodicals (magazines, newspapers) are forwarded for 60 days at no extra charge. After that, the publisher receives an address correction notice. Publishers must keep their subscriber lists current to maintain eligibility for Periodicals rates.
+</p> <div class="text-xs bg-yellow-50 text-yellow-800 rounded-lg px-4 py-2 inline-block">
+→ Forwarded 60 days · Correction notice to publisher
+</div> </div> <div class="bg-white border border-gray-200 rounded-xl p-6"> <h4 class="font-heading font-bold text-navy-800 mb-2">EDDM (Every Door Direct Mail)</h4> <p class="text-sm text-navy-600/80 leading-relaxed mb-3">
+EDDM is addressed to "Postal Customer" — not to individuals. It's delivered to every active address on a carrier route regardless of who lives there. Forwarding is not applicable since there's no named recipient. EDDM is one of the most cost-effective formats in <a href="/services/direct-mail" class="text-crst-primary underline hover:text-crst-gold">direct mail marketing</a> precisely because list hygiene is never a concern.
+</p> <div class="text-xs bg-blue-50 text-blue-800 rounded-lg px-4 py-2 inline-block">
+— Not applicable · Delivered to every address on the route
+</div> </div> </div> <h3 class="text-xl font-display font-bold text-crst-primary mb-4">NCOA: The Solution to Stale Addresses</h3> <p class="text-navy-600/80 leading-relaxed mb-4">
+NCOA (National Change of Address) is a USPS database containing every permanent change-of-address filed in the last 48 months — roughly 160 million records. Processing your mailing list through NCOA matches your addresses against this database and updates any that have moved.
+</p> <div class="bg-navy-50 rounded-xl p-6 sm:p-8 mb-8"> <h4 class="font-heading font-bold text-navy-800 mb-4">Why NCOA Processing Matters</h4> <div class="grid sm:grid-cols-2 gap-4"> <div class="flex items-start gap-3"> <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> <div> <span class="font-semibold text-sm text-navy-800">Required by USPS</span> <p class="text-xs text-navy-600/80 mt-1">All bulk mailings must be processed through a USPS-approved NCOA provider within 95 days of the mailing date.</p> </div> </div> <div class="flex items-start gap-3"> <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> <div> <span class="font-semibold text-sm text-navy-800">Saves Postage</span> <p class="text-xs text-navy-600/80 mt-1">Removing or updating undeliverable addresses means you're not paying postage to send mail that will never arrive.</p> </div> </div> <div class="flex items-start gap-3"> <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> <div> <span class="font-semibold text-sm text-navy-800">Improves Response</span> <p class="text-xs text-navy-600/80 mt-1">Updated addresses mean more pieces reach actual recipients — improving your campaign response rate and ROI.</p> </div> </div> <div class="flex items-start gap-3"> <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> <div> <span class="font-semibold text-sm text-navy-800">Reduces Waste</span> <p class="text-xs text-navy-600/80 mt-1">Every undeliverable piece wastes paper, ink, and postage. NCOA processing is the single biggest step toward a zero-waste mailing.</p> </div> </div> </div> </div> <h3 class="text-xl font-display font-bold text-crst-primary mb-4">Address Service Endorsements</h3> <p class="text-navy-600/80 leading-relaxed mb-4">
+Mailers can print an endorsement line on their mail piece to tell the USPS how to handle undeliverable mail. Each endorsement has different rules and fees — see our <a href="/direct-mail-tools/postal-dictionary" class="text-crst-primary underline hover:text-crst-gold">postal dictionary</a> for full definitions of ACS, UAA, and other endorsement-related terms.
+</p> <div class="overflow-x-auto mb-10"> <table class="w-full text-sm"> <thead> <tr class="border-b-2 border-crst-primary/20"> <th class="text-left py-2 pr-4 font-heading font-bold text-navy-800">Endorsement</th> <th class="text-left py-2 pr-4 font-heading font-bold text-navy-800">First-Class</th> <th class="text-left py-2 font-heading font-bold text-navy-800">Marketing Mail</th> </tr> </thead> <tbody> <tr class="border-b border-gray-100"> <td class="py-2.5 pr-4 font-semibold text-navy-800">Address Service Requested</td> <td class="py-2.5 pr-4 text-navy-600/80">Forwarded; new address sent to mailer</td> <td class="py-2.5 text-navy-600/80">Not forwarded; address correction sent; piece discarded</td> </tr> <tr class="border-b border-gray-100"> <td class="py-2.5 pr-4 font-semibold text-navy-800">Return Service Requested</td> <td class="py-2.5 pr-4 text-navy-600/80">Not forwarded; returned with new address</td> <td class="py-2.5 text-navy-600/80">Not forwarded; piece returned to sender</td> </tr> <tr class="border-b border-gray-100"> <td class="py-2.5 pr-4 font-semibold text-navy-800">Change Service Requested</td> <td class="py-2.5 pr-4 text-navy-600/80">Not forwarded; electronic correction sent; piece discarded</td> <td class="py-2.5 text-navy-600/80">Not forwarded; electronic correction sent; piece discarded</td> </tr> <tr> <td class="py-2.5 pr-4 font-semibold text-navy-800">No endorsement</td> <td class="py-2.5 pr-4 text-navy-600/80">Forwarded; no notification</td> <td class="py-2.5 text-navy-600/80">Not forwarded; discarded; no notification</td> </tr> </tbody> </table> </div> <div class="bg-crst-primary/5 rounded-xl p-8 text-center"> <h3 class="text-xl font-display font-bold text-crst-primary mb-3">We Handle NCOA for Every Mailing</h3> <p class="text-navy-600/80 text-sm mb-5 max-w-lg mx-auto">
+Every mailing list we process goes through NCOA, CASS, and DPV verification. We'll clean your list, update moved addresses, and flag undeliverables — included in our standard mailing service. If you're mailing under a bulk or nonprofit permit, we also manage your <a href="/direct-mail-tools/cornerstone-mailing-permits" class="text-crst-primary underline hover:text-crst-gold">mailing permit</a> so you're always postage-ready.
+</p> <div class="flex flex-wrap justify-center gap-3"> <a href="/services/data-lists" class="btn-primary">Data List Services</a> <a href="/estimate" class="btn-secondary">Get an Estimate</a> </div> </div> </div> </div> </section> ${renderComponent($$result2, "CTASection", $$CTASection, {})} ` })}`;
+}, "/home/runner/workspace/src/pages/direct-mail-tools/address-change.astro", void 0);
+
+const $$file = "/home/runner/workspace/src/pages/direct-mail-tools/address-change.astro";
+const $$url = "/direct-mail-tools/address-change";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$AddressChange,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

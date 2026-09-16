@@ -1,9 +1,7 @@
 export const prerender = false;
 
 import type { APIRoute } from 'astro';
-
-const STOREFRONT_URL =
-  'https://cornerstone-services-i42crwvc.myshopify.com/api/2025-10/graphql.json';
+import { STOREFRONT_URL } from '../../../lib/shopify';
 
 const CART_CREATE = `
   mutation CartCreate($lines: [CartLineInput!]!) {

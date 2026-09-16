@@ -1,7 +1,7 @@
+import { S as STOREFRONT_URL } from '../../../chunks/shopify_AYdq34iQ.mjs';
 export { renderers } from '../../../renderers.mjs';
 
 const prerender = false;
-const STOREFRONT_URL = "https://cornerstone-services-i42crwvc.myshopify.com/api/2025-10/graphql.json";
 const CART_CREATE = `
   mutation CartCreate($lines: [CartLineInput!]!) {
     cartCreate(input: { lines: $lines }) {

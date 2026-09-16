@@ -1,1 +1,127 @@
-// Contents removed by Astro as it's used for prerendering only
+/* empty css                                     */
+import { g as createComponent, j as renderComponent, r as renderTemplate, k as Fragment, u as unescapeHTML, m as maybeRenderHead } from '../../chunks/astro/server_CTVANr5S.mjs';
+import 'kleur/colors';
+import { $ as $$BaseLayout } from '../../chunks/BaseLayout_BFB5IMP7.mjs';
+import { $ as $$PageHero } from '../../chunks/PageHero_DTn0WEdl.mjs';
+import { $ as $$CTASection } from '../../chunks/CTASection_CpJqys7-.mjs';
+import { $ as $$AuthorByline } from '../../chunks/AuthorByline_DNWN2IXS.mjs';
+import { B as BUSINESS } from '../../chunks/site_BORfRXu4.mjs';
+export { renderers } from '../../renderers.mjs';
+
+var __freeze = Object.freeze;
+var __defProp = Object.defineProperty;
+var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(cooked.slice()) }));
+var _a;
+const $$NonProfitDatabaseChangeRequest = createComponent(($$result, $$props, $$slots) => {
+  const title = "USPS Form 6015 \u2014 Nonprofit Mailing Update Guide";
+  const description = "Changed your nonprofit's name, address, or contact person? Here's exactly how to update USPS Form 6015 through the Business Gateway \u2014 with screenshots for every step.";
+  const faqs = [
+    {
+      q: "What is USPS Form 6015?",
+      a: "Form 6015 is the Nonprofit Database Change Request form used to update your organization's information with the USPS. This includes changes to your organization name, address, contact person, or authorization details. You can submit it through the USPS Business Gateway online or at your local post office."
+    },
+    {
+      q: "Do I need existing nonprofit mailing privileges to use Form 6015?",
+      a: "Yes. Form 6015 is for organizations that already have USPS nonprofit mailing authorization (via Form 3624). If you don't yet have nonprofit mailing privileges, you need to apply first. Cornerstone can help with both the initial application and subsequent changes."
+    },
+    {
+      q: "Can Cornerstone help with nonprofit mailing paperwork?",
+      a: "Yes. We've helped dozens of nonprofit organizations in the Hudson Valley apply for and maintain their USPS mailing privileges. We can walk you through the Form 6015 process, verify your authorization numbers, and handle the entire mailing once your records are updated. Call us at (845) 255-5722."
+    }
+  ];
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://crst.net/resources/non-profit-database-change-request/#article",
+    headline: "How to Change Your Nonprofit Information Through the USPS",
+    author: {
+      "@type": "Organization",
+      name: BUSINESS.name,
+      url: BUSINESS.url
+    },
+    publisher: {
+      "@type": "Organization",
+      name: BUSINESS.name,
+      url: BUSINESS.url,
+      logo: { "@type": "ImageObject", url: `${BUSINESS.url}/images/crst-logo.webp` }
+    },
+    datePublished: "2021-03-15",
+    dateModified: "2026-03-16",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://crst.net/resources/non-profit-database-change-request"
+    }
+  };
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a }
+    }))
+  };
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://crst.net" },
+      { "@type": "ListItem", position: 2, name: "Resources", item: "https://crst.net/resources" },
+      { "@type": "ListItem", position: 3, name: "Nonprofit Database Change Request", item: "https://crst.net/resources/non-profit-database-change-request" }
+    ]
+  };
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": title, "description": description, "schema": null }, { "default": ($$result2) => renderTemplate`  ${renderComponent($$result2, "PageHero", $$PageHero, { "title": "How to Change Your Nonprofit Information Through the USPS", "subtitle": "Step-by-step guide to updating your nonprofit organization's information with USPS Form 6015.", "breadcrumbs": [
+    { label: "Resources", href: "/resources" },
+    { label: "Nonprofit Database Change Request" }
+  ] })} ${maybeRenderHead()}<section class="py-14 lg:py-20"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="max-w-3xl mx-auto"> <div class="section-divider mb-6"></div> <p class="text-navy-600/80 leading-relaxed mb-6">
+Dealing with the United States Postal Service can be difficult and inconsistent. That's why we've created these guides to help you apply for <a href="/non-profit-mailing-application" class="text-crst-primary underline hover:text-crst-gold">nonprofit mailing privileges</a> or update your information. Keep in mind that USPS may require additional documents, and we'll update the guides as needed.
+</p> <p class="text-navy-600/80 leading-relaxed mb-8">
+This guide is for those with existing USPS mailing privileges who need to make changes. Changing your nonprofit information can be done through the <a href="https://gateway.usps.com/eAdmin/view/signin" target="_blank" rel="noopener noreferrer" class="text-crst-primary underline hover:text-crst-gold">USPS Business Gateway</a> or at your local post office. <a href="https://about.usps.com/forms/ps6015.pdf" target="_blank" rel="noopener noreferrer" class="text-crst-primary underline hover:text-crst-gold">Click here</a> to access the digital Form 6015.
+</p> <h2 class="text-2xl font-display text-crst-primary mb-4">Option 1: Using USPS Business Gateway</h2> <ol class="list-decimal list-outside text-navy-600/80 space-y-4 mb-8 pl-6"> <li class="leading-relaxed"> <strong>Log in</strong> to your <a href="https://gateway.usps.com/eAdmin/view/signin" target="_blank" rel="noopener noreferrer" class="text-crst-primary underline hover:text-crst-gold">Business Customer Gateway Account</a>.
+</li> <li class="leading-relaxed">
+Once you have entered your account, you will find a menu on the left side. Select <strong>Mailing Services</strong>.
+<img src="/images/usps-gateway-mailing-services.webp" alt="USPS Business Customer Gateway header showing Mailing Services tab circled in the navigation menu" width="1024" height="136" loading="lazy" class="mt-3 rounded-lg border border-gray-200 w-full h-auto"> </li> <li class="leading-relaxed">
+Scroll through the list of services and locate <strong>Postal Wizard (PostalOne!)</strong> and click <strong>"Go to Service"</strong>.
+<img src="/images/usps-postal-wizard-go-to-service.webp" alt="Postal Wizard (PostalOne!) service row with Go to Service button highlighted" width="1024" height="54" loading="lazy" class="mt-3 rounded-lg border border-gray-200 w-full h-auto"> </li> <li class="leading-relaxed">
+Once you're in Postal Wizard, scroll down and look for <strong>"Complete Customer Service Form"</strong> and find <strong>"Form 6015 - Nonprofit Database Change Request"</strong>.
+<img src="/images/usps-form-6015-customer-service-table.webp" alt="Complete Customer Service Form table showing Form 6015 Nonprofit Database Change Request" width="1024" height="174" loading="lazy" class="mt-3 rounded-lg border border-gray-200 w-full h-auto"> </li> <li class="leading-relaxed">
+Upon clicking Form 6015, you should see an existing authorization number listed. Click the number you want to update to proceed.
+<img src="/images/usps-form-6015-authorization-numbers.webp" alt="Form 6015 Nonprofit Database Change Request page showing existing 3624 authorization numbers to select" width="624" height="122" loading="lazy" class="mt-3 rounded-lg border border-gray-200 w-full h-auto"> <p class="mt-2 text-sm bg-amber-50 border border-amber-200 rounded-lg p-3"> <strong>Note:</strong> You must have an existing 3624 Application in order to fill out this form. Don't have nonprofit mailing privileges? <a href="/non-profit-mailing-application" class="text-crst-primary underline hover:text-crst-gold">Learn how to apply</a>.
+</p> </li> <li class="leading-relaxed">
+On the <strong>General Information page</strong>, check the boxes for the specific changes you would like to make, then click <strong>Continue</strong>.
+<img src="/images/usps-nonprofit-database-change-checkboxes.webp" alt="Nonprofit Database Change Request General Information page with checkboxes for Organization Name Change, Primary Address Change, Telephone Change, and more" width="624" height="165" loading="lazy" class="mt-3 rounded-lg border border-gray-200 w-full h-auto"> </li> <li class="leading-relaxed">
+The <strong>Specifics page</strong> is where you enter your new information for the request. Make sure the new information is accurate and that you complete all the required fields marked with red asterisks.
+<img src="/images/usps-form-6015-specifics-page.webp" alt="Form 6015 Specifics page showing fields for Current Address, New Address, Current Phone Number, and New Contact Name" width="624" height="219" loading="lazy" class="mt-3 rounded-lg border border-gray-200 w-full h-auto"> <p class="mt-2 text-sm bg-amber-50 border border-amber-200 rounded-lg p-3"> <strong>Note:</strong> If your address should not be standardized (converted to standard USPS format), check the box "Do not standardize my address."
+</p> </li> <li class="leading-relaxed">
+The final step is the <strong>Review page</strong>, where you can check all the changes you're requesting. Carefully review everything to ensure your information is accurate. Double-check everything before submitting.
+</li> <li class="leading-relaxed">
+Click <strong>"Standardized"</strong> for a definition and, if it applies, update your request accordingly. If you need to correct anything, use the <strong>"Edit Updated Information"</strong> option.
+</li> <li class="leading-relaxed">
+Once you're confident everything is correct, click <strong>"Submit"</strong>.
+</li> </ol> <h2 class="text-2xl font-display text-crst-primary mb-4">Option 2: Using a Physical Form 6015</h2> <ol class="list-decimal list-outside text-navy-600/80 space-y-4 mb-6 pl-6"> <li class="leading-relaxed">
+Ask for a Form 6015 from your local Post Office, or <a href="https://about.usps.com/forms/ps6015.pdf" target="_blank" rel="noopener noreferrer" class="text-crst-primary underline hover:text-crst-gold">download the digital version here</a>.
+</li> <li class="leading-relaxed">
+Tick the boxes for the information changes you want to make.
+<img src="/images/usps-form-6015-paper-action-needed.webp" alt="Paper Form 6015 Check action needed section with checkboxes for Organization Name Change, Organization Address Change, Telephone Change, Contact Name Change, and more" width="768" height="169" loading="lazy" class="mt-3 rounded-lg border border-gray-200 w-full h-auto"> <p class="mt-2 text-sm bg-amber-50 border border-amber-200 rounded-lg p-3"> <strong>Note:</strong> Changes to the organization's authorized name require additional supporting documentation that must be submitted to the PCSC or MSSC.
+</p> </li> <li class="leading-relaxed">
+Fill out your old information. If you only need to update the Contact Name, you only need to complete that specific field.
+<img src="/images/usps-form-6015-paper-org-fields.webp" alt="Paper Form 6015 showing fields for Old Organization Name, Street, City State ZIP, Alternate Street, Telephone, Contact Name, Contact Title, and Contact Email" width="768" height="368" loading="lazy" class="mt-3 rounded-lg border border-gray-200 w-full h-auto"> </li> <li class="leading-relaxed">
+Write down your new information. For example, if you only changed your Contact Name, you only need to update that specific field.
+</li> <li class="leading-relaxed"> <strong>Submit the form to your local Post Office.</strong> </li> </ol> <div class="bg-crst-primary/5 border border-crst-primary/20 rounded-xl p-6 mb-10"> <h3 class="font-heading font-bold text-crst-primary mb-2">Cornerstone Can Handle This for You</h3> <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+If you're a Cornerstone Services client, we can handle the entire Form 6015 process for you — from verifying your authorization numbers to submitting the changes. Planning a nonprofit event? See our <a href="/resources/complete-friendraising-guide" class="text-crst-primary underline hover:text-crst-gold">complete friendraising guide</a>.
+</p> <div class="flex flex-wrap gap-3"> <a href="/estimate" class="btn-primary text-sm">Get a Free Estimate</a> <a href="/non-profit-mailing-application" class="btn-secondary text-sm">Nonprofit Mailing Application →</a> </div> </div> <h3 class="text-lg font-heading font-bold text-navy-800 mb-3">Important Notes</h3> <ul class="list-disc list-inside text-navy-600/80 space-y-2 mb-10 pl-4"> <li>Changes to general information such as mailing address or phone number will take place immediately.</li> <li>Changes to the organization's authorized name require additional supporting documentation that must be submitted to the PCSC. You are required to attach documents such as amendments to your articles of incorporation or a letter from the IRS.</li> </ul> <h2 class="text-2xl font-display text-crst-primary mb-6">Frequently Asked Questions</h2> <div class="space-y-6 mb-10"> ${faqs.map((faq) => renderTemplate`<div class="bg-white border border-gray-200 rounded-lg p-5"> <h3 class="font-semibold text-gray-800 text-sm mb-3">${faq.q}</h3> <p class="text-sm text-gray-600 leading-relaxed">${faq.a}</p> </div>`)} </div> ${renderComponent($$result2, "AuthorByline", $$AuthorByline, { "compact": true })} </div> </div> </section> ${renderComponent($$result2, "CTASection", $$CTASection, {})} `, "head": ($$result2) => renderTemplate`${renderComponent($$result2, "Fragment", Fragment, { "slot": "head" }, { "default": ($$result3) => renderTemplate(_a || (_a = __template([' <script type="application/ld+json">', '<\/script> <script type="application/ld+json">', '<\/script> <script type="application/ld+json">', "<\/script> "])), unescapeHTML(JSON.stringify(articleSchema)), unescapeHTML(JSON.stringify(faqSchema)), unescapeHTML(JSON.stringify(breadcrumbSchema))) })}` })}`;
+}, "/home/runner/workspace/src/pages/resources/non-profit-database-change-request.astro", void 0);
+
+const $$file = "/home/runner/workspace/src/pages/resources/non-profit-database-change-request.astro";
+const $$url = "/resources/non-profit-database-change-request";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$NonProfitDatabaseChangeRequest,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

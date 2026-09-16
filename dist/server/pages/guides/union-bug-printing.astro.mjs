@@ -1,1 +1,120 @@
-// Contents removed by Astro as it's used for prerendering only
+/* empty css                                     */
+import { g as createComponent, j as renderComponent, r as renderTemplate, k as Fragment, u as unescapeHTML, m as maybeRenderHead, i as addAttribute } from '../../chunks/astro/server_CTVANr5S.mjs';
+import 'kleur/colors';
+import { $ as $$BaseLayout } from '../../chunks/BaseLayout_BFB5IMP7.mjs';
+import { $ as $$CTASection } from '../../chunks/CTASection_CpJqys7-.mjs';
+import { $ as $$AuthorByline } from '../../chunks/AuthorByline_DNWN2IXS.mjs';
+import { B as BUSINESS } from '../../chunks/site_BORfRXu4.mjs';
+export { renderers } from '../../renderers.mjs';
+
+var __freeze = Object.freeze;
+var __defProp = Object.defineProperty;
+var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(cooked.slice()) }));
+var _a;
+const $$Index = createComponent(($$result, $$props, $$slots) => {
+  const canonical = "https://crst.net/guides/union-bug-printing";
+  const title = "Union Bug Printing: What It Is & When You Need It (2026 Guide)";
+  const description = "Learn what a union bug means, when campaigns and organizations may need union-printed materials, and how to order union postcards, palm cards, letters, and envelopes.";
+  const lastUpdated = "2026-08-26";
+  const seanGriffin = {
+    "@type": "Person",
+    "@id": "https://crst.net/about#sean-griffin",
+    name: "Sean Griffin",
+    jobTitle: "Owner & Mailpiece Design Professional",
+    description: "Sean Griffin founded Cornerstone Services in 1998. He holds the USPS Mailpiece Design Professional (MDP) certification and has managed direct mail, printing, and mailing campaigns for businesses across Ulster, Dutchess, and Orange counties for over 28 years.",
+    url: "https://crst.net/about",
+    image: "https://crst.net/images/sean-griffin.png",
+    sameAs: ["https://crst.net/about"],
+    hasCredential: {
+      "@type": "EducationalOccupationalCredential",
+      name: "Mailpiece Design Professional (MDP)",
+      credentialCategory: "Professional Certification",
+      recognizedBy: { "@type": "Organization", name: "United States Postal Service" }
+    },
+    worksFor: {
+      "@type": "Organization",
+      "@id": "https://crst.net/#organization",
+      name: "Cornerstone Services, Inc.",
+      url: "https://crst.net",
+      telephone: "+1-845-255-5722",
+      foundingDate: "1998",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "387 Malden Turnpike",
+        addressLocality: "Saugerties",
+        addressRegion: "NY",
+        postalCode: "12477",
+        addressCountry: "US"
+      }
+    }
+  };
+  const faqs = [
+    { q: "What is a union bug?", a: "A union bug is a small printed mark or emblem identifying the union-affiliated shop or labor program responsible for producing a piece. It is usually placed in a bottom corner or another unobtrusive location. The exact label and placement can vary, so a printer should confirm the appropriate mark for the job." },
+    { q: "Why do political campaigns require union-printed materials?", a: "Some campaigns are asked to use union printing by a labor organization, party, endorsement, contract, or internal campaign policy. The union bug provides a visible record that the material was produced in a union shop and can be important when demonstrating labor support. It is not a universal legal requirement for every political campaign, so confirm the specification with the organization making the request." },
+    { q: "Which Cornerstone products are available union-printed?", a: "Cornerstone offers union palm cards, union envelopes, union postcards, and union letters through its shop. Brochures, letterhead, and other campaign or organizational materials can also be discussed as part of a union-printing quote. The best product depends on whether you are canvassing, mailing, or preparing formal correspondence." },
+    { q: "Does union printing cost more?", a: "There is no single union-printing price or automatic surcharge. The total depends on the product, finished size, stock, coating, quantity, artwork, and whether mailing is included. Request a quote with your specifications so the production requirements and any union-label needs can be confirmed together." }
+  ];
+  const graphItems = [
+    {
+      "@type": "Article",
+      headline: title,
+      description,
+      url: canonical,
+      mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
+      datePublished: lastUpdated,
+      dateModified: lastUpdated,
+      inLanguage: "en-US",
+      author: seanGriffin,
+      publisher: {
+        "@type": "Organization",
+        "@id": "https://crst.net/#organization",
+        name: "Cornerstone Services, Inc.",
+        url: "https://crst.net",
+        logo: { "@type": "ImageObject", url: "https://crst.net/images/crst-logo.png", width: 200, height: 60 }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://crst.net" },
+        { "@type": "ListItem", position: 2, name: "Guides", item: "https://crst.net/guides" },
+        { "@type": "ListItem", position: 3, name: "Union Bug Printing", item: canonical }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a }
+      }))
+    }
+  ];
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": title, "description": description, "canonical": canonical, "schema": null }, { "default": ($$result2) => renderTemplate`  ${maybeRenderHead()}<section class="bg-crst-primary text-white py-12 lg:py-16"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <nav class="text-sm text-white/50 mb-4" aria-label="Breadcrumb"> <a href="/" class="hover:text-white/80 transition-colors">Home</a><span class="mx-2">›</span> <a href="/guides" class="hover:text-white/80 transition-colors">Guides</a><span class="mx-2">›</span> <span class="text-white/70">Union Bug Printing</span> </nav> <h1 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold leading-tight text-white mb-4">
+Union Bug Printing: What It Is & When You Need It
+</h1> <p class="article-lead text-white/70 text-lg max-w-2xl leading-relaxed">
+A union bug is more than a small mark on a printed piece: for campaigns, labor organizations, and other groups, it can document that the work was produced in a union shop. Learn what the label means, who may request it, and how to plan a union-printed order.
+</p> </div> </section> <section class="py-14 lg:py-20"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="grid lg:grid-cols-3 gap-10 lg:gap-14"> <div class="lg:col-span-2"> <div class="bg-navy-50/60 border border-navy-100 rounded-xl p-5 mb-8 text-navy-700 leading-relaxed">
+Union bug printing means producing printed materials through a union-affiliated shop and adding the appropriate union label to the finished piece. Political campaigns, labor organizations, municipalities, and nonprofits may request it to meet a party, labor, contract, or organizational requirement. Cornerstone offers union-printed palm cards, postcards, envelopes, and letters.
+</div> <div class="prose prose-navy max-w-none prose-headings:font-display prose-headings:text-crst-primary prose-a:text-crst-accent hover:prose-a:text-crst-primary prose-strong:text-navy-800 prose-p:text-navy-600/80 prose-li:text-navy-600/80"> <h2>What Is a Union Bug?</h2> <p>A union bug is a small logo, emblem, or imprint that identifies the labor union or union-affiliated program connected to a printed piece. It signals that the work was produced under the shop's union arrangement and is commonly placed in a bottom corner or another standard location. The mark is part of the production specifications, not artwork a customer has to recreate. At Cornerstone, union bug placement is handled during production and the appropriate mark is included in the final design before press.</p> <h2>Who Requires Union-Printed Materials?</h2> <p>Union printing is often requested by political campaigns, labor organizations, municipalities, nonprofits, and civic groups. A labor endorsement, party rule, collective bargaining or procurement requirement, or an organization's own policy may call for a union-printed piece. These requirements vary by organization and project; the union bug is not a blanket legal requirement for every campaign or mailing. If a specific label, location, or wording is required, provide that instruction when requesting a quote so it can be confirmed before production.</p> <h2>Union-Printed Products Available at Cornerstone</h2> <p>Cornerstone Services prints several product lines at a union shop, each carrying the official union bug:</p> <ul> <li><a href="/shop/up-palm-card">Union Palm Card</a> — a 4 x 9 palm card for canvassing and outreach.</li> <li><a href="/shop/up-envelope">Union Envelope</a> — a standard #10 mailing envelope.</li> <li><a href="/shop/up-postcard">Union Postcard</a> — a union-printed postcard for direct mail.</li> <li><a href="/shop/up-letter">Union Letter</a> — a union-printed letter package.</li> </ul> <p>See our <a href="/services/union-printing">Union Printing services page</a> for the full program, or our <a href="/guides/palm-card-sizes">Palm Card Sizes guide</a> if you're comparing formats before you order.</p> </div> <div class="not-prose mt-8"> ${renderComponent($$result2, "AuthorByline", $$AuthorByline, {})} </div> <div class="mt-12"> <div class="section-divider mb-6"></div> <h2 class="text-2xl font-display text-crst-primary mb-6">Frequently Asked Questions</h2> <div class="space-y-4"> ${faqs.map((item) => renderTemplate`<div class="bg-navy-50/40 rounded-xl border border-navy-100 p-5"> <h3 class="font-heading font-semibold text-navy-800 text-sm mb-2">${item.q}</h3> <p class="text-sm text-navy-600/70 leading-relaxed">${item.a}</p> </div>`)} </div> </div> <div class="bg-crst-primary/5 border border-crst-primary/15 rounded-xl p-6 text-center mt-10"> <p class="font-heading font-bold text-crst-primary text-lg mb-2">Need union-printed materials?</p> <p class="text-navy-600/70 text-sm mb-4">Order online in minutes, or talk it through with us first.</p> <div class="flex flex-col sm:flex-row items-center justify-center gap-3"> <a href="/services/union-printing" class="btn-primary text-sm">View Union Printing →</a> <a${addAttribute(`tel:${BUSINESS.phoneClean}`, "href")} class="inline-flex items-center gap-2 text-sm font-heading font-semibold text-crst-primary hover:text-crst-accent transition-colors">
+Call ${BUSINESS.phone} </a> </div> </div> </div> <aside class="lg:col-span-1"> <div class="sticky top-28 space-y-6"> <div class="bg-crst-primary rounded-xl p-6 text-white"> <h3 class="font-display text-lg mb-2">Get a Union Printing Quote</h3> <p class="text-white/60 text-sm leading-relaxed mb-4">Tell us your product, quantity, and timeline. We'll send a detailed quote within one business day.</p> <a href="/estimate" class="btn-accent w-full text-center text-sm">Request a Quote</a> </div> <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100"> <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Related Resources</h3> <div class="space-y-2"> ${[
+    { label: "Union Printing Services", href: "/services/union-printing" },
+    { label: "Shop Union Palm Cards", href: "/shop/up-palm-card" },
+    { label: "Shop Union Envelopes", href: "/shop/up-envelope" },
+    { label: "Palm Card Sizes Guide", href: "/guides/palm-card-sizes" }
+  ].map((link) => renderTemplate`<a${addAttribute(link.href, "href")} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-white rounded-md transition-colors font-heading"> ${link.label} <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg> </a>`)} </div> </div> </div> </aside> </div> </div> </section> ${renderComponent($$result2, "CTASection", $$CTASection, {})} `, "head": ($$result2) => renderTemplate`${renderComponent($$result2, "Fragment", Fragment, { "slot": "head" }, { "default": ($$result3) => renderTemplate(_a || (_a = __template([' <script type="application/ld+json">', "<\/script> "])), unescapeHTML(JSON.stringify({ "@context": "https://schema.org", "@graph": graphItems }))) })}` })}`;
+}, "/home/runner/workspace/src/pages/guides/union-bug-printing/index.astro", void 0);
+
+const $$file = "/home/runner/workspace/src/pages/guides/union-bug-printing/index.astro";
+const $$url = "/guides/union-bug-printing";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$Index,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

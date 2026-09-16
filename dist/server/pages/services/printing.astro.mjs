@@ -1,1 +1,164 @@
-// Contents removed by Astro as it's used for prerendering only
+/* empty css                                     */
+import { g as createComponent, j as renderComponent, r as renderTemplate, k as Fragment, u as unescapeHTML, m as maybeRenderHead, i as addAttribute } from '../../chunks/astro/server_CTVANr5S.mjs';
+import 'kleur/colors';
+import { $ as $$BaseLayout } from '../../chunks/BaseLayout_BFB5IMP7.mjs';
+import { $ as $$PageHero } from '../../chunks/PageHero_DTn0WEdl.mjs';
+import { $ as $$CTASection } from '../../chunks/CTASection_CpJqys7-.mjs';
+import { $ as $$CaseStudyCallout } from '../../chunks/CaseStudyCallout_C-W9Ybjr.mjs';
+import { $ as $$AuthorByline } from '../../chunks/AuthorByline_DNWN2IXS.mjs';
+import { B as BUSINESS, C as COUNTIES } from '../../chunks/site_BORfRXu4.mjs';
+import { g as getCollection } from '../../chunks/_astro_content_CCCTsyOJ.mjs';
+export { renderers } from '../../renderers.mjs';
+
+var __freeze = Object.freeze;
+var __defProp = Object.defineProperty;
+var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(cooked.slice()) }));
+var _a;
+const $$Printing = createComponent(async ($$result, $$props, $$slots) => {
+  const clusterArticles = await getCollection("printing-articles");
+  const printingFaqs = [
+    { q: "What file formats do you accept for printing?", a: "We accept PDF, Adobe InDesign packaged files, and Adobe Illustrator files. PDFs should be press-ready with fonts embedded, images at 300 DPI minimum, and bleed included where needed." },
+    { q: "How long does printing take?", a: "Turnaround depends on quantity and format. Digital runs under 1,000 pieces typically print within 2\u20133 business days after proof approval. Offset jobs take 5\u20137 business days for runs over 5,000. Rush service is available for time-sensitive campaigns." },
+    { q: "Can you handle the mailing after printing?", a: "Yes. We print and mail in the same facility. Once your job comes off press, we can move it directly into data processing, addressing, and postal prep without leaving the building." },
+    { q: "Do you offer design services?", a: "We provide file review and minor layout adjustments, but full graphic design is handled by our design team. If you need a mail piece designed, ask us about bundling design with your print job." },
+    { q: "What is the minimum order quantity?", a: "There is no strict minimum. We've printed jobs as small as 100 postcards for local campaigns and as large as 50,000+ pieces for regional nonprofit appeals. Pricing adjusts based on quantity and complexity." },
+    { q: "How do I get pricing?", a: `Call us at ${BUSINESS.phone} or fill out our estimate form with your piece size, quantity, paper preference, and whether you need mailing services. We'll send a quote within one business day.` }
+  ];
+  const graphSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        name: "Commercial Printing Services",
+        provider: { "@id": "https://crst.net/#organization" },
+        areaServed: [
+          { "@type": "County", name: "Ulster County, New York" },
+          { "@type": "County", name: "Dutchess County, New York" },
+          { "@type": "County", name: "Orange County, New York" }
+        ],
+        url: "https://crst.net/services/printing"
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: printingFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.q,
+          acceptedAnswer: { "@type": "Answer", text: faq.a }
+        }))
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://crst.net" },
+          { "@type": "ListItem", position: 2, name: "Services", item: "https://crst.net/services" },
+          { "@type": "ListItem", position: 3, name: "Printing Services", item: "https://crst.net/services/printing" }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://crst.net/services/printing",
+        name: "Commercial Printing Services for Direct Mail Campaigns",
+        url: "https://crst.net/services/printing",
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: ["h1", "h2"]
+        }
+      }
+    ]
+  };
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": "Commercial Printing Services for Direct Mail Campaigns", "description": "Commercial printing services for postcards, brochures, self-mailers, letters, newsletters, and direct mail campaigns. In-house printing and mailing in Saugerties, NY.", "schema": null }, { "default": async ($$result2) => renderTemplate`  ${renderComponent($$result2, "PageHero", $$PageHero, { "title": "Commercial Printing Services for Direct Mail Campaigns", "subtitle": "In-house printing built for mail. Postcards, self-mailers, letters, brochures, and newsletters produced at our Saugerties facility and moved directly into mail prep.", "breadcrumbs": [
+    { label: "Services", href: "/services" },
+    { label: "Printing Services" }
+  ], "noSchema": true })} ${maybeRenderHead()}<section class="py-14 lg:py-20"> <div class="container-wide"> <div class="grid lg:grid-cols-3 gap-10 lg:gap-14"> <!-- Main content --> <div class="lg:col-span-2"> <div class="section-divider mb-6"></div> <p class="text-navy-600/80 leading-relaxed mb-6">
+Cornerstone prints commercial direct mail pieces for Hudson Valley businesses — postcards, brochures, letters, <a href="/shop/envelope" class="text-crst-primary underline hover:text-crst-gold">envelopes</a>, catalogs, and custom formats — all to USPS automation specs. Commercial printing for direct mail differs from general commercial print because every piece has to meet postal specifications for size, paper weight, aspect ratio, and machinability. We design and print to spec the first time, so nothing comes back surcharged or rejected at the BMEU.
+</p> <h2 class="text-2xl font-display text-crst-primary mt-10 mb-4">Commercial printing built for mail</h2> <p class="text-navy-600/80 leading-relaxed mb-4">
+A lot of printers can put ink on paper. Fewer are set up to handle the full workflow from file review to printed piece to postal-ready mail.
+</p> <p class="text-navy-600/80 leading-relaxed mb-4">
+Our commercial printing work is built around direct mail requirements. That means we look at more than color and finish. We also review size, thickness, folds, aspect ratio, addressing areas, tabbing requirements, and other details that affect postage and mailability.
+</p> <p class="text-navy-600/80 leading-relaxed mb-6">
+If a piece is meant to mail, it should be designed and printed with mailing in mind from the start. We've seen too many campaigns get derailed because a printer approved a file without checking whether it meets USPS automation standards or qualifies for presort discounts.
+</p> <h2 class="text-2xl font-display text-crst-primary mt-10 mb-4">What we print</h2> <p class="text-navy-600/80 leading-relaxed mb-4">We print a wide range of direct-mail and business communication formats, including:</p> <div class="grid sm:grid-cols-2 gap-3 mb-6"> ${[
+    { title: "Postcards", desc: "Standard and jumbo sizes \u2014 4\xD76, 6\xD79, 6\xD711 \u2014 on heavy cardstock" },
+    { title: "Self-Mailers", desc: "Bi-fold and tri-fold formats that mail without an envelope" },
+    { title: "Brochures & Flyers", desc: "Campaign and event materials in various fold configurations" },
+    { title: "Letters & Envelopes", desc: "Personalized letters with matching envelopes and reply inserts" },
+    { title: "Newsletters", desc: "Multi-page pieces for organizations, associations, and municipalities" },
+    { title: "Reply Inserts & Collateral", desc: "BREs, donation slips, and supporting campaign materials" },
+    { title: "Business Stationery", desc: "Letterheads, envelopes, business cards, and notepads" }
+  ].map((item) => renderTemplate`<div class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg"> <svg class="w-5 h-5 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> <div> <div class="font-heading font-semibold text-navy-800 text-sm">${item.title}</div> <div class="text-xs text-navy-600/60">${item.desc}</div> </div> </div>`)} </div> <p class="text-navy-600/80 leading-relaxed mb-6">Whether you need a short-run digital job or a larger campaign, we match the format and production method to the job. Beyond direct mail formats, we also print <a href="/shop/car-magnet" class="text-crst-primary underline hover:text-crst-gold">car magnets</a>, <a href="/shop/lawn-sign" class="text-crst-primary underline hover:text-crst-gold">lawn signs</a>, <a href="/shop/banner" class="text-crst-primary underline hover:text-crst-gold">banners</a>, <a href="/shop/greeting-card" class="text-crst-primary underline hover:text-crst-gold">greeting cards</a>, <a href="/shop/raffle-ticket" class="text-crst-primary underline hover:text-crst-gold">raffle tickets</a>, and <a href="/shop/presentation-folder" class="text-crst-primary underline hover:text-crst-gold">presentation folders</a> — order any of these directly from our shop.</p> <h2 class="text-2xl font-display text-crst-primary mt-10 mb-4">Postcard printing services</h2> <p class="text-navy-600/80 leading-relaxed mb-4">
+Postcards remain one of the most effective direct mail formats because they are easy to read, cost-efficient to mail, and fast to produce. We print <a href="/shop/postcard" class="text-crst-primary underline hover:text-crst-gold">standard postcards</a> and <a href="/shop/palm-card" class="text-crst-primary underline hover:text-crst-gold">palm cards</a> in common direct mail sizes such as 4×6, 6×9, and 6×11, with stock and coating options based on your campaign goals.
+</p> <p class="text-navy-600/80 leading-relaxed mb-4">
+For many local and regional campaigns, postcards are the simplest way to combine visibility, speed, and response. A Hudson Valley nonprofit running a donor reactivation campaign saw a 23% response rate using 6×9 postcards with variable data personalization — well above their historical email performance.
+</p> <h2 class="text-2xl font-display text-crst-primary mt-10 mb-4">Direct mail printing and mailing</h2> <p class="text-navy-600/80 leading-relaxed mb-4">
+Because Cornerstone Services also handles mailing, your project does not need to leave one vendor for another after it comes off press. That reduces delays, prevents handoff mistakes, and keeps the campaign moving.
+</p> <p class="text-navy-600/80 leading-relaxed mb-4">
+We can print, address, sort, prep, and induct mail with one coordinated workflow. For clients running recurring campaigns — monthly newsletters, quarterly appeals, seasonal promotions — that saves time and keeps production more predictable.
+</p> <p class="text-navy-600/80 leading-relaxed mb-4">
+One Ulster County property management company coordinates 12 mailings per year through our facility. Their turnaround from final file to mail drop averages 4 business days because we eliminate the print-to-mail handoff.
+</p> <p class="text-sm mb-8"> <a href="/services/direct-mail" class="text-crst-accent hover:text-crst-primary font-heading font-semibold underline">Learn more about direct mail campaigns &rarr;</a> </p> <h2 class="text-2xl font-display text-crst-primary mt-10 mb-4">Variable data printing</h2> <p class="text-navy-600/80 leading-relaxed mb-4">
+Variable data printing allows you to personalize each printed piece with different names, addresses, offers, neighborhoods, account details, or other fields.
+</p> <p class="text-navy-600/80 leading-relaxed mb-3">This is especially useful for:</p> <ul class="space-y-2 mb-4 ml-1"> ${[
+    "Customer reactivation campaigns",
+    "Nonprofit donor appeals",
+    "Municipal notices and tax communications",
+    "Real estate farming",
+    "Segmented offers by audience or geography"
+  ].map((item) => renderTemplate`<li class="flex items-start gap-2 text-navy-600/80 text-sm"> <svg class="w-4 h-4 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> ${item} </li>`)} </ul> <p class="text-navy-600/80 leading-relaxed mb-8">
+If your campaign performs better with personalization, variable data printing gives you a way to scale it without creating separate jobs manually. We've run campaigns with thousands of unique versions — same layout, different content matched to each recipient.
+</p> <h2 class="text-2xl font-display text-crst-primary mt-10 mb-4">Digital and offset printing options</h2> <p class="text-navy-600/80 leading-relaxed mb-4">
+Not every print job should be produced the same way. Some campaigns need short-run flexibility and fast turnarounds. Others need larger quantities and lower unit costs.
+</p> <p class="text-navy-600/80 leading-relaxed mb-4">
+We use digital and offset production based on quantity, timeline, versioning, and finish requirements. The goal is not to force every job into one press method — it is to choose the method that fits the project.
+</p> <div class="grid sm:grid-cols-2 gap-4 mb-8"> <div class="p-5 bg-navy-50/40 rounded-lg border border-navy-100"> <h3 class="font-heading font-bold text-navy-800 mb-2 text-sm">Digital Printing</h3> <p class="text-xs text-navy-600/70 leading-relaxed">Best for runs under 5,000 pieces, jobs with variable data, or campaigns that need quick turnaround.</p> </div> <div class="p-5 bg-navy-50/40 rounded-lg border border-navy-100"> <h3 class="font-heading font-bold text-navy-800 mb-2 text-sm">Offset Printing</h3> <p class="text-xs text-navy-600/70 leading-relaxed">Best for runs above 5,000 where unit cost matters and the content is static. Lower cost per piece at volume.</p> </div> </div> <h2 class="text-2xl font-display text-crst-primary mt-10 mb-4">Why businesses choose Cornerstone Services</h2> <p class="text-navy-600/80 leading-relaxed mb-4">
+Clients come to us when they need more than a generic online print order. They need a print partner who understands campaign execution.
+</p> <p class="text-navy-600/80 leading-relaxed mb-3">We are a fit for organizations that want:</p> <ul class="space-y-2 mb-6 ml-1"> ${[
+    "In-house printing tied to mailing services",
+    "Guidance on postal-friendly formats",
+    "Support with variable data and personalization",
+    "Reliable proofing and preflight review",
+    "One team handling print and mail together"
+  ].map((item) => renderTemplate`<li class="flex items-start gap-2 text-navy-600/80 text-sm"> <svg class="w-4 h-4 text-crst-gold shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg> ${item} </li>`)} </ul> <p class="text-navy-600/80 leading-relaxed mb-6">
+We've been serving clients across the Hudson Valley since 1998, Catskills, and lower Hudson region.
+</p> <h2 class="text-2xl font-display text-crst-primary mt-10 mb-4">Our process</h2> <div class="space-y-6 mb-10"> ${[
+    { step: "1", title: "File review and preflight", desc: "We review artwork for bleed, resolution, color mode, layout, and mailing compatibility before anything goes to press." },
+    { step: "2", title: "Proof approval", desc: "You receive a proof before production begins. We do not print until you approve." },
+    { step: "3", title: "Printing", desc: "Your job is produced on the equipment that best fits the quantity and format \u2014 digital for short runs, offset for high volume." },
+    { step: "4", title: "Mail prep or delivery", desc: "Jobs can move directly into addressing, presort, and postal prep, or be prepared for pickup and delivery." }
+  ].map((item) => renderTemplate`<div class="flex items-start gap-4"> <div class="shrink-0 w-9 h-9 rounded-full bg-crst-primary flex items-center justify-center text-white font-heading font-bold text-sm"> ${item.step} </div> <div> <h3 class="font-heading font-bold text-navy-800 mb-1">${item.title}</h3> <p class="text-sm text-navy-600/70 leading-relaxed">${item.desc}</p> </div> </div>`)} </div> <h2 class="text-2xl font-display text-crst-primary mt-10 mb-4">Serving the Hudson Valley and Catskills</h2> <p class="text-navy-600/80 leading-relaxed mb-6">
+We work with clients throughout Ulster County, Dutchess County, Orange County, Sullivan County, and Delaware County. Our facility is centrally located in New Paltz, making us accessible to businesses and organizations in Kingston, Poughkeepsie, Newburgh, Middletown, Monticello, Margaretville, and surrounding areas. For regional campaigns, our USPS presort partnerships allow us to handle mail preparation and induction for the entire Northeast.
+</p> <h2 class="text-2xl font-display text-crst-primary mt-10 mb-6">Frequently asked questions</h2> <div class="space-y-6 mb-10"> ${printingFaqs.map((item) => renderTemplate`<div class="border-b border-navy-100 pb-6"> <h3 class="font-heading font-bold text-navy-800 mb-2">${item.q}</h3> <p class="text-sm text-navy-600/75 leading-relaxed">${item.a}</p> </div>`)} </div> <div class="bg-crst-primary/5 border border-crst-primary/15 rounded-xl p-6 text-center"> <p class="font-heading font-bold text-crst-primary text-lg mb-2">Get a commercial printing quote</p> <p class="text-navy-600/70 text-sm mb-4">Tell us the piece, quantity, size, paper, and timing you need and we'll put together a quote.</p> <div class="flex flex-col sm:flex-row items-center justify-center gap-3"> <a href="/estimate" class="btn-primary text-sm">Request a Quote</a> <a${addAttribute(`tel:${BUSINESS.phoneClean}`, "href")} class="inline-flex items-center gap-2 text-sm font-heading font-semibold text-crst-primary hover:text-crst-accent transition-colors"> <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+Call ${BUSINESS.phone} </a> </div> </div> </div> <!-- Sidebar --> <div class="lg:col-span-1"> <div class="sticky top-24 space-y-5"> <div class="bg-crst-primary rounded-xl p-6 text-white"> <h3 class="font-display text-lg mb-2">Get a Print Quote</h3> <p class="text-white/60 text-sm leading-relaxed mb-4">
+Tell us what you need — quantity, size, and paper — and we'll send a detailed quote within one business day.
+</p> <a href="/estimate" class="btn-accent w-full text-center text-sm">
+Request Quote
+</a> <div class="mt-4 pt-4 border-t border-white/10 text-center"> <a${addAttribute(`tel:${BUSINESS.phoneClean}`, "href")} class="text-white/70 text-sm font-heading hover:text-white transition-colors">
+or call ${BUSINESS.phone} </a> </div> </div> <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100"> <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Related Services</h3> <div class="space-y-2"> ${[
+    { label: "Direct Mail Campaigns", href: "/services/direct-mail" },
+    { label: "EDDM \u2014 Every Door Direct Mail", href: "/services/eddm" },
+    { label: "Mailing Services", href: "/services/mailing" },
+    { label: "Graphic Design", href: "/services/graphic-design" },
+    { label: "Mailing List Services", href: "/services/mailing-list-services" }
+  ].map((link) => renderTemplate`<a${addAttribute(link.href, "href")} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-white rounded-md transition-colors font-heading"> ${link.label} <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg> </a>`)} </div> </div> <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100"> <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Popular Formats</h3> <div class="space-y-2 text-sm"> ${[
+    { format: "6\xD79 Postcard", use: "Most popular for direct mail" },
+    { format: "6\xD711 Jumbo Postcard", use: "Maximum impact" },
+    { format: "8.5\xD711 Self-Mailer", use: "Newsletters & menus" },
+    { format: "#10 Letter Package", use: "Formal communications" }
+  ].map((item) => renderTemplate`<div class="flex justify-between items-baseline gap-2"> <span class="font-heading font-semibold text-navy-800 text-xs">${item.format}</span> <span class="text-xs text-navy-600/50 shrink-0">${item.use}</span> </div>`)} </div> </div> </div> </div> </div> </div> </section> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8"> ${renderComponent($$result2, "AuthorByline", $$AuthorByline, {})} </div> <section class="py-10 bg-crst-primary/5 border-y border-crst-primary/10"> <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"> <h3 class="text-xl font-display font-bold text-crst-primary mb-3">Need a Print Quote?</h3> <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Tell us what you need — quantity, size, and paper — and we'll send a detailed quote within one business day.</p> <div class="flex flex-col sm:flex-row items-center justify-center gap-4"> <a${addAttribute(`tel:${BUSINESS.phoneClean}`, "href")} class="btn-primary inline-flex items-center gap-2"> <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+Call ${BUSINESS.phone} </a> <a href="/estimate" class="btn-accent inline-flex items-center gap-2">
+Get a Free Estimate
+<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg> </a> </div> </div> </section> <section class="py-14 bg-navy-50/50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="text-center mb-8"> <h2 class="text-2xl font-display font-bold text-crst-primary">Service Areas</h2> <p class="text-gray-600 mt-2">We serve businesses and organizations across three Hudson Valley counties.</p> </div> <div class="grid sm:grid-cols-3 gap-4 max-w-3xl mx-auto"> ${Object.values(COUNTIES).map((county) => renderTemplate`<a${addAttribute(`/service-areas/${county.slug}`, "href")} class="flex items-center justify-center gap-2 p-4 bg-white rounded-lg border border-gray-200 hover:border-crst-primary/30 hover:shadow-sm transition-all group"> <svg class="w-5 h-5 text-crst-primary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"> <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path> <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path> </svg> <span class="font-heading font-semibold text-gray-800 group-hover:text-crst-primary transition-colors">${county.name}</span> </a>`)} </div> </div> </section> <section class="py-16 bg-white"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="text-center mb-10"> <h2 class="text-2xl font-display font-bold text-crst-primary mb-3">Printing Guides &amp; Resources</h2> <p class="text-navy-600/70 max-w-2xl mx-auto">In-depth guides on paper stock selection, print-ready file preparation, postcard printing, brochure design, and choosing commercial printing over online alternatives — written by Sean Griffin, MDP, owner of Cornerstone Services since 1998.</p> </div> <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"> ${clusterArticles.map((a) => renderTemplate`<a${addAttribute(`/services/printing/${a.slug}`, "href")} class="block p-5 bg-navy-50/40 rounded-xl border border-navy-100 hover:border-crst-primary/30 hover:shadow-sm transition-all group"> <h3 class="font-heading font-semibold text-navy-800 text-sm group-hover:text-crst-primary transition-colors leading-snug mb-2">${a.data.title}</h3> <p class="text-xs text-navy-600/60 line-clamp-2 leading-relaxed">${a.data.description}</p> </a>`)} </div> </div> </section> <section class="py-14 bg-white"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="section-divider mb-6"></div> <h2 class="text-2xl font-display text-crst-primary mb-3">Recent Campaigns</h2> <p class="text-navy-600/80 leading-relaxed mb-6">We've produced commercial print for time-sensitive and high-volume campaigns. A few recent examples:</p> <div class="grid sm:grid-cols-2 gap-5"> ${renderComponent($$result2, "CaseStudyCallout", $$CaseStudyCallout, { "href": "/case-studies/chinese-menu-misprint", "client": "Hudson Valley Restaurant \u2014 Grand Opening", "summary": "A restaurant received 10,000 menus with pricing errors days before their grand opening. Their original printer's 10-day reprint timeline would have missed the opening. We reprinted the full run in 48 hours so the owner opened on schedule.", "anchor": "48-hour emergency menu reprint for a Hudson Valley restaurant" })} ${renderComponent($$result2, "CaseStudyCallout", $$CaseStudyCallout, { "href": "/case-studies/national-product-recall", "client": "Robertshaw Controls \u2014 Global Product Recall", "summary": "Robertshaw Controls needed hundreds of thousands of product recall notices printed, processed, and mailed within a compressed legal timeline. We handled the entire job \u2014 variable-data print, presort, and USPS induction \u2014 without outsourcing a single step.", "anchor": "high-volume notification printing for a global product recall" })} </div> </div> </section> ${renderComponent($$result2, "CTASection", $$CTASection, {})} `, "head": async ($$result2) => renderTemplate`${renderComponent($$result2, "Fragment", Fragment, { "slot": "head" }, { "default": async ($$result3) => renderTemplate(_a || (_a = __template([' <script type="application/ld+json">', "<\/script> "])), unescapeHTML(JSON.stringify(graphSchema))) })}` })}`;
+}, "/home/runner/workspace/src/pages/services/printing.astro", void 0);
+
+const $$file = "/home/runner/workspace/src/pages/services/printing.astro";
+const $$url = "/services/printing";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$Printing,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

@@ -1,1 +1,210 @@
-// Contents removed by Astro as it's used for prerendering only
+/* empty css                                  */
+import { g as createComponent, j as renderComponent, r as renderTemplate, k as Fragment, u as unescapeHTML, m as maybeRenderHead, i as addAttribute } from '../chunks/astro/server_CTVANr5S.mjs';
+import 'kleur/colors';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_BFB5IMP7.mjs';
+import { $ as $$PageHero } from '../chunks/PageHero_DTn0WEdl.mjs';
+import { $ as $$CTASection } from '../chunks/CTASection_CpJqys7-.mjs';
+import { B as BUSINESS } from '../chunks/site_BORfRXu4.mjs';
+export { renderers } from '../renderers.mjs';
+
+var __freeze = Object.freeze;
+var __defProp = Object.defineProperty;
+var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(cooked.slice()) }));
+var _a;
+const $$NonProfitMailingApplication = createComponent(($$result, $$props, $$slots) => {
+  const lastUpdated = "2026-05-07";
+  const lastUpdatedDisplay = "May 2026";
+  const canonical = "https://crst.net/non-profit-mailing-application";
+  const org = {
+    "@type": "Organization",
+    "@id": "https://crst.net/#organization",
+    name: "Cornerstone Services, Inc.",
+    url: "https://crst.net",
+    telephone: "+1-845-255-5722",
+    foundingDate: "1998",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "387 Malden Turnpike",
+      addressLocality: "Saugerties",
+      addressRegion: "NY",
+      postalCode: "12477",
+      addressCountry: "US"
+    }
+  };
+  const otherTools = [
+    { label: "Nonprofit Mailing Services", href: "/services/non-profit-mailing" },
+    { label: "Postage Rates", href: "/direct-mail-tools/postage-rates" },
+    { label: "Mailing Permits", href: "/direct-mail-tools/cornerstone-mailing-permits" },
+    { label: "Nonprofit Rate Calculator", href: "/services/non-profit-mailing/nonprofit-postage-rates" },
+    { label: "Update Nonprofit Info", href: "/resources/non-profit-database-change-request" },
+    { label: "Postal Dictionary", href: "/direct-mail-tools/postal-dictionary" },
+    { label: "EDDM Guide", href: "/services/eddm" },
+    { label: "Postage Refund Guide", href: "/how-to-get-a-refund-on-postage-a-guide-to-post-office-application-to-refund-postage" }
+  ];
+  const howToSteps = [
+    {
+      position: 1,
+      name: "Confirm your organization's eligibility",
+      text: "Verify your organization meets USPS nonprofit eligibility requirements. Eligible types include 501(c)(3) charitable organizations, religious organizations, educational institutions, scientific organizations, veterans' groups, fraternal organizations, and qualified political committees. Your organization's primary purpose must qualify \u2014 501(c)(3) status alone is not sufficient if your primary activities are commercial."
+    },
+    {
+      position: 2,
+      name: "Gather required documentation",
+      text: "Assemble your IRS determination letter confirming tax-exempt status, articles of incorporation or charter, a description of your organization's activities and purposes, financial statements showing sources of income, and a sample of the mail you plan to send at nonprofit rates."
+    },
+    {
+      position: 3,
+      name: "Complete PS Form 3624",
+      text: "Fill out USPS PS Form 3624 (Application to Mail at Nonprofit USPS Marketing Mail Prices). The form is available at any Post Office or at usps.com. Cornerstone reviews completed applications before submission to minimize documentation errors and delays."
+    },
+    {
+      position: 4,
+      name: "Submit to your local Postmaster",
+      text: "Submit the completed PS Form 3624 and all supporting documentation to the Postmaster at the post office where you plan to hold your mailing permit. In-person submission is recommended \u2014 staff can review your package on the spot and flag issues before you leave."
+    },
+    {
+      position: 5,
+      name: "Wait for USPS review",
+      text: "USPS typically processes PS Form 3624 applications within 30\u201360 days. During this period USPS may request additional documentation. Cornerstone can respond to USPS inquiries on your behalf and track application status."
+    },
+    {
+      position: 6,
+      name: "Receive authorization and set up your permit",
+      text: "Once approved, USPS issues a written authorization letter. You then set up a mailing permit and can begin mailing at nonprofit rates. Cornerstone handles permit setup and processes your first mailing as part of our full-service nonprofit mailing program."
+    }
+  ];
+  const faqs = [
+    {
+      q: "What is PS Form 3624?",
+      a: `PS Form 3624 \u2014 officially titled "Application to Mail at Nonprofit USPS Marketing Mail Prices" \u2014 is the USPS form your organization must submit to qualify for discounted nonprofit postage rates. You fill it out once, submit it with supporting documentation (IRS determination letter, articles of incorporation, and a description of your activities), and USPS grants permanent authorization after review. You don't reapply annually; the authorization stays in effect as long as your organization and its mailings continue to meet USPS requirements.`
+    },
+    {
+      q: "How much can our nonprofit actually save on postage?",
+      a: "Meaningful amounts \u2014 and more than most organizations realize. At current July 12, 2026 rates, nonprofit Marketing Mail letters at the 5-digit automation level cost $0.185 per piece versus $0.395 commercial \u2014 a 53% savings. A nonprofit sending 5,000 letters per quarter (20,000 annually) saves approximately $4,200 per year in postage alone. For carrier route saturation campaigns, contact us for current nonprofit saturation rates. Organizations that have been mailing at commercial rates without nonprofit authorization are leaving thousands of dollars on the table annually."
+    },
+    {
+      q: "Do we need our own mailing permit, or can we use Cornerstone's?",
+      a: "You need your own permit for nonprofit mailings \u2014 this is a USPS requirement, not a Cornerstone policy. USPS nonprofit authorization is granted to a specific organization and must be tied to that organization's own permit account. Unlike commercial bulk mailings (where Cornerstone can mail under our permit on your behalf), nonprofit mailings require the authorization to match the permit holder. We help you apply for both the nonprofit authorization and the permit simultaneously, and we manage the permit account on your behalf once it's established."
+    },
+    {
+      q: "Can we send fundraising appeals and membership renewals at nonprofit rates?",
+      a: "Yes \u2014 fundraising solicitations, membership renewals, donor appeals, annual campaigns, and capital campaign letters all typically qualify, as long as the appeal furthers your organization's stated charitable purpose. What doesn't qualify: cooperative mailings that include for-profit content, pieces primarily designed to sell goods or services, travel advertising (even for nonprofit tours), and mailings whose content doesn't align with your approved organizational purpose. Cornerstone reviews mail piece content before production to confirm it meets USPS nonprofit content standards."
+    },
+    {
+      q: "How long does the PS Form 3624 review process take?",
+      a: "USPS typically processes applications within 30\u201360 days. Complex cases \u2014 organizations with mixed commercial/nonprofit activities, or applicants whose documentation is incomplete \u2014 may take longer. The most common cause of delay is missing documentation, which is why Cornerstone reviews every application package before submission. Once approved, authorization is permanent. If USPS requests additional information, we handle that correspondence on your behalf."
+    },
+    {
+      q: "Our organization is a 501(c)(3) \u2014 does that automatically qualify us?",
+      a: "501(c)(3) status is necessary but not sufficient. USPS evaluates your organization's primary purpose, not just its tax classification. A 501(c)(3) that primarily sells merchandise, operates a commercial bookstore, or provides paid commercial services may be denied even with a valid IRS determination letter. USPS looks at financial statements (what percentage of revenue comes from qualifying activities?), articles of incorporation, and representative mail samples. Organizations whose primary revenue is from qualifying charitable activities are almost always approved; organizations with significant commercial revenue should consult with us before applying."
+    }
+  ];
+  const graphItems = [
+    {
+      "@type": "Article",
+      "@id": `${canonical}#article`,
+      headline: "PS Form 3624: USPS Nonprofit Mailing Application Guide",
+      description: "Complete guide to PS Form 3624 \u2014 USPS nonprofit mailing authorization. Who qualifies, required documentation, 2026 nonprofit postage rates, and step-by-step application instructions.",
+      datePublished: lastUpdated,
+      dateModified: lastUpdated,
+      inLanguage: "en-US",
+      author: { "@type": "Person", "@id": "https://crst.net/about#sean-griffin", name: "Sean Griffin" },
+      publisher: org,
+      mainEntityOfPage: { "@type": "WebPage", "@id": canonical }
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://crst.net" },
+        { "@type": "ListItem", position: 2, name: "Direct Mail Tools", item: "https://crst.net/direct-mail-tools" },
+        { "@type": "ListItem", position: 3, name: "PS Form 3624 \u2014 Nonprofit Mailing Application", item: canonical }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": `${canonical}#howto`,
+      name: "How to Apply for USPS Nonprofit Mailing Authorization (PS Form 3624)",
+      description: "Step-by-step guide to completing and submitting PS Form 3624 to qualify your 501(c)(3) organization for nonprofit USPS Marketing Mail rates.",
+      step: howToSteps.map((s) => ({
+        "@type": "HowToStep",
+        position: s.position,
+        name: s.name,
+        text: s.text
+      }))
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faqs.map(({ q, a }) => ({
+        "@type": "Question",
+        name: q,
+        acceptedAnswer: { "@type": "Answer", text: a }
+      }))
+    }
+  ];
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": "PS Form 3624: USPS Nonprofit Mailing Application", "description": "Complete guide to PS Form 3624 \u2014 USPS nonprofit mailing authorization. Who qualifies, required documents, and 2026 nonprofit postage rates verified against USPS Notice 123.", "canonical": canonical }, { "default": ($$result2) => renderTemplate`  ${renderComponent($$result2, "PageHero", $$PageHero, { "title": "PS Form 3624: Nonprofit Mailing Application", "subtitle": "Everything your 501(c)(3) needs to know about USPS nonprofit mailing authorization \u2014 who qualifies, required documentation, 2026 rates, and how to apply.", "breadcrumbs": [
+    { label: "Direct Mail Tools", href: "/direct-mail-tools" },
+    { label: "Nonprofit Mailing Application" }
+  ] })} ${maybeRenderHead()}<section class="py-14 lg:py-20"> <div class="container-wide"> <div class="grid lg:grid-cols-[280px_1fr] gap-10 items-start"> <!-- Sidebar --> <aside class="hidden lg:flex flex-col gap-6 sticky top-6"> <a href="/direct-mail-tools" class="inline-flex items-center gap-2 text-sm font-heading font-semibold text-crst-primary border-2 border-crst-primary rounded-lg px-4 py-2.5 hover:bg-crst-primary hover:text-white transition-colors text-center justify-center"> <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+View All Resources
+</a> <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm"> <h3 class="font-heading font-bold text-crst-primary text-sm uppercase tracking-wider mb-1">Ready to Apply?</h3> <div class="w-10 h-0.5 bg-crst-gold mb-3"></div> <p class="text-sm text-navy-600/70 mb-4">We guide nonprofits through the entire PS Form 3624 process — eligibility review, documentation, submission, and your first mailing.</p> <div class="space-y-3"> <a href="/contact?service=non-profit-mailing" class="block w-full text-center text-sm font-heading font-semibold text-white bg-crst-primary rounded-lg px-4 py-2.5 hover:bg-navy-700 transition-colors">
+Get Free Consultation
+</a> <a${addAttribute(`tel:${BUSINESS.phoneClean}`, "href")} class="block w-full text-center text-sm font-heading font-semibold text-crst-primary border border-crst-primary/30 rounded-lg px-4 py-2.5 hover:bg-crst-primary/5 transition-colors">
+Call ${BUSINESS.phone} </a> </div> </div> <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm"> <h3 class="font-heading font-bold text-crst-primary text-sm uppercase tracking-wider mb-3">Related Resources</h3> <nav class="flex flex-col gap-2"> ${otherTools.map((tool) => renderTemplate`<a${addAttribute(tool.href, "href")} class="text-sm font-heading font-medium text-navy-700 px-3 py-2 bg-gray-50 rounded-md border-l-[3px] border-crst-gold hover:bg-crst-primary hover:text-white hover:border-crst-gold transition-colors"> ${tool.label} </a>`)} </nav> </div> </aside> <!-- Main Content --> <main> <div class="bg-white border border-gray-200 rounded-xl p-6 sm:p-8 shadow-sm"> <div class="section-divider mb-6"></div> <!-- Author Block --> <div class="flex items-start gap-3 bg-navy-50 rounded-xl p-4 mb-6 border border-navy-100"> <img src="/images/sean-griffin.png" alt="Sean Griffin, Owner of Cornerstone Services" class="shrink-0 w-10 h-10 rounded-full object-cover" width="40" height="40"> <div> <div class="font-heading font-bold text-navy-800 text-sm">Sean Griffin — Owner, Cornerstone Services, Inc.</div> <div class="text-xs text-navy-600/70 mt-0.5">
+Cornerstone has helped Hudson Valley nonprofits navigate the PS Form 3624 process since 1998. Last reviewed: <time itemprop="dateModified"${addAttribute(lastUpdated, "datetime")}>${lastUpdatedDisplay}</time> ·
+                  Source: <a href="https://pe.usps.com/text/dmm300/703.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-crst-primary">USPS DMM Part 703</a> ·
+                  Rates: <a href="https://pe.usps.com/cpim/ftp/manuals/dmm300/notice123.pdf" target="_blank" rel="noopener noreferrer" class="underline hover:text-crst-primary">Notice 123 (eff. Apr 26, 2026)</a> </div> </div> </div> <!-- Rates Section --> <h2 class="text-2xl sm:text-3xl font-display text-crst-primary mb-4">
+Save 37–52% on Postage with Nonprofit Rates
+</h2> <p class="text-navy-600/80 leading-relaxed mb-6">
+If your organization has 501(c)(3) tax-exempt status, you may qualify for dramatically reduced USPS <a href="/direct-mail-tools/postage-rates" class="text-crst-primary underline hover:text-crst-gold">postage rates</a>. Nonprofit Marketing Mail rates are among the lowest postage rates available — saving organizations thousands of dollars per year on fundraising appeals, newsletters, event invitations, and <a href="/services/direct-mail" class="text-crst-primary underline hover:text-crst-gold">direct mail campaigns</a>. Cornerstone has helped dozens of Hudson Valley nonprofits apply for and maintain their USPS authorization. Already have privileges? Learn <a href="/resources/non-profit-database-change-request" class="text-crst-primary underline hover:text-crst-gold">how to update your nonprofit information</a> with USPS Form 6015.
+</p> <div class="overflow-x-auto mb-3"> <table class="w-full text-sm border-collapse"> <thead> <tr class="bg-crst-primary text-white"> <th class="text-left p-3 rounded-tl-lg">Mail Type / Sort Level</th> <th class="text-right p-3">Commercial Rate</th> <th class="text-right p-3">Nonprofit Rate</th> <th class="text-right p-3 rounded-tr-lg">Savings</th> </tr> </thead> <tbody> <tr class="border-b border-gray-200"> <td class="p-3 font-semibold text-gray-800">Letters — Carrier Route Saturation</td> <td class="text-right p-3 text-gray-400 italic">Contact us</td> <td class="text-right p-3 text-gray-400 italic">Contact us</td> <td class="text-right p-3 text-gray-400">—</td> </tr> <tr class="border-b border-gray-200 bg-gray-50"> <td class="p-3 font-semibold text-gray-800">Letters — Automation 5-Digit</td> <td class="text-right p-3 text-gray-600">$0.395</td> <td class="text-right p-3 text-green-600 font-semibold">$0.185</td> <td class="text-right p-3 text-green-600 font-bold">53%</td> </tr> <tr class="border-b border-gray-200"> <td class="p-3 font-semibold text-gray-800">Letters — Automation 3-Digit</td> <td class="text-right p-3 text-gray-400 italic">Contact us</td> <td class="text-right p-3 text-gray-400 italic">Contact us</td> <td class="text-right p-3 text-gray-400">—</td> </tr> <tr class="border-b border-gray-200 bg-gray-50"> <td class="p-3 font-semibold text-gray-800">Letters — Mixed</td> <td class="text-right p-3 text-gray-600">$0.467</td> <td class="text-right p-3 text-green-600 font-semibold">$0.257</td> <td class="text-right p-3 text-green-600 font-bold">45%</td> </tr> <tr class="bg-gray-50"> <td class="p-3 font-semibold text-gray-800">Flats — Carrier Route Saturation</td> <td class="text-right p-3 text-gray-400 italic">Contact us</td> <td class="text-right p-3 text-gray-400 italic">Contact us</td> <td class="text-right p-3 text-gray-400">—</td> </tr> </tbody> </table> </div> <p class="text-xs text-gray-400 mb-8">Rates effective July 12, 2026 · Source: <a href="https://pe.usps.com/cpim/ftp/manuals/dmm300/notice123.pdf" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-600">USPS Notice 123</a>. Rates shown at no entry discount. DSCF/DDU entry discounts available. Actual rate depends on presort level and mailing weight.</p> <!-- Real Savings Example --> <div class="bg-crst-gold/10 border border-crst-gold/30 rounded-xl p-6 mb-10"> <h4 class="font-heading font-bold text-crst-primary mb-2">Real Savings Example — 2026 Rates</h4> <p class="text-navy-600/80 text-sm leading-relaxed">
+A nonprofit sending 5,000 fundraising letters per quarter (20,000 annually) at 5-digit automation rates saves approximately <strong>$4,200 per year</strong> compared to commercial rates ($0.395 vs. $0.185 = $0.210/piece × 20,000). Over five years, that's $21,000 returned to programs and services rather than spent on postage.
+</p> </div> <!-- Who Qualifies --> <h2 class="text-xl font-display text-crst-primary mb-4">Who Qualifies for Nonprofit Rates?</h2> <p class="text-navy-600/80 leading-relaxed mb-4">
+USPS nonprofit mailing authorization is available to organizations that meet specific criteria in the <a href="https://pe.usps.com/text/dmm300/703.htm" target="_blank" rel="noopener noreferrer" class="text-crst-primary underline hover:text-crst-gold">USPS Domestic Mail Manual Part 703</a>. Eligible organization types:
+</p> <div class="grid sm:grid-cols-2 gap-3 mb-6"> ${[
+    "501(c)(3) charitable organizations",
+    "Religious organizations",
+    "Educational institutions",
+    "Scientific organizations",
+    "Veterans' organizations",
+    "Fraternal organizations",
+    "Qualified political committees",
+    "Volunteer fire departments"
+  ].map((type) => renderTemplate`<div class="flex items-center gap-3 p-3 bg-crst-light/50 rounded-lg"> <svg class="w-5 h-5 text-crst-gold shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path> </svg> <span class="text-sm text-gray-700">${type}</span> </div>`)} </div> <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-10"> <h4 class="font-heading font-bold text-amber-900 mb-2">The Primary Purpose Requirement</h4> <p class="text-amber-800 text-sm leading-relaxed">
+USPS grants nonprofit authorization based on your organization's <em>primary purpose</em> — not simply its tax-exempt classification. A 501(c)(3) whose primary activities are commercial (a thrift store that generates most of its revenue from retail sales, for example) may be denied even with a valid IRS determination letter. USPS reviews financial statements, articles of incorporation, and representative mail samples at the time of application. If you're unsure whether your organization's revenue mix qualifies, contact us for a pre-application review.
+</p> </div> <!-- PS Form 3624 --> <h2 class="text-xl font-display text-crst-primary mb-4">PS Form 3624: The Application</h2> <p class="text-navy-600/80 leading-relaxed mb-6">
+PS Form 3624 is submitted to your local USPS Postmaster along with supporting documentation. The application is free and is available at any Post Office or at usps.com. Cornerstone reviews every application package before submission.
+</p> <div class="space-y-4 mb-10"> <div class="bg-navy-50 rounded-xl p-5"> <h4 class="font-heading font-bold text-navy-800 mb-2">Required Documentation</h4> <p class="text-navy-600/80 text-sm leading-relaxed">
+Your application package must include: IRS determination letter confirming 501(c)(3) status, articles of incorporation or organizational charter, a description of your organization's primary activities, financial statements showing sources of income, and a sample of the mail type you intend to send at nonprofit rates.
+</p> </div> <div class="bg-navy-50 rounded-xl p-5"> <h4 class="font-heading font-bold text-navy-800 mb-2">Processing Timeline</h4> <p class="text-navy-600/80 text-sm leading-relaxed">
+USPS typically processes PS Form 3624 applications within 30–60 days. USPS may request additional documentation during review — this is the most common cause of delay. Cornerstone prepares and reviews your application package before submission and handles any USPS follow-up correspondence on your behalf.
+</p> </div> <div class="bg-navy-50 rounded-xl p-5"> <h4 class="font-heading font-bold text-navy-800 mb-2">Content Restrictions</h4> <p class="text-navy-600/80 text-sm leading-relaxed">
+Not all mail qualifies for nonprofit rates even after authorization. The content must further your organization's stated purpose. Pieces that don't qualify: cooperative mailings with for-profit entities, content primarily designed to sell goods or services, and travel advertising (even for nonprofit tours). Cornerstone reviews mail piece content before production.
+</p> </div> </div> <!-- Application Steps (HowTo) --> <h2 class="text-xl font-display text-crst-primary mb-4">How to Apply — Step by Step</h2> <div class="space-y-3 mb-10"> ${howToSteps.map((step) => renderTemplate`<div class="flex gap-4 p-4 border border-gray-200 rounded-lg"> <div class="w-8 h-8 rounded-full bg-crst-primary text-white flex items-center justify-center text-sm font-bold shrink-0">${step.position}</div> <div> <div class="font-heading font-bold text-gray-800 text-sm">${step.name}</div> <div class="text-sm text-gray-600 mt-1">${step.text}</div> </div> </div>`)} </div> <!-- How Cornerstone Helps --> <h2 class="text-xl font-display text-crst-primary mb-4">How Cornerstone Helps Nonprofits</h2> <div class="space-y-3 mb-10"> ${[
+    { title: "Pre-Application Review", desc: "We assess your organization's eligibility before you submit, identifying any documentation gaps or primary-purpose considerations that could cause delays." },
+    { title: "Application Preparation", desc: "We prepare your PS Form 3624 package with all required supporting documents \u2014 IRS letter, articles, bylaws, financial statement, and mail sample." },
+    { title: "List Processing", desc: "" },
+    { title: "Presort & Postage", desc: "We presort your mailing for maximum nonprofit postal discounts and handle all postage payment through your permit account." },
+    { title: "Annual Maintenance", desc: "We help you maintain your authorization and ensure each mailing meets USPS nonprofit content standards every year." }
+  ].map((item, i) => renderTemplate`<div class="flex gap-4 p-4 border border-gray-200 rounded-lg"> <div class="w-8 h-8 rounded-full bg-crst-primary text-white flex items-center justify-center text-sm font-bold shrink-0">${i + 1}</div> <div> <div class="font-heading font-bold text-gray-800 text-sm">${item.title}</div> <div class="text-sm text-gray-600 mt-1"> ${i === 2 ? renderTemplate`${renderComponent($$result2, "Fragment", Fragment, {}, { "default": ($$result3) => renderTemplate`We process your donor/member list through CASS/DPV and NCOA to ensure deliverability and presort accuracy. Regular <a href="/direct-mail-tools/address-change" class="text-crst-primary underline hover:text-crst-gold">address change processing</a> is the single biggest factor in mailing ROI.` })}` : item.desc} </div> </div> </div>`)} </div> <!-- FAQ --> <h2 class="text-xl font-display text-crst-primary mb-6">Frequently Asked Questions</h2> <div class="space-y-3 mb-8"> ${faqs.map((faq, i) => renderTemplate`<details class="group bg-white border border-gray-200 rounded-lg"${addAttribute(i === 0, "open")}> <summary class="flex items-center justify-between p-5 cursor-pointer hover:bg-gray-50 transition-colors rounded-lg list-none"> <h3 class="font-semibold text-gray-800 text-sm pr-4">${faq.q}</h3> <svg class="w-5 h-5 text-gray-400 shrink-0 group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg> </summary> <div class="px-5 pb-5 text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-4"> ${faq.a} </div> </details>`)} </div> <p class="text-xs text-gray-400 leading-relaxed mb-8">
+Eligibility criteria sourced from <a href="https://pe.usps.com/text/dmm300/703.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-600">USPS DMM Part 703</a>. Postage rates from <a href="https://pe.usps.com/cpim/ftp/manuals/dmm300/notice123.pdf" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-600">USPS Notice 123 (effective April 26, 2026)</a>. Requirements are subject to change.
+</p> <!-- CTA --> <div class="bg-crst-primary/5 border border-crst-primary/20 rounded-xl p-6"> <h3 class="font-heading font-bold text-crst-primary mb-2">Ready to Apply for Nonprofit Rates?</h3> <p class="text-navy-600/80 text-sm leading-relaxed mb-4">
+Contact us for a free eligibility review. We'll confirm your organization qualifies, estimate your annual postage savings, and guide you through the complete PS Form 3624 process.
+</p> <div class="flex flex-wrap gap-3"> <a href="/contact?service=non-profit-mailing" class="btn-primary text-sm">Get a Free Eligibility Review</a> <a href="/services/non-profit-mailing" class="btn-secondary text-sm">Nonprofit Mailing Services →</a> </div> </div> </div> <!-- Mobile Sidebar --> <div class="lg:hidden mt-8 bg-white border border-gray-200 rounded-xl p-6 shadow-sm"> <h3 class="font-heading font-bold text-crst-primary text-sm uppercase tracking-wider mb-3">Related Resources</h3> <div class="grid grid-cols-2 gap-2"> ${otherTools.map((tool) => renderTemplate`<a${addAttribute(tool.href, "href")} class="text-sm font-heading font-medium text-navy-700 px-3 py-2 bg-gray-50 rounded-md border-l-[3px] border-crst-gold hover:bg-crst-primary hover:text-white transition-colors"> ${tool.label} </a>`)} </div> </div> </main> </div> </div> </section> ${renderComponent($$result2, "CTASection", $$CTASection, {})} `, "head": ($$result2) => renderTemplate`${renderComponent($$result2, "Fragment", Fragment, { "slot": "head" }, { "default": ($$result3) => renderTemplate(_a || (_a = __template([' <script type="application/ld+json">', "<\/script> "])), unescapeHTML(JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": graphItems
+  }))) })}` })}`;
+}, "/home/runner/workspace/src/pages/non-profit-mailing-application.astro", void 0);
+
+const $$file = "/home/runner/workspace/src/pages/non-profit-mailing-application.astro";
+const $$url = "/non-profit-mailing-application";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$NonProfitMailingApplication,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

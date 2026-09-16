@@ -1,1 +1,247 @@
-// Contents removed by Astro as it's used for prerendering only
+/* empty css                                     */
+import { g as createComponent, j as renderComponent, r as renderTemplate, k as Fragment, u as unescapeHTML, m as maybeRenderHead, i as addAttribute } from '../../chunks/astro/server_CTVANr5S.mjs';
+import 'kleur/colors';
+import { g as getCollection } from '../../chunks/_astro_content_CCCTsyOJ.mjs';
+import { $ as $$BaseLayout } from '../../chunks/BaseLayout_BFB5IMP7.mjs';
+import { $ as $$PageHero } from '../../chunks/PageHero_DTn0WEdl.mjs';
+import { $ as $$CTASection } from '../../chunks/CTASection_CpJqys7-.mjs';
+import { $ as $$CaseStudyCallout } from '../../chunks/CaseStudyCallout_C-W9Ybjr.mjs';
+import { $ as $$AuthorByline } from '../../chunks/AuthorByline_DNWN2IXS.mjs';
+import { B as BUSINESS, C as COUNTIES } from '../../chunks/site_BORfRXu4.mjs';
+export { renderers } from '../../renderers.mjs';
+
+var __freeze = Object.freeze;
+var __defProp = Object.defineProperty;
+var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(cooked.slice()) }));
+var _a;
+const $$DataLists = createComponent(async ($$result, $$props, $$slots) => {
+  const clusterArticles = await getCollection("data-articles");
+  const dataListFaqs = [
+    { q: "Can you suppress my existing customers from a purchased list?", a: "Yes. Send us your customer file (Excel or CSV). We'll scrub it against the purchased list and remove any matches. This is included at no extra charge when you print and mail with us." },
+    { q: "How accurate are the lists?", a: "After NCOA and CASS processing, deliverability is typically 96\u201398%. Some addresses will still be undeliverable (vacant homes, business closures, data entry errors), but we've removed the vast majority of bad addresses before you mail." },
+    { q: "Can I use the list more than once?", a: "Standard pricing is for one-time use. Multi-use licenses are available \u2014 just let us know how many times you plan to mail the list. Pricing adjusts accordingly." },
+    { q: "What if I only need 200 names?", a: "Most list vendors have minimums of 1,000\u20135,000 names. We don't. If you need 200 names, we'll pull 200 names. You pay for what you use." },
+    { q: "Do you rent lists or sell them?", a: "We rent them. You're licensing the data for a specific mailing. The list provider embeds seed addresses (decoys) to monitor usage. If you mail the list multiple times without a multi-use license, they'll know \u2014 and they'll charge you." },
+    { q: "Can you target businesses by how long they've been in operation?", a: `Yes. Business lists include "years in business" as a selectable field. This is useful if you're targeting established companies (5+ years) or startups (0\u20132 years).` },
+    { q: "Can I get phone numbers or email addresses?", a: "Consumer lists can include phone numbers (landline and cellular). Business lists include phone, email, and website URL. Email append services are available if you only have mailing addresses and want to add email." }
+  ];
+  const graphSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        name: "Mailing List & Data Services",
+        provider: {
+          "@type": "Organization",
+          "@id": "https://crst.net/#organization",
+          name: BUSINESS.name,
+          telephone: BUSINESS.phone
+        },
+        areaServed: [
+          { "@type": "County", name: "Ulster County, New York" },
+          { "@type": "County", name: "Dutchess County, New York" },
+          { "@type": "County", name: "Orange County, New York" }
+        ],
+        url: "https://crst.net/services/data-lists"
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: dataListFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.q,
+          acceptedAnswer: { "@type": "Answer", text: faq.a }
+        }))
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://crst.net" },
+          { "@type": "ListItem", position: 2, name: "Services", item: "https://crst.net/services" },
+          { "@type": "ListItem", position: 3, name: "Mailing Lists & Data Services", item: "https://crst.net/services/data-lists" }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://crst.net/services/data-lists",
+        name: "Mailing Lists \u2014 Targeted Consumer & Business Data",
+        url: "https://crst.net/services/data-lists",
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: ["h1", "h2"]
+        }
+      }
+    ]
+  };
+  return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": "Mailing Lists \u2014 Targeted Consumer & Business Data", "description": "Targeted mailing lists for direct mail \u2014 consumer and business data filtered by geography, demographics, and industry. NCOA-processed and CASS-certified.", "schema": null }, { "default": async ($$result2) => renderTemplate`  ${renderComponent($$result2, "PageHero", $$PageHero, { "title": "Mailing Lists & Data Services", "subtitle": "You're not losing customers because your message is wrong. You're losing them because you're mailing the wrong people. We build targeted lists that actually reach people \u2014 cleaned, verified, and ready to mail.", "breadcrumbs": [
+    { label: "Services", href: "/services" },
+    { label: "Data Lists" }
+  ], "noSchema": true })} ${maybeRenderHead()}<section class="py-14 lg:py-20"> <div class="container-wide"> <div class="grid lg:grid-cols-3 gap-10 lg:gap-14"> <!-- Main content --> <div class="lg:col-span-2 prose prose-lg max-w-none"> <div class="section-divider mb-6"></div> <p class="text-lg text-navy-700 leading-relaxed font-semibold mb-6">
+Cornerstone provides targeted mailing data lists for Hudson Valley direct mail campaigns — consumer demographics, B2B firmographics, NCOA-cleaned addresses, and custom geographic segmentation. A mailing list is the foundation of any direct mail campaign: it determines who receives your piece and, in turn, what response rate you see. We source from multiple list providers, run NCOA and address verification before delivery, and integrate the list directly into your campaign production workflow.
+</p> <p class="text-navy-600/80 leading-relaxed mb-8">
+Hudson Valley businesses have trusted us with 2.3 million pieces since 1998. We don't sell you a list and disappear. We build your list, process it, mail it, and track what worked. Same team, same building, same phone number for 28 years.
+</p> <hr class="my-8 border-navy-200"> <h2 class="text-2xl font-display text-crst-primary mb-4">The Problem with Most Mailing Lists</h2> <p class="text-navy-600/80 leading-relaxed mb-4">
+Most list vendors hand you a spreadsheet and call it done. You're left figuring out:
+</p> <ul class="list-disc list-inside text-navy-600/80 space-y-2 mb-6"> <li>How many addresses are outdated</li> <li>Who moved in the last four years</li> <li>Which records are duplicates</li> <li>Whether the addresses are even deliverable</li> <li>How to format everything for the post office</li> <li>If you're accidentally mailing your own customers</li> </ul> <p class="text-navy-600/80 leading-relaxed mb-6">
+Then you mail it. Half the pieces bounce. You spent $2,000 on printing and postage, and 40% of it never arrived.
+</p> <p class="text-navy-600/80 leading-relaxed mb-8">
+We don't sell you raw data and walk away. We hand you a file that's been NCOA-processed, CASS-certified, deduplicated, and presorted. Every address has been verified. You're not guessing if it will deliver — we already checked.
+</p> <hr class="my-8 border-navy-200"> <h2 class="text-2xl font-display text-crst-primary mb-4">How We Build Your List (The Actual Process)</h2> <p class="text-navy-600/80 leading-relaxed mb-6">
+You tell us who you want to reach. We pull the data, clean it, verify every address, and deliver a mail-ready file. Here's what happens behind the scenes:
+</p> <div class="space-y-8"> ${[
+    {
+      step: "1",
+      title: "We Pull From National Databases",
+      desc: "Consumer lists filter by geography, income, age, homeowner status, buying behavior, and 40+ other demographics. Business lists filter by SIC/NAICS code, employee count, revenue, and location. You want every dentist in Dutchess County? Done. Homeowners in a 5-mile radius making $75K+? We'll have the count in two hours."
+    },
+    {
+      step: "2",
+      title: "We Run NCOA (National Change of Address)",
+      desc: "This catches anyone who moved in the last 48 months and updates their address. The USPS requires this for presorted mail. If you skip it, your mailing gets rejected or charges full postage. We don't skip it. Every list we deliver has been NCOA-processed."
+    },
+    {
+      step: "3",
+      title: "CASS Certification (Address Verification)",
+      desc: "CASS stands for Coding Accuracy Support System. It's USPS software that checks every address against their master database. If an address doesn't exist, it gets flagged. If it's formatted wrong, we fix it. This is how you qualify for automation discounts \u2014 which can cut your postage by 30\u201350%. Without CASS, you pay retail rates on every piece."
+    },
+    {
+      step: "4",
+      title: "Deduplication",
+      desc: "We identify duplicate records and remove them. You're not paying to mail the same person twice. If you have an existing customer list, we'll merge/purge it against the purchased list. This keeps you from accidentally mailing people who already buy from you \u2014 which is both expensive and annoying."
+    },
+    {
+      step: "5",
+      title: "Presort by ZIP Code",
+      desc: "We sort your list by ZIP code to qualify for bulk postage rates. This alone saves most campaigns 30\u201340% on postage. On a 5,000-piece mailing, that's $400\u2013$600 you keep instead of giving to the post office."
+    }
+  ].map((item) => renderTemplate`<div class="flex items-start gap-4"> <div class="shrink-0 w-10 h-10 rounded-full bg-crst-primary flex items-center justify-center text-white font-heading font-bold"> ${item.step} </div> <div> <h3 class="font-heading font-bold text-navy-800 mb-2">${item.title}</h3> <p class="text-navy-600/70 leading-relaxed">${item.desc}</p> </div> </div>`)} </div> <hr class="my-8 border-navy-200"> <h2 class="text-2xl font-display text-crst-primary mb-6">List Types We Provide</h2> <div class="space-y-5"> ${[
+    {
+      title: "Saturation Lists",
+      desc: "Every deliverable address on selected carrier routes. Ideal for EDDM and hyper-local campaigns. No demographic filters \u2014 just blanket coverage of a geographic area."
+    },
+    {
+      title: "Direct Mail Lists",
+      desc: "Our comprehensive overview of how mailing lists work \u2014 what's included in a list file, how data is verified, NCOA processing, CASS certification, and what separates a deliverable list from a wasted one.",
+      link: "/services/direct-mail-lists"
+    },
+    {
+      title: "Consumer Lists",
+      desc: 'Filtered by age, income, homeownership, marital status, presence of children, lifestyle interests, purchase behavior, vehicle ownership, and dozens of other selects. If you need to reach "homeowners aged 45\u201365 making $100K+ within 10 miles of New Paltz," we can build that.',
+      link: "/services/consumer-mailing-lists"
+    },
+    {
+      title: "Business Lists",
+      desc: "Targeted by SIC/NAICS code (industry classification), employee count, revenue range, and geography. Want every HVAC contractor in Orange County with 5\u201320 employees? Every pediatric practice in the Hudson Valley? We pull from Dun & Bradstreet, InfoUSA, and Experian Business.",
+      link: "/services/business-mailing-lists"
+    },
+    {
+      title: "New Mover Lists",
+      desc: "Recently relocated households. These are high-value prospects because they're actively looking for local services \u2014 lawn care, HVAC, dental, auto repair, internet, insurance. New movers convert 3\u20135x higher than standard consumer lists.",
+      link: "/services/new-mover-mailing-lists"
+    },
+    {
+      title: "Voter Files",
+      desc: "Registered voter data for political mailings, municipal notifications, and advocacy campaigns. Includes voting history, party affiliation, and household composition."
+    },
+    {
+      title: "Custom Compiled Lists",
+      desc: "Specialty lists built from multiple sources. If you need something specific that doesn't fit a standard category, we compile it manually. Examples: every nonprofit with an annual budget over $500K, every business that filed for a construction permit in the last six months, every household that recently purchased solar panels."
+    }
+  ].map((item) => renderTemplate`<div class="p-4 bg-navy-50/40 rounded-lg border border-navy-100"> <h4 class="font-heading font-bold text-navy-800 mb-2"> ${item.link ? renderTemplate`<a${addAttribute(item.link, "href")} class="text-crst-primary hover:underline">${item.title}</a>` : item.title} </h4> <p class="text-sm text-navy-600/70 leading-relaxed">${item.desc}</p> ${item.link && renderTemplate`<a${addAttribute(item.link, "href")} class="text-xs font-heading font-semibold text-crst-primary hover:underline mt-2 inline-block">View ${item.title} →</a>`} </div>`)} </div> <hr class="my-8 border-navy-200"> <h2 class="text-2xl font-display text-crst-primary mb-4">Already Have a List? We'll Clean It.</h2> <p class="text-navy-600/80 leading-relaxed mb-4">
+If you already have a customer list, prospect database, or purchased file from somewhere else, we can process it for direct mail. We accept data in Excel, CSV, Access, or any database export format. We'll:
+</p> <ul class="list-disc list-inside text-navy-600/80 space-y-2 mb-6"> <li>Run NCOA to update moved addresses</li> <li>CASS-certify for deliverability</li> <li>Remove duplicates</li> <li>Standardize formatting</li> <li>Presort by ZIP code</li> <li>Return a mail-ready file</li> </ul> <p class="text-navy-600/80 leading-relaxed mb-8">
+This service is included when you print and mail with us. If you're only processing a list (not mailing), we charge $75 per 1,000 records.
+</p> <p class="text-navy-600/80 leading-relaxed mb-8">
+We also offer merge/purge — combining multiple lists while removing duplicates. If you have three separate spreadsheets of prospects and customers, we'll combine them into one clean file.
+</p> <hr class="my-8 border-navy-200"> <h2 class="text-2xl font-display text-crst-primary mb-4">What You Actually Get</h2> <p class="text-navy-600/80 leading-relaxed mb-4">
+A spreadsheet (Excel or CSV) with these fields:
+</p> <ul class="list-disc list-inside text-navy-600/80 space-y-2 mb-6"> <li>Full name</li> <li>Street address (standardized to USPS format)</li> <li>City, State, ZIP+4</li> <li>Barcode assignment (for automation discounts)</li> <li>NCOA move status (if applicable)</li> <li>Deliverability score</li> </ul> <p class="text-navy-600/80 leading-relaxed mb-8">
+If you're printing and mailing with us, we take that file and run it directly through our inkjet addressing system. You don't touch it. We just need your approval on the design and we're mailing. If you're using the list elsewhere, we send you the file and you're done.
+</p> <hr class="my-8 border-navy-200"> <h2 class="text-2xl font-display text-crst-primary mb-4">Pricing (The Real Numbers)</h2> <ul class="list-none text-navy-600/80 space-y-2 mb-6"> <li><strong class="text-navy-800">Consumer Lists:</strong> $75–$125 per 1,000 names, depending on the selects</li> <li><strong class="text-navy-800">Business Lists:</strong> $125–$200 per 1,000 names</li> <li><strong class="text-navy-800">New Mover Lists:</strong> $150 per 1,000 names</li> <li><strong class="text-navy-800">Saturation Lists:</strong> $40–$60 per 1,000 addresses (no demographic filtering)</li> </ul> <p class="text-navy-600/80 leading-relaxed mb-8">
+Pricing includes one-time use for a single mailing. Multi-use licenses are available.
+</p> <p class="text-navy-600/80 leading-relaxed mb-8">
+NCOA processing, CASS certification, deduplication, and presort are included in every list we deliver. You're not paying extra for clean data — that's just how we do it.
+</p> <hr class="my-8 border-navy-200"> <h2 class="text-2xl font-display text-crst-primary mb-4">Why Hudson Valley Businesses Use Us for Data</h2> <div class="space-y-6"> ${[
+    {
+      title: "We've been doing this since 1998.",
+      desc: "We're not a startup. We're not a venture-backed tech platform that'll disappear in three years. Same ownership, same team, same building for 28 years."
+    },
+    {
+      title: "We're local.",
+      desc: "You can call us. You can visit. You can walk in with a question and talk to the person who built your list. We're located in Saugerties, NY."
+    },
+    {
+      title: "We don't just sell lists \u2014 we mail them.",
+      desc: "Most list brokers hand you a spreadsheet and you're on your own. We build your list, design your mailer, print it, address it, sort it, and deliver it to the post office. One vendor, one invoice, one point of contact."
+    },
+    {
+      title: "We know the Hudson Valley market.",
+      desc: "We've mailed to every ZIP code between Poughkeepsie and Newburgh. We know which routes deliver on Saturday. We know which towns have seasonal population swings. We know where the new developments are going in before the county updates the maps."
+    },
+    {
+      title: "We track what works.",
+      desc: "When you mail with us, we track response. If a campaign underperforms, we'll tell you why \u2014 and we'll adjust the next one. We're not trying to sell you a list and disappear. We're trying to help you get customers."
+    }
+  ].map((item) => renderTemplate`<div> <h3 class="font-heading font-bold text-navy-800 mb-2">${item.title}</h3> <p class="text-navy-600/70 leading-relaxed">${item.desc}</p> </div>`)} </div> <hr class="my-8 border-navy-200"> <h2 class="text-2xl font-display text-crst-primary mb-6">What Our Clients Are Mailing</h2> <ul class="list-disc list-inside text-navy-600/80 space-y-3 mb-8"> <li><strong class="text-navy-800">HVAC contractors</strong> targeting homeowners 10+ years in the same house (older systems = replacement market)</li> <li><strong class="text-navy-800">Dental practices</strong> mailing new movers and households with children</li> <li><strong class="text-navy-800">Auto repair shops</strong> reaching vehicle owners by make, model, and year</li> <li><strong class="text-navy-800">Landscapers</strong> hitting high-income homeowners in specific ZIP codes</li> <li><strong class="text-navy-800">Insurance agencies</strong> mailing small businesses by employee count and revenue</li> <li><strong class="text-navy-800">Political campaigns</strong> using voter files with turnout history</li> <li><strong class="text-navy-800">Nonprofits</strong> reaching donors by giving capacity and affinity</li> <li><strong class="text-navy-800">Realtors</strong> targeting pre-movers (equity triggers, life event signals)</li> </ul> <p class="text-navy-600/80 leading-relaxed mb-8">
+If you're trying to reach a specific audience in the Hudson Valley, we've probably built that list before.
+</p> <hr class="my-8 border-navy-200"> <h2 class="text-2xl font-display text-crst-primary mb-6">Common Questions</h2> <div class="space-y-4"> ${dataListFaqs.map((item) => renderTemplate`<div class="bg-navy-50/40 rounded-xl border border-navy-100 p-5"> <h3 class="font-heading font-bold text-navy-800 mb-2 text-sm">${item.q}</h3> <p class="text-navy-600/70 leading-relaxed text-sm">${item.a}</p> </div>`)} </div> <hr class="my-8 border-navy-200"> <h2 class="text-2xl font-display text-crst-primary mb-6">Need a List? Here's What Happens Next</h2> <div class="space-y-4"> ${[
+    {
+      num: "1",
+      title: "Tell us who you want to reach.",
+      desc: 'Call (845) 255-5722 or fill out the estimate form. Describe your target audience and geography. Examples: "homeowners in New Paltz making $80K+," "all HVAC contractors in Dutchess County," "new movers in Kingston within the last 90 days."'
+    },
+    {
+      num: "2",
+      title: "We send you a count and quote.",
+      desc: "Usually within a few hours. You'll see the total record count, pricing per thousand, and total cost."
+    },
+    {
+      num: "3",
+      title: "You approve it.",
+      desc: "Reply with approval and we pull the list. If the count is higher or lower than expected, we'll discuss before pulling."
+    },
+    {
+      num: "4",
+      title: "We deliver the file (or mail it for you).",
+      desc: "If you're just buying the list, we email you a cleaned, mail-ready file within 24 hours. If you're printing and mailing with us, we skip the file delivery and go straight to production."
+    }
+  ].map((item) => renderTemplate`<div class="flex gap-4"> <div class="shrink-0 w-8 h-8 rounded-full bg-crst-gold flex items-center justify-center text-crst-primary font-heading font-bold text-sm"> ${item.num} </div> <div> <h4 class="font-heading font-bold text-navy-800 mb-1">${item.title}</h4> <p class="text-navy-600/70 leading-relaxed">${item.desc}</p> </div> </div>`)} </div> <hr class="my-8 border-navy-200"> <h2 class="text-2xl font-display text-crst-primary mb-4">Related Mailing List Guides</h2> <p class="text-navy-600/80 leading-relaxed mb-6">
+Want to go deeper? These guides explain how each type of mailing list works, what filters are available, pricing, and real campaign examples from Hudson Valley businesses:
+</p> <div class="space-y-3 mb-8"> <a href="/services/mailing-list-services" class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg border border-navy-100 hover:border-crst-primary/30 transition-colors group"> <svg class="w-5 h-5 text-crst-primary shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg> <div> <span class="font-heading font-bold text-navy-800 group-hover:text-crst-primary transition-colors">Mailing List Processing Services</span> <p class="text-sm text-navy-600/70 mt-1">NCOA processing, CASS certification, deduplication, merge/purge, and presort — everything that turns raw data into a mail-ready file.</p> </div> </a> <a href="/services/direct-mail-lists" class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg border border-navy-100 hover:border-crst-primary/30 transition-colors group"> <svg class="w-5 h-5 text-crst-primary shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg> <div> <span class="font-heading font-bold text-navy-800 group-hover:text-crst-primary transition-colors">Direct Mail Lists</span> <p class="text-sm text-navy-600/70 mt-1">Overview of consumer, business, and specialty list types — what to expect, what to ask, and how lists are processed.</p> </div> </a> <a href="/services/business-mailing-lists" class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg border border-navy-100 hover:border-crst-primary/30 transition-colors group"> <svg class="w-5 h-5 text-crst-primary shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg> <div> <span class="font-heading font-bold text-navy-800 group-hover:text-crst-primary transition-colors">Business Mailing Lists</span> <p class="text-sm text-navy-600/70 mt-1">How to target companies by industry, employee count, revenue, and geography for B2B campaigns.</p> </div> </a> <a href="/services/consumer-mailing-lists" class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg border border-navy-100 hover:border-crst-primary/30 transition-colors group"> <svg class="w-5 h-5 text-crst-primary shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg> <div> <span class="font-heading font-bold text-navy-800 group-hover:text-crst-primary transition-colors">Consumer Mailing Lists</span> <p class="text-sm text-navy-600/70 mt-1">Target households by age, income, homeowner status, and demographics with real campaign examples.</p> </div> </a> <a href="/services/new-mover-mailing-lists" class="flex items-start gap-3 p-4 bg-navy-50/40 rounded-lg border border-navy-100 hover:border-crst-primary/30 transition-colors group"> <svg class="w-5 h-5 text-crst-primary shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg> <div> <span class="font-heading font-bold text-navy-800 group-hover:text-crst-primary transition-colors">New Mover Mailing Lists</span> <p class="text-sm text-navy-600/70 mt-1">Reach recent movers with 3–5x higher response rates — timing, filters, and monthly campaign strategies.</p> </div> </a> </div> <p class="text-navy-600/80 leading-relaxed mb-8">
+All mailing list services are part of our full-service <a href="/services/direct-mail" class="text-crst-primary font-semibold hover:underline">direct mail campaigns</a> — from list to mailbox, one vendor, one invoice.
+</p> <hr class="my-8 border-navy-200"> <h2 class="text-2xl font-display text-crst-primary mb-4">Mailing List Guides &amp; Resources</h2> <p class="text-navy-600/80 leading-relaxed mb-6">
+In-depth guides on NCOA processing, demographic targeting, list accuracy, saturation vs. targeted mail, list hygiene, voter files, and when to refresh your data — written by Sean Griffin, owner of Cornerstone Services since 1998.
+</p> <div class="grid sm:grid-cols-2 gap-4 mb-10"> ${clusterArticles.map((a) => renderTemplate`<a${addAttribute(`/services/data-lists/${a.slug}`, "href")} class="block p-4 bg-navy-50/40 rounded-xl border border-navy-100 hover:border-crst-primary/30 hover:shadow-sm transition-all group"> <h3 class="font-heading font-semibold text-navy-800 text-sm group-hover:text-crst-primary transition-colors leading-snug mb-1">${a.data.title}</h3> <p class="text-xs text-navy-600/60 line-clamp-2 leading-relaxed">${a.data.description}</p> </a>`)} </div> <div class="bg-crst-primary/5 border border-crst-primary/15 rounded-xl p-6 mt-10 text-center"> <p class="font-heading font-bold text-crst-primary text-lg mb-2">Get a List Count and Quote</p> <p class="text-navy-600/70 text-sm mb-4">Tell us your target audience and geography. We'll send you a record count and pricing — usually within a few hours.</p> <div class="flex flex-col sm:flex-row items-center justify-center gap-3"> <a href="/estimate" class="btn-primary text-sm">Get a Free Estimate</a> <a${addAttribute(`tel:${BUSINESS.phoneClean}`, "href")} class="inline-flex items-center gap-2 text-sm font-heading font-semibold text-crst-primary hover:text-crst-accent transition-colors"> <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+Call ${BUSINESS.phone} </a> </div> </div> </div> <!-- Sidebar --> <div class="lg:col-span-1"> <div class="sticky top-24 space-y-5"> <!-- CTA card --> <div class="bg-crst-primary rounded-xl p-6 text-white"> <h3 class="font-display text-lg mb-2">Need a Mailing List?</h3> <p class="text-white/60 text-sm leading-relaxed mb-4">
+Tell us your target audience and geography. We'll provide a count and quote — usually within a few hours.
+</p> <a href="/estimate" class="btn-accent w-full text-center text-sm">
+Request a List Quote
+</a> <div class="mt-4 pt-4 border-t border-white/10 text-center"> <a${addAttribute(`tel:${BUSINESS.phoneClean}`, "href")} class="text-white/70 text-sm font-heading hover:text-white transition-colors">
+or call ${BUSINESS.phone} </a> </div> </div> <!-- Cluster article links --> <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100"> <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Mailing List Guides</h3> <div class="space-y-2"> ${clusterArticles.map((a) => renderTemplate`<a${addAttribute(`/services/data-lists/${a.slug}`, "href")} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-white rounded-md transition-colors font-heading"> <span class="truncate mr-2">${a.data.title.replace(/ — .*$/, "").replace(/ for Direct Mail$/, "").replace(/\?$/, "")}</span> <svg class="w-3.5 h-3.5 opacity-40 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg> </a>`)} </div> </div> <!-- Related services --> <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100"> <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Related Services</h3> <div class="space-y-2"> ${[
+    { label: "Direct Mail Campaigns", href: "/services/direct-mail" },
+    { label: "Mailing List Processing", href: "/services/mailing-list-services" },
+    { label: "Direct Mail Lists", href: "/services/direct-mail-lists" },
+    { label: "Business Mailing Lists", href: "/services/business-mailing-lists" },
+    { label: "Consumer Mailing Lists", href: "/services/consumer-mailing-lists" },
+    { label: "New Mover Lists", href: "/services/new-mover-mailing-lists" },
+    { label: "EDDM", href: "/services/eddm" },
+    { label: "Mailing Services", href: "/services/mailing" },
+    { label: "Non-Profit Mailing", href: "/services/non-profit-mailing" }
+  ].map((link) => renderTemplate`<a${addAttribute(link.href, "href")} class="flex items-center justify-between px-3 py-2 text-sm text-navy-700 hover:text-crst-primary hover:bg-white rounded-md transition-colors font-heading"> ${link.label} <svg class="w-3.5 h-3.5 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg> </a>`)} </div> </div> <!-- Quick info --> <div class="bg-navy-50/50 rounded-xl p-5 border border-navy-100"> <h3 class="font-heading font-bold text-navy-800 text-sm mb-3">Good to Know</h3> <div class="space-y-3 text-sm text-navy-600/70"> <p>NCOA processing is <strong class="text-navy-800">required by USPS</strong> for all presorted mailings.</p> <p>Most list counts and quotes are returned <strong class="text-navy-800">within a few hours</strong>.</p> <p>We can <strong class="text-navy-800">suppress your existing customers</strong> from purchased lists.</p> </div> </div> </div> </div> </div> </div> </section> <section class="py-14 bg-white"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="section-divider mb-6"></div> <h2 class="text-2xl font-display text-crst-primary mb-3">Recent Campaigns</h2> <p class="text-navy-600/80 leading-relaxed mb-6">We've built targeted data lists for direct mail campaigns across industries. A few recent examples:</p> <div class="grid sm:grid-cols-2 gap-5"> ${renderComponent($$result2, "CaseStudyCallout", $$CaseStudyCallout, { "href": "/case-studies/niche-insurance", "client": "Tango Insurance \u2014 Nassau County, NY", "summary": "We built a compiled consumer list targeting homeowners aged 45+ with specific income ranges across Nassau County \u2014 NCOA-processed and formatted for First-Class presort. The list was integrated directly into the campaign production workflow.", "anchor": "targeted data list for an insurance direct mail campaign" })} ${renderComponent($$result2, "CaseStudyCallout", $$CaseStudyCallout, { "href": "/case-studies/lawrence-hearing", "client": "Lawrence Hearing \u2014 Orange County, NY", "summary": "We sourced a consumer data list targeting adults 55+ in Orange County, filtered for homeownership and household income \u2014 demographics correlated with hearing loss prevalence and ability to invest in treatment. Each list was NCOA-processed before the mailing.", "anchor": "audiology patient data list for healthcare direct mail" })} </div> </div> </section> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8"> ${renderComponent($$result2, "AuthorByline", $$AuthorByline, {})} </div> <section class="py-10 bg-crst-primary/5 border-y border-crst-primary/10"> <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"> <h3 class="text-xl font-display font-bold text-crst-primary mb-3">Need a Targeted Mailing List?</h3> <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Tell us your audience and geography — we'll provide a count and quote.</p> <div class="flex flex-col sm:flex-row items-center justify-center gap-4"> <a${addAttribute(`tel:${BUSINESS.phoneClean}`, "href")} class="btn-primary inline-flex items-center gap-2"> <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+Call ${BUSINESS.phone} </a> <a href="/estimate" class="btn-accent inline-flex items-center gap-2">
+Get a Free Estimate
+<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg> </a> </div> </div> </section> <section class="py-14 bg-navy-50/50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div class="text-center mb-8"> <h2 class="text-2xl font-display font-bold text-crst-primary">Service Areas</h2> <p class="text-gray-600 mt-2">We serve businesses and organizations across three Hudson Valley counties.</p> </div> <div class="grid sm:grid-cols-3 gap-4 max-w-3xl mx-auto"> ${Object.values(COUNTIES).map((county) => renderTemplate`<a${addAttribute(`/service-areas/${county.slug}`, "href")} class="flex items-center justify-center gap-2 p-4 bg-white rounded-lg border border-gray-200 hover:border-crst-primary/30 hover:shadow-sm transition-all group"> <svg class="w-5 h-5 text-crst-primary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"> <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path> <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path> </svg> <span class="font-heading font-semibold text-gray-800 group-hover:text-crst-primary transition-colors">${county.name}</span> </a>`)} </div> </div> </section> ${renderComponent($$result2, "CTASection", $$CTASection, {})} `, "head": async ($$result2) => renderTemplate`${renderComponent($$result2, "Fragment", Fragment, { "slot": "head" }, { "default": async ($$result3) => renderTemplate(_a || (_a = __template([' <script type="application/ld+json">', "<\/script> "])), unescapeHTML(JSON.stringify(graphSchema))) })}` })}`;
+}, "/home/runner/workspace/src/pages/services/data-lists.astro", void 0);
+
+const $$file = "/home/runner/workspace/src/pages/services/data-lists.astro";
+const $$url = "/services/data-lists";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$DataLists,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };
