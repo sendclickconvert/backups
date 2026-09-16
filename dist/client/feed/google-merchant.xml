@@ -4,6 +4,89 @@
     <title>Cornerstone Services — Product Feed</title>
     <link>https://crst.net/shop</link>
     <description>Google Merchant Center product feed for Cornerstone Services (crst.net).</description>
-
+    <item>
+      <g:id>car-magnet</g:id>
+      <title>Car Magnet</title>
+      <description>Turn your vehicle into a mobile billboard. No paint, no permanence, no problem. These custom car magnets are the easiest way to promote your business, support your favorite team or add a little personality to your ride. Made from durable, weather-resistant magnetic material, they stick securely to any metal surface and peel off cleanly whenever you&apos;re ready for a change. They are built to last, reusable and extremely versatile.</description>
+      <link>https://crst.net/shop/car-magnet</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0849/7705/8028/files/CarMagnet_ec9acdbd-5f71-4d9e-8d5a-97a8e439e4f3.png?v=1789060553</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>60.00 USD</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>Cornerstone Services</g:brand>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Vehicles &amp; Parts &gt; Vehicle Parts &amp; Accessories &gt; Motor Vehicle Exterior Accessories</g:google_product_category>
+      <g:product_type>Signage &gt; Car Magnets</g:product_type>
+    </item>
+    <item>
+      <g:id>up-envelope</g:id>
+      <title>Union Envelope</title>
+      <description>Regular #10 Mailing Envelope ideal for political campaigns, labor organizations, endorsements, events, and hand distribution. These Envelopes feature an official union bug, indicating they came off the press at a union print shop. From the folks who set the ink to the ones who packed the box, these pieces were made by workers covered by a collective bargaining agreement.</description>
+      <link>https://crst.net/shop/up-envelope</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0849/7705/8028/files/UP_EnvelopeII.png?v=1789060563</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>365.00 USD</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>Cornerstone Services</g:brand>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Business &amp; Industrial &gt; Office Supplies &gt; General Office Supplies &gt; Envelopes</g:google_product_category>
+      <g:product_type>Political &amp; Campaign &gt; Union-Printed Envelopes</g:product_type>
+    </item>
+    <item>
+      <g:id>up-palm-card</g:id>
+      <title>Union Palm Card</title>
+      <description>Palm Cards are the workhorse of grassroots outreach. Compact, easy to carry and built for face-to-face moments. Slip a stack in your pocket, bag or clipboard and you&apos;re ready for canvassing, tabling, events or handshake-and-go conversations. Perfect for campaign walk pieces, event promos, business intros, labor organizations, nonprofit outreach or quick-reference. These Palm Cards feature an official union bug, indicating they came off the press at a union print shop. From the folks who set the ink to the ones who packed the box, these pieces were made by workers covered by a collective bargaining agreement.</description>
+      <link>https://crst.net/shop/up-palm-card</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0849/7705/8028/files/UP_Palm_5ac6aeea-b070-4c3d-829e-f321cc0597f4.png?v=1789060565</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>330.00 USD</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>Cornerstone Services</g:brand>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Business &amp; Industrial &gt; Advertising &amp; Marketing</g:google_product_category>
+      <g:product_type>Political &amp; Campaign &gt; Union-Printed Palm Cards</g:product_type>
+    </item>
+    <item>
+      <g:id>envelope</g:id>
+      <title>Envelope</title>
+      <description>Standard mailing envelopes, in assorted sizes, suitable for letters, invoices, recipient replies, donations, invitations, catalogs and brochures.</description>
+      <link>https://crst.net/shop/envelope</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0849/7705/8028/files/Envelopes_eaf6a1da-d766-444c-9161-0c1080085c83.png?v=1789060575</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>90.00 USD</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>Cornerstone Services</g:brand>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Business &amp; Industrial &gt; Office Supplies &gt; General Office Supplies &gt; Envelopes</g:google_product_category>
+      <g:product_type>Printing &gt; Envelopes</g:product_type>
+    </item>
+    <item>
+      <g:id>palm-card</g:id>
+      <title>Palm Card</title>
+      <description>Palm Cards are the workhorse of grassroots outreach. Compact, easy to carry and built for face-to-face moments. Slip a stack in your pocket, bag or clipboard and you&apos;re ready for canvassing, tabling, events or handshake-and-go conversations. Sized to hand off in seconds without breaking stride, the small format forces clarity: your key point, front and center. These are perfect for campaign walk pieces, event promos, business intros, labor organizations, nonprofit outreach or quick-reference.</description>
+      <link>https://crst.net/shop/palm-card</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0849/7705/8028/files/Palm.png?v=1789060587</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>85.00 USD</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>Cornerstone Services</g:brand>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Business &amp; Industrial &gt; Advertising &amp; Marketing</g:google_product_category>
+      <g:product_type>Political &amp; Campaign &gt; Palm Cards</g:product_type>
+    </item>
+    <item>
+      <g:id>lawn-sign</g:id>
+      <title>Lawn Sign</title>
+      <description>Lightweight, durable, and weather-resistant corrugated plastic signs ideal for indoor and outdoor use. A cost-effective choice for real estate, political, yard, event, construction, and promotional signage. Available in 4mm thickness and with/out step stakes. Suitable for up to 12–18 months outdoors and 2+ years indoors.</description>
+      <link>https://crst.net/shop/lawn-sign</link>
+      <g:image_link>https://cdn.shopify.com/s/files/1/0849/7705/8028/files/LawnSignII.png?v=1789060597</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>120.00 USD</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>Cornerstone Services</g:brand>
+      <g:identifier_exists>false</g:identifier_exists>
+      <g:google_product_category>Business &amp; Industrial &gt; Signage</g:google_product_category>
+      <g:product_type>Signage &gt; Lawn Signs</g:product_type>
+    </item>
   </channel>
 </rss>
