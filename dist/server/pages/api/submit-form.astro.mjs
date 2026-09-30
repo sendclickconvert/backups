@@ -1,4 +1,4 @@
-import { G as GHL } from '../../chunks/site_BORfRXu4.mjs';
+import { G as GHL } from '../../chunks/site_Bvm2fFWv.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const prerender = false;

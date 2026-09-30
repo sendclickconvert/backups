@@ -1,8 +1,10 @@
 const BUSINESS = {
   name: "Cornerstone Services, Inc.",
   shortName: "CRST",
+  tagline: "Hudson Valley Direct Mail & Marketing Since 1998",
   phone: "(845) 255-5722",
   phoneClean: "8452555722",
+  trackingPhone: "(845) 393-6770",
   altPhone: "(845) 393-6770",
   altPhoneClean: "8453936770",
   email: "info@crst.net",
@@ -14,6 +16,7 @@ const BUSINESS = {
     full: "387 Malden Turnpike, Saugerties, NY 12477"
   },
   owner: "Sean Griffin",
+  domain: "crst.net",
   url: "https://crst.net",
   founded: 1998,
   stats: {
@@ -21,7 +24,14 @@ const BUSINESS = {
     piecesMailed: "2.3M+",
     municipalities: "47",
     onTime: "98%"
-  }};
+  },
+  rating: {
+    ratingValue: "5.0",
+    reviewCount: "0",
+    bestRating: "5",
+    worstRating: "1"
+  }
+};
 const NAV_ITEMS = [
   {
     label: "Services",

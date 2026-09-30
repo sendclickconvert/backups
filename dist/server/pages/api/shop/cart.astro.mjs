@@ -1,4 +1,4 @@
-import { S as STOREFRONT_URL } from '../../../chunks/shopify_AYdq34iQ.mjs';
+import { g as getStorefrontToken, a as getStorefrontUrl } from '../../../chunks/shopify_B5LulV77.mjs';
 export { renderers } from '../../../renderers.mjs';
 
 const prerender = false;
@@ -18,11 +18,11 @@ const CART_CREATE = `
   }
 `;
 const POST = async ({ request }) => {
-  const token = process.env.SHOPIFY_STOREFRONT_TOKEN;
+  const token = getStorefrontToken();
   if (!token) {
     return new Response(JSON.stringify({ error: "Store not configured." }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" }
+      status: 503,
+      headers: { "Content-Type": "application/json", "Cache-Control": "no-store", "Retry-After": "60" }
     });
   }
   let body;
@@ -42,7 +42,7 @@ const POST = async ({ request }) => {
     });
   }
   try {
-    const res = await fetch(STOREFRONT_URL, {
+    const res = await fetch(getStorefrontUrl(), {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -53,9 +53,12 @@ const POST = async ({ request }) => {
         variables: {
           lines: [{ merchandiseId: variantId, quantity: 1 }]
         }
-      })
+      }),
+      signal: AbortSignal.timeout(15e3)
     });
+    if (!res.ok) throw new Error(`Storefront HTTP ${res.status}`);
     const json = await res.json();
+    if (json.errors?.length) throw new Error("Storefront GraphQL error");
     const cart = json.data?.cartCreate?.cart;
     const userErrors = json.data?.cartCreate?.userErrors ?? [];
     if (!cart || userErrors.length > 0) {
@@ -71,8 +74,8 @@ const POST = async ({ request }) => {
     );
   } catch {
     return new Response(JSON.stringify({ error: "Storefront API unavailable." }), {
-      status: 502,
-      headers: { "Content-Type": "application/json" }
+      status: 503,
+      headers: { "Content-Type": "application/json", "Cache-Control": "no-store", "Retry-After": "60" }
     });
   }
 };

@@ -1,8 +1,8 @@
-export const prerender = true;
+export const prerender = false;
 
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
-import { storefrontFetch, ALL_PRODUCTS_QUERY } from '../../lib/shopify';
+import { getStorefrontProducts } from '../../lib/shopify';
 import { PRODUCT_META } from '../../data/products';
 import { isDraftProduct } from '../../lib/product-content';
 
@@ -33,22 +33,14 @@ function stripHtmlAndTruncate(value: string, maxLen = 5000): string {
 }
 
 export const GET: APIRoute = async () => {
-  const token: string | undefined =
-    import.meta.env.SHOPIFY_STOREFRONT_TOKEN ?? process.env.SHOPIFY_STOREFRONT_TOKEN;
-
   let products: ProductNode[] = [];
-
-  if (token) {
-    try {
-      const data = await storefrontFetch<{ products: { edges: { node: ProductNode }[] } }>(
-        ALL_PRODUCTS_QUERY,
-        {},
-        token
-      );
-      products = data.products.edges.map((e) => e.node);
-    } catch {
-      products = [];
-    }
+  try {
+    products = await getStorefrontProducts();
+  } catch {
+    return new Response('Product feed temporarily unavailable.', {
+      status: 503,
+      headers: { 'Cache-Control': 'no-store', 'Retry-After': '60' },
+    });
   }
 
   // Cross-reference the editorial content collection so the feed only ships
@@ -115,6 +107,7 @@ ${items}
     status: 200,
     headers: {
       'Content-Type': 'application/xml; charset=utf-8',
+      'Cache-Control': 'no-store',
     },
   });
 };

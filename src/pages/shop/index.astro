@@ -1,8 +1,8 @@
 ---
-export const prerender = true;
+export const prerender = false;
 
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { storefrontFetch, ALL_PRODUCTS_QUERY } from '../../lib/shopify';
+import { getStorefrontProducts } from '../../lib/shopify';
 
 interface ProductNode {
   title: string;
@@ -12,23 +12,17 @@ interface ProductNode {
   availableForSale: boolean;
 }
 
-const token: string | undefined = import.meta.env.SHOPIFY_STOREFRONT_TOKEN ?? process.env.SHOPIFY_STOREFRONT_TOKEN;
 let products: ProductNode[] = [];
 let fetchError = '';
 
-if (!token) {
-  fetchError = 'Store not configured. Set SHOPIFY_STOREFRONT_TOKEN.';
-} else {
-  try {
-    const data = await storefrontFetch<{ products: { edges: { node: ProductNode }[] } }>(
-      ALL_PRODUCTS_QUERY,
-      {},
-      token
-    );
-    products = data.products.edges.map(e => e.node);
-  } catch (err) {
-    fetchError = 'Failed to load products from Shopify.';
-  }
+Astro.response.headers.set('Cache-Control', 'no-store');
+try {
+  products = await getStorefrontProducts();
+} catch (err) {
+  Astro.response.status = 503;
+  Astro.response.headers.set('Retry-After', '60');
+  console.error('[shop] Catalog unavailable:', err instanceof Error ? err.message : 'Unknown error');
+  fetchError = 'The shop is temporarily unavailable. Please try again shortly or contact us for an order.';
 }
 
 const GRID_PLACEHOLDERS: Record<string, string> = {

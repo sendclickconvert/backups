@@ -1,7 +1,7 @@
 export const prerender = false;
 
 import type { APIRoute } from 'astro';
-import { STOREFRONT_URL } from '../../../lib/shopify';
+import { getStorefrontUrl, getStorefrontToken } from '../../../lib/shopify';
 
 const CART_CREATE = `
   mutation CartCreate($lines: [CartLineInput!]!) {
@@ -20,11 +20,11 @@ const CART_CREATE = `
 `;
 
 export const POST: APIRoute = async ({ request }) => {
-  const token = import.meta.env.SHOPIFY_STOREFRONT_TOKEN;
+  const token = getStorefrontToken();
   if (!token) {
     return new Response(JSON.stringify({ error: 'Store not configured.' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
+      status: 503,
+      headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store', 'Retry-After': '60' },
     });
   }
 
@@ -47,7 +47,7 @@ export const POST: APIRoute = async ({ request }) => {
   }
 
   try {
-    const res = await fetch(STOREFRONT_URL, {
+    const res = await fetch(getStorefrontUrl(), {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -59,9 +59,12 @@ export const POST: APIRoute = async ({ request }) => {
           lines: [{ merchandiseId: variantId, quantity: 1 }],
         },
       }),
+      signal: AbortSignal.timeout(15_000),
     });
 
+    if (!res.ok) throw new Error(`Storefront HTTP ${res.status}`);
     const json = await res.json();
+    if (json.errors?.length) throw new Error('Storefront GraphQL error');
     const cart = json.data?.cartCreate?.cart;
     const userErrors = json.data?.cartCreate?.userErrors ?? [];
 
@@ -79,8 +82,8 @@ export const POST: APIRoute = async ({ request }) => {
     );
   } catch {
     return new Response(JSON.stringify({ error: 'Storefront API unavailable.' }), {
-      status: 502,
-      headers: { 'Content-Type': 'application/json' },
+      status: 503,
+      headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store', 'Retry-After': '60' },
     });
   }
 };

@@ -1,6 +1,6 @@
 import { renderers } from './renderers.mjs';
 import { c as createExports, s as serverEntrypointModule } from './chunks/_@astrojs-ssr-adapter_kqOmapBX.mjs';
-import { manifest } from './manifest_D30xvOYW.mjs';
+import { manifest } from './manifest_CGAHlcaW.mjs';
 
 const _page0 = () => import('./pages/_image.astro.mjs');
 const _page1 = () => import('./pages/about/memberships.astro.mjs');
@@ -83,13 +83,14 @@ const _page77 = () => import('./pages/services/_service_/_town_.astro.mjs');
 const _page78 = () => import('./pages/services.astro.mjs');
 const _page79 = () => import('./pages/shop/_handle_.astro.mjs');
 const _page80 = () => import('./pages/shop.astro.mjs');
-const _page81 = () => import('./pages/terms.astro.mjs');
-const _page82 = () => import('./pages/thank-you.astro.mjs');
-const _page83 = () => import('./pages/training/shopify-handbook.astro.mjs');
-const _page84 = () => import('./pages/usps-direct-mailer-templates.astro.mjs');
-const _page85 = () => import('./pages/why-crst-for-direct-mail-in-the-hudson-valley.astro.mjs');
-const _page86 = () => import('./pages/index.astro.mjs');
-const _page87 = () => import('./pages/_---slug_.astro.mjs');
+const _page81 = () => import('./pages/sitemap-shop.xml.astro.mjs');
+const _page82 = () => import('./pages/terms.astro.mjs');
+const _page83 = () => import('./pages/thank-you.astro.mjs');
+const _page84 = () => import('./pages/training/shopify-handbook.astro.mjs');
+const _page85 = () => import('./pages/usps-direct-mailer-templates.astro.mjs');
+const _page86 = () => import('./pages/why-crst-for-direct-mail-in-the-hudson-valley.astro.mjs');
+const _page87 = () => import('./pages/index.astro.mjs');
+const _page88 = () => import('./pages/_---slug_.astro.mjs');
 
 const pageMap = new Map([
     ["node_modules/astro/dist/assets/endpoint/node.js", _page0],
@@ -173,13 +174,14 @@ const pageMap = new Map([
     ["src/pages/services/index.astro", _page78],
     ["src/pages/shop/[handle].astro", _page79],
     ["src/pages/shop/index.astro", _page80],
-    ["src/pages/terms.astro", _page81],
-    ["src/pages/thank-you.astro", _page82],
-    ["src/pages/training/shopify-handbook.astro", _page83],
-    ["src/pages/usps-direct-mailer-templates.astro", _page84],
-    ["src/pages/why-crst-for-direct-mail-in-the-hudson-valley.astro", _page85],
-    ["src/pages/index.astro", _page86],
-    ["src/pages/[...slug].astro", _page87]
+    ["src/pages/sitemap-shop.xml.ts", _page81],
+    ["src/pages/terms.astro", _page82],
+    ["src/pages/thank-you.astro", _page83],
+    ["src/pages/training/shopify-handbook.astro", _page84],
+    ["src/pages/usps-direct-mailer-templates.astro", _page85],
+    ["src/pages/why-crst-for-direct-mail-in-the-hudson-valley.astro", _page86],
+    ["src/pages/index.astro", _page87],
+    ["src/pages/[...slug].astro", _page88]
 ]);
 const serverIslandMap = new Map();
 const _manifest = Object.assign(manifest, {

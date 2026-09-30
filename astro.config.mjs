@@ -4,28 +4,6 @@ import sitemap from '@astrojs/sitemap';
 import node from '@astrojs/node';
 import react from '@astrojs/react';
 import fs from 'node:fs';
-import path from 'node:path';
-import matter from 'gray-matter';
-import { isDraftProduct } from './src/lib/product-draft-rules.mjs';
-
-// Compute which /shop/<handle> pages are currently draft (placeholder
-// editorial content — see src/lib/product-content.ts for the exact rule)
-// so the sitemap can exclude them automatically. This reads the same
-// content files and applies the same isDraftProduct() logic used by the
-// page template, the schema builder, and the Merchant feed — so a product
-// falling out of draft status is picked up here with no manual list to
-// maintain or forget.
-const PRODUCTS_DIR = path.resolve('./src/content/products');
-const draftProductHandles = new Set(
-  fs
-    .readdirSync(PRODUCTS_DIR)
-    .filter((f) => f.endsWith('.md'))
-    .filter((f) => {
-      const { data } = matter(fs.readFileSync(path.join(PRODUCTS_DIR, f), 'utf-8'));
-      return isDraftProduct(data);
-    })
-    .map((f) => f.replace(/\.md$/, ''))
-);
 
 const redirectPaths = [
   '/direct-mail-new-paltz',
@@ -78,24 +56,28 @@ export default defineConfig({
     tailwind(),
     react(),
     sitemap({
-      // NOTE: added `!page.includes('/feed/')` to exclude the Google Merchant
-      // Center product feed (/feed/google-merchant.xml) from the sitemap — it
-      // is a machine-readable product feed, not a page, and Google Merchant
-      // Center is fed via the Content API / feed URL directly, not the sitemap.
-      //
-      // NOTE: `/shop/<handle>` pages whose content is still draft (see
-      // draftProductHandles above) are excluded automatically — no
-      // hardcoded handle list here, so a product drops out of this
-      // exclusion on its own the moment its editorial content is filled in
-      // and it rebuilds as non-draft.
+      // Shop URLs live in the request-time sitemap, not a build-time snapshot.
       filter: (page) =>
         !page.includes('/thank-you') &&
         !page.includes('/training') &&
         !page.endsWith('/terms') &&
         !page.includes('/resources/payments') &&
         !page.includes('/feed/') &&
-        ![...draftProductHandles].some((handle) => page.includes(`/shop/${handle}`)),
+        !/^\/shop(?:\/|$)/.test(new URL(page).pathname) &&
+        !new URL(page).pathname.endsWith('.xml'),
     }),
+    {
+      // This installed sitemap version has no customSitemaps option.
+      name: 'live-shop-sitemap-index',
+      hooks: {
+        'astro:build:done': ({ dir }) => {
+          const indexUrl = new URL('sitemap-index.xml', dir);
+          const xml = fs.readFileSync(indexUrl, 'utf8');
+          fs.writeFileSync(indexUrl, xml.replace('</sitemapindex>',
+            '<sitemap><loc>https://crst.net/sitemap-shop.xml</loc></sitemap></sitemapindex>'));
+        },
+      },
+    },
   ],
   redirects: {
     '/training/conversations-tab': '/training/portal',

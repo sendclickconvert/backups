@@ -69,6 +69,16 @@ app.use((req, res, next) => {
   next();
 });
 
+// Live Shopify routes must not be shadowed by old generated HTML or immutable caches.
+app.use((req, res, next) => {
+  if (req.path === '/shop' || req.path.startsWith('/shop/') ||
+      req.path === '/feed/google-merchant.xml' || req.path === '/sitemap-shop.xml') {
+    res.set('Cache-Control', 'no-store');
+    return ssrHandler(req, res, next);
+  }
+  next();
+});
+
 // Short cache for crawlable index files — must-revalidate, no immutable.
 // Sitemaps and robots.txt change on every build; a 1-year immutable header
 // would prevent Googlebot from picking up new URLs after content updates.

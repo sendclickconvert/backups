@@ -1,50 +1,18 @@
 ---
-export const prerender = true;
+export const prerender = false;
 
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CTASection from '../../components/CTASection.astro';
 import ProductSelector from '../../components/shop/ProductSelector.tsx';
-import { storefrontFetch, PRODUCT_BY_HANDLE_QUERY, PRODUCT_VARIANTS_PAGE_QUERY, ALL_PRODUCTS_QUERY } from '../../lib/shopify';
+import { storefrontFetch, getStorefrontToken, PRODUCT_BY_HANDLE_QUERY, PRODUCT_VARIANTS_PAGE_QUERY } from '../../lib/shopify';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { PRODUCT_META } from '../../data/products';
 import { buildProductGraph } from '../../lib/product-schema';
 import { BUSINESS } from '../../data/site';
 import { isDraftProduct, isPlaceholder, hasRealFaqs } from '../../lib/product-content';
 
-export async function getStaticPaths() {
-  const token: string | undefined = import.meta.env.SHOPIFY_STOREFRONT_TOKEN ?? process.env.SHOPIFY_STOREFRONT_TOKEN;
-  if (!token) {
-    throw new Error(
-      '[shop/[handle]] Build aborted: SHOPIFY_STOREFRONT_TOKEN is not set. ' +
-      'Set the secret and rebuild.'
-    );
-  }
-  let data: { products: { edges: { node: { handle: string } }[] } };
-  try {
-    data = await storefrontFetch<{ products: { edges: { node: { handle: string } }[] } }>(
-      ALL_PRODUCTS_QUERY,
-      {},
-      token
-    );
-  } catch (err) {
-    throw new Error(
-      `[shop/[handle]] Build aborted: Shopify product fetch failed — ` +
-      `${err instanceof Error ? err.message : String(err)}. ` +
-      `Check SHOPIFY_STOREFRONT_TOKEN and rebuild.`
-    );
-  }
-  const paths = data.products.edges.map(e => ({ params: { handle: e.node.handle } }));
-  if (paths.length === 0) {
-    throw new Error(
-      '[shop/[handle]] Build aborted: Shopify returned zero products. ' +
-      'The token may be invalid or the store may be empty. ' +
-      'Refusing to build with an empty shop.'
-    );
-  }
-  return paths;
-}
-
 const { handle } = Astro.params as { handle: string };
+Astro.response.headers.set('Cache-Control', 'no-store');
 
 const PRODUCT_PLACEHOLDERS: Record<string, string> = {
   'plastic-postcard': '/images/shop/plastic-postcard-placeholder.png',
@@ -68,32 +36,41 @@ interface ProductData {
   }[];
 }
 
-const token: string | undefined = import.meta.env.SHOPIFY_STOREFRONT_TOKEN ?? process.env.SHOPIFY_STOREFRONT_TOKEN;
+const token = getStorefrontToken();
 let productData: ProductData | null = null;
 let fetchError = '';
 
 if (!token) {
+  Astro.response.status = 503;
   fetchError = 'Store not configured. Set SHOPIFY_STOREFRONT_TOKEN.';
 } else {
   try {
     const data = await storefrontFetch<{ productByHandle: any }>(
       PRODUCT_BY_HANDLE_QUERY,
-      { handle },
-      token
+      { handle }
     );
     const raw = data.productByHandle;
+    if (!raw) {
+      return new Response('Product not found.', {
+        status: 404,
+        headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' },
+      });
+    }
 
     const allVariants: any[] = raw.variants.edges.map((e: any) => e.node);
     let pageInfo = raw.variants.pageInfo;
 
     while (pageInfo.hasNextPage) {
+      const cursor = pageInfo.endCursor;
+      if (!cursor) throw new Error('Missing Shopify variant cursor.');
       const nextData = await storefrontFetch<{ productByHandle: any }>(
         PRODUCT_VARIANTS_PAGE_QUERY,
-        { handle, after: pageInfo.endCursor },
-        token
+        { handle, after: cursor }
       );
       const nextVariants = nextData.productByHandle?.variants;
-      if (!nextVariants) break;
+      if (!nextVariants || (nextVariants.pageInfo.hasNextPage && nextVariants.pageInfo.endCursor === cursor)) {
+        throw new Error('Invalid Shopify variant pagination.');
+      }
       allVariants.push(...nextVariants.edges.map((e: any) => e.node));
       pageInfo = nextVariants.pageInfo;
     }
@@ -107,7 +84,10 @@ if (!token) {
       variants: allVariants,
     };
   } catch (err) {
-    fetchError = 'Failed to reach Shopify Storefront API.';
+    Astro.response.status = 503;
+    Astro.response.headers.set('Retry-After', '60');
+    console.error('[shop/product] Shopify unavailable:', err instanceof Error ? err.message : 'Unknown error');
+    fetchError = 'This product is temporarily unavailable. Please try again shortly or contact us for an order.';
   }
 }
 
@@ -138,7 +118,7 @@ const draft = content ? isDraftProduct(content) : true;
   description={productData ? `Order ${productData.title} from Cornerstone Services. Choose your options and go straight to checkout. Full-service print and direct mail from Saugerties, NY.` : ''}
   canonical={canonicalUrl}
   schema={null}
-  noIndex={draft}
+  noIndex={draft || !!fetchError}
 >
   {schemaGraph && (
     <Fragment slot="head">

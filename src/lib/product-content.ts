@@ -3,13 +3,12 @@
 // editorial content (src/content/products/*.md). This is the single
 // definition of "complete" used by the product page template, the
 // Product/Offer/FAQPage JSON-LD builder, the Google Merchant feed, AND the
-// sitemap/noindex filter in astro.config.mjs — so a product is never
+// live sitemap/noindex filter — so a product is never
 // treated as complete on one surface and draft on another.
 //
 // The actual field-level rules live in src/lib/product-draft-rules.mjs (a
-// plain-JS module with no astro:content import), because astro.config.mjs
-// needs to read them at config-load time, before the Astro content
-// pipeline exists. This file just re-exports that logic with the
+// plain-JS module with no astro:content import) for independent testing.
+// This file just re-exports that logic with the
 // astro:content-derived TypeScript types layered on top.
 //
 // ── DEVIATION FLAGGED FOR REVIEW ──────────────────────────────────────────
