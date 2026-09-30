@@ -69,4 +69,3 @@ timeoutMs = 180000
 [userenv]
 
 [userenv.shared]
-SHOPIFY_STORE_DOMAIN = "cornerstone-services-inc-shop-hfwprsnf.myshopify.com"
