@@ -6,7 +6,7 @@ import { $ as $$CTASection } from '../../chunks/CTASection_DUHcOetM.mjs';
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { useState, useCallback } from 'react';
 import { g as getStorefrontToken, s as storefrontFetch, P as PRODUCT_BY_HANDLE_QUERY, c as PRODUCT_VARIANTS_PAGE_QUERY } from '../../chunks/shopify_B5LulV77.mjs';
-import { g as getCollection } from '../../chunks/_astro_content_DeKEqCDA.mjs';
+import { g as getCollection } from '../../chunks/_astro_content_BqFzM45_.mjs';
 import { P as PRODUCT_META } from '../../chunks/products_xtWUVfSC.mjs';
 import { B as BUSINESS } from '../../chunks/site_Bvm2fFWv.mjs';
 import { a as isPlaceholder, h as hasRealFaqs, i as isDraftProduct } from '../../chunks/product-content_CGIJuP1_.mjs';
