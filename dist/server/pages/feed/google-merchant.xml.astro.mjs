@@ -1,4 +1,4 @@
-import { g as getCollection } from '../../chunks/_astro_content_BqFzM45_.mjs';
+import { g as getCollection } from '../../chunks/_astro_content_aIzOxVdh.mjs';
 import { b as getStorefrontProducts } from '../../chunks/shopify_B5LulV77.mjs';
 import { P as PRODUCT_META } from '../../chunks/products_xtWUVfSC.mjs';
 import { i as isDraftProduct } from '../../chunks/product-content_CGIJuP1_.mjs';

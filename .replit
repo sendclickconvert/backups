@@ -33,6 +33,7 @@ externalPort = 80
 run = ["node", "server.mjs"]
 deploymentTarget = "vm"
 build = ["npm", "run", "build"]
+ignorePorts = false
 
 [agent]
 expertMode = true
