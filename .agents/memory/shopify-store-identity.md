@@ -9,6 +9,12 @@ When Shopify authentication fails, keep the intended store configured; do not fa
 
 **How to apply:** Confirm the intended domain and matching credentials before declaring live catalog or checkout operational. Synthetic tests can verify syncing mechanics but cannot establish that the real store connection works.
 
+The intended merchant store is the one whose Shopify admin slug is `cornerstone-services-inc-shop-hfwprsnf`, not the legacy `cornerstone-services-i42crwvc`.
+
+**Why:** The merchant supplied a screenshot showing Door Hangers, AdvancedAQ Ink, and SimpleHD Ink active in the former store. The legacy store returned only the older catalog. Recommending the legacy store because authentication succeeded was incorrect.
+
+**How to apply:** Obtain a matching Storefront connection for the intended store; do not treat successful authentication against the legacy store as a valid resolution.
+
 Avoid keeping a store-domain key in both managed environment settings and Replit Secrets.
 
 **Why:** Adding a corrected domain as a Secret did not override the outdated shared environment entry. Removing the shared duplicate and restarting made the Secret take effect and restored authentication.
