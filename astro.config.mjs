@@ -4,6 +4,10 @@ import sitemap from '@astrojs/sitemap';
 import node from '@astrojs/node';
 import react from '@astrojs/react';
 import fs from 'node:fs';
+import { buildLastmodMap } from './scripts/sitemap-lastmod.mjs';
+
+// Sitemap <lastmod> from dates the site already records (scripts/sitemap-lastmod.mjs)
+const lastmod = buildLastmodMap(process.cwd());
 
 const redirectPaths = [
   '/direct-mail-new-paltz',
@@ -57,14 +61,24 @@ export default defineConfig({
     react(),
     sitemap({
       // Shop URLs live in the request-time sitemap, not a build-time snapshot.
+      // Every URL left in the sitemap should be one we'd accept as a ranking page
+      // (contest playbook addition A): no legal, contact, quote or thank-you pages.
       filter: (page) =>
-        !page.includes('/thank-you') &&
+        !page.includes('thank-you') &&
+        !/\/(privacy|contact|estimate)$/.test(new URL(page).pathname) &&
         !page.includes('/training') &&
         !page.endsWith('/terms') &&
         !page.includes('/resources/payments') &&
         !page.includes('/feed/') &&
         !/^\/shop(?:\/|$)/.test(new URL(page).pathname) &&
         !new URL(page).pathname.endsWith('.xml'),
+      // Real modified dates only (scripts/sitemap-lastmod.mjs); undated pages get no <lastmod>.
+      serialize: (item) => {
+        const key = item.url.replace(/\/$/, '') || item.url;
+        const date = lastmod[key] || lastmod[item.url];
+        if (date) item.lastmod = date;
+        return item;
+      },
     }),
     {
       // This installed sitemap version has no customSitemaps option.

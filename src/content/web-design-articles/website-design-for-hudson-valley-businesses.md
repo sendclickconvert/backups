@@ -21,7 +21,7 @@ schemaFAQ:
 
 A business in New Paltz searching for more customers in Kingston, Woodstock, and Rhinebeck has different website needs than a business in Manhattan looking for clients across the five boroughs. The geographic specificity of the Hudson Valley market — where county lines matter, where "close by" means something very different than it does in a metro area, and where local community identity is strong — shapes what an effective local website looks like.
 
-At [Cornerstone Services](/services/web-design), based in New Paltz since 1998, we design websites for businesses across Ulster, Dutchess, and Orange counties. Here's what we've learned about what works here.
+At [Cornerstone Services](/services/web-design), serving the Hudson Valley since 1998, we design websites for businesses across Ulster, Dutchess, and Orange counties. Here's what we've learned about what works here.
 
 ## The Hudson Valley Local Search Landscape
 
@@ -140,4 +140,4 @@ The best-performing local business websites are not static brochures — they ar
 
 **Resource content that demonstrates expertise.** Blog posts, guides, and how-to articles that answer questions your customers actually ask. This content builds topical authority with Google and provides value to visitors before they become customers.
 
-To discuss web design services or a combined digital-and-mail strategy, call [(845) 255-5722](tel:8452555722) or [contact us at our New Paltz location](/estimate).
+To discuss web design services or a combined digital-and-mail strategy, call [(845) 255-5722](tel:8452555722) or [contact us at our Saugerties location](/estimate).

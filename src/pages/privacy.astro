@@ -4,7 +4,7 @@ import PageHero from '../components/PageHero.astro';
 import { BUSINESS } from '../data/site';
 ---
 
-<BaseLayout title="Privacy Policy" description={`Privacy policy for ${BUSINESS.name}. Learn how we collect, use, disclose, and safeguard your personal information.`}>
+<BaseLayout title="Privacy Policy" noIndex={true} description={`Privacy policy for ${BUSINESS.name}. Learn how we collect, use, disclose, and safeguard your personal information.`}>
   <PageHero title="Privacy Policy" breadcrumbs={[{ label: 'Privacy Policy' }]} />
 
   <section class="py-14 lg:py-20">

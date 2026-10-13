@@ -73,7 +73,7 @@ Direct mail postcards travel through automated USPS sorting equipment — convey
 
 ## Quantities and Pricing
 
-Postcard printing is significantly price-efficient at volume. Here are real pricing ranges from our shop in New Paltz for standard 5.5x8.5 and 6x9 formats on 100 lb. gloss cover with UV coating, two-sided full color:
+Postcard printing is significantly price-efficient at volume. Here are real pricing ranges from our shop in Saugerties for standard 5.5x8.5 and 6x9 formats on 100 lb. gloss cover with UV coating, two-sided full color:
 
 | Quantity | 5.5x8.5 Price | 6x9 Price |
 |----------|--------------|----------|
@@ -115,7 +115,7 @@ The economics of multi-drop campaigns also improve: design is a one-time cost (w
 
 ## Postcard Printing and Mailing: The One-Shop Advantage
 
-At Cornerstone, postcard campaigns move from design approval to press to the mail department without leaving our facility in New Paltz. This matters for three reasons:
+At Cornerstone, postcard campaigns move from design approval to press to the mail department without leaving our facility in Saugerties. This matters for three reasons:
 
 **Timeline control.** When print and mail are in the same building, there is no shipping gap. Pieces come off the press, move to addressing and sorting, and go to USPS — all within the same production schedule. A campaign that needs to arrive by a specific date can be managed to the day.
 

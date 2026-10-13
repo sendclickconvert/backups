@@ -1,12 +1,12 @@
 ---
-title: "EDDM Direct Mail Guide 2026: Routes, Rates & Results"
-description: "EDDM guide for Hudson Valley businesses — $0.260/piece postage, route selection, design requirements, and step-by-step campaign process."
+title: "EDDM Routes: How to Choose USPS Carrier Routes (2026)"
+description: "How to pick USPS EDDM carrier routes with the EDDM Online Tool, what a route costs at $0.260 per piece, and real Hudson Valley route plans."
 pubDate: 2026-04-01
-updatedDate: 2026-05-07
+updatedDate: 2026-10-13
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
 authorLocation: "Saugerties, NY"
-primaryKeyword: "every door direct mail EDDM"
+primaryKeyword: "eddm routes"
 pillar: "https://crst.net/services/direct-mail"
 schemaFAQ:
   - q: "What does EDDM stand for?"
@@ -40,7 +40,7 @@ schemaHowTo:
 
 If your business needs to reach every household in a neighborhood — not just a filtered list of prospects — [EDDM is the most cost-effective direct mail method available](/services/direct-mail). Every Door Direct Mail eliminates the two biggest cost barriers in traditional direct mail: the mailing list and individual addressing. The result is all-in campaign costs that run 40–50% lower than targeted mailings.
 
-Cornerstone Services in New Paltz has managed EDDM campaigns for restaurants, home service companies, real estate agents, and retailers across Ulster, Dutchess, and Orange counties. This guide covers how EDDM works, what it costs, and when it is — and is not — the right approach for your business.
+Cornerstone Services in Saugerties has managed EDDM campaigns for restaurants, home service companies, real estate agents, and retailers across Ulster, Dutchess, and Orange counties. This guide covers how EDDM works, what it costs, and when it is — and is not — the right approach for your business.
 
 ## How EDDM Works
 
@@ -51,6 +51,20 @@ You select routes using the USPS EDDM Online Tool, which provides demographic da
 Each carrier route covers a specific geographic area served by one mail carrier. Routes typically contain 200–500 delivery points. You can select as few or as many routes as needed to cover your target geography — from a single route around your storefront to dozens of routes covering an entire town.
 
 The key advantage of EDDM is cost. Without a mailing list to purchase ($50–$100 per thousand records) and with the lowest available USPS postage rate ($0.260 per piece as of July 12, 2026), EDDM delivers the most mail pieces per dollar of any direct mail method.
+
+## How to Choose EDDM Routes
+
+Selecting the right carrier routes is the most important decision in an EDDM campaign. Start from your trade area, not the map: draw the radius your customers actually come from, list the ZIP codes inside it, then pick routes within those ZIPs by household count and demographics. The USPS EDDM Online Tool lets you search by ZIP code and view routes on a map with demographic overlays.
+
+Here are examples of Hudson Valley route selection strategies:
+
+**Restaurant in New Paltz (12561):** Select 5–8 carrier routes within a 3-mile radius of the restaurant. Filter to residential routes (suppress PO Box routes). Target routes with median household income above $60,000 for a mid-range dining establishment. Estimated reach: 2,500–4,000 households at a cost of $1,650–$2,640.
+
+**Lawn care company in Kingston (12401):** Select 15–20 residential carrier routes across the city and surrounding suburbs. Filter routes with homeowner-heavy demographics (household size 3+, which correlates with homeownership). Estimated reach: 8,000–10,000 households at a cost of $5,280–$6,600.
+
+**Real estate agent farming Beacon (12508):** Select 3–5 routes in target neighborhoods with older housing stock (higher turnover probability). Run monthly EDDM to build name recognition with every household. Monthly cost at 1,500 pieces: approximately $990–$1,470.
+
+Cornerstone handles all route selection, demographic analysis, and USPS mapping for EDDM clients. We recommend routes based on your business type, target customer profile, and budget.
 
 ## EDDM Pricing Breakdown
 
@@ -86,20 +100,6 @@ The choice between EDDM and targeted mail depends on whether geographic reach or
 | Best for | Broad local awareness; saturation | Customer acquisition; niche demographics |
 
 EDDM wins on cost. Targeted mail wins on precision. Many successful campaigns combine both — EDDM for broad awareness around a business location, targeted mail for acquisition in a wider geography. See our [detailed EDDM vs. targeted comparison](/services/direct-mail/eddm-vs-targeted-direct-mail) for more guidance on choosing the right approach.
-
-## Hudson Valley EDDM Route Selection
-
-Selecting the right carrier routes is the most important decision in an EDDM campaign. The USPS EDDM Online Tool lets you search by ZIP code and view routes on a map with demographic overlays.
-
-Here are examples of Hudson Valley route selection strategies:
-
-**Restaurant in New Paltz (12561):** Select 5–8 carrier routes within a 3-mile radius of the restaurant. Filter to residential routes (suppress PO Box routes). Target routes with median household income above $60,000 for a mid-range dining establishment. Estimated reach: 2,500–4,000 households at a cost of $1,650–$2,640.
-
-**Lawn care company in Kingston (12401):** Select 15–20 residential carrier routes across the city and surrounding suburbs. Filter routes with homeowner-heavy demographics (household size 3+, which correlates with homeownership). Estimated reach: 8,000–10,000 households at a cost of $5,280–$6,600.
-
-**Real estate agent farming Beacon (12508):** Select 3–5 routes in target neighborhoods with older housing stock (higher turnover probability). Run monthly EDDM to build name recognition with every household. Monthly cost at 1,500 pieces: approximately $990–$1,470.
-
-Cornerstone handles all route selection, demographic analysis, and USPS mapping for EDDM clients. We recommend routes based on your business type, target customer profile, and budget.
 
 ## EDDM Design Requirements
 

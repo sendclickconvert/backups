@@ -23,7 +23,7 @@ Every election cycle, candidates learn the union bug lesson the hard way: they s
 
 The union bug is not a large graphic element. It's a small, 1/4-inch imprint in the corner of the piece. But its presence or absence tells an organized labor audience something immediate about how seriously the candidate takes labor values in practice, not just in speeches.
 
-At [Cornerstone Services](/services/union-printing) in New Paltz, we've produced union-label campaign materials for Hudson Valley political campaigns for over 28 years. Here's what campaigns need to get right.
+At [Cornerstone Services](/services/union-printing) in Saugerties, we've produced union-label campaign materials for Hudson Valley political campaigns for over 28 years. Here's what campaigns need to get right.
 
 ## Who Checks for the Union Bug
 

@@ -21,7 +21,7 @@ schemaFAQ:
 
 The union bug is one of the most recognized labor solidarity symbols in print — and one of the least understood by people outside the labor movement. For campaigns, political candidates, union organizations, and government contractors, it can be a non-negotiable requirement. For others, it's simply a mark of quality and labor accountability.
 
-At [Cornerstone Services](/services/union-printing) in New Paltz, we provide union-label printing for clients across the Hudson Valley who need certified union work. Here's what the union bug is, what it means, and how to make sure your printed materials carry it correctly.
+At [Cornerstone Services](/services/union-printing) in Saugerties, we provide union-label printing for clients across the Hudson Valley who need certified union work. Here's what the union bug is, what it means, and how to make sure your printed materials carry it correctly.
 
 ## The History of the Union Bug
 
@@ -129,4 +129,4 @@ Several persistent misunderstandings about the union bug cause problems for camp
 
 **"You can add the bug after the fact."** The bug must be printed as part of the production process at the union-affiliated shop. It cannot be stamped, stickered, or digitally added to a piece printed elsewhere.
 
-At Cornerstone Services in New Paltz, we can provide union-label documentation for jobs that require it. Call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate) to discuss union-label printing requirements for your project.
+At Cornerstone Services in Saugerties, we can provide union-label documentation for jobs that require it. Call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate) to discuss union-label printing requirements for your project.

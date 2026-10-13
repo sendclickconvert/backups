@@ -23,7 +23,7 @@ A school district's mailing list serves a different purpose than a business's cu
 
 Managing this list well requires understanding both the data sources available and the legal constraints that apply, particularly FERPA.
 
-At [Cornerstone Services](/services/school-district-direct-mail) in New Paltz, we process school district mailings under compliant data sharing arrangements. Here's the complete picture.
+At [Cornerstone Services](/services/school-district-direct-mail) in Saugerties, we process school district mailings under compliant data sharing arrangements. Here's the complete picture.
 
 ## The Four Data Sources for a School District Mailing List
 

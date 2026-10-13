@@ -113,7 +113,7 @@ The rule: **get the count at each step before committing to the next select.** C
 
 **Match selects to campaign goals, not to a hypothetical ideal customer.** Every select removes real prospects from the list. A homeowner who doesn't match your income select might still be your best customer. Think of selects as probability filters, not binary qualifiers.
 
-For more on list types and how to choose the right one, see our [direct mail lists guide](/services/direct-mail-lists) and the [mailing lists and data services hub](/services/data-lists).
+For more on list types and how to choose the right one, see our [direct mail lists guide](/services/data-lists) and the [mailing lists and data services hub](/services/data-lists).
 
 ## Frequently Asked Questions
 

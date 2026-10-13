@@ -1,0 +1,46 @@
+---
+// Links the high-traffic reference guides (envelope sizes and spokes) to the pages that sell.
+// Added Oct 2026: the envelope guide drew ~595K impressions in Jul–Oct 2026 but linked only to
+// generic service pages from the sidebar, so readers had no path to printing, mailing or EDDM.
+export interface Props {
+  /** Envelope size being read about, e.g. "#10". Omit on the hub. */
+  size?: string;
+}
+
+const { size } = Astro.props;
+const lead = size ? `Printing and mailing ${size} envelopes?` : 'Printing and mailing envelopes?';
+---
+
+<aside class="not-prose my-10 rounded-xl border border-crst-primary/15 bg-crst-primary/5 p-6" aria-label="Printing and mailing services">
+  <p class="font-heading font-bold text-crst-primary text-lg mb-1">{lead}</p>
+  <p class="text-sm text-navy-700 mb-4">
+    Cornerstone prints, addresses, presorts and mails from our Saugerties facility, so you pay the lowest postage your piece qualifies for.
+  </p>
+  <ul class="grid sm:grid-cols-2 gap-3 text-sm">
+    <li>
+      <a href="/shop/envelope" class="block rounded-lg bg-white border border-navy-100 p-3 hover:border-crst-primary/40 transition-colors">
+        <span class="font-semibold text-navy-800">Order printed envelopes</span>
+        <span class="block text-navy-600/80">Custom envelopes printed to USPS specs</span>
+      </a>
+    </li>
+    <li>
+      <a href="/services/mailing" class="block rounded-lg bg-white border border-navy-100 p-3 hover:border-crst-primary/40 transition-colors">
+        <span class="font-semibold text-navy-800">Addressing and mailing</span>
+        <span class="block text-navy-600/80">Inkjet addressing, presort and USPS drop-off</span>
+      </a>
+    </li>
+    <li>
+      <a href="/services/direct-mail" class="block rounded-lg bg-white border border-navy-100 p-3 hover:border-crst-primary/40 transition-colors">
+        <span class="font-semibold text-navy-800">Direct mail campaigns</span>
+        <span class="block text-navy-600/80">Lists, design, printing and mailing in one place</span>
+      </a>
+    </li>
+    <li>
+      <a href="/services/eddm/how-much-does-eddm-cost" class="block rounded-lg bg-white border border-navy-100 p-3 hover:border-crst-primary/40 transition-colors">
+        <span class="font-semibold text-navy-800">Skip the envelope: EDDM</span>
+        <span class="block text-navy-600/80">Reach every home on a route, no list needed. See the cost per piece</span>
+      </a>
+    </li>
+  </ul>
+  <a href="/estimate" class="btn-primary text-sm inline-block mt-5">Get a free quote</a>
+</aside>

@@ -21,7 +21,7 @@ schemaFAQ:
 
 The pitch for online printing is simple: lower prices, fast turnaround, upload your file and it ships to your door. For a basic business card order at 500 pieces, that pitch is largely accurate. For a direct mail campaign, the real calculation is more complicated.
 
-In 28 years of running [commercial printing](/services/printing) and direct mail at Cornerstone Services in New Paltz, I've had hundreds of conversations with clients who tried online printing for their direct mail and came back — either because something went wrong or because managing the disconnected pieces (print here, mail somewhere else) was more friction than the price savings justified.
+In 28 years of running [commercial printing](/services/printing) and direct mail at Cornerstone Services (now based in Saugerties), I've had hundreds of conversations with clients who tried online printing for their direct mail and came back — either because something went wrong or because managing the disconnected pieces (print here, mail somewhere else) was more friction than the price savings justified.
 
 Here is an honest comparison of where each approach makes sense.
 

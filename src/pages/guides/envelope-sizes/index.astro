@@ -2,6 +2,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import EnvelopeHubNav from '../../../components/guides/EnvelopeHubNav.astro';
 import CTASection from '../../../components/CTASection.astro';
+import PrintAndMailBridge from '../../../components/guides/PrintAndMailBridge.astro';
 import AuthorByline from '../../../components/AuthorByline.astro';
 import { BUSINESS } from '../../../data/site';
 import { HUB_NAV_ITEMS, ENVELOPE_SPOKES } from '../../../data/envelope-spokes';
@@ -176,7 +177,9 @@ const comparisonRows = [
               </tbody>
             </table>
           </div>
+
           <p class="text-xs text-navy-600/50 -mt-8 mb-10">* A10 postage class depends on mailing orientation — verify with Cornerstone before ordering.</p>
+          <PrintAndMailBridge />
 
           <div class="prose prose-navy max-w-none prose-headings:font-display prose-headings:text-crst-primary prose-a:text-crst-accent hover:prose-a:text-crst-primary prose-strong:text-navy-800 prose-p:text-navy-600/80 prose-li:text-navy-600/80">
 

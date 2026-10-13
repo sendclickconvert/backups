@@ -1,8 +1,8 @@
 ---
-title: "USPS EDDM Postage Rates 2026: Current Cost Per Piece | CRST"
+title: "USPS EDDM Postage Rates 2026: Cost Per Piece"
 description: "EDDM Retail postage is $0.260/piece in 2026. Real cost breakdown — printing, design, and production — from Hudson Valley's EDDM specialists."
 pubDate: 2026-04-09
-updatedDate: 2026-05-07
+updatedDate: 2026-10-13
 author: "Sean Griffin"
 authorTitle: "Owner, Cornerstone Services"
 authorLocation: "Saugerties, NY"
@@ -23,7 +23,7 @@ schemaFAQ:
 
 The number I hear most often from business owners who have tried EDDM on their own: "I thought it was supposed to be cheap." It is inexpensive — especially compared to targeted direct mail — but "postage is $0.260 per piece" is not the full picture. By the time you add printing, production, and design, the all-in cost is two to three times the postage rate.
 
-Here is an honest breakdown of every cost involved in an EDDM campaign, based on what we actually charge at [Cornerstone Services](/services/eddm) in New Paltz and what Hudson Valley businesses typically spend.
+Here is an honest breakdown of every cost involved in an EDDM campaign, based on what we actually charge at [Cornerstone Services](/services/eddm) in Saugerties and what Hudson Valley businesses typically spend.
 
 ## The Three Cost Components
 
@@ -61,7 +61,7 @@ Printing is where size, quantity, paper stock, and coating choices drive the act
 - 5,000 pieces: $360–$440
 - 10,000 pieces: $560–$680
 
-These ranges reflect real production costs from our New Paltz facility for Hudson Valley clients. Lower end assumes supplied print-ready files with no bleeds to correct; upper end includes minor file prep and adjustments. Significant file corrections or full redesign are quoted separately as part of our [graphic design services](/services/graphic-design).
+These ranges reflect real production costs from our Saugerties facility for Hudson Valley clients. Lower end assumes supplied print-ready files with no bleeds to correct; upper end includes minor file prep and adjustments. Significant file corrections or full redesign are quoted separately as part of our [graphic design services](/services/graphic-design).
 
 ### 3. Design: $150–$350 (One-Time)
 

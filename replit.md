@@ -2,7 +2,7 @@
 
 ## Business
 - **Name:** Cornerstone Services, Inc. (CRST)
-- **Location:** New Paltz, NY — serves Ulster, Dutchess, Orange counties (Hudson Valley)
+- **Location:** 387 Malden Turnpike, Saugerties, NY 12477 (moved from New Paltz; confirmed 13 Oct 2026) — serves Ulster, Dutchess, Orange counties (Hudson Valley)
 - **Since:** 1998
 - **Services:** Full-service direct mail, printing, EDDM, data lists, graphic design, mail prep, fulfillment
 - **Audience:** Businesses, nonprofits, political orgs, municipalities, real estate

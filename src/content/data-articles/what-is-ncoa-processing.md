@@ -61,7 +61,7 @@ The database does not contain records for people who moved without filing a forw
 
 When Cornerstone processes your list through NCOA, here is what happens:
 
-**Step 1: Name and address standardization.** Before matching against the NCOA database, every record is normalized to USPS address format — standardized abbreviations, corrected capitalization, proper format for ZIP+4. This step is part of [CASS certification](/services/mailing-list-services) and is required before NCOA matching can run accurately.
+**Step 1: Name and address standardization.** Before matching against the NCOA database, every record is normalized to USPS address format — standardized abbreviations, corrected capitalization, proper format for ZIP+4. This step is part of [CASS certification](/services/data-lists) and is required before NCOA matching can run accurately.
 
 **Step 2: Name and address matching.** Each record is compared against the NCOA database using a combination of name and address fields. The matching algorithm accounts for name variations, abbreviations, and minor address discrepancies to catch matches that would be missed by exact-string matching.
 
@@ -95,7 +95,7 @@ NCOA is highly effective at catching movers who filed forwarding requests — ap
 - Vacant properties that still receive mail
 - Businesses that closed without filing
 
-For these remaining bad addresses, [CASS certification](/services/mailing-list-services) catches some additional issues (addresses that no longer exist in the USPS master file), but some percentage of undeliverable addresses will still pass through. This is why deliverability after NCOA and CASS processing runs 96–98% rather than 100% — the remaining 2–4% are addresses that are technically deliverable but may have incorrect occupants.
+For these remaining bad addresses, [CASS certification](/services/data-lists) catches some additional issues (addresses that no longer exist in the USPS master file), but some percentage of undeliverable addresses will still pass through. This is why deliverability after NCOA and CASS processing runs 96–98% rather than 100% — the remaining 2–4% are addresses that are technically deliverable but may have incorrect occupants.
 
 ## How NCOA Affects Your Postage Savings
 
@@ -123,15 +123,15 @@ The 95-day rule exists because addresses in the NCOA database change continuousl
 
 NCOA is one part of a three-step list hygiene process. At Cornerstone, every list goes through:
 
-1. **[CASS certification](/services/mailing-list-services)** — Verifies and standardizes every address against the USPS master address file. Catches non-existent addresses, incorrect ZIP codes, and formatting problems.
+1. **[CASS certification](/services/data-lists)** — Verifies and standardizes every address against the USPS master address file. Catches non-existent addresses, incorrect ZIP codes, and formatting problems.
 
 2. **NCOA processing** — Updates addresses for known movers and suppresses undeliverable records.
 
-3. **[Deduplication](/services/mailing-list-services)** — Removes duplicate records within the list and, when requested, suppresses your existing customers from a purchased list (merge/purge).
+3. **[Deduplication](/services/data-lists)** — Removes duplicate records within the list and, when requested, suppresses your existing customers from a purchased list (merge/purge).
 
 All three steps are included in every list Cornerstone delivers — whether we build the list or process one you supply. The result is a file that qualifies for automation postage rates and delivers at 96–98% accuracy.
 
-For more on the full list processing workflow, see our [mailing list processing overview](/services/mailing-list-services) and our guide to [mailing list accuracy](/services/data-lists/mailing-list-accuracy).
+For more on the full list processing workflow, see our [mailing list processing overview](/services/data-lists) and our guide to [mailing list accuracy](/services/data-lists/mailing-list-accuracy).
 
 ## Frequently Asked Questions
 

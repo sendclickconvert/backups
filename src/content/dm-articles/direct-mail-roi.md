@@ -38,7 +38,7 @@ schemaHowTo:
 
 The question is not whether [direct mail](/services/direct-mail) works — it is whether it works well enough to justify the investment. ROI (Return on Investment) is the definitive metric for answering that question. This guide shows you exactly how to calculate, benchmark, and improve direct mail ROI for your Hudson Valley business.
 
-At Cornerstone Services in New Paltz, we have managed direct mail campaigns for businesses across Ulster, Dutchess, and Orange counties since 1998. The ROI data in this guide comes from real campaign performance — not theoretical averages from national surveys.
+At Cornerstone Services in Saugerties, we have managed direct mail campaigns for businesses across Ulster, Dutchess, and Orange counties since 1998. The ROI data in this guide comes from real campaign performance — not theoretical averages from national surveys.
 
 ## How to Calculate Direct Mail ROI
 

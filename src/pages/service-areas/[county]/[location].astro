@@ -4,7 +4,7 @@ import PageHero from '../../../components/PageHero.astro';
 import CTASection from '../../../components/CTASection.astro';
 import EstimateForm from '../../../components/EstimateForm.astro';
 import { BUSINESS, SERVICES } from '../../../data/site';
-import { COUNTIES_DATA, getAllLocations } from '../../../data/locations';
+import { COUNTIES_DATA, getAllLocations, isFocusTown } from '../../../data/locations';
 import type { Location, County } from '../../../data/locations';
 import { townUniqueContent } from '../../../data/town-unique-content';
 import NearbyTowns from '../../../components/NearbyTowns.astro';
@@ -14,7 +14,8 @@ export function getStaticPaths() {
   const paths: { params: { county: string; location: string }; props: { location: Location; county: County } }[] = [];
 
   COUNTIES_DATA.forEach((county) => {
-    county.locations.forEach((location) => {
+    // Only focus towns keep a page; the rest 301 to the county hub (astro.config.mjs).
+    county.locations.filter((l) => isFocusTown(l.slug)).forEach((location) => {
       paths.push({
         params: { county: county.slug, location: location.slug },
         props: { location, county },
@@ -30,7 +31,7 @@ const { location, county } = Astro.props as { location: Location; county: County
 const uniqueContent = townUniqueContent[location.slug];
 
 const nearbyLocations = county.locations
-  .filter(l => l.slug !== location.slug)
+  .filter(l => l.slug !== location.slug && isFocusTown(l.slug))
   .slice(0, 8);
 
 const title = uniqueContent?.metaTitle || `${location.name} Direct Mail`;
@@ -53,17 +54,17 @@ const serviceSlugToLabel: Record<string, string> = {
 
 const townSlug = location.slug;
 const serviceSlugToHref: Record<string, string> = {
-  '/services/direct-mail': `/services/direct-mail/${townSlug}`,
-  '/services/eddm': `/services/eddm/${townSlug}`,
-  '/services/postcards': `/services/printing/${townSlug}`,
-  '/services/printing': `/services/printing/${townSlug}`,
+  '/services/direct-mail': '/services/direct-mail',
+  '/services/eddm': '/services/eddm',
+  '/services/postcards': '/services/printing',
+  '/services/printing': '/services/printing',
   '/services/brochures': '/services/graphic-design',
   '/services/large-format': '/services/printing',
   '/services/mailing-lists': '/services/data-lists',
   '/services/data-lists': '/services/data-lists',
   '/services/mailing': '/services/mailing',
   '/services/graphic-design': '/services/graphic-design',
-  '/services/non-profit-mailing': `/services/non-profit-mailing/${townSlug}`,
+  '/services/non-profit-mailing': '/services/non-profit-mailing',
 };
 
 const relatedServiceLinks = uniqueContent?.relevantServices
@@ -394,10 +395,7 @@ const nearbyAreas = neighborNames
           </h3>
           <div class="grid sm:grid-cols-2 gap-4 mb-10">
             {SERVICES.map((service) => {
-              const locationServices = ['eddm', 'direct-mail', 'printing', 'non-profit-mailing'];
-              const serviceHref = locationServices.includes(service.slug)
-                ? `/services/${service.slug}/${townSlug}`
-                : `/services/${service.slug}`;
+              const serviceHref = `/services/${service.slug}`;
               return (
               <a
                 href={serviceHref}

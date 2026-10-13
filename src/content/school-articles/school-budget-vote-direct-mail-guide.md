@@ -21,7 +21,7 @@ schemaFAQ:
 
 School budget vote season arrives the same time every year — third Tuesday in May in New York — and every year school districts face the same challenge: how to reach registered voters with accurate information about the budget before the polls close.
 
-At [Cornerstone Services](/services/school-district-direct-mail), based in New Paltz since 1998, we process direct mail campaigns for school districts across Ulster and Dutchess counties. The process has specific requirements that differ from typical business direct mail — legal constraints, voter file sourcing, USPS compliance, and a narrow timing window that doesn't forgive late decisions.
+At [Cornerstone Services](/services/school-district-direct-mail), serving the Hudson Valley since 1998, we process direct mail campaigns for school districts across Ulster and Dutchess counties. The process has specific requirements that differ from typical business direct mail — legal constraints, voter file sourcing, USPS compliance, and a narrow timing window that doesn't forgive late decisions.
 
 Here's what we know from running these campaigns.
 
@@ -102,7 +102,7 @@ Start the mailing planning process no later than 8 weeks before the vote. Even i
 
 ## Working With Us for School Budget Vote Mailings
 
-At Cornerstone Services in New Paltz, we handle the full process for school districts: voter file sourcing assistance, design review for USPS compliance, printing, addressing, and USPS drop. We've worked with districts in Ulster and Dutchess counties through multiple budget vote cycles and understand the timing pressures.
+At Cornerstone Services in Saugerties, we handle the full process for school districts: voter file sourcing assistance, design review for USPS compliance, printing, addressing, and USPS drop. We've worked with districts in Ulster and Dutchess counties through multiple budget vote cycles and understand the timing pressures.
 
 ## Absentee Ballot Information: A Critical Addition
 

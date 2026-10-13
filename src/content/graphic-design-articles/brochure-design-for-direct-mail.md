@@ -21,7 +21,7 @@ schemaFAQ:
 
 A direct mail brochure is not a company overview. It's a sales tool with a job: move a qualified prospect from awareness to readiness to call. Every panel, every headline, every image should serve that movement.
 
-At [Cornerstone Services](/services/graphic-design) in New Paltz, we design brochures for businesses across Ulster, Dutchess, and Orange counties — primarily for campaigns where the service is complex enough that a postcard can't carry the full sales argument. A law firm, a financial advisor, an HVAC company with multiple product lines, a dentist explaining cosmetic procedures: these businesses need a format that can carry more.
+At [Cornerstone Services](/services/graphic-design) in Saugerties, we design brochures for businesses across Ulster, Dutchess, and Orange counties — primarily for campaigns where the service is complex enough that a postcard can't carry the full sales argument. A law firm, a financial advisor, an HVAC company with multiple product lines, a dentist explaining cosmetic procedures: these businesses need a format that can carry more.
 
 Here's how to structure a brochure that actually gets read.
 

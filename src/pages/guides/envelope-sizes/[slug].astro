@@ -4,6 +4,7 @@ import EnvelopeHubNav from '../../../components/guides/EnvelopeHubNav.astro';
 import SpecTable from '../../../components/guides/SpecTable.astro';
 import AuthorByline from '../../../components/AuthorByline.astro';
 import CTASection from '../../../components/CTASection.astro';
+import PrintAndMailBridge from '../../../components/guides/PrintAndMailBridge.astro';
 import { BUSINESS } from '../../../data/site';
 import { ENVELOPE_SPOKES, SPOKE_SLUGS, HUB_NAV_ITEMS } from '../../../data/envelope-spokes';
 
@@ -153,6 +154,8 @@ const relatedSpokes = HUB_NAV_ITEMS.filter((item) => item.slug !== slug).slice(0
             <!-- POSTAGE_NOTES:end -->
 
           </div>
+
+          <PrintAndMailBridge />
 
           <div class="not-prose mt-8">
             <AuthorByline />

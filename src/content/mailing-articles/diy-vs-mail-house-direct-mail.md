@@ -21,7 +21,7 @@ schemaFAQ:
 
 The first thing business owners usually want to know when planning a direct mail campaign is whether they can save money by doing it themselves. The short answer: sometimes. The longer answer tells a different story than the per-piece rate comparison suggests.
 
-At [Cornerstone Services](/services/mailing) in New Paltz, we have this conversation regularly — sometimes with business owners who have tried DIY direct mail and are coming to us after the experience, sometimes with owners who are planning their first campaign and want to understand the tradeoffs before committing.
+At [Cornerstone Services](/services/mailing) in Saugerties, we have this conversation regularly — sometimes with business owners who have tried DIY direct mail and are coming to us after the experience, sometimes with owners who are planning their first campaign and want to understand the tradeoffs before committing.
 
 Here is the real cost comparison.
 

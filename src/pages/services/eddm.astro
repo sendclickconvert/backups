@@ -62,23 +62,23 @@ const graphSchema = {
         cssSelector: ['h1', '.article-lead', '.prose h2'],
       },
       inLanguage: 'en-US',
-      dateModified: '2026-05-07',
+      dateModified: '2026-10-13',
     },
   ],
 };
 ---
 
 <BaseLayout
-  title="EDDM Services: 2026 Postage Rates & Route Pricing"
-  description="Get 2026 USPS EDDM rates per piece, route pricing, and cost guidance. Hudson Valley EDDM specialists since 1998 — get a quote in one business day."
+  title="EDDM Printing & Mailing Services | Hudson Valley"
+  description="EDDM printing and mailing for Hudson Valley businesses: route selection, design, printing, bundling and USPS drop-off. Quotes in one business day."
   schema={null}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(graphSchema)} />
   </Fragment>
   <PageHero
-    title="2026 EDDM Retail Postage Rate: $0.260 Per Piece"
-    subtitle="Reach every household on selected postal routes without buying a mailing list. We handle route selection, design, printing, bundling, and USPS delivery — all from our Saugerties facility."
+    title="EDDM Printing & Mailing Services"
+    subtitle="EDDM Retail postage is $0.260 per piece (USPS price since July 12, 2026). Reach every household on selected postal routes without buying a mailing list. We handle route selection, design, printing, bundling, and USPS delivery — all from our Saugerties facility."
     breadcrumbs={[
       { label: 'Services', href: '/services' },
       { label: 'EDDM' },
@@ -117,7 +117,7 @@ const graphSchema = {
 
           <h3 class="text-xl font-display text-crst-primary mt-10 mb-4">How We Run an EDDM Campaign</h3>
           <p class="text-navy-600/80 leading-relaxed mb-6">
-            We have refined this process over many years of EDDM campaigns. Here is exactly what happens when you call us about EDDM:
+            We have refined this process over many years of EDDM campaigns. Here is exactly what happens when you call us about EDDM. To plan routes yourself first, read our guide to <a href="/services/direct-mail/eddm-every-door-direct-mail" class="text-crst-primary underline hover:text-crst-gold">choosing EDDM carrier routes</a>, and see <a href="/services/eddm/how-much-does-eddm-cost" class="text-crst-primary underline hover:text-crst-gold">what EDDM costs per piece</a>.
           </p>
           <div class="space-y-6">
             {[
@@ -422,7 +422,7 @@ const graphSchema = {
   </section>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-    <AuthorByline />
+    <AuthorByline updated="2026-10-13" />
   </div>
 
   <section class="py-16 bg-white">

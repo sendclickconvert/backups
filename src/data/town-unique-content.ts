@@ -1677,9 +1677,9 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
     metaTitle: "Direct Mail & Printing in Tillson, NY | Cornerstone Services",
     metaDescription: "EDDM and direct mail for Tillson businesses — a hamlet in the Town of Rosendale along Route 213 between New Paltz and Kingston in Ulster County.",
     h1: "Direct Mail & Printing for Tillson, NY Businesses",
-    uniqueIntro: "Tillson is a hamlet in the Town of Rosendale situated along Route 213 between New Paltz and Kingston — a residential community that has grown steadily as the corridor between Ulster County's two most prominent centers becomes more attractive to commuters and families. The hamlet's own ZIP (12486) provides clean, targeted EDDM access to a residential base that is close to Cornerstone's New Paltz facility.",
+    uniqueIntro: "Tillson is a hamlet in the Town of Rosendale situated along Route 213 between New Paltz and Kingston — a residential community that has grown steadily as the corridor between Ulster County's two most prominent centers becomes more attractive to commuters and families. The hamlet's own ZIP (12486) provides clean, targeted EDDM access to a residential base along the Route 213 corridor.",
     localContext: "Tillson's commercial footprint is limited — primarily a convenience store and a handful of local businesses along Route 213. Most residents access services in Rosendale (2 miles east), New Paltz (4 miles south), or Kingston (12 miles north). The hamlet has a working-class and middle-class homeowner character, with properties along the Rondout Creek corridor and hillside streets off Route 213. Proximity to the Wallkill Valley Rail Trail and the Rondout Creek make the area attractive to outdoor recreation households. The Rondout Valley Central School District serves Tillson.",
-    eddmInsight: "Tillson's 12486 ZIP is a clean standalone hamlet ZIP with an estimated 700–1,100 households. EDDM on 12486 is very affordable — approximately $350–$550 all-in — and is often combined with adjacent New Paltz (12561), Rosendale (12472), or Highland (12528) routes for businesses serving the broader Route 213 corridor. Being one of the closest communities to Cornerstone's New Paltz facility makes Tillson convenient to include in multi-town EDDM campaigns coordinated from a single production run.",
+    eddmInsight: "Tillson's 12486 ZIP is a clean standalone hamlet ZIP with an estimated 700–1,100 households. EDDM on 12486 is very affordable — approximately $350–$550 all-in — and is often combined with adjacent New Paltz (12561), Rosendale (12472), or Highland (12528) routes for businesses serving the broader Route 213 corridor. Its small size makes Tillson easy to add to multi-town EDDM campaigns produced in a single run.",
     populationNote: "Tillson hamlet has approximately 1,500–2,000 residents and an estimated 700–1,000 households — a small but clean standalone EDDM target most effective when combined with neighboring communities for businesses with a broader service area.",
     nearbyLandmark: "Located along Route 213 on the Rondout Creek, approximately 4 miles east of New Paltz and 2 miles west of Rosendale village; adjacent to the Tillson Lake area off the Wallkill Valley Rail Trail.",
     relevantServices: ["/services/direct-mail", "/services/eddm", "/services/postcards"],
@@ -1690,7 +1690,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
       },
       {
         question: "How close is Tillson to Cornerstone's Saugerties facility?",
-        answer: "Approximately 4 miles via Route 213 — Tillson is one of the closest communities we serve outside of New Paltz itself. This doesn't change production timelines (mail still enters through the USPS postal network), but it means our team has strong local knowledge of Tillson and the Rondout Creek corridor that informs how we approach campaign targeting and messaging for businesses serving this area."
+        answer: "About half an hour from our Saugerties facility, via Kingston. Distance doesn't change production timelines (mail still enters through the USPS postal network), but it means our team has strong local knowledge of Tillson and the Rondout Creek corridor that informs how we approach campaign targeting and messaging for businesses serving this area."
       }
     ]
   },
@@ -2579,7 +2579,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
     uniqueFAQs: [
       {
         question: "How far is Cornerstone from Newburgh, and can you handle large-volume campaigns?",
-        answer: "Our New Paltz facility is approximately 20 miles from Newburgh via Route 9W — close enough for same-day consultation and close collaboration on large campaigns. We handle Newburgh campaigns from a single USPS-authorized mailing entry and manage full-city saturation as routine volume. Large-format campaign management (10,000+ pieces) is standard for us with Orange County's larger cities."
+        answer: "Our Saugerties facility is about 45 minutes from Newburgh via I-87 — close enough for in-person consultation and close collaboration on large campaigns. We handle Newburgh campaigns from a single USPS-authorized mailing entry and manage full-city saturation as routine volume. Large-format campaign management (10,000+ pieces) is standard for us with Orange County's larger cities."
       },
       {
         question: "Can Cornerstone produce multilingual direct mail for Newburgh's Spanish-speaking community?",
@@ -2609,7 +2609,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
       },
       {
         question: "How does Cornerstone coordinate Pine Bush EDDM from its Saugerties facility?",
-        answer: "Our Saugerties facility is approximately 20 miles from Pine Bush via Route 32/208 — in the same postal area as the 12566 ZIP. We enter Pine Bush EDDM at the appropriate USPS postal unit and coordinate with the Crawford and Shawangunk carrier routes through standard EDDM procedures. The cross-county geography is transparent to the postal entry process."
+        answer: "Our Saugerties facility is about 45 minutes from Pine Bush. We enter Pine Bush EDDM at the appropriate USPS postal unit and coordinate with the Crawford and Shawangunk carrier routes through standard EDDM procedures. The cross-county geography is transparent to the postal entry process."
       }
     ]
   },

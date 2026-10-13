@@ -121,7 +121,7 @@ The most common brochure design mistakes we see at Cornerstone — and how to av
 
 ## Brochure Printing Turnaround at Cornerstone
 
-Standard turnaround for brochure orders at our New Paltz facility:
+Standard turnaround for brochure orders at our Saugerties facility:
 
 - **500–1,000 pieces:** 5–7 business days from proof approval
 - **2,500–5,000 pieces:** 7–10 business days from proof approval

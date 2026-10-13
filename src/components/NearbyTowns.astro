@@ -1,5 +1,5 @@
 ---
-import { COUNTIES_DATA } from '../data/locations';
+import { COUNTIES_DATA, isFocusTown } from '../data/locations';
 
 interface Props {
   currentSlug: string;
@@ -13,7 +13,7 @@ const { currentSlug, countySlug, countyDisplayName, basePath, serviceType } = As
 
 const county = COUNTIES_DATA.find(c => c.slug === countySlug);
 const nearby = (county?.locations ?? [])
-  .filter(t => t.slug !== currentSlug)
+  .filter(t => t.slug !== currentSlug && isFocusTown(t.slug))
   .slice(0, 8);
 ---
 

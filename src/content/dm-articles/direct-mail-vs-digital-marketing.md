@@ -25,7 +25,7 @@ schemaFAQ:
 
 Every Hudson Valley business owner faces the same question: where should I put my marketing dollars? The debate between [direct mail](/services/direct-mail) and digital marketing is not about which channel is "better" — it is about which channel delivers the best return for your specific business, audience, and goals.
 
-At Cornerstone Services in New Paltz, we have managed direct mail campaigns for local businesses since 1998. We have seen the rise of email marketing, social media, Google Ads, and programmatic advertising — and we have watched direct mail consistently outperform these digital channels for local customer acquisition across Ulster, Dutchess, and Orange counties. This guide provides an honest, data-driven comparison.
+At Cornerstone Services in Saugerties, we have managed direct mail campaigns for local businesses since 1998. We have seen the rise of email marketing, social media, Google Ads, and programmatic advertising — and we have watched direct mail consistently outperform these digital channels for local customer acquisition across Ulster, Dutchess, and Orange counties. This guide provides an honest, data-driven comparison.
 
 ## Response Rate Comparison
 

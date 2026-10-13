@@ -25,7 +25,7 @@ schemaFAQ:
 
 Postcards are the highest-visibility format in [direct mail marketing](/services/direct-mail). There is nothing to open — the recipient sees your headline, image, and offer the moment they pick up the mail. This immediate visibility, combined with the lowest production cost of any direct mail format, makes postcards the default choice for local business campaigns across the Hudson Valley.
 
-At Cornerstone Services in New Paltz, postcards account for roughly 70% of the direct mail campaigns we produce for businesses in Kingston, Poughkeepsie, Beacon, Newburgh, Middletown, and surrounding towns. This guide covers everything you need to plan a postcard campaign — from size selection and design through pricing, offer strategies, and response tracking.
+At Cornerstone Services in Saugerties, postcards account for roughly 70% of the direct mail campaigns we produce for businesses in Kingston, Poughkeepsie, Beacon, Newburgh, Middletown, and surrounding towns. This guide covers everything you need to plan a postcard campaign — from size selection and design through pricing, offer strategies, and response tracking.
 
 ## Why Postcards Work
 

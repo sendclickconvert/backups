@@ -21,7 +21,7 @@ schemaFAQ:
 
 The hardest part of buying a website as a small business owner is not the design or the technology — it's getting a straight answer about cost. Web design pricing is notoriously opaque: estimates for "the same thing" from three different vendors can range from $800 to $12,000.
 
-The range is real, but it's not arbitrary. At [Cornerstone Services](/services/web-design) in New Paltz, we build websites for small businesses across the Hudson Valley. Here's what the pricing tiers actually represent.
+The range is real, but it's not arbitrary. At [Cornerstone Services](/services/web-design) in Saugerties, we build websites for small businesses across the Hudson Valley. Here's what the pricing tiers actually represent.
 
 ## The DIY Platform Tier ($200–$800/year + significant owner time)
 
@@ -129,4 +129,4 @@ When you receive quotes from multiple web designers, compare them on these dimen
 
 The cheapest quote is rarely the best value. The best value is the quote that most clearly describes what you'll get, what you'll own, how long it will take, and what results you can reasonably expect. A designer who invests time in understanding your business before quoting is more likely to produce a website that generates real business results than one who quotes a price in five minutes based on a page count.
 
-At Cornerstone Services in New Paltz, we build websites for Hudson Valley businesses that need a professional site with genuine local SEO integration — matching the digital presence to the direct mail campaigns many of our clients already run. To discuss a website project, call [(845) 255-5722](tel:8452555722) or [contact us](/estimate).
+At Cornerstone Services in Saugerties, we build websites for Hudson Valley businesses that need a professional site with genuine local SEO integration — matching the digital presence to the direct mail campaigns many of our clients already run. To discuss a website project, call [(845) 255-5722](tel:8452555722) or [contact us](/estimate).

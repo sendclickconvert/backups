@@ -23,7 +23,7 @@ School elections are won and lost on turnout. In a district where 5,000 register
 
 Direct mail, targeted to the voter file, is the most reliable way to reach all registered voters in the district — not just those with a current school connection.
 
-At [Cornerstone Services](/services/school-district-direct-mail) in New Paltz, we process school district mailings across Ulster and Dutchess counties. Here's how to build a communication strategy that reaches every eligible voter.
+At [Cornerstone Services](/services/school-district-direct-mail) in Saugerties, we process school district mailings across Ulster and Dutchess counties. Here's how to build a communication strategy that reaches every eligible voter.
 
 ## The Problem With Only Mailing to School Families
 

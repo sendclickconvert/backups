@@ -36,7 +36,7 @@ schemaHowTo:
 
 The difference between a file that goes to press smoothly and one that causes a delay — or worse, a reprint — comes down to a handful of specifications that most designers learn from making mistakes. This guide is the shortcut.
 
-Whether you're a business owner working in Canva, a designer in InDesign, or a marketing coordinator submitting files to us at [Cornerstone Services](/services/printing) in New Paltz for the first time, here are the exact settings your print file needs.
+Whether you're a business owner working in Canva, a designer in InDesign, or a marketing coordinator submitting files to us at [Cornerstone Services](/services/printing) in Saugerties for the first time, here are the exact settings your print file needs.
 
 ## The Four Non-Negotiable Specs
 

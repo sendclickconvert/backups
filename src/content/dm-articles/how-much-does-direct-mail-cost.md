@@ -29,7 +29,7 @@ schemaFAQ:
 
 If you are considering [direct mail services in the Hudson Valley](/services/direct-mail), the first question is almost always: how much will it cost? The answer depends on four variables — format, quantity, postage class, and list source. This guide breaks down each cost component with real numbers so you can budget accurately before requesting an estimate.
 
-At Cornerstone Services in New Paltz, we handle hundreds of direct mail campaigns per year for businesses across Ulster, Dutchess, and Orange counties. The pricing information below reflects our actual production costs based on campaigns we have quoted and produced — not theoretical ranges pulled from national averages. These are the numbers Hudson Valley businesses actually pay.
+At Cornerstone Services in Saugerties, we handle hundreds of direct mail campaigns per year for businesses across Ulster, Dutchess, and Orange counties. The pricing information below reflects our actual production costs based on campaigns we have quoted and produced — not theoretical ranges pulled from national averages. These are the numbers Hudson Valley businesses actually pay.
 
 ## Four Things That Determine Direct Mail Cost
 

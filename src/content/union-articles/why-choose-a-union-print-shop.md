@@ -25,7 +25,7 @@ For organizations that require the union bug — union campaigns, political cand
 
 For organizations that have flexibility, the answer is more nuanced: union printing carries quality and accountability implications that are worth understanding before deciding.
 
-At [Cornerstone Services](/services/union-printing) in New Paltz, we've provided union-label printing for Hudson Valley clients for over 28 years. Here's what you're actually getting when you choose a union shop.
+At [Cornerstone Services](/services/union-printing) in Saugerties, we've provided union-label printing for Hudson Valley clients for over 28 years. Here's what you're actually getting when you choose a union shop.
 
 ## The Direct Benefit: Certifiable Labor Standards
 
@@ -118,4 +118,4 @@ For most Hudson Valley campaigns, unions, and government agencies, the answer is
 
 The union print shop is not a relic of a bygone era — it is a practical business choice for organizations where labor alignment matters. The shops that survive in the current market are professional, competitive, and equipped with modern technology. They produce work that meets the same quality and turnaround standards as any commercial printer, with the added value of union certification that many clients require. Choosing a union shop is not a compromise — it is a strategic decision that serves both the organization's values and its practical printing needs.
 
-At Cornerstone Services in New Paltz, we provide union-label printing documentation for projects that require it. Call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate) to discuss your project requirements.
+At Cornerstone Services in Saugerties, we provide union-label printing documentation for projects that require it. Call [(845) 255-5722](tel:8452555722) or [request a quote](/estimate) to discuss your project requirements.

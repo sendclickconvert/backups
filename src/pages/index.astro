@@ -28,8 +28,8 @@ const localBusinessSchema = {
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 41.7476,
-    longitude: -74.0871,
+    latitude: 42.1088,
+    longitude: -73.9622,
   },
   areaServed: [
     { '@type': 'AdministrativeArea', name: 'Ulster County, NY' },
@@ -60,6 +60,31 @@ const localBusinessSchema = {
     'https://www.facebook.com/CornerstoneServicesInc/',
   ],
 };
+
+// Homepage price ranges and FAQ (Oct 2026 release, contest playbook addition D: visible pricing on the homepage).
+// Every figure is taken from the site's own pricing pages; update them there first, then here.
+const priceRows = [
+  { item: 'EDDM postcard, 6.5×9, 5,000 pieces', range: '$0.59–$0.73 per piece', note: 'Design, printing, bundling and postage', href: '/services/eddm/how-much-does-eddm-cost', link: 'EDDM cost breakdown' },
+  { item: 'Targeted 6×9 postcard, 5,000 pieces', range: '$0.65–$0.80 per piece', note: 'List, printing, addressing and postage', href: '/services/direct-mail/how-much-does-direct-mail-cost', link: 'Direct mail cost guide' },
+  { item: 'Letter with #10 envelope, 5,000 pieces', range: '$0.80–$1.10 per piece', note: 'Printing, inserting, addressing and postage', href: '/services/direct-mail/how-much-does-direct-mail-cost', link: 'Direct mail cost guide' },
+  { item: '6×9 postcard printing only, 5,000', range: '$360–$440 total', note: '100 lb gloss cover, printed in Saugerties', href: '/services/printing/postcard-printing-for-direct-mail', link: 'Postcard printing prices' },
+  { item: 'EDDM Retail postage', range: '$0.260 per piece', note: 'USPS price since July 12, 2026', href: '/direct-mail-tools/postage-rates', link: '2026 postage rates' },
+];
+
+const homeFaqs = [
+  { q: 'Where is Cornerstone Services located?', a: `Our facility is at ${BUSINESS.address.full}. We design, print and mail for businesses, nonprofits, campaigns and school districts across Ulster, Dutchess and Orange counties.` },
+  { q: 'How much does a direct mail campaign cost?', a: 'A targeted 6×9 postcard mailed to 5,000 addresses typically runs $0.65–$0.80 per piece all-in, including the list, printing, addressing and postage. Larger quantities cost less per piece because presort discounts deepen.' },
+  { q: 'What is EDDM and what does it cost?', a: 'Every Door Direct Mail delivers your piece to every address on the USPS carrier routes you choose, with no mailing list. EDDM Retail postage is $0.260 per piece since July 12, 2026, and a 5,000-piece 6.5×9 campaign through Cornerstone typically runs $0.59–$0.73 per piece all-in.' },
+  { q: 'Do you do the design, printing and mailing yourselves?', a: 'Yes. Design, printing, data and list work, addressing, presort and USPS drop-off all happen in-house at our Saugerties facility, so one team is responsible for the job from proof to post office.' },
+  { q: 'How long does a postcard campaign take?', a: 'Standard production is 10–14 business days from proof approval to the post office, and USPS then delivers Marketing Mail in about 3–10 business days. Rush production in 5–7 business days is available for time-sensitive mailings.' },
+  { q: 'Can you print union-label (union bug) materials?', a: 'Yes. We provide union-label printing and documentation for political campaigns, unions and organizations that require it.' },
+];
+
+const homeFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: homeFaqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
 ---
 
 <BaseLayout
@@ -67,6 +92,7 @@ const localBusinessSchema = {
   description="Hudson Valley's USPS-certified direct mail partner since 1998. BBB A+, 98% on-time. Design, print, and mail under one roof — Ulster, Dutchess &amp; Orange counties."
   schema={localBusinessSchema}
 >
+  <Fragment slot="head"><script type="application/ld+json" set:html={JSON.stringify(homeFaqSchema)} /></Fragment>
   <Hero />
 
   <!-- Services Section -->
@@ -233,6 +259,60 @@ const localBusinessSchema = {
         <a href="/service-areas" title="View All Service Areas" class="btn-secondary text-sm">
           View All Service Areas
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Typical Prices -->
+  <section class="py-16 lg:py-20 bg-white" id="pricing">
+    <div class="container-wide">
+      <div class="text-center mb-10">
+        <div class="section-divider mx-auto mb-4"></div>
+        <h2 class="text-3xl sm:text-4xl font-display text-crst-primary mb-3">What Direct Mail Costs</h2>
+        <p class="text-navy-600/70 font-heading text-lg max-w-2xl mx-auto">Typical ranges from our 2026 pricing guides. Your quote depends on size, quantity, list and paper.</p>
+      </div>
+      <div class="overflow-x-auto rounded-xl border border-navy-100 max-w-5xl mx-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-crst-primary text-white text-left">
+              <th class="px-4 py-3 font-heading font-semibold">Job</th>
+              <th class="px-4 py-3 font-heading font-semibold">Typical price</th>
+              <th class="px-4 py-3 font-heading font-semibold hidden md:table-cell">Includes</th>
+              <th class="px-4 py-3 font-heading font-semibold">Details</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-navy-100">
+            {priceRows.map((r, i) => (
+              <tr class={i % 2 === 0 ? 'bg-white' : 'bg-navy-50/30'}>
+                <td class="px-4 py-3 font-semibold text-navy-800">{r.item}</td>
+                <td class="px-4 py-3 whitespace-nowrap">{r.range}</td>
+                <td class="px-4 py-3 text-navy-600/80 hidden md:table-cell">{r.note}</td>
+                <td class="px-4 py-3"><a href={r.href} class="text-crst-primary underline hover:text-crst-gold">{r.link}</a></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="text-center mt-8">
+        <a href="/estimate" class="btn-primary">Get an exact quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Homepage FAQ -->
+  <section class="py-16 lg:py-20 bg-navy-50/50" id="faq">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <div class="section-divider mx-auto mb-4"></div>
+        <h2 class="text-3xl sm:text-4xl font-display text-crst-primary mb-3">Direct Mail Questions We Hear Most</h2>
+      </div>
+      <div class="space-y-4">
+        {homeFaqs.map((f) => (
+          <div class="bg-white rounded-xl border border-navy-100 p-5">
+            <h3 class="font-heading font-semibold text-navy-800">{f.q}</h3>
+            <p class="mt-2 text-navy-600/80 leading-relaxed">{f.a}</p>
+          </div>
+        ))}
       </div>
     </div>
   </section>

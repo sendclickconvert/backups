@@ -1,9 +1,14 @@
 ---
 export interface Props {
   compact?: boolean;
+  /** ISO date (yyyy-mm-dd). When set, shows "Last updated Month YYYY" with itemprop="dateModified". */
+  updated?: string;
 }
 
-const { compact = false } = Astro.props;
+const { compact = false, updated } = Astro.props;
+const updatedLabel = updated
+  ? new Date(`${updated}T12:00:00Z`).toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' })
+  : null;
 ---
 
 {compact ? (
@@ -35,6 +40,7 @@ const { compact = false } = Astro.props;
         </div>
         <div class="text-sm text-gray-600 mb-2">
           Mailpiece Design Professional | Owner, Cornerstone Services, Inc.
+          {updatedLabel && <> &middot; Last updated <time itemprop="dateModified" datetime={updated}>{updatedLabel}</time></>}
         </div>
         <p class="text-sm text-gray-700 leading-relaxed">
           Sean is a USPS-certified Mailpiece Design Professional (MDP) with 25+ years of experience producing compliant direct mail campaigns for Hudson Valley businesses. He has processed over 2.3 million mail pieces through the USPS Business Mail Entry Unit in Saugerties, NY since 1998.

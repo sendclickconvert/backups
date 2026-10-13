@@ -21,7 +21,7 @@ schemaFAQ:
 
 The phrase "lettershop" doesn't show up in many business owners' vocabulary until they try to produce a direct mail campaign on their own for the first time. That's when they discover that printing the piece is step one of a multi-step process, and the remaining steps — addressing, sorting, bundling, delivering to USPS — require equipment, permits, and USPS knowledge that most businesses don't have.
 
-A lettershop handles those steps. At [Cornerstone Services](/services/mailing) in New Paltz, we are both a printer and a lettershop — we produce the printed pieces and handle the mailing preparation, which means a client's campaign goes from concept to USPS delivery without the piece leaving our facility.
+A lettershop handles those steps. At [Cornerstone Services](/services/mailing) in Saugerties, we are both a printer and a lettershop — we produce the printed pieces and handle the mailing preparation, which means a client's campaign goes from concept to USPS delivery without the piece leaving our facility.
 
 Here's exactly what a lettershop does.
 

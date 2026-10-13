@@ -38,7 +38,7 @@ The hardest thing about designing a direct mail postcard is resisting the urge t
 
 Business owners naturally want to tell their full story: all the services, all the credentials, all the reasons a prospect should call. But a postcard that tries to say everything ends up saying nothing. The recipient spends 3 seconds, doesn't find a clear offer, and moves on.
 
-As the holder of a USPS Mailpiece Design Professional (MDP) certification and the owner of [Cornerstone Services](/services/graphic-design) in New Paltz since 1998, I've reviewed tens of thousands of direct mail designs. The ones that generate calls share a structure. The ones that don't share a different structure. Here's what you need to know.
+As the holder of a USPS Mailpiece Design Professional (MDP) certification and the owner of [Cornerstone Services](/services/graphic-design) in the Hudson Valley since 1998, I've reviewed tens of thousands of direct mail designs. The ones that generate calls share a structure. The ones that don't share a different structure. Here's what you need to know.
 
 ## The 3-Second Rule
 

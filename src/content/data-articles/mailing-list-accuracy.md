@@ -19,7 +19,7 @@ schemaFAQ:
     a: "Not on standard Marketing Mail — undeliverable pieces are discarded or returned depending on the endorsement on the mail piece. With the 'Address Service Requested' endorsement, the USPS will return undeliverable pieces with the reason for non-delivery. This is useful for cleaning your list after a campaign."
 ---
 
-When Cornerstone delivers a [processed mailing list](/services/mailing-list-services), we describe it as 96–98% deliverable. That number comes up constantly, and it is worth explaining precisely what it means — what it accounts for, why the remaining 2–4% exists, and what you can do to minimize waste on your campaign.
+When Cornerstone delivers a [processed mailing list](/services/data-lists), we describe it as 96–98% deliverable. That number comes up constantly, and it is worth explaining precisely what it means — what it accounts for, why the remaining 2–4% exists, and what you can do to minimize waste on your campaign.
 
 The short version: no mailing list reaches 100% deliverability. The processes that get you from raw data to 96–98% — CASS certification, NCOA processing, and deduplication — are real, established, and required by the USPS for presorted mail. The residual undeliverability after those processes is mostly unfixable through data processing alone.
 
@@ -107,7 +107,7 @@ On a 5,000-piece mailing at 97% deliverability, roughly 150 pieces will fail to 
 
 The way to minimize that waste is through the processing steps Cornerstone applies to every list: CASS, NCOA, and deduplication. Beyond that, the most effective tool is house list maintenance — keeping your own customer database current by updating addresses with each transaction and running periodic NCOA refreshes.
 
-For more on the full list processing workflow, see our [mailing list processing guide](/services/mailing-list-services) and our [overview of mailing list types](/services/data-lists).
+For more on the full list processing workflow, see our [mailing list processing guide](/services/data-lists) and our [overview of mailing list types](/services/data-lists).
 
 ## Frequently Asked Questions
 

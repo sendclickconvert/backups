@@ -32,7 +32,7 @@ schemaItemList:
 
 EDDM campaigns fail at the post office for one of three reasons: wrong size, wrong indicia, or wrong paper weight. All three are preventable. All three are caught after the pieces are printed — when reprinting is the only option.
 
-As the holder of the USPS Mailpiece Design Professional (MDP) certification and the owner of [Cornerstone Services](/services/graphic-design) in New Paltz, I verify EDDM compliance on every job before it goes to press. Here are the exact specs you need before your piece is designed.
+As the holder of the USPS Mailpiece Design Professional (MDP) certification and the owner of [Cornerstone Services](/services/graphic-design) in Saugerties, I verify EDDM compliance on every job before it goes to press. Here are the exact specs you need before your piece is designed.
 
 ## Size Requirements: The Most Common Failure Point
 

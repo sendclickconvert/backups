@@ -614,7 +614,7 @@ const ulsterLocations: Location[] = [
     notableOrgs: ['Town of Rosendale', 'Rondout Valley area businesses'],
     clientTypes: ['Home service contractors', 'Local businesses', 'Real estate professionals'],
     faqs: [
-      { q: 'How far is Tillson from your facility?', a: 'Tillson is approximately 15 minutes from our Saugerties facility, making it one of our nearby service areas.' },
+      { q: 'How far is Tillson from your facility?', a: 'Tillson is about half an hour from our Saugerties facility, via Kingston.' },
     ],
     lat: 41.8358,
     lng: -74.064,
@@ -666,11 +666,11 @@ const dutchessLocations: Location[] = [
     zip: ['12601', '12602', '12603', '12604'],
     population: '32,700',
     isAnchor: true,
-    intro: 'Poughkeepsie is the county seat of Dutchess County and one of the largest cities in the Hudson Valley. Home to Vassar College, Marist College, and a revitalized waterfront district, Poughkeepsie offers diverse neighborhoods and a strong commercial base. Our Saugerties facility is approximately 35 minutes from Poughkeepsie, giving Poughkeepsie businesses convenient access to full-service direct mail.',
+    intro: 'Poughkeepsie is the county seat of Dutchess County and one of the largest cities in the Hudson Valley. Home to Vassar College, Marist College, and a revitalized waterfront district, Poughkeepsie offers diverse neighborhoods and a strong commercial base. Our Saugerties facility is about 40 minutes from Poughkeepsie, giving Poughkeepsie businesses convenient access to full-service direct mail.',
     notableOrgs: ['Vassar College', 'Marist College', 'Dutchess County Government', 'MidHudson Regional Hospital', 'Bardavon Opera House'],
     clientTypes: ['Educational institutions', 'Healthcare providers', 'Government agencies', 'Retail and restaurants', 'Professional services'],
     faqs: [
-      { q: 'How far is Cornerstone from Poughkeepsie?', a: 'We\'re approximately 20 minutes from downtown Poughkeepsie via the Mid-Hudson Bridge — making pickups, deliveries, and in-person meetings convenient.' },
+      { q: 'How far is Cornerstone from Poughkeepsie?', a: 'Our Saugerties facility is about 40 minutes from downtown Poughkeepsie via Route 9W and the Mid-Hudson Bridge, close enough for pickups, deliveries and in-person meetings.' },
       { q: 'Can you target specific Poughkeepsie neighborhoods?', a: 'Yes. Poughkeepsie has multiple ZIP codes and dozens of carrier routes. We can target specific neighborhoods, college areas, or the entire city.' },
       { q: 'Do you work with colleges in Poughkeepsie?', a: 'Yes. We serve educational institutions throughout the Hudson Valley, including mailings for admissions, alumni relations, fundraising, and event promotions.' },
       { q: 'Can you handle large-volume mailings for Dutchess County organizations?', a: 'Absolutely. We\'ve mailed over 2.3 million pieces and regularly handle high-volume campaigns for government agencies, healthcare providers, and educational institutions.' },
@@ -1121,11 +1121,11 @@ const orangeLocations: Location[] = [
     zip: ['12550', '12551'],
     population: '28,800',
     isAnchor: true,
-    intro: 'Newburgh is the largest city in Orange County and one of the most diverse communities in the Hudson Valley. With a revitalizing waterfront district, historic architecture, and a growing food scene, Newburgh offers tremendous opportunities for businesses reaching its diverse residential base. Our facility is approximately 30 minutes north, providing convenient service to Newburgh organizations.',
+    intro: 'Newburgh is the largest city in Orange County and one of the most diverse communities in the Hudson Valley. With a revitalizing waterfront district, historic architecture, and a growing food scene, Newburgh offers tremendous opportunities for businesses reaching its diverse residential base. Our Saugerties facility is about 45 minutes north via I-87, providing convenient service to Newburgh organizations.',
     notableOrgs: ['City of Newburgh', 'Newburgh Enlarged City School District', 'Newburgh Waterfront', 'Washington\'s Headquarters State Historic Site', 'Desmond-Fish Public Library'],
     clientTypes: ['Municipal agencies', 'Healthcare providers', 'Restaurants and food businesses', 'Nonprofits', 'Real estate developers'],
     faqs: [
-      { q: 'How far is Cornerstone from Newburgh?', a: 'Our Saugerties facility is approximately 30 minutes from Newburgh via I-87, providing convenient service for Newburgh businesses and organizations.' },
+      { q: 'How far is Cornerstone from Newburgh?', a: 'Our Saugerties facility is about 45 minutes from Newburgh via I-87, providing convenient service for Newburgh businesses and organizations.' },
       { q: 'Can you handle multilingual mailings for Newburgh\'s diverse community?', a: 'Yes. We can produce bilingual and multilingual mail pieces to reach Newburgh\'s diverse population, including Spanish-language materials.' },
       { q: 'Do you work with Newburgh city government?', a: 'We serve municipal agencies and government organizations throughout the Hudson Valley, handling official notifications, public notices, and community outreach mailings.' },
     ],
@@ -1656,4 +1656,25 @@ export function getAllLocations(): (Location & { countySlug: string; countyName:
 
 export function getLocationCount(): number {
   return COUNTIES_DATA.reduce((sum, c) => sum + c.locations.length, 0);
+}
+
+// ============================================================
+// FOCUS TOWNS (Oct 2026 SEO release)
+// Only these towns keep their own /service-areas/{county}/{town} page.
+// Picked from where CRST mails most (Saugerties home base, the Kingston /
+// Poughkeepsie / Newburgh / Middletown markets, the Route 9 river towns) plus
+// the three hamlet pages that drew 100+ Search Console impressions in
+// Jul–Oct 2026. Every other town is still served and listed on its county
+// page, but its page 301s to the county hub (served by server.mjs from src/data/town-redirects.json,
+// generated by scripts/build-town-redirects.mjs).
+// ============================================================
+
+export const FOCUS_TOWN_SLUGS: readonly string[] = [
+  'saugerties', 'kingston', 'woodstock', 'new-paltz', 'tillson',
+  'rhinebeck', 'red-hook', 'hyde-park', 'poughkeepsie',
+  'newburgh', 'middletown', 'pine-bush', 'walden',
+];
+
+export function isFocusTown(slug: string): boolean {
+  return FOCUS_TOWN_SLUGS.includes(slug);
 }

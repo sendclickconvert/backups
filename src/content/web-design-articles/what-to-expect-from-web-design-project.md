@@ -36,7 +36,7 @@ schemaHowTo:
 
 Most web design projects that go poorly do so not because of bad design — they go poorly because client and designer had different expectations about timeline, process, and what each party was responsible for delivering.
 
-At [Cornerstone Services](/services/web-design), we've been building websites for Hudson Valley businesses from our New Paltz location and we've observed the same pattern across years of projects: the clients who get the best results are the ones who understand their role before the project starts, not halfway through.
+At [Cornerstone Services](/services/web-design), we've been building websites for Hudson Valley businesses from our Saugerties location and we've observed the same pattern across years of projects: the clients who get the best results are the ones who understand their role before the project starts, not halfway through.
 
 Here's what to actually expect.
 
