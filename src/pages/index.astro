@@ -50,7 +50,10 @@ const localBusinessSchema = {
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Web Design', url: 'https://crst.net/services/web-design' } },
     ],
   },
+  hasMap: 'https://www.google.com/maps?cid=2260544066920854332',
+  // Every profile listed on /about/profiles (the entity hub). Keep the two lists identical.
   sameAs: [
+    'https://www.google.com/maps?cid=2260544066920854332',
     'https://www.linkedin.com/company/crstnet/',
     'https://x.com/CRSTNET',
     'https://www.instagram.com/cornerstoneservicesinc/',
@@ -58,6 +61,10 @@ const localBusinessSchema = {
     'https://www.tiktok.com/@crst_net',
     'https://www.pinterest.com/CornerstoneServicesInc/',
     'https://www.facebook.com/CornerstoneServicesInc/',
+    'https://www.yelp.com/biz/cornerstone-services-inc-new-paltz-6',
+    'https://www.crunchbase.com/organization/cornerstone-services-inc',
+    'https://www.bbb.org/us/ny/new-paltz/profile/direct-mail-advertising/cornerstone-services-inc-0121-87170789',
+    'https://www.dnb.com/business-directory/company-profiles.cornerstone_services_inc.bea5b2cca95e0686affe878cd63cb671.html',
   ],
 };
 
@@ -89,7 +96,7 @@ const homeFaqSchema = {
 
 <BaseLayout
   title="Direct Mail & Printing Services | Saugerties, NY"
-  description="Hudson Valley's USPS-certified direct mail partner since 1998. BBB A+, 98% on-time. Design, print, and mail under one roof — Ulster, Dutchess &amp; Orange counties."
+  description="Direct mail, printing and mailing under one roof since 1998, now in Saugerties, NY. USPS-certified, BBB A+. Serving Ulster, Dutchess &amp; Orange counties."
   schema={localBusinessSchema}
 >
   <Fragment slot="head"><script type="application/ld+json" set:html={JSON.stringify(homeFaqSchema)} /></Fragment>

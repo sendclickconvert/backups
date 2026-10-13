@@ -1690,7 +1690,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
       },
       {
         question: "How close is Tillson to Cornerstone's Saugerties facility?",
-        answer: "About half an hour from our Saugerties facility, via Kingston. Distance doesn't change production timelines (mail still enters through the USPS postal network), but it means our team has strong local knowledge of Tillson and the Rondout Creek corridor that informs how we approach campaign targeting and messaging for businesses serving this area."
+        answer: "About 35 minutes from our Saugerties facility, via Kingston. Distance doesn't change production timelines (mail still enters through the USPS postal network), but it means our team has strong local knowledge of Tillson and the Rondout Creek corridor that informs how we approach campaign targeting and messaging for businesses serving this area."
       }
     ]
   },
@@ -2579,7 +2579,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
     uniqueFAQs: [
       {
         question: "How far is Cornerstone from Newburgh, and can you handle large-volume campaigns?",
-        answer: "Our Saugerties facility is about 45 minutes from Newburgh via I-87 — close enough for in-person consultation and close collaboration on large campaigns. We handle Newburgh campaigns from a single USPS-authorized mailing entry and manage full-city saturation as routine volume. Large-format campaign management (10,000+ pieces) is standard for us with Orange County's larger cities."
+        answer: "Our Saugerties facility is about an hour from Newburgh via I-87 — close enough for in-person consultation and close collaboration on large campaigns. We handle Newburgh campaigns from a single USPS-authorized mailing entry and manage full-city saturation as routine volume. Large-format campaign management (10,000+ pieces) is standard for us with Orange County's larger cities."
       },
       {
         question: "Can Cornerstone produce multilingual direct mail for Newburgh's Spanish-speaking community?",
@@ -2609,7 +2609,7 @@ export const townUniqueContent: Record<string, TownUniqueContent> = {
       },
       {
         question: "How does Cornerstone coordinate Pine Bush EDDM from its Saugerties facility?",
-        answer: "Our Saugerties facility is about 45 minutes from Pine Bush. We enter Pine Bush EDDM at the appropriate USPS postal unit and coordinate with the Crawford and Shawangunk carrier routes through standard EDDM procedures. The cross-county geography is transparent to the postal entry process."
+        answer: "Our Saugerties facility is a little over an hour from Pine Bush. We enter Pine Bush EDDM at the appropriate USPS postal unit and coordinate with the Crawford and Shawangunk carrier routes through standard EDDM procedures. The cross-county geography is transparent to the postal entry process."
       }
     ]
   },
